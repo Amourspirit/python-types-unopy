@@ -25,5 +25,5 @@
 "workbench.colorTheme": "Monokai",
 "esbonio.server.enabled": true,
 "esbonio.sphinx.buildDir": "${workspaceFolder}/docs/_build/html",
-"esbonio.sphinx.confDir": "${workspaceFolder}/docs"
+"esbonio.sphinx.confDir": ""
 }
