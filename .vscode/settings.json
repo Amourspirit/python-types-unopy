@@ -1,0 +1,29 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.env/bin/python",
+  "autoDocstring.docstringFormat": "google",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.unittestEnabled": true,
+  "python.testing.pytestEnabled": false,
+  "sqltools.useNodeRuntime": true,
+  "editor.snippetSuggestions": "bottom",
+  "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+  "editor.suggestSelection": "first",
+  "editor.suggest.localityBonus": true,
+  "workbench.colorCustomizations": {
+  "[Monokai]": {
+    "titleBar.activeBackground": "#8c2c0b"
+  }
+},
+"workbench.colorTheme": "Monokai",
+"esbonio.server.enabled": true,
+"esbonio.sphinx.buildDir": "${workspaceFolder}/docs/_build/html",
+"esbonio.sphinx.confDir": "${workspaceFolder}/docs"
+}
