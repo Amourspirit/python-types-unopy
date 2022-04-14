@@ -10,6 +10,11 @@ WHY
 Working with `LibreOffice API <https://api.libreoffice.org/>`_ in a modern IDE such as `Visual Studio Code <https://code.visualstudio.com/>`_
 there is not type support for `LibreOffice API <https://api.libreoffice.org/>`_ This project solves that Issue.
 
+VERSION
+=======
+
+This package is for Version ``7.2`` of `LibreOffice API <https://api.libreoffice.org/>`_.
+
 Installation
 ============
 
