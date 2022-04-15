@@ -30,7 +30,7 @@ PIP
 Related
 =======
 
-`Types-ScriptForge leverages <https://pypi.org/project/types-scriptforge/>`_ ``types-unopy``. By installing 
+`Types-ScriptForge leverages <https://github.com/Amourspirit/python-types-scriptforge>`_ ``types-unopy``. By installing 
 Types-ScriptForge into your project you will also automatically install ``types-unopy``.
 
 USAGE
