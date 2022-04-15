@@ -27,6 +27,12 @@ PIP
 
     $ pip install types-unopy
 
+Related
+=======
+
+`Types-ScriptForge leverages <https://pypi.org/project/types-scriptforge/>`_ ``types-unopy``. By installing 
+Types-ScriptForge into your project you will also automatically install ``types-unopy``.
+
 USAGE
 =====
 
