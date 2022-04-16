@@ -14,5 +14,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.xml.csax.x_compressed_document_handler import XCompressedDocumentHandler as XCompressedDocumentHandler
-from ...._pyi.xml.csax.xml_attribute import XMLAttribute as XMLAttribute
+from ..._pyi.xml.csax.x_compressed_document_handler import XCompressedDocumentHandler as XCompressedDocumentHandler
+from ..._pyi.xml.csax.xml_attribute import XMLAttribute as XMLAttribute

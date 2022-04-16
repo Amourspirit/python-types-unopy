@@ -14,17 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.geometry.affine_matrix2_d import AffineMatrix2D as AffineMatrix2D
-from ..._pyi.geometry.affine_matrix3_d import AffineMatrix3D as AffineMatrix3D
-from ..._pyi.geometry.elliptical_arc import EllipticalArc as EllipticalArc
-from ..._pyi.geometry.integer_bezier_segment2_d import IntegerBezierSegment2D as IntegerBezierSegment2D
-from ..._pyi.geometry.integer_point2_d import IntegerPoint2D as IntegerPoint2D
-from ..._pyi.geometry.integer_rectangle2_d import IntegerRectangle2D as IntegerRectangle2D
-from ..._pyi.geometry.integer_size2_d import IntegerSize2D as IntegerSize2D
-from ..._pyi.geometry.matrix2_d import Matrix2D as Matrix2D
-from ..._pyi.geometry.real_bezier_segment2_d import RealBezierSegment2D as RealBezierSegment2D
-from ..._pyi.geometry.real_point2_d import RealPoint2D as RealPoint2D
-from ..._pyi.geometry.real_rectangle2_d import RealRectangle2D as RealRectangle2D
-from ..._pyi.geometry.real_rectangle3_d import RealRectangle3D as RealRectangle3D
-from ..._pyi.geometry.real_size2_d import RealSize2D as RealSize2D
-from ..._pyi.geometry.x_mapping2_d import XMapping2D as XMapping2D
+from .._pyi.geometry.affine_matrix2_d import AffineMatrix2D as AffineMatrix2D
+from .._pyi.geometry.affine_matrix3_d import AffineMatrix3D as AffineMatrix3D
+from .._pyi.geometry.elliptical_arc import EllipticalArc as EllipticalArc
+from .._pyi.geometry.integer_bezier_segment2_d import IntegerBezierSegment2D as IntegerBezierSegment2D
+from .._pyi.geometry.integer_point2_d import IntegerPoint2D as IntegerPoint2D
+from .._pyi.geometry.integer_rectangle2_d import IntegerRectangle2D as IntegerRectangle2D
+from .._pyi.geometry.integer_size2_d import IntegerSize2D as IntegerSize2D
+from .._pyi.geometry.matrix2_d import Matrix2D as Matrix2D
+from .._pyi.geometry.real_bezier_segment2_d import RealBezierSegment2D as RealBezierSegment2D
+from .._pyi.geometry.real_point2_d import RealPoint2D as RealPoint2D
+from .._pyi.geometry.real_rectangle2_d import RealRectangle2D as RealRectangle2D
+from .._pyi.geometry.real_rectangle3_d import RealRectangle3D as RealRectangle3D
+from .._pyi.geometry.real_size2_d import RealSize2D as RealSize2D
+from .._pyi.geometry.x_mapping2_d import XMapping2D as XMapping2D

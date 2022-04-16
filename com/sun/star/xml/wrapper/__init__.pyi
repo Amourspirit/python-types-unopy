@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.xml.wrapper.xml_document_wrapper import XMLDocumentWrapper as XMLDocumentWrapper
-from ...._pyi.xml.wrapper.xml_element_wrapper import XMLElementWrapper as XMLElementWrapper
-from ...._pyi.xml.wrapper.xxml_document_wrapper import XXMLDocumentWrapper as XXMLDocumentWrapper
-from ...._pyi.xml.wrapper.xxml_element_wrapper import XXMLElementWrapper as XXMLElementWrapper
+from ..._pyi.xml.wrapper.xml_document_wrapper import XMLDocumentWrapper as XMLDocumentWrapper
+from ..._pyi.xml.wrapper.xml_element_wrapper import XMLElementWrapper as XMLElementWrapper
+from ..._pyi.xml.wrapper.xxml_document_wrapper import XXMLDocumentWrapper as XXMLDocumentWrapper
+from ..._pyi.xml.wrapper.xxml_element_wrapper import XXMLElementWrapper as XXMLElementWrapper

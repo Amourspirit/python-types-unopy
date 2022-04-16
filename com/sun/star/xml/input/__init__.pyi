@@ -14,8 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.xml.input.sax_document_handler import SaxDocumentHandler as SaxDocumentHandler
-from ...._pyi.xml.input.x_attributes import XAttributes as XAttributes
-from ...._pyi.xml.input.x_element import XElement as XElement
-from ...._pyi.xml.input.x_namespace_mapping import XNamespaceMapping as XNamespaceMapping
-from ...._pyi.xml.input.x_root import XRoot as XRoot
+from ..._pyi.xml.input.sax_document_handler import SaxDocumentHandler as SaxDocumentHandler
+from ..._pyi.xml.input.x_attributes import XAttributes as XAttributes
+from ..._pyi.xml.input.x_element import XElement as XElement
+from ..._pyi.xml.input.x_namespace_mapping import XNamespaceMapping as XNamespaceMapping
+from ..._pyi.xml.input.x_root import XRoot as XRoot

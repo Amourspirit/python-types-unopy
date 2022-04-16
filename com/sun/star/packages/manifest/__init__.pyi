@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.packages.manifest.manifest_reader import ManifestReader as ManifestReader
-from ...._pyi.packages.manifest.manifest_writer import ManifestWriter as ManifestWriter
-from ...._pyi.packages.manifest.x_manifest_reader import XManifestReader as XManifestReader
-from ...._pyi.packages.manifest.x_manifest_writer import XManifestWriter as XManifestWriter
+from ..._pyi.packages.manifest.manifest_reader import ManifestReader as ManifestReader
+from ..._pyi.packages.manifest.manifest_writer import ManifestWriter as ManifestWriter
+from ..._pyi.packages.manifest.x_manifest_reader import XManifestReader as XManifestReader
+from ..._pyi.packages.manifest.x_manifest_writer import XManifestWriter as XManifestWriter

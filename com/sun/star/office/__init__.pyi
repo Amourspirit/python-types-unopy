@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.office.quickstart import Quickstart as Quickstart
-from ..._pyi.office.x_annotation import XAnnotation as XAnnotation
-from ..._pyi.office.x_annotation_access import XAnnotationAccess as XAnnotationAccess
-from ..._pyi.office.x_annotation_enumeration import XAnnotationEnumeration as XAnnotationEnumeration
+from .._pyi.office.quickstart import Quickstart as Quickstart
+from .._pyi.office.x_annotation import XAnnotation as XAnnotation
+from .._pyi.office.x_annotation_access import XAnnotationAccess as XAnnotationAccess
+from .._pyi.office.x_annotation_enumeration import XAnnotationEnumeration as XAnnotationEnumeration

@@ -14,14 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ....._pyi.xml.dom.events.attr_change_type import AttrChangeType as AttrChangeType
-from ....._pyi.xml.dom.events.event_exception import EventException as EventException
-from ....._pyi.xml.dom.events.event_type import EventType as EventType
-from ....._pyi.xml.dom.events.phase_type import PhaseType as PhaseType
-from ....._pyi.xml.dom.events.x_document_event import XDocumentEvent as XDocumentEvent
-from ....._pyi.xml.dom.events.x_event import XEvent as XEvent
-from ....._pyi.xml.dom.events.x_event_listener import XEventListener as XEventListener
-from ....._pyi.xml.dom.events.x_event_target import XEventTarget as XEventTarget
-from ....._pyi.xml.dom.events.x_mouse_event import XMouseEvent as XMouseEvent
-from ....._pyi.xml.dom.events.x_mutation_event import XMutationEvent as XMutationEvent
-from ....._pyi.xml.dom.events.xui_event import XUIEvent as XUIEvent
+from ...._pyi.xml.dom.events.attr_change_type import AttrChangeType as AttrChangeType
+from ...._pyi.xml.dom.events.event_exception import EventException as EventException
+from ...._pyi.xml.dom.events.event_type import EventType as EventType
+from ...._pyi.xml.dom.events.phase_type import PhaseType as PhaseType
+from ...._pyi.xml.dom.events.x_document_event import XDocumentEvent as XDocumentEvent
+from ...._pyi.xml.dom.events.x_event import XEvent as XEvent
+from ...._pyi.xml.dom.events.x_event_listener import XEventListener as XEventListener
+from ...._pyi.xml.dom.events.x_event_target import XEventTarget as XEventTarget
+from ...._pyi.xml.dom.events.x_mouse_event import XMouseEvent as XMouseEvent
+from ...._pyi.xml.dom.events.x_mutation_event import XMutationEvent as XMutationEvent
+from ...._pyi.xml.dom.events.xui_event import XUIEvent as XUIEvent

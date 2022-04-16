@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.formula.accessible_formula_text import AccessibleFormulaText as AccessibleFormulaText
-from ..._pyi.formula.accessible_formula_view import AccessibleFormulaView as AccessibleFormulaView
-from ..._pyi.formula.formula_properties import FormulaProperties as FormulaProperties
-from ..._pyi.formula.symbol_descriptor import SymbolDescriptor as SymbolDescriptor
+from .._pyi.formula.accessible_formula_text import AccessibleFormulaText as AccessibleFormulaText
+from .._pyi.formula.accessible_formula_view import AccessibleFormulaView as AccessibleFormulaView
+from .._pyi.formula.formula_properties import FormulaProperties as FormulaProperties
+from .._pyi.formula.symbol_descriptor import SymbolDescriptor as SymbolDescriptor
