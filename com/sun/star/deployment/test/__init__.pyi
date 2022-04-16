@@ -14,4 +14,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.deployment.test.smoketest_command_environment import SmoketestCommandEnvironment as SmoketestCommandEnvironment
+from ..._pyi.deployment.test.smoketest_command_environment import SmoketestCommandEnvironment as SmoketestCommandEnvironment

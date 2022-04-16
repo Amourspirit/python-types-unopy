@@ -14,10 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.packages.zip.x_zip_file_access import XZipFileAccess as XZipFileAccess
-from ...._pyi.packages.zip.x_zip_file_access2 import XZipFileAccess2 as XZipFileAccess2
-from ...._pyi.packages.zip.zip_constants import ZipConstants as ZipConstants
-from ...._pyi.packages.zip.zip_entry import ZipEntry as ZipEntry
-from ...._pyi.packages.zip.zip_exception import ZipException as ZipException
-from ...._pyi.packages.zip.zip_file_access import ZipFileAccess as ZipFileAccess
-from ...._pyi.packages.zip.zip_io_exception import ZipIOException as ZipIOException
+from ..._pyi.packages.zip.x_zip_file_access import XZipFileAccess as XZipFileAccess
+from ..._pyi.packages.zip.x_zip_file_access2 import XZipFileAccess2 as XZipFileAccess2
+from ..._pyi.packages.zip.zip_constants import ZipConstants as ZipConstants
+from ..._pyi.packages.zip.zip_entry import ZipEntry as ZipEntry
+from ..._pyi.packages.zip.zip_exception import ZipException as ZipException
+from ..._pyi.packages.zip.zip_file_access import ZipFileAccess as ZipFileAccess
+from ..._pyi.packages.zip.zip_io_exception import ZipIOException as ZipIOException

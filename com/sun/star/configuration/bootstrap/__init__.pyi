@@ -14,4 +14,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.configuration.bootstrap.bootstrap_context import BootstrapContext as BootstrapContext
+from ..._pyi.configuration.bootstrap.bootstrap_context import BootstrapContext as BootstrapContext

@@ -14,6 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.xml.xslt.xslt2_transformer import XSLT2Transformer as XSLT2Transformer
-from ...._pyi.xml.xslt.xslt_transformer import XSLTTransformer as XSLTTransformer
-from ...._pyi.xml.xslt.xxslt_transformer import XXSLTTransformer as XXSLTTransformer
+from ..._pyi.xml.xslt.xslt2_transformer import XSLT2Transformer as XSLT2Transformer
+from ..._pyi.xml.xslt.xslt_transformer import XSLTTransformer as XSLTTransformer
+from ..._pyi.xml.xslt.xxslt_transformer import XXSLTTransformer as XXSLTTransformer

@@ -13,7 +13,7 @@ there is not type support for `LibreOffice API <https://api.libreoffice.org/>`_ 
 VERSION
 =======
 
-This package is for Version ``7.2`` of `LibreOffice API <https://api.libreoffice.org/>`_.
+This package is for Version ``7.3`` of `LibreOffice API <https://api.libreoffice.org/>`_.
 
 Installation
 ============
