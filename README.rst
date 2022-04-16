@@ -30,7 +30,7 @@ PIP
 Related
 =======
 
-`Types-ScriptForge leverages <https://github.com/Amourspirit/python-types-scriptforge>`_ ``types-unopy``. By installing 
+`Types-ScriptForge leverages <https://github.com/Amourspirit/python-types-scriptforge>`_ ``types-unopy``. By installing
 Types-ScriptForge into your project you will also automatically install ``types-unopy``.
 
 USAGE
@@ -38,8 +38,8 @@ USAGE
 
 Not all object in `LibreOffice API <https://api.libreoffice.org/>`_ can be directly imported.
 
-For instance if you need to import ``SheetCellRange`` so it can be used as type the following will fail
-at runtime.
+For instance if you need to import ``SheetCellRange`` so it can be used
+as type the following will fail at runtime.
 
 .. code-block:: python
 
@@ -82,3 +82,9 @@ If you need the behaviour of regular Enum Classes consider using `ooouno <https:
     >>>
     >>> type(DIRECT_VALUE)
     <class 'uno.Enum'>
+
+Demo
+====
+
+.. figure:: https://user-images.githubusercontent.com/4193389/163689461-ab349f19-81b0-450b-bf49-50303a5c4da4.gif
+    :alt: Example image.
