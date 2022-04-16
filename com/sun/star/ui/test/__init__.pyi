@@ -14,6 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.ui.test.ui_test import UITest as UITest
-from ...._pyi.ui.test.xui_object import XUIObject as XUIObject
-from ...._pyi.ui.test.xui_test import XUITest as XUITest
+from ..._pyi.ui.test.ui_test import UITest as UITest
+from ..._pyi.ui.test.xui_object import XUIObject as XUIObject
+from ..._pyi.ui.test.xui_test import XUITest as XUITest

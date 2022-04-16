@@ -14,6 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.sheet.opencl.open_cl_device import OpenCLDevice as OpenCLDevice
-from ...._pyi.sheet.opencl.open_cl_platform import OpenCLPlatform as OpenCLPlatform
-from ...._pyi.sheet.opencl.x_open_cl_selection import XOpenCLSelection as XOpenCLSelection
+from ..._pyi.sheet.opencl.open_cl_device import OpenCLDevice as OpenCLDevice
+from ..._pyi.sheet.opencl.open_cl_platform import OpenCLPlatform as OpenCLPlatform
+from ..._pyi.sheet.opencl.x_open_cl_selection import XOpenCLSelection as XOpenCLSelection

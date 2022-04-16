@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.loader.cannot_activate_factory_exception import CannotActivateFactoryException as CannotActivateFactoryException
-from ..._pyi.loader.dynamic import Dynamic as Dynamic
-from ..._pyi.loader.java import Java as Java
-from ..._pyi.loader.java2 import Java2 as Java2
-from ..._pyi.loader.shared_library import SharedLibrary as SharedLibrary
-from ..._pyi.loader.x_implementation_loader import XImplementationLoader as XImplementationLoader
+from .._pyi.loader.cannot_activate_factory_exception import CannotActivateFactoryException as CannotActivateFactoryException
+from .._pyi.loader.dynamic import Dynamic as Dynamic
+from .._pyi.loader.java import Java as Java
+from .._pyi.loader.java2 import Java2 as Java2
+from .._pyi.loader.shared_library import SharedLibrary as SharedLibrary
+from .._pyi.loader.x_implementation_loader import XImplementationLoader as XImplementationLoader

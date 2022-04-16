@@ -14,15 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.sdb.tools.composition_type import CompositionType as CompositionType
-from ...._pyi.sdb.tools.connection_tools import ConnectionTools as ConnectionTools
-from ...._pyi.sdb.tools.x_connection_supplier import XConnectionSupplier as XConnectionSupplier
-from ...._pyi.sdb.tools.x_connection_tools import XConnectionTools as XConnectionTools
-from ...._pyi.sdb.tools.x_data_source_meta_data import XDataSourceMetaData as XDataSourceMetaData
-from ...._pyi.sdb.tools.x_index_alteration import XIndexAlteration as XIndexAlteration
-from ...._pyi.sdb.tools.x_key_alteration import XKeyAlteration as XKeyAlteration
-from ...._pyi.sdb.tools.x_object_names import XObjectNames as XObjectNames
-from ...._pyi.sdb.tools.x_table_alteration import XTableAlteration as XTableAlteration
-from ...._pyi.sdb.tools.x_table_name import XTableName as XTableName
-from ...._pyi.sdb.tools.x_table_rename import XTableRename as XTableRename
-from ...._pyi.sdb.tools.x_view_access import XViewAccess as XViewAccess
+from ..._pyi.sdb.tools.composition_type import CompositionType as CompositionType
+from ..._pyi.sdb.tools.connection_tools import ConnectionTools as ConnectionTools
+from ..._pyi.sdb.tools.x_connection_supplier import XConnectionSupplier as XConnectionSupplier
+from ..._pyi.sdb.tools.x_connection_tools import XConnectionTools as XConnectionTools
+from ..._pyi.sdb.tools.x_data_source_meta_data import XDataSourceMetaData as XDataSourceMetaData
+from ..._pyi.sdb.tools.x_index_alteration import XIndexAlteration as XIndexAlteration
+from ..._pyi.sdb.tools.x_key_alteration import XKeyAlteration as XKeyAlteration
+from ..._pyi.sdb.tools.x_object_names import XObjectNames as XObjectNames
+from ..._pyi.sdb.tools.x_table_alteration import XTableAlteration as XTableAlteration
+from ..._pyi.sdb.tools.x_table_name import XTableName as XTableName
+from ..._pyi.sdb.tools.x_table_rename import XTableRename as XTableRename
+from ..._pyi.sdb.tools.x_view_access import XViewAccess as XViewAccess

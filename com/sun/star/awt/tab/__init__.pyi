@@ -14,13 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.awt.tab.tab_page_activated_event import TabPageActivatedEvent as TabPageActivatedEvent
-from ...._pyi.awt.tab.uno_control_tab_page import UnoControlTabPage as UnoControlTabPage
-from ...._pyi.awt.tab.uno_control_tab_page_container import UnoControlTabPageContainer as UnoControlTabPageContainer
-from ...._pyi.awt.tab.uno_control_tab_page_container_model import UnoControlTabPageContainerModel as UnoControlTabPageContainerModel
-from ...._pyi.awt.tab.uno_control_tab_page_model import UnoControlTabPageModel as UnoControlTabPageModel
-from ...._pyi.awt.tab.x_tab_page import XTabPage as XTabPage
-from ...._pyi.awt.tab.x_tab_page_container import XTabPageContainer as XTabPageContainer
-from ...._pyi.awt.tab.x_tab_page_container_listener import XTabPageContainerListener as XTabPageContainerListener
-from ...._pyi.awt.tab.x_tab_page_container_model import XTabPageContainerModel as XTabPageContainerModel
-from ...._pyi.awt.tab.x_tab_page_model import XTabPageModel as XTabPageModel
+from ..._pyi.awt.tab.tab_page_activated_event import TabPageActivatedEvent as TabPageActivatedEvent
+from ..._pyi.awt.tab.uno_control_tab_page import UnoControlTabPage as UnoControlTabPage
+from ..._pyi.awt.tab.uno_control_tab_page_container import UnoControlTabPageContainer as UnoControlTabPageContainer
+from ..._pyi.awt.tab.uno_control_tab_page_container_model import UnoControlTabPageContainerModel as UnoControlTabPageContainerModel
+from ..._pyi.awt.tab.uno_control_tab_page_model import UnoControlTabPageModel as UnoControlTabPageModel
+from ..._pyi.awt.tab.x_tab_page import XTabPage as XTabPage
+from ..._pyi.awt.tab.x_tab_page_container import XTabPageContainer as XTabPageContainer
+from ..._pyi.awt.tab.x_tab_page_container_listener import XTabPageContainerListener as XTabPageContainerListener
+from ..._pyi.awt.tab.x_tab_page_container_model import XTabPageContainerModel as XTabPageContainerModel
+from ..._pyi.awt.tab.x_tab_page_model import XTabPageModel as XTabPageModel

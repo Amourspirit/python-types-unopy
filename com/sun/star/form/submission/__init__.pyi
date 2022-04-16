@@ -14,6 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.form.submission.x_submission import XSubmission as XSubmission
-from ...._pyi.form.submission.x_submission_supplier import XSubmissionSupplier as XSubmissionSupplier
-from ...._pyi.form.submission.x_submission_veto_listener import XSubmissionVetoListener as XSubmissionVetoListener
+from ..._pyi.form.submission.x_submission import XSubmission as XSubmission
+from ..._pyi.form.submission.x_submission_supplier import XSubmissionSupplier as XSubmissionSupplier
+from ..._pyi.form.submission.x_submission_veto_listener import XSubmissionVetoListener as XSubmissionVetoListener

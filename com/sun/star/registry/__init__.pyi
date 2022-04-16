@@ -14,17 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.registry.cannot_register_implementation_exception import CannotRegisterImplementationException as CannotRegisterImplementationException
-from ..._pyi.registry.default_registry import DefaultRegistry as DefaultRegistry
-from ..._pyi.registry.implementation_registration import ImplementationRegistration as ImplementationRegistration
-from ..._pyi.registry.invalid_registry_exception import InvalidRegistryException as InvalidRegistryException
-from ..._pyi.registry.invalid_value_exception import InvalidValueException as InvalidValueException
-from ..._pyi.registry.merge_conflict_exception import MergeConflictException as MergeConflictException
-from ..._pyi.registry.nested_registry import NestedRegistry as NestedRegistry
-from ..._pyi.registry.registry_key_type import RegistryKeyType as RegistryKeyType
-from ..._pyi.registry.registry_value_type import RegistryValueType as RegistryValueType
-from ..._pyi.registry.simple_registry import SimpleRegistry as SimpleRegistry
-from ..._pyi.registry.x_implementation_registration import XImplementationRegistration as XImplementationRegistration
-from ..._pyi.registry.x_implementation_registration2 import XImplementationRegistration2 as XImplementationRegistration2
-from ..._pyi.registry.x_registry_key import XRegistryKey as XRegistryKey
-from ..._pyi.registry.x_simple_registry import XSimpleRegistry as XSimpleRegistry
+from .._pyi.registry.cannot_register_implementation_exception import CannotRegisterImplementationException as CannotRegisterImplementationException
+from .._pyi.registry.default_registry import DefaultRegistry as DefaultRegistry
+from .._pyi.registry.implementation_registration import ImplementationRegistration as ImplementationRegistration
+from .._pyi.registry.invalid_registry_exception import InvalidRegistryException as InvalidRegistryException
+from .._pyi.registry.invalid_value_exception import InvalidValueException as InvalidValueException
+from .._pyi.registry.merge_conflict_exception import MergeConflictException as MergeConflictException
+from .._pyi.registry.nested_registry import NestedRegistry as NestedRegistry
+from .._pyi.registry.registry_key_type import RegistryKeyType as RegistryKeyType
+from .._pyi.registry.registry_value_type import RegistryValueType as RegistryValueType
+from .._pyi.registry.simple_registry import SimpleRegistry as SimpleRegistry
+from .._pyi.registry.x_implementation_registration import XImplementationRegistration as XImplementationRegistration
+from .._pyi.registry.x_implementation_registration2 import XImplementationRegistration2 as XImplementationRegistration2
+from .._pyi.registry.x_registry_key import XRegistryKey as XRegistryKey
+from .._pyi.registry.x_simple_registry import XSimpleRegistry as XSimpleRegistry

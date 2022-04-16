@@ -14,5 +14,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.svg.xsvg_printer import XSVGPrinter as XSVGPrinter
-from ..._pyi.svg.xsvg_writer import XSVGWriter as XSVGWriter
+from .._pyi.svg.xsvg_printer import XSVGPrinter as XSVGPrinter
+from .._pyi.svg.xsvg_writer import XSVGWriter as XSVGWriter

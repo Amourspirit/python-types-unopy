@@ -14,5 +14,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.ldap.ldap_connection_exception import LdapConnectionException as LdapConnectionException
-from ..._pyi.ldap.ldap_generic_exception import LdapGenericException as LdapGenericException
+from .._pyi.ldap.ldap_connection_exception import LdapConnectionException as LdapConnectionException
+from .._pyi.ldap.ldap_generic_exception import LdapGenericException as LdapGenericException
