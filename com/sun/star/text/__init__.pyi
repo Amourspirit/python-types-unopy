@@ -75,7 +75,6 @@ from .._pyi.text.global_settings import GlobalSettings as GlobalSettings
 from .._pyi.text.graphic_crop import GraphicCrop as GraphicCrop
 from .._pyi.text.hori_orientation import HoriOrientation as HoriOrientation
 from .._pyi.text.hori_orientation_format import HoriOrientationFormat as HoriOrientationFormat
-from .._pyi.text.horizontal_adjust import HorizontalAdjust as HorizontalAdjust
 from .._pyi.text.illustrations_index import IllustrationsIndex as IllustrationsIndex
 from .._pyi.text.in_content_metadata import InContentMetadata as InContentMetadata
 from .._pyi.text.invalid_text_content_exception import InvalidTextContentException as InvalidTextContentException
@@ -85,13 +84,11 @@ from .._pyi.text.mail_merge import MailMerge as MailMerge
 from .._pyi.text.mail_merge_event import MailMergeEvent as MailMergeEvent
 from .._pyi.text.mail_merge_type import MailMergeType as MailMergeType
 from .._pyi.text.module_dispatcher import ModuleDispatcher as ModuleDispatcher
-from .._pyi.text.note_print_mode import NotePrintMode as NotePrintMode
 from .._pyi.text.numbering_level import NumberingLevel as NumberingLevel
 from .._pyi.text.numbering_rules import NumberingRules as NumberingRules
 from .._pyi.text.numbering_style import NumberingStyle as NumberingStyle
 from .._pyi.text.object_index import ObjectIndex as ObjectIndex
 from .._pyi.text.page_footnote_info import PageFootnoteInfo as PageFootnoteInfo
-from .._pyi.text.page_number_type import PageNumberType as PageNumberType
 from .._pyi.text.page_print_settings import PagePrintSettings as PagePrintSettings
 from .._pyi.text.paragraph import Paragraph as Paragraph
 from .._pyi.text.paragraph_enumeration import ParagraphEnumeration as ParagraphEnumeration
@@ -106,7 +103,6 @@ from .._pyi.text.reference_field_source import ReferenceFieldSource as Reference
 from .._pyi.text.reference_mark import ReferenceMark as ReferenceMark
 from .._pyi.text.reference_marks import ReferenceMarks as ReferenceMarks
 from .._pyi.text.rel_orientation import RelOrientation as RelOrientation
-from .._pyi.text.ruby_adjust import RubyAdjust as RubyAdjust
 from .._pyi.text.ruby_position import RubyPosition as RubyPosition
 from .._pyi.text.section_file_link import SectionFileLink as SectionFileLink
 from .._pyi.text.set_variable_type import SetVariableType as SetVariableType
@@ -122,7 +118,6 @@ from .._pyi.text.text_column import TextColumn as TextColumn
 from .._pyi.text.text_column_sequence import TextColumnSequence as TextColumnSequence
 from .._pyi.text.text_columns import TextColumns as TextColumns
 from .._pyi.text.text_content import TextContent as TextContent
-from .._pyi.text.text_content_anchor_type import TextContentAnchorType as TextContentAnchorType
 from .._pyi.text.text_content_collection import TextContentCollection as TextContentCollection
 from .._pyi.text.text_cursor import TextCursor as TextCursor
 from .._pyi.text.text_document import TextDocument as TextDocument
@@ -171,8 +166,6 @@ from .._pyi.text.vert_orientation_format import VertOrientationFormat as VertOri
 from .._pyi.text.view_settings import ViewSettings as ViewSettings
 from .._pyi.text.web_document import WebDocument as WebDocument
 from .._pyi.text.wrap_influence_on_position import WrapInfluenceOnPosition as WrapInfluenceOnPosition
-from .._pyi.text.wrap_text_mode import WrapTextMode as WrapTextMode
-from .._pyi.text.writing_mode import WritingMode as WritingMode
 from .._pyi.text.writing_mode2 import WritingMode2 as WritingMode2
 from .._pyi.text.x_auto_text_container import XAutoTextContainer as XAutoTextContainer
 from .._pyi.text.x_auto_text_container2 import XAutoTextContainer2 as XAutoTextContainer2

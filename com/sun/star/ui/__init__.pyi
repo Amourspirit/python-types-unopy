@@ -24,8 +24,6 @@ from .._pyi.ui.configuration_event import ConfigurationEvent as ConfigurationEve
 from .._pyi.ui.context_change_event_multiplexer import ContextChangeEventMultiplexer as ContextChangeEventMultiplexer
 from .._pyi.ui.context_change_event_object import ContextChangeEventObject as ContextChangeEventObject
 from .._pyi.ui.context_menu_execute_event import ContextMenuExecuteEvent as ContextMenuExecuteEvent
-from .._pyi.ui.context_menu_interceptor_action import ContextMenuInterceptorAction as ContextMenuInterceptorAction
-from .._pyi.ui.docking_area import DockingArea as DockingArea
 from .._pyi.ui.document_accelerator_configuration import DocumentAcceleratorConfiguration as DocumentAcceleratorConfiguration
 from .._pyi.ui.global_accelerator_configuration import GlobalAcceleratorConfiguration as GlobalAcceleratorConfiguration
 from .._pyi.ui.image_manager import ImageManager as ImageManager

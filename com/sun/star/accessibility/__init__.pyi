@@ -21,7 +21,6 @@ from .._pyi.accessibility.accessible_event_object import AccessibleEventObject a
 from .._pyi.accessibility.accessible_relation import AccessibleRelation as AccessibleRelation
 from .._pyi.accessibility.accessible_relation_type import AccessibleRelationType as AccessibleRelationType
 from .._pyi.accessibility.accessible_role import AccessibleRole as AccessibleRole
-from .._pyi.accessibility.accessible_scroll_type import AccessibleScrollType as AccessibleScrollType
 from .._pyi.accessibility.accessible_state_type import AccessibleStateType as AccessibleStateType
 from .._pyi.accessibility.accessible_table_model_change import AccessibleTableModelChange as AccessibleTableModelChange
 from .._pyi.accessibility.accessible_table_model_change_type import AccessibleTableModelChangeType as AccessibleTableModelChangeType

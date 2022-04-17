@@ -34,7 +34,6 @@ from .._pyi.i18n.collator import Collator as Collator
 from .._pyi.i18n.collator_options import CollatorOptions as CollatorOptions
 from .._pyi.i18n.currency import Currency as Currency
 from .._pyi.i18n.currency2 import Currency2 as Currency2
-from .._pyi.i18n.direction_property import DirectionProperty as DirectionProperty
 from .._pyi.i18n.forbidden_characters import ForbiddenCharacters as ForbiddenCharacters
 from .._pyi.i18n.format_element import FormatElement as FormatElement
 from .._pyi.i18n.implementation import Implementation as Implementation
@@ -76,11 +75,8 @@ from .._pyi.i18n.text_conversion_option import TextConversionOption as TextConve
 from .._pyi.i18n.text_conversion_result import TextConversionResult as TextConversionResult
 from .._pyi.i18n.text_conversion_type import TextConversionType as TextConversionType
 from .._pyi.i18n.transliteration import Transliteration as Transliteration
-from .._pyi.i18n.transliteration_modules import TransliterationModules as TransliterationModules
 from .._pyi.i18n.transliteration_modules_extra import TransliterationModulesExtra as TransliterationModulesExtra
-from .._pyi.i18n.transliteration_modules_new import TransliterationModulesNew as TransliterationModulesNew
 from .._pyi.i18n.transliteration_type import TransliterationType as TransliterationType
-from .._pyi.i18n.unicode_script import UnicodeScript as UnicodeScript
 from .._pyi.i18n.unicode_type import UnicodeType as UnicodeType
 from .._pyi.i18n.weekdays import Weekdays as Weekdays
 from .._pyi.i18n.word_type import WordType as WordType

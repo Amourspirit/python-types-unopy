@@ -49,7 +49,6 @@ from .._pyi.awt.accessible_tree_list_box_entry import AccessibleTreeListBoxEntry
 from .._pyi.awt.accessible_window import AccessibleWindow as AccessibleWindow
 from .._pyi.awt.action_event import ActionEvent as ActionEvent
 from .._pyi.awt.adjustment_event import AdjustmentEvent as AdjustmentEvent
-from .._pyi.awt.adjustment_type import AdjustmentType as AdjustmentType
 from .._pyi.awt.animated_images_control import AnimatedImagesControl as AnimatedImagesControl
 from .._pyi.awt.animated_images_control_model import AnimatedImagesControlModel as AnimatedImagesControlModel
 from .._pyi.awt.async_callback import AsyncCallback as AsyncCallback
@@ -73,14 +72,12 @@ from .._pyi.awt.font_emphasis_mark import FontEmphasisMark as FontEmphasisMark
 from .._pyi.awt.font_family import FontFamily as FontFamily
 from .._pyi.awt.font_pitch import FontPitch as FontPitch
 from .._pyi.awt.font_relief import FontRelief as FontRelief
-from .._pyi.awt.font_slant import FontSlant as FontSlant
 from .._pyi.awt.font_strikeout import FontStrikeout as FontStrikeout
 from .._pyi.awt.font_type import FontType as FontType
 from .._pyi.awt.font_underline import FontUnderline as FontUnderline
 from .._pyi.awt.font_weight import FontWeight as FontWeight
 from .._pyi.awt.font_width import FontWidth as FontWidth
 from .._pyi.awt.gradient import Gradient as Gradient
-from .._pyi.awt.gradient_style import GradientStyle as GradientStyle
 from .._pyi.awt.image_align import ImageAlign as ImageAlign
 from .._pyi.awt.image_draw_mode import ImageDrawMode as ImageDrawMode
 from .._pyi.awt.image_position import ImagePosition as ImagePosition
@@ -100,10 +97,8 @@ from .._pyi.awt.line_end_format import LineEndFormat as LineEndFormat
 from .._pyi.awt.menu_bar import MenuBar as MenuBar
 from .._pyi.awt.menu_event import MenuEvent as MenuEvent
 from .._pyi.awt.menu_item_style import MenuItemStyle as MenuItemStyle
-from .._pyi.awt.menu_item_type import MenuItemType as MenuItemType
 from .._pyi.awt.message_box_buttons import MessageBoxButtons as MessageBoxButtons
 from .._pyi.awt.message_box_results import MessageBoxResults as MessageBoxResults
-from .._pyi.awt.message_box_type import MessageBoxType as MessageBoxType
 from .._pyi.awt.mouse_button import MouseButton as MouseButton
 from .._pyi.awt.mouse_event import MouseEvent as MouseEvent
 from .._pyi.awt.mouse_wheel_behavior import MouseWheelBehavior as MouseWheelBehavior
@@ -115,8 +110,6 @@ from .._pyi.awt.popup_menu_direction import PopupMenuDirection as PopupMenuDirec
 from .._pyi.awt.pos_size import PosSize as PosSize
 from .._pyi.awt.printer_exception import PrinterException as PrinterException
 from .._pyi.awt.printer_server import PrinterServer as PrinterServer
-from .._pyi.awt.push_button_type import PushButtonType as PushButtonType
-from .._pyi.awt.raster_operation import RasterOperation as RasterOperation
 from .._pyi.awt.rectangle import Rectangle as Rectangle
 from .._pyi.awt.roadmap_item import RoadmapItem as RoadmapItem
 from .._pyi.awt.scroll_bar_orientation import ScrollBarOrientation as ScrollBarOrientation
@@ -189,7 +182,6 @@ from .._pyi.awt.vcl_container_event import VclContainerEvent as VclContainerEven
 from .._pyi.awt.vcl_window_peer_attribute import VclWindowPeerAttribute as VclWindowPeerAttribute
 from .._pyi.awt.visual_effect import VisualEffect as VisualEffect
 from .._pyi.awt.window_attribute import WindowAttribute as WindowAttribute
-from .._pyi.awt.window_class import WindowClass as WindowClass
 from .._pyi.awt.window_descriptor import WindowDescriptor as WindowDescriptor
 from .._pyi.awt.window_event import WindowEvent as WindowEvent
 from .._pyi.awt.x_action_listener import XActionListener as XActionListener

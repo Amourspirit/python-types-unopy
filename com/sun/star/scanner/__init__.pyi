@@ -14,7 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from .._pyi.scanner.scan_error import ScanError as ScanError
 from .._pyi.scanner.scanner_context import ScannerContext as ScannerContext
 from .._pyi.scanner.scanner_exception import ScannerException as ScannerException
 from .._pyi.scanner.scanner_manager import ScannerManager as ScannerManager

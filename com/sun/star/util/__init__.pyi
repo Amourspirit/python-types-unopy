@@ -24,7 +24,6 @@ from .._pyi.util.changes_set import ChangesSet as ChangesSet
 from .._pyi.util.close_veto_exception import CloseVetoException as CloseVetoException
 from .._pyi.util.color import Color as Color
 from .._pyi.util.data_editor_event import DataEditorEvent as DataEditorEvent
-from .._pyi.util.data_editor_event_type import DataEditorEventType as DataEditorEventType
 from .._pyi.util.date import Date as Date
 from .._pyi.util.date_time import DateTime as DateTime
 from .._pyi.util.date_time_range import DateTimeRange as DateTimeRange
@@ -53,7 +52,6 @@ from .._pyi.util.path_settings import PathSettings as PathSettings
 from .._pyi.util.path_substitution import PathSubstitution as PathSubstitution
 from .._pyi.util.replace_descriptor import ReplaceDescriptor as ReplaceDescriptor
 from .._pyi.util.revision_tag import RevisionTag as RevisionTag
-from .._pyi.util.search_algorithms import SearchAlgorithms as SearchAlgorithms
 from .._pyi.util.search_algorithms2 import SearchAlgorithms2 as SearchAlgorithms2
 from .._pyi.util.search_descriptor import SearchDescriptor as SearchDescriptor
 from .._pyi.util.search_flags import SearchFlags as SearchFlags
@@ -63,13 +61,11 @@ from .._pyi.util.search_result import SearchResult as SearchResult
 from .._pyi.util.sort_descriptor import SortDescriptor as SortDescriptor
 from .._pyi.util.sort_descriptor2 import SortDescriptor2 as SortDescriptor2
 from .._pyi.util.sort_field import SortField as SortField
-from .._pyi.util.sort_field_type import SortFieldType as SortFieldType
 from .._pyi.util.sortable import Sortable as Sortable
 from .._pyi.util.text_search import TextSearch as TextSearch
 from .._pyi.util.text_search2 import TextSearch2 as TextSearch2
 from .._pyi.util.time import Time as Time
 from .._pyi.util.time_with_timezone import TimeWithTimezone as TimeWithTimezone
-from .._pyi.util.tri_state import TriState as TriState
 from .._pyi.util.url import URL as URL
 from .._pyi.util.url_transformer import URLTransformer as URLTransformer
 from .._pyi.util.uri_abbreviation import UriAbbreviation as UriAbbreviation

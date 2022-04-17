@@ -36,7 +36,6 @@ from .._pyi.animations.parallel_time_container import ParallelTimeContainer as P
 from .._pyi.animations.sequence_time_container import SequenceTimeContainer as SequenceTimeContainer
 from .._pyi.animations.target_properties import TargetProperties as TargetProperties
 from .._pyi.animations.time_filter_pair import TimeFilterPair as TimeFilterPair
-from .._pyi.animations.timing import Timing as Timing
 from .._pyi.animations.transition_sub_type import TransitionSubType as TransitionSubType
 from .._pyi.animations.transition_type import TransitionType as TransitionType
 from .._pyi.animations.value_pair import ValuePair as ValuePair

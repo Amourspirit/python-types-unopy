@@ -41,7 +41,6 @@ from .._pyi.frame.document_templates import DocumentTemplates as DocumentTemplat
 from .._pyi.frame.double_initialization_exception import DoubleInitializationException as DoubleInitializationException
 from .._pyi.frame.feature_state_event import FeatureStateEvent as FeatureStateEvent
 from .._pyi.frame.frame import Frame as Frame
-from .._pyi.frame.frame_action import FrameAction as FrameAction
 from .._pyi.frame.frame_action_event import FrameActionEvent as FrameActionEvent
 from .._pyi.frame.frame_control import FrameControl as FrameControl
 from .._pyi.frame.frame_loader import FrameLoader as FrameLoader

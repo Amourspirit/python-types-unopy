@@ -29,7 +29,6 @@ from .._pyi.rendering.color_profile import ColorProfile as ColorProfile
 from .._pyi.rendering.color_space_type import ColorSpaceType as ColorSpaceType
 from .._pyi.rendering.composite_operation import CompositeOperation as CompositeOperation
 from .._pyi.rendering.emphasis_mark import EmphasisMark as EmphasisMark
-from .._pyi.rendering.fill_rule import FillRule as FillRule
 from .._pyi.rendering.floating_point_bitmap_format import FloatingPointBitmapFormat as FloatingPointBitmapFormat
 from .._pyi.rendering.floating_point_bitmap_layout import FloatingPointBitmapLayout as FloatingPointBitmapLayout
 from .._pyi.rendering.font_info import FontInfo as FontInfo

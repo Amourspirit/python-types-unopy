@@ -35,7 +35,6 @@ from .._pyi.beans.property_exist_exception import PropertyExistException as Prop
 from .._pyi.beans.property_set import PropertySet as PropertySet
 from .._pyi.beans.property_set_info_change import PropertySetInfoChange as PropertySetInfoChange
 from .._pyi.beans.property_set_info_change_event import PropertySetInfoChangeEvent as PropertySetInfoChangeEvent
-from .._pyi.beans.property_state import PropertyState as PropertyState
 from .._pyi.beans.property_state_change_event import PropertyStateChangeEvent as PropertyStateChangeEvent
 from .._pyi.beans.property_value import PropertyValue as PropertyValue
 from .._pyi.beans.property_values import PropertyValues as PropertyValues

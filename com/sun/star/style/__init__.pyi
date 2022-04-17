@@ -14,7 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from .._pyi.style.break_type import BreakType as BreakType
 from .._pyi.style.case_map import CaseMap as CaseMap
 from .._pyi.style.cell_style import CellStyle as CellStyle
 from .._pyi.style.character_properties import CharacterProperties as CharacterProperties
@@ -23,8 +22,6 @@ from .._pyi.style.character_properties_complex import CharacterPropertiesComplex
 from .._pyi.style.character_style import CharacterStyle as CharacterStyle
 from .._pyi.style.drop_cap_format import DropCapFormat as DropCapFormat
 from .._pyi.style.footnote_line_style import FootnoteLineStyle as FootnoteLineStyle
-from .._pyi.style.graphic_location import GraphicLocation as GraphicLocation
-from .._pyi.style.horizontal_alignment import HorizontalAlignment as HorizontalAlignment
 from .._pyi.style.line_number_position import LineNumberPosition as LineNumberPosition
 from .._pyi.style.line_spacing import LineSpacing as LineSpacing
 from .._pyi.style.line_spacing_mode import LineSpacingMode as LineSpacingMode
@@ -34,8 +31,6 @@ from .._pyi.style.numbering_rule import NumberingRule as NumberingRule
 from .._pyi.style.numbering_type import NumberingType as NumberingType
 from .._pyi.style.page_properties import PageProperties as PageProperties
 from .._pyi.style.page_style import PageStyle as PageStyle
-from .._pyi.style.page_style_layout import PageStyleLayout as PageStyleLayout
-from .._pyi.style.paragraph_adjust import ParagraphAdjust as ParagraphAdjust
 from .._pyi.style.paragraph_properties import ParagraphProperties as ParagraphProperties
 from .._pyi.style.paragraph_properties_asian import ParagraphPropertiesAsian as ParagraphPropertiesAsian
 from .._pyi.style.paragraph_properties_complex import ParagraphPropertiesComplex as ParagraphPropertiesComplex
@@ -44,9 +39,7 @@ from .._pyi.style.paragraph_style_category import ParagraphStyleCategory as Para
 from .._pyi.style.style import Style as Style
 from .._pyi.style.style_families import StyleFamilies as StyleFamilies
 from .._pyi.style.style_family import StyleFamily as StyleFamily
-from .._pyi.style.tab_align import TabAlign as TabAlign
 from .._pyi.style.tab_stop import TabStop as TabStop
-from .._pyi.style.vertical_alignment import VerticalAlignment as VerticalAlignment
 from .._pyi.style.x_auto_style import XAutoStyle as XAutoStyle
 from .._pyi.style.x_auto_style_family import XAutoStyleFamily as XAutoStyleFamily
 from .._pyi.style.x_auto_styles import XAutoStyles as XAutoStyles

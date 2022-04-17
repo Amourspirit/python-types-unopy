@@ -17,7 +17,6 @@
 from .._pyi.linguistic2.conversion_dictionary import ConversionDictionary as ConversionDictionary
 from .._pyi.linguistic2.conversion_dictionary_list import ConversionDictionaryList as ConversionDictionaryList
 from .._pyi.linguistic2.conversion_dictionary_type import ConversionDictionaryType as ConversionDictionaryType
-from .._pyi.linguistic2.conversion_direction import ConversionDirection as ConversionDirection
 from .._pyi.linguistic2.conversion_property_type import ConversionPropertyType as ConversionPropertyType
 from .._pyi.linguistic2.dictionary import Dictionary as Dictionary
 from .._pyi.linguistic2.dictionary_event import DictionaryEvent as DictionaryEvent
@@ -25,7 +24,6 @@ from .._pyi.linguistic2.dictionary_event_flags import DictionaryEventFlags as Di
 from .._pyi.linguistic2.dictionary_list import DictionaryList as DictionaryList
 from .._pyi.linguistic2.dictionary_list_event import DictionaryListEvent as DictionaryListEvent
 from .._pyi.linguistic2.dictionary_list_event_flags import DictionaryListEventFlags as DictionaryListEventFlags
-from .._pyi.linguistic2.dictionary_type import DictionaryType as DictionaryType
 from .._pyi.linguistic2.hangul_hanja_conversion_dictionary import HangulHanjaConversionDictionary as HangulHanjaConversionDictionary
 from .._pyi.linguistic2.hyphenator import Hyphenator as Hyphenator
 from .._pyi.linguistic2.language_guessing import LanguageGuessing as LanguageGuessing

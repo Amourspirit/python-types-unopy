@@ -16,7 +16,6 @@
 #
 from .._pyi.inspection.default_help_provider import DefaultHelpProvider as DefaultHelpProvider
 from .._pyi.inspection.generic_property_handler import GenericPropertyHandler as GenericPropertyHandler
-from .._pyi.inspection.interactive_selection_result import InteractiveSelectionResult as InteractiveSelectionResult
 from .._pyi.inspection.line_descriptor import LineDescriptor as LineDescriptor
 from .._pyi.inspection.object_inspector import ObjectInspector as ObjectInspector
 from .._pyi.inspection.object_inspector_model import ObjectInspectorModel as ObjectInspectorModel

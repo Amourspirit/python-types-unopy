@@ -17,17 +17,13 @@
 from .._pyi.view.document_zoom_type import DocumentZoomType as DocumentZoomType
 from .._pyi.view.duplex_mode import DuplexMode as DuplexMode
 from .._pyi.view.office_document_view import OfficeDocumentView as OfficeDocumentView
-from .._pyi.view.paper_format import PaperFormat as PaperFormat
-from .._pyi.view.paper_orientation import PaperOrientation as PaperOrientation
 from .._pyi.view.print_job_event import PrintJobEvent as PrintJobEvent
 from .._pyi.view.print_options import PrintOptions as PrintOptions
 from .._pyi.view.print_settings import PrintSettings as PrintSettings
-from .._pyi.view.printable_state import PrintableState as PrintableState
 from .._pyi.view.printable_state_event import PrintableStateEvent as PrintableStateEvent
 from .._pyi.view.printer_descriptor import PrinterDescriptor as PrinterDescriptor
 from .._pyi.view.render_descriptor import RenderDescriptor as RenderDescriptor
 from .._pyi.view.render_options import RenderOptions as RenderOptions
-from .._pyi.view.selection_type import SelectionType as SelectionType
 from .._pyi.view.view_settings import ViewSettings as ViewSettings
 from .._pyi.view.x_control_access import XControlAccess as XControlAccess
 from .._pyi.view.x_form_layer_access import XFormLayerAccess as XFormLayerAccess

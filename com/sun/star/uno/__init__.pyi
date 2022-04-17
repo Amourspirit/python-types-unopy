@@ -19,7 +19,6 @@ from .._pyi.uno.exception import Exception as Exception
 from .._pyi.uno.naming_service import NamingService as NamingService
 from .._pyi.uno.runtime_exception import RuntimeException as RuntimeException
 from .._pyi.uno.security_exception import SecurityException as SecurityException
-from .._pyi.uno.type_class import TypeClass as TypeClass
 from .._pyi.uno.uik import Uik as Uik
 from .._pyi.uno.x_adapter import XAdapter as XAdapter
 from .._pyi.uno.x_aggregation import XAggregation as XAggregation

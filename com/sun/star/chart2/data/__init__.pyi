@@ -22,7 +22,6 @@ from ..._pyi.chart2.data.data_sink import DataSink as DataSink
 from ..._pyi.chart2.data.data_source import DataSource as DataSource
 from ..._pyi.chart2.data.database_data_provider import DatabaseDataProvider as DatabaseDataProvider
 from ..._pyi.chart2.data.highlighted_range import HighlightedRange as HighlightedRange
-from ..._pyi.chart2.data.label_origin import LabelOrigin as LabelOrigin
 from ..._pyi.chart2.data.labeled_data_sequence import LabeledDataSequence as LabeledDataSequence
 from ..._pyi.chart2.data.pivot_table_field_entry import PivotTableFieldEntry as PivotTableFieldEntry
 from ..._pyi.chart2.data.range_highlight_listener import RangeHighlightListener as RangeHighlightListener

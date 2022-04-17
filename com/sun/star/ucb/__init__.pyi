@@ -39,7 +39,6 @@ from .._pyi.ucb.command_info_change_event import CommandInfoChangeEvent as Comma
 from .._pyi.ucb.connection_mode import ConnectionMode as ConnectionMode
 from .._pyi.ucb.content import Content as Content
 from .._pyi.ucb.content_action import ContentAction as ContentAction
-from .._pyi.ucb.content_creation_error import ContentCreationError as ContentCreationError
 from .._pyi.ucb.content_creation_exception import ContentCreationException as ContentCreationException
 from .._pyi.ucb.content_event import ContentEvent as ContentEvent
 from .._pyi.ucb.content_info import ContentInfo as ContentInfo
@@ -54,7 +53,6 @@ from .._pyi.ucb.content_transmitter import ContentTransmitter as ContentTransmit
 from .._pyi.ucb.cross_reference import CrossReference as CrossReference
 from .._pyi.ucb.default_hierarchy_data_source import DefaultHierarchyDataSource as DefaultHierarchyDataSource
 from .._pyi.ucb.document_header_field import DocumentHeaderField as DocumentHeaderField
-from .._pyi.ucb.document_store_mode import DocumentStoreMode as DocumentStoreMode
 from .._pyi.ucb.duplicate_command_identifier_exception import DuplicateCommandIdentifierException as DuplicateCommandIdentifierException
 from .._pyi.ucb.duplicate_provider_exception import DuplicateProviderException as DuplicateProviderException
 from .._pyi.ucb.dynamic_result_set import DynamicResultSet as DynamicResultSet
@@ -69,7 +67,6 @@ from .._pyi.ucb.file_content import FileContent as FileContent
 from .._pyi.ucb.file_content_provider import FileContentProvider as FileContentProvider
 from .._pyi.ucb.file_system_notation import FileSystemNotation as FileSystemNotation
 from .._pyi.ucb.folder_list import FolderList as FolderList
-from .._pyi.ucb.folder_list_command import FolderListCommand as FolderListCommand
 from .._pyi.ucb.folder_list_entry import FolderListEntry as FolderListEntry
 from .._pyi.ucb.gio_content_provider import GIOContentProvider as GIOContentProvider
 from .._pyi.ucb.global_transfer_command_argument import GlobalTransferCommandArgument as GlobalTransferCommandArgument
@@ -86,7 +83,6 @@ from .._pyi.ucb.hierarchy_data_source import HierarchyDataSource as HierarchyDat
 from .._pyi.ucb.hierarchy_folder_content import HierarchyFolderContent as HierarchyFolderContent
 from .._pyi.ucb.hierarchy_link_content import HierarchyLinkContent as HierarchyLinkContent
 from .._pyi.ucb.hierarchy_root_folder_content import HierarchyRootFolderContent as HierarchyRootFolderContent
-from .._pyi.ucb.io_error_code import IOErrorCode as IOErrorCode
 from .._pyi.ucb.illegal_identifier_exception import IllegalIdentifierException as IllegalIdentifierException
 from .._pyi.ucb.insert_command_argument import InsertCommandArgument as InsertCommandArgument
 from .._pyi.ucb.insert_command_argument2 import InsertCommandArgument2 as InsertCommandArgument2
@@ -113,10 +109,7 @@ from .._pyi.ucb.list_action_type import ListActionType as ListActionType
 from .._pyi.ucb.list_event import ListEvent as ListEvent
 from .._pyi.ucb.listener_already_set_exception import ListenerAlreadySetException as ListenerAlreadySetException
 from .._pyi.ucb.lock import Lock as Lock
-from .._pyi.ucb.lock_depth import LockDepth as LockDepth
 from .._pyi.ucb.lock_entry import LockEntry as LockEntry
-from .._pyi.ucb.lock_scope import LockScope as LockScope
-from .._pyi.ucb.lock_type import LockType as LockType
 from .._pyi.ucb.missing_input_stream_exception import MissingInputStreamException as MissingInputStreamException
 from .._pyi.ucb.missing_properties_exception import MissingPropertiesException as MissingPropertiesException
 from .._pyi.ucb.name_clash import NameClash as NameClash
@@ -129,24 +122,19 @@ from .._pyi.ucb.open_command_argument import OpenCommandArgument as OpenCommandA
 from .._pyi.ucb.open_command_argument2 import OpenCommandArgument2 as OpenCommandArgument2
 from .._pyi.ucb.open_command_argument3 import OpenCommandArgument3 as OpenCommandArgument3
 from .._pyi.ucb.open_mode import OpenMode as OpenMode
-from .._pyi.ucb.outgoing_message_state import OutgoingMessageState as OutgoingMessageState
 from .._pyi.ucb.package_content_provider import PackageContentProvider as PackageContentProvider
 from .._pyi.ucb.package_folder_content import PackageFolderContent as PackageFolderContent
 from .._pyi.ucb.package_stream_content import PackageStreamContent as PackageStreamContent
 from .._pyi.ucb.persistent_property_set import PersistentPropertySet as PersistentPropertySet
 from .._pyi.ucb.post_command_argument import PostCommandArgument as PostCommandArgument
 from .._pyi.ucb.post_command_argument2 import PostCommandArgument2 as PostCommandArgument2
-from .._pyi.ucb.priority import Priority as Priority
 from .._pyi.ucb.properties_manager import PropertiesManager as PropertiesManager
 from .._pyi.ucb.property_command_argument import PropertyCommandArgument as PropertyCommandArgument
 from .._pyi.ucb.property_set_registry import PropertySetRegistry as PropertySetRegistry
 from .._pyi.ucb.property_value_info import PropertyValueInfo as PropertyValueInfo
-from .._pyi.ucb.property_value_state import PropertyValueState as PropertyValueState
 from .._pyi.ucb.recipient_info import RecipientInfo as RecipientInfo
-from .._pyi.ucb.remember_authentication import RememberAuthentication as RememberAuthentication
 from .._pyi.ucb.remote_access_content_provider import RemoteAccessContentProvider as RemoteAccessContentProvider
 from .._pyi.ucb.remote_content_provider_acceptor import RemoteContentProviderAcceptor as RemoteContentProviderAcceptor
-from .._pyi.ucb.remote_content_provider_change_action import RemoteContentProviderChangeAction as RemoteContentProviderChangeAction
 from .._pyi.ucb.remote_content_provider_change_event import RemoteContentProviderChangeEvent as RemoteContentProviderChangeEvent
 from .._pyi.ucb.remote_proxy_content_provider import RemoteProxyContentProvider as RemoteProxyContentProvider
 from .._pyi.ucb.result_set_exception import ResultSetException as ResultSetException
@@ -158,7 +146,6 @@ from .._pyi.ucb.rule_term import RuleTerm as RuleTerm
 from .._pyi.ucb.search_command_argument import SearchCommandArgument as SearchCommandArgument
 from .._pyi.ucb.search_criterium import SearchCriterium as SearchCriterium
 from .._pyi.ucb.search_info import SearchInfo as SearchInfo
-from .._pyi.ucb.search_recursion import SearchRecursion as SearchRecursion
 from .._pyi.ucb.send_info import SendInfo as SendInfo
 from .._pyi.ucb.send_media_types import SendMediaTypes as SendMediaTypes
 from .._pyi.ucb.service_not_found_exception import ServiceNotFoundException as ServiceNotFoundException
@@ -166,8 +153,6 @@ from .._pyi.ucb.simple_file_access import SimpleFileAccess as SimpleFileAccess
 from .._pyi.ucb.sorted_dynamic_result_set_factory import SortedDynamicResultSetFactory as SortedDynamicResultSetFactory
 from .._pyi.ucb.sorting_info import SortingInfo as SortingInfo
 from .._pyi.ucb.store import Store as Store
-from .._pyi.ucb.synchronize_policy import SynchronizePolicy as SynchronizePolicy
-from .._pyi.ucb.transfer_command_operation import TransferCommandOperation as TransferCommandOperation
 from .._pyi.ucb.transfer_info import TransferInfo as TransferInfo
 from .._pyi.ucb.transfer_info2 import TransferInfo2 as TransferInfo2
 from .._pyi.ucb.transfer_result import TransferResult as TransferResult
@@ -182,11 +167,9 @@ from .._pyi.ucb.unsupported_command_exception import UnsupportedCommandException
 from .._pyi.ucb.unsupported_data_sink_exception import UnsupportedDataSinkException as UnsupportedDataSinkException
 from .._pyi.ucb.unsupported_name_clash_exception import UnsupportedNameClashException as UnsupportedNameClashException
 from .._pyi.ucb.unsupported_open_mode_exception import UnsupportedOpenModeException as UnsupportedOpenModeException
-from .._pyi.ucb.verification_mode import VerificationMode as VerificationMode
 from .._pyi.ucb.web_dav_content_provider import WebDAVContentProvider as WebDAVContentProvider
 from .._pyi.ucb.web_dav_document_content import WebDAVDocumentContent as WebDAVDocumentContent
 from .._pyi.ucb.web_dav_folder_content import WebDAVFolderContent as WebDAVFolderContent
-from .._pyi.ucb.web_davhttp_method import WebDAVHTTPMethod as WebDAVHTTPMethod
 from .._pyi.ucb.welcome_dynamic_result_set_struct import WelcomeDynamicResultSetStruct as WelcomeDynamicResultSetStruct
 from .._pyi.ucb.x_any_compare import XAnyCompare as XAnyCompare
 from .._pyi.ucb.x_any_compare_factory import XAnyCompareFactory as XAnyCompareFactory
