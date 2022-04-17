@@ -15,11 +15,9 @@
 # limitations under the License.
 #
 from .._pyi.system.simple_command_mail import SimpleCommandMail as SimpleCommandMail
-from .._pyi.system.simple_mail_client_flags import SimpleMailClientFlags as SimpleMailClientFlags
 from .._pyi.system.simple_system_mail import SimpleSystemMail as SimpleSystemMail
 from .._pyi.system.system_shell_execute import SystemShellExecute as SystemShellExecute
 from .._pyi.system.system_shell_execute_exception import SystemShellExecuteException as SystemShellExecuteException
-from .._pyi.system.system_shell_execute_flags import SystemShellExecuteFlags as SystemShellExecuteFlags
 from .._pyi.system.x_simple_mail_client import XSimpleMailClient as XSimpleMailClient
 from .._pyi.system.x_simple_mail_client_supplier import XSimpleMailClientSupplier as XSimpleMailClientSupplier
 from .._pyi.system.x_simple_mail_message import XSimpleMailMessage as XSimpleMailMessage

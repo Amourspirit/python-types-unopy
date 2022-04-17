@@ -20,7 +20,6 @@ from ..._pyi.script.provider.master_script_provider_factory import MasterScriptP
 from ..._pyi.script.provider.script_error_raised_exception import ScriptErrorRaisedException as ScriptErrorRaisedException
 from ..._pyi.script.provider.script_exception_raised_exception import ScriptExceptionRaisedException as ScriptExceptionRaisedException
 from ..._pyi.script.provider.script_framework_error_exception import ScriptFrameworkErrorException as ScriptFrameworkErrorException
-from ..._pyi.script.provider.script_framework_error_type import ScriptFrameworkErrorType as ScriptFrameworkErrorType
 from ..._pyi.script.provider.script_provider import ScriptProvider as ScriptProvider
 from ..._pyi.script.provider.script_provider_for_basic import ScriptProviderForBasic as ScriptProviderForBasic
 from ..._pyi.script.provider.script_provider_for_bean_shell import ScriptProviderForBeanShell as ScriptProviderForBeanShell

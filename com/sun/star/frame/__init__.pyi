@@ -18,7 +18,6 @@ from .._pyi.frame.app_dispatch_provider import AppDispatchProvider as AppDispatc
 from .._pyi.frame.auto_recovery import AutoRecovery as AutoRecovery
 from .._pyi.frame.bibliography import Bibliography as Bibliography
 from .._pyi.frame.border_widths import BorderWidths as BorderWidths
-from .._pyi.frame.command_group import CommandGroup as CommandGroup
 from .._pyi.frame.components import Components as Components
 from .._pyi.frame.content_handler import ContentHandler as ContentHandler
 from .._pyi.frame.content_handler_factory import ContentHandlerFactory as ContentHandlerFactory
@@ -35,7 +34,6 @@ from .._pyi.frame.dispatch_provider import DispatchProvider as DispatchProvider
 from .._pyi.frame.dispatch_recorder import DispatchRecorder as DispatchRecorder
 from .._pyi.frame.dispatch_recorder_supplier import DispatchRecorderSupplier as DispatchRecorderSupplier
 from .._pyi.frame.dispatch_result_event import DispatchResultEvent as DispatchResultEvent
-from .._pyi.frame.dispatch_result_state import DispatchResultState as DispatchResultState
 from .._pyi.frame.dispatch_statement import DispatchStatement as DispatchStatement
 from .._pyi.frame.document_templates import DocumentTemplates as DocumentTemplates
 from .._pyi.frame.double_initialization_exception import DoubleInitializationException as DoubleInitializationException
@@ -45,13 +43,10 @@ from .._pyi.frame.frame_action_event import FrameActionEvent as FrameActionEvent
 from .._pyi.frame.frame_control import FrameControl as FrameControl
 from .._pyi.frame.frame_loader import FrameLoader as FrameLoader
 from .._pyi.frame.frame_loader_factory import FrameLoaderFactory as FrameLoaderFactory
-from .._pyi.frame.frame_search_flag import FrameSearchFlag as FrameSearchFlag
 from .._pyi.frame.frames_container import FramesContainer as FramesContainer
 from .._pyi.frame.global_event_broadcaster import GlobalEventBroadcaster as GlobalEventBroadcaster
 from .._pyi.frame.illegal_argument_io_exception import IllegalArgumentIOException as IllegalArgumentIOException
-from .._pyi.frame.infobar_type import InfobarType as InfobarType
 from .._pyi.frame.layout_manager import LayoutManager as LayoutManager
-from .._pyi.frame.layout_manager_events import LayoutManagerEvents as LayoutManagerEvents
 from .._pyi.frame.media_type_detection_helper import MediaTypeDetectionHelper as MediaTypeDetectionHelper
 from .._pyi.frame.module_manager import ModuleManager as ModuleManager
 from .._pyi.frame.office_frame_loader import OfficeFrameLoader as OfficeFrameLoader
@@ -75,8 +70,6 @@ from .._pyi.frame.toolbar_controller_factory import ToolbarControllerFactory as 
 from .._pyi.frame.transient_documents_document_content_factory import TransientDocumentsDocumentContentFactory as TransientDocumentsDocumentContentFactory
 from .._pyi.frame.ui_command_description import UICommandDescription as UICommandDescription
 from .._pyi.frame.unknown_module_exception import UnknownModuleException as UnknownModuleException
-from .._pyi.frame.untitled_numbers_const import UntitledNumbersConst as UntitledNumbersConst
-from .._pyi.frame.window_arrange import WindowArrange as WindowArrange
 from .._pyi.frame.x_app_dispatch_provider import XAppDispatchProvider as XAppDispatchProvider
 from .._pyi.frame.x_border_resize_listener import XBorderResizeListener as XBorderResizeListener
 from .._pyi.frame.x_browse_history_registry import XBrowseHistoryRegistry as XBrowseHistoryRegistry

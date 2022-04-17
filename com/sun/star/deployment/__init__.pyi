@@ -24,7 +24,6 @@ from .._pyi.deployment.license_exception import LicenseException as LicenseExcep
 from .._pyi.deployment.package_information_provider import PackageInformationProvider as PackageInformationProvider
 from .._pyi.deployment.package_registry_backend import PackageRegistryBackend as PackageRegistryBackend
 from .._pyi.deployment.platform_exception import PlatformException as PlatformException
-from .._pyi.deployment.prerequisites import Prerequisites as Prerequisites
 from .._pyi.deployment.update_information_entry import UpdateInformationEntry as UpdateInformationEntry
 from .._pyi.deployment.update_information_provider import UpdateInformationProvider as UpdateInformationProvider
 from .._pyi.deployment.version_exception import VersionException as VersionException

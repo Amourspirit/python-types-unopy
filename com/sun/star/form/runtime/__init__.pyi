@@ -17,7 +17,6 @@
 from ..._pyi.form.runtime.feature_state import FeatureState as FeatureState
 from ..._pyi.form.runtime.filter_event import FilterEvent as FilterEvent
 from ..._pyi.form.runtime.form_controller import FormController as FormController
-from ..._pyi.form.runtime.form_feature import FormFeature as FormFeature
 from ..._pyi.form.runtime.form_operations import FormOperations as FormOperations
 from ..._pyi.form.runtime.x_feature_invalidation import XFeatureInvalidation as XFeatureInvalidation
 from ..._pyi.form.runtime.x_filter_controller import XFilterController as XFilterController

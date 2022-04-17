@@ -33,7 +33,6 @@ from .._pyi.lang.null_pointer_exception import NullPointerException as NullPoint
 from .._pyi.lang.registry_service_manager import RegistryServiceManager as RegistryServiceManager
 from .._pyi.lang.service_manager import ServiceManager as ServiceManager
 from .._pyi.lang.service_not_registered_exception import ServiceNotRegisteredException as ServiceNotRegisteredException
-from .._pyi.lang.system_dependent import SystemDependent as SystemDependent
 from .._pyi.lang.wrapped_target_exception import WrappedTargetException as WrappedTargetException
 from .._pyi.lang.wrapped_target_runtime_exception import WrappedTargetRuntimeException as WrappedTargetRuntimeException
 from .._pyi.lang.x_component import XComponent as XComponent

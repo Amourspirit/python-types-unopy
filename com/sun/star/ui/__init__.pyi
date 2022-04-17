@@ -17,7 +17,6 @@
 from .._pyi.ui.action_trigger import ActionTrigger as ActionTrigger
 from .._pyi.ui.action_trigger_container import ActionTriggerContainer as ActionTriggerContainer
 from .._pyi.ui.action_trigger_separator import ActionTriggerSeparator as ActionTriggerSeparator
-from .._pyi.ui.action_trigger_separator_type import ActionTriggerSeparatorType as ActionTriggerSeparatorType
 from .._pyi.ui.address_book_source_dialog import AddressBookSourceDialog as AddressBookSourceDialog
 from .._pyi.ui.configurable_ui_element import ConfigurableUIElement as ConfigurableUIElement
 from .._pyi.ui.configuration_event import ConfigurationEvent as ConfigurationEvent
@@ -27,10 +26,7 @@ from .._pyi.ui.context_menu_execute_event import ContextMenuExecuteEvent as Cont
 from .._pyi.ui.document_accelerator_configuration import DocumentAcceleratorConfiguration as DocumentAcceleratorConfiguration
 from .._pyi.ui.global_accelerator_configuration import GlobalAcceleratorConfiguration as GlobalAcceleratorConfiguration
 from .._pyi.ui.image_manager import ImageManager as ImageManager
-from .._pyi.ui.image_type import ImageType as ImageType
 from .._pyi.ui.item_descriptor import ItemDescriptor as ItemDescriptor
-from .._pyi.ui.item_style import ItemStyle as ItemStyle
-from .._pyi.ui.item_type import ItemType as ItemType
 from .._pyi.ui.layout_size import LayoutSize as LayoutSize
 from .._pyi.ui.module_accelerator_configuration import ModuleAcceleratorConfiguration as ModuleAcceleratorConfiguration
 from .._pyi.ui.module_ui_category_description import ModuleUICategoryDescription as ModuleUICategoryDescription
@@ -44,7 +40,6 @@ from .._pyi.ui.ui_element import UIElement as UIElement
 from .._pyi.ui.ui_element_factory import UIElementFactory as UIElementFactory
 from .._pyi.ui.ui_element_factory_manager import UIElementFactoryManager as UIElementFactoryManager
 from .._pyi.ui.ui_element_settings import UIElementSettings as UIElementSettings
-from .._pyi.ui.ui_element_type import UIElementType as UIElementType
 from .._pyi.ui.window_content_factory import WindowContentFactory as WindowContentFactory
 from .._pyi.ui.window_content_factory_manager import WindowContentFactoryManager as WindowContentFactoryManager
 from .._pyi.ui.window_state_configuration import WindowStateConfiguration as WindowStateConfiguration

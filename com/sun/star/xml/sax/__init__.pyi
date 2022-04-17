@@ -15,7 +15,6 @@
 # limitations under the License.
 #
 from ..._pyi.xml.sax.fast_parser import FastParser as FastParser
-from ..._pyi.xml.sax.fast_token import FastToken as FastToken
 from ..._pyi.xml.sax.fast_token_handler import FastTokenHandler as FastTokenHandler
 from ..._pyi.xml.sax.input_source import InputSource as InputSource
 from ..._pyi.xml.sax.parser import Parser as Parser

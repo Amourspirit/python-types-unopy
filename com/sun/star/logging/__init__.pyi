@@ -17,7 +17,6 @@
 from .._pyi.logging.console_handler import ConsoleHandler as ConsoleHandler
 from .._pyi.logging.csv_log_formatter import CsvLogFormatter as CsvLogFormatter
 from .._pyi.logging.file_handler import FileHandler as FileHandler
-from .._pyi.logging.log_level import LogLevel as LogLevel
 from .._pyi.logging.log_record import LogRecord as LogRecord
 from .._pyi.logging.logger_pool import LoggerPool as LoggerPool
 from .._pyi.logging.plain_text_formatter import PlainTextFormatter as PlainTextFormatter

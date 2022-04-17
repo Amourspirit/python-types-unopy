@@ -15,7 +15,6 @@
 # limitations under the License.
 #
 from .._pyi.gallery.gallery_item import GalleryItem as GalleryItem
-from .._pyi.gallery.gallery_item_type import GalleryItemType as GalleryItemType
 from .._pyi.gallery.gallery_theme import GalleryTheme as GalleryTheme
 from .._pyi.gallery.gallery_theme_provider import GalleryThemeProvider as GalleryThemeProvider
 from .._pyi.gallery.x_gallery_item import XGalleryItem as XGalleryItem

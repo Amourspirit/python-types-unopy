@@ -20,8 +20,6 @@ from .._pyi.inspection.line_descriptor import LineDescriptor as LineDescriptor
 from .._pyi.inspection.object_inspector import ObjectInspector as ObjectInspector
 from .._pyi.inspection.object_inspector_model import ObjectInspectorModel as ObjectInspectorModel
 from .._pyi.inspection.property_category_descriptor import PropertyCategoryDescriptor as PropertyCategoryDescriptor
-from .._pyi.inspection.property_control_type import PropertyControlType as PropertyControlType
-from .._pyi.inspection.property_line_element import PropertyLineElement as PropertyLineElement
 from .._pyi.inspection.string_representation import StringRepresentation as StringRepresentation
 from .._pyi.inspection.x_hyperlink_control import XHyperlinkControl as XHyperlinkControl
 from .._pyi.inspection.x_numeric_control import XNumericControl as XNumericControl

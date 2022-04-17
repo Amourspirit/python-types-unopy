@@ -15,7 +15,6 @@
 # limitations under the License.
 #
 from .._pyi.chart2.axis import Axis as Axis
-from .._pyi.chart2.axis_type import AxisType as AxisType
 from .._pyi.chart2.candle_stick_chart_type import CandleStickChartType as CandleStickChartType
 from .._pyi.chart2.cartesian_coordinate_system2d import CartesianCoordinateSystem2d as CartesianCoordinateSystem2d
 from .._pyi.chart2.cartesian_coordinate_system3d import CartesianCoordinateSystem3d as CartesianCoordinateSystem3d
@@ -29,7 +28,6 @@ from .._pyi.chart2.coordinate_system_type import CoordinateSystemType as Coordin
 from .._pyi.chart2.coordinate_system_type_id import CoordinateSystemTypeID as CoordinateSystemTypeID
 from .._pyi.chart2.data_point import DataPoint as DataPoint
 from .._pyi.chart2.data_point_custom_label_field import DataPointCustomLabelField as DataPointCustomLabelField
-from .._pyi.chart2.data_point_geometry3_d import DataPointGeometry3D as DataPointGeometry3D
 from .._pyi.chart2.data_point_label import DataPointLabel as DataPointLabel
 from .._pyi.chart2.data_point_properties import DataPointProperties as DataPointProperties
 from .._pyi.chart2.data_series import DataSeries as DataSeries
@@ -50,7 +48,6 @@ from .._pyi.chart2.logarithmic_regression_curve import LogarithmicRegressionCurv
 from .._pyi.chart2.logarithmic_scaling import LogarithmicScaling as LogarithmicScaling
 from .._pyi.chart2.logic_target_model import LogicTargetModel as LogicTargetModel
 from .._pyi.chart2.moving_average_regression_curve import MovingAverageRegressionCurve as MovingAverageRegressionCurve
-from .._pyi.chart2.moving_average_type import MovingAverageType as MovingAverageType
 from .._pyi.chart2.polar_coordinate_system2d import PolarCoordinateSystem2d as PolarCoordinateSystem2d
 from .._pyi.chart2.polar_coordinate_system3d import PolarCoordinateSystem3d as PolarCoordinateSystem3d
 from .._pyi.chart2.polynomial_regression_curve import PolynomialRegressionCurve as PolynomialRegressionCurve
@@ -67,7 +64,6 @@ from .._pyi.chart2.scaling import Scaling as Scaling
 from .._pyi.chart2.standard_diagram_creation_parameters import StandardDiagramCreationParameters as StandardDiagramCreationParameters
 from .._pyi.chart2.sub_increment import SubIncrement as SubIncrement
 from .._pyi.chart2.symbol import Symbol as Symbol
-from .._pyi.chart2.tickmark_style import TickmarkStyle as TickmarkStyle
 from .._pyi.chart2.title import Title as Title
 from .._pyi.chart2.x_any_description_access import XAnyDescriptionAccess as XAnyDescriptionAccess
 from .._pyi.chart2.x_axis import XAxis as XAxis

@@ -18,17 +18,14 @@ from .._pyi.table.accessible_cell_view import AccessibleCellView as AccessibleCe
 from .._pyi.table.accessible_table_view import AccessibleTableView as AccessibleTableView
 from .._pyi.table.border_line import BorderLine as BorderLine
 from .._pyi.table.border_line2 import BorderLine2 as BorderLine2
-from .._pyi.table.border_line_style import BorderLineStyle as BorderLineStyle
 from .._pyi.table.cell import Cell as Cell
 from .._pyi.table.cell_address import CellAddress as CellAddress
 from .._pyi.table.cell_cursor import CellCursor as CellCursor
-from .._pyi.table.cell_justify_method import CellJustifyMethod as CellJustifyMethod
 from .._pyi.table.cell_properties import CellProperties as CellProperties
 from .._pyi.table.cell_range import CellRange as CellRange
 from .._pyi.table.cell_range_address import CellRangeAddress as CellRangeAddress
 from .._pyi.table.cell_range_list_source import CellRangeListSource as CellRangeListSource
 from .._pyi.table.cell_value_binding import CellValueBinding as CellValueBinding
-from .._pyi.table.cell_vert_justify2 import CellVertJustify2 as CellVertJustify2
 from .._pyi.table.list_position_cell_binding import ListPositionCellBinding as ListPositionCellBinding
 from .._pyi.table.shadow_format import ShadowFormat as ShadowFormat
 from .._pyi.table.table_border import TableBorder as TableBorder

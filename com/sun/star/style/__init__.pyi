@@ -14,28 +14,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from .._pyi.style.case_map import CaseMap as CaseMap
 from .._pyi.style.cell_style import CellStyle as CellStyle
 from .._pyi.style.character_properties import CharacterProperties as CharacterProperties
 from .._pyi.style.character_properties_asian import CharacterPropertiesAsian as CharacterPropertiesAsian
 from .._pyi.style.character_properties_complex import CharacterPropertiesComplex as CharacterPropertiesComplex
 from .._pyi.style.character_style import CharacterStyle as CharacterStyle
 from .._pyi.style.drop_cap_format import DropCapFormat as DropCapFormat
-from .._pyi.style.footnote_line_style import FootnoteLineStyle as FootnoteLineStyle
-from .._pyi.style.line_number_position import LineNumberPosition as LineNumberPosition
 from .._pyi.style.line_spacing import LineSpacing as LineSpacing
-from .._pyi.style.line_spacing_mode import LineSpacingMode as LineSpacingMode
 from .._pyi.style.numbering_alignment import NumberingAlignment as NumberingAlignment
 from .._pyi.style.numbering_level import NumberingLevel as NumberingLevel
 from .._pyi.style.numbering_rule import NumberingRule as NumberingRule
-from .._pyi.style.numbering_type import NumberingType as NumberingType
 from .._pyi.style.page_properties import PageProperties as PageProperties
 from .._pyi.style.page_style import PageStyle as PageStyle
 from .._pyi.style.paragraph_properties import ParagraphProperties as ParagraphProperties
 from .._pyi.style.paragraph_properties_asian import ParagraphPropertiesAsian as ParagraphPropertiesAsian
 from .._pyi.style.paragraph_properties_complex import ParagraphPropertiesComplex as ParagraphPropertiesComplex
 from .._pyi.style.paragraph_style import ParagraphStyle as ParagraphStyle
-from .._pyi.style.paragraph_style_category import ParagraphStyleCategory as ParagraphStyleCategory
 from .._pyi.style.style import Style as Style
 from .._pyi.style.style_families import StyleFamilies as StyleFamilies
 from .._pyi.style.style_family import StyleFamily as StyleFamily

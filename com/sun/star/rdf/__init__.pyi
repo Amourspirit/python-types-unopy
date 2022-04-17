@@ -15,7 +15,6 @@
 # limitations under the License.
 #
 from .._pyi.rdf.blank_node import BlankNode as BlankNode
-from .._pyi.rdf.file_format import FileFormat as FileFormat
 from .._pyi.rdf.literal import Literal as Literal
 from .._pyi.rdf.parse_exception import ParseException as ParseException
 from .._pyi.rdf.query_exception import QueryException as QueryException
@@ -23,7 +22,6 @@ from .._pyi.rdf.repository import Repository as Repository
 from .._pyi.rdf.repository_exception import RepositoryException as RepositoryException
 from .._pyi.rdf.statement import Statement as Statement
 from .._pyi.rdf.uri import URI as URI
-from .._pyi.rdf.ur_is import URIs as URIs
 from .._pyi.rdf.x_blank_node import XBlankNode as XBlankNode
 from .._pyi.rdf.x_document_metadata_access import XDocumentMetadataAccess as XDocumentMetadataAccess
 from .._pyi.rdf.x_document_repository import XDocumentRepository as XDocumentRepository

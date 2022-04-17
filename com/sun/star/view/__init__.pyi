@@ -14,8 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from .._pyi.view.document_zoom_type import DocumentZoomType as DocumentZoomType
-from .._pyi.view.duplex_mode import DuplexMode as DuplexMode
 from .._pyi.view.office_document_view import OfficeDocumentView as OfficeDocumentView
 from .._pyi.view.print_job_event import PrintJobEvent as PrintJobEvent
 from .._pyi.view.print_options import PrintOptions as PrintOptions

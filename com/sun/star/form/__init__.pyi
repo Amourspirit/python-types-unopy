@@ -20,7 +20,6 @@ from .._pyi.form.database_delete_event import DatabaseDeleteEvent as DatabaseDel
 from .._pyi.form.database_parameter_event import DatabaseParameterEvent as DatabaseParameterEvent
 from .._pyi.form.error_event import ErrorEvent as ErrorEvent
 from .._pyi.form.form_component import FormComponent as FormComponent
-from .._pyi.form.form_component_type import FormComponentType as FormComponentType
 from .._pyi.form.form_components import FormComponents as FormComponents
 from .._pyi.form.form_control_model import FormControlModel as FormControlModel
 from .._pyi.form.form_controller import FormController as FormController

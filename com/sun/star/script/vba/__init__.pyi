@@ -14,11 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.script.vba.vba_event_id import VBAEventId as VBAEventId
 from ..._pyi.script.vba.vba_event_processor import VBAEventProcessor as VBAEventProcessor
 from ..._pyi.script.vba.vba_macro_resolver import VBAMacroResolver as VBAMacroResolver
 from ..._pyi.script.vba.vba_script_event import VBAScriptEvent as VBAScriptEvent
-from ..._pyi.script.vba.vba_script_event_id import VBAScriptEventId as VBAScriptEventId
 from ..._pyi.script.vba.vba_spreadsheet_event_processor import VBASpreadsheetEventProcessor as VBASpreadsheetEventProcessor
 from ..._pyi.script.vba.vba_text_event_processor import VBATextEventProcessor as VBATextEventProcessor
 from ..._pyi.script.vba.xvba_compatibility import XVBACompatibility as XVBACompatibility

@@ -16,14 +16,12 @@
 #
 from .._pyi.graphic.emf_tools import EmfTools as EmfTools
 from .._pyi.graphic.graphic import Graphic as Graphic
-from .._pyi.graphic.graphic_color_mode import GraphicColorMode as GraphicColorMode
 from .._pyi.graphic.graphic_descriptor import GraphicDescriptor as GraphicDescriptor
 from .._pyi.graphic.graphic_mapper import GraphicMapper as GraphicMapper
 from .._pyi.graphic.graphic_object import GraphicObject as GraphicObject
 from .._pyi.graphic.graphic_provider import GraphicProvider as GraphicProvider
 from .._pyi.graphic.graphic_rasterizer import GraphicRasterizer as GraphicRasterizer
 from .._pyi.graphic.graphic_renderer_vcl import GraphicRendererVCL as GraphicRendererVCL
-from .._pyi.graphic.graphic_type import GraphicType as GraphicType
 from .._pyi.graphic.media_properties import MediaProperties as MediaProperties
 from .._pyi.graphic.pdf_tools import PdfTools as PdfTools
 from .._pyi.graphic.primitive2_d_tools import Primitive2DTools as Primitive2DTools

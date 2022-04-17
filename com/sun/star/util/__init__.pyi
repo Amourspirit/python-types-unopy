@@ -31,17 +31,14 @@ from .._pyi.util.date_time_with_timezone import DateTimeWithTimezone as DateTime
 from .._pyi.util.date_with_timezone import DateWithTimezone as DateWithTimezone
 from .._pyi.util.duration import Duration as Duration
 from .._pyi.util.element_change import ElementChange as ElementChange
-from .._pyi.util.endianness import Endianness as Endianness
 from .._pyi.util.invalid_state_exception import InvalidStateException as InvalidStateException
 from .._pyi.util.job_manager import JobManager as JobManager
 from .._pyi.util.language import Language as Language
 from .._pyi.util.macro_expander import MacroExpander as MacroExpander
 from .._pyi.util.malformed_number_format_exception import MalformedNumberFormatException as MalformedNumberFormatException
-from .._pyi.util.measure_unit import MeasureUnit as MeasureUnit
 from .._pyi.util.mode_change_event import ModeChangeEvent as ModeChangeEvent
 from .._pyi.util.not_locked_exception import NotLockedException as NotLockedException
 from .._pyi.util.not_numeric_exception import NotNumericException as NotNumericException
-from .._pyi.util.number_format import NumberFormat as NumberFormat
 from .._pyi.util.number_format_properties import NumberFormatProperties as NumberFormatProperties
 from .._pyi.util.number_format_settings import NumberFormatSettings as NumberFormatSettings
 from .._pyi.util.number_formats import NumberFormats as NumberFormats
@@ -52,9 +49,7 @@ from .._pyi.util.path_settings import PathSettings as PathSettings
 from .._pyi.util.path_substitution import PathSubstitution as PathSubstitution
 from .._pyi.util.replace_descriptor import ReplaceDescriptor as ReplaceDescriptor
 from .._pyi.util.revision_tag import RevisionTag as RevisionTag
-from .._pyi.util.search_algorithms2 import SearchAlgorithms2 as SearchAlgorithms2
 from .._pyi.util.search_descriptor import SearchDescriptor as SearchDescriptor
-from .._pyi.util.search_flags import SearchFlags as SearchFlags
 from .._pyi.util.search_options import SearchOptions as SearchOptions
 from .._pyi.util.search_options2 import SearchOptions2 as SearchOptions2
 from .._pyi.util.search_result import SearchResult as SearchResult
