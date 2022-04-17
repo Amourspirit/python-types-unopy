@@ -47,13 +47,11 @@ from ..._pyi.configuration.backend.merge_importer import MergeImporter as MergeI
 from ..._pyi.configuration.backend.merge_recovery_request import MergeRecoveryRequest as MergeRecoveryRequest
 from ..._pyi.configuration.backend.multi_layer_stratum import MultiLayerStratum as MultiLayerStratum
 from ..._pyi.configuration.backend.multi_stratum_backend import MultiStratumBackend as MultiStratumBackend
-from ..._pyi.configuration.backend.node_attribute import NodeAttribute as NodeAttribute
 from ..._pyi.configuration.backend.offline_backend import OfflineBackend as OfflineBackend
 from ..._pyi.configuration.backend.online_backend import OnlineBackend as OnlineBackend
 from ..._pyi.configuration.backend.platform_backend import PlatformBackend as PlatformBackend
 from ..._pyi.configuration.backend.property_info import PropertyInfo as PropertyInfo
 from ..._pyi.configuration.backend.schema import Schema as Schema
-from ..._pyi.configuration.backend.schema_attribute import SchemaAttribute as SchemaAttribute
 from ..._pyi.configuration.backend.schema_supplier import SchemaSupplier as SchemaSupplier
 from ..._pyi.configuration.backend.single_backend import SingleBackend as SingleBackend
 from ..._pyi.configuration.backend.single_backend_adapter import SingleBackendAdapter as SingleBackendAdapter

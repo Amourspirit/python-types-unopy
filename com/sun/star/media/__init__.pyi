@@ -19,4 +19,3 @@ from .._pyi.media.x_frame_grabber import XFrameGrabber as XFrameGrabber
 from .._pyi.media.x_manager import XManager as XManager
 from .._pyi.media.x_player import XPlayer as XPlayer
 from .._pyi.media.x_player_window import XPlayerWindow as XPlayerWindow
-from .._pyi.media.zoom_level import ZoomLevel as ZoomLevel

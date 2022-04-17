@@ -16,7 +16,6 @@
 #
 from ..._pyi.frame.status.clipboard_formats import ClipboardFormats as ClipboardFormats
 from ..._pyi.frame.status.font_height import FontHeight as FontHeight
-from ..._pyi.frame.status.item_state import ItemState as ItemState
 from ..._pyi.frame.status.item_status import ItemStatus as ItemStatus
 from ..._pyi.frame.status.left_right_margin import LeftRightMargin as LeftRightMargin
 from ..._pyi.frame.status.left_right_margin_scale import LeftRightMarginScale as LeftRightMarginScale

@@ -14,14 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.xml.crypto.cipher_id import CipherID as CipherID
-from ..._pyi.xml.crypto.digest_id import DigestID as DigestID
 from ..._pyi.xml.crypto.gpgse_initializer import GPGSEInitializer as GPGSEInitializer
 from ..._pyi.xml.crypto.nss_initializer import NSSInitializer as NSSInitializer
 from ..._pyi.xml.crypto.nss_profile import NSSProfile as NSSProfile
 from ..._pyi.xml.crypto.se_initializer import SEInitializer as SEInitializer
 from ..._pyi.xml.crypto.security_environment import SecurityEnvironment as SecurityEnvironment
-from ..._pyi.xml.crypto.security_operation_status import SecurityOperationStatus as SecurityOperationStatus
 from ..._pyi.xml.crypto.x_certificate_creator import XCertificateCreator as XCertificateCreator
 from ..._pyi.xml.crypto.x_cipher_context import XCipherContext as XCipherContext
 from ..._pyi.xml.crypto.x_cipher_context_supplier import XCipherContextSupplier as XCipherContextSupplier

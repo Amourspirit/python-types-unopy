@@ -16,7 +16,6 @@
 #
 from .._pyi.smarttags.smart_tag_action import SmartTagAction as SmartTagAction
 from .._pyi.smarttags.smart_tag_recognizer import SmartTagRecognizer as SmartTagRecognizer
-from .._pyi.smarttags.smart_tag_recognizer_mode import SmartTagRecognizerMode as SmartTagRecognizerMode
 from .._pyi.smarttags.x_range_based_smart_tag_recognizer import XRangeBasedSmartTagRecognizer as XRangeBasedSmartTagRecognizer
 from .._pyi.smarttags.x_smart_tag_action import XSmartTagAction as XSmartTagAction
 from .._pyi.smarttags.x_smart_tag_recognizer import XSmartTagRecognizer as XSmartTagRecognizer

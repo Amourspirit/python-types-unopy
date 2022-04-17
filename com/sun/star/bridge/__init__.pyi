@@ -19,7 +19,6 @@ from .._pyi.bridge.bridge_exists_exception import BridgeExistsException as Bridg
 from .._pyi.bridge.bridge_factory import BridgeFactory as BridgeFactory
 from .._pyi.bridge.iiop_bridge import IiopBridge as IiopBridge
 from .._pyi.bridge.invalid_protocol_change_exception import InvalidProtocolChangeException as InvalidProtocolChangeException
-from .._pyi.bridge.model_dependent import ModelDependent as ModelDependent
 from .._pyi.bridge.ole_application_registration import OleApplicationRegistration as OleApplicationRegistration
 from .._pyi.bridge.ole_bridge_supplier import OleBridgeSupplier as OleBridgeSupplier
 from .._pyi.bridge.ole_bridge_supplier2 import OleBridgeSupplier2 as OleBridgeSupplier2

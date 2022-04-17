@@ -15,7 +15,6 @@
 # limitations under the License.
 #
 from .._pyi.uri.external_uri_reference_translator import ExternalUriReferenceTranslator as ExternalUriReferenceTranslator
-from .._pyi.uri.relative_uri_excess_parent_segments import RelativeUriExcessParentSegments as RelativeUriExcessParentSegments
 from .._pyi.uri.uri_reference_factory import UriReferenceFactory as UriReferenceFactory
 from .._pyi.uri.uri_scheme_parser_vnd_do_tsun_do_tstar_do_texpand import UriSchemeParser_vndDOTsunDOTstarDOTexpand as UriSchemeParser_vndDOTsunDOTstarDOTexpand
 from .._pyi.uri.uri_scheme_parser_vnd_do_tsun_do_tstar_do_tscript import UriSchemeParser_vndDOTsunDOTstarDOTscript as UriSchemeParser_vndDOTsunDOTstarDOTscript

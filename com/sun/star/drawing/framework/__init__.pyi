@@ -14,16 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.drawing.framework.anchor_binding_mode import AnchorBindingMode as AnchorBindingMode
 from ..._pyi.drawing.framework.basic_pane_factory import BasicPaneFactory as BasicPaneFactory
 from ..._pyi.drawing.framework.basic_tool_bar_factory import BasicToolBarFactory as BasicToolBarFactory
 from ..._pyi.drawing.framework.basic_view_factory import BasicViewFactory as BasicViewFactory
-from ..._pyi.drawing.framework.border_type import BorderType as BorderType
 from ..._pyi.drawing.framework.configuration import Configuration as Configuration
 from ..._pyi.drawing.framework.configuration_change_event import ConfigurationChangeEvent as ConfigurationChangeEvent
 from ..._pyi.drawing.framework.configuration_controller import ConfigurationController as ConfigurationController
 from ..._pyi.drawing.framework.module_controller import ModuleController as ModuleController
-from ..._pyi.drawing.framework.resource_activation_mode import ResourceActivationMode as ResourceActivationMode
 from ..._pyi.drawing.framework.resource_id import ResourceId as ResourceId
 from ..._pyi.drawing.framework.tab_bar_button import TabBarButton as TabBarButton
 from ..._pyi.drawing.framework.x_configuration import XConfiguration as XConfiguration

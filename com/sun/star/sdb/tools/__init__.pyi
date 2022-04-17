@@ -14,7 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.sdb.tools.composition_type import CompositionType as CompositionType
 from ..._pyi.sdb.tools.connection_tools import ConnectionTools as ConnectionTools
 from ..._pyi.sdb.tools.x_connection_supplier import XConnectionSupplier as XConnectionSupplier
 from ..._pyi.sdb.tools.x_connection_tools import XConnectionTools as XConnectionTools

@@ -23,7 +23,6 @@ from .._pyi.task.document_password_request import DocumentPasswordRequest as Doc
 from .._pyi.task.document_password_request2 import DocumentPasswordRequest2 as DocumentPasswordRequest2
 from .._pyi.task.error_code_io_exception import ErrorCodeIOException as ErrorCodeIOException
 from .._pyi.task.error_code_request import ErrorCodeRequest as ErrorCodeRequest
-from .._pyi.task.interaction_classification import InteractionClassification as InteractionClassification
 from .._pyi.task.interaction_handler import InteractionHandler as InteractionHandler
 from .._pyi.task.interaction_request_string_resolver import InteractionRequestStringResolver as InteractionRequestStringResolver
 from .._pyi.task.job import Job as Job
@@ -35,7 +34,6 @@ from .._pyi.task.pdf_export_exception import PDFExportException as PDFExportExce
 from .._pyi.task.password_container import PasswordContainer as PasswordContainer
 from .._pyi.task.password_container_interaction_handler import PasswordContainerInteractionHandler as PasswordContainerInteractionHandler
 from .._pyi.task.password_request import PasswordRequest as PasswordRequest
-from .._pyi.task.password_request_mode import PasswordRequestMode as PasswordRequestMode
 from .._pyi.task.status_indicator_factory import StatusIndicatorFactory as StatusIndicatorFactory
 from .._pyi.task.unsupported_overwrite_request import UnsupportedOverwriteRequest as UnsupportedOverwriteRequest
 from .._pyi.task.url_record import UrlRecord as UrlRecord
