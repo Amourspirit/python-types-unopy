@@ -14,19 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from .._pyi.presentation.animation_effect import AnimationEffect as AnimationEffect
-from .._pyi.presentation.animation_speed import AnimationSpeed as AnimationSpeed
 from .._pyi.presentation.chart_shape import ChartShape as ChartShape
-from .._pyi.presentation.click_action import ClickAction as ClickAction
 from .._pyi.presentation.custom_presentation import CustomPresentation as CustomPresentation
 from .._pyi.presentation.custom_presentation_access import CustomPresentationAccess as CustomPresentationAccess
 from .._pyi.presentation.date_time_shape import DateTimeShape as DateTimeShape
 from .._pyi.presentation.document_settings import DocumentSettings as DocumentSettings
 from .._pyi.presentation.draw_page import DrawPage as DrawPage
-from .._pyi.presentation.effect_commands import EffectCommands as EffectCommands
-from .._pyi.presentation.effect_node_type import EffectNodeType as EffectNodeType
-from .._pyi.presentation.effect_preset_class import EffectPresetClass as EffectPresetClass
-from .._pyi.presentation.fade_effect import FadeEffect as FadeEffect
 from .._pyi.presentation.footer_shape import FooterShape as FooterShape
 from .._pyi.presentation.graphic_object_shape import GraphicObjectShape as GraphicObjectShape
 from .._pyi.presentation.handout_shape import HandoutShape as HandoutShape
@@ -42,16 +35,13 @@ from .._pyi.presentation.paragraph_target import ParagraphTarget as ParagraphTar
 from .._pyi.presentation.presentation import Presentation as Presentation
 from .._pyi.presentation.presentation2 import Presentation2 as Presentation2
 from .._pyi.presentation.presentation_document import PresentationDocument as PresentationDocument
-from .._pyi.presentation.presentation_range import PresentationRange as PresentationRange
 from .._pyi.presentation.presentation_view import PresentationView as PresentationView
 from .._pyi.presentation.preview_view import PreviewView as PreviewView
 from .._pyi.presentation.shape import Shape as Shape
-from .._pyi.presentation.shape_animation_sub_type import ShapeAnimationSubType as ShapeAnimationSubType
 from .._pyi.presentation.slide_number_shape import SlideNumberShape as SlideNumberShape
 from .._pyi.presentation.slide_show import SlideShow as SlideShow
 from .._pyi.presentation.slides_view import SlidesView as SlidesView
 from .._pyi.presentation.subtitle_shape import SubtitleShape as SubtitleShape
-from .._pyi.presentation.text_animation_type import TextAnimationType as TextAnimationType
 from .._pyi.presentation.title_text_shape import TitleTextShape as TitleTextShape
 from .._pyi.presentation.transition_factory import TransitionFactory as TransitionFactory
 from .._pyi.presentation.x_custom_presentation_supplier import XCustomPresentationSupplier as XCustomPresentationSupplier

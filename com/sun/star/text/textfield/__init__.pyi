@@ -52,7 +52,6 @@ from ..._pyi.text.textfield.set_expression import SetExpression as SetExpression
 from ..._pyi.text.textfield.table_count import TableCount as TableCount
 from ..._pyi.text.textfield.table_formula import TableFormula as TableFormula
 from ..._pyi.text.textfield.template_name import TemplateName as TemplateName
-from ..._pyi.text.textfield.type import Type as Type
 from ..._pyi.text.textfield.url import URL as URL
 from ..._pyi.text.textfield.user import User as User
 from ..._pyi.text.textfield.word_count import WordCount as WordCount

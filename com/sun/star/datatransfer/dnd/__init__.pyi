@@ -14,7 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.datatransfer.dnd.dnd_constants import DNDConstants as DNDConstants
 from ..._pyi.datatransfer.dnd.drag_gesture_event import DragGestureEvent as DragGestureEvent
 from ..._pyi.datatransfer.dnd.drag_source_drag_event import DragSourceDragEvent as DragSourceDragEvent
 from ..._pyi.datatransfer.dnd.drag_source_drop_event import DragSourceDropEvent as DragSourceDropEvent

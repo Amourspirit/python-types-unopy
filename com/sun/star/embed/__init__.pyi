@@ -14,19 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from .._pyi.embed.actions import Actions as Actions
-from .._pyi.embed.aspects import Aspects as Aspects
 from .._pyi.embed.base_storage import BaseStorage as BaseStorage
 from .._pyi.embed.document_closer import DocumentCloser as DocumentCloser
-from .._pyi.embed.element_modes import ElementModes as ElementModes
-from .._pyi.embed.embed_map_units import EmbedMapUnits as EmbedMapUnits
-from .._pyi.embed.embed_misc import EmbedMisc as EmbedMisc
-from .._pyi.embed.embed_states import EmbedStates as EmbedStates
-from .._pyi.embed.embed_update_modes import EmbedUpdateModes as EmbedUpdateModes
-from .._pyi.embed.embed_verbs import EmbedVerbs as EmbedVerbs
 from .._pyi.embed.embedded_object_creator import EmbeddedObjectCreator as EmbeddedObjectCreator
 from .._pyi.embed.embedded_object_descriptor import EmbeddedObjectDescriptor as EmbeddedObjectDescriptor
-from .._pyi.embed.entry_init_modes import EntryInitModes as EntryInitModes
 from .._pyi.embed.file_system_storage import FileSystemStorage as FileSystemStorage
 from .._pyi.embed.file_system_storage_factory import FileSystemStorageFactory as FileSystemStorageFactory
 from .._pyi.embed.hatch_window_factory import HatchWindowFactory as HatchWindowFactory
@@ -44,12 +35,10 @@ from .._pyi.embed.object_save_veto_exception import ObjectSaveVetoException as O
 from .._pyi.embed.state_change_in_progress_exception import StateChangeInProgressException as StateChangeInProgressException
 from .._pyi.embed.storage import Storage as Storage
 from .._pyi.embed.storage_factory import StorageFactory as StorageFactory
-from .._pyi.embed.storage_formats import StorageFormats as StorageFormats
 from .._pyi.embed.storage_stream import StorageStream as StorageStream
 from .._pyi.embed.storage_wrapped_target_exception import StorageWrappedTargetException as StorageWrappedTargetException
 from .._pyi.embed.unreachable_state_exception import UnreachableStateException as UnreachableStateException
 from .._pyi.embed.use_backup_exception import UseBackupException as UseBackupException
-from .._pyi.embed.verb_attributes import VerbAttributes as VerbAttributes
 from .._pyi.embed.verb_descriptor import VerbDescriptor as VerbDescriptor
 from .._pyi.embed.visual_representation import VisualRepresentation as VisualRepresentation
 from .._pyi.embed.wrong_state_exception import WrongStateException as WrongStateException

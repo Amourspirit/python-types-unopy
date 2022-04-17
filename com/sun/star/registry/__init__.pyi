@@ -21,8 +21,6 @@ from .._pyi.registry.invalid_registry_exception import InvalidRegistryException 
 from .._pyi.registry.invalid_value_exception import InvalidValueException as InvalidValueException
 from .._pyi.registry.merge_conflict_exception import MergeConflictException as MergeConflictException
 from .._pyi.registry.nested_registry import NestedRegistry as NestedRegistry
-from .._pyi.registry.registry_key_type import RegistryKeyType as RegistryKeyType
-from .._pyi.registry.registry_value_type import RegistryValueType as RegistryValueType
 from .._pyi.registry.simple_registry import SimpleRegistry as SimpleRegistry
 from .._pyi.registry.x_implementation_registration import XImplementationRegistration as XImplementationRegistration
 from .._pyi.registry.x_implementation_registration2 import XImplementationRegistration2 as XImplementationRegistration2

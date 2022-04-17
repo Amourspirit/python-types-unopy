@@ -14,26 +14,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from .._pyi.report.calculation import Calculation as Calculation
 from .._pyi.report.fixed_line import FixedLine as FixedLine
 from .._pyi.report.fixed_text import FixedText as FixedText
-from .._pyi.report.force_new_page import ForceNewPage as ForceNewPage
 from .._pyi.report.format_condition import FormatCondition as FormatCondition
 from .._pyi.report.formatted_field import FormattedField as FormattedField
 from .._pyi.report.function import Function as Function
 from .._pyi.report.group import Group as Group
-from .._pyi.report.group_keep_together import GroupKeepTogether as GroupKeepTogether
-from .._pyi.report.group_on import GroupOn as GroupOn
 from .._pyi.report.groups import Groups as Groups
 from .._pyi.report.image_control import ImageControl as ImageControl
-from .._pyi.report.keep_together import KeepTogether as KeepTogether
 from .._pyi.report.report_control_format import ReportControlFormat as ReportControlFormat
 from .._pyi.report.report_control_model import ReportControlModel as ReportControlModel
 from .._pyi.report.report_definition import ReportDefinition as ReportDefinition
 from .._pyi.report.report_engine import ReportEngine as ReportEngine
-from .._pyi.report.report_print_option import ReportPrintOption as ReportPrintOption
 from .._pyi.report.section import Section as Section
-from .._pyi.report.section_page_break import SectionPageBreak as SectionPageBreak
 from .._pyi.report.shape import Shape as Shape
 from .._pyi.report.x_fixed_line import XFixedLine as XFixedLine
 from .._pyi.report.x_fixed_text import XFixedText as XFixedText

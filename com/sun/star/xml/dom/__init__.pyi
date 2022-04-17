@@ -15,11 +15,8 @@
 # limitations under the License.
 #
 from ..._pyi.xml.dom.dom_exception import DOMException as DOMException
-from ..._pyi.xml.dom.dom_exception_type import DOMExceptionType as DOMExceptionType
 from ..._pyi.xml.dom.document_builder import DocumentBuilder as DocumentBuilder
-from ..._pyi.xml.dom.node_type import NodeType as NodeType
 from ..._pyi.xml.dom.sax_document_builder import SAXDocumentBuilder as SAXDocumentBuilder
-from ..._pyi.xml.dom.sax_document_builder_state import SAXDocumentBuilderState as SAXDocumentBuilderState
 from ..._pyi.xml.dom.x_attr import XAttr as XAttr
 from ..._pyi.xml.dom.xcdata_section import XCDATASection as XCDATASection
 from ..._pyi.xml.dom.x_character_data import XCharacterData as XCharacterData

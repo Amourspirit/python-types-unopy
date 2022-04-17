@@ -19,7 +19,6 @@ from .._pyi.mozilla.menu_proxy import MenuProxy as MenuProxy
 from .._pyi.mozilla.menu_proxy_listener import MenuProxyListener as MenuProxyListener
 from .._pyi.mozilla.menu_single_change import MenuSingleChange as MenuSingleChange
 from .._pyi.mozilla.mozilla_bootstrap import MozillaBootstrap as MozillaBootstrap
-from .._pyi.mozilla.mozilla_product_type import MozillaProductType as MozillaProductType
 from .._pyi.mozilla.x_close_session_listener import XCloseSessionListener as XCloseSessionListener
 from .._pyi.mozilla.x_code_proxy import XCodeProxy as XCodeProxy
 from .._pyi.mozilla.x_menu_proxy import XMenuProxy as XMenuProxy

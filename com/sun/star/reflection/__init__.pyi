@@ -15,17 +15,13 @@
 # limitations under the License.
 #
 from .._pyi.reflection.core_reflection import CoreReflection as CoreReflection
-from .._pyi.reflection.field_access_mode import FieldAccessMode as FieldAccessMode
 from .._pyi.reflection.invalid_type_name_exception import InvalidTypeNameException as InvalidTypeNameException
 from .._pyi.reflection.invocation_target_exception import InvocationTargetException as InvocationTargetException
-from .._pyi.reflection.method_mode import MethodMode as MethodMode
 from .._pyi.reflection.no_such_type_name_exception import NoSuchTypeNameException as NoSuchTypeNameException
 from .._pyi.reflection.param_info import ParamInfo as ParamInfo
-from .._pyi.reflection.param_mode import ParamMode as ParamMode
 from .._pyi.reflection.proxy_factory import ProxyFactory as ProxyFactory
 from .._pyi.reflection.type_description_manager import TypeDescriptionManager as TypeDescriptionManager
 from .._pyi.reflection.type_description_provider import TypeDescriptionProvider as TypeDescriptionProvider
-from .._pyi.reflection.type_description_search_depth import TypeDescriptionSearchDepth as TypeDescriptionSearchDepth
 from .._pyi.reflection.x_array_type_description import XArrayTypeDescription as XArrayTypeDescription
 from .._pyi.reflection.x_compound_type_description import XCompoundTypeDescription as XCompoundTypeDescription
 from .._pyi.reflection.x_constant_type_description import XConstantTypeDescription as XConstantTypeDescription

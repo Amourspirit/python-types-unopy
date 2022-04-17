@@ -14,10 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from .._pyi.sdbcx.check_option import CheckOption as CheckOption
 from .._pyi.sdbcx.column import Column as Column
 from .._pyi.sdbcx.column_descriptor import ColumnDescriptor as ColumnDescriptor
-from .._pyi.sdbcx.compare_bookmark import CompareBookmark as CompareBookmark
 from .._pyi.sdbcx.container import Container as Container
 from .._pyi.sdbcx.database_definition import DatabaseDefinition as DatabaseDefinition
 from .._pyi.sdbcx.descriptor import Descriptor as Descriptor
@@ -32,10 +30,7 @@ from .._pyi.sdbcx.key import Key as Key
 from .._pyi.sdbcx.key_column import KeyColumn as KeyColumn
 from .._pyi.sdbcx.key_column_descriptor import KeyColumnDescriptor as KeyColumnDescriptor
 from .._pyi.sdbcx.key_descriptor import KeyDescriptor as KeyDescriptor
-from .._pyi.sdbcx.key_type import KeyType as KeyType
 from .._pyi.sdbcx.prepared_statement import PreparedStatement as PreparedStatement
-from .._pyi.sdbcx.privilege import Privilege as Privilege
-from .._pyi.sdbcx.privilege_object import PrivilegeObject as PrivilegeObject
 from .._pyi.sdbcx.reference_column import ReferenceColumn as ReferenceColumn
 from .._pyi.sdbcx.result_set import ResultSet as ResultSet
 from .._pyi.sdbcx.statement import Statement as Statement

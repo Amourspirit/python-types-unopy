@@ -17,7 +17,6 @@
 from ..._pyi.datatransfer.clipboard.clipboard_event import ClipboardEvent as ClipboardEvent
 from ..._pyi.datatransfer.clipboard.clipboard_manager import ClipboardManager as ClipboardManager
 from ..._pyi.datatransfer.clipboard.generic_clipboard import GenericClipboard as GenericClipboard
-from ..._pyi.datatransfer.clipboard.rendering_capabilities import RenderingCapabilities as RenderingCapabilities
 from ..._pyi.datatransfer.clipboard.system_clipboard import SystemClipboard as SystemClipboard
 from ..._pyi.datatransfer.clipboard.x_clipboard import XClipboard as XClipboard
 from ..._pyi.datatransfer.clipboard.x_clipboard_ex import XClipboardEx as XClipboardEx

@@ -18,7 +18,6 @@ from .._pyi.mail.mail_attachment import MailAttachment as MailAttachment
 from .._pyi.mail.mail_exception import MailException as MailException
 from .._pyi.mail.mail_message import MailMessage as MailMessage
 from .._pyi.mail.mail_service_provider import MailServiceProvider as MailServiceProvider
-from .._pyi.mail.mail_service_type import MailServiceType as MailServiceType
 from .._pyi.mail.no_mail_service_provider_exception import NoMailServiceProviderException as NoMailServiceProviderException
 from .._pyi.mail.no_mail_transport_provider_exception import NoMailTransportProviderException as NoMailTransportProviderException
 from .._pyi.mail.send_mail_message_failed_exception import SendMailMessageFailedException as SendMailMessageFailedException
