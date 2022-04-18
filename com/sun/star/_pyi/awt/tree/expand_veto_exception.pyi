@@ -19,7 +19,6 @@
 # Namespace: com.sun.star.awt.tree
 # Libre Office Version: 7.3
 from typing_extensions import Literal
-from ooo.oenv.env_const import UNO_NONE
 import typing
 from ...util.veto_exception import VetoException as VetoException_bdad0c13
 from ...uno.x_interface import XInterface as XInterface_8f010a43

@@ -19,7 +19,6 @@
 # Namespace: com.sun.star.sdb
 # Libre Office Version: 7.3
 from typing_extensions import Literal
-from ooo.oenv.env_const import UNO_NONE
 import typing
 from ..sdbc.sql_warning import SQLWarning as SQLWarning_96f10a6a
 from ..uno.x_interface import XInterface as XInterface_8f010a43

@@ -19,7 +19,6 @@
 # Namespace: com.sun.star.configuration
 # Libre Office Version: 7.3
 from typing_extensions import Literal
-from ooo.oenv.env_const import UNO_NONE
 import typing
 from .cannot_load_configuration_exception import CannotLoadConfigurationException as CannotLoadConfigurationException_b325176a
 from ..uno.x_interface import XInterface as XInterface_8f010a43
