@@ -19,7 +19,6 @@
 # Namespace: com.sun.star.java
 # Libre Office Version: 7.3
 from typing_extensions import Literal
-from ooo.oenv.env_const import UNO_NONE
 import typing
 from .java_initialization_exception import JavaInitializationException as JavaInitializationException_8b6211a3
 from ..uno.x_interface import XInterface as XInterface_8f010a43
