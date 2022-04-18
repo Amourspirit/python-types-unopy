@@ -19,7 +19,6 @@
 # Namespace: com.sun.star.xml.sax
 # Libre Office Version: 7.3
 from typing_extensions import Literal
-from ooo.oenv.env_const import UNO_NONE
 import typing
 from .sax_exception import SAXException as SAXException_d1a00c6e
 from ...uno.x_interface import XInterface as XInterface_8f010a43

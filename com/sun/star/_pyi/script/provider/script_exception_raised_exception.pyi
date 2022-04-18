@@ -19,7 +19,6 @@
 # Namespace: com.sun.star.script.provider
 # Libre Office Version: 7.3
 from typing_extensions import Literal
-from ooo.oenv.env_const import UNO_NONE
 import typing
 from .script_error_raised_exception import ScriptErrorRaisedException as ScriptErrorRaisedException_585f15bc
 from ...uno.x_interface import XInterface as XInterface_8f010a43

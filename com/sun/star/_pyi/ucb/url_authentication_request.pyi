@@ -19,7 +19,6 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.3
 from typing_extensions import Literal
-from ooo.oenv.env_const import UNO_NONE
 import typing
 from .authentication_request import AuthenticationRequest as AuthenticationRequest_1b520eeb
 from ..uno.x_interface import XInterface as XInterface_8f010a43

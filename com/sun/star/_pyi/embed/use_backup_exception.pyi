@@ -19,7 +19,6 @@
 # Namespace: com.sun.star.embed
 # Libre Office Version: 7.3
 from typing_extensions import Literal
-from ooo.oenv.env_const import UNO_NONE
 import typing
 from ..io.io_exception import IOException as IOException_8c450a27
 from ..uno.x_interface import XInterface as XInterface_8f010a43
