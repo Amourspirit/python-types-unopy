@@ -99,4 +99,5 @@ dependencies:
     - sphinxcontrib-serializinghtml==1.1.5
     - stevedore==3.5.0
     - typeguard==2.13.3
+    - types-uno-script==0.1.0
 prefix: .env

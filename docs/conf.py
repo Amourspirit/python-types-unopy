@@ -13,7 +13,6 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
-from src import __version__
 
 # -- Project information -----------------------------------------------------
 
@@ -22,7 +21,7 @@ copyright = '2022, :Barry-Thomas-Paul: Moss'
 author = ':Barry-Thomas-Paul: Moss'
 
 # The full version, including alpha/beta/rc tags
-release = __version__
+release = "0.3.6"
 
 
 # -- General configuration ---------------------------------------------------
