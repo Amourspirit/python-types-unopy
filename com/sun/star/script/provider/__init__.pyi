@@ -14,23 +14,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.script.provider.language_script_provider import LanguageScriptProvider as LanguageScriptProvider
-from ...._pyi.script.provider.master_script_provider import MasterScriptProvider as MasterScriptProvider
-from ...._pyi.script.provider.master_script_provider_factory import MasterScriptProviderFactory as MasterScriptProviderFactory
-from ...._pyi.script.provider.script_error_raised_exception import ScriptErrorRaisedException as ScriptErrorRaisedException
-from ...._pyi.script.provider.script_exception_raised_exception import ScriptExceptionRaisedException as ScriptExceptionRaisedException
-from ...._pyi.script.provider.script_framework_error_exception import ScriptFrameworkErrorException as ScriptFrameworkErrorException
-from ...._pyi.script.provider.script_framework_error_type import ScriptFrameworkErrorType as ScriptFrameworkErrorType
-from ...._pyi.script.provider.script_provider import ScriptProvider as ScriptProvider
-from ...._pyi.script.provider.script_provider_for_basic import ScriptProviderForBasic as ScriptProviderForBasic
-from ...._pyi.script.provider.script_provider_for_bean_shell import ScriptProviderForBeanShell as ScriptProviderForBeanShell
-from ...._pyi.script.provider.script_provider_for_java import ScriptProviderForJava as ScriptProviderForJava
-from ...._pyi.script.provider.script_provider_for_java_script import ScriptProviderForJavaScript as ScriptProviderForJavaScript
-from ...._pyi.script.provider.script_uri_helper import ScriptURIHelper as ScriptURIHelper
-from ...._pyi.script.provider.x_script import XScript as XScript
-from ...._pyi.script.provider.x_script_context import XScriptContext as XScriptContext
-from ...._pyi.script.provider.x_script_provider import XScriptProvider as XScriptProvider
-from ...._pyi.script.provider.x_script_provider_factory import XScriptProviderFactory as XScriptProviderFactory
-from ...._pyi.script.provider.x_script_provider_supplier import XScriptProviderSupplier as XScriptProviderSupplier
-from ...._pyi.script.provider.x_script_uri_helper import XScriptURIHelper as XScriptURIHelper
-from ...._pyi.script.provider.the_master_script_provider_factory import theMasterScriptProviderFactory as theMasterScriptProviderFactory
+from ..._pyi.script.provider.language_script_provider import LanguageScriptProvider as LanguageScriptProvider
+from ..._pyi.script.provider.master_script_provider import MasterScriptProvider as MasterScriptProvider
+from ..._pyi.script.provider.master_script_provider_factory import MasterScriptProviderFactory as MasterScriptProviderFactory
+from ..._pyi.script.provider.script_error_raised_exception import ScriptErrorRaisedException as ScriptErrorRaisedException
+from ..._pyi.script.provider.script_exception_raised_exception import ScriptExceptionRaisedException as ScriptExceptionRaisedException
+from ..._pyi.script.provider.script_framework_error_exception import ScriptFrameworkErrorException as ScriptFrameworkErrorException
+from ..._pyi.script.provider.script_provider import ScriptProvider as ScriptProvider
+from ..._pyi.script.provider.script_provider_for_basic import ScriptProviderForBasic as ScriptProviderForBasic
+from ..._pyi.script.provider.script_provider_for_bean_shell import ScriptProviderForBeanShell as ScriptProviderForBeanShell
+from ..._pyi.script.provider.script_provider_for_java import ScriptProviderForJava as ScriptProviderForJava
+from ..._pyi.script.provider.script_provider_for_java_script import ScriptProviderForJavaScript as ScriptProviderForJavaScript
+from ..._pyi.script.provider.script_uri_helper import ScriptURIHelper as ScriptURIHelper
+from ..._pyi.script.provider.x_script import XScript as XScript
+from ..._pyi.script.provider.x_script_context import XScriptContext as XScriptContext
+from ..._pyi.script.provider.x_script_provider import XScriptProvider as XScriptProvider
+from ..._pyi.script.provider.x_script_provider_factory import XScriptProviderFactory as XScriptProviderFactory
+from ..._pyi.script.provider.x_script_provider_supplier import XScriptProviderSupplier as XScriptProviderSupplier
+from ..._pyi.script.provider.x_script_uri_helper import XScriptURIHelper as XScriptURIHelper
+from ..._pyi.script.provider.the_master_script_provider_factory import theMasterScriptProviderFactory as theMasterScriptProviderFactory

@@ -14,14 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.frame.status.clipboard_formats import ClipboardFormats as ClipboardFormats
-from ...._pyi.frame.status.font_height import FontHeight as FontHeight
-from ...._pyi.frame.status.item_state import ItemState as ItemState
-from ...._pyi.frame.status.item_status import ItemStatus as ItemStatus
-from ...._pyi.frame.status.left_right_margin import LeftRightMargin as LeftRightMargin
-from ...._pyi.frame.status.left_right_margin_scale import LeftRightMarginScale as LeftRightMarginScale
-from ...._pyi.frame.status.template import Template as Template
-from ...._pyi.frame.status.upper_lower_margin import UpperLowerMargin as UpperLowerMargin
-from ...._pyi.frame.status.upper_lower_margin_scale import UpperLowerMarginScale as UpperLowerMarginScale
-from ...._pyi.frame.status.verb import Verb as Verb
-from ...._pyi.frame.status.visibility import Visibility as Visibility
+from ..._pyi.frame.status.clipboard_formats import ClipboardFormats as ClipboardFormats
+from ..._pyi.frame.status.font_height import FontHeight as FontHeight
+from ..._pyi.frame.status.item_status import ItemStatus as ItemStatus
+from ..._pyi.frame.status.left_right_margin import LeftRightMargin as LeftRightMargin
+from ..._pyi.frame.status.left_right_margin_scale import LeftRightMarginScale as LeftRightMarginScale
+from ..._pyi.frame.status.template import Template as Template
+from ..._pyi.frame.status.upper_lower_margin import UpperLowerMargin as UpperLowerMargin
+from ..._pyi.frame.status.upper_lower_margin_scale import UpperLowerMarginScale as UpperLowerMarginScale
+from ..._pyi.frame.status.verb import Verb as Verb
+from ..._pyi.frame.status.visibility import Visibility as Visibility

@@ -14,5 +14,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.setup.update_check import UpdateCheck as UpdateCheck
-from ..._pyi.setup.update_check_config import UpdateCheckConfig as UpdateCheckConfig
+from .._pyi.setup.update_check import UpdateCheck as UpdateCheck
+from .._pyi.setup.update_check_config import UpdateCheckConfig as UpdateCheckConfig

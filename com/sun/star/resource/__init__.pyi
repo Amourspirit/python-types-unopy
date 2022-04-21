@@ -14,14 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.resource.missing_resource_exception import MissingResourceException as MissingResourceException
-from ..._pyi.resource.string_resource import StringResource as StringResource
-from ..._pyi.resource.string_resource_with_location import StringResourceWithLocation as StringResourceWithLocation
-from ..._pyi.resource.string_resource_with_storage import StringResourceWithStorage as StringResourceWithStorage
-from ..._pyi.resource.x_locale import XLocale as XLocale
-from ..._pyi.resource.x_string_resource_manager import XStringResourceManager as XStringResourceManager
-from ..._pyi.resource.x_string_resource_persistence import XStringResourcePersistence as XStringResourcePersistence
-from ..._pyi.resource.x_string_resource_resolver import XStringResourceResolver as XStringResourceResolver
-from ..._pyi.resource.x_string_resource_supplier import XStringResourceSupplier as XStringResourceSupplier
-from ..._pyi.resource.x_string_resource_with_location import XStringResourceWithLocation as XStringResourceWithLocation
-from ..._pyi.resource.x_string_resource_with_storage import XStringResourceWithStorage as XStringResourceWithStorage
+from .._pyi.resource.missing_resource_exception import MissingResourceException as MissingResourceException
+from .._pyi.resource.string_resource import StringResource as StringResource
+from .._pyi.resource.string_resource_with_location import StringResourceWithLocation as StringResourceWithLocation
+from .._pyi.resource.string_resource_with_storage import StringResourceWithStorage as StringResourceWithStorage
+from .._pyi.resource.x_locale import XLocale as XLocale
+from .._pyi.resource.x_string_resource_manager import XStringResourceManager as XStringResourceManager
+from .._pyi.resource.x_string_resource_persistence import XStringResourcePersistence as XStringResourcePersistence
+from .._pyi.resource.x_string_resource_resolver import XStringResourceResolver as XStringResourceResolver
+from .._pyi.resource.x_string_resource_supplier import XStringResourceSupplier as XStringResourceSupplier
+from .._pyi.resource.x_string_resource_with_location import XStringResourceWithLocation as XStringResourceWithLocation
+from .._pyi.resource.x_string_resource_with_storage import XStringResourceWithStorage as XStringResourceWithStorage

@@ -14,6 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.deployment.ui.license_dialog import LicenseDialog as LicenseDialog
-from ...._pyi.deployment.ui.package_manager_dialog import PackageManagerDialog as PackageManagerDialog
-from ...._pyi.deployment.ui.update_required_dialog import UpdateRequiredDialog as UpdateRequiredDialog
+from ..._pyi.deployment.ui.license_dialog import LicenseDialog as LicenseDialog
+from ..._pyi.deployment.ui.package_manager_dialog import PackageManagerDialog as PackageManagerDialog
+from ..._pyi.deployment.ui.update_required_dialog import UpdateRequiredDialog as UpdateRequiredDialog

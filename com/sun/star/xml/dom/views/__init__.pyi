@@ -14,5 +14,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ....._pyi.xml.dom.views.x_abstract_view import XAbstractView as XAbstractView
-from ....._pyi.xml.dom.views.x_document_view import XDocumentView as XDocumentView
+from ...._pyi.xml.dom.views.x_abstract_view import XAbstractView as XAbstractView
+from ...._pyi.xml.dom.views.x_document_view import XDocumentView as XDocumentView

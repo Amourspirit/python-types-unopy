@@ -14,6 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.report.inspection.data_provider_handler import DataProviderHandler as DataProviderHandler
-from ...._pyi.report.inspection.default_component_inspector_model import DefaultComponentInspectorModel as DefaultComponentInspectorModel
-from ...._pyi.report.inspection.report_component_handler import ReportComponentHandler as ReportComponentHandler
+from ..._pyi.report.inspection.data_provider_handler import DataProviderHandler as DataProviderHandler
+from ..._pyi.report.inspection.default_component_inspector_model import DefaultComponentInspectorModel as DefaultComponentInspectorModel
+from ..._pyi.report.inspection.report_component_handler import ReportComponentHandler as ReportComponentHandler

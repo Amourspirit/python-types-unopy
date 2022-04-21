@@ -14,8 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ...._pyi.text.fieldmaster.bibliography import Bibliography as Bibliography
-from ...._pyi.text.fieldmaster.dde import DDE as DDE
-from ...._pyi.text.fieldmaster.database import Database as Database
-from ...._pyi.text.fieldmaster.set_expression import SetExpression as SetExpression
-from ...._pyi.text.fieldmaster.user import User as User
+from ..._pyi.text.fieldmaster.bibliography import Bibliography as Bibliography
+from ..._pyi.text.fieldmaster.dde import DDE as DDE
+from ..._pyi.text.fieldmaster.database import Database as Database
+from ..._pyi.text.fieldmaster.set_expression import SetExpression as SetExpression
+from ..._pyi.text.fieldmaster.user import User as User

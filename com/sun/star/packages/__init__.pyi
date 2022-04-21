@@ -14,14 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from ..._pyi.packages.encryption_not_allowed_exception import EncryptionNotAllowedException as EncryptionNotAllowedException
-from ..._pyi.packages.no_encryption_exception import NoEncryptionException as NoEncryptionException
-from ..._pyi.packages.no_raw_format_exception import NoRawFormatException as NoRawFormatException
-from ..._pyi.packages.package import Package as Package
-from ..._pyi.packages.package_encryption import PackageEncryption as PackageEncryption
-from ..._pyi.packages.package_folder import PackageFolder as PackageFolder
-from ..._pyi.packages.package_folder_enumeration import PackageFolderEnumeration as PackageFolderEnumeration
-from ..._pyi.packages.package_stream import PackageStream as PackageStream
-from ..._pyi.packages.wrong_password_exception import WrongPasswordException as WrongPasswordException
-from ..._pyi.packages.x_data_sink_encr_support import XDataSinkEncrSupport as XDataSinkEncrSupport
-from ..._pyi.packages.x_package_encryption import XPackageEncryption as XPackageEncryption
+from .._pyi.packages.encryption_not_allowed_exception import EncryptionNotAllowedException as EncryptionNotAllowedException
+from .._pyi.packages.no_encryption_exception import NoEncryptionException as NoEncryptionException
+from .._pyi.packages.no_raw_format_exception import NoRawFormatException as NoRawFormatException
+from .._pyi.packages.package import Package as Package
+from .._pyi.packages.package_encryption import PackageEncryption as PackageEncryption
+from .._pyi.packages.package_folder import PackageFolder as PackageFolder
+from .._pyi.packages.package_folder_enumeration import PackageFolderEnumeration as PackageFolderEnumeration
+from .._pyi.packages.package_stream import PackageStream as PackageStream
+from .._pyi.packages.wrong_password_exception import WrongPasswordException as WrongPasswordException
+from .._pyi.packages.x_data_sink_encr_support import XDataSinkEncrSupport as XDataSinkEncrSupport
+from .._pyi.packages.x_package_encryption import XPackageEncryption as XPackageEncryption
