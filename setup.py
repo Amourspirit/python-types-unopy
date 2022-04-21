@@ -2,10 +2,9 @@
 import os
 import pathlib
 from setuptools import setup, find_packages
-from src import __version__
 # from scriptforge_stubs import __version__
 PKG_NAME = 'types-unopy'
-VERSION = __version__
+VERSION = '0.1.7'
 
 def package_files(directory):
     paths = []
@@ -48,7 +47,8 @@ setup(
         "Programming Language :: Python :: 3.10",
     ],
     install_requires=[
-        'typing_extensions>=3.7.4.3;python_version<"3.7"'
+        'typing_extensions>=3.7.4.3;python_version<"3.7"',
+        'types-uno-script>=0.1.0,<0.2'
     ],
     description="Type annotations for LibreOffice API",
     long_description_content_type="text/x-rst",

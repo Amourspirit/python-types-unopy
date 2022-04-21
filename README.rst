@@ -23,11 +23,11 @@ PIP
 
 **types-unopy** `PyPI <https://pypi.org/project/types-unopy/>`_
 
-Versions of this package for `LibreOffice API <https://api.libreoffice.org/>`_ ``7.2`` are below version ``0.1.0``.
+Versions of this package for `LibreOffice API <https://api.libreoffice.org/>`_ ``7.2`` are below version ``0.2.0``.
 
 .. code-block:: bash
 
-    $ pip install "types-unopy<0.1"
+    $ pip install "types-unopy<0.2"
 
 Related
 =======
