@@ -21,11 +21,21 @@ Installation
 PIP
 ---
 
-**types-unopy** `PyPI <https://pypi.org/project/types-unopy/>`_
+**types-unopy** on `PyPI <https://pypi.org/project/types-unopy/>`_
 
 .. code-block:: bash
 
     $ pip install types-unopy
+
+
+CONDA
+-----
+
+**types-unopy** on `Anaconda <https://anaconda.org/conda-forge/types-unopy>`_
+
+.. code-block:: bash
+
+    $ conda install -c conda-forge types-unopy
 
 Related
 =======
