@@ -40,8 +40,8 @@ USAGE
 
 Not all object in `LibreOffice API <https://api.libreoffice.org/>`_ can be directly imported.
 
-For instance if you need to import ``SheetCellRange`` so it can be used as type the following will fail
-at runtime.
+For instance if you need to import ``SheetCellRange`` so it can be used
+as type the following will fail at runtime.
 
 .. code-block:: python
 
@@ -52,11 +52,20 @@ The solution is to use `TYPE_CHECKING <https://docs.python.org/3/library/typing.
 
 .. code-block:: python
 
+    >>> from __future__ import annotations
     >>> from typing import TYPE_CHECKING
     >>> if TYPE_CHECKING:
     ...     from com.sun.star.sheet import SheetCellRange
     ...
-    # anything inside of TYPE_CHECKING block is ignore at runtime.
+
+Anything imported in the ``TYPE_CHECKING`` block will not be available at runtime.
+For this reason types inside the ``TYPE_CHECKING`` must be wrapped in quotes OR ``from __future__ import annotations`` must be the first line of the module.
+
+Example of wrapping type in quotes.
+
+.. code-block:: python
+
+    def do_work(range: 'SheetCellRange') -> None: ...
 
 Known Issues
 ============
