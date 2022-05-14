@@ -4,7 +4,7 @@ import pathlib
 from setuptools import setup, find_packages
 # from scriptforge_stubs import __version__
 PKG_NAME = 'types-unopy'
-VERSION = "0.4.0"
+VERSION = "0.4.3"
 
 def package_files(directory):
     paths = []
