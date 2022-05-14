@@ -7,7 +7,7 @@ This project allow typings for the full `LibreOffice API <https://api.libreoffic
 WHY
 ===
 
-Working with `LibreOffice API <https://api.libreoffice.org/>`_ in a modern IDE such as `Visual Studio Code <https://code.visualstudio.com/>`_
+Working with `LibreOffice API <https://api.libreoffice.org/>`_ in a modern code editor such as `Visual Studio Code <https://code.visualstudio.com/>`_
 there is not type support for `LibreOffice API <https://api.libreoffice.org/>`_ This project solves that Issue.
 
 VERSION
@@ -60,11 +60,20 @@ The solution is to use `TYPE_CHECKING <https://docs.python.org/3/library/typing.
 
 .. code-block:: python
 
+    >>> from __future__ import annotations
     >>> from typing import TYPE_CHECKING
     >>> if TYPE_CHECKING:
     ...     from com.sun.star.sheet import SheetCellRange
     ...
-    # anything inside of TYPE_CHECKING block is ignore at runtime.
+
+Anything imported in the ``TYPE_CHECKING`` block will not be available at runtime.
+For this reason types inside the ``TYPE_CHECKING`` must be wrapped in quotes OR ``from __future__ import annotations`` must be the first line of the module.
+
+Example of wrapping type in quotes.
+
+.. code-block:: python
+
+    def do_work(range: 'SheetCellRange') -> None: ...
 
 Known Issues
 ============
