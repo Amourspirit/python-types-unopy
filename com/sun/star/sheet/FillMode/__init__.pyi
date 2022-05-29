@@ -30,20 +30,28 @@ See Also:
     `API FillMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html#a75a9acd74effffae38daed55136b0980>`_
 """
 
-FILL_DATE_DAY: 'uno.Enum'
+AUTO: 'uno.Enum'
 """
-for every new value a single day is added.
+specifies the use of a user-defined list.
+
+function is determined automatically.
 """
-FILL_DATE_MONTH: 'uno.Enum'
+DATE: 'uno.Enum'
 """
-for every new value one month is added (day keeps unchanged).
+specifies an arithmetic series for date values.
+
+any date value matching the specified condition is valid.
 """
-FILL_DATE_WEEKDAY: 'uno.Enum'
+GROWTH: 'uno.Enum'
 """
-for every new value a single day is added, but Saturdays and Sundays are skipped.
+specifies a geometric series.
 """
-FILL_DATE_YEAR: 'uno.Enum'
+LINEAR: 'uno.Enum'
 """
-for every new value one year is added (day and month keep unchanged).
+specifies an arithmetic series.
+"""
+SIMPLE: 'uno.Enum'
+"""
+specifies a constant series.
 """
 
