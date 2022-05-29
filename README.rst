@@ -107,3 +107,16 @@ Demo
 
 .. figure:: https://user-images.githubusercontent.com/4193389/163689461-ab349f19-81b0-450b-bf49-50303a5c4da4.gif
     :alt: Example image.
+
+
+Related Projects
+================
+
+* `ooouno <https://github.com/Amourspirit/python-ooouno>`_
+* `ScriptForge Typings <https://github.com/Amourspirit/python-types-scriptforge>`_
+* `Access2base Typings <https://github.com/Amourspirit/python-types-access2base>`_
+* `LibreOffice Python UNO Examples <https://github.com/Amourspirit/python-ooouno-ex>`_
+* `LibreOffice Developer Search <https://github.com/Amourspirit/python_lo_dev_search>`_
+* `LibreOffice UNO Typings <https://github.com/Amourspirit/python-types-uno-script>`_
+* `LibreOffice Developer Search <https://github.com/Amourspirit/python_lo_dev_search>`_
+* `OOO UNO TEMPLATE <https://github.com/Amourspirit/ooo_uno_tmpl>`_
