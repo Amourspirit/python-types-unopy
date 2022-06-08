@@ -2,9 +2,13 @@
 import os
 import pathlib
 from setuptools import setup, find_packages
-# from scriptforge_stubs import __version__
+
+# prevent com.sun.star.__init__.py from raising an import error.
+os.environ["ooouno_ignore_import_error"] = "True"
+from com.sun.star import __version__
+# VERSION = '0.1.10'
+VERSION = __version__
 PKG_NAME = 'types-unopy'
-VERSION = '0.1.10'
 
 def package_files(directory):
     paths = []
