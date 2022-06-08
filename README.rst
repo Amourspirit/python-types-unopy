@@ -108,6 +108,29 @@ Demo
 .. figure:: https://user-images.githubusercontent.com/4193389/163689461-ab349f19-81b0-450b-bf49-50303a5c4da4.gif
     :alt: Example image.
 
+Special Cases
+=============
+
+By default an ``ImportError`` is raised when importing form ``com.sun.star`` at runtime.
+This is by design as the import error triggers ``uno`` to search LibreOffice API for actual import;
+Othwewise, ``com.sun.star`` is seen a namesapce import and ``uno`` is ignored.
+
+In some cases the ``ImportError`` may need to be suppressed. This is the case  in ``setup.py`` of this project.
+
+Suppressing ``ImportError`` is acomplished by adding ``"ooouno_ignore_import_error"`` to environment and setting it to ``"True"``
+
+.. code-block:: python
+
+    >>> import os
+    >>> os.environ["ooouno_ignore_import_error"] = "True" # must be string
+
+When building with `Sphinx`_ and `autodoc`_ it may be necessary to exclude uno related imports.
+This can be accomplished using the `autodoc_mock_imports <https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#confval-autodoc_mock_imports>`_ option.
+
+.. code-block:: python
+
+    # docs conf.py
+    autodoc_mock_imports = ['uno', 'unohelper', 'com']
 
 Related Projects
 ================
@@ -120,3 +143,6 @@ Related Projects
 * `LibreOffice UNO Typings <https://github.com/Amourspirit/python-types-uno-script>`_
 * `LibreOffice Developer Search <https://github.com/Amourspirit/python_lo_dev_search>`_
 * `OOO UNO TEMPLATE <https://github.com/Amourspirit/ooo_uno_tmpl>`_
+
+.. _Sphinx: https://www.sphinx-doc.org/en/master/
+.. _autodoc: https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
