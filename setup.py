@@ -2,9 +2,15 @@
 import os
 import pathlib
 from setuptools import setup, find_packages
-# from scriptforge_stubs import __version__
+
+# prevent com.sun.star.__init__.py from raising an import error.
+os.environ["ooouno_ignore_import_error"] = "True"
+from com.sun.star import __version__
+# VERSION = "0.4.5"
+# __version__ is not part of ooo_uno_tmpl output for com.sun.star.__init__.py
+# for this reason when replacing current __init__.py __version__ must be added again.
+VERSION = __version__
 PKG_NAME = 'types-unopy'
-VERSION = "0.4.4"
 
 def package_files(directory):
     paths = []
