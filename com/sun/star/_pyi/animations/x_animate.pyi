@@ -105,8 +105,7 @@ class XAnimate(XAnimationNode_1cf10eb9):
         """
         This attribute specifies an optional subitem from the target element that should be animated.
         
-        A value of zero should always be the default and animate the complete target.
-        See documentation of used animation engine for supported subitems.
+        A value of zero should always be the default and animate the complete target. See documentation of used animation engine for supported subitems.
         """
 
     @property

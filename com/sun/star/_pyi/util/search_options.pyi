@@ -89,8 +89,7 @@ class SearchOptions(object):
     @property
     def changedChars(self) -> int:
         """
-        This many characters can be different (as a replacement) between the found word and the search pattern in a \"Weighted Levenshtein
-        Distance\" search.
+        This many characters can be different (as a replacement) between the found word and the search pattern in a \"Weighted LevenshteinDistance\" search.
         """
 
 

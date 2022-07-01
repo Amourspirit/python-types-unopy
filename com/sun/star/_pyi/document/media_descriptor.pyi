@@ -19,6 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.document
 import typing
+import uno
 from abc import ABC
 if typing.TYPE_CHECKING:
     from ..beans.named_value import NamedValue as NamedValue_a37a0af3
@@ -36,8 +37,7 @@ class MediaDescriptor(ABC):
     
     This service may be represented by a com.sun.star.beans.PropertyValue[]. Such descriptors will be passed to different functions, included into possible load/save processes. Every member of such process can use this descriptor and may change it if to actualize the information about the document. So this descriptor should be used as an in/out parameter.
     
-    Note:
-    It's not allowed to hold member of this descriptor by references longer than they will be used (especially a possible stream). It's allowed to use it directly or by copying it only.
+    Note:It's not allowed to hold member of this descriptor by references longer than they will be used (especially a possible stream). It's allowed to use it directly or by copying it only.
     
     **since**
     
@@ -56,7 +56,7 @@ class MediaDescriptor(ABC):
         The encryption data is generated based on the password.
         """
     @property
-    def PostData(self) -> 'typing.Tuple[int, ...]':
+    def PostData(self) -> uno.ByteSequence:
         """
         contains the data for HTTP post method as a sequence of bytes.
         
@@ -334,8 +334,7 @@ class MediaDescriptor(ABC):
         """
         name of document referrer
         
-        A URL describing the environment of the request; e.g. a referrer may be a URL of a document, if a hyperlink inside this document is clicked to load another document. The referrer may be evaluated by the addressed UCB content or the loaded document. Without a referrer the processing of URLs that needs security checks will be denied, e.g. \"macro:\" URLs.
-        Don't be confused about the wrong spelling; it is kept for compatibility reasons.
+        A URL describing the environment of the request; e.g. a referrer may be a URL of a document, if a hyperlink inside this document is clicked to load another document. The referrer may be evaluated by the addressed UCB content or the loaded document. Without a referrer the processing of URLs that needs security checks will be denied, e.g. \"macro:\" URLs. Don't be confused about the wrong spelling; it is kept for compatibility reasons.
         """
     @property
     def RepairPackage(self) -> bool:
@@ -440,8 +439,7 @@ class MediaDescriptor(ABC):
         """
         specifies the name of the view controller to create when loading a document
         
-        If this property is used when loading a document into a frame, then it specifies the name of the view controller to create. That is, the property is passed to the document's com.sun.star.frame.XModel2.createViewController() method.
-        If the loaded document does not support the XModel2 interface, the property is ignored.
+        If this property is used when loading a document into a frame, then it specifies the name of the view controller to create. That is, the property is passed to the document's com.sun.star.frame.XModel2.createViewController() method.If the loaded document does not support the XModel2 interface, the property is ignored.
         
         **since**
         

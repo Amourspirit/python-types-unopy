@@ -65,9 +65,7 @@ class OfficeDocument(XDocumentEventBroadcaster_b2f1126a, XDocumentPropertiesSupp
         """
         controls the initial (on-load) behavior of the form controls in the document
         
-        If set to TRUE, upon loading the document, the form controls will be in design mode.
-        If set to FALSE, they will be alive, i.e. operational.
-        With this, you may control if your document works primarily as a form document.
+        If set to TRUE, upon loading the document, the form controls will be in design mode.If set to FALSE, they will be alive, i.e. operational.With this, you may control if your document works primarily as a form document.
         """
     @property
     def AutomaticControlFocus(self) -> bool:

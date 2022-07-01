@@ -114,9 +114,7 @@ class DataSource(XPropertySet_bc180bfa, XBookmarksSupplier_ee870d96, XCompletedC
         
         Effectively, the property bag represented by Settings contains two classes of properties: Pre-defined ones and user-defined ones.
         
-        Pre-defined properties are properties which are potentially used by the data source, the application UI for the data source, or a particular backend driver employed by the data source. There's a large set of such properties, no all of them are effectively used for a concrete data source, nonetheless, they're all present in the Settings.
-        Such properties are not removable from the bag, that is, their com.sun.star.beans.PropertyAttribute.REMOVABLE attribute is not set.
-        Usually, you'll find that all of this properties have the com.sun.star.beans.PropertyState.PropertyState_DEFAULT_VALUE state.
+        Pre-defined properties are properties which are potentially used by the data source, the application UI for the data source, or a particular backend driver employed by the data source. There's a large set of such properties, no all of them are effectively used for a concrete data source, nonetheless, they're all present in the Settings.Such properties are not removable from the bag, that is, their com.sun.star.beans.PropertyAttribute.REMOVABLE attribute is not set.Usually, you'll find that all of this properties have the com.sun.star.beans.PropertyState.PropertyState_DEFAULT_VALUE state.
         
         User-defined properties are the ones which are added at runtime by any instance. They might or might not be removable, this depends on whether or not the code adding them specifies the com.sun.star.beans.PropertyAttribute.REMOVABLE attribute. Also, they might or might not have a default value, determined by the com.sun.star.beans.PropertyAttribute.MAYBEDEFAULT attribute at the time they're added to the bag.
         
@@ -132,8 +130,7 @@ class DataSource(XPropertySet_bc180bfa, XBookmarksSupplier_ee870d96, XCompletedC
     @property
     def URL(self) -> str:
         """
-        indicates a database url of the form
-        jdbc:subprotocol:subname or sdbc:subprotocol:subname
+        indicates a database url of the form  jdbc:subprotocol:subname or sdbc:subprotocol:subname
         """
     @property
     def User(self) -> str:

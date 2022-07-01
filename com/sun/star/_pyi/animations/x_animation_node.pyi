@@ -58,8 +58,7 @@ class XAnimationNode(XChild_a6390b07):
     @property
     def Begin(self) -> object:
         """
-        a sequence of values that define the beginning of this element
-        Begin is
+        a sequence of values that define the beginning of this element Begin is
         """
 
     @property
@@ -83,8 +82,7 @@ class XAnimationNode(XChild_a6390b07):
     @property
     def End(self) -> object:
         """
-        a sequence of values that define the ending of this element
-        End is
+        a sequence of values that define the ending of this element End is
         """
 
     @property

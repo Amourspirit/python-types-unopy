@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.awt
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .x_image_producer import XImageProducer as XImageProducer_ba930bd3
@@ -49,7 +50,7 @@ class XImageConsumer(XInterface_8f010a43):
         """
         changes color model for next pixels typically called once after initialization.
         """
-    def setPixelsByBytes(self, nX: int, nY: int, nWidth: int, nHeight: int, aProducerData: 'typing.Tuple[int, ...]', nOffset: int, nScanSize: int) -> None:
+    def setPixelsByBytes(self, nX: int, nY: int, nWidth: int, nHeight: int, aProducerData: uno.ByteSequence, nOffset: int, nScanSize: int) -> None:
         """
         delivers a chunk of pixels as long values.
         

@@ -19,7 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.xml.sax
 from typing_extensions import Literal
-import typing
+import uno
 from ...uno.x_interface import XInterface as XInterface_8f010a43
 
 class XFastTokenHandler(XInterface_8f010a43):
@@ -35,11 +35,11 @@ class XFastTokenHandler(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.xml.sax.XFastTokenHandler']
 
-    def getTokenFromUTF8(self, Identifier: 'typing.Tuple[int, ...]') -> int:
+    def getTokenFromUTF8(self, Identifier: uno.ByteSequence) -> int:
         """
         returns an integer token for the given string
         """
-    def getUTF8Identifier(self, Token: int) -> 'typing.Tuple[int, ...]':
+    def getUTF8Identifier(self, Token: int) -> uno.ByteSequence:
         """
         returns an identifier for the given integer token as a byte sequence encoded in UTF-8.
         """

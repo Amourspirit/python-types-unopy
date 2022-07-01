@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.lang
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XTypeProvider(XInterface_8f010a43):
@@ -31,7 +32,7 @@ class XTypeProvider(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.lang.XTypeProvider']
 
-    def getImplementationId(self) -> 'typing.Tuple[int, ...]':
+    def getImplementationId(self) -> uno.ByteSequence:
         """
         Obsolete unique identifier.
         

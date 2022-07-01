@@ -19,7 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.java
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XJavaVM(XInterface_8f010a43):
@@ -35,7 +35,7 @@ class XJavaVM(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.java.XJavaVM']
 
-    def getJavaVM(self, processID: 'typing.Tuple[int, ...]') -> object:
+    def getJavaVM(self, processID: uno.ByteSequence) -> object:
         """
         returns the address of the Java Virtual Machine.
         

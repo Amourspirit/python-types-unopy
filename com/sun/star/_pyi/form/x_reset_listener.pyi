@@ -28,8 +28,7 @@ class XResetListener(XEventListener_c7230c4a):
     """
     is the interface for receiving notifications about reset events.
     
-    The listener is called if a component implementing the XReset interface performs a reset.
-    Order of events:
+    The listener is called if a component implementing the XReset interface performs a reset.Order of events:
 
     See Also:
         `API XResetListener <https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1form_1_1XResetListener.html>`_

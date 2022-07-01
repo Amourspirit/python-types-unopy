@@ -79,8 +79,7 @@ class MailMerge(DataAccessDescriptor_6c50e2c, XPropertySet_bc180bfa, XJob_5fa108
         """
         contains a selection that refers to bookmarks of the ResultSet.
         
-        This property is relevant in conjunction with the ResultSet only. A single element of this array describes a bookmark relative to the result set.
-        Note that this implies that the ResultSet needs to support the com.sun.star.sdbcx.XRowLocate interface.
+        This property is relevant in conjunction with the ResultSet only. A single element of this array describes a bookmark relative to the result set.Note that this implies that the ResultSet needs to support the com.sun.star.sdbcx.XRowLocate interface.
         
         If this array is empty, the whole result set, as described by ResultSet respectively the triple (DataSourceName, CommandType, Command).
         

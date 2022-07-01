@@ -79,8 +79,7 @@ class XIdlClass(XInterface_8f010a43):
         """
         If the reflected type is an interface, struct or union, then you get a sequence of XIdlField interfaces reflecting all fields (/interface attributes).
         
-        This also includes all inherited fields (/interface attributes) of the interface, struct of union.
-        If the reflected type is not an interface, struct or union or the interface, struct or union does not have any field (/interface attribute), then an empty sequence is returned.
+        This also includes all inherited fields (/interface attributes) of the interface, struct of union. If the reflected type is not an interface, struct or union or the interface, struct or union does not have any field (/interface attribute), then an empty sequence is returned.
         """
     def getInterfaces(self) -> 'typing.Tuple[XIdlClass, ...]':
         """
@@ -98,8 +97,7 @@ class XIdlClass(XInterface_8f010a43):
         """
         If the reflected type is an interface, then you get a sequence of XIdlMethod interfaces reflecting all methods of the interface.
         
-        This also includes the inherited methods of the interface.
-        If the reflected type is not an interface or the interface does not have any methods, then a null-reference is returned.
+        This also includes the inherited methods of the interface. If the reflected type is not an interface or the interface does not have any methods, then a null-reference is returned.
         """
     def getName(self) -> str:
         """

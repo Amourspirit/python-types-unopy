@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.rendering
 from typing_extensions import Literal
 import typing
+import uno
 from abc import ABC
 if typing.TYPE_CHECKING:
     from ..beans.property_value import PropertyValue as PropertyValue_c9610c73
@@ -101,7 +102,7 @@ class XColorSpace(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def getComponentTags(self) -> 'typing.Tuple[int, ...]':
+    def getComponentTags(self) -> uno.ByteSequence:
         """
         Query the kind for each color component.
         

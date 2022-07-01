@@ -34,8 +34,7 @@ class XStatusbarController(XStatusListener_e2740d35, XComponent_98dc0ab5, XIniti
     """
     interface to be implemented by a component offering a more complex user interface to users within a status bar.
     
-    A generic status bar field is represented as a simple text field. A status bar controller can be added to a Statusbar and provide information or functions with a more sophisticated user interface.
-    A typical example for status bar controller is a zoom chooser. It shows the current zoom and provides general zoom levels on a pop-up menu that can be activated by a mouse action for context menus.
+    A generic status bar field is represented as a simple text field. A status bar controller can be added to a Statusbar and provide information or functions with a more sophisticated user interface.A typical example for status bar controller is a zoom chooser. It shows the current zoom and provides general zoom levels on a pop-up menu that can be activated by a mouse action for context menus.
     
     **since**
     

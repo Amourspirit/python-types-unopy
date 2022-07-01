@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.rendering
 from typing_extensions import Literal
 import typing
+import uno
 from .x_bitmap import XBitmap as XBitmap_b1b70b7b
 if typing.TYPE_CHECKING:
     from ..geometry.integer_point2_d import IntegerPoint2D as IntegerPoint2D_8f0dc2
@@ -41,7 +42,7 @@ class XIntegerReadOnlyBitmap(XBitmap_b1b70b7b):
     """
     __pyunointerface__: Literal['com.sun.star.rendering.XIntegerReadOnlyBitmap']
 
-    def getData(self, bitmapLayout: 'IntegerBitmapLayout_5b94106f', rect: 'IntegerRectangle2D_3c5c0f4d') -> 'typing.Tuple[int, ...]':
+    def getData(self, bitmapLayout: 'IntegerBitmapLayout_5b94106f', rect: 'IntegerRectangle2D_3c5c0f4d') -> uno.ByteSequence:
         """
         Query the raw data of this bitmap.
         
@@ -61,7 +62,7 @@ class XIntegerReadOnlyBitmap(XBitmap_b1b70b7b):
         
         Please note that for volatile bitmaps, the memory layout might change between subsequent calls.
         """
-    def getPixel(self, bitmapLayout: 'IntegerBitmapLayout_5b94106f', pos: 'IntegerPoint2D_8f0dc2') -> 'typing.Tuple[int, ...]':
+    def getPixel(self, bitmapLayout: 'IntegerBitmapLayout_5b94106f', pos: 'IntegerPoint2D_8f0dc2') -> uno.ByteSequence:
         """
         Get a single pixel of the bitmap, returning its color value.
         

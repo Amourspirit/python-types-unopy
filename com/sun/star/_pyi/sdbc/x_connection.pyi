@@ -134,8 +134,7 @@ class XConnection(XCloseable_98290a86):
         
         The CallableStatement provides methods for setting up its IN and OUT parameters, and methods for executing the call to a stored procedure.
         
-        Note:  This method is optimized for handling stored procedure call statements. Some drivers may send the call statement to the database when the method prepareCall is done;
-        others may wait until the CallableStatement is executed. This has no direct effect on users; however, it does affect which method throws certain SQLExceptions. Result sets created using the returned CallableStatement will have forward-only type and read-only concurrency, by default.
+        Note:  This method is optimized for handling stored procedure call statements. Some drivers may send the call statement to the database when the method prepareCall is done; others may wait until the CallableStatement is executed. This has no direct effect on users; however, it does affect which method throws certain SQLExceptions. Result sets created using the returned CallableStatement will have forward-only type and read-only concurrency, by default.
 
         Raises:
             SQLException: ``SQLException``

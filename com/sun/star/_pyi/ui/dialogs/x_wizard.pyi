@@ -62,9 +62,7 @@ class XWizard(XExecutableDialog_450f0fa1):
         
         You can only activate a path which shares the first k pages with the path which is previously active (if any), where k is the index of the current page within the current path.
         
-        Example: Say you have paths, (0,1,2,5) and (0,1,4,5) (with the numbers denoting page IDs). This means that after page 1, you either continue with page 2 or state 4,and after this, you finish in state 5.
-        Now if the first path is active, and your current state is 1, then you can easily switch to the second path, since both paths start with (0,1).
-        However, if your current state is 2, then you can not switch to the second path anymore.
+        Example: Say you have paths, (0,1,2,5) and (0,1,4,5) (with the numbers denoting page IDs). This means that after page 1, you either continue with page 2 or state 4,and after this, you finish in state 5.Now if the first path is active, and your current state is 1, then you can easily switch to the second path, since both paths start with (0,1).However, if your current state is 2, then you can not switch to the second path anymore.
         
         If TRUE, the path will be completely activated, even if it is a conflicting path (i.e. there is another path which shares the first k states with the to-be-activated path.)
         

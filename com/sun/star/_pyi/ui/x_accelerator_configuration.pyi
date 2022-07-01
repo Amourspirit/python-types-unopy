@@ -32,8 +32,7 @@ class XAcceleratorConfiguration(XUIConfiguration_c4eb0c34, XUIConfigurationPersi
     
     Such configuration set base on:
     
-    Note further:
-    All changes you made on this configuration access modify the configuration set inside memory only. You have to use the com.sun.star.util.XFlushable interface (which must be available at the same implementation object too), to make it persistent.
+    Note further:All changes you made on this configuration access modify the configuration set inside memory only. You have to use the com.sun.star.util.XFlushable interface (which must be available at the same implementation object too), to make it persistent.
     
     **since**
     

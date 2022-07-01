@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.sdb
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..container.x_name_access import XNameAccess as XNameAccess_e2ab0cf6
@@ -80,7 +81,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
-    def getBytes(self) -> 'typing.Tuple[int, ...]':
+    def getBytes(self) -> uno.ByteSequence:
         """
         gets the value of a column in the current row as a byte array.
         

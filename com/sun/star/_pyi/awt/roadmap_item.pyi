@@ -43,8 +43,7 @@ class RoadmapItem(ABC):
     @property
     def Interactive(self) -> bool:
         """
-        When \"Interactive\" is true the RoadmapItem supports a certain \"HyperLabel
-        functionality\": Moving the mouse pointer over the RoadmapItem will change it to a Refhand and underline the Label for the time the mouse pointer resides over the RoadmapItem.
+        When \"Interactive\" is true the RoadmapItem supports a certain \"HyperLabelfunctionality\": Moving the mouse pointer over the RoadmapItem will change it to a Refhand and underline the Label for the time the mouse pointer resides over the RoadmapItem.
         
         Clicking with mouse pointer will then notify the Roadmap Container. The property Interactive\" is readonly because it is adapted from the container of the RoadmapItem.
         """

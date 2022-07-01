@@ -19,7 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.connection
 from typing_extensions import Literal
-import typing
+import uno
 from .x_connection import XConnection as XConnection_f2320da0
 
 class XConnection2(XConnection_f2320da0):
@@ -38,7 +38,7 @@ class XConnection2(XConnection_f2320da0):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
-    def readSomeBytes(self, aData: 'typing.Tuple[int, ...]', nMaxBytesToRead: int) -> int:
+    def readSomeBytes(self, aData: uno.ByteSequence, nMaxBytesToRead: int) -> int:
         """
         Blocks if no data is available otherwise reads at max nMaxBytesToRead but at least 1 byte.
 

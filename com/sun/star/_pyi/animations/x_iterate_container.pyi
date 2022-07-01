@@ -51,8 +51,7 @@ class XIterateContainer(XTimeContainer_1cca0ec5):
         """
         This attribute specifies an optional subitem from the target element that should be animated.
         
-        A value of zero should always be the default and animate the complete target.
-        See documentation of used animation engine for supported subitems.
+        A value of zero should always be the default and animate the complete target. See documentation of used animation engine for supported subitems.
         """
 
     @property
@@ -60,8 +59,7 @@ class XIterateContainer(XTimeContainer_1cca0ec5):
         """
         a target that contains iterable contents, f.e.
         
-        a paragraph.
-        See documentation of used animation engine for supported targets.
+        a paragraph. See documentation of used animation engine for supported targets.
         """
 
 

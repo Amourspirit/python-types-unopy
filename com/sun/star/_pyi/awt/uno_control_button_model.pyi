@@ -64,8 +64,7 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
         """
         specifies whether the button control should grab the focus when clicked.
         
-        If set to TRUE (which is the default), the button control automatically grabs the focus when the user clicks onto it with the mouse.
-        If set to FALSE, the focus is preserved when the user operates the button control with the mouse.
+        If set to TRUE (which is the default), the button control automatically grabs the focus when the user clicks onto it with the mouse.If set to FALSE, the focus is preserved when the user operates the button control with the mouse.
         
         **since**
         

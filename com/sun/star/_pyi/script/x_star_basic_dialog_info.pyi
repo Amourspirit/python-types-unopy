@@ -19,7 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.script
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XStarBasicDialogInfo(XInterface_8f010a43):
@@ -35,7 +35,7 @@ class XStarBasicDialogInfo(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.script.XStarBasicDialogInfo']
 
-    def getData(self) -> 'typing.Tuple[int, ...]':
+    def getData(self) -> uno.ByteSequence:
         """
         returns binary data describing the SIDialog in SBX stream format
         """

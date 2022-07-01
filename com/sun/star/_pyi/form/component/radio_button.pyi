@@ -56,8 +56,7 @@ class RadioButton(UnoControlRadioButtonModel_6ad310c3, FormControlModel_e2990d22
         """
         specifies a value which is to be associated with the control when it's not selected.
         
-        In various situations, the RefValue is associated with the control if and only if it is selected.
-        UncheckedRefValue provides an extension of this concept: If present, the value should be associated with the control when it is not selected.
+        In various situations, the RefValue is associated with the control if and only if it is selected.UncheckedRefValue provides an extension of this concept: If present, the value should be associated with the control when it is not selected.
         """
 
 
