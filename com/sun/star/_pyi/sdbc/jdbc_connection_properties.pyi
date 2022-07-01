@@ -50,8 +50,7 @@ class JDBCConnectionProperties(ConnectionProperties_1a9f0ee1):
         """
         specifies how the type info returned by com.sun.star.sdbc.XDatabaseMetaData.getTypeInfo() will be modified.
         
-        The sequence contains an even amount of string values. Each pair describes what should be searched for and what should be replaced if found.
-        The syntax is:
+        The sequence contains an even amount of string values. Each pair describes what should be searched for and what should be replaced if found. The syntax is:
         
         COLUMN(X) defines the column which will be compared and the column which will be replaced. In the example above column 2 will be compared with the value -5. If this is true than column 6 will now return the value PRECISION.
         """

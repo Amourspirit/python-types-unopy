@@ -32,9 +32,7 @@ class DataAccessDescriptor(ABC):
 
     descriptor for accessing basic data access objects.
     
-    Various components interacting with the database access world require to specify (or provide themselves) an object such as a query, a table, a result set, a connection to a data source, a column within a table, and so on.
-    All of these objects are usually not specified with a single property, but with a set of properties, and for various objects, various (but not always different) properties are needed.
-    The DataAccessDescriptor describes the super set of the properties for the most common data access objects.
+    Various components interacting with the database access world require to specify (or provide themselves) an object such as a query, a table, a result set, a connection to a data source, a column within a table, and so on.All of these objects are usually not specified with a single property, but with a set of properties, and for various objects, various (but not always different) properties are needed.The DataAccessDescriptor describes the super set of the properties for the most common data access objects.
     
     Every component providing or requiring a DataAccessDescriptor for some functionality is urged to specify which properties are mandatory, and which ones optional. Additionally, it's free to specify any additional requirements about the relations of properties.
     
@@ -61,8 +59,7 @@ class DataAccessDescriptor(ABC):
         
         When you specify a result set either implicitly (DataSourceName, Command, CommandType) or explicitly (ResultSet), the set of results can be additionally refined with this property.
         
-        The single elements of the Selection are either record numbers (see com.sun.star.sdbc.XResultSet.getRow()), or bookmarks (see com.sun.star.sdbcx.XRowLocate.getBookmark()).
-        It is up to the component which provides or requires a DataAccessDescriptor to specify which of the two alternatives it expects. If it does not specify this, then the property BookmarkSelection becomes mandatory.
+        The single elements of the Selection are either record numbers (see com.sun.star.sdbc.XResultSet.getRow()), or bookmarks (see com.sun.star.sdbcx.XRowLocate.getBookmark()).It is up to the component which provides or requires a DataAccessDescriptor to specify which of the two alternatives it expects. If it does not specify this, then the property BookmarkSelection becomes mandatory.
         
         If the elements specify bookmarks, and a ResultSet has been specified, then this result set is required to support the com.sun.star.sdbcx.XRowLocate interface.
         """
@@ -71,8 +68,7 @@ class DataAccessDescriptor(ABC):
         """
         is a connection to use.
         
-        This object is guaranteed to be a com.sun.star.sdbc.Connection, but usually it will be a Connection from the module com.sun.star.sdb.
-        Especially in the case where no DataSourceName is given, but CommandType is CommandType.QUERY, the ActiveConnection needs to fully support the Connection service, to actually retrieve the query specified by Command
+        This object is guaranteed to be a com.sun.star.sdbc.Connection, but usually it will be a Connection from the module com.sun.star.sdb.Especially in the case where no DataSourceName is given, but CommandType is CommandType.QUERY, the ActiveConnection needs to fully support the Connection service, to actually retrieve the query specified by Command
         
         If no ActiveConnection is given, then a DataSourceName is required.
         """

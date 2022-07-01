@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.sdbc
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..io.x_input_stream import XInputStream as XInputStream_98d40ab4
@@ -79,7 +80,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
-    def readBytes(self) -> 'typing.Tuple[int, ...]':
+    def readBytes(self) -> uno.ByteSequence:
         """
         reads the next attribute in the stream as sequence of bytes.
 

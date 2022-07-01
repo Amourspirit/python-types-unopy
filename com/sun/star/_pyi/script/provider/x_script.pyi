@@ -35,11 +35,7 @@ class XScript(XInterface_8f010a43):
         """
         invoke the script or function represented by the implementing object
         
-        For example, if the script had the signature
-        long foo( [inout] string a, [in] string b, [out] string c )
-        the call would look like
-        bar.invoke( {\"foo\", \"foo2\", \"this-is-ignored\" }, aOutParamIndex, aOutParam);
-        and after the call the out sequences would contain
+        For example, if the script had the signaturelong foo( [inout] string a, [in] string b, [out] string c ) the call would look likebar.invoke( {\"foo\", \"foo2\", \"this-is-ignored\" }, aOutParamIndex, aOutParam); and after the call the out sequences would contain
 
         * ``aOutParamIndex`` is an out direction argument.
         * ``aOutParam`` is an out direction argument.

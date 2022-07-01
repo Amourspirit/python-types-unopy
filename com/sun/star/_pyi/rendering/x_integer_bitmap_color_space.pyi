@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.rendering
 from typing_extensions import Literal
 import typing
+import uno
 from .x_color_space import XColorSpace as XColorSpace_e3940d09
 if typing.TYPE_CHECKING:
     from .argb_color import ARGBColor as ARGBColor_c6ee0be1
@@ -37,7 +38,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
     """
     __pyunointerface__: Literal['com.sun.star.rendering.XIntegerBitmapColorSpace']
 
-    def convertFromIntegerColorSpace(self, deviceColor: 'typing.Tuple[int, ...]', targetColorSpace: 'XColorSpace_e3940d09') -> 'typing.Tuple[ColorComponent_e4c0e78, ...]':
+    def convertFromIntegerColorSpace(self, deviceColor: uno.ByteSequence, targetColorSpace: 'XColorSpace_e3940d09') -> 'typing.Tuple[ColorComponent_e4c0e78, ...]':
         """
         Convert integer bitmap color to generic IEEE double device color of another color space.
         
@@ -46,7 +47,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def convertIntegerFromARGB(self, rgbColor: 'typing.Tuple[ARGBColor_c6ee0be1, ...]') -> 'typing.Tuple[int, ...]':
+    def convertIntegerFromARGB(self, rgbColor: 'typing.Tuple[ARGBColor_c6ee0be1, ...]') -> uno.ByteSequence:
         """
         Convert sRGB color with linear alpha into this color space.
         
@@ -55,7 +56,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def convertIntegerFromPARGB(self, rgbColor: 'typing.Tuple[ARGBColor_c6ee0be1, ...]') -> 'typing.Tuple[int, ...]':
+    def convertIntegerFromPARGB(self, rgbColor: 'typing.Tuple[ARGBColor_c6ee0be1, ...]') -> uno.ByteSequence:
         """
         Convert premultiplied sRGB color with linear alpha into this color space.
         
@@ -64,7 +65,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def convertIntegerFromRGB(self, rgbColor: 'typing.Tuple[RGBColor_bbdf0ba0, ...]') -> 'typing.Tuple[int, ...]':
+    def convertIntegerFromRGB(self, rgbColor: 'typing.Tuple[RGBColor_bbdf0ba0, ...]') -> uno.ByteSequence:
         """
         Convert sRGB color to an integer representation in this color space.
         
@@ -73,7 +74,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def convertIntegerToARGB(self, deviceColor: 'typing.Tuple[int, ...]') -> 'typing.Tuple[ARGBColor_c6ee0be1, ...]':
+    def convertIntegerToARGB(self, deviceColor: uno.ByteSequence) -> 'typing.Tuple[ARGBColor_c6ee0be1, ...]':
         """
         Convert color value in this color space to sRGB color values, with linear alpha.
         
@@ -82,7 +83,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def convertIntegerToPARGB(self, deviceColor: 'typing.Tuple[int, ...]') -> 'typing.Tuple[ARGBColor_c6ee0be1, ...]':
+    def convertIntegerToPARGB(self, deviceColor: uno.ByteSequence) -> 'typing.Tuple[ARGBColor_c6ee0be1, ...]':
         """
         Convert color value in this color space to premultiplied sRGB color values, with linear alpha.
         
@@ -91,7 +92,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def convertIntegerToRGB(self, deviceColor: 'typing.Tuple[int, ...]') -> 'typing.Tuple[RGBColor_bbdf0ba0, ...]':
+    def convertIntegerToRGB(self, deviceColor: uno.ByteSequence) -> 'typing.Tuple[RGBColor_bbdf0ba0, ...]':
         """
         Convert color value in this color space to sRGB color values.
         
@@ -100,7 +101,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def convertToIntegerColorSpace(self, deviceColor: 'typing.Tuple[int, ...]', targetColorSpace: 'XIntegerBitmapColorSpace') -> 'typing.Tuple[int, ...]':
+    def convertToIntegerColorSpace(self, deviceColor: uno.ByteSequence, targetColorSpace: 'XIntegerBitmapColorSpace') -> uno.ByteSequence:
         """
         Convert integer bitmap color to integer bitmap color of another integer bitmap color space.
         

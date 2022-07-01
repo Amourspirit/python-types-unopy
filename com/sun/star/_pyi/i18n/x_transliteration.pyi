@@ -63,11 +63,7 @@ class XTransliteration(XInterface_8f010a43):
         
         This method can be called if the object has TransliterationType IGNORE attribute.
         
-        Returns the number of matched code points in any case, even if strings are not equal, for example:
-        equals( \"a\", 0, 1, nMatch1, \"aaa\", 0, 3, nMatch2 )
-        returns FALSE and nMatch:=1 and nMatch2:=1
-        equals( \"aab\", 0, 3, nMatch1, \"aaa\", 0, 3, nMatch2 )
-        returns FALSE and nMatch:=2 and nMatch2:=2
+        Returns the number of matched code points in any case, even if strings are not equal, for example: equals( \"a\", 0, 1, nMatch1, \"aaa\", 0, 3, nMatch2 ) returns FALSE and nMatch:=1 and nMatch2:=1 equals( \"aab\", 0, 3, nMatch1, \"aaa\", 0, 3, nMatch2 ) returns FALSE and nMatch:=2 and nMatch2:=2
 
         * ``rMatch1`` is an out direction argument.
         * ``rMatch2`` is an out direction argument.

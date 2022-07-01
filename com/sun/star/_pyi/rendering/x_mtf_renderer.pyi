@@ -19,7 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.rendering
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XMtfRenderer(XInterface_8f010a43):
@@ -33,7 +33,7 @@ class XMtfRenderer(XInterface_8f010a43):
     def draw(self, fScaleX: float, fScaleY: float) -> None:
         """
         """
-    def setMetafile(self, aMtf: 'typing.Tuple[int, ...]') -> None:
+    def setMetafile(self, aMtf: uno.ByteSequence) -> None:
         """
         """
 

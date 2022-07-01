@@ -19,7 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.ucb
 from typing_extensions import Literal
-import typing
+import uno
 from ..container.x_index_container import XIndexContainer as XIndexContainer_1c040ebe
 
 class XDataContainer(XIndexContainer_1c040ebe):
@@ -41,7 +41,7 @@ class XDataContainer(XIndexContainer_1c040ebe):
         """
         returns the content type (MIME Type) of the data container.
         """
-    def getData(self) -> 'typing.Tuple[int, ...]':
+    def getData(self) -> uno.ByteSequence:
         """
         returns the data of the data container.
         """
@@ -55,7 +55,7 @@ class XDataContainer(XIndexContainer_1c040ebe):
         """
         sets the content type (MIME Type) of the data container.
         """
-    def setData(self, aData: 'typing.Tuple[int, ...]') -> None:
+    def setData(self, aData: uno.ByteSequence) -> None:
         """
         sets the data of the data container.
         """

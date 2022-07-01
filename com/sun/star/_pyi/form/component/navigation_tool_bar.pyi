@@ -75,8 +75,7 @@ class NavigationToolBar(FormControlModel_e2990d22):
         """
         specifies a repeat delay for the control
         
-        Some buttons of a NavigationToolBar may show repeating behavior, e.g. may be repeatedly triggered when the user keeps the mouse pressed over such a button.
-        The delay between two such triggers (in milliseconds) is specified with this property.
+        Some buttons of a NavigationToolBar may show repeating behavior, e.g. may be repeatedly triggered when the user keeps the mouse pressed over such a button.The delay between two such triggers (in milliseconds) is specified with this property.
         """
     @property
     def ShowFilterSort(self) -> bool:

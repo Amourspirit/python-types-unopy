@@ -180,9 +180,7 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
         """
         returns the textual version representation of the package.
         
-        A textual version representation is a finite string following the BNF
-        version .= [element (\".\" element)*]
-        element .= (\"0\" | \"1\" | \"2\" | \"3\" | \"4\" | \"5\" | \"6\" | \"7\" | \"8\" | \"9\")+
+        A textual version representation is a finite string following the BNFversion .= [element (\".\" element)*]element .= (\"0\" | \"1\" | \"2\" | \"3\" | \"4\" | \"5\" | \"6\" | \"7\" | \"8\" | \"9\")+
 
         Raises:
             ExtensionRemovedException: ``ExtensionRemovedException``

@@ -161,8 +161,7 @@ class XLayoutManager(XInterface_8f010a43):
         """
         sets a docking area acceptor that controls the border space of the frame's container window.
         
-        A docking area acceptor decides if the layout manager can use requested border space for docking windows. If the acceptor denies the requested space the layout manager automatically set all docked windows into floating state and will not use this space for docking.
-        After setting a docking area acceptor the object is owned by the layout manager. It is not allowed to dispose this object, it will be destroyed on reference count!
+        A docking area acceptor decides if the layout manager can use requested border space for docking windows. If the acceptor denies the requested space the layout manager automatically set all docked windows into floating state and will not use this space for docking.After setting a docking area acceptor the object is owned by the layout manager. It is not allowed to dispose this object, it will be destroyed on reference count!
         """
     def setElementPos(self, ResourceURL: str, Pos: 'Point_5fb2085e') -> None:
         """

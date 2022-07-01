@@ -30,8 +30,7 @@ class XValidator(XInterface_8f010a43):
     
     Validators support simple validity checks and retrieving justifications for invalidity.
     
-    Validators may additionally support dynamic validity constraints. In such a case, the validity of a given value may change, without the value changing itself.
-    To be notified about this, interested components should register as XValidityConstraintListener.
+    Validators may additionally support dynamic validity constraints. In such a case, the validity of a given value may change, without the value changing itself.To be notified about this, interested components should register as XValidityConstraintListener.
 
     See Also:
         `API XValidator <https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1form_1_1validation_1_1XValidator.html>`_

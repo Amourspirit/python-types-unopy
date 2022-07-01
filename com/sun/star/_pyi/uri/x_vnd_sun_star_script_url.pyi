@@ -25,14 +25,7 @@ class XVndSunStarScriptUrl(XInterface_8f010a43):
     """
     represents absolute “vnd.sun.star.script” URLs.
     
-    These URLs are of the form
-    vnd-sun-star-script-url = \"VND.SUN.STAR.SCRIPT:\" name [\"?\" parameter *(\"&\" parameter)]
-    name = 1*schar
-    parameter = key \"=\" value
-    key = 1*schar
-    value = *schar
-    schar = unreserved / escaped / \"$\" / \"+\" / \",\" / \":\" / \";\" / \"@\" / \"[\" / \"]\"
-    See RFC 3986 RFC 2234 for details.
+    These URLs are of the form   vnd-sun-star-script-url = \"VND.SUN.STAR.SCRIPT:\" name [\"?\" parameter *(\"&\" parameter)]   name = 1*schar   parameter = key \"=\" value   key = 1*schar   value = *schar   schar = unreserved / escaped / \"$\" / \"+\" / \",\" / \":\" / \";\" / \"@\" / \"[\" / \"]\"See RFC 3986 RFC 2234 for details.
     
     The names, keys, and values are arbitrary Unicode strings (non-empty Unicode strings in the case of names and keys), encoded as UTF-8 byte sequences. It is an error if any of them does not represent a valid UTF-8 byte sequence. Keys are compared for equality character-by-character, without considering case folding or normalization. There may be multiple parameters with equal keys.
     

@@ -19,7 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.io
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XOutputStream(XInterface_8f010a43):
@@ -55,7 +55,7 @@ class XOutputStream(XInterface_8f010a43):
             com.sun.star.io.BufferSizeExceededException: ``BufferSizeExceededException``
             com.sun.star.io.IOException: ``IOException``
         """
-    def writeBytes(self, aData: 'typing.Tuple[int, ...]') -> None:
+    def writeBytes(self, aData: uno.ByteSequence) -> None:
         """
         writes the whole sequence to the stream.
         

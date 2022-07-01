@@ -19,6 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.document
 import typing
+import uno
 from ..beans.x_property_set import XPropertySet as XPropertySet_bc180bfa
 if typing.TYPE_CHECKING:
     from ..i18n.x_forbidden_characters import XForbiddenCharacters as XForbiddenCharacters_df60e2d
@@ -39,7 +40,7 @@ class Settings(XPropertySet_bc180bfa):
         `API Settings <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1document_1_1Settings.html>`_
     """
     @property
-    def PrinterSetup(self) -> 'typing.Tuple[int, ...]':
+    def PrinterSetup(self) -> uno.ByteSequence:
         """
         platform and driver dependent printer setup data.
         

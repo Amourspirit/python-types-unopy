@@ -28,9 +28,7 @@ class XVndSunStarExpandUrl(ABC):
     """
     represents absolute “vnd.sun.star.expand” URLs.
     
-    These URLs are of the form
-    vnd-sun-star-expand-url = \"VND.SUN.STAR.EXPAND:\" opaque_part
-    where the opaque_part is a UTF-8 string as described in Bootstrap Arguments and Micro Deployment. See RFC 3986 RFC 2234 for details.
+    These URLs are of the form   vnd-sun-star-expand-url = \"VND.SUN.STAR.EXPAND:\" opaque_partwhere the opaque_part is a UTF-8 string as described in Bootstrap Arguments and Micro Deployment. See RFC 3986 RFC 2234 for details.
     
     **since**
     

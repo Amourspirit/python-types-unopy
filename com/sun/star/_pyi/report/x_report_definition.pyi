@@ -86,9 +86,7 @@ class XReportDefinition(XDocumentSubStorageSupplier_da021351, XStorageBasedDocum
         """
         is the command which should be executed, the type of command depends on the CommandType.
         
-        In case of a CommandType of CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:
-        It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.
-        The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
+        In case of a CommandType of CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
         """
 
     @property
