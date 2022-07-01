@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.embed
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..beans.property_value import PropertyValue as PropertyValue_c9610c73
@@ -36,7 +37,7 @@ class XEmbedObjectFactory(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.embed.XEmbedObjectFactory']
 
-    def createInstanceUserInit(self, aClassID: 'typing.Tuple[int, ...]', sClassName: str, xStorage: 'XStorage_8e460a32', sEntName: str, nEntryConnectionMode: int, aArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]', aObjectArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> 'XInterface_8f010a43':
+    def createInstanceUserInit(self, aClassID: uno.ByteSequence, sClassName: str, xStorage: 'XStorage_8e460a32', sEntName: str, nEntryConnectionMode: int, aArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]', aObjectArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> 'XInterface_8f010a43':
         """
         creates a new object and transport parameters for persistent initialization.
         

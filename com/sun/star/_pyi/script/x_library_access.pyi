@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.script
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XLibraryAccess(XInterface_8f010a43):
@@ -37,7 +38,7 @@ class XLibraryAccess(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.script.XLibraryAccess']
 
-    def getFunctionCode(self, FunctionName: str) -> 'typing.Tuple[int, ...]':
+    def getFunctionCode(self, FunctionName: str) -> uno.ByteSequence:
         """
         Get the compiled code of a function.
         """
@@ -45,7 +46,7 @@ class XLibraryAccess(XInterface_8f010a43):
         """
         get the source code of a function.
         """
-    def getModuleCode(self, aModuleName: str) -> 'typing.Tuple[int, ...]':
+    def getModuleCode(self, aModuleName: str) -> uno.ByteSequence:
         """
         Get the whole compiled code of a module.
         """

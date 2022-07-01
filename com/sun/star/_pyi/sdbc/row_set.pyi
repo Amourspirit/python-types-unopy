@@ -31,8 +31,7 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
 
     is a client side ResultSet, which combines the characteristics of a com.sun.star.sdbc.Statement and a com.sun.star.sdbc.ResultSet.
     
-    It acts like a typical bean. Before you use the RowSet, you have to specify a set of properties like a DataSource and a Command and other properties known of Statement.
-    Afterwards, you can populate the RowSet by its execute method to fill the set with data.
+    It acts like a typical bean. Before you use the RowSet, you have to specify a set of properties like a DataSource and a Command and other properties known of Statement. Afterwards, you can populate the RowSet by its execute method to fill the set with data.
     
     On the one hand, a RowSet can be used as a short cut to retrieve the data of a DataSource. You don't have to establish a connection, create a Statement, and then create a ResultSet. On the other hand, a row set can be used to implement capabilities for a result set, which are not supported by a driver result set, like caching strategies or update capabilities.
 
@@ -61,16 +60,14 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         """
         returns the maximum number of bytes allowed for any column value.
         
-        This limit is the maximum number of bytes that can be returned for any column value. The limit applies only to com.sun.star.sdbc.DataType.BINARY , com.sun.star.sdbc.DataType.VARBINARY , com.sun.star.sdbc.DataType.LONGVARBINARY , com.sun.star.sdbc.DataType.CHAR , com.sun.star.sdbc.DataType.VARCHAR , and com.sun.star.sdbc.DataType.LONGVARCHAR columns. If the limit is exceeded, the excess data is silently discarded.
-        There is no limitation, if set to zero.
+        This limit is the maximum number of bytes that can be returned for any column value. The limit applies only to com.sun.star.sdbc.DataType.BINARY , com.sun.star.sdbc.DataType.VARBINARY , com.sun.star.sdbc.DataType.LONGVARBINARY , com.sun.star.sdbc.DataType.CHAR , com.sun.star.sdbc.DataType.VARCHAR , and com.sun.star.sdbc.DataType.LONGVARCHAR columns. If the limit is exceeded, the excess data is silently discarded. There is no limitation, if set to zero.
         """
     @property
     def MaxRows(self) -> int:
         """
         retrieves the maximum number of rows that a ResultSet can contain.
         
-        If the limit is exceeded, the excess rows are silently dropped.
-        There is no limitation, if set to zero.
+        If the limit is exceeded, the excess rows are silently dropped. There is no limitation, if set to zero.
         """
     @property
     def Password(self) -> str:

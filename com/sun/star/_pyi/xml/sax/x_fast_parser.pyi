@@ -48,8 +48,7 @@ class XFastParser(XInterface_8f010a43):
     
     Setting a XFastTokenHandler with setTokenHandler() is optional, but without a XFastTokenHandler you will only get unknown sax events. This can be useful if you are only interested in the namespace handling and/or the context feature.
     
-    For each element the parser sends a create child element event to the elements parent context by calling XFastContextHandler.createFastChildContext() for known elements or XFastContextHandler.createUnknownChildContext() for unknown elements.
-    The parent context for the root element is the XFastDocumentHandler itself.
+    For each element the parser sends a create child element event to the elements parent context by calling XFastContextHandler.createFastChildContext() for known elements or XFastContextHandler.createUnknownChildContext() for unknown elements. The parent context for the root element is the XFastDocumentHandler itself.
     
     If the parent context returns an empty reference, no further events for the element and all of its children are created.
     

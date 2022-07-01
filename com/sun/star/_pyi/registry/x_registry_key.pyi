@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.registry
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .registry_key_type import RegistryKeyType as RegistryKeyType_11940ea5
@@ -87,7 +88,7 @@ class XRegistryKey(XInterface_8f010a43):
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
             com.sun.star.registry.InvalidValueException: ``InvalidValueException``
         """
-    def getBinaryValue(self) -> 'typing.Tuple[int, ...]':
+    def getBinaryValue(self) -> uno.ByteSequence:
         """
 
         Raises:
@@ -199,7 +200,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
-    def setBinaryValue(self, value: 'typing.Tuple[int, ...]') -> None:
+    def setBinaryValue(self, value: uno.ByteSequence) -> None:
         """
         sets a binary value to the key.
         

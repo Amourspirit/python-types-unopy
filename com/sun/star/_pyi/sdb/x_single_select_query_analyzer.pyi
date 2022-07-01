@@ -113,9 +113,7 @@ class XSingleSelectQueryAnalyzer(XInterface_8f010a43):
         """
         sets a new query for the composer, which may be expanded by filters, group by, having and sort criteria.
         
-        In case of a CommandType of com.sun.star.sdb.CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:
-        It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.
-        The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
+        In case of a CommandType of com.sun.star.sdb.CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
 
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``

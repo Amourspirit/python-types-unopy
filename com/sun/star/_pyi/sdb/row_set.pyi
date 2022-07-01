@@ -42,13 +42,11 @@ class RowSet(ResultSet_847b09ec, RowSet_70fd0908, XCompletedExecution_fb8c0dea, 
     
     In addition, it provides events for RowSet navigation and RowSet modifications to approve the actions and to react on them.
     
-    A row set is able to be operated in various ways, and additionally it notifies various changes in its state. Clients of this service can rely on a fixed order of notifications, depending on how they operate on the component.
-    The following describes the general order of all possible notifications which you can encounter when working with a row set:
+    A row set is able to be operated in various ways, and additionally it notifies various changes in its state. Clients of this service can rely on a fixed order of notifications, depending on how they operate on the component.The following describes the general order of all possible notifications which you can encounter when working with a row set:
     
     The following matrix shows the notifications which apply to the different operations:
     
-    Via com.sun.star.sdbc.XResultSetUpdate.deleteRow(), you can delete the current row of a RowSet. This deleted row then doesn't vanish immediately, but is still present, and subsequent calls to com.sun.star.sdbc.XResultSet.rowDeleted() will return TRUE. The deleted row \"vanishes\" from the RowSet as soon as the cursor is moved away from it.
-    As a consequence, the behavior of several other methods is affected:
+    Via com.sun.star.sdbc.XResultSetUpdate.deleteRow(), you can delete the current row of a RowSet. This deleted row then doesn't vanish immediately, but is still present, and subsequent calls to com.sun.star.sdbc.XResultSet.rowDeleted() will return TRUE. The deleted row \"vanishes\" from the RowSet as soon as the cursor is moved away from it.As a consequence, the behavior of several other methods is affected:
 
     See Also:
         `API RowSet <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1RowSet.html>`_
@@ -75,9 +73,7 @@ class RowSet(ResultSet_847b09ec, RowSet_70fd0908, XCompletedExecution_fb8c0dea, 
         """
         is the command which should be executed, the type of command depends on the CommandType.
         
-        In case of a CommandType of CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:
-        It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.
-        The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
+        In case of a CommandType of CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
         """
     @property
     def CommandType(self) -> int:

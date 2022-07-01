@@ -35,11 +35,7 @@ class XFormOperations(XComponent_98dc0ab5):
     
     This instance allows for operations on a user interface form, by saving its clients from various tedious and error-prone operations.
     
-    As an example, imagine you have a database form, displayed in some user interface, which you want to move to the next record.
-    It is as easy as calling com.sun.star.sdbc.XResultSet.next() on this form, right? Wrong. First, you need to care for saving the current record, so the user doesn't lose her input. So you need to call com.sun.star.sdbc.XResultSetUpdate.updateRow() or com.sun.star.sdbc.XResultSetUpdate.insertRow(), depending on the form's com.sun.star.sdb.RowSet.IsNew property.
-    But then you're done, right? Wrong, again.
-    When the user just entered some data into one of the form fields, but did not yet leave this field, then the data is not yet committed to the form, not to talk about being committed to the underlying database. So, before everything else, you would need to obtain the active control of the form, and commit it.
-    Now you're done ...
+    As an example, imagine you have a database form, displayed in some user interface, which you want to move to the next record.It is as easy as calling com.sun.star.sdbc.XResultSet.next() on this form, right? Wrong. First, you need to care for saving the current record, so the user doesn't lose her input. So you need to call com.sun.star.sdbc.XResultSetUpdate.updateRow() or com.sun.star.sdbc.XResultSetUpdate.insertRow(), depending on the form's com.sun.star.sdb.RowSet.IsNew property.But then you're done, right? Wrong, again.When the user just entered some data into one of the form fields, but did not yet leave this field, then the data is not yet committed to the form, not to talk about being committed to the underlying database. So, before everything else, you would need to obtain the active control of the form, and commit it.Now you're done ...
     
     As another example, consider that you want to delete the current record from the form. You have to take into account any com.sun.star.form.XConfirmDeleteListeners registered at the com.sun.star.form.FormController or the com.sun.star.form.component.DataForm.
     

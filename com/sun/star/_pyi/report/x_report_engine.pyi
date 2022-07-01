@@ -89,8 +89,7 @@ class XReportEngine(XPropertySet_bc180bfa, XComponent_98dc0ab5):
         """
         defines the maximum number of rows which should be fetched for the report.
         
-        If the limit is exceeded, the excess rows are silently dropped.
-        There is no limitation, if set to zero.
+        If the limit is exceeded, the excess rows are silently dropped. There is no limitation, if set to zero.
         """
 
     @property
