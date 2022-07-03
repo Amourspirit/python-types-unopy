@@ -37,4 +37,6 @@ class XContentProviderFactory(XInterface_8f010a43):
         """
         creates a XContentProvider implementation object.
         """
+        ...
+
 

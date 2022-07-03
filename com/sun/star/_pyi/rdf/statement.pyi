@@ -50,6 +50,7 @@ class Statement(object):
             Object (XNode, optional): Object value.
             Graph (XURI, optional): Graph value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class Statement(object):
         """
         the subject of the RDF statement.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class Statement(object):
         """
         the predicate of the RDF statement.
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class Statement(object):
         """
         the object of the RDF statement.
         """
+        ...
 
 
     @property
@@ -78,5 +82,6 @@ class Statement(object):
         """
         the named graph that contains this statement, or NULL.
         """
+        ...
 
 

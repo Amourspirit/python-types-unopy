@@ -29,5 +29,6 @@ class ReportComponentHandler(XPropertyHandler_3e950fbf):
     See Also:
         `API ReportComponentHandler <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1report_1_1inspection_1_1ReportComponentHandler.html>`_
     """
+    ...
 
 

@@ -38,5 +38,6 @@ class HiddenControl(FormComponent_bc700c03):
         """
         specifies the value of the component.
         """
+        ...
 
 

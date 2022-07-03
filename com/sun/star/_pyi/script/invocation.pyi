@@ -33,5 +33,6 @@ class Invocation(XSingleServiceFactory_27210f0d):
     See Also:
         `API Invocation <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1script_1_1Invocation.html>`_
     """
+    ...
 
 

@@ -48,6 +48,7 @@ class DockingEvent(EventObject_a3d70b03):
             bLiveMode (bool, optional): bLiveMode value.
             bInteractive (bool, optional): bInteractive value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class DockingEvent(EventObject_a3d70b03):
         """
         specifies the current tracking rectangle
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class DockingEvent(EventObject_a3d70b03):
         """
         specifies the current mouse position in frame coordinates
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class DockingEvent(EventObject_a3d70b03):
         """
         specifies if the layout should be adjusted immediately
         """
+        ...
 
 
     @property
@@ -76,5 +80,6 @@ class DockingEvent(EventObject_a3d70b03):
         """
         specifies if the docking procedure is interactive which means that the user is currently dragging the window to a new position if this member is FALSE the window will be docked or undocked immediately using the returned tracking rectangle
         """
+        ...
 
 

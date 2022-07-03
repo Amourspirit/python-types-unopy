@@ -41,6 +41,7 @@ class GoalResult(object):
             Divergence (float, optional): Divergence value.
             Result (float, optional): Result value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class GoalResult(object):
         """
         the amount by which the result changed in the last iteration.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class GoalResult(object):
         """
         the resulting value.
         """
+        ...
 
 

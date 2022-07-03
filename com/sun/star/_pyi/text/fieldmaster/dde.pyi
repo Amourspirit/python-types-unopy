@@ -34,25 +34,30 @@ class DDE(TextFieldMaster_d6410cc2):
         """
         contains the content.
         """
+        ...
     @property
     def DDECommandElement(self) -> str:
         """
         contains the element string of the DDE command.
         """
+        ...
     @property
     def DDECommandFile(self) -> str:
         """
         contains the file string of the DDE command.
         """
+        ...
     @property
     def DDECommandType(self) -> str:
         """
         contains the type string of the DDE command.
         """
+        ...
     @property
     def IsAutomaticUpdate(self) -> bool:
         """
         determines whether DDE link is updated automatically.
         """
+        ...
 
 

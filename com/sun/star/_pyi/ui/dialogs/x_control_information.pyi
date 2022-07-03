@@ -42,10 +42,12 @@ class XControlInformation(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getSupportedControls(self) -> 'typing.Tuple[str, ...]':
         """
         Query for the supported controls of a service instance.
         """
+        ...
     def isControlPropertySupported(self, aControlName: str, aControlProperty: str) -> bool:
         """
         Returns whether control property is supported by a control.
@@ -53,8 +55,11 @@ class XControlInformation(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def isControlSupported(self, aControlName: str) -> bool:
         """
         Returns whether the specified control is supported or not.
         """
+        ...
+
 

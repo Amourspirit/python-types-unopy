@@ -38,6 +38,7 @@ class XVBAEventProcessor(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def processVbaEvent(self, nEventId: int, aArgs: 'typing.Tuple[object, ...]') -> bool:
         """
         Executes a VBA event handler.
@@ -46,4 +47,6 @@ class XVBAEventProcessor(ABC):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.util.VetoException: ``VetoException``
         """
+        ...
+
 

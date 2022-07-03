@@ -28,5 +28,6 @@ class ReportControlFormat(XReportControlFormat_3d4e0fc2):
     See Also:
         `API ReportControlFormat <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1report_1_1ReportControlFormat.html>`_
     """
+    ...
 
 

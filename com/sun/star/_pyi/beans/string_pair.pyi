@@ -41,6 +41,7 @@ class StringPair(object):
             First (str, optional): First value.
             Second (str, optional): Second value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class StringPair(object):
         """
         specifies the first of the two strings.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class StringPair(object):
         """
         specifies the second of the two strings.
         """
+        ...
 
 

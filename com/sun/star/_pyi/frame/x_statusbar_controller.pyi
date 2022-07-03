@@ -49,34 +49,42 @@ class XStatusbarController(XStatusListener_e2740d35, XComponent_98dc0ab5, XIniti
         """
         is called by a status bar if the user clicked with mouse into the field of the corresponding control.
         """
+        ...
     def command(self, aPos: 'Point_5fb2085e', nCommand: int, bMouseEvent: bool, aData: object) -> None:
         """
         is called by a status bar if a command event is available for a controller.
         """
+        ...
     def doubleClick(self, aPos: 'Point_5fb2085e') -> None:
         """
         is called by a status bar if the user double-clicked with mouse into the field of the corresponding control.
         """
+        ...
     def mouseButtonDown(self, aMouseEvent: 'MouseEvent_8f430a5f') -> bool:
         """
         is called by a status bar if the mouse position is within the controller and a mouse button has been pressed.
         
         If the controller has captured the mouse input this function is also called when the mouse position is not within the controller.
         """
+        ...
     def mouseButtonUp(self, aMouseEvent: 'MouseEvent_8f430a5f') -> bool:
         """
         is called by a status bar if the mouse position is within the controller and a mouse button has been released.
         
         If the controller has captured the mouse input this function is also called when the mouse position is not within the controller.
         """
+        ...
     def mouseMove(self, aMouseEvent: 'MouseEvent_8f430a5f') -> bool:
         """
         is called by a status bar if the mouse position is within the controller and a mouse has been moved.
         
         If the controller has captured the mouse input this function is also called when the mouse position is not within the controller.
         """
+        ...
     def paint(self, xGraphics: 'XGraphics_842309dd', OutputRectangle: 'Rectangle_84b109e9', nStyle: int) -> None:
         """
         is called by a status bar if the controller has to update the visual representation.
         """
+        ...
+
 

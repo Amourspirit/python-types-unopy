@@ -52,6 +52,7 @@ class Diagram(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180bfa, XAx
         
         Setting this property to false will have no effect. Instead use the interface com.sun.star.drawing.XShape to set a concrete position (note com.sun.star.chart.XDiagram is derived from com.sun.star.drawing.XShape).
         """
+        ...
     @property
     def AutomaticSize(self) -> bool:
         """
@@ -59,20 +60,24 @@ class Diagram(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180bfa, XAx
         
         Setting this property to false will have no effect. Instead use the interface com.sun.star.drawing.XShape to set a concrete size (note com.sun.star.chart.XDiagram is derived from com.sun.star.drawing.XShape).
         """
+        ...
     @property
     def DataCaption(self) -> int:
         """
         specifies how the caption of data points is displayed.
         """
+        ...
     @property
     def DataRowSource(self) -> 'ChartDataRowSource_9a00e2f':
         """
         determines if the data for a data row is contained in the columns or in the rows of the data array.
         """
+        ...
     @property
     def MissingValueTreatment(self) -> int:
         """
         specifies how empty or invalid cells in the provided data should be handled when displayed
         """
+        ...
 
 

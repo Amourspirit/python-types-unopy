@@ -38,10 +38,12 @@ class ConnectionProperties(ABC):
         """
         the password
         """
+        ...
     @property
     def user(self) -> str:
         """
         the username
         """
+        ...
 
 

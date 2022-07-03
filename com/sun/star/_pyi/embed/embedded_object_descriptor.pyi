@@ -40,6 +40,7 @@ class EmbeddedObjectDescriptor(ABC):
         """
         allows to provide a dispatch interceptor for outplace activation.
         """
+        ...
     @property
     def RecoveryStorage(self) -> 'XStorage_8e460a32':
         """
@@ -51,6 +52,7 @@ class EmbeddedObjectDescriptor(ABC):
         
         The object will still be based on the storage denoted in the XEmbedObjectCreator method call, i.e., subsequent save operations will still use that storage. RecoveryStorage is used at loading time only, and then discarded.
         """
+        ...
     @property
     def StoreVisualReplacement(self) -> bool:
         """
@@ -58,5 +60,6 @@ class EmbeddedObjectDescriptor(ABC):
         
         Setting of this property to true tells the embedded object that controls the document to store or not to store the graphical representation of the document into the object persistence. If this property is not set the object makes the decision itself.
         """
+        ...
 
 

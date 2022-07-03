@@ -38,8 +38,11 @@ class XInteractionPassword(XInteractionContinuation_5af0108e):
         """
         Get result password from the continuation.
         """
+        ...
     def setPassword(self, aPasswd: str) -> None:
         """
         Store result password to the continuation.
         """
+        ...
+
 

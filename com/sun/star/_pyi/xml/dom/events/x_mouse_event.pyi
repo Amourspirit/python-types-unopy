@@ -36,34 +36,46 @@ class XMouseEvent(XUIEvent_fa900d82):
     def getAltKey(self) -> bool:
         """
         """
+        ...
     def getButton(self) -> int:
         """
         """
+        ...
     def getClientX(self) -> int:
         """
         """
+        ...
     def getClientY(self) -> int:
         """
         """
+        ...
     def getCtrlKey(self) -> bool:
         """
         """
+        ...
     def getMetaKey(self) -> bool:
         """
         """
+        ...
     def getRelatedTarget(self) -> 'XEventTarget_36420f4b':
         """
         """
+        ...
     def getScreenX(self) -> int:
         """
         """
+        ...
     def getScreenY(self) -> int:
         """
         """
+        ...
     def getShiftKey(self) -> bool:
         """
         """
+        ...
     def initMouseEvent(self, typeArg: str, canBubbleArg: bool, cancelableArg: bool, viewArg: 'XAbstractView_35f90f4a', detailArg: int, screenXArg: int, screenYArg: int, clientXArg: int, clientYArg: int, ctrlKeyArg: bool, altKeyArg: bool, shiftKeyArg: bool, metaKeyArg: bool, buttonArg: int, relatedTargetArg: 'XEventTarget_36420f4b') -> None:
         """
         """
+        ...
+
 

@@ -39,20 +39,26 @@ class XTabListener(XEventListener_c7230c4a):
         
         by using mouse/keyboard or method XSimpleTabController.activateTab()
         """
+        ...
     def changed(self, ID: int, Properties: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> None:
         """
         a tab was changed within its properties.
         """
+        ...
     def deactivated(self, ID: int) -> None:
         """
         a tab was deactivated, because another tab became the new active state.
         """
+        ...
     def inserted(self, ID: int) -> None:
         """
         a new tab was inserted.
         """
+        ...
     def removed(self, ID: int) -> None:
         """
         a tab was removed.
         """
+        ...
+
 

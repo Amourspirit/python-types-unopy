@@ -35,5 +35,6 @@ class PackageFolder(XPropertySet_bc180bfa, XChild_a6390b07, XEnumerationAccess_4
     See Also:
         `API PackageFolder <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1packages_1_1PackageFolder.html>`_
     """
+    ...
 
 

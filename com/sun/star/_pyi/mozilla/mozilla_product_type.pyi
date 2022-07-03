@@ -32,6 +32,7 @@ class MozillaProductType(Enum):
     See Also:
         `API MozillaProductType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1mozilla.html#a2bcdf854763e98ee224085041ac2ffa5>`_
     """
+    typeName: str = 'com.sun.star.mozilla.MozillaProductType'
 
     Default: 'uno.Enum'
     """

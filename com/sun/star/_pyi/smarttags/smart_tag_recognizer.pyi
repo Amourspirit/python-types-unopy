@@ -35,5 +35,6 @@ class SmartTagRecognizer(XSmartTagRecognizer_5ccd1071):
     See Also:
         `API SmartTagRecognizer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1smarttags_1_1SmartTagRecognizer.html>`_
     """
+    ...
 
 

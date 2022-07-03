@@ -34,40 +34,51 @@ class XTextTableCursor(XInterface_8f010a43):
         """
         The name is the cell name of the top left table cell of the range concatenated by \":\" with the table cell name of the bottom left table cell of the cell range. If the range consists of one table cell only then the name of that table cell is returned.
         """
+        ...
     def goDown(self, nCount: int, bExpand: bool) -> bool:
         """
         moves the cursor to the bottom neighbor cell.
         """
+        ...
     def goLeft(self, nCount: int, bExpand: bool) -> bool:
         """
         moves the cursor to the left neighbor.
         """
+        ...
     def goRight(self, nCount: int, bExpand: bool) -> bool:
         """
         moves the cursor to the right neighbor.
         """
+        ...
     def goUp(self, nCount: int, bExpand: bool) -> bool:
         """
         moves the cursor to the top neighbor.
         """
+        ...
     def gotoCellByName(self, aCellName: str, bExpand: bool) -> bool:
         """
         moves the cursor to the cell with the specified name.
         """
+        ...
     def gotoEnd(self, bExpand: bool) -> None:
         """
         moves the cursor to the bottom right cell of the table.
         """
+        ...
     def gotoStart(self, bExpand: bool) -> None:
         """
         moves the cursor to the top left cell of the table.
         """
+        ...
     def mergeRange(self) -> bool:
         """
         merges the selected range of cells.
         """
+        ...
     def splitRange(self, nCount: int, bHorizontal: bool) -> bool:
         """
         splits the range of cells.
         """
+        ...
+
 

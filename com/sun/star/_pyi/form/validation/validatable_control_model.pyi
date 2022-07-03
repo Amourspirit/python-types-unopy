@@ -33,5 +33,6 @@ class ValidatableControlModel(FormControlModel_e2990d22, XValidatableFormCompone
     See Also:
         `API ValidatableControlModel <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1validation_1_1ValidatableControlModel.html>`_
     """
+    ...
 
 

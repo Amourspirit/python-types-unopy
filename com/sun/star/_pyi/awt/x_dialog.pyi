@@ -34,18 +34,23 @@ class XDialog(XInterface_8f010a43):
         """
         hides the dialog and then causes XDialog.execute() to return.
         """
+        ...
     def execute(self) -> int:
         """
         runs the dialog modally: shows it, and waits for the execution to end.
         
         Returns an exit code (e.g., indicating the button that was used to end the execution).
         """
+        ...
     def getTitle(self) -> str:
         """
         gets the title of the dialog.
         """
+        ...
     def setTitle(self, Title: str) -> None:
         """
         sets the title of the dialog.
         """
+        ...
+
 

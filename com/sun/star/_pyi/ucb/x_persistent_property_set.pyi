@@ -37,8 +37,11 @@ class XPersistentPropertySet(XPropertySet_bc180bfa):
         """
         returns the key used to address the set in the property set registry.
         """
+        ...
     def getRegistry(self) -> 'XPropertySetRegistry_c2e0e84':
         """
         returns the registry used to store the property set.
         """
+        ...
+
 

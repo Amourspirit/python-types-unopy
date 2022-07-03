@@ -43,6 +43,7 @@ class ComponentChangeEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Component (str, optional): Component value.
         """
+        ...
 
 
     @property
@@ -50,5 +51,6 @@ class ComponentChangeEvent(EventObject_a3d70b03):
         """
         The name of the Component that changed.
         """
+        ...
 
 

@@ -49,6 +49,7 @@ class XEmbedObjectCreator(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def createInstanceInitFromMediaDescriptor(self, xStorage: 'XStorage_8e460a32', sEntryName: str, aMediaDescriptor: 'typing.Tuple[PropertyValue_c9610c73, ...]', aObjectArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> 'XInterface_8f010a43':
         """
         creates a new object and initializes it based on com.sun.star.document.MediaDescriptor.
@@ -60,6 +61,7 @@ class XEmbedObjectCreator(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def createInstanceInitNew(self, aClassID: uno.ByteSequence, sClassName: str, xStorage: 'XStorage_8e460a32', sEntryName: str, aObjectArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> 'XInterface_8f010a43':
         """
         creates a new object and initializes it as a new one.
@@ -71,4 +73,6 @@ class XEmbedObjectCreator(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

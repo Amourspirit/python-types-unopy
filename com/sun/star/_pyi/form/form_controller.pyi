@@ -43,5 +43,6 @@ class FormController(FormControllerDispatcher_5b3a107b, XConfirmDeleteBroadcaste
     See Also:
         `API FormController <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1FormController.html>`_
     """
+    ...
 
 

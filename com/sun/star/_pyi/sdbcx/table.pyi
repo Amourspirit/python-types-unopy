@@ -46,6 +46,7 @@ class Table(XPropertySet_bc180bfa, XAlterTable_af4d0b54, XColumnsSupplier_f0600d
         """
         is the name of the table catalog.
         """
+        ...
     @property
     def Description(self) -> str:
         """
@@ -53,16 +54,19 @@ class Table(XPropertySet_bc180bfa, XAlterTable_af4d0b54, XColumnsSupplier_f0600d
         
         Could be empty, if not supported by the driver.
         """
+        ...
     @property
     def Name(self) -> str:
         """
         is the name of the table.
         """
+        ...
     @property
     def SchemaName(self) -> str:
         """
         is the name of the table schema.
         """
+        ...
     @property
     def Type(self) -> str:
         """
@@ -70,5 +74,6 @@ class Table(XPropertySet_bc180bfa, XAlterTable_af4d0b54, XColumnsSupplier_f0600d
         
         Could be empty, if not supported by the driver.
         """
+        ...
 
 

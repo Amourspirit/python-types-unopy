@@ -35,6 +35,7 @@ class XValueBinding(XInterface_8f010a43):
         """
         determines the types which are supported by this binding for value exchange
         """
+        ...
     def getValue(self, aType: object) -> object:
         """
         retrieves the current value
@@ -42,6 +43,7 @@ class XValueBinding(XInterface_8f010a43):
         Raises:
             IncompatibleTypesException: ``IncompatibleTypesException``
         """
+        ...
     def setValue(self, aValue: object) -> None:
         """
         sets the current value
@@ -51,10 +53,13 @@ class XValueBinding(XInterface_8f010a43):
             InvalidBindingStateException: ``InvalidBindingStateException``
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def supportsType(self, aType: object) -> bool:
         """
         determines whether a given type is supported by this binding for value exchange
         
         Calling this method is equal to calling getSupportedValueTypes(), and looking up the given type in the resulting type sequence.
         """
+        ...
+
 

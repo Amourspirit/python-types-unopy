@@ -70,6 +70,7 @@ class XCanvas(XInterface_8f010a43):
         
         This method clears the whole canvas area to the device default color (e.g. white for a printer, transparent for an XCustomSprite).
         """
+        ...
     def createFont(self, aFontRequest: 'FontRequest_e4890d46', aExtraFontProperties: 'typing.Tuple[PropertyValue_c9610c73, ...]', aFontMatrix: 'Matrix2D_b26c0b5f') -> 'XCanvasFont_e3380d11':
         """
         Create a suitable font for the specified font description.
@@ -77,6 +78,7 @@ class XCanvas(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def drawBezier(self, aBezierSegment: 'RealBezierSegment2D_4a970fa2', aEndPoint: 'RealPoint2D_d6e70c78', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27') -> None:
         """
         Draw a cubic Bezier curve in device resolution width (i.e.
@@ -86,6 +88,7 @@ class XCanvas(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def drawBitmap(self, xBitmap: 'XBitmap_b1b70b7b', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27') -> 'XCachedPrimitive_29890f0f':
         """
         Render the given bitmap.
@@ -96,6 +99,7 @@ class XCanvas(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             VolatileContentDestroyedException: ``VolatileContentDestroyedException``
         """
+        ...
     def drawBitmapModulated(self, xBitmap: 'XBitmap_b1b70b7b', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27') -> 'XCachedPrimitive_29890f0f':
         """
         Render the given bitmap, with a global color modulation.
@@ -106,6 +110,7 @@ class XCanvas(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             VolatileContentDestroyedException: ``VolatileContentDestroyedException``
         """
+        ...
     def drawLine(self, aStartPoint: 'RealPoint2D_d6e70c78', aEndPoint: 'RealPoint2D_d6e70c78', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27') -> None:
         """
         Draw a line in device resolution width (i.e.
@@ -115,6 +120,7 @@ class XCanvas(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def drawPoint(self, aPoint: 'RealPoint2D_d6e70c78', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27') -> None:
         """
         Draw a point in device resolution on the device.
@@ -122,6 +128,7 @@ class XCanvas(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def drawPolyPolygon(self, xPolyPolygon: 'XPolyPolygon2D_e1b0e20', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27') -> 'XCachedPrimitive_29890f0f':
         """
         Draw a poly-polygon in device resolution line width (i.e.
@@ -131,6 +138,7 @@ class XCanvas(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def drawText(self, aText: 'StringContext_d50e22', xFont: 'XCanvasFont_e3380d11', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27', nTextDirection: int) -> 'XCachedPrimitive_29890f0f':
         """
         Draw the text given by the substring of the specified string with the given font.
@@ -140,6 +148,7 @@ class XCanvas(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def drawTextLayout(self, xLayoutetText: 'XTextLayout_e44a0d41', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27') -> 'XCachedPrimitive_29890f0f':
         """
         Draw the formatted text given by the text layout.
@@ -149,6 +158,7 @@ class XCanvas(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def fillPolyPolygon(self, xPolyPolygon: 'XPolyPolygon2D_e1b0e20', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27') -> 'XCachedPrimitive_29890f0f':
         """
         Fill the given poly-polygon.
@@ -158,6 +168,7 @@ class XCanvas(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def fillTextureMappedPolyPolygon(self, xPolyPolygon: 'XPolyPolygon2D_e1b0e20', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27', xTextures: 'typing.Tuple[Texture_b2e70bb7, ...]', xMapping: 'XMapping2D_ca1e0c0e') -> 'XCachedPrimitive_29890f0f':
         """
         Fill the given poly-polygon with a mapped texture.
@@ -168,6 +179,7 @@ class XCanvas(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             VolatileContentDestroyedException: ``VolatileContentDestroyedException``
         """
+        ...
     def fillTexturedPolyPolygon(self, xPolyPolygon: 'XPolyPolygon2D_e1b0e20', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27', xTextures: 'typing.Tuple[Texture_b2e70bb7, ...]') -> 'XCachedPrimitive_29890f0f':
         """
         Fill the given poly-polygon with a texture.
@@ -178,12 +190,14 @@ class XCanvas(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             VolatileContentDestroyedException: ``VolatileContentDestroyedException``
         """
+        ...
     def getDevice(self) -> 'XGraphicDevice_ca80e2c':
         """
         Request the associated graphic device for this canvas.
         
         A graphic device provides methods specific to the underlying output device capabilities, which are common for all canvases rendering to such a device. This includes device resolution, color space, or bitmap formats.
         """
+        ...
     def queryAvailableFonts(self, aFilter: 'FontInfo_bded0be9', aFontProperties: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> 'typing.Tuple[FontInfo_bded0be9, ...]':
         """
         Query font information, specific to this canvas.
@@ -191,6 +205,7 @@ class XCanvas(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def queryStrokeShapes(self, xPolyPolygon: 'XPolyPolygon2D_e1b0e20', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27', aStrokeAttributes: 'StrokeAttributes_2dd10f65') -> 'XPolyPolygon2D_e1b0e20':
         """
         Query the polygonal representation of the stroke outlines, as it would be generated by the strokePolyPolygon methods.
@@ -200,6 +215,7 @@ class XCanvas(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def strokePolyPolygon(self, xPolyPolygon: 'XPolyPolygon2D_e1b0e20', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27', aStrokeAttributes: 'StrokeAttributes_2dd10f65') -> 'XCachedPrimitive_29890f0f':
         """
         Stroke each polygon of the provided poly-polygon with the specified stroke attributes.
@@ -209,6 +225,7 @@ class XCanvas(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def strokeTextureMappedPolyPolygon(self, xPolyPolygon: 'XPolyPolygon2D_e1b0e20', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27', aTextures: 'typing.Tuple[Texture_b2e70bb7, ...]', xMapping: 'XMapping2D_ca1e0c0e', aStrokeAttributes: 'StrokeAttributes_2dd10f65') -> 'XCachedPrimitive_29890f0f':
         """
         Stroke each polygon of the provided poly-polygon with the specified stroke attributes, fill the stroked outline with the specified texture graphics, map the texture to the outline via the specified texture mapping.
@@ -219,6 +236,7 @@ class XCanvas(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             VolatileContentDestroyedException: ``VolatileContentDestroyedException``
         """
+        ...
     def strokeTexturedPolyPolygon(self, xPolyPolygon: 'XPolyPolygon2D_e1b0e20', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27', aTextures: 'typing.Tuple[Texture_b2e70bb7, ...]', aStrokeAttributes: 'StrokeAttributes_2dd10f65') -> 'XCachedPrimitive_29890f0f':
         """
         Stroke each polygon of the provided poly-polygon with the specified stroke attributes, fill the stroked outline with the specified texture graphics.
@@ -229,4 +247,6 @@ class XCanvas(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             VolatileContentDestroyedException: ``VolatileContentDestroyedException``
         """
+        ...
+
 

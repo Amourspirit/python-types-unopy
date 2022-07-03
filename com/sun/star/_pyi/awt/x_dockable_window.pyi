@@ -42,42 +42,53 @@ class XDockableWindow(XInterface_8f010a43):
         
         only a single listener may be registered at any time.
         """
+        ...
     def enableDocking(self, bEnable: bool) -> None:
         """
         enable or disable docking, docking is disabled by default
         """
+        ...
     def isFloating(self) -> bool:
         """
         queries the current window state
         """
+        ...
     def isInPopupMode(self) -> bool:
         """
         queries the current pop-up mode
         """
+        ...
     def isLocked(self) -> bool:
         """
         queries the current locking state
         """
+        ...
     def lock(self) -> None:
         """
         prevents the window from being undocked this has no effect if the window is floating
         """
+        ...
     def removeDockableWindowListener(self, xListener: 'XDockableWindowListener_36b80f7f') -> None:
         """
         removes the specified docking listener from the object.
         """
+        ...
     def setFloatingMode(self, bFloating: bool) -> None:
         """
         toggle between floating and docked state
         """
+        ...
     def startPopupMode(self, WindowRect: 'Rectangle_84b109e9') -> None:
         """
         shows the window in a menu like style, i.e.
         
         without decoration a special indicator will allow for tearing off the window see com.sun.star.awt.XDockableWindowListener for the corresponding events
         """
+        ...
     def unlock(self) -> None:
         """
         enables undocking this has no effect if the window is floating
         """
+        ...
+
 

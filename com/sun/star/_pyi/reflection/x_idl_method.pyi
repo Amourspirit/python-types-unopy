@@ -39,26 +39,31 @@ class XIdlMethod(XIdlMember_e3400cfc):
         """
         Returns the declared exceptions types of the reflected method.
         """
+        ...
     def getMode(self) -> 'MethodMode_e4910d19':
         """
         Returns the method mode in which calls are run, i.e.
         
         either oneway or twoway. Method mode oneway denotes that a call may be run asynchronously (thus having no out parameters or return value)
         """
+        ...
     def getParameterInfos(self) -> 'typing.Tuple[ParamInfo_d7210cb0, ...]':
         """
         Returns formal parameter information of the reflected method in order of IDL declaration.
         
         Parameter information reflects the parameter's access mode (in, out, inout), the parameter's name and formal type.
         """
+        ...
     def getParameterTypes(self) -> 'typing.Tuple[XIdlClass_d63a0c9a, ...]':
         """
         Returns the formal parameter types of the reflected method in order of IDL declaration.
         """
+        ...
     def getReturnType(self) -> 'XIdlClass_d63a0c9a':
         """
         Returns the return type of the reflected method.
         """
+        ...
     def invoke(self, obj: object, args: object) -> object:
         """
         Invokes the reflected method on a given object with the given parameters.
@@ -69,4 +74,6 @@ class XIdlMethod(XIdlMember_e3400cfc):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.reflection.InvocationTargetException: ``InvocationTargetException``
         """
+        ...
+
 

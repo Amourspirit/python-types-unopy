@@ -41,6 +41,7 @@ class XIndexContainer(XIndexReplace_feed0dd7):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def removeByIndex(self, Index: int) -> None:
         """
         removes the element at the specified index.
@@ -49,4 +50,6 @@ class XIndexContainer(XIndexReplace_feed0dd7):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

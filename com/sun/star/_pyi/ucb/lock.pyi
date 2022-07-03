@@ -49,6 +49,7 @@ class Lock(LockEntry_839e09dd):
             Owner (object, optional): Owner value.
             Timeout (int, optional): Timeout value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class Lock(LockEntry_839e09dd):
         
         Each lock token is a URI.
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class Lock(LockEntry_839e09dd):
         """
         defines the lock's depth.
         """
+        ...
 
 
     @property
@@ -74,6 +77,7 @@ class Lock(LockEntry_839e09dd):
         
         This element provides information sufficient for either directly contacting a principal (such as a telephone number or email URI), or for discovering the principal (such as the URL of a homepage) who owns the lock.
         """
+        ...
 
 
     @property
@@ -83,5 +87,6 @@ class Lock(LockEntry_839e09dd):
         
         This element specifies the number of seconds between granting of the lock and the automatic removal of that lock. The value must not be greater than 2^32-1. A value of -1 stands for an infinite lock, that will never be removed automatically.
         """
+        ...
 
 

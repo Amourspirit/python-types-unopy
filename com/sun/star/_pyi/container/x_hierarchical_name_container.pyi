@@ -39,6 +39,7 @@ class XHierarchicalNameContainer(XHierarchicalNameReplace_b0ca121f):
             com.sun.star.container.ElementExistException: ``ElementExistException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def removeByHierarchicalName(self, Name: str) -> None:
         """
         removes the element at the specified name.
@@ -47,4 +48,6 @@ class XHierarchicalNameContainer(XHierarchicalNameReplace_b0ca121f):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

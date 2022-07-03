@@ -32,5 +32,6 @@ class FooterShape(TextShape_b1b80b8a, Shape_c0c80c15):
     See Also:
         `API FooterShape <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1FooterShape.html>`_
     """
+    ...
 
 

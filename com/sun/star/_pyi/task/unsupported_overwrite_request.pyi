@@ -52,11 +52,13 @@ class UnsupportedOverwriteRequest(ClassifiedInteractionRequest_9f72121b):
             Classification (InteractionClassification, optional): Classification value.
             Name (str, optional): Name value.
         """
+        ...
     @property
     def Name(self) -> str:
         """
         the name of the target that might be overwritten, can be empty.
         """
+        ...
 
 
 __all__ = ['UnsupportedOverwriteRequest']

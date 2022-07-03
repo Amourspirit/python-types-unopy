@@ -31,5 +31,6 @@ class CachedContentResultSetStub(ContentResultSet_d4ee0cc8, XFetchProvider_b9f10
     See Also:
         `API CachedContentResultSetStub <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1CachedContentResultSetStub.html>`_
     """
+    ...
 
 

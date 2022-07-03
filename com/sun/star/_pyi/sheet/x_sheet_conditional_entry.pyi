@@ -34,8 +34,11 @@ class XSheetConditionalEntry(XInterface_8f010a43):
         """
         returns the name of the cell style that is used when the condition is fulfilled.
         """
+        ...
     def setStyleName(self, aStyleName: str) -> None:
         """
         sets the name of the cell style that is used when the condition is fulfilled.
         """
+        ...
+
 

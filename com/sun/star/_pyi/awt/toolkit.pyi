@@ -31,5 +31,6 @@ class Toolkit(XToolkit2_84a309c4):
     See Also:
         `API Toolkit <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1Toolkit.html>`_
     """
+    ...
 
 

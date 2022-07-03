@@ -29,6 +29,7 @@ Enum
 See Also:
     `API SheetLinkMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html#a34cdda19a5183f39256021e0c2bc46cc>`_
 """
+typeName: str = 'com.sun.star.sheet.SheetLinkMode'
 
 NONE: 'uno.Enum'
 """

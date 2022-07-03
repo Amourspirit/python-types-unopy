@@ -19,7 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.form.runtime
 from typing_extensions import Literal
-import typing
+import uno
 from abc import ABC
 
 class XFeatureInvalidation(ABC):
@@ -41,10 +41,13 @@ class XFeatureInvalidation(ABC):
         
         This method is used of it cannot be exactly and reliably determined which features might actually have changed their state. In this case, the callee should assume all features it is interested in must be required.
         """
-    def invalidateFeatures(self, Features: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def invalidateFeatures(self, Features: uno.ByteSequence) -> None:
         """
         invalidates the given FormFeatures
         
         Invalidation means that any user interface representation (such as toolbox buttons), or any dispatches associated with the features in question are potentially out-of-date, and need to be updated.
         """
+        ...
+
 

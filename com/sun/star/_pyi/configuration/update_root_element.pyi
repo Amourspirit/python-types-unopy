@@ -38,5 +38,6 @@ class UpdateRootElement(AccessRootElement_7fef1140, XChangesBatch_bb3b0bb9):
     See Also:
         `API UpdateRootElement <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1UpdateRootElement.html>`_
     """
+    ...
 
 

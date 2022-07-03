@@ -40,6 +40,7 @@ class XMultiComponentFactory(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def createInstanceWithContext(self, aServiceSpecifier: str, Context: 'XComponentContext_e2e10d4a') -> 'XInterface_8f010a43':
         """
         Creates an instance of a component which supports the services specified by the factory.
@@ -47,8 +48,11 @@ class XMultiComponentFactory(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getAvailableServiceNames(self) -> 'typing.Tuple[str, ...]':
         """
         Gets the names of all supported services.
         """
+        ...
+
 

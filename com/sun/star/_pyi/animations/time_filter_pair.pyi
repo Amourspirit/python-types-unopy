@@ -40,6 +40,7 @@ class TimeFilterPair(object):
             Time (float, optional): Time value.
             Progress (float, optional): Progress value.
         """
+        ...
 
 
     @property

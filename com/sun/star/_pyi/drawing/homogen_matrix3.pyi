@@ -43,6 +43,7 @@ class HomogenMatrix3(object):
             Line2 (HomogenMatrixLine3, optional): Line2 value.
             Line3 (HomogenMatrixLine3, optional): Line3 value.
         """
+        ...
 
 
     @property

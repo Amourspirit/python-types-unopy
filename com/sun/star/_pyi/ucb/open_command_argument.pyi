@@ -45,6 +45,7 @@ class OpenCommandArgument(object):
             Priority (int, optional): Priority value.
             Sink (XInterface, optional): Sink value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class OpenCommandArgument(object):
         """
         The properties, for that the values shall be provided by the DynamicResultSet returned by the command).
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class OpenCommandArgument(object):
         
         The value can be one of the OpenMode constants.
         """
+        ...
 
 
     @property
@@ -68,6 +71,7 @@ class OpenCommandArgument(object):
         """
         The command's priority, in the range 0 (highest) to 65535 (lowest).
         """
+        ...
 
 
     @property
@@ -79,5 +83,6 @@ class OpenCommandArgument(object):
         
         If an XActiveDataSink is supplied, the implementation of the command needs to provide an implementation of an object implementing the interface com.sun.star.io.XInputStream. It is highly recommended that this object also implements the interface com.sun.star.io.XSeekable, if this can be done without wasting resources (i.e. allocating huge memory buffers). The implementation object has to be supplied to the data sink.
         """
+        ...
 
 

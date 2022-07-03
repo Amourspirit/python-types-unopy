@@ -37,8 +37,11 @@ class XSheetFilterable(XInterface_8f010a43):
         """
         creates a filter descriptor.
         """
+        ...
     def filter(self, xDescriptor: 'XSheetFilterDescriptor_47cc0ff7') -> None:
         """
         performs a filter operation, using the settings of the passed filter descriptor.
         """
+        ...
+
 

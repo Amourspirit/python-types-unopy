@@ -43,11 +43,13 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         """
         is the command which should be executed.
         """
+        ...
     @property
     def DataSourceName(self) -> str:
         """
         is the name of a named datasource to use.
         """
+        ...
     @property
     def EscapeProcessing(self) -> bool:
         """
@@ -55,6 +57,7 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         
         If escape scanning is on (the default), the driver will do escape substitution before sending the SQL to the database. This is only evaluated, if the CommandType is COMMAND.
         """
+        ...
     @property
     def MaxFieldSize(self) -> int:
         """
@@ -62,6 +65,7 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         
         This limit is the maximum number of bytes that can be returned for any column value. The limit applies only to com.sun.star.sdbc.DataType.BINARY , com.sun.star.sdbc.DataType.VARBINARY , com.sun.star.sdbc.DataType.LONGVARBINARY , com.sun.star.sdbc.DataType.CHAR , com.sun.star.sdbc.DataType.VARCHAR , and com.sun.star.sdbc.DataType.LONGVARCHAR columns. If the limit is exceeded, the excess data is silently discarded. There is no limitation, if set to zero.
         """
+        ...
     @property
     def MaxRows(self) -> int:
         """
@@ -69,11 +73,13 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         
         If the limit is exceeded, the excess rows are silently dropped. There is no limitation, if set to zero.
         """
+        ...
     @property
     def Password(self) -> str:
         """
         determines the user for whom to open the connection.
         """
+        ...
     @property
     def QueryTimeOut(self) -> int:
         """
@@ -81,21 +87,25 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         
         If the limit is exceeded, a com.sun.star.sdbc.SQLException is thrown. There is no limitation, if set to zero.
         """
+        ...
     @property
     def ResultSetType(self) -> int:
         """
         determine the result set type.
         """
+        ...
     @property
     def TransactionIsolation(self) -> int:
         """
         indicates the transaction isolation level, which should be used for the connection.
         """
+        ...
     @property
     def TypeMap(self) -> 'XNameAccess_e2ab0cf6':
         """
         is the type map that will be used for the custom mapping of SQL structured types and distinct types.
         """
+        ...
     @property
     def URL(self) -> str:
         """
@@ -103,10 +113,12 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         
         Could be used instead of the DataSourceName.
         """
+        ...
     @property
     def User(self) -> str:
         """
         determines the user for whom to open the connection.
         """
+        ...
 
 

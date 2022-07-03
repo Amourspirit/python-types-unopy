@@ -34,12 +34,16 @@ class XProgressHandler(XInterface_8f010a43):
         """
         The task notifies the handler that it has finished its current activity.
         """
+        ...
     def push(self, Status: object) -> None:
         """
         The task notifies the handler that it has started some new activity (possibly a sub-activity of another activity already making progress; therefore, these notifications behave in a stack-like manner).
         """
+        ...
     def update(self, Status: object) -> None:
         """
         The task notifies the handler that its current activity is making progress.
         """
+        ...
+
 

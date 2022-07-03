@@ -29,5 +29,6 @@ class ScannerManager(XScannerManager2_b740e01):
     See Also:
         `API ScannerManager <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1scanner_1_1ScannerManager.html>`_
     """
+    ...
 
 

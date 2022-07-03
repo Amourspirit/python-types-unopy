@@ -33,5 +33,6 @@ class Converter(XTypeConverter_e48b0d4f):
     See Also:
         `API Converter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1script_1_1Converter.html>`_
     """
+    ...
 
 

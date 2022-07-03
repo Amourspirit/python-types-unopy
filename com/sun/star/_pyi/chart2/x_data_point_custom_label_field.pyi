@@ -45,6 +45,7 @@ class XDataPointCustomLabelField(XFormattedString2_8010df3):
         
             LibreOffice 7.3
         """
+        ...
     def getDataLabelsRange(self) -> bool:
         """
         Indicates whether the label field's content is sourced from a cell[range] or not.
@@ -53,12 +54,15 @@ class XDataPointCustomLabelField(XFormattedString2_8010df3):
         
             LibreOffice 7.3
         """
+        ...
     def getFieldType(self) -> 'DataPointCustomLabelFieldType_cc7712b1':
         """
         """
+        ...
     def getGuid(self) -> str:
         """
         """
+        ...
     def setCellRange(self, cellRange: str) -> None:
         """
         Sets the address of the cell[range] from which the content of this field is sourced.
@@ -67,6 +71,7 @@ class XDataPointCustomLabelField(XFormattedString2_8010df3):
         
             LibreOffice 7.3
         """
+        ...
     def setDataLabelsRange(self, dataLabelsRange: bool) -> None:
         """
         Sets whether the label field's content is sourced from a cell[range] or not.
@@ -75,10 +80,14 @@ class XDataPointCustomLabelField(XFormattedString2_8010df3):
         
             LibreOffice 7.3
         """
+        ...
     def setFieldType(self, fieldType: 'DataPointCustomLabelFieldType_cc7712b1') -> None:
         """
         """
+        ...
     def setGuid(self, guid: str) -> None:
         """
         """
+        ...
+
 

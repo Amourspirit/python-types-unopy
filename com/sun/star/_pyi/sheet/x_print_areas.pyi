@@ -37,40 +37,48 @@ class XPrintAreas(XInterface_8f010a43):
         """
         returns a sequence containing all print areas of the sheet.
         """
+        ...
     def getPrintTitleColumns(self) -> bool:
         """
         returns, whether the title columns are repeated on all subsequent print pages to the right.
         """
+        ...
     def getPrintTitleRows(self) -> bool:
         """
         returns, whether the title rows are repeated on all subsequent print pages to the bottom.
         """
+        ...
     def getTitleColumns(self) -> 'CellRangeAddress_ec450d43':
         """
         returns the range that is specified as title columns range.
         
         Title columns can be automatically repeated on all subsequent print pages to the right, using XPrintAreas.setPrintTitleColumns().
         """
+        ...
     def getTitleRows(self) -> 'CellRangeAddress_ec450d43':
         """
         returns the range that is specified as title rows range.
         
         Title rows can be automatically repeated on all subsequent print pages to the bottom, using XPrintAreas.setPrintTitleRows().
         """
+        ...
     def setPrintAreas(self, aPrintAreas: 'typing.Tuple[CellRangeAddress_ec450d43, ...]') -> None:
         """
         sets the print areas of the sheet.
         
         If none of the sheets in a document have print areas, the whole sheets are printed. If any sheet contains print areas, other sheets without print areas are not printed.
         """
+        ...
     def setPrintTitleColumns(self, bPrintTitleColumns: bool) -> None:
         """
         specifies whether the title columns are repeated on all subsequent print pages to the right.
         """
+        ...
     def setPrintTitleRows(self, bPrintTitleRows: bool) -> None:
         """
         specifies whether the title rows are repeated on all subsequent print pages to the bottom.
         """
+        ...
     def setTitleColumns(self, aTitleColumns: 'CellRangeAddress_ec450d43') -> None:
         """
         specifies a range of columns as title columns range.
@@ -79,6 +87,7 @@ class XPrintAreas(XInterface_8f010a43):
         
         Title columns can be automatically repeated on all subsequent print pages to the right, using XPrintAreas.setPrintTitleColumns().
         """
+        ...
     def setTitleRows(self, aTitleRows: 'CellRangeAddress_ec450d43') -> None:
         """
         specifies a range of rows as title rows range.
@@ -87,4 +96,6 @@ class XPrintAreas(XInterface_8f010a43):
         
         Title rows can be automatically repeated on all subsequent print pages to the bottom, using XPrintAreas.setPrintTitleRows().
         """
+        ...
+
 

@@ -45,6 +45,7 @@ class XAnimationListener(XEventListener_c7230c4a):
         
         It may be raised both in the course of normal (i.e. scheduled or interactive) timeline play, as well as in the case that the element was begun with an interface method.
         """
+        ...
     def endEvent(self, Node: 'XAnimationNode_1cf10eb9') -> None:
         """
         This event is raised at the active end of the element.
@@ -53,6 +54,7 @@ class XAnimationListener(XEventListener_c7230c4a):
         
         This event may be raised both in the course of normal (i.e. scheduled or interactive) timeline play, as well as in the case that the element was ended with a DOM method.
         """
+        ...
     def repeat(self, Node: 'XAnimationNode_1cf10eb9', Repeat: int) -> None:
         """
         This event is raised when the element local timeline repeats.
@@ -61,4 +63,6 @@ class XAnimationListener(XEventListener_c7230c4a):
         
         Associated with the repeat event is an integer that indicates which repeat iteration is beginning.
         """
+        ...
+
 

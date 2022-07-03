@@ -50,9 +50,11 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
     def addAuthorToTrustedSources(self, Author: 'XCertificate_e55b0d3b') -> None:
         """
         """
+        ...
     def addLocationToTrustedSources(self, Location: str) -> None:
         """
         """
+        ...
     def chooseCertificate(self, Description: str) -> 'XCertificate_e55b0d3b':
         """
         This method shows the CertificateChooser dialog, used by document and PDF signing Shows only private certificates.
@@ -63,6 +65,7 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
 
         * ``Description`` is an out direction argument.
         """
+        ...
     def chooseCertificateWithProps(self, Properties: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> 'XCertificate_e55b0d3b':
         """
         This method shows the CertificateChooser dialog, used by document and PDF signing Shows only private certificates and returns usage string in addition to description.
@@ -73,6 +76,7 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
 
         * ``Properties`` is an out direction argument.
         """
+        ...
     def chooseEncryptionCertificate(self) -> 'typing.Tuple[XCertificate_e55b0d3b, ...]':
         """
         This method shows the CertificateChooser dialog with all certificates, private and other people's.
@@ -83,6 +87,7 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
         
             LibreOffice 6.0
         """
+        ...
     def chooseSigningCertificate(self, Description: str) -> 'XCertificate_e55b0d3b':
         """
         This is an alias for 'chooseCertificate', shows the CertificateChooser dialog with private certificates.
@@ -93,28 +98,35 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
 
         * ``Description`` is an out direction argument.
         """
+        ...
     def getDocumentContentSignatureDefaultStreamName(self) -> str:
         """
         allows to get the default stream name for storing of the signature of the document content.
         """
+        ...
     def getPackageSignatureDefaultStreamName(self) -> str:
         """
         allows to get the default stream name for storing of the signature of the package.
         """
+        ...
     def getScriptingContentSignatureDefaultStreamName(self) -> str:
         """
         allows to get the default stream name for storing of the signature of the scripting content.
         """
+        ...
     def isAuthorTrusted(self, Author: 'XCertificate_e55b0d3b') -> bool:
         """
         """
+        ...
     def isLocationTrusted(self, Location: str) -> bool:
         """
         """
+        ...
     def manageTrustedSources(self) -> None:
         """
         manages trusted sources (Authors and paths )
         """
+        ...
     def selectSigningCertificate(self, Description: str) -> 'XCertificate_e55b0d3b':
         """
         This shows the certificate selection dialog and allows to only select the certificate without actually signing the document.
@@ -125,6 +137,7 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
 
         * ``Description`` is an out direction argument.
         """
+        ...
     def selectSigningCertificateWithType(self, certificateKind: 'CertificateKind_ffd0e69', Description: str) -> 'XCertificate_e55b0d3b':
         """
         This shows the certificate selection dialog and allows to only select the certificate without actually signing the document.
@@ -137,6 +150,7 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
 
         * ``Description`` is an out direction argument.
         """
+        ...
     def setParentWindow(self, xParentWindow: 'XWindow_713b0924') -> None:
         """
         Set parent window to use when showing dialogs.
@@ -145,27 +159,33 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
         
             LibreOffice 6.3
         """
+        ...
     def showCertificate(self, Certificate: 'XCertificate_e55b0d3b') -> None:
         """
         """
+        ...
     def showDocumentContentSignatures(self, xStorage: 'XStorage_8e460a32', xSignInStream: 'XInputStream_98d40ab4') -> None:
         """
         shows the digital signatures of the document content
         """
+        ...
     def showPackageSignatures(self, xStorage: 'XStorage_8e460a32', xSignInStream: 'XInputStream_98d40ab4') -> None:
         """
         shows the digital signatures of the package
         """
+        ...
     def showScriptingContentSignatures(self, xStorage: 'XStorage_8e460a32', xSignInStream: 'XInputStream_98d40ab4') -> None:
         """
         shows the digital signatures of the scripting content
         """
+        ...
     def signDocumentContent(self, xStorage: 'XStorage_8e460a32', xSignStream: 'XStream_678908a4') -> bool:
         """
         signs the content of the document including text and pictures.
         
         Macros will not be signed.
         """
+        ...
     def signDocumentWithCertificate(self, xCertificate: 'XCertificate_e55b0d3b', xStorage: 'XStorage_8e460a32', xStream: 'XStream_678908a4') -> bool:
         """
         Signs the content of the document with the provided certificate.
@@ -174,10 +194,12 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
         
             LibreOffice 6.2
         """
+        ...
     def signPackage(self, Storage: 'XStorage_8e460a32', xSignStream: 'XStream_678908a4') -> bool:
         """
         signs the full Package, which means everything in the storage except the content of META-INF
         """
+        ...
     def signPackageWithCertificate(self, xCertificate: 'XCertificate_e55b0d3b', xStorage: 'XStorage_8e460a32', xStream: 'XStream_678908a4') -> bool:
         """
         signs the full Package, which means everything in the storage except the content of META-INF with the provided certificate.
@@ -186,12 +208,14 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
         
             LibreOffice 7.0
         """
+        ...
     def signScriptingContent(self, xStorage: 'XStorage_8e460a32', xSignStream: 'XStream_678908a4') -> bool:
         """
         signs the content of the Scripting including macros and basic dialogs
         
         The rest of document content will not be signed.
         """
+        ...
     def signScriptingContentWithCertificate(self, xCertificate: 'XCertificate_e55b0d3b', xStorage: 'XStorage_8e460a32', xStream: 'XStream_678908a4') -> bool:
         """
         signs the content of the Scripting including macros and basic dialogs with the provided certificate.
@@ -202,6 +226,7 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
         
             LibreOffice 7.0
         """
+        ...
     def signSignatureLine(self, xStorage: 'XStorage_8e460a32', xSignStream: 'XStream_678908a4', signatureLineId: str, xCertificate: 'XCertificate_e55b0d3b', xValidGraphic: 'XGraphic_a4da0afc', xInvalidGraphic: 'XGraphic_a4da0afc', comment: str) -> bool:
         """
         Signs the content of the document including text and pictures using the given XCertificate.
@@ -214,22 +239,27 @@ class XDocumentDigitalSignatures(XInterface_8f010a43):
         
             LibreOffice 6.1
         """
+        ...
     def verifyDocumentContentSignatures(self, xStorage: 'XStorage_8e460a32', xSignInStream: 'XInputStream_98d40ab4') -> 'typing.Tuple[DocumentSignatureInformation_f36c13f7, ...]':
         """
         checks for digital signatures and their status.
         
         Only document content will be checked.
         """
+        ...
     def verifyPackageSignatures(self, Storage: 'XStorage_8e460a32', xSignInStream: 'XInputStream_98d40ab4') -> 'typing.Tuple[DocumentSignatureInformation_f36c13f7, ...]':
         """
         checks for digital signatures and their status.
         
         Only Package content will be checked.
         """
+        ...
     def verifyScriptingContentSignatures(self, xStorage: 'XStorage_8e460a32', xSignInStream: 'XInputStream_98d40ab4') -> 'typing.Tuple[DocumentSignatureInformation_f36c13f7, ...]':
         """
         checks for digital signatures and their status.
         
         Only Scripting content will be checked.
         """
+        ...
+
 

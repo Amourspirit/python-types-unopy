@@ -44,6 +44,7 @@ class XStruct(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getSQLTypeName(self) -> str:
         """
         retrieves the SQL type name of the SQL structured type that this Struct object represents.
@@ -51,4 +52,6 @@ class XStruct(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

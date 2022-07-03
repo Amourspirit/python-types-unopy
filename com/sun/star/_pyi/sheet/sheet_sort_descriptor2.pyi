@@ -43,21 +43,25 @@ class SheetSortDescriptor2(TableSortDescriptor2_27e00ef1):
         """
         specifies if cell formats are moved with the contents they belong to.
         """
+        ...
     @property
     def ContainsHeader(self) -> bool:
         """
         specifies whether the first row or column (depending on com.sun.star.table.TableSortDescriptor.Orientation) is a header which should not be sorted.
         """
+        ...
     @property
     def CopyOutputData(self) -> bool:
         """
         specifies if the sorted data should be copied to another position in the document.
         """
+        ...
     @property
     def IsUserListEnabled(self) -> bool:
         """
         specifies if a user defined sorting list is used.
         """
+        ...
     @property
     def OutputPosition(self) -> 'CellAddress_ae5f0b56':
         """
@@ -65,6 +69,7 @@ class SheetSortDescriptor2(TableSortDescriptor2_27e00ef1):
         
         This property is only used, if SheetSortDescriptor.CopyOutputData is TRUE.
         """
+        ...
     @property
     def UserListIndex(self) -> int:
         """
@@ -72,5 +77,6 @@ class SheetSortDescriptor2(TableSortDescriptor2_27e00ef1):
         
         This property is only used, if SheetSortDescriptor.IsUserListEnabled is TRUE.
         """
+        ...
 
 

@@ -43,6 +43,7 @@ class XControlAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setControlProperty(self, aControlName: str, aControlProperty: str, aValue: object) -> None:
         """
         Change a control property.
@@ -50,4 +51,6 @@ class XControlAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

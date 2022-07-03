@@ -39,10 +39,13 @@ class XIndexEntrySupplier(XInterface_8f010a43):
         
         For example, in English locale it returns \"K\" for \"keyboard\"
         """
+        ...
     def getIndexFollowPageWord(self, bMorePages: bool, aLocale: 'Locale_70d308fa') -> str:
         """
         returns the page number word of an index entry, where one page or more pages are combined to one page number entry, for a given com.sun.star.lang.Locale.
         
         For example, in English locale it returns \"p.\" for bMorePages == FALSE \"pp.\" for bMorePages == TRUE
         """
+        ...
+
 

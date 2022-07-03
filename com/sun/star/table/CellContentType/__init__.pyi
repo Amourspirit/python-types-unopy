@@ -29,6 +29,7 @@ Enum
 See Also:
     `API CellContentType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1table.html#affea688ab9e00781fa35d8a790d10f0e>`_
 """
+typeName: str = 'com.sun.star.table.CellContentType'
 
 EMPTY: 'uno.Enum'
 """

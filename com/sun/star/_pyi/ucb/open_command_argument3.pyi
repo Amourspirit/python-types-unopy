@@ -52,6 +52,7 @@ class OpenCommandArgument3(OpenCommandArgument2_9210e08):
             SortingInfo (typing.Tuple[NumberedSortingInfo, ...], optional): SortingInfo value.
             OpeningFlags (typing.Tuple[NamedValue, ...], optional): OpeningFlags value.
         """
+        ...
 
 
     @property
@@ -61,5 +62,6 @@ class OpenCommandArgument3(OpenCommandArgument2_9210e08):
         
         WebDav e.g. uses \"KeepAlive\" to enable/disable the respective http feature.
         """
+        ...
 
 

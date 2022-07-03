@@ -39,5 +39,6 @@ class DatabaseFormattedField(DataAwareControlModel_27110ef8, FormattedField_5b5c
         
         If the property is set to TRUE, and an empty text is to be committed, this is converted into NULL, else it is written as empty string.
         """
+        ...
 
 

@@ -41,6 +41,7 @@ class XContainerApproveListener(ABC):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def approveRemoveElement(self, Event: 'ContainerEvent_ea50e70') -> 'XVeto_68e008bc':
         """
         is called for the listener to approve a removal of an element from the container
@@ -48,6 +49,7 @@ class XContainerApproveListener(ABC):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def approveReplaceElement(self, Event: 'ContainerEvent_ea50e70') -> 'XVeto_68e008bc':
         """
         is called for the listener to approve a replacement inside the container
@@ -55,4 +57,6 @@ class XContainerApproveListener(ABC):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

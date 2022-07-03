@@ -52,6 +52,7 @@ class PrintJobEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             State (PrintableState, optional): State value.
         """
+        ...
 
 
     @property
@@ -59,5 +60,6 @@ class PrintJobEvent(EventObject_a3d70b03):
         """
         contains the current state.
         """
+        ...
 
 

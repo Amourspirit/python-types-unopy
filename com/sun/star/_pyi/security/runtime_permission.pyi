@@ -46,6 +46,7 @@ class RuntimePermission(object):
         Arguments:
             Name (str, optional): Name value.
         """
+        ...
 
 
     @property
@@ -53,5 +54,6 @@ class RuntimePermission(object):
         """
         name of permission
         """
+        ...
 
 

@@ -29,6 +29,7 @@ ENUM EventType
 See Also:
     `API EventType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1xml_1_1dom_1_1events.html#a2628ea8d12e8b2563c32f05dc7fff6fa>`_
 """
+typeName: str = 'com.sun.star.xml.dom.events.EventType'
 
 DOMActivate: 'uno.Enum'
 """

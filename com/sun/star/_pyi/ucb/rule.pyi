@@ -45,6 +45,7 @@ class Rule(object):
             Parameter (str, optional): Parameter value.
             Action (int, optional): Action value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class Rule(object):
         """
         the rule terms describing the objects to which the rule should be applied.
         """
+        ...
 
 
     @property
@@ -59,6 +61,7 @@ class Rule(object):
         """
         Some RuleActions require a parameter.
         """
+        ...
 
 
     @property
@@ -68,5 +71,6 @@ class Rule(object):
         
         The value can be one of the RuleAction constants.
         """
+        ...
 
 

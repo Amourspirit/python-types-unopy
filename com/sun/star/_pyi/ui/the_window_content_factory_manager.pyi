@@ -36,5 +36,6 @@ class theWindowContentFactoryManager(XSingleComponentFactory_46cc0fef):
     See Also:
         `API theWindowContentFactoryManager <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1ui_1_1theWindowContentFactoryManager.html>`_
     """
+    ...
 
 

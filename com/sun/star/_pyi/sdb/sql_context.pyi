@@ -49,6 +49,7 @@ class SQLContext(SQLWarning_96f10a6a):
             NextException (object, optional): NextException value.
             Details (str, optional): Details value.
         """
+        ...
     @property
     def Details(self) -> str:
         """
@@ -56,6 +57,7 @@ class SQLContext(SQLWarning_96f10a6a):
         
         As usual for SQLExceptions, several SQLContext-objects may be chained, then the most recent context is appended to the list's tail
         """
+        ...
 
 
 __all__ = ['SQLContext']

@@ -43,6 +43,7 @@ class ResultEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Value (object, optional): Value value.
         """
+        ...
 
 
     @property
@@ -52,5 +53,6 @@ class ResultEvent(EventObject_a3d70b03):
         
         This can be any of the possible return types described for the AddIn service, except XVolatileResult.
         """
+        ...
 
 

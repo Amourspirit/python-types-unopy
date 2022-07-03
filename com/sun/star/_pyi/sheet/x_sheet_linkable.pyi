@@ -45,36 +45,44 @@ class XSheetLinkable(XInterface_8f010a43):
         
         If the returned value is SheetLinkMode.NORMAL, formulas are copied. With SheetLinkMode.VALUE, only results of formulas are used.
         """
+        ...
     def getLinkSheetName(self) -> str:
         """
         returns the sheet name of the sheet in the source document.
         """
+        ...
     def getLinkUrl(self) -> str:
         """
         returns the target URL of the link.
         """
+        ...
     def link(self, aUrl: str, aSheetName: str, aFilterName: str, aFilterOptions: str, nMode: 'SheetLinkMode_c8380c2d') -> None:
         """
         links the sheet to another sheet in another document.
         
         A SheetLink object is created if it does not exist, and the link mode, the URL of the linked document and the linked sheet name are set.
         """
+        ...
     def setLinkMode(self, nLinkMode: 'SheetLinkMode_c8380c2d') -> None:
         """
         enables the linking of the sheet and controls whether formulas are copied.
         
         If the value is SheetLinkMode.NORMAL, formulas are copied. With SheetLinkMode.VALUE, only results of formulas are used.
         """
+        ...
     def setLinkSheetName(self, aLinkSheetName: str) -> None:
         """
         sets the name of the linked sheet in the source document.
         
         This method sets the sheet name in the SheetLink object, it does not modify the sheet name in the source document.
         """
+        ...
     def setLinkUrl(self, aLinkUrl: str) -> None:
         """
         sets the target URL of the link.
         
         A SheetLink object with the same file name must exist already or the link will not work.
         """
+        ...
+
 

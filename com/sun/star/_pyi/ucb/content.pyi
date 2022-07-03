@@ -38,5 +38,6 @@ class Content(XPropertiesChangeNotifier_7a7b111c, XPropertyContainer_c600e71, XP
     See Also:
         `API Content <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1Content.html>`_
     """
+    ...
 
 

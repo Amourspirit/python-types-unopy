@@ -44,6 +44,7 @@ class XGalleryThemeProvider(XNameAccess_e2ab0cf6):
         Raises:
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def removeByName(self, ThemeName: str) -> None:
         """
         deletes a Gallery theme from the collection.
@@ -51,4 +52,6 @@ class XGalleryThemeProvider(XNameAccess_e2ab0cf6):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

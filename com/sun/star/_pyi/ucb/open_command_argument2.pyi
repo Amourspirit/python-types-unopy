@@ -50,6 +50,7 @@ class OpenCommandArgument2(OpenCommandArgument_fb0a0dd6):
             Sink (XInterface, optional): Sink value.
             SortingInfo (typing.Tuple[NumberedSortingInfo, ...], optional): SortingInfo value.
         """
+        ...
 
 
     @property
@@ -59,5 +60,6 @@ class OpenCommandArgument2(OpenCommandArgument_fb0a0dd6):
         
         The result set implementation may ignore this parameter, if it cannot sort the data by the given criteria in an efficient way (i.e. directly using the underlying data source -> SQL-database -> ORDER BY).
         """
+        ...
 
 

@@ -43,14 +43,18 @@ class XPresentation2(XPropertySet_bc180bfa, XPresentation_30890f78):
         """
         if the slide show is running, this returns a controller object to control the running slide show.
         """
+        ...
     def isRunning(self) -> bool:
         """
         returns true if the slide show is currently running
         """
+        ...
     def startWithArguments(self, Arguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         start the slide show with the given arguments.
         
         All arguments override the values from Presentation.
         """
+        ...
+
 

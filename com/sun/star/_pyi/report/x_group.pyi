@@ -44,60 +44,70 @@ class XGroup(XPropertySet_bc180bfa, XChild_a6390b07, XComponent_98dc0ab5, XFunct
         """
         Defines either a column name or an expression.
         """
+        ...
 
     @property
     def Footer(self) -> 'XSection_9b630ad1':
         """
         returns the group footer.
         """
+        ...
 
     @property
     def FooterOn(self) -> bool:
         """
         Defines if a group has a footer.
         """
+        ...
 
     @property
     def GroupInterval(self) -> int:
         """
         Defines an interval value that rows are grouped by.
         """
+        ...
 
     @property
     def GroupOn(self) -> int:
         """
         Specifies how to group data.
         """
+        ...
 
     @property
     def Groups(self) -> 'XGroups_90d00a7c':
         """
         Specifies the parent of the group.
         """
+        ...
 
     @property
     def Header(self) -> 'XSection_9b630ad1':
         """
         returns the group header.
         """
+        ...
 
     @property
     def HeaderOn(self) -> bool:
         """
         Defines if a group has a header.
         """
+        ...
 
     @property
     def KeepTogether(self) -> int:
         """
         Specifies if a group header, detail, and footer section is printed on the same page.
         """
+        ...
 
     @property
     def ResetPageNumber(self) -> bool:
         """
         Specifies that the group header should always be printed on a new page and the reset of the page number to zero.
         """
+        ...
 
     @property
     def SortAscending(self) -> bool:
@@ -106,11 +116,13 @@ class XGroup(XPropertySet_bc180bfa, XChild_a6390b07, XComponent_98dc0ab5, XFunct
         
         The default is TRUE.
         """
+        ...
 
     @property
     def StartNewColumn(self) -> bool:
         """
         Specifies that the group header should always be printed on a new column.
         """
+        ...
 
 

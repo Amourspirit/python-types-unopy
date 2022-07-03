@@ -43,6 +43,7 @@ class XLogFormatter(ABC):
         
         A XLogHandler will call this method to format a given log record. The resulting string will be emitted to the handler's output channel, without processing it any further (except possibly encoding it with the handler's Encoding).
         """
+        ...
     def getHead(self) -> str:
         """
         returns the header string for the log
@@ -51,10 +52,13 @@ class XLogFormatter(ABC):
         
         For instance, a formatter might produce table-like plain text output, and could return a table-head string (potentially including line breaks) here.
         """
+        ...
     def getTail(self) -> str:
         """
         returns the footer string for the log
         
         This can be used to generate a footer string, which by the XLogHandler is emitted to its output channel before it is finally being closed.
         """
+        ...
+
 

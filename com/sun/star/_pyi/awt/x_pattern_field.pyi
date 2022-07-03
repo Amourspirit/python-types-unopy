@@ -37,24 +37,31 @@ class XPatternField(XInterface_8f010a43):
         * ``EditMask`` is an out direction argument.
         * ``LiteralMask`` is an out direction argument.
         """
+        ...
     def getString(self) -> str:
         """
         returns the currently set string value of the pattern field.
         """
+        ...
     def isStrictFormat(self) -> bool:
         """
         returns whether the format is currently checked during user input.
         """
+        ...
     def setMasks(self, EditMask: str, LiteralMask: str) -> None:
         """
         sets the pattern mask.
         """
+        ...
     def setStrictFormat(self, bStrict: bool) -> None:
         """
         determines if the format is checked during user input.
         """
+        ...
     def setString(self, Str: str) -> None:
         """
         sets the string value of the pattern field.
         """
+        ...
+
 

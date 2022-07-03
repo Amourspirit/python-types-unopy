@@ -38,15 +38,20 @@ class XHatchWindowController(XInterface_8f010a43):
     def activated(self) -> None:
         """
         """
+        ...
     def calcAdjustedRectangle(self, aRect: 'Rectangle_84b109e9') -> 'Rectangle_84b109e9':
         """
         returns the closest valid rectangle to the provided one.
         """
+        ...
     def deactivated(self) -> None:
         """
         """
+        ...
     def requestPositioning(self, aRect: 'Rectangle_84b109e9') -> None:
         """
         requests window owner to resize/move the window.
         """
+        ...
+
 

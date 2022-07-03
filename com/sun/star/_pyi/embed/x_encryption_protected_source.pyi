@@ -37,6 +37,7 @@ class XEncryptionProtectedSource(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def setEncryptionPassword(self, sPassword: str) -> None:
         """
         sets a password for the object.
@@ -44,4 +45,6 @@ class XEncryptionProtectedSource(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

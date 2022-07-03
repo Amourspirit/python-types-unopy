@@ -42,4 +42,6 @@ class XVetoableChangeListener(XEventListener_c7230c4a):
         Raises:
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
         """
+        ...
+
 

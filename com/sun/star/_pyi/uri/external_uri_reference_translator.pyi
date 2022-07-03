@@ -33,5 +33,6 @@ class ExternalUriReferenceTranslator(XExternalUriReferenceTranslator_c41d12dc):
     See Also:
         `API ExternalUriReferenceTranslator <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1uri_1_1ExternalUriReferenceTranslator.html>`_
     """
+    ...
 
 

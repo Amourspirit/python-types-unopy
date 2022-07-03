@@ -45,6 +45,7 @@ class GlobalTransferCommandArgument(object):
             NewTitle (str, optional): NewTitle value.
             NameClash (int, optional): NameClash value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class GlobalTransferCommandArgument(object):
         """
         contains the action to perform ( COPY, MOVE, LINK ).
         """
+        ...
 
 
     @property
@@ -59,6 +61,7 @@ class GlobalTransferCommandArgument(object):
         """
         contains the URL of the source object.
         """
+        ...
 
 
     @property
@@ -66,6 +69,7 @@ class GlobalTransferCommandArgument(object):
         """
         contains the URL of the target folder.
         """
+        ...
 
 
     @property
@@ -75,6 +79,7 @@ class GlobalTransferCommandArgument(object):
         
         If this field is filled, for example, a file will be renamed while it is being transferred.
         """
+        ...
 
 
     @property
@@ -84,5 +89,6 @@ class GlobalTransferCommandArgument(object):
         
         A title clash for instance occurs, if a file named \"foo.txt\" is to be transferred to a folder already containing another file named \"foo.txt\". Refer to NameClash for possible values for this field.
         """
+        ...
 
 

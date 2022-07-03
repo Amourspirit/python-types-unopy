@@ -42,6 +42,7 @@ class XDataSource(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getLoginTimeout(self) -> int:
         """
         gets the maximum time in seconds that this data source can wait while attempting to connect to a database.
@@ -51,6 +52,7 @@ class XDataSource(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setLoginTimeout(self, seconds: int) -> None:
         """
         sets the maximum time in seconds that this data source will wait while attempting to connect to a database.
@@ -60,4 +62,6 @@ class XDataSource(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

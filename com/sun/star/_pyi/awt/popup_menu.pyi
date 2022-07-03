@@ -31,5 +31,6 @@ class PopupMenu(XPopupMenu_8ee90a55):
     See Also:
         `API PopupMenu <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1PopupMenu.html>`_
     """
+    ...
 
 

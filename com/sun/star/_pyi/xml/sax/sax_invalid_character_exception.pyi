@@ -44,6 +44,7 @@ class SAXInvalidCharacterException(SAXException_d1a00c6e):
             Context (XInterface, optional): Context value.
             WrappedException (object, optional): WrappedException value.
         """
+        ...
 
 __all__ = ['SAXInvalidCharacterException']
 

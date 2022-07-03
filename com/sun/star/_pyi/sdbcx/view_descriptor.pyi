@@ -34,11 +34,13 @@ class ViewDescriptor(Descriptor_a5200b3b):
         """
         is the name of the views catalog, may be empty.
         """
+        ...
     @property
     def CheckOption(self) -> int:
         """
         indicates if a check option should be used for the view.
         """
+        ...
     @property
     def Command(self) -> str:
         """
@@ -46,10 +48,12 @@ class ViewDescriptor(Descriptor_a5200b3b):
         
         After appending a view to its container, the command may be empty. This is typically a SQL Select-Statement.
         """
+        ...
     @property
     def SchemaName(self) -> str:
         """
         is the name of the views schema, may be empty.
         """
+        ...
 
 

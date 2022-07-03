@@ -45,6 +45,7 @@ class ContainerEvent(EventObject_a3d70b03):
             Element (object, optional): Element value.
             ReplacedElement (object, optional): ReplacedElement value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class ContainerEvent(EventObject_a3d70b03):
         
         The type and the value of the accessor depends on the service.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class ContainerEvent(EventObject_a3d70b03):
         """
         This contains the element that was inserted or removed.
         """
+        ...
 
 
     @property
@@ -68,5 +71,6 @@ class ContainerEvent(EventObject_a3d70b03):
         """
         This contains the replaced element.
         """
+        ...
 
 

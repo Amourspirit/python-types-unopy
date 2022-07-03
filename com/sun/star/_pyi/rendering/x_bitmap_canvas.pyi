@@ -51,4 +51,6 @@ class XBitmapCanvas(XCanvas_b19b0b7a):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             VolatileContentDestroyedException: ``VolatileContentDestroyedException``
         """
+        ...
+
 

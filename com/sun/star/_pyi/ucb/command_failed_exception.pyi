@@ -44,11 +44,13 @@ class CommandFailedException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             Reason (object, optional): Reason value.
         """
+        ...
     @property
     def Reason(self) -> object:
         """
         contains the exception that was passed to the com.sun.star.task.XInteractionHandler.
         """
+        ...
 
 
 __all__ = ['CommandFailedException']

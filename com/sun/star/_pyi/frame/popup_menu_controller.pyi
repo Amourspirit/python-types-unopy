@@ -39,5 +39,6 @@ class PopupMenuController(XDispatchProvider_fc690de6, XPopupMenuController_29740
     See Also:
         `API PopupMenuController <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1frame_1_1PopupMenuController.html>`_
     """
+    ...
 
 

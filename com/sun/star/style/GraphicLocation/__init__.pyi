@@ -29,6 +29,7 @@ Enum
 See Also:
     `API GraphicLocation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style.html#ae71ca73feb713866e85597329dfaec2e>`_
 """
+typeName: str = 'com.sun.star.style.GraphicLocation'
 
 AREA: 'uno.Enum'
 """

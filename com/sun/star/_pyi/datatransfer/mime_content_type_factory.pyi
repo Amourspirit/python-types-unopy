@@ -29,5 +29,6 @@ class MimeContentTypeFactory(XMimeContentTypeFactory_d969133c):
     See Also:
         `API MimeContentTypeFactory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1datatransfer_1_1MimeContentTypeFactory.html>`_
     """
+    ...
 
 

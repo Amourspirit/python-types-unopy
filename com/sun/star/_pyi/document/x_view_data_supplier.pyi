@@ -39,8 +39,11 @@ class XViewDataSupplier(XInterface_8f010a43):
         """
         retrieve information about currently opened view to restore it later
         """
+        ...
     def setViewData(self, Data: 'XIndexAccess_f0910d6d') -> None:
         """
         restore all views which will be represented by given data argument
         """
+        ...
+
 

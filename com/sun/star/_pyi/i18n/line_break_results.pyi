@@ -43,6 +43,7 @@ class LineBreakResults(object):
             breakIndex (int, optional): breakIndex value.
             rHyphenatedWord (XHyphenatedWord, optional): rHyphenatedWord value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class LineBreakResults(object):
         """
         Type of line break, see BreakType.
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class LineBreakResults(object):
         """
         Position of the calculated line break.
         """
+        ...
 
 
     @property
@@ -64,5 +67,6 @@ class LineBreakResults(object):
         """
         Return value of the hyphenator.
         """
+        ...
 
 

@@ -34,8 +34,11 @@ class XTextSection(XTextContent_b16e0ba5):
     def getChildSections(self) -> 'typing.Tuple[XTextSection, ...]':
         """
         """
+        ...
     def getParentSection(self) -> 'XTextSection':
         """
         If the object is a child section, then this method returns the parent text section.
         """
+        ...
+
 

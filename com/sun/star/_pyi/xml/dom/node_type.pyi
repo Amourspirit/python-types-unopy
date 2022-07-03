@@ -32,6 +32,7 @@ class NodeType(Enum):
     See Also:
         `API NodeType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1xml_1_1dom.html#acac9cbaeea226ed297804c012dc12b16>`_
     """
+    typeName: str = 'com.sun.star.xml.dom.NodeType'
 
     ATTRIBUTE_NODE: 'uno.Enum'
     """

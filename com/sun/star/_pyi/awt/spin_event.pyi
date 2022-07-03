@@ -43,6 +43,7 @@ class SpinEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             dummy1 (int, optional): dummy1 value.
         """
+        ...
 
 
     @property
@@ -52,5 +53,6 @@ class SpinEvent(EventObject_a3d70b03):
         
         Please ignore.
         """
+        ...
 
 

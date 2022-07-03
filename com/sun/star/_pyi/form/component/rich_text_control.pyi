@@ -38,6 +38,7 @@ class RichTextControl(UnoControlEditModel_fd8e0dde, FormControlModel_e2990d22, T
         
         If set to TRUE, users need to manually press the enter key to insert a line break. If set to FALSE, text is automatically wrapped at the control border.
         """
+        ...
     @property
     def RichText(self) -> bool:
         """
@@ -47,5 +48,6 @@ class RichTextControl(UnoControlEditModel_fd8e0dde, FormControlModel_e2990d22, T
         
         If the property is set to TRUE, the control will ignore the following properties:
         """
+        ...
 
 

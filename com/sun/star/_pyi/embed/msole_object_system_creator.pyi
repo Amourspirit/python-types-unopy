@@ -32,5 +32,6 @@ class MSOLEObjectSystemCreator(XEmbedObjectClipboardCreator_a6dc11f1):
     See Also:
         `API MSOLEObjectSystemCreator <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1embed_1_1MSOLEObjectSystemCreator.html>`_
     """
+    ...
 
 

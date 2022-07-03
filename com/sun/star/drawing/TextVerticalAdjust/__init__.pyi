@@ -29,6 +29,7 @@ Enum
 See Also:
     `API TextVerticalAdjust <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a4c2c10f0a1a5fa20d9f200d0fb5707ad>`_
 """
+typeName: str = 'com.sun.star.drawing.TextVerticalAdjust'
 
 BLOCK: 'uno.Enum'
 """

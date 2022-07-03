@@ -38,4 +38,6 @@ class XClipboardOwner(XInterface_8f010a43):
         """
         Notifies the transferable object source that it is no longer the owner of the clipboard.
         """
+        ...
+
 

@@ -39,7 +39,10 @@ class XConnectableShape(XInterface_8f010a43):
     def canConnect(self, nPos: 'Point_5fb2085e', bCreateGluePoint: bool, nMaxDist: int) -> bool:
         """
         """
+        ...
     def doConnect(self, nPos: 'Point_5fb2085e', bCreateGluePoint: bool, nMaxDist: int) -> bool:
         """
         """
+        ...
+
 

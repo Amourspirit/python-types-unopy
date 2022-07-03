@@ -36,8 +36,11 @@ class XNodeList(XInterface_8f010a43):
         """
         The number of nodes in the list.
         """
+        ...
     def item(self, index: int) -> 'XNode_83fb09a5':
         """
         Returns a node specified by index in the collection.
         """
+        ...
+
 

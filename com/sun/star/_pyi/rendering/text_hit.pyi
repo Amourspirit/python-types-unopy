@@ -47,6 +47,7 @@ class TextHit(object):
             EntryIndex (int, optional): EntryIndex value.
             IsLeadingEdge (bool, optional): IsLeadingEdge value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class TextHit(object):
         
         The entry index is the index of the insertion point in the character sequence. The insertion point denotes positions between the actual characters in the string, and can thus have values ranging from 0 up to the number of characters in the string. Hereby, an index of 0 denotes an insertion position before the first character, and an index containing the number of characters denotes an insertion behind the last character.
         """
+        ...
 
 
     @property
@@ -65,5 +67,6 @@ class TextHit(object):
         
         Each character is divided in two halves, the leading and the trailing part. The leading edge is the part of the glyph encountered first when reading text of the corresponding language (i.e. the leading edge of an Arabic glyph is the right half of it, whereas it is the left half of a Latin character). If the hit was on the leading edge, this member is set to TRUE.
         """
+        ...
 
 

@@ -34,11 +34,13 @@ class Author(TextField_90260a56):
         """
         this is the display format for this field
         """
+        ...
     @property
     def Content(self) -> str:
         """
         the is the content of this field
         """
+        ...
     @property
     def CurrentPresentation(self) -> str:
         """
@@ -46,15 +48,18 @@ class Author(TextField_90260a56):
         
         This property is especially useful for import/export purposes.
         """
+        ...
     @property
     def FullName(self) -> bool:
         """
         determines whether the full name of the author is displayed rather than the initials.
         """
+        ...
     @property
     def IsFixed(self) -> bool:
         """
         If this flag is set to false the author will be overridden by the current author each time the document is saved.
         """
+        ...
 
 

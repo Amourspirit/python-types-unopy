@@ -32,5 +32,6 @@ class DefaultViewController(Controller_a5330b37, XTitle_7ab0096d, XTitleChangeBr
     See Also:
         `API DefaultViewController <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1application_1_1DefaultViewController.html>`_
     """
+    ...
 
 

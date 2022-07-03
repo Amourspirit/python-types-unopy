@@ -45,6 +45,7 @@ class RemoteContentProviderChangeEvent(EventObject_a3d70b03):
             Identifier (str, optional): Identifier value.
             Action (RemoteContentProviderChangeAction, optional): Action value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class RemoteContentProviderChangeEvent(EventObject_a3d70b03):
         """
         The identifier with which the remote content provider is registered at the com.sun.star.ucb.XRemoteContentProviderSupplier.
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class RemoteContentProviderChangeEvent(EventObject_a3d70b03):
         """
         An indicator whether a remote content provider has been added or removed.
         """
+        ...
 
 

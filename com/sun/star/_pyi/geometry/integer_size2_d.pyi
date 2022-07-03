@@ -47,6 +47,7 @@ class IntegerSize2D(object):
             Width (int, optional): Width value.
             Height (int, optional): Height value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class IntegerSize2D(object):
         """
         Amount of space occupied in the x direction.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class IntegerSize2D(object):
         """
         Amount of space occupied in the y direction.
         """
+        ...
 
 

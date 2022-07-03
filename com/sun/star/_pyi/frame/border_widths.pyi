@@ -43,6 +43,7 @@ class BorderWidths(object):
             Right (int, optional): Right value.
             Bottom (int, optional): Bottom value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class BorderWidths(object):
         """
         specifies the offset from left border.
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class BorderWidths(object):
         """
         specifies the offset from top border.
         """
+        ...
 
 
     @property
@@ -64,6 +67,7 @@ class BorderWidths(object):
         """
         specifies the offset from right border.
         """
+        ...
 
 
     @property
@@ -71,5 +75,6 @@ class BorderWidths(object):
         """
         specifies the offset from bottom border.
         """
+        ...
 
 

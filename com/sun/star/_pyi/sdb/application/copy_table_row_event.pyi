@@ -47,6 +47,7 @@ class CopyTableRowEvent(EventObject_a3d70b03):
             SourceData (XResultSet, optional): SourceData value.
             Error (object, optional): Error value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class CopyTableRowEvent(EventObject_a3d70b03):
         """
         contains the result set which is being copied by the wizard currently.
         """
+        ...
 
 
     @property
@@ -63,5 +65,6 @@ class CopyTableRowEvent(EventObject_a3d70b03):
         
         Usually, this contains an instance of com.sun.star.sdbc.SQLException.
         """
+        ...
 
 

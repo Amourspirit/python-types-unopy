@@ -42,4 +42,6 @@ class XDefaultMethod(XInterface_8f010a43):
         """
         Returns the name of the default method.
         """
+        ...
+
 

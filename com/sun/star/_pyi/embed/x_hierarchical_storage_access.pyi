@@ -53,6 +53,7 @@ class XHierarchicalStorageAccess(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def openStreamElementByHierarchicalName(self, sStreamPath: str, nOpenMode: int) -> 'XExtendedStorageStream_46750fcf':
         """
         allows to get access to a child stream of the storage, using hierarchical path.
@@ -66,6 +67,7 @@ class XHierarchicalStorageAccess(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def removeStreamElementByHierarchicalName(self, sElementPath: str) -> None:
         """
         removes a stream specified by hierarchical name from a storage.
@@ -77,4 +79,6 @@ class XHierarchicalStorageAccess(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
+
 

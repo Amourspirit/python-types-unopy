@@ -32,6 +32,7 @@ class LabelOrigin(Enum):
     See Also:
         `API LabelOrigin <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart2_1_1data.html#a2afe9ba95ad4b3631057b40391bed0aa>`_
     """
+    typeName: str = 'com.sun.star.chart2.data.LabelOrigin'
 
     COLUMN: 'uno.Enum'
     """

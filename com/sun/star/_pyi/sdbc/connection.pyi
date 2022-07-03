@@ -37,5 +37,6 @@ class Connection(XComponent_98dc0ab5, XConnection_a36a0b0c, XWarningsSupplier_ef
     See Also:
         `API Connection <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdbc_1_1Connection.html>`_
     """
+    ...
 
 

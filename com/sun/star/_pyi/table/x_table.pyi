@@ -41,6 +41,7 @@ class XTable(XFastPropertySet_ee6b0d88, XPropertySet_bc180bfa, XComponent_98dc0a
         """
         creates a cell cursor including the whole table
         """
+        ...
     def createCursorByRange(self, Range: 'XCellRange_a2f70ad5') -> 'XCellCursor_ae900b66':
         """
         creates a cell cursor to travel in the given range context.
@@ -48,16 +49,20 @@ class XTable(XFastPropertySet_ee6b0d88, XPropertySet_bc180bfa, XComponent_98dc0a
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
     @property
     def ColumnCount(self) -> int:
         """
         stores the current column count of this table
         """
+        ...
 
     @property
     def RowCount(self) -> int:
         """
         stores the current row count of this table
         """
+        ...
 
 

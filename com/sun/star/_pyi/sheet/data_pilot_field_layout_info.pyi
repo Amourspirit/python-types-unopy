@@ -41,6 +41,7 @@ class DataPilotFieldLayoutInfo(object):
             LayoutMode (int, optional): LayoutMode value.
             AddEmptyLines (bool, optional): AddEmptyLines value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class DataPilotFieldLayoutInfo(object):
         """
         specifies the layout mode.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class DataPilotFieldLayoutInfo(object):
         """
         If TRUE, an empty row is inserted in the DataPilotTable result table after the data (including the subtotals) for each item of the field.
         """
+        ...
 
 

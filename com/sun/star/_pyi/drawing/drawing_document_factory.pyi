@@ -32,5 +32,6 @@ class DrawingDocumentFactory(XMultiServiceFactory_191e0eb6):
     See Also:
         `API DrawingDocumentFactory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1DrawingDocumentFactory.html>`_
     """
+    ...
 
 

@@ -37,7 +37,10 @@ class XNumberFormatsSupplier(XInterface_8f010a43):
     def getNumberFormatSettings(self) -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
     def getNumberFormats(self) -> 'XNumberFormats_c9120c63':
         """
         """
+        ...
+
 

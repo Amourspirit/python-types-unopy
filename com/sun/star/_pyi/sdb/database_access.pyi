@@ -44,6 +44,7 @@ class DatabaseAccess(XPropertySet_bc180bfa, XCompletedConnection_98a0e46, XDatab
         """
         is a list of arbitrary string tag/value pairs as connection arguments; normally at least a \"user\" and \"password\" property should be included.
         """
+        ...
     @property
     def TableFilter(self) -> 'typing.Tuple[str, ...]':
         """
@@ -51,6 +52,7 @@ class DatabaseAccess(XPropertySet_bc180bfa, XCompletedConnection_98a0e46, XDatab
         
         If empty, all tables are rejected.
         """
+        ...
     @property
     def TableTypeFilter(self) -> 'typing.Tuple[str, ...]':
         """
@@ -58,35 +60,42 @@ class DatabaseAccess(XPropertySet_bc180bfa, XCompletedConnection_98a0e46, XDatab
         
         If empty, all tables types are rejected.
         """
+        ...
     @property
     def ConnectURL(self) -> str:
         """
         indicates a database url of the form  jdbc:subprotocol:subname or  sdbc:subprotocol:subname
         """
+        ...
     @property
     def IsPasswordRequired(self) -> bool:
         """
         indicates that a password is always necessary.
         """
+        ...
     @property
     def IsReadOnly(self) -> bool:
         """
         determines whether modifications on the data access bean are allowed or not.
         """
+        ...
     @property
     def NumberFormatsSupplier(self) -> 'XNumberFormatsSupplier_3afb0fb7':
         """
         provides an object for formatting numbers.
         """
+        ...
     @property
     def Title(self) -> str:
         """
         is the title of the bean.
         """
+        ...
     @property
     def URL(self) -> str:
         """
         is the URL of the bean.
         """
+        ...
 
 

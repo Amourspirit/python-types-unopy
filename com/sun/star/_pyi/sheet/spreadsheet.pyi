@@ -70,26 +70,31 @@ class Spreadsheet(Scenario_8f730a55, SheetCellRange_d4540c87, XNamed_a6520b08, X
         
         This property can only be true, if there are no print areas given on this sheet. If the property is set to true the print areas of this sheet will be removed.
         """
+        ...
     @property
     def ConditionalFormats(self) -> 'XConditionalFormats_1ab20ec9':
         """
         specifies all conditional formats of that sheet
         """
+        ...
     @property
     def IsVisible(self) -> bool:
         """
         specifies if the sheet is visible.
         """
+        ...
     @property
     def PageStyle(self) -> str:
         """
         specifies the page style of the sheet.
         """
+        ...
     @property
     def TabColor(self) -> 'Color_68e908c5':
         """
         specifies the color of the sheet tab, if any.
         """
+        ...
     @property
     def TableLayout(self) -> int:
         """
@@ -97,5 +102,6 @@ class Spreadsheet(Scenario_8f730a55, SheetCellRange_d4540c87, XNamed_a6520b08, X
         
         Possible values are com.sun.star.text.WritingMode2.LR_TB to order the columns from left to right, and com.sun.star.text.WritingMode2.RL_TB to order the columns from right to left.
         """
+        ...
 
 

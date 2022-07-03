@@ -42,4 +42,6 @@ class XCachedDynamicResultSetFactory(XInterface_8f010a43):
         """
         creates a remote optimizes XDynamicResultSet.
         """
+        ...
+
 

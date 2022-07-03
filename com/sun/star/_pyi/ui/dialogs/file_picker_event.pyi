@@ -43,6 +43,7 @@ class FilePickerEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             ElementId (int, optional): ElementId value.
         """
+        ...
 
 
     @property

@@ -37,14 +37,17 @@ class XSelectionSupplier(XInterface_8f010a43):
         """
         registers an event listener, which is called when the selection changes.
         """
+        ...
     def getSelection(self) -> object:
         """
         The selection is either specified by an object which is contained in the component to which the view belongs, or it is an interface of a collection which contains such objects.
         """
+        ...
     def removeSelectionChangeListener(self, xListener: 'XSelectionChangeListener_58bf104d') -> None:
         """
         unregisters an event listener which was registered with XSelectionSupplier.addSelectionChangeListener().
         """
+        ...
     def select(self, xSelection: object) -> bool:
         """
         selects the object represented by xSelection if it is known and selectable in this object.
@@ -52,4 +55,6 @@ class XSelectionSupplier(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

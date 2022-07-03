@@ -50,11 +50,13 @@ class CorruptedConfigurationException(RuntimeException_d7390ced):
             Context (XInterface, optional): Context value.
             Details (str, optional): Details value.
         """
+        ...
     @property
     def Details(self) -> str:
         """
         Instead of the message part of an exception, this value describe the type of corruption more in detail.
         """
+        ...
 
 
 __all__ = ['CorruptedConfigurationException']

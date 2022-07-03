@@ -47,6 +47,7 @@ class XIsolatedConnection(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getIsolatedConnectionWithCompletion(self, handler: 'XInteractionHandler_bf80e51') -> 'XConnection_a36a0b0c':
         """
         attempts to establish a database connection.
@@ -56,4 +57,6 @@ class XIsolatedConnection(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

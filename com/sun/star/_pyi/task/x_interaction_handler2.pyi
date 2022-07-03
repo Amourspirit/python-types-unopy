@@ -43,4 +43,6 @@ class XInteractionHandler2(XInteractionHandler_bf80e51):
         """
         Handle an interaction request.
         """
+        ...
+
 

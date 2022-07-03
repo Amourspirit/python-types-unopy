@@ -51,6 +51,7 @@ class RealBezierSegment2D(object):
             C2x (float, optional): C2x value.
             C2y (float, optional): C2y value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class RealBezierSegment2D(object):
         """
         The x coordinate of the start point.
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class RealBezierSegment2D(object):
         """
         The y coordinate of the start point.
         """
+        ...
 
 
     @property
@@ -72,6 +75,7 @@ class RealBezierSegment2D(object):
         """
         The x coordinate of the first control point.
         """
+        ...
 
 
     @property
@@ -79,6 +83,7 @@ class RealBezierSegment2D(object):
         """
         The y coordinate of the first control point.
         """
+        ...
 
 
     @property
@@ -86,6 +91,7 @@ class RealBezierSegment2D(object):
         """
         The x coordinate of the second control point.
         """
+        ...
 
 
     @property
@@ -93,5 +99,6 @@ class RealBezierSegment2D(object):
         """
         The y coordinate of the second control point.
         """
+        ...
 
 

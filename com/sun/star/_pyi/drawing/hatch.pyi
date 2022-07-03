@@ -47,6 +47,7 @@ class Hatch(object):
             Distance (int, optional): Distance value.
             Angle (int, optional): Angle value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class Hatch(object):
         """
         The HatchStyle defines the kind of lines used to draw this hatch.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class Hatch(object):
         """
         This is the color of the hatch lines.
         """
+        ...
 
 
     @property
@@ -68,6 +71,7 @@ class Hatch(object):
         """
         This is the distance between the lines in the hatch.
         """
+        ...
 
 
     @property
@@ -77,5 +81,6 @@ class Hatch(object):
         
         Specified in tenths of a degree.
         """
+        ...
 
 

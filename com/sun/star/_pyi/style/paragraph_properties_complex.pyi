@@ -34,5 +34,6 @@ class ParagraphPropertiesComplex(ABC):
         """
         contains the writing direction, as represented by the com.sun.star.text.WritingMode2 constants
         """
+        ...
 
 

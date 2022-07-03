@@ -31,5 +31,6 @@ class DocumentTemplates(XDocumentTemplates_b000e59):
     See Also:
         `API DocumentTemplates <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1frame_1_1DocumentTemplates.html>`_
     """
+    ...
 
 

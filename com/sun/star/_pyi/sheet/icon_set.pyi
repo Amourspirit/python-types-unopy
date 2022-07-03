@@ -35,18 +35,22 @@ class IconSet(XConditionEntry_e2340d32):
     def IconSetEntries(self) -> 'typing.Tuple[XIconSetEntry_c7620c40, ...]':
         """
         """
+        ...
     @property
     def Icons(self) -> int:
         """
         See com.sun.star.sheet.IconSetType for possible values.
         """
+        ...
     @property
     def Reverse(self) -> bool:
         """
         """
+        ...
     @property
     def ShowValue(self) -> bool:
         """
         """
+        ...
 
 

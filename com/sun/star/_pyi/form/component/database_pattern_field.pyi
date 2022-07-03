@@ -39,5 +39,6 @@ class DatabasePatternField(DataAwareControlModel_27110ef8, PatternField_3b2c0f7f
         
         If the property is set to TRUE, and an empty text is to be committed, this is converted into NULL, else it is written as empty string.
         """
+        ...
 
 

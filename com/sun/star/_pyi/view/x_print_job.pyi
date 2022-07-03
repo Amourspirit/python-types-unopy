@@ -43,16 +43,21 @@ class XPrintJob(XInterface_8f010a43):
     def cancelJob(self) -> None:
         """
         """
+        ...
     def getPrintOptions(self) -> 'typing.Tuple[PropertyValue_c9610c73, ...]':
         """
         returns the PrintOptions used for the print job
         """
+        ...
     def getPrintable(self) -> 'XPrintable_9a5b0abc':
         """
         returns the printed object used for the print job
         """
+        ...
     def getPrinter(self) -> 'typing.Tuple[PropertyValue_c9610c73, ...]':
         """
         returns the Printer used for the print job
         """
+        ...
+
 

@@ -53,6 +53,7 @@ class DropTargetDropEvent(DropTargetEvent_8d651169):
             SourceActions (int, optional): SourceActions value.
             Transferable (XTransferable, optional): Transferable value.
         """
+        ...
 
 
     @property
@@ -60,6 +61,7 @@ class DropTargetDropEvent(DropTargetEvent_8d651169):
         """
         The drop target context of the current drag operation.
         """
+        ...
 
 
     @property
@@ -69,6 +71,7 @@ class DropTargetDropEvent(DropTargetEvent_8d651169):
         
         If more than one action is specified, the XDropTargetListener should raise a dialog to ask the user which action to use.
         """
+        ...
 
 
     @property
@@ -76,6 +79,7 @@ class DropTargetDropEvent(DropTargetEvent_8d651169):
         """
         The cursor's current x location within the window's coordinates.
         """
+        ...
 
 
     @property
@@ -83,6 +87,7 @@ class DropTargetDropEvent(DropTargetEvent_8d651169):
         """
         The cursor's current y location within the window's coordinates.
         """
+        ...
 
 
     @property
@@ -90,6 +95,7 @@ class DropTargetDropEvent(DropTargetEvent_8d651169):
         """
         This value represents the action or actions supported by the source.
         """
+        ...
 
 
     @property
@@ -97,5 +103,6 @@ class DropTargetDropEvent(DropTargetEvent_8d651169):
         """
         The transferable object associated with the drop.
         """
+        ...
 
 

@@ -49,6 +49,7 @@ class GluePoint2(object):
             Escape (EscapeDirection, optional): Escape value.
             IsUserDefined (bool, optional): IsUserDefined value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class GluePoint2(object):
         
         Depending on the flag IsRelative, this is either in 1/100cm or in 1/100%.
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class GluePoint2(object):
         """
         if this flag is set to true, the position of this gluepoint is given in 1/100% values instead of 1/100cm.
         """
+        ...
 
 
     @property
@@ -74,6 +77,7 @@ class GluePoint2(object):
         
         The alignment specifies how the gluepoint is moved if the shape is resized.
         """
+        ...
 
 
     @property
@@ -83,6 +87,7 @@ class GluePoint2(object):
         
         The escape direction is the direction the connecting line escapes the shape.
         """
+        ...
 
 
     @property
@@ -92,5 +97,6 @@ class GluePoint2(object):
         
         Some shapes may have default gluepoints attached to them which cannot be altered or removed.
         """
+        ...
 
 

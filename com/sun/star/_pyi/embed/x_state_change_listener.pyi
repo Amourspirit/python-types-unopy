@@ -42,8 +42,11 @@ class XStateChangeListener(XEventListener_c7230c4a):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def stateChanged(self, aEvent: 'EventObject_a3d70b03', nOldState: int, nNewState: int) -> None:
         """
         is called after the object has changed state.
         """
+        ...
+
 

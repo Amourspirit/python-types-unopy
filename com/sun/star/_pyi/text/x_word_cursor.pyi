@@ -34,28 +34,35 @@ class XWordCursor(XTextCursor_a60c0b48):
         """
         moves the cursor to the end of the current word.
         """
+        ...
     def gotoNextWord(self, bExpand: bool) -> bool:
         """
         moves the cursor to the next word.
         
         Note: the function returning TRUE does not necessarily mean that the cursor is located at the next word, or any word at all! This may happen for example if it travels over empty paragraphs.
         """
+        ...
     def gotoPreviousWord(self, bExpand: bool) -> bool:
         """
         moves the cursor to the previous word.
         
         Note: the function returning TRUE does not necessarily mean that the cursor is located at the previous word, or any word at all! This may happen for example if it travels over empty paragraphs.
         """
+        ...
     def gotoStartOfWord(self, bExpand: bool) -> bool:
         """
         moves the cursor to the start of the current word.
         """
+        ...
     def isEndOfWord(self) -> bool:
         """
         determines if the cursor is positioned at the end of a word.
         """
+        ...
     def isStartOfWord(self) -> bool:
         """
         determines if the cursor is positioned at the start of a word.
         """
+        ...
+
 

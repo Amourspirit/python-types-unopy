@@ -41,4 +41,6 @@ class XViewPanesSupplier(XInterface_8f010a43):
         """
         returns the collection of panes in the view.
         """
+        ...
+
 

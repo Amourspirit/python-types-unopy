@@ -33,5 +33,6 @@ class Policy(XPolicy_a7970b48):
     See Also:
         `API Policy <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1security_1_1Policy.html>`_
     """
+    ...
 
 

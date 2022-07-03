@@ -32,5 +32,6 @@ class XSLTFilterDialog(XExecutableDialog_450f0fa1):
     See Also:
         `API XSLTFilterDialog <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ui_1_1dialogs_1_1XSLTFilterDialog.html>`_
     """
+    ...
 
 

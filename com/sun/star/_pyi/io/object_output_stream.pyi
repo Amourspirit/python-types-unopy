@@ -33,5 +33,6 @@ class ObjectOutputStream(XActiveDataSource_d1900c7f, XConnectable_980a0a96, XObj
     See Also:
         `API ObjectOutputStream <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1io_1_1ObjectOutputStream.html>`_
     """
+    ...
 
 

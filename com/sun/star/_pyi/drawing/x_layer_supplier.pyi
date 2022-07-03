@@ -36,4 +36,6 @@ class XLayerSupplier(XInterface_8f010a43):
     def getLayerManager(self) -> 'XNameAccess_e2ab0cf6':
         """
         """
+        ...
+
 

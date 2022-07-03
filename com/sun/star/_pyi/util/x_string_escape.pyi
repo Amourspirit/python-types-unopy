@@ -45,6 +45,7 @@ class XStringEscape(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def unescapeString(self, aEscapedString: str) -> str:
         """
         decodes an escaped string into the original form.
@@ -52,4 +53,6 @@ class XStringEscape(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

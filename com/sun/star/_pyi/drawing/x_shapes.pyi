@@ -37,8 +37,11 @@ class XShapes(XIndexAccess_f0910d6d):
         """
         inserts a Shape into this collection.
         """
+        ...
     def remove(self, xShape: 'XShape_8fd00a3d') -> None:
         """
         removes a Shape from this collection.
         """
+        ...
+
 

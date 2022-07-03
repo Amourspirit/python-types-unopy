@@ -37,6 +37,7 @@ class XMultiHierarchicalPropertySet(XInterface_8f010a43):
         """
         retrieve information about the hierarchy of properties
         """
+        ...
     def getHierarchicalPropertyValues(self, aPropertyNames: 'typing.Tuple[str, ...]') -> 'typing.Tuple[object, ...]':
         """
         The order of the values in the returned sequence will be the same as the order of the names in the argument.
@@ -47,6 +48,7 @@ class XMultiHierarchicalPropertySet(XInterface_8f010a43):
             : ````
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def setHierarchicalPropertyValues(self, aHierarchicalPropertyNames: 'typing.Tuple[str, ...]', Values: 'typing.Tuple[object, ...]') -> None:
         """
         sets the values of the properties with the specified nested names.
@@ -60,4 +62,6 @@ class XMultiHierarchicalPropertySet(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

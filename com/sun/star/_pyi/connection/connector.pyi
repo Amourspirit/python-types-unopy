@@ -31,5 +31,6 @@ class Connector(XConnector_e4a10d3b):
     See Also:
         `API Connector <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1connection_1_1Connector.html>`_
     """
+    ...
 
 

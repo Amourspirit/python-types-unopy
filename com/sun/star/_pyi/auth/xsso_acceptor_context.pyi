@@ -49,4 +49,6 @@ class XSSOAcceptorContext(XSSOContext_a2840aec):
             InvalidContextException: ``InvalidContextException``
             AuthenticationFailedException: ``AuthenticationFailedException``
         """
+        ...
+
 

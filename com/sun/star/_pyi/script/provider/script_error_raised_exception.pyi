@@ -46,23 +46,27 @@ class ScriptErrorRaisedException(Exception_85530a09):
             language (str, optional): language value.
             lineNum (int, optional): lineNum value.
         """
+        ...
     @property
     def scriptName(self) -> str:
         """
         Name of script where error occurred.
         """
+        ...
 
     @property
     def language(self) -> str:
         """
         Scripting language of script that generated exception.
         """
+        ...
 
     @property
     def lineNum(self) -> int:
         """
         line number where error occurred.
         """
+        ...
 
 
 __all__ = ['ScriptErrorRaisedException']

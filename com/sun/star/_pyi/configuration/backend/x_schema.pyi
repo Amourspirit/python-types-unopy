@@ -46,6 +46,7 @@ class XSchema(XInterface_8f010a43):
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
             MalformedDataException: ``MalformedDataException``
         """
+        ...
     def readSchema(self, aHandler: 'XSchemaHandler_d83412dd') -> None:
         """
         Describes the full schema (templates + component) to a XSchemaHandler.
@@ -55,6 +56,7 @@ class XSchema(XInterface_8f010a43):
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
             MalformedDataException: ``MalformedDataException``
         """
+        ...
     def readTemplates(self, aHandler: 'XSchemaHandler_d83412dd') -> None:
         """
         Describes the component templates to a XSchemaHandler.
@@ -64,4 +66,6 @@ class XSchema(XInterface_8f010a43):
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
             MalformedDataException: ``MalformedDataException``
         """
+        ...
+
 

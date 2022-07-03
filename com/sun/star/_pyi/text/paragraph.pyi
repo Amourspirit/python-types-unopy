@@ -44,5 +44,6 @@ class Paragraph(TextTable_90440a5a, TextContent_a6810b4d, CharacterProperties_1d
     See Also:
         `API Paragraph <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1Paragraph.html>`_
     """
+    ...
 
 

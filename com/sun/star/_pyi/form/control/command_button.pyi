@@ -34,5 +34,6 @@ class CommandButton(UnoControlButton_d5e30ce3, XApproveActionBroadcaster_693d10b
     See Also:
         `API CommandButton <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1control_1_1CommandButton.html>`_
     """
+    ...
 
 

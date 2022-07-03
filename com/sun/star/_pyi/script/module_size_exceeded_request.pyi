@@ -44,11 +44,13 @@ class ModuleSizeExceededRequest(Exception_85530a09):
             Context (XInterface, optional): Context value.
             Names (typing.Tuple[str, ...], optional): Names value.
         """
+        ...
     @property
     def Names(self) -> typing.Tuple[str, ...]:
         """
         The name of the modules that exceed size that can be stored.
         """
+        ...
 
 
 __all__ = ['ModuleSizeExceededRequest']

@@ -45,11 +45,13 @@ class ItemDescriptor(ABC):
         """
         contains the command URL which specifies which action should be accomplished.
         """
+        ...
     @property
     def HelpURL(self) -> str:
         """
         contains the a URL that points to a help text.
         """
+        ...
     @property
     def IsVisible(self) -> bool:
         """
@@ -57,6 +59,7 @@ class ItemDescriptor(ABC):
         
         This property is only valid if the item describes a toolbar or statusbar item.
         """
+        ...
     @property
     def ItemDescriptorContainer(self) -> 'XIndexAccess_f0910d6d':
         """
@@ -64,11 +67,13 @@ class ItemDescriptor(ABC):
         
         This property is valid for menus only. It can be used to define sub menus.
         """
+        ...
     @property
     def Label(self) -> str:
         """
         the text of the user interface item.
         """
+        ...
     @property
     def Offset(self) -> int:
         """
@@ -76,6 +81,7 @@ class ItemDescriptor(ABC):
         
         This property is only valid if the item describes a statusbar item.
         """
+        ...
     @property
     def Style(self) -> int:
         """
@@ -83,6 +89,7 @@ class ItemDescriptor(ABC):
         
         This property is only valid if the item describes a toolbar or statusbar item. See ItemStyle for more information about possible styles.
         """
+        ...
     @property
     def Type(self) -> int:
         """
@@ -90,6 +97,7 @@ class ItemDescriptor(ABC):
         
         See constant definition ItemType.
         """
+        ...
     @property
     def Width(self) -> int:
         """
@@ -97,5 +105,6 @@ class ItemDescriptor(ABC):
         
         This property is only valid if the item describes a toolbar or statusbar item.
         """
+        ...
 
 

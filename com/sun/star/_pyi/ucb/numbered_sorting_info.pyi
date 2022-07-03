@@ -43,6 +43,7 @@ class NumberedSortingInfo(object):
             ColumnIndex (int, optional): ColumnIndex value.
             Ascending (bool, optional): Ascending value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class NumberedSortingInfo(object):
         
         Index starts with 1.
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class NumberedSortingInfo(object):
         """
         contains a flag indicating the sort mode (ascending or descending).
         """
+        ...
 
 

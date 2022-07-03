@@ -29,5 +29,6 @@ class LabeledDataSequence(XLabeledDataSequence2_8f1410fa):
     See Also:
         `API LabeledDataSequence <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart2_1_1data_1_1LabeledDataSequence.html>`_
     """
+    ...
 
 

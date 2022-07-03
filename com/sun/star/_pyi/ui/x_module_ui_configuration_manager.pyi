@@ -47,6 +47,7 @@ class XModuleUIConfigurationManager(XInterface_8f010a43):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def isDefaultSettings(self, ResourceURL: str) -> bool:
         """
         determine if the settings of a user interface element is part of the default layer of the user interface configuration manager.
@@ -54,4 +55,6 @@ class XModuleUIConfigurationManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

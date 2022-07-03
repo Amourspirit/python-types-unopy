@@ -42,18 +42,23 @@ class XConfigManager(XInterface_8f010a43):
         
         Listener can update his text values by calling XConfigManager.substituteVariables() again. If KeyName specifies a group of keys, the listener gets one notify for each subkey.
         """
+        ...
     def flush(self) -> None:
         """
         was designed for additional functionality for interface com.sun.star.registry.XSimpleRegistry and make no sense without that
         """
+        ...
     def removePropertyChangeListener(self, KeyName: str, Listener: 'XPropertyChangeListener_58e4105a') -> None:
         """
         remove a registered listener
         """
+        ...
     def substituteVariables(self, Text: str) -> str:
         """
         substitute variables (place holder) inside given parameter Text
         
         The value of Text is NOT changed.
         """
+        ...
+
 

@@ -39,4 +39,6 @@ class XComponentSupplier(XInterface_8f010a43):
         
         The component may not support com.sun.star.lang.XComponent interface.
         """
+        ...
+
 

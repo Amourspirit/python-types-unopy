@@ -29,6 +29,7 @@ Enum
 See Also:
     `API ChartAxisArrangeOrderType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart.html#a9c06520c0f143b00b5aaafeb4772dc39>`_
 """
+typeName: str = 'com.sun.star.chart.ChartAxisArrangeOrderType'
 
 AUTO: 'uno.Enum'
 """

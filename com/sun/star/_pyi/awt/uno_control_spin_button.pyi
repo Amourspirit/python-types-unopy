@@ -32,5 +32,6 @@ class UnoControlSpinButton(UnoControl_8f2c0a67, XSpinValue_8e920a43):
     See Also:
         `API UnoControlSpinButton <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlSpinButton.html>`_
     """
+    ...
 
 

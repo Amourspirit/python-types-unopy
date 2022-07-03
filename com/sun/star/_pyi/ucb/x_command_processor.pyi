@@ -40,6 +40,7 @@ class XCommandProcessor(XInterface_8f010a43):
         
         Not every command can be aborted. It's up to the implementation to decide whether this method will actually end the processing of the command or simply do nothing.
         """
+        ...
     def createCommandIdentifier(self) -> int:
         """
         creates a unique identifier for a command.
@@ -50,6 +51,7 @@ class XCommandProcessor(XInterface_8f010a43):
         
         To avoid ever-increasing resource consumption, the identifier should be released via XCommandProcessor2.releaseCommandIdentifier() when it is no longer used.
         """
+        ...
     def execute(self, aCommand: 'Command_709c0901', CommandId: int, Environment: 'XCommandEnvironment_fb330dee') -> object:
         """
         executes a command.
@@ -60,4 +62,6 @@ class XCommandProcessor(XInterface_8f010a43):
             com.sun.star.uno.Exception: ``Exception``
             CommandAbortedException: ``CommandAbortedException``
         """
+        ...
+
 

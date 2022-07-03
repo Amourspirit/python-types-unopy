@@ -42,16 +42,19 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
         
             LibreOffice 7.1
         """
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the dialog.
         """
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the dialog.
         """
+        ...
     @property
     def ScrollHeight(self) -> int:
         """
@@ -61,6 +64,7 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
         
             LibreOffice 7.1
         """
+        ...
     @property
     def ScrollLeft(self) -> int:
         """
@@ -70,6 +74,7 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
         
             LibreOffice 7.1
         """
+        ...
     @property
     def ScrollTop(self) -> int:
         """
@@ -79,6 +84,7 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
         
             LibreOffice 7.1
         """
+        ...
     @property
     def ScrollWidth(self) -> int:
         """
@@ -88,11 +94,13 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
         
             LibreOffice 7.1
         """
+        ...
     @property
     def Title(self) -> str:
         """
         specifies the text that is displayed in the caption bar of the dialog.
         """
+        ...
     @property
     def VScroll(self) -> bool:
         """
@@ -102,5 +110,6 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
         
             LibreOffice 7.1
         """
+        ...
 
 

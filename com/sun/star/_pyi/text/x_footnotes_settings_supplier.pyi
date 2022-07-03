@@ -38,4 +38,6 @@ class XFootnotesSettingsSupplier(XInterface_8f010a43):
     def getFootnotesSettings(self) -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
+
 

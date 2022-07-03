@@ -39,6 +39,7 @@ class XSeekable(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def getPosition(self) -> int:
         """
         returns the current offset of the stream.
@@ -46,6 +47,7 @@ class XSeekable(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def seek(self, location: int) -> None:
         """
         changes the seek pointer to a new location relative to the beginning of the stream.
@@ -56,4 +58,6 @@ class XSeekable(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

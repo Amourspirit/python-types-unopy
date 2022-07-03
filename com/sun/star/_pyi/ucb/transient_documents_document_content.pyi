@@ -44,5 +44,6 @@ class TransientDocumentsDocumentContent(XPropertiesChangeNotifier_7a7b111c, XPro
     See Also:
         `API TransientDocumentsDocumentContent <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1TransientDocumentsDocumentContent.html>`_
     """
+    ...
 
 

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.3
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.exception import Exception as Exception_85530a09
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
@@ -35,20 +36,22 @@ class PDFExportException(Exception_85530a09):
 
     typeName: Literal['com.sun.star.task.PDFExportException']
 
-    def __init__(self, Message: typing.Optional[str] = ..., Context: typing.Optional[XInterface_8f010a43] = ..., ErrorCodes: typing.Optional[typing.Tuple[int, ...]] = ...) -> None:
+    def __init__(self, Message: typing.Optional[str] = ..., Context: typing.Optional[XInterface_8f010a43] = ..., ErrorCodes: typing.Optional[uno.ByteSequence] = ...) -> None:
         """
         Constructor
 
         Arguments:
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
-            ErrorCodes (typing.Tuple[int, ...], optional): ErrorCodes value.
+            ErrorCodes (uno.ByteSequence, optional): ErrorCodes value.
         """
+        ...
     @property
-    def ErrorCodes(self) -> typing.Tuple[int, ...]:
+    def ErrorCodes(self) -> uno.ByteSequence:
         """
         contains a number of errors that occurred during PDFExport
         """
+        ...
 
 
 __all__ = ['PDFExportException']

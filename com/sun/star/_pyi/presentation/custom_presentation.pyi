@@ -32,5 +32,6 @@ class CustomPresentation(XIndexContainer_1c040ebe, XNamed_a6520b08):
     See Also:
         `API CustomPresentation <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1CustomPresentation.html>`_
     """
+    ...
 
 

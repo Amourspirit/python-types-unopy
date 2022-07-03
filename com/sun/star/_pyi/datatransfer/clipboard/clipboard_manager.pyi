@@ -30,5 +30,6 @@ class ClipboardManager(XClipboardManager_28b01488, XComponent_98dc0ab5):
     See Also:
         `API ClipboardManager <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1datatransfer_1_1clipboard_1_1ClipboardManager.html>`_
     """
+    ...
 
 

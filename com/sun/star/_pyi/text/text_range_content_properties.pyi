@@ -48,26 +48,31 @@ class TextRangeContentProperties(ABC):
         """
         may contain a table cell.
         """
+        ...
     @property
     def DocumentIndex(self) -> 'XDocumentIndex_c9330c5c':
         """
         may contain a document index.
         """
+        ...
     @property
     def DocumentIndexMark(self) -> 'XDocumentIndexMark_fe490de7':
         """
         may contain a document index mark.
         """
+        ...
     @property
     def Endnote(self) -> 'XFootnote_901e0a73':
         """
         may contain an endnote.
         """
+        ...
     @property
     def Footnote(self) -> 'XFootnote_901e0a73':
         """
         may contain a footnote.
         """
+        ...
     @property
     def NestedTextContent(self) -> 'XTextContent_b16e0ba5':
         """
@@ -75,16 +80,19 @@ class TextRangeContentProperties(ABC):
         
         For example, may contain an InContentMetadata or a com.sun.star.text.textfield.MetadataField.
         """
+        ...
     @property
     def ReferenceMark(self) -> 'XTextContent_b16e0ba5':
         """
         may contain a reference mark.
         """
+        ...
     @property
     def TextFrame(self) -> 'XTextFrame_9a7e0ab5':
         """
         may contain a text frame.
         """
+        ...
     @property
     def TextParagraph(self) -> 'XTextContent_b16e0ba5':
         """
@@ -94,15 +102,18 @@ class TextRangeContentProperties(ABC):
         
             LibreOffice 6.0
         """
+        ...
     @property
     def TextSection(self) -> 'XTextSection_b1730b9f':
         """
         may contain a text section.
         """
+        ...
     @property
     def TextTable(self) -> 'XTextTable_9a810ab2':
         """
         may contain a text table.
         """
+        ...
 
 

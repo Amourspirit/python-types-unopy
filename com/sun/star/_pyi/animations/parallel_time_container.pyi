@@ -32,5 +32,6 @@ class ParallelTimeContainer(XParallelTimeContainer_a08d11f2):
     See Also:
         `API ParallelTimeContainer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1animations_1_1ParallelTimeContainer.html>`_
     """
+    ...
 
 

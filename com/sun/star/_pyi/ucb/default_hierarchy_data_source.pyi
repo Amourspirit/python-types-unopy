@@ -29,5 +29,6 @@ class DefaultHierarchyDataSource(HierarchyDataSource_fb6b0dcc):
     See Also:
         `API DefaultHierarchyDataSource <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1DefaultHierarchyDataSource.html>`_
     """
+    ...
 
 

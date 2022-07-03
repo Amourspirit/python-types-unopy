@@ -37,5 +37,6 @@ class HierarchyElement(XProperty_99770ace, XPropertyWithState_c960e6b, XChild_a6
     See Also:
         `API HierarchyElement <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1HierarchyElement.html>`_
     """
+    ...
 
 

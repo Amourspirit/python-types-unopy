@@ -37,4 +37,6 @@ class XSystemDependentMenuPeer(XInterface_8f010a43):
         
         You must check the machine ID and the process ID.WIN32: Returns an HMENU if possible, otherwise 0.WIN16: Returns an HMENU if possible, otherwise 0.
         """
+        ...
+
 

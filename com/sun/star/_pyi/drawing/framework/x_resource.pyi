@@ -39,6 +39,7 @@ class XResource(ABC):
         
         The returned id unambiguously identifies the resource.
         """
+        ...
     def isAnchorOnly(self) -> bool:
         """
         Some resources must not be leafs, i.e.
@@ -47,4 +48,6 @@ class XResource(ABC):
         
         The return value is used to determine whether a resource has to be deactivated when it has no children, either because none is requested or because none can be created.
         """
+        ...
+
 

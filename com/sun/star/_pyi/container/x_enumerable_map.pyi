@@ -52,6 +52,7 @@ class XEnumerableMap(XMap_90a60a41):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def createKeyEnumeration(self, Isolated: bool) -> 'XEnumeration_f2180daa':
         """
         creates an enumerator for the keys of the map
@@ -59,6 +60,7 @@ class XEnumerableMap(XMap_90a60a41):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def createValueEnumeration(self, Isolated: bool) -> 'XEnumeration_f2180daa':
         """
         creates an enumerator for the values of the map
@@ -66,4 +68,6 @@ class XEnumerableMap(XMap_90a60a41):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
+
 

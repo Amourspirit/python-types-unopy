@@ -39,6 +39,7 @@ class XSheetOperation(XInterface_8f010a43):
         
         clears the specified contents of the current cell range(s).
         """
+        ...
     def computeFunction(self, nFunction: 'GeneralFunction_e2280d25') -> float:
         """
         computes a general function based on all cells in the current cell range(s).
@@ -46,4 +47,6 @@ class XSheetOperation(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

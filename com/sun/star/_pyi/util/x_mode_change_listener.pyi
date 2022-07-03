@@ -41,4 +41,6 @@ class XModeChangeListener(XEventListener_c7230c4a):
         """
         indicates that the mode of the broadcasting component has changed.
         """
+        ...
+
 

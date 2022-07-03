@@ -46,6 +46,7 @@ class XTextConvert(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def convertToTextFrame(self, Start: 'XTextRange_9a910ab7', End: 'XTextRange_9a910ab7', FrameProperties: 'PropertyValues_d6470ce6') -> 'XTextContent_b16e0ba5':
         """
         moves the paragraphs from Start to End into a text frame.
@@ -55,4 +56,6 @@ class XTextConvert(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
         """
+        ...
+
 

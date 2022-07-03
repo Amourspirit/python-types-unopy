@@ -34,5 +34,6 @@ class OfficeRestartManager(XRestartManager_d5390cb3):
     See Also:
         `API OfficeRestartManager <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1task_1_1OfficeRestartManager.html>`_
     """
+    ...
 
 

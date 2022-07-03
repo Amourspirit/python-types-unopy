@@ -39,4 +39,6 @@ class XApproveActionListener(XEventListener_c7230c4a):
         """
         is invoked when an action is performed.
         """
+        ...
+
 

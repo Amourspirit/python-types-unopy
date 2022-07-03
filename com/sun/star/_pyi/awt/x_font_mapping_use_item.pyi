@@ -46,6 +46,7 @@ class XFontMappingUseItem(object):
             originalFont (str, optional): originalFont value.
             count (int, optional): count value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class XFontMappingUseItem(object):
         
         Each font is identified as family name or 'familyName/styleName' (if style name is not empty).
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class XFontMappingUseItem(object):
         """
         The family name or 'familyName/styleName' (if style name is not empty) of the requested font.
         """
+        ...
 
 
     @property
@@ -69,5 +72,6 @@ class XFontMappingUseItem(object):
         """
         The number of times this mapping took place.
         """
+        ...
 
 

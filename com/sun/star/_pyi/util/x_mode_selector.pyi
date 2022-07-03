@@ -34,9 +34,11 @@ class XModeSelector(XInterface_8f010a43):
     def getMode(self) -> str:
         """
         """
+        ...
     def getSupportedModes(self) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def setMode(self, aMode: str) -> None:
         """
         sets a new mode for the implementing object.
@@ -44,8 +46,11 @@ class XModeSelector(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def supportsMode(self, aMode: str) -> bool:
         """
         asks whether a mode is supported or not.
         """
+        ...
+
 

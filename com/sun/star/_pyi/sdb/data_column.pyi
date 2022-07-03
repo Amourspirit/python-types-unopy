@@ -36,6 +36,7 @@ class DataColumn(ResultColumn_a4980b2e, XColumn_70650907, XColumnUpdate_aebd0b6a
         """
         contains the original value of the column.
         """
+        ...
     @property
     def Value(self) -> object:
         """
@@ -43,5 +44,6 @@ class DataColumn(ResultColumn_a4980b2e, XColumn_70650907, XColumnUpdate_aebd0b6a
         
         This could be a constraint property, to veto modifications, if a new value does not fit into rules defined for the column.
         """
+        ...
 
 

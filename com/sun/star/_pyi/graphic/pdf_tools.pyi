@@ -33,5 +33,6 @@ class PdfTools(XPdfDecomposer_ee260d69):
     See Also:
         `API PdfTools <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1graphic_1_1PdfTools.html>`_
     """
+    ...
 
 

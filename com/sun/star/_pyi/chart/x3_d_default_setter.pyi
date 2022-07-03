@@ -34,16 +34,20 @@ class X3DDefaultSetter(XInterface_8f010a43):
         """
         The result may depend on the current chart type and the current shade mode.
         """
+        ...
     def setDefaultIllumination(self) -> None:
         """
         set suitable defaults for the illumination of the current 3D chart.
         
         The result may dependent on other 3D settings as rotation or shade mode. It may depend on the current chart type also.
         """
+        ...
     def setDefaultRotation(self) -> None:
         """
         sets a suitable default for the rotation of the current 3D chart.
         
         The result may depend on the current chart type.
         """
+        ...
+
 

@@ -40,6 +40,7 @@ class TextPosition(object):
             Paragraph (int, optional): Paragraph value.
             PositionInParagraph (int, optional): PositionInParagraph value.
         """
+        ...
 
 
     @property

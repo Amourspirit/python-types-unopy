@@ -55,6 +55,7 @@ class XFrame2(XDispatchInformationProvider_afb6126c, XDispatchProvider_fc690de6,
         
             OOo 1.1.2
         """
+        ...
 
     @property
     def LayoutManager(self) -> 'XInterface_8f010a43':
@@ -63,6 +64,7 @@ class XFrame2(XDispatchInformationProvider_afb6126c, XDispatchProvider_fc690de6,
         
         This is actually of type XLayoutManager, but this API is still experimental (unpublished).
         """
+        ...
 
     @property
     def Title(self) -> str:
@@ -71,11 +73,13 @@ class XFrame2(XDispatchInformationProvider_afb6126c, XDispatchProvider_fc690de6,
         
         It depends from the type of the frame container window. If it is a system task window all will be OK. Otherwise the title can't be set. Setting/getting of the pure value of this property must be possible in every case. Only showing on the UI can be fail.
         """
+        ...
 
     @property
     def UserDefinedAttributes(self) -> 'XNameContainer_cb90e47':
         """
         contains user defined attributes.
         """
+        ...
 
 

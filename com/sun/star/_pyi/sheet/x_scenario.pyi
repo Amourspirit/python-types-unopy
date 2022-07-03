@@ -37,22 +37,28 @@ class XScenario(XInterface_8f010a43):
         """
         adds more ranges to the scenario.
         """
+        ...
     def apply(self) -> None:
         """
         applies the scenario.
         
         The contents of the scenario ranges are copied into the first non-scenario sheet which is in front of the sheet containing the scenario by itself.
         """
+        ...
     def getIsScenario(self) -> bool:
         """
         returns TRUE if the current object is a scenario.
         """
+        ...
     def getScenarioComment(self) -> str:
         """
         returns the comment for the scenario.
         """
+        ...
     def setScenarioComment(self, aScenarioComment: str) -> None:
         """
         sets a new comment for the scenario.
         """
+        ...
+
 

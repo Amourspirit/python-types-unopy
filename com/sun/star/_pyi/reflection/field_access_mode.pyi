@@ -32,6 +32,7 @@ class FieldAccessMode(Enum):
     See Also:
         `API FieldAccessMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1reflection.html#a95a71baf95250ba8716608067ba245f9>`_
     """
+    typeName: str = 'com.sun.star.reflection.FieldAccessMode'
 
     CONST: 'uno.Enum'
     """

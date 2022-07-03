@@ -30,5 +30,6 @@ class InteractionGridControl(GridControl_c9d0e52, XDispatch_98ff0a9b):
     See Also:
         `API InteractionGridControl <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1control_1_1InteractionGridControl.html>`_
     """
+    ...
 
 

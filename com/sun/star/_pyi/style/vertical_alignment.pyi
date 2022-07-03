@@ -32,6 +32,7 @@ class VerticalAlignment(Enum):
     See Also:
         `API VerticalAlignment <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style.html#a9c2ed22cfbd21f13df24ea193b310aee>`_
     """
+    typeName: str = 'com.sun.star.style.VerticalAlignment'
 
     BOTTOM: 'uno.Enum'
     """

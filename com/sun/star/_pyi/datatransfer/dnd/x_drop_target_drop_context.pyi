@@ -40,14 +40,18 @@ class XDropTargetDropContext(XInterface_8f010a43):
         
         This method should be called from the com.sun.star.datatransfer.dnd.XDropTargetListener.drop() method if the implementation wishes to accept the drop operation with the specified action.
         """
+        ...
     def dropComplete(self, success: bool) -> None:
         """
         Signals that the drop is completed and if it was successful or not.
         
         A value of FALSE means the drop completed unsuccessfully.
         """
+        ...
     def rejectDrop(self) -> None:
         """
         Reject the drop as a result of examining the available com.sun.star.datatransfer.DataFlavor types received in the XDropTargetListener.dragEnter() method.
         """
+        ...
+
 

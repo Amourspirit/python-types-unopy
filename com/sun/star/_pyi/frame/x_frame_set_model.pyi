@@ -37,7 +37,10 @@ class XFrameSetModel(XInterface_8f010a43):
     def getSource(self) -> str:
         """
         """
+        ...
     def setSource(self, Source: str) -> None:
         """
         """
+        ...
+
 

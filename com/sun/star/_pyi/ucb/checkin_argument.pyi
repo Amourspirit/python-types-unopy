@@ -47,6 +47,7 @@ class CheckinArgument(object):
             NewTitle (str, optional): NewTitle value.
             MimeType (str, optional): MimeType value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class CheckinArgument(object):
         """
         Tells whether to create a new major or minor version during the checkin.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class CheckinArgument(object):
         """
         Contains the version comment to set during the checkin.
         """
+        ...
 
 
     @property
@@ -70,6 +73,7 @@ class CheckinArgument(object):
         
         the URL of the temporary file to checkin).
         """
+        ...
 
 
     @property
@@ -77,6 +81,7 @@ class CheckinArgument(object):
         """
         contains the URL of the private working copy to checkin.
         """
+        ...
 
 
     @property
@@ -86,6 +91,7 @@ class CheckinArgument(object):
         
         If this field is filled, for example, a file will be renamed while it is being checked in.
         """
+        ...
 
 
     @property
@@ -93,5 +99,6 @@ class CheckinArgument(object):
         """
         contains the Mime-Type of the content to check-in as it may be different from the original one.
         """
+        ...
 
 

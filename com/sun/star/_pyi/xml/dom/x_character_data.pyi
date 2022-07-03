@@ -38,6 +38,7 @@ class XCharacterData(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def deleteData(self, offset: int, count: int) -> None:
         """
         Remove a range of 16-bit units from the node.
@@ -47,6 +48,7 @@ class XCharacterData(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def getData(self) -> str:
         """
         Return the character data of the node that implements this interface.
@@ -56,10 +58,12 @@ class XCharacterData(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def getLength(self) -> int:
         """
         The number of 16-bit units that are available through data and the substringData method below.
         """
+        ...
     def insertData(self, offset: int, arg: str) -> None:
         """
         Insert a string at the specified 16-bit unit offset.
@@ -69,6 +73,7 @@ class XCharacterData(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def replaceData(self, offset: int, count: int, arg: str) -> None:
         """
         Replace the characters starting at the specified 16-bit unit offset with the specified string.
@@ -78,6 +83,7 @@ class XCharacterData(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def setData(self, data: str) -> None:
         """
         Set the character data of the node that implements this interface.
@@ -87,6 +93,7 @@ class XCharacterData(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def subStringData(self, offset: int, count: int) -> str:
         """
         Extracts a range of data from the node.
@@ -96,4 +103,6 @@ class XCharacterData(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
+
 

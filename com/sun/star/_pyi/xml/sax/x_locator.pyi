@@ -35,13 +35,18 @@ class XLocator(XInterface_8f010a43):
     def getColumnNumber(self) -> int:
         """
         """
+        ...
     def getLineNumber(self) -> int:
         """
         """
+        ...
     def getPublicId(self) -> str:
         """
         """
+        ...
     def getSystemId(self) -> str:
         """
         """
+        ...
+
 

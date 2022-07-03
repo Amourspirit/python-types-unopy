@@ -48,6 +48,7 @@ class UndoFailedException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             Reason (object, optional): Reason value.
         """
+        ...
     @property
     def Reason(self) -> object:
         """
@@ -55,6 +56,7 @@ class UndoFailedException(Exception_85530a09):
         
         Usually, this member will carry an exception.
         """
+        ...
 
 
 __all__ = ['UndoFailedException']

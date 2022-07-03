@@ -31,5 +31,6 @@ class TextSearch(XTextSearch_a56a0b19):
     See Also:
         `API TextSearch <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1util_1_1TextSearch.html>`_
     """
+    ...
 
 

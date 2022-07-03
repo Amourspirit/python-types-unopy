@@ -37,4 +37,6 @@ class XShapeDescriptor(XInterface_8f010a43):
     def getShapeType(self) -> str:
         """
         """
+        ...
+
 

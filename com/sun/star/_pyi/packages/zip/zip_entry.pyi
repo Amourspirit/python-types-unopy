@@ -54,6 +54,7 @@ class ZipEntry(object):
             sName (str, optional): sName value.
             sComment (str, optional): sComment value.
         """
+        ...
 
 
     @property
@@ -61,6 +62,7 @@ class ZipEntry(object):
         """
         optional extra field data for entry
         """
+        ...
 
 
     @property
@@ -68,6 +70,7 @@ class ZipEntry(object):
         """
         version needed to extract
         """
+        ...
 
 
     @property
@@ -75,6 +78,7 @@ class ZipEntry(object):
         """
         bit flags
         """
+        ...
 
 
     @property
@@ -82,6 +86,7 @@ class ZipEntry(object):
         """
         compression method
         """
+        ...
 
 
     @property
@@ -89,6 +94,7 @@ class ZipEntry(object):
         """
         modification time
         """
+        ...
 
 
     @property
@@ -96,6 +102,7 @@ class ZipEntry(object):
         """
         CRC-32 of entry data.
         """
+        ...
 
 
     @property
@@ -103,6 +110,7 @@ class ZipEntry(object):
         """
         uncompressed size of entry data
         """
+        ...
 
 
     @property
@@ -110,6 +118,7 @@ class ZipEntry(object):
         """
         uncompressed size of entry data
         """
+        ...
 
 
     @property
@@ -117,6 +126,7 @@ class ZipEntry(object):
         """
         offset of LOC header
         """
+        ...
 
 
     @property
@@ -124,6 +134,7 @@ class ZipEntry(object):
         """
         The number of the disk this entry is saved on.
         """
+        ...
 
 
     @property
@@ -131,6 +142,7 @@ class ZipEntry(object):
         """
         the entry name
         """
+        ...
 
 
     @property
@@ -138,5 +150,6 @@ class ZipEntry(object):
         """
         optional comment
         """
+        ...
 
 

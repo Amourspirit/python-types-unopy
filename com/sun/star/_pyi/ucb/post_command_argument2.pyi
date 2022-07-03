@@ -46,6 +46,7 @@ class PostCommandArgument2(PostCommandArgument_fc590dea):
             MediaType (str, optional): MediaType value.
             Referer (str, optional): Referer value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class PostCommandArgument2(PostCommandArgument_fc590dea):
         """
         The media type (mime type) for the data to post.
         """
+        ...
 
 
     @property
@@ -60,5 +62,6 @@ class PostCommandArgument2(PostCommandArgument_fc590dea):
         """
         The URL of the referrer.
         """
+        ...
 
 

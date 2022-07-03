@@ -41,6 +41,7 @@ class OpenCLDevice(object):
             Vendor (str, optional): Vendor value.
             Driver (str, optional): Driver value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class OpenCLDevice(object):
         """
         The name of the device as returned by OpenCL.
         """
+        ...
 
 
     @property
@@ -55,6 +57,7 @@ class OpenCLDevice(object):
         """
         The vendor of the device as returned by OpenCL.
         """
+        ...
 
 
     @property
@@ -62,5 +65,6 @@ class OpenCLDevice(object):
         """
         The driver version as returned by OpenCL.
         """
+        ...
 
 

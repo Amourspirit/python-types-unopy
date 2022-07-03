@@ -40,6 +40,7 @@ class XCommonEmbedPersist(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def reload(self, aMediaArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]', aObjectArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         lets the object or the link reload itself.
@@ -52,6 +53,7 @@ class XCommonEmbedPersist(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def storeOwn(self) -> None:
         """
         lets the object or the link store itself.
@@ -61,4 +63,6 @@ class XCommonEmbedPersist(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

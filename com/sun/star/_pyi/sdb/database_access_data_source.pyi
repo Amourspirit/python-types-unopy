@@ -45,10 +45,12 @@ class DatabaseAccessDataSource(XPropertySet_bc180bfa, XCompletedConnection_98a0e
         """
         determines the password handling.
         """
+        ...
     @property
     def URL(self) -> str:
         """
         locates the database access bean.
         """
+        ...
 
 

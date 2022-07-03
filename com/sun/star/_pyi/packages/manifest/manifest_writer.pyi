@@ -28,5 +28,6 @@ class ManifestWriter(XManifestWriter_9d0811d8):
     See Also:
         `API ManifestWriter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1packages_1_1manifest_1_1ManifestWriter.html>`_
     """
+    ...
 
 

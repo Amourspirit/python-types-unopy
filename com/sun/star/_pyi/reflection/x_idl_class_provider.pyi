@@ -42,4 +42,6 @@ class XIdlClassProvider(XInterface_8f010a43):
     def getIdlClasses(self) -> 'typing.Tuple[XIdlClass_d63a0c9a, ...]':
         """
         """
+        ...
+
 

@@ -47,6 +47,7 @@ class Calendar(object):
             Default (bool, optional): Default value.
             Name (str, optional): Name value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class Calendar(object):
         """
         the days of the week, see also CalendarItem.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class Calendar(object):
         """
         the months of the year, see also CalendarItem.
         """
+        ...
 
 
     @property
@@ -68,6 +71,7 @@ class Calendar(object):
         """
         the possible eras, see also CalendarItem.
         """
+        ...
 
 
     @property
@@ -75,6 +79,7 @@ class Calendar(object):
         """
         the ID of the day with which the week begins.
         """
+        ...
 
 
     @property
@@ -82,6 +87,7 @@ class Calendar(object):
         """
         how many days must reside in the first week of a year.
         """
+        ...
 
 
     @property
@@ -89,6 +95,7 @@ class Calendar(object):
         """
         if this is the default calendar for a given locale.
         """
+        ...
 
 
     @property
@@ -96,5 +103,6 @@ class Calendar(object):
         """
         the name of the calendar, for example, Gregorian.
         """
+        ...
 
 

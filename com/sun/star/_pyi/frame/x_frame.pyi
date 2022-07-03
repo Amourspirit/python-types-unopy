@@ -46,12 +46,14 @@ class XFrame(XComponent_98dc0ab5):
         
         Finally, most frames may grab the focus to one of its windows or forward the activation to a sub-frame.
         """
+        ...
     def addFrameActionListener(self, xListener: 'XFrameActionListener_26250efa') -> None:
         """
         registers an event listener, which will be called when certain things happen to the components within this frame or within sub-frames of this frame.
         
         E.g., it is possible to determine instantiation/destruction and activation/deactivation of components.
         """
+        ...
     def contextChanged(self) -> None:
         """
         notifies the frame that the context of the controller within this frame changed (i.e.
@@ -60,12 +62,14 @@ class XFrame(XComponent_98dc0ab5):
         
         According to a call to this interface, the frame calls XFrameActionListener.frameAction() with FrameAction.CONTEXT_CHANGED to all listeners which are registered using XFrame.addFrameActionListener(). For external controllers this event can be used to requery dispatches.
         """
+        ...
     def deactivate(self) -> None:
         """
         is called by the creator frame when another sub-frame gets activated.
         
         At first the frame deactivates its active sub-frame, if any. Then broadcasts a FrameActionEvent with FrameAction.FRAME_DEACTIVATING.
         """
+        ...
     def findFrame(self, aTargetFrameName: str, nSearchFlags: int) -> 'XFrame':
         """
         searches for a frame with the specified name.
@@ -76,32 +80,38 @@ class XFrame(XComponent_98dc0ab5):
         
         If no frame with the given name is found, a new top frame is created; if this is allowed by a special flag FrameSearchFlag.CREATE. The new frame also gets the desired name.
         """
+        ...
     def getComponentWindow(self) -> 'XWindow_713b0924':
         """
         provides access to the component window
         
         Note: Don't dispose this window - the frame is the owner of it.
         """
+        ...
     def getContainerWindow(self) -> 'XWindow_713b0924':
         """
         provides access to the container window of the frame.
         
         Normally this is used as the parent window of the component window.
         """
+        ...
     def getController(self) -> 'XController_b00e0b8f':
         """
         provides access to the controller
         
         Note: Don't dispose it - the frame is the owner of it. Use XController.getFrame() to dispose the frame after you the controller agreed with a XController.suspend() call.
         """
+        ...
     def getCreator(self) -> 'XFramesSupplier_e12a0d1d':
         """
         provides access to the creator (parent) of this frame
         """
+        ...
     def getName(self) -> str:
         """
         access to the name property of this frame
         """
+        ...
     def initialize(self, xWindow: 'XWindow_713b0924') -> None:
         """
         is called to initialize the frame within a window - the container window.
@@ -110,20 +120,24 @@ class XFrame(XComponent_98dc0ab5):
         
         This frame will take over ownership of the window referred from xWindow. Thus, the previous owner is not allowed to dispose this window anymore.
         """
+        ...
     def isActive(self) -> bool:
         """
         determines if the frame is active.
         """
+        ...
     def isTop(self) -> bool:
         """
         determines if the frame is a top frame.
         
         In general a top frame is the frame which is a direct child of a task frame or which does not have a parent. Possible frame searches must stop the search at such a frame unless the flag FrameSearchFlag.TASKS is set.
         """
+        ...
     def removeFrameActionListener(self, xListener: 'XFrameActionListener_26250efa') -> None:
         """
         unregisters an event listener
         """
+        ...
     def setComponent(self, xComponentWindow: 'XWindow_713b0924', xController: 'XController_b00e0b8f') -> bool:
         """
         sets a new component into the frame or release an existing one from a frame.
@@ -132,12 +146,14 @@ class XFrame(XComponent_98dc0ab5):
         
         Simple components may implement a com.sun.star.awt.XWindow only. In this case no controller must be given here.
         """
+        ...
     def setCreator(self, Creator: 'XFramesSupplier_e12a0d1d') -> None:
         """
         sets the frame container that created this frame.
         
         Only the creator is allowed to call this method. But creator doesn't mean the implementation which creates this instance ... it means the parent frame of the frame hierarchy. Because; normally a frame should be created by using the API and is necessary for searches inside the tree (e.g. XFrame.findFrame())
         """
+        ...
     def setName(self, aName: str) -> None:
         """
         sets the name of the frame.
@@ -146,4 +162,6 @@ class XFrame(XComponent_98dc0ab5):
         
         Note: Special targets like \"_blank\", \"_self\" etc. are not allowed. That's why frame names shouldn't start with a sign \"_\".
         """
+        ...
+
 

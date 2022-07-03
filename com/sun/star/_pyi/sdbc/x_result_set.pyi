@@ -49,6 +49,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def afterLast(self) -> None:
         """
         moves the cursor to the end of the result set, just after the last row.
@@ -58,6 +59,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def beforeFirst(self) -> None:
         """
         moves the cursor to the front of the result set, just before the first row.
@@ -67,6 +69,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def first(self) -> bool:
         """
         moves the cursor to the first row in the result set.
@@ -74,6 +77,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getRow(self) -> int:
         """
         retrieves the current row number.
@@ -83,6 +87,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getStatement(self) -> 'XInterface_8f010a43':
         """
         returns the Statement that produced this com.sun.star.sdbc.ResultSet object.
@@ -92,6 +97,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isAfterLast(self) -> bool:
         """
         indicates whether the cursor is after the last row in the result set.
@@ -99,6 +105,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isBeforeFirst(self) -> bool:
         """
         indicates whether the cursor is before the first row in the result set.
@@ -106,6 +113,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isFirst(self) -> bool:
         """
         indicates whether the cursor is on the first row of the result set.
@@ -113,6 +121,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isLast(self) -> bool:
         """
         indicates whether the cursor is on the last row of the result set.
@@ -122,6 +131,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def last(self) -> bool:
         """
         moves the cursor to the last row in the result set.
@@ -129,6 +139,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def next(self) -> bool:
         """
         moves the cursor down one row from its current position.
@@ -140,6 +151,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def previous(self) -> bool:
         """
         moves the cursor to the previous row in the result set.
@@ -149,6 +161,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def refreshRow(self) -> None:
         """
         refreshes the current row with its most recent value in the database.
@@ -158,6 +171,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def relative(self, rows: int) -> bool:
         """
         moves the cursor a relative number of rows, either positive or negative.
@@ -169,6 +183,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def rowDeleted(self) -> bool:
         """
         indicates whether a row has been deleted.
@@ -178,6 +193,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def rowInserted(self) -> bool:
         """
         indicates whether the current row has had an insertion.
@@ -187,6 +203,7 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def rowUpdated(self) -> bool:
         """
         indicates whether the current row has been updated.
@@ -196,4 +213,6 @@ class XResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

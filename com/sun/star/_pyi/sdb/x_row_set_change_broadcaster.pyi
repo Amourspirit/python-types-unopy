@@ -41,8 +41,11 @@ class XRowSetChangeBroadcaster(ABC):
         """
         adds a listener to be notified when the RowSet supplied by the component changes.
         """
+        ...
     def removeRowSetChangeListener(self, iListener: 'XRowSetChangeListener_167a0e89') -> None:
         """
         removes a previously added listener.
         """
+        ...
+
 

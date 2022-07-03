@@ -44,6 +44,7 @@ class XTransferable2(XTransferable_2d800f38):
             UnsupportedFlavorException: ``UnsupportedFlavorException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def isComplex(self) -> bool:
         """
         Returns true if the selection contains embedded objects or is a large text blob.
@@ -52,4 +53,6 @@ class XTransferable2(XTransferable_2d800f38):
         
             LibreOffice 6.4
         """
+        ...
+
 

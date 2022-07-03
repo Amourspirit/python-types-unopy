@@ -29,5 +29,6 @@ class ListPositionCellBinding(CellValueBinding_ecf40d48):
     See Also:
         `API ListPositionCellBinding <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1table_1_1ListPositionCellBinding.html>`_
     """
+    ...
 
 

@@ -42,6 +42,7 @@ class XSimpleFileAccess3(XSimpleFileAccess2_ebe60d08):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def setHidden(self, FileURL: str, bHidden: bool) -> None:
         """
         Sets the \"hidden\" of a file according to the boolean parameter, if the actual process has the right to do so and the used operation system supports this operation.
@@ -50,4 +51,6 @@ class XSimpleFileAccess3(XSimpleFileAccess2_ebe60d08):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

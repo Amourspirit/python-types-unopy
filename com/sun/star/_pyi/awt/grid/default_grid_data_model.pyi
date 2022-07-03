@@ -37,5 +37,6 @@ class DefaultGridDataModel(XMutableGridDataModel_6387103b):
     See Also:
         `API DefaultGridDataModel <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1grid_1_1DefaultGridDataModel.html>`_
     """
+    ...
 
 

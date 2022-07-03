@@ -46,12 +46,14 @@ class XDictionary(XNamed_a6520b08):
         
         In positive dictionaries only positive entries can be made, and in negative ones only negative entries.
         """
+        ...
     def addDictionaryEventListener(self, xListener: 'XDictionaryEventListener_d74c132b') -> bool:
         """
         adds an entry to the list of dictionary event listeners.
         
         On dictionary events, each entry in the listener list will be notified via a call to com.sun.star.linguistic2.XDictionaryEventListener.processDictionaryEvent().
         """
+        ...
     def addEntry(self, xDicEntry: 'XDictionaryEntry_49ef0ff5') -> bool:
         """
         is used to add an entry to the dictionary.
@@ -60,48 +62,62 @@ class XDictionary(XNamed_a6520b08):
         
         In positive dictionaries only positive entries can be made, and in negative ones only negative entries.
         """
+        ...
     def clear(self) -> None:
         """
         removes all entries from the dictionary.
         """
+        ...
     def getCount(self) -> int:
         """
         """
+        ...
     def getDictionaryType(self) -> 'DictionaryType_2ba50f2d':
         """
         returns the type of the dictionary.
         """
+        ...
     def getEntries(self) -> 'typing.Tuple[XDictionaryEntry_49ef0ff5, ...]':
         """
         This function should no longer be used since with the expansion of the maximum number of allowed entries the result may become unreasonable large!
         """
+        ...
     def getEntry(self, aWord: str) -> 'XDictionaryEntry_49ef0ff5':
         """
         searches for an entry that matches the given word.
         """
+        ...
     def getLocale(self) -> 'Locale_70d308fa':
         """
         """
+        ...
     def isActive(self) -> bool:
         """
         """
+        ...
     def isFull(self) -> bool:
         """
         """
+        ...
     def remove(self, aWord: str) -> bool:
         """
         removes an entry from the dictionary.
         """
+        ...
     def removeDictionaryEventListener(self, xListener: 'XDictionaryEventListener_d74c132b') -> bool:
         """
         removes an entry from the list of dictionary event listeners.
         """
+        ...
     def setActive(self, bActivate: bool) -> None:
         """
         specifies whether the dictionary should be used or not .
         """
+        ...
     def setLocale(self, aLocale: 'Locale_70d308fa') -> None:
         """
         is used to set the language of the dictionary.
         """
+        ...
+
 

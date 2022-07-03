@@ -33,8 +33,11 @@ class XFootnote(XTextContent_b16e0ba5):
     def getLabel(self) -> str:
         """
         """
+        ...
     def setLabel(self, aLabel: str) -> None:
         """
         sets the label of the footnote.
         """
+        ...
+
 

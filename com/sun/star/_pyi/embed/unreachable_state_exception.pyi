@@ -45,17 +45,20 @@ class UnreachableStateException(Exception_85530a09):
             CurrentState (int, optional): CurrentState value.
             NextState (int, optional): NextState value.
         """
+        ...
     @property
     def CurrentState(self) -> int:
         """
         The current state of the object.
         """
+        ...
 
     @property
     def NextState(self) -> int:
         """
         The state that could not be reached.
         """
+        ...
 
 
 __all__ = ['UnreachableStateException']

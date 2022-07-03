@@ -45,6 +45,7 @@ class XCloseListener(XEventListener_c7230c4a):
         
         If the event com.sun.star.lang.XEventListener.disposing() occurred before it must be accepted too. There exist no chance for a disagreement any more.
         """
+        ...
     def queryClosing(self, Source: 'EventObject_a3d70b03', GetsOwnership: bool) -> None:
         """
         is called when somewhere tries to close listened object
@@ -58,4 +59,6 @@ class XCloseListener(XEventListener_c7230c4a):
         Raises:
             CloseVetoException: ``CloseVetoException``
         """
+        ...
+
 

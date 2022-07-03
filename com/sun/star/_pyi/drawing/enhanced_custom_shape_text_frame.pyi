@@ -42,6 +42,7 @@ class EnhancedCustomShapeTextFrame(object):
             TopLeft (EnhancedCustomShapeParameterPair, optional): TopLeft value.
             BottomRight (EnhancedCustomShapeParameterPair, optional): BottomRight value.
         """
+        ...
 
 
     @property

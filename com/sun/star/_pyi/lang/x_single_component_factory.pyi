@@ -40,6 +40,7 @@ class XSingleComponentFactory(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def createInstanceWithContext(self, Context: 'XComponentContext_e2e10d4a') -> 'XInterface_8f010a43':
         """
         Creates an instance of a service implementation.
@@ -47,4 +48,6 @@ class XSingleComponentFactory(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

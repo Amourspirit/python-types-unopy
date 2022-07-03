@@ -33,7 +33,10 @@ class XConditionalFormat(XIndexAccess_f0910d6d):
         """
         Creates a new conditional format entry and insert its at the position.
         """
+        ...
     def removeByIndex(self, Index: int) -> None:
         """
         """
+        ...
+
 

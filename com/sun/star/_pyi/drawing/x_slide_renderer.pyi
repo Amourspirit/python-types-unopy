@@ -41,14 +41,18 @@ class XSlideRenderer(ABC):
         """
         Return a size that has the given aspect ratio and shares either the width or the height with the given maximum size.
         """
+        ...
     def createPreview(self, xSlide: 'XDrawPage_b07a0b57', aMaximumPreviewPixelSize: 'Size_576707ef', nSuperSampleFactor: int) -> 'XBitmap_70cd0909':
         """
         Create a preview for the given slide that has the same aspect ratio as the page and is as large as possible but not larger than the specified size.
         
         The reason for not using the given size directly as preview size and thus possibly changing the aspect ratio is that a) a different aspect ratio is not used often, and b) leaving the adaptation of the actual preview size (according to the aspect ratio of the slide) to the slide renderer is more convenient to the caller than having to this himself.
         """
+        ...
     def createPreviewForCanvas(self, xSlide: 'XDrawPage_b07a0b57', aMaximumPreviewPixelSize: 'Size_576707ef', nSuperSampleFactor: int, xCanvas: 'XCanvas_b19b0b7a') -> 'XBitmap_b1b70b7b':
         """
         Exactly the same functionality as createPreview(), only a different return type: com.sun.star.rendering.XBitmap instead of com.sun.star.awt.XBitmap.
         """
+        ...
+
 

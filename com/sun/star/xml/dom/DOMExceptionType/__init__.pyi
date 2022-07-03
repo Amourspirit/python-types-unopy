@@ -29,6 +29,7 @@ ENUM DOMExceptionType
 See Also:
     `API DOMExceptionType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1xml_1_1dom.html#a31e3fb46d584de1cfc4b4c7640a41239>`_
 """
+typeName: str = 'com.sun.star.xml.dom.DOMExceptionType'
 
 DOMSTRING_SIZE_ERR: 'uno.Enum'
 """

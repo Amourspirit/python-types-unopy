@@ -44,6 +44,7 @@ class BorderLine(object):
             OuterLineWidth (int, optional): OuterLineWidth value.
             LineDistance (int, optional): LineDistance value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class BorderLine(object):
         """
         contains the color value of the line.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class BorderLine(object):
         
         If this value is zero, only a single line is drawn.
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class BorderLine(object):
         
         If this value is zero, no line is drawn.
         """
+        ...
 
 
     @property
@@ -76,5 +80,6 @@ class BorderLine(object):
         """
         contains the distance between the inner and outer parts of a double line (in 1/100 mm).
         """
+        ...
 
 

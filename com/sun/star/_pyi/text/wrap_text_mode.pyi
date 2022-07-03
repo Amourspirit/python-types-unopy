@@ -32,6 +32,7 @@ class WrapTextMode(Enum):
     See Also:
         `API WrapTextMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text.html#a1ed96de3f2d76e93588f67d506a0b0ae>`_
     """
+    typeName: str = 'com.sun.star.text.WrapTextMode'
 
     DYNAMIC: 'uno.Enum'
     """

@@ -48,6 +48,7 @@ class XLanguageGuessing(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def enableLanguages(self, aLanguages: 'typing.Tuple[Locale_70d308fa, ...]') -> None:
         """
         allows to explicitly re-enable some languages that got previously disabled.
@@ -57,20 +58,24 @@ class XLanguageGuessing(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getAvailableLanguages(self) -> 'typing.Tuple[Locale_70d308fa, ...]':
         """
         returns a list of all supported languages.
         
         This should be the same as the mathematical union of all enabled and disabled languages.
         """
+        ...
     def getDisabledLanguages(self) -> 'typing.Tuple[Locale_70d308fa, ...]':
         """
         returns the list of all disabled languages
         """
+        ...
     def getEnabledLanguages(self) -> 'typing.Tuple[Locale_70d308fa, ...]':
         """
         returns the list of all enabled languages
         """
+        ...
     def guessPrimaryLanguage(self, aText: str, nStartPos: int, nLen: int) -> 'Locale_70d308fa':
         """
         determines the single most probable language of a sub-string.
@@ -82,4 +87,6 @@ class XLanguageGuessing(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

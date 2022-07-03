@@ -43,5 +43,6 @@ class Backend(XBackend_6ce81076, XBackendEntities_fecf13bb, XSchemaSupplier_eca1
     See Also:
         `API Backend <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1Backend.html>`_
     """
+    ...
 
 

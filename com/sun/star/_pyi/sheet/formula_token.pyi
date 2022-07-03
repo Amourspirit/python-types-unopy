@@ -41,6 +41,7 @@ class FormulaToken(object):
             OpCode (int, optional): OpCode value.
             Data (object, optional): Data value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class FormulaToken(object):
         """
         is the OpCode of the token.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class FormulaToken(object):
         """
         is additional data in the token, depending on the OpCode.
         """
+        ...
 
 

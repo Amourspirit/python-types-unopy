@@ -36,15 +36,18 @@ class FileName(TextField_90260a56):
         
         This property is especially useful for import/export purposes.
         """
+        ...
     @property
     def FileFormat(self) -> int:
         """
         determines the format the file name is displayed as specified in com.sun.star.text.FilenameDisplayFormat.
         """
+        ...
     @property
     def IsFixed(self) -> bool:
         """
         If this flag is set to FALSE the content is regularly updated.
         """
+        ...
 
 

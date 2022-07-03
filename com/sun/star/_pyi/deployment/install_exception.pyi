@@ -50,11 +50,13 @@ class InstallException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             displayName (str, optional): displayName value.
         """
+        ...
     @property
     def displayName(self) -> str:
         """
         the display name of the extension, which is to be installed.
         """
+        ...
 
 
 __all__ = ['InstallException']

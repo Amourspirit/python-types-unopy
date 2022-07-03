@@ -31,5 +31,6 @@ class QueryDefinition(XQueryDefinition_d3bf0cb8):
     See Also:
         `API QueryDefinition <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1QueryDefinition.html>`_
     """
+    ...
 
 

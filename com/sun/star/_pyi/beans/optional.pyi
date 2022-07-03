@@ -43,6 +43,7 @@ class Optional(object):
             IsPresent (bool, optional): IsPresent value.
             Value (object, optional): Value value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class Optional(object):
         """
         Marks this structure instance as having an actual value.
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class Optional(object):
         
         If no actual value is present, a producer of such a structure instance should leave this member defaulted, and a consumer of such a structure instance should ignore the specific value stored in this member.
         """
+        ...
 
 

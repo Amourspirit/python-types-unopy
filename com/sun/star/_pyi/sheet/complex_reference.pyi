@@ -42,6 +42,7 @@ class ComplexReference(object):
             Reference1 (SingleReference, optional): Reference1 value.
             Reference2 (SingleReference, optional): Reference2 value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class ComplexReference(object):
         """
         is the first reference.
         """
+        ...
 
 
     @property
@@ -56,5 +58,6 @@ class ComplexReference(object):
         """
         is the second reference.
         """
+        ...
 
 

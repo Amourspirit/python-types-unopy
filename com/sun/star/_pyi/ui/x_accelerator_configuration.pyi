@@ -51,6 +51,7 @@ class XAcceleratorConfiguration(XUIConfiguration_c4eb0c34, XUIConfigurationPersi
         
         Such key event can be mapped to its bound command, using the method getCommandForKeyEvent().
         """
+        ...
     def getCommandByKeyEvent(self, aKeyEvent: 'KeyEvent_7a78097f') -> str:
         """
         return the registered command for the specified key event.
@@ -60,6 +61,7 @@ class XAcceleratorConfiguration(XUIConfiguration_c4eb0c34, XUIConfigurationPersi
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def getKeyEventsByCommand(self, sCommand: str) -> 'typing.Tuple[KeyEvent_7a78097f, ...]':
         """
         optimized access to the relation \"command-key\" instead of \"key-command\" which is provided normally by this interface.
@@ -70,6 +72,7 @@ class XAcceleratorConfiguration(XUIConfiguration_c4eb0c34, XUIConfigurationPersi
             : ````
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def getPreferredKeyEventsForCommandList(self, lCommandList: 'typing.Tuple[str, ...]') -> 'typing.Tuple[object, ...]':
         """
         optimized function to map a list of commands to a corresponding list of key events.
@@ -82,6 +85,7 @@ class XAcceleratorConfiguration(XUIConfiguration_c4eb0c34, XUIConfigurationPersi
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def removeCommandFromAllKeyEvents(self, sCommand: str) -> None:
         """
         search for a key-command-binding inside this configuration set, where the specified command is used.
@@ -94,6 +98,7 @@ class XAcceleratorConfiguration(XUIConfiguration_c4eb0c34, XUIConfigurationPersi
             : ````
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def removeKeyEvent(self, aKeyEvent: 'KeyEvent_7a78097f') -> None:
         """
         remove a key-command-binding from this configuration set.
@@ -101,6 +106,7 @@ class XAcceleratorConfiguration(XUIConfiguration_c4eb0c34, XUIConfigurationPersi
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def setKeyEvent(self, aKeyEvent: 'KeyEvent_7a78097f', sCommand: str) -> None:
         """
         modify or create a key - command - binding.
@@ -115,4 +121,6 @@ class XAcceleratorConfiguration(XUIConfiguration_c4eb0c34, XUIConfigurationPersi
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

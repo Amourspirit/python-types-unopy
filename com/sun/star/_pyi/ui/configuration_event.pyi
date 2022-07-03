@@ -51,6 +51,7 @@ class ConfigurationEvent(ContainerEvent_ea50e70):
             ResourceURL (str, optional): ResourceURL value.
             aInfo (object, optional): aInfo value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class ConfigurationEvent(ContainerEvent_ea50e70):
         """
         contains the resource URL of the user interface element or a configuration manager, which has been changed, inserted or replaced.
         """
+        ...
 
 
     @property
@@ -67,5 +69,6 @@ class ConfigurationEvent(ContainerEvent_ea50e70):
         
         The type depends on the specific implementation.
         """
+        ...
 
 

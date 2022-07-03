@@ -47,6 +47,7 @@ class LockFileCorruptRequest(IOException_8c450a27):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['LockFileCorruptRequest']
 

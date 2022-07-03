@@ -34,5 +34,6 @@ class GridProperties(LineProperties_f13f0da9):
         """
         Determines, whether the grid should be rendered by the view.
         """
+        ...
 
 

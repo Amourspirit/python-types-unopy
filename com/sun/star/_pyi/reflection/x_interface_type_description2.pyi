@@ -43,8 +43,11 @@ class XInterfaceTypeDescription2(XInterfaceTypeDescription_d92e1342):
         """
         Returns a sequence of all directly inherited (mandatory) base interface types.
         """
+        ...
     def getOptionalBaseTypes(self) -> 'typing.Tuple[XTypeDescription_3c210fb1, ...]':
         """
         Returns a sequence of all directly inherited optional base interface types.
         """
+        ...
+
 

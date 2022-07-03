@@ -42,6 +42,7 @@ class XLibraryContainer2(XLibraryContainer_daa0e6d):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def isLibraryLink(self, Name: str) -> bool:
         """
         returns true if the accessed library item is a link, e.g., created by createLibraryLink, otherwise false.
@@ -49,6 +50,7 @@ class XLibraryContainer2(XLibraryContainer_daa0e6d):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def isLibraryReadOnly(self, Name: str) -> bool:
         """
         returns true if the accessed library item (library or library link) is read only.
@@ -58,6 +60,7 @@ class XLibraryContainer2(XLibraryContainer_daa0e6d):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def renameLibrary(self, Name: str, NewName: str) -> None:
         """
         renames the library item with the specified name.
@@ -68,6 +71,7 @@ class XLibraryContainer2(XLibraryContainer_daa0e6d):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def setLibraryReadOnly(self, Name: str, bReadOnly: bool) -> None:
         """
         Sets the accessed library item (library or library link) to read only according to the flag bReadOnly (true means read only)
@@ -75,4 +79,6 @@ class XLibraryContainer2(XLibraryContainer_daa0e6d):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

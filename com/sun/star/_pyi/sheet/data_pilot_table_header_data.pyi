@@ -50,6 +50,7 @@ class DataPilotTableHeaderData(object):
             Flags (int, optional): Flags value.
             MemberName (str, optional): MemberName value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class DataPilotTableHeaderData(object):
         """
         number of dimensions
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class DataPilotTableHeaderData(object):
         """
         hierarchy
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class DataPilotTableHeaderData(object):
         """
         level
         """
+        ...
 
 
     @property
@@ -78,6 +82,7 @@ class DataPilotTableHeaderData(object):
         """
         flag
         """
+        ...
 
 
     @property
@@ -85,5 +90,6 @@ class DataPilotTableHeaderData(object):
         """
         member name
         """
+        ...
 
 

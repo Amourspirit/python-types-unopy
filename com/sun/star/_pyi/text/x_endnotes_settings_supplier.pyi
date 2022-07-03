@@ -38,4 +38,6 @@ class XEndnotesSettingsSupplier(XInterface_8f010a43):
     def getEndnotesSettings(self) -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
+
 

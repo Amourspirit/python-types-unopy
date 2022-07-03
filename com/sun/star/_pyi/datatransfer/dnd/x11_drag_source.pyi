@@ -31,5 +31,6 @@ class X11DragSource(XDragSource_49900fb2, XComponent_98dc0ab5, XInitialization_d
     See Also:
         `API X11DragSource <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1datatransfer_1_1dnd_1_1X11DragSource.html>`_
     """
+    ...
 
 

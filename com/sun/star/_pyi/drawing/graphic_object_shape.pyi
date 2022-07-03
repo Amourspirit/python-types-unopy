@@ -48,26 +48,31 @@ class GraphicObjectShape(RotationDescriptor_2cec0f63, ShadowProperties_e350e87, 
         """
         If this property is set, the blue channel of this graphic shape is adjusted by the given signed percent value.
         """
+        ...
     @property
     def AdjustContrast(self) -> int:
         """
         If this property is set, the contrast of this graphic shape is adjusted by the given signed percent value.
         """
+        ...
     @property
     def AdjustGreen(self) -> int:
         """
         If this property is set, the green channel of this graphic shape is adjusted by the given signed percent value.
         """
+        ...
     @property
     def AdjustLuminance(self) -> int:
         """
         If this property is set, the luminance of this graphic shape is adjusted by the given signed percent value.
         """
+        ...
     @property
     def AdjustRed(self) -> int:
         """
         If this property is set, the red channel of this graphic shape is adjusted by the given signed percent value.
         """
+        ...
     @property
     def BarCodeProperties(self) -> 'BarCode_99e10a84':
         """
@@ -77,31 +82,37 @@ class GraphicObjectShape(RotationDescriptor_2cec0f63, ShadowProperties_e350e87, 
         
             LibreOffice 6.4
         """
+        ...
     @property
     def Gamma(self) -> float:
         """
         If this property is set, the gamma value of this graphic shape is adjusted by the given value.
         """
+        ...
     @property
     def Graphic(self) -> 'XGraphic_a4da0afc':
         """
         This is the graphic that represents this graphic shape.
         """
+        ...
     @property
     def GraphicColorMode(self) -> 'ColorMode_b13e0b78':
         """
         This property selects the color mode that is used for rendering.
         """
+        ...
     @property
     def GraphicObjectFillBitmap(self) -> 'XBitmap_70cd0909':
         """
         This is the bitmap that represents this graphic shape.
         """
+        ...
     @property
     def GraphicStreamURL(self) -> str:
         """
         This is a url to the stream (\"in document\" or linked graphic) for this graphic shape.
         """
+        ...
     @property
     def GraphicURL(self) -> str:
         """
@@ -109,56 +120,67 @@ class GraphicObjectShape(RotationDescriptor_2cec0f63, ShadowProperties_e350e87, 
         
         Note the new behaviour since it was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When a URL is set, then it will load the image and set the Graphic property.
         """
+        ...
     @property
     def ImageMap(self) -> 'XIndexContainer_1c040ebe':
         """
         This property contains an image map for this graphic.
         """
+        ...
     @property
     def IsSignatureLine(self) -> bool:
         """
         Whether this shape is actually a signature line.
         """
+        ...
     @property
     def SignatureLineCanAddComment(self) -> bool:
         """
         Whether the user can attach a comment at signing time.
         """
+        ...
     @property
     def SignatureLineId(self) -> str:
         """
         The ID of the signature line, used to connect to a signature.
         """
+        ...
     @property
     def SignatureLineIsSigned(self) -> bool:
         """
         Whether the signature line is signed using a digital signature.
         """
+        ...
     @property
     def SignatureLineShowSignDate(self) -> bool:
         """
         Whether the signing date should be shown in the shape.
         """
+        ...
     @property
     def SignatureLineSigningInstructions(self) -> str:
         """
         Signing instructions, to be shown at signing time.
         """
+        ...
     @property
     def SignatureLineSuggestedSignerEmail(self) -> str:
         """
         Suggested Signer Email.
         """
+        ...
     @property
     def SignatureLineSuggestedSignerName(self) -> str:
         """
         Suggested Signer, Name of the Signer.
         """
+        ...
     @property
     def SignatureLineSuggestedSignerTitle(self) -> str:
         """
         Suggested Signer, Line 2 (Title or additional information)
         """
+        ...
     @property
     def SignatureLineUnsignedImage(self) -> 'XGraphic_a4da0afc':
         """
@@ -166,6 +188,7 @@ class GraphicObjectShape(RotationDescriptor_2cec0f63, ShadowProperties_e350e87, 
         
         Images for signed signature lines (valid and invalid) are to be retrieved via com.sun.star.security.DocumentSignatureInformation (you can get the matching signature with the SignatureLineId property).
         """
+        ...
     @property
     def Transparency(self) -> int:
         """
@@ -173,5 +196,6 @@ class GraphicObjectShape(RotationDescriptor_2cec0f63, ShadowProperties_e350e87, 
         
         100% is fully transparent, 0% is fully opaque.
         """
+        ...
 
 

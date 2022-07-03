@@ -46,6 +46,7 @@ class FrameActionEvent(EventObject_a3d70b03):
             Frame (XFrame, optional): Frame value.
             Action (FrameAction, optional): Action value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class FrameActionEvent(EventObject_a3d70b03):
         """
         contains the frame in which the event occurred
         """
+        ...
 
 
     @property
@@ -60,5 +62,6 @@ class FrameActionEvent(EventObject_a3d70b03):
         """
         specifies the concrete event
         """
+        ...
 
 

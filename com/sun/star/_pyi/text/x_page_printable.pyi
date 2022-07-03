@@ -37,6 +37,7 @@ class XPagePrintable(XInterface_8f010a43):
         """
         These settings contains:
         """
+        ...
     def printPages(self, xOptions: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         prints the pages according to the PagePrintSettings.
@@ -44,8 +45,11 @@ class XPagePrintable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setPagePrintSettings(self, aSettings: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         adjusts the settings of the page printing.
         """
+        ...
+
 

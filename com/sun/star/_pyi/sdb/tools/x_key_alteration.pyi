@@ -46,6 +46,7 @@ class XKeyAlteration(XConnectionSupplier_57f3105c):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def dropKey(self, table: 'XPropertySet_bc180bfa', key: 'XPropertySet_bc180bfa') -> None:
         """
         drops an object of the related container identified by its name.
@@ -53,4 +54,6 @@ class XKeyAlteration(XConnectionSupplier_57f3105c):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

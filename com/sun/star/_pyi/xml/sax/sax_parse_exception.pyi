@@ -48,29 +48,34 @@ class SAXParseException(SAXException_d1a00c6e):
             LineNumber (int, optional): LineNumber value.
             ColumnNumber (int, optional): ColumnNumber value.
         """
+        ...
     @property
     def PublicId(self) -> str:
         """
         contains the public identifier of the document where the exception has occurred.
         """
+        ...
 
     @property
     def SystemId(self) -> str:
         """
         contains the system identifier of the document.
         """
+        ...
 
     @property
     def LineNumber(self) -> int:
         """
         contains the line number in the document.
         """
+        ...
 
     @property
     def ColumnNumber(self) -> int:
         """
         contains the column number in the document.
         """
+        ...
 
 
 __all__ = ['SAXParseException']

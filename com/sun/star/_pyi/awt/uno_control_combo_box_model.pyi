@@ -43,6 +43,7 @@ class UnoControlComboBoxModel(UnoControlModel_c8ce0c58, XItemList_83fb09d7):
         """
         specifies the list of items.
         """
+        ...
     @property
     def TypedItemList(self) -> 'typing.Tuple[object, ...]':
         """
@@ -56,26 +57,31 @@ class UnoControlComboBoxModel(UnoControlModel_c8ce0c58, XItemList_83fb09d7):
         
             LibreOffice 5.4
         """
+        ...
     @property
     def Align(self) -> int:
         """
         specifies the horizontal alignment of the text in the control.
         """
+        ...
     @property
     def Autocomplete(self) -> bool:
         """
         specifies whether automatic completion of text is enabled.
         """
+        ...
     @property
     def BackgroundColor(self) -> 'Color_68e908c5':
         """
         specifies the background color (RGB) of the control.
         """
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
     @property
     def BorderColor(self) -> int:
         """
@@ -87,41 +93,49 @@ class UnoControlComboBoxModel(UnoControlModel_c8ce0c58, XItemList_83fb09d7):
         
             OOo 2.0
         """
+        ...
     @property
     def Dropdown(self) -> bool:
         """
         specifies if the control has a drop down button.
         """
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
+        ...
     @property
     def FontDescriptor(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font attributes of the text in the control.
         """
+        ...
     @property
     def FontEmphasisMark(self) -> int:
         """
         specifies the com.sun.star.text.FontEmphasis value of the text in the control.
         """
+        ...
     @property
     def FontRelief(self) -> int:
         """
         specifies the com.sun.star.text.FontRelief value of the text in the control.
         """
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the control.
         """
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the control.
         """
+        ...
     @property
     def HideInactiveSelection(self) -> bool:
         """
@@ -131,11 +145,13 @@ class UnoControlComboBoxModel(UnoControlModel_c8ce0c58, XItemList_83fb09d7):
         
             OOo 2.0
         """
+        ...
     @property
     def LineCount(self) -> int:
         """
         specifies the maximum line count displayed in the drop down box.
         """
+        ...
     @property
     def MaxTextLen(self) -> int:
         """
@@ -143,6 +159,7 @@ class UnoControlComboBoxModel(UnoControlModel_c8ce0c58, XItemList_83fb09d7):
         
         There's no limitation, if set to 0.
         """
+        ...
     @property
     def MouseWheelBehavior(self) -> int:
         """
@@ -150,36 +167,43 @@ class UnoControlComboBoxModel(UnoControlModel_c8ce0c58, XItemList_83fb09d7):
         
         Usually, the mouse wheel scroll through the control's entry list. Using this property, and one of the MouseWheelBehavior constants, you can control under which circumstances this is possible.
         """
+        ...
     @property
     def Printable(self) -> bool:
         """
         specifies that the control will be printed with the document.
         """
+        ...
     @property
     def ReadOnly(self) -> bool:
         """
         specifies that the content of the control cannot be modified by the user.
         """
+        ...
     @property
     def Tabstop(self) -> bool:
         """
         specifies that the control can be reached with the TAB key.
         """
+        ...
     @property
     def Text(self) -> str:
         """
         specifies the text displayed in the control.
         """
+        ...
     @property
     def TextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color (RGB) of the control.
         """
+        ...
     @property
     def TextLineColor(self) -> 'Color_68e908c5':
         """
         specifies the text line color (RGB) of the control.
         """
+        ...
     @property
     def WritingMode(self) -> int:
         """
@@ -191,5 +215,6 @@ class UnoControlComboBoxModel(UnoControlModel_c8ce0c58, XItemList_83fb09d7):
         
             OOo 3.1
         """
+        ...
 
 

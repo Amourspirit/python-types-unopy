@@ -44,6 +44,7 @@ class XFastDocumentHandler(XFastContextHandler_361e0f5c):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def processingInstruction(self, aTarget: str, aData: str) -> None:
         """
         receives notification of a processing instruction.
@@ -55,6 +56,7 @@ class XFastDocumentHandler(XFastContextHandler_361e0f5c):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def setDocumentLocator(self, xLocator: 'XLocator_a3fb0aff') -> None:
         """
         receives an object for locating the origin of SAX document events.
@@ -62,6 +64,7 @@ class XFastDocumentHandler(XFastContextHandler_361e0f5c):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def startDocument(self) -> None:
         """
         called by the parser when parsing of an XML stream is started.
@@ -69,4 +72,6 @@ class XFastDocumentHandler(XFastContextHandler_361e0f5c):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
+
 

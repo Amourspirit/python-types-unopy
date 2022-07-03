@@ -39,4 +39,6 @@ class XDataPilotMemberResults(XInterface_8f010a43):
         """
         returns the sequence of results for the regarding data pilot source level.
         """
+        ...
+
 

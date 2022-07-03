@@ -39,10 +39,14 @@ class XFormField(XInterface_8f010a43):
     def getFieldType(self) -> str:
         """
         """
+        ...
     def getParameters(self) -> 'XNameContainer_cb90e47':
         """
         """
+        ...
     def setFieldType(self, fieldType: str) -> None:
         """
         """
+        ...
+
 

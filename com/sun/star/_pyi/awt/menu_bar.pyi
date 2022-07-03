@@ -31,5 +31,6 @@ class MenuBar(XMenuBar_7a040956):
     See Also:
         `API MenuBar <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1MenuBar.html>`_
     """
+    ...
 
 

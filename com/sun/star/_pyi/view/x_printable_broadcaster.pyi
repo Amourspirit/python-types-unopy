@@ -39,8 +39,11 @@ class XPrintableBroadcaster(XInterface_8f010a43):
         """
         adds an XPrintableListener to be notified about print progress.
         """
+        ...
     def removePrintableListener(self, xListener: 'XPrintableListener_fe8a0e02') -> None:
         """
         removes an XPrintableListener.
         """
+        ...
+
 

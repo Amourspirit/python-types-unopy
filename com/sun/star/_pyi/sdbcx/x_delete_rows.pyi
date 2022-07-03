@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.sdbcx
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XDeleteRows(XInterface_8f010a43):
@@ -31,11 +32,13 @@ class XDeleteRows(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.sdbcx.XDeleteRows']
 
-    def deleteRows(self, rows: 'typing.Tuple[object, ...]') -> 'typing.Tuple[int, ...]':
+    def deleteRows(self, rows: 'typing.Tuple[object, ...]') -> uno.ByteSequence:
         """
         deletes one or more rows identified by their bookmarks.
 
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

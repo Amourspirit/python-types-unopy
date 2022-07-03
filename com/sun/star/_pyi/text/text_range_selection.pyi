@@ -41,6 +41,7 @@ class TextRangeSelection(object):
             Start (TextPosition, optional): Start value.
             End (TextPosition, optional): End value.
         """
+        ...
 
 
     @property

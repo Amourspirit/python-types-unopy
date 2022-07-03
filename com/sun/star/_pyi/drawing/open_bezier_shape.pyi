@@ -34,5 +34,6 @@ class OpenBezierShape(LineProperties_f13f0da9, PolyPolygonBezierDescriptor_c7e61
     See Also:
         `API OpenBezierShape <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1OpenBezierShape.html>`_
     """
+    ...
 
 

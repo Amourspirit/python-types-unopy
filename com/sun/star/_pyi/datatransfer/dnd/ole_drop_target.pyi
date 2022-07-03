@@ -33,5 +33,6 @@ class OleDropTarget(XDropTarget_49e50fbf, XComponent_98dc0ab5, XInitialization_d
     See Also:
         `API OleDropTarget <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1datatransfer_1_1dnd_1_1OleDropTarget.html>`_
     """
+    ...
 
 

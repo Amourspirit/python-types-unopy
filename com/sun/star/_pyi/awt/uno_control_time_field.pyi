@@ -37,5 +37,6 @@ class UnoControlTimeField(UnoControlEdit_bc4e0bed, XSpinField_8e3a0a2a, XTimeFie
     See Also:
         `API UnoControlTimeField <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlTimeField.html>`_
     """
+    ...
 
 

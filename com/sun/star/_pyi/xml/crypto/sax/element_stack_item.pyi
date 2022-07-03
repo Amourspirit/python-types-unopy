@@ -43,6 +43,7 @@ class ElementStackItem(object):
             elementName (str, optional): elementName value.
             xAttributes (XAttributeList, optional): xAttributes value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class ElementStackItem(object):
         """
         whether it is a startElement event
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class ElementStackItem(object):
         """
         the name of the element
         """
+        ...
 
 
     @property
@@ -64,5 +67,6 @@ class ElementStackItem(object):
         """
         attribute list for a startElement event
         """
+        ...
 
 

@@ -42,6 +42,7 @@ class XRelationshipAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def getAllRelationships(self) -> 'typing.Tuple[typing.Tuple[StringPair_a4bc0b14, ...], ...]':
         """
         retrieves the sequence containing all the entries controlled by the object.
@@ -49,6 +50,7 @@ class XRelationshipAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def getRelationshipByID(self, sID: str) -> 'typing.Tuple[StringPair_a4bc0b14, ...]':
         """
         retrieves the sequence containing all the tags from the entry with specified value of \"ID\" tag.
@@ -57,6 +59,7 @@ class XRelationshipAccess(XInterface_8f010a43):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def getRelationshipsByType(self, sType: str) -> 'typing.Tuple[typing.Tuple[StringPair_a4bc0b14, ...], ...]':
         """
         retrieves the sequence containing all the entries which \"Type\" tag takes the specified value.
@@ -64,6 +67,7 @@ class XRelationshipAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def getTargetByID(self, sID: str) -> str:
         """
         retrieves the value of \"Target\" tag from the entry with specified \"ID\" tag.
@@ -74,6 +78,7 @@ class XRelationshipAccess(XInterface_8f010a43):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def getTypeByID(self, sID: str) -> str:
         """
         retrieves the value of \"Type\" tag from the entry with specified \"ID\" tag.
@@ -84,6 +89,7 @@ class XRelationshipAccess(XInterface_8f010a43):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def hasByID(self, sID: str) -> bool:
         """
         allows to detect whether there is an entry with specified value of \"ID\" tag.
@@ -91,6 +97,7 @@ class XRelationshipAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def insertRelationshipByID(self, sID: str, aEntry: 'typing.Tuple[StringPair_a4bc0b14, ...]', bReplace: bool) -> None:
         """
         allows to insert an entry.
@@ -99,6 +106,7 @@ class XRelationshipAccess(XInterface_8f010a43):
             com.sun.star.container.ElementExistException: ``ElementExistException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def insertRelationships(self, aEntries: 'typing.Tuple[typing.Tuple[StringPair_a4bc0b14, ...], ...]', bReplace: bool) -> None:
         """
         allows to insert a set of entries
@@ -107,6 +115,7 @@ class XRelationshipAccess(XInterface_8f010a43):
             com.sun.star.container.ElementExistException: ``ElementExistException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def removeRelationshipByID(self, sID: str) -> None:
         """
         allows to remove an entry.
@@ -115,4 +124,6 @@ class XRelationshipAccess(XInterface_8f010a43):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

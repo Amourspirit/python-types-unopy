@@ -36,6 +36,7 @@ class XTextOutputStream(XOutputStream_a4e00b35):
         """
         sets character encoding.
         """
+        ...
     def writeString(self, aString: str) -> None:
         """
         writes a string to the stream using the encoding defined by setEncoding().
@@ -45,4 +46,6 @@ class XTextOutputStream(XOutputStream_a4e00b35):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

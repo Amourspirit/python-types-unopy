@@ -48,6 +48,7 @@ class GlobalTransferCommandArgument2(GlobalTransferCommandArgument_9ae711da):
             MimeType (str, optional): MimeType value.
             DocumentId (str, optional): DocumentId value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class GlobalTransferCommandArgument2(GlobalTransferCommandArgument_9ae711da):
         """
         contains the MIME type of the source object.
         """
+        ...
 
 
     @property
@@ -62,5 +64,6 @@ class GlobalTransferCommandArgument2(GlobalTransferCommandArgument_9ae711da):
         """
         contains the DocumentId of the source object.
         """
+        ...
 
 

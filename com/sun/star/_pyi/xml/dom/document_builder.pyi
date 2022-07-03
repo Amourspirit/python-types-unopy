@@ -28,5 +28,6 @@ class DocumentBuilder(XDocumentBuilder_90e0e25):
     See Also:
         `API DocumentBuilder <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1dom_1_1DocumentBuilder.html>`_
     """
+    ...
 
 

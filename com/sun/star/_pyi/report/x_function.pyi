@@ -37,29 +37,34 @@ class XFunction(XPropertySet_bc180bfa, XChild_a6390b07, XComponent_98dc0ab5):
         """
         specifies if sub reports should be traversed as well.
         """
+        ...
 
     @property
     def Formula(self) -> str:
         """
         defines the formula of this function
         """
+        ...
 
     @property
     def InitialFormula(self) -> object:
         """
         defines the formula for the initial value
         """
+        ...
 
     @property
     def Name(self) -> str:
         """
         defines the name of the function
         """
+        ...
 
     @property
     def PreEvaluated(self) -> bool:
         """
         specifies if the function should be evaluated before the report element will be executed.
         """
+        ...
 
 

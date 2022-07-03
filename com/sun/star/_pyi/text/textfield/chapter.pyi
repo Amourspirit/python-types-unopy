@@ -34,6 +34,7 @@ class Chapter(TextField_90260a56):
         """
         determines how the chapter should be displayed as described in com.sun.star.text.ChapterFormat.
         """
+        ...
     @property
     def Level(self) -> int:
         """
@@ -41,5 +42,6 @@ class Chapter(TextField_90260a56):
         
         The highest chapter level has the value 0.
         """
+        ...
 
 

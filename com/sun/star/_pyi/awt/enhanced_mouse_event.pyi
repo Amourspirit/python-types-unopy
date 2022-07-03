@@ -53,6 +53,7 @@ class EnhancedMouseEvent(MouseEvent_8f430a5f):
             PopupTrigger (bool, optional): PopupTrigger value.
             Target (XInterface, optional): Target value.
         """
+        ...
 
 
     @property
@@ -60,5 +61,6 @@ class EnhancedMouseEvent(MouseEvent_8f430a5f):
         """
         contains the object on the location of the mouse.
         """
+        ...
 
 

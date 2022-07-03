@@ -34,5 +34,6 @@ class UnoControlFormattedField(UnoControlEdit_bc4e0bed, XSpinField_8e3a0a2a):
     See Also:
         `API UnoControlFormattedField <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlFormattedField.html>`_
     """
+    ...
 
 

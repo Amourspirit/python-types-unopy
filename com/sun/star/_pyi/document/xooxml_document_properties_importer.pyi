@@ -49,6 +49,7 @@ class XOOXMLDocumentPropertiesImporter(XInterface_8f010a43):
         
             LibreOffice 7.3
         """
+        ...
     def getCustomPropertiesStreams(self, xSource: 'XStorage_8e460a32') -> 'typing.Tuple[XInputStream_98d40ab4, ...]':
         """
         find and get custom properties streams
@@ -59,6 +60,7 @@ class XOOXMLDocumentPropertiesImporter(XInterface_8f010a43):
         
             LibreOffice 7.3
         """
+        ...
     def getExtendedPropertiesStream(self, xSource: 'XStorage_8e460a32') -> 'XInputStream_98d40ab4':
         """
         find and get extended properties stream
@@ -69,6 +71,7 @@ class XOOXMLDocumentPropertiesImporter(XInterface_8f010a43):
         
             LibreOffice 7.3
         """
+        ...
     def importProperties(self, xSource: 'XStorage_8e460a32', xDocumentProperties: 'XDocumentProperties_4c31102b') -> None:
         """
         allows to import the document properties from OOXML format
@@ -82,4 +85,6 @@ class XOOXMLDocumentPropertiesImporter(XInterface_8f010a43):
             com.sun.star.xml.sax.SAXException: ``SAXException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

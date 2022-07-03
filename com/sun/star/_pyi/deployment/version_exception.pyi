@@ -53,17 +53,20 @@ class VersionException(Exception_85530a09):
             NewDisplayName (str, optional): NewDisplayName value.
             Deployed (XPackage, optional): Deployed value.
         """
+        ...
     @property
     def NewVersion(self) -> str:
         """
         the version of the extension which is being installed.
         """
+        ...
 
     @property
     def NewDisplayName(self) -> str:
         """
         the display name of the extension which is being installed.
         """
+        ...
 
     @property
     def Deployed(self) -> XPackage_cb1f0c4d:
@@ -72,6 +75,7 @@ class VersionException(Exception_85530a09):
         
         Must not be NULL.
         """
+        ...
 
 
 __all__ = ['VersionException']

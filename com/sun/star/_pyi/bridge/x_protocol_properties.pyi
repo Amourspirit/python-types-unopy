@@ -48,6 +48,7 @@ class XProtocolProperties(XInterface_8f010a43):
         Raises:
             com.sun.star.bridge.InvalidProtocolChangeException: ``InvalidProtocolChangeException``
         """
+        ...
     def getProperties(self) -> 'typing.Tuple[ProtocolProperty_ff280e2c, ...]':
         """
         called to get a list of bridge internal properties.
@@ -56,10 +57,13 @@ class XProtocolProperties(XInterface_8f010a43):
         
         The properties MUST NOT change between a requestChange and a commit change call.
         """
+        ...
     def requestChange(self, nRandomNumber: int) -> int:
         """
         called to initiate a protocol change.
         
         This method should always be called in the scope of the local bridge setting object, because the remote counter part may do such a call at the same time (typically at startup time).
         """
+        ...
+
 

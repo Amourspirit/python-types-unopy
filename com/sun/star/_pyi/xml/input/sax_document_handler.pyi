@@ -32,5 +32,6 @@ class SaxDocumentHandler(XInitialization_d46c0cca, XDocumentHandler_9b90e28):
     See Also:
         `API SaxDocumentHandler <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1input_1_1SaxDocumentHandler.html>`_
     """
+    ...
 
 

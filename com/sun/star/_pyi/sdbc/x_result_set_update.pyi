@@ -39,6 +39,7 @@ class XResultSetUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def deleteRow(self) -> None:
         """
         deletes the current row from the result set and the underlying database.
@@ -48,6 +49,7 @@ class XResultSetUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def insertRow(self) -> None:
         """
         inserts the contents of the insert row into the result set and the database.
@@ -57,6 +59,7 @@ class XResultSetUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def moveToCurrentRow(self) -> None:
         """
         moves the cursor to the remembered cursor position, usually the current row.
@@ -66,6 +69,7 @@ class XResultSetUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def moveToInsertRow(self) -> None:
         """
         moves the cursor to the insert row.
@@ -79,6 +83,7 @@ class XResultSetUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateRow(self) -> None:
         """
         updates the underlying database with the new contents of the current row.
@@ -88,4 +93,6 @@ class XResultSetUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

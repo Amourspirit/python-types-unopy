@@ -42,5 +42,6 @@ class BlankNode(XBlankNode_8cf40a0a):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

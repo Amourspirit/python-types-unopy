@@ -38,31 +38,38 @@ class XAccessibleTextSelection(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getSelectedPortionCount(self) -> int:
         """
         """
+        ...
     def getSeletedPositionEnd(self, nSelectedPortionIndex: int) -> int:
         """
 
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getSeletedPositionStart(self, nSelectedPortionIndex: int) -> int:
         """
 
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def removeSelection(self, selectionIndex: int) -> bool:
         """
 
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def scrollToPosition(self, aPoint: 'Point_5fb2085e', isLeftTop: bool) -> bool:
         """
 
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

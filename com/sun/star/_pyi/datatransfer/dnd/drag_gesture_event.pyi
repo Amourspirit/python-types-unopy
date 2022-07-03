@@ -48,6 +48,7 @@ class DragGestureEvent(EventObject_a3d70b03):
             DragSource (XDragSource, optional): DragSource value.
             Event (object, optional): Event value.
         """
+        ...
 
 
     @property
@@ -59,6 +60,7 @@ class DragGestureEvent(EventObject_a3d70b03):
         
         It's further possible to combine the ACTION_DEFAULT with one of the other actions defined in com.sun.star.datatransfer.dnd.DNDConstants. This means the user did not press any key during the Drag and Drop operation and the action that was combined with ACTION_DEFAULT is the system default action.
         """
+        ...
 
 
     @property
@@ -66,6 +68,7 @@ class DragGestureEvent(EventObject_a3d70b03):
         """
         The x coordinate where the drag originated in component coordinates.
         """
+        ...
 
 
     @property
@@ -73,6 +76,7 @@ class DragGestureEvent(EventObject_a3d70b03):
         """
         The y coordinate where the drag originated in component coordinates.
         """
+        ...
 
 
     @property
@@ -80,6 +84,7 @@ class DragGestureEvent(EventObject_a3d70b03):
         """
         The DragSource associated with this drag action.
         """
+        ...
 
 
     @property
@@ -89,5 +94,6 @@ class DragGestureEvent(EventObject_a3d70b03):
         
         The initial trigger event will presumably be a com.sun.star.awt.MouseEvent event. If it is not, the implementation should either react accordingly or presume that the left mouse button was clicked.
         """
+        ...
 
 

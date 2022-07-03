@@ -34,5 +34,6 @@ class MultiServiceFactory(XMultiComponentFactory_381b0f98, XMultiServiceFactory_
     See Also:
         `API MultiServiceFactory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1lang_1_1MultiServiceFactory.html>`_
     """
+    ...
 
 

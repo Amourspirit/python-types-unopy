@@ -29,5 +29,6 @@ class GraphicExportFilter(XGraphicExportFilter_49570ff2):
     See Also:
         `API GraphicExportFilter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1GraphicExportFilter.html>`_
     """
+    ...
 
 

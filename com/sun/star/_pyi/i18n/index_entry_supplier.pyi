@@ -29,5 +29,6 @@ class IndexEntrySupplier(XExtendedIndexEntrySupplier_7e70112f):
     See Also:
         `API IndexEntrySupplier <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1i18n_1_1IndexEntrySupplier.html>`_
     """
+    ...
 
 

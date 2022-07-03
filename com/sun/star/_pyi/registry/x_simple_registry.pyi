@@ -42,6 +42,7 @@ class XSimpleRegistry(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def destroy(self) -> None:
         """
         destroys the registry and the data source.
@@ -49,16 +50,19 @@ class XSimpleRegistry(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def getRootKey(self) -> 'XRegistryKey_e61a0d5b':
         """
 
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def getURL(self) -> str:
         """
         returns the URL of the current data source of the registry.
         """
+        ...
     def isReadOnly(self) -> bool:
         """
         checks if the registry is readonly.
@@ -66,10 +70,12 @@ class XSimpleRegistry(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def isValid(self) -> bool:
         """
         checks if the registry points to a valid data-source.
         """
+        ...
     def mergeKey(self, aKeyName: str, aUrl: str) -> None:
         """
         DEPRECATED: this method lacks a registry key (better than a URL).
@@ -82,6 +88,7 @@ class XSimpleRegistry(XInterface_8f010a43):
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
             com.sun.star.registry.MergeConflictException: ``MergeConflictException``
         """
+        ...
     def open(self, rURL: str, bReadOnly: bool, bCreate: bool) -> None:
         """
         connects the registry to a persistent data source represented by a URL.
@@ -91,4 +98,6 @@ class XSimpleRegistry(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
+
 

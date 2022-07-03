@@ -32,5 +32,6 @@ class DataOutputStream(XActiveDataSource_d1900c7f, XDataOutputStream_d2f40caf):
     See Also:
         `API DataOutputStream <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1io_1_1DataOutputStream.html>`_
     """
+    ...
 
 

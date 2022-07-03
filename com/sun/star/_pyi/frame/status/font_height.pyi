@@ -48,6 +48,7 @@ class FontHeight(object):
             Prop (int, optional): Prop value.
             Diff (float, optional): Diff value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class FontHeight(object):
         """
         specifies the current height of the font.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class FontHeight(object):
         """
         specifies the height of the font in the measure of the destination.
         """
+        ...
 
 
     @property
@@ -69,5 +72,6 @@ class FontHeight(object):
         """
         specifies the width of the font in the measure of the destination.
         """
+        ...
 
 

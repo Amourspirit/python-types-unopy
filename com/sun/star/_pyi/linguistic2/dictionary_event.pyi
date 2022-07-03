@@ -47,6 +47,7 @@ class DictionaryEvent(EventObject_a3d70b03):
             nEvent (int, optional): nEvent value.
             xDictionaryEntry (XDictionaryEntry, optional): xDictionaryEntry value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class DictionaryEvent(EventObject_a3d70b03):
         
         This must be the value of a single flag. No combinations are allowed.
         """
+        ...
 
 
     @property
@@ -65,5 +67,6 @@ class DictionaryEvent(EventObject_a3d70b03):
         
         It must be set if an entry was added or deleted, otherwise it should be empty.
         """
+        ...
 
 

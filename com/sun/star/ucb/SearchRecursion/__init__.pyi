@@ -29,6 +29,7 @@ Enum
 See Also:
     `API SearchRecursion <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb.html#a8f357eda7c29e9601428bdc8834c7bd8>`_
 """
+typeName: str = 'com.sun.star.ucb.SearchRecursion'
 
 DEEP: 'uno.Enum'
 """

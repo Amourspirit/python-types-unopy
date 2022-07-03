@@ -49,6 +49,7 @@ class FilterEvent(EventObject_a3d70b03):
             FilterComponent (int, optional): FilterComponent value.
             PredicateExpression (str, optional): PredicateExpression value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class FilterEvent(EventObject_a3d70b03):
         """
         denotes the index of the disjunctive term to which the event applies, if any.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class FilterEvent(EventObject_a3d70b03):
         """
         denotes the index of the filter component to which the event applies, if any.
         """
+        ...
 
 
     @property
@@ -70,5 +73,6 @@ class FilterEvent(EventObject_a3d70b03):
         """
         denotes the predicate expression associated with the event.
         """
+        ...
 
 

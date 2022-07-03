@@ -54,6 +54,7 @@ class FontMetrics(object):
             UnderlineOffset (float, optional): UnderlineOffset value.
             StrikeThroughOffset (float, optional): StrikeThroughOffset value.
         """
+        ...
 
 
     @property
@@ -61,6 +62,7 @@ class FontMetrics(object):
         """
         Ascent (above the baseline) part of the font.
         """
+        ...
 
 
     @property
@@ -68,6 +70,7 @@ class FontMetrics(object):
         """
         Descent (below the baseline) part of the font.
         """
+        ...
 
 
     @property
@@ -75,6 +78,7 @@ class FontMetrics(object):
         """
         Extra space above ascent.
         """
+        ...
 
 
     @property
@@ -84,6 +88,7 @@ class FontMetrics(object):
         
         It should not contain ink marks and is typically used by the font designer to modify the line distance.
         """
+        ...
 
 
     @property
@@ -93,6 +98,7 @@ class FontMetrics(object):
         
         It's roughly equivalent to the average width of all characters, and if one needs a font with double character width, the referenceCharSize should be doubled.
         """
+        ...
 
 
     @property
@@ -100,6 +106,7 @@ class FontMetrics(object):
         """
         Specifies the offset to be added to the baseline when drawing underlined text.
         """
+        ...
 
 
     @property
@@ -107,5 +114,6 @@ class FontMetrics(object):
         """
         Specifies the offset to be added to the baseline when striking through the text.
         """
+        ...
 
 

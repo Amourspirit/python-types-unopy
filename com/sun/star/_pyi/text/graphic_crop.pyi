@@ -49,6 +49,7 @@ class GraphicCrop(object):
             Left (int, optional): Left value.
             Right (int, optional): Right value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class GraphicCrop(object):
         """
         contains the top value to cut (if negative) or to extend (if positive)
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class GraphicCrop(object):
         """
         contains the bottom value to cut (if negative) or to extend (if positive)
         """
+        ...
 
 
     @property
@@ -70,6 +73,7 @@ class GraphicCrop(object):
         """
         contains the left value to cut (if negative) or to extend (if positive)
         """
+        ...
 
 
     @property
@@ -77,5 +81,6 @@ class GraphicCrop(object):
         """
         contains the right value to cut (if negative) or to extend (if positive)
         """
+        ...
 
 

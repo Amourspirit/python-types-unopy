@@ -41,28 +41,35 @@ class XDataContainer(XIndexContainer_1c040ebe):
         """
         returns the content type (MIME Type) of the data container.
         """
+        ...
     def getData(self) -> uno.ByteSequence:
         """
         returns the data of the data container.
         """
+        ...
     def getDataURL(self) -> str:
         """
         Deprecated.
         
         Do not use!
         """
+        ...
     def setContentType(self, aType: str) -> None:
         """
         sets the content type (MIME Type) of the data container.
         """
+        ...
     def setData(self, aData: uno.ByteSequence) -> None:
         """
         sets the data of the data container.
         """
+        ...
     def setDataURL(self, aURL: str) -> None:
         """
         Deprecated.
         
         Do not use!
         """
+        ...
+
 

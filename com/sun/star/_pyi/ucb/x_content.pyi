@@ -38,18 +38,23 @@ class XContent(XInterface_8f010a43):
         """
         adds a listener for content events.
         """
+        ...
     def getContentType(self) -> str:
         """
         returns a type string, which is unique for that type of content (e.g.
         
         \"application/vnd.sun.star.hierarchy-folder\").
         """
+        ...
     def getIdentifier(self) -> 'XContentIdentifier_edc90d78':
         """
         returns the identifier of the content.
         """
+        ...
     def removeContentEventListener(self, Listener: 'XContentEventListener_18ea0ebd') -> None:
         """
         removes a listener for content events.
         """
+        ...
+
 

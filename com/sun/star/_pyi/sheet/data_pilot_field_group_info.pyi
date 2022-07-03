@@ -50,6 +50,7 @@ class DataPilotFieldGroupInfo(object):
             SourceField (XDataPilotField, optional): SourceField value.
             Groups (XNameAccess, optional): Groups value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class DataPilotFieldGroupInfo(object):
         """
         specifies whether the start value for the grouping is taken automatically from the minimum of the item values.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class DataPilotFieldGroupInfo(object):
         """
         specifies whether the end value for the grouping is taken automatically from the maximum of the item values.
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class DataPilotFieldGroupInfo(object):
         """
         specifies whether date values are grouped by ranges of days.
         """
+        ...
 
 
     @property
@@ -78,6 +82,7 @@ class DataPilotFieldGroupInfo(object):
         """
         specifies the start value for the grouping if HasAutoStart is set to FALSE.
         """
+        ...
 
 
     @property
@@ -85,6 +90,7 @@ class DataPilotFieldGroupInfo(object):
         """
         specifies the end value for the grouping if HasAutoEnd is set to FALSE.
         """
+        ...
 
 
     @property
@@ -94,6 +100,7 @@ class DataPilotFieldGroupInfo(object):
         
         Example: With HasAutoStart set to FALSE, Start set to 2, and Step set to 3, the first group will contain all values greater than or equal to 2 and less than 5. The second group will contain all values greater than or equal to 5 and less than 8, and so on.
         """
+        ...
 
 
     @property
@@ -101,6 +108,7 @@ class DataPilotFieldGroupInfo(object):
         """
         specifies the grouping of the date values.
         """
+        ...
 
 
     @property
@@ -110,6 +118,7 @@ class DataPilotFieldGroupInfo(object):
         
         Will be NULL if this field is not grouped or contains numeric grouping.
         """
+        ...
 
 
     @property
@@ -119,5 +128,6 @@ class DataPilotFieldGroupInfo(object):
         
         The returned object is an instance of DataPilotFieldGroups . The collection of groups can be modified by inserting, removing, replacing, or renaming single groups or item names in the groups. When writing back this struct containing such a changed collection of groups to the DataPilotField.GroupInfo property, the modified grouping settings are applied at the DataPilot field.
         """
+        ...
 
 

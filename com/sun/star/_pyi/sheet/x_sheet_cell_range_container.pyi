@@ -37,10 +37,12 @@ class XSheetCellRangeContainer(XSheetCellRanges_edef0d52):
         """
         adds the given range to the collection of cell ranges.
         """
+        ...
     def addRangeAddresses(self, aCellRangeAddresses: 'typing.Tuple[CellRangeAddress_ec450d43, ...]', bMergeRanges: bool) -> None:
         """
         adds the given ranges to the collection of cell ranges.
         """
+        ...
     def removeRangeAddress(self, aCellRangeAddress: 'CellRangeAddress_ec450d43') -> None:
         """
         removes the given range from the collection of cell ranges.
@@ -50,6 +52,7 @@ class XSheetCellRangeContainer(XSheetCellRanges_edef0d52):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def removeRangeAddresses(self, aCellRangeAddresses: 'typing.Tuple[CellRangeAddress_ec450d43, ...]') -> None:
         """
         removes the given ranges from the collection of cell ranges.
@@ -59,4 +62,6 @@ class XSheetCellRangeContainer(XSheetCellRanges_edef0d52):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

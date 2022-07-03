@@ -40,4 +40,6 @@ class XSVGWriter(XInterface_8f010a43):
     def write(self, aHandler: 'XDocumentHandler_9b90e28', aMtf: uno.ByteSequence) -> None:
         """
         """
+        ...
+
 

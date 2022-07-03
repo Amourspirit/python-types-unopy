@@ -41,7 +41,10 @@ class XHierarchicalPropertySetInfo(XInterface_8f010a43):
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def hasPropertyByHierarchicalName(self, aHierarchicalName: str) -> bool:
         """
         """
+        ...
+
 

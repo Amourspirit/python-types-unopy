@@ -41,10 +41,13 @@ class XConnectionBroadcaster(XInterface_8f010a43):
         
         It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
         """
+        ...
     def removeStreamListener(self, aListener: 'XStreamListener_baf80bea') -> None:
         """
         unregisters an object to receive events from this connection.
         
         It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
         """
+        ...
+
 

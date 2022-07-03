@@ -47,6 +47,7 @@ class RealRectangle2D(object):
             X2 (float, optional): X2 value.
             Y2 (float, optional): Y2 value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class RealRectangle2D(object):
         """
         X coordinate of upper left corner .
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class RealRectangle2D(object):
         """
         Y coordinate of upper left corner.
         """
+        ...
 
 
     @property
@@ -72,6 +75,7 @@ class RealRectangle2D(object):
         
         .
         """
+        ...
 
 
     @property
@@ -81,5 +85,6 @@ class RealRectangle2D(object):
         
         Must be greater than y1 for non-empty rectangles.
         """
+        ...
 
 

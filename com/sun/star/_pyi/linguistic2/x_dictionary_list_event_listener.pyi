@@ -39,4 +39,6 @@ class XDictionaryListEventListener(XEventListener_c7230c4a):
         """
         is used to notify the object about dictionary-list events.
         """
+        ...
+
 

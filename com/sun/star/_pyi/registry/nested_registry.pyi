@@ -40,5 +40,6 @@ class NestedRegistry(XInitialization_d46c0cca, XSimpleRegistry_10150e9c):
     See Also:
         `API NestedRegistry <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1registry_1_1NestedRegistry.html>`_
     """
+    ...
 
 

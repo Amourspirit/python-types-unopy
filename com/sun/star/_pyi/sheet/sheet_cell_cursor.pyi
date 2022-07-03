@@ -34,5 +34,6 @@ class SheetCellCursor(SheetCellRange_d4540c87, CellCursor_a3b80b0e, XSheetCellCu
     See Also:
         `API SheetCellCursor <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1SheetCellCursor.html>`_
     """
+    ...
 
 

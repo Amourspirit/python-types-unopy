@@ -48,6 +48,7 @@ class AllEventObject(EventObject_a3d70b03):
             ListenerType (object, optional): ListenerType value.
             MethodName (str, optional): MethodName value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class AllEventObject(EventObject_a3d70b03):
         """
         The arguments of the original method.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class AllEventObject(EventObject_a3d70b03):
         
         This field reflects the third parameter of the method XAllListenerAdapterService.createAllListerAdapter().
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class AllEventObject(EventObject_a3d70b03):
         """
         contains the type of the original listener.
         """
+        ...
 
 
     @property
@@ -78,5 +82,6 @@ class AllEventObject(EventObject_a3d70b03):
         """
         The original method name on which the event was fired.
         """
+        ...
 
 

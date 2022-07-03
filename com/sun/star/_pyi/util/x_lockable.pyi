@@ -36,10 +36,12 @@ class XLockable(ABC):
         """
         determines whether the component is currently locked.
         """
+        ...
     def lock(self) -> None:
         """
         locks the component
         """
+        ...
     def unlock(self) -> None:
         """
         unlocks the component
@@ -47,4 +49,6 @@ class XLockable(ABC):
         Raises:
             NotLockedException: ``NotLockedException``
         """
+        ...
+
 

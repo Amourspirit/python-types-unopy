@@ -44,6 +44,7 @@ class DataEditorEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Type (DataEditorEventType, optional): Type value.
         """
+        ...
 
 
     @property
@@ -51,5 +52,6 @@ class DataEditorEvent(EventObject_a3d70b03):
         """
         specifies the type of the event.
         """
+        ...
 
 

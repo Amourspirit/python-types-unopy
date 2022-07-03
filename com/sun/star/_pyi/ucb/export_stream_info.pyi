@@ -42,6 +42,7 @@ class ExportStreamInfo(object):
             Target (XOutputStream, optional): Target value.
             ForceBodies (bool, optional): ForceBodies value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class ExportStreamInfo(object):
         """
         the output stream to export into.
         """
+        ...
 
 
     @property
@@ -56,5 +58,6 @@ class ExportStreamInfo(object):
         """
         tries hard to make message (document) bodies available for export.
         """
+        ...
 
 

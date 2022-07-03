@@ -47,6 +47,7 @@ class PropertyValueInfo(PropertyValue_c9610c73):
             State (PropertyState, optional): State value.
             ValueState (PropertyValueState, optional): ValueState value.
         """
+        ...
 
 
     @property
@@ -54,5 +55,6 @@ class PropertyValueInfo(PropertyValue_c9610c73):
         """
         the state of the property value.
         """
+        ...
 
 

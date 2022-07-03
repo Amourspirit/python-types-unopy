@@ -39,10 +39,13 @@ class XPropertySetInfoChangeNotifier(XInterface_8f010a43):
         
         It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
         """
+        ...
     def removePropertySetInfoChangeListener(self, Listener: 'XPropertySetInfoChangeListener_d5261312') -> None:
         """
         removes a listener for PropertySetInfoChangeEvents.
         
         It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
         """
+        ...
+
 

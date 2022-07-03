@@ -37,5 +37,6 @@ class UnoControlNumericField(UnoControlEdit_bc4e0bed, XNumericField_af9f0b63, XS
     See Also:
         `API UnoControlNumericField <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlNumericField.html>`_
     """
+    ...
 
 

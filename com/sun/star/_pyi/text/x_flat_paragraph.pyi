@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.text
 from typing_extensions import Literal
 import typing
+import uno
 from .x_text_markup import XTextMarkup as XTextMarkup_a5d60b3a
 if typing.TYPE_CHECKING:
     from ..beans.property_value import PropertyValue as PropertyValue_c9610c73
@@ -45,6 +46,7 @@ class XFlatParagraph(XTextMarkup_a5d60b3a):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def changeText(self, nPos: int, nLen: int, NewText: str, aAttributes: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         replace the specific text with new text.
@@ -52,6 +54,7 @@ class XFlatParagraph(XTextMarkup_a5d60b3a):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getLanguageOfText(self, nPos: int, nLen: int) -> 'Locale_70d308fa':
         """
         get the language of the specific text
@@ -59,10 +62,12 @@ class XFlatParagraph(XTextMarkup_a5d60b3a):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def getLanguagePortions(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getLanguagePortions(self) -> uno.ByteSequence:
         """
         get a list of indexes that separate each two different languages
         """
+        ...
     def getPrimaryLanguageOfText(self, nPos: int, nLen: int) -> 'Locale_70d308fa':
         """
         get the single most probable language of the specific text, especially after getLanguageOfText fails
@@ -70,20 +75,26 @@ class XFlatParagraph(XTextMarkup_a5d60b3a):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getText(self) -> str:
         """
         get the content of the paragraph
         """
+        ...
     def isChecked(self, nType: int) -> bool:
         """
         returns whether the respective text node has already been processed
         """
+        ...
     def isModified(self) -> bool:
         """
         check whether the content has been modified
         """
+        ...
     def setChecked(self, nType: int, bVal: bool) -> None:
         """
         change the \"checked\" flag of the respective text node, i.e., mark the text node as \"processed\"
         """
+        ...
+
 

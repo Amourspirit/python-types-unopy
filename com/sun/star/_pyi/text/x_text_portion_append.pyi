@@ -47,6 +47,7 @@ class XTextPortionAppend(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
         """
+        ...
     def insertTextPortion(self, Text: str, CharacterAndParagraphProperties: 'PropertyValues_d6470ce6', TextRange: 'XTextRange_9a910ab7') -> 'XTextRange_9a910ab7':
         """
         inserts a new text portion to the paragraph at a given position.
@@ -60,4 +61,6 @@ class XTextPortionAppend(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
         """
+        ...
+
 

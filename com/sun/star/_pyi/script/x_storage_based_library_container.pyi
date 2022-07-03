@@ -49,6 +49,8 @@ class XStorageBasedLibraryContainer(XPersistentLibraryContainer_b6b2129e):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
     @property
     def RootStorage(self) -> 'XStorage_8e460a32':
         """
@@ -58,5 +60,6 @@ class XStorageBasedLibraryContainer(XPersistentLibraryContainer_b6b2129e):
         
         You should only set this attribute to a new value if you previously called storeLibrariesToStorage with the same storage. Setting this attribute to a storage into which the container has not been stored previously might result in unexpected behavior.
         """
+        ...
 
 

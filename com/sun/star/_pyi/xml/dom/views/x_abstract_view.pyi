@@ -35,4 +35,6 @@ class XAbstractView(XInterface_8f010a43):
     def getDocument(self) -> 'XDocumentView_364b0f55':
         """
         """
+        ...
+
 

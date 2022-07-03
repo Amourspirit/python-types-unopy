@@ -39,5 +39,6 @@ class DefinitionContainer(XEnumerationAccess_4bac0ffc, XIndexAccess_f0910d6d, XN
     See Also:
         `API DefinitionContainer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1DefinitionContainer.html>`_
     """
+    ...
 
 

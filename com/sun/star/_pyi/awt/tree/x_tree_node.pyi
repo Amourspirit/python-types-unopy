@@ -41,44 +41,54 @@ class XTreeNode(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getChildCount(self) -> int:
         """
         Returns the number of child nodes.
         """
+        ...
     def getCollapsedGraphicURL(self) -> str:
         """
         The URL for a graphic that is rendered to visualize collapsed non leaf nodes.
         
         If URL is empty, XTreeControl.DefaultCollapsedGraphicURL is used.
         """
+        ...
     def getDisplayValue(self) -> object:
         """
         If not empty, the textual representation of this any is used as the text part of this node.
         """
+        ...
     def getExpandedGraphicURL(self) -> str:
         """
         The URL for a graphic that is rendered to visualize expanded non leaf nodes.
         
         If URL is empty, XTreeControl.DefaultExpandedGraphicURL is used.
         """
+        ...
     def getIndex(self, Node: 'XTreeNode') -> int:
         """
         Returns the index of Node in this instances children.
         """
+        ...
     def getNodeGraphicURL(self) -> str:
         """
         The URL for a graphic that is rendered before the text part of this node.
         
         If this URL is empty, no graphic is rendered.
         """
+        ...
     def getParent(self) -> 'XTreeNode':
         """
         Returns the parent node of this node.
         """
+        ...
     def hasChildrenOnDemand(self) -> bool:
         """
         Returns TRUE if the children of this node are created on demand.
         
         A TreeControl will handle a node that returns TRUE always like a node that has child nodes, even if getChildCount() returns 0.
         """
+        ...
+
 

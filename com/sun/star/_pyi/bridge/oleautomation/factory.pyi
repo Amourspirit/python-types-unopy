@@ -33,5 +33,6 @@ class Factory(XMultiServiceFactory_191e0eb6):
     See Also:
         `API Factory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1bridge_1_1oleautomation_1_1Factory.html>`_
     """
+    ...
 
 

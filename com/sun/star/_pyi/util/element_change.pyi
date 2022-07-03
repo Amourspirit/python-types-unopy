@@ -42,6 +42,7 @@ class ElementChange(object):
             Element (object, optional): Element value.
             ReplacedElement (object, optional): ReplacedElement value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class ElementChange(object):
         
         The type and the value of the accessor depends on the service.
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class ElementChange(object):
         """
         This contains the element that was inserted or changed.
         """
+        ...
 
 
     @property
@@ -65,5 +68,6 @@ class ElementChange(object):
         """
         This contains the element that was replaced or removed.
         """
+        ...
 
 

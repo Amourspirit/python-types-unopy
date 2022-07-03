@@ -50,4 +50,6 @@ class XPrimitive2DRenderer(XInterface_8f010a43):
         
         is given, a vertical default resolution of 72 DPI is used.
         """
+        ...
+
 

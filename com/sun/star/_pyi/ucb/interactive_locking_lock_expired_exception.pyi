@@ -50,6 +50,7 @@ class InteractiveLockingLockExpiredException(InteractiveLockingException_7af3113
             Classification (InteractionClassification, optional): Classification value.
             Url (str, optional): Url value.
         """
+        ...
 
 __all__ = ['InteractiveLockingLockExpiredException']
 

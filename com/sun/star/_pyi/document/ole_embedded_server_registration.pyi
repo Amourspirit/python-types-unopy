@@ -35,5 +35,6 @@ class OleEmbeddedServerRegistration(XInterface_8f010a43):
     See Also:
         `API OleEmbeddedServerRegistration <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1document_1_1OleEmbeddedServerRegistration.html>`_
     """
+    ...
 
 

@@ -39,16 +39,20 @@ class XImageProducer(XInterface_8f010a43):
         
         The image producer may, at its discretion, start delivering the image data to the consumer using the XImageConsumer interface immediately, or when the next available image reconstruction is triggered by a call to the startProduction method.
         """
+        ...
     def removeConsumer(self, xConsumer: 'XImageConsumer_ba790bdb') -> None:
         """
         removes the given com.sun.star.awt.XImageConsumer callback from the list of consumers currently registered to receive image data.
         
         It is not considered an error to remove a consumer that is not currently registered. The image producer should stop sending data to this consumer as soon as it is feasible.
         """
+        ...
     def startProduction(self) -> None:
         """
         registers the given image consumer as a consumer and starts an immediate reconstruction of the image data.
         
         The image data will then be delivered to this consumer and any other consumer which may have already been registered with the producer. This method differs from the addConsumer method in that a reproduction of the image data should be triggered as soon as possible.
         """
+        ...
+
 

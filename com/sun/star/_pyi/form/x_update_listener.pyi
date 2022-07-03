@@ -41,8 +41,11 @@ class XUpdateListener(XEventListener_c7230c4a):
         
         For a given update process, if one of the XUpdateListeners vetoes the change, the update is canceled, and no further notification happens.
         """
+        ...
     def updated(self, aEvent: 'EventObject_a3d70b03') -> None:
         """
         is invoked when an object has finished processing the updates and the data has been successfully written.
         """
+        ...
+
 

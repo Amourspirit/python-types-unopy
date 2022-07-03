@@ -55,46 +55,56 @@ class XAccessibleComponent(XInterface_8f010a43):
         
         The test point's coordinates are defined relative to the coordinate system of the object. That means that when the object is an opaque rectangle then both the points (0,0) and (with-1,height-1) would yield a TRUE value.
         """
+        ...
     def getAccessibleAtPoint(self, Point: 'Point_5fb2085e') -> 'XAccessible_1cbc0eb6':
         """
         Returns the Accessible child that is rendered under the given point.
         
         The test point's coordinates are defined relative to the coordinate system of the object. That means that when the object is an opaque rectangle then both the points (0,0) and (with-1,height-1) would yield a TRUE value.
         """
+        ...
     def getBackground(self) -> 'Color_68e908c5':
         """
         Returns the background color of this object.
         """
+        ...
     def getBounds(self) -> 'Rectangle_84b109e9':
         """
         Returns the bounding box of this object.
         
         The returned bounding box has the form of a rectangle. Its coordinates are relative to the object's parent coordinate system. Note that the two methods getLocation() and getSize() return the same information. With method getLocationOnScreen() you can get the bound box position in screen coordinates.
         """
+        ...
     def getForeground(self) -> 'Color_68e908c5':
         """
         Returns the foreground color of this object.
         """
+        ...
     def getLocation(self) -> 'Point_5fb2085e':
         """
         Returns the location of the upper left corner of the object's bounding box relative to the parent.
         
         The coordinates of the bounding box are given relative to the parent's coordinate system.
         """
+        ...
     def getLocationOnScreen(self) -> 'Point_5fb2085e':
         """
         Returns the location of the upper left corner of the object's bounding box in screen coordinates.
         
         This method returns the same point as does the method getLocation(). The difference is that the coordinates are absolute screen coordinates of the screen to which the object is rendered instead of being relative to the object's parent.
         """
+        ...
     def getSize(self) -> 'Size_576707ef':
         """
         Returns the size of this object's bounding box.
         """
+        ...
     def grabFocus(self) -> None:
         """
         Grabs the focus to this object.
         
         If this object can not accept the focus, i.e. isFocusTraversable() returns FALSE for this object then nothing happens. Otherwise the object will attempt to take the focus. Nothing happens if that fails, otherwise the object has the focus. This method is called requestFocus in the Java Accessibility API 1.4.
         """
+        ...
+
 

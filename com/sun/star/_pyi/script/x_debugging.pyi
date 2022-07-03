@@ -41,60 +41,74 @@ class XDebugging(XInterface_8f010a43):
         """
         clears all breakpoints in the module set by \"setBreakPoint\".
         """
+        ...
     def doContinue(self) -> None:
         """
         continues the program execution.
         """
+        ...
     def dumpVariable(self, aVariableName: str, nCallStackPos: int) -> str:
         """
         returns the value of the variable at the given stack position.
         """
+        ...
     def eval(self, aSourceCode: str, nCallStackPos: int) -> str:
         """
         Evaluates an expression.
         """
+        ...
     def getContextInformation(self, nCallStackPos: int) -> 'ContextInformation_1ece0f08':
         """
         returns more detailed information about a specified stack frame.
         """
+        ...
     def getStackTrace(self) -> 'typing.Tuple[str, ...]':
         """
         Returns the engine's stack trace of the current execute position.
         
         Line break is the delimiter.
         """
+        ...
     def isVariable(self, aVariableName: str, nCallStackPos: int) -> bool:
         """
         returns whether the given variable exists within the specified stack frame.
         """
+        ...
     def setBreakPoint(self, aModuleName: str, nSourceCodeLine: int, bOn: bool) -> int:
         """
         returns the source code line where the breakpoint was set.
         """
+        ...
     def setVariable(self, aVariableName: str, aValue: str, nCallStackPos: int) -> None:
         """
         sets the value of the specified variable within the specified stack frame.
         """
+        ...
     def stepIn(self) -> None:
         """
         executes the next and only the next statement.
         
         If the next statement is a function call, only the function entered.
         """
+        ...
     def stepOut(self) -> None:
         """
         executes the program until the next return from this stack frame.
         """
+        ...
     def stepOver(self) -> None:
         """
         executes the next and only the next statement.
         
         If the next statement is a function call, the function is executed completely.
         """
+        ...
     def stop(self) -> None:
         """
         stops the execution of the interpreter.
         
         To continue with the execution, call XDebugging.doContinue().
         """
+        ...
+
 
