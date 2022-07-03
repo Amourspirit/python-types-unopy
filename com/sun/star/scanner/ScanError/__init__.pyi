@@ -29,6 +29,7 @@ Enum
 See Also:
     `API ScanError <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1scanner.html#abd1619ea132004db8599d9529755e9ab>`_
 """
+typeName: str = 'com.sun.star.scanner.ScanError'
 
 InvalidContext: 'uno.Enum'
 """

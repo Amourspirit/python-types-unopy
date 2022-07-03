@@ -30,5 +30,6 @@ class Bookmark(TextContent_a6810b4d, XNamed_a6520b08):
     See Also:
         `API Bookmark <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1Bookmark.html>`_
     """
+    ...
 
 

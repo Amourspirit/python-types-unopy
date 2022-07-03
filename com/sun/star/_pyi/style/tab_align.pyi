@@ -32,6 +32,7 @@ class TabAlign(Enum):
     See Also:
         `API TabAlign <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style.html#a806c06853615662029f86b19111fe0a2>`_
     """
+    typeName: str = 'com.sun.star.style.TabAlign'
 
     CENTER: 'uno.Enum'
     """

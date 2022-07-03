@@ -29,5 +29,6 @@ class ScriptProviderForBeanShell(LanguageScriptProvider_325141a):
     See Also:
         `API ScriptProviderForBeanShell <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1script_1_1provider_1_1ScriptProviderForBeanShell.html>`_
     """
+    ...
 
 

@@ -36,4 +36,6 @@ class XSlidePreviewCacheListener(ABC):
         """
         Called by a XSlidePreviewCache object when a preview has been created for the slide with the given index.
         """
+        ...
+
 

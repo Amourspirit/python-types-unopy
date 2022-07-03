@@ -33,5 +33,6 @@ class ListBox(UnoControlListBox_e2b20d2c, XBoundControl_bba00bed, XChangeBroadca
     See Also:
         `API ListBox <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1control_1_1ListBox.html>`_
     """
+    ...
 
 

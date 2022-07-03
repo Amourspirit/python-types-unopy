@@ -32,5 +32,6 @@ class HatchWindowFactory(XHatchWindowFactory_167d0e95):
     See Also:
         `API HatchWindowFactory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1embed_1_1HatchWindowFactory.html>`_
     """
+    ...
 
 

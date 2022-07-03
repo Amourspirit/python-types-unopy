@@ -41,6 +41,7 @@ class LineSpacing(object):
             Mode (int, optional): Mode value.
             Height (int, optional): Height value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class LineSpacing(object):
         """
         This value specifies the way the height is specified.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class LineSpacing(object):
         """
         This value specifies the height in regard to Mode.
         """
+        ...
 
 

@@ -47,6 +47,7 @@ class TableFilterField(object):
             NumericValue (float, optional): NumericValue value.
             StringValue (str, optional): StringValue value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class TableFilterField(object):
         """
         specifies how the condition is connected to the previous condition.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class TableFilterField(object):
         """
         specifies which field (column) is used for the condition.
         """
+        ...
 
 
     @property
@@ -68,6 +71,7 @@ class TableFilterField(object):
         """
         specifies the type of the condition.
         """
+        ...
 
 
     @property
@@ -75,6 +79,7 @@ class TableFilterField(object):
         """
         selects whether the TableFilterField.NumericValue or the TableFilterField.StringValue is used.
         """
+        ...
 
 
     @property
@@ -82,6 +87,7 @@ class TableFilterField(object):
         """
         specifies a numeric value for the condition.
         """
+        ...
 
 
     @property
@@ -89,5 +95,6 @@ class TableFilterField(object):
         """
         specifies a string value for the condition.
         """
+        ...
 
 

@@ -42,6 +42,7 @@ class Libxml2ExtensionHandle(object):
             variableLookupFunction (int, optional): variableLookupFunction value.
             variableData (int, optional): variableData value.
         """
+        ...
 
 
     @property

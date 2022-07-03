@@ -48,5 +48,6 @@ class XScriptInvocationContext(ABC):
         """
         denotes the document which contains the scripts which are to be invoked from the component implementing the XScriptInvocationContext interface.
         """
+        ...
 
 

@@ -42,16 +42,20 @@ class XAccessibleImage(XInterface_8f010a43):
         
         It depends on the usage of an image whether the description should express the image's function (e.g. for icons) or the actual content of the image (e.g. for image maps or non-iconic images embedded into a document.)
         """
+        ...
     def getAccessibleImageHeight(self) -> int:
         """
         Returns the height of the image.
         
         The height is returned in units specified by the parents coordinate system.
         """
+        ...
     def getAccessibleImageWidth(self) -> int:
         """
         Returns the width of the image.
         
         The width is returned in units specified by the parents coordinate system.
         """
+        ...
+
 

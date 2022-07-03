@@ -32,6 +32,7 @@ class StackingDirection(Enum):
     See Also:
         `API StackingDirection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart2.html#ad5b96f2511266754f439e0cfdbe44545>`_
     """
+    typeName: str = 'com.sun.star.chart2.StackingDirection'
 
     NO_STACKING: 'uno.Enum'
     """

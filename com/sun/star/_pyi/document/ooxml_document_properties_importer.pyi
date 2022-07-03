@@ -29,5 +29,6 @@ class OOXMLDocumentPropertiesImporter(XOOXMLDocumentPropertiesImporter_34fc150c)
     See Also:
         `API OOXMLDocumentPropertiesImporter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1document_1_1OOXMLDocumentPropertiesImporter.html>`_
     """
+    ...
 
 

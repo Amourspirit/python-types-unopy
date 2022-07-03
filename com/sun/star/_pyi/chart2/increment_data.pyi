@@ -44,6 +44,7 @@ class IncrementData(object):
             PostEquidistant (object, optional): PostEquidistant value.
             BaseValue (object, optional): BaseValue value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class IncrementData(object):
         
         The first SubIncrement in this sequence determines how the distance between two neighboring main tickmarks is divided for positioning of further sub tickmarks. Every following SubIncrement determines the positions of subsequent tickmarks in relation to their parent tickmarks given by the preceding SubIncrement.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class IncrementData(object):
         
         Otherwise, if the any is empty or contains an incompatible type, the Distance is meant to be calculated automatically by the view component representing the model containing this increment.
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class IncrementData(object):
         
         If PostEquidistant equals TRUE Distance is given in values after XScaling is applied, thus resulting main tickmarks will always look equidistant on the screen. If PostEquidistant equals FALSE Distance is given in values before XScaling is applied.
         """
+        ...
 
 
     @property
@@ -80,5 +84,6 @@ class IncrementData(object):
         
         Otherwise, if the any is empty or contains an incompatible type, the BaseValue is meant to be calculated automatically by the view component representing the model containing this increment.
         """
+        ...
 
 

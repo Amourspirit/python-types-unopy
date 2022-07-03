@@ -32,5 +32,6 @@ class CachedDynamicResultSet(XDynamicResultSet_e0360d0a, XSourceInitialization_1
     See Also:
         `API CachedDynamicResultSet <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1CachedDynamicResultSet.html>`_
     """
+    ...
 
 

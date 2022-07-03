@@ -48,11 +48,13 @@ class BrokenPackageRequest(Exception_85530a09):
             Context (XInterface, optional): Context value.
             aName (str, optional): aName value.
         """
+        ...
     @property
     def aName(self) -> str:
         """
         The name of the document that is broken.
         """
+        ...
 
 
 __all__ = ['BrokenPackageRequest']

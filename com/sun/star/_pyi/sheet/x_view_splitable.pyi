@@ -40,26 +40,33 @@ class XViewSplitable(XInterface_8f010a43):
         
         Only one of XViewSplitable.getIsWindowSplit() and XViewFreezable.hasFrozenPanes() can be TRUE.
         """
+        ...
     def getSplitColumn(self) -> int:
         """
         returns the column before which the view is split.
         """
+        ...
     def getSplitHorizontal(self) -> int:
         """
         returns the horizontal position in pixels where the view is split.
         """
+        ...
     def getSplitRow(self) -> int:
         """
         returns the row before which the view is split.
         """
+        ...
     def getSplitVertical(self) -> int:
         """
         returns the vertical position in pixels where the view is split.
         """
+        ...
     def splitAtPosition(self, nPixelX: int, nPixelY: int) -> None:
         """
         splits the view at the specified position.
         
         To split only horizontally, specify nPixelY as 0. To split only vertically, specify nPixelX as 0.
         """
+        ...
+
 

@@ -32,5 +32,6 @@ class AnimateColor(XAnimate_ca680c52):
     See Also:
         `API AnimateColor <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1animations_1_1AnimateColor.html>`_
     """
+    ...
 
 

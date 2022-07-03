@@ -43,36 +43,43 @@ class XStringResourceResolver(XModifyBroadcaster_fd990df0):
         
         If no locale is available, the returned Locale structure only contains empty strings.
         """
+        ...
     def getDefaultLocale(self) -> 'Locale_70d308fa':
         """
         Returns the default locale of the accessed resource.
         
         In many cases this will be the locale of the Office initially used to create the resource.
         """
+        ...
     def getLocales(self) -> 'typing.Tuple[Locale_70d308fa, ...]':
         """
         Returns a sequence of all supported locales.
         """
+        ...
     def getResourceIDs(self) -> 'typing.Tuple[str, ...]':
         """
         Returns a sequence of all valid Resource IDs for the current locale.
         """
+        ...
     def getResourceIDsForLocale(self, locale: 'Locale_70d308fa') -> 'typing.Tuple[str, ...]':
         """
         Returns a sequence of all valid Resource IDs for a specific locale.
         
         It's not recommended to use this method to get the best performance as the implementation may be optimized for the use of the current locale.
         """
+        ...
     def hasEntryForId(self, ResourceID: str) -> bool:
         """
         Checks if the resource contains an entry for the given ResourceID and current locale.
         """
+        ...
     def hasEntryForIdAndLocale(self, ResourceID: str, locale: 'Locale_70d308fa') -> bool:
         """
         Checks if the resource contains an entry for the given ResourceID and locale.
         
         It's not recommended to use this method to get the best performance as the implementation may be optimized for the use of the current locale.
         """
+        ...
     def resolveString(self, ResourceID: str) -> str:
         """
         Resolves the passed ResourceID for the current locale.
@@ -82,6 +89,7 @@ class XStringResourceResolver(XModifyBroadcaster_fd990df0):
         Raises:
             com.sun.star.resource.MissingResourceException: ``MissingResourceException``
         """
+        ...
     def resolveStringForLocale(self, ResourceID: str, locale: 'Locale_70d308fa') -> str:
         """
         Resolves the passed ResourceID for a specific locale.
@@ -91,4 +99,6 @@ class XStringResourceResolver(XModifyBroadcaster_fd990df0):
         Raises:
             com.sun.star.resource.MissingResourceException: ``MissingResourceException``
         """
+        ...
+
 

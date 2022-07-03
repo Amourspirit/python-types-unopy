@@ -41,6 +41,7 @@ class XMap(XElementAccess_cd60e3f):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def containsKey(self, Key: object) -> bool:
         """
         determines whether a mapping for he given key exists in the map
@@ -49,6 +50,7 @@ class XMap(XElementAccess_cd60e3f):
             com.sun.star.beans.IllegalTypeException: ``IllegalTypeException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def containsValue(self, Value: object) -> bool:
         """
         determines whether the map contains a mapping to a given value.
@@ -57,6 +59,7 @@ class XMap(XElementAccess_cd60e3f):
             com.sun.star.beans.IllegalTypeException: ``IllegalTypeException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def get(self, Key: object) -> object:
         """
         gets the value to which a given key maps.
@@ -66,6 +69,7 @@ class XMap(XElementAccess_cd60e3f):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def put(self, Key: object, Value: object) -> object:
         """
         associates a given key with a given value
@@ -77,6 +81,7 @@ class XMap(XElementAccess_cd60e3f):
             com.sun.star.beans.IllegalTypeException: ``IllegalTypeException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def remove(self, Key: object) -> object:
         """
         removes a key-value mapping, given by key, from the map.
@@ -87,6 +92,8 @@ class XMap(XElementAccess_cd60e3f):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
     @property
     def KeyType(self) -> object:
         """
@@ -94,6 +101,7 @@ class XMap(XElementAccess_cd60e3f):
         
         Implementations are free to accept any supertype of KeyType as keys.
         """
+        ...
 
     @property
     def ValueType(self) -> object:
@@ -102,5 +110,6 @@ class XMap(XElementAccess_cd60e3f):
         
         Implementations are free to accept any supertype of the ValueType as values.
         """
+        ...
 
 

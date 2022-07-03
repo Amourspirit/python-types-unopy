@@ -44,7 +44,10 @@ class XDependentTextField(XTextField_9a630aae):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getTextFieldMaster(self) -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
+
 

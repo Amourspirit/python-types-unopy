@@ -46,6 +46,7 @@ class XRestartManager(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def requestRestart(self, xInteractionHandler: 'XInteractionHandler_bf80e51') -> None:
         """
         let the office restart asynchronously
@@ -53,4 +54,6 @@ class XRestartManager(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

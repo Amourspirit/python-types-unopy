@@ -39,6 +39,8 @@ class XUIElement(XInterface_8f010a43):
         """
         returns an interface to get access to user interface type specific functions.
         """
+        ...
+
     @property
     def Frame(self) -> 'XFrame_7a570956':
         """
@@ -46,17 +48,20 @@ class XUIElement(XInterface_8f010a43):
         
         The life time of a user interface element does not explicitly depend on the frame itself but on the visible component attached to the frame. It is possible to exchange the visible component of a frame and that will lead to the end of life of all user interface elements.
         """
+        ...
 
     @property
     def ResourceURL(self) -> str:
         """
         a resource URL which is a unique identifier of a user interface element.
         """
+        ...
 
     @property
     def Type(self) -> int:
         """
         determines the type of the user interface element.
         """
+        ...
 
 

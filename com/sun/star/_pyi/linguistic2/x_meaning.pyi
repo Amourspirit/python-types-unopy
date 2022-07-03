@@ -36,7 +36,10 @@ class XMeaning(XInterface_8f010a43):
     def getMeaning(self) -> str:
         """
         """
+        ...
     def querySynonyms(self) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
+
 

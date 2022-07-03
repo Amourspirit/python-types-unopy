@@ -45,6 +45,7 @@ class Title(PropertySet_b0e70ba2, FillProperties_f1200da8, LineProperties_f13f0d
         
         This way it is possible to resize objects (like text) in the view without modifying the model.
         """
+        ...
     @property
     def RelativePosition(self) -> 'RelativePosition_fae10ddd':
         """
@@ -52,15 +53,18 @@ class Title(PropertySet_b0e70ba2, FillProperties_f1200da8, LineProperties_f13f0d
         
         If a relative position is given the title is not automatically placed, but instead is placed relative on the page.
         """
+        ...
     @property
     def StackCharacters(self) -> bool:
         """
         writes the characters of the title on top of each other if set to TRUE.
         """
+        ...
     @property
     def TextRotation(self) -> float:
         """
         the rotation of the title's text in degrees in the range [0,360).
         """
+        ...
 
 

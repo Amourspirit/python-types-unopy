@@ -51,6 +51,7 @@ class NativeNumberXmlAttributes2(NativeNumberXmlAttributes_5e4f1070):
             Style (str, optional): Style value.
             Spellout (str, optional): Spellout value.
         """
+        ...
 
 
     @property
@@ -58,5 +59,6 @@ class NativeNumberXmlAttributes2(NativeNumberXmlAttributes_5e4f1070):
         """
         The format of the number string, for example, \"cardinal\", \"ordinal\" or \"ordinal-number\".
         """
+        ...
 
 

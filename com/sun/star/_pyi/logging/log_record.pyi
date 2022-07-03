@@ -52,6 +52,7 @@ class LogRecord(object):
             ThreadID (str, optional): ThreadID value.
             Level (int, optional): Level value.
         """
+        ...
 
 
     @property
@@ -59,6 +60,7 @@ class LogRecord(object):
         """
         specifies the name of the logger at which the record is logged
         """
+        ...
 
 
     @property
@@ -68,6 +70,7 @@ class LogRecord(object):
         
         This name might be empty, in case the caller to one of the various log methods of XLogger did not specify it.
         """
+        ...
 
 
     @property
@@ -77,6 +80,7 @@ class LogRecord(object):
         
         This name might be empty, in case the caller to one of the various log methods of XLogger did not specify it.
         """
+        ...
 
 
     @property
@@ -84,6 +88,7 @@ class LogRecord(object):
         """
         specifies the to-be-logged message
         """
+        ...
 
 
     @property
@@ -91,6 +96,7 @@ class LogRecord(object):
         """
         specifies the time at which the event was logged
         """
+        ...
 
 
     @property
@@ -100,6 +106,7 @@ class LogRecord(object):
         
         Subsequent events get assigned increasing sequence numbers by the XLogger at which they're logged.
         """
+        ...
 
 
     @property
@@ -107,6 +114,7 @@ class LogRecord(object):
         """
         specifies the ID of the thread in which the event was logged
         """
+        ...
 
 
     @property
@@ -114,5 +122,6 @@ class LogRecord(object):
         """
         specifies the level of the log event
         """
+        ...
 
 

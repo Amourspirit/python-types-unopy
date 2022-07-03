@@ -33,5 +33,6 @@ class NativeNumberSupplier2(XNativeNumberSupplier2_2dae0ef6):
     See Also:
         `API NativeNumberSupplier2 <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1i18n_1_1NativeNumberSupplier2.html>`_
     """
+    ...
 
 

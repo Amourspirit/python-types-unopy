@@ -43,4 +43,6 @@ class XAccessibleContext3(XInterface_8f010a43):
         
         The order in which the children are enumerated is implementation dependent.
         """
+        ...
+
 

@@ -30,5 +30,6 @@ class SystemIntegration(XBackend_6ce81076, XInitialization_d46c0cca):
     See Also:
         `API SystemIntegration <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1SystemIntegration.html>`_
     """
+    ...
 
 

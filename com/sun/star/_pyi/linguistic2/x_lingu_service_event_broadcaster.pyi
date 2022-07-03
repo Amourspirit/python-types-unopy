@@ -40,7 +40,10 @@ class XLinguServiceEventBroadcaster(XInterface_8f010a43):
     def addLinguServiceEventListener(self, xLstnr: 'XLinguServiceEventListener_fda313e5') -> bool:
         """
         """
+        ...
     def removeLinguServiceEventListener(self, xLstnr: 'XLinguServiceEventListener_fda313e5') -> bool:
         """
         """
+        ...
+
 

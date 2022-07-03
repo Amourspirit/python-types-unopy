@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.awt.grid
 from typing_extensions import Literal
 import typing
+import uno
 from abc import ABC
 if typing.TYPE_CHECKING:
     from .x_grid_selection_listener import XGridSelectionListener as XGridSelectionListener_759e10f2
@@ -41,10 +42,12 @@ class XGridRowSelection(ABC):
         """
         Adds a listener for the GridSelectionEvent posted after the grid changes.
         """
+        ...
     def deselectAllRows(self) -> None:
         """
         Deselects all selected rows.
         """
+        ...
     def deselectRow(self, RowIndex: int) -> None:
         """
         removes the selection for a given row
@@ -52,26 +55,32 @@ class XGridRowSelection(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
-    def getSelectedRows(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getSelectedRows(self) -> uno.ByteSequence:
         """
         Returns the indices of all selected rows.
         """
+        ...
     def hasSelectedRows(self) -> bool:
         """
         Returns whether rows are selected.
         """
+        ...
     def isRowSelected(self, RowIndex: int) -> bool:
         """
         Returns whether a specific row is selected.
         """
+        ...
     def removeSelectionListener(self, listener: 'XGridSelectionListener_759e10f2') -> None:
         """
         Removes a listener previously added with addSelectionListener().
         """
+        ...
     def selectAllRows(self) -> None:
         """
         Selects all rows.
         """
+        ...
     def selectRow(self, RowIndex: int) -> None:
         """
         selects a given row
@@ -79,4 +88,6 @@ class XGridRowSelection(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

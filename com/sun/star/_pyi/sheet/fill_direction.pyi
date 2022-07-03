@@ -32,6 +32,7 @@ class FillDirection(Enum):
     See Also:
         `API FillDirection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html#aa8eeb1312106b2d89cd26342fa09aac9>`_
     """
+    typeName: str = 'com.sun.star.sheet.FillDirection'
 
     TO_BOTTOM: 'uno.Enum'
     """

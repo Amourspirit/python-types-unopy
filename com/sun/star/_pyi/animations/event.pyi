@@ -43,6 +43,7 @@ class Event(object):
             Offset (object, optional): Offset value.
             Repeat (int, optional): Repeat value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class Event(object):
         """
         this is the source for this event.
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class Event(object):
         """
         this is the trigger that fires this event.
         """
+        ...
 
 
     @property
@@ -66,6 +69,7 @@ class Event(object):
         
         This is the timespan between the triggering of the event and actually raising the event
         """
+        ...
 
 
     @property
@@ -75,5 +79,6 @@ class Event(object):
         
         If the Trigger is EventTrigger, this is the number of repeats after which the event is initially raised.
         """
+        ...
 
 

@@ -38,26 +38,31 @@ class Decimal(XDataType_83f209cb):
         
         See http://www.w3.org/TR/xmlschema-2/#rf-fractionDigits
         """
+        ...
     @property
     def MaxExclusiveDouble(self) -> float:
         """
         specifies the exclusive upper bound for the value
         """
+        ...
     @property
     def MaxInclusiveDouble(self) -> float:
         """
         specifies the inclusive upper bound for the value
         """
+        ...
     @property
     def MinExclusiveDouble(self) -> float:
         """
         specifies the exclusive lower bound for the value
         """
+        ...
     @property
     def MinInclusiveDouble(self) -> float:
         """
         specifies the inclusive lower bound for the value
         """
+        ...
     @property
     def TotalDigits(self) -> int:
         """
@@ -67,5 +72,6 @@ class Decimal(XDataType_83f209cb):
         
         See http://www.w3.org/TR/xmlschema-2/#rf-totalDigits
         """
+        ...
 
 

@@ -49,6 +49,7 @@ class MenuMultipleChange(object):
             IsCheckable (bool, optional): IsCheckable value.
             IsChecked (bool, optional): IsChecked value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class MenuMultipleChange(object):
         """
         sequence of bytes representing a possible image
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class MenuMultipleChange(object):
         """
         unique ID of this menu item
         """
+        ...
 
 
     @property
@@ -70,6 +73,7 @@ class MenuMultipleChange(object):
         """
         unique ID of the group this menu item belongs to
         """
+        ...
 
 
     @property
@@ -77,6 +81,7 @@ class MenuMultipleChange(object):
         """
         unique ID of the item directly above this menu item, used for fuzzy placement
         """
+        ...
 
 
     @property
@@ -84,6 +89,7 @@ class MenuMultipleChange(object):
         """
         text of the menu item
         """
+        ...
 
 
     @property
@@ -91,6 +97,7 @@ class MenuMultipleChange(object):
         """
         true if visible
         """
+        ...
 
 
     @property
@@ -98,6 +105,7 @@ class MenuMultipleChange(object):
         """
         true if active, so clickable
         """
+        ...
 
 
     @property
@@ -105,6 +113,7 @@ class MenuMultipleChange(object):
         """
         true if checkable, so there can be a checkmark
         """
+        ...
 
 
     @property
@@ -112,5 +121,6 @@ class MenuMultipleChange(object):
         """
         true if there is a checkmark
         """
+        ...
 
 

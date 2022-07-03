@@ -50,6 +50,7 @@ class AccessibleTableModelChange(object):
             FirstColumn (int, optional): FirstColumn value.
             LastColumn (int, optional): LastColumn value.
         """
+        ...
 
 
     @property
@@ -59,6 +60,7 @@ class AccessibleTableModelChange(object):
         
         The model change either inserted or deleted one or more rows and/or columns or modified the content of a number of cells. See AccessibleTableModelChangeType for details of the type of the model change.
         """
+        ...
 
 
     @property
@@ -68,6 +70,7 @@ class AccessibleTableModelChange(object):
         
         The first row that has been changed or that contains modified cells.
         """
+        ...
 
 
     @property
@@ -77,6 +80,7 @@ class AccessibleTableModelChange(object):
         
         The last row that has been changed or that contains modified cells.
         """
+        ...
 
 
     @property
@@ -86,6 +90,7 @@ class AccessibleTableModelChange(object):
         
         The first column that has been changed or contains modified cells.
         """
+        ...
 
 
     @property
@@ -95,5 +100,6 @@ class AccessibleTableModelChange(object):
         
         The last column that has been changed or contains modified cells.
         """
+        ...
 
 

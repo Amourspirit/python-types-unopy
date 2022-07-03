@@ -41,8 +41,11 @@ class XPasteBroadcaster(XInterface_8f010a43):
         """
         Adds an entry to the list of paste listeners.
         """
+        ...
     def removePasteEventListener(self, xListener: 'XPasteListener_c95f0c68') -> None:
         """
         Removes an entry to the list of paste listeners.
         """
+        ...
+
 

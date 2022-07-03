@@ -43,6 +43,7 @@ class MenuEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             MenuId (int, optional): MenuId value.
         """
+        ...
 
 
     @property
@@ -50,5 +51,6 @@ class MenuEvent(EventObject_a3d70b03):
         """
         contains the item ID.
         """
+        ...
 
 

@@ -47,4 +47,6 @@ class XAccessControlContext(XInterface_8f010a43):
         Raises:
             AccessControlException: ``AccessControlException``
         """
+        ...
+
 

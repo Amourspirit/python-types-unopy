@@ -45,10 +45,13 @@ class XPopupMenuController(XInterface_8f010a43):
         
         The controller must fill this pop-up menu with its functions.
         """
+        ...
     def updatePopupMenu(self) -> None:
         """
         briefs the pop-up menu controller to update the contents of the provided pop-up menu to reflect the current state.
         
         A controller should never update the pop-up menu structure on its own to prevent performance problems. A better way would be that a controller registers itself as status listener to for a command URL and immediately deregister after that. Therefore status updates will not be send regularly for a non visible pop-up menu.
         """
+        ...
+
 

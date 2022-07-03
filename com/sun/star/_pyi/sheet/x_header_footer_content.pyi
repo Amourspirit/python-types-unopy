@@ -37,12 +37,16 @@ class XHeaderFooterContent(XInterface_8f010a43):
         """
         returns the text which is printed in the center part of the header or footer.
         """
+        ...
     def getLeftText(self) -> 'XText_690408ca':
         """
         returns the text which is printed in the left part of the header or footer.
         """
+        ...
     def getRightText(self) -> 'XText_690408ca':
         """
         returns the text which is printed in the right part of the header or footer.
         """
+        ...
+
 

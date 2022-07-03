@@ -37,12 +37,16 @@ class XFlushable(XInterface_8f010a43):
         """
         adds the specified listener to receive event \"flushed.\"
         """
+        ...
     def flush(self) -> None:
         """
         flushes the data of the object to the connected data source.
         """
+        ...
     def removeFlushListener(self, l: 'XFlushListener_c92a0c66') -> None:
         """
         removes the specified listener.
         """
+        ...
+
 

@@ -47,10 +47,13 @@ class XUIConfiguration(XInterface_8f010a43):
         
         It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
         """
+        ...
     def removeConfigurationListener(self, Listener: 'XUIConfigurationListener_34e90f7a') -> None:
         """
         removes the specified listener so it does not receive any events from this user interface configuration manager.
         
         It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
         """
+        ...
+
 

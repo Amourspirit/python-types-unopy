@@ -29,5 +29,6 @@ class MenuProxy(XMenuProxy_bdf90c0f):
     See Also:
         `API MenuProxy <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1mozilla_1_1MenuProxy.html>`_
     """
+    ...
 
 

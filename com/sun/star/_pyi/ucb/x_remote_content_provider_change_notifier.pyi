@@ -37,8 +37,11 @@ class XRemoteContentProviderChangeNotifier(XInterface_8f010a43):
         """
         Add a listener.
         """
+        ...
     def removeRemoteContentProviderChangeListener(self, Listener: 'XRemoteContentProviderChangeListener_24d814b8') -> None:
         """
         Remove a listener.
         """
+        ...
+
 

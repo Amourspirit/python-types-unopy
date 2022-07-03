@@ -34,8 +34,11 @@ class XScreenCursor(XInterface_8f010a43):
         """
         scrolls the view forward by one visible page.
         """
+        ...
     def screenUp(self) -> bool:
         """
         scrolls the view backward by one visible page.
         """
+        ...
+
 

@@ -50,6 +50,7 @@ class GluePoint(object):
             PositionAbsolute (bool, optional): PositionAbsolute value.
             Alignment (int, optional): Alignment value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class GluePoint(object):
         """
         This is the position of this GluePoint.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class GluePoint(object):
         """
         This is the direction in which the connector line leaves the GluePoint.
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class GluePoint(object):
         """
         If this is TRUE, then the position of this GluePoint is absolute on a page and is not relative to a shape.
         """
+        ...
 
 
     @property
@@ -78,5 +82,6 @@ class GluePoint(object):
         """
         The alignment of a GluePoint defines how the position of the point is affected by resizing the parent Shape.
         """
+        ...
 
 

@@ -32,6 +32,7 @@ class MessageBoxType(Enum):
     See Also:
         `API MessageBoxType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt.html#ad249d76933bdf54c35f4eaf51a5b7965>`_
     """
+    typeName: str = 'com.sun.star.awt.MessageBoxType'
 
     ERRORBOX: 'uno.Enum'
     """

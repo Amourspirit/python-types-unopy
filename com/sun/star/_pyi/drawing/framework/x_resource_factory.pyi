@@ -50,10 +50,13 @@ class XResourceFactory(ABC):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def releaseResource(self, xResource: 'XResource_3bcd0f90') -> None:
         """
         Call this method to tell a factory that the given resource is no longer in use.
         
         The factory can decide whether to destroy the resource or to keep it in a cache in order to reuse it later.
         """
+        ...
+
 

@@ -47,6 +47,7 @@ class NamedArgument(object):
             Name (str, optional): Name value.
             Value (object, optional): Value value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class NamedArgument(object):
         """
         The name of the argument, for which NamedArgument.Value is intended.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class NamedArgument(object):
         """
         The value of the argument whose name is the one as contained in the member Name.
         """
+        ...
 
 

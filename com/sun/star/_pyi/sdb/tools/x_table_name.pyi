@@ -50,15 +50,19 @@ class XTableName(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setComposedName(self, ComposedName: str, Type: int) -> None:
         """
         sets a new composed table name
         """
+        ...
+
     @property
     def CatalogName(self) -> str:
         """
         denotes the name of the catalog which the table is a part of
         """
+        ...
 
     @property
     def NameForSelect(self) -> str:
@@ -67,12 +71,14 @@ class XTableName(ABC):
         
         On a per-data-source basis, OpenOffice.org allows to override database meta data information in that you can specify to not use catalog and or schema names in SELECT statements. Using this attribute, you can generate a table name which respects those settings.
         """
+        ...
 
     @property
     def SchemaName(self) -> str:
         """
         denotes the name of the schema which the table is a part of
         """
+        ...
 
     @property
     def Table(self) -> 'XPropertySet_bc180bfa':
@@ -81,11 +87,13 @@ class XTableName(ABC):
         
         Retrieving this attribute is equivalent to obtaining the tables container from the connection (via com.sun.star.sdbcx.XTablesSupplier), and calling its com.sun.star.container.XNameAccess.getByName() method with the ComposedName.
         """
+        ...
 
     @property
     def TableName(self) -> str:
         """
         denotes the mere, unqualified table name, excluding any catalog and schema.
         """
+        ...
 
 

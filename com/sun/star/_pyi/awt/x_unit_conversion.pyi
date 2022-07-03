@@ -45,6 +45,7 @@ class XUnitConversion(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertPointToPixel(self, Point: 'Point_5fb2085e', SourceUnit: int) -> 'Point_5fb2085e':
         """
         converts the given Point, which is specified in the given logical unit, into pixels
@@ -52,6 +53,7 @@ class XUnitConversion(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertSizeToLogic(self, Size: 'Size_576707ef', TargetUnit: int) -> 'Size_576707ef':
         """
         converts the given Size, which is specified in pixels, into the given logical unit
@@ -59,6 +61,7 @@ class XUnitConversion(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertSizeToPixel(self, Size: 'Size_576707ef', SourceUnit: int) -> 'Size_576707ef':
         """
         converts the given Size, which is specified in the given logical unit, into pixels
@@ -66,4 +69,6 @@ class XUnitConversion(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

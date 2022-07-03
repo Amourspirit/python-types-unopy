@@ -54,6 +54,7 @@ class StockDiagram(ChartAxisXSupplier_a950e4d, ChartStatistics_e2190d37, ChartTw
         
         If this property is set to TRUE, one additional series is needed with the opening value of the stocks. It is assumed as the series before the series with the day's lowest value.
         """
+        ...
     @property
     def Volume(self) -> bool:
         """
@@ -63,5 +64,6 @@ class StockDiagram(ChartAxisXSupplier_a950e4d, ChartStatistics_e2190d37, ChartTw
         
         If this property is set to TRUE, the values of the first series of the chart data are interpreted as volume.
         """
+        ...
 
 

@@ -40,4 +40,6 @@ class XScriptProvider(XInterface_8f010a43):
         Raises:
             com.sun.star.script.provider.ScriptFrameworkErrorException: ``ScriptFrameworkErrorException``
         """
+        ...
+
 

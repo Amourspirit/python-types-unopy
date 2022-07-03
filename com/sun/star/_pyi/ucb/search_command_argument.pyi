@@ -43,6 +43,7 @@ class SearchCommandArgument(object):
             Properties (typing.Tuple[Property, ...], optional): Properties value.
             Info (SearchInfo, optional): Info value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class SearchCommandArgument(object):
         """
         the properties for which values shall be provided through the ContentResultSet returned by the search command.
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class SearchCommandArgument(object):
         """
         the search criteria.
         """
+        ...
 
 

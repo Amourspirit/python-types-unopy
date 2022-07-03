@@ -39,5 +39,6 @@ class AddIn(XServiceName_af090b54, XAddIn_7a560939, XCompatibilityNames_1b100ec7
     See Also:
         `API AddIn <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1AddIn.html>`_
     """
+    ...
 
 

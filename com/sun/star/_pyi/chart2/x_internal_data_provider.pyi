@@ -43,6 +43,7 @@ class XInternalDataProvider(XDataProvider_122f0e31):
         
         (size - 1)
         """
+        ...
     def deleteComplexCategoryLevel(self, nLevel: int) -> None:
         """
         deletes an additional sequence for categories at nLevel>=1; categories at level 0 are always present and cannot be deleted
@@ -51,18 +52,23 @@ class XInternalDataProvider(XDataProvider_122f0e31):
         
             OOo 3.3
         """
+        ...
     def deleteDataPointForAllSequences(self, nAtIndex: int) -> None:
         """
         """
+        ...
     def deleteSequence(self, nAtIndex: int) -> None:
         """
         """
+        ...
     def getDataByRangeRepresentation(self, aRange: str) -> 'typing.Tuple[object, ...]':
         """
         """
+        ...
     def hasDataByRangeRepresentation(self, aRange: str) -> bool:
         """
         """
+        ...
     def insertComplexCategoryLevel(self, nLevel: int) -> None:
         """
         insert an additional sequence for categories nLevel>=1; categories at level 0 are always present and cannot be inserted or deleted
@@ -71,22 +77,29 @@ class XInternalDataProvider(XDataProvider_122f0e31):
         
             OOo 3.3
         """
+        ...
     def insertDataPointForAllSequences(self, nAfterIndex: int) -> None:
         """
         """
+        ...
     def insertSequence(self, nAfterIndex: int) -> None:
         """
         """
+        ...
     def registerDataSequenceForChanges(self, xSeq: 'XDataSequence_11f00e1f') -> None:
         """
         If range representations of data sequences change due to internal structural changes, they must be registered at the data provider.
         
         Sequences that are directly retrieved via the methods of the XDataProvider interface are already registered. If a labeled data sequence was created by cloning an existing one, it has to be explicitly registered via this method.
         """
+        ...
     def setDataByRangeRepresentation(self, aRange: str, aNewData: 'typing.Tuple[object, ...]') -> None:
         """
         """
+        ...
     def swapDataPointWithNextOneForAllSequences(self, nAtIndex: int) -> None:
         """
         """
+        ...
+
 

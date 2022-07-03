@@ -47,6 +47,7 @@ class XDocumentRecovery(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def storeToRecoveryFile(self, TargetLocation: str, MediaDescriptor: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         does an emergency save of the document
@@ -57,6 +58,7 @@ class XDocumentRecovery(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def wasModifiedSinceLastSave(self) -> bool:
         """
         determines whether the document has been modified since the last call to storeToRecoveryFile().
@@ -69,4 +71,6 @@ class XDocumentRecovery(ABC):
         
         However, in such a case, the document might be saved more often than needed. In particular during the periodic session save, this might become a problem when saving is expensive, for a single document or the sum of all open documents.
         """
+        ...
+
 

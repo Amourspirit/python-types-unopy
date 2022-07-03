@@ -42,6 +42,7 @@ class InsertCommandArgument(object):
             Data (XInputStream, optional): Data value.
             ReplaceExisting (bool, optional): ReplaceExisting value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class InsertCommandArgument(object):
         
         This member can be left blank, if no (new) document data shall be written by the implementation of the \"insert\" command.
         """
+        ...
 
 
     @property
@@ -60,5 +62,6 @@ class InsertCommandArgument(object):
         
         Implementations that are not able to detect whether there are previous data may ignore this parameter and will always write the new data.
         """
+        ...
 
 

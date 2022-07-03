@@ -39,5 +39,6 @@ class AccessibleCellView(XAccessibleComponent_b2f21269, XAccessibleContext_8eae1
     See Also:
         `API AccessibleCellView <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1table_1_1AccessibleCellView.html>`_
     """
+    ...
 
 

@@ -39,6 +39,7 @@ class XDataInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readByte(self) -> int:
         """
         reads an 8-bit byte.
@@ -46,6 +47,7 @@ class XDataInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readChar(self) -> str:
         """
         reads a 16-bit unicode character.
@@ -53,6 +55,7 @@ class XDataInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readDouble(self) -> float:
         """
         reads a 64-bit IEEE double.
@@ -60,6 +63,7 @@ class XDataInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readFloat(self) -> float:
         """
         reads a 32-bit IEEE float.
@@ -67,6 +71,7 @@ class XDataInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readHyper(self) -> int:
         """
         reads a 64-bit big endian integer.
@@ -74,6 +79,7 @@ class XDataInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readLong(self) -> int:
         """
         reads a 32-bit big endian integer.
@@ -81,6 +87,7 @@ class XDataInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readShort(self) -> int:
         """
         reads a 16-bit big endian integer.
@@ -88,6 +95,7 @@ class XDataInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readUTF(self) -> str:
         """
         reads a string of UTF encoded characters.
@@ -95,4 +103,6 @@ class XDataInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

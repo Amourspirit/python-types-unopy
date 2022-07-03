@@ -44,6 +44,7 @@ class XSSOPasswordCache(XInterface_8f010a43):
             InvalidArgumentException: ``InvalidArgumentException``
             PersistenceFailureException: ``PersistenceFailureException``
         """
+        ...
     def getPassword(self, UserName: str, Persist: bool) -> str:
         """
         retrieves a password for a given user from the cache.
@@ -56,6 +57,7 @@ class XSSOPasswordCache(XInterface_8f010a43):
             InvalidArgumentException: ``InvalidArgumentException``
             PersistenceFailureException: ``PersistenceFailureException``
         """
+        ...
     def removePassword(self, UserName: str, RemovePersist: bool) -> None:
         """
         removes a password from the cache
@@ -64,4 +66,6 @@ class XSSOPasswordCache(XInterface_8f010a43):
             InvalidArgumentException: ``InvalidArgumentException``
             PersistenceFailureException: ``PersistenceFailureException``
         """
+        ...
+
 

@@ -36,5 +36,6 @@ class BubbleDiagram(ChartAxisXSupplier_a950e4d, ChartStatistics_e2190d37, ChartT
     See Also:
         `API BubbleDiagram <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart_1_1BubbleDiagram.html>`_
     """
+    ...
 
 

@@ -45,6 +45,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def createFolder(self, NewFolderURL: str) -> None:
         """
         Creates a new Folder.
@@ -53,6 +54,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def exists(self, FileURL: str) -> bool:
         """
         Checks if a file exists.
@@ -61,6 +63,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getContentType(self, FileURL: str) -> str:
         """
         Returns the content type of a file.
@@ -69,6 +72,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getDateTimeModified(self, FileURL: str) -> 'DateTime_84de09d3':
         """
         Returns the last modified date for the file.
@@ -77,6 +81,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getFolderContents(self, FolderURL: str, bIncludeFolders: bool) -> 'typing.Tuple[str, ...]':
         """
         Returns the contents of a folder.
@@ -85,6 +90,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getSize(self, FileURL: str) -> int:
         """
         Returns the size of a file.
@@ -93,6 +99,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def isFolder(self, FileURL: str) -> bool:
         """
         Checks if a URL represents a folder.
@@ -101,6 +108,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def isReadOnly(self, FileURL: str) -> bool:
         """
         Checks if a file is \"read only\".
@@ -109,6 +117,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def kill(self, FileURL: str) -> None:
         """
         Removes a file.
@@ -119,6 +128,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def move(self, SourceURL: str, DestURL: str) -> None:
         """
         Moves a file.
@@ -127,6 +137,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def openFileRead(self, FileURL: str) -> 'XInputStream_98d40ab4':
         """
         Opens file to read.
@@ -135,6 +146,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def openFileReadWrite(self, FileURL: str) -> 'XStream_678908a4':
         """
         Opens file to read and write.
@@ -143,6 +155,7 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def openFileWrite(self, FileURL: str) -> 'XOutputStream_a4e00b35':
         """
         Opens file to write.
@@ -151,12 +164,14 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def setInteractionHandler(self, Handler: 'XInteractionHandler_bf80e51') -> None:
         """
         Sets an interaction handler to be used for further operations.
         
         A default interaction handler is available as service com.sun.star.task.InteractionHandler. The documentation of this service also contains further information about the interaction handler concept.
         """
+        ...
     def setReadOnly(self, FileURL: str, bReadOnly: bool) -> None:
         """
         Sets the \"read only\" of a file according to the boolean parameter, if the actual process has the right to do so.
@@ -165,4 +180,6 @@ class XSimpleFileAccess(XInterface_8f010a43):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

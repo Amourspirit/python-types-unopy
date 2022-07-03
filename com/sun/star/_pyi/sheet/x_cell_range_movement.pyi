@@ -42,20 +42,25 @@ class XCellRangeMovement(XInterface_8f010a43):
         
         The source cell range keeps unchanged.
         """
+        ...
     def insertCells(self, aRange: 'CellRangeAddress_ec450d43', nMode: 'CellInsertMode_d47d0c9b') -> None:
         """
         inserts cells, moving other cells down or right.
         
         Non-empty cells cannot be moved off the sheet.
         """
+        ...
     def moveRange(self, aDestination: 'CellAddress_ae5f0b56', aSource: 'CellRangeAddress_ec450d43') -> None:
         """
         moves a cell range to another position in the document.
         
         After copying the contents of the cell range, all cells will be cleared.
         """
+        ...
     def removeRange(self, aRange: 'CellRangeAddress_ec450d43', nMode: 'CellDeleteMode_d3830c79') -> None:
         """
         deletes cells, moving other cells up or left.
         """
+        ...
+
 

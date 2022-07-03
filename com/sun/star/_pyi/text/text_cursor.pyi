@@ -38,5 +38,6 @@ class TextCursor(TextRange_90540a5f, XSortable_8ff20a5a, XSentenceCursor_d6590cd
     See Also:
         `API TextCursor <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1TextCursor.html>`_
     """
+    ...
 
 

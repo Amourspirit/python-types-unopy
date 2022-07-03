@@ -43,6 +43,7 @@ class XNamedRanges(XNameAccess_e2ab0cf6):
         
         This parameter will be zero for any common named range.
         """
+        ...
     def addNewFromTitles(self, aSource: 'CellRangeAddress_ec450d43', aBorder: 'Border_7b2c097f') -> None:
         """
         creates named cell ranges from titles in a cell range.
@@ -51,14 +52,18 @@ class XNamedRanges(XNameAccess_e2ab0cf6):
         
         Example: The source range is A1:B3. The named ranges shall be created using row titles. This requires Border.TOP for the second parameter. The method creates two named ranges. The name of the first is equal to the content of cell A1 and contains the range $Sheet.$A$2:$A$3 (excluding the title cell). The latter named range is named using cell B1 and contains the cell range address $Sheet.$B$2:$B$3.
         """
+        ...
     def outputList(self, aOutputPosition: 'CellAddress_ae5f0b56') -> None:
         """
         writes a list of all named ranges into the document.
         
         The first column of the list contains the names. The second column contains the contents of the named ranges.
         """
+        ...
     def removeByName(self, aName: str) -> None:
         """
         removes a named range from the collection.
         """
+        ...
+
 

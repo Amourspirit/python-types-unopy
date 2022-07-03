@@ -29,6 +29,7 @@ Enum
 See Also:
     `API DataPointCustomLabelFieldType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart2.html#a364615e20b0759c6c5100f6a47add923>`_
 """
+typeName: str = 'com.sun.star.chart2.DataPointCustomLabelFieldType'
 
 CATEGORYNAME: 'uno.Enum'
 """

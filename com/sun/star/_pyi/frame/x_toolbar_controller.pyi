@@ -43,22 +43,28 @@ class XToolbarController(XInterface_8f010a43):
         """
         notifies a component that a single click has been made on the toolbar item.
         """
+        ...
     def createItemWindow(self, Parent: 'XWindow_713b0924') -> 'XWindow_713b0924':
         """
         requests to create an item window which can be added to the toolbar.
         """
+        ...
     def createPopupWindow(self) -> 'XWindow_713b0924':
         """
         requests to create a pop-up window for additional functions.
         """
+        ...
     def doubleClick(self) -> None:
         """
         notifies a component that a double click has been made on the toolbar item.
         """
+        ...
     def execute(self, KeyModifier: int) -> None:
         """
         provides a function to execute the command which is bound to the toolbar controller.
         
         This function is usually called by a toolbar implementation when a user clicked on a toolbar button or pressed enter on the keyboard when the item has the input focus.
         """
+        ...
+
 

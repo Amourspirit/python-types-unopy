@@ -39,14 +39,17 @@ class XStorable(XInterface_8f010a43):
         """
         After XStorable.storeAsURL() it returns the URL the object was stored to.
         """
+        ...
     def hasLocation(self) -> bool:
         """
         The object may know the location because it was loaded from there, or because it is stored there.
         """
+        ...
     def isReadonly(self) -> bool:
         """
         It is not possible to call XStorable.store() successfully when the data store is read-only.
         """
+        ...
     def store(self) -> None:
         """
         stores the data to the URL from which it was loaded.
@@ -56,6 +59,7 @@ class XStorable(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def storeAsURL(self, sURL: str, lArguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         stores the object's persistent data to a URL and makes this URL the new location of the object.
@@ -67,6 +71,7 @@ class XStorable(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def storeToURL(self, sURL: str, lArguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         stores the object's persistent data to a URL and continues to be a representation of the old URL.
@@ -78,4 +83,6 @@ class XStorable(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

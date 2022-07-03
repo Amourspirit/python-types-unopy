@@ -47,6 +47,7 @@ class SectionFileLink(object):
             FileURL (str, optional): FileURL value.
             FilterName (str, optional): FilterName value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class SectionFileLink(object):
         """
         contains the URL of the linked file.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class SectionFileLink(object):
         """
         contains the name of the file filter that is used to load the linked file.
         """
+        ...
 
 

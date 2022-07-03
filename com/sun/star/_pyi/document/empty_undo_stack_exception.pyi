@@ -47,6 +47,7 @@ class EmptyUndoStackException(InvalidStateException_2b290f3d):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['EmptyUndoStackException']
 

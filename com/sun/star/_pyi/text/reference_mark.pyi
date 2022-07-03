@@ -30,5 +30,6 @@ class ReferenceMark(XNamed_a6520b08, XTextContent_b16e0ba5):
     See Also:
         `API ReferenceMark <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1ReferenceMark.html>`_
     """
+    ...
 
 

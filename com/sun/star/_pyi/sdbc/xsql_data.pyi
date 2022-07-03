@@ -45,6 +45,7 @@ class XSQLData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readSQL(self, stream: 'XSQLInput_8c4109fc', typeName: str) -> None:
         """
         populates this object with data read from the database.
@@ -56,6 +57,7 @@ class XSQLData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeSQL(self, stream: 'XSQLOutput_96fb0a7d') -> None:
         """
         writes this object to the given SQL data stream.
@@ -65,4 +67,6 @@ class XSQLData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

@@ -34,5 +34,6 @@ class AnimatedImagesControlModel(UnoControlModel_c8ce0c58, XAnimatedImages_c6990
     See Also:
         `API AnimatedImagesControlModel <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1AnimatedImagesControlModel.html>`_
     """
+    ...
 
 

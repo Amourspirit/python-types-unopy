@@ -29,5 +29,6 @@ class NamingService(XNamingService_bb9a0bdd):
     See Also:
         `API NamingService <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1uno_1_1NamingService.html>`_
     """
+    ...
 
 

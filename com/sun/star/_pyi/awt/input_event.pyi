@@ -45,6 +45,7 @@ class InputEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Modifiers (int, optional): Modifiers value.
         """
+        ...
 
 
     @property
@@ -54,5 +55,6 @@ class InputEvent(EventObject_a3d70b03):
         
         Zero or more constants from the com.sun.star.awt.KeyModifier group.
         """
+        ...
 
 

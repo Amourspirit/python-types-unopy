@@ -49,28 +49,37 @@ class XLinguServiceManager(XInterface_8f010a43):
         
         The listeners may support one or both of com.sun.star.linguistic2.XDictionaryEventListener and com.sun.star.linguistic2.XLinguServiceEventListener interfaces.
         """
+        ...
     def getAvailableServices(self, aServiceName: str, aLocale: 'Locale_70d308fa') -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def getConfiguredServices(self, aServiceName: str, aLocale: 'Locale_70d308fa') -> 'typing.Tuple[str, ...]':
         """
         queries the list of service implementations to be used for a given service and language.
         """
+        ...
     def getHyphenator(self) -> 'XHyphenator_ff4e0def':
         """
         """
+        ...
     def getSpellChecker(self) -> 'XSpellChecker_1af30e82':
         """
         """
+        ...
     def getThesaurus(self) -> 'XThesaurus_f1790d91':
         """
         """
+        ...
     def removeLinguServiceManagerListener(self, xListener: 'XEventListener_c7230c4a') -> bool:
         """
         removes a listener from the list of event listeners.
         """
+        ...
     def setConfiguredServices(self, aServiceName: str, aLocale: 'Locale_70d308fa', aServiceImplNames: 'typing.Tuple[str, ...]') -> None:
         """
         sets the list of service implementations to be used for a given service and language.
         """
+        ...
+
 

@@ -45,11 +45,13 @@ class NoMasterException(RuntimeException_d7390ced):
             Context (XInterface, optional): Context value.
             Mode (PasswordRequestMode, optional): Mode value.
         """
+        ...
     @property
     def Mode(self) -> PasswordRequestMode_ec10e7c:
         """
         specifies the mode in which password should be queried.
         """
+        ...
 
 
 __all__ = ['NoMasterException']

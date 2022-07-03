@@ -36,5 +36,6 @@ class Controller(XUserInputInterception_2a7e0f4f, XTransferableSupplier_b602128c
     See Also:
         `API Controller <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1frame_1_1Controller.html>`_
     """
+    ...
 
 

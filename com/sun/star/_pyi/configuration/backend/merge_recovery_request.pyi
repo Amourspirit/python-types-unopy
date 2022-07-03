@@ -50,6 +50,7 @@ class MergeRecoveryRequest(Exception_85530a09):
             ErrorLayerId (str, optional): ErrorLayerId value.
             IsRemovalRequest (bool, optional): IsRemovalRequest value.
         """
+        ...
     @property
     def ErrorDetails(self) -> object:
         """
@@ -61,12 +62,14 @@ class MergeRecoveryRequest(Exception_85530a09):
         
         If no more detail information is available, this may be left VOID.
         """
+        ...
 
     @property
     def ErrorLayerId(self) -> str:
         """
         Identifier of the layer object containing the invalid data.
         """
+        ...
 
     @property
     def IsRemovalRequest(self) -> bool:
@@ -75,6 +78,7 @@ class MergeRecoveryRequest(Exception_85530a09):
         
         If TRUE the requester wants to remove the underlying data of the layer.If FALSE the request is to skip the underlying data this time, but without removing it.
         """
+        ...
 
 
 __all__ = ['MergeRecoveryRequest']

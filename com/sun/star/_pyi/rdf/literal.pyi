@@ -41,13 +41,16 @@ class Literal(XLiteral_79ec0969, XNode_5ee40822):
         """
         creates a plain literal RDF node.
         """
+        ...
     def createWithLanguage(self, Value: str, Language: str) -> None:
         """
         creates a literal RDF node with a language.
         """
+        ...
     def createWithType(self, Value: str, Type: 'XURI_5682078c') -> None:
         """
         creates a typed literal RDF node.
         """
+        ...
 
 

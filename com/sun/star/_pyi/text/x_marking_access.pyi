@@ -33,4 +33,6 @@ class XMarkingAccess(ABC):
     def invalidateMarkings(self, nType: int) -> None:
         """
         """
+        ...
+
 

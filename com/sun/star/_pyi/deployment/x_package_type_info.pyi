@@ -41,22 +41,26 @@ class XPackageTypeInfo(ABC):
         Raises:
             ExtensionRemovedException: ``ExtensionRemovedException``
         """
+        ...
     def getFileFilter(self) -> str:
         """
         returns a file filter string for the file picker user interface.
         
         Both, the short description string and file filter string will be passed to com.sun.star.ui.dialogs.XFilterManager.appendFilter().
         """
+        ...
     def getIcon(self, highContrast: bool, smallIcon: bool) -> object:
         """
         returns an icon for a package.
         """
+        ...
     def getMediaType(self) -> str:
         """
         returns the media type of a package, e.g.
         
         application/vnd.sun.star.basic-script.
         """
+        ...
     def getShortDescription(self) -> str:
         """
         returns a short description string to describe a package type (one line only).
@@ -64,4 +68,6 @@ class XPackageTypeInfo(ABC):
         Raises:
             ExtensionRemovedException: ``ExtensionRemovedException``
         """
+        ...
+
 

@@ -42,6 +42,7 @@ class WelcomeDynamicResultSetStruct(object):
             Old (XResultSet, optional): Old value.
             New (XResultSet, optional): New value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class WelcomeDynamicResultSetStruct(object):
         """
         The static result set containing the previous version of result set data.
         """
+        ...
 
 
     @property
@@ -56,5 +58,6 @@ class WelcomeDynamicResultSetStruct(object):
         """
         The static result set containing the new version of result set data.
         """
+        ...
 
 

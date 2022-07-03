@@ -43,6 +43,7 @@ class XMailService(XInterface_8f010a43):
         """
         Register a connection listener.
         """
+        ...
     def connect(self, xConnectionContext: 'XCurrentContext_c9110c7a', xAuthenticator: 'XAuthenticator_c7b50c5e') -> None:
         """
         Connect to a mail service.
@@ -58,6 +59,7 @@ class XMailService(XInterface_8f010a43):
             com.sun.star.auth.AuthenticationFailedException: ``AuthenticationFailedException``
             com.sun.star.mail.MailException: ``MailException``
         """
+        ...
     def disconnect(self) -> None:
         """
         Disconnect from a mail service.
@@ -65,6 +67,7 @@ class XMailService(XInterface_8f010a43):
         Raises:
             com.sun.star.mail.MailException: ``MailException``
         """
+        ...
     def getCurrentConnectionContext(self) -> 'XCurrentContext_c9110c7a':
         """
         Return the context of the current connection.
@@ -74,18 +77,23 @@ class XMailService(XInterface_8f010a43):
         Raises:
             com.sun.star.io.NotConnectedException: ``NotConnectedException``
         """
+        ...
     def getSupportedConnectionTypes(self) -> 'typing.Tuple[str, ...]':
         """
         Returns all connection types which are supported to connect to the mail service.
         
         At least support insecure connections must be supported. Currently defined connection types are (the values should be handled case insensitive): \"Insecure\" - insecure connections \"SSL\" - Secure Socket Layer 2.0/3.0 based connection
         """
+        ...
     def isConnected(self) -> bool:
         """
         Returns whether a connection to a mail service currently exist or not.
         """
+        ...
     def removeConnectionListener(self, xListener: 'XConnectionListener_aaa0e59') -> None:
         """
         Unregister a connection listener.
         """
+        ...
+
 

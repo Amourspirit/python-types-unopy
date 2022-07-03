@@ -40,56 +40,69 @@ class XPopupMenu(XMenu_5f470841):
         """
         sets the state of the item to be checked or unchecked.
         """
+        ...
     def endExecute(self) -> None:
         """
         ends the execution of the PopupMenu.
         
         com.sun.star.awt.XPopupMenu.execute() will then return 0.
         """
+        ...
     def execute(self, Parent: 'XWindowPeer_99760ab0', Position: 'Rectangle_84b109e9', Direction: int) -> int:
         """
         executes the popup menu and returns the selected item or 0, if cancelled.
         """
+        ...
     def getAcceleratorKeyEvent(self, nItemId: int) -> 'KeyEvent_7a78097f':
         """
         retrieves the KeyEvent for the menu item.
         
         The KeyEvent is only used as a container to transport the shortcut information, so that in this case com.sun.star.lang.EventObject.Source is NULL.
         """
+        ...
     def getDefaultItem(self) -> int:
         """
         returns the menu default item.
         """
+        ...
     def getItemImage(self, nItemId: int) -> 'XGraphic_a4da0afc':
         """
         retrieves the image for the menu item.
         """
+        ...
     def insertSeparator(self, nItemPos: int) -> None:
         """
         inserts a separator at the specified position.
         """
+        ...
     def isInExecute(self) -> bool:
         """
         queries if the PopupMenu is being.
         
         Returns TRUE only if the PopupMenu is being executed as a result of invoking XPopupMenu.execute(); that is, for a PopupMenu activated by a MenuBar item, this methods returns FALSE.
         """
+        ...
     def isItemChecked(self, nItemId: int) -> bool:
         """
         returns whether the item is checked or unchecked.
         """
+        ...
     def setAcceleratorKeyEvent(self, nItemId: int, aKeyEvent: 'KeyEvent_7a78097f') -> None:
         """
         sets the KeyEvent for the menu item.
         
         The KeyEvent is only used as a container to transport the shortcut information, this methods only draws the text corresponding to this keyboard shortcut. The client code is responsible for listening to keyboard events (typically done via XUserInputInterception), and dispatch the respective command.
         """
+        ...
     def setDefaultItem(self, nItemId: int) -> None:
         """
         sets the menu default item.
         """
+        ...
     def setItemImage(self, nItemId: int, xGraphic: 'XGraphic_a4da0afc', bScale: bool) -> None:
         """
         sets the image for the menu item.
         """
+        ...
+
 

@@ -47,6 +47,7 @@ class ModeChangeEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             NewMode (str, optional): NewMode value.
         """
+        ...
 
 
     @property
@@ -56,5 +57,6 @@ class ModeChangeEvent(EventObject_a3d70b03):
         
         The semantics of the mode string is to be defined by the component broadcasting this event.
         """
+        ...
 
 

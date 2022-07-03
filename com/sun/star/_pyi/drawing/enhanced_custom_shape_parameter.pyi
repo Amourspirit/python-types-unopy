@@ -41,6 +41,7 @@ class EnhancedCustomShapeParameter(object):
             Value (object, optional): Value value.
             Type (int, optional): Type value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class EnhancedCustomShapeParameter(object):
         """
         the any can be of type long or double
         """
+        ...
 
 
     @property

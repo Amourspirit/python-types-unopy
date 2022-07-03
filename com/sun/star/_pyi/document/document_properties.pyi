@@ -39,5 +39,6 @@ class DocumentProperties(XDocumentProperties_4c31102b):
         """
         constructs default-initialized instance
         """
+        ...
 
 

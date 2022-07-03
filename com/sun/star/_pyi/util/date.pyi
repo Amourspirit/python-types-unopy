@@ -44,6 +44,7 @@ class Date(object):
             Month (int, optional): Month value.
             Year (int, optional): Year value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class Date(object):
         """
         contains the day of month (1-31 or 0 for a void date).
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class Date(object):
         """
         contains the month of year (1-12 or 0 for a void date).
         """
+        ...
 
 
     @property
@@ -65,5 +68,6 @@ class Date(object):
         """
         contains the year.
         """
+        ...
 
 

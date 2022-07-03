@@ -47,5 +47,6 @@ class SetElement(HierarchyElement_6fb410e9, XTemplateInstance_81181149, XCompone
     See Also:
         `API SetElement <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1SetElement.html>`_
     """
+    ...
 
 

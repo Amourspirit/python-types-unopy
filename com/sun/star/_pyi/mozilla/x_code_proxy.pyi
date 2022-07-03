@@ -37,12 +37,16 @@ class XCodeProxy(XInterface_8f010a43):
         """
         which Mozilla product this code is write for
         """
+        ...
     def getProfileName(self) -> str:
         """
         which Mozilla profile this code will use
         """
+        ...
     def run(self) -> int:
         """
         all Mozilla XPCOM code must be called in run() or functions called by run()
         """
+        ...
+
 

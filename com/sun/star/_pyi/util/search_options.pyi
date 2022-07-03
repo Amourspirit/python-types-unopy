@@ -49,6 +49,7 @@ class SearchOptions(object):
             insertedChars (int, optional): insertedChars value.
             transliterateFlags (int, optional): transliterateFlags value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class SearchOptions(object):
         """
         search type
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class SearchOptions(object):
         """
         some flags - can be mixed
         """
+        ...
 
 
     @property
@@ -70,6 +73,7 @@ class SearchOptions(object):
         """
         The text or pattern to be searched.
         """
+        ...
 
 
     @property
@@ -77,6 +81,7 @@ class SearchOptions(object):
         """
         The replacement text (is for optional replacing - SearchOption is only the data container for it)
         """
+        ...
 
 
     @property
@@ -84,6 +89,7 @@ class SearchOptions(object):
         """
         The locale for case insensitive search.
         """
+        ...
 
 
     @property
@@ -91,6 +97,7 @@ class SearchOptions(object):
         """
         This many characters can be different (as a replacement) between the found word and the search pattern in a \"Weighted LevenshteinDistance\" search.
         """
+        ...
 
 
     @property
@@ -98,6 +105,7 @@ class SearchOptions(object):
         """
         This many characters can be missing in the found word in a \"Weighted Levenshtein Distance\" search.
         """
+        ...
 
 
     @property
@@ -105,6 +113,7 @@ class SearchOptions(object):
         """
         This many characters can be additional in the found word in a \"Weighted Levenshtein Distance\" search.
         """
+        ...
 
 
     @property
@@ -114,5 +123,6 @@ class SearchOptions(object):
         
         Same meaning as the enum of com.sun.star.i18n.TransliterationModules
         """
+        ...
 
 

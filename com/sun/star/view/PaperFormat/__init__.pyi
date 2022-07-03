@@ -29,6 +29,7 @@ Enum
 See Also:
     `API PaperFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1view.html#a12ab04987d08416f8347a9790c7abf3e>`_
 """
+typeName: str = 'com.sun.star.view.PaperFormat'
 
 A3: 'uno.Enum'
 """

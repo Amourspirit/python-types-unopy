@@ -30,5 +30,6 @@ class GalleryThemeProvider(XGalleryThemeProvider_59c7105e, XInitialization_d46c0
     See Also:
         `API GalleryThemeProvider <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1gallery_1_1GalleryThemeProvider.html>`_
     """
+    ...
 
 

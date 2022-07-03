@@ -53,6 +53,7 @@ class XPropertySet(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def addVetoableChangeListener(self, PropertyName: str, aListener: 'XVetoableChangeListener_55a41027') -> None:
         """
         adds an XVetoableChangeListener to the specified property with the name PropertyName.
@@ -63,9 +64,11 @@ class XPropertySet(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def getPropertySetInfo(self) -> 'XPropertySetInfo_efa90d86':
         """
         """
+        ...
     def getPropertyValue(self, PropertyName: str) -> object:
         """
 
@@ -73,6 +76,7 @@ class XPropertySet(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def removePropertyChangeListener(self, aPropertyName: str, aListener: 'XPropertyChangeListener_58e4105a') -> None:
         """
         removes an XPropertyChangeListener from the listener list.
@@ -85,6 +89,7 @@ class XPropertySet(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def removeVetoableChangeListener(self, PropertyName: str, aListener: 'XVetoableChangeListener_55a41027') -> None:
         """
         removes an XVetoableChangeListener from the listener list.
@@ -95,6 +100,7 @@ class XPropertySet(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def setPropertyValue(self, aPropertyName: str, aValue: object) -> None:
         """
         sets the value of the property with the specified name.
@@ -107,4 +113,6 @@ class XPropertySet(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

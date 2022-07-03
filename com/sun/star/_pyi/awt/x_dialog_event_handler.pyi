@@ -42,8 +42,11 @@ class XDialogEventHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def getSupportedMethodNames(self) -> 'typing.Tuple[str, ...]':
         """
         returns a sequence of supported method names
         """
+        ...
+
 

@@ -54,6 +54,7 @@ class TextSegment(object):
             SegmentStart (int, optional): SegmentStart value.
             SegmentEnd (int, optional): SegmentEnd value.
         """
+        ...
 
 
     @property
@@ -63,6 +64,7 @@ class TextSegment(object):
         
         Modifying it does not alter the enclosing text.
         """
+        ...
 
 
     @property
@@ -72,6 +74,7 @@ class TextSegment(object):
         
         The index refers to the enclosing text.
         """
+        ...
 
 
     @property
@@ -81,5 +84,6 @@ class TextSegment(object):
         
         The index refers to the enclosing text.
         """
+        ...
 
 

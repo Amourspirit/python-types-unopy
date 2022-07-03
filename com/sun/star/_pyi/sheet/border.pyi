@@ -32,6 +32,7 @@ class Border(Enum):
     See Also:
         `API Border <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html#aea307cd05a4c363d9cac3828a62f4127>`_
     """
+    typeName: str = 'com.sun.star.sheet.Border'
 
     BOTTOM: 'uno.Enum'
     """

@@ -43,6 +43,7 @@ class PostCommandArgument(object):
             Source (XInputStream, optional): Source value.
             Sink (XInterface, optional): Sink value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class PostCommandArgument(object):
         """
         The data source containing the data to post.
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class PostCommandArgument(object):
         """
         The data sink receiving the returned contents (supporting either com.sun.star.io.XActiveDataSink or com.sun.star.io.XOutputStream).
         """
+        ...
 
 

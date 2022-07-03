@@ -35,36 +35,43 @@ class DocumentSettings(HeaderFooterSettings_5acd1070, Settings_b2bc0bb8):
         """
         enables or disables the printing of the drawing pages
         """
+        ...
     @property
     def IsPrintFitPage(self) -> bool:
         """
         enables or disables the fitting of the page to the printable area during print
         """
+        ...
     @property
     def IsPrintHandout(self) -> bool:
         """
         enables or disables the printing of the handout pages
         """
+        ...
     @property
     def IsPrintHiddenPages(self) -> bool:
         """
         enables or disables the printing of draw pages that are marked hidden
         """
+        ...
     @property
     def IsPrintNotes(self) -> bool:
         """
         enables or disables the printing of the notes pages
         """
+        ...
     @property
     def IsPrintOutline(self) -> bool:
         """
         enables or disables the printing of the outline pages
         """
+        ...
     @property
     def IsPrintTilePage(self) -> bool:
         """
         if this is true and the paper size for printing is larger than the paper size of the printer than the content is tiled over multiple pages.
         """
+        ...
     @property
     def PageNumberFormat(self) -> int:
         """
@@ -72,6 +79,7 @@ class DocumentSettings(HeaderFooterSettings_5acd1070, Settings_b2bc0bb8):
         
         Values 0-7 are supported.
         """
+        ...
     @property
     def ParagraphSummation(self) -> bool:
         """
@@ -79,5 +87,6 @@ class DocumentSettings(HeaderFooterSettings_5acd1070, Settings_b2bc0bb8):
         
         If false, only the greater of the two is chosen.
         """
+        ...
 
 

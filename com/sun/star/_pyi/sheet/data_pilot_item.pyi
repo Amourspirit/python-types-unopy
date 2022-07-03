@@ -39,6 +39,7 @@ class DataPilotItem(XPropertySet_bc180bfa, XNamed_a6520b08):
         """
         specifies whether the item is hidden.
         """
+        ...
     @property
     def Position(self) -> int:
         """
@@ -48,10 +49,12 @@ class DataPilotItem(XPropertySet_bc180bfa, XNamed_a6520b08):
         
             OOo 2.4
         """
+        ...
     @property
     def ShowDetail(self) -> bool:
         """
         specifies whether the item is showing detail.
         """
+        ...
 
 

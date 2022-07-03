@@ -48,6 +48,7 @@ class DragSourceEvent(EventObject_a3d70b03):
             DragSourceContext (XDragSourceContext, optional): DragSourceContext value.
             DragSource (XDragSource, optional): DragSource value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class DragSourceEvent(EventObject_a3d70b03):
         """
         The drag source context of the current drag operation.
         """
+        ...
 
 
     @property
@@ -62,5 +64,6 @@ class DragSourceEvent(EventObject_a3d70b03):
         """
         The drag source on which the Drag and Drop operation was initiated.
         """
+        ...
 
 

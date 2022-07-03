@@ -44,6 +44,7 @@ class ListEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Changes (typing.Tuple[ListAction, ...], optional): Changes value.
         """
+        ...
 
 
     @property
@@ -51,5 +52,6 @@ class ListEvent(EventObject_a3d70b03):
         """
         If you apply the given ListActions one after the other to the old version of a result set in given order, you will get the positions in the new version.
         """
+        ...
 
 

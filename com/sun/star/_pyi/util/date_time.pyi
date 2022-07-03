@@ -51,6 +51,7 @@ class DateTime(object):
             Year (int, optional): Year value.
             IsUTC (bool, optional): IsUTC value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class DateTime(object):
         """
         contains the nanoseconds (0 - 999 999 999).
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class DateTime(object):
         """
         contains the seconds (0-59).
         """
+        ...
 
 
     @property
@@ -72,6 +75,7 @@ class DateTime(object):
         """
         contains the minutes (0-59).
         """
+        ...
 
 
     @property
@@ -79,6 +83,7 @@ class DateTime(object):
         """
         contains the hour (0-23).
         """
+        ...
 
 
     @property
@@ -86,6 +91,7 @@ class DateTime(object):
         """
         is the day of month (1-31 or 0 for a void date).
         """
+        ...
 
 
     @property
@@ -93,6 +99,7 @@ class DateTime(object):
         """
         is the month of year (1-12 or 0 for a void date).
         """
+        ...
 
 
     @property
@@ -100,6 +107,7 @@ class DateTime(object):
         """
         is the year.
         """
+        ...
 
 
     @property
@@ -111,5 +119,6 @@ class DateTime(object):
         
             LibreOffice 4.1
         """
+        ...
 
 

@@ -42,6 +42,7 @@ class AttributeData(object):
             Type (str, optional): Type value.
             Value (str, optional): Value value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class AttributeData(object):
         
         This string can be empty if you are not using namespaces.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class AttributeData(object):
         
         For non validating parsers this must be CDATA.
         """
+        ...
 
 
     @property
@@ -67,5 +70,6 @@ class AttributeData(object):
         """
         the string value of this XML attribute.
         """
+        ...
 
 

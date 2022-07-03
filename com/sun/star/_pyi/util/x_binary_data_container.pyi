@@ -41,4 +41,6 @@ class XBinaryDataContainer(ABC):
         """
         Get a copy of the contained data.
         """
+        ...
+
 

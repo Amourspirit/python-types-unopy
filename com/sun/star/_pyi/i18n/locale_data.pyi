@@ -29,5 +29,6 @@ class LocaleData(XLocaleData4_a7ae0a9e):
     See Also:
         `API LocaleData <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1i18n_1_1LocaleData.html>`_
     """
+    ...
 
 

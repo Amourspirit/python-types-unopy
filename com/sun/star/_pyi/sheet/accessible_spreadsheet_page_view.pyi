@@ -35,5 +35,6 @@ class AccessibleSpreadsheetPageView(XAccessibleComponent_b2f21269, XAccessibleCo
     See Also:
         `API AccessibleSpreadsheetPageView <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1AccessibleSpreadsheetPageView.html>`_
     """
+    ...
 
 

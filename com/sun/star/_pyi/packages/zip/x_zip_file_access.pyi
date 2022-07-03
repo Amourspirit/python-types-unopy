@@ -45,4 +45,6 @@ class XZipFileAccess(XInterface_8f010a43):
             com.sun.star.packages.WrongPasswordException: ``WrongPasswordException``
             com.sun.star.packages.zip.ZipException: ``ZipException``
         """
+        ...
+
 

@@ -43,6 +43,7 @@ class XDatabaseRegistrations(ABC):
         """
         registers a listener which is notified of changes in the registered databases
         """
+        ...
     def changeDatabaseLocation(self, Name: str, NewLocation: str) -> None:
         """
         changes the location of a given database registration
@@ -52,6 +53,7 @@ class XDatabaseRegistrations(ABC):
             : ````
             com.sun.star.lang.IllegalAccessException: ``IllegalAccessException``
         """
+        ...
     def getDatabaseLocation(self, Name: str) -> str:
         """
         returns the location of the database registered under the given name
@@ -60,10 +62,12 @@ class XDatabaseRegistrations(ABC):
             : ````
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def getRegistrationNames(self) -> 'typing.Tuple[str, ...]':
         """
         returns the names of all registered databases
         """
+        ...
     def hasRegisteredDatabase(self, Name: str) -> bool:
         """
         determines whether a database is registered under the given name.
@@ -71,6 +75,7 @@ class XDatabaseRegistrations(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def isDatabaseRegistrationReadOnly(self, Name: str) -> bool:
         """
         determines whether the registration data for a database given by name is read-only.
@@ -81,6 +86,7 @@ class XDatabaseRegistrations(ABC):
             : ````
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def registerDatabaseLocation(self, Name: str, Location: str) -> None:
         """
         registers a database, given by location, under a given name
@@ -89,10 +95,12 @@ class XDatabaseRegistrations(ABC):
             : ````
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def removeDatabaseRegistrationsListener(self, Listener: 'XDatabaseRegistrationsListener_acf11262') -> None:
         """
         revokes a previously registered listener
         """
+        ...
     def revokeDatabaseLocation(self, Name: str) -> None:
         """
         revokes the registration of a database, given by name
@@ -102,4 +110,6 @@ class XDatabaseRegistrations(ABC):
             : ````
             com.sun.star.lang.IllegalAccessException: ``IllegalAccessException``
         """
+        ...
+
 

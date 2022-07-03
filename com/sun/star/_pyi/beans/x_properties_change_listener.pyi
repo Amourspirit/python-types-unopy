@@ -37,4 +37,6 @@ class XPropertiesChangeListener(XEventListener_c7230c4a):
         """
         gets called when bound properties are changed.
         """
+        ...
+
 

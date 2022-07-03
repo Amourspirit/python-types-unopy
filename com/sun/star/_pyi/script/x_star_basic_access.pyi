@@ -47,6 +47,7 @@ class XStarBasicAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def addModule(self, LibraryName: str, ModuleName: str, Language: str, Source: str) -> None:
         """
         Adds a module to an existing (e.g., created by createLibrary) library.
@@ -56,6 +57,7 @@ class XStarBasicAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def createLibrary(self, LibName: str, Password: str, ExternalSourceURL: str, LinkTargetURL: str) -> None:
         """
         Creates an empty library.
@@ -65,8 +67,11 @@ class XStarBasicAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def getLibraryContainer(self) -> 'XNameContainer_cb90e47':
         """
         returns the library container giving access to the libraries stored in a document or basic library file.
         """
+        ...
+
 

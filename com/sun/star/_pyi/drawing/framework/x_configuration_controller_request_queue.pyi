@@ -39,10 +39,13 @@ class XConfigurationControllerRequestQueue(ABC):
         """
         Return whether there are pending requests for configuration changes.
         """
+        ...
     def postChangeRequest(self, xRequest: 'XConfigurationChangeRequest_96e716cf') -> None:
         """
         Add a request for a configuration change to the request queue.
         
         This method should not be called from outside the drawing framework. Other sub controllers of the drawing framework are typical callers. They can add change requests that can not be made with the requestResourceActivation() and requestResourceDeactivation() methods.
         """
+        ...
+
 

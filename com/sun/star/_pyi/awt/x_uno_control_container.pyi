@@ -37,16 +37,21 @@ class XUnoControlContainer(XInterface_8f010a43):
         """
         adds a single tab controller.
         """
+        ...
     def getTabControllers(self) -> 'typing.Tuple[XTabController_bacd0be7, ...]':
         """
         returns all currently specified tab controllers.
         """
+        ...
     def removeTabController(self, TabController: 'XTabController_bacd0be7') -> None:
         """
         removes a single tab controller.
         """
+        ...
     def setTabControllers(self, TabControllers: 'typing.Tuple[XTabController_bacd0be7, ...]') -> None:
         """
         sets a set of tab controllers.
         """
+        ...
+
 

@@ -58,6 +58,7 @@ class FontDescriptor(object):
             WordLineMode (bool, optional): WordLineMode value.
             Type (int, optional): Type value.
         """
+        ...
 
 
     @property
@@ -65,6 +66,7 @@ class FontDescriptor(object):
         """
         specifies the exact name of the font.
         """
+        ...
 
 
     @property
@@ -72,6 +74,7 @@ class FontDescriptor(object):
         """
         specifies the height of the font in the measure of the destination.
         """
+        ...
 
 
     @property
@@ -79,6 +82,7 @@ class FontDescriptor(object):
         """
         specifies the width of the font in the measure of the destination.
         """
+        ...
 
 
     @property
@@ -86,6 +90,7 @@ class FontDescriptor(object):
         """
         specifies the style name of the font.
         """
+        ...
 
 
     @property
@@ -95,6 +100,7 @@ class FontDescriptor(object):
         
         Use one value out of the constant group com.sun.star.awt.FontFamily.
         """
+        ...
 
 
     @property
@@ -104,6 +110,7 @@ class FontDescriptor(object):
         
         Use one value out of the constant group com.sun.star.awt.CharSet.
         """
+        ...
 
 
     @property
@@ -113,6 +120,7 @@ class FontDescriptor(object):
         
         Use one value out of the constant group com.sun.star.awt.FontPitch.
         """
+        ...
 
 
     @property
@@ -124,6 +132,7 @@ class FontDescriptor(object):
         
         The value is expressed as a percentage.
         """
+        ...
 
 
     @property
@@ -135,6 +144,7 @@ class FontDescriptor(object):
         
         The value is expressed as a percentage.
         """
+        ...
 
 
     @property
@@ -142,6 +152,7 @@ class FontDescriptor(object):
         """
         specifies the slant of the font.
         """
+        ...
 
 
     @property
@@ -151,6 +162,7 @@ class FontDescriptor(object):
         
         Use one value out of the constant group com.sun.star.awt.FontUnderline.
         """
+        ...
 
 
     @property
@@ -160,6 +172,7 @@ class FontDescriptor(object):
         
         Use one value out of the constant group com.sun.star.awt.FontStrikeout.
         """
+        ...
 
 
     @property
@@ -169,6 +182,7 @@ class FontDescriptor(object):
         
         The unit of measure is degrees; 0 is the baseline.
         """
+        ...
 
 
     @property
@@ -178,6 +192,7 @@ class FontDescriptor(object):
         
         For selecting, it specifies if the kerning table is to be used.
         """
+        ...
 
 
     @property
@@ -189,6 +204,7 @@ class FontDescriptor(object):
         
         This property is only valid if the property com.sun.star.awt.FontDescriptor.Underline is not FontUnderline.NONE.
         """
+        ...
 
 
     @property
@@ -198,5 +214,6 @@ class FontDescriptor(object):
         
         One or more values out of the constant group com.sun.star.awt.FontType can be combined by an arithmetical or-operation.
         """
+        ...
 
 

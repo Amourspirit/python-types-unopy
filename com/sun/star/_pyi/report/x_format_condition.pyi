@@ -36,6 +36,7 @@ class XFormatCondition(XPropertySet_bc180bfa, XReportControlFormat_3d4e0fc2):
         """
         specifies if the condition is enabled or not.
         """
+        ...
 
     @property
     def Formula(self) -> str:
@@ -44,5 +45,6 @@ class XFormatCondition(XPropertySet_bc180bfa, XReportControlFormat_3d4e0fc2):
         
         If the formula evaluates to TRUE then the format will be applied.
         """
+        ...
 
 

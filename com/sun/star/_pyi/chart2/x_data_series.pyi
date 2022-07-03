@@ -39,12 +39,16 @@ class XDataSeries(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def resetAllDataPoints(self) -> None:
         """
         all data point formatting are cleared
         """
+        ...
     def resetDataPoint(self, nIndex: int) -> None:
         """
         the formatting of the specified data point is cleared
         """
+        ...
+
 

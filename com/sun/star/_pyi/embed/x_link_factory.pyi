@@ -46,4 +46,6 @@ class XLinkFactory(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

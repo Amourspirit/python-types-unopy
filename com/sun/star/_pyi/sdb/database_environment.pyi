@@ -42,5 +42,6 @@ class DatabaseEnvironment(XPropertySet_bc180bfa, XDatabaseEnvironment_8280e43):
         """
         provides an object for formatting numbers.
         """
+        ...
 
 

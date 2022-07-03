@@ -46,23 +46,27 @@ class WrongJavaVersionException(Exception_85530a09):
             HighestSupportedVersion (str, optional): HighestSupportedVersion value.
             DetectedVersion (str, optional): DetectedVersion value.
         """
+        ...
     @property
     def LowestSupportedVersion(self) -> str:
         """
         contains the lowest Java version for which the operation would succeed, or is left empty if this is unknown.
         """
+        ...
 
     @property
     def HighestSupportedVersion(self) -> str:
         """
         contains the highest Java version for which the operation would succeed, or is left empty if this is unknown.
         """
+        ...
 
     @property
     def DetectedVersion(self) -> str:
         """
         contains the Java version that has been detected, or is left empty if this is unknown.
         """
+        ...
 
 
 __all__ = ['WrongJavaVersionException']

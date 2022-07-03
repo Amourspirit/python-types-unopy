@@ -37,5 +37,6 @@ class TextTableCursor(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8
     See Also:
         `API TextTableCursor <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1TextTableCursor.html>`_
     """
+    ...
 
 

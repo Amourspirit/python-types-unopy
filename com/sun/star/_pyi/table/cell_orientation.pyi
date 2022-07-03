@@ -32,6 +32,7 @@ class CellOrientation(Enum):
     See Also:
         `API CellOrientation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1table.html#ae84a4c3547c7628fcc19bdf41cc93c60>`_
     """
+    typeName: str = 'com.sun.star.table.CellOrientation'
 
     BOTTOMTOP: 'uno.Enum'
     """

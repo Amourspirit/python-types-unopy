@@ -37,4 +37,6 @@ class XTwoAxisYSupplier(XAxisYSupplier_d4430cb4):
         """
         The returned property set contains scaling properties as well as formatting properties.
         """
+        ...
+
 

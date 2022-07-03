@@ -50,6 +50,7 @@ class MouseEvent(InputEvent_8f520a66):
             ClickCount (int, optional): ClickCount value.
             PopupTrigger (bool, optional): PopupTrigger value.
         """
+        ...
 
 
     @property
@@ -59,6 +60,7 @@ class MouseEvent(InputEvent_8f520a66):
         
         Zero ore more constants from the com.sun.star.awt.MouseButton group.
         """
+        ...
 
 
     @property
@@ -66,6 +68,7 @@ class MouseEvent(InputEvent_8f520a66):
         """
         contains the x coordinate location of the mouse.
         """
+        ...
 
 
     @property
@@ -73,6 +76,7 @@ class MouseEvent(InputEvent_8f520a66):
         """
         contains the y coordinate location of the mouse.
         """
+        ...
 
 
     @property
@@ -80,6 +84,7 @@ class MouseEvent(InputEvent_8f520a66):
         """
         contains the number of mouse clicks associated with event.
         """
+        ...
 
 
     @property
@@ -91,5 +96,6 @@ class MouseEvent(InputEvent_8f520a66):
         
         In this case, X and Y describe the position where the request was issued. If those members are -1, then the request was issued using the keyboard, by pressing the operating-system dependent key combination for this purpose.
         """
+        ...
 
 

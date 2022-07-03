@@ -33,5 +33,6 @@ class ExtendedTypeDetection(XExtendedFilterDetection_9ff211f5):
     See Also:
         `API ExtendedTypeDetection <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1document_1_1ExtendedTypeDetection.html>`_
     """
+    ...
 
 

@@ -32,5 +32,6 @@ class XMLImportFilter(ImportFilter_e4e90d48, XDocumentHandler_9b90e28):
     See Also:
         `API XMLImportFilter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1XMLImportFilter.html>`_
     """
+    ...
 
 

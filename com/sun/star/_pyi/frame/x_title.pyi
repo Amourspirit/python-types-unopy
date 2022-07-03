@@ -34,8 +34,11 @@ class XTitle(XInterface_8f010a43):
         """
         Returns the title of the object.
         """
+        ...
     def setTitle(self, sTitle: str) -> None:
         """
         Sets the title of the object.
         """
+        ...
+
 

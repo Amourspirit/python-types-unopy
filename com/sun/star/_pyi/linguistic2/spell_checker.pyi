@@ -33,5 +33,6 @@ class SpellChecker(XComponent_98dc0ab5, XInitialization_d46c0cca, XServiceDispla
     See Also:
         `API SpellChecker <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1linguistic2_1_1SpellChecker.html>`_
     """
+    ...
 
 

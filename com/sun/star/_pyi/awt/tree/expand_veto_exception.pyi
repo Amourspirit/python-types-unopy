@@ -45,11 +45,13 @@ class ExpandVetoException(VetoException_bdad0c13):
             Context (XInterface, optional): Context value.
             Event (TreeExpansionEvent, optional): Event value.
         """
+        ...
     @property
     def Event(self) -> TreeExpansionEvent_378b0f79:
         """
         The event that the exception was created for.
         """
+        ...
 
 
 __all__ = ['ExpandVetoException']

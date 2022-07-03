@@ -32,5 +32,6 @@ class HandoutShape(PageShape_b0a30b62, Shape_c0c80c15):
     See Also:
         `API HandoutShape <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1HandoutShape.html>`_
     """
+    ...
 
 

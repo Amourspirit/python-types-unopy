@@ -35,5 +35,6 @@ class Connection(Connection_98fe0ab4, DatabaseDefinition_9d00e3a, XChild_a6390b0
     See Also:
         `API Connection <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1Connection.html>`_
     """
+    ...
 
 

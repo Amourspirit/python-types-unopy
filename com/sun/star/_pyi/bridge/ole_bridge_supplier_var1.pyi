@@ -37,5 +37,6 @@ class OleBridgeSupplierVar1(OleBridgeSupplier2_18030e68):
     See Also:
         `API OleBridgeSupplierVar1 <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1bridge_1_1OleBridgeSupplierVar1.html>`_
     """
+    ...
 
 

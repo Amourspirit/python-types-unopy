@@ -57,6 +57,7 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
             ExtensionRemovedException: ``ExtensionRemovedException``
             com.sun.star.ucb.CommandFailedException: ``CommandFailedException``
         """
+        ...
     def checkPrerequisites(self, xAbortChannel: 'XAbortChannel_baca0bc4', xCmdEnv: 'XCommandEnvironment_fb330dee', alreadyInstalled: bool) -> int:
         """
         checks if the package can be installed.
@@ -69,10 +70,12 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
             com.sun.star.ucb.CommandFailedException: ``CommandFailedException``
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
         """
+        ...
     def createAbortChannel(self) -> 'XAbortChannel_baca0bc4':
         """
         creates a command channel to be used to asynchronously abort a command.
         """
+        ...
     def exportTo(self, destFolderURL: str, newTitle: str, nameClashAction: int, xCmdEnv: 'XCommandEnvironment_fb330dee') -> None:
         """
         exports package to given destination URL.
@@ -83,6 +86,7 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.ucb.ContentCreationException: ``ContentCreationException``
         """
+        ...
     def getBundle(self, xAbortChannel: 'XAbortChannel_baca0bc4', xCmdEnv: 'XCommandEnvironment_fb330dee') -> 'typing.Tuple[XPackage, ...]':
         """
         Gets packages of the bundle.
@@ -95,6 +99,7 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getDescription(self) -> str:
         """
         returns a description string to describe the package.
@@ -102,6 +107,7 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
         Raises:
             ExtensionRemovedException: ``ExtensionRemovedException``
         """
+        ...
     def getDisplayName(self) -> str:
         """
         returns the display name of the package, e.g.
@@ -111,6 +117,7 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
         Raises:
             ExtensionRemovedException: ``ExtensionRemovedException``
         """
+        ...
     def getIcon(self, highContrast: bool) -> 'XGraphic_a4da0afc':
         """
         returns an icon for a package.
@@ -118,10 +125,12 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
         Raises:
             ExtensionRemovedException: ``ExtensionRemovedException``
         """
+        ...
     def getIdentifier(self) -> object:
         """
         returns the unique extension identifier.
         """
+        ...
     def getLicenseText(self) -> str:
         """
         returns a string containing the license text.
@@ -130,16 +139,19 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
             DeploymentException: ``DeploymentException``
             ExtensionRemovedException: ``ExtensionRemovedException``
         """
+        ...
     def getName(self) -> str:
         """
         returns the file name of the package.
         """
+        ...
     def getPackageType(self) -> 'XPackageTypeInfo_3bc70f7b':
         """
         returns the XPackageTypeInfo, e.g.
         
         media-type etc.
         """
+        ...
     def getPublisherInfo(self) -> 'StringPair_a4bc0b14':
         """
         returns the publisher info for the package, the strings might be empty, if there is no publisher
@@ -149,6 +161,7 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
         Raises:
             ExtensionRemovedException: ``ExtensionRemovedException``
         """
+        ...
     def getRegistrationDataURL(self) -> object:
         """
         return a URL to a directory which contains the registration data.
@@ -159,14 +172,17 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
             DeploymentException: ``DeploymentException``
             ExtensionRemovedException: ``ExtensionRemovedException``
         """
+        ...
     def getRepositoryName(self) -> str:
         """
         returns the name of the repository where this object comes from.
         """
+        ...
     def getURL(self) -> str:
         """
         returns the location of the package.
         """
+        ...
     def getUpdateInformationURLs(self) -> 'typing.Tuple[str, ...]':
         """
         returns a sequence of update information URLs.
@@ -176,6 +192,7 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
         Raises:
             ExtensionRemovedException: ``ExtensionRemovedException``
         """
+        ...
     def getVersion(self) -> str:
         """
         returns the textual version representation of the package.
@@ -185,12 +202,14 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
         Raises:
             ExtensionRemovedException: ``ExtensionRemovedException``
         """
+        ...
     def isBundle(self) -> bool:
         """
         reflects whether this package is a bundle of one or more packages, e.g.
         
         a zip (legacy) package file or a document hosting script packages.
         """
+        ...
     def isRegistered(self, xAbortChannel: 'XAbortChannel_baca0bc4', xCmdEnv: 'XCommandEnvironment_fb330dee') -> object:
         """
         determines whether the package is currently registered, i.e.
@@ -202,12 +221,14 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
             com.sun.star.ucb.CommandFailedException: ``CommandFailedException``
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
         """
+        ...
     def isRemoved(self) -> bool:
         """
         indicates if this object represents a removed extension or extension item.
         
         This is the case when it was created by providing TRUE for the removed parameter in the function XPackageRegistry.bindPackage().
         """
+        ...
     def registerPackage(self, startup: bool, xAbortChannel: 'XAbortChannel_baca0bc4', xCmdEnv: 'XCommandEnvironment_fb330dee') -> None:
         """
         registers this XPackage.
@@ -221,6 +242,7 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def revokePackage(self, startup: bool, xAbortChannel: 'XAbortChannel_baca0bc4', xCmdEnv: 'XCommandEnvironment_fb330dee') -> None:
         """
         revokes this XPackage.
@@ -233,4 +255,6 @@ class XPackage(XComponent_98dc0ab5, XModifyBroadcaster_fd990df0):
             com.sun.star.ucb.CommandAbortedException: ``CommandAbortedException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

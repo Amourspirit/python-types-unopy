@@ -41,4 +41,6 @@ class XSSOManagerFactory(XInterface_8f010a43):
         """
         provides a XSSOManager to be used in subsequent security context creation.
         """
+        ...
+
 

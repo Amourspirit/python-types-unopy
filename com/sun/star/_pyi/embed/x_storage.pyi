@@ -52,6 +52,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def cloneStreamElement(self, sStreamName: str) -> 'XStream_678908a4':
         """
         allows to get readonly copy of a child stream of the storage.
@@ -65,6 +66,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def copyElementTo(self, sElementName: str, xDest: 'XStorage', sNewName: str) -> None:
         """
         allows to copy an entry from one storage to another.
@@ -79,6 +81,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def copyLastCommitTo(self, xTargetStorage: 'XStorage') -> None:
         """
         allows to get copy of this storage at the state of its last commit.
@@ -91,6 +94,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def copyStorageElementLastCommitTo(self, sStorName: str, xTargetStorage: 'XStorage') -> None:
         """
         allows to get copy of a child storage at the state of its last commit.
@@ -103,6 +107,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def copyToStorage(self, xDest: 'XStorage') -> None:
         """
         allows to copy current storage to another one
@@ -115,6 +120,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def isStorageElement(self, sElementName: str) -> bool:
         """
         allows to check if an element is a child storage with specified name.
@@ -126,6 +132,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.embed.InvalidStorageException: ``InvalidStorageException``
         """
+        ...
     def isStreamElement(self, sElementName: str) -> bool:
         """
         allows to check if an element is a child stream with specified name.
@@ -137,6 +144,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.embed.InvalidStorageException: ``InvalidStorageException``
         """
+        ...
     def moveElementTo(self, sElementName: str, xDest: 'XStorage', sNewName: str) -> None:
         """
         allows to move an entry from one storage to another.
@@ -151,6 +159,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def openEncryptedStreamElement(self, sStreamName: str, nOpenMode: int, sPassword: str) -> 'XStream_678908a4':
         """
         allows to get access to a child encrypted stream with password.
@@ -167,6 +176,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def openStorageElement(self, sStorName: str, nOpenMode: int) -> 'XStorage':
         """
         allows to get access to a child storage.
@@ -179,6 +189,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def openStreamElement(self, sStreamName: str, nOpenMode: int) -> 'XStream_678908a4':
         """
         allows to get access to a child stream of the storage.
@@ -192,6 +203,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def removeElement(self, sElementName: str) -> None:
         """
         removes an element from a storage.
@@ -203,6 +215,7 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def renameElement(self, sElementName: str, sNewName: str) -> None:
         """
         renames an element in a storage.
@@ -215,4 +228,6 @@ class XStorage(XNameAccess_e2ab0cf6, XComponent_98dc0ab5):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
+
 

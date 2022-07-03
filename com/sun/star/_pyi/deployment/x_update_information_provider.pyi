@@ -43,6 +43,7 @@ class XUpdateInformationProvider(ABC):
         """
         interrupts a getUpdateInformation call and let's it return immediately.
         """
+        ...
     def getUpdateInformation(self, repositories: 'typing.Tuple[str, ...]', extensionId: str) -> 'typing.Tuple[XElement_a33d0ae9, ...]':
         """
         get update information for a specific extension or all available information from a repository.
@@ -50,6 +51,7 @@ class XUpdateInformationProvider(ABC):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getUpdateInformationEnumeration(self, repositories: 'typing.Tuple[str, ...]', extensionId: str) -> 'XEnumeration_f2180daa':
         """
         get update information for a specific extension or all available information from a repository.
@@ -57,10 +59,13 @@ class XUpdateInformationProvider(ABC):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def setInteractionHandler(self, handler: 'XInteractionHandler_bf80e51') -> None:
         """
         Sets an interaction handler to be used for further operations.
         
         A default interaction handler is available as service com.sun.star.task.InteractionHandler. The documentation of this service also contains further information about the interaction handler concept.
         """
+        ...
+
 

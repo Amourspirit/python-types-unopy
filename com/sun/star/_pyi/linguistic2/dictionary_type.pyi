@@ -32,6 +32,7 @@ class DictionaryType(Enum):
     See Also:
         `API DictionaryType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1linguistic2.html#a281c5a7578308b66c77c9e0de51b806a>`_
     """
+    typeName: str = 'com.sun.star.linguistic2.DictionaryType'
 
     MIXED: 'uno.Enum'
     """

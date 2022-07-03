@@ -44,10 +44,13 @@ class XPropertyControl(ABC):
         
         An XPropertyControl internally manages a flag indicating whether its content is modified. This flag is reset to FALSE every time our ControlContext is notified of our current value. Also, the control implementation must set this flag to TRUE if and only if the user changed the control content.
         """
+        ...
     def notifyModifiedValue(self) -> None:
         """
         notifies the context in which the control lives of the current control value, if this value is currently modified
         """
+        ...
+
     @property
     def ControlContext(self) -> 'XPropertyControlContext_b94c12c7':
         """
@@ -55,12 +58,14 @@ class XPropertyControl(ABC):
         
         The property control should actively notify its state changes to the context. In particular, changes in the focus and the value of the control must be notified.
         """
+        ...
 
     @property
     def ControlType(self) -> int:
         """
         denotes the type of the control, as one of the PropertyControlType constants
         """
+        ...
 
     @property
     def ControlWindow(self) -> 'XWindow_713b0924':
@@ -71,6 +76,7 @@ class XPropertyControl(ABC):
         
         This Window must not be NULL, else the whole control is not usable.
         """
+        ...
 
     @property
     def Value(self) -> object:
@@ -79,11 +85,13 @@ class XPropertyControl(ABC):
         
         At every point in time, this value is either VOID, or of the type described by ValueType.
         """
+        ...
 
     @property
     def ValueType(self) -> object:
         """
         denotes the value type of the control.
         """
+        ...
 
 

@@ -51,6 +51,7 @@ class AccessibleEventObject(EventObject_a3d70b03):
             NewValue (object, optional): NewValue value.
             OldValue (object, optional): OldValue value.
         """
+        ...
 
 
     @property
@@ -60,6 +61,7 @@ class AccessibleEventObject(EventObject_a3d70b03):
         
         For a list of possible events see AccessibleEventId.
         """
+        ...
 
 
     @property
@@ -69,6 +71,7 @@ class AccessibleEventObject(EventObject_a3d70b03):
         
         Depending on the EventId, this can be void.
         """
+        ...
 
 
     @property
@@ -78,5 +81,6 @@ class AccessibleEventObject(EventObject_a3d70b03):
         
         Depending on the EventId, this can be void.
         """
+        ...
 
 

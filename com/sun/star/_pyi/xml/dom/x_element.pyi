@@ -37,38 +37,47 @@ class XElement(XNode_83fb09a5):
         """
         Retrieves an attribute value by name.
         """
+        ...
     def getAttributeNS(self, namespaceURI: str, localName: str) -> str:
         """
         Retrieves an attribute value by local name and namespace URI.
         """
+        ...
     def getAttributeNode(self, name: str) -> 'XAttr_840309ba':
         """
         Retrieves an attribute node by name.
         """
+        ...
     def getAttributeNodeNS(self, namespaceURI: str, localName: str) -> 'XAttr_840309ba':
         """
         Retrieves an Attr node by local name and namespace URI.
         """
+        ...
     def getElementsByTagName(self, name: str) -> 'XNodeList_ae540b41':
         """
         Returns a NodeList of all descendant Elements with a given tag name, in the order in which they are encountered in a preorder traversal of this Element tree.
         """
+        ...
     def getElementsByTagNameNS(self, namespaceURI: str, localName: str) -> 'XNodeList_ae540b41':
         """
         Returns a NodeList of all the descendant Elements with a given local name and namespace URI in the order in which they are encountered in a preorder traversal of this Element tree.
         """
+        ...
     def getTagName(self) -> str:
         """
         The name of the element.
         """
+        ...
     def hasAttribute(self, name: str) -> bool:
         """
         Returns true when an attribute with a given name is specified on this element or has a default value, false otherwise.
         """
+        ...
     def hasAttributeNS(self, namespaceURI: str, localName: str) -> bool:
         """
         Returns true when an attribute with a given local name and namespace URI is specified on this element or has a default value, false otherwise.
         """
+        ...
     def removeAttribute(self, name: str) -> None:
         """
         Removes an attribute by name.
@@ -78,6 +87,7 @@ class XElement(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def removeAttributeNS(self, namespaceURI: str, localName: str) -> None:
         """
         Removes an attribute by local name and namespace URI.
@@ -87,6 +97,7 @@ class XElement(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def removeAttributeNode(self, oldAttr: 'XAttr_840309ba') -> 'XAttr_840309ba':
         """
         Removes the specified attribute node.
@@ -96,6 +107,7 @@ class XElement(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def setAttribute(self, name: str, value: str) -> None:
         """
         Adds a new attribute.
@@ -105,6 +117,7 @@ class XElement(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def setAttributeNS(self, namespaceURI: str, qualifiedName: str, value: str) -> None:
         """
         Adds a new attribute.
@@ -114,6 +127,7 @@ class XElement(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def setAttributeNode(self, newAttr: 'XAttr_840309ba') -> 'XAttr_840309ba':
         """
         Adds a new attribute node.
@@ -123,6 +137,7 @@ class XElement(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def setAttributeNodeNS(self, newAttr: 'XAttr_840309ba') -> 'XAttr_840309ba':
         """
         Adds a new attribute.
@@ -132,4 +147,6 @@ class XElement(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
+
 

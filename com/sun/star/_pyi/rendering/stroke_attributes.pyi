@@ -48,6 +48,7 @@ class StrokeAttributes(object):
             EndCapType (int, optional): EndCapType value.
             JoinType (int, optional): JoinType value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class StrokeAttributes(object):
         
         The first element specifies the length of the first \"on\" segment of the dashing, the second element the length of the first \"off\" segment, and so forth. Give zero elements here for solid strokes. This array always have an even number of elements, with zero, as usual, counting as even here. Furthermore, each entry in this array must have a value that is positive (or 0.0)
         """
+        ...
 
 
     @property
@@ -66,6 +68,7 @@ class StrokeAttributes(object):
         
         The entries here are relative to the StrokeAttributes.StrokeWidth attribute above, i.e. the total width of all lines and spacings will always equal StrokeAttributes.StrokeWidth. The first element specifies the width of the rightmost line, when traveling from the start point of the path to the end point. The second element specifies the space between the first line and the second line, and so forth. If the array ends with a spacing, this spacing is included in the total width of the multiple-line stroke. That is, the stroke becomes asymmetric.
         """
+        ...
 
 
     @property
@@ -75,6 +78,7 @@ class StrokeAttributes(object):
         
         This value must be positive (or 0.0)
         """
+        ...
 
 
     @property
@@ -86,6 +90,7 @@ class StrokeAttributes(object):
         
         Before performing the actual comparison, implementations will multiply the MiterLimit with the current StrokeWidth, such that, with phi being the angle between the two joining segments, MiterLimit=1/sin(phi/2.0).
         """
+        ...
 
 
     @property
@@ -95,6 +100,7 @@ class StrokeAttributes(object):
         
         The start point is the first point of every polygon of the path poly-polygon.
         """
+        ...
 
 
     @property
@@ -104,6 +110,7 @@ class StrokeAttributes(object):
         
         The end point is the last point of every polygon of the path poly-polygon.
         """
+        ...
 
 
     @property
@@ -113,5 +120,6 @@ class StrokeAttributes(object):
         
         After every sub-stroke, i.e. after every line or curve segment within a single path polygon, a shape of this type is inserted into the stroke to glue the segments together. Please note that distinct polygons within the path poly-polygon are not connected, and therefore also not joined via the shape specified here.
         """
+        ...
 
 

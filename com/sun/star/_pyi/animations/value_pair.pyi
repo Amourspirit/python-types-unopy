@@ -40,6 +40,7 @@ class ValuePair(object):
             First (object, optional): First value.
             Second (object, optional): Second value.
         """
+        ...
 
 
     @property

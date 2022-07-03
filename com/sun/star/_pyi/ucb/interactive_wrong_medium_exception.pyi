@@ -46,11 +46,13 @@ class InteractiveWrongMediumException(ClassifiedInteractionRequest_9f72121b):
             Classification (InteractionClassification, optional): Classification value.
             Medium (object, optional): Medium value.
         """
+        ...
     @property
     def Medium(self) -> object:
         """
         identifies the medium that's needed to continue with the pending operation.
         """
+        ...
 
 
 __all__ = ['InteractiveWrongMediumException']

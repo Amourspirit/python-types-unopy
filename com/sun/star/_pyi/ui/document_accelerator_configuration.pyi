@@ -38,5 +38,6 @@ class DocumentAcceleratorConfiguration(XAcceleratorConfiguration_46580ffb):
     def createWithDocumentRoot(self, DocumentRoot: 'XStorage_8e460a32') -> None:
         """
         """
+        ...
 
 

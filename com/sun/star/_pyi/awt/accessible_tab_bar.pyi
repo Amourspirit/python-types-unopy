@@ -35,5 +35,6 @@ class AccessibleTabBar(XAccessibleContext_8eae119b, XAccessibleEventBroadcaster_
     See Also:
         `API AccessibleTabBar <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1AccessibleTabBar.html>`_
     """
+    ...
 
 

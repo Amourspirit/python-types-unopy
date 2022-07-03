@@ -34,8 +34,11 @@ class XBoundControl(XInterface_8f010a43):
         """
         determines whether the input is currently locked or not.
         """
+        ...
     def setLock(self, bLock: bool) -> None:
         """
         is used for altering the current lock state of the component.
         """
+        ...
+
 

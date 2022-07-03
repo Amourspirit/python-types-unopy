@@ -42,6 +42,7 @@ class HighlightedRange(object):
             PreferredColor (int, optional): PreferredColor value.
             AllowMerginigWithOtherRanges (bool, optional): AllowMerginigWithOtherRanges value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class HighlightedRange(object):
         """
         The range representation string of the highlighted range.
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class HighlightedRange(object):
         
         If this value is -1 take the whole sequence.
         """
+        ...
 
 
     @property
@@ -67,6 +70,7 @@ class HighlightedRange(object):
         
         This color may be ignored and replaced by a better fitting color, if it would be otherwise not well visible.
         """
+        ...
 
 
     @property
@@ -74,5 +78,6 @@ class HighlightedRange(object):
         """
         If the highlighted range is visually highlighted and this member is TRUE, the range given in RangeRepresentation may be included in a merged range rectangle spanning a bigger range.
         """
+        ...
 
 

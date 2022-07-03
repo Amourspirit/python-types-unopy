@@ -40,5 +40,6 @@ class theModuleUIConfigurationManagerSupplier(XModuleUIConfigurationManagerSuppl
     See Also:
         `API theModuleUIConfigurationManagerSupplier <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1ui_1_1theModuleUIConfigurationManagerSupplier.html>`_
     """
+    ...
 
 

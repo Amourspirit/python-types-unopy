@@ -32,5 +32,6 @@ class PreparedStatement(PreparedStatement_eef40d8c, XColumnsSupplier_f0600da9):
     See Also:
         `API PreparedStatement <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1PreparedStatement.html>`_
     """
+    ...
 
 

@@ -37,6 +37,7 @@ class XPrintable(XInterface_8f010a43):
         """
         The attributes of the current printer are used for formatting.
         """
+        ...
     def print(self, xOptions: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         prints the object.
@@ -44,6 +45,7 @@ class XPrintable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setPrinter(self, aPrinter: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         assigns a new printer to the object.
@@ -53,4 +55,6 @@ class XPrintable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

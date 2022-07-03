@@ -38,6 +38,7 @@ class XTimeContainer(XAnimationNode_1cf10eb9):
             com.sun.star.container.ElementExistException: ``ElementExistException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def insertAfter(self, newChild: 'XAnimationNode_1cf10eb9', refChild: 'XAnimationNode_1cf10eb9') -> 'XAnimationNode_1cf10eb9':
         """
 
@@ -47,6 +48,7 @@ class XTimeContainer(XAnimationNode_1cf10eb9):
             com.sun.star.container.ElementExistException: ``ElementExistException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def insertBefore(self, newChild: 'XAnimationNode_1cf10eb9', refChild: 'XAnimationNode_1cf10eb9') -> 'XAnimationNode_1cf10eb9':
         """
 
@@ -56,6 +58,7 @@ class XTimeContainer(XAnimationNode_1cf10eb9):
             com.sun.star.container.ElementExistException: ``ElementExistException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def removeChild(self, oldChild: 'XAnimationNode_1cf10eb9') -> 'XAnimationNode_1cf10eb9':
         """
 
@@ -64,6 +67,7 @@ class XTimeContainer(XAnimationNode_1cf10eb9):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def replaceChild(self, newChild: 'XAnimationNode_1cf10eb9', oldChild: 'XAnimationNode_1cf10eb9') -> 'XAnimationNode_1cf10eb9':
         """
 
@@ -73,4 +77,6 @@ class XTimeContainer(XAnimationNode_1cf10eb9):
             com.sun.star.container.ElementExistException: ``ElementExistException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

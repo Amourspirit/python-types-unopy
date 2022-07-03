@@ -34,8 +34,11 @@ class XMimeTypeInfo(XInterface_8f010a43):
     def getSupportedMimeTypeNames(self) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def supportsMimeType(self, MimeTypeName: str) -> bool:
         """
         asks whether a MIME type is supported or not.
         """
+        ...
+
 

@@ -45,6 +45,7 @@ class FeatureState(object):
             Enabled (bool, optional): Enabled value.
             State (object, optional): State value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class FeatureState(object):
         
         available) in the current state of the form.
         """
+        ...
 
 
     @property
@@ -63,5 +65,6 @@ class FeatureState(object):
         
         The concrete semantics depends on the concrete FormFeature.
         """
+        ...
 
 

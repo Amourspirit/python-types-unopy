@@ -49,23 +49,27 @@ class CertificateValidationRequest(ClassifiedInteractionRequest_9f72121b):
             Certificate (XCertificate, optional): Certificate value.
             HostName (str, optional): HostName value.
         """
+        ...
     @property
     def CertificateValidity(self) -> int:
         """
         This value describes the validity of the certificate.
         """
+        ...
 
     @property
     def Certificate(self) -> XCertificate_e55b0d3b:
         """
         The certificate himself.
         """
+        ...
 
     @property
     def HostName(self) -> str:
         """
         The host name.
         """
+        ...
 
 
 __all__ = ['CertificateValidationRequest']

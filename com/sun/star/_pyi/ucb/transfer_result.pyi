@@ -42,6 +42,7 @@ class TransferResult(object):
             Target (str, optional): Target value.
             Result (object, optional): Result value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class TransferResult(object):
         """
         The URL of the source object.
         """
+        ...
 
 
     @property
@@ -56,6 +58,7 @@ class TransferResult(object):
         """
         The URL of the target folder into which to transfer (a copy of) the source object.
         """
+        ...
 
 
     @property
@@ -63,5 +66,6 @@ class TransferResult(object):
         """
         Either void if the transfer has been carried out successfully, or an exception indicating the kind of failure.
         """
+        ...
 
 

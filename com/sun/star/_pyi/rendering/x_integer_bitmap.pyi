@@ -52,6 +52,7 @@ class XIntegerBitmap(XIntegerReadOnlyBitmap_8cc01167):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setPixel(self, color: uno.ByteSequence, bitmapLayout: 'IntegerBitmapLayout_5b94106f', pos: 'IntegerPoint2D_8f0dc2') -> None:
         """
         Set a single pixel of the bitmap with the given color value.
@@ -64,4 +65,6 @@ class XIntegerBitmap(XIntegerReadOnlyBitmap_8cc01167):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

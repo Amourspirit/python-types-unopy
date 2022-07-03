@@ -52,6 +52,7 @@ class GridDataEvent(EventObject_a3d70b03):
             FirstRow (int, optional): FirstRow value.
             LastRow (int, optional): LastRow value.
         """
+        ...
 
 
     @property
@@ -61,6 +62,7 @@ class GridDataEvent(EventObject_a3d70b03):
         
         If FirstColumn is -1, the listener should assume that all rows of a grid's data model are affected.
         """
+        ...
 
 
     @property
@@ -68,6 +70,7 @@ class GridDataEvent(EventObject_a3d70b03):
         """
         denotes the last column affected by a change
         """
+        ...
 
 
     @property
@@ -77,6 +80,7 @@ class GridDataEvent(EventObject_a3d70b03):
         
         If FirstRow is -1, the listener should assume that all rows of a grid's data model are affected.
         """
+        ...
 
 
     @property
@@ -84,5 +88,6 @@ class GridDataEvent(EventObject_a3d70b03):
         """
         denotes the last row affected by a change
         """
+        ...
 
 

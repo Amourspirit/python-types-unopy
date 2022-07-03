@@ -53,5 +53,6 @@ class DataSourceBrowser(FormController_c9180c74, XController_b00e0b8f, XDispatch
     See Also:
         `API DataSourceBrowser <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1DataSourceBrowser.html>`_
     """
+    ...
 
 

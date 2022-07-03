@@ -44,6 +44,7 @@ class RevisionTag(object):
             Comment (str, optional): Comment value.
             Identifier (str, optional): Identifier value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class RevisionTag(object):
         """
         contains the time when the revision was created ( can be invalid )
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class RevisionTag(object):
         """
         contains an identifier for the author that created the revision( can be empty )
         """
+        ...
 
 
     @property
@@ -65,6 +68,7 @@ class RevisionTag(object):
         """
         contains a comment that the author has left for this revision ( can be empty )
         """
+        ...
 
 
     @property
@@ -74,5 +78,6 @@ class RevisionTag(object):
         
         This identifier can have any form. It can be something like \"1.2.3\" or \"Version 1\" etc. It depends on the revision control system how it names the revisions.
         """
+        ...
 
 

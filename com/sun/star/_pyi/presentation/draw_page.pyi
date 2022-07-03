@@ -45,6 +45,7 @@ class DrawPage(LinkTarget_ca220c5c, DrawPage_a56e0aff):
         
         If this is 0, the user must click to start each object animation and to change the page. If set to 1, the page is automatically switched. If it is set to 2, all object effects run automatically, but the user has to click on the page to change it.
         """
+        ...
     @property
     def DateTimeFormat(self) -> int:
         """
@@ -52,6 +53,7 @@ class DrawPage(LinkTarget_ca220c5c, DrawPage_a56e0aff):
         
         This is only used if IsDateTimeFixed is FALSE.
         """
+        ...
     @property
     def DateTimeText(self) -> str:
         """
@@ -59,66 +61,79 @@ class DrawPage(LinkTarget_ca220c5c, DrawPage_a56e0aff):
         
         This value is only used if IsDateTimeFixed is TRUE.
         """
+        ...
     @property
     def Duration(self) -> int:
         """
         If the property com.sun.star.drawing.DrawPage.Change is set to 1, this is the time in seconds this page is shown before switching to the next page.
         """
+        ...
     @property
     def Effect(self) -> 'FadeEffect_1890de1':
         """
         This is the effect that is used to fade in this page.
         """
+        ...
     @property
     def FooterText(self) -> str:
         """
         defines the text that is displayed in a footer textfield rendered on this page.
         """
+        ...
     @property
     def HeaderText(self) -> str:
         """
         defines the text that is displayed in a header textfield rendered on this page.
         """
+        ...
     @property
     def HighResDuration(self) -> float:
         """
         If the property com.sun.star.drawing.DrawPage.Change is set to 1, this is the time in seconds this page is shown before switching to the next page, also permitting sub-second precision here.
         """
+        ...
     @property
     def IsDateTimeFixed(self) -> bool:
         """
         defines if a date and time text field shows a fixed string value or the current date on this page.
         """
+        ...
     @property
     def IsDateTimeVisible(self) -> bool:
         """
         defines if a date and time presentation shape from the master page is visible on this page.
         """
+        ...
     @property
     def IsFooterVisible(self) -> bool:
         """
         defines if a footer presentation shape from the master page is visible on this page.
         """
+        ...
     @property
     def IsHeaderVisible(self) -> bool:
         """
         defines if a header presentation shape from the master page is visible on this page.
         """
+        ...
     @property
     def IsPageNumberVisible(self) -> bool:
         """
         defines if a page number presentation shape from the master page is visible on this page.
         """
+        ...
     @property
     def Layout(self) -> int:
         """
         If this property is not ZERO, this number specifies a presentation layout for this page.
         """
+        ...
     @property
     def Speed(self) -> 'AnimationSpeed_3fb20fb5':
         """
         Defines the speed of the fade-in effect of this page.
         """
+        ...
     @property
     def TransitionDuration(self) -> float:
         """
@@ -128,5 +143,6 @@ class DrawPage(LinkTarget_ca220c5c, DrawPage_a56e0aff):
         
             LibreOffice 6.1
         """
+        ...
 
 

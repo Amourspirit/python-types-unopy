@@ -43,6 +43,7 @@ class XFormulaOpCodeMapper(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getMappings(self, Names: 'typing.Tuple[str, ...]', Language: int) -> 'typing.Tuple[FormulaToken_bd1c0bf8, ...]':
         """
         returns a sequence of tokens matching the input sequence of strings in order.
@@ -58,6 +59,8 @@ class XFormulaOpCodeMapper(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
     @property
     def OpCodeExternal(self) -> int:
         """
@@ -65,6 +68,7 @@ class XFormulaOpCodeMapper(ABC):
         
         Needed to be able to identify which of the function names map to an Add-In implementation where this OpCode is used in the returned mapping and the programmatic name is available as additional information.
         """
+        ...
 
     @property
     def OpCodeUnknown(self) -> int:
@@ -73,5 +77,6 @@ class XFormulaOpCodeMapper(ABC):
         
         Used to identify which of the function names queried with getMappings() are unknown to the implementation.
         """
+        ...
 
 

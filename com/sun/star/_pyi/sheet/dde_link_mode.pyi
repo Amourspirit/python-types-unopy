@@ -32,6 +32,7 @@ class DDELinkMode(Enum):
     See Also:
         `API DDELinkMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html#a1b95ca535d92ad726d77981ea3d8ef8b>`_
     """
+    typeName: str = 'com.sun.star.sheet.DDELinkMode'
 
     DEFAULT: 'uno.Enum'
     """

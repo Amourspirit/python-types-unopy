@@ -44,6 +44,7 @@ class CameraGeometry(object):
             vpn (Direction3D, optional): vpn value.
             vup (Direction3D, optional): vup value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class CameraGeometry(object):
         """
         is the camera position
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class CameraGeometry(object):
         """
         is the camera view direction
         """
+        ...
 
 
     @property
@@ -65,5 +68,6 @@ class CameraGeometry(object):
         """
         is the camera up direction
         """
+        ...
 
 

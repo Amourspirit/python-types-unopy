@@ -38,13 +38,18 @@ class XAxisZSupplier(XInterface_8f010a43):
         """
         The returned property set contains scaling properties as well as formatting properties.
         """
+        ...
     def getZAxisTitle(self) -> 'XShape_8fd00a3d':
         """
         """
+        ...
     def getZHelpGrid(self) -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
     def getZMainGrid(self) -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
+
 

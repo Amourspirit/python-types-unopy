@@ -51,6 +51,7 @@ class XDocument(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def createAttributeNS(self, namespaceURI: str, qualifiedName: str) -> 'XAttr_840309ba':
         """
         Creates an attribute of the given qualified name and namespace URI.
@@ -60,6 +61,7 @@ class XDocument(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def createCDATASection(self, data: str) -> 'XCDATASection_d9c00c51':
         """
         Creates a CDATASection node whose value is the specified string.
@@ -69,14 +71,17 @@ class XDocument(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def createComment(self, data: str) -> 'XComment_a3690af2':
         """
         Creates a Comment node given the specified string.
         """
+        ...
     def createDocumentFragment(self) -> 'XDocumentFragment_17850e92':
         """
         Creates an empty DocumentFragment object.
         """
+        ...
     def createElement(self, tagName: str) -> 'XElement_a33d0ae9':
         """
         Creates an element of the type specified.
@@ -86,6 +91,7 @@ class XDocument(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def createElementNS(self, namespaceURI: str, qualifiedName: str) -> 'XElement_a33d0ae9':
         """
         Creates an element of the given qualified name and namespace URI.
@@ -95,6 +101,7 @@ class XDocument(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def createEntityReference(self, name: str) -> 'XEntityReference_9b70e2b':
         """
         Throws: DOMException - NOT_SUPPORTED_ERR: Raised if the type of node being imported is not supported.
@@ -104,6 +111,7 @@ class XDocument(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def createProcessingInstruction(self, target: str, data: str) -> 'XProcessingInstruction_691810de':
         """
         Creates a ProcessingInstruction node given the specified name and data strings.
@@ -113,34 +121,42 @@ class XDocument(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def createTextNode(self, data: str) -> 'XText_842c09c4':
         """
         Creates a Text node given the specified string.
         """
+        ...
     def getDoctype(self) -> 'XDocumentType_e0340d00':
         """
         The Document Type Declaration (see DocumentType) associated with this document.
         """
+        ...
     def getDocumentElement(self) -> 'XElement_a33d0ae9':
         """
         This is a convenience attribute that allows direct access to the child node that is the root element of the document.
         """
+        ...
     def getElementById(self, elementId: str) -> 'XElement_a33d0ae9':
         """
         Returns the Element whose ID is given by elementId.
         """
+        ...
     def getElementsByTagName(self, tagname: str) -> 'XNodeList_ae540b41':
         """
         Returns a NodeList of all the Elements with a given tag name in the order in which they are encountered in a preorder traversal of the Document tree.
         """
+        ...
     def getElementsByTagNameNS(self, namespaceURI: str, localName: str) -> 'XNodeList_ae540b41':
         """
         Returns a NodeList of all the Elements with a given local name and namespace URI in the order in which they are encountered in a preorder traversal of the Document tree.
         """
+        ...
     def getImplementation(self) -> 'XDOMImplementation_22320ec5':
         """
         The DOMImplementation object that handles this document.
         """
+        ...
     def importNode(self, importedNode: 'XNode_83fb09a5', deep: bool) -> 'XNode_83fb09a5':
         """
         Imports a node from another document to this document.
@@ -150,4 +166,6 @@ class XDocument(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
+
 

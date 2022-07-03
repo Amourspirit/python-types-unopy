@@ -42,15 +42,18 @@ class EllipseShape(FillProperties_f1200da8, LineProperties_f13f0da9, RotationDes
         """
         If the kind specifies an open circle, this is the end angle.
         """
+        ...
     @property
     def CircleKind(self) -> 'CircleKind_bca50bcc':
         """
         This is the kind of circle.
         """
+        ...
     @property
     def CircleStartAngle(self) -> int:
         """
         If the kind specifies an open circle, this is the start angle.
         """
+        ...
 
 

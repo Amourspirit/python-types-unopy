@@ -45,6 +45,7 @@ class InteractiveNetworkGeneralException(InteractiveNetworkException_7ca31159):
             Context (XInterface, optional): Context value.
             Classification (InteractionClassification, optional): Classification value.
         """
+        ...
 
 __all__ = ['InteractiveNetworkGeneralException']
 

@@ -40,6 +40,7 @@ class TextColumns(XTextColumns_b17f0bab):
         
         It is valid if the property IsAutomatic is set. Half of this distance is set to the left and right margins of all columns, except for the left margin of the first column, and the right margin of the last column.
         """
+        ...
     @property
     def IsAutomatic(self) -> bool:
         """
@@ -47,35 +48,42 @@ class TextColumns(XTextColumns_b17f0bab):
         
         This flag is set if XTextColumns.setColumnCount() is called and it is reset if XTextColumns.setColumns() is called.
         """
+        ...
     @property
     def SeparatorLineColor(self) -> 'Color_68e908c5':
         """
         determines the color of the separator lines between the columns.
         """
+        ...
     @property
     def SeparatorLineIsOn(self) -> bool:
         """
         determines whether separator lines are on.
         """
+        ...
     @property
     def SeparatorLineRelativeHeight(self) -> int:
         """
         determines the relative height of the separator lines between the columns.
         """
+        ...
     @property
     def SeparatorLineStyle(self) -> int:
         """
         determines the style of the separator lines between the columns.
         """
+        ...
     @property
     def SeparatorLineVerticalAlignment(self) -> 'VerticalAlignment_8d0e12':
         """
         determines the vertical alignment of the separator lines between the columns.
         """
+        ...
     @property
     def SeparatorLineWidth(self) -> int:
         """
         determines the width of the separator lines between the columns.
         """
+        ...
 
 

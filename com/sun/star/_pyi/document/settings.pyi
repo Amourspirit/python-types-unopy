@@ -46,44 +46,53 @@ class Settings(XPropertySet_bc180bfa):
         
         This property serves to capture the current printer setup settings, such as paper tray, printer options, etc. The data can typically be interpreted only by the system that generated it. The PrinterSetup property may be used to save and restore the user's printer settings.
         """
+        ...
     @property
     def AddExternalLeading(self) -> bool:
         """
         layout engine should add value of a Font's \"external leading\" attribute to the line spacing.
         """
+        ...
     @property
     def ApplyUserData(self) -> bool:
         """
         specifies if the user-specific settings saved within a document should be loaded with the document.
         """
+        ...
     @property
     def AutoCalculate(self) -> bool:
         """
         """
+        ...
     @property
     def BitmapTableURL(self) -> str:
         """
         """
+        ...
     @property
     def CharacterCompressionType(self) -> int:
         """
         specifies the compression (character spacing) type used for Asian characters.
         """
+        ...
     @property
     def ColorTableURL(self) -> str:
         """
         contains the URL that points to a color table (file extension .soc) that will be used for showing a palette in dialogs using colors.
         """
+        ...
     @property
     def CurrentDatabaseCommand(self) -> str:
         """
         a string value, specifying the name of the object displayed currently (or the SQL statement used).
         """
+        ...
     @property
     def CurrentDatabaseCommandType(self) -> int:
         """
         determines the interpretation of the property DataTableName.
         """
+        ...
     @property
     def CurrentDatabaseDataSource(self) -> str:
         """
@@ -91,14 +100,17 @@ class Settings(XPropertySet_bc180bfa):
         
         The data source can e.g. be used for feeding a form letter.
         """
+        ...
     @property
     def DashTableURL(self) -> str:
         """
         """
+        ...
     @property
     def DefaultTabStop(self) -> int:
         """
         """
+        ...
     @property
     def EmbedAsianScriptFonts(self) -> bool:
         """
@@ -108,6 +120,7 @@ class Settings(XPropertySet_bc180bfa):
         
             LibreOffice 6.2
         """
+        ...
     @property
     def EmbedComplexScriptFonts(self) -> bool:
         """
@@ -117,6 +130,7 @@ class Settings(XPropertySet_bc180bfa):
         
             LibreOffice 6.2
         """
+        ...
     @property
     def EmbedFonts(self) -> bool:
         """
@@ -128,6 +142,7 @@ class Settings(XPropertySet_bc180bfa):
         
             LibreOffice 4.0
         """
+        ...
     @property
     def EmbedLatinScriptFonts(self) -> bool:
         """
@@ -137,6 +152,7 @@ class Settings(XPropertySet_bc180bfa):
         
             LibreOffice 6.2
         """
+        ...
     @property
     def EmbedOnlyUsedFonts(self) -> bool:
         """
@@ -146,6 +162,7 @@ class Settings(XPropertySet_bc180bfa):
         
             LibreOffice 6.2
         """
+        ...
     @property
     def EmbedSystemFonts(self) -> bool:
         """
@@ -157,24 +174,29 @@ class Settings(XPropertySet_bc180bfa):
         
             LibreOffice 4.0
         """
+        ...
     @property
     def FieldAutoUpdate(self) -> bool:
         """
         specifies if fields in text documents are updated automatically.
         """
+        ...
     @property
     def ForbiddenCharacters(self) -> 'XForbiddenCharacters_df60e2d':
         """
         gives access to the set of forbidden characters.
         """
+        ...
     @property
     def GradientTableURL(self) -> str:
         """
         """
+        ...
     @property
     def HatchTableURL(self) -> str:
         """
         """
+        ...
     @property
     def IsKernAsianPunctuation(self) -> bool:
         """
@@ -182,6 +204,7 @@ class Settings(XPropertySet_bc180bfa):
         
         Applies only if kerning is enabled.
         """
+        ...
     @property
     def IsPrintBooklet(self) -> bool:
         """
@@ -189,6 +212,7 @@ class Settings(XPropertySet_bc180bfa):
         
         Note, that you have to print in duplex mode, if both, IsPrintBookletFront and IsPrintBookletBack are set to TRUE.
         """
+        ...
     @property
     def IsPrintBookletBack(self) -> bool:
         """
@@ -198,6 +222,7 @@ class Settings(XPropertySet_bc180bfa):
         
         This is especially useful, if your printer does not supply duplex printing.
         """
+        ...
     @property
     def IsPrintBookletFront(self) -> bool:
         """
@@ -207,10 +232,12 @@ class Settings(XPropertySet_bc180bfa):
         
         This is especially useful, if your printer does not supply duplex printing.
         """
+        ...
     @property
     def LineEndTableURL(self) -> str:
         """
         """
+        ...
     @property
     def LinkUpdateMode(self) -> int:
         """
@@ -218,11 +245,13 @@ class Settings(XPropertySet_bc180bfa):
         
         For supported values see the constants group LinkUpdateModes.
         """
+        ...
     @property
     def PrintQuality(self) -> int:
         """
         how printing uses color.
         """
+        ...
     @property
     def PrinterIndependentLayout(self) -> int:
         """
@@ -230,16 +259,19 @@ class Settings(XPropertySet_bc180bfa):
         
         For supported values see the constants group PrinterIndependentLayout.
         """
+        ...
     @property
     def PrinterName(self) -> str:
         """
         printer used by the document.
         """
+        ...
     @property
     def SaveVersionOnClose(self) -> bool:
         """
         specifies if a new version is created if a document has been modified and you want to close it.
         """
+        ...
     @property
     def UpdateFromTemplate(self) -> bool:
         """
@@ -247,5 +279,6 @@ class Settings(XPropertySet_bc180bfa):
         
         Applies only for documents that were created from a template.
         """
+        ...
 
 

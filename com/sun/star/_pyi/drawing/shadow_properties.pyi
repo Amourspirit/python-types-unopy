@@ -39,30 +39,36 @@ class ShadowProperties(ABC):
         
         The other shadow properties are only applied if this is set to TRUE.
         """
+        ...
     @property
     def ShadowBlur(self) -> int:
         """
         This defines the degree of blur of the shadow in points.
         """
+        ...
     @property
     def ShadowColor(self) -> 'Color_68e908c5':
         """
         This is the color of the shadow of this Shape.
         """
+        ...
     @property
     def ShadowTransparence(self) -> int:
         """
         This defines the degree of transparence of the shadow in percent.
         """
+        ...
     @property
     def ShadowXDistance(self) -> int:
         """
         This is the horizontal distance of the left edge of the Shape to the shadow.
         """
+        ...
     @property
     def ShadowYDistance(self) -> int:
         """
         This is the vertical distance of the top edge of the Shape to the shadow.
         """
+        ...
 
 

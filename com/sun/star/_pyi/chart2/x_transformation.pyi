@@ -37,10 +37,12 @@ class XTransformation(XInterface_8f010a43):
         """
         the dimension of the input coordinate sequence that is to be transformed by the transform() method.
         """
+        ...
     def getTargetDimension(self) -> int:
         """
         the dimension of the output coordinate sequence that is the result of the transform() method.
         """
+        ...
     def transform(self, aValues: 'typing.Tuple[float, ...]') -> 'typing.Tuple[float, ...]':
         """
         transforms the given input data tuple, given in the source coordinate system, according to the internal transformation rules, into a tuple of transformed coordinates in the destination coordinate system.
@@ -50,4 +52,6 @@ class XTransformation(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

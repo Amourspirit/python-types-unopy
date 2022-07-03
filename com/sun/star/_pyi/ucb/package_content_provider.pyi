@@ -31,5 +31,6 @@ class PackageContentProvider(XContentProvider_d4150cc0):
     See Also:
         `API PackageContentProvider <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1PackageContentProvider.html>`_
     """
+    ...
 
 

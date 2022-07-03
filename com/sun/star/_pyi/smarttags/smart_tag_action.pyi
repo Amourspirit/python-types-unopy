@@ -35,5 +35,6 @@ class SmartTagAction(XSmartTagAction_1d750eb7):
     See Also:
         `API SmartTagAction <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1smarttags_1_1SmartTagAction.html>`_
     """
+    ...
 
 

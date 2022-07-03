@@ -32,6 +32,7 @@ class PushButtonType(Enum):
     See Also:
         `API PushButtonType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt.html#aa4e49c7e6c5bf2b4d010ad4a50b90ec0>`_
     """
+    typeName: str = 'com.sun.star.awt.PushButtonType'
 
     CANCEL: 'uno.Enum'
     """

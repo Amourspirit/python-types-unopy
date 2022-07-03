@@ -19,7 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.accessibility
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XAccessibleGroupPosition(XInterface_8f010a43):
@@ -30,16 +30,19 @@ class XAccessibleGroupPosition(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.accessibility.XAccessibleGroupPosition']
 
-    def getGroupPosition(self, accoject: object) -> 'typing.Tuple[int, ...]':
+    def getGroupPosition(self, accoject: object) -> uno.ByteSequence:
         """
 
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getObjectLink(self, accoject: object) -> str:
         """
 
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

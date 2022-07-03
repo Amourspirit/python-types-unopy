@@ -40,6 +40,7 @@ class URI(XURI_5682078c):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def createKnown(self, Id: int) -> None:
         """
         creates a URI RDF node for a well-known URI.
@@ -47,6 +48,7 @@ class URI(XURI_5682078c):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def createNS(self, Namespace: str, LocalName: str) -> None:
         """
         creates a URI RDF node from namespace prefix and local name.
@@ -54,5 +56,6 @@ class URI(XURI_5682078c):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

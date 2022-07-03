@@ -54,31 +54,37 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         
             LibreOffice 4.2
         """
+        ...
     @property
     def Hyperlink(self) -> str:
         """
         this property lets you get and set a hyperlink for this shape.
         """
+        ...
     @property
     def LayerID(self) -> int:
         """
         This is the ID of the Layer to which this Shape is attached.
         """
+        ...
     @property
     def LayerName(self) -> str:
         """
         This is the name of the Layer to which this Shape is attached.
         """
+        ...
     @property
     def MoveProtect(self) -> bool:
         """
         With this set to TRUE, this Shape cannot be moved interactively in the user interface.
         """
+        ...
     @property
     def Name(self) -> str:
         """
         This is the name of this Shape.
         """
+        ...
     @property
     def NavigationOrder(self) -> int:
         """
@@ -86,11 +92,13 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         
         If this value is negative, the navigation order for this shapes page is equal to the z-order.
         """
+        ...
     @property
     def Printable(self) -> bool:
         """
         If this is FALSE, the Shape is not visible on printer outputs.
         """
+        ...
     @property
     def RelativeHeight(self) -> int:
         """
@@ -102,6 +110,7 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         
             LibreOffice 4.3
         """
+        ...
     @property
     def RelativeHeightRelation(self) -> int:
         """
@@ -113,6 +122,7 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         
             LibreOffice 4.3
         """
+        ...
     @property
     def RelativeWidth(self) -> int:
         """
@@ -124,6 +134,7 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         
             LibreOffice 4.3
         """
+        ...
     @property
     def RelativeWidthRelation(self) -> int:
         """
@@ -135,6 +146,7 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         
             LibreOffice 4.3
         """
+        ...
     @property
     def ShapeUserDefinedAttributes(self) -> 'XNameContainer_cb90e47':
         """
@@ -142,16 +154,19 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         
         They will be saved to and restored from automatic styles inside xml files.
         """
+        ...
     @property
     def SizeProtect(self) -> bool:
         """
         With this set to TRUE, this Shape may not be sized interactively in the user interface.
         """
+        ...
     @property
     def Style(self) -> 'XStyle_7c7f09a2':
         """
         this property lets you get and set a style for this shape.
         """
+        ...
     @property
     def Transformation(self) -> 'HomogenMatrix3_f0fb0d69':
         """
@@ -159,6 +174,7 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         
         The transformation is a 3x3 homogeneous matrix and can contain translation, rotation, shearing and scaling.
         """
+        ...
     @property
     def Visible(self) -> bool:
         """
@@ -166,10 +182,12 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         
         Please note that the Shape may still be visible when printed, see Printable.
         """
+        ...
     @property
     def ZOrder(self) -> int:
         """
         is used to query or change the ZOrder of this Shape.
         """
+        ...
 
 

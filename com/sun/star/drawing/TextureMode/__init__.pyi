@@ -29,6 +29,7 @@ Enum
 See Also:
     `API TextureMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a54e2c5973b14c9a43a7acf8fc80b3edb>`_
 """
+typeName: str = 'com.sun.star.drawing.TextureMode'
 
 BLEND: 'uno.Enum'
 """

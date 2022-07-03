@@ -39,4 +39,6 @@ class XInputStreamProvider(XInterface_8f010a43):
         """
         Creates a new input stream, every time providing the same data.
         """
+        ...
+
 

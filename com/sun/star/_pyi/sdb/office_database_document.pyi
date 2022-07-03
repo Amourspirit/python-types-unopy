@@ -41,5 +41,6 @@ class OfficeDatabaseDocument(OfficeDocument_fecd0df2, XLoadable_989a0a7f, XScrip
     See Also:
         `API OfficeDatabaseDocument <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html>`_
     """
+    ...
 
 

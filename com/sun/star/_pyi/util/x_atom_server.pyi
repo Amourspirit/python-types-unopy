@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.util
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .atom_class_request import AtomClassRequest as AtomClassRequest_e2a60d36
@@ -42,22 +43,28 @@ class XAtomServer(XInterface_8f010a43):
         """
         registers or searches for a string
         """
+        ...
     def getAtomDescriptions(self, atoms: 'typing.Tuple[AtomClassRequest_e2a60d36, ...]') -> 'typing.Tuple[str, ...]':
         """
         returns the strings for an arbitrary amount of atoms of multiple classes
         """
+        ...
     def getClass(self, atomClass: int) -> 'typing.Tuple[AtomDescription_d6080cdb, ...]':
         """
         returns a whole atom class
         """
-    def getClasses(self, atomClasses: 'typing.Tuple[int, ...]') -> 'typing.Tuple[typing.Tuple[AtomDescription_d6080cdb, ...], ...]':
+        ...
+    def getClasses(self, atomClasses: uno.ByteSequence) -> 'typing.Tuple[typing.Tuple[AtomDescription_d6080cdb, ...], ...]':
         """
         returns multiple atom classes
         """
+        ...
     def getRecentAtoms(self, atomClass: int, atom: int) -> 'typing.Tuple[AtomDescription_d6080cdb, ...]':
         """
         returns the atoms that have been registered to a class after an already known atom
         
         Hint to implementor: using ascending atoms is the easiest way to decide, which atoms are recent.
         """
+        ...
+
 

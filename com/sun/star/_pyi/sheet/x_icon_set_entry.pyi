@@ -32,15 +32,20 @@ class XIconSetEntry(ABC):
     def getFormula(self) -> str:
         """
         """
+        ...
     def getType(self) -> int:
         """
         See com.sun.star.sheet.IconSetEntryType for possible values.
         """
+        ...
     def setFormula(self, Formula: str) -> None:
         """
         """
+        ...
     def setType(self, Type: int) -> None:
         """
         See com.sun.star.sheet.IconSetEntryType for possible values.
         """
+        ...
+
 

@@ -42,6 +42,7 @@ class Position3D(object):
             PositionY (float, optional): PositionY value.
             PositionZ (float, optional): PositionZ value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class Position3D(object):
         """
         the position on the X-Axis in the 3D room in 100th of millimeters
         """
+        ...
 
 
     @property
@@ -56,6 +58,7 @@ class Position3D(object):
         """
         the position on the Y-Axis in the 3D room in 100th of millimeters
         """
+        ...
 
 
     @property
@@ -63,5 +66,6 @@ class Position3D(object):
         """
         the position on the Z-Axis in the 3D room in 100th of millimeters
         """
+        ...
 
 

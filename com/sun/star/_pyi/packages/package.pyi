@@ -36,5 +36,6 @@ class Package(XHierarchicalNameAccess_9e2611b5, XInitialization_d46c0cca, XSingl
     See Also:
         `API Package <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1packages_1_1Package.html>`_
     """
+    ...
 
 

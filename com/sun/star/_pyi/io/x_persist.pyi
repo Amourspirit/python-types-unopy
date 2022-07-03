@@ -37,6 +37,7 @@ class XPersist(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def write(self, URL: str) -> None:
         """
         writes all the persistent data of the object to the URL.
@@ -44,4 +45,6 @@ class XPersist(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

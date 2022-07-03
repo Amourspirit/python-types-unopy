@@ -45,68 +45,86 @@ class XWindow(XComponent_98dc0ab5):
         """
         adds a focus listener to the object.
         """
+        ...
     def addKeyListener(self, xListener: 'XKeyListener_a4020b1b') -> None:
         """
         adds a key listener to the object.
         """
+        ...
     def addMouseListener(self, xListener: 'XMouseListener_bc1d0bfb') -> None:
         """
         adds a mouse listener to the object.
         """
+        ...
     def addMouseMotionListener(self, xListener: 'XMouseMotionListener_c6a0e71') -> None:
         """
         adds a mouse motion listener to the object.
         """
+        ...
     def addPaintListener(self, xListener: 'XPaintListener_bb6d0bee') -> None:
         """
         adds a paint listener to the object.
         """
+        ...
     def addWindowListener(self, xListener: 'XWindowListener_c8aa0c6a') -> None:
         """
         adds a window listener to the object.
         """
+        ...
     def getPosSize(self) -> 'Rectangle_84b109e9':
         """
         returns the outer bounds of the window.
         """
+        ...
     def removeFocusListener(self, xListener: 'XFocusListener_bb8e0bf2') -> None:
         """
         removes the specified focus listener from the listener list.
         """
+        ...
     def removeKeyListener(self, xListener: 'XKeyListener_a4020b1b') -> None:
         """
         removes the specified key listener from the listener list.
         """
+        ...
     def removeMouseListener(self, xListener: 'XMouseListener_bc1d0bfb') -> None:
         """
         removes the specified mouse listener from the listener list.
         """
+        ...
     def removeMouseMotionListener(self, xListener: 'XMouseMotionListener_c6a0e71') -> None:
         """
         removes the specified mouse motion listener from the listener list.
         """
+        ...
     def removePaintListener(self, xListener: 'XPaintListener_bb6d0bee') -> None:
         """
         removes the specified paint listener from the listener list.
         """
+        ...
     def removeWindowListener(self, xListener: 'XWindowListener_c8aa0c6a') -> None:
         """
         removes the specified window listener from the listener list.
         """
+        ...
     def setEnable(self, Enable: bool) -> None:
         """
         enables or disables the window depending on the parameter.
         """
+        ...
     def setFocus(self) -> None:
         """
         sets the focus to the window.
         """
+        ...
     def setPosSize(self, X: int, Y: int, Width: int, Height: int, Flags: int) -> None:
         """
         sets the outer bounds of the window.
         """
+        ...
     def setVisible(self, Visible: bool) -> None:
         """
         shows or hides the window depending on the parameter.
         """
+        ...
+
 

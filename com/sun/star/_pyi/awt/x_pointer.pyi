@@ -34,8 +34,11 @@ class XPointer(XInterface_8f010a43):
         """
         returns the currently set SystemPointer of this mouse pointer.
         """
+        ...
     def setType(self, nType: int) -> None:
         """
         selects a SystemPointer for this mouse pointer.
         """
+        ...
+
 

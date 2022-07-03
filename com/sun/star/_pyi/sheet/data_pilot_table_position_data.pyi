@@ -47,6 +47,7 @@ class DataPilotTablePositionData(object):
             PositionType (int, optional): PositionType value.
             PositionData (object, optional): PositionData value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class DataPilotTablePositionData(object):
         
         See DataPilotTablePositionType for how to interpret the value of this parameter.
         """
+        ...
 
 
     @property
@@ -65,5 +67,6 @@ class DataPilotTablePositionData(object):
         
         When the value of PositionType is DataPilotTablePositionType.RESULT, DataPilotTablePositionData.PositionData contains an instance of type DataPilotTableResultData, whereas when the value of DataPilotTablePositionData.PositionType is either DataPilotTablePositionType.ROW_HEADER or DataPilotTablePositionType.COLUMN_HEADER, then the PositionData member contains an instance of type DataPilotTableHeaderData.
         """
+        ...
 
 

@@ -33,5 +33,6 @@ class SynchronousFrameLoader(XNamed_a6520b08, XSynchronousFrameLoader_5a8d1058, 
     See Also:
         `API SynchronousFrameLoader <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1frame_1_1SynchronousFrameLoader.html>`_
     """
+    ...
 
 

@@ -35,19 +35,26 @@ class XUIObject(ABC):
     def executeAction(self, action: str, propValues: 'PropertyValues_d6470ce6') -> None:
         """
         """
+        ...
     def getChild(self, id: str) -> 'XUIObject':
         """
         """
+        ...
     def getChildren(self) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def getHierarchy(self) -> str:
         """
         """
+        ...
     def getState(self) -> 'PropertyValues_d6470ce6':
         """
         """
+        ...
     def getType(self) -> str:
         """
         """
+        ...
+
 

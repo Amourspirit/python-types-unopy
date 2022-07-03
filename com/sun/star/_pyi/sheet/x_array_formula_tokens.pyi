@@ -37,8 +37,11 @@ class XArrayFormulaTokens(ABC):
         """
         returns the array formula as sequence of tokens.
         """
+        ...
     def setArrayTokens(self, aTokens: 'typing.Tuple[FormulaToken_bd1c0bf8, ...]') -> None:
         """
         sets the array formula as sequence of tokens.
         """
+        ...
+
 

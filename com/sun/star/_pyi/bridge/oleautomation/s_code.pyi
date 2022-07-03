@@ -48,6 +48,7 @@ class SCode(object):
         Arguments:
             Value (int, optional): Value value.
         """
+        ...
 
 
     @property

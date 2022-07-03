@@ -38,55 +38,66 @@ class TextSortDescriptor(SortDescriptor_ca680c8d):
         """
         contains the character that marks the separation of columns.
         """
+        ...
     @property
     def IsSortAscending0(self) -> bool:
         """
         determines if the sorting in the first search key is done in ascending or descending order.
         """
+        ...
     @property
     def IsSortAscending1(self) -> bool:
         """
         determines if the sorting in the second search key is done in ascending or descending order.
         """
+        ...
     @property
     def IsSortAscending2(self) -> bool:
         """
         determines if the sorting in the third search key is done in ascending or descending order.
         """
+        ...
     @property
     def IsSortInTable(self) -> bool:
         """
         determines if the content of a table is to be sorted.
         """
+        ...
     @property
     def IsSortNumeric0(self) -> bool:
         """
         determines if the sorting in the first search key is done numeric or alphanumeric order.
         """
+        ...
     @property
     def IsSortNumeric1(self) -> bool:
         """
         determines if the sorting in the second search key is done in numeric or alphanumeric order.
         """
+        ...
     @property
     def IsSortNumeric2(self) -> bool:
         """
         determines if the sorting in the third search key is done in numeric or alphanumeric order.
         """
+        ...
     @property
     def SortRowOrColumnNo0(self) -> int:
         """
         contains the row or column index used in the first search key.
         """
+        ...
     @property
     def SortRowOrColumnNo1(self) -> int:
         """
         contains the row or column index used in the second search key.
         """
+        ...
     @property
     def SortRowOrColumnNo2(self) -> int:
         """
         contains the row or column index used in the third search key.
         """
+        ...
 
 

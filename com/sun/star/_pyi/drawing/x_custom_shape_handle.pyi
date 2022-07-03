@@ -37,8 +37,11 @@ class XCustomShapeHandle(XInterface_8f010a43):
         """
         is getting the actual handle position
         """
+        ...
     def setControllerPosition(self, aPoint: 'Point_5fb2085e') -> None:
         """
         is setting a new position for the handle
         """
+        ...
+
 

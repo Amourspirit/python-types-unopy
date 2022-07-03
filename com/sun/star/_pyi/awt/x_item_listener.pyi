@@ -37,4 +37,6 @@ class XItemListener(XEventListener_c7230c4a):
         """
         is invoked when an item changes its state.
         """
+        ...
+
 

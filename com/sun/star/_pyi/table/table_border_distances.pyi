@@ -51,6 +51,7 @@ class TableBorderDistances(object):
             RightDistance (int, optional): RightDistance value.
             IsRightDistanceValid (bool, optional): IsRightDistanceValid value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class TableBorderDistances(object):
         """
         contains the distance between the top lines and other contents.
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class TableBorderDistances(object):
         """
         specifies whether the value of TableBorder.TopDistance is used.
         """
+        ...
 
 
     @property
@@ -72,6 +75,7 @@ class TableBorderDistances(object):
         """
         contains the distance between the bottom lines and other contents.
         """
+        ...
 
 
     @property
@@ -79,6 +83,7 @@ class TableBorderDistances(object):
         """
         specifies whether the value of TableBorder.BottomDistance is used.
         """
+        ...
 
 
     @property
@@ -86,6 +91,7 @@ class TableBorderDistances(object):
         """
         contains the distance between the left lines and other contents.
         """
+        ...
 
 
     @property
@@ -93,6 +99,7 @@ class TableBorderDistances(object):
         """
         specifies whether the value of TableBorder.LeftDistance is used.
         """
+        ...
 
 
     @property
@@ -100,6 +107,7 @@ class TableBorderDistances(object):
         """
         contains the distance between the right lines and other contents.
         """
+        ...
 
 
     @property
@@ -107,5 +115,6 @@ class TableBorderDistances(object):
         """
         specifies whether the value of TableBorder.RightDistance is used.
         """
+        ...
 
 

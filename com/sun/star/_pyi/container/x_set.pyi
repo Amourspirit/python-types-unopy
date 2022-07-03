@@ -33,6 +33,7 @@ class XSet(XEnumerationAccess_4bac0ffc):
     def has(self, aElement: object) -> bool:
         """
         """
+        ...
     def insert(self, aElement: object) -> None:
         """
         inserts the given element into this container.
@@ -41,6 +42,7 @@ class XSet(XEnumerationAccess_4bac0ffc):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def remove(self, aElement: object) -> None:
         """
         removes the given element from this container.
@@ -49,4 +51,6 @@ class XSet(XEnumerationAccess_4bac0ffc):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

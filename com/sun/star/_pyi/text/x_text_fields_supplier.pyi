@@ -39,7 +39,10 @@ class XTextFieldsSupplier(XInterface_8f010a43):
     def getTextFieldMasters(self) -> 'XNameAccess_e2ab0cf6':
         """
         """
+        ...
     def getTextFields(self) -> 'XEnumerationAccess_4bac0ffc':
         """
         """
+        ...
+
 

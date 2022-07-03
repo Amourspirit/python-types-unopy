@@ -44,4 +44,6 @@ class XLocaleData5(XLocaleData4_a7ae0a9e):
         """
         returns an instance of com.sun.star.i18n.LocaleDataItem2 for a Locale.
         """
+        ...
+
 

@@ -19,7 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.text
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XNumberingTypeInfo(XInterface_8f010a43):
@@ -37,16 +37,21 @@ class XNumberingTypeInfo(XInterface_8f010a43):
         """
         returns the corresponding identifier to a numbering type.
         """
+        ...
     def getNumberingType(self, NumberingIdentifier: str) -> int:
         """
         returns the corresponding numbering type to an identifier.
         """
-    def getSupportedNumberingTypes(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getSupportedNumberingTypes(self) -> uno.ByteSequence:
         """
         returns the numbering type values that are supported by the component.
         """
+        ...
     def hasNumberingType(self, NumberingIdentifier: str) -> bool:
         """
         determines whether an identifier is supported.
         """
+        ...
+
 

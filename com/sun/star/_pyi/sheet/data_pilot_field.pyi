@@ -19,6 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.sheet
 import typing
+import uno
 from ..beans.x_property_set import XPropertySet as XPropertySet_bc180bfa
 from ..container.x_named import XNamed as XNamed_a6520b08
 from .x_data_pilot_field import XDataPilotField as XDataPilotField_e0350cdf
@@ -58,8 +59,9 @@ class DataPilotField(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotField_e03
         
         The order of the functions in this sequence is reflected in the DataPilot table. Multiple entries of the same function are ignored when setting the property.
         """
+        ...
     @property
-    def Subtotals2(self) -> 'typing.Tuple[int, ...]':
+    def Subtotals2(self) -> uno.ByteSequence:
         """
         specifies the functions used to calculate subtotals for this field.
         
@@ -73,11 +75,13 @@ class DataPilotField(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotField_e03
         
             LibreOffice 5.3
         """
+        ...
     @property
     def AutoShowInfo(self) -> 'DataPilotFieldAutoShowInfo_88d7114d':
         """
         enables the automatic inclusion of only a number of items with the highest or lowest result values.
         """
+        ...
     @property
     def Function(self) -> 'GeneralFunction_e2280d25':
         """
@@ -85,6 +89,7 @@ class DataPilotField(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotField_e03
         
         For column and row fields, this is the function for subtotals (GeneralFunction.NONE means no subtotals). For data fields, this is the function shown in the data pilot table.
         """
+        ...
     @property
     def Function2(self) -> int:
         """
@@ -96,6 +101,7 @@ class DataPilotField(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotField_e03
         
             LibreOffice 5.3
         """
+        ...
     @property
     def GroupInfo(self) -> 'DataPilotFieldGroupInfo_56691020':
         """
@@ -103,36 +109,43 @@ class DataPilotField(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotField_e03
         
         By changing the value of this property it is possible to modify the grouping settings of this field.
         """
+        ...
     @property
     def HasAutoShowInfo(self) -> bool:
         """
         specifies whether this field has auto show information.
         """
+        ...
     @property
     def HasLayoutInfo(self) -> bool:
         """
         specifies whether this field has layout information.
         """
+        ...
     @property
     def HasReference(self) -> bool:
         """
         specifies whether this field has a reference.
         """
+        ...
     @property
     def HasSortInfo(self) -> bool:
         """
         specifies whether this field has sorting information.
         """
+        ...
     @property
     def IsGroupField(self) -> bool:
         """
         specifies whether this field is a group field.
         """
+        ...
     @property
     def LayoutInfo(self) -> 'DataPilotFieldLayoutInfo_671e1091':
         """
         controls how the field's items are laid out in the result table.
         """
+        ...
     @property
     def Orientation(self) -> 'DataPilotFieldOrientation_78701113':
         """
@@ -140,35 +153,42 @@ class DataPilotField(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotField_e03
         
         If the orientation of a field has been changed using this property, the field will be moved to the last position in the collection of all fields with the specified orientation.
         """
+        ...
     @property
     def Reference(self) -> 'DataPilotFieldReference_562f1016':
         """
         controls how the results are shown in relation to a selected reference result.
         """
+        ...
     @property
     def SelectedPage(self) -> str:
         """
         specifies the selected page which is used to filter the data pilot.
         """
+        ...
     @property
     def ShowEmpty(self) -> bool:
         """
         specifies whether to show this field also if it is empty or not.
         """
+        ...
     @property
     def SortInfo(self) -> 'DataPilotFieldSortInfo_466d0fbb':
         """
         controls how the field's items are sorted.
         """
+        ...
     @property
     def UseSelectedPage(self) -> bool:
         """
         specifies whether to use the selected page to filter the data pilot or show all.
         """
+        ...
     @property
     def UsedHierarchy(self) -> str:
         """
         specifies which hierarchy of the dimension is used.
         """
+        ...
 
 

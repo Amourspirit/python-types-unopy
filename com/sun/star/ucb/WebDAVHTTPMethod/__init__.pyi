@@ -29,6 +29,7 @@ Enum
 See Also:
     `API WebDAVHTTPMethod <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb.html#a3c143367536e0c519b25183505ae3ed7>`_
 """
+typeName: str = 'com.sun.star.ucb.WebDAVHTTPMethod'
 
 CONNECT: 'uno.Enum'
 """

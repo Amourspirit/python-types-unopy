@@ -41,6 +41,7 @@ class Link(object):
             Source (str, optional): Source value.
             Destination (str, optional): Destination value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class Link(object):
         """
         contains the source URI of the link.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class Link(object):
         """
         contains the destination URI of the link.
         """
+        ...
 
 

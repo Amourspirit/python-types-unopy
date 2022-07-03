@@ -36,6 +36,7 @@ class Input(TextField_90260a56):
         
         The field displays the text content.
         """
+        ...
     @property
     def Help(self) -> str:
         """
@@ -45,6 +46,7 @@ class Input(TextField_90260a56):
         
         It's content must NEVER be modified by the user.
         """
+        ...
     @property
     def Hint(self) -> str:
         """
@@ -52,5 +54,6 @@ class Input(TextField_90260a56):
         
         This hint may be used as help tip or as headline of a corresponding dialog to edit the field content.
         """
+        ...
 
 

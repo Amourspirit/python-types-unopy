@@ -45,6 +45,7 @@ class FolderListEntry(object):
             Removed (bool, optional): Removed value.
             Purge (bool, optional): Purge value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class FolderListEntry(object):
         """
         The title of the folder.
         """
+        ...
 
 
     @property
@@ -59,6 +61,7 @@ class FolderListEntry(object):
         """
         A (unique) identifier for the folder (used by IMAP, where different folders with equal human-readable titles may exist; otherwise, it may be left empty).
         """
+        ...
 
 
     @property
@@ -66,6 +69,7 @@ class FolderListEntry(object):
         """
         The folder is subscribed.
         """
+        ...
 
 
     @property
@@ -73,6 +77,7 @@ class FolderListEntry(object):
         """
         The folder is new.
         """
+        ...
 
 
     @property
@@ -80,6 +85,7 @@ class FolderListEntry(object):
         """
         The folder has been removed.
         """
+        ...
 
 
     @property
@@ -87,5 +93,6 @@ class FolderListEntry(object):
         """
         The folder shall be purged (only used in conjunction with the FolderListCommand.SET).
         """
+        ...
 
 

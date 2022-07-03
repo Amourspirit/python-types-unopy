@@ -34,5 +34,6 @@ class TypeDetection(XContainerQuery_1cdd0edc, XNameContainer_cb90e47, XTypeDetec
     See Also:
         `API TypeDetection <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1document_1_1TypeDetection.html>`_
     """
+    ...
 
 

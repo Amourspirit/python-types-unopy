@@ -37,6 +37,7 @@ class XNamingService(XInterface_8f010a43):
         Raises:
             Exception: ``Exception``
         """
+        ...
     def registerObject(self, Name: str, Object: 'XInterface_8f010a43') -> None:
         """
         registers one object under the specified name.
@@ -46,6 +47,7 @@ class XNamingService(XInterface_8f010a43):
         Raises:
             Exception: ``Exception``
         """
+        ...
     def revokeObject(self, Name: str) -> None:
         """
         revokes the registration of an object.
@@ -55,4 +57,6 @@ class XNamingService(XInterface_8f010a43):
         Raises:
             Exception: ``Exception``
         """
+        ...
+
 

@@ -50,11 +50,13 @@ class GraphicFilterRequest(Exception_85530a09):
             Context (XInterface, optional): Context value.
             ErrCode (int, optional): ErrCode value.
         """
+        ...
     @property
     def ErrCode(self) -> int:
         """
         specifies the error code.
         """
+        ...
 
 
 __all__ = ['GraphicFilterRequest']

@@ -29,6 +29,7 @@ Enum
 See Also:
     `API CircleKind <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a6a52201f72a50075b45fea2c19340c0e>`_
 """
+typeName: str = 'com.sun.star.drawing.CircleKind'
 
 ARC: 'uno.Enum'
 """

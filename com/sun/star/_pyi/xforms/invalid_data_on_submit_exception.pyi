@@ -45,6 +45,7 @@ class InvalidDataOnSubmitException(VetoException_bdad0c13):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['InvalidDataOnSubmitException']
 

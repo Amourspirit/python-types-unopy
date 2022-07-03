@@ -37,30 +37,38 @@ class XTopWindowListener(XEventListener_c7230c4a):
         """
         is invoked when a window is activated.
         """
+        ...
     def windowClosed(self, e: 'EventObject_a3d70b03') -> None:
         """
         is invoked when a window has been closed.
         """
+        ...
     def windowClosing(self, e: 'EventObject_a3d70b03') -> None:
         """
         is invoked when a window is in the process of being closed.
         
         The close operation can be overridden at this point.
         """
+        ...
     def windowDeactivated(self, e: 'EventObject_a3d70b03') -> None:
         """
         is invoked when a window is deactivated.
         """
+        ...
     def windowMinimized(self, e: 'EventObject_a3d70b03') -> None:
         """
         is invoked when a window is iconified.
         """
+        ...
     def windowNormalized(self, e: 'EventObject_a3d70b03') -> None:
         """
         is invoked when a window is deiconified.
         """
+        ...
     def windowOpened(self, e: 'EventObject_a3d70b03') -> None:
         """
         is invoked when a window has been opened.
         """
+        ...
+
 

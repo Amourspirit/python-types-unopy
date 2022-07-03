@@ -41,8 +41,11 @@ class XDataImporter(XInterface_8f010a43):
         """
         cancels the import process.
         """
+        ...
     def importData(self, aActiveSource: 'XActiveDataSource_d1900c7f', Component: 'XComponent_98dc0ab5', aListener: 'XDataTransferEventListener_54d6103f') -> None:
         """
         imports data for a component from an active data source.
         """
+        ...
+
 

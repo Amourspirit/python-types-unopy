@@ -29,6 +29,7 @@ Enum
 See Also:
     `API TableOrientation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1table.html#a2b2c6150472f0123357a2273c315401c>`_
 """
+typeName: str = 'com.sun.star.table.TableOrientation'
 
 COLUMNS: 'uno.Enum'
 """

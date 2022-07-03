@@ -41,6 +41,7 @@ class NamedValue(object):
             Name (str, optional): Name value.
             Value (object, optional): Value value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class NamedValue(object):
         """
         specifies the name part of the pair
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class NamedValue(object):
         """
         specifies the value part of the pair.
         """
+        ...
 
 

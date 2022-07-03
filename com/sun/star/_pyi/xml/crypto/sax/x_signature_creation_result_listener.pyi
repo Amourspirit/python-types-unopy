@@ -39,4 +39,6 @@ class XSignatureCreationResultListener(XInterface_8f010a43):
         """
         Notifies the signature creation result.
         """
+        ...
+
 

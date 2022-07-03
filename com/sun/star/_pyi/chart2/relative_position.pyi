@@ -45,6 +45,7 @@ class RelativePosition(object):
             Secondary (float, optional): Secondary value.
             Anchor (Alignment, optional): Anchor value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class RelativePosition(object):
         
         The values are relative to a reference size (for example the page size). Values between 0 and 1 span the complete bounding rectangle.
         """
+        ...
 
 
     @property
@@ -71,6 +73,7 @@ class RelativePosition(object):
         
         The values are relative to a reference size (for example the page size). Values between 0 and 1 span the complete bounding rectangle.
         """
+        ...
 
 
     @property
@@ -82,5 +85,6 @@ class RelativePosition(object):
         
         For example if Anchor is TOP_LEFT the top left corner of an object will be placed at the given coordinates. If Anchor is RIGHT the right middle corner of the object will be placed at the given coordinates.
         """
+        ...
 
 

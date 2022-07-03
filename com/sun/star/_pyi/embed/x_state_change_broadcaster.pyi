@@ -37,8 +37,11 @@ class XStateChangeBroadcaster(XInterface_8f010a43):
         """
         adds the specified listener to receive events about states change
         """
+        ...
     def removeStateChangeListener(self, xListener: 'XStateChangeListener_25720eea') -> None:
         """
         removes the specified listener
         """
+        ...
+
 

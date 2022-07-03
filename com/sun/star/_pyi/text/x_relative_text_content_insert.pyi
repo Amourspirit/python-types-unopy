@@ -46,6 +46,7 @@ class XRelativeTextContentInsert(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def insertTextContentBefore(self, xNewContent: 'XTextContent_b16e0ba5', xSuccessor: 'XTextContent_b16e0ba5') -> None:
         """
         inserts text the new text content before of the successor argument.
@@ -55,4 +56,6 @@ class XRelativeTextContentInsert(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

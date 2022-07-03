@@ -41,6 +41,7 @@ class Point(object):
             X (int, optional): X value.
             Y (int, optional): Y value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class Point(object):
         """
         specifies the x-coordinate.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class Point(object):
         """
         specifies the y-coordinate.
         """
+        ...
 
 

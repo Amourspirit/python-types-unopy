@@ -41,6 +41,7 @@ class ProtocolProperty(object):
             Name (str, optional): Name value.
             Value (object, optional): Value value.
         """
+        ...
 
 
     @property

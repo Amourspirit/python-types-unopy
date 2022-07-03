@@ -34,5 +34,6 @@ class UnoControlListBox(UnoControl_8f2c0a67, XLayoutConstrains_e2e50d4e, XListBo
     See Also:
         `API UnoControlListBox <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlListBox.html>`_
     """
+    ...
 
 

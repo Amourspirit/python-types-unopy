@@ -35,5 +35,6 @@ class Query(DataSettings_a3000b0c, XQueryDefinition_d3bf0cb8, XColumnsSupplier_f
     See Also:
         `API Query <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1Query.html>`_
     """
+    ...
 
 

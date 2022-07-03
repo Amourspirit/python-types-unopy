@@ -37,10 +37,13 @@ class XMasterPasswordHandling2(XMasterPasswordHandling_49900ff7):
         """
         allows to detect whether the default master password is used
         """
+        ...
     def useDefaultMasterPassword(self, xHandler: 'XInteractionHandler_bf80e51') -> bool:
         """
         allows to let the default password be used
         
         Please use this method with care. Using of default master password let the passwords be stored non-encrypted. If a master password is predefined in the algorithm it is no more an encryption, it is just an encoding.
         """
+        ...
+
 

@@ -47,6 +47,7 @@ class SystemDependentXWindow(object):
             WindowHandle (int, optional): WindowHandle value.
             DisplayPointer (int, optional): DisplayPointer value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class SystemDependentXWindow(object):
         """
         The XWindow handle if possible, otherwise 0.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class SystemDependentXWindow(object):
         """
         The display pointer.
         """
+        ...
 
 

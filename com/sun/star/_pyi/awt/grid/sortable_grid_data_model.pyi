@@ -54,6 +54,7 @@ class SortableGridDataModel(XSortableMutableGridDataModel_f6af1377):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def createWithCollator(self, DelegatorModel: 'XMutableGridDataModel_6387103b', Collator: 'XCollator_892a09e0') -> None:
         """
         creates a new instance of the ScortableDefaultGridDataModel, passing a collator to be used for string comparison.
@@ -61,5 +62,6 @@ class SortableGridDataModel(XSortableMutableGridDataModel_f6af1377):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

@@ -54,4 +54,6 @@ class XPackageManagerFactory(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

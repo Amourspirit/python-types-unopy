@@ -41,8 +41,11 @@ class XConnectionListener(XEventListener_c7230c4a):
         """
         Invoked when the connection to the mail server is established.
         """
+        ...
     def disconnected(self, aEvent: 'EventObject_a3d70b03') -> None:
         """
         Invoked when the connection to the mail server is closed.
         """
+        ...
+
 

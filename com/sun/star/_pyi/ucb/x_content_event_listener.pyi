@@ -37,4 +37,6 @@ class XContentEventListener(XEventListener_c7230c4a):
         """
         gets called whenever a content wishes to notify changes.
         """
+        ...
+
 

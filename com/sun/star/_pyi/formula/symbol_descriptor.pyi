@@ -52,6 +52,7 @@ class SymbolDescriptor(object):
             nWeight (int, optional): nWeight value.
             nItalic (int, optional): nItalic value.
         """
+        ...
 
 
     @property
@@ -59,6 +60,7 @@ class SymbolDescriptor(object):
         """
         The name of the symbol.
         """
+        ...
 
 
     @property
@@ -66,6 +68,7 @@ class SymbolDescriptor(object):
         """
         The export name of the symbol.
         """
+        ...
 
 
     @property
@@ -73,6 +76,7 @@ class SymbolDescriptor(object):
         """
         Specifies the name of the symbol set to which this symbol belongs.
         """
+        ...
 
 
     @property
@@ -80,6 +84,7 @@ class SymbolDescriptor(object):
         """
         Specifies the Unicode character of the symbol.
         """
+        ...
 
 
     @property
@@ -87,6 +92,7 @@ class SymbolDescriptor(object):
         """
         Specifies the exact name of the font (\"Arial\", \"Courier\", etc.).
         """
+        ...
 
 
     @property
@@ -94,6 +100,7 @@ class SymbolDescriptor(object):
         """
         Specifies the character set which is supported by the font.
         """
+        ...
 
 
     @property
@@ -101,6 +108,7 @@ class SymbolDescriptor(object):
         """
         Specifies the general style of the font.
         """
+        ...
 
 
     @property
@@ -108,6 +116,7 @@ class SymbolDescriptor(object):
         """
         Specifies the pitch of the font.
         """
+        ...
 
 
     @property
@@ -117,6 +126,7 @@ class SymbolDescriptor(object):
         
         The allowed integer values correspond as follows: 0 : com.sun.star.awt.FontWeight.DONTKNOW 1 : com.sun.star.awt.FontWeight.THIN 2 : com.sun.star.awt.FontWeight.ULTRALIGHT 3 : com.sun.star.awt.FontWeight.LIGHT 4 : com.sun.star.awt.FontWeight.SEMILIGHT 5 : com.sun.star.awt.FontWeight.NORMAL 7 : com.sun.star.awt.FontWeight.SEMIBOLD 8 : com.sun.star.awt.FontWeight.BOLD 9 : com.sun.star.awt.FontWeight.ULTRABOLD 10 : com.sun.star.awt.FontWeight.BLACK
         """
+        ...
 
 
     @property
@@ -126,5 +136,6 @@ class SymbolDescriptor(object):
         
         The values com.sun.star.awt.FontSlant.REVERSE_OBLIQUE and com.sun.star.awt.FontSlant.REVERSE_ITALIC may not be used.
         """
+        ...
 
 

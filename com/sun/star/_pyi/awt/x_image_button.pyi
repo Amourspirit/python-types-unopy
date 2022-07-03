@@ -37,12 +37,16 @@ class XImageButton(XInterface_8f010a43):
         """
         registers a listener for action events.
         """
+        ...
     def removeActionListener(self, l: 'XActionListener_c7560c50') -> None:
         """
         unregisters a listener for action events.
         """
+        ...
     def setActionCommand(self, Command: str) -> None:
         """
         sets the action command string.
         """
+        ...
+
 

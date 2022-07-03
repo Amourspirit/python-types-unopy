@@ -43,6 +43,7 @@ class Rectangle(object):
             Width (int, optional): Width value.
             Height (int, optional): Height value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class Rectangle(object):
         """
         specifies the x-coordinate.
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class Rectangle(object):
         """
         specifies the y-coordinate.
         """
+        ...
 
 
     @property
@@ -64,6 +67,7 @@ class Rectangle(object):
         """
         specifies the width.
         """
+        ...
 
 
     @property
@@ -71,5 +75,6 @@ class Rectangle(object):
         """
         specifies the height.
         """
+        ...
 
 

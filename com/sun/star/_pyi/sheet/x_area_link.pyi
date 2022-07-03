@@ -37,20 +37,25 @@ class XAreaLink(XInterface_8f010a43):
         """
         returns the position of the linked range in the destination document.
         """
+        ...
     def getSourceArea(self) -> str:
         """
         returns the source of the range within the source document.
         
         This can be the address of a cell or range in the form \"Sheet1.A1:C5\", or the name of a named range or database range.
         """
+        ...
     def setDestArea(self, aDestArea: 'CellRangeAddress_ec450d43') -> None:
         """
         sets the position of the linked range in the destination document.
         """
+        ...
     def setSourceArea(self, aSourceArea: str) -> None:
         """
         sets the source of the range within the source document.
         
         This can be the address of a cell or range in the form \"Sheet1.A1:C5\", or the name of a named range or database range.
         """
+        ...
+
 

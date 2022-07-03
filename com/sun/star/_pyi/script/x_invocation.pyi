@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.script
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..beans.x_introspection_access import XIntrospectionAccess as XIntrospectionAccess_2a050f2c
@@ -39,6 +40,7 @@ class XInvocation(XInterface_8f010a43):
         """
         returns the introspection from this object or NULL if the object does not provide this information.
         """
+        ...
     def getValue(self, aPropertyName: str) -> object:
         """
         returns the value of the property with the specified name.
@@ -46,17 +48,20 @@ class XInvocation(XInterface_8f010a43):
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def hasMethod(self, aName: str) -> bool:
         """
         returns TRUE if the method with the specified name exists, else FALSE.
         
         This optimizes the calling sequence ( XInvocation.hasMethod(), XInvocation.invoke() )!
         """
+        ...
     def hasProperty(self, aName: str) -> bool:
         """
         returns TRUE if the property with the specified name exists, else FALSE.
         """
-    def invoke(self, aFunctionName: str, aParams: 'typing.Tuple[object, ...]', aOutParamIndex: 'typing.Tuple[int, ...]', aOutParam: 'typing.Tuple[object, ...]') -> object:
+        ...
+    def invoke(self, aFunctionName: str, aParams: 'typing.Tuple[object, ...]', aOutParamIndex: uno.ByteSequence, aOutParam: 'typing.Tuple[object, ...]') -> object:
         """
         provides access to methods exposed by an object.
         
@@ -70,6 +75,7 @@ class XInvocation(XInterface_8f010a43):
             com.sun.star.script.CannotConvertException: ``CannotConvertException``
             com.sun.star.reflection.InvocationTargetException: ``InvocationTargetException``
         """
+        ...
     def setValue(self, aPropertyName: str, aValue: object) -> None:
         """
         sets a value to the property with the specified name.
@@ -81,4 +87,6 @@ class XInvocation(XInterface_8f010a43):
             com.sun.star.script.CannotConvertException: ``CannotConvertException``
             com.sun.star.reflection.InvocationTargetException: ``InvocationTargetException``
         """
+        ...
+
 

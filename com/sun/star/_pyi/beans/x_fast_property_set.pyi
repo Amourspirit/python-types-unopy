@@ -39,6 +39,7 @@ class XFastPropertySet(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def setFastPropertyValue(self, nHandle: int, aValue: object) -> None:
         """
         sets the value to the property with the specified name.
@@ -49,4 +50,6 @@ class XFastPropertySet(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

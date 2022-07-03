@@ -37,16 +37,20 @@ class XCertificateExtension(XInterface_8f010a43):
         """
         Check whether it is a critical extension.
         """
+        ...
+
     @property
     def ExtensionId(self) -> uno.ByteSequence:
         """
         Get the extension object identifier in string.
         """
+        ...
 
     @property
     def ExtensionValue(self) -> uno.ByteSequence:
         """
         Get the extension value.
         """
+        ...
 
 

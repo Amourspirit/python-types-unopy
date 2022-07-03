@@ -40,11 +40,13 @@ class DatabaseNumberOfSet(DependentTextField_fed90ded):
         """
         contains the conditions that determines whether the SetNumber is applied or not.
         """
+        ...
     @property
     def DataBaseName(self) -> str:
         """
         specifies the database name.
         """
+        ...
     @property
     def DataBaseResource(self) -> str:
         """
@@ -54,6 +56,7 @@ class DatabaseNumberOfSet(DependentTextField_fed90ded):
         
             OOo 2.0
         """
+        ...
     @property
     def DataBaseURL(self) -> str:
         """
@@ -63,20 +66,24 @@ class DatabaseNumberOfSet(DependentTextField_fed90ded):
         
             OOo 2.0
         """
+        ...
     @property
     def DataCommandType(self) -> int:
         """
         determines the interpretation of the property DataTableName.
         """
+        ...
     @property
     def DataTableName(self) -> str:
         """
         contains the name of the database table, query or a statement depending on the DataCommandType property.
         """
+        ...
     @property
     def SetNumber(self) -> int:
         """
         contains the set number that is to be applied.
         """
+        ...
 
 

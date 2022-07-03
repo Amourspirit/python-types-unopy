@@ -38,5 +38,6 @@ class ColorPicker(XExecutableDialog_450f0fa1):
     def createWithParent(self, Parent: 'XWindow_713b0924') -> None:
         """
         """
+        ...
 
 

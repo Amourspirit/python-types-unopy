@@ -54,6 +54,7 @@ class FontInfo(object):
             IsSymbolFont (TriState, optional): IsSymbolFont value.
             IsVertical (TriState, optional): IsVertical value.
         """
+        ...
 
 
     @property
@@ -63,6 +64,7 @@ class FontInfo(object):
         
         TODO: Document semantics in Panose.idl
         """
+        ...
 
 
     @property
@@ -74,6 +76,7 @@ class FontInfo(object):
         
         Note: outlined fonts are now specified with \"outline\" as part of the family name.
         """
+        ...
 
 
     @property
@@ -83,6 +86,7 @@ class FontInfo(object):
         
         For example, oblique, italic, or narrow.
         """
+        ...
 
 
     @property
@@ -94,6 +98,7 @@ class FontInfo(object):
         
         const int128 UNICODE_RANGE_BASIC_LATIN = 1; const int128 UNICODE_RANGE_LATIN_SUPPLEMENT = 2; const int128 UNICODE_RANGE_LATIN_EXTENDED_A = 4; const int128 UNICODE_RANGE_LATIN_EXTENDED_B = 4; ... const int128 UNICODE_RANGE_MASK_LATIN = 1; const int128 UNICODE_RANGE_MASK_CJK = (31<<48) + (3<<55) + (1<<59); const int128 UNICODE_RANGE_MASK_CTL = (1<<11) + (1<<13) + (0x3FFF<<15) + (0x0FFF<<70);
         """
+        ...
 
 
     @property
@@ -118,6 +123,7 @@ class FontInfo(object):
         
         If yes, text written in this symbol font does not have a specified meaning.
         """
+        ...
 
 
     @property
@@ -127,5 +133,6 @@ class FontInfo(object):
         
         Vertical fonts have subtle differences to horizontal ones, e.g. rotated or differently shaped glyphs, or special rotated versions of normally upright glyphs (e.g. brackets).
         """
+        ...
 
 

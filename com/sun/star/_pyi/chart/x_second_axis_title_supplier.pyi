@@ -35,7 +35,10 @@ class XSecondAxisTitleSupplier(XInterface_8f010a43):
     def getSecondXAxisTitle(self) -> 'XShape_8fd00a3d':
         """
         """
+        ...
     def getSecondYAxisTitle(self) -> 'XShape_8fd00a3d':
         """
         """
+        ...
+
 

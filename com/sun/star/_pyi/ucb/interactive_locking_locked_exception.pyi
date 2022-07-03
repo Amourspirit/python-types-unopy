@@ -51,6 +51,7 @@ class InteractiveLockingLockedException(InteractiveLockingException_7af31136):
             Url (str, optional): Url value.
             SelfOwned (bool, optional): SelfOwned value.
         """
+        ...
     @property
     def SelfOwned(self) -> bool:
         """
@@ -58,6 +59,7 @@ class InteractiveLockingLockedException(InteractiveLockingException_7af31136):
         
         TRUE, the lock has been obtained by this OOo session. FALSE the lock has been obtained by another principal.
         """
+        ...
 
 
 __all__ = ['InteractiveLockingLockedException']

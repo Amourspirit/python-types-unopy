@@ -47,6 +47,7 @@ class Pair(object):
             First (object, optional): First value.
             Second (object, optional): Second value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class Pair(object):
         """
         first object.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class Pair(object):
         """
         second object.
         """
+        ...
 
 

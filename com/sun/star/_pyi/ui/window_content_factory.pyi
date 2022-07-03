@@ -37,5 +37,6 @@ class WindowContentFactory(XSingleComponentFactory_46cc0fef):
     See Also:
         `API WindowContentFactory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ui_1_1WindowContentFactory.html>`_
     """
+    ...
 
 

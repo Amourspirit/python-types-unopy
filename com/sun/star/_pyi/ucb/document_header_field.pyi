@@ -43,6 +43,7 @@ class DocumentHeaderField(object):
             Name (str, optional): Name value.
             Value (str, optional): Value value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class DocumentHeaderField(object):
         """
         The name of the header field.
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class DocumentHeaderField(object):
         """
         The value of the header field.
         """
+        ...
 
 

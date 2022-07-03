@@ -44,6 +44,7 @@ class Locale(object):
             Country (str, optional): Country value.
             Variant (str, optional): Variant value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class Locale(object):
         
         Since LibreOffice 4.2, if the locale can not be represented using only ISO 639 and ISO 3166 codes this field contains the ISO 639-3 reserved for local use code \"qlt\" and a BCP 47 language tag is present in the Variant field.
         """
+        ...
 
 
     @property
@@ -68,6 +70,7 @@ class Locale(object):
         
         If this field contains an empty string, the meaning depends on the context.
         """
+        ...
 
 
     @property
@@ -81,5 +84,6 @@ class Locale(object):
         
         Earlier versions of the documentation mentioned \"vendor andbrowser-specific\" codes but that was never supported. Use of any arbitrary strings in the Variant field that do not form a valid BCP 47 language tag is strongly deprecated.
         """
+        ...
 
 

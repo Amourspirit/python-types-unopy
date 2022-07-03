@@ -47,11 +47,13 @@ class InteractiveIOException(ClassifiedInteractionRequest_9f72121b):
             Classification (InteractionClassification, optional): Classification value.
             Code (IOErrorCode, optional): Code value.
         """
+        ...
     @property
     def Code(self) -> IOErrorCode_96ab0a5f:
         """
         The type of input/output error.
         """
+        ...
 
 
 __all__ = ['InteractiveIOException']

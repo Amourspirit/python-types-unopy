@@ -36,6 +36,7 @@ class XChild(XInterface_8f010a43):
         """
         grants access to the object containing this content.
         """
+        ...
     def setParent(self, Parent: 'XInterface_8f010a43') -> None:
         """
         sets the parent to this object.
@@ -43,4 +44,6 @@ class XChild(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
+
 

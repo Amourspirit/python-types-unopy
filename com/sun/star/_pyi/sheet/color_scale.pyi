@@ -35,5 +35,6 @@ class ColorScale(XConditionEntry_e2340d32):
     def ColorScaleEntries(self) -> 'typing.Tuple[XColorScaleEntry_ee810d72, ...]':
         """
         """
+        ...
 
 

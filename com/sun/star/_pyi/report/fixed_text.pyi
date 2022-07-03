@@ -28,5 +28,6 @@ class FixedText(XFixedText_b1ad0b91):
     See Also:
         `API FixedText <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1report_1_1FixedText.html>`_
     """
+    ...
 
 

@@ -28,5 +28,6 @@ class UITest(XUITest_97fa0a6a):
     See Also:
         `API UITest <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ui_1_1test_1_1UITest.html>`_
     """
+    ...
 
 

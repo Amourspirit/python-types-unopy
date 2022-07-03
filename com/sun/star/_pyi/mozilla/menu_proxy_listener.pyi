@@ -29,5 +29,6 @@ class MenuProxyListener(XMenuProxyListener_2ccf0f55):
     See Also:
         `API MenuProxyListener <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1mozilla_1_1MenuProxyListener.html>`_
     """
+    ...
 
 

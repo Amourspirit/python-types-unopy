@@ -39,10 +39,12 @@ class XTreeExpansionListener(XEventListener_c7230c4a):
         
         This event is invoked before the treeExpanding() event.
         """
+        ...
     def treeCollapsed(self, Event: 'TreeExpansionEvent_378b0f79') -> None:
         """
         Called whenever a node in the tree has been successfully collapsed.
         """
+        ...
     def treeCollapsing(self, Event: 'TreeExpansionEvent_378b0f79') -> None:
         """
         Invoked whenever a node in the tree is about to be collapsed.
@@ -50,10 +52,12 @@ class XTreeExpansionListener(XEventListener_c7230c4a):
         Raises:
             ExpandVetoException: ``ExpandVetoException``
         """
+        ...
     def treeExpanded(self, Event: 'TreeExpansionEvent_378b0f79') -> None:
         """
         Called whenever a node in the tree has been successfully expanded.
         """
+        ...
     def treeExpanding(self, Event: 'TreeExpansionEvent_378b0f79') -> None:
         """
         Invoked whenever a node in the tree is about to be expanded.
@@ -61,4 +65,6 @@ class XTreeExpansionListener(XEventListener_c7230c4a):
         Raises:
             ExpandVetoException: ``ExpandVetoException``
         """
+        ...
+
 

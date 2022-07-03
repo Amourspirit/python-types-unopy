@@ -34,5 +34,6 @@ class UserDescriptor(Descriptor_a5200b3b):
         """
         is the password for the user.
         """
+        ...
 
 

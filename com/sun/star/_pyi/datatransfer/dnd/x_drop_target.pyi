@@ -41,26 +41,31 @@ class XDropTarget(XInterface_8f010a43):
         
         The listener will be queried for the XAutoscroll interface to see if it supports autoscrolling.
         """
+        ...
     def getDefaultActions(self) -> int:
         """
         Determine the actions supported by a drop target.
         
         By default this will include all drag and drop actions.
         """
+        ...
     def isActive(self) -> bool:
         """
         Indicates either a drop target object is active or not.
         """
+        ...
     def removeDropTargetListener(self, dtl: 'XDropTargetListener_d62c1305') -> None:
         """
         Remove a drop target listener.
         """
+        ...
     def setActive(self, active: bool) -> None:
         """
         Sets the drop target object active or inactive.
         
         A value of FALSE sets the drop target object inactive.
         """
+        ...
     def setDefaultActions(self, actions: int) -> None:
         """
         Sets the default acceptable actions for this drop target.
@@ -69,4 +74,6 @@ class XDropTarget(XInterface_8f010a43):
         
         By default the listener will receive notifications for all actions.
         """
+        ...
+
 

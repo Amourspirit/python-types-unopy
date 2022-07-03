@@ -43,6 +43,7 @@ class XTypeConverter(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.script.CannotConvertException: ``CannotConvertException``
         """
+        ...
     def convertToSimpleType(self, aFrom: object, aDestinationType: 'TypeClass_853109f2') -> object:
         """
         Converts the value aFrom to the specified simple type aDestinationType.
@@ -53,4 +54,6 @@ class XTypeConverter(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.script.CannotConvertException: ``CannotConvertException``
         """
+        ...
+
 

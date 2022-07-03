@@ -38,6 +38,7 @@ class XConnection2(XConnection_f2320da0):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readSomeBytes(self, aData: uno.ByteSequence, nMaxBytesToRead: int) -> int:
         """
         Blocks if no data is available otherwise reads at max nMaxBytesToRead but at least 1 byte.
@@ -47,4 +48,6 @@ class XConnection2(XConnection_f2320da0):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

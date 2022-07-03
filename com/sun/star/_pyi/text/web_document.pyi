@@ -33,5 +33,6 @@ class WebDocument(GenericTextDocument_d200e6e):
     See Also:
         `API WebDocument <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1WebDocument.html>`_
     """
+    ...
 
 

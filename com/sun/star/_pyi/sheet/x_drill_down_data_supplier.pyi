@@ -43,4 +43,6 @@ class XDrillDownDataSupplier(XInterface_8f010a43):
         """
         This method returns filtered subset of the original source data based on a given set of filtering criteria.
         """
+        ...
+
 

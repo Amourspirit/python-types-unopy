@@ -39,8 +39,11 @@ class XFastTokenHandler(XInterface_8f010a43):
         """
         returns an integer token for the given string
         """
+        ...
     def getUTF8Identifier(self, Token: int) -> uno.ByteSequence:
         """
         returns an identifier for the given integer token as a byte sequence encoded in UTF-8.
         """
+        ...
+
 

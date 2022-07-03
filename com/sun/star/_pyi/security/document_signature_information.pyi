@@ -56,6 +56,7 @@ class DocumentSignatureInformation(object):
             ValidSignatureLineImage (XGraphic, optional): ValidSignatureLineImage value.
             InvalidSignatureLineImage (XGraphic, optional): InvalidSignatureLineImage value.
         """
+        ...
 
 
     @property
@@ -73,6 +74,7 @@ class DocumentSignatureInformation(object):
         """
         Time of day, in 100th of seconds.
         """
+        ...
 
 
     @property
@@ -87,6 +89,7 @@ class DocumentSignatureInformation(object):
         
         Contains a value from the constants of com.sun.star.security.CertificateValidity.
         """
+        ...
 
 
     @property
@@ -98,6 +101,7 @@ class DocumentSignatureInformation(object):
         
         If PartialDocumentSignature is true, then the signature was created by OOo with a version lower than 3.2. In this case, not all files are signed. The signature can still be regarded as valid, as long as SignatureIsValid is true and the certificate could be validated. However, users should be notified about the fact, that not everything in this document is signed.
         """
+        ...
 
 
     @property
@@ -109,6 +113,7 @@ class DocumentSignatureInformation(object):
         
             LibreOffice 6.0
         """
+        ...
 
 
     @property
@@ -120,6 +125,7 @@ class DocumentSignatureInformation(object):
         
             LibreOffice 6.0
         """
+        ...
 
 
     @property
@@ -131,5 +137,6 @@ class DocumentSignatureInformation(object):
         
             LibreOffice 6.0
         """
+        ...
 
 

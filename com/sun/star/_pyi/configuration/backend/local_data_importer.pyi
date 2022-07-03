@@ -37,5 +37,6 @@ class LocalDataImporter(DataImporter_b39c1242):
     See Also:
         `API LocalDataImporter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1LocalDataImporter.html>`_
     """
+    ...
 
 

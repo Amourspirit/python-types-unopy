@@ -37,6 +37,7 @@ class XRangeXMLConversion(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertRangeToXML(self, aRangeRepresentation: str) -> str:
         """
         converts the range to a valid XML syntax.
@@ -46,4 +47,6 @@ class XRangeXMLConversion(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

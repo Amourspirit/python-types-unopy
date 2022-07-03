@@ -31,5 +31,6 @@ class Frame(XFrame2_83df0988):
     See Also:
         `API Frame <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1frame_1_1Frame.html>`_
     """
+    ...
 
 

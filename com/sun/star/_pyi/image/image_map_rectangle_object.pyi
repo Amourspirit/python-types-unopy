@@ -37,5 +37,6 @@ class ImageMapRectangleObject(ImageMapObject_d1e20c63):
         """
         This is the boundary of this rectangle object.
         """
+        ...
 
 

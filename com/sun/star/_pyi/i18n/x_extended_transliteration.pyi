@@ -45,14 +45,18 @@ class XExtendedTransliteration(XTransliteration_daf70ce3):
         Raises:
             MultipleCharsOutputException: ``MultipleCharsOutputException``
         """
+        ...
     def transliterateChar2String(self, cChar: str) -> str:
         """
         Transliterate a character to a string.
         """
+        ...
     def transliterateString2String(self, aStr: str, nStartPos: int, nCount: int) -> str:
         """
         Transliterate a substring.
         
         The functionality is the same as com.sun.star.i18n.XTransliteration.transliterate() but omits the offset parameter to improve performance.
         """
+        ...
+
 

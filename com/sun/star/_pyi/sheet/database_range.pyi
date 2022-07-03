@@ -51,6 +51,7 @@ class DatabaseRange(XPropertySet_bc180bfa, XNamed_a6520b08, XCellRangeReferrer_9
         
             OOo 1.1.2
         """
+        ...
     @property
     def ContainsHeader(self) -> bool:
         """
@@ -60,6 +61,7 @@ class DatabaseRange(XPropertySet_bc180bfa, XNamed_a6520b08, XCellRangeReferrer_9
         
             LibreOffice 5.0
         """
+        ...
     @property
     def FilterCriteriaSource(self) -> 'CellRangeAddress_ec450d43':
         """
@@ -71,6 +73,7 @@ class DatabaseRange(XPropertySet_bc180bfa, XNamed_a6520b08, XCellRangeReferrer_9
         
             OOo 1.1.2
         """
+        ...
     @property
     def FromSelection(self) -> bool:
         """
@@ -80,16 +83,19 @@ class DatabaseRange(XPropertySet_bc180bfa, XNamed_a6520b08, XCellRangeReferrer_9
         
             OOo 2.0
         """
+        ...
     @property
     def KeepFormats(self) -> bool:
         """
         if this property is set, cell formats are extended when the size of the range is changed by an update operation.
         """
+        ...
     @property
     def MoveCells(self) -> bool:
         """
         if this property is set, columns or rows are inserted or deleted when the size of the range is changed by an update operation.
         """
+        ...
     @property
     def RefreshPeriod(self) -> int:
         """
@@ -99,11 +105,13 @@ class DatabaseRange(XPropertySet_bc180bfa, XNamed_a6520b08, XCellRangeReferrer_9
         
             OOo 2.0
         """
+        ...
     @property
     def StripData(self) -> bool:
         """
         if this property is set, the cell contents within the database range are left out when the document is saved.
         """
+        ...
     @property
     def TokenIndex(self) -> int:
         """
@@ -115,6 +123,7 @@ class DatabaseRange(XPropertySet_bc180bfa, XNamed_a6520b08, XCellRangeReferrer_9
         
             OOo 3.0
         """
+        ...
     @property
     def TotalsRow(self) -> bool:
         """
@@ -124,6 +133,7 @@ class DatabaseRange(XPropertySet_bc180bfa, XNamed_a6520b08, XCellRangeReferrer_9
         
             LibreOffice 5.0
         """
+        ...
     @property
     def UseFilterCriteriaSource(self) -> bool:
         """
@@ -133,5 +143,6 @@ class DatabaseRange(XPropertySet_bc180bfa, XNamed_a6520b08, XCellRangeReferrer_9
         
             OOo 1.1.2
         """
+        ...
 
 

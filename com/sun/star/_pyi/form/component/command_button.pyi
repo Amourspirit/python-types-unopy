@@ -40,6 +40,7 @@ class CommandButton(UnoControlButtonModel_1c000ed4, FormControlModel_e2990d22, X
         """
         describes the action to be executed by the button when pressed.
         """
+        ...
     @property
     def DefaultState(self) -> bool:
         """
@@ -49,6 +50,7 @@ class CommandButton(UnoControlButtonModel_1c000ed4, FormControlModel_e2990d22, X
         
         For a given implementation of the interface, if this (optional) property is present, then also the optional interface com.sun.star.form.XReset must be present.
         """
+        ...
     @property
     def TargetFrame(self) -> str:
         """
@@ -58,6 +60,7 @@ class CommandButton(UnoControlButtonModel_1c000ed4, FormControlModel_e2990d22, X
         
         As always, there is a number of target names which have a special meaning, and force a special com.sun.star.frame.Frame to be used.
         """
+        ...
     @property
     def TargetURL(self) -> str:
         """
@@ -65,5 +68,6 @@ class CommandButton(UnoControlButtonModel_1c000ed4, FormControlModel_e2990d22, X
         
         This property is evaluated if the button is of type URL.
         """
+        ...
 
 

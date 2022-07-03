@@ -41,6 +41,7 @@ class EventObject(object):
         Arguments:
             Source (XInterface, optional): Source value.
         """
+        ...
 
 
     @property
@@ -48,5 +49,6 @@ class EventObject(object):
         """
         refers to the object that fired the event.
         """
+        ...
 
 

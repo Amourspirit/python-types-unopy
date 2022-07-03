@@ -38,10 +38,13 @@ class XActiveDataStreamer(XInterface_8f010a43):
     def getStream(self) -> 'XStream_678908a4':
         """
         """
+        ...
     def setStream(self, aStream: 'XStream_678908a4') -> None:
         """
         plugs the input/output stream.
         
         If XConnectable is also implemented, this method should query aStream for a XConnectable and connect both.
         """
+        ...
+
 

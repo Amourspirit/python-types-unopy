@@ -34,5 +34,6 @@ class MarkableOutputStream(XActiveDataSource_d1900c7f, XConnectable_980a0a96, XM
     See Also:
         `API MarkableOutputStream <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1io_1_1MarkableOutputStream.html>`_
     """
+    ...
 
 

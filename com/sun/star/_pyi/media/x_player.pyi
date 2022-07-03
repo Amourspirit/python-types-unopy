@@ -41,62 +41,78 @@ class XPlayer(ABC):
         """
         gets a frame grabber for this stream.
         """
+        ...
     def createPlayerWindow(self, aArguments: 'typing.Tuple[object, ...]') -> 'XPlayerWindow_c7130c45':
         """
         gets a new player window for this stream control
         """
+        ...
     def getDuration(self) -> float:
         """
         gets the stream length
         """
+        ...
     def getMediaTime(self) -> float:
         """
         gets the current position of the cursor in the stream
         """
+        ...
     def getPreferredPlayerWindowSize(self) -> 'Size_576707ef':
         """
         gets the preferred window size
         """
+        ...
     def getVolumeDB(self) -> int:
         """
         gets the current audio volume in decibel
         """
+        ...
     def isMute(self) -> bool:
         """
         gets whether the volume is temporarily down to 0 or not.
         """
+        ...
     def isPlaybackLoop(self) -> bool:
         """
         indicates whether the stream reading will restart after the end of the stream.
         """
+        ...
     def isPlaying(self) -> bool:
         """
         indicates whether the stream is played or not.
         """
+        ...
     def setMediaTime(self, fTime: float) -> None:
         """
         sets the new cursor position in the media stream.
         
         After using this method the stream is stopped.
         """
+        ...
     def setMute(self, bSet: bool) -> None:
         """
         sets the volume to 0 or to its previous value.
         """
+        ...
     def setPlaybackLoop(self, bSet: bool) -> None:
         """
         sets whether the stream reading should restart at the stream start after the end of the stream.
         """
+        ...
     def setVolumeDB(self, nDB: int) -> None:
         """
         sets the audio volume in decibel.
         """
+        ...
     def start(self) -> None:
         """
         starts reading the stream from the current position.
         """
+        ...
     def stop(self) -> None:
         """
         stops reading the stream and leave the cursor at its current position.
         """
+        ...
+
 

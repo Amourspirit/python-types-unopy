@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.script
 from typing_extensions import Literal
 import typing
+import uno
 from .x_invocation import XInvocation as XInvocation_be070c0f
 
 class XAutomationInvocation(XInvocation_be070c0f):
@@ -30,7 +31,7 @@ class XAutomationInvocation(XInvocation_be070c0f):
     """
     __pyunointerface__: Literal['com.sun.star.script.XAutomationInvocation']
 
-    def invokeGetProperty(self, aFunctionName: str, aParams: 'typing.Tuple[object, ...]', aOutParamIndex: 'typing.Tuple[int, ...]', aOutParam: 'typing.Tuple[object, ...]') -> object:
+    def invokeGetProperty(self, aFunctionName: str, aParams: 'typing.Tuple[object, ...]', aOutParamIndex: uno.ByteSequence, aOutParam: 'typing.Tuple[object, ...]') -> object:
         """
 
         * ``aOutParamIndex`` is an out direction argument.
@@ -41,7 +42,8 @@ class XAutomationInvocation(XInvocation_be070c0f):
             com.sun.star.script.CannotConvertException: ``CannotConvertException``
             com.sun.star.reflection.InvocationTargetException: ``InvocationTargetException``
         """
-    def invokePutProperty(self, aFunctionName: str, aParams: 'typing.Tuple[object, ...]', aOutParamIndex: 'typing.Tuple[int, ...]', aOutParam: 'typing.Tuple[object, ...]') -> object:
+        ...
+    def invokePutProperty(self, aFunctionName: str, aParams: 'typing.Tuple[object, ...]', aOutParamIndex: uno.ByteSequence, aOutParam: 'typing.Tuple[object, ...]') -> object:
         """
 
         * ``aOutParamIndex`` is an out direction argument.
@@ -52,4 +54,6 @@ class XAutomationInvocation(XInvocation_be070c0f):
             com.sun.star.script.CannotConvertException: ``CannotConvertException``
             com.sun.star.reflection.InvocationTargetException: ``InvocationTargetException``
         """
+        ...
+
 

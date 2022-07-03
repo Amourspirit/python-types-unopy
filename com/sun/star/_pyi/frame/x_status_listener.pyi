@@ -39,4 +39,6 @@ class XStatusListener(XEventListener_c7230c4a):
         """
         is called when the status of the feature changes.
         """
+        ...
+
 

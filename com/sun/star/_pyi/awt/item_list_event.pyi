@@ -45,6 +45,7 @@ class ItemListEvent(EventObject_a3d70b03):
             ItemText (object, optional): ItemText value.
             ItemImageURL (object, optional): ItemImageURL value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class ItemListEvent(EventObject_a3d70b03):
         
         In case the event is not related to a single item, but to the complete list, the value of this member is undefined.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class ItemListEvent(EventObject_a3d70b03):
         
         If the event being notified did not touch the text of an item, this member is empty. For instance, upon invocation of XItemList.setItemImage(), only ItemImageURL will be set, and ItemText will be empty.
         """
+        ...
 
 
     @property
@@ -72,5 +75,6 @@ class ItemListEvent(EventObject_a3d70b03):
         
         If the event being notified did not touch the image of an item, this member is empty. For instance, upon invocation of XItemList.setItemText(), only ItemText will be set, and ItemImageURL will be empty.
         """
+        ...
 
 

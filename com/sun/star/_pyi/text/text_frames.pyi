@@ -33,5 +33,6 @@ class TextFrames(XContainer_d6fb0cc6, XIndexAccess_f0910d6d, XNameAccess_e2ab0cf
     See Also:
         `API TextFrames <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1TextFrames.html>`_
     """
+    ...
 
 

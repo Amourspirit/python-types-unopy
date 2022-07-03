@@ -44,6 +44,7 @@ class StateChangeInProgressException(WrongStateException_19f60ec2):
             Context (XInterface, optional): Context value.
             TargetState (int, optional): TargetState value.
         """
+        ...
     @property
     def TargetState(self) -> int:
         """
@@ -51,6 +52,7 @@ class StateChangeInProgressException(WrongStateException_19f60ec2):
         
         Contains a value from EmbedStates constant set.
         """
+        ...
 
 
 __all__ = ['StateChangeInProgressException']

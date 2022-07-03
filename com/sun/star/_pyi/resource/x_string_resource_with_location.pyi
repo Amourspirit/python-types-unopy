@@ -40,6 +40,7 @@ class XStringResourceWithLocation(XStringResourcePersistence_cabc130c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def storeAsURL(self, URL: str) -> None:
         """
         Stores all string table data to a location and associates this location to this instance as if setLocation() was called with this location.
@@ -49,4 +50,6 @@ class XStringResourceWithLocation(XStringResourcePersistence_cabc130c):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

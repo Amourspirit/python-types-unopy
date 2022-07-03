@@ -33,6 +33,7 @@ class XMergeableCellRange(XInterface_8f010a43):
     def isMergeable(self) -> bool:
         """
         """
+        ...
     def merge(self) -> None:
         """
         merges the area specified by this range.
@@ -40,6 +41,7 @@ class XMergeableCellRange(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def split(self, Columns: int, Rows: int) -> None:
         """
         splits the cells in this range.
@@ -50,4 +52,6 @@ class XMergeableCellRange(XInterface_8f010a43):
             com.sun.star.lang.NoSupportException: ``NoSupportException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

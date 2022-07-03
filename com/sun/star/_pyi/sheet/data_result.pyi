@@ -41,6 +41,7 @@ class DataResult(object):
             Flags (int, optional): Flags value.
             Value (float, optional): Value value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class DataResult(object):
         """
         contains boolean flags describing the result.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class DataResult(object):
         """
         contains the result value.
         """
+        ...
 
 

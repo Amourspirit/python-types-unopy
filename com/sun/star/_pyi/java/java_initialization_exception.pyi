@@ -51,6 +51,7 @@ class JavaInitializationException(DeploymentException_ffd30e2a):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['JavaInitializationException']
 

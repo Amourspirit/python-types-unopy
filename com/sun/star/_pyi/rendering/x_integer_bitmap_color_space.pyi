@@ -47,6 +47,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertIntegerFromARGB(self, rgbColor: 'typing.Tuple[ARGBColor_c6ee0be1, ...]') -> uno.ByteSequence:
         """
         Convert sRGB color with linear alpha into this color space.
@@ -56,6 +57,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertIntegerFromPARGB(self, rgbColor: 'typing.Tuple[ARGBColor_c6ee0be1, ...]') -> uno.ByteSequence:
         """
         Convert premultiplied sRGB color with linear alpha into this color space.
@@ -65,6 +67,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertIntegerFromRGB(self, rgbColor: 'typing.Tuple[RGBColor_bbdf0ba0, ...]') -> uno.ByteSequence:
         """
         Convert sRGB color to an integer representation in this color space.
@@ -74,6 +77,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertIntegerToARGB(self, deviceColor: uno.ByteSequence) -> 'typing.Tuple[ARGBColor_c6ee0be1, ...]':
         """
         Convert color value in this color space to sRGB color values, with linear alpha.
@@ -83,6 +87,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertIntegerToPARGB(self, deviceColor: uno.ByteSequence) -> 'typing.Tuple[ARGBColor_c6ee0be1, ...]':
         """
         Convert color value in this color space to premultiplied sRGB color values, with linear alpha.
@@ -92,6 +97,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertIntegerToRGB(self, deviceColor: uno.ByteSequence) -> 'typing.Tuple[RGBColor_bbdf0ba0, ...]':
         """
         Convert color value in this color space to sRGB color values.
@@ -101,6 +107,7 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertToIntegerColorSpace(self, deviceColor: uno.ByteSequence, targetColorSpace: 'XIntegerBitmapColorSpace') -> uno.ByteSequence:
         """
         Convert integer bitmap color to integer bitmap color of another integer bitmap color space.
@@ -110,20 +117,25 @@ class XIntegerBitmapColorSpace(XColorSpace_e3940d09):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getBitsPerPixel(self) -> int:
         """
         Query number of bits used per bitmap pixel.
         
         This method yields the total number of bits used for a color value. At the associated XIntegerBitmap, the XIntegerBitmap.setPixel() method will expect a sequence of ceil(BitsPerPixel/8) bytes, and the XIntegerReadOnlyBitmap.getPixel() will return that number of bytes. Similarly, the color conversion expect input data in multiples of ceil(BitsPerPixel/8), and also return converted data in chunks of this.
         """
-    def getComponentBitCounts(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getComponentBitCounts(self) -> uno.ByteSequence:
         """
         Query the number of bits used for each component.
         
         This method returns a sequence of integers, each denoting the number of bits occupied by the respective component. The sum of all component bits must be less or equal than the value returned from getBitsPerPixel(). If the sum is less, excess bits are always kept in the most significant bits of a pixel. Color components will appear in the byte sequences returned from the XIntegerBitmap methods in the order defined here, with the first element starting from the least significant bits of the pixel, etc.
         """
+        ...
     def getEndianness(self) -> int:
         """
         Query whether color data bytes need to be swapped.
         """
+        ...
+
 

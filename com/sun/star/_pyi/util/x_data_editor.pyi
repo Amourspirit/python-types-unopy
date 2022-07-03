@@ -37,19 +37,25 @@ class XDataEditor(XInterface_8f010a43):
         """
         registers a listener to receive DataEditorEvents.
         """
+        ...
     def getModel(self) -> 'XInterface_8f010a43':
         """
         """
+        ...
     def removeDataEditorListener(self, listener: 'XDataEditorListener_a460e45') -> None:
         """
         unregisters a listener.
         """
+        ...
     def setModel(self, model: 'XInterface_8f010a43') -> None:
         """
         connects the data editor to a data model.
         """
+        ...
     def show(self) -> None:
         """
         makes the data editor visible to the user.
         """
+        ...
+
 

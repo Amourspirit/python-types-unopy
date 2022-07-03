@@ -43,6 +43,7 @@ class CrossReference(object):
             Group (str, optional): Group value.
             Id (int, optional): Id value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class CrossReference(object):
         """
         The name of a news group.
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class CrossReference(object):
         """
         The unique identifier (relative to the server) of an article in the given group.
         """
+        ...
 
 

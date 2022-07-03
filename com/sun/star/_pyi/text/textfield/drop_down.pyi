@@ -35,11 +35,13 @@ class DropDown(TextField_90260a56):
         """
         The items of the dropdown field.
         """
+        ...
     @property
     def Name(self) -> str:
         """
         The name of the drop down field.
         """
+        ...
     @property
     def SelectedItem(self) -> str:
         """
@@ -47,5 +49,6 @@ class DropDown(TextField_90260a56):
         
         If no item is selected this property contains an empty string. If this property is set to a value not present in the items of the dropdown field it is invalidated, i.e. it is set to an empty string.
         """
+        ...
 
 

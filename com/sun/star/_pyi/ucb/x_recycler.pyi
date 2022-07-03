@@ -40,4 +40,6 @@ class XRecycler(XInterface_8f010a43):
         """
         Notify the trash can that an XContent is deleting itself into it.
         """
+        ...
+
 

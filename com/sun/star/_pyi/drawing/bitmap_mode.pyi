@@ -32,6 +32,7 @@ class BitmapMode(Enum):
     See Also:
         `API BitmapMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#ad26489b8cfc631a6aa6a1a59fd2e2356>`_
     """
+    typeName: str = 'com.sun.star.drawing.BitmapMode'
 
     NO_REPEAT: 'uno.Enum'
     """

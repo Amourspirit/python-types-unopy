@@ -41,6 +41,7 @@ class XRowLocate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getBookmark(self) -> object:
         """
         returns the bookmark of the current row of a result set.
@@ -48,6 +49,7 @@ class XRowLocate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def hasOrderedBookmarks(self) -> bool:
         """
         determines whether the bookmarks of a result set are ordered or not.
@@ -55,6 +57,7 @@ class XRowLocate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def hashBookmark(self, bookmark: object) -> int:
         """
         returns the hash value for a specified bookmark.
@@ -62,6 +65,7 @@ class XRowLocate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def moveRelativeToBookmark(self, bookmark: object, rows: int) -> bool:
         """
         moves the cursor a relative number of rows, either positive or negative starting at a given bookmark position.
@@ -71,6 +75,7 @@ class XRowLocate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def moveToBookmark(self, bookmark: object) -> bool:
         """
         moves the cursor to the row identified by a valid bookmark.
@@ -80,4 +85,6 @@ class XRowLocate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

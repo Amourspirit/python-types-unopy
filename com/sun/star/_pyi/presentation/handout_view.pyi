@@ -33,5 +33,6 @@ class HandoutView(DrawingDocumentDrawView_7c7d1128):
     See Also:
         `API HandoutView <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1HandoutView.html>`_
     """
+    ...
 
 

@@ -53,10 +53,12 @@ class XContextChangeEventMultiplexer(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def broadcastContextChangeEvent(self, aEvent: 'ContextChangeEventObject_37b70f6a', xEventFocus: 'XInterface_8f010a43') -> None:
         """
         Call all event listeners that were added for the specified event focus.
         """
+        ...
     def removeAllContextChangeEventListeners(self, xListener: 'XContextChangeEventListener_678510b1') -> None:
         """
         Remove an event listener for all event foci.
@@ -66,6 +68,7 @@ class XContextChangeEventMultiplexer(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def removeContextChangeEventListener(self, xListener: 'XContextChangeEventListener_678510b1', xEventFocus: 'XInterface_8f010a43') -> None:
         """
         Remove an event listener for the specified event focus.
@@ -77,4 +80,6 @@ class XContextChangeEventMultiplexer(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

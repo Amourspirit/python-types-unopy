@@ -47,6 +47,7 @@ class BarCode(object):
             ErrorCorrection (int, optional): ErrorCorrection value.
             Border (int, optional): Border value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class BarCode(object):
         
         Supported types - 0:\"QR Code\", 1:\"Code 128\"
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class BarCode(object):
         """
         Text for which Bar Code is made.
         """
+        ...
 
 
     @property
@@ -70,6 +73,7 @@ class BarCode(object):
         """
         Bar Code Error Correction Level.
         """
+        ...
 
 
     @property
@@ -79,5 +83,6 @@ class BarCode(object):
         
         One Border unit is equal to one dot in the generated Bar code.
         """
+        ...
 
 

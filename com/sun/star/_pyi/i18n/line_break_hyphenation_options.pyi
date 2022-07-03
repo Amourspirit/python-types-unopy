@@ -44,6 +44,7 @@ class LineBreakHyphenationOptions(object):
             aHyphenationOptions (PropertyValues, optional): aHyphenationOptions value.
             hyphenIndex (int, optional): hyphenIndex value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class LineBreakHyphenationOptions(object):
         """
         Reference to the specific hyphenator - can be zero.
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class LineBreakHyphenationOptions(object):
         """
         Sequence of property values to be used by the hyphenator - can be empty if the default values (from the property set) should be used.
         """
+        ...
 
 
     @property
@@ -65,5 +68,6 @@ class LineBreakHyphenationOptions(object):
         """
         The first character not fitting to the current line, considering an additional \"-\" for hyphenation.
         """
+        ...
 
 

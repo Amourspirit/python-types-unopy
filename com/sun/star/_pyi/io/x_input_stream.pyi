@@ -43,6 +43,7 @@ class XInputStream(XInterface_8f010a43):
             com.sun.star.io.NotConnectedException: ``NotConnectedException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def closeInput(self) -> None:
         """
         closes the stream.
@@ -53,6 +54,7 @@ class XInputStream(XInterface_8f010a43):
             com.sun.star.io.NotConnectedException: ``NotConnectedException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readBytes(self, aData: uno.ByteSequence, nBytesToRead: int) -> int:
         """
         reads the specified number of bytes in the given sequence.
@@ -66,6 +68,7 @@ class XInputStream(XInterface_8f010a43):
             com.sun.star.io.BufferSizeExceededException: ``BufferSizeExceededException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readSomeBytes(self, aData: uno.ByteSequence, nMaxBytesToRead: int) -> int:
         """
         reads the available number of bytes, at maximum nMaxBytesToRead.
@@ -79,6 +82,7 @@ class XInputStream(XInterface_8f010a43):
             com.sun.star.io.BufferSizeExceededException: ``BufferSizeExceededException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def skipBytes(self, nBytesToSkip: int) -> None:
         """
         skips the next nBytesToSkip bytes (must be positive).
@@ -90,4 +94,6 @@ class XInputStream(XInterface_8f010a43):
             com.sun.star.io.BufferSizeExceededException: ``BufferSizeExceededException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

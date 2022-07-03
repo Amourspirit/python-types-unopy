@@ -42,6 +42,7 @@ class DocumentIndexMarkAsian(ABC):
         
         It is used to build a hierarchical document index.
         """
+        ...
     @property
     def SecondaryKeyReading(self) -> str:
         """
@@ -49,10 +50,12 @@ class DocumentIndexMarkAsian(ABC):
         
         It is used to build a hierarchical document index.
         """
+        ...
     @property
     def TextReading(self) -> str:
         """
         contains the reading of the string which has been chosen for the index entry.
         """
+        ...
 
 

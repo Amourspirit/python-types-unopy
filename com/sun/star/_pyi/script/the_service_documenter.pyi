@@ -34,5 +34,6 @@ class theServiceDocumenter(XServiceDocumenter_1cc00edc):
     See Also:
         `API theServiceDocumenter <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1script_1_1theServiceDocumenter.html>`_
     """
+    ...
 
 

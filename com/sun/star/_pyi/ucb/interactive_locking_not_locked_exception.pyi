@@ -52,6 +52,7 @@ class InteractiveLockingNotLockedException(InteractiveLockingException_7af31136)
             Classification (InteractionClassification, optional): Classification value.
             Url (str, optional): Url value.
         """
+        ...
 
 __all__ = ['InteractiveLockingNotLockedException']
 

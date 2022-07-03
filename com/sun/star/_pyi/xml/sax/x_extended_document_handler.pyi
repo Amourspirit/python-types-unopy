@@ -39,6 +39,7 @@ class XExtendedDocumentHandler(XDocumentHandler_9b90e28):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def comment(self, sComment: str) -> None:
         """
         receives notification about a comment in the XML-source.
@@ -46,6 +47,7 @@ class XExtendedDocumentHandler(XDocumentHandler_9b90e28):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def endCDATA(self) -> None:
         """
         informs about the end of a CDATA-Section.
@@ -55,6 +57,7 @@ class XExtendedDocumentHandler(XDocumentHandler_9b90e28):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def startCDATA(self) -> None:
         """
         receives notification about the start of a CDATA section in the XML-source.
@@ -64,6 +67,7 @@ class XExtendedDocumentHandler(XDocumentHandler_9b90e28):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def unknown(self, sString: str) -> None:
         """
         notifies that any characters that cannot be handled by other callback methods are announced through this method.
@@ -71,4 +75,6 @@ class XExtendedDocumentHandler(XDocumentHandler_9b90e28):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
+
 

@@ -41,8 +41,11 @@ class XInterfaceAttributeTypeDescription(XInterfaceMemberTypeDescription_52ea159
         """
         Returns the type of the attribute.
         """
+        ...
     def isReadOnly(self) -> bool:
         """
         Returns true, if this attribute is read-only.
         """
+        ...
+
 

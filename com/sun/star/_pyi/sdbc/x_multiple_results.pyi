@@ -46,6 +46,7 @@ class XMultipleResults(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getResultSet(self) -> 'XResultSet_98e30aa7':
         """
         returns the current result as a com.sun.star.sdbc.ResultSet object.
@@ -55,6 +56,7 @@ class XMultipleResults(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getUpdateCount(self) -> int:
         """
         returns the current result as an update count.
@@ -64,4 +66,6 @@ class XMultipleResults(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

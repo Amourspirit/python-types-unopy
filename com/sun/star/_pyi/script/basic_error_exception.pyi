@@ -49,17 +49,20 @@ class BasicErrorException(Exception_85530a09):
             ErrorCode (int, optional): ErrorCode value.
             ErrorMessageArgument (str, optional): ErrorMessageArgument value.
         """
+        ...
     @property
     def ErrorCode(self) -> int:
         """
         The error code.
         """
+        ...
 
     @property
     def ErrorMessageArgument(self) -> str:
         """
         Specifies the argument which is used in the localized error message for the placeholder.
         """
+        ...
 
 
 __all__ = ['BasicErrorException']

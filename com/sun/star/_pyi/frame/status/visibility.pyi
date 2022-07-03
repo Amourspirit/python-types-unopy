@@ -44,6 +44,7 @@ class Visibility(object):
         Arguments:
             bVisible (bool, optional): bVisible value.
         """
+        ...
 
 
     @property
@@ -51,5 +52,6 @@ class Visibility(object):
         """
         TRUE if the property is visible otherwise FALSE.
         """
+        ...
 
 

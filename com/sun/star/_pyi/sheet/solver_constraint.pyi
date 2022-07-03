@@ -44,6 +44,7 @@ class SolverConstraint(object):
             Operator (SolverConstraintOperator, optional): Operator value.
             Right (object, optional): Right value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class SolverConstraint(object):
         """
         The address of the cell that is constrained.
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class SolverConstraint(object):
         """
         The type of the constraint.
         """
+        ...
 
 
     @property
@@ -65,5 +68,6 @@ class SolverConstraint(object):
         """
         The comparison value, of type double or com.sun.star.table.CellAddress.
         """
+        ...
 
 

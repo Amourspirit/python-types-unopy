@@ -29,5 +29,6 @@ class FilterFormulaParser(XFilterFormulaParser_29590f22):
     See Also:
         `API FilterFormulaParser <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1FilterFormulaParser.html>`_
     """
+    ...
 
 

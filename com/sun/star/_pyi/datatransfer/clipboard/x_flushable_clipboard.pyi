@@ -34,4 +34,6 @@ class XFlushableClipboard(XInterface_8f010a43):
         """
         Renders the current content of the clipboard to the system so that it is available even if the source application no longer exist.
         """
+        ...
+
 

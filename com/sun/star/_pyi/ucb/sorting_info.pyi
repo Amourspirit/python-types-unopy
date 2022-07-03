@@ -41,6 +41,7 @@ class SortingInfo(object):
             PropertyName (str, optional): PropertyName value.
             Ascending (bool, optional): Ascending value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class SortingInfo(object):
         
         \"Title\" ).
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class SortingInfo(object):
         """
         contains a flag indicating the sort mode (ascending or descending).
         """
+        ...
 
 

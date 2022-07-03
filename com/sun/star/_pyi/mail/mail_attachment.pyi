@@ -46,6 +46,7 @@ class MailAttachment(object):
             Data (XTransferable, optional): Data value.
             ReadableName (str, optional): ReadableName value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class MailAttachment(object):
         
         It is expected that the transferable delivers the data as sequence of bytes. Although a transferable may support multiple data flavors only the first data flavor supplied will be used to retrieve the data and it is expected that the type of the data is a sequence of bytes.
         """
+        ...
 
 
     @property
@@ -64,5 +66,6 @@ class MailAttachment(object):
         
         ReadableName must not be empty.
         """
+        ...
 
 

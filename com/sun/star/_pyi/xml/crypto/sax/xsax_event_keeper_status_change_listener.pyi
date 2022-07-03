@@ -36,12 +36,16 @@ class XSAXEventKeeperStatusChangeListener(XInterface_8f010a43):
         """
         Notifies the SAXEventKeeper is entering/leaving blocking state.
         """
+        ...
     def bufferStatusChanged(self, isBufferEmpty: bool) -> None:
         """
         Notifies the SAXEventKeeper's buffer is empty/not empty.
         """
+        ...
     def collectionStatusChanged(self, isInsideCollectedElement: bool) -> None:
         """
         Notifies the SAXEventKeeper is entering/leaving collecting state.
         """
+        ...
+
 

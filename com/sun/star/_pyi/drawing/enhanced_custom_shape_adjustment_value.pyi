@@ -43,6 +43,7 @@ class EnhancedCustomShapeAdjustmentValue(object):
             State (PropertyState, optional): State value.
             Name (str, optional): Name value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class EnhancedCustomShapeAdjustmentValue(object):
         """
         the any can be of type long or double
         """
+        ...
 
 
     @property
@@ -62,5 +64,6 @@ class EnhancedCustomShapeAdjustmentValue(object):
         """
         optional name, used by pptx import/export for custom shape presets
         """
+        ...
 
 

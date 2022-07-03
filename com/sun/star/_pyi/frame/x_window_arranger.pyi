@@ -36,7 +36,10 @@ class XWindowArranger(XInterface_8f010a43):
     def arrange(self, nCommand: int) -> None:
         """
         """
+        ...
     def hasArrangeCommand(self, nCommand: int) -> bool:
         """
         """
+        ...
+
 

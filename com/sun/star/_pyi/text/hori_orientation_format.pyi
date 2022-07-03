@@ -47,6 +47,7 @@ class HoriOrientationFormat(object):
             HorizontalRelation (int, optional): HorizontalRelation value.
             PositionToggle (bool, optional): PositionToggle value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class HoriOrientationFormat(object):
         
         Only valid if the property HorizontalOrientation contains the value HORI_NONE.
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class HoriOrientationFormat(object):
         
         The values refer to com.sun.star.HoriOrientation.
         """
+        ...
 
 
     @property
@@ -72,6 +75,7 @@ class HoriOrientationFormat(object):
         """
         determines the reference position of the horizontal alignment.
         """
+        ...
 
 
     @property
@@ -79,5 +83,6 @@ class HoriOrientationFormat(object):
         """
         determines if the orientation toggles between left and right pages.
         """
+        ...
 
 

@@ -39,20 +39,26 @@ class XMethodParameter(XInterface_8f010a43):
         """
         Returns the name of the parameter.
         """
+        ...
     def getPosition(self) -> int:
         """
         Returns the position of the parameter regarding the IDL method declaration.
         """
+        ...
     def getType(self) -> 'XTypeDescription_3c210fb1':
         """
         Returns the type of the parameter.
         """
+        ...
     def isIn(self) -> bool:
         """
         Returns true, if the parameter is declared as [in] or [inout] in IDL.
         """
+        ...
     def isOut(self) -> bool:
         """
         Returns true, if the parameter is declared as [out] or [inout] in IDL.
         """
+        ...
+
 

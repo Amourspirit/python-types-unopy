@@ -37,5 +37,6 @@ class Bibliography(DependentTextField_fed90ded):
         """
         contains the bibliography fields of the text field.
         """
+        ...
 
 

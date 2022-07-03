@@ -48,6 +48,7 @@ class DataAwareControlModel(FormControlModel_e2990d22, XBoundComponent_d4830cbf,
         
         Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the com.sun.star.sdb.Column service.
         """
+        ...
     @property
     def DataField(self) -> str:
         """
@@ -57,6 +58,7 @@ class DataAwareControlModel(FormControlModel_e2990d22, XBoundComponent_d4830cbf,
         
         Not every control model can be bound to every database column. Usually, super services of the DataAwareControlModel restrict the column types they can be used with.
         """
+        ...
     @property
     def InputRequired(self) -> bool:
         """
@@ -68,6 +70,7 @@ class DataAwareControlModel(FormControlModel_e2990d22, XBoundComponent_d4830cbf,
         
             OOo 3.1
         """
+        ...
     @property
     def LabelControl(self) -> 'XPropertySet_bc180bfa':
         """
@@ -77,5 +80,6 @@ class DataAwareControlModel(FormControlModel_e2990d22, XBoundComponent_d4830cbf,
         
         When setting the property, a number of constraints apply:
         """
+        ...
 
 

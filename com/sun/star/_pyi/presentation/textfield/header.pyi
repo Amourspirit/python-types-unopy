@@ -29,5 +29,6 @@ class Header(TextField_90260a56):
     See Also:
         `API Header <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1textfield_1_1Header.html>`_
     """
+    ...
 
 

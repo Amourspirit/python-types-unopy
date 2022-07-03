@@ -45,6 +45,7 @@ class DispatchDescriptor(object):
             FrameName (str, optional): FrameName value.
             SearchFlags (int, optional): SearchFlags value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class DispatchDescriptor(object):
         
         Must be a full parsed URL. Use service com.sun.star.util.URLTransformer for that.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class DispatchDescriptor(object):
         
         Special targets (e.g. \"_blank\", \"_self\") or really existing target names can be used.
         """
+        ...
 
 
     @property
@@ -72,5 +75,6 @@ class DispatchDescriptor(object):
         
         This optional parameter is used if FrameName isn't a special target only.
         """
+        ...
 
 

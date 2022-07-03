@@ -50,6 +50,7 @@ class MailMergeEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Model (XModel, optional): Model value.
         """
+        ...
 
 
     @property
@@ -57,5 +58,6 @@ class MailMergeEvent(EventObject_a3d70b03):
         """
         The model of the document to be processed next.
         """
+        ...
 
 

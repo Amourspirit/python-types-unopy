@@ -37,20 +37,24 @@ class Dim3DDiagram(X3DDefaultSetter_e9630d25, X3DDisplay_a1650abf):
         
         Otherwise it is two-dimensional.
         """
+        ...
     @property
     def Perspective(self) -> int:
         """
         Perspective of 3D charts ( [0,100] ).
         """
+        ...
     @property
     def RotationHorizontal(self) -> int:
         """
         Horizontal rotation of 3D charts in degrees ( ]-180,180] ).
         """
+        ...
     @property
     def RotationVertical(self) -> int:
         """
         Vertical rotation of 3D charts in degrees ( ]-180,180] ).
         """
+        ...
 
 

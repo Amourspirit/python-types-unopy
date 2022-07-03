@@ -28,5 +28,6 @@ class DriverManager(XDriverManager2_d29c0c55):
     See Also:
         `API DriverManager <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdbc_1_1DriverManager.html>`_
     """
+    ...
 
 

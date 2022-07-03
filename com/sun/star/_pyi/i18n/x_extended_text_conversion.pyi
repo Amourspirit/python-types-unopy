@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.i18n
 from typing_extensions import Literal
 import typing
+import uno
 from .x_text_conversion import XTextConversion as XTextConversion_cd640c6b
 if typing.TYPE_CHECKING:
     from ..lang.locale import Locale as Locale_70d308fa
@@ -39,7 +40,7 @@ class XExtendedTextConversion(XTextConversion_cd640c6b):
     """
     __pyunointerface__: Literal['com.sun.star.i18n.XExtendedTextConversion']
 
-    def getConversionWithOffset(self, aText: str, nStartPos: int, nLength: int, aLocale: 'Locale_70d308fa', nTextConversionType: int, nTextConversionOptions: int, rOffset: 'typing.Tuple[int, ...]') -> str:
+    def getConversionWithOffset(self, aText: str, nStartPos: int, nLength: int, aLocale: 'Locale_70d308fa', nTextConversionType: int, nTextConversionOptions: int, rOffset: uno.ByteSequence) -> str:
         """
         The functionality of this method is same as com.sun.star.i18n.XTextConversion.getConversion(), except an additional output parameter rOffset.
 
@@ -49,4 +50,6 @@ class XExtendedTextConversion(XTextConversion_cd640c6b):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
+
 

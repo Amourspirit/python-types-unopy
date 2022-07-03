@@ -37,5 +37,6 @@ class NSSInitializer(XNSSInitializer_27f70ef8):
     See Also:
         `API NSSInitializer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1crypto_1_1NSSInitializer.html>`_
     """
+    ...
 
 

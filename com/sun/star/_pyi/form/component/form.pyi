@@ -36,5 +36,6 @@ class Form(FormComponent_bc700c03, FormComponents_c8e60c76, XTabControllerModel_
     See Also:
         `API Form <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1component_1_1Form.html>`_
     """
+    ...
 
 

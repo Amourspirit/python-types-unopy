@@ -44,6 +44,7 @@ class CellRangeAddress(object):
             EndColumn (int, optional): EndColumn value.
             EndRow (int, optional): EndRow value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class CellRangeAddress(object):
         """
         is the index of the sheet that contains the cell range.
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class CellRangeAddress(object):
         """
         is the index of the column of the left edge of the range.
         """
+        ...
 
 
     @property
@@ -65,6 +68,7 @@ class CellRangeAddress(object):
         """
         is the index of the row of the top edge of the range.
         """
+        ...
 
 
     @property
@@ -72,6 +76,7 @@ class CellRangeAddress(object):
         """
         is the index of the column of the right edge of the range.
         """
+        ...
 
 
     @property
@@ -79,5 +84,6 @@ class CellRangeAddress(object):
         """
         is the index of the row of the bottom edge of the range.
         """
+        ...
 
 

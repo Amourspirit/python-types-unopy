@@ -35,5 +35,6 @@ class AccessibleFootnoteView(XAccessibleComponent_b2f21269, XAccessibleContext_8
     See Also:
         `API AccessibleFootnoteView <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1AccessibleFootnoteView.html>`_
     """
+    ...
 
 

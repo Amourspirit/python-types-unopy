@@ -45,16 +45,21 @@ class XGridDataListener(XEventListener_c7230c4a):
         """
         is called when existing data in a grid control's data model has been modified.
         """
+        ...
     def rowHeadingChanged(self, Event: 'GridDataEvent_ebcb0d2a') -> None:
         """
         is called when the title of one or more rows changed.
         """
+        ...
     def rowsInserted(self, Event: 'GridDataEvent_ebcb0d2a') -> None:
         """
         is called when one or more rows of data have been inserted into a grid control's data model.
         """
+        ...
     def rowsRemoved(self, Event: 'GridDataEvent_ebcb0d2a') -> None:
         """
         is called when one or more rows of data have been removed from a grid control's data model.
         """
+        ...
+
 

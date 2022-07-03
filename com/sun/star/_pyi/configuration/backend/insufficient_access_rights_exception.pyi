@@ -50,6 +50,7 @@ class InsufficientAccessRightsException(BackendAccessException_7cb5161f):
             Context (XInterface, optional): Context value.
             TargetException (object, optional): TargetException value.
         """
+        ...
 
 __all__ = ['InsufficientAccessRightsException']
 

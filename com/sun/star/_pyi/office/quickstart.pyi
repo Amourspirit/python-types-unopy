@@ -36,14 +36,18 @@ class Quickstart(XFastPropertySet_ee6b0d88):
         """
         The first two parameters are ignored.
         """
+        ...
     def createAutoStart(self, bQuickstart: bool, bAutostart: bool) -> None:
         """
         """
+        ...
     def createDefault(self) -> None:
         """
         """
+        ...
     def createStart(self, bQuickstart: bool) -> None:
         """
         """
+        ...
 
 

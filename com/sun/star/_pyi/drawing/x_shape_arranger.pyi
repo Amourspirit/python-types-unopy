@@ -43,24 +43,31 @@ class XShapeArranger(XInterface_8f010a43):
         """
         applies the specified Arrangement to the specified collection of Shapes.
         """
+        ...
     def bringToFront(self, xShapes: 'XShapes_9a800ab0', nSteps: int) -> None:
         """
         moves the specified Shapes by a specified number of objects more to the front.
         """
+        ...
     def reverseOrder(self, xShapes: 'XShapes_9a800ab0') -> None:
         """
         reverses the order of the specified collection of Shapes.
         """
+        ...
     def sendToBack(self, xShapes: 'XShapes_9a800ab0', nSteps: int) -> None:
         """
         moves the specified Shapes nSteps objects more to the back.
         """
+        ...
     def setBehindShape(self, xShapes: 'XShapes_9a800ab0', xShape: 'XShape_8fd00a3d') -> None:
         """
         moves the specified collection of Shapes behind the specified single Shape.
         """
+        ...
     def setInFrontOf(self, xShapes: 'XShapes_9a800ab0', xShape: 'XShape_8fd00a3d') -> None:
         """
         moves the specified collection of Shapes in front of the specified single Shape.
         """
+        ...
+
 

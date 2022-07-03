@@ -50,6 +50,7 @@ class ContextInformation(object):
             EndLine (int, optional): EndLine value.
             EndColumn (int, optional): EndColumn value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class ContextInformation(object):
         """
         Get all names of the local variable in this context.
         """
+        ...
 
 
     @property
@@ -66,6 +68,7 @@ class ContextInformation(object):
         
         If the module or function can't be addressed by name, e.g., in case that a runtime generated eval-module is executed, this string is empty
         """
+        ...
 
 
     @property
@@ -75,6 +78,7 @@ class ContextInformation(object):
         
         If the source can be accessed using the ModuleName or if the source is unknown (executing compiled code) this string can be empty.
         """
+        ...
 
 
     @property
@@ -84,6 +88,7 @@ class ContextInformation(object):
         
         If \"name\" addresses a function, all line and column values are nevertheless given relative to the module's source. If source code is not available, this value addresses a binary position in the compiled code.
         """
+        ...
 
 
     @property
@@ -91,6 +96,7 @@ class ContextInformation(object):
         """
         contains the first column in the StartLine associated with the context.
         """
+        ...
 
 
     @property
@@ -98,6 +104,7 @@ class ContextInformation(object):
         """
         contains the last line in the module's source code associated with the context.
         """
+        ...
 
 
     @property
@@ -105,5 +112,6 @@ class ContextInformation(object):
         """
         contains the first column in the EndLine that is NOT associated with the context.
         """
+        ...
 
 

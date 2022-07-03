@@ -41,4 +41,6 @@ class XTablePivotChartsSupplier(XInterface_8f010a43):
         """
         returns the collection of pivot charts.
         """
+        ...
+
 

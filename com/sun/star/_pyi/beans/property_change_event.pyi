@@ -53,6 +53,7 @@ class PropertyChangeEvent(EventObject_a3d70b03):
             OldValue (object, optional): OldValue value.
             NewValue (object, optional): NewValue value.
         """
+        ...
 
 
     @property
@@ -60,6 +61,7 @@ class PropertyChangeEvent(EventObject_a3d70b03):
         """
         contains the unique name of the property which changes its value.
         """
+        ...
 
 
     @property
@@ -67,6 +69,7 @@ class PropertyChangeEvent(EventObject_a3d70b03):
         """
         contains TRUE if further events in the same transaction occur.
         """
+        ...
 
 
     @property
@@ -76,6 +79,7 @@ class PropertyChangeEvent(EventObject_a3d70b03):
         
         May be -1 if the implementation has no handle. You can use this handle to get values from the XFastPropertySet.
         """
+        ...
 
 
     @property
@@ -83,6 +87,7 @@ class PropertyChangeEvent(EventObject_a3d70b03):
         """
         contains the old value of the property.
         """
+        ...
 
 
     @property
@@ -90,5 +95,6 @@ class PropertyChangeEvent(EventObject_a3d70b03):
         """
         contains the new value of the property.
         """
+        ...
 
 

@@ -37,7 +37,10 @@ class XStream(XInterface_8f010a43):
     def getInputStream(self) -> 'XInputStream_98d40ab4':
         """
         """
+        ...
     def getOutputStream(self) -> 'XOutputStream_a4e00b35':
         """
         """
+        ...
+
 

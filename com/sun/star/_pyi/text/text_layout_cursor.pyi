@@ -30,5 +30,6 @@ class TextLayoutCursor(TextCursor_9b770af0, XPageCursor_a4cf0b20):
     See Also:
         `API TextLayoutCursor <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1TextLayoutCursor.html>`_
     """
+    ...
 
 

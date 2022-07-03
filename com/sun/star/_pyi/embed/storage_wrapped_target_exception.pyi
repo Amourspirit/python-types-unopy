@@ -44,6 +44,7 @@ class StorageWrappedTargetException(WrappedTargetException_38ae0f93):
             Context (XInterface, optional): Context value.
             TargetException (object, optional): TargetException value.
         """
+        ...
 
 __all__ = ['StorageWrappedTargetException']
 

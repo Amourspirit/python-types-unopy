@@ -32,6 +32,7 @@ class SearchAlgorithms(Enum):
     See Also:
         `API SearchAlgorithms <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1util.html#a88c44d0f9aaded4e5618f3f8adcde79f>`_
     """
+    typeName: str = 'com.sun.star.util.SearchAlgorithms'
 
     ABSOLUTE: 'uno.Enum'
     """

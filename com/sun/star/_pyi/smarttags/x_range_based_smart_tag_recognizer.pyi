@@ -40,4 +40,6 @@ class XRangeBasedSmartTagRecognizer(XInitialization_d46c0cca):
         """
         recognizes smart tags.
         """
+        ...
+
 
