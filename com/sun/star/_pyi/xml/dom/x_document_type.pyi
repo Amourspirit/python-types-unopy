@@ -36,24 +36,31 @@ class XDocumentType(XNode_83fb09a5):
         """
         A NamedNodeMap containing the general entities, both external and internal, declared in the DTD.
         """
+        ...
     def getInternalSubset(self) -> str:
         """
         The internal subset as a string, or null if there is none.
         """
+        ...
     def getName(self) -> str:
         """
         The name of DTD; i.e., the name immediately following the DOCTYPE keyword.
         """
+        ...
     def getNotations(self) -> 'XNamedNodeMap_de600ca8':
         """
         A NamedNodeMap containing the notations declared in the DTD.
         """
+        ...
     def getPublicId(self) -> str:
         """
         The public identifier of the external subset.
         """
+        ...
     def getSystemId(self) -> str:
         """
         The system identifier of the external subset.
         """
+        ...
+
 

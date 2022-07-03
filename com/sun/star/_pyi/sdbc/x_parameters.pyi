@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.sdbc
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..io.x_input_stream import XInputStream as XInputStream_98d40ab4
@@ -37,9 +38,7 @@ class XParameters(XInterface_8f010a43):
     
     Note: The setXXX methods for setting IN parameter values must specify types that are compatible with the defined SQL type of the input parameter. For instance, if the IN parameter has SQL type Integer, then the method com.sun.star.sdbc.XParameters.setInt() should be used.
     
-    If arbitrary parameter type conversions are required, the method com.sun.star.sdbc.XParameters.setObject() should be used with a target SQL type.
-    
-    Example of setting a parameter; con is an active connection.
+    If arbitrary parameter type conversions are required, the method com.sun.star.sdbc.XParameters.setObject() should be used with a target SQL type. Example of setting a parameter; con is an active connection.
 
     See Also:
         `API XParameters <https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1sdbc_1_1XParameters.html>`_
@@ -55,6 +54,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setArray(self, parameterIndex: int, x: 'XArray_708108fb') -> None:
         """
         sets an Array parameter.
@@ -62,6 +62,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setBinaryStream(self, parameterIndex: int, x: 'XInputStream_98d40ab4', length: int) -> None:
         """
         sets the designated parameter to the given input stream, which will have the specified number of bytes.
@@ -71,6 +72,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setBlob(self, parameterIndex: int, x: 'XBlob_6773087b') -> None:
         """
         sets a BLOB parameter.
@@ -78,6 +80,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setBoolean(self, parameterIndex: int, x: bool) -> None:
         """
         sets the designated parameter to a boolean value.
@@ -87,6 +90,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setByte(self, parameterIndex: int, x: int) -> None:
         """
         sets the designated parameter to a byte value.
@@ -96,7 +100,8 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
-    def setBytes(self, parameterIndex: int, x: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def setBytes(self, parameterIndex: int, x: uno.ByteSequence) -> None:
         """
         sets the designated parameter to a sequence of bytes.
         
@@ -105,6 +110,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setCharacterStream(self, parameterIndex: int, x: 'XInputStream_98d40ab4', length: int) -> None:
         """
         sets the designated parameter to the given input stream, which will have the specified number of bytes.
@@ -114,6 +120,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setClob(self, parameterIndex: int, x: 'XClob_6777087c') -> None:
         """
         sets a CLOB parameter.
@@ -121,6 +128,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setDate(self, parameterIndex: int, x: 'Date_60040844') -> None:
         """
         sets the designated parameter to a date value.
@@ -130,6 +138,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setDouble(self, parameterIndex: int, x: float) -> None:
         """
         sets the designated parameter to a double value.
@@ -139,6 +148,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setFloat(self, parameterIndex: int, x: float) -> None:
         """
         sets the designated parameter to a float value.
@@ -148,6 +158,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setInt(self, parameterIndex: int, x: int) -> None:
         """
         sets the designated parameter to a long value.
@@ -157,6 +168,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setLong(self, parameterIndex: int, x: int) -> None:
         """
         sets the designated parameter to a hyper value.
@@ -166,6 +178,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setNull(self, parameterIndex: int, sqlType: int) -> None:
         """
         sets the designated parameter to SQL NULL.
@@ -173,6 +186,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setObject(self, parameterIndex: int, x: object) -> None:
         """
         sets the value of a parameter using an any.
@@ -184,18 +198,19 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setObjectNull(self, parameterIndex: int, sqlType: int, typeName: str) -> None:
         """
         sets the designated parameter to SQL NULL.
         
         This version of setNull should be used for user-named types and REF type parameters. Examples of user-named types include: STRUCT, DISTINCT, OBJECT, and named array types.
         
-        Note: To be portable, applications must give the SQL type code and the fully-qualified SQL type name when specifying a NULL user-defined or REF parameter. In the case of a user-named type the name is the type name of the parameter itself. For a REF parameter the name is the type name of the referenced type. If a SDBC driver does not need the type code or type name information, it may ignore it.
-        Although it is intended for user-named and Ref parameters, this method may be used to set a null parameter of any JDBC type. If the parameter does not have a user-named or REF type, the given typeName is ignored.
+        Note: To be portable, applications must give the SQL type code and the fully-qualified SQL type name when specifying a NULL user-defined or REF parameter. In the case of a user-named type the name is the type name of the parameter itself. For a REF parameter the name is the type name of the referenced type. If a SDBC driver does not need the type code or type name information, it may ignore it. Although it is intended for user-named and Ref parameters, this method may be used to set a null parameter of any JDBC type. If the parameter does not have a user-named or REF type, the given typeName is ignored.
 
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setObjectWithInfo(self, parameterIndex: int, x: object, targetSqlType: int, scale: int) -> None:
         """
         set a value from the Datatype ANY for a parameter.
@@ -207,6 +222,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setRef(self, parameterIndex: int, x: 'XRef_5f110819') -> None:
         """
         sets a REF(&lt;structured-type&gt;) parameter.
@@ -214,6 +230,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setShort(self, parameterIndex: int, x: int) -> None:
         """
         sets the designated parameter to a short value.
@@ -223,6 +240,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setString(self, parameterIndex: int, x: str) -> None:
         """
         sets the designated parameter to a string value.
@@ -232,6 +250,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setTime(self, parameterIndex: int, x: 'Time_604e0855') -> None:
         """
         sets the designated parameter to a time value.
@@ -241,6 +260,7 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setTimestamp(self, parameterIndex: int, x: 'DateTime_84de09d3') -> None:
         """
         sets the designated parameter to a datetime value.
@@ -250,4 +270,6 @@ class XParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

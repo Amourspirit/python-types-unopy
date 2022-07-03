@@ -46,11 +46,13 @@ class InteractiveNetworkConnectException(InteractiveNetworkException_7ca31159):
             Classification (InteractionClassification, optional): Classification value.
             Server (str, optional): Server value.
         """
+        ...
     @property
     def Server(self) -> str:
         """
         The name of the server to which connecting failed.
         """
+        ...
 
 
 __all__ = ['InteractiveNetworkConnectException']

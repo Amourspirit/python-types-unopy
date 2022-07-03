@@ -39,6 +39,7 @@ class XMasterPasswordHandling(XInterface_8f010a43):
         
         After the storing is forbidden the master password and all the stored passwords are removed.
         """
+        ...
     def authorizateWithMasterPassword(self, xHandler: 'XInteractionHandler_bf80e51') -> bool:
         """
         allows to check the user authorization.
@@ -47,6 +48,7 @@ class XMasterPasswordHandling(XInterface_8f010a43):
         
         The call will use the standard interaction handler service InteractionHandler if no handler is provided.
         """
+        ...
     def changeMasterPassword(self, xHandler: 'XInteractionHandler_bf80e51') -> bool:
         """
         allows to change the master password.
@@ -55,16 +57,21 @@ class XMasterPasswordHandling(XInterface_8f010a43):
         
         The call will use the standard interaction handler service InteractionHandler if no handler is provided.
         """
+        ...
     def hasMasterPassword(self) -> bool:
         """
         allows to detect whether there is already a master password
         """
+        ...
     def isPersistentStoringAllowed(self) -> bool:
         """
         allows to detect whether persistent storing of passwords is allowed
         """
+        ...
     def removeMasterPassword(self) -> None:
         """
         let the master password and all the related stored passwords be removed.
         """
+        ...
+
 

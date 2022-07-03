@@ -45,4 +45,6 @@ class XSingletonTypeDescription(XTypeDescription_3c210fb1):
         """
         Returns the service associated with the singleton.
         """
+        ...
+
 

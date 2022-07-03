@@ -43,5 +43,6 @@ class SingleBackend(XBackendEntities_fecf13bb, XMultiLayerStratum_2a5314c6, XSch
     See Also:
         `API SingleBackend <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1SingleBackend.html>`_
     """
+    ...
 
 

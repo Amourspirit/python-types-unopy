@@ -46,6 +46,7 @@ class RuleTerm(object):
             CaseSensitive (bool, optional): CaseSensitive value.
             RegularExpression (bool, optional): RegularExpression value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class RuleTerm(object):
         """
         the name of the property used to match the term.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class RuleTerm(object):
         """
         the value of the property used to compare with the document property.
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class RuleTerm(object):
         
         The value can be one of the RuleOperator constants.
         """
+        ...
 
 
     @property
@@ -78,6 +82,7 @@ class RuleTerm(object):
         """
         this flag indicates whether a string \"operand\" shall be compared case sensitive.
         """
+        ...
 
 
     @property
@@ -85,5 +90,6 @@ class RuleTerm(object):
         """
         this flag indicates whether a string \"operand\" shall be treated as a regular expression.
         """
+        ...
 
 

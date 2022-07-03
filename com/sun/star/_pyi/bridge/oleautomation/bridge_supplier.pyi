@@ -35,5 +35,6 @@ class BridgeSupplier(XBridgeSupplier2_fb800da0):
     See Also:
         `API BridgeSupplier <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1bridge_1_1oleautomation_1_1BridgeSupplier.html>`_
     """
+    ...
 
 

@@ -40,6 +40,7 @@ class XElement(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def endElement(self) -> None:
         """
         Receives notification of element closing.
@@ -47,22 +48,27 @@ class XElement(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def getAttributes(self) -> 'XAttributes_e31a0d36':
         """
         Gets the attributes of this element.
         """
+        ...
     def getLocalName(self) -> str:
         """
         Gets the local name of this element.
         """
+        ...
     def getParent(self) -> 'XElement':
         """
         Gets the parent context.
         """
+        ...
     def getUid(self) -> int:
         """
         Gets the namespace uid of this element.
         """
+        ...
     def ignorableWhitespace(self, whitespace: str) -> None:
         """
         Receives notification of white space that can be ignored.
@@ -70,6 +76,7 @@ class XElement(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def processingInstruction(self, target: str, data: str) -> None:
         """
         Receives notification of a processing instruction.
@@ -77,6 +84,7 @@ class XElement(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def startChildElement(self, uid: int, localName: str, xAttributes: 'XAttributes_e31a0d36') -> 'XElement':
         """
         Called upon each occurring child element.
@@ -84,4 +92,6 @@ class XElement(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
+
 

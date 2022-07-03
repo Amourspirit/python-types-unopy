@@ -28,5 +28,6 @@ class SAXDocumentBuilder(XSAXDocumentBuilder2_40550f43):
     See Also:
         `API SAXDocumentBuilder <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1dom_1_1SAXDocumentBuilder.html>`_
     """
+    ...
 
 

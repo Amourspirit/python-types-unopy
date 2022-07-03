@@ -41,4 +41,6 @@ class XAutoTextEntry(XInterface_8f010a43):
         """
         inserts the contents represented by this auto text entry at the specified text range.
         """
+        ...
+
 

@@ -36,19 +36,23 @@ class DataBar(XConditionEntry_e2340d32):
     def DataBarEntries(self) -> 'typing.Tuple[XDataBarEntry_c61d0c1a, ...]':
         """
         """
+        ...
     @property
     def AxisColor(self) -> 'Color_68e908c5':
         """
         """
+        ...
     @property
     def AxisPosition(self) -> int:
         """
         See com.sun.star.sheet.DataBarAxis for possible values.
         """
+        ...
     @property
     def Color(self) -> 'Color_68e908c5':
         """
         """
+        ...
     @property
     def MaximumLength(self) -> float:
         """
@@ -56,6 +60,7 @@ class DataBar(XConditionEntry_e2340d32):
         
         Allowed values are (0, 1000) but larger than MinimumLength.
         """
+        ...
     @property
     def MinimumLength(self) -> float:
         """
@@ -63,21 +68,26 @@ class DataBar(XConditionEntry_e2340d32):
         
         Allowed values are [0, 100) but smaller than MaximumLength.
         """
+        ...
     @property
     def NegativeColor(self) -> 'Color_68e908c5':
         """
         """
+        ...
     @property
     def ShowValue(self) -> bool:
         """
         """
+        ...
     @property
     def UseGradient(self) -> bool:
         """
         """
+        ...
     @property
     def UseNegativeColor(self) -> bool:
         """
         """
+        ...
 
 

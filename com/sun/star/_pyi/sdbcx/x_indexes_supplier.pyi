@@ -37,4 +37,6 @@ class XIndexesSupplier(XInterface_8f010a43):
         """
         returns the container of indexes.
         """
+        ...
+
 

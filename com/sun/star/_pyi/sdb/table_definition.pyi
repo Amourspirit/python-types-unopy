@@ -36,8 +36,10 @@ class TableDefinition(XPropertySet_bc180bfa):
     def createDefault(self) -> None:
         """
         """
+        ...
     def createWithName(self, Name: str) -> None:
         """
         """
+        ...
 
 

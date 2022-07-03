@@ -47,6 +47,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def addItemType(self, aItemType: 'TemplateIdentifier_2aaa14b5') -> None:
         """
         receives notification that the current set can contain items that are instances of a specified template.
@@ -57,6 +58,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def addProperty(self, aName: str, aAttributes: int, aType: object) -> None:
         """
         receives notification that a property is added to the current node.
@@ -71,6 +73,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def addPropertyWithDefault(self, aName: str, aAttributes: int, aDefaultValue: object) -> None:
         """
         receives notification that a property having a default value is added to the current node.
@@ -85,6 +88,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def endComponent(self) -> None:
         """
         receives notification that a component description is complete.
@@ -97,6 +101,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def endNode(self) -> None:
         """
         receives notification that a node description is complete.
@@ -109,6 +114,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def endSchema(self) -> None:
         """
         receives notification that the current schema description is complete.
@@ -121,6 +127,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def endTemplate(self) -> None:
         """
         receives notification that a template description is complete.
@@ -133,6 +140,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def importComponent(self, aName: str) -> None:
         """
         receives notification that the schema depends on templates from a different component.
@@ -143,6 +151,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def startComponent(self, aName: str) -> None:
         """
         receives notification that a component description is started.
@@ -155,6 +164,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def startGroup(self, aName: str, aAttributes: int) -> None:
         """
         receives notification that a group description is started.
@@ -171,6 +181,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def startGroupTemplate(self, aTemplate: 'TemplateIdentifier_2aaa14b5', aAttributes: int) -> None:
         """
         receives notification that a template description is started for a group.
@@ -187,6 +198,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def startSchema(self) -> None:
         """
         receives notification that a schema description is started.
@@ -197,6 +209,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def startSet(self, aName: str, aAttributes: int, aItemType: 'TemplateIdentifier_2aaa14b5') -> None:
         """
         receives notification that a set description is started.
@@ -213,6 +226,7 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def startSetTemplate(self, aTemplate: 'TemplateIdentifier_2aaa14b5', aAttributes: int, aItemType: 'TemplateIdentifier_2aaa14b5') -> None:
         """
         receives notification that a template description is started for a set.
@@ -229,4 +243,6 @@ class XSchemaHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

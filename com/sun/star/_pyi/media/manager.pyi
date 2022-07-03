@@ -31,5 +31,6 @@ class Manager(XManager_8daa0a1b):
     See Also:
         `API Manager <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1media_1_1Manager.html>`_
     """
+    ...
 
 

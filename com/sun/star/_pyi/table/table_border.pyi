@@ -58,6 +58,7 @@ class TableBorder(object):
             Distance (int, optional): Distance value.
             IsDistanceValid (bool, optional): IsDistanceValid value.
         """
+        ...
 
 
     @property
@@ -65,6 +66,7 @@ class TableBorder(object):
         """
         determines the line style at the top edge.
         """
+        ...
 
 
     @property
@@ -72,6 +74,7 @@ class TableBorder(object):
         """
         specifies whether the value of TableBorder.TopLine is used.
         """
+        ...
 
 
     @property
@@ -79,6 +82,7 @@ class TableBorder(object):
         """
         determines the line style at the bottom edge.
         """
+        ...
 
 
     @property
@@ -86,6 +90,7 @@ class TableBorder(object):
         """
         specifies whether the value of TableBorder.BottomLine is used.
         """
+        ...
 
 
     @property
@@ -93,6 +98,7 @@ class TableBorder(object):
         """
         determines the line style at the left edge.
         """
+        ...
 
 
     @property
@@ -100,6 +106,7 @@ class TableBorder(object):
         """
         specifies whether the value of TableBorder.LeftLine is used.
         """
+        ...
 
 
     @property
@@ -107,6 +114,7 @@ class TableBorder(object):
         """
         determines the line style at the right edge.
         """
+        ...
 
 
     @property
@@ -114,6 +122,7 @@ class TableBorder(object):
         """
         specifies whether the value of TableBorder.RightLine is used.
         """
+        ...
 
 
     @property
@@ -121,6 +130,7 @@ class TableBorder(object):
         """
         determines the line style of horizontal lines for the inner part of a cell range.
         """
+        ...
 
 
     @property
@@ -128,6 +138,7 @@ class TableBorder(object):
         """
         specifies whether the value of TableBorder.HorizontalLine is used.
         """
+        ...
 
 
     @property
@@ -135,6 +146,7 @@ class TableBorder(object):
         """
         determines the line style of vertical lines for the inner part of a cell range.
         """
+        ...
 
 
     @property
@@ -142,6 +154,7 @@ class TableBorder(object):
         """
         specifies whether the value of TableBorder.VerticalLine is used.
         """
+        ...
 
 
     @property
@@ -149,6 +162,7 @@ class TableBorder(object):
         """
         contains the distance between the lines and other contents.
         """
+        ...
 
 
     @property
@@ -156,5 +170,6 @@ class TableBorder(object):
         """
         specifies whether the value of TableBorder.Distance is used.
         """
+        ...
 
 

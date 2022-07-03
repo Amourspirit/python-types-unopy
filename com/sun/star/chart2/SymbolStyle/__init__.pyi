@@ -29,6 +29,7 @@ Enum
 See Also:
     `API SymbolStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart2.html#a8068445d248b830d1708dcb2a2afb2c6>`_
 """
+typeName: str = 'com.sun.star.chart2.SymbolStyle'
 
 AUTO: 'uno.Enum'
 """

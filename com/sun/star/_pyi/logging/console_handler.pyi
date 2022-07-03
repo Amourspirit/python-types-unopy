@@ -40,6 +40,7 @@ class ConsoleHandler(XConsoleHandler_fdad0dd8):
         """
         creates a ConsoleHandler
         """
+        ...
     def createWithSettings(self, Settings: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> None:
         """
         creates an instance of the log handler, using generic settings
@@ -49,5 +50,6 @@ class ConsoleHandler(XConsoleHandler_fdad0dd8):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

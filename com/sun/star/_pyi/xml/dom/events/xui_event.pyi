@@ -35,10 +35,14 @@ class XUIEvent(XEvent_e0c30ce4):
     def getDetail(self) -> int:
         """
         """
+        ...
     def getView(self) -> 'XAbstractView_35f90f4a':
         """
         """
+        ...
     def initUIEvent(self, typeArg: str, canBubbleArg: bool, cancelableArg: bool, viewArg: 'XAbstractView_35f90f4a', detailArg: int) -> None:
         """
         """
+        ...
+
 

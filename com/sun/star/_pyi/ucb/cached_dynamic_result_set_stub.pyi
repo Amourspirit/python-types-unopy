@@ -32,5 +32,6 @@ class CachedDynamicResultSetStub(XDynamicResultSet_e0360d0a, XSourceInitializati
     See Also:
         `API CachedDynamicResultSetStub <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1CachedDynamicResultSetStub.html>`_
     """
+    ...
 
 

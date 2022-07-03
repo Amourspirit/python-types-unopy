@@ -47,10 +47,12 @@ class XPolyPolygon2D(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getFillRule(self) -> 'FillRule_bdca0be5':
         """
         Query the rule used to determine inside and outside of the poly-polygon.
         """
+        ...
     def getNumberOfPolygonPoints(self, polygon: int) -> int:
         """
         Query number of points inside given polygon.
@@ -58,10 +60,12 @@ class XPolyPolygon2D(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getNumberOfPolygons(self) -> int:
         """
         Query number of polygons inside this poly-polygon.
         """
+        ...
     def isClosed(self, index: int) -> bool:
         """
         Query whether the specified polygon outline is closed.
@@ -69,6 +73,7 @@ class XPolyPolygon2D(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setClosed(self, index: int, closedState: bool) -> None:
         """
         Set the close state of the specified polygon outline.
@@ -78,8 +83,11 @@ class XPolyPolygon2D(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setFillRule(self, fillRule: 'FillRule_bdca0be5') -> None:
         """
         Set the rule used to determine inside and outside of the poly-polygon.
         """
+        ...
+
 

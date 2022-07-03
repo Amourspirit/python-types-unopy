@@ -34,6 +34,7 @@ class HiddenText(TextField_90260a56):
         """
         contains the condition.
         """
+        ...
     @property
     def Content(self) -> str:
         """
@@ -41,6 +42,7 @@ class HiddenText(TextField_90260a56):
         
         The content is displayed if the condition evaluates to FALSE.
         """
+        ...
     @property
     def IsHidden(self) -> bool:
         """
@@ -48,5 +50,6 @@ class HiddenText(TextField_90260a56):
         
         This property has to be read/written in file export/import to save and restore the result without initiation of a new evaluation.
         """
+        ...
 
 

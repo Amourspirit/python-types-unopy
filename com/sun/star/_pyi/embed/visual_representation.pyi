@@ -42,6 +42,7 @@ class VisualRepresentation(object):
             Flavor (DataFlavor, optional): Flavor value.
             Data (object, optional): Data value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class VisualRepresentation(object):
         """
         The format of the visual representation.
         """
+        ...
 
 
     @property
@@ -56,5 +58,6 @@ class VisualRepresentation(object):
         """
         The data in the format specified by Flavor.
         """
+        ...
 
 

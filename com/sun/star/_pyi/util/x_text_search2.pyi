@@ -43,4 +43,6 @@ class XTextSearch2(XTextSearch_a56a0b19):
         """
         set the options for the forward or backward search.
         """
+        ...
+
 

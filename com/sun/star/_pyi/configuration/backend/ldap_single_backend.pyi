@@ -33,5 +33,6 @@ class LdapSingleBackend(SingleBackend_c64d1280):
     See Also:
         `API LdapSingleBackend <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1LdapSingleBackend.html>`_
     """
+    ...
 
 

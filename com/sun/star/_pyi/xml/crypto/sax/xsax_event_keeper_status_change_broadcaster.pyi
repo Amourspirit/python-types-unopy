@@ -41,10 +41,13 @@ class XSAXEventKeeperStatusChangeBroadcaster(XInterface_8f010a43):
         
         When the SAXEventKeeper's status changes, the listener will receive a notification.
         """
+        ...
     def removeSAXEventKeeperStatusChangeListener(self, listener: 'XSAXEventKeeperStatusChangeListener_fece1854') -> None:
         """
         Removes a status change listener.
         
         After a listener is removed, no status change notification will be sent to it.
         """
+        ...
+
 

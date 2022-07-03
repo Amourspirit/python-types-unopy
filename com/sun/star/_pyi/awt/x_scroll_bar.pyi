@@ -37,60 +37,76 @@ class XScrollBar(XInterface_8f010a43):
         """
         registers an adjustment event listener.
         """
+        ...
     def getBlockIncrement(self) -> int:
         """
         returns the currently set increment for a block move.
         """
+        ...
     def getLineIncrement(self) -> int:
         """
         returns the currently set increment for a single line move.
         """
+        ...
     def getMaximum(self) -> int:
         """
         returns the currently set maximum scroll value of the scroll bar.
         """
+        ...
     def getOrientation(self) -> int:
         """
         returns the currently set ScrollBarOrientation of the scroll bar.
         """
+        ...
     def getValue(self) -> int:
         """
         returns the current scroll value of the scroll bar.
         """
+        ...
     def getVisibleSize(self) -> int:
         """
         returns the currently visible size of the scroll bar.
         """
+        ...
     def removeAdjustmentListener(self, l: 'XAdjustmentListener_fdfc0e11') -> None:
         """
         unregisters an adjustment event listener.
         """
+        ...
     def setBlockIncrement(self, n: int) -> None:
         """
         sets the increment for a block move.
         """
+        ...
     def setLineIncrement(self, n: int) -> None:
         """
         sets the increment for a single line move.
         """
+        ...
     def setMaximum(self, n: int) -> None:
         """
         sets the maximum scroll value of the scroll bar.
         """
+        ...
     def setOrientation(self, n: int) -> None:
         """
         sets the ScrollBarOrientation of the scroll bar.
         """
+        ...
     def setValue(self, n: int) -> None:
         """
         sets the scroll value of the scroll bar.
         """
+        ...
     def setValues(self, nValue: int, nVisible: int, nMax: int) -> None:
         """
         sets the scroll value, visible area and maximum scroll value of the scroll bar.
         """
+        ...
     def setVisibleSize(self, n: int) -> None:
         """
         sets the visible size of the scroll bar.
         """
+        ...
+
 

@@ -44,16 +44,20 @@ class XFormLayerAccess(XControlAccess_c89d0c4e):
         
         A form controller is a component which controls the user interaction with the form layer, as long as the form is not in design mode.
         """
+        ...
     def isFormDesignMode(self) -> bool:
         """
         determines whether the view's form layer is currently in design or alive mode
         
         Note: This is a convenience method. In the user interface, the design mode is coupled with the .uno:SwitchControlDesignMode feature (see com.sun.star.frame.XDispatchProvider), and asking for the current mode is the same as asking for the state of this feature.
         """
+        ...
     def setFormDesignMode(self, DesignMode: bool) -> None:
         """
         determines whether the view's form layer is currently in design or alive mode
         
         Note: This is a convenience method. In the user interface, the design mode is coupled with the .uno:SwitchControlDesignMode feature (see com.sun.star.frame.XDispatchProvider), and changing the current mode is the same as dispatching this feature URL.
         """
+        ...
+
 

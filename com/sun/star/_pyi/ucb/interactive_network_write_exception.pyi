@@ -46,11 +46,13 @@ class InteractiveNetworkWriteException(InteractiveNetworkException_7ca31159):
             Classification (InteractionClassification, optional): Classification value.
             Diagnostic (str, optional): Diagnostic value.
         """
+        ...
     @property
     def Diagnostic(self) -> str:
         """
         Any diagnostic message about the failure (which will typically be an English phrase or sentence).
         """
+        ...
 
 
 __all__ = ['InteractiveNetworkWriteException']

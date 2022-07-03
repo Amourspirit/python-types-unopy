@@ -34,5 +34,6 @@ class PackageStream(XPropertySet_bc180bfa, XChild_a6390b07, XNamed_a6520b08, XAc
     See Also:
         `API PackageStream <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1packages_1_1PackageStream.html>`_
     """
+    ...
 
 

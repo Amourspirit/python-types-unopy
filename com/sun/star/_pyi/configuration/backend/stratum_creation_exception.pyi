@@ -50,17 +50,20 @@ class StratumCreationException(BackendSetupException_68ae15de):
             StratumService (str, optional): StratumService value.
             StratumData (str, optional): StratumData value.
         """
+        ...
     @property
     def StratumService(self) -> str:
         """
         Identifier of the stratum service that could not be created.
         """
+        ...
 
     @property
     def StratumData(self) -> str:
         """
         Initialization data passed to the stratum instance.
         """
+        ...
 
 
 __all__ = ['StratumCreationException']

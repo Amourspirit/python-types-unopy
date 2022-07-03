@@ -35,5 +35,6 @@ class ExternalSheetCache(XExternalSheetCache_1a420e89):
     See Also:
         `API ExternalSheetCache <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1ExternalSheetCache.html>`_
     """
+    ...
 
 

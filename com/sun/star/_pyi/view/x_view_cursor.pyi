@@ -34,16 +34,21 @@ class XViewCursor(XInterface_8f010a43):
         """
         moves the cursor the specified number of lines down.
         """
+        ...
     def goLeft(self, nCount: int, bExpand: bool) -> bool:
         """
         moves the cursor the specified number of characters to the left.
         """
+        ...
     def goRight(self, nCount: int, bExpand: bool) -> bool:
         """
         moves the cursor the specified number of characters to the right.
         """
+        ...
     def goUp(self, nCount: int, bExpand: bool) -> bool:
         """
         moves the cursor the specified number of lines up.
         """
+        ...
+
 

@@ -52,6 +52,7 @@ class XModel2(XModel_7a6e095c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def createViewController(self, ViewName: str, Arguments: 'typing.Tuple[PropertyValue_c9610c73, ...]', Frame: 'XFrame_7a570956') -> 'XController2_bbcf0bc1':
         """
         creates a new view instance classified by the specified name and arguments.
@@ -62,6 +63,7 @@ class XModel2(XModel_7a6e095c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getAvailableViewControllerNames(self) -> 'typing.Tuple[str, ...]':
         """
         provides the available names of the factory to be used to create views.
@@ -70,12 +72,14 @@ class XModel2(XModel_7a6e095c):
         
         Implementations of this interface might decide to support additional view names, which then are documented in the respective service descriptions.
         """
+        ...
     def getControllers(self) -> 'XEnumeration_f2180daa':
         """
         provides list of all currently connected controller objects.
         
         Please note: Because this interface will might be used inside multi threaded environments those list can contain still disposed items or it new added controller will be missing (if they were added after this enumeration was created).
         """
+        ...
     def setArgs(self, Arguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         Sets com.sun.star.document.MediaDescriptor properties of the current model during runtime.
@@ -88,4 +92,6 @@ class XModel2(XModel_7a6e095c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.util.InvalidStateException: ``InvalidStateException``
         """
+        ...
+
 

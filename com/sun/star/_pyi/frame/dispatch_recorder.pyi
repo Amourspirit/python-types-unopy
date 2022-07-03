@@ -35,5 +35,6 @@ class DispatchRecorder(XDispatchRecorder_fbd70dd1):
     See Also:
         `API DispatchRecorder <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1frame_1_1DispatchRecorder.html>`_
     """
+    ...
 
 

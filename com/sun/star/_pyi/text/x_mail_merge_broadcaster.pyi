@@ -43,8 +43,11 @@ class XMailMergeBroadcaster(XInterface_8f010a43):
         """
         Adds an entry to the list of mail merge listeners.
         """
+        ...
     def removeMailMergeEventListener(self, xListener: 'XMailMergeListener_fcab0dde') -> None:
         """
         Removes an entry to the list of mail merge listeners.
         """
+        ...
+
 

@@ -42,6 +42,7 @@ class EncryptionException(CryptographyException_735a113b):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['EncryptionException']
 

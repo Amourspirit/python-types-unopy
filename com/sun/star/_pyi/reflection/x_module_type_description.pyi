@@ -41,4 +41,6 @@ class XModuleTypeDescription(XTypeDescription_3c210fb1):
         """
         Returns the type descriptions for the members of this module.
         """
+        ...
+
 

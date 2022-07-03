@@ -50,11 +50,13 @@ class MissingJavaRuntimeException(JavaInitializationException_8b6211a3):
             Context (XInterface, optional): Context value.
             URLRuntimeLib (str, optional): URLRuntimeLib value.
         """
+        ...
     @property
     def URLRuntimeLib(self) -> str:
         """
         contains the path to the runtime lib as file URL.
         """
+        ...
 
 
 __all__ = ['MissingJavaRuntimeException']

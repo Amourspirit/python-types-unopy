@@ -19,6 +19,7 @@
 # Namespace: com.sun.star.util
 # Libre Office Version: 7.2
 from typing_extensions import Literal
+import uno
 import typing
 
 
@@ -32,24 +33,25 @@ class SearchResult(object):
     """
     typeName: Literal['com.sun.star.util.SearchResult']
 
-    def __init__(self, startOffset: typing.Optional[typing.Tuple[int, ...]] = ..., endOffset: typing.Optional[typing.Tuple[int, ...]] = ..., subRegExpressions: typing.Optional[int] = ...) -> None:
+    def __init__(self, startOffset: typing.Optional[uno.ByteSequence] = ..., endOffset: typing.Optional[uno.ByteSequence] = ..., subRegExpressions: typing.Optional[int] = ...) -> None:
         """
         Constructor
 
         Arguments:
-            startOffset (typing.Tuple[int, ...], optional): startOffset value.
-            endOffset (typing.Tuple[int, ...], optional): endOffset value.
+            startOffset (uno.ByteSequence, optional): startOffset value.
+            endOffset (uno.ByteSequence, optional): endOffset value.
             subRegExpressions (int, optional): subRegExpressions value.
         """
-
-
-    @property
-    def startOffset(self) -> typing.Tuple[int, ...]:
         ...
 
 
     @property
-    def endOffset(self) -> typing.Tuple[int, ...]:
+    def startOffset(self) -> uno.ByteSequence:
+        ...
+
+
+    @property
+    def endOffset(self) -> uno.ByteSequence:
         ...
 
 
@@ -66,5 +68,6 @@ class SearchResult(object):
         
         For regular expressions it can be greater than 1. If the value is 1, startoffset[0] and endoffset[0] points to the matching sub string if value is > 1, still startoffset[0] and endoffset[0] points to the matching substring for whole regular expression startoffset[i] and endoffset[i] points to the matching substring of i th matching substring.
         """
+        ...
 
 

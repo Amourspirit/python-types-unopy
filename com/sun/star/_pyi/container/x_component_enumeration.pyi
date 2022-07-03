@@ -39,4 +39,6 @@ class XComponentEnumeration(XEnumeration_f2180daa):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

@@ -34,8 +34,11 @@ class XTableColumns(XIndexAccess_f0910d6d):
         """
         inserts new columns.
         """
+        ...
     def removeByIndex(self, nIndex: int, nCount: int) -> None:
         """
         deletes columns.
         """
+        ...
+
 

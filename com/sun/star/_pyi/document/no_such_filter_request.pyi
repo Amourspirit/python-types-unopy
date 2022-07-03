@@ -46,11 +46,13 @@ class NoSuchFilterRequest(Exception_85530a09):
             Context (XInterface, optional): Context value.
             URL (str, optional): URL value.
         """
+        ...
     @property
     def URL(self) -> str:
         """
         transport URL which couldn't be detected
         """
+        ...
 
 
 __all__ = ['NoSuchFilterRequest']

@@ -39,4 +39,6 @@ class XChangesSet(XElementAccess_cd60e3f):
         """
         queries for all contained changes at once.
         """
+        ...
+
 

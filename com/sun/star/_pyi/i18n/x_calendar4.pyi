@@ -47,6 +47,7 @@ class XCalendar4(XCalendar3_927a09ed):
         
         The actual timezone and daylight saving time offsets effective at the given date and time are considered and added to the UTC time at the calendar.
         """
+        ...
     def loadCalendarTZ(self, uniqueID: str, rLocale: 'Locale_70d308fa', TimeZone: str) -> None:
         """
         Load a specific calendar for the given locale with a given time zone.
@@ -55,6 +56,7 @@ class XCalendar4(XCalendar3_927a09ed):
         
             LibreOffice 6.3
         """
+        ...
     def loadDefaultCalendarTZ(self, rLocale: 'Locale_70d308fa', TimeZone: str) -> None:
         """
         Load the default calendar for the given locale with a given time zone.
@@ -63,6 +65,7 @@ class XCalendar4(XCalendar3_927a09ed):
         
             LibreOffice 6.3
         """
+        ...
     def setLocalDateTime(self, TimeInDays: float) -> None:
         """
         Set the local date/time as an offset to the start of the calendar at 1-Jan-1970 00:00.
@@ -71,4 +74,6 @@ class XCalendar4(XCalendar3_927a09ed):
         
         The actual timezone and daylight saving time offsets effective at the given date and time are considered and subtracted before setting the UTC time at the calendar.
         """
+        ...
+
 

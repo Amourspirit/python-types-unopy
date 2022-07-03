@@ -34,5 +34,6 @@ class Dictionary(XStorable_998f0aa7, XSearchableDictionary_9d0e11cd):
     See Also:
         `API Dictionary <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1linguistic2_1_1Dictionary.html>`_
     """
+    ...
 
 

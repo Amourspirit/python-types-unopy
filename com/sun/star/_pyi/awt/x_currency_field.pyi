@@ -34,64 +34,81 @@ class XCurrencyField(XInterface_8f010a43):
         """
         returns the currently set number of decimals.
         """
+        ...
     def getFirst(self) -> float:
         """
         returns the currently set first value which is set on POS1 key.
         """
+        ...
     def getLast(self) -> float:
         """
         returns the currently set last value which is set on END key.
         """
+        ...
     def getMax(self) -> float:
         """
         returns the currently set maximum value that can be entered by the user.
         """
+        ...
     def getMin(self) -> float:
         """
         returns the currently set minimum value that can be entered by the user.
         """
+        ...
     def getSpinSize(self) -> float:
         """
         returns the currently set increment value for the spin button.
         """
+        ...
     def getValue(self) -> float:
         """
         returns the value which is currently displayed in the currency field.
         """
+        ...
     def isStrictFormat(self) -> bool:
         """
         returns whether the format is currently checked during user input.
         """
+        ...
     def setDecimalDigits(self, nDigits: int) -> None:
         """
         sets the number of decimals.
         """
+        ...
     def setFirst(self, Value: float) -> None:
         """
         sets the first value to be set on POS1 key.
         """
+        ...
     def setLast(self, Value: float) -> None:
         """
         sets the last value to be set on END key.
         """
+        ...
     def setMax(self, Value: float) -> None:
         """
         sets the maximum value that can be entered by the user.
         """
+        ...
     def setMin(self, Value: float) -> None:
         """
         sets the minimum value that can be entered by the user.
         """
+        ...
     def setSpinSize(self, Value: float) -> None:
         """
         sets the increment value for the spin button.
         """
+        ...
     def setStrictFormat(self, bStrict: bool) -> None:
         """
         determines if the format is checked during user input.
         """
+        ...
     def setValue(self, Value: float) -> None:
         """
         sets the value which is displayed in the currency field.
         """
+        ...
+
 

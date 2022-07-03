@@ -37,10 +37,12 @@ class XItemList(ABC):
         """
         registers a listener which is notified about changes in the item list.
         """
+        ...
     def getAllItems(self) -> 'typing.Tuple[typing.Tuple[str, str], ...]':
         """
         retrieves the texts and images of all items in the list
         """
+        ...
     def getItemData(self, Position: int) -> object:
         """
         retrieves the implementation dependent value associated with the given list item.
@@ -48,6 +50,7 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getItemImage(self, Position: int) -> str:
         """
         retrieves the URL of the image of an existing item
@@ -55,6 +58,7 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getItemText(self, Position: int) -> str:
         """
         retrieves the text of an existing item
@@ -62,6 +66,7 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getItemTextAndImage(self, Position: int) -> 'typing.Tuple[str, str]':
         """
         retrieves both the text and the image URL of an existing item
@@ -69,6 +74,7 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def insertItem(self, Position: int, ItemText: str, ItemImageURL: str) -> None:
         """
         inserts a new item into the list
@@ -76,6 +82,7 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def insertItemImage(self, Position: int, ItemImageURL: str) -> None:
         """
         inserts an item which has only an image, but no text
@@ -83,6 +90,7 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def insertItemText(self, Position: int, ItemText: str) -> None:
         """
         inserts an item which has only a text, but no image
@@ -90,10 +98,12 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def removeAllItems(self) -> None:
         """
         removes all items from the list
         """
+        ...
     def removeItem(self, Position: int) -> None:
         """
         removes an item from the list
@@ -101,10 +111,12 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def removeItemListListener(self, Listener: 'XItemListListener_e1020d1d') -> None:
         """
         revokes a listener which is notified about changes in the item list.
         """
+        ...
     def setItemData(self, Position: int, ItemData: object) -> None:
         """
         associates an implementation dependent value with the given list item.
@@ -114,6 +126,7 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setItemImage(self, Position: int, ItemImageURL: str) -> None:
         """
         sets a new image for an existing item
@@ -121,6 +134,7 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setItemText(self, Position: int, ItemText: str) -> None:
         """
         sets a new text for an existing item
@@ -128,6 +142,7 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setItemTextAndImage(self, Position: int, ItemText: str, ItemImageURL: str) -> None:
         """
         sets both a new position and text for an existing item
@@ -135,10 +150,13 @@ class XItemList(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
     @property
     def ItemCount(self) -> int:
         """
         is the number of items in the list
         """
+        ...
 
 

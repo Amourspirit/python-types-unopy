@@ -56,6 +56,7 @@ class XTextLayout(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def combinedJustify(self, aNextLayouts: 'typing.Tuple[XTextLayout, ...]', nSize: float) -> float:
         """
         Justify a number of text layouts to the given size.
@@ -65,12 +66,14 @@ class XTextLayout(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getBaselineOffset(self) -> float:
         """
         This method yields the baseline offset.
         
         This method returns the baseline offset for this layout object, either measured from the top or the left edge, depending on the writing direction (horizontally or vertically). Since rendering this layout via XCanvas.drawTextLayout() outputs relative to the layout object's baseline, this method can be used to e.g. output relative to the left, top edge.
         """
+        ...
     def getCaret(self, nInsertionIndex: int, bExcludeLigatures: bool) -> 'Caret_9b480ab5':
         """
         This method converts an insertion index to a caret.
@@ -80,16 +83,19 @@ class XTextLayout(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getFont(self) -> 'XCanvasFont_e3380d11':
         """
         Request the associated font for this layout.
         """
+        ...
     def getMainTextDirection(self) -> int:
         """
         This method returns the main writing direction.
         
         This method returns the main writing direction of this layout, i.e. either LEFT_TO_RIGHT or RIGHT_TO_LEFT.
         """
+        ...
     def getNextInsertionIndex(self, nStartIndex: int, nCaretAdvancement: int, bExcludeLigatures: bool) -> int:
         """
         This method calculates a new insertion index.
@@ -99,16 +105,19 @@ class XTextLayout(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getText(self) -> 'StringContext_d50e22':
         """
         Request the text this layout contains.
         """
+        ...
     def getTextHit(self, aHitPoint: 'RealPoint2D_d6e70c78') -> 'TextHit_b25d0b90':
         """
         This method determines the hit position in the text.
         
         This method determines the index of the character hit at the specified position (in font coordinate space).
         """
+        ...
     def justify(self, nSize: float) -> float:
         """
         Justify the text to the given size.
@@ -118,12 +127,14 @@ class XTextLayout(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def queryInkMeasures(self) -> 'typing.Tuple[RealRectangle2D_d9b0e03, ...]':
         """
         Query the ink bounding boxes for every glyph in the layouted text.
         
         Ink, or tight bounding boxes in this case means that for e.g. an \"a\", the bounding box for the XPolyPolygon2D describing the glyph \"a\" is returned, not the logical dimensions of the character in the font.
         """
+        ...
     def queryLogicalAdvancements(self) -> 'typing.Tuple[float, ...]':
         """
         Query the advancements for every character in the input string.
@@ -134,6 +145,7 @@ class XTextLayout(XInterface_8f010a43):
         
         This method can be used to query for the layout's default advancements, which can subsequently be changed and applied to the layout via XTextLayout.applyLogicalAdvancements().
         """
+        ...
     def queryLogicalHighlighting(self, nStartIndex: int, nEndIndex: int) -> 'XPolyPolygon2D_e1b0e20':
         """
         This method generates a highlight polygon.
@@ -143,24 +155,28 @@ class XTextLayout(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def queryMeasures(self) -> 'typing.Tuple[RealRectangle2D_d9b0e03, ...]':
         """
         Query the logical bounding boxes of every character in the given text string.
         
         Logical bounding boxes means the space that the font allocates for the given character, which, e.g. for a \".\", might be significantly broader than the bounds returned via XTextLayout.queryInkMeasures().
         """
+        ...
     def queryTextBounds(self) -> 'RealRectangle2D_d9b0e03':
         """
         Query the overall bounding box of the text.
         
         This method is similar to XTextLayout.queryTextMeasures(), only that the overall bounds are returned by this method.
         """
+        ...
     def queryTextShapes(self) -> 'typing.Tuple[XPolyPolygon2D_e1b0e20, ...]':
         """
         Extract the polygonal shapes of the layouted text.
         
         Each glyph is represented by a separate XPolyPolygon2D in the returned sequence.
         """
+        ...
     def queryVisualHighlighting(self, nStartIndex: int, nEndIndex: int) -> 'XPolyPolygon2D_e1b0e20':
         """
         This method generates a highlight polygon.
@@ -170,4 +186,6 @@ class XTextLayout(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

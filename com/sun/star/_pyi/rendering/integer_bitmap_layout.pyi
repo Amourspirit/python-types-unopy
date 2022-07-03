@@ -54,6 +54,7 @@ class IntegerBitmapLayout(object):
             Palette (XBitmapPalette, optional): Palette value.
             IsMsbFirst (bool, optional): IsMsbFirst value.
         """
+        ...
 
 
     @property
@@ -63,6 +64,7 @@ class IntegerBitmapLayout(object):
         
         This value must not be negative
         """
+        ...
 
 
     @property
@@ -72,6 +74,7 @@ class IntegerBitmapLayout(object):
         
         This value must not be negative
         """
+        ...
 
 
     @property
@@ -81,6 +84,7 @@ class IntegerBitmapLayout(object):
         
         This value is permitted to be negative, denoting a bitmap whose content is flipped at the x axis.
         """
+        ...
 
 
     @property
@@ -90,6 +94,7 @@ class IntegerBitmapLayout(object):
         
         This value is permitted to be negative. If this value is zero, the bitmap is assumed to be in chunky format, otherwise it is assumed to be planar. The difference between chunky and planar layout lies in the way how color channels are interleaved. For a chunky format, all channel data for a single pixel lies consecutively in memory. For a planar layout, the first channel of all pixel is stored consecutive, followed by the second channel, and so forth.
         """
+        ...
 
 
     @property
@@ -99,6 +104,7 @@ class IntegerBitmapLayout(object):
         
         Note that the actual pixel layout is specified at the color space. If this layout describes a palette bitmap format, this color space describes the index format (plus maybe an extra alpha channel). The palette itself references another color space, which describes the layout of the palette entries.
         """
+        ...
 
 
     @property
@@ -108,6 +114,7 @@ class IntegerBitmapLayout(object):
         
         When set to the nil reference, the bitmap data is assumed to contain direct color values (to be interpreted according to the associated color space). If this member references a valid palette, one of the pixel components as returned by the color space referenced from the ColorSpace is required to be of type ColorComponentTag.INDEX. That component is then used to index the palette.
         """
+        ...
 
 
     @property
@@ -119,5 +126,6 @@ class IntegerBitmapLayout(object):
         
         Example: for a 1bpp bitmap, each pixel is represented by exactly one bit. If this member is TRUE, the first pixel is the MSB of the first byte, and the eighth pixel is the LSB of the first byte. If this member is FALSE, it's just the opposite.
         """
+        ...
 
 

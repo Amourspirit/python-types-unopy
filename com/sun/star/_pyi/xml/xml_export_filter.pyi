@@ -31,5 +31,6 @@ class XMLExportFilter(ExportFilter_e5320d4f):
     See Also:
         `API XMLExportFilter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1XMLExportFilter.html>`_
     """
+    ...
 
 

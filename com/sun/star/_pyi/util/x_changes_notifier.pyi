@@ -37,8 +37,11 @@ class XChangesNotifier(XInterface_8f010a43):
         """
         adds the specified listener to receive events when changes occurred.
         """
+        ...
     def removeChangesListener(self, aListener: 'XChangesListener_e1b70d1d') -> None:
         """
         removes the specified listener.
         """
+        ...
+
 

@@ -38,5 +38,6 @@ class ConfigurationUpdateAccess(ConfigurationAccess_a5d4122a, GroupUpdate_20340e
     See Also:
         `API ConfigurationUpdateAccess <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1ConfigurationUpdateAccess.html>`_
     """
+    ...
 
 

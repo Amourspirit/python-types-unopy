@@ -36,5 +36,6 @@ class AccessibleTabControl(XAccessibleContext_8eae119b, XAccessibleEventBroadcas
     See Also:
         `API AccessibleTabControl <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1AccessibleTabControl.html>`_
     """
+    ...
 
 

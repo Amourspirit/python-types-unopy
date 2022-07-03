@@ -34,5 +34,6 @@ class ValidatableBindableControlModel(BindableControlModel_9a1111a8, Validatable
     See Also:
         `API ValidatableBindableControlModel <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1validation_1_1ValidatableBindableControlModel.html>`_
     """
+    ...
 
 

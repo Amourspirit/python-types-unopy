@@ -49,6 +49,7 @@ class BezierPoint(object):
             ControlPoint1 (Point, optional): ControlPoint1 value.
             ControlPoint2 (Point, optional): ControlPoint2 value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class BezierPoint(object):
         """
         This is the position of this point.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class BezierPoint(object):
         """
         This is the position of the first control point.
         """
+        ...
 
 
     @property
@@ -70,5 +73,6 @@ class BezierPoint(object):
         """
         This is the position of the second control point.
         """
+        ...
 
 

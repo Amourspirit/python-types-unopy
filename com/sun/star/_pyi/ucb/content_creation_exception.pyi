@@ -45,11 +45,13 @@ class ContentCreationException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             eError (ContentCreationError, optional): eError value.
         """
+        ...
     @property
     def eError(self) -> ContentCreationError_b010e5c:
         """
         An error code.
         """
+        ...
 
 
 __all__ = ['ContentCreationException']

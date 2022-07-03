@@ -31,5 +31,6 @@ class TextSearch2(XTextSearch2_b0b50b4b):
     See Also:
         `API TextSearch2 <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1util_1_1TextSearch2.html>`_
     """
+    ...
 
 

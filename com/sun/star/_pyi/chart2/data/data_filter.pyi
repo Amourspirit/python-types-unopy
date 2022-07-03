@@ -32,5 +32,6 @@ class DataFilter(DataSink_cf980c23, DataSource_e9580cff):
     See Also:
         `API DataFilter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart2_1_1data_1_1DataFilter.html>`_
     """
+    ...
 
 

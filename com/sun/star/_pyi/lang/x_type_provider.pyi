@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.lang
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XTypeProvider(XInterface_8f010a43):
@@ -31,14 +32,17 @@ class XTypeProvider(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.lang.XTypeProvider']
 
-    def getImplementationId(self) -> 'typing.Tuple[int, ...]':
+    def getImplementationId(self) -> uno.ByteSequence:
         """
         Obsolete unique identifier.
         
         Originally returned a sequence of bytes which, when non-empty, was used as an ID to distinguish unambiguously between two sets of types, for example to realise hashing functionality when the object is introspected. Two objects that returned the same non-empty ID had to return the same set of types in getTypes(). (If a unique ID could not be provided, this method was always allowed to return an empty sequence, though).
         """
+        ...
     def getTypes(self) -> 'typing.Tuple[object, ...]':
         """
         returns a sequence of all types (usually interface types) provided by the object.
         """
+        ...
+
 

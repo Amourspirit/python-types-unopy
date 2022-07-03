@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.registry
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .registry_key_type import RegistryKeyType as RegistryKeyType_11940ea5
@@ -43,6 +44,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def createKey(self, aKeyName: str) -> 'XRegistryKey':
         """
         creates a new key in the registry.
@@ -52,6 +54,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def createLink(self, aLinkName: str, aLinkTarget: str) -> bool:
         """
         creates a new link in the registry.
@@ -59,6 +62,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def deleteKey(self, rKeyName: str) -> None:
         """
         deletes a key from the registry.
@@ -66,6 +70,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def deleteLink(self, rLinkName: str) -> None:
         """
         deletes a link from the registry.
@@ -73,6 +78,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def getAsciiListValue(self) -> 'typing.Tuple[str, ...]':
         """
 
@@ -80,6 +86,7 @@ class XRegistryKey(XInterface_8f010a43):
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
             com.sun.star.registry.InvalidValueException: ``InvalidValueException``
         """
+        ...
     def getAsciiValue(self) -> str:
         """
 
@@ -87,38 +94,44 @@ class XRegistryKey(XInterface_8f010a43):
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
             com.sun.star.registry.InvalidValueException: ``InvalidValueException``
         """
-    def getBinaryValue(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getBinaryValue(self) -> uno.ByteSequence:
         """
 
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
             com.sun.star.registry.InvalidValueException: ``InvalidValueException``
         """
+        ...
     def getKeyNames(self) -> 'typing.Tuple[str, ...]':
         """
 
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def getKeyType(self, rKeyName: str) -> 'RegistryKeyType_11940ea5':
         """
 
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def getLinkTarget(self, rLinkName: str) -> str:
         """
 
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
-    def getLongListValue(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getLongListValue(self) -> uno.ByteSequence:
         """
 
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
             com.sun.star.registry.InvalidValueException: ``InvalidValueException``
         """
+        ...
     def getLongValue(self) -> int:
         """
 
@@ -126,12 +139,14 @@ class XRegistryKey(XInterface_8f010a43):
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
             com.sun.star.registry.InvalidValueException: ``InvalidValueException``
         """
+        ...
     def getResolvedName(self, aKeyName: str) -> str:
         """
 
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def getStringListValue(self) -> 'typing.Tuple[str, ...]':
         """
 
@@ -139,6 +154,7 @@ class XRegistryKey(XInterface_8f010a43):
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
             com.sun.star.registry.InvalidValueException: ``InvalidValueException``
         """
+        ...
     def getStringValue(self) -> str:
         """
 
@@ -146,12 +162,14 @@ class XRegistryKey(XInterface_8f010a43):
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
             com.sun.star.registry.InvalidValueException: ``InvalidValueException``
         """
+        ...
     def getValueType(self) -> 'RegistryValueType_30390f79':
         """
 
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def isReadOnly(self) -> bool:
         """
         checks if the key can be overwritten.
@@ -159,10 +177,12 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def isValid(self) -> bool:
         """
         checks if the key points to an open valid key in the data-source.
         """
+        ...
     def openKey(self, aKeyName: str) -> 'XRegistryKey':
         """
         opens a sub key of the key.
@@ -172,6 +192,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def openKeys(self) -> 'typing.Tuple[XRegistryKey, ...]':
         """
         opens all subkeys of the key.
@@ -181,6 +202,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def setAsciiListValue(self, seqValue: 'typing.Tuple[str, ...]') -> None:
         """
         sets an ASCII string list value to the key.
@@ -190,6 +212,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def setAsciiValue(self, value: str) -> None:
         """
         sets an ASCII string value to the key.
@@ -199,7 +222,8 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
-    def setBinaryValue(self, value: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def setBinaryValue(self, value: uno.ByteSequence) -> None:
         """
         sets a binary value to the key.
         
@@ -208,7 +232,8 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
-    def setLongListValue(self, seqValue: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def setLongListValue(self, seqValue: uno.ByteSequence) -> None:
         """
         sets a long list value to the key.
         
@@ -217,6 +242,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def setLongValue(self, value: int) -> None:
         """
         sets a long value to the key.
@@ -226,6 +252,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def setStringListValue(self, seqValue: 'typing.Tuple[str, ...]') -> None:
         """
         sets a unicode string value to the key.
@@ -235,6 +262,7 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
     def setStringValue(self, value: str) -> None:
         """
         sets a unicode string value to the key.
@@ -244,6 +272,8 @@ class XRegistryKey(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.InvalidRegistryException: ``InvalidRegistryException``
         """
+        ...
+
     @property
     def KeyName(self) -> str:
         """
@@ -251,5 +281,6 @@ class XRegistryKey(XInterface_8f010a43):
         
         The access path starts with the root \"/\" and all parent entry names are delimited with slashes \"/\" too, like in a UNIX (R) file system. Slashes which are part of single names are represented as hexadecimals preceded with a \"%\" like in URL syntax.
         """
+        ...
 
 

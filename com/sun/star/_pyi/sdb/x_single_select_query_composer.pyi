@@ -46,6 +46,7 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
             com.sun.star.sdbc.SQLException: ``SQLException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def appendGroupByColumn(self, column: 'XPropertySet_bc180bfa') -> None:
         """
         appends an additional part to the group criteria of the select statement.
@@ -55,6 +56,7 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def appendHavingClauseByColumn(self, column: 'XPropertySet_bc180bfa', andCriteria: bool, filterOperator: int) -> None:
         """
         appends a new HAVING filter condition by a com.sun.star.sdb.DataColumn providing the name and the value for the filter.
@@ -63,6 +65,7 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
             com.sun.star.sdbc.SQLException: ``SQLException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def appendOrderByColumn(self, column: 'XPropertySet_bc180bfa', ascending: bool) -> None:
         """
         appends an additional part to the sort order criteria of the select statement.
@@ -72,6 +75,7 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def setFilter(self, filter: str) -> None:
         """
         makes it possible to set a filter condition for the query.
@@ -79,6 +83,7 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def setGroup(self, group: str) -> None:
         """
         makes it possible to set a group for the query.
@@ -86,6 +91,7 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def setHavingClause(self, filter: str) -> None:
         """
         makes it possible to set a HAVING filter condition for the query.
@@ -93,6 +99,7 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def setOrder(self, order: str) -> None:
         """
         makes it possible to set a sort condition for the query.
@@ -100,6 +107,7 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def setStructuredFilter(self, filter: 'typing.Tuple[typing.Tuple[PropertyValue_c9610c73, ...], ...]') -> None:
         """
         appends a new set of filter criteria which is split into levels.
@@ -108,6 +116,7 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
             com.sun.star.sdbc.SQLException: ``SQLException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setStructuredHavingClause(self, filter: 'typing.Tuple[typing.Tuple[PropertyValue_c9610c73, ...], ...]') -> None:
         """
         appends a new set of HAVING filter criteria which is split into levels.
@@ -115,6 +124,8 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
     @property
     def ElementaryQuery(self) -> str:
         """
@@ -134,5 +145,6 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
         
         If you'd be interested in the composed filter, you would set the QueryDefinition.Command as ElementaryQuery, add your filter, and propagate the resulting query (XSingleSelectQueryAnalyzer.getQuery()) to an SingleSelectQueryAnalyzer instance via XSingleSelectQueryAnalyzer.setQuery().
         """
+        ...
 
 

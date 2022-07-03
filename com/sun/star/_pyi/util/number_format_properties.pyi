@@ -37,20 +37,24 @@ class NumberFormatProperties(ABC):
         """
         contains a comment regarding the number format for display to the user.
         """
+        ...
     @property
     def FormatString(self) -> str:
         """
         contains the format string of the number format.
         """
+        ...
     @property
     def Locale(self) -> 'Locale_70d308fa':
         """
         contains the locale of the number format.
         """
+        ...
     @property
     def Type(self) -> int:
         """
         contains the type of the number format.
         """
+        ...
 
 

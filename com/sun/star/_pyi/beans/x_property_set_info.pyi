@@ -40,13 +40,17 @@ class XPropertySetInfo(XInterface_8f010a43):
     def getProperties(self) -> 'typing.Tuple[Property_8f4e0a76, ...]':
         """
         """
+        ...
     def getPropertyByName(self, aName: str) -> 'Property_8f4e0a76':
         """
 
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def hasPropertyByName(self, Name: str) -> bool:
         """
         """
+        ...
+
 

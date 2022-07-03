@@ -30,5 +30,6 @@ class DatabaseRadioButton(DataAwareControlModel_27110ef8, RadioButton_2b130f28):
     See Also:
         `API DatabaseRadioButton <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1component_1_1DatabaseRadioButton.html>`_
     """
+    ...
 
 

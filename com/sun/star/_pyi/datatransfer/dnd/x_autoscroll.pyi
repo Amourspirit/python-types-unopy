@@ -42,8 +42,11 @@ class XAutoscroll(XInterface_8f010a43):
         """
         Notify the component to autoscroll.
         """
+        ...
     def getAutoscrollRegion(self) -> object:
         """
         Returns the regions describing the autoscrolling region.
         """
+        ...
+
 

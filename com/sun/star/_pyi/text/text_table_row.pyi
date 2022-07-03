@@ -51,16 +51,19 @@ class TextTableRow(XPropertySet_bc180bfa):
         
             LibreOffice 4.4
         """
+        ...
     @property
     def TableColumnSeparators(self) -> 'typing.Tuple[TableColumnSeparator_1b630ed4, ...]':
         """
         contains the description of the columns in the table row.
         """
+        ...
     @property
     def BackColor(self) -> 'Color_68e908c5':
         """
         specifies the color of the background.
         """
+        ...
     @property
     def BackGraphic(self) -> 'XGraphic_a4da0afc':
         """
@@ -70,16 +73,19 @@ class TextTableRow(XPropertySet_bc180bfa):
         
             LibreOffice 6.1
         """
+        ...
     @property
     def BackGraphicFilter(self) -> str:
         """
         contains the name of the file filter of a background graphic.
         """
+        ...
     @property
     def BackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         determines the position of the background graphic.
         """
+        ...
     @property
     def BackGraphicURL(self) -> str:
         """
@@ -87,11 +93,13 @@ class TextTableRow(XPropertySet_bc180bfa):
         
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the BackGraphic property.
         """
+        ...
     @property
     def BackTransparent(self) -> bool:
         """
         If TRUE, the background color value in \"BackColor\" is not visible.
         """
+        ...
     @property
     def HasTextChangesOnly(self) -> bool:
         """
@@ -101,20 +109,24 @@ class TextTableRow(XPropertySet_bc180bfa):
         
             LibreOffice 7.2
         """
+        ...
     @property
     def Height(self) -> int:
         """
         contains the height of the table row.
         """
+        ...
     @property
     def IsAutoHeight(self) -> bool:
         """
         If the value of this property is TRUE, the height of the table row depends on the content of the table cells.
         """
+        ...
     @property
     def IsSplitAllowed(self) -> bool:
         """
         If TRUE, the row is allowed to be split at page or column breaks.
         """
+        ...
 
 

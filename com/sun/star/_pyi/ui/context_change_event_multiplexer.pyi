@@ -32,5 +32,6 @@ class ContextChangeEventMultiplexer(XContextChangeEventMultiplexer_9c971206):
     See Also:
         `API ContextChangeEventMultiplexer <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1ui_1_1ContextChangeEventMultiplexer.html>`_
     """
+    ...
 
 

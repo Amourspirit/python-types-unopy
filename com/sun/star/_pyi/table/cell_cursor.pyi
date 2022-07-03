@@ -31,5 +31,6 @@ class CellCursor(XCellCursor_ae900b66):
     See Also:
         `API CellCursor <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1table_1_1CellCursor.html>`_
     """
+    ...
 
 

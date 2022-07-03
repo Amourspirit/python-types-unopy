@@ -41,4 +41,6 @@ class XUndoManagerSupplier(ABC):
         """
         returns the Undo manager associated with the component.
         """
+        ...
+
 

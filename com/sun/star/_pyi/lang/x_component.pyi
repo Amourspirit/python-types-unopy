@@ -47,6 +47,7 @@ class XComponent(XInterface_8f010a43):
         
         If this XComponent is already disposed when XComponent.addEventListener() is called, the call will not fail with a DisposedException, but the caller will be notified via the XEventListener.disposing() callback. This callback can occur synchronously within the addEventListener() call.
         """
+        ...
     def dispose(self) -> None:
         """
         The owner of an object calls this method to explicitly free all resources kept by this object and thus break cyclic references.
@@ -59,6 +60,7 @@ class XComponent(XInterface_8f010a43):
         
         For some objects no real owner can be identified, thus it can be disposed from multiple reference holders. In this case the object should be able to cope with multiple dispose()-calls (which are inevitable in a multithreaded environment).
         """
+        ...
     def removeEventListener(self, aListener: 'XEventListener_c7230c4a') -> None:
         """
         removes an event listener from the listener list.
@@ -69,4 +71,6 @@ class XComponent(XInterface_8f010a43):
         
         If this XComponent is already disposed when XComponent.removeEventListener() is called, the call will not fail with a DisposedException, but will rather be ignored silently.
         """
+        ...
+
 

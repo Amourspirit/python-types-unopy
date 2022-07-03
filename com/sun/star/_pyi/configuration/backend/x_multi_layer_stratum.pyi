@@ -56,6 +56,7 @@ class XMultiLayerStratum(XInterface_8f010a43):
             BackendAccessException: ``BackendAccessException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getLayers(self, aLayerIds: 'typing.Tuple[str, ...]', aTimestamp: str) -> 'typing.Tuple[XLayer_4cd50fcb, ...]':
         """
         retrieves the layers associated to a series of layer ids, if newer than indicated.
@@ -76,6 +77,7 @@ class XMultiLayerStratum(XInterface_8f010a43):
             BackendAccessException: ``BackendAccessException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getMultipleLayers(self, aLayerIds: 'typing.Tuple[str, ...]', aTimestamps: 'typing.Tuple[str, ...]') -> 'typing.Tuple[XLayer_4cd50fcb, ...]':
         """
         retrieves the layers associated to a series of layer ids, if newer than indicated for each layer.
@@ -98,6 +100,7 @@ class XMultiLayerStratum(XInterface_8f010a43):
             BackendAccessException: ``BackendAccessException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getUpdatableLayer(self, aLayerId: str) -> 'XUpdatableLayer_ec97135d':
         """
         retrieves a writable representation of the layer associated to a layer id.
@@ -109,6 +112,7 @@ class XMultiLayerStratum(XInterface_8f010a43):
             com.sun.star.lang.NoSupportException: ``NoSupportException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getUpdateLayerId(self, aComponent: str, aEntity: str) -> str:
         """
         identifies the layer which should be modified to update data of a component on behalf of an entity.
@@ -120,6 +124,7 @@ class XMultiLayerStratum(XInterface_8f010a43):
             com.sun.star.lang.NoSupportException: ``NoSupportException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def listLayerIds(self, aComponent: str, aEntity: str) -> 'typing.Tuple[str, ...]':
         """
         identifies the layers within this stratum which should be read and merged to determine data of a component for an entity
@@ -130,4 +135,6 @@ class XMultiLayerStratum(XInterface_8f010a43):
             BackendAccessException: ``BackendAccessException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

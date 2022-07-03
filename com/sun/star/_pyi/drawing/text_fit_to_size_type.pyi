@@ -32,6 +32,7 @@ class TextFitToSizeType(Enum):
     See Also:
         `API TextFitToSizeType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a119322ec5cab271556edacd80f9d780a>`_
     """
+    typeName: str = 'com.sun.star.drawing.TextFitToSizeType'
 
     ALLLINES: 'uno.Enum'
     """

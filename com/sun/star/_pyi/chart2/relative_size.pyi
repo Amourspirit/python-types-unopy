@@ -43,6 +43,7 @@ class RelativeSize(object):
             Primary (float, optional): Primary value.
             Secondary (float, optional): Secondary value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class RelativeSize(object):
         
         For a western Orientation this is the width.
         """
+        ...
 
 
     @property
@@ -73,5 +75,6 @@ class RelativeSize(object):
         
         For a western Orientation this is the height.
         """
+        ...
 
 

@@ -51,6 +51,7 @@ class ParametersRequest(ClassifiedInteractionRequest_9f72121b):
             Parameters (XIndexAccess, optional): Parameters value.
             Connection (XConnection, optional): Connection value.
         """
+        ...
     @property
     def Parameters(self) -> XIndexAccess_f0910d6d:
         """
@@ -58,6 +59,7 @@ class ParametersRequest(ClassifiedInteractionRequest_9f72121b):
         
         The objects returned by the com.sun.star.container.XIndexAccess have to be property sets describing the respective parameter. For this, the objects have to support the service com.sun.star.sdbcx.Column.
         """
+        ...
 
     @property
     def Connection(self) -> XConnection_a36a0b0c:
@@ -66,6 +68,7 @@ class ParametersRequest(ClassifiedInteractionRequest_9f72121b):
         
         Somebody handling the request could, e.g., use the connection for determining the identifier quote string, etc.
         """
+        ...
 
 
 __all__ = ['ParametersRequest']

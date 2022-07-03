@@ -39,9 +39,11 @@ class XVBAModuleInfo(ABC):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def hasModuleInfo(self, ModuleName: str) -> bool:
         """
         """
+        ...
     def insertModuleInfo(self, ModuleName: str, ModuleInfo: 'ModuleInfo_b2090b8f') -> None:
         """
 
@@ -50,6 +52,7 @@ class XVBAModuleInfo(ABC):
             com.sun.star.container.ElementExistException: ``ElementExistException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def removeModuleInfo(self, ModuleName: str) -> None:
         """
 
@@ -57,4 +60,6 @@ class XVBAModuleInfo(ABC):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

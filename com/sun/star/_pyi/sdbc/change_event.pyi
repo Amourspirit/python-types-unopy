@@ -47,6 +47,7 @@ class ChangeEvent(EventObject_a3d70b03):
             Action (int, optional): Action value.
             Rows (int, optional): Rows value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class ChangeEvent(EventObject_a3d70b03):
         """
         indicates the type of change.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class ChangeEvent(EventObject_a3d70b03):
         """
         indicates the number of rows affected by the change.
         """
+        ...
 
 

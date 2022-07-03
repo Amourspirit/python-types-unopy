@@ -44,11 +44,13 @@ class InvalidBootstrapFileException(CannotLoadConfigurationException_b325176a):
             Context (XInterface, optional): Context value.
             BootstrapFileURL (str, optional): BootstrapFileURL value.
         """
+        ...
     @property
     def BootstrapFileURL(self) -> str:
         """
         the URL of the bootstrap file that is invalid
         """
+        ...
 
 
 __all__ = ['InvalidBootstrapFileException']

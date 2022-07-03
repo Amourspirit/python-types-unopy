@@ -32,6 +32,7 @@ class WindowClass(Enum):
     See Also:
         `API WindowClass <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt.html#add6041e42e466bb2170771f84663460b>`_
     """
+    typeName: str = 'com.sun.star.awt.WindowClass'
 
     CONTAINER: 'uno.Enum'
     """

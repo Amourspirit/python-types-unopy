@@ -42,11 +42,13 @@ class Database(TextFieldMaster_d6410cc2):
         
         (0 = table, 1 = query, 2 = statement)
         """
+        ...
     @property
     def DataBaseName(self) -> str:
         """
         specifies the database name.
         """
+        ...
     @property
     def DataBaseResource(self) -> str:
         """
@@ -56,6 +58,7 @@ class Database(TextFieldMaster_d6410cc2):
         
             OOo 2.0
         """
+        ...
     @property
     def DataBaseURL(self) -> str:
         """
@@ -65,11 +68,13 @@ class Database(TextFieldMaster_d6410cc2):
         
             OOo 2.0
         """
+        ...
     @property
     def DataColumnName(self) -> str:
         """
         contains the name of the data base table.
         """
+        ...
     @property
     def DataTableName(self) -> str:
         """
@@ -77,6 +82,7 @@ class Database(TextFieldMaster_d6410cc2):
         
         Depending on the CommandType property this can be the name of a data base table, a data query or a statement.
         """
+        ...
     @property
     def Name(self) -> str:
         """
@@ -86,5 +92,6 @@ class Database(TextFieldMaster_d6410cc2):
         
             OOo 2.3
         """
+        ...
 
 

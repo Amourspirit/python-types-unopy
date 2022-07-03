@@ -37,4 +37,6 @@ class XDataDescriptorFactory(XInterface_8f010a43):
         """
         returns a descriptor of a definition object.
         """
+        ...
+
 

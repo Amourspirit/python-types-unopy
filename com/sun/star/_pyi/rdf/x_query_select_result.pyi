@@ -43,4 +43,6 @@ class XQuerySelectResult(XEnumeration_f2180daa):
         """
         get the names of the query variables.
         """
+        ...
+
 

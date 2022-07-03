@@ -36,6 +36,7 @@ class XScriptURIHelper(XInterface_8f010a43):
         
         The resulting string can be used to access the storage for this using the Universal Content Broker
         """
+        ...
     def getScriptURI(self, storageURI: str) -> str:
         """
         Obtain the Scripting Framework script URI for a specific UCB URI.
@@ -43,6 +44,7 @@ class XScriptURIHelper(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getStorageURI(self, scriptURI: str) -> str:
         """
         Obtain the storage URI for a specific Scripting Framework script URI.
@@ -50,4 +52,6 @@ class XScriptURIHelper(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

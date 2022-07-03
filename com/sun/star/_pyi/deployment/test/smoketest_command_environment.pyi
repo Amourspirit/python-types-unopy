@@ -28,5 +28,6 @@ class SmoketestCommandEnvironment(XCommandEnvironment_fb330dee):
     See Also:
         `API SmoketestCommandEnvironment <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1deployment_1_1test_1_1SmoketestCommandEnvironment.html>`_
     """
+    ...
 
 

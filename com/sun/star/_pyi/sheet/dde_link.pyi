@@ -38,5 +38,6 @@ class DDELink(XNamed_a6520b08, XDDELink_8cc609d4, XDDELinkResults_dce00cc6, XRef
     See Also:
         `API DDELink <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1DDELink.html>`_
     """
+    ...
 
 

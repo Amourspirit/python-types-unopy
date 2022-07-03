@@ -29,6 +29,7 @@ Enum
 See Also:
     `API DirectionProperty <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n.html#a6e8fd3df14c13e43a44061c70daacd8b>`_
 """
+typeName: str = 'com.sun.star.i18n.DirectionProperty'
 
 ARABIC_NUMBER: 'uno.Enum'
 """

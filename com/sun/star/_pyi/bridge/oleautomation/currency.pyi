@@ -48,6 +48,7 @@ class Currency(object):
         Arguments:
             Value (int, optional): Value value.
         """
+        ...
 
 
     @property
@@ -55,5 +56,6 @@ class Currency(object):
         """
         corresponds to the Automation type CY.
         """
+        ...
 
 

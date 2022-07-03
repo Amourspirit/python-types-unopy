@@ -39,13 +39,17 @@ class XDictionaryEntry(XInterface_8f010a43):
     def getDictionaryWord(self) -> str:
         """
         """
+        ...
     def getReplacementText(self) -> str:
         """
         is the suggested replacement text for negative words.
         
         It is undefined if the entry is not negative.
         """
+        ...
     def isNegative(self) -> bool:
         """
         """
+        ...
+
 

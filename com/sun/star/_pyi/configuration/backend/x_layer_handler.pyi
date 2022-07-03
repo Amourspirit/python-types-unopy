@@ -55,6 +55,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def addOrReplaceNodeFromTemplate(self, aName: str, aTemplate: 'TemplateIdentifier_2aaa14b5', aAttributes: int) -> None:
         """
         receives notification that a new item based on a particular template is started.
@@ -71,6 +72,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def addProperty(self, aName: str, aAttributes: int, aType: object) -> None:
         """
         receives notification that a property having a VOID value is added to the current node.
@@ -87,6 +89,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def addPropertyWithValue(self, aName: str, aAttributes: int, aValue: object) -> None:
         """
         receives notification that a property having a non-VOID value is added to the current node.
@@ -105,6 +108,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def dropNode(self, aName: str) -> None:
         """
         receives notification that a node is dropped from a set.
@@ -117,6 +121,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def endLayer(self) -> None:
         """
         receives notification that a layer description is complete.
@@ -129,6 +134,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def endNode(self) -> None:
         """
         receives notification that a node description is complete.
@@ -141,6 +147,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def endProperty(self) -> None:
         """
         receives notification that a property description is complete.
@@ -153,6 +160,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def overrideNode(self, aName: str, aAttributes: int, bClear: bool) -> None:
         """
         receives notification that a description of a node override is started.
@@ -169,6 +177,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def overrideProperty(self, aName: str, aAttributes: int, aType: object, bClear: bool) -> None:
         """
         receives notification that an existing property is modified.
@@ -189,6 +198,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def setPropertyValue(self, aValue: object) -> None:
         """
         receives notification that the value of the current property is overridden.
@@ -203,6 +213,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def setPropertyValueForLocale(self, aValue: object, aLocale: str) -> None:
         """
         receives notification that the value of the current localized property is overridden for a specific locale .
@@ -215,6 +226,7 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def startLayer(self) -> None:
         """
         receives notification that a layer description is started for a component.
@@ -225,4 +237,6 @@ class XLayerHandler(XInterface_8f010a43):
             MalformedDataException: ``MalformedDataException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

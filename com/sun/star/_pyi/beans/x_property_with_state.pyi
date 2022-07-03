@@ -46,9 +46,11 @@ class XPropertyWithState(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def getStateAsProperty(self) -> 'PropertyState_c97b0c77':
         """
         """
+        ...
     def setToDefaultAsProperty(self) -> None:
         """
         sets this to its default value.
@@ -58,4 +60,6 @@ class XPropertyWithState(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

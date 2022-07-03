@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.sdb
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..container.x_name_access import XNameAccess as XNameAccess_e2ab0cf6
@@ -48,6 +49,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getBinaryStream(self) -> 'XInputStream_98d40ab4':
         """
         gets the value of a column in the current row as a stream of uninterpreted bytes.
@@ -59,6 +61,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getBlob(self) -> 'XBlob_6773087b':
         """
         gets a BLOB (Binary Large OBject) value in the current row.
@@ -66,6 +69,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getBoolean(self) -> bool:
         """
         gets the value of a column in the current row as boolean.
@@ -73,6 +77,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getByte(self) -> int:
         """
         gets the value of a column in the current row as a byte.
@@ -80,7 +85,8 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
-    def getBytes(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getBytes(self) -> uno.ByteSequence:
         """
         gets the value of a column in the current row as a byte array.
         
@@ -89,6 +95,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getCharacterStream(self) -> 'XInputStream_98d40ab4':
         """
         gets the value of a column in the current row as a stream of uninterpreted bytes.
@@ -100,6 +107,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getClob(self) -> 'XClob_6777087c':
         """
         gets a CLOB value in the current row of this ResultSet object.
@@ -107,6 +115,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getDate(self) -> 'Date_60040844':
         """
         gets the value of a column in the current row as a date object.
@@ -114,6 +123,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getDouble(self) -> float:
         """
         gets the value of a column in the current row as a double.
@@ -121,6 +131,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getFloat(self) -> float:
         """
         gets the value of a column in the current row as a float.
@@ -128,6 +139,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getInt(self) -> int:
         """
         gets the value of a column in the current row as a long.
@@ -135,6 +147,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getLong(self) -> int:
         """
         gets the value of a column in the current row as a hyper.
@@ -142,12 +155,14 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getObject(self, typeMap: 'XNameAccess_e2ab0cf6') -> object:
         """
 
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getRef(self) -> 'XRef_5f110819':
         """
         gets a REF(<structured-type&gt) column value from the current row.
@@ -155,6 +170,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getShort(self) -> int:
         """
         gets the value of a column in the current row as a short.
@@ -162,6 +178,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getString(self) -> str:
         """
         gets the value of a column in the current row as a String.
@@ -169,6 +186,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getTime(self) -> 'Time_604e0855':
         """
         gets the value of a column in the current row as a time object.
@@ -176,6 +194,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getTimestamp(self) -> 'DateTime_84de09d3':
         """
         gets the value of a column in the current row as a datetime object.
@@ -183,6 +202,7 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def wasNull(self) -> bool:
         """
         reports whether the last column read had a value of SQL NULL.
@@ -192,4 +212,6 @@ class XColumn(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

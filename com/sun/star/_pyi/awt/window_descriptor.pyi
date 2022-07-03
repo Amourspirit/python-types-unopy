@@ -48,6 +48,7 @@ class WindowDescriptor(object):
             Bounds (Rectangle, optional): Bounds value.
             WindowAttributes (int, optional): WindowAttributes value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class WindowDescriptor(object):
         """
         specifies the type of window.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class WindowDescriptor(object):
         
         A zero length name means that the VCL creates a blank top, a container, or a simple window. The following service names are defined:
         """
+        ...
 
 
     @property
@@ -73,6 +76,7 @@ class WindowDescriptor(object):
         
         If Parent == 0 && ParentIndex == -1, then the window is on the desktop.
         """
+        ...
 
 
     @property
@@ -82,6 +86,7 @@ class WindowDescriptor(object):
         
         If Parent == 0 and this struct is a member of an array, then this is the offset from the beginning of the array to the parent. A value of -1 means desktop.
         """
+        ...
 
 
     @property
@@ -91,6 +96,7 @@ class WindowDescriptor(object):
         
         This member is ignored if the window attribute is com.sun.star.awt.WindowAttribute.FULLSIZE.
         """
+        ...
 
 
     @property
@@ -100,5 +106,6 @@ class WindowDescriptor(object):
         
         Use one value out of the constant group com.sun.star.awt.WindowAttribute.
         """
+        ...
 
 

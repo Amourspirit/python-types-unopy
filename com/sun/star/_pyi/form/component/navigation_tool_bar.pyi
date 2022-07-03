@@ -39,16 +39,19 @@ class NavigationToolBar(FormControlModel_e2990d22):
         
         Allowed values are
         """
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
+        ...
     @property
     def FontDescriptor(self) -> 'FontDescriptor_bc110c0a':
         """
         contains the font attributes for the text in the control
         """
+        ...
     @property
     def FontEmphasisMark(self) -> int:
         """
@@ -56,6 +59,7 @@ class NavigationToolBar(FormControlModel_e2990d22):
         
         The value must be one of the com.sun.star.text.FontEmphasis constants.
         """
+        ...
     @property
     def FontRelief(self) -> int:
         """
@@ -63,6 +67,7 @@ class NavigationToolBar(FormControlModel_e2990d22):
         
         The value must be one of the com.sun.star.text.FontRelief constants.
         """
+        ...
     @property
     def IconSize(self) -> int:
         """
@@ -70,39 +75,45 @@ class NavigationToolBar(FormControlModel_e2990d22):
         
         At least the following values are to be supported:
         """
+        ...
     @property
     def RepeatDelay(self) -> int:
         """
         specifies a repeat delay for the control
         
-        Some buttons of a NavigationToolBar may show repeating behavior, e.g. may be repeatedly triggered when the user keeps the mouse pressed over such a button.
-        The delay between two such triggers (in milliseconds) is specified with this property.
+        Some buttons of a NavigationToolBar may show repeating behavior, e.g. may be repeatedly triggered when the user keeps the mouse pressed over such a button.The delay between two such triggers (in milliseconds) is specified with this property.
         """
+        ...
     @property
     def ShowFilterSort(self) -> bool:
         """
         determines whether the control should provide functionality for filtering and sorting the parent form
         """
+        ...
     @property
     def ShowNavigation(self) -> bool:
         """
         determines whether the control should provide functionality for navigating the parent form
         """
+        ...
     @property
     def ShowPosition(self) -> bool:
         """
         determines whether the control should provide functionality for positioning the parent form
         """
+        ...
     @property
     def ShowRecordActions(self) -> bool:
         """
         determines whether the control should provide functionality for acting on the current record of the parent form
         """
+        ...
     @property
     def TextColor(self) -> int:
         """
         specifies the text color (as RGB value) of the control.
         """
+        ...
     @property
     def TextLineColor(self) -> int:
         """
@@ -110,5 +121,6 @@ class NavigationToolBar(FormControlModel_e2990d22):
         
         This color is used if the FontDescriptor defines that the text in the control should be underlined or stroke out.
         """
+        ...
 
 

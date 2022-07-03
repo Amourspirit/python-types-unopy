@@ -39,10 +39,13 @@ class XActivateListener(XEventListener_c7230c4a):
         
         A window is activated if a child or itself got the focus.
         """
+        ...
     def windowDeactivated(self, e: 'EventObject_a3d70b03') -> None:
         """
         is invoked when a window is deactivated.
         
         A window is deactivated if a child or itself lost the focus.
         """
+        ...
+
 

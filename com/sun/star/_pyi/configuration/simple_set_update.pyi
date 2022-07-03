@@ -36,5 +36,6 @@ class SimpleSetUpdate(SimpleSetAccess_5ea81068, XNameContainer_cb90e47, XMultiSe
     See Also:
         `API SimpleSetUpdate <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1SimpleSetUpdate.html>`_
     """
+    ...
 
 

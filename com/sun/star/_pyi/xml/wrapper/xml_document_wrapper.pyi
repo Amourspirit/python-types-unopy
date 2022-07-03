@@ -30,5 +30,6 @@ class XMLDocumentWrapper(XInitialization_d46c0cca, XXMLDocumentWrapper_782410f1)
     See Also:
         `API XMLDocumentWrapper <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1wrapper_1_1XMLDocumentWrapper.html>`_
     """
+    ...
 
 

@@ -32,6 +32,7 @@ class MeasureTextHorzPos(Enum):
     See Also:
         `API MeasureTextHorzPos <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a38140d53071a431128aa968be9ce4b7d>`_
     """
+    typeName: str = 'com.sun.star.drawing.MeasureTextHorzPos'
 
     AUTO: 'uno.Enum'
     """

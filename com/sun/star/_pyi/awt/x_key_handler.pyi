@@ -49,6 +49,7 @@ class XKeyHandler(XEventListener_c7230c4a):
         
         Consuming this event does not prevent the pending key-release event from being broadcasted.
         """
+        ...
     def keyReleased(self, aEvent: 'KeyEvent_7a78097f') -> bool:
         """
         This function is called by the broadcaster, an com.sun.star.awt.XExtendedToolkit for instance, after a key has been pressed and released.
@@ -57,4 +58,6 @@ class XKeyHandler(XEventListener_c7230c4a):
         
         Consume the event if the action performed by the implementation is mutually exclusive with the default action of the broadcaster or, when known, with that of other handlers.
         """
+        ...
+
 

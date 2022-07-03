@@ -43,16 +43,19 @@ class SortDescriptor(XPropertySet_bc180bfa):
         
         The collator algorithm may be defined for separate keys in specific implementations. For those this property may not need to be set.
         """
+        ...
     @property
     def CollatorLocale(self) -> 'Locale_70d308fa':
         """
         specifies the locale for the compare operator (collator).
         """
+        ...
     @property
     def IsCaseSensitive(self) -> bool:
         """
         specifies if the case of letters is important when comparing entries.
         """
+        ...
     @property
     def SortAscending(self) -> bool:
         """
@@ -60,10 +63,12 @@ class SortDescriptor(XPropertySet_bc180bfa):
         
         The sorting order may be defined for separate keys in specific implementations. For those this property may not need to be set.
         """
+        ...
     @property
     def SortColumns(self) -> bool:
         """
         specifies if the columns are sorted.
         """
+        ...
 
 

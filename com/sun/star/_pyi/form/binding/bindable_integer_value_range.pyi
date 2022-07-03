@@ -31,5 +31,6 @@ class BindableIntegerValueRange(BindableControlModel_9a1111a8):
     See Also:
         `API BindableIntegerValueRange <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1binding_1_1BindableIntegerValueRange.html>`_
     """
+    ...
 
 

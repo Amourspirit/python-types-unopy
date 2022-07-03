@@ -40,6 +40,7 @@ class EnhancedCustomShapeSegment(object):
             Command (int, optional): Command value.
             Count (int, optional): Count value.
         """
+        ...
 
 
     @property

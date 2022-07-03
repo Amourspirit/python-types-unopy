@@ -39,6 +39,7 @@ class XNameContainer(XNameReplace_f0900d60):
             com.sun.star.container.ElementExistException: ``ElementExistException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def removeByName(self, Name: str) -> None:
         """
         removes the element with the specified name.
@@ -47,4 +48,6 @@ class XNameContainer(XNameReplace_f0900d60):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

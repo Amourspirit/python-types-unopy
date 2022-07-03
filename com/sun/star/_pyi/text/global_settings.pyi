@@ -30,5 +30,6 @@ class GlobalSettings(XPrintSettingsSupplier_3c330fcd, XViewSettingsSupplier_2be9
     See Also:
         `API GlobalSettings <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1GlobalSettings.html>`_
     """
+    ...
 
 

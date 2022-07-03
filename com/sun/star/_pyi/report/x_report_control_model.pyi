@@ -42,6 +42,8 @@ class XReportControlModel(XContainer_d6fb0cc6, XIndexContainer_1c040ebe, XReport
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
     @property
     def ConditionalPrintExpression(self) -> str:
         """
@@ -49,6 +51,7 @@ class XReportControlModel(XContainer_d6fb0cc6, XIndexContainer_1c040ebe, XReport
         
         If the expression evaluates to true than the report control model will be printed otherwise not.
         """
+        ...
 
     @property
     def DataField(self) -> str:
@@ -57,6 +60,7 @@ class XReportControlModel(XContainer_d6fb0cc6, XIndexContainer_1c040ebe, XReport
         
         The value can be
         """
+        ...
 
     @property
     def PrintWhenGroupChange(self) -> bool:
@@ -65,5 +69,6 @@ class XReportControlModel(XContainer_d6fb0cc6, XIndexContainer_1c040ebe, XReport
         
         The default value is TRUE.
         """
+        ...
 
 

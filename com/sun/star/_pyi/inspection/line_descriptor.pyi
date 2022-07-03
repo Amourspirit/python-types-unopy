@@ -60,6 +60,7 @@ class LineDescriptor(object):
             IndentLevel (int, optional): IndentLevel value.
             Category (str, optional): Category value.
         """
+        ...
 
 
     @property
@@ -67,6 +68,7 @@ class LineDescriptor(object):
         """
         denotes the human-readable display name used to present a property to the user
         """
+        ...
 
 
     @property
@@ -74,6 +76,7 @@ class LineDescriptor(object):
         """
         denotes the control which should be used to represent the property at the UI.
         """
+        ...
 
 
     @property
@@ -81,6 +84,7 @@ class LineDescriptor(object):
         """
         specifies the URL to the help topic to be associated with the property
         """
+        ...
 
 
     @property
@@ -90,6 +94,7 @@ class LineDescriptor(object):
         
         If no image for the primary button is specified, but a primary button is present, the three dots will be displayed on the button.
         """
+        ...
 
 
     @property
@@ -101,6 +106,7 @@ class LineDescriptor(object):
         
         If a primary button exists for a property's UI representation (HasPrimaryButton), it gets the ID specified herein.
         """
+        ...
 
 
     @property
@@ -114,6 +120,7 @@ class LineDescriptor(object):
         
         If you need to specify a graphic which does not have a URL, but is available as com.sun.star.graphic.XGraphic only, then you must leave PrimaryButtonImageURL empty, and use the PrimaryButtonImage property.
         """
+        ...
 
 
     @property
@@ -123,6 +130,7 @@ class LineDescriptor(object):
         
         The property will be ignored if HasPrimaryButton is FALSE, or if PrimaryButtonImageURL is a non-empty string.
         """
+        ...
 
 
     @property
@@ -132,6 +140,7 @@ class LineDescriptor(object):
         
         A secondary button subordinated to the primary button. If no primary button exists (HasPrimaryButton), this member is ignored.
         """
+        ...
 
 
     @property
@@ -141,6 +150,7 @@ class LineDescriptor(object):
         
         If a secondary button exists for a property's UI representation (HasSecondaryButton), it gets the ID specified herein.
         """
+        ...
 
 
     @property
@@ -154,6 +164,7 @@ class LineDescriptor(object):
         
         If you need to specify a graphic which does not have a URL, but is available as com.sun.star.graphic.XGraphic only, then you must leave SecondaryButtonImageURL empty, and use the SecondaryButtonImage property.
         """
+        ...
 
 
     @property
@@ -163,6 +174,7 @@ class LineDescriptor(object):
         
         The property will be ignored if HasSecondaryButton is FALSE, or if SecondaryButtonImageURL is a non-empty string.
         """
+        ...
 
 
     @property
@@ -174,6 +186,7 @@ class LineDescriptor(object):
         
         Normally, XPropertyHandlers will set this to 0 when describing the UI for a normal property.
         """
+        ...
 
 
     @property
@@ -185,5 +198,6 @@ class LineDescriptor(object):
         
         For your implementation of XPropertyHandler, it's recommended that you document the programmatic names used for property categories. This way, your handler might be re-used in different contexts, where only the XObjectInspectorModel needs to provide consistent UI names for the categories.
         """
+        ...
 
 

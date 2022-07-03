@@ -43,4 +43,6 @@ class XVndSunStarPkgUrlReferenceFactory(ABC):
         
         The returned URL reference has the given authority, an empty path, and no fragment.
         """
+        ...
+
 

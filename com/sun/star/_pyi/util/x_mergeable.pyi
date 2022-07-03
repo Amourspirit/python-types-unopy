@@ -33,8 +33,11 @@ class XMergeable(XInterface_8f010a43):
     def getIsMerged(self) -> bool:
         """
         """
+        ...
     def merge(self, bMerge: bool) -> None:
         """
         merges/unmerges the area specified by this object.
         """
+        ...
+
 

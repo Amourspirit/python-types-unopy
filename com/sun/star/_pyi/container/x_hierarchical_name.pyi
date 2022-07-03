@@ -42,7 +42,10 @@ class XHierarchicalName(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def getHierarchicalName(self) -> str:
         """
         """
+        ...
+
 

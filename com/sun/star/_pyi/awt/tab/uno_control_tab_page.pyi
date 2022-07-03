@@ -34,5 +34,6 @@ class UnoControlTabPage(UnoControlContainer_fe670e0a, XTabPage_a2060aa5):
     See Also:
         `API UnoControlTabPage <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1tab_1_1UnoControlTabPage.html>`_
     """
+    ...
 
 

@@ -47,6 +47,7 @@ class ContextMenuExecuteEvent(object):
             ActionTriggerContainer (XIndexContainer, optional): ActionTriggerContainer value.
             Selection (XSelectionSupplier, optional): Selection value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class ContextMenuExecuteEvent(object):
         """
         contains the window where the context menu has been requested
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class ContextMenuExecuteEvent(object):
         """
         contains the position the context menu will be executed at.
         """
+        ...
 
 
     @property
@@ -70,6 +73,7 @@ class ContextMenuExecuteEvent(object):
         
         The implementing object has to support the service com.sun.star.ui.ActionTriggerContainer;
         """
+        ...
 
 
     @property
@@ -77,5 +81,6 @@ class ContextMenuExecuteEvent(object):
         """
         provides the current selection inside the source window.
         """
+        ...
 
 

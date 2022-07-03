@@ -35,15 +35,18 @@ class IndexDescriptor(Descriptor_a5200b3b, XColumnsSupplier_f0600da9):
         """
         is the name of the index catalog, may be empty.
         """
+        ...
     @property
     def IsClustered(self) -> bool:
         """
         indicates that the index is clustered.
         """
+        ...
     @property
     def IsUnique(self) -> bool:
         """
         indicates that the index allow only unique values.
         """
+        ...
 
 

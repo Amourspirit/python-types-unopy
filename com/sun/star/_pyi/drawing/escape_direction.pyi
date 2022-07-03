@@ -32,6 +32,7 @@ class EscapeDirection(Enum):
     See Also:
         `API EscapeDirection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a554864869ec34ebdfb5ecde01c5c5670>`_
     """
+    typeName: str = 'com.sun.star.drawing.EscapeDirection'
 
     DOWN: 'uno.Enum'
     """

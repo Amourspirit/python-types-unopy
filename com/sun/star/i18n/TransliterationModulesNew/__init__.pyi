@@ -29,6 +29,7 @@ Enum
 See Also:
     `API TransliterationModulesNew <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n.html#a436afb2c972c4d40d888b71482e93020>`_
 """
+typeName: str = 'com.sun.star.i18n.TransliterationModulesNew'
 
 CharToNumHangul_ko: 'uno.Enum'
 """

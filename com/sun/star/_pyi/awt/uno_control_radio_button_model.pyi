@@ -48,31 +48,37 @@ class UnoControlRadioButtonModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def BackgroundColor(self) -> int:
         """
         specifies the background color (RGB) of the control.
         """
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
+        ...
     @property
     def FontDescriptor(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font attributes of the text in the control.
         """
+        ...
     @property
     def FontEmphasisMark(self) -> int:
         """
         specifies the com.sun.star.text.FontEmphasis value of the text in the control.
         """
+        ...
     @property
     def FontRelief(self) -> int:
         """
         specifies the com.sun.star.text.FontRelief value of the text in the control.
         """
+        ...
     @property
     def Graphic(self) -> 'XGraphic_a4da0afc':
         """
@@ -84,16 +90,19 @@ class UnoControlRadioButtonModel(UnoControlModel_c8ce0c58):
         
             OOo 2.1
         """
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the control.
         """
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the control.
         """
+        ...
     @property
     def ImagePosition(self) -> int:
         """
@@ -101,16 +110,19 @@ class UnoControlRadioButtonModel(UnoControlModel_c8ce0c58):
         
         Valid values of this property are specified with ImagePosition.
         """
+        ...
     @property
     def ImageURL(self) -> str:
         """
         specifies a URL to an image to display besides the label of the control
         """
+        ...
     @property
     def Label(self) -> str:
         """
         specifies the label of the control.
         """
+        ...
     @property
     def MultiLine(self) -> bool:
         """
@@ -120,31 +132,37 @@ class UnoControlRadioButtonModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def Printable(self) -> bool:
         """
         specifies that the control will be printed with the document.
         """
+        ...
     @property
     def State(self) -> int:
         """
         specifies the state of the control.
         """
+        ...
     @property
     def Tabstop(self) -> bool:
         """
         specifies that the control can be reached with the TAB key.
         """
+        ...
     @property
     def TextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color (RGB) of the control.
         """
+        ...
     @property
     def TextLineColor(self) -> 'Color_68e908c5':
         """
         specifies the text line color (RGB) of the control.
         """
+        ...
     @property
     def VerticalAlign(self) -> 'VerticalAlignment_8d0e12':
         """
@@ -154,6 +172,7 @@ class UnoControlRadioButtonModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def VisualEffect(self) -> int:
         """
@@ -165,6 +184,7 @@ class UnoControlRadioButtonModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def WritingMode(self) -> int:
         """
@@ -176,5 +196,6 @@ class UnoControlRadioButtonModel(UnoControlModel_c8ce0c58):
         
             OOo 3.1
         """
+        ...
 
 

@@ -44,6 +44,7 @@ class TargetProperties(object):
             Properties (typing.Tuple[NamedValue, ...], optional): Properties value.
             Target (object, optional): Target value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class TargetProperties(object):
         """
         Global target properties.
         """
+        ...
 
 
     @property
@@ -58,5 +60,6 @@ class TargetProperties(object):
         """
         Target for which this struct specifies properties.
         """
+        ...
 
 

@@ -29,6 +29,7 @@ Enum
 See Also:
     `API FinishReason <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1script.html#a8ab52fac6ca48179fe55e9a6aa3a345d>`_
 """
+typeName: str = 'com.sun.star.script.FinishReason'
 
 Cancel: 'uno.Enum'
 """

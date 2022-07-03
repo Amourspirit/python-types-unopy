@@ -33,5 +33,6 @@ class DataPilotFields(XEnumerationAccess_4bac0ffc, XIndexAccess_f0910d6d, XNameA
     See Also:
         `API DataPilotFields <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1DataPilotFields.html>`_
     """
+    ...
 
 

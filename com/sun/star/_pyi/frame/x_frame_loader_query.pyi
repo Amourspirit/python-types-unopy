@@ -41,12 +41,16 @@ class XFrameLoaderQuery(XInterface_8f010a43):
         """
         use member com.sun.star.container.XNameAccess.getElementNames() provided by service FrameLoaderFactory instead of this
         """
+        ...
     def getLoaderProperties(self, sFilterName: str) -> 'typing.Tuple[PropertyValue_c9610c73, ...]':
         """
         use member com.sun.star.container.XNameAccess.getByName() provided by service FrameLoaderFactory instead of this
         """
+        ...
     def searchFilter(self, sURL: str, seqArguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> str:
         """
         use member com.sun.star.container.XContainerQuery provided by service FrameLoaderFactory instead of this
         """
+        ...
+
 

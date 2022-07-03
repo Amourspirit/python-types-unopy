@@ -42,70 +42,94 @@ class XFormsUIHelper1(ABC):
     def cloneBindingAsGhost(self, binding: 'XPropertySet_bc180bfa') -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
     def createAttribute(self, xParent: 'XNode_83fb09a5', sName: str) -> 'XNode_83fb09a5':
         """
         """
+        ...
     def createElement(self, xParent: 'XNode_83fb09a5', sName: str) -> 'XNode_83fb09a5':
         """
         """
+        ...
     def getBindingForNode(self, xNode: 'XNode_83fb09a5', bCreate: bool) -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
     def getBindingName(self, xBinding: 'XPropertySet_bc180bfa', bDetail: bool) -> str:
         """
         """
+        ...
     def getDefaultBindingExpressionForNode(self, xNode: 'XNode_83fb09a5') -> str:
         """
         """
+        ...
     def getDefaultServiceNameForNode(self, xNode: 'XNode_83fb09a5') -> str:
         """
         """
+        ...
     def getNodeDisplayName(self, xNode: 'XNode_83fb09a5', bDetail: bool) -> str:
         """
         """
+        ...
     def getNodeName(self, xNode: 'XNode_83fb09a5') -> str:
         """
         """
+        ...
     def getResultForExpression(self, xBinding: 'XPropertySet_bc180bfa', bIsBindingExpression: bool, sExpression: str) -> str:
         """
         """
+        ...
     def getSubmissionName(self, xSubm: 'XPropertySet_bc180bfa', bDetail: bool) -> str:
         """
         """
+        ...
     def isValidPrefixName(self, sName: str) -> bool:
         """
         """
+        ...
     def isValidXMLName(self, sName: str) -> bool:
         """
         """
+        ...
     def newInstance(self, sName: str, sURL: str, bURLOnce: bool) -> 'XDocument_aebc0b5e':
         """
         """
+        ...
     def newModel(self, xModel: 'XModel_7a6e095c', sName: str) -> 'XModel_865909f0':
         """
         """
+        ...
     def removeBindingForNode(self, xNode: 'XNode_83fb09a5') -> None:
         """
         """
+        ...
     def removeBindingIfUseless(self, xBinding: 'XPropertySet_bc180bfa') -> None:
         """
         """
+        ...
     def removeInstance(self, sName: str) -> None:
         """
         """
+        ...
     def removeModel(self, xModel: 'XModel_7a6e095c', sName: str) -> None:
         """
         """
+        ...
     def renameInstance(self, sFrom: str, sTo: str, sURL: str, bURLOnce: bool) -> None:
         """
         """
+        ...
     def renameModel(self, xModel: 'XModel_7a6e095c', sFrom: str, sTo: str) -> None:
         """
         """
+        ...
     def renameNode(self, xNode: 'XNode_83fb09a5', sName: str) -> 'XNode_83fb09a5':
         """
         """
+        ...
     def setNodeValue(self, xNode: 'XNode_83fb09a5', sValue: str) -> None:
         """
         """
+        ...
+
 

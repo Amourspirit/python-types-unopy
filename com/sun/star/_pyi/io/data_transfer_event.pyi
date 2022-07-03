@@ -43,6 +43,7 @@ class DataTransferEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             aException (object, optional): aException value.
         """
+        ...
 
 
     @property
@@ -50,5 +51,6 @@ class DataTransferEvent(EventObject_a3d70b03):
         """
         specifies an occurred exception.
         """
+        ...
 
 

@@ -37,4 +37,6 @@ class XTitleChangeListener(XEventListener_c7230c4a):
         """
         The frame title has changed.
         """
+        ...
+
 

@@ -41,4 +41,6 @@ class XTextViewTextRangeSupplier(XInterface_8f010a43):
     def createTextRangeByPixelPosition(self, PixelPosition: 'Point_5fb2085e') -> 'XTextRange_9a910ab7':
         """
         """
+        ...
+
 

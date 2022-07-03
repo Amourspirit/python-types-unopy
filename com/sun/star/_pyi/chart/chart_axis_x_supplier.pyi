@@ -34,25 +34,30 @@ class ChartAxisXSupplier(XAxisXSupplier_d43a0cb3):
         """
         This property determines if the x-axis is shown or hidden.
         """
+        ...
     @property
     def HasXAxisDescription(self) -> bool:
         """
         Determines if the description of the x-axis is shown or hidden.
         """
+        ...
     @property
     def HasXAxisGrid(self) -> bool:
         """
         Determines if the major grid of the x-axis is shown or hidden.
         """
+        ...
     @property
     def HasXAxisHelpGrid(self) -> bool:
         """
         Determines if the minor grid of the x-axis is shown or hidden.
         """
+        ...
     @property
     def HasXAxisTitle(self) -> bool:
         """
         Determines if the title of the x-axis is shown or hidden.
         """
+        ...
 
 

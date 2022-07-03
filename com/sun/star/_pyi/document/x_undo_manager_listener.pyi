@@ -42,56 +42,68 @@ class XUndoManagerListener(XEventListener_c7230c4a):
         """
         is called when the top-most action of the Redo stack has been re-applied.
         """
+        ...
     def actionUndone(self, iEvent: 'UndoManagerEvent_1c2d0eba') -> None:
         """
         is called when the top-most action of the undo stack has been undone.
         """
+        ...
     def allActionsCleared(self, iEvent: 'EventObject_a3d70b03') -> None:
         """
         is called when both the Undo and the Redo stack have been cleared from all Undo actions.
         """
+        ...
     def cancelledContext(self, iEvent: 'UndoManagerEvent_1c2d0eba') -> None:
         """
         is called when an Undo context has been left, but no actions have been added within this context.
         
         In such a case, the context which has just been left will not contribute to the undo stack, but instead be silently removed. Consequently, the UndoManagerEvent.UndoActionTitle is empty.
         """
+        ...
     def enteredContext(self, iEvent: 'UndoManagerEvent_1c2d0eba') -> None:
         """
         is called when a new Undo context has been entered.
         
         UndoManagerEvent.UndoActionTitle carries the title of the Undo context, and UndoManagerEvent.UndoContextDepth the number of open Undo contexts, including the one just entered.
         """
+        ...
     def enteredHiddenContext(self, iEvent: 'UndoManagerEvent_1c2d0eba') -> None:
         """
         is called when a new hidden Undo context has been entered.
         
         UndoManagerEvent.UndoActionTitle carries the title of the Undo context, and UndoManagerEvent.UndoContextDepth the number of open Undo contexts, including the one just entered.
         """
+        ...
     def leftContext(self, iEvent: 'UndoManagerEvent_1c2d0eba') -> None:
         """
         is called when an Undo context has been left.
         
         UndoManagerEvent.UndoActionTitle carries the title of the Undo context, and UndoManagerEvent.UndoContextDepth the number of open Undo contexts, excluding the one just left.
         """
+        ...
     def leftHiddenContext(self, iEvent: 'UndoManagerEvent_1c2d0eba') -> None:
         """
         is called when a hidden Undo context has been left.
         
         UndoManagerEvent.UndoActionTitle is empty, as hidden Undo contexts don't have a title.
         """
+        ...
     def redoActionsCleared(self, iEvent: 'EventObject_a3d70b03') -> None:
         """
         is called when the Redo stack has been cleared.
         """
+        ...
     def resetAll(self, iEvent: 'EventObject_a3d70b03') -> None:
         """
         called when the complete undo manager has been reset
         """
+        ...
     def undoActionAdded(self, iEvent: 'UndoManagerEvent_1c2d0eba') -> None:
         """
         is called when an undo action is added to the undo stack.
         
         Note that the action must not necessarily be the new top element of the stack: In case there's an open Undo context, UndoManagerEvent.UndoContextDepth will be greater 0, and the newly added action will be subordinate of the context action.
         """
+        ...
+
 

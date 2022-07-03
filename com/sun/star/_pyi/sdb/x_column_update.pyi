@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.sdb
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..io.x_input_stream import XInputStream as XInputStream_98d40ab4
@@ -43,6 +44,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateBoolean(self, x: bool) -> None:
         """
         updates a column with a boolean value.
@@ -50,6 +52,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateByte(self, x: int) -> None:
         """
         updates a column with a byte value.
@@ -57,13 +60,15 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
-    def updateBytes(self, x: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def updateBytes(self, x: uno.ByteSequence) -> None:
         """
         updates a column with a byte array value.
 
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateCharacterStream(self, x: 'XInputStream_98d40ab4', length: int) -> None:
         """
         updates a column with a stream value.
@@ -71,6 +76,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateDate(self, x: 'Date_60040844') -> None:
         """
         updates a column with a Date value.
@@ -78,6 +84,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateDouble(self, x: float) -> None:
         """
         updates a column with a double value.
@@ -85,6 +92,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateFloat(self, x: float) -> None:
         """
         updates a column with a float value.
@@ -92,6 +100,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateInt(self, x: int) -> None:
         """
         updates a column with a long value.
@@ -99,6 +108,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateLong(self, x: int) -> None:
         """
         updates a column with a hyper value.
@@ -106,6 +116,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateNull(self) -> None:
         """
         gives a nullable column a null value.
@@ -113,6 +124,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateNumericObject(self, x: object, scale: int) -> None:
         """
         updates a column with an Object value.
@@ -120,6 +132,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateObject(self, x: object) -> None:
         """
         updates a column with an Object value.
@@ -127,6 +140,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateShort(self, x: int) -> None:
         """
         updates a column with a short value.
@@ -134,6 +148,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateString(self, x: str) -> None:
         """
         updates a column with a string value.
@@ -141,6 +156,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateTime(self, x: 'Time_604e0855') -> None:
         """
         updates a column with a Time value.
@@ -148,6 +164,7 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def updateTimestamp(self, x: 'DateTime_84de09d3') -> None:
         """
         updates a column with a Timestamp value.
@@ -155,4 +172,6 @@ class XColumnUpdate(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

@@ -33,5 +33,6 @@ class ImplementationRegistration(XImplementationRegistration_df8c139a):
     See Also:
         `API ImplementationRegistration <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1registry_1_1ImplementationRegistration.html>`_
     """
+    ...
 
 

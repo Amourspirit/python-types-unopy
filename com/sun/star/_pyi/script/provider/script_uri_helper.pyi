@@ -36,5 +36,6 @@ class ScriptURIHelper(XScriptURIHelper_8ee61153):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

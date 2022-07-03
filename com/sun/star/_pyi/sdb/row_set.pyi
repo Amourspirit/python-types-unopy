@@ -42,13 +42,11 @@ class RowSet(ResultSet_847b09ec, RowSet_70fd0908, XCompletedExecution_fb8c0dea, 
     
     In addition, it provides events for RowSet navigation and RowSet modifications to approve the actions and to react on them.
     
-    A row set is able to be operated in various ways, and additionally it notifies various changes in its state. Clients of this service can rely on a fixed order of notifications, depending on how they operate on the component.
-    The following describes the general order of all possible notifications which you can encounter when working with a row set:
+    A row set is able to be operated in various ways, and additionally it notifies various changes in its state. Clients of this service can rely on a fixed order of notifications, depending on how they operate on the component.The following describes the general order of all possible notifications which you can encounter when working with a row set:
     
     The following matrix shows the notifications which apply to the different operations:
     
-    Via com.sun.star.sdbc.XResultSetUpdate.deleteRow(), you can delete the current row of a RowSet. This deleted row then doesn't vanish immediately, but is still present, and subsequent calls to com.sun.star.sdbc.XResultSet.rowDeleted() will return TRUE. The deleted row \"vanishes\" from the RowSet as soon as the cursor is moved away from it.
-    As a consequence, the behavior of several other methods is affected:
+    Via com.sun.star.sdbc.XResultSetUpdate.deleteRow(), you can delete the current row of a RowSet. This deleted row then doesn't vanish immediately, but is still present, and subsequent calls to com.sun.star.sdbc.XResultSet.rowDeleted() will return TRUE. The deleted row \"vanishes\" from the RowSet as soon as the cursor is moved away from it.As a consequence, the behavior of several other methods is affected:
 
     See Also:
         `API RowSet <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1RowSet.html>`_
@@ -58,6 +56,7 @@ class RowSet(ResultSet_847b09ec, RowSet_70fd0908, XCompletedExecution_fb8c0dea, 
         """
         is the command which is currently used.
         """
+        ...
     @property
     def ActiveConnection(self) -> 'XConnection_a36a0b0c':
         """
@@ -65,94 +64,110 @@ class RowSet(ResultSet_847b09ec, RowSet_70fd0908, XCompletedExecution_fb8c0dea, 
         
         It could also be set from outside. When set from outside the RowSet is not responsible for the closing of the connection.
         """
+        ...
     @property
     def ApplyFilter(self) -> bool:
         """
         indicates whether the filter should be applied or not, default is FALSE.
         """
+        ...
     @property
     def Command(self) -> str:
         """
         is the command which should be executed, the type of command depends on the CommandType.
         
-        In case of a CommandType of CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:
-        It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.
-        The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
+        In case of a CommandType of CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
         """
+        ...
     @property
     def CommandType(self) -> int:
         """
         is the type of the command.
         """
+        ...
     @property
     def DataSourceName(self) -> str:
         """
         is the name of the datasource to use, this could be a named datasource or the URL of a data access component.
         """
+        ...
     @property
     def Filter(self) -> str:
         """
         additional filter for a row set.
         """
+        ...
     @property
     def GroupBy(self) -> str:
         """
         additional group by for the row set
         """
+        ...
     @property
     def HavingClause(self) -> str:
         """
         additional having clause for the row set
         """
+        ...
     @property
     def IgnoreResult(self) -> bool:
         """
         indicates whether all results should be discarded or not.
         """
+        ...
     @property
     def IsModified(self) -> bool:
         """
         indicates that the current row is modified.
         """
+        ...
     @property
     def IsNew(self) -> bool:
         """
         indicates that the current row is going to be inserted to the database.
         """
+        ...
     @property
     def IsRowCountFinal(self) -> bool:
         """
         indicates that all rows of the row set have been counted.
         """
+        ...
     @property
     def Order(self) -> str:
         """
         is an additional sort order definition for a row set.
         """
+        ...
     @property
     def Privileges(self) -> int:
         """
         indicates the privileges for insert, update, and delete.
         """
+        ...
     @property
     def RowCount(self) -> int:
         """
         contains the number of rows accessed in the data source.
         """
+        ...
     @property
     def UpdateCatalogName(self) -> str:
         """
         is the name of the table catalog
         """
+        ...
     @property
     def UpdateSchemaName(self) -> str:
         """
         is the name of the table schema.
         """
+        ...
     @property
     def UpdateTableName(self) -> str:
         """
         is the name of the table which should be updated, this is usually used for queries which relate to more than one table.
         """
+        ...
 
 

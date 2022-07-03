@@ -51,6 +51,7 @@ class XBackend(XInterface_8f010a43):
             com.sun.star.lang.NoSupportException: ``NoSupportException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getUpdateHandler(self, aComponent: str, aEntity: str) -> 'XUpdateHandler_d8f512ef':
         """
         creates an update handler on an entity's layer for a component.
@@ -60,6 +61,7 @@ class XBackend(XInterface_8f010a43):
             com.sun.star.lang.NoSupportException: ``NoSupportException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def listLayers(self, aComponent: str, aEntity: str) -> 'typing.Tuple[XLayer_4cd50fcb, ...]':
         """
         retrieves the layers associated to an entity for a component.
@@ -68,6 +70,7 @@ class XBackend(XInterface_8f010a43):
             BackendAccessException: ``BackendAccessException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def listOwnLayers(self, aComponent: str) -> 'typing.Tuple[XLayer_4cd50fcb, ...]':
         """
         retrieves the layers associated to the owner entity for a component.
@@ -76,4 +79,6 @@ class XBackend(XInterface_8f010a43):
             BackendAccessException: ``BackendAccessException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

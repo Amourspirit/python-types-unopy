@@ -39,4 +39,6 @@ class XIndexReplace(XIndexAccess_f0910d6d):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

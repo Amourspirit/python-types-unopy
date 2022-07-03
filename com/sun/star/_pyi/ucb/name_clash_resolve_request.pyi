@@ -52,17 +52,20 @@ class NameClashResolveRequest(ClassifiedInteractionRequest_9f72121b):
             ClashingName (str, optional): ClashingName value.
             ProposedNewName (str, optional): ProposedNewName value.
         """
+        ...
     @property
     def TargetFolderURL(self) -> str:
         """
         contains the URL of the folder that contains the clashing resource.
         """
+        ...
 
     @property
     def ClashingName(self) -> str:
         """
         contains the clashing name.
         """
+        ...
 
     @property
     def ProposedNewName(self) -> str:
@@ -71,6 +74,7 @@ class NameClashResolveRequest(ClassifiedInteractionRequest_9f72121b):
         
         This field may be left empty if the implementation is not able to suggest a new name.
         """
+        ...
 
 
 __all__ = ['NameClashResolveRequest']

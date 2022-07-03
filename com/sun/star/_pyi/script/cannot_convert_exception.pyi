@@ -47,11 +47,13 @@ class CannotConvertException(Exception_85530a09):
             Reason (int, optional): Reason value.
             ArgumentIndex (int, optional): ArgumentIndex value.
         """
+        ...
     @property
     def DestinationTypeClass(self) -> TypeClass_853109f2:
         """
         This member contains the class of the type to which the value should be converted.
         """
+        ...
 
     @property
     def Reason(self) -> int:
@@ -60,6 +62,7 @@ class CannotConvertException(Exception_85530a09):
         
         Have a look at FailReason.
         """
+        ...
 
     @property
     def ArgumentIndex(self) -> int:
@@ -68,6 +71,7 @@ class CannotConvertException(Exception_85530a09):
         
         [optional]
         """
+        ...
 
 
 __all__ = ['CannotConvertException']

@@ -53,6 +53,7 @@ class PropertyStateChangeEvent(EventObject_a3d70b03):
             OldValue (PropertyState, optional): OldValue value.
             NewValue (PropertyState, optional): NewValue value.
         """
+        ...
 
 
     @property
@@ -62,6 +63,7 @@ class PropertyStateChangeEvent(EventObject_a3d70b03):
         
         This name identifies the property uniquely within an XPropertySet. Upper and lower case are distinguished.
         """
+        ...
 
 
     @property
@@ -71,6 +73,7 @@ class PropertyStateChangeEvent(EventObject_a3d70b03):
         
         It may be -1 if the implementation has no handle. You can use this handle to get values from the XFastPropertySet interface.
         """
+        ...
 
 
     @property
@@ -78,6 +81,7 @@ class PropertyStateChangeEvent(EventObject_a3d70b03):
         """
         contains the old value of the property.
         """
+        ...
 
 
     @property
@@ -85,5 +89,6 @@ class PropertyStateChangeEvent(EventObject_a3d70b03):
         """
         contains the new value of the property.
         """
+        ...
 
 

@@ -39,24 +39,30 @@ class XDragSourceListener(XEventListener_c7230c4a):
         """
         This method is invoked to signify that the Drag and Drop operation is complete.
         """
+        ...
     def dragEnter(self, dsde: 'DragSourceDragEvent_d53c12da') -> None:
         """
         Called as the hotspot enters a platform dependent drop site.
         
         NOTE: currently this notification can not be ensured by all implementations. Do not rely on it !
         """
+        ...
     def dragExit(self, dse: 'DragSourceEvent_8ccf115c') -> None:
         """
         Called as the hotspot exits a platform dependent drop site.
         
         NOTE: Currently this notification can not be ensured by all implementations. Do not rely on it !
         """
+        ...
     def dragOver(self, dsde: 'DragSourceDragEvent_d53c12da') -> None:
         """
         Called as the hotspot moves over a platform dependent drop site.
         """
+        ...
     def dropActionChanged(self, dsde: 'DragSourceDragEvent_d53c12da') -> None:
         """
         Called when the user has modified the drop gesture.
         """
+        ...
+
 

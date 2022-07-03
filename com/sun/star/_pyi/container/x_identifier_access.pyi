@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.container
 from typing_extensions import Literal
-import typing
+import uno
 from .x_element_access import XElementAccess as XElementAccess_cd60e3f
 
 class XIdentifierAccess(XElementAccess_cd60e3f):
@@ -38,8 +38,11 @@ class XIdentifierAccess(XElementAccess_cd60e3f):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
-    def getIdentifiers(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getIdentifiers(self) -> uno.ByteSequence:
         """
         The order of the identifiers is not specified.
         """
+        ...
+
 

@@ -47,6 +47,7 @@ class XTolerantMultiPropertySet(XInterface_8f010a43):
         
         If the names are not sorted the behaviour of the method is undefined!
         """
+        ...
     def getPropertyValuesTolerant(self, aPropertyNames: 'typing.Tuple[str, ...]') -> 'typing.Tuple[GetPropertyTolerantResult_7c4e115e, ...]':
         """
         retrieve the values of the specified properties
@@ -55,6 +56,7 @@ class XTolerantMultiPropertySet(XInterface_8f010a43):
         
         If the names are not sorted the behaviour of the method is undefined!
         """
+        ...
     def setPropertyValuesTolerant(self, aPropertyNames: 'typing.Tuple[str, ...]', aValues: 'typing.Tuple[object, ...]') -> 'typing.Tuple[SetPropertyTolerantFailed_7cbd1130, ...]':
         """
         sets the values to the properties with the specified names.
@@ -66,4 +68,6 @@ class XTolerantMultiPropertySet(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

@@ -38,5 +38,6 @@ class AccessibleTextEmbeddedObject(XAccessibleComponent_b2f21269, XAccessibleCon
     See Also:
         `API AccessibleTextEmbeddedObject <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1AccessibleTextEmbeddedObject.html>`_
     """
+    ...
 
 

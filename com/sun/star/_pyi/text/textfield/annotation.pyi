@@ -42,21 +42,25 @@ class Annotation(TextField_90260a56):
         """
         contains the name of the author of the annotation.
         """
+        ...
     @property
     def Content(self) -> str:
         """
         contains the annotation's content
         """
+        ...
     @property
     def Date(self) -> 'Date_60040844':
         """
         contains the creation date.
         """
+        ...
     @property
     def DateTimeValue(self) -> 'DateTime_84de09d3':
         """
         contains the creation date.
         """
+        ...
     @property
     def Initials(self) -> str:
         """
@@ -66,6 +70,7 @@ class Annotation(TextField_90260a56):
         
             LibreOffice 4.0
         """
+        ...
     @property
     def Name(self) -> str:
         """
@@ -75,5 +80,6 @@ class Annotation(TextField_90260a56):
         
             LibreOffice 4.0
         """
+        ...
 
 

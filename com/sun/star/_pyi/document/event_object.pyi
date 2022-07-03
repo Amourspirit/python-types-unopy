@@ -47,6 +47,7 @@ class EventObject(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             EventName (str, optional): EventName value.
         """
+        ...
 
 
     @property
@@ -56,5 +57,6 @@ class EventObject(EventObject_a3d70b03):
         
         For a list of possible event names see Events.
         """
+        ...
 
 

@@ -42,6 +42,7 @@ class FileHandler(XLogHandler_c7f80c27):
         """
         creates a log handler whose output is directed to a file given by URL.
         """
+        ...
     def createWithSettings(self, Settings: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> None:
         """
         creates an instance of the log handler, using generic settings
@@ -55,5 +56,6 @@ class FileHandler(XLogHandler_c7f80c27):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

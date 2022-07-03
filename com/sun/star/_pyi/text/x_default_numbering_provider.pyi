@@ -41,10 +41,13 @@ class XDefaultNumberingProvider(XInterface_8f010a43):
         
         In contrast to outline numberings the continuous numberings consist of level using the equal settings in all numbering levels.
         """
+        ...
     def getDefaultOutlineNumberings(self, aLocale: 'Locale_70d308fa') -> 'typing.Tuple[XIndexAccess_f0910d6d, ...]':
         """
         provides access to outline numberings according to a given com.sun.star.lang.Locale.
         
         Outline numberings usually consist of levels with different settings.
         """
+        ...
+
 

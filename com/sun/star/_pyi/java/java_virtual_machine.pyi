@@ -33,5 +33,6 @@ class JavaVirtualMachine(XJavaVM_799d0927):
     See Also:
         `API JavaVirtualMachine <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1java_1_1JavaVirtualMachine.html>`_
     """
+    ...
 
 

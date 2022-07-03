@@ -46,16 +46,19 @@ class SheetFilterDescriptor(XPropertySet_bc180bfa, XSheetFilterDescriptor2_57f51
         """
         specifies if the first row (or column) contains headers which should not be filtered.
         """
+        ...
     @property
     def CopyOutputData(self) -> bool:
         """
         specifies if the filtered data should be copied to another position in the document.
         """
+        ...
     @property
     def IsCaseSensitive(self) -> bool:
         """
         specifies if the case of letters is important when comparing entries.
         """
+        ...
     @property
     def MaxFieldCount(self) -> int:
         """
@@ -63,11 +66,13 @@ class SheetFilterDescriptor(XPropertySet_bc180bfa, XSheetFilterDescriptor2_57f51
         
         This read-only property indicates the maximum count of fields the current implementation supports.
         """
+        ...
     @property
     def Orientation(self) -> 'TableOrientation_ee780d84':
         """
         specifies if columns or rows are filtered.
         """
+        ...
     @property
     def OutputPosition(self) -> 'CellAddress_ae5f0b56':
         """
@@ -75,6 +80,7 @@ class SheetFilterDescriptor(XPropertySet_bc180bfa, XSheetFilterDescriptor2_57f51
         
         This is only used if SheetFilterDescriptor.CopyOutputData is TRUE.
         """
+        ...
     @property
     def SaveOutputPosition(self) -> bool:
         """
@@ -82,15 +88,18 @@ class SheetFilterDescriptor(XPropertySet_bc180bfa, XSheetFilterDescriptor2_57f51
         
         This is only used if SheetFilterDescriptor.CopyOutputData is TRUE.
         """
+        ...
     @property
     def SkipDuplicates(self) -> bool:
         """
         specifies if duplicate entries are left out of the result.
         """
+        ...
     @property
     def UseRegularExpressions(self) -> bool:
         """
         specifies if the TableFilterField.StringValue strings are interpreted as regular expressions.
         """
+        ...
 
 

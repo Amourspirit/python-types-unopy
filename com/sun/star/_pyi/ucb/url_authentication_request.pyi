@@ -60,11 +60,13 @@ class URLAuthenticationRequest(AuthenticationRequest_1b520eeb):
             Account (str, optional): Account value.
             URL (str, optional): URL value.
         """
+        ...
     @property
     def URL(self) -> str:
         """
         The URL for which authentication is requested.
         """
+        ...
 
 
 __all__ = ['URLAuthenticationRequest']

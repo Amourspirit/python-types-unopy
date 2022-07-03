@@ -28,5 +28,6 @@ class XPathAPI(XXPathAPI_c7430bc3):
     See Also:
         `API XPathAPI <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1xpath_1_1XPathAPI.html>`_
     """
+    ...
 
 

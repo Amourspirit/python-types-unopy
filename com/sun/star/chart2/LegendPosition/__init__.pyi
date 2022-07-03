@@ -29,6 +29,7 @@ ENUM LegendPosition
 See Also:
     `API LegendPosition <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart2.html#a85df18f245c9e4d24e32ebb9ee879042>`_
 """
+typeName: str = 'com.sun.star.chart2.LegendPosition'
 
 CUSTOM: 'uno.Enum'
 """

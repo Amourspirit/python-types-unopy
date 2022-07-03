@@ -34,5 +34,6 @@ class UnoControlTabPageContainerModel(UnoControlModel_c8ce0c58, XTabPageContaine
     See Also:
         `API UnoControlTabPageContainerModel <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1tab_1_1UnoControlTabPageContainerModel.html>`_
     """
+    ...
 
 

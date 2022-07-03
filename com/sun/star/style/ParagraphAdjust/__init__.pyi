@@ -29,6 +29,7 @@ Enum
 See Also:
     `API ParagraphAdjust <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style.html#ab9b2806f97ec4c3b5d4e2d92084948f1>`_
 """
+typeName: str = 'com.sun.star.style.ParagraphAdjust'
 
 BLOCK: 'uno.Enum'
 """

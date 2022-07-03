@@ -41,44 +41,56 @@ class XDataPilotDescriptor(XNamed_a6520b08):
         """
         returns the collection of the data pilot fields used as column fields.
         """
+        ...
     def getDataFields(self) -> 'XIndexAccess_f0910d6d':
         """
         returns the collection of the data pilot fields used as data fields.
         """
+        ...
     def getDataPilotFields(self) -> 'XIndexAccess_f0910d6d':
         """
         returns the collection of all the data pilot fields.
         """
+        ...
     def getFilterDescriptor(self) -> 'XSheetFilterDescriptor_47cc0ff7':
         """
         returns the filter descriptor specifying which data from the source cell range are used for the data pilot table.
         """
+        ...
     def getHiddenFields(self) -> 'XIndexAccess_f0910d6d':
         """
         returns the collection of the data pilot fields not used as column, row, page, or data fields.
         """
+        ...
     def getPageFields(self) -> 'XIndexAccess_f0910d6d':
         """
         returns the collection of the data pilot fields used as page fields.
         """
+        ...
     def getRowFields(self) -> 'XIndexAccess_f0910d6d':
         """
         returns the collection of the data pilot fields used as row fields.
         """
+        ...
     def getSourceRange(self) -> 'CellRangeAddress_ec450d43':
         """
         returns the cell range containing the data for the data pilot table.
         """
+        ...
     def getTag(self) -> str:
         """
         returns an additional string stored in the data pilot table.
         """
+        ...
     def setSourceRange(self, aSourceRange: 'CellRangeAddress_ec450d43') -> None:
         """
         sets the cell range containing the data for the data pilot table.
         """
+        ...
     def setTag(self, aTag: str) -> None:
         """
         sets an additional string stored in the data pilot table.
         """
+        ...
+
 

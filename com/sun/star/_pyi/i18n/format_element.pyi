@@ -48,6 +48,7 @@ class FormatElement(object):
             formatIndex (int, optional): formatIndex value.
             isDefault (bool, optional): isDefault value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class FormatElement(object):
         """
         The format code, for example, \"YYYY-MM-DD\".
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class FormatElement(object):
         """
         A name or description that is displayed in the number formatter dialog.
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class FormatElement(object):
         """
         A unique (within one locale) identifier.
         """
+        ...
 
 
     @property
@@ -76,6 +80,7 @@ class FormatElement(object):
         """
         Type may be one of \"short\", \"medium\", \"long\".
         """
+        ...
 
 
     @property
@@ -83,6 +88,7 @@ class FormatElement(object):
         """
         Usage category, for example, \"DATE\" or \"FIXED_NUMBER\", corresponding with KNumberFormatUsage values.
         """
+        ...
 
 
     @property
@@ -90,6 +96,7 @@ class FormatElement(object):
         """
         The index used by the number formatter, predefined values corresponding with NumberFormatIndex values.
         """
+        ...
 
 
     @property
@@ -97,5 +104,6 @@ class FormatElement(object):
         """
         If a format code is the default code of a formatType group.
         """
+        ...
 
 

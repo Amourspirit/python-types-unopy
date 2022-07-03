@@ -34,6 +34,7 @@ class XImplicitIDContainer(XImplicitIDReplace_49260fa7):
         """
         adds a new object to the container and generates an implicit (unique) ID for this object.
         """
+        ...
     def removeByImplicitID(self, ID: str) -> None:
         """
         removes an object from the container which is specified by an implicit (unique) identifier.
@@ -41,4 +42,6 @@ class XImplicitIDContainer(XImplicitIDReplace_49260fa7):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

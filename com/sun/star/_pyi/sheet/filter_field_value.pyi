@@ -48,6 +48,7 @@ class FilterFieldValue(object):
             FilterType (int, optional): FilterType value.
             ColorValue (Color, optional): ColorValue value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class FilterFieldValue(object):
         """
         selects whether the TableFilterFieldValue.NumericValue or the TableFilterFieldValue.StringValue is used.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class FilterFieldValue(object):
         """
         specifies a numeric value for the condition.
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class FilterFieldValue(object):
         """
         specifies a string value for the condition.
         """
+        ...
 
 
     @property
@@ -80,6 +84,7 @@ class FilterFieldValue(object):
         
             LibreOffice 7.2
         """
+        ...
 
 
     @property
@@ -91,5 +96,6 @@ class FilterFieldValue(object):
         
             LibreOffice 7.2
         """
+        ...
 
 

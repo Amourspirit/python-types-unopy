@@ -38,5 +38,6 @@ class thePopupMenuControllerFactory(XUIControllerFactory_25e60f05):
     See Also:
         `API thePopupMenuControllerFactory <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1frame_1_1thePopupMenuControllerFactory.html>`_
     """
+    ...
 
 

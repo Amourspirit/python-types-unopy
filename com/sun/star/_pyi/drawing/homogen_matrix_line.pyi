@@ -43,6 +43,7 @@ class HomogenMatrixLine(object):
             Column3 (float, optional): Column3 value.
             Column4 (float, optional): Column4 value.
         """
+        ...
 
 
     @property

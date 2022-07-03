@@ -47,6 +47,7 @@ class SearchInfo(object):
             RespectDocViewRestrictions (bool, optional): RespectDocViewRestrictions value.
             FollowIndirections (bool, optional): FollowIndirections value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class SearchInfo(object):
         """
         the search criteria.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class SearchInfo(object):
         """
         the mode of recursion to use.
         """
+        ...
 
 
     @property
@@ -68,6 +71,7 @@ class SearchInfo(object):
         """
         whether to include the object itself in the search or only (some of) its sub-objects.
         """
+        ...
 
 
     @property
@@ -75,6 +79,7 @@ class SearchInfo(object):
         """
         whether to respect the \"view restrictions\" specified for the folders hierarchically contained within an object (e.g., only searches through subscribed folders).
         """
+        ...
 
 
     @property
@@ -82,6 +87,7 @@ class SearchInfo(object):
         """
         whether to respect the \"view restrictions\" specified for the documents hierarchically contained within an object (e.g., only searches through marked documents).
         """
+        ...
 
 
     @property
@@ -89,5 +95,6 @@ class SearchInfo(object):
         """
         whether to follow indirections (link objects) and search through their respective targets also.
         """
+        ...
 
 

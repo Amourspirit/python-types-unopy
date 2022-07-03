@@ -45,10 +45,13 @@ class XCopyTableWizard(XExecutableDialog_450f0fa1):
         """
         adds a listener which is to be notified of progress in the copy operation
         """
+        ...
     def removeCopyTableListener(self, Listener: 'XCopyTableListener_ad581224') -> None:
         """
         removes a listener
         """
+        ...
+
     @property
     def CreatePrimaryKey(self) -> object:
         """
@@ -64,6 +67,7 @@ class XCopyTableWizard(XExecutableDialog_450f0fa1):
         
         When a primary key is to be created by the wizard, it will be an auto-increment column, if possible.
         """
+        ...
 
     @property
     def DestinationTableName(self) -> str:
@@ -76,6 +80,7 @@ class XCopyTableWizard(XExecutableDialog_450f0fa1):
         
         Changing this attribute while the dialog is running is not supported, the result of such an attempt is undefined.
         """
+        ...
 
     @property
     def Operation(self) -> int:
@@ -90,6 +95,7 @@ class XCopyTableWizard(XExecutableDialog_450f0fa1):
         
         Changing this attribute while the dialog is running is not supported, the result of such an attempt is undefined.
         """
+        ...
 
     @property
     def UseHeaderLineAsColumnNames(self) -> bool:
@@ -98,5 +104,6 @@ class XCopyTableWizard(XExecutableDialog_450f0fa1):
         
         This attribute is ignored when the source defines the column names which isn't the case when only a part of a table should be copied e.g. in the RTF format or in the HTML format.
         """
+        ...
 
 

@@ -31,5 +31,6 @@ class Forms(XForms_715f091b):
     See Also:
         `API Forms <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1Forms.html>`_
     """
+    ...
 
 

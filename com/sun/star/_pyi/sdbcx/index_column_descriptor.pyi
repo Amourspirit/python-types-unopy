@@ -36,5 +36,6 @@ class IndexColumnDescriptor(Descriptor_a5200b3b):
         """
         is the column sorted in ascending order.
         """
+        ...
 
 

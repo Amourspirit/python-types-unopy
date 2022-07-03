@@ -36,8 +36,11 @@ class XDTDHandler(XInterface_8f010a43):
         """
         receives notification of a notation declaration event.
         """
+        ...
     def unparsedEntityDecl(self, sName: str, sPublicId: str, sSystemId: str, sNotationName: str) -> None:
         """
         receives notification of an unparsed entity declaration event.
         """
+        ...
+
 

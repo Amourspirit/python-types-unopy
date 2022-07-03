@@ -43,6 +43,7 @@ class EnumerableMap(XEnumerableMap_dc50e41):
         Raises:
             com.sun.star.beans.IllegalTypeException: ``IllegalTypeException``
         """
+        ...
     def createImmutable(self, KeyType: object, ValueType: object, Values: 'typing.Tuple[typing.Tuple[object, object], ...]') -> None:
         """
         creates an instance mapping from the given key type to the given value type
@@ -53,5 +54,6 @@ class EnumerableMap(XEnumerableMap_dc50e41):
             com.sun.star.beans.IllegalTypeException: ``IllegalTypeException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

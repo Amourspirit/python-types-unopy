@@ -30,5 +30,6 @@ class CustomPresentationAccess(XNameContainer_cb90e47, XSingleServiceFactory_272
     See Also:
         `API CustomPresentationAccess <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1CustomPresentationAccess.html>`_
     """
+    ...
 
 

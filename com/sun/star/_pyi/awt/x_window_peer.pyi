@@ -40,20 +40,26 @@ class XWindowPeer(XComponent_98dc0ab5):
         """
         returns the toolkit which created this object.
         """
+        ...
     def invalidate(self, Flags: int) -> None:
         """
         invalidates the whole window with the specified InvalidateStyle.
         """
+        ...
     def invalidateRect(self, Rect: 'Rectangle_84b109e9', Flags: int) -> None:
         """
         invalidates a rectangular area of the window with the specified InvalidateStyle.
         """
+        ...
     def setBackground(self, Color: 'Color_68e908c5') -> None:
         """
         sets the background color.
         """
+        ...
     def setPointer(self, Pointer: 'XPointer_7abe098d') -> None:
         """
         sets the mouse pointer.
         """
+        ...
+
 

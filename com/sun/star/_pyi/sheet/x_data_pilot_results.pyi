@@ -39,10 +39,13 @@ class XDataPilotResults(XInterface_8f010a43):
     def getFilteredResults(self, aFilters: 'typing.Tuple[DataPilotFieldFilter_271e0eed, ...]') -> 'typing.Tuple[float, ...]':
         """
         """
+        ...
     def getResults(self) -> 'typing.Tuple[typing.Tuple[DataResult_a47d0b1a, ...], ...]':
         """
         returns the result array.
         
         The outer sequence contains the value rows. The inner sequences contain the values for one row.
         """
+        ...
+
 

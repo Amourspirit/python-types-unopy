@@ -37,4 +37,6 @@ class XRequestCallback(ABC):
         """
         adds a callback request to the implementation
         """
+        ...
+
 

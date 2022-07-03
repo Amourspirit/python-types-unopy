@@ -48,6 +48,7 @@ class Time(object):
             Hours (int, optional): Hours value.
             IsUTC (bool, optional): IsUTC value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class Time(object):
         """
         contains the nanoseconds (0 - 999 999 999).
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class Time(object):
         """
         contains the seconds (0-59).
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class Time(object):
         """
         contains the minutes (0-59).
         """
+        ...
 
 
     @property
@@ -76,6 +80,7 @@ class Time(object):
         """
         contains the hour (0-23).
         """
+        ...
 
 
     @property
@@ -87,5 +92,6 @@ class Time(object):
         
             LibreOffice 4.1
         """
+        ...
 
 

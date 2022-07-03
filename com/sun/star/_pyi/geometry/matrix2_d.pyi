@@ -59,6 +59,7 @@ class Matrix2D(object):
             m10 (float, optional): m10 value.
             m11 (float, optional): m11 value.
         """
+        ...
 
 
     @property
@@ -66,6 +67,7 @@ class Matrix2D(object):
         """
         The top, left matrix entry.
         """
+        ...
 
 
     @property
@@ -73,6 +75,7 @@ class Matrix2D(object):
         """
         The top, right matrix entry.
         """
+        ...
 
 
     @property
@@ -80,6 +83,7 @@ class Matrix2D(object):
         """
         The bottom, left matrix entry.
         """
+        ...
 
 
     @property
@@ -87,5 +91,6 @@ class Matrix2D(object):
         """
         The bottom, right matrix entry.
         """
+        ...
 
 

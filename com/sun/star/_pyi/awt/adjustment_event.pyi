@@ -45,6 +45,7 @@ class AdjustmentEvent(EventObject_a3d70b03):
             Value (int, optional): Value value.
             Type (AdjustmentType, optional): Type value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class AdjustmentEvent(EventObject_a3d70b03):
         """
         contains the current value in the adjustment event.
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class AdjustmentEvent(EventObject_a3d70b03):
         """
         contains the type of the adjustment event.
         """
+        ...
 
 

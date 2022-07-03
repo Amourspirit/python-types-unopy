@@ -32,6 +32,7 @@ class MethodMode(Enum):
     See Also:
         `API MethodMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1reflection.html#a5e114fee85d0f2f8cb01480a474dd9b4>`_
     """
+    typeName: str = 'com.sun.star.reflection.MethodMode'
 
     ONEWAY: 'uno.Enum'
     """

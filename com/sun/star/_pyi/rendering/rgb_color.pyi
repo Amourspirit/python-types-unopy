@@ -43,6 +43,7 @@ class RGBColor(object):
             Green (ColorComponent, optional): Green value.
             Blue (ColorComponent, optional): Blue value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class RGBColor(object):
         """
         Red component. Valid range is [0,1.0].
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class RGBColor(object):
         """
         Green component. Valid range is [0,1.0].
         """
+        ...
 
 
     @property
@@ -64,5 +67,6 @@ class RGBColor(object):
         """
         Blue component. Valid range is [0,1.0].
         """
+        ...
 
 

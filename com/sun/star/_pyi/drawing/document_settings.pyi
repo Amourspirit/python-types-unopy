@@ -35,11 +35,13 @@ class DocumentSettings(HeaderFooterSettings_5acd1070, Settings_b2bc0bb8):
         """
         enables or disables the fitting of the page to the printable area during print
         """
+        ...
     @property
     def IsPrintTilePage(self) -> bool:
         """
         if this is true and the paper size for printing is larger than the paper size of the printer than the content is tiled over multiple pages.
         """
+        ...
     @property
     def MeasureUnit(self) -> int:
         """
@@ -47,6 +49,7 @@ class DocumentSettings(HeaderFooterSettings_5acd1070, Settings_b2bc0bb8):
         
         the measure text
         """
+        ...
     @property
     def PageNumberFormat(self) -> int:
         """
@@ -54,6 +57,7 @@ class DocumentSettings(HeaderFooterSettings_5acd1070, Settings_b2bc0bb8):
         
         Values 0-7 are supported.
         """
+        ...
     @property
     def ParagraphSummation(self) -> bool:
         """
@@ -61,15 +65,18 @@ class DocumentSettings(HeaderFooterSettings_5acd1070, Settings_b2bc0bb8):
         
         If false, only the greater of the two is chosen.
         """
+        ...
     @property
     def ScaleDenominator(self) -> int:
         """
         is the denominator for the logical scale of the document
         """
+        ...
     @property
     def ScaleNumerator(self) -> int:
         """
         is the numerator for the logical scale of the document
         """
+        ...
 
 

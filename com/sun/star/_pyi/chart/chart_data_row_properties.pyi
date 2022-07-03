@@ -46,20 +46,24 @@ class ChartDataRowProperties(ChartDataPointProperties_677c10bd, ChartStatistics_
         
         The axis must be a primary or secondary y-axis
         """
+        ...
     @property
     def DataErrorProperties(self) -> 'XPropertySet_bc180bfa':
         """
         holds the properties of the error markers, if those are enabled.
         """
+        ...
     @property
     def DataMeanValueProperties(self) -> 'XPropertySet_bc180bfa':
         """
         holds the properties of the average line, if such one is enabled.
         """
+        ...
     @property
     def DataRegressionProperties(self) -> 'XPropertySet_bc180bfa':
         """
         holds the properties of the regression line, if such one is enabled.
         """
+        ...
 
 

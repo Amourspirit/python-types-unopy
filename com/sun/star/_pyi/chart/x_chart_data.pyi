@@ -39,10 +39,12 @@ class XChartData(XInterface_8f010a43):
         
         The component will be notified with a ChartDataChangeEvent every time the chart's data changes.
         """
+        ...
     def getNotANumber(self) -> float:
         """
         In IEEE arithmetic format it is one of the NaN values, so there are no conflicts with existing numeric values.
         """
+        ...
     def isNotANumber(self, nNumber: float) -> bool:
         """
         checks whether the value given is equal to the indicator value for a missing value.
@@ -51,8 +53,11 @@ class XChartData(XInterface_8f010a43):
         
         Always use this method to check, if a value is not a number. If you compare the value returned by XChartData.getNotANumber() to another double value using the = operator, you may not get the desired result!
         """
+        ...
     def removeChartDataChangeEventListener(self, aListener: 'XChartDataChangeEventListener_bb19126c') -> None:
         """
         removes a previously registered listener.
         """
+        ...
+
 

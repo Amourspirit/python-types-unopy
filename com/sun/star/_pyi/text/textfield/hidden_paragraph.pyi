@@ -34,6 +34,7 @@ class HiddenParagraph(TextField_90260a56):
         """
         contains the condition.
         """
+        ...
     @property
     def IsHidden(self) -> bool:
         """
@@ -41,5 +42,6 @@ class HiddenParagraph(TextField_90260a56):
         
         This property has to be read/written in file export/import to save and restore the result without initiation of a new evaluation.
         """
+        ...
 
 

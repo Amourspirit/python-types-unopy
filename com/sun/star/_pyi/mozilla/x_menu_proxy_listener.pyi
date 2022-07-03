@@ -38,12 +38,16 @@ class XMenuProxyListener(XInterface_8f010a43):
         """
         is called, if the content or graphical representation/state of the menu changes completely, for one or more menu items
         """
+        ...
     def menuChangedSingle(self, MenuSingleChanges: 'typing.Tuple[MenuSingleChange_dad0e3d, ...]') -> None:
         """
         is called, if the content or graphical representation/state of the menu changes, by one property for one or more menu items
         """
+        ...
     def menuItemDeleted(self, ID: int) -> None:
         """
         is called, if one menu item designated by the ID, is deleted.
         """
+        ...
+
 

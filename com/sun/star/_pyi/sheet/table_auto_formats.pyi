@@ -33,5 +33,6 @@ class TableAutoFormats(XEnumerationAccess_4bac0ffc, XIndexAccess_f0910d6d, XName
     See Also:
         `API TableAutoFormats <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1TableAutoFormats.html>`_
     """
+    ...
 
 

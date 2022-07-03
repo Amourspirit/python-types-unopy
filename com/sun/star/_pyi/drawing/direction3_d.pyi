@@ -42,6 +42,7 @@ class Direction3D(object):
             DirectionY (float, optional): DirectionY value.
             DirectionZ (float, optional): DirectionZ value.
         """
+        ...
 
 
     @property

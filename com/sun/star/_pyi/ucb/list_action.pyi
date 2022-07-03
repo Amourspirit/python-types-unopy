@@ -43,6 +43,7 @@ class ListAction(object):
             ListActionType (int, optional): ListActionType value.
             ActionInfo (object, optional): ActionInfo value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class ListAction(object):
         
         Its value does not necessary indicate the new position in the new com.sun.star.sdbc.XResultSet, but a position while doing the changes step by step beginning with the old com.sun.star.sdbc.XResultSet.
         """
+        ...
 
 
     @property
@@ -59,6 +61,7 @@ class ListAction(object):
         """
         The count of involved rows.
         """
+        ...
 
 
     @property
@@ -68,6 +71,7 @@ class ListAction(object):
         
         The value of the other members of this struct depend on the value of this member:
         """
+        ...
 
 
     @property
@@ -75,5 +79,6 @@ class ListAction(object):
         """
         depending on the content of ListAction.ListActionType the ListAction.ActionInfo could contain additional information about the changes happened (see table above).
         """
+        ...
 
 

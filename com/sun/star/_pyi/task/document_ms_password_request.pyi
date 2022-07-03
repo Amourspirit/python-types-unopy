@@ -54,11 +54,13 @@ class DocumentMSPasswordRequest(PasswordRequest_d7280cf7):
             Mode (PasswordRequestMode, optional): Mode value.
             Name (str, optional): Name value.
         """
+        ...
     @property
     def Name(self) -> str:
         """
         the name of the document (more properly, the URL of the document)
         """
+        ...
 
 
 __all__ = ['DocumentMSPasswordRequest']

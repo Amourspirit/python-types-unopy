@@ -34,16 +34,21 @@ class XDialog(XInterface_8f010a43):
         """
         hides the dialog and then causes XDialog.execute() to return.
         """
+        ...
     def execute(self) -> int:
         """
         shows the dialog.
         """
+        ...
     def getTitle(self) -> str:
         """
         gets the title of the dialog.
         """
+        ...
     def setTitle(self, Title: str) -> None:
         """
         sets the title of the dialog.
         """
+        ...
+
 

@@ -37,12 +37,16 @@ class XFetchProviderForContentAccess(XInterface_8f010a43):
         """
         returns the content identifier strings of the columns of the indicated rows
         """
+        ...
     def fetchContentIdentifiers(self, nRowStartPosition: int, nRowCount: int, bDirection: bool) -> 'FetchResult_98510aab':
         """
         returns the XContentIdentifiers of the columns of the indicated rows
         """
+        ...
     def fetchContents(self, nRowStartPosition: int, nRowCount: int, bDirection: bool) -> 'FetchResult_98510aab':
         """
         returns the XContent s of the columns of the indicated rows
         """
+        ...
+
 

@@ -48,6 +48,7 @@ class SQLException(Exception_85530a09):
             ErrorCode (int, optional): ErrorCode value.
             NextException (object, optional): NextException value.
         """
+        ...
     @property
     def SQLState(self) -> str:
         """
@@ -55,6 +56,7 @@ class SQLException(Exception_85530a09):
         
         The values of the SQLState string are described in the XOPEN SQL spec.
         """
+        ...
 
     @property
     def ErrorCode(self) -> int:
@@ -63,6 +65,7 @@ class SQLException(Exception_85530a09):
         
         Normally this will be the actual error code returned by the underlying database.
         """
+        ...
 
     @property
     def NextException(self) -> object:
@@ -71,6 +74,7 @@ class SQLException(Exception_85530a09):
         
         This can be used to provide additional error information.
         """
+        ...
 
 
 __all__ = ['SQLException']

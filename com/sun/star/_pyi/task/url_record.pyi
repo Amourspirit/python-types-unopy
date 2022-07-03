@@ -41,6 +41,7 @@ class UrlRecord(object):
             UserList (typing.Tuple[UserRecord, ...], optional): UserList value.
             Url (str, optional): Url value.
         """
+        ...
 
 
     @property
@@ -53,5 +54,6 @@ class UrlRecord(object):
         """
         The URL for which these passwords where given.
         """
+        ...
 
 

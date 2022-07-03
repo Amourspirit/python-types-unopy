@@ -40,10 +40,14 @@ class XAxis(XInterface_8f010a43):
     def getAxisTitle(self) -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
     def getMajorGrid(self) -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
     def getMinorGrid(self) -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
+
 

@@ -43,6 +43,7 @@ class XSQLQueryComposer(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def appendOrderByColumn(self, column: 'XPropertySet_bc180bfa', ascending: bool) -> None:
         """
         appends an additional part to the sort order criteria of the select statement.
@@ -50,32 +51,38 @@ class XSQLQueryComposer(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getComposedQuery(self) -> str:
         """
         returns the query composed with filters and sort criteria.
         """
+        ...
     def getFilter(self) -> str:
         """
         returns the currently used filter.
         
         The filter criteria returned is part of the where condition of the select command, but it does not contain the where token.
         """
+        ...
     def getOrder(self) -> str:
         """
         returns the currently used sort order.
         
         The order criteria returned is part of the ORDER BY clause of the select command, but it does not contain the ORDER BY keyword .
         """
+        ...
     def getQuery(self) -> str:
         """
         returns the query used for composing.
         """
+        ...
     def getStructuredFilter(self) -> 'typing.Tuple[typing.Tuple[PropertyValue_c9610c73, ...], ...]':
         """
         returns the currently used filter.
         
         The filter criteria is split into levels. Each level represents the OR criteria. Within each level, the filters are provided as an AND criteria with the name of the column and the filter condition. The filter condition is of type string.
         """
+        ...
     def setFilter(self, filter: str) -> None:
         """
         makes it possible to set a filter condition for the query.
@@ -83,6 +90,7 @@ class XSQLQueryComposer(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def setOrder(self, order: str) -> None:
         """
         makes it possible to set a sort condition for the query.
@@ -90,6 +98,7 @@ class XSQLQueryComposer(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def setQuery(self, command: str) -> None:
         """
         sets a new query for the composer, which may be expanded by filters and sort criteria.
@@ -97,4 +106,6 @@ class XSQLQueryComposer(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

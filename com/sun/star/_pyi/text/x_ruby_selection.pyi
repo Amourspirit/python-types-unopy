@@ -39,10 +39,13 @@ class XRubySelection(XInterface_8f010a43):
         
         Each element contains at least a string that contains the selected text and the ruby text. Additional parameters can be the ruby adjustment, the name of a character style.
         """
+        ...
     def setRubyList(self, RubyList: 'typing.Tuple[PropertyValues_d6470ce6, ...]', Automatic: bool) -> None:
         """
         applies the RubyList to the current selection.
         
         The number of elements must be equal to the number of elements that are returned by getRubyList. Automatic must be set equally, too.
         """
+        ...
+
 

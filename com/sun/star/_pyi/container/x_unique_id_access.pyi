@@ -36,6 +36,7 @@ class XUniqueIDAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def removeByUniqueID(self, ID: str) -> None:
         """
         removes the element with the specified unique ID from this container.
@@ -43,4 +44,6 @@ class XUniqueIDAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

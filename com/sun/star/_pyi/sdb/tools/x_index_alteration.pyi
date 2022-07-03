@@ -46,6 +46,7 @@ class XIndexAlteration(XConnectionSupplier_57f3105c):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def dropIndex(self, table: 'XPropertySet_bc180bfa', index: str) -> None:
         """
         drops an object of the related container identified by its name.
@@ -53,4 +54,6 @@ class XIndexAlteration(XConnectionSupplier_57f3105c):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

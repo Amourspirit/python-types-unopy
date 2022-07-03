@@ -32,5 +32,6 @@ class PresentationDocument(GenericDrawingDocument_6a2d10bc, XLinkTargetSupplier_
     See Also:
         `API PresentationDocument <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1PresentationDocument.html>`_
     """
+    ...
 
 

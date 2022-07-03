@@ -40,4 +40,6 @@ class XLibraryContainer3(XLibraryContainer2_1c490e9f):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

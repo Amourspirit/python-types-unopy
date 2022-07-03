@@ -34,5 +34,6 @@ class DefinitionContent(Content_70d9091d, XHierarchicalName_3a4b0f63):
     See Also:
         `API DefinitionContent <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1DefinitionContent.html>`_
     """
+    ...
 
 

@@ -41,6 +41,7 @@ class NameToken(object):
             Index (int, optional): Index value.
             Sheet (int, optional): Sheet value.
         """
+        ...
 
 
     @property

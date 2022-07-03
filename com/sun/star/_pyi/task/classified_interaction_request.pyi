@@ -45,11 +45,13 @@ class ClassifiedInteractionRequest(Exception_85530a09):
             Context (XInterface, optional): Context value.
             Classification (InteractionClassification, optional): Classification value.
         """
+        ...
     @property
     def Classification(self) -> InteractionClassification_6c4d10e7:
         """
         The classification of the request.
         """
+        ...
 
 
 __all__ = ['ClassifiedInteractionRequest']

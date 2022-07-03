@@ -38,12 +38,16 @@ class XAnimation(ABC):
         """
         determines whether the animation is currently running
         """
+        ...
     def startAnimation(self) -> None:
         """
         starts the animation
         """
+        ...
     def stopAnimation(self) -> None:
         """
         stops the animation
         """
+        ...
+
 

@@ -51,6 +51,7 @@ class DDELinkInfo(object):
             Service (str, optional): Service value.
             Topic (str, optional): Topic value.
         """
+        ...
 
 
     @property
@@ -60,6 +61,7 @@ class DDELinkInfo(object):
         
         Each item may contain its results from the last update.
         """
+        ...
 
 
     @property
@@ -67,6 +69,7 @@ class DDELinkInfo(object):
         """
         The DDE service name.
         """
+        ...
 
 
     @property
@@ -74,5 +77,6 @@ class DDELinkInfo(object):
         """
         The DDE topic.
         """
+        ...
 
 

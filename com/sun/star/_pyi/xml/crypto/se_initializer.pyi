@@ -29,5 +29,6 @@ class SEInitializer(XSEInitializer_198b0e9c):
     See Also:
         `API SEInitializer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1crypto_1_1SEInitializer.html>`_
     """
+    ...
 
 

@@ -41,5 +41,6 @@ class XMLBasicExporter(XXMLBasicExporter_26ee0eeb):
     def createWithHandler(self, DocumentHandler: 'XDocumentHandler_9b90e28') -> None:
         """
         """
+        ...
 
 

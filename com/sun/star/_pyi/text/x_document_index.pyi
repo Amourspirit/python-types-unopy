@@ -40,8 +40,11 @@ class XDocumentIndex(XTextContent_b16e0ba5):
         """
         returns the service name that was used to create this document index type.
         """
+        ...
     def update(self) -> None:
         """
         initiates an update to the document index.
         """
+        ...
+
 

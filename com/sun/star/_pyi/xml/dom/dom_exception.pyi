@@ -45,10 +45,12 @@ class DOMException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             Code (DOMExceptionType, optional): Code value.
         """
+        ...
     @property
     def Code(self) -> DOMExceptionType_5c70df8:
         """
         """
+        ...
 
 
 __all__ = ['DOMException']

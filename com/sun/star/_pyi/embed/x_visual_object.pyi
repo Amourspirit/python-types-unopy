@@ -41,6 +41,7 @@ class XVisualObject(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getPreferredVisualRepresentation(self, nAspect: int) -> 'VisualRepresentation_2a2b0f4c':
         """
         retrieves visual representation of the object in preferable format.
@@ -52,6 +53,7 @@ class XVisualObject(XInterface_8f010a43):
             com.sun.star.embed.WrongStateException: ``WrongStateException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getVisualAreaSize(self, nAspect: int) -> 'Size_576707ef':
         """
         gets the size of object's visual area.
@@ -63,6 +65,7 @@ class XVisualObject(XInterface_8f010a43):
             com.sun.star.embed.WrongStateException: ``WrongStateException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def setVisualAreaSize(self, nAspect: int, aSize: 'Size_576707ef') -> None:
         """
         sets the size of object's visual area.
@@ -76,4 +79,6 @@ class XVisualObject(XInterface_8f010a43):
             com.sun.star.embed.WrongStateException: ``WrongStateException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

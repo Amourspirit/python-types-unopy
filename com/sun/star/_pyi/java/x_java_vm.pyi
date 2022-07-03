@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.java
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XJavaVM(XInterface_8f010a43):
@@ -35,7 +35,7 @@ class XJavaVM(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.java.XJavaVM']
 
-    def getJavaVM(self, processID: 'typing.Tuple[int, ...]') -> object:
+    def getJavaVM(self, processID: uno.ByteSequence) -> object:
         """
         returns the address of the Java Virtual Machine.
         
@@ -49,14 +49,18 @@ class XJavaVM(XInterface_8f010a43):
         
         The first form (returning a JNI JavaVM pointer) is mainly for backwards compatibility, new code should use the second form (returning a pointer to a jvmaccess.VirtualMachine) if it does not want to use the Java UNO environment, and it should use the third form (returning a pointer to a jvmaccess.UnoVirtualMachine) if it wants to use the Java UNO environment. For example, one advantage of using jvmaccess.VirtualMachine instead of the raw JavaVM pointer is that whenever you attach a native thread to the Java virtual machine, that thread's context ClassLoader (see java.lang.Thread.getContextClassLoader) will automatically be set to a meaningful value.
         """
+        ...
     def isVMEnabled(self) -> bool:
         """
         Returns TRUE if the VM is enabled.
         
         It is only possible to get the VM, if this method return 0.
         """
+        ...
     def isVMStarted(self) -> bool:
         """
         returns TRUE if the VM is started successfully, otherwise FALSE.
         """
+        ...
+
 

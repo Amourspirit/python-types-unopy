@@ -49,6 +49,7 @@ class DeviceInfo(object):
             BitsPerPixel (int, optional): BitsPerPixel value.
             Capabilities (int, optional): Capabilities value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class DeviceInfo(object):
         """
         contains the width of the device in pixels.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class DeviceInfo(object):
         """
         contains the height of the device in pixels.
         """
+        ...
 
 
     @property
@@ -70,6 +73,7 @@ class DeviceInfo(object):
         """
         contains the inset from the left.
         """
+        ...
 
 
     @property
@@ -77,6 +81,7 @@ class DeviceInfo(object):
         """
         contains the inset from the top.
         """
+        ...
 
 
     @property
@@ -84,6 +89,7 @@ class DeviceInfo(object):
         """
         contains the inset from the right.
         """
+        ...
 
 
     @property
@@ -91,6 +97,7 @@ class DeviceInfo(object):
         """
         contains the inset from the bottom.
         """
+        ...
 
 
     @property
@@ -98,6 +105,7 @@ class DeviceInfo(object):
         """
         contains the X-axis resolution of the device in pixel/meter.
         """
+        ...
 
 
     @property
@@ -105,6 +113,7 @@ class DeviceInfo(object):
         """
         contains the Y-axis resolution of the device in pixel/meter.
         """
+        ...
 
 
     @property
@@ -112,6 +121,7 @@ class DeviceInfo(object):
         """
         contains the color-depth of the device.
         """
+        ...
 
 
     @property
@@ -119,5 +129,6 @@ class DeviceInfo(object):
         """
         specifies special operations which are possible on the device.
         """
+        ...
 
 

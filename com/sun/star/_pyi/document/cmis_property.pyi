@@ -48,6 +48,7 @@ class CmisProperty(object):
             Choices (object, optional): Choices value.
             Value (object, optional): Value value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class CmisProperty(object):
         """
         unique ID of the Cmis property
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class CmisProperty(object):
         """
         specifies the display name of the CMIS property.
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class CmisProperty(object):
         """
         type of the property
         """
+        ...
 
 
     @property
@@ -76,6 +80,7 @@ class CmisProperty(object):
         """
         specifies if the property is updatable.
         """
+        ...
 
 
     @property
@@ -83,6 +88,7 @@ class CmisProperty(object):
         """
         specifies if the property is required and can not be empty.
         """
+        ...
 
 
     @property
@@ -90,6 +96,7 @@ class CmisProperty(object):
         """
         specifies if the property has multiple value
         """
+        ...
 
 
     @property
@@ -97,6 +104,7 @@ class CmisProperty(object):
         """
         specifies if the property value can be freely set or is restricted from a list of choices.
         """
+        ...
 
 
     @property
@@ -104,6 +112,7 @@ class CmisProperty(object):
         """
         specifies the possible choices of the values.
         """
+        ...
 
 
     @property
@@ -111,5 +120,6 @@ class CmisProperty(object):
         """
         specifies value of the property
         """
+        ...
 
 

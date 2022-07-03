@@ -46,6 +46,7 @@ class XRelativeTextContentRemove(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def removeTextContentBefore(self, xSuccessor: 'XTextContent_b16e0ba5') -> None:
         """
         removes the text content that precedes the argument.
@@ -55,4 +56,6 @@ class XRelativeTextContentRemove(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

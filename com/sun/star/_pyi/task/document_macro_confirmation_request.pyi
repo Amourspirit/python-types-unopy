@@ -51,17 +51,20 @@ class DocumentMacroConfirmationRequest(ClassifiedInteractionRequest_9f72121b):
             DocumentStorage (XStorage, optional): DocumentStorage value.
             DocumentVersion (str, optional): DocumentVersion value.
         """
+        ...
     @property
     def DocumentSignatureInformation(self) -> typing.Tuple[DocumentSignatureInformation_f36c13f7, ...]:
         """
         contains information about the signatures in the document
         """
+        ...
 
     @property
     def DocumentURL(self) -> str:
         """
         specifies the URL of the document which contains macros whose execution should be approved or rejected.
         """
+        ...
 
     @property
     def DocumentStorage(self) -> XStorage_8e460a32:
@@ -70,12 +73,14 @@ class DocumentMacroConfirmationRequest(ClassifiedInteractionRequest_9f72121b):
         
         This storage is necessary e.g. for displaying the existing signatures to the user, to allow him a decision whether or not to trust those signatures and thus the signed macros.
         """
+        ...
 
     @property
     def DocumentVersion(self) -> str:
         """
         contains information about the ODF version of the document
         """
+        ...
 
 
 __all__ = ['DocumentMacroConfirmationRequest']

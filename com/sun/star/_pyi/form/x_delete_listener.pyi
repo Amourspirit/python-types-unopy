@@ -45,8 +45,11 @@ class XDeleteListener(XEventListener_c7230c4a):
         """
         is invoked when the current record of the database form will be deleted.
         """
+        ...
     def deleted(self, aEvent: 'EventObject_a3d70b03') -> None:
         """
         is invoked when a database form has finished the delete processing and the data has been successfully deleted from the datasource.
         """
+        ...
+
 

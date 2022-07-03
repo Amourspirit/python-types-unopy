@@ -41,20 +41,26 @@ class XServiceDocumenter(ABC):
     def showCoreDocs(self, xService: 'XServiceInfo_af180b5f') -> None:
         """
         """
+        ...
     def showInterfaceDocs(self, xTypeProvider: 'XTypeProvider_bbb40bef') -> None:
         """
         """
+        ...
     def showServiceDocs(self, xService: 'XServiceInfo_af180b5f') -> None:
         """
         """
+        ...
+
     @property
     def CoreBaseUrl(self) -> str:
         """
         """
+        ...
 
     @property
     def ServiceBaseUrl(self) -> str:
         """
         """
+        ...
 
 

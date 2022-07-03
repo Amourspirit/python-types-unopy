@@ -40,5 +40,6 @@ class MacroExpander(XComponent_98dc0ab5, XMacroExpander_c8360c47):
     See Also:
         `API MacroExpander <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1util_1_1MacroExpander.html>`_
     """
+    ...
 
 

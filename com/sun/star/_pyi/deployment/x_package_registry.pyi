@@ -59,10 +59,12 @@ class XPackageRegistry(ABC):
             com.sun.star.ucb.CommandFailedException: ``CommandFailedException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getSupportedPackageTypes(self) -> 'typing.Tuple[XPackageTypeInfo_3bc70f7b, ...]':
         """
         gets the supported XPackageTypeInfos.
         """
+        ...
     def packageRemoved(self, url: str, mediaType: str) -> None:
         """
 
@@ -70,4 +72,6 @@ class XPackageRegistry(ABC):
             DeploymentException: ``DeploymentException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

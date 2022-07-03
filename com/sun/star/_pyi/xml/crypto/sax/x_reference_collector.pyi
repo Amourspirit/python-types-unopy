@@ -39,6 +39,7 @@ class XReferenceCollector(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def setReferenceId(self, id: int) -> None:
         """
         Set the keeper id of the element collector of the referenced element.
@@ -46,4 +47,6 @@ class XReferenceCollector(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

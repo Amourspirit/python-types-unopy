@@ -31,5 +31,6 @@ class UnoControlButton(UnoControl_8f2c0a67, XButton_71380928, XLayoutConstrains_
     See Also:
         `API UnoControlButton <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlButton.html>`_
     """
+    ...
 
 

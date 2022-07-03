@@ -47,6 +47,7 @@ class GetDirectPropertyTolerantResult(GetPropertyTolerantResult_7c4e115e):
             Value (object, optional): Value value.
             Name (str, optional): Name value.
         """
+        ...
 
 
     @property
@@ -54,5 +55,6 @@ class GetDirectPropertyTolerantResult(GetPropertyTolerantResult_7c4e115e):
         """
         specifies the name of the property.
         """
+        ...
 
 

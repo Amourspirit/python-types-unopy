@@ -35,5 +35,6 @@ class AccessibleMenuSeparator(XAccessibleContext_8eae119b, XAccessibleEventBroad
     See Also:
         `API AccessibleMenuSeparator <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1AccessibleMenuSeparator.html>`_
     """
+    ...
 
 

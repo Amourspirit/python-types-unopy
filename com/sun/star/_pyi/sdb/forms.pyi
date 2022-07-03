@@ -29,5 +29,6 @@ class Forms(DocumentContainer_e13d0d23):
     See Also:
         `API Forms <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1Forms.html>`_
     """
+    ...
 
 

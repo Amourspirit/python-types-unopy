@@ -57,6 +57,7 @@ class XDocumentMetadataAccess(XRepositorySupplier_feff0e30, XURI_5682078c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def addMetadataFile(self, FileName: str, Types: 'typing.Tuple[XURI_5682078c, ...]') -> 'XURI_5682078c':
         """
         add a metadata file to the manifest.
@@ -67,10 +68,12 @@ class XDocumentMetadataAccess(XRepositorySupplier_feff0e30, XURI_5682078c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def getElementByMetadataReference(self, MetadataReference: 'StringPair_a4bc0b14') -> 'XMetadatable_a3000af0':
         """
         get the unique ODF element with the given metadata reference.
         """
+        ...
     def getElementByURI(self, URI: 'XURI_5682078c') -> 'XMetadatable_a3000af0':
         """
         get the ODF element that corresponds to a URI.
@@ -78,6 +81,7 @@ class XDocumentMetadataAccess(XRepositorySupplier_feff0e30, XURI_5682078c):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getMetadataGraphsWithType(self, Type: 'XURI_5682078c') -> 'typing.Tuple[XURI_5682078c, ...]':
         """
         get the names of all metadata files with a given type.
@@ -85,6 +89,7 @@ class XDocumentMetadataAccess(XRepositorySupplier_feff0e30, XURI_5682078c):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def importMetadataFile(self, Format: int, InStream: 'XInputStream_98d40ab4', FileName: str, BaseURI: 'XURI_5682078c', Types: 'typing.Tuple[XURI_5682078c, ...]') -> 'XURI_5682078c':
         """
         import a metadata file into the document repository, and add it to the manifest.
@@ -98,6 +103,7 @@ class XDocumentMetadataAccess(XRepositorySupplier_feff0e30, XURI_5682078c):
             ParseException: ``ParseException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def loadMetadataFromMedium(self, Medium: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         loads document metadata from a medium.
@@ -108,6 +114,7 @@ class XDocumentMetadataAccess(XRepositorySupplier_feff0e30, XURI_5682078c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def loadMetadataFromStorage(self, Storage: 'XStorage_8e460a32', BaseURI: 'XURI_5682078c', InteractionHandler: 'XInteractionHandler_bf80e51') -> None:
         """
         initialize document metadata from a storage.
@@ -124,6 +131,7 @@ class XDocumentMetadataAccess(XRepositorySupplier_feff0e30, XURI_5682078c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def removeContentOrStylesFile(self, FileName: str) -> None:
         """
         remove a content or styles file from the manifest.
@@ -134,6 +142,7 @@ class XDocumentMetadataAccess(XRepositorySupplier_feff0e30, XURI_5682078c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def removeMetadataFile(self, GraphName: 'XURI_5682078c') -> None:
         """
         remove a metadata file from the manifest and the repository.
@@ -144,6 +153,7 @@ class XDocumentMetadataAccess(XRepositorySupplier_feff0e30, XURI_5682078c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def storeMetadataToMedium(self, Medium: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         stores document metadata to a medium.
@@ -152,6 +162,7 @@ class XDocumentMetadataAccess(XRepositorySupplier_feff0e30, XURI_5682078c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def storeMetadataToStorage(self, Storage: 'XStorage_8e460a32') -> None:
         """
         store document metadata to a storage.
@@ -164,4 +175,6 @@ class XDocumentMetadataAccess(XRepositorySupplier_feff0e30, XURI_5682078c):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

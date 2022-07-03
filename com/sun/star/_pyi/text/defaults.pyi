@@ -40,5 +40,6 @@ class Defaults(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a10df, 
         """
         default tab-distance to be used.
         """
+        ...
 
 

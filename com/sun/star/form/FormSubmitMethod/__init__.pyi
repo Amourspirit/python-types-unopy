@@ -29,6 +29,7 @@ Enum
 See Also:
     `API FormSubmitMethod <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1form.html#ae9bf553104504664f5d2066375a414df>`_
 """
+typeName: str = 'com.sun.star.form.FormSubmitMethod'
 
 GET: 'uno.Enum'
 """

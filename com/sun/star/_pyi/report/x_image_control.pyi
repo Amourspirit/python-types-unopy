@@ -39,6 +39,7 @@ class XImageControl(XImageProducerSupplier_37df0f8f, XReportControlModel_2d800f4
         """
         specifies a URL to an image to use for the control.
         """
+        ...
 
     @property
     def PreserveIRI(self) -> bool:
@@ -47,6 +48,7 @@ class XImageControl(XImageProducerSupplier_37df0f8f, XReportControlModel_2d800f4
         
         If the data field contains something different as string then this attribute will be ignored.
         """
+        ...
 
     @property
     def ScaleMode(self) -> int:
@@ -61,5 +63,6 @@ class XImageControl(XImageProducerSupplier_37df0f8f, XReportControlModel_2d800f4
         
             OOo 3.2
         """
+        ...
 
 

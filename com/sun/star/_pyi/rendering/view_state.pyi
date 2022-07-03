@@ -49,6 +49,7 @@ class ViewState(object):
             AffineTransform (AffineMatrix2D, optional): AffineTransform value.
             Clip (XPolyPolygon2D, optional): Clip value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class ViewState(object):
         
         This member is used to transform coordinates of draw operations from user space to screen space.
         """
+        ...
 
 
     @property
@@ -69,5 +71,6 @@ class ViewState(object):
         
         Specifying an empty interface denotes no clipping, i.e. everything rendered to the canvas will be visible (subject to device-dependent constraints, of course). Specifying an empty XPolyPolygon2D, i.e. a poly-polygon containing zero polygons, or an XPolyPolygon2D with any number of empty sub-polygons, denotes the NULL clip. That means, nothing rendered to the canvas will be visible.
         """
+        ...
 
 

@@ -46,6 +46,7 @@ class Currency(object):
             UsedInCompatibleFormatCodes (bool, optional): UsedInCompatibleFormatCodes value.
             DecimalPlaces (int, optional): DecimalPlaces value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class Currency(object):
         """
         ISO 4217 currency code identifier, for example, EUR or USD.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class Currency(object):
         """
         Currency symbol, for example, $.
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class Currency(object):
         
         This usually should be identical to the ISO 4217 currency code also used in the ID, but doesn't necessarily have to be.
         """
+        ...
 
 
     @property
@@ -78,6 +82,7 @@ class Currency(object):
         
         Should be the localized name.
         """
+        ...
 
 
     @property
@@ -85,6 +90,7 @@ class Currency(object):
         """
         If this currency is the default currency for a given locale.
         """
+        ...
 
 
     @property
@@ -94,6 +100,7 @@ class Currency(object):
         
         Those format codes are used to generate some old style currency format codes for compatibility with StarOffice5 and StarOffice4.
         """
+        ...
 
 
     @property
@@ -101,5 +108,6 @@ class Currency(object):
         """
         The number of decimal places, for example, 2 for US Dollar or 0 for Italian Lira.
         """
+        ...
 
 

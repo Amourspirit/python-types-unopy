@@ -32,6 +32,7 @@ class FilterOperator(Enum):
     See Also:
         `API FilterOperator <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html#af9e5fd8fd26fc252748d97ebd68ea6b1>`_
     """
+    typeName: str = 'com.sun.star.sheet.FilterOperator'
 
     BOTTOM_PERCENT: 'uno.Enum'
     """

@@ -42,8 +42,11 @@ class XShapeMirror(XInterface_8f010a43):
         """
         mirrors the given Shapes at the given axis.
         """
+        ...
     def mirrorAtAxis(self, aShapes: object, aLine: 'XShape_8fd00a3d') -> None:
         """
         mirrors the given Shapes at the given axis.
         """
+        ...
+
 

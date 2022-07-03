@@ -42,22 +42,27 @@ class XAccessibleValue(XInterface_8f010a43):
         
         The exact return type is implementation dependent. Typical types are long and double.
         """
+        ...
     def getMaximumValue(self) -> object:
         """
         Returns the maximal value that can be represented by this object.
         
         The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
         """
+        ...
     def getMinimumValue(self) -> object:
         """
         Returns the minimal value that can be represented by this object.
         
         The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
         """
+        ...
     def setCurrentValue(self, aNumber: object) -> bool:
         """
         Sets the value of this object to the given number.
         
         The argument is clipped to the valid interval whose upper and lower bounds are returned by the methods getMaximumAccessibleValue() and getMinimumAccessibleValue(), i.e. if it is lower than the minimum value the new value will be the minimum and if it is greater than the maximum then the new value will be the maximum.
         """
+        ...
+
 

@@ -54,9 +54,11 @@ class InteractionHandler(XInteractionHandler2_1a7b0e83):
         """
         Creates an instance.
         """
+        ...
     def createWithParentAndContext(self, parent: 'XWindow_713b0924', context: str) -> None:
         """
         Creates an instance with an additional context.
         """
+        ...
 
 

@@ -46,40 +46,47 @@ class XSingleSelectQueryAnalyzer(XInterface_8f010a43):
         
         The filter criteria returned is part of the where condition of the select command, but it does not contain the where token.
         """
+        ...
     def getGroup(self) -> str:
         """
         returns the currently used GROUP BY.
         
         The group criteria returned is part of the GROUP BY clause of the select command, but it does not contain the GROUP BY keyword .
         """
+        ...
     def getGroupColumns(self) -> 'XIndexAccess_f0910d6d':
         """
         returns the currently used group.
         
         The columns returned from the GROUP BY clause.
         """
+        ...
     def getHavingClause(self) -> str:
         """
         returns the used HAVING filter.
         
         The HAVING filter criteria returned is part of the HAVING condition of the select command, but it does not contain the HAVING token.
         """
+        ...
     def getOrder(self) -> str:
         """
         returns the currently used sort order.
         
         The order criteria returned is part of the ORDER BY clause of the select command, but it does not contain the ORDER BY keyword .
         """
+        ...
     def getOrderColumns(self) -> 'XIndexAccess_f0910d6d':
         """
         returns the currently used sort order.
         
         The order criteria returned is part of the ORDER BY clause of the select command, but it does not contain the ORDER BY keyword .
         """
+        ...
     def getQuery(self) -> str:
         """
         returns the query.
         """
+        ...
     def getQueryWithSubstitution(self) -> str:
         """
         returns the query previously set at the analyzer, with all application-level features being substituted by their database-level counterparts.
@@ -97,29 +104,31 @@ class XSingleSelectQueryAnalyzer(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getStructuredFilter(self) -> 'typing.Tuple[typing.Tuple[PropertyValue_c9610c73, ...], ...]':
         """
         returns the currently used filter.
         
         The filter criteria is split into levels. Each level represents the OR criteria. Within each level, the filters are provided as an AND criteria with the name of the column and the filter condition. The filter condition is of type string. The operator used, is defined by com.sun.star.sdb.SQLFilterOperator.
         """
+        ...
     def getStructuredHavingClause(self) -> 'typing.Tuple[typing.Tuple[PropertyValue_c9610c73, ...], ...]':
         """
         returns the currently used HAVING filter.
         
         The HAVING filter criteria is split into levels. Each level represents the OR criteria. Within each level, the filters are provided as an AND criteria with the name of the column and the filter condition. The filter condition is of type string. The operator used, is defined by com.sun.star.sdb.SQLFilterOperator.
         """
+        ...
     def setCommand(self, Command: str, CommandType: int) -> None:
         """
         sets a new query for the composer, which may be expanded by filters, group by, having and sort criteria.
         
-        In case of a CommandType of com.sun.star.sdb.CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:
-        It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.
-        The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
+        In case of a CommandType of com.sun.star.sdb.CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
 
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def setQuery(self, command: str) -> None:
         """
         sets a new query for the composer, which may be expanded by filters, group by, having and sort criteria.
@@ -127,4 +136,6 @@ class XSingleSelectQueryAnalyzer(XInterface_8f010a43):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

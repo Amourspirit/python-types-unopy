@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.reflection
 from typing_extensions import Literal
-import typing
+import uno
 from .x_type_description import XTypeDescription as XTypeDescription_3c210fb1
 
 class XArrayTypeDescription(XTypeDescription_3c210fb1):
@@ -35,16 +35,20 @@ class XArrayTypeDescription(XTypeDescription_3c210fb1):
     """
     __pyunointerface__: Literal['com.sun.star.reflection.XArrayTypeDescription']
 
-    def getDimensions(self) -> 'typing.Tuple[int, ...]':
+    def getDimensions(self) -> uno.ByteSequence:
         """
         Returns dimensions of array (same length as getNumberOfDimensions()).
         """
+        ...
     def getNumberOfDimensions(self) -> int:
         """
         Returns the number of dimensions of the array.
         """
+        ...
     def getType(self) -> 'XTypeDescription_3c210fb1':
         """
         Returns the element type of the array.
         """
+        ...
+
 

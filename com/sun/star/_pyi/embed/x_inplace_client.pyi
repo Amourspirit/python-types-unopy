@@ -44,6 +44,7 @@ class XInplaceClient(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def activatingUI(self) -> None:
         """
         notifies container through the client that the object is to be UI-activated.
@@ -51,10 +52,12 @@ class XInplaceClient(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def canInplaceActivate(self) -> bool:
         """
         checks if the container can activate the object inplace.
         """
+        ...
     def changedPlacement(self, aPosRect: 'Rectangle_84b109e9') -> None:
         """
         notifies the container that the position of the object is changed.
@@ -63,6 +66,7 @@ class XInplaceClient(XInterface_8f010a43):
             com.sun.star.embed.WrongStateException: ``WrongStateException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def deactivatedInplace(self) -> None:
         """
         notifies container through the client that the object is deactivated.
@@ -70,6 +74,7 @@ class XInplaceClient(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def deactivatedUI(self) -> None:
         """
         notifies container through the client that the object is UI-deactivated.
@@ -79,6 +84,7 @@ class XInplaceClient(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def getClipRectangle(self) -> 'Rectangle_84b109e9':
         """
         gets the inplace object clip rectangle.
@@ -88,6 +94,7 @@ class XInplaceClient(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def getInplaceDispatchProvider(self) -> 'XDispatchProvider_fc690de6':
         """
         allows to retrieve the container's dispatch provider.
@@ -95,6 +102,7 @@ class XInplaceClient(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def getLayoutManager(self) -> 'XLayoutManager_d4510ca4':
         """
         allows to retrieve the com.sun.star.frame.LayoutManager of the container.
@@ -102,6 +110,7 @@ class XInplaceClient(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def getPlacement(self) -> 'Rectangle_84b109e9':
         """
         gets the inplace object position rectangle.
@@ -111,6 +120,7 @@ class XInplaceClient(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def scrollObject(self, aOffset: 'Size_576707ef') -> None:
         """
         scrolls the object.
@@ -118,6 +128,7 @@ class XInplaceClient(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def translateAccelerators(self, aKeys: 'typing.Tuple[KeyEvent_7a78097f, ...]') -> None:
         """
         provides accelerator table the object wants to use while it is inplace active.
@@ -125,4 +136,6 @@ class XInplaceClient(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
+
 

@@ -47,6 +47,7 @@ class NoMailServiceProviderException(MailException_ba9e0bdd):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['NoMailServiceProviderException']
 

@@ -42,6 +42,7 @@ class OpenCLPlatform(object):
             Name (str, optional): Name value.
             Vendor (str, optional): Vendor value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class OpenCLPlatform(object):
         """
         The name of the platform as returned by OpenCL.
         """
+        ...
 
 
     @property

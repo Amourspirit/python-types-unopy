@@ -54,6 +54,7 @@ class XNamedGraph(XURI_5682078c):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             RepositoryException: ``RepositoryException``
         """
+        ...
     def clear(self) -> None:
         """
         removes all statements from the graph.
@@ -62,12 +63,14 @@ class XNamedGraph(XURI_5682078c):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             RepositoryException: ``RepositoryException``
         """
+        ...
     def getName(self) -> 'XURI_5682078c':
         """
         returns the name of the graph.
         
         The name is unique within the repository.
         """
+        ...
     def getStatements(self, Subject: 'XResource_842709e4', Predicate: 'XURI_5682078c', Object: 'XNode_5ee40822') -> 'XEnumeration_f2180daa':
         """
         gets matching RDF statements from a graph.
@@ -80,6 +83,7 @@ class XNamedGraph(XURI_5682078c):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             RepositoryException: ``RepositoryException``
         """
+        ...
     def removeStatements(self, Subject: 'XResource_842709e4', Predicate: 'XURI_5682078c', Object: 'XNode_5ee40822') -> None:
         """
         removes matching RDF statements from the graph.
@@ -92,4 +96,6 @@ class XNamedGraph(XURI_5682078c):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             RepositoryException: ``RepositoryException``
         """
+        ...
+
 

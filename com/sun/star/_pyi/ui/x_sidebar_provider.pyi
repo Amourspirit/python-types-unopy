@@ -42,24 +42,31 @@ class XSidebarProvider(XInterface_8f010a43):
     def getDecks(self) -> 'XDecks_5e8b0828':
         """
         """
+        ...
     def getFrame(self) -> 'XFrame_7a570956':
         """
         Get the XFrame owner.
         """
+        ...
     def getSidebar(self) -> 'XSidebar_704a08f8':
         """
         Returns the sidebar object.
         """
+        ...
     def isVisible(self) -> bool:
         """
         Is the sidebar visible.
         """
+        ...
     def setVisible(self, bVisible: bool) -> None:
         """
         Display the sidebar.
         """
+        ...
     def showDecks(self, bVisible: bool) -> None:
         """
         Decks container visibility.
         """
+        ...
+
 

@@ -49,17 +49,20 @@ class ExoticFileLoadException(Exception_85530a09):
             URL (str, optional): URL value.
             FilterUIName (str, optional): FilterUIName value.
         """
+        ...
     @property
     def URL(self) -> str:
         """
         contains the URL of the document
         """
+        ...
 
     @property
     def FilterUIName(self) -> str:
         """
         contains the UI name of the filter
         """
+        ...
 
 
 __all__ = ['ExoticFileLoadException']

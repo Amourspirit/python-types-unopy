@@ -40,6 +40,7 @@ class XFastContextHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def createFastChildContext(self, Element: int, Attribs: 'XFastAttributeList_274d0f09') -> 'XFastContextHandler':
         """
         receives notification of the beginning of a known child element.
@@ -49,6 +50,7 @@ class XFastContextHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def createUnknownChildContext(self, Namespace: str, Name: str, Attribs: 'XFastAttributeList_274d0f09') -> 'XFastContextHandler':
         """
         receives notification of the beginning of an unknown child element .
@@ -56,6 +58,7 @@ class XFastContextHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def endFastElement(self, Element: int) -> None:
         """
         receives notification of the end of a known element.
@@ -63,6 +66,7 @@ class XFastContextHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def endUnknownElement(self, Namespace: str, Name: str) -> None:
         """
         receives notification of the end of a known element.
@@ -70,6 +74,7 @@ class XFastContextHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def startFastElement(self, Element: int, Attribs: 'XFastAttributeList_274d0f09') -> None:
         """
         receives notification of the beginning of an element .
@@ -79,6 +84,7 @@ class XFastContextHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def startUnknownElement(self, Namespace: str, Name: str, Attribs: 'XFastAttributeList_274d0f09') -> None:
         """
         receives notification of the beginning of an unknown element .
@@ -86,4 +92,6 @@ class XFastContextHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
+
 

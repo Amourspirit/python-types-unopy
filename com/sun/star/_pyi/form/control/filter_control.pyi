@@ -39,5 +39,6 @@ class FilterControl(XControl_7a9c098d):
     def createWithFormat(self, MessageParent: 'XWindow_713b0924', NumberFormatter: 'XNumberFormatter_e3170d3b', ControlModel: 'XPropertySet_bc180bfa') -> None:
         """
         """
+        ...
 
 

@@ -37,36 +37,44 @@ class XSheetAuditing(XInterface_8f010a43):
         """
         removes all auditing arrows from the spreadsheet.
         """
+        ...
     def hideDependents(self, aPosition: 'CellAddress_ae5f0b56') -> bool:
         """
         removes arrows for one level of dependents of a formula cell.
         
         If the method is executed again for the same cell, the previous level of dependent cells is removed.
         """
+        ...
     def hidePrecedents(self, aPosition: 'CellAddress_ae5f0b56') -> bool:
         """
         removes arrows for one level of precedents of a formula cell.
         
         If the method is executed again for the same cell, the previous level of dependent cells is removed.
         """
+        ...
     def showDependents(self, aPosition: 'CellAddress_ae5f0b56') -> bool:
         """
         draws arrows between a formula cell and its dependents.
         
         If the method is executed again for the same cell, the next level of dependent cells is marked.
         """
+        ...
     def showErrors(self, aPosition: 'CellAddress_ae5f0b56') -> bool:
         """
         draws arrows between a formula cell containing an error and the cells causing the error.
         """
+        ...
     def showInvalid(self) -> bool:
         """
         marks all cells containing invalid values.
         """
+        ...
     def showPrecedents(self, aPosition: 'CellAddress_ae5f0b56') -> bool:
         """
         draws arrows between a formula cell and its precedents.
         
         If the method is executed again for the same cell, the next level of dependent cells is marked.
         """
+        ...
+
 

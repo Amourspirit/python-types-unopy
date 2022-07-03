@@ -46,6 +46,7 @@ class XStorageRawAccess(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def getRawEncrStreamElement(self, sStreamName: str) -> 'XInputStream_98d40ab4':
         """
         allows to get a raw stream representing encrypted stream with header.
@@ -62,6 +63,7 @@ class XStorageRawAccess(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def insertRawEncrStreamElement(self, sStreamName: str, xInStream: 'XInputStream_98d40ab4') -> None:
         """
         allows to insert a raw stream representing encrypted stream with header.
@@ -78,4 +80,6 @@ class XStorageRawAccess(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
+
 

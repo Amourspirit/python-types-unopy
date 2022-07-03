@@ -43,11 +43,13 @@ class XFormulaParser(XPropertySet_bc180bfa, XComponent_98dc0ab5, XFormulaParser_
         
         Names and symbols not defined here lead to a parser/print error.
         """
+        ...
 
     @property
     def FormulaOpCodeMapper(self) -> 'XFormulaOpCodeMapper_27ff0eee':
         """
         return the mapper for op codes.
         """
+        ...
 
 

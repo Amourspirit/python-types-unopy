@@ -32,5 +32,6 @@ class DatabaseCheckBox(DataAwareControlModel_27110ef8, CheckBox_fe600dc4):
     See Also:
         `API DatabaseCheckBox <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1component_1_1DatabaseCheckBox.html>`_
     """
+    ...
 
 

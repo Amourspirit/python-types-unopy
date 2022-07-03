@@ -48,6 +48,7 @@ class Panose(object):
             Midline (int, optional): Midline value.
             XHeight (int, optional): XHeight value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class Panose(object):
         """
         PanoseFamilyTypes.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class Panose(object):
         """
         PanoseSerifStyle.
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class Panose(object):
         """
         PanoseWeight.
         """
+        ...
 
 
     @property
@@ -76,6 +80,7 @@ class Panose(object):
         """
         PanoseProportion.
         """
+        ...
 
 
     @property
@@ -83,6 +88,7 @@ class Panose(object):
         """
         PanoseContrast.
         """
+        ...
 
 
     @property
@@ -90,6 +96,7 @@ class Panose(object):
         """
         PanoseStrokeVariation.
         """
+        ...
 
 
     @property
@@ -97,6 +104,7 @@ class Panose(object):
         """
         PanoseArmStyle.
         """
+        ...
 
 
     @property
@@ -104,6 +112,7 @@ class Panose(object):
         """
         PanoseLetterForm.
         """
+        ...
 
 
     @property
@@ -111,6 +120,7 @@ class Panose(object):
         """
         PanoseMidline.
         """
+        ...
 
 
     @property
@@ -118,5 +128,6 @@ class Panose(object):
         """
         PanoseXHeight.
         """
+        ...
 
 

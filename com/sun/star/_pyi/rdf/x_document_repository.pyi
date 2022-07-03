@@ -51,6 +51,7 @@ class XDocumentRepository(XRepository_995d0adc):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             RepositoryException: ``RepositoryException``
         """
+        ...
     def getStatementsRDFa(self, Subject: 'XResource_842709e4', Predicate: 'XURI_5682078c', Object: 'XNode_5ee40822') -> 'XEnumeration_f2180daa':
         """
         gets matching RDFa statements from the repository.
@@ -62,6 +63,7 @@ class XDocumentRepository(XRepository_995d0adc):
         Raises:
             RepositoryException: ``RepositoryException``
         """
+        ...
     def removeStatementRDFa(self, Element: 'XMetadatable_a3000af0') -> None:
         """
         remove the RDFa statement(s) that correspond to an ODF element from the repository.
@@ -72,6 +74,7 @@ class XDocumentRepository(XRepository_995d0adc):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             RepositoryException: ``RepositoryException``
         """
+        ...
     def setStatementRDFa(self, Subject: 'XResource_842709e4', Predicates: 'typing.Tuple[XURI_5682078c, ...]', Object: 'XMetadatable_a3000af0', RDFaContent: str, RDFaDatatype: 'XURI_5682078c') -> None:
         """
         update the RDFa statement(s) that correspond to an ODF element in the repository.
@@ -84,4 +87,6 @@ class XDocumentRepository(XRepository_995d0adc):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             RepositoryException: ``RepositoryException``
         """
+        ...
+
 

@@ -45,6 +45,7 @@ class XEventAttacherManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def attach(self, nIndex: int, xObject: 'XInterface_8f010a43', aHelper: object) -> None:
         """
         attaches all the ScriptEvents which are registered for the given index to the given object.
@@ -55,6 +56,7 @@ class XEventAttacherManager(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.ServiceNotRegisteredException: ``ServiceNotRegisteredException``
         """
+        ...
     def detach(self, nIndex: int, xObject: 'XInterface_8f010a43') -> None:
         """
         detaches all the ScriptEvents from the given object which are registered at this object for the given index.
@@ -64,12 +66,14 @@ class XEventAttacherManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getScriptEvents(self, Index: int) -> 'typing.Tuple[ScriptEventDescriptor_4cef1033, ...]':
         """
 
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def insertEntry(self, nIndex: int) -> None:
         """
         creates an empty entry at the given position.
@@ -79,6 +83,7 @@ class XEventAttacherManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def registerScriptEvent(self, nIndex: int, aScriptEvent: 'ScriptEventDescriptor_4cef1033') -> None:
         """
         registers one event for an object identified by its index.
@@ -90,6 +95,7 @@ class XEventAttacherManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def registerScriptEvents(self, nIndex: int, aScriptEvents: 'typing.Tuple[ScriptEventDescriptor_4cef1033, ...]') -> None:
         """
         registers several events for an object identified by its index.
@@ -103,6 +109,7 @@ class XEventAttacherManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def removeEntry(self, nIndex: int) -> None:
         """
         removes the entry at the given position.
@@ -112,6 +119,7 @@ class XEventAttacherManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def removeScriptListener(self, Listener: 'XScriptListener_f20b0db0') -> None:
         """
         removes a XScriptListener from the listener list.
@@ -123,6 +131,7 @@ class XEventAttacherManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def revokeScriptEvent(self, nIndex: int, aListenerType: str, aEventMethod: str, aRemoveListenerParam: str) -> None:
         """
         revokes the registration of an event.
@@ -134,6 +143,7 @@ class XEventAttacherManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def revokeScriptEvents(self, nIndex: int) -> None:
         """
         revokes all events which are registered for the given index.
@@ -143,4 +153,6 @@ class XEventAttacherManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

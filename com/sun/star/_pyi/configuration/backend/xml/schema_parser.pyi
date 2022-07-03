@@ -37,5 +37,6 @@ class SchemaParser(XSchema_5ce7101f, XActiveDataSink_b8d00ba3, XInitialization_d
     See Also:
         `API SchemaParser <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1xml_1_1SchemaParser.html>`_
     """
+    ...
 
 

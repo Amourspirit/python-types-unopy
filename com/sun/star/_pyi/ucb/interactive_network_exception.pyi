@@ -47,6 +47,7 @@ class InteractiveNetworkException(ClassifiedInteractionRequest_9f72121b):
             Context (XInterface, optional): Context value.
             Classification (InteractionClassification, optional): Classification value.
         """
+        ...
 
 __all__ = ['InteractiveNetworkException']
 

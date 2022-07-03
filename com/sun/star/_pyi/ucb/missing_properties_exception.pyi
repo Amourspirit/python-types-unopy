@@ -46,11 +46,13 @@ class MissingPropertiesException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             Properties (typing.Tuple[str, ...], optional): Properties value.
         """
+        ...
     @property
     def Properties(self) -> typing.Tuple[str, ...]:
         """
         contains the names of the missing properties.
         """
+        ...
 
 
 __all__ = ['MissingPropertiesException']

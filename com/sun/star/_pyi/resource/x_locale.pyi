@@ -41,13 +41,16 @@ class XLocale(XInterface_8f010a43):
         
         Note: The Java class Locale returns the old codes.
         """
+        ...
     def equals(self, l1: 'Locale_70d308fa', l2: 'Locale_70d308fa') -> bool:
         """
         A locale is deemed equal to another locale with identical language, country, and variant, and unequal to all other objects.
         """
+        ...
     def getAvailableLocales(self) -> 'typing.Tuple[Locale_70d308fa, ...]':
         """
         """
+        ...
     def getDefault(self) -> 'Locale_70d308fa':
         """
         the common method of getting the current default locale.
@@ -58,55 +61,71 @@ class XLocale(XInterface_8f010a43):
         
         Note that the initial setting will match the host system.
         """
+        ...
     def getDisplayCountry(self, locale: 'Locale_70d308fa', inLocale: 'Locale_70d308fa') -> str:
         """
         """
+        ...
     def getDisplayCountry_Default(self, locale: 'Locale_70d308fa') -> str:
         """
         """
+        ...
     def getDisplayLanguage(self, locale: 'Locale_70d308fa', inLocale: 'Locale_70d308fa') -> str:
         """
         """
+        ...
     def getDisplayLanguage_Default(self, locale: 'Locale_70d308fa') -> str:
         """
         """
+        ...
     def getDisplayName(self, locale: 'Locale_70d308fa', inLocale: 'Locale_70d308fa') -> str:
         """
         """
+        ...
     def getDisplayName_Default(self, locale: 'Locale_70d308fa') -> str:
         """
         """
+        ...
     def getDisplayVariant(self, locale: 'Locale_70d308fa', inLocale: 'Locale_70d308fa') -> str:
         """
         """
+        ...
     def getDisplayVariant_Default(self, locale: 'Locale_70d308fa') -> str:
         """
         """
+        ...
     def getISO3Country(self, locale: 'Locale_70d308fa') -> str:
         """
 
         Raises:
             com.sun.star.resource.MissingResourceException: ``MissingResourceException``
         """
+        ...
     def getISO3Language(self, locale: 'Locale_70d308fa') -> str:
         """
 
         Raises:
             com.sun.star.resource.MissingResourceException: ``MissingResourceException``
         """
+        ...
     def getISOCountries(self) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def getISOLanguages(self) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def getLanguagesForCountry(self, country: str) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def setDefault(self, newLocale: 'Locale_70d308fa') -> None:
         """
         sets the default locale for the whole environment.
         
         It is normally set once at the beginning of an application, then never reset. setDefault does not reset the host locale.
         """
+        ...
+
 

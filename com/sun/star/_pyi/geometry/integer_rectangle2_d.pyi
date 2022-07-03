@@ -47,6 +47,7 @@ class IntegerRectangle2D(object):
             X2 (int, optional): X2 value.
             Y2 (int, optional): Y2 value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class IntegerRectangle2D(object):
         """
         X coordinate of upper left corner.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class IntegerRectangle2D(object):
         """
         Y coordinate of upper left corner.
         """
+        ...
 
 
     @property
@@ -70,6 +73,7 @@ class IntegerRectangle2D(object):
         
         Must be greater than X1 for non-empty rectangles.
         """
+        ...
 
 
     @property
@@ -79,5 +83,6 @@ class IntegerRectangle2D(object):
         
         Must be greater than y1 for non-empty rectangles.
         """
+        ...
 
 

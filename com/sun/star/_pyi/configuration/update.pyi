@@ -29,5 +29,6 @@ class Update(XUpdate_e66d0d3b):
     See Also:
         `API Update <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1configuration_1_1Update.html>`_
     """
+    ...
 
 

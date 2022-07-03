@@ -44,12 +44,14 @@ class XXMLDocumentWrapper(XInterface_8f010a43):
         """
         Clears all useless element in a branch of the DOM tree along the tree order.
         """
+        ...
     def collapse(self, node: 'XXMLElementWrapper_66c0107c') -> None:
         """
         Collapses a tree path.
         
         Each element in the ancestor path of the node will be checked, if this element is empty, then deletes it.
         """
+        ...
     def generateSAXEvents(self, handler: 'XDocumentHandler_9b90e28', saxEventKeeperHandler: 'XDocumentHandler_9b90e28', startNode: 'XXMLElementWrapper_66c0107c', endNode: 'XXMLElementWrapper_66c0107c') -> None:
         """
         Converts a part of the DOM tree into SAX events.
@@ -57,14 +59,17 @@ class XXMLDocumentWrapper(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def getCurrentElement(self) -> 'XXMLElementWrapper_66c0107c':
         """
         Gets the current element.
         """
+        ...
     def getNodeName(self, node: 'XXMLElementWrapper_66c0107c') -> str:
         """
         Gets the name of the element.
         """
+        ...
     def getTree(self, handler: 'XDocumentHandler_9b90e28') -> None:
         """
         Converts the whole DOM tree into a SAX event stream.
@@ -72,28 +77,35 @@ class XXMLDocumentWrapper(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def isCurrent(self, node: 'XXMLElementWrapper_66c0107c') -> bool:
         """
         Checks whether an element is the current element.
         """
+        ...
     def isCurrentElementEmpty(self) -> bool:
         """
         Checks whether the current element is empty.
         """
+        ...
     def rebuildIDLink(self, node: 'XXMLElementWrapper_66c0107c') -> None:
         """
         Rebuild the ID attribute in the branch starting from the particular element.
         """
+        ...
     def removeCurrentElement(self) -> None:
         """
         Removes the current element.
         
         When the current element is removed, then its parent element becomes the new current element.
         """
+        ...
     def setCurrentElement(self, element: 'XXMLElementWrapper_66c0107c') -> None:
         """
         Sets the current element.
         
         When the current element is replaced outside of this interface, then uses this method can update the current element pointer.
         """
+        ...
+
 

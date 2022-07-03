@@ -37,4 +37,6 @@ class XRemoteContentProviderSupplier(XInterface_8f010a43):
         """
         Get a factory through which a remote content provider's UniversalContentBroker service can be instantiated.
         """
+        ...
+
 

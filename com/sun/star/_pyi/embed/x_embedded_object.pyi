@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.embed
 from typing_extensions import Literal
 import typing
+import uno
 from ..document.x_event_broadcaster import XEventBroadcaster as XEventBroadcaster_2b120f2b
 from .x_classified_object import XClassifiedObject as XClassifiedObject_fa3b0dab
 from .x_component_supplier import XComponentSupplier as XComponentSupplier_adb0e64
@@ -48,6 +49,7 @@ class XEmbeddedObject(XEventBroadcaster_2b120f2b, XClassifiedObject_fa3b0dab, XC
             com.sun.star.embed.WrongStateException: ``WrongStateException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def doVerb(self, nVerbID: int) -> None:
         """
         lets object perform an action referenced by nVerbID.
@@ -58,6 +60,7 @@ class XEmbeddedObject(XEventBroadcaster_2b120f2b, XClassifiedObject_fa3b0dab, XC
             com.sun.star.embed.UnreachableStateException: ``UnreachableStateException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getClientSite(self) -> 'XEmbeddedClient_ddea0cc6':
         """
         provides access to the internal link to the container client.
@@ -65,6 +68,7 @@ class XEmbeddedObject(XEventBroadcaster_2b120f2b, XClassifiedObject_fa3b0dab, XC
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def getCurrentState(self) -> int:
         """
         returns the current state of the object.
@@ -72,7 +76,8 @@ class XEmbeddedObject(XEventBroadcaster_2b120f2b, XClassifiedObject_fa3b0dab, XC
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
-    def getReachableStates(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getReachableStates(self) -> uno.ByteSequence:
         """
         returns supported states for the object.
 
@@ -80,6 +85,7 @@ class XEmbeddedObject(XEventBroadcaster_2b120f2b, XClassifiedObject_fa3b0dab, XC
             com.sun.star.embed.NeedsRunningStateException: ``NeedsRunningStateException``
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def getStatus(self, nAspect: int) -> int:
         """
         retrieves the status of the object.
@@ -87,6 +93,7 @@ class XEmbeddedObject(XEventBroadcaster_2b120f2b, XClassifiedObject_fa3b0dab, XC
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def getSupportedVerbs(self) -> 'typing.Tuple[VerbDescriptor_d3680cb3, ...]':
         """
         returns supported verbs for the object.
@@ -95,6 +102,7 @@ class XEmbeddedObject(XEventBroadcaster_2b120f2b, XClassifiedObject_fa3b0dab, XC
             com.sun.star.embed.NeedsRunningStateException: ``NeedsRunningStateException``
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def setClientSite(self, xClient: 'XEmbeddedClient_ddea0cc6') -> None:
         """
         sets a connection to the container's client.
@@ -102,10 +110,12 @@ class XEmbeddedObject(XEventBroadcaster_2b120f2b, XClassifiedObject_fa3b0dab, XC
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def setContainerName(self, sName: str) -> None:
         """
         provides object with the name of container document.
         """
+        ...
     def setUpdateMode(self, nMode: int) -> None:
         """
         specifies how often the object's representation should be updated.
@@ -113,6 +123,7 @@ class XEmbeddedObject(XEventBroadcaster_2b120f2b, XClassifiedObject_fa3b0dab, XC
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def update(self) -> None:
         """
         updates object's representations.
@@ -121,4 +132,6 @@ class XEmbeddedObject(XEventBroadcaster_2b120f2b, XClassifiedObject_fa3b0dab, XC
             com.sun.star.embed.WrongStateException: ``WrongStateException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

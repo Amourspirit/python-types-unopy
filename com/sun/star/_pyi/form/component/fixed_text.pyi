@@ -32,5 +32,6 @@ class FixedText(UnoControlFixedTextModel_49a00fed, FormControlModel_e2990d22):
     See Also:
         `API FixedText <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1component_1_1FixedText.html>`_
     """
+    ...
 
 

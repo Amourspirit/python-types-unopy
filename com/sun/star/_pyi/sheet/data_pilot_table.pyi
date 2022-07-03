@@ -35,5 +35,6 @@ class DataPilotTable(XDataPilotDescriptor_27650f1a, XDataPilotTable_e0530ce3, XM
     See Also:
         `API DataPilotTable <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1DataPilotTable.html>`_
     """
+    ...
 
 

@@ -42,6 +42,7 @@ class TextColumn(object):
             LeftMargin (int, optional): LeftMargin value.
             RightMargin (int, optional): RightMargin value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class TextColumn(object):
         
         Width isn't a metric value, it's a relative value to the sum of the width of all columns.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class TextColumn(object):
         
         This is a metric value.
         """
+        ...
 
 
     @property
@@ -69,5 +72,6 @@ class TextColumn(object):
         
         This is a metric value.
         """
+        ...
 
 

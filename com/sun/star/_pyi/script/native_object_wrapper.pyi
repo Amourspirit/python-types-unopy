@@ -39,6 +39,7 @@ class NativeObjectWrapper(object):
         Arguments:
             ObjectId (object, optional): ObjectId value.
         """
+        ...
 
 
     @property

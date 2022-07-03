@@ -42,4 +42,6 @@ class XTemplateContainer(XInterface_8f010a43):
         
         Instances of the template must be created using an appropriate factory.
         """
+        ...
+
 

@@ -29,5 +29,6 @@ class RemoteAccessContentProvider(ContentProvider_c8530c68):
     See Also:
         `API RemoteAccessContentProvider <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1RemoteAccessContentProvider.html>`_
     """
+    ...
 
 

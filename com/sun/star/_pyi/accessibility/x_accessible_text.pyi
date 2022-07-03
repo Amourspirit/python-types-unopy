@@ -58,12 +58,14 @@ class XAccessibleText(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getCaretPosition(self) -> int:
         """
         Return the position of the caret.
         
         Returns the offset of the caret. The caret is often called text cursor. The caret is actually the position between two characters. Its position/offset is that of the character to the right of it.
         """
+        ...
     def getCharacter(self, nIndex: int) -> str:
         """
         Return the character at the specified position.
@@ -73,6 +75,7 @@ class XAccessibleText(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getCharacterAttributes(self, nIndex: int, aRequestedAttributes: 'typing.Tuple[str, ...]') -> 'typing.Tuple[PropertyValue_c9610c73, ...]':
         """
         Get the attribute set for the specified position.
@@ -85,54 +88,61 @@ class XAccessibleText(XInterface_8f010a43):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def getCharacterBounds(self, nIndex: int) -> 'Rectangle_84b109e9':
         """
         Return the bounding box of the specified position.
         
         Returns the bounding box of the indexed character.
         
-        The virtual character after the last character of the represented text, i.e. the one at position length is a special case. It represents the current input position and will therefore typically be queried by AT more often than other positions. Because it does not represent an existing character its bounding box is defined in relation to preceding characters. It should be roughly equivalent to the bounding box of some character when inserted at the end of the text. Its height typically being the maximal height of all the characters in the text or the height of the preceding character, its width being at least one pixel so that the bounding box is not degenerate.
-        Note that the index \"length\" is not always valid. Whether it is or not is implementation dependent. It typically is when text is editable or otherwise when on the screen the caret can be placed behind the text. You can be sure that the index is valid after you have received an AccessibleEventId.CARET event for this index.
+        The virtual character after the last character of the represented text, i.e. the one at position length is a special case. It represents the current input position and will therefore typically be queried by AT more often than other positions. Because it does not represent an existing character its bounding box is defined in relation to preceding characters. It should be roughly equivalent to the bounding box of some character when inserted at the end of the text. Its height typically being the maximal height of all the characters in the text or the height of the preceding character, its width being at least one pixel so that the bounding box is not degenerate.Note that the index \"length\" is not always valid. Whether it is or not is implementation dependent. It typically is when text is editable or otherwise when on the screen the caret can be placed behind the text. You can be sure that the index is valid after you have received an AccessibleEventId.CARET event for this index.
 
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getCharacterCount(self) -> int:
         """
         Return the number of characters in the represented text.
         
         Returns the number of characters in the text represented by this object or, in other words, the text length.
         """
+        ...
     def getIndexAtPoint(self, aPoint: 'Point_5fb2085e') -> int:
         """
         Return the text position for the specified screen position.
         
         Given a point in local coordinates, i.e. relative to the coordinate system of the object, return the zero-based index of the character under that point. The same functionality could be achieved by using the bounding boxes for each character as returned by XAccessibleText.getCharacterBounds(). The method XAccessibleText.getIndexAtPoint(), however, can be implemented in a more efficient way.
         """
+        ...
     def getSelectedText(self) -> str:
         """
         Return the selected text.
         
         Returns the portion of the text that is selected.
         """
+        ...
     def getSelectionEnd(self) -> int:
         """
         Return the position of the end of the selection.
         
         Returns the index of the end of the selected text.
         """
+        ...
     def getSelectionStart(self) -> int:
         """
         Return the position of the start of the selection.
         
         Returns the index of the start of the selected text.
         """
+        ...
     def getText(self) -> str:
         """
         Return the whole text.
         
         Returns the complete text. This is equivalent to a call to XAccessibleText.getTextRange() with the arguments zero and getCharacterCount()-1.
         """
+        ...
     def getTextAtIndex(self, nIndex: int, nTextType: int) -> 'TextSegment_1e5b0ee8':
         """
         Get a text portion around the given position.
@@ -143,6 +153,7 @@ class XAccessibleText(XInterface_8f010a43):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getTextBeforeIndex(self, nIndex: int, nTextType: int) -> 'TextSegment_1e5b0ee8':
         """
         Get a text portion before the given position.
@@ -157,6 +168,7 @@ class XAccessibleText(XInterface_8f010a43):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getTextBehindIndex(self, nIndex: int, nTextType: int) -> 'TextSegment_1e5b0ee8':
         """
         Get a text portion behind the given position.
@@ -171,6 +183,7 @@ class XAccessibleText(XInterface_8f010a43):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getTextRange(self, nStartIndex: int, nEndIndex: int) -> str:
         """
         Return the specified text range.
@@ -184,6 +197,7 @@ class XAccessibleText(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def scrollSubstringTo(self, nStartIndex: int, nEndIndex: int, aScrollType: 'AccessibleScrollType_b426126f') -> bool:
         """
         Scroll the specified text to make it visible on screen.
@@ -195,6 +209,7 @@ class XAccessibleText(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setCaretPosition(self, nIndex: int) -> bool:
         """
         Set the position of the caret.
@@ -208,6 +223,7 @@ class XAccessibleText(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setSelection(self, nStartIndex: int, nEndIndex: int) -> bool:
         """
         Set a new selection.
@@ -221,4 +237,6 @@ class XAccessibleText(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

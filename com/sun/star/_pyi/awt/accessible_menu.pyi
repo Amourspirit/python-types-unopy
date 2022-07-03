@@ -40,5 +40,6 @@ class AccessibleMenu(XAccessibleExtendedComponent_539d159a, XAccessibleAction_7c
     See Also:
         `API AccessibleMenu <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1AccessibleMenu.html>`_
     """
+    ...
 
 

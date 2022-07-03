@@ -37,8 +37,11 @@ class XDataTransferEventListener(XEventListener_c7230c4a):
         """
         is called when an import or export process has been cancelled.
         """
+        ...
     def finished(self, aEvent: 'DataTransferEvent_d2a00ca1') -> None:
         """
         is called when an import or export process has finished.
         """
+        ...
+
 

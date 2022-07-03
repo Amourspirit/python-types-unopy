@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.auth
 from typing_extensions import Literal
-import typing
+import uno
 from .xsso_context import XSSOContext as XSSOContext_a2840aec
 
 class XSSOAcceptorContext(XSSOContext_a2840aec):
@@ -37,7 +37,7 @@ class XSSOAcceptorContext(XSSOContext_a2840aec):
     """
     __pyunointerface__: Literal['com.sun.star.auth.XSSOAcceptorContext']
 
-    def accept(self, Token: 'typing.Tuple[int, ...]') -> 'typing.Tuple[int, ...]':
+    def accept(self, Token: uno.ByteSequence) -> uno.ByteSequence:
         """
         accepts/authenticates an SSO token sent from the context initiator side.
         
@@ -49,4 +49,6 @@ class XSSOAcceptorContext(XSSOContext_a2840aec):
             InvalidContextException: ``InvalidContextException``
             AuthenticationFailedException: ``AuthenticationFailedException``
         """
+        ...
+
 

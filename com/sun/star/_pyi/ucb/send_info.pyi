@@ -43,6 +43,7 @@ class SendInfo(object):
             ProtocolType (str, optional): ProtocolType value.
             Value (str, optional): Value value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class SendInfo(object):
         
         \"NNTP\", \"SMTP\", \"VIM\").
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class SendInfo(object):
         """
         the value.
         """
+        ...
 
 

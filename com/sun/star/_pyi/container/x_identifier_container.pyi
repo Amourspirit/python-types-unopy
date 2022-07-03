@@ -38,6 +38,7 @@ class XIdentifierContainer(XIdentifierReplace_4ac10fe2):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def removeByIdentifier(self, Identifier: int) -> None:
         """
         removes the element with the specified identifier.
@@ -46,4 +47,6 @@ class XIdentifierContainer(XIdentifierReplace_4ac10fe2):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

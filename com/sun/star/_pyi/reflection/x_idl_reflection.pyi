@@ -39,10 +39,13 @@ class XIdlReflection(XInterface_8f010a43):
         
         You specify the type by its name. If the given type name can not be reflected, then a null-reference is returned.
         """
+        ...
     def getType(self, aObj: object) -> 'XIdlClass_d63a0c9a':
         """
         Obtaining a reflection interface for an object.
         
         This method takes the type of the object the any contains into account. If the any contains no object, then a null-reference is returned.
         """
+        ...
+
 

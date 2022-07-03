@@ -37,5 +37,6 @@ class ConversionDictionary(XConversionDictionary_a04e1209, XConversionPropertyTy
     See Also:
         `API ConversionDictionary <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1linguistic2_1_1ConversionDictionary.html>`_
     """
+    ...
 
 

@@ -40,16 +40,21 @@ class XInterfaceMethodTypeDescription(XInterfaceMemberTypeDescription_52ea159a):
         """
         Returns declared exceptions that may occur upon invocations of the method.
         """
+        ...
     def getParameters(self) -> 'typing.Tuple[XMethodParameter_3b120f8d, ...]':
         """
         Returns all parameters of the method in order of IDL declaration.
         """
+        ...
     def getReturnType(self) -> 'XTypeDescription_3c210fb1':
         """
         Returns the method's return type.
         """
+        ...
     def isOneway(self) -> bool:
         """
         Returns true, if this method is declared oneway.
         """
+        ...
+
 

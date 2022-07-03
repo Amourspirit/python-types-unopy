@@ -47,6 +47,7 @@ class ParseResult(object):
             ContFlags (int, optional): ContFlags value.
             DequotedNameOrString (str, optional): DequotedNameOrString value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class ParseResult(object):
         """
         Count of ignored leading whitespace, in UTF-16 code units, not Unicode code points.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class ParseResult(object):
         """
         UTF-16 code unit index of first unprocessed character.
         """
+        ...
 
 
     @property
@@ -68,6 +71,7 @@ class ParseResult(object):
         """
         Number of code points (not UTF-16 code units) of the parsed token, not including leading whitespace.
         """
+        ...
 
 
     @property
@@ -75,6 +79,7 @@ class ParseResult(object):
         """
         Value of token in case of numeric.
         """
+        ...
 
 
     @property
@@ -82,6 +87,7 @@ class ParseResult(object):
         """
         KParseType token type like KParseType.IDENTNAME.
         """
+        ...
 
 
     @property
@@ -91,6 +97,7 @@ class ParseResult(object):
         
         If TokenType is a KParseType.SINGLE_QUOTE_NAME or a KParseType.DOUBLE_QUOTE_STRING the first character is the first character inside the quotes, not the quote itself.
         """
+        ...
 
 
     @property
@@ -98,6 +105,7 @@ class ParseResult(object):
         """
         KParseTokens flags of remaining characters of actual token matched.
         """
+        ...
 
 
     @property
@@ -105,5 +113,6 @@ class ParseResult(object):
         """
         If a quoted name or string is encountered the dequoted result goes here.
         """
+        ...
 
 

@@ -29,8 +29,7 @@ class TypeDescriptionManager(XHierarchicalNameAccess_9e2611b5, XSet_90c40a4f, XC
 
     This service manages type descriptions and acts as a central access point to every type description.
     
-    It delegates calls for demanded types to subsequent com.sun.star.reflection.TypeDescriptionProviders and may cache type descriptions.
-    Using cppuhelper's bootstrapping routines bootstrapping an initial component context, there is a singleton accessible via key \"/singletons/com.sun.star.reflection.theTypeDescriptionManager\". This singleton object is hooked into the C UNO runtime typelib and lives until the context is shut down.
+    It delegates calls for demanded types to subsequent com.sun.star.reflection.TypeDescriptionProviders and may cache type descriptions.Using cppuhelper's bootstrapping routines bootstrapping an initial component context, there is a singleton accessible via key \"/singletons/com.sun.star.reflection.theTypeDescriptionManager\". This singleton object is hooked into the C UNO runtime typelib and lives until the context is shut down.
     
     **since**
     
@@ -39,5 +38,6 @@ class TypeDescriptionManager(XHierarchicalNameAccess_9e2611b5, XSet_90c40a4f, XC
     See Also:
         `API TypeDescriptionManager <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1reflection_1_1TypeDescriptionManager.html>`_
     """
+    ...
 
 

@@ -38,5 +38,6 @@ class FilledNetDiagram(ChartAxisXSupplier_a950e4d, ChartAxisYSupplier_a9e0e4e, D
     See Also:
         `API FilledNetDiagram <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart_1_1FilledNetDiagram.html>`_
     """
+    ...
 
 

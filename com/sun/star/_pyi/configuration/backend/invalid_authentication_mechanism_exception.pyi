@@ -48,6 +48,7 @@ class InvalidAuthenticationMechanismException(BackendSetupException_68ae15de):
             Context (XInterface, optional): Context value.
             BackendException (object, optional): BackendException value.
         """
+        ...
 
 __all__ = ['InvalidAuthenticationMechanismException']
 

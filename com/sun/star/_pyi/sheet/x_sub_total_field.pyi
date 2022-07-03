@@ -37,16 +37,21 @@ class XSubTotalField(XInterface_8f010a43):
         """
         returns the column by which entries are grouped.
         """
+        ...
     def getSubTotalColumns(self) -> 'typing.Tuple[SubTotalColumn_d5760cbd, ...]':
         """
         returns the definitions of which columns should have subtotals added to them.
         """
+        ...
     def setGroupColumn(self, nGroupColumn: int) -> None:
         """
         sets the column by which entries are grouped.
         """
+        ...
     def setSubTotalColumns(self, aSubTotalColumns: 'typing.Tuple[SubTotalColumn_d5760cbd, ...]') -> None:
         """
         sets the definitions of which columns should have subtotals added to them.
         """
+        ...
+
 

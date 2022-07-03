@@ -55,11 +55,13 @@ class DocumentPasswordRequest2(DocumentPasswordRequest_4bb71036):
             Name (str, optional): Name value.
             IsRequestPasswordToModify (bool, optional): IsRequestPasswordToModify value.
         """
+        ...
     @property
     def IsRequestPasswordToModify(self) -> bool:
         """
         specifies if the requested password is for opening a document or for modifying it.
         """
+        ...
 
 
 __all__ = ['DocumentPasswordRequest2']

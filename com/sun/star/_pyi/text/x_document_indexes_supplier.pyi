@@ -38,4 +38,6 @@ class XDocumentIndexesSupplier(XInterface_8f010a43):
     def getDocumentIndexes(self) -> 'XIndexAccess_f0910d6d':
         """
         """
+        ...
+
 

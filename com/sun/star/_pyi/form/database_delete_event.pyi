@@ -49,6 +49,7 @@ class DatabaseDeleteEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Bookmarks (typing.Tuple[object, ...], optional): Bookmarks value.
         """
+        ...
 
 
     @property

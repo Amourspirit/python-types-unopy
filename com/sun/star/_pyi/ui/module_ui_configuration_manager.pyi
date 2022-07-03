@@ -48,5 +48,6 @@ class ModuleUIConfigurationManager(XModuleUIConfigurationManager2_98c61187):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
 
 

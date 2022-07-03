@@ -50,6 +50,7 @@ class FillBitmap(object):
             aSize (Size, optional): aSize value.
             aBitmapMode (BitmapMode, optional): aBitmapMode value.
         """
+        ...
 
 
     @property
@@ -59,6 +60,7 @@ class FillBitmap(object):
         
         This may be an internal URL of the graphics manager.
         """
+        ...
 
 
     @property
@@ -68,6 +70,7 @@ class FillBitmap(object):
         
         It is given in percent in relation to the width of the bitmap.
         """
+        ...
 
 
     @property
@@ -75,6 +78,7 @@ class FillBitmap(object):
         """
         Every second line (X) / row (Y) of tiles is moved the given percent of the width of the bitmap.
         """
+        ...
 
 
     @property
@@ -82,6 +86,7 @@ class FillBitmap(object):
         """
         The RectanglePoint specifies the position inside of the bitmap to use as the top left position for rendering.
         """
+        ...
 
 
     @property
@@ -91,6 +96,7 @@ class FillBitmap(object):
         
         If this is TRUE, the properties SizeX and SizeY contain the size of the tile in percent of the size of the original bitmap. If this is FALSE, the size of the tile is specified with 1/100th mm.
         """
+        ...
 
 
     @property
@@ -100,6 +106,7 @@ class FillBitmap(object):
         
         Depending on the property LogicalSize, this is either relative or absolute.
         """
+        ...
 
 
     @property
@@ -109,5 +116,6 @@ class FillBitmap(object):
         
         It may be repeated, stretched or displayed with blank space around it.
         """
+        ...
 
 

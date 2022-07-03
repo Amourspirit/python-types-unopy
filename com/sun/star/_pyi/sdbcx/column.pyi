@@ -35,51 +35,61 @@ class Column(XPropertySet_bc180bfa, XDataDescriptorFactory_46170fe5):
         """
         keeps a default value for a column, is provided as string.
         """
+        ...
     @property
     def Description(self) -> str:
         """
         keeps a description of the object.
         """
+        ...
     @property
     def IsAutoIncrement(self) -> bool:
         """
         indicates whether the column is automatically numbered, thus read-only.
         """
+        ...
     @property
     def IsCurrency(self) -> bool:
         """
         indicates whether the column is a cash value.
         """
+        ...
     @property
     def IsNullable(self) -> int:
         """
         indicates the nullability of values in the designated column.
         """
+        ...
     @property
     def IsRowVersion(self) -> bool:
         """
         indicates that the column contains some kind of time or date stamp used to track updates.
         """
+        ...
     @property
     def Name(self) -> str:
         """
         is the name of the column.
         """
+        ...
     @property
     def Precision(self) -> int:
         """
         gets a column's number of decimal digits.
         """
+        ...
     @property
     def Scale(self) -> int:
         """
         gets a column's number of digits to right of the decimal point.
         """
+        ...
     @property
     def Type(self) -> int:
         """
         is the com.sun.star.sdbc.DataType of the column.
         """
+        ...
     @property
     def TypeName(self) -> str:
         """
@@ -87,5 +97,6 @@ class Column(XPropertySet_bc180bfa, XDataDescriptorFactory_46170fe5):
         
         If the column type is a user-defined type, then a fully-qualified type name is returned.  Note:  May be empty.
         """
+        ...
 
 

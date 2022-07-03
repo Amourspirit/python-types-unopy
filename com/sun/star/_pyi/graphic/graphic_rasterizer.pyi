@@ -29,5 +29,6 @@ class GraphicRasterizer(XGraphicRasterizer_29080f27):
     See Also:
         `API GraphicRasterizer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1graphic_1_1GraphicRasterizer.html>`_
     """
+    ...
 
 

@@ -40,16 +40,21 @@ class XWindowListener(XEventListener_c7230c4a):
         """
         is invoked when the window has been hidden.
         """
+        ...
     def windowMoved(self, e: 'WindowEvent_9a2b0ace') -> None:
         """
         is invoked when the window has been moved.
         """
+        ...
     def windowResized(self, e: 'WindowEvent_9a2b0ace') -> None:
         """
         is invoked when the window has been resized.
         """
+        ...
     def windowShown(self, e: 'EventObject_a3d70b03') -> None:
         """
         is invoked when the window has been shown.
         """
+        ...
+
 

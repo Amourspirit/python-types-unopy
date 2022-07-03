@@ -33,7 +33,10 @@ class XElementAccess(XInterface_8f010a43):
     def getElementType(self) -> object:
         """
         """
+        ...
     def hasElements(self) -> bool:
         """
         """
+        ...
+
 

@@ -41,19 +41,26 @@ class XScriptTypeDetector(XInterface_8f010a43):
     def beginOfCTLScriptType(self, aText: str, nPos: int) -> int:
         """
         """
+        ...
     def beginOfScriptDirection(self, aText: str, nPos: int, nScriptDirection: int) -> int:
         """
         """
+        ...
     def endOfCTLScriptType(self, aText: str, nPos: int) -> int:
         """
         """
+        ...
     def endOfScriptDirection(self, aText: str, nPos: int, nScriptDirection: int) -> int:
         """
         """
+        ...
     def getCTLScriptType(self, aText: str, nPos: int) -> int:
         """
         """
+        ...
     def getScriptDirection(self, aText: str, nPos: int, nDefaultScriptDirection: int) -> int:
         """
         """
+        ...
+
 

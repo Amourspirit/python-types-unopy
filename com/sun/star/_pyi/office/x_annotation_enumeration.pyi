@@ -37,10 +37,13 @@ class XAnnotationEnumeration(ABC):
         """
         tests whether this enumeration contains more elements.
         """
+        ...
     def nextElement(self) -> 'XAnnotation_bb8f0be7':
         """
 
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

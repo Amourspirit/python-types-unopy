@@ -35,5 +35,6 @@ class Bridge(XBridge_8e4e0a1a, XComponent_98dc0ab5, XInitialization_d46c0cca):
     See Also:
         `API Bridge <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1bridge_1_1Bridge.html>`_
     """
+    ...
 
 

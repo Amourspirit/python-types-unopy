@@ -48,6 +48,7 @@ class ChartDataRow(object):
             Points (typing.Tuple[typing.Tuple[ChartDataValue, ...], ...], optional): Points value.
             Name (str, optional): Name value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class ChartDataRow(object):
         """
         The points contained in this data row.
         """
+        ...
 
 
     @property
@@ -62,5 +64,6 @@ class ChartDataRow(object):
         """
         The name of the data row.
         """
+        ...
 
 

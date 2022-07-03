@@ -44,6 +44,7 @@ class TabStop(object):
             DecimalChar (str, optional): DecimalChar value.
             FillChar (str, optional): FillChar value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class TabStop(object):
         """
         This field specifies the position of the tabulator in relation to the left border.
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class TabStop(object):
         """
         This field specifies the alignment of the text range before the tabulator.
         """
+        ...
 
 
     @property
@@ -65,6 +68,7 @@ class TabStop(object):
         """
         This field specifies which delimiter is used for the decimal.
         """
+        ...
 
 
     @property
@@ -72,5 +76,6 @@ class TabStop(object):
         """
         This field specifies the character that is used to fill up the space between the text in the text range and the tabulators.
         """
+        ...
 
 

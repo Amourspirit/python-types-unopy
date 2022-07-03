@@ -47,4 +47,6 @@ class XSmtpService(XMailService_ae610b57):
             com.sun.star.mail.MailException: ``MailException``
             com.sun.star.datatransfer.UnsupportedFlavorException: ``UnsupportedFlavorException``
         """
+        ...
+
 

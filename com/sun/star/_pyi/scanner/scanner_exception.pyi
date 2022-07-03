@@ -45,11 +45,13 @@ class ScannerException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             Error (ScanError, optional): Error value.
         """
+        ...
     @property
     def Error(self) -> ScanError_b0d90b81:
         """
         Error: contains the specific reason for failure.
         """
+        ...
 
 
 __all__ = ['ScannerException']

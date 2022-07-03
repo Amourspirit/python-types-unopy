@@ -45,6 +45,7 @@ class LinguServiceEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             nEvent (int, optional): nEvent value.
         """
+        ...
 
 
     @property
@@ -54,5 +55,6 @@ class LinguServiceEvent(EventObject_a3d70b03):
         
         The value may be combined via logical OR from those values defined in com.sun.star.linguistic2.LinguServiceEventFlags
         """
+        ...
 
 

@@ -54,11 +54,13 @@ class InteractiveFileIOException(InteractiveIOException_27a60f07):
             Code (IOErrorCode, optional): Code value.
             FileName (str, optional): FileName value.
         """
+        ...
     @property
     def FileName(self) -> str:
         """
         The file url where the i/o error occurred.
         """
+        ...
 
 
 __all__ = ['InteractiveFileIOException']

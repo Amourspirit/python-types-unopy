@@ -34,24 +34,31 @@ class XParagraphCursor(XTextCursor_a60c0b48):
         """
         moves the cursor to the end of the current paragraph.
         """
+        ...
     def gotoNextParagraph(self, bExpand: bool) -> bool:
         """
         moves the cursor to the next paragraph.
         """
+        ...
     def gotoPreviousParagraph(self, bExpand: bool) -> bool:
         """
         moves the cursor to the previous paragraph.
         """
+        ...
     def gotoStartOfParagraph(self, bExpand: bool) -> bool:
         """
         moves the cursor to the start of the current paragraph.
         """
+        ...
     def isEndOfParagraph(self) -> bool:
         """
         determines if the cursor is positioned at the end of a paragraph.
         """
+        ...
     def isStartOfParagraph(self) -> bool:
         """
         determines if the cursor is positioned at the start of a paragraph.
         """
+        ...
+
 

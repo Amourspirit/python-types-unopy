@@ -51,6 +51,7 @@ class TableSortField(object):
             CollatorLocale (Locale, optional): CollatorLocale value.
             CollatorAlgorithm (str, optional): CollatorAlgorithm value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class TableSortField(object):
         """
         index of the row or column in the table to be sorted; 0-based.
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class TableSortField(object):
         """
         TRUE if data are sorted in ascending order, FALSE if in descending order.
         """
+        ...
 
 
     @property
@@ -72,6 +75,7 @@ class TableSortField(object):
         """
         specifies if the case of letters is important when comparing entries.
         """
+        ...
 
 
     @property
@@ -81,6 +85,7 @@ class TableSortField(object):
         
         If the value is com.sun.star.table.TableSortFieldType.AUTOMATIC the algorithm used for sorting is application specific. Especially it may or may not use the values given by \"CollatorLocale\" and \"CollatorAlgorithm\".
         """
+        ...
 
 
     @property
@@ -90,6 +95,7 @@ class TableSortField(object):
         
         This property will not be used when the \"FieldType\" is com.sun.star.table.TableSortFieldType.NUMERIC
         """
+        ...
 
 
     @property
@@ -99,5 +105,6 @@ class TableSortField(object):
         
         This property will not be used when the \"FieldType\" is com.sun.star.table.TableSortFieldType.NUMERIC
         """
+        ...
 
 

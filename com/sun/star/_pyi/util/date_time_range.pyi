@@ -58,6 +58,7 @@ class DateTimeRange(object):
             EndYear (int, optional): EndYear value.
             IsUTC (bool, optional): IsUTC value.
         """
+        ...
 
 
     @property
@@ -65,6 +66,7 @@ class DateTimeRange(object):
         """
         contains the start nanoseconds (0 - 999 999 999) for the range.
         """
+        ...
 
 
     @property
@@ -72,6 +74,7 @@ class DateTimeRange(object):
         """
         contains the start seconds (0-59) for the range.
         """
+        ...
 
 
     @property
@@ -79,6 +82,7 @@ class DateTimeRange(object):
         """
         contains the start minutes (0-59) for the range.
         """
+        ...
 
 
     @property
@@ -86,6 +90,7 @@ class DateTimeRange(object):
         """
         contains the start hour (0-23) for the range.
         """
+        ...
 
 
     @property
@@ -93,6 +98,7 @@ class DateTimeRange(object):
         """
         contains the start day of month (1-31 or 0 for a void date) for the range.
         """
+        ...
 
 
     @property
@@ -100,6 +106,7 @@ class DateTimeRange(object):
         """
         contains the start month of year (1-12 or 0 for a void date) for the range.
         """
+        ...
 
 
     @property
@@ -107,6 +114,7 @@ class DateTimeRange(object):
         """
         contains the start year for the range.
         """
+        ...
 
 
     @property
@@ -114,6 +122,7 @@ class DateTimeRange(object):
         """
         contains the end nanoseconds (0 - 999 999 999) for the range.
         """
+        ...
 
 
     @property
@@ -121,6 +130,7 @@ class DateTimeRange(object):
         """
         contains the end seconds (0-59) for the range.
         """
+        ...
 
 
     @property
@@ -128,6 +138,7 @@ class DateTimeRange(object):
         """
         contains the end minutes (0-59) for the range.
         """
+        ...
 
 
     @property
@@ -135,6 +146,7 @@ class DateTimeRange(object):
         """
         contains the end hour (0-23) for the range.
         """
+        ...
 
 
     @property
@@ -142,6 +154,7 @@ class DateTimeRange(object):
         """
         contains the end day of month (1-31 or 0 for a void date) for the range.
         """
+        ...
 
 
     @property
@@ -149,6 +162,7 @@ class DateTimeRange(object):
         """
         contains the end month of year (1-12 or 0 for a void date) for the range.
         """
+        ...
 
 
     @property
@@ -156,6 +170,7 @@ class DateTimeRange(object):
         """
         contains the end year for the range.
         """
+        ...
 
 
     @property
@@ -167,5 +182,6 @@ class DateTimeRange(object):
         
             LibreOffice 4.1
         """
+        ...
 
 

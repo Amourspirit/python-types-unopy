@@ -59,6 +59,7 @@ class AffineMatrix2D(object):
             m11 (float, optional): m11 value.
             m12 (float, optional): m12 value.
         """
+        ...
 
 
     @property
@@ -66,6 +67,7 @@ class AffineMatrix2D(object):
         """
         The top, left matrix entry.
         """
+        ...
 
 
     @property
@@ -73,6 +75,7 @@ class AffineMatrix2D(object):
         """
         The top, middle matrix entry.
         """
+        ...
 
 
     @property
@@ -80,6 +83,7 @@ class AffineMatrix2D(object):
         """
         The top, right matrix entry.
         """
+        ...
 
 
     @property
@@ -87,6 +91,7 @@ class AffineMatrix2D(object):
         """
         The bottom, left matrix entry.
         """
+        ...
 
 
     @property
@@ -94,6 +99,7 @@ class AffineMatrix2D(object):
         """
         The bottom, middle matrix entry.
         """
+        ...
 
 
     @property
@@ -101,5 +107,6 @@ class AffineMatrix2D(object):
         """
         The bottom, right matrix entry.
         """
+        ...
 
 

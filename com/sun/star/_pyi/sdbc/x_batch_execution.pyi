@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.sdbc
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XBatchExecution(XInterface_8f010a43):
@@ -38,6 +38,7 @@ class XBatchExecution(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def clearBatch(self) -> None:
         """
         makes the set of commands in the current batch empty.
@@ -45,11 +46,14 @@ class XBatchExecution(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
-    def executeBatch(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def executeBatch(self) -> uno.ByteSequence:
         """
         submits a batch of commands to the database for execution.
 
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

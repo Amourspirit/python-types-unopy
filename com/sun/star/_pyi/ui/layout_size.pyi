@@ -44,6 +44,7 @@ class LayoutSize(object):
             Maximum (int, optional): Maximum value.
             Preferred (int, optional): Preferred value.
         """
+        ...
 
 
     @property

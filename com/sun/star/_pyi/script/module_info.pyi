@@ -41,6 +41,7 @@ class ModuleInfo(object):
             ModuleObject (XInterface, optional): ModuleObject value.
             ModuleType (int, optional): ModuleType value.
         """
+        ...
 
 
     @property

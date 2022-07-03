@@ -29,6 +29,7 @@ Enum
 See Also:
     `API ContentCreationError <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb.html#aa2e437022c4d519cf5488a06e5e81ef4>`_
 """
+typeName: str = 'com.sun.star.ucb.ContentCreationError'
 
 CONTENT_CREATION_FAILED: 'uno.Enum'
 """

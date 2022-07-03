@@ -41,6 +41,7 @@ class TablePageBreakData(object):
             Position (int, optional): Position value.
             ManualBreak (bool, optional): ManualBreak value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class TablePageBreakData(object):
         """
         the position (column or row index) of the page break.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class TablePageBreakData(object):
         """
         is TRUE for a manual page break, FALSE for an automatic one.
         """
+        ...
 
 

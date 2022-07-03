@@ -37,22 +37,27 @@ class XURLTransformer(XInterface_8f010a43):
         """
         assembles the parts of the URL specified by aURL and stores it into URL.Complete
         """
+        ...
     def getPresentation(self, aURL: 'URL_57ad07b9', bWithPassword: bool) -> str:
         """
         returns a representation of the URL for UI purposes only
         
         Sometimes it can be useful to show a URL on an user interface in a more \"human readable\" form. Such URL can't be used on any API call, but make it easier for the user to understand it.
         """
+        ...
     def parseSmart(self, aURL: object, sSmartProtocol: str) -> bool:
         """
         parses the string in URL.Complete, which may contain a syntactically complete URL or is specified by the provided protocol
         
         The implementation can use smart functions to correct or interpret URL.Complete if it is not a syntactically complete URL. The parts of the URL are stored in the other fields of aURL.
         """
+        ...
     def parseStrict(self, aURL: object) -> bool:
         """
         parses the string in URL.Complete which should contain a syntactically complete URL.
         
         The implementation is allowed to correct minor failures in URL.Complete if the meaning of the URL remain unchanged. Parts of the URL are stored in the other fields of aURL.
         """
+        ...
+
 

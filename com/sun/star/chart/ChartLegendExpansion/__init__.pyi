@@ -29,6 +29,7 @@ Enum
 See Also:
     `API ChartLegendExpansion <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart.html#ab1908f844354e32092fdec03c1b9b513>`_
 """
+typeName: str = 'com.sun.star.chart.ChartLegendExpansion'
 
 BALANCED: 'uno.Enum'
 """

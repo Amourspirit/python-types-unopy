@@ -35,14 +35,18 @@ class XServiceInfo(XInterface_8f010a43):
         """
         Provides the implementation name of the service implementation.
         """
+        ...
     def getSupportedServiceNames(self) -> 'typing.Tuple[str, ...]':
         """
         Provides the supported service names of the implementation, including also indirect service names.
         """
+        ...
     def supportsService(self, ServiceName: str) -> bool:
         """
         Tests whether the specified service is supported, i.e.
         
         implemented by the implementation.
         """
+        ...
+
 

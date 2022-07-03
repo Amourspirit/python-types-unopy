@@ -43,8 +43,11 @@ class XConsolidatable(XInterface_8f010a43):
         """
         consolidates data from several cell ranges, using the settings in the passed descriptor.
         """
+        ...
     def createConsolidationDescriptor(self, bEmpty: bool) -> 'XConsolidationDescriptor_6b7610ee':
         """
         creates a consolidation descriptor.
         """
+        ...
+
 

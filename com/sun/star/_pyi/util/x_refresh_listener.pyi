@@ -37,4 +37,6 @@ class XRefreshListener(XEventListener_c7230c4a):
         """
         is called when the object data is refreshed.
         """
+        ...
+
 

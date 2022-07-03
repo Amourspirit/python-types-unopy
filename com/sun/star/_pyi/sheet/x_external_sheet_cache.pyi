@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.sheet
 from typing_extensions import Literal
-import typing
+import uno
 from abc import ABC
 
 class XExternalSheetCache(ABC):
@@ -35,7 +35,7 @@ class XExternalSheetCache(ABC):
     """
     __pyunointerface__: Literal['com.sun.star.sheet.XExternalSheetCache']
 
-    def getAllColumns(self, nRow: int) -> 'typing.Tuple[int, ...]':
+    def getAllColumns(self, nRow: int) -> uno.ByteSequence:
         """
         Given a row number, this method returns a list of all columns numbers that store cached cell values in that row.
         
@@ -44,12 +44,14 @@ class XExternalSheetCache(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def getAllRows(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getAllRows(self) -> uno.ByteSequence:
         """
         It returns a list of all row numbers where a cached cell or cells exist.
         
         The row numbers are sorted in ascending order.
         """
+        ...
     def getCellValue(self, nColumn: int, nRow: int) -> object:
         """
         It retrieves a cached value from a specified cell position.
@@ -59,6 +61,7 @@ class XExternalSheetCache(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setCellValue(self, nColumn: int, nRow: int, aValue: object) -> None:
         """
         It sets a cached value for a specified cell position.
@@ -68,6 +71,8 @@ class XExternalSheetCache(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
     @property
     def TokenIndex(self) -> int:
         """
@@ -77,5 +82,6 @@ class XExternalSheetCache(ABC):
         
         Each external sheet cache has a unique index value inside the ExternalDocLink instance.
         """
+        ...
 
 

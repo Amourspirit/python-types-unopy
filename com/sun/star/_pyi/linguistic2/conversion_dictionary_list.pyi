@@ -37,5 +37,6 @@ class ConversionDictionaryList(XConversionDictionaryList_ec3713a5):
     See Also:
         `API ConversionDictionaryList <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1linguistic2_1_1ConversionDictionaryList.html>`_
     """
+    ...
 
 

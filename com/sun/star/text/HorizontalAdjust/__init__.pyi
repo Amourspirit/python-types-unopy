@@ -29,6 +29,7 @@ Enum
 See Also:
     `API HorizontalAdjust <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text.html#a8105146481666b39ebbd63a934576b6c>`_
 """
+typeName: str = 'com.sun.star.text.HorizontalAdjust'
 
 CENTER: 'uno.Enum'
 """

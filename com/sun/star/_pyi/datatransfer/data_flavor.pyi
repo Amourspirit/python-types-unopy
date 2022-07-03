@@ -42,6 +42,7 @@ class DataFlavor(object):
             HumanPresentableName (str, optional): HumanPresentableName value.
             DataType (object, optional): DataType value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class DataFlavor(object):
         
         MimeType must conform to Rfc2045 and Rfc2046)
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class DataFlavor(object):
         """
         A human presentable name for the data format.
         """
+        ...
 
 
     @property
@@ -65,5 +68,6 @@ class DataFlavor(object):
         """
         The type of the object to transfer, for example, XOutputStream.
         """
+        ...
 
 

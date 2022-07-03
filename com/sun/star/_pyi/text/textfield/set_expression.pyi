@@ -38,6 +38,7 @@ class SetExpression(DependentTextField_fed90ded):
         """
         contains the textual content of the field.
         """
+        ...
     @property
     def CurrentPresentation(self) -> str:
         """
@@ -45,11 +46,13 @@ class SetExpression(DependentTextField_fed90ded):
         
         This property is especially useful for import/export purposes.
         """
+        ...
     @property
     def Hint(self) -> str:
         """
         contains an informational text that is displayed at the user interface if it's an input field.
         """
+        ...
     @property
     def IsFixedLanguage(self) -> bool:
         """
@@ -59,50 +62,60 @@ class SetExpression(DependentTextField_fed90ded):
         
             OOo 1.1.2
         """
+        ...
     @property
     def IsInput(self) -> bool:
         """
         determines whether this field is an input field.
         """
+        ...
     @property
     def IsShowFormula(self) -> bool:
         """
         determines whether the content is displayed or evaluated.
         """
+        ...
     @property
     def IsVisible(self) -> bool:
         """
         determines whether the field is visible.
         """
+        ...
     @property
     def NumberFormat(self) -> int:
         """
         this is the number format for this field.
         """
+        ...
     @property
     def NumberingType(self) -> int:
         """
         specifies the type of the numbering as com.sun.star.style.NumberingType
         """
+        ...
     @property
     def SequenceValue(self) -> int:
         """
         contains the sequence value when this field is used as sequence field.
         """
+        ...
     @property
     def SubType(self) -> int:
         """
         determines the type of the variable as described in com.sun.star.text.SetVariableType
         """
+        ...
     @property
     def Value(self) -> float:
         """
         contains the numerical value of the field.
         """
+        ...
     @property
     def VariableName(self) -> str:
         """
         contains the name of the set expression field master this field is connected to.
         """
+        ...
 
 

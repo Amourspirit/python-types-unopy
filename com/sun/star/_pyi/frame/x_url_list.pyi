@@ -38,5 +38,6 @@ class XUrlList(XInterface_8f010a43):
     def List(self) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
 
 

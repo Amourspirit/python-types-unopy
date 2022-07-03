@@ -38,6 +38,7 @@ class XChartShape(XInterface_8f010a43):
         """
         the method corresponds to the identical methods of the interface com.sun.star.drawing.XShape
         """
+        ...
     def getPropertyValue(self, PropertyName: str) -> object:
         """
         the method corresponds to the identical methods of the interface com.sun.star.beans.XPropertySet
@@ -46,18 +47,22 @@ class XChartShape(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def getShapeType(self) -> str:
         """
         the method corresponds to the identical methods of the interface com.sun.star.drawing.XShape ??????????? deprecated
         """
+        ...
     def getSize(self) -> 'Size_576707ef':
         """
         the method corresponds to the identical methods of the interface com.sun.star.drawing.XShape
         """
+        ...
     def setPosition(self, aPosition: 'Point_5fb2085e') -> None:
         """
         the method corresponds to the identical methods of the interface com.sun.star.drawing.XShape
         """
+        ...
     def setPropertyValue(self, aPropertyName: str, aValue: object) -> None:
         """
         the method corresponds to the identical methods of the interface com.sun.star.beans.XPropertySet
@@ -68,6 +73,7 @@ class XChartShape(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def setSize(self, aSize: 'Size_576707ef') -> None:
         """
         the method corresponds to the identical methods of the interface com.sun.star.drawing.XShape
@@ -75,4 +81,6 @@ class XChartShape(XInterface_8f010a43):
         Raises:
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
         """
+        ...
+
 

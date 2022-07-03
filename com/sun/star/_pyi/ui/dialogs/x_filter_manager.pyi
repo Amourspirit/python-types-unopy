@@ -37,10 +37,12 @@ class XFilterManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getCurrentFilter(self) -> str:
         """
         Returns the currently selected filter.
         """
+        ...
     def setCurrentFilter(self, aTitle: str) -> None:
         """
         Sets the current filter.
@@ -48,4 +50,6 @@ class XFilterManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

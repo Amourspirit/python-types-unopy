@@ -48,6 +48,7 @@ class FormulaParser(PropertySet_b0e70ba2, XFormulaParser_d54d0cbc):
         
             OOo 3.1
         """
+        ...
     @property
     def OpCodeMap(self) -> 'typing.Tuple[FormulaOpCodeMapEntry_37da0f61, ...]':
         """
@@ -55,6 +56,7 @@ class FormulaParser(PropertySet_b0e70ba2, XFormulaParser_d54d0cbc):
         
         Names and symbols not defined here lead to a parser/print error.
         """
+        ...
     @property
     def CompileEnglish(self) -> bool:
         """
@@ -62,18 +64,22 @@ class FormulaParser(PropertySet_b0e70ba2, XFormulaParser_d54d0cbc):
         
         Note: When changing this, an already existing OpCodeMap needs to be recreated internally, so for performance reasons set this before setting the OpCodeMap.
         """
+        ...
     @property
     def FormulaConvention(self) -> int:
         """
         specifies which address reference style convention to use when parsing a formula string.
         """
+        ...
     @property
     def IgnoreLeadingSpaces(self) -> bool:
         """
         """
+        ...
     @property
     def ParameterSeparator(self) -> str:
         """
         """
+        ...
 
 

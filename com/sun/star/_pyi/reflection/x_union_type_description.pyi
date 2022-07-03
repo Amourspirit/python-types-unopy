@@ -39,24 +39,31 @@ class XUnionTypeDescription(XTypeDescription_3c210fb1):
         """
         Returns the default discriminant value.
         """
+        ...
     def getDefaultMemberType(self) -> 'XTypeDescription_3c210fb1':
         """
         Returns the type of the default value.
         """
+        ...
     def getDiscriminantType(self) -> 'XTypeDescription_3c210fb1':
         """
         Returns the (ordinal) discriminant type.
         """
+        ...
     def getDiscriminants(self) -> 'typing.Tuple[object, ...]':
         """
         Returns discriminants of all members in order of IDL declaration.
         """
+        ...
     def getMemberNames(self) -> 'typing.Tuple[str, ...]':
         """
         Returns names of all members in order of IDL declaration.
         """
+        ...
     def getMemberTypes(self) -> 'typing.Tuple[XTypeDescription_3c210fb1, ...]':
         """
         Returns types of all members in order of IDL declaration.
         """
+        ...
+
 

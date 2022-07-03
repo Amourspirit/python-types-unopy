@@ -43,11 +43,13 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
         """
         specifies the background color (RGB) of the control.
         """
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
     @property
     def BorderColor(self) -> int:
         """
@@ -59,36 +61,43 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether a control is enabled or disabled.
         """
+        ...
     @property
     def FontDescriptor(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font attributes of the text in the control.
         """
+        ...
     @property
     def FontEmphasisMark(self) -> int:
         """
         specifies the com.sun.star.text.FontEmphasis value of the text in the control.
         """
+        ...
     @property
     def FontRelief(self) -> int:
         """
         specifies the com.sun.star.text.FontRelief value of the text in the control.
         """
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the control.
         """
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the control.
         """
+        ...
     @property
     def HideInactiveSelection(self) -> bool:
         """
@@ -98,11 +107,13 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def Printable(self) -> bool:
         """
         specifies that the control will be printed with the document.
         """
+        ...
     @property
     def ReadOnly(self) -> bool:
         """
@@ -112,26 +123,31 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
         
             OOo 1.1.2
         """
+        ...
     @property
     def Tabstop(self) -> bool:
         """
         specifies that the control can be reached with the TAB key.
         """
+        ...
     @property
     def Text(self) -> str:
         """
         specifies the text displayed in the control.
         """
+        ...
     @property
     def TextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color (RGB) of the control.
         """
+        ...
     @property
     def TextLineColor(self) -> 'Color_68e908c5':
         """
         specifies the text line color (RGB) of the control.
         """
+        ...
     @property
     def VerticalAlign(self) -> 'VerticalAlignment_8d0e12':
         """
@@ -141,5 +157,6 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
         
             OOo 3.3
         """
+        ...
 
 

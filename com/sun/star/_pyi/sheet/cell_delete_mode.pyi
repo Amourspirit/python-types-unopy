@@ -32,6 +32,7 @@ class CellDeleteMode(Enum):
     See Also:
         `API CellDeleteMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html#af2bbbff47b7abe36f258e59b1351e422>`_
     """
+    typeName: str = 'com.sun.star.sheet.CellDeleteMode'
 
     COLUMNS: 'uno.Enum'
     """

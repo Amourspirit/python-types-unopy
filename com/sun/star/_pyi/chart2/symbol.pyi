@@ -50,6 +50,7 @@ class Symbol(object):
             BorderColor (int, optional): BorderColor value.
             FillColor (int, optional): FillColor value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class Symbol(object):
         """
         determines which of the following members determines the appearance of the symbol.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class Symbol(object):
         """
         The given polygon is used as symbol.
         """
+        ...
 
 
     @property
@@ -75,6 +78,7 @@ class Symbol(object):
         
         The default implementation for example currently uses 8 different standard symbols that are matched to the numbers 0 to 7.
         """
+        ...
 
 
     @property
@@ -82,6 +86,7 @@ class Symbol(object):
         """
         use this graphic as symbol
         """
+        ...
 
 
     @property
@@ -89,6 +94,7 @@ class Symbol(object):
         """
         The size of the symbol in 100th of a mm.
         """
+        ...
 
 
     @property
@@ -98,6 +104,7 @@ class Symbol(object):
         
         Only effective if Style is SymbolStyle.AUTO, SymbolStyle.STANDARD or SymbolStyle.POLYGON.
         """
+        ...
 
 
     @property
@@ -107,5 +114,6 @@ class Symbol(object):
         
         Only effective if Style is SymbolStyle.AUTO, SymbolStyle.STANDARD or SymbolStyle.POLYGON.
         """
+        ...
 
 

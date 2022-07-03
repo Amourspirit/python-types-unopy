@@ -40,34 +40,42 @@ class XDiagram(XInterface_8f010a43):
         """
         returns an XColorScheme that defines the default colors for data series (or data points) in the diagram.
         """
+        ...
     def getFloor(self) -> 'XPropertySet_bc180bfa':
         """
         returns the property set that determines the visual appearance of the floor if any.
         
         The floor is the bottom of a 3D diagram. For a 2D diagram NULL is returned.
         """
+        ...
     def getLegend(self) -> 'XLegend_8cce09f3':
         """
         returns the legend, which may represent data series and other information about a diagram in a separate box.
         """
+        ...
     def getWall(self) -> 'XPropertySet_bc180bfa':
         """
         returns the property set that determines the visual appearance of the wall.
         
         The wall is the area behind the union of all coordinate systems used in a diagram.
         """
+        ...
     def setDefaultColorScheme(self, xColorScheme: 'XColorScheme_c4be0bf8') -> None:
         """
         sets an XColorScheme that defines the default colors for data series (or data points) in the diagram.
         """
+        ...
     def setDiagramData(self, xDataSource: 'XDataSource_f6340d57', aArguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         sets new data to the diagram.
         
         For standard parameters that may be used, see the service StandardDiagramCreationParameters.
         """
+        ...
     def setLegend(self, xLegend: 'XLegend_8cce09f3') -> None:
         """
         sets a new legend.
         """
+        ...
+
 

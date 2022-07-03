@@ -46,20 +46,25 @@ class XMultiSelectionSupplier(XSelectionSupplier_fed20e15):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def clearSelection(self) -> None:
         """
         clears the selection of this XMultiSelectionSupplier.
         """
+        ...
     def createReverseSelectionEnumeration(self) -> 'XEnumeration_f2180daa':
         """
         """
+        ...
     def createSelectionEnumeration(self) -> 'XEnumeration_f2180daa':
         """
         """
+        ...
     def getSelectionCount(self) -> int:
         """
         returns the number of selected objects of this XMultiSelectionSupplier.
         """
+        ...
     def removeSelection(self, Selection: object) -> None:
         """
         remove the object or objects represented by Selection from the selection of this XMultiSelectionSupplier.
@@ -69,4 +74,6 @@ class XMultiSelectionSupplier(XSelectionSupplier_fed20e15):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

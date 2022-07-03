@@ -43,4 +43,6 @@ class XAlterView(ABC):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

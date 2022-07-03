@@ -50,6 +50,7 @@ class ActivationEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             ActiveSheet (XSpreadsheet, optional): ActiveSheet value.
         """
+        ...
 
 
     @property
@@ -57,5 +58,6 @@ class ActivationEvent(EventObject_a3d70b03):
         """
         specifies the new active Spreadsheet.
         """
+        ...
 
 

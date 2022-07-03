@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.script
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XLibraryAccess(XInterface_8f010a43):
@@ -37,34 +38,42 @@ class XLibraryAccess(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.script.XLibraryAccess']
 
-    def getFunctionCode(self, FunctionName: str) -> 'typing.Tuple[int, ...]':
+    def getFunctionCode(self, FunctionName: str) -> uno.ByteSequence:
         """
         Get the compiled code of a function.
         """
+        ...
     def getFunctionSource(self, aFunctionName: str) -> str:
         """
         get the source code of a function.
         """
-    def getModuleCode(self, aModuleName: str) -> 'typing.Tuple[int, ...]':
+        ...
+    def getModuleCode(self, aModuleName: str) -> uno.ByteSequence:
         """
         Get the whole compiled code of a module.
         """
+        ...
     def getModuleNames(self) -> 'typing.Tuple[str, ...]':
         """
         Return all module names which contain code.
         
         e.g., { \"UtilLibrary.ModuleDate\", \"UtilLibrary.Output\", ... }
         """
+        ...
     def getModuleSource(self, aModulName: str) -> str:
         """
         get the source code of a module.
         """
+        ...
     def isFunction(self, aFunctionName: str) -> bool:
         """
         returns TRUE, if the function is accessible through this library; otherwise it returns FALSE.
         """
+        ...
     def isValidPath(self, aPathName: str) -> bool:
         """
         returns TRUE if a fully qualified function name begins with this name.
         """
+        ...
+
 

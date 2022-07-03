@@ -34,5 +34,6 @@ class ImageControl(UnoControlImageControl_29c00f2b, XBoundControl_bba00bed):
     See Also:
         `API ImageControl <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1control_1_1ImageControl.html>`_
     """
+    ...
 
 

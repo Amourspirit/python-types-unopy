@@ -29,6 +29,7 @@ ENUM SnapObjectType
 See Also:
     `API SnapObjectType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#aac70ce37cdcc7a4bfcf79309db1a438b>`_
 """
+typeName: str = 'com.sun.star.drawing.SnapObjectType'
 
 HORIZONTAL: 'uno.Enum'
 """

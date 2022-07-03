@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.accessibility
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .x_accessible import XAccessible as XAccessible_1cbc0eb6
@@ -47,6 +48,7 @@ class XAccessibleTable(XInterface_8f010a43):
         """
         Returns the caption for the table.
         """
+        ...
     def getAccessibleCellAt(self, nRow: int, nColumn: int) -> 'XAccessible_1cbc0eb6':
         """
         Returns the XAccessible object at the specified row and column in the table.
@@ -56,6 +58,7 @@ class XAccessibleTable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getAccessibleColumn(self, nChildIndex: int) -> int:
         """
         Translate the given child index into the corresponding column index.
@@ -63,12 +66,14 @@ class XAccessibleTable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getAccessibleColumnCount(self) -> int:
         """
         Returns the number of used columns in the table.
         
         The implementation, however, may allow the access of columns beyond this number.
         """
+        ...
     def getAccessibleColumnDescription(self, nColumn: int) -> str:
         """
         Returns the description text of the specified column in the table.
@@ -76,6 +81,7 @@ class XAccessibleTable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getAccessibleColumnExtentAt(self, nRow: int, nColumn: int) -> int:
         """
         Returns the number of columns occupied by the Accessible at the specified row and column in the table.
@@ -85,12 +91,14 @@ class XAccessibleTable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getAccessibleColumnHeaders(self) -> 'XAccessibleTable':
         """
         Returns the column headers as an XAccessibleTable object.
         
         Content and size of the returned table are implementation dependent.
         """
+        ...
     def getAccessibleIndex(self, nRow: int, nColumn: int) -> int:
         """
         Returns the child index of the accessible object that spans the specified cell.
@@ -100,6 +108,7 @@ class XAccessibleTable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getAccessibleRow(self, nChildIndex: int) -> int:
         """
         Translate the given child index into the corresponding row index.
@@ -107,12 +116,14 @@ class XAccessibleTable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getAccessibleRowCount(self) -> int:
         """
         Returns the number of used rows in the table.
         
         The implementation, however, may allow the access of columns beyond this number.
         """
+        ...
     def getAccessibleRowDescription(self, nRow: int) -> str:
         """
         Returns the description text of the specified row in the table.
@@ -120,6 +131,7 @@ class XAccessibleTable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getAccessibleRowExtentAt(self, nRow: int, nColumn: int) -> int:
         """
         Returns the number of rows occupied by the Accessible at the specified row and column in the table.
@@ -129,24 +141,29 @@ class XAccessibleTable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getAccessibleRowHeaders(self) -> 'XAccessibleTable':
         """
         Returns the row headers as an XAccessibleTable object.
         
         Content and size of the returned table are implementation dependent.
         """
+        ...
     def getAccessibleSummary(self) -> 'XAccessible_1cbc0eb6':
         """
         Returns the summary description of the table.
         """
-    def getSelectedAccessibleColumns(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getSelectedAccessibleColumns(self) -> uno.ByteSequence:
         """
         Returns a list of the indices of completely selected columns in a table.
         """
-    def getSelectedAccessibleRows(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getSelectedAccessibleRows(self) -> uno.ByteSequence:
         """
         Returns a list of the indices of completely selected rows in a table.
         """
+        ...
     def isAccessibleColumnSelected(self, nColumn: int) -> bool:
         """
         Returns a boolean value indicating whether the specified column is completely selected.
@@ -154,6 +171,7 @@ class XAccessibleTable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def isAccessibleRowSelected(self, nRow: int) -> bool:
         """
         Returns a boolean value indicating whether the specified row is completely selected.
@@ -161,6 +179,7 @@ class XAccessibleTable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def isAccessibleSelected(self, nRow: int, nColumn: int) -> bool:
         """
         Returns a boolean value indicating whether the accessible at the specified row and column is selected.
@@ -168,4 +187,6 @@ class XAccessibleTable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

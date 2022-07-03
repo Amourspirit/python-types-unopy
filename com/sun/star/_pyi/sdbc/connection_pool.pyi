@@ -31,5 +31,6 @@ class ConnectionPool(XConnectionPool_d3710ca6):
     See Also:
         `API ConnectionPool <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdbc_1_1ConnectionPool.html>`_
     """
+    ...
 
 

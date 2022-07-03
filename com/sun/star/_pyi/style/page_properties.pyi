@@ -50,6 +50,7 @@ class PageProperties(ABC):
         """
         contains the background color of the page.
         """
+        ...
     @property
     def BackGraphic(self) -> 'XGraphic_a4da0afc':
         """
@@ -59,16 +60,19 @@ class PageProperties(ABC):
         
             LibreOffice 6.1
         """
+        ...
     @property
     def BackGraphicFilter(self) -> str:
         """
         contains the filter name of the background graphic.
         """
+        ...
     @property
     def BackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         determines the location of the background graphic.
         """
+        ...
     @property
     def BackGraphicURL(self) -> str:
         """
@@ -76,6 +80,7 @@ class PageProperties(ABC):
         
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the BackGraphic property.
         """
+        ...
     @property
     def BackTransparent(self) -> bool:
         """
@@ -83,6 +88,7 @@ class PageProperties(ABC):
         
         If this property is set to TRUE, PageStyle.BackColor will not be used.
         """
+        ...
     @property
     def BackgroundFullSize(self) -> bool:
         """
@@ -92,26 +98,31 @@ class PageProperties(ABC):
         
             LibreOffice 7.2
         """
+        ...
     @property
     def BorderDistance(self) -> int:
         """
         determines the distance of all borders of the page.
         """
+        ...
     @property
     def BottomBorder(self) -> 'BorderLine_a3f80af6':
         """
         determines the style of the bottom border line of the page.
         """
+        ...
     @property
     def BottomBorderDistance(self) -> int:
         """
         determines the bottom border distance of the page.
         """
+        ...
     @property
     def BottomMargin(self) -> int:
         """
         determines the bottom margin of the page.
         """
+        ...
     @property
     def FirstIsShared(self) -> bool:
         """
@@ -121,11 +132,13 @@ class PageProperties(ABC):
         
             LibreOffice 4.0
         """
+        ...
     @property
     def FooterBackColor(self) -> 'Color_68e908c5':
         """
         contains the color of the background of the footer.
         """
+        ...
     @property
     def FooterBackGraphic(self) -> 'XGraphic_a4da0afc':
         """
@@ -135,16 +148,19 @@ class PageProperties(ABC):
         
             LibreOffice 6.1
         """
+        ...
     @property
     def FooterBackGraphicFilter(self) -> str:
         """
         contains the filter name of the background graphic in the footer.
         """
+        ...
     @property
     def FooterBackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         determines the location of the background graphic in the footer.
         """
+        ...
     @property
     def FooterBackGraphicURL(self) -> str:
         """
@@ -152,116 +168,139 @@ class PageProperties(ABC):
         
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the FooterBackGraphic property.
         """
+        ...
     @property
     def FooterBackTransparent(self) -> bool:
         """
         determines if the background of the footer is transparent.
         """
+        ...
     @property
     def FooterBodyDistance(self) -> int:
         """
         determines the distance between the footer and the body text area.
         """
+        ...
     @property
     def FooterBorderDistance(self) -> int:
         """
         contains the distance of all borders of the footer.
         """
+        ...
     @property
     def FooterBottomBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the style of the bottom border line of the footer.
         """
+        ...
     @property
     def FooterBottomBorderDistance(self) -> int:
         """
         contains the bottom border distance of the footer.
         """
+        ...
     @property
     def FooterDynamicSpacing(self) -> bool:
         """
         determines whether to use dynamic spacing in footer or not.
         """
+        ...
     @property
     def FooterHeight(self) -> int:
         """
         determines the height of the footer.
         """
+        ...
     @property
     def FooterIsDynamicHeight(self) -> bool:
         """
         determines if the height of the footer depends on the content.
         """
+        ...
     @property
     def FooterIsOn(self) -> bool:
         """
         determines if a footer is used on the page.
         """
+        ...
     @property
     def FooterIsShared(self) -> bool:
         """
         determines if the footer content on left and right pages is the same.
         """
+        ...
     @property
     def FooterLeftBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the style of the left border line of the footer.
         """
+        ...
     @property
     def FooterLeftBorderDistance(self) -> int:
         """
         contains the left border distance of the footer.
         """
+        ...
     @property
     def FooterLeftMargin(self) -> int:
         """
         determines the left margin of the footer.
         """
+        ...
     @property
     def FooterRightBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the style of the right border line of the footer.
         """
+        ...
     @property
     def FooterRightBorderDistance(self) -> int:
         """
         contains the right border distance of the footer.
         """
+        ...
     @property
     def FooterRightMargin(self) -> int:
         """
         determines the right margin of the footer.
         """
+        ...
     @property
     def FooterShadowFormat(self) -> 'ShadowFormat_bb840bdf':
         """
         determines the shadow of the footer.
         """
+        ...
     @property
     def FooterText(self) -> 'XText_690408ca':
         """
         contains the interface to the text of the footer.
         """
+        ...
     @property
     def FooterTextLeft(self) -> 'XText_690408ca':
         """
         contains the interface to the text of the footer of a left page.
         """
+        ...
     @property
     def FooterTextRight(self) -> 'XText_690408ca':
         """
         contains the interface to the text of the footer of a right page.
         """
+        ...
     @property
     def FooterTopBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the style of the top border line of the footer.
         """
+        ...
     @property
     def FooterTopBorderDistance(self) -> int:
         """
         contains the top border distance of the footer.
         """
+        ...
     @property
     def FootnoteHeight(self) -> int:
         """
@@ -269,6 +308,7 @@ class PageProperties(ABC):
         
         If set to zero then the height of the current page is used as limit.
         """
+        ...
     @property
     def FootnoteLineAdjust(self) -> int:
         """
@@ -276,76 +316,91 @@ class PageProperties(ABC):
         
         com.sun.star.text.HorizontalAdjusts.
         """
+        ...
     @property
     def FootnoteLineColor(self) -> 'Color_68e908c5':
         """
         contains the color of the separator line between the text and the footnote area.
         """
+        ...
     @property
     def FootnoteLineDistance(self) -> int:
         """
         contains the distance between the footnote area and the separator line between the text and the footnote area.
         """
+        ...
     @property
     def FootnoteLineRelativeWidth(self) -> int:
         """
         contains the relative width of the separator line between the text and the footnote area.
         """
+        ...
     @property
     def FootnoteLineStyle(self) -> int:
         """
         contains the style of the separator line between the text and the footnote area.
         """
+        ...
     @property
     def FootnoteLineTextDistance(self) -> int:
         """
         contains the distance between the text and the separator line between the text and the footnote area.
         """
+        ...
     @property
     def FootnoteLineWeight(self) -> int:
         """
         contains the weight of the separator line between the text and the footnote area.
         """
+        ...
     @property
     def GridBaseHeight(self) -> int:
         """
         contains the height of the base text line inside the text grid
         """
+        ...
     @property
     def GridColor(self) -> 'Color_68e908c5':
         """
         contains the display color of the text grid
         """
+        ...
     @property
     def GridDisplay(self) -> bool:
         """
         determines whether the text grid lines are visible or not
         """
+        ...
     @property
     def GridLines(self) -> int:
         """
         contains the number of lines in the text grid
         """
+        ...
     @property
     def GridMode(self) -> int:
         """
         contains the mode of the text grid (none, lines, ...), as represented by com.sun.star.text.TextGridMode constants
         """
+        ...
     @property
     def GridPrint(self) -> bool:
         """
         determines whether the text grid lines are printed
         """
+        ...
     @property
     def GridRubyBelow(self) -> bool:
         """
         determines whether the text grid's ruby line is located below or above the base line
         """
+        ...
     @property
     def GridRubyHeight(self) -> int:
         """
         contains the height of the ruby text line inside the text grid
         """
+        ...
     @property
     def GutterMargin(self) -> int:
         """
@@ -355,11 +410,13 @@ class PageProperties(ABC):
         
             LibreOffice 7.2
         """
+        ...
     @property
     def HeaderBackColor(self) -> 'Color_68e908c5':
         """
         contains the color of the background of the header.
         """
+        ...
     @property
     def HeaderBackGraphic(self) -> 'XGraphic_a4da0afc':
         """
@@ -369,16 +426,19 @@ class PageProperties(ABC):
         
             LibreOffice 6.1
         """
+        ...
     @property
     def HeaderBackGraphicFilter(self) -> str:
         """
         contains the filter name of the background graphic of the header.
         """
+        ...
     @property
     def HeaderBackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         determines the location of the background graphic of the header.
         """
+        ...
     @property
     def HeaderBackGraphicURL(self) -> str:
         """
@@ -386,6 +446,7 @@ class PageProperties(ABC):
         
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the HeaderBackGraphic property.
         """
+        ...
     @property
     def HeaderBackTransparent(self) -> bool:
         """
@@ -393,176 +454,211 @@ class PageProperties(ABC):
         
         If this property is set to TRUE, PageStyle.HeaderBackColor will not be used.
         """
+        ...
     @property
     def HeaderBodyDistance(self) -> int:
         """
         determines the distance between the header and the body text area.
         """
+        ...
     @property
     def HeaderBorderDistance(self) -> int:
         """
         determines the distance of all borders of the header.
         """
+        ...
     @property
     def HeaderBottomBorder(self) -> 'BorderLine_a3f80af6':
         """
         determines the style of the bottom border line of the header.
         """
+        ...
     @property
     def HeaderBottomBorderDistance(self) -> int:
         """
         determines the bottom border distance of the header.
         """
+        ...
     @property
     def HeaderDynamicSpacing(self) -> bool:
         """
         determines whether to use dynamic spacing in header or not.
         """
+        ...
     @property
     def HeaderHeight(self) -> int:
         """
         contains the height of the header.
         """
+        ...
     @property
     def HeaderIsDynamicHeight(self) -> bool:
         """
         determines if the height of the header depends on the content.
         """
+        ...
     @property
     def HeaderIsOn(self) -> bool:
         """
         determines if a header is used on the page.
         """
+        ...
     @property
     def HeaderIsShared(self) -> bool:
         """
         determines if the header content on left and right pages is the same.
         """
+        ...
     @property
     def HeaderLeftBorder(self) -> 'BorderLine_a3f80af6':
         """
         determines the style of the left border line of the header.
         """
+        ...
     @property
     def HeaderLeftBorderDistance(self) -> int:
         """
         determines the left border distance of the header.
         """
+        ...
     @property
     def HeaderLeftMargin(self) -> int:
         """
         contains the left margin of the header.
         """
+        ...
     @property
     def HeaderRightBorder(self) -> 'BorderLine_a3f80af6':
         """
         determines the style of the right border line of the header.
         """
+        ...
     @property
     def HeaderRightBorderDistance(self) -> int:
         """
         determines the right border distance of the header.
         """
+        ...
     @property
     def HeaderRightMargin(self) -> int:
         """
         contains the right margin of the header.
         """
+        ...
     @property
     def HeaderShadowFormat(self) -> 'ShadowFormat_bb840bdf':
         """
         determines the shadow of the header.
         """
+        ...
     @property
     def HeaderText(self) -> 'XText_690408ca':
         """
         contains the interface to the text of the header.
         """
+        ...
     @property
     def HeaderTextLeft(self) -> 'XText_690408ca':
         """
         contains the interface to the text of the header of left pages.
         """
+        ...
     @property
     def HeaderTextRight(self) -> 'XText_690408ca':
         """
         contains the interface to the text of the header of right pages.
         """
+        ...
     @property
     def HeaderTopBorder(self) -> 'BorderLine_a3f80af6':
         """
         determines the style of the top border line of the header.
         """
+        ...
     @property
     def HeaderTopBorderDistance(self) -> int:
         """
         determines the top border distance of the header.
         """
+        ...
     @property
     def Height(self) -> int:
         """
         contains the height of the page.
         """
+        ...
     @property
     def IsLandscape(self) -> bool:
         """
         determines if the page format is landscape.
         """
+        ...
     @property
     def LeftBorder(self) -> 'BorderLine_a3f80af6':
         """
         determines the style of the left border line of the page.
         """
+        ...
     @property
     def LeftBorderDistance(self) -> int:
         """
         determines the left border distance of the page.
         """
+        ...
     @property
     def LeftMargin(self) -> int:
         """
         determines the left margin of the page.
         """
+        ...
     @property
     def NumberingType(self) -> int:
         """
         determines the default numbering type for this page.
         """
+        ...
     @property
     def PageStyleLayout(self) -> 'PageStyleLayout_e4070d45':
         """
         determines the layout of the page.
         """
+        ...
     @property
     def PrinterPaperTray(self) -> str:
         """
         contains the name of a paper tray of the selected printer.
         """
+        ...
     @property
     def RegisterModeActive(self) -> bool:
         """
         determines if the register mode is active on that page.
         """
+        ...
     @property
     def RegisterParagraphStyle(self) -> str:
         """
         contains the name of the paragraph style that is used as reference of the register mode.
         """
+        ...
     @property
     def RightBorder(self) -> 'BorderLine_a3f80af6':
         """
         determines the style of the right border line of the page.
         """
+        ...
     @property
     def RightBorderDistance(self) -> int:
         """
         determines the right border distance of the page.
         """
+        ...
     @property
     def RightMargin(self) -> int:
         """
         determines the right margin of the page.
         """
+        ...
     @property
     def RtlGutter(self) -> bool:
         """
@@ -572,36 +668,43 @@ class PageProperties(ABC):
         
             LibreOffice 7.2
         """
+        ...
     @property
     def ShadowFormat(self) -> 'ShadowFormat_bb840bdf':
         """
         determines the shadow of the page.
         """
+        ...
     @property
     def Size(self) -> 'Size_576707ef':
         """
         contains the paper size of the page.
         """
+        ...
     @property
     def TextColumns(self) -> 'XTextColumns_b17f0bab':
         """
         contains the column settings of the page.
         """
+        ...
     @property
     def TopBorder(self) -> 'BorderLine_a3f80af6':
         """
         determines the style of the top border line of the page.
         """
+        ...
     @property
     def TopBorderDistance(self) -> int:
         """
         determines the top border distance of the page.
         """
+        ...
     @property
     def TopMargin(self) -> int:
         """
         determines the top margin of the page.
         """
+        ...
     @property
     def UserDefinedAttributes(self) -> 'XNameContainer_cb90e47':
         """
@@ -609,15 +712,18 @@ class PageProperties(ABC):
         
         This com.sun.star.container.XNameContainer supports the service com.sun.star.xml.AttributeContainer.
         """
+        ...
     @property
     def Width(self) -> int:
         """
         contains the width of the page.
         """
+        ...
     @property
     def WritingMode(self) -> int:
         """
         contains the writing direction, as represented by the com.sun.star.text.WritingMode2 constants
         """
+        ...
 
 

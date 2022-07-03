@@ -39,14 +39,18 @@ class XFrames(XIndexAccess_f0910d6d):
         """
         appends the specified Frame to the list of sub-frames.
         """
+        ...
     def queryFrames(self, nSearchFlags: int) -> 'typing.Tuple[XFrame_7a570956, ...]':
         """
         provides access to the list of all currently existing frames inside this container and her sub frames
         """
+        ...
     def remove(self, xFrame: 'XFrame_7a570956') -> None:
         """
         removes the frame from its container.
         
         Note:
         """
+        ...
+
 

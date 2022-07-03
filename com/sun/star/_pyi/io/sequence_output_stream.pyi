@@ -29,5 +29,6 @@ class SequenceOutputStream(XSequenceOutputStream_bae0e6e):
     See Also:
         `API SequenceOutputStream <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1io_1_1SequenceOutputStream.html>`_
     """
+    ...
 
 

@@ -41,6 +41,7 @@ class AliasProgrammaticPair(object):
             Alias (str, optional): Alias value.
             ProgrammaticName (str, optional): ProgrammaticName value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class AliasProgrammaticPair(object):
         """
         determines the name which is registered as an alias for a programmatic name.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class AliasProgrammaticPair(object):
         """
         determines which programmatic name belongs to the alias.
         """
+        ...
 
 

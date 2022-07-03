@@ -41,8 +41,11 @@ class XMouseClickHandler(XEventListener_c7230c4a):
         """
         is invoked when a mouse button has been pressed on a window.
         """
+        ...
     def mouseReleased(self, e: 'MouseEvent_8f430a5f') -> bool:
         """
         is invoked when a mouse button has been released on a window.
         """
+        ...
+
 

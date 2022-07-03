@@ -40,5 +40,6 @@ class AdministrationProvider(XComponent_98dc0ab5, XMultiServiceFactory_191e0eb6)
     See Also:
         `API AdministrationProvider <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1AdministrationProvider.html>`_
     """
+    ...
 
 

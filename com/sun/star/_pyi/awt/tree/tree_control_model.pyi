@@ -40,6 +40,7 @@ class TreeControlModel(UnoControlModel_c8ce0c58):
         
         You can implement your own instance of XTreeDataModel or use the MutableTreeDataModel.
         """
+        ...
     @property
     def Editable(self) -> bool:
         """
@@ -47,6 +48,7 @@ class TreeControlModel(UnoControlModel_c8ce0c58):
         
         The default value is FALSE
         """
+        ...
     @property
     def InvokesStopNodeEditing(self) -> bool:
         """
@@ -56,6 +58,7 @@ class TreeControlModel(UnoControlModel_c8ce0c58):
         
         The default value is FALSE
         """
+        ...
     @property
     def RootDisplayed(self) -> bool:
         """
@@ -65,6 +68,7 @@ class TreeControlModel(UnoControlModel_c8ce0c58):
         
         The default value is TRUE
         """
+        ...
     @property
     def RowHeight(self) -> int:
         """
@@ -74,6 +78,7 @@ class TreeControlModel(UnoControlModel_c8ce0c58):
         
         The default value is 0
         """
+        ...
     @property
     def SelectionType(self) -> 'SelectionType_bd790c0b':
         """
@@ -81,6 +86,7 @@ class TreeControlModel(UnoControlModel_c8ce0c58):
         
         The default value is com.sun.star.view.SelectionType.NONE
         """
+        ...
     @property
     def ShowsHandles(self) -> bool:
         """
@@ -90,6 +96,7 @@ class TreeControlModel(UnoControlModel_c8ce0c58):
         
         The default value is TRUE
         """
+        ...
     @property
     def ShowsRootHandles(self) -> bool:
         """
@@ -97,5 +104,6 @@ class TreeControlModel(UnoControlModel_c8ce0c58):
         
         The default value is TRUE
         """
+        ...
 
 

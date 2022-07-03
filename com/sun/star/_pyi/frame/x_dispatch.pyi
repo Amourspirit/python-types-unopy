@@ -49,6 +49,7 @@ class XDispatch(XInterface_8f010a43):
         
         Note: Notifications can't be guaranteed! This will be a part of interface XNotifyingDispatch.
         """
+        ...
     def dispatch(self, URL: 'URL_57ad07b9', Arguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         dispatches (executes) a URL
@@ -61,8 +62,11 @@ class XDispatch(XInterface_8f010a43):
         
         some code for a click-handler (Java)
         """
+        ...
     def removeStatusListener(self, Control: 'XStatusListener_e2740d35', URL: 'URL_57ad07b9') -> None:
         """
         unregisters a listener from a control.
         """
+        ...
+
 

@@ -40,4 +40,6 @@ class XManifestReader(XInterface_8f010a43):
         """
         Supplies the XManifestReader with an XInputStream to read from, reads the data and returns it to the caller.
         """
+        ...
+
 

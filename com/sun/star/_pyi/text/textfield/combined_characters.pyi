@@ -34,5 +34,6 @@ class CombinedCharacters(TextField_90260a56):
         """
         contains the characters to be combined.
         """
+        ...
 
 

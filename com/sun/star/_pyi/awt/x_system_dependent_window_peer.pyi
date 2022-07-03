@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.awt
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XSystemDependentWindowPeer(XInterface_8f010a43):
@@ -31,13 +31,11 @@ class XSystemDependentWindowPeer(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.awt.XSystemDependentWindowPeer']
 
-    def getWindowHandle(self, ProcessId: 'typing.Tuple[int, ...]', SystemType: int) -> object:
+    def getWindowHandle(self, ProcessId: uno.ByteSequence, SystemType: int) -> object:
         """
         returns a system-specific window handle.
         
-        You must check the machine ID and the process ID.
-        WIN32: Returns an HWND if possible, otherwise 0.
-        WIN16: Returns an HWND if possible, otherwise 0.
+        You must check the machine ID and the process ID.WIN32: Returns an HWND if possible, otherwise 0.WIN16: Returns an HWND if possible, otherwise 0.
         
         JAVA: Returns a global reference to a java.awt.Component object provided from the JNI-API.
         
@@ -45,4 +43,6 @@ class XSystemDependentWindowPeer(XInterface_8f010a43):
         
         XWINDOW: Returns a structure SystemDependentXWindow or void if it is not reachable.
         """
+        ...
+
 

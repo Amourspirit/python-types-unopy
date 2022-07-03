@@ -37,12 +37,16 @@ class XContainerListener(XEventListener_c7230c4a):
         """
         is invoked when a container has inserted an element.
         """
+        ...
     def elementRemoved(self, Event: 'ContainerEvent_ea50e70') -> None:
         """
         is invoked when a container has removed an element.
         """
+        ...
     def elementReplaced(self, Event: 'ContainerEvent_ea50e70') -> None:
         """
         is invoked when a container has replaced an element.
         """
+        ...
+
 

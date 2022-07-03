@@ -43,6 +43,7 @@ class LockEntry(object):
             Scope (LockScope, optional): Scope value.
             Type (LockType, optional): Type value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class LockEntry(object):
         """
         defines the lock's scope.
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class LockEntry(object):
         """
         defines the type of the lock.
         """
+        ...
 
 

@@ -32,6 +32,7 @@ class TextContentAnchorType(Enum):
     See Also:
         `API TextContentAnchorType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text.html#a470b1caeda4ff15fee438c8ff9e3d834>`_
     """
+    typeName: str = 'com.sun.star.text.TextContentAnchorType'
 
     AS_CHARACTER: 'uno.Enum'
     """

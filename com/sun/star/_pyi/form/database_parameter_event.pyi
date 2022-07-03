@@ -44,6 +44,7 @@ class DatabaseParameterEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Parameters (XIndexAccess, optional): Parameters value.
         """
+        ...
 
 
     @property
@@ -55,5 +56,6 @@ class DatabaseParameterEvent(EventObject_a3d70b03):
         
         Every parameter object supports the com.sun.star.beans.XPropertySet interface, and at least the properties Name and Value
         """
+        ...
 
 

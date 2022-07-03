@@ -44,6 +44,7 @@ class ParamInfo(object):
             aMode (ParamMode, optional): aMode value.
             aType (XIdlClass, optional): aType value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class ParamInfo(object):
         """
         name of the parameter
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class ParamInfo(object):
         """
         parameter mode: in, out, inout
         """
+        ...
 
 
     @property
@@ -65,5 +68,6 @@ class ParamInfo(object):
         """
         formal type of the parameter
         """
+        ...
 
 

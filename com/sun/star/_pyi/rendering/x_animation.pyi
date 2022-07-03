@@ -47,6 +47,7 @@ class XAnimation(XInterface_8f010a43):
         
         This method returns the AnimationAttributes structure, which defines more closely how to play this animation.
         """
+        ...
     def render(self, canvas: 'XCanvas_b19b0b7a', viewState: 'ViewState_cab30c62', t: float) -> None:
         """
         Render the animation content at time t into the specified canvas.
@@ -58,4 +59,6 @@ class XAnimation(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

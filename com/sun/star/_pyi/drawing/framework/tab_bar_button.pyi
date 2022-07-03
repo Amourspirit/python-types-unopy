@@ -47,6 +47,7 @@ class TabBarButton(object):
             HelpText (str, optional): HelpText value.
             ResourceId (XResourceId, optional): ResourceId value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class TabBarButton(object):
         
         The label is expected to be localized.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class TabBarButton(object):
         """
         The localized help text that may be displayed in a tool tip.
         """
+        ...
 
 
     @property
@@ -72,5 +75,6 @@ class TabBarButton(object):
         
         For some methods of the XTabBar interface only this member is evaluated. That is because only this member is used to identify a tab bar button.
         """
+        ...
 
 

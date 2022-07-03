@@ -33,6 +33,7 @@ class RoadmapItem(ABC):
         """
         determines whether a control is enabled or disabled.
         """
+        ...
     @property
     def ID(self) -> int:
         """
@@ -40,18 +41,20 @@ class RoadmapItem(ABC):
         
         When the RoadmapItem is inserted into the Roadmap via \"insertByIndex\" the default value of the ID is the first available absolute digit that has not yet been assigned to other existing RoadmapItems.
         """
+        ...
     @property
     def Interactive(self) -> bool:
         """
-        When \"Interactive\" is true the RoadmapItem supports a certain \"HyperLabel
-        functionality\": Moving the mouse pointer over the RoadmapItem will change it to a Refhand and underline the Label for the time the mouse pointer resides over the RoadmapItem.
+        When \"Interactive\" is true the RoadmapItem supports a certain \"HyperLabelfunctionality\": Moving the mouse pointer over the RoadmapItem will change it to a Refhand and underline the Label for the time the mouse pointer resides over the RoadmapItem.
         
         Clicking with mouse pointer will then notify the Roadmap Container. The property Interactive\" is readonly because it is adapted from the container of the RoadmapItem.
         """
+        ...
     @property
     def Label(self) -> str:
         """
         The Label of the RoadmapItem does not include its Prefix that is automatically set after the following algorithm: (Index + 1) + \". \" + Label.
         """
+        ...
 
 

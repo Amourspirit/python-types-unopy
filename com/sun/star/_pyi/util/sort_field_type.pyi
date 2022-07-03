@@ -32,6 +32,7 @@ class SortFieldType(Enum):
     See Also:
         `API SortFieldType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1util.html#aa222808b6dd3437074e57760d8e15a83>`_
     """
+    typeName: str = 'com.sun.star.util.SortFieldType'
 
     ALPHANUMERIC: 'uno.Enum'
     """

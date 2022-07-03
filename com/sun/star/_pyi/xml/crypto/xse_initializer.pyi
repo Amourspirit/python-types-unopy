@@ -37,8 +37,11 @@ class XSEInitializer(XInterface_8f010a43):
         """
         Creates a security context.
         """
+        ...
     def freeSecurityContext(self, securityContext: 'XXMLSecurityContext_681010ae') -> None:
         """
         Frees a security context.
         """
+        ...
+
 

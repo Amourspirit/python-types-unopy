@@ -49,6 +49,7 @@ class Verb(object):
             VerbIsOnMenu (bool, optional): VerbIsOnMenu value.
             VerbIsConst (bool, optional): VerbIsConst value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class Verb(object):
         """
         specifies the Id of the command.
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class Verb(object):
         
         The name is localized.
         """
+        ...
 
 
     @property
@@ -72,6 +75,7 @@ class Verb(object):
         """
         specifies if the command should be visible in a menu.
         """
+        ...
 
 
     @property
@@ -79,5 +83,6 @@ class Verb(object):
         """
         specifies if the command is available for a constant object.
         """
+        ...
 
 

@@ -41,6 +41,7 @@ class Size(object):
             Width (int, optional): Width value.
             Height (int, optional): Height value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class Size(object):
         """
         specifies the width.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class Size(object):
         """
         specifies the height.
         """
+        ...
 
 

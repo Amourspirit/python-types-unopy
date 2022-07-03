@@ -41,12 +41,16 @@ class XVclContainerPeer(XInterface_8f010a43):
         """
         enable as dialog control.
         """
+        ...
     def setGroup(self, Windows: 'typing.Tuple[XWindow_713b0924, ...]') -> None:
         """
         sets a group.
         """
+        ...
     def setTabOrder(self, WindowOrder: 'typing.Tuple[XWindow_713b0924, ...]', Tabs: 'typing.Tuple[object, ...]', GroupControl: bool) -> None:
         """
         sets the tab order.
         """
+        ...
+
 

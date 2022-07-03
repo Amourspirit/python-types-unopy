@@ -45,6 +45,7 @@ class ListEntryEvent(EventObject_a3d70b03):
             Position (int, optional): Position value.
             Count (int, optional): Count value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class ListEntryEvent(EventObject_a3d70b03):
         
         The concrete semantics of the value depends on the concrete event being notified.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class ListEntryEvent(EventObject_a3d70b03):
         
         The concrete semantics of the value depends on the concrete event being notified.
         """
+        ...
 
 
     @property
@@ -70,5 +73,6 @@ class ListEntryEvent(EventObject_a3d70b03):
         """
         denotes the number of changed entries, in case a change of an entry range is being notified.
         """
+        ...
 
 

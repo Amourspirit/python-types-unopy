@@ -38,5 +38,6 @@ class SpinButton(UnoControlSpinButtonModel_5b16106e, FormControlModel_e2990d22, 
         
         This value is used when the control is initially displayed, and for resetting it.
         """
+        ...
 
 

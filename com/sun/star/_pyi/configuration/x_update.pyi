@@ -33,13 +33,18 @@ class XUpdate(ABC):
     def insertExtensionXcsFile(self, shared: bool, fileUri: str) -> None:
         """
         """
+        ...
     def insertExtensionXcuFile(self, shared: bool, fileUri: str) -> None:
         """
         """
+        ...
     def insertModificationXcuFile(self, fileUri: str, includedPaths: 'typing.Tuple[str, ...]', excludedPaths: 'typing.Tuple[str, ...]') -> None:
         """
         """
+        ...
     def removeExtensionXcuFile(self, fileUri: str) -> None:
         """
         """
+        ...
+
 

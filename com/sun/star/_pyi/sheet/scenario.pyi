@@ -37,40 +37,48 @@ class Scenario(XPropertySet_bc180bfa, XNamed_a6520b08, XScenario_99ac0aad, XScen
         """
         specifies the color of the border of the scenario.
         """
+        ...
     @property
     def CopyBack(self) -> bool:
         """
         specifies if the data should be copied back into the scenario.
         """
+        ...
     @property
     def CopyFormulas(self) -> bool:
         """
         specifies if the formulas are copied or only the results.
         """
+        ...
     @property
     def CopyStyles(self) -> bool:
         """
         specifies if the styles are copied.
         """
+        ...
     @property
     def IsActive(self) -> bool:
         """
         specifies if the scenario is active.
         """
+        ...
     @property
     def PrintBorder(self) -> bool:
         """
         specifies if the scenario prints a border.
         """
+        ...
     @property
     def Protected(self) -> bool:
         """
         specifies if the scenario is protected.
         """
+        ...
     @property
     def ShowBorder(self) -> bool:
         """
         specifies if the scenario shows a border.
         """
+        ...
 
 

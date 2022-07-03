@@ -43,6 +43,7 @@ class ContextChangeEventObject(EventObject_a3d70b03):
             ApplicationName (str, optional): ApplicationName value.
             ContextName (str, optional): ContextName value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class ContextChangeEventObject(EventObject_a3d70b03):
         """
         Return the name of the application.
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class ContextChangeEventObject(EventObject_a3d70b03):
         """
         Return the application specific context name.
         """
+        ...
 
 

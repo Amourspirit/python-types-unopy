@@ -50,6 +50,7 @@ class LicenseException(Exception_85530a09):
             Text (str, optional): Text value.
             AcceptBy (str, optional): AcceptBy value.
         """
+        ...
     @property
     def ExtensionName(self) -> str:
         """
@@ -57,18 +58,21 @@ class LicenseException(Exception_85530a09):
         
         The display name of the extension. See XPackage.getDisplayName()
         """
+        ...
 
     @property
     def Text(self) -> str:
         """
         contains the text of the license.
         """
+        ...
 
     @property
     def AcceptBy(self) -> str:
         """
         contains the value of the attribute /description/registration/simple-license/@accept-by from the description.xml
         """
+        ...
 
 
 __all__ = ['LicenseException']

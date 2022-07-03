@@ -34,4 +34,6 @@ class XCallback(ABC):
         """
         notifies the callback implementation
         """
+        ...
+
 

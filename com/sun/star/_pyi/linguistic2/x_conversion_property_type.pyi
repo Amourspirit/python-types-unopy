@@ -45,6 +45,7 @@ class XConversionPropertyType(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def setPropertyType(self, aLeftText: str, aRightText: str, nPropertyType: int) -> None:
         """
         sets the property type for the specified entry.
@@ -55,4 +56,6 @@ class XConversionPropertyType(XInterface_8f010a43):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

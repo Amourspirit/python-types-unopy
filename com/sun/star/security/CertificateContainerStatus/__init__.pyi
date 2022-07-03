@@ -29,6 +29,7 @@ Enum
 See Also:
     `API CertificateContainerStatus <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1security.html#abd9126083ddb902b337383198d342e9f>`_
 """
+typeName: str = 'com.sun.star.security.CertificateContainerStatus'
 
 NOCERT: 'uno.Enum'
 """

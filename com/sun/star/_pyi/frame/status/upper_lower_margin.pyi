@@ -45,6 +45,7 @@ class UpperLowerMargin(object):
             Upper (int, optional): Upper value.
             Lower (int, optional): Lower value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class UpperLowerMargin(object):
         """
         specifies a upper margin in 1/100th mm.
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class UpperLowerMargin(object):
         """
         specifies a lower margin in 1/100th mm.
         """
+        ...
 
 

@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.sheet
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XRecentFunctions(XInterface_8f010a43):
@@ -35,16 +35,20 @@ class XRecentFunctions(XInterface_8f010a43):
         """
         returns the maximum number of entries that will be stored as recently used functions.
         """
-    def getRecentFunctionIds(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getRecentFunctionIds(self) -> uno.ByteSequence:
         """
         returns a sequence of those functions that were most recently used.
         
         The functions are represented by their identifiers.
         """
-    def setRecentFunctionIds(self, aRecentFunctionIds: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def setRecentFunctionIds(self, aRecentFunctionIds: uno.ByteSequence) -> None:
         """
         sets the list of those functions that were most recently used.
         
         The functions are represented by their identifiers.
         """
+        ...
+
 

@@ -45,6 +45,7 @@ class XArray(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getArrayAtIndex(self, index: int, count: int, typeMap: 'XNameAccess_e2ab0cf6') -> 'typing.Tuple[object, ...]':
         """
         returns an array containing a slice of the SQL array, beginning with the specified index and containing up to count successive elements of the SQL array.
@@ -52,6 +53,7 @@ class XArray(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getBaseType(self) -> int:
         """
         returns the SDBC type of the elements in the array designated by this Array object.
@@ -59,6 +61,7 @@ class XArray(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getBaseTypeName(self) -> str:
         """
         returns the SQL type name of the elements in the array designated by this Array object.
@@ -68,6 +71,7 @@ class XArray(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getResultSet(self, typeMap: 'XNameAccess_e2ab0cf6') -> 'XResultSet_98e30aa7':
         """
         returns a result set that contains the elements of the array designated by this Array object and uses the given typeMap to map the array elements.
@@ -79,6 +83,7 @@ class XArray(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getResultSetAtIndex(self, index: int, count: int, typeMap: 'XNameAccess_e2ab0cf6') -> 'XResultSet_98e30aa7':
         """
         returns a result set holding the elements of the subarray that starts at index index and contains up to count successive elements.
@@ -90,4 +95,6 @@ class XArray(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

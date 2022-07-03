@@ -44,6 +44,7 @@ class HomogenMatrix(object):
             Line3 (HomogenMatrixLine, optional): Line3 value.
             Line4 (HomogenMatrixLine, optional): Line4 value.
         """
+        ...
 
 
     @property

@@ -42,6 +42,7 @@ class DockingData(object):
             TrackingRectangle (Rectangle, optional): TrackingRectangle value.
             bFloating (bool, optional): bFloating value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class DockingData(object):
         """
         specifies the position and size where the window would be placed if the user releases the mouse
         """
+        ...
 
 
     @property
@@ -56,5 +58,6 @@ class DockingData(object):
         """
         specifies that the window should be floating (TRUE) or docked (FALSE)
         """
+        ...
 
 

@@ -42,6 +42,7 @@ class CellAddress(object):
             Column (int, optional): Column value.
             Row (int, optional): Row value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class CellAddress(object):
         """
         is the index of the sheet that contains the cell.
         """
+        ...
 
 
     @property
@@ -56,6 +58,7 @@ class CellAddress(object):
         """
         is the index of the column where the cell is located.
         """
+        ...
 
 
     @property
@@ -63,5 +66,6 @@ class CellAddress(object):
         """
         is the index of the row where the cell is located.
         """
+        ...
 
 

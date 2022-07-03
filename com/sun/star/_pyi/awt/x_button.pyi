@@ -37,16 +37,21 @@ class XButton(XInterface_8f010a43):
         """
         registers an event handler for button action events.
         """
+        ...
     def removeActionListener(self, l: 'XActionListener_c7560c50') -> None:
         """
         unregisters an event handler for button action events.
         """
+        ...
     def setActionCommand(self, Command: str) -> None:
         """
         sets a command string for pushing the button.
         """
+        ...
     def setLabel(self, Label: str) -> None:
         """
         sets the label of the button.
         """
+        ...
+
 

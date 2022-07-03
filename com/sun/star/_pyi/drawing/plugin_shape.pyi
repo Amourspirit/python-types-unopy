@@ -39,15 +39,18 @@ class PluginShape(Shape_85cc09e5):
         """
         This sequence contains parameters that are passed to the application that renders the plugin when it is initialized.
         """
+        ...
     @property
     def PluginMimeType(self) -> str:
         """
         This property specifies the media-type to which this plugin should be registered.
         """
+        ...
     @property
     def PluginURL(self) -> str:
         """
         This property specifies the url to the binary object.
         """
+        ...
 
 

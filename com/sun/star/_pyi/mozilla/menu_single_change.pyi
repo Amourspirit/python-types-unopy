@@ -42,6 +42,7 @@ class MenuSingleChange(object):
             ChangeID (int, optional): ChangeID value.
             Change (object, optional): Change value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class MenuSingleChange(object):
         """
         unique ID of this menu item
         """
+        ...
 
 
     @property
@@ -56,6 +58,7 @@ class MenuSingleChange(object):
         """
         ID identifying the type of change in the any type change.
         """
+        ...
 
 
     @property
@@ -63,5 +66,6 @@ class MenuSingleChange(object):
         """
         value of change
         """
+        ...
 
 

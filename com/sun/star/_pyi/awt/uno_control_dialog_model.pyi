@@ -46,11 +46,13 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         """
         specifies the background color (RGB) of the dialog.
         """
+        ...
     @property
     def Closeable(self) -> bool:
         """
         specifies if the dialog is closeable.
         """
+        ...
     @property
     def DesktopAsParent(self) -> bool:
         """
@@ -60,26 +62,31 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         
             OOo 2.3
         """
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether a dialog is enabled or disabled.
         """
+        ...
     @property
     def FontDescriptor(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font attributes of the text in the caption bar of the dialog.
         """
+        ...
     @property
     def FontEmphasisMark(self) -> int:
         """
         specifies the com.sun.star.text.FontEmphasis value of the text in the caption bar of the dialog.
         """
+        ...
     @property
     def FontRelief(self) -> int:
         """
         specifies the com.sun.star.text.FontRelief value of the text in the caption bar of the dialog.
         """
+        ...
     @property
     def Graphic(self) -> 'XGraphic_a4da0afc':
         """
@@ -91,6 +98,7 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         
             OOo 2.4
         """
+        ...
     @property
     def HScroll(self) -> bool:
         """
@@ -100,16 +108,19 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         
             LibreOffice 4.0
         """
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the dialog.
         """
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the dialog.
         """
+        ...
     @property
     def ImageURL(self) -> str:
         """
@@ -119,11 +130,13 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         
             OOo 2.4
         """
+        ...
     @property
     def Moveable(self) -> bool:
         """
         specifies if the dialog is moveable.
         """
+        ...
     @property
     def ScrollHeight(self) -> int:
         """
@@ -133,6 +146,7 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         
             LibreOffice 4.0
         """
+        ...
     @property
     def ScrollLeft(self) -> int:
         """
@@ -142,6 +156,7 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         
             LibreOffice 4.0
         """
+        ...
     @property
     def ScrollTop(self) -> int:
         """
@@ -151,6 +166,7 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         
             LibreOffice 4.0
         """
+        ...
     @property
     def ScrollWidth(self) -> int:
         """
@@ -160,26 +176,31 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         
             LibreOffice 4.0
         """
+        ...
     @property
     def Sizeable(self) -> bool:
         """
         specifies if the dialog is sizeable.
         """
+        ...
     @property
     def TextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color (RGB) of the dialog.
         """
+        ...
     @property
     def TextLineColor(self) -> 'Color_68e908c5':
         """
         specifies the text line color (RGB) of the dialog.
         """
+        ...
     @property
     def Title(self) -> str:
         """
         specifies the text that is displayed in the caption bar of the dialog.
         """
+        ...
     @property
     def VScroll(self) -> bool:
         """
@@ -189,5 +210,6 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         
             LibreOffice 4.0
         """
+        ...
 
 

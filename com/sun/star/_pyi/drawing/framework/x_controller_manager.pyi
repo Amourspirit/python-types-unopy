@@ -40,8 +40,11 @@ class XControllerManager(ABC):
         """
         Return the XConfigurationController object.
         """
+        ...
     def getModuleController(self) -> 'XModuleController_c5d112d2':
         """
         Return the XModuleController object.
         """
+        ...
+
 

@@ -30,5 +30,6 @@ class DependentTextField(TextField_90260a56, XDependentTextField_c3d0e45):
     See Also:
         `API DependentTextField <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1DependentTextField.html>`_
     """
+    ...
 
 

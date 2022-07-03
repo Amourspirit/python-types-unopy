@@ -37,4 +37,6 @@ class XStyleFamiliesSupplier(XInterface_8f010a43):
         """
         This method returns the collection of style families available in the container document.
         """
+        ...
+
 

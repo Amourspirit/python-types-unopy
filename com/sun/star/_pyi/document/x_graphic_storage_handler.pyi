@@ -43,22 +43,28 @@ class XGraphicStorageHandler(XInterface_8f010a43):
         """
         create an input stream from the input graphic
         """
+        ...
     def loadGraphic(self, aURL: str) -> 'XGraphic_a4da0afc':
         """
         load a graphic defined by the URL from the storage
         """
+        ...
     def loadGraphicFromOutputStream(self, xOutputStream: 'XOutputStream_a4e00b35') -> 'XGraphic_a4da0afc':
         """
         load a graphic from the output stream
         """
+        ...
     def saveGraphic(self, xGraphic: 'XGraphic_a4da0afc') -> str:
         """
         save the graphic to the storage and return the URL reference to its location inside the storage
         """
+        ...
     def saveGraphicByName(self, xGraphic: 'XGraphic_a4da0afc', savedMimeType: str, aRequestedName: str) -> str:
         """
         save the graphic to the storage with a requested name and return the URL reference to its location inside the storage and the mime type of the format that the graphic was saved to as an output parameter
 
         * ``savedMimeType`` is an out direction argument.
         """
+        ...
+
 

@@ -37,19 +37,26 @@ class XAttributeList(XInterface_8f010a43):
     def getLength(self) -> int:
         """
         """
+        ...
     def getNameByIndex(self, i: int) -> str:
         """
         """
+        ...
     def getTypeByIndex(self, i: int) -> str:
         """
         """
+        ...
     def getTypeByName(self, aName: str) -> str:
         """
         """
+        ...
     def getValueByIndex(self, i: int) -> str:
         """
         """
+        ...
     def getValueByName(self, aName: str) -> str:
         """
         """
+        ...
+
 

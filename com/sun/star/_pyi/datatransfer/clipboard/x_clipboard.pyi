@@ -37,12 +37,14 @@ class XClipboard(XInterface_8f010a43):
         """
         To get the current content of the clipboard.
         """
+        ...
     def getName(self) -> str:
         """
         To get the name of the clipboard instance.
         
         If the returned string is empty the clipboard instance is the system clipboard.
         """
+        ...
     def setContents(self, xTrans: 'XTransferable_2d800f38', xClipboardOwner: 'XClipboardOwner_8713d8') -> None:
         """
         Sets the current contents of the clipboard to the specified transferable object and registers the specified clipboard owner as the owner of the new contents.
@@ -53,4 +55,6 @@ class XClipboard(XInterface_8f010a43):
         
         NULL is an acceptable value and means that the caller is not interested in lost ownership notifications.
         """
+        ...
+
 

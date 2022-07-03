@@ -32,5 +32,6 @@ class Graphic(GraphicDescriptor_1a520ec3, XGraphic_a4da0afc):
     See Also:
         `API Graphic <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1graphic_1_1Graphic.html>`_
     """
+    ...
 
 

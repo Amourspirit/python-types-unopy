@@ -46,17 +46,20 @@ class InvalidProtocolChangeException(Exception_85530a09):
             invalidProperty (ProtocolProperty, optional): invalidProperty value.
             reason (int, optional): reason value.
         """
+        ...
     @property
     def invalidProperty(self) -> ProtocolProperty_ff280e2c:
         """
         The first invalid property.
         """
+        ...
 
     @property
     def reason(self) -> int:
         """
         Contains 1, if the property name is unknown to the thrower; or contains 2, if the property's value can't be accepted by the thrower.
         """
+        ...
 
 
 __all__ = ['InvalidProtocolChangeException']

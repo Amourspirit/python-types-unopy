@@ -37,15 +37,20 @@ class XConnectable(XInterface_8f010a43):
     def getPredecessor(self) -> 'XConnectable':
         """
         """
+        ...
     def getSuccessor(self) -> 'XConnectable':
         """
         """
+        ...
     def setPredecessor(self, aPredecessor: 'XConnectable') -> None:
         """
         sets the source of the data flow for this object.
         """
+        ...
     def setSuccessor(self, aSuccessor: 'XConnectable') -> None:
         """
         sets the sink of the data flow for this object.
         """
+        ...
+
 

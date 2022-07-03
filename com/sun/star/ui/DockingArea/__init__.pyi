@@ -29,6 +29,7 @@ Enum
 See Also:
     `API DockingArea <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui.html#abab7084b80a737f798ccebf692878cc1>`_
 """
+typeName: str = 'com.sun.star.ui.DockingArea'
 
 DOCKINGAREA_BOTTOM: 'uno.Enum'
 """

@@ -41,6 +41,7 @@ class XPropertyContainer(XInterface_8f010a43):
             com.sun.star.beans.IllegalTypeException: ``IllegalTypeException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def removeProperty(self, Name: str) -> None:
         """
         removes a property from the object.
@@ -49,4 +50,6 @@ class XPropertyContainer(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.beans.NotRemoveableException: ``NotRemoveableException``
         """
+        ...
+
 

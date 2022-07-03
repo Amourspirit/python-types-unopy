@@ -40,4 +40,6 @@ class XManifestWriter(XInterface_8f010a43):
         """
         Writes the supplied sequence of manifest entries to the supplied XOutputStream.
         """
+        ...
+
 

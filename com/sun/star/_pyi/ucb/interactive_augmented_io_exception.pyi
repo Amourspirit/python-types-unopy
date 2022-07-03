@@ -48,6 +48,7 @@ class InteractiveAugmentedIOException(InteractiveIOException_27a60f07):
             Code (IOErrorCode, optional): Code value.
             Arguments (typing.Tuple[object, ...], optional): Arguments value.
         """
+        ...
     @property
     def Arguments(self) -> typing.Tuple[object, ...]:
         """
@@ -55,6 +56,7 @@ class InteractiveAugmentedIOException(InteractiveIOException_27a60f07):
         
         See com.sun.star.task.InteractionHandler for a description of well-known arguments.
         """
+        ...
 
 
 __all__ = ['InteractiveAugmentedIOException']

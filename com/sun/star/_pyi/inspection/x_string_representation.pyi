@@ -37,6 +37,7 @@ class XStringRepresentation(ABC):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def convertToPropertyValue(self, ControlValue: str, ControlValueType: object) -> object:
         """
         converts a string into an any with the type defined by the target type.
@@ -44,4 +45,6 @@ class XStringRepresentation(ABC):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

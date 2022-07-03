@@ -45,6 +45,7 @@ class TemplateIdentifier(object):
             Name (str, optional): Name value.
             Component (str, optional): Component value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class TemplateIdentifier(object):
         
         The name is unique within a component.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class TemplateIdentifier(object):
         """
         specifies the component where the template originates.
         """
+        ...
 
 

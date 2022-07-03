@@ -37,5 +37,6 @@ class UnoControlDateField(UnoControlEdit_bc4e0bed, XDateField_8d520a0e, XSpinFie
     See Also:
         `API UnoControlDateField <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlDateField.html>`_
     """
+    ...
 
 

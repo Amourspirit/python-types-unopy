@@ -33,5 +33,6 @@ class InvocationAdapterFactory(XInvocationAdapterFactory2_a0fe11da):
     See Also:
         `API InvocationAdapterFactory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1script_1_1InvocationAdapterFactory.html>`_
     """
+    ...
 
 

@@ -32,6 +32,7 @@ class OutgoingMessageState(Enum):
     See Also:
         `API OutgoingMessageState <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb.html#a8dec3ee1933cc93724b3764b124b8cc1>`_
     """
+    typeName: str = 'com.sun.star.ucb.OutgoingMessageState'
 
     COMPLETELY_LOCALLY_SENT: 'uno.Enum'
     """

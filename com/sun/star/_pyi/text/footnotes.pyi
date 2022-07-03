@@ -29,5 +29,6 @@ class Footnotes(XIndexAccess_f0910d6d):
     See Also:
         `API Footnotes <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1Footnotes.html>`_
     """
+    ...
 
 

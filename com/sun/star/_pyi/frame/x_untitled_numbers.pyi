@@ -36,6 +36,7 @@ class XUntitledNumbers(XInterface_8f010a43):
         
         Note: Such string already contains leading spaces/tabs etc. ! The only thing which an outside code has todo then ... adding a leased number to the string.
         """
+        ...
     def leaseNumber(self, xComponent: 'XInterface_8f010a43') -> int:
         """
         callee has to lease a number before he can use it within in its own title.
@@ -45,6 +46,7 @@ class XUntitledNumbers(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def releaseNumber(self, nNumber: int) -> None:
         """
         has to be used to mark those numbers as \"free for using\".
@@ -56,6 +58,7 @@ class XUntitledNumbers(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def releaseNumberForComponent(self, xComponent: 'XInterface_8f010a43') -> None:
         """
         does the same then releaseNumber () but it searches the corresponding number for the specified component and deregister it.
@@ -63,4 +66,6 @@ class XUntitledNumbers(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

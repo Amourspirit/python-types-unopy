@@ -42,6 +42,7 @@ class XImageManager(XComponent_98dc0ab5, XInitialization_d46c0cca, XUIConfigurat
         """
         retrieves the list of command URLs which have images associated.
         """
+        ...
     def getImages(self, nImageType: int, aCommandURLSequence: 'typing.Tuple[str, ...]') -> 'typing.Tuple[XGraphic_a4da0afc, ...]':
         """
         retrieves the associated images of command URLs.
@@ -49,6 +50,7 @@ class XImageManager(XComponent_98dc0ab5, XInitialization_d46c0cca, XUIConfigurat
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def hasImage(self, nImageType: int, CommandURL: str) -> bool:
         """
         determines if a command URL has an associated image.
@@ -56,6 +58,7 @@ class XImageManager(XComponent_98dc0ab5, XInitialization_d46c0cca, XUIConfigurat
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def insertImages(self, nImageType: int, aCommandURLSequence: 'typing.Tuple[str, ...]', aGraphicSequence: 'typing.Tuple[XGraphic_a4da0afc, ...]') -> None:
         """
         inserts new image/command associations to an image manager.
@@ -67,6 +70,7 @@ class XImageManager(XComponent_98dc0ab5, XInitialization_d46c0cca, XUIConfigurat
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.IllegalAccessException: ``IllegalAccessException``
         """
+        ...
     def removeImages(self, nImageType: int, CommandURLs: 'typing.Tuple[str, ...]') -> None:
         """
         removes associated images to a command URL.
@@ -77,6 +81,7 @@ class XImageManager(XComponent_98dc0ab5, XInitialization_d46c0cca, XUIConfigurat
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.IllegalAccessException: ``IllegalAccessException``
         """
+        ...
     def replaceImages(self, nImageType: int, aCommandURLSequence: 'typing.Tuple[str, ...]', aGraphicsSequence: 'typing.Tuple[XGraphic_a4da0afc, ...]') -> None:
         """
         replaces the associated images of command URLs.
@@ -87,6 +92,7 @@ class XImageManager(XComponent_98dc0ab5, XInitialization_d46c0cca, XUIConfigurat
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.IllegalAccessException: ``IllegalAccessException``
         """
+        ...
     def reset(self) -> None:
         """
         resets the image manager to default data.
@@ -97,4 +103,6 @@ class XImageManager(XComponent_98dc0ab5, XInitialization_d46c0cca, XUIConfigurat
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.IllegalAccessException: ``IllegalAccessException``
         """
+        ...
+
 

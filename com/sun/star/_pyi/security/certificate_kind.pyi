@@ -32,6 +32,7 @@ class CertificateKind(Enum):
     See Also:
         `API CertificateKind <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1security.html#a15fb2a8475364a68c176c7789e3611cc>`_
     """
+    typeName: str = 'com.sun.star.security.CertificateKind'
 
     NONE: 'uno.Enum'
     """

@@ -29,6 +29,7 @@ Enum
 See Also:
     `API AccessibleScrollType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1accessibility.html#a8c72ce09bd8167944fb5c7a237420e74>`_
 """
+typeName: str = 'com.sun.star.accessibility.AccessibleScrollType'
 
 SCROLL_ANYWHERE: 'uno.Enum'
 """

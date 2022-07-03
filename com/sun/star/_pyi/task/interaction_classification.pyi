@@ -32,6 +32,7 @@ class InteractionClassification(Enum):
     See Also:
         `API InteractionClassification <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1task.html#ab0d207be361f7bd99bb18090b7a9e47b>`_
     """
+    typeName: str = 'com.sun.star.task.InteractionClassification'
 
     ERROR: 'uno.Enum'
     """

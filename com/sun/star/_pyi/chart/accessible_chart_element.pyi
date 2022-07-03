@@ -41,5 +41,6 @@ class AccessibleChartElement(XAccessible_1cbc0eb6, XAccessibleContext_8eae119b, 
     See Also:
         `API AccessibleChartElement <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart_1_1AccessibleChartElement.html>`_
     """
+    ...
 
 

@@ -29,6 +29,7 @@ Enum
 See Also:
     `API TextAnimationKind <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a86ab93c592ed65e3f2cd0eebaf5660a2>`_
 """
+typeName: str = 'com.sun.star.drawing.TextAnimationKind'
 
 ALTERNATE: 'uno.Enum'
 """

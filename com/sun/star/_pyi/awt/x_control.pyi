@@ -47,42 +47,53 @@ class XControl(XComponent_98dc0ab5):
         
         If the parent is NULL, then the desktop window of the toolkit is the parent.
         """
+        ...
     def getContext(self) -> 'XInterface_8f010a43':
         """
         gets the context of the control.
         """
+        ...
     def getModel(self) -> 'XControlModel_affc0b7e':
         """
         returns the model for this control.
         """
+        ...
     def getPeer(self) -> 'XWindowPeer_99760ab0':
         """
         returns the peer which was previously created or set.
         """
+        ...
     def getView(self) -> 'XView_5f670847':
         """
         returns the view of this control.
         """
+        ...
     def isDesignMode(self) -> bool:
         """
         returns TRUE if the control is in design mode, FALSE otherwise.
         """
+        ...
     def isTransparent(self) -> bool:
         """
         returns TRUE if the control is transparent, FALSE otherwise.
         """
+        ...
     def setContext(self, Context: 'XInterface_8f010a43') -> None:
         """
         sets the context of the control.
         """
+        ...
     def setDesignMode(self, bOn: bool) -> None:
         """
         sets the design mode for use in a design editor.
         
         Normally the control will be painted directly without a peer.
         """
+        ...
     def setModel(self, Model: 'XControlModel_affc0b7e') -> bool:
         """
         sets a model for the control.
         """
+        ...
+
 

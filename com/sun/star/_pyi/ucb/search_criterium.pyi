@@ -41,6 +41,7 @@ class SearchCriterium(object):
         Arguments:
             Terms (typing.Tuple[RuleTerm, ...], optional): Terms value.
         """
+        ...
 
 
     @property
@@ -48,5 +49,6 @@ class SearchCriterium(object):
         """
         a number of rule terms.
         """
+        ...
 
 

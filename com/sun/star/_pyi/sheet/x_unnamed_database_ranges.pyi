@@ -44,16 +44,20 @@ class XUnnamedDatabaseRanges(XInterface_8f010a43):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def hasByTable(self, nTab: int) -> bool:
         """
 
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setByTable(self, aRange: 'CellRangeAddress_ec450d43') -> None:
         """
 
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

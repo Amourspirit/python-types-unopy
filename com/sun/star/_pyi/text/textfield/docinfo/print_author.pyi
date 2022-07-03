@@ -34,6 +34,7 @@ class PrintAuthor(TextField_90260a56):
         """
         contains the name of the author.
         """
+        ...
     @property
     def CurrentPresentation(self) -> str:
         """
@@ -41,10 +42,12 @@ class PrintAuthor(TextField_90260a56):
         
         This property is especially useful for import/export purposes.
         """
+        ...
     @property
     def IsFixed(self) -> bool:
         """
         If this flag is set to false the author will be overridden by the current author each time the document is saved.
         """
+        ...
 
 

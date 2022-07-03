@@ -45,6 +45,7 @@ class TransferInfo(object):
             NewTitle (str, optional): NewTitle value.
             NameClash (int, optional): NameClash value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class TransferInfo(object):
         """
         contains the flags describing whether the data shall be moved instead of copied.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class TransferInfo(object):
         
         the URL of a file to move).
         """
+        ...
 
 
     @property
@@ -70,6 +73,7 @@ class TransferInfo(object):
         
         If this field is filled, for example, a file will be renamed while it is being transferred.
         """
+        ...
 
 
     @property
@@ -83,5 +87,6 @@ class TransferInfo(object):
         
         Implementations that are not able to detect whether there is a clashing resource may ignore NameClash.ERROR and NameClash.RENAME always write the new data.
         """
+        ...
 
 

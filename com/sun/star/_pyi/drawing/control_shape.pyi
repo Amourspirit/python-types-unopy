@@ -30,5 +30,6 @@ class ControlShape(Shape_85cc09e5, XControlShape_e34e0d1e):
     See Also:
         `API ControlShape <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1ControlShape.html>`_
     """
+    ...
 
 

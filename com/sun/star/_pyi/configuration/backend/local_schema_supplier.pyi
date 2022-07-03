@@ -29,5 +29,6 @@ class LocalSchemaSupplier(SchemaSupplier_da03131b):
     See Also:
         `API LocalSchemaSupplier <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1LocalSchemaSupplier.html>`_
     """
+    ...
 
 

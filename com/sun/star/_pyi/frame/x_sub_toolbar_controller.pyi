@@ -40,20 +40,25 @@ class XSubToolbarController(XInterface_8f010a43):
         """
         gets called to notify a controller that a sub-toolbar function has been selected.
         """
+        ...
     def getSubToolbarName(self) -> str:
         """
         provides the resource URL of the sub-toolbar this controller opens.
         """
+        ...
     def opensSubToolbar(self) -> bool:
         """
         if the controller features a sub-toolbar.
         
         Enables implementations to dynamically decide to support sub-toolbars or not.
         """
+        ...
     def updateImage(self) -> None:
         """
         gets called to notify a controller that it should set an image which represents the current selected function.
         
         Only the controller instance is able to set the correct image for the current function. A toolbar implementation will ask sub-toolbar controllers to update their image whenever it has to update the images of all its buttons.
         """
+        ...
+
 

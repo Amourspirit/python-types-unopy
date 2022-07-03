@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.io
 from typing_extensions import Literal
-import typing
+import uno
 from .x_output_stream import XOutputStream as XOutputStream_a4e00b35
 
 class XSequenceOutputStream(XOutputStream_a4e00b35):
@@ -31,7 +31,7 @@ class XSequenceOutputStream(XOutputStream_a4e00b35):
     """
     __pyunointerface__: Literal['com.sun.star.io.XSequenceOutputStream']
 
-    def getWrittenBytes(self) -> 'typing.Tuple[int, ...]':
+    def getWrittenBytes(self) -> uno.ByteSequence:
         """
         allows to get access to the written data
 
@@ -39,4 +39,6 @@ class XSequenceOutputStream(XOutputStream_a4e00b35):
             com.sun.star.io.NotConnectedException: ``NotConnectedException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

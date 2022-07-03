@@ -46,4 +46,6 @@ class XEventAttacher2(XEventAttacher_e3780d23):
             com.sun.star.script.CannotCreateAdapterException: ``CannotCreateAdapterException``
             com.sun.star.lang.ServiceNotRegisteredException: ``ServiceNotRegisteredException``
         """
+        ...
+
 

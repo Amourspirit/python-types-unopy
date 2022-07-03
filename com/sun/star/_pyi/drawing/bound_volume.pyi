@@ -42,6 +42,7 @@ class BoundVolume(object):
             min (Position3D, optional): min value.
             max (Position3D, optional): max value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class BoundVolume(object):
         """
         this is the minimum position inside the boundary volume.
         """
+        ...
 
 
     @property
@@ -56,5 +58,6 @@ class BoundVolume(object):
         """
         this is the maximum position inside the boundary volume.
         """
+        ...
 
 

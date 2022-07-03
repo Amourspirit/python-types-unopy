@@ -49,6 +49,7 @@ class GridInvalidDataException(RuntimeException_d7390ced):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['GridInvalidDataException']
 

@@ -51,6 +51,7 @@ class XXMLEncryption(XInterface_8f010a43):
             : ````
             com.sun.star.uno.SecurityException: ``SecurityException``
         """
+        ...
     def encrypt(self, aTemplate: 'XXMLEncryptionTemplate_9c6511d8', aEnvironment: 'XSecurityEnvironment_7ead116d') -> 'XXMLEncryptionTemplate_9c6511d8':
         """
         Perform encryption in the environment of encryption template and context.
@@ -59,4 +60,6 @@ class XXMLEncryption(XInterface_8f010a43):
             : ````
             com.sun.star.uno.SecurityException: ``SecurityException``
         """
+        ...
+
 

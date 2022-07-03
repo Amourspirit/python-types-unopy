@@ -38,40 +38,48 @@ class UserDefinedIndex(BaseIndex_8f0d0a40):
         """
         contains all index marks that are related to this index.
         """
+        ...
     @property
     def CreateFromEmbeddedObjects(self) -> bool:
         """
         determines if embedded objects are included in the index.
         """
+        ...
     @property
     def CreateFromGraphicObjects(self) -> bool:
         """
         determines if graphic objects are included in the index.
         """
+        ...
     @property
     def CreateFromMarks(self) -> bool:
         """
         determines if the document index marks are included in this index.
         """
+        ...
     @property
     def CreateFromTables(self) -> bool:
         """
         determines if tables are included in the index.
         """
+        ...
     @property
     def CreateFromTextFrames(self) -> bool:
         """
         determines if text frames are included in the index.
         """
+        ...
     @property
     def LevelParagraphStyles(self) -> 'XIndexReplace_feed0dd7':
         """
         contains the interface to access the paragraph style names that are included in this index.
         """
+        ...
     @property
     def UseLevelFromSource(self) -> bool:
         """
         determines if the outline level of the location of the indexed object is used as index level of the index entry.
         """
+        ...
 
 

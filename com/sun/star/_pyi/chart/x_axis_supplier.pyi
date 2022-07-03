@@ -40,7 +40,10 @@ class XAxisSupplier(XInterface_8f010a43):
     def getAxis(self, nDimensionIndex: int) -> 'XAxis_71210907':
         """
         """
+        ...
     def getSecondaryAxis(self, nDimensionIndex: int) -> 'XAxis_71210907':
         """
         """
+        ...
+
 

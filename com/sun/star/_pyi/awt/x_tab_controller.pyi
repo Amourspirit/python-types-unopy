@@ -39,36 +39,46 @@ class XTabController(XInterface_8f010a43):
         """
         sets the focus to the first control that can be reached with the TAB key.
         """
+        ...
     def activateLast(self) -> None:
         """
         sets the focus to the last control that can be reached with the TAB key.
         """
+        ...
     def activateTabOrder(self) -> None:
         """
         activates tab order.
         """
+        ...
     def autoTabOrder(self) -> None:
         """
         enables automatic tab order.
         """
+        ...
     def getContainer(self) -> 'XControlContainer_e22d0d30':
         """
         returns the control container.
         """
+        ...
     def getControls(self) -> 'typing.Tuple[XControl_7a9c098d, ...]':
         """
         returns all controls of the control container.
         """
+        ...
     def getModel(self) -> 'XTabControllerModel_fbef0dd8':
         """
         returns the tab controller model.
         """
+        ...
     def setContainer(self, Container: 'XControlContainer_e22d0d30') -> None:
         """
         set the control container.
         """
+        ...
     def setModel(self, Model: 'XTabControllerModel_fbef0dd8') -> None:
         """
         sets the tab controller model.
         """
+        ...
+
 

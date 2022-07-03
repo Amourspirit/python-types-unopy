@@ -32,5 +32,6 @@ class Audio(XAudio_b23c0b85):
     See Also:
         `API Audio <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1animations_1_1Audio.html>`_
     """
+    ...
 
 

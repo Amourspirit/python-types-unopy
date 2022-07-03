@@ -43,8 +43,11 @@ class XPrintJobBroadcaster(XInterface_8f010a43):
         """
         adds an XPrintJobListener to be notified about print progress.
         """
+        ...
     def removePrintJobListener(self, xListener: 'XPrintJobListener_efd10d89') -> None:
         """
         removes an XPrintJobListener.
         """
+        ...
+
 

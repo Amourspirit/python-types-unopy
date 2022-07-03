@@ -44,12 +44,16 @@ class XUriReferenceFactory(XInterface_8f010a43):
         """
         resolves a relative URI reference to absolute form.
         """
+        ...
     def makeRelative(self, baseUriReference: 'XUriReference_afc30b6f', uriReference: 'XUriReference_afc30b6f', preferAuthorityOverRelativePath: bool, preferAbsoluteOverRelativePath: bool, encodeRetainedSpecialSegments: bool) -> 'XUriReference_afc30b6f':
         """
         changes an absolute URI reference to relative form.
         """
+        ...
     def parse(self, uriReference: str) -> 'XUriReference_afc30b6f':
         """
         parses the textual representation of a URI reference.
         """
+        ...
+
 

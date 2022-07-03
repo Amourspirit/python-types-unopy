@@ -36,5 +36,6 @@ class LoggerPool(XLoggerPool_c8c40c41):
     See Also:
         `API LoggerPool <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1logging_1_1LoggerPool.html>`_
     """
+    ...
 
 

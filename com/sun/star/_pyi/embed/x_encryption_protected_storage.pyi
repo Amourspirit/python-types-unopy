@@ -41,6 +41,7 @@ class XEncryptionProtectedStorage(XEncryptionProtectedSource2_9eb411d5):
         """
         allows to get the encryption algorithms of the object.
         """
+        ...
     def setEncryptionAlgorithms(self, aAlgorithms: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> None:
         """
         allows to set the encryption algorithms for the object.
@@ -52,6 +53,7 @@ class XEncryptionProtectedStorage(XEncryptionProtectedSource2_9eb411d5):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setGpgProperties(self, aProps: 'typing.Tuple[typing.Tuple[NamedValue_a37a0af3, ...], ...]') -> None:
         """
         set OpenPGP-specific encryption properties
@@ -67,4 +69,6 @@ class XEncryptionProtectedStorage(XEncryptionProtectedSource2_9eb411d5):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

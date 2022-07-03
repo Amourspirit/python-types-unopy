@@ -45,10 +45,12 @@ class XModeChangeBroadcaster(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def addModeChangeListener(self, rxListener: 'XModeChangeListener_9c30e2f') -> None:
         """
         adds the given listener to the list of components to be notified when the mode changes.
         """
+        ...
     def removeModeChangeApproveListener(self, rxListener: 'XModeChangeApproveListener_7807110c') -> None:
         """
         remove the given listener from the list of components to be notified when the mode is about to change.
@@ -56,8 +58,11 @@ class XModeChangeBroadcaster(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def removeModeChangeListener(self, rxListener: 'XModeChangeListener_9c30e2f') -> None:
         """
         removes the given listener from the list of components to be notified when the mode changes.
         """
+        ...
+
 

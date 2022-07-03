@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.bridge
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XBridgeSupplier2(XInterface_8f010a43):
@@ -41,11 +41,13 @@ class XBridgeSupplier2(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.bridge.XBridgeSupplier2']
 
-    def createBridge(self, aModelDepObject: object, aProcessId: 'typing.Tuple[int, ...]', nSourceModelType: int, nDestModelType: int) -> object:
+    def createBridge(self, aModelDepObject: object, aProcessId: uno.ByteSequence, nSourceModelType: int, nDestModelType: int) -> object:
         """
         creates a bridge to provide an object of one object model with another.
 
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

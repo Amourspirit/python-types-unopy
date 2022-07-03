@@ -54,6 +54,7 @@ class FloatingPointBitmapLayout(object):
             Endianness (int, optional): Endianness value.
             Format (int, optional): Format value.
         """
+        ...
 
 
     @property
@@ -63,6 +64,7 @@ class FloatingPointBitmapLayout(object):
         
         This value must not be negative
         """
+        ...
 
 
     @property
@@ -72,6 +74,7 @@ class FloatingPointBitmapLayout(object):
         
         This value must not be negative
         """
+        ...
 
 
     @property
@@ -81,6 +84,7 @@ class FloatingPointBitmapLayout(object):
         
         This value is permitted to be negative, denoting a bitmap whose content is flipped at the x axis.
         """
+        ...
 
 
     @property
@@ -90,6 +94,7 @@ class FloatingPointBitmapLayout(object):
         
         This value is permitted to be negative. If this value is zero, the bitmap is assumed to be in chunky format, otherwise it is assumed to be planar. The difference between chunky and planar layout lies in the way how color channels are interleaved. For a chunky format, all channel data for a single pixel lies consecutively in memory. For a planar layout, the first channel of all pixel is stored consecutive, followed by the second channel, and so forth.
         """
+        ...
 
 
     @property
@@ -97,6 +102,7 @@ class FloatingPointBitmapLayout(object):
         """
         Color space the bitmap colors shall be interpreted within.
         """
+        ...
 
 
     @property
@@ -106,6 +112,7 @@ class FloatingPointBitmapLayout(object):
         
         This value must not be negative
         """
+        ...
 
 
     @property
@@ -115,6 +122,7 @@ class FloatingPointBitmapLayout(object):
         
         This value must be one of the Endianness constants
         """
+        ...
 
 
     @property
@@ -124,5 +132,6 @@ class FloatingPointBitmapLayout(object):
         
         This value must be one of the FloatingPointBitmapFormat constants.
         """
+        ...
 
 

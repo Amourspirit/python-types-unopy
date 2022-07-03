@@ -47,4 +47,6 @@ class XPdfDecomposer(XInterface_8f010a43):
         
         sal_Int32 PageIndex - which page to use
         """
+        ...
+
 

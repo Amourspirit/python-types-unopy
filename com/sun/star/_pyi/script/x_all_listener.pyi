@@ -44,8 +44,11 @@ class XAllListener(XEventListener_c7230c4a):
         Raises:
             com.sun.star.reflection.InvocationTargetException: ``InvocationTargetException``
         """
+        ...
     def firing(self, iaEvent: 'AllEventObject_e2c20d0f') -> None:
         """
         gets called when an event occurs at the object.
         """
+        ...
+
 

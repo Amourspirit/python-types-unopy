@@ -52,6 +52,7 @@ class SingleProofreadingError(object):
             aShortComment (str, optional): aShortComment value.
             aFullComment (str, optional): aFullComment value.
         """
+        ...
 
 
     @property

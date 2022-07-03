@@ -39,30 +39,36 @@ class TableAutoFormat(XPropertySet_bc180bfa, XEnumerationAccess_4bac0ffc, XIndex
         """
         specifies whether the background settings from the fields are used.
         """
+        ...
     @property
     def IncludeBorder(self) -> bool:
         """
         specifies whether the border settings from the fields are used.
         """
+        ...
     @property
     def IncludeFont(self) -> bool:
         """
         specifies whether the font settings from the fields are used.
         """
+        ...
     @property
     def IncludeJustify(self) -> bool:
         """
         specifies whether the justification settings from the fields are used.
         """
+        ...
     @property
     def IncludeNumberFormat(self) -> bool:
         """
         specifies whether the number format settings from the fields are used.
         """
+        ...
     @property
     def IncludeWidthAndHeight(self) -> bool:
         """
         specifies whether the column widths and row heights should be updated after applying the format.
         """
+        ...
 
 

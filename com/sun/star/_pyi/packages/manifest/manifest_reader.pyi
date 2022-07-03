@@ -28,5 +28,6 @@ class ManifestReader(XManifestReader_9c5911ae):
     See Also:
         `API ManifestReader <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1packages_1_1manifest_1_1ManifestReader.html>`_
     """
+    ...
 
 

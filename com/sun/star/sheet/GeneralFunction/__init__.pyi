@@ -29,6 +29,7 @@ Enum
 See Also:
     `API GeneralFunction <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html#ad184d5bd9055f3b4fd57ce72c781758d>`_
 """
+typeName: str = 'com.sun.star.sheet.GeneralFunction'
 
 AUTO: 'uno.Enum'
 """

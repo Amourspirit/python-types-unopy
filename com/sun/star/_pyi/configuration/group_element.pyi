@@ -33,5 +33,6 @@ class GroupElement(HierarchyElement_6fb410e9):
     See Also:
         `API GroupElement <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1GroupElement.html>`_
     """
+    ...
 
 

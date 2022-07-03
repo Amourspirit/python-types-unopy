@@ -47,6 +47,7 @@ class XStatement(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def executeQuery(self, sql: str) -> 'XResultSet_98e30aa7':
         """
         executes a SQL statement that returns a single ResultSet.
@@ -54,6 +55,7 @@ class XStatement(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def executeUpdate(self, sql: str) -> int:
         """
         executes an SQL INSERT, UPDATE, or DELETE statement.
@@ -63,6 +65,7 @@ class XStatement(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getConnection(self) -> 'XConnection_a36a0b0c':
         """
         returns the com.sun.star.sdbc.Connection object that produced this Statement object.
@@ -70,4 +73,6 @@ class XStatement(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

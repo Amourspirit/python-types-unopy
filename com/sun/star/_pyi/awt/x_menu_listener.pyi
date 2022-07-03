@@ -37,16 +37,21 @@ class XMenuListener(XEventListener_c7230c4a):
         """
         is invoked when a menu is activated.
         """
+        ...
     def itemDeactivated(self, aEvent: 'MenuEvent_847809eb') -> None:
         """
         is invoked when a menu is deactivated.
         """
+        ...
     def itemHighlighted(self, aEvent: 'MenuEvent_847809eb') -> None:
         """
         is invoked when a menu item is highlighted.
         """
+        ...
     def itemSelected(self, aEvent: 'MenuEvent_847809eb') -> None:
         """
         is invoked when a menu item is selected.
         """
+        ...
+
 

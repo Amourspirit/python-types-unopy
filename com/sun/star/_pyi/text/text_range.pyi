@@ -42,5 +42,6 @@ class TextRange(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a10df,
     See Also:
         `API TextRange <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1TextRange.html>`_
     """
+    ...
 
 

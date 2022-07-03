@@ -40,6 +40,7 @@ class XCommandInfo(XInterface_8f010a43):
         Raises:
             com.sun.star.ucb.UnsupportedCommandException: ``UnsupportedCommandException``
         """
+        ...
     def getCommandInfoByName(self, Name: str) -> 'CommandInfo_98490a8d':
         """
         returns information for a specific command.
@@ -47,16 +48,21 @@ class XCommandInfo(XInterface_8f010a43):
         Raises:
             com.sun.star.ucb.UnsupportedCommandException: ``UnsupportedCommandException``
         """
+        ...
     def getCommands(self) -> 'typing.Tuple[CommandInfo_98490a8d, ...]':
         """
         obtains information for all supported commands.
         """
+        ...
     def hasCommandByHandle(self, Handle: int) -> bool:
         """
         checks whether a specific command is supported.
         """
+        ...
     def hasCommandByName(self, Name: str) -> bool:
         """
         checks whether a command specific is supported.
         """
+        ...
+
 

@@ -50,6 +50,7 @@ class Uik(object):
             Data4 (int, optional): Data4 value.
             Data5 (int, optional): Data5 value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class Uik(object):
         """
         specifies a 4 byte data block.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class Uik(object):
         """
         specifies a 2 byte data block.
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class Uik(object):
         """
         specifies a 2 byte data block.
         """
+        ...
 
 
     @property
@@ -78,6 +82,7 @@ class Uik(object):
         """
         specifies a 4 byte data block.
         """
+        ...
 
 
     @property
@@ -85,5 +90,6 @@ class Uik(object):
         """
         specifies a 4 byte data block.
         """
+        ...
 
 

@@ -54,10 +54,12 @@ class XFilterController(ABC):
         
         Registering the same listener multiple times results in multiple notifications of the same event, and also requires multiple revocations of the listener.
         """
+        ...
     def appendEmptyDisjunctiveTerm(self) -> None:
         """
         appends an empty disjunctive term to the list of terms.
         """
+        ...
     def getFilterComponent(self, Component: int) -> 'XControl_7a9c098d':
         """
         retrieves the filter component with the given index.
@@ -67,12 +69,14 @@ class XFilterController(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getPredicateExpressions(self) -> 'typing.Tuple[typing.Tuple[str, ...], ...]':
         """
         retrieves the entirety of the predicate expressions represented by the filter controller.
         
         Each element of the returned sequence is a disjunctive term, having exactly FilterComponents elements, which denote the single predicate expressions of this term.
         """
+        ...
     def removeDisjunctiveTerm(self, Term: int) -> None:
         """
         removes a given disjunctive term
@@ -80,10 +84,12 @@ class XFilterController(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def removeFilterControllerListener(self, Listener: 'XFilterControllerListener_381416') -> None:
         """
         revokes a listener which was previously registered to be notified of certain changes in the form based filter.
         """
+        ...
     def setPredicateExpression(self, Component: int, Term: int, PredicateExpression: str) -> None:
         """
         sets a given predicate expression
@@ -91,17 +97,21 @@ class XFilterController(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
     @property
     def ActiveTerm(self) -> int:
         """
         denotes the active term of the filter controller.
         """
+        ...
 
     @property
     def DisjunctiveTerms(self) -> int:
         """
         is the number of disjunctive terms of the filter expression represented by the form based filter.
         """
+        ...
 
     @property
     def FilterComponents(self) -> int:
@@ -110,5 +120,6 @@ class XFilterController(ABC):
         
         This number is constant during one session of the form based filter.
         """
+        ...
 
 

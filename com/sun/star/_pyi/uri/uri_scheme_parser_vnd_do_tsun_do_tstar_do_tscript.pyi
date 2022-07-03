@@ -37,5 +37,6 @@ class UriSchemeParser_vndDOTsunDOTstarDOTscript(XUriSchemeParser_d3fd0ca2):
     See Also:
         `API UriSchemeParser_vndDOTsunDOTstarDOTscript <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1uri_1_1UriSchemeParser__vndDOTsunDOTstarDOTscript.html>`_
     """
+    ...
 
 

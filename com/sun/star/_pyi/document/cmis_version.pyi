@@ -43,6 +43,7 @@ class CmisVersion(object):
             Author (str, optional): Author value.
             Comment (str, optional): Comment value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class CmisVersion(object):
         """
         unique ID of the Cmis version
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class CmisVersion(object):
         """
         specifies the time when the revision was created.
         """
+        ...
 
 
     @property
@@ -64,6 +67,7 @@ class CmisVersion(object):
         """
         contains the author that created the version.
         """
+        ...
 
 
     @property
@@ -71,5 +75,6 @@ class CmisVersion(object):
         """
         contains the comment the author has left.
         """
+        ...
 
 

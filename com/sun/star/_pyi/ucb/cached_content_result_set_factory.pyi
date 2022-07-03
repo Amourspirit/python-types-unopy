@@ -29,5 +29,6 @@ class CachedContentResultSetFactory(XCachedContentResultSetFactory_a99d1230):
     See Also:
         `API CachedContentResultSetFactory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1CachedContentResultSetFactory.html>`_
     """
+    ...
 
 

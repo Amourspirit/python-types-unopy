@@ -48,6 +48,7 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
         """
         determines if the chart type has lines connecting the data points or contains just symbols.
         """
+        ...
     @property
     def SplineOrder(self) -> int:
         """
@@ -55,11 +56,13 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
         
         This property is only valid for B-splines
         """
+        ...
     @property
     def SplineResolution(self) -> int:
         """
         determines the number of sampling points of a spline
         """
+        ...
     @property
     def SplineType(self) -> int:
         """
@@ -67,6 +70,7 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
         
         You can set the following values:
         """
+        ...
     @property
     def SymbolBitmap(self) -> 'XGraphic_a4da0afc':
         """
@@ -76,6 +80,7 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
         
             LibreOffice 6.1
         """
+        ...
     @property
     def SymbolBitmapURL(self) -> str:
         """
@@ -85,11 +90,13 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
         
         When you query this value you get an internal URL of the embedded graphic.
         """
+        ...
     @property
     def SymbolSize(self) -> 'Size_576707ef':
         """
         specifies the size of symbols in 1/100th of a millimeter.
         """
+        ...
     @property
     def SymbolType(self) -> int:
         """
@@ -99,5 +106,6 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
         
         If you set this property to ChartSymbolType.AUTO, you can change the symbol shape for objects supporting the service ChartDataPointProperties or ChartDataRowProperties.
         """
+        ...
 
 

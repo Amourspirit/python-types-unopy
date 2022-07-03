@@ -38,6 +38,8 @@ class XToolPanel(ABC):
         """
         creates the root of the Accessibility object tree for the tool panel
         """
+        ...
+
     @property
     def Window(self) -> 'XWindow_713b0924':
         """
@@ -45,5 +47,6 @@ class XToolPanel(ABC):
         
         It is allowed for an implementation to return NULL here, but in this case some functionality, for instance automatic positioning of the tool panel, might not be available, and must be implemented by the tool panel itself.
         """
+        ...
 
 

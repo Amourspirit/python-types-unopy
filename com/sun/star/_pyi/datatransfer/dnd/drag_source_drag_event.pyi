@@ -50,6 +50,7 @@ class DragSourceDragEvent(DragSourceEvent_8ccf115c):
             DropAction (int, optional): DropAction value.
             UserAction (int, optional): UserAction value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class DragSourceDragEvent(DragSourceEvent_8ccf115c):
         """
         The drag action selected by the current drop target.
         """
+        ...
 
 
     @property
@@ -64,5 +66,6 @@ class DragSourceDragEvent(DragSourceEvent_8ccf115c):
         """
         The user's currently selected drop action.
         """
+        ...
 
 

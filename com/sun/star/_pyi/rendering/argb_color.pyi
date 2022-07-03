@@ -44,6 +44,7 @@ class ARGBColor(object):
             Green (ColorComponent, optional): Green value.
             Blue (ColorComponent, optional): Blue value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class ARGBColor(object):
         
         Valid range is [0,1.0], with 0.0 denoting fully transparent, and 1.0 fully opaque.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class ARGBColor(object):
         """
         Red component. Valid range is [0,1.0].
         """
+        ...
 
 
     @property
@@ -67,6 +70,7 @@ class ARGBColor(object):
         """
         Green component. Valid range is [0,1.0].
         """
+        ...
 
 
     @property
@@ -74,5 +78,6 @@ class ARGBColor(object):
         """
         Blue component. Valid range is [0,1.0].
         """
+        ...
 
 

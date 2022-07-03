@@ -29,5 +29,6 @@ class UnoControlDialog(XUnoControlDialog_e1740d0f):
     See Also:
         `API UnoControlDialog <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlDialog.html>`_
     """
+    ...
 
 

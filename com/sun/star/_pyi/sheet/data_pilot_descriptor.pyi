@@ -47,6 +47,7 @@ class DataPilotDescriptor(XPropertySet_bc180bfa, XDataPilotDataLayoutFieldSuppli
         
             OOo 3.3
         """
+        ...
     @property
     def ServiceArguments(self) -> 'typing.Tuple[PropertyValue_c9610c73, ...]':
         """
@@ -56,16 +57,19 @@ class DataPilotDescriptor(XPropertySet_bc180bfa, XDataPilotDataLayoutFieldSuppli
         
             OOo 3.3
         """
+        ...
     @property
     def ColumnGrand(self) -> bool:
         """
         specifies if columns for grand total results are created.
         """
+        ...
     @property
     def DrillDownOnDoubleClick(self) -> bool:
         """
         specifies whether to drill down to details or go into edit mode.
         """
+        ...
     @property
     def GrandTotalName(self) -> str:
         """
@@ -75,26 +79,31 @@ class DataPilotDescriptor(XPropertySet_bc180bfa, XDataPilotDataLayoutFieldSuppli
         
             OOo 3.4
         """
+        ...
     @property
     def IgnoreEmptyRows(self) -> bool:
         """
         specifies if empty rows in the source data are ignored.
         """
+        ...
     @property
     def RepeatIfEmpty(self) -> bool:
         """
         specifies if empty category cells in the source data should be treated as repetition of the content from the previous row.
         """
+        ...
     @property
     def RowGrand(self) -> bool:
         """
         specifies if rows for grand total results are created.
         """
+        ...
     @property
     def ShowFilterButton(self) -> bool:
         """
         specifies whether the filter button is shown.
         """
+        ...
     @property
     def SourceServiceName(self) -> str:
         """
@@ -104,5 +113,6 @@ class DataPilotDescriptor(XPropertySet_bc180bfa, XDataPilotDataLayoutFieldSuppli
         
             OOo 3.3
         """
+        ...
 
 

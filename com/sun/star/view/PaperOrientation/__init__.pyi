@@ -29,6 +29,7 @@ Enum
 See Also:
     `API PaperOrientation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1view.html#a5312aa9f24f5483f2a37fd41a47d852a>`_
 """
+typeName: str = 'com.sun.star.view.PaperOrientation'
 
 LANDSCAPE: 'uno.Enum'
 """

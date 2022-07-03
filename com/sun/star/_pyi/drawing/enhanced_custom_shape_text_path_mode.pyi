@@ -32,6 +32,7 @@ class EnhancedCustomShapeTextPathMode(Enum):
     See Also:
         `API EnhancedCustomShapeTextPathMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a0babaeb0d04df312f158184b26a302d6>`_
     """
+    typeName: str = 'com.sun.star.drawing.EnhancedCustomShapeTextPathMode'
 
     NORMAL: 'uno.Enum'
     """

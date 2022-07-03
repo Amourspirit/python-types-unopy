@@ -34,5 +34,6 @@ class PackageInformationProvider(XPackageInformationProvider_21b141e):
     See Also:
         `API PackageInformationProvider <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1deployment_1_1PackageInformationProvider.html>`_
     """
+    ...
 
 

@@ -32,6 +32,7 @@ class FolderListCommand(Enum):
     See Also:
         `API FolderListCommand <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb.html#aa1260fc093737bd1d1134fba75333247>`_
     """
+    typeName: str = 'com.sun.star.ucb.FolderListCommand'
 
     GET: 'uno.Enum'
     """

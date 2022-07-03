@@ -37,4 +37,6 @@ class XAutoStyleFamily(XEnumerationAccess_4bac0ffc):
     def insertStyle(self, Values: 'PropertyValues_d6470ce6') -> 'XAutoStyle_a67a0b3b':
         """
         """
+        ...
+
 

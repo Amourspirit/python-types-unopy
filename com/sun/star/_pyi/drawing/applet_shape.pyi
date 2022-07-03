@@ -39,14 +39,15 @@ class AppletShape(Shape_85cc09e5):
         """
         This sequence contains parameters that are passed to the applet when it is initialized.
         """
+        ...
     @property
     def AppletCode(self) -> str:
         """
-        This property specifies one of the following:
-        The name of the class file that contains the compiled applet subclass.
+        This property specifies one of the following: The name of the class file that contains the compiled applet subclass.
         
         The path to the class, including the class file itself.
         """
+        ...
     @property
     def AppletCodeBase(self) -> str:
         """
@@ -54,15 +55,18 @@ class AppletShape(Shape_85cc09e5):
         
         If this property is empty, then it defaults the same base URI as for the current document.
         """
+        ...
     @property
     def AppletIsScript(self) -> bool:
         """
         This property specifies whether or not the applet can be scripted.
         """
+        ...
     @property
     def AppletName(self) -> str:
         """
         this is an optional name for the applet.
         """
+        ...
 
 

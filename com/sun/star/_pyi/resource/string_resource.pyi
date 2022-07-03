@@ -29,5 +29,6 @@ class StringResource(XStringResourcePersistence_cabc130c):
     See Also:
         `API StringResource <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1resource_1_1StringResource.html>`_
     """
+    ...
 
 

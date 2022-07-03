@@ -65,6 +65,7 @@ class AffineMatrix3D(object):
             m22 (float, optional): m22 value.
             m23 (float, optional): m23 value.
         """
+        ...
 
 
     @property
@@ -72,6 +73,7 @@ class AffineMatrix3D(object):
         """
         The top, left matrix entry.
         """
+        ...
 
 
     @property
@@ -79,6 +81,7 @@ class AffineMatrix3D(object):
         """
         The top, left middle matrix entry.
         """
+        ...
 
 
     @property
@@ -86,6 +89,7 @@ class AffineMatrix3D(object):
         """
         The top, right middle matrix entry.
         """
+        ...
 
 
     @property
@@ -93,6 +97,7 @@ class AffineMatrix3D(object):
         """
         The top, right matrix entry.
         """
+        ...
 
 
     @property
@@ -100,6 +105,7 @@ class AffineMatrix3D(object):
         """
         The middle, left matrix entry.
         """
+        ...
 
 
     @property
@@ -107,6 +113,7 @@ class AffineMatrix3D(object):
         """
         The middle, middle left matrix entry.
         """
+        ...
 
 
     @property
@@ -114,6 +121,7 @@ class AffineMatrix3D(object):
         """
         The middle, middle right matrix entry.
         """
+        ...
 
 
     @property
@@ -121,6 +129,7 @@ class AffineMatrix3D(object):
         """
         The middle, right matrix entry.
         """
+        ...
 
 
     @property
@@ -128,6 +137,7 @@ class AffineMatrix3D(object):
         """
         The bottom, left matrix entry.
         """
+        ...
 
 
     @property
@@ -135,6 +145,7 @@ class AffineMatrix3D(object):
         """
         The bottom, middle left matrix entry.
         """
+        ...
 
 
     @property
@@ -142,6 +153,7 @@ class AffineMatrix3D(object):
         """
         The bottom, middle right matrix entry.
         """
+        ...
 
 
     @property
@@ -149,5 +161,6 @@ class AffineMatrix3D(object):
         """
         The bottom, right matrix entry.
         """
+        ...
 
 

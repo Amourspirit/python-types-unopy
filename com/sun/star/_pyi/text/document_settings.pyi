@@ -45,6 +45,7 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
             OOo 2.0
         """
+        ...
     @property
     def AddParaTableSpacing(self) -> bool:
         """
@@ -52,6 +53,7 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
         If between two paragraphs, two tables, or a paragraph and a table, you have defined spacing above and below each object, usually only the larger one of the two spaces is used. If the spacing between the objects are to be added this property has to be TRUE.
         """
+        ...
     @property
     def AddParaTableSpacingAtStart(self) -> bool:
         """
@@ -59,6 +61,7 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
         If TRUE, the paragraph or table spacing to the top will also be effective at the beginning of a page or column if the paragraph or table is positioned on the first page of the document. The same applies for a page break.
         """
+        ...
     @property
     def AlignTabStopPosition(self) -> bool:
         """
@@ -66,6 +69,7 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
         If TRUE centered and right-aligned paragraphs containing tabs are formatted as a whole in the center or aligned to the right. If FALSE, only the text to the right of the last tab, for example, is aligned to the right, while the text to the left remains where it is.
         """
+        ...
     @property
     def ChartAutoUpdate(self) -> bool:
         """
@@ -73,6 +77,7 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
         This has no effect if \"FieldAutoUpdate\" is FALSE.
         """
+        ...
     @property
     def ConsiderTextWrapOnObjPos(self) -> bool:
         """
@@ -84,6 +89,7 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
             OOo 2.0
         """
+        ...
     @property
     def IsLabelDocument(self) -> bool:
         """
@@ -91,6 +97,7 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
         This property indicates that the document contains multiple text frames and that the content of one frame is duplicated into the other frames by internally linked text sections.
         """
+        ...
     @property
     def MathBaselineAlignment(self) -> bool:
         """
@@ -102,6 +109,7 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
             OOo 3.4
         """
+        ...
     @property
     def SaveGlobalDocumentLinks(self) -> bool:
         """
@@ -111,6 +119,7 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
         Note: This name is a bit misleading, it should be something like SaveLinkedDocumentContent.
         """
+        ...
     @property
     def UseFormerLineSpacing(self) -> bool:
         """
@@ -122,6 +131,7 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
             OOo 2.0
         """
+        ...
     @property
     def UseFormerObjectPositioning(self) -> bool:
         """
@@ -133,5 +143,6 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
             OOo 2.0
         """
+        ...
 
 

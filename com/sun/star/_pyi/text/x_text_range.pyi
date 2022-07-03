@@ -38,19 +38,25 @@ class XTextRange(XInterface_8f010a43):
     def getEnd(self) -> 'XTextRange':
         """
         """
+        ...
     def getStart(self) -> 'XTextRange':
         """
         """
+        ...
     def getString(self) -> str:
         """
         """
+        ...
     def getText(self) -> 'XText_690408ca':
         """
         """
+        ...
     def setString(self, aString: str) -> None:
         """
         the whole string of characters of this piece of text is replaced.
         
         All styles are removed when applying this method.
         """
+        ...
+
 

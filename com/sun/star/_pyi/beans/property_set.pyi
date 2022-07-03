@@ -35,5 +35,6 @@ class PropertySet(XFastPropertySet_ee6b0d88, XMultiPropertySet_fd880e05, XProper
     See Also:
         `API PropertySet <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1beans_1_1PropertySet.html>`_
     """
+    ...
 
 

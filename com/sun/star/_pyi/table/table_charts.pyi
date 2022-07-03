@@ -31,5 +31,6 @@ class TableCharts(XEnumerationAccess_4bac0ffc, XIndexAccess_f0910d6d, XTableChar
     See Also:
         `API TableCharts <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1table_1_1TableCharts.html>`_
     """
+    ...
 
 

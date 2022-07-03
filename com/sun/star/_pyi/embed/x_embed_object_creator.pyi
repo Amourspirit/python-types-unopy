@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.embed
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..beans.property_value import PropertyValue as PropertyValue_c9610c73
@@ -48,6 +49,7 @@ class XEmbedObjectCreator(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def createInstanceInitFromMediaDescriptor(self, xStorage: 'XStorage_8e460a32', sEntryName: str, aMediaDescriptor: 'typing.Tuple[PropertyValue_c9610c73, ...]', aObjectArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> 'XInterface_8f010a43':
         """
         creates a new object and initializes it based on com.sun.star.document.MediaDescriptor.
@@ -59,7 +61,8 @@ class XEmbedObjectCreator(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
-    def createInstanceInitNew(self, aClassID: 'typing.Tuple[int, ...]', sClassName: str, xStorage: 'XStorage_8e460a32', sEntryName: str, aObjectArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> 'XInterface_8f010a43':
+        ...
+    def createInstanceInitNew(self, aClassID: uno.ByteSequence, sClassName: str, xStorage: 'XStorage_8e460a32', sEntryName: str, aObjectArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> 'XInterface_8f010a43':
         """
         creates a new object and initializes it as a new one.
         
@@ -70,4 +73,6 @@ class XEmbedObjectCreator(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

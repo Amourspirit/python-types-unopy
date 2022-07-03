@@ -36,8 +36,11 @@ class XImportable(XInterface_8f010a43):
     def createImportDescriptor(self, bEmpty: bool) -> 'typing.Tuple[PropertyValue_c9610c73, ...]':
         """
         """
+        ...
     def doImport(self, aDescriptor: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         imports data from an external database.
         """
+        ...
+
 

@@ -29,5 +29,6 @@ class RangeHighlightListener(XSelectionChangeListener_58bf104d):
     See Also:
         `API RangeHighlightListener <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart2_1_1data_1_1RangeHighlightListener.html>`_
     """
+    ...
 
 

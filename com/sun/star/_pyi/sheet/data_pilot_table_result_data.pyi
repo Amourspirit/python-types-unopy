@@ -50,6 +50,7 @@ class DataPilotTableResultData(object):
             DataFieldIndex (int, optional): DataFieldIndex value.
             Result (DataResult, optional): Result value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class DataPilotTableResultData(object):
         """
         This is a set of filter criteria that can be used to re-create those data rows that contribute to the value shown in the cell.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class DataPilotTableResultData(object):
         """
         This is a 0-based index that specifies which data field the data displayed in the cell is for; the value of 0 means the cell is for the first data field, 1 for the second, and so on.
         """
+        ...
 
 
     @property
@@ -71,5 +74,6 @@ class DataPilotTableResultData(object):
         """
         more information about the result contained in the DataResult type.
         """
+        ...
 
 

@@ -39,10 +39,13 @@ class XSheetAnnotations(XIndexAccess_f0910d6d):
         
         This method creates a new annotation object, attaches it to the specified cell and inserts it into the collection.
         """
+        ...
     def removeByIndex(self, nIndex: int) -> None:
         """
         removes a cell annotation from the collection.
         
         This method removes the annotation from its cell and from the collection.
         """
+        ...
+
 

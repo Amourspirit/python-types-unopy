@@ -38,30 +38,38 @@ class XSheetOutline(XInterface_8f010a43):
         """
         creates outline groups from formula references in a range.
         """
+        ...
     def clearOutline(self) -> None:
         """
         removes all outline groups from the sheet.
         """
+        ...
     def group(self, aRange: 'CellRangeAddress_ec450d43', nOrientation: 'TableOrientation_ee780d84') -> None:
         """
         creates an outline group.
         """
+        ...
     def hideDetail(self, aRange: 'CellRangeAddress_ec450d43') -> None:
         """
         collapses an outline group.
         """
+        ...
     def showDetail(self, aRange: 'CellRangeAddress_ec450d43') -> None:
         """
         reopens an outline group.
         """
+        ...
     def showLevel(self, nLevel: int, nOrientation: 'TableOrientation_ee780d84') -> None:
         """
         shows all outlined groups below a specific level.
         """
+        ...
     def ungroup(self, aRange: 'CellRangeAddress_ec450d43', nOrientation: 'TableOrientation_ee780d84') -> None:
         """
         removes outline groups.
         
         In the specified range, all outline groups on the innermost level are removed.
         """
+        ...
+
 

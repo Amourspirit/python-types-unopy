@@ -43,4 +43,6 @@ class XDocumentPropertiesSupplier(ABC):
         """
         provides the document properties object.
         """
+        ...
+
 

@@ -52,72 +52,87 @@ class XSlideShowView(XInterface_8f010a43):
         
         This method registers a listener with the view, which will get called every time the mouse is clicked on the view.
         """
+        ...
     def addMouseMotionListener(self, xListener: 'XMouseMotionListener_c6a0e71') -> None:
         """
         Add a mouse motion listener to the view.
         
         This method registers a listener with the view, which will get called every time the mouse is moved on the view.
         """
+        ...
     def addPaintListener(self, xListener: 'XPaintListener_bb6d0bee') -> None:
         """
         Add a listener to get notified when this view needs a repaint.
         
         This method registers a listener with the view, which will get called every time the view needs an update of their screen representation.
         """
+        ...
     def addTransformationChangedListener(self, xListener: 'XModifyListener_d5c60ccc') -> None:
         """
         Add a listener to get notified when the transformation matrix changes.
         
         This method registers a listener with the view, which will get called every time the transformation matrix changes.
         """
+        ...
     def clear(self) -> None:
         """
         This method clears the whole view area.
         
         The slide show uses this method to fully erase the view content. Since the slide show has no notion of view size, this is the only reliable way to wholly clear the view.
         """
+        ...
     def getCanvas(self) -> 'XSpriteCanvas_ff8b0df1':
         """
         Get view canvas.
         
         This method gets the underlying XCanvas to display on this view.
         """
+        ...
     def getCanvasArea(self) -> 'Rectangle_84b109e9':
         """
         Get rectangle defining area inside of canvas device which this slide show view uses.
         """
+        ...
     def getTransformation(self) -> 'AffineMatrix2D_ff040da8':
         """
         Query the current transformation matrix for this view.
         
         This method returns the transformation matrix of the view. When notified via the transformation change listener, the show will be displayed using the new transformation.
         """
+        ...
     def getTranslationOffset(self) -> 'IntegerSize2D_f2690d53':
         """
         Query the current translation offset used to fill the physical screen while keeping aspect ratio.
         
         This method returns the translation offset of the view of the view.
         """
+        ...
     def removeMouseListener(self, xListener: 'XMouseListener_bc1d0bfb') -> None:
         """
         Revoke a previously registered mouse listener.
         """
+        ...
     def removeMouseMotionListener(self, xListener: 'XMouseMotionListener_c6a0e71') -> None:
         """
         Revoke a previously registered mouse move listener.
         """
+        ...
     def removePaintListener(self, xListener: 'XPaintListener_bb6d0bee') -> None:
         """
         Revoke a previously registered paint listener.
         """
+        ...
     def removeTransformationChangedListener(self, xListener: 'XModifyListener_d5c60ccc') -> None:
         """
         Revoke a previously registered transformation matrix change listener.
         """
+        ...
     def setMouseCursor(self, nPointerShape: int) -> None:
         """
         Change the mouse cursor currently in effect.
         
         This method changes the mouse cursor currently in effect, for this view.
         """
+        ...
+
 

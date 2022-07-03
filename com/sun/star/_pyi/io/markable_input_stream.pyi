@@ -34,5 +34,6 @@ class MarkableInputStream(XActiveDataSink_b8d00ba3, XConnectable_980a0a96, XInpu
     See Also:
         `API MarkableInputStream <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1io_1_1MarkableInputStream.html>`_
     """
+    ...
 
 

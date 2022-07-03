@@ -44,6 +44,7 @@ class RotationDescriptor(ABC):
         
         This property contains an error, the rotation angle is mathematically inverted when You take into account that the Y-Axis of the coordinate system is pointing down. Please use the Transformation property of the service Shape instead.
         """
+        ...
     @property
     def ShearAngle(self) -> int:
         """
@@ -51,5 +52,6 @@ class RotationDescriptor(ABC):
         
         The shape is sheared counter-clockwise around the center of the bounding box
         """
+        ...
 
 

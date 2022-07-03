@@ -32,5 +32,6 @@ class OLE2Shape(OLE2Shape_add20af7, Shape_c0c80c15):
     See Also:
         `API OLE2Shape <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1OLE2Shape.html>`_
     """
+    ...
 
 

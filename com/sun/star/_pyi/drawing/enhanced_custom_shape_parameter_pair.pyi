@@ -42,6 +42,7 @@ class EnhancedCustomShapeParameterPair(object):
             First (EnhancedCustomShapeParameter, optional): First value.
             Second (EnhancedCustomShapeParameter, optional): Second value.
         """
+        ...
 
 
     @property

@@ -29,6 +29,7 @@ Enum
 See Also:
     `API FillStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a93450c852ea0dc97ffc5168069ed1bc0>`_
 """
+typeName: str = 'com.sun.star.drawing.FillStyle'
 
 BITMAP: 'uno.Enum'
 """

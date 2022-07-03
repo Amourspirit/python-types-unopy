@@ -38,5 +38,6 @@ class AccessibleMenuItem(XAccessibleAction_7ccc1114, XAccessibleContext_8eae119b
     See Also:
         `API AccessibleMenuItem <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1AccessibleMenuItem.html>`_
     """
+    ...
 
 

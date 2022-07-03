@@ -45,6 +45,7 @@ class DataPilotFieldAutoShowInfo(object):
             ItemCount (int, optional): ItemCount value.
             DataField (str, optional): DataField value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class DataPilotFieldAutoShowInfo(object):
         """
         specifies whether the AutoShow feature is enabled or not.
         """
+        ...
 
 
     @property
@@ -59,6 +61,7 @@ class DataPilotFieldAutoShowInfo(object):
         """
         specifies the mode which items have to be shown.
         """
+        ...
 
 
     @property
@@ -66,6 +69,7 @@ class DataPilotFieldAutoShowInfo(object):
         """
         specifies the number of the items to show.
         """
+        ...
 
 
     @property
@@ -73,5 +77,6 @@ class DataPilotFieldAutoShowInfo(object):
         """
         specifies the field where the values to show and select are taken from.
         """
+        ...
 
 

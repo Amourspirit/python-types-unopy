@@ -43,30 +43,37 @@ class XStarBasicLibraryInfo(XInterface_8f010a43):
         
         The container has to be returned in any case, no matter if the library is stored embedded, external, or linked.
         """
+        ...
     def getExternalSourceURL(self) -> str:
         """
         returns an URL describing the location where the library is stored if the library is stored separately (for example not in the main XML file but in a special library format file), an empty string otherwise.
         
         This information can be useful to optimize the access to the library, e.g., for loading on demand.
         """
+        ...
     def getLinkTargetURL(self) -> str:
         """
         returns an URL describing the location of the library linked to.
         
         HINT: This method can be removed when there is a generic interface for linking. Then the implementation will simply support this \"XLinked\" interface and it can be checked by queryInterface().
         """
+        ...
     def getModuleContainer(self) -> 'XNameContainer_cb90e47':
         """
         returns the module container giving access to the modules stored in the library.
         
         The container has to be returned in any case, no matter if the library is stored embedded, external, or linked.
         """
+        ...
     def getName(self) -> str:
         """
         returns the library's name
         """
+        ...
     def getPassword(self) -> str:
         """
         returns the password, if the library is protected with one, an empty string otherwise.
         """
+        ...
+
 

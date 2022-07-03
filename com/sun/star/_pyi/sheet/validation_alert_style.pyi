@@ -32,6 +32,7 @@ class ValidationAlertStyle(Enum):
     See Also:
         `API ValidationAlertStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html#aecf58149730f4c8c5c18c70f3c7c5db7>`_
     """
+    typeName: str = 'com.sun.star.sheet.ValidationAlertStyle'
 
     INFO: 'uno.Enum'
     """

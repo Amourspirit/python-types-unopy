@@ -37,8 +37,11 @@ class XSQLErrorBroadcaster(XInterface_8f010a43):
         """
         adds the specified listener to receive the event \"errorOccurred\"
         """
+        ...
     def removeSQLErrorListener(self, Listener: 'XSQLErrorListener_dcc80cd9') -> None:
         """
         removes the specified listener.
         """
+        ...
+
 

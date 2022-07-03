@@ -46,6 +46,7 @@ class XClob(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getSubString(self, pos: int, length: int) -> str:
         """
         returns a copy of the specified substring in the Clob value designated by this Clob object.
@@ -55,6 +56,7 @@ class XClob(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def length(self) -> int:
         """
         returns the number of characters in the CLOB value designated by this Clob object.
@@ -62,6 +64,7 @@ class XClob(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def position(self, searchstr: str, start: int) -> int:
         """
         determines the character position at which the specified substring searchstr appears in the Clob.
@@ -71,6 +74,7 @@ class XClob(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def positionOfClob(self, pattern: 'XClob', start: int) -> int:
         """
         determines the position at which the specified Clob object pattern appears in this Clob object.
@@ -80,4 +84,6 @@ class XClob(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

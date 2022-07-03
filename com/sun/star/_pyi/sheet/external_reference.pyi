@@ -47,6 +47,7 @@ class ExternalReference(object):
             Index (int, optional): Index value.
             Reference (object, optional): Reference value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class ExternalReference(object):
         
         You can get the index value of an external document from the corresponding com.sun.star.sheet.ExternalDocLink instance through its attribute com.sun.star.sheet.ExternalDocLink.TokenIndex.
         """
+        ...
 
 
     @property
@@ -69,5 +71,6 @@ class ExternalReference(object):
         
         The SingleReference.Sheet member shall contain the index of the external sheet cache containing the values of the externally referenced cells.
         """
+        ...
 
 

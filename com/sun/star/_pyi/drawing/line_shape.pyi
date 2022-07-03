@@ -34,5 +34,6 @@ class LineShape(LineProperties_f13f0da9, PolyPolygonDescriptor_5d38109f, Rotatio
     See Also:
         `API LineShape <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1LineShape.html>`_
     """
+    ...
 
 

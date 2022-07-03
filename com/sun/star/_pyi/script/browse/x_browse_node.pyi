@@ -37,16 +37,21 @@ class XBrowseNode(XInterface_8f010a43):
         """
         Get the children of this node.
         """
+        ...
     def getName(self) -> str:
         """
         Get the name of the node.
         """
+        ...
     def getType(self) -> int:
         """
         the type of the node.
         """
+        ...
     def hasChildNodes(self) -> bool:
         """
         Indicates if this node contains any children.
         """
+        ...
+
 

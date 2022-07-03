@@ -46,6 +46,7 @@ class XGraphics2(XGraphics_842309dd):
         
             LibreOffice 4.1
         """
+        ...
     def drawImage(self, nX: int, nY: int, nWidth: int, nHeight: int, nStyle: int, aGraphic: 'XGraphic_a4da0afc') -> None:
         """
         draws a com.sun.star.graphic.XGraphic in the output device.
@@ -56,4 +57,6 @@ class XGraphics2(XGraphics_842309dd):
         
             LibreOffice 4.1
         """
+        ...
+
 

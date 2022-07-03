@@ -44,8 +44,11 @@ class XPane(XResource_3bcd0f90):
         
         The com.sun.star.rendering.XCanvas object is expected to be associated with the com.sun.star.awt.XWindow object returned by getWindow().
         """
+        ...
     def getWindow(self) -> 'XWindow_713b0924':
         """
         Return the com.sun.star.awt.XWindow of the pane that is used to display a view.
         """
+        ...
+
 

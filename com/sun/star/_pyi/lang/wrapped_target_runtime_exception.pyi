@@ -46,11 +46,13 @@ class WrappedTargetRuntimeException(RuntimeException_d7390ced):
             Context (XInterface, optional): Context value.
             TargetException (object, optional): TargetException value.
         """
+        ...
     @property
     def TargetException(self) -> object:
         """
         The exception is thrown by the target.
         """
+        ...
 
 
 __all__ = ['WrappedTargetRuntimeException']

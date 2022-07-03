@@ -29,6 +29,7 @@ Enum
 See Also:
     `API ConnectorType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a086c6f6507c67c8809b218d90998c5d6>`_
 """
+typeName: str = 'com.sun.star.drawing.ConnectorType'
 
 CURVE: 'uno.Enum'
 """

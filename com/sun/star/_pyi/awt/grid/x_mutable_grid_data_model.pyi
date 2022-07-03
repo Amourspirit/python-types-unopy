@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.awt.grid
 from typing_extensions import Literal
 import typing
+import uno
 from .x_grid_data_model import XGridDataModel as XGridDataModel_f8b20d71
 if typing.TYPE_CHECKING:
     from .x_grid_data_listener import XGridDataListener as XGridDataListener_23f10ec6
@@ -37,10 +38,12 @@ class XMutableGridDataModel(XGridDataModel_f8b20d71):
         """
         registers listener to be notified of data changes in the model
         """
+        ...
     def addRow(self, Heading: object, Data: 'typing.Tuple[object, ...]') -> None:
         """
         appends a row to the model.
         """
+        ...
     def addRows(self, Headings: 'typing.Tuple[object, ...]', Data: 'typing.Tuple[typing.Tuple[object, ...], ...]') -> None:
         """
         appends multiple rows of data to the model.
@@ -48,6 +51,7 @@ class XMutableGridDataModel(XGridDataModel_f8b20d71):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def insertRow(self, Index: int, Heading: object, Data: 'typing.Tuple[object, ...]') -> None:
         """
         inserts a row into the set of data rows
@@ -55,6 +59,7 @@ class XMutableGridDataModel(XGridDataModel_f8b20d71):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def insertRows(self, Index: int, Headings: 'typing.Tuple[object, ...]', Data: 'typing.Tuple[typing.Tuple[object, ...], ...]') -> None:
         """
         inserts multiple rows of data into the model.
@@ -63,14 +68,17 @@ class XMutableGridDataModel(XGridDataModel_f8b20d71):
             : ````
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def removeAllRows(self) -> None:
         """
         Removes all rows from the model.
         """
+        ...
     def removeGridDataListener(self, Listener: 'XGridDataListener_23f10ec6') -> None:
         """
         revokes a listener which was previously registered via addGridDataListener()
         """
+        ...
     def removeRow(self, RowIndex: int) -> None:
         """
         removes a row of data from the model
@@ -78,6 +86,7 @@ class XMutableGridDataModel(XGridDataModel_f8b20d71):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def updateCellData(self, ColumnIndex: int, RowIndex: int, Value: object) -> None:
         """
         updates the content of the given cell
@@ -85,6 +94,7 @@ class XMutableGridDataModel(XGridDataModel_f8b20d71):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def updateCellToolTip(self, ColumnIndex: int, RowIndex: int, Value: object) -> None:
         """
         updates the tooltip to be displayed for a given cell
@@ -92,7 +102,8 @@ class XMutableGridDataModel(XGridDataModel_f8b20d71):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
-    def updateRowData(self, ColumnIndexes: 'typing.Tuple[int, ...]', RowIndex: int, Values: 'typing.Tuple[object, ...]') -> None:
+        ...
+    def updateRowData(self, ColumnIndexes: uno.ByteSequence, RowIndex: int, Values: 'typing.Tuple[object, ...]') -> None:
         """
         updates the content of a given row.
         
@@ -102,6 +113,7 @@ class XMutableGridDataModel(XGridDataModel_f8b20d71):
             : ````
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def updateRowHeading(self, RowIndex: int, Heading: object) -> None:
         """
         sets a new title for a given row.
@@ -109,6 +121,7 @@ class XMutableGridDataModel(XGridDataModel_f8b20d71):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def updateRowToolTip(self, RowIndex: int, Value: object) -> None:
         """
         updates the tooltip for all cells of a given row
@@ -118,4 +131,6 @@ class XMutableGridDataModel(XGridDataModel_f8b20d71):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

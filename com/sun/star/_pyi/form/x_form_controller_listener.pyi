@@ -39,10 +39,13 @@ class XFormControllerListener(XEventListener_c7230c4a):
         """
         is invoked when a control of the controller gained the focus and the controller was not previously activated.
         """
+        ...
     def formDeactivated(self, rEvent: 'EventObject_a3d70b03') -> None:
         """
         is invoked when a control of the \"XFormController\" lost the focus and no control of the controller received the focus.
         
         In other words, no control of the controller owns the focus.
         """
+        ...
+
 

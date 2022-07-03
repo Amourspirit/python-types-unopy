@@ -46,11 +46,13 @@ class InteractiveNetworkResolveNameException(InteractiveNetworkException_7ca3115
             Classification (InteractionClassification, optional): Classification value.
             Server (str, optional): Server value.
         """
+        ...
     @property
     def Server(self) -> str:
         """
         The server name for which resolution failed.
         """
+        ...
 
 
 __all__ = ['InteractiveNetworkResolveNameException']

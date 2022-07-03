@@ -37,4 +37,6 @@ class XEventsSupplier(XInterface_8f010a43):
         """
         offers a list of event handlers which are be bound to events of this object
         """
+        ...
+
 

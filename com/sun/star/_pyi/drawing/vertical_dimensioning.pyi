@@ -32,6 +32,7 @@ class VerticalDimensioning(Enum):
     See Also:
         `API VerticalDimensioning <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a3d694e7ac991a1dc3541f7d166f0b126>`_
     """
+    typeName: str = 'com.sun.star.drawing.VerticalDimensioning'
 
     AUTO: 'uno.Enum'
     """

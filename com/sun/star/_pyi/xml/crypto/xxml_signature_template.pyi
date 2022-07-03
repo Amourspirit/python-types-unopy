@@ -44,12 +44,14 @@ class XXMLSignatureTemplate(XXMLSecurityTemplate_79221105):
         """
         Get the dynamic URI binding.
         """
+        ...
     def getTargets(self) -> 'typing.Tuple[XXMLElementWrapper_66c0107c, ...]':
         """
         Get the target XML element, i.e.
         
         the element to be signed
         """
+        ...
     def setBinding(self, aUriBinding: 'XUriBinding_f04e0d6b') -> None:
         """
         Set the dynamic URI binding.
@@ -57,4 +59,6 @@ class XXMLSignatureTemplate(XXMLSecurityTemplate_79221105):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

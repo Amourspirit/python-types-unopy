@@ -35,34 +35,40 @@ class XSimpleMailMessage(XInterface_8f010a43):
         """
         To get the attachment of a simple mail message.
         """
+        ...
     def getBccRecipient(self) -> 'typing.Tuple[str, ...]':
         """
         To get the BCC recipients of a simple mail message.
         
         If no BCC recipients have been specified an empty sequence will be returned.
         """
+        ...
     def getCcRecipient(self) -> 'typing.Tuple[str, ...]':
         """
         To get the cc recipients of a simple mail message.
         
         If no cc recipients have been specified an empty sequence will be returned.
         """
+        ...
     def getOriginator(self) -> str:
         """
         To get the email address of the originator of a simple mail message.
         
         If no originator has been specified an empty string will be returned.
         """
+        ...
     def getRecipient(self) -> str:
         """
         To get the recipient of the simple mail message.
         """
+        ...
     def getSubject(self) -> str:
         """
         To get the subject of a simple mail message.
         
         If no subject has been specified an empty string will be returned.
         """
+        ...
     def setAttachement(self, aAttachement: 'typing.Tuple[str, ...]') -> None:
         """
         To set an attachment of a simple mail message.
@@ -70,26 +76,33 @@ class XSimpleMailMessage(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setBccRecipient(self, aBccRecipient: 'typing.Tuple[str, ...]') -> None:
         """
         To set the BCC recipient of a simple mail message.
         """
+        ...
     def setCcRecipient(self, aCcRecipient: 'typing.Tuple[str, ...]') -> None:
         """
         To set the cc recipients of a simple mail message.
         
         The method does not check if the given addresses are valid. An empty sequence means there are no cc recipients.
         """
+        ...
     def setOriginator(self, aOriginator: str) -> None:
         """
         To set the email address of the originator of a simple mail message.
         """
+        ...
     def setRecipient(self, aRecipient: str) -> None:
         """
         To set the recipient of the simple mail message.
         """
+        ...
     def setSubject(self, aSubject: str) -> None:
         """
         To set the subject of a simple mail message.
         """
+        ...
+
 

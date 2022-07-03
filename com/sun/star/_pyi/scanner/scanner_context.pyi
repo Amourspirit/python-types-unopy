@@ -41,6 +41,7 @@ class ScannerContext(object):
             ScannerName (str, optional): ScannerName value.
             InternalData (int, optional): InternalData value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class ScannerContext(object):
         """
         ScannerName contains a user readable identification.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class ScannerContext(object):
         """
         InternalData contains service private data and must not be changed.
         """
+        ...
 
 

@@ -47,6 +47,7 @@ class DDEItemInfo(object):
             Results (typing.Tuple[typing.Tuple[object, ...], ...], optional): Results value.
             Item (str, optional): Item value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class DDEItemInfo(object):
         
         This sequence may be empty.
         """
+        ...
 
 
     @property
@@ -63,5 +65,6 @@ class DDEItemInfo(object):
         """
         The name of the DDE item.
         """
+        ...
 
 

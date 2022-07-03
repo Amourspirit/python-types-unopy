@@ -42,6 +42,7 @@ class DataPilotFieldSortInfo(object):
             IsAscending (bool, optional): IsAscending value.
             Mode (int, optional): Mode value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class DataPilotFieldSortInfo(object):
         """
         contains the data field to sort by if the Mode is DATA
         """
+        ...
 
 
     @property
@@ -56,6 +58,7 @@ class DataPilotFieldSortInfo(object):
         """
         TRUE if data are sorted in ascending order, FALSE if in descending order.
         """
+        ...
 
 
     @property
@@ -63,5 +66,6 @@ class DataPilotFieldSortInfo(object):
         """
         contains the sort mode
         """
+        ...
 
 

@@ -37,4 +37,6 @@ class XSheetAnnotationShapeSupplier(XInterface_8f010a43):
         """
         returns the shape of the annotation
         """
+        ...
+
 

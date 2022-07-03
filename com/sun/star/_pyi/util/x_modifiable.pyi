@@ -36,6 +36,7 @@ class XModifiable(XModifyBroadcaster_fd990df0):
         """
         The modification is always in relation to a certain state (i.e., the initial, loaded, or last stored version).
         """
+        ...
     def setModified(self, bModified: bool) -> None:
         """
         sets the status of the modified-flag from outside of the object.
@@ -43,4 +44,6 @@ class XModifiable(XModifyBroadcaster_fd990df0):
         Raises:
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
         """
+        ...
+
 

@@ -30,5 +30,6 @@ class BindableControlModel(FormControlModel_e2990d22, XBindableValue_35880f2b):
     See Also:
         `API BindableControlModel <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1binding_1_1BindableControlModel.html>`_
     """
+    ...
 
 

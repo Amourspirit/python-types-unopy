@@ -41,6 +41,7 @@ class XSubmission(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def removeSubmissionVetoListener(self, listener: 'XSubmissionVetoListener_18e1149e') -> None:
         """
         revokes a listener which has previously been registered to be notified when a submission occurs
@@ -48,6 +49,7 @@ class XSubmission(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def submit(self) -> None:
         """
         tells the component to submit data
@@ -56,6 +58,7 @@ class XSubmission(XInterface_8f010a43):
             com.sun.star.util.VetoException: ``VetoException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def submitWithInteraction(self, aHandler: 'XInteractionHandler_bf80e51') -> None:
         """
         tells the component to submit data
@@ -64,4 +67,6 @@ class XSubmission(XInterface_8f010a43):
             com.sun.star.util.VetoException: ``VetoException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

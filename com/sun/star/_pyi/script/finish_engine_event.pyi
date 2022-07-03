@@ -50,6 +50,7 @@ class FinishEngineEvent(EventObject_a3d70b03):
             ErrorMessage (str, optional): ErrorMessage value.
             Return (object, optional): Return value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class FinishEngineEvent(EventObject_a3d70b03):
         """
         specifies why the script terminates.
         """
+        ...
 
 
     @property
@@ -66,6 +68,7 @@ class FinishEngineEvent(EventObject_a3d70b03):
         
         Only valid if Reason is RuntimeError or CompileError.
         """
+        ...
 
 
     @property
@@ -75,5 +78,6 @@ class FinishEngineEvent(EventObject_a3d70b03):
         
         This field is only valid if FinishEngineEvent.Finish is FinishReason.OK.
         """
+        ...
 
 

@@ -59,6 +59,7 @@ class XReportDefinition(XDocumentSubStorageSupplier_da021351, XStorageBasedDocum
             com.sun.star.lang.DisposedException: ``DisposedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getEventBroadcaster(self) -> 'XEventBroadcaster_2b120f2b':
         """
         makes it possible to register listeners which are called whenever a document event occurs.
@@ -69,27 +70,30 @@ class XReportDefinition(XDocumentSubStorageSupplier_da021351, XStorageBasedDocum
             com.sun.star.lang.DisposedException: ``DisposedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
     @property
     def ActiveConnection(self) -> 'XConnection_a36a0b0c':
         """
         specifies the active connection which is used to create the resulting report.
         """
+        ...
 
     @property
     def Caption(self) -> str:
         """
         Represents the title of the report in print preview.
         """
+        ...
 
     @property
     def Command(self) -> str:
         """
         is the command which should be executed, the type of command depends on the CommandType.
         
-        In case of a CommandType of CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:
-        It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.
-        The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
+        In case of a CommandType of CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
         """
+        ...
 
     @property
     def CommandType(self) -> int:
@@ -100,18 +104,21 @@ class XReportDefinition(XDocumentSubStorageSupplier_da021351, XStorageBasedDocum
         
         This property is only meaningful together with the Command property, thus either both or none of them are present.
         """
+        ...
 
     @property
     def DataSourceName(self) -> str:
         """
         is the name of the datasource to use, this could be a named datasource or the URL of a data access component.
         """
+        ...
 
     @property
     def Detail(self) -> 'XSection_9b630ad1':
         """
         returns the detail section.
         """
+        ...
 
     @property
     def EscapeProcessing(self) -> bool:
@@ -122,6 +129,7 @@ class XReportDefinition(XDocumentSubStorageSupplier_da021351, XStorageBasedDocum
         
         This property is usually present together with the Command and CommandType properties, and is evaluated if and only if CommandType equals CommandType.COMMAND.
         """
+        ...
 
     @property
     def Filter(self) -> str:
@@ -134,30 +142,35 @@ class XReportDefinition(XDocumentSubStorageSupplier_da021351, XStorageBasedDocum
         
         Note that the Filter property does not make sense if a ResultSet has been specified in the DataAccessDescriptor.
         """
+        ...
 
     @property
     def GroupKeepTogether(self) -> int:
         """
         Specifies whether groups in a multi column report are kept together.
         """
+        ...
 
     @property
     def Groups(self) -> 'XGroups_90d00a7c':
         """
         Represents the groups of the report.
         """
+        ...
 
     @property
     def MimeType(self) -> str:
         """
         Represents the output format (media (mime) type) of the resulting document when executing this report.
         """
+        ...
 
     @property
     def PageFooter(self) -> 'XSection_9b630ad1':
         """
         returns the page footer if the PageFooterOn is TRUE.
         """
+        ...
 
     @property
     def PageFooterOn(self) -> bool:
@@ -166,18 +179,21 @@ class XReportDefinition(XDocumentSubStorageSupplier_da021351, XStorageBasedDocum
         
         Default is TRUE.
         """
+        ...
 
     @property
     def PageFooterOption(self) -> int:
         """
         Represents the location of the page footer.
         """
+        ...
 
     @property
     def PageHeader(self) -> 'XSection_9b630ad1':
         """
         returns the page header if the PageHeaderOn is TRUE.
         """
+        ...
 
     @property
     def PageHeaderOn(self) -> bool:
@@ -186,18 +202,21 @@ class XReportDefinition(XDocumentSubStorageSupplier_da021351, XStorageBasedDocum
         
         Default is TRUE.
         """
+        ...
 
     @property
     def PageHeaderOption(self) -> int:
         """
         Represents the location of the page header.
         """
+        ...
 
     @property
     def ReportFooter(self) -> 'XSection_9b630ad1':
         """
         returns the report footer if the ReportFooterOn is TRUE.
         """
+        ...
 
     @property
     def ReportFooterOn(self) -> bool:
@@ -206,12 +225,14 @@ class XReportDefinition(XDocumentSubStorageSupplier_da021351, XStorageBasedDocum
         
         Default is FALSE.
         """
+        ...
 
     @property
     def ReportHeader(self) -> 'XSection_9b630ad1':
         """
         returns the report header if the ReportHeaderOn is TRUE.
         """
+        ...
 
     @property
     def ReportHeaderOn(self) -> bool:
@@ -220,5 +241,6 @@ class XReportDefinition(XDocumentSubStorageSupplier_da021351, XStorageBasedDocum
         
         Default is FALSE.
         """
+        ...
 
 

@@ -29,6 +29,7 @@ Enum
 See Also:
     `API DashStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a89f0dc2e221d6f608088093da27764d1>`_
 """
+typeName: str = 'com.sun.star.drawing.DashStyle'
 
 RECT: 'uno.Enum'
 """

@@ -32,5 +32,6 @@ class CallableStatement(PreparedStatement_e1880d29, CallableStatement_eccf0d69):
     See Also:
         `API CallableStatement <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1CallableStatement.html>`_
     """
+    ...
 
 

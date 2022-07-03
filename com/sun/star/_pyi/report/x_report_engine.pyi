@@ -50,6 +50,7 @@ class XReportEngine(XPropertySet_bc180bfa, XComponent_98dc0ab5):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def createDocumentAlive(self, frame: 'XFrame_7a570956') -> 'XModel_7a6e095c':
         """
         creates a report document.
@@ -61,6 +62,7 @@ class XReportEngine(XPropertySet_bc180bfa, XComponent_98dc0ab5):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def createDocumentModel(self) -> 'XModel_7a6e095c':
         """
         creates a report document.
@@ -70,6 +72,7 @@ class XReportEngine(XPropertySet_bc180bfa, XComponent_98dc0ab5):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def interrupt(self) -> None:
         """
         allows to interrupt the creation process of the report document.
@@ -78,31 +81,36 @@ class XReportEngine(XPropertySet_bc180bfa, XComponent_98dc0ab5):
             com.sun.star.lang.DisposedException: ``DisposedException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
     @property
     def ActiveConnection(self) -> 'XConnection_a36a0b0c':
         """
         specifies the active connection which is used to create the resulting report.
         """
+        ...
 
     @property
     def MaxRows(self) -> int:
         """
         defines the maximum number of rows which should be fetched for the report.
         
-        If the limit is exceeded, the excess rows are silently dropped.
-        There is no limitation, if set to zero.
+        If the limit is exceeded, the excess rows are silently dropped. There is no limitation, if set to zero.
         """
+        ...
 
     @property
     def ReportDefinition(self) -> 'XReportDefinition_ec30e81':
         """
         specifies the report definition object which is used to create the resulting report.
         """
+        ...
 
     @property
     def StatusIndicator(self) -> 'XStatusIndicator_e2d00d34':
         """
         specifies the status indicator which shows the progress of the report generation process.
         """
+        ...
 
 

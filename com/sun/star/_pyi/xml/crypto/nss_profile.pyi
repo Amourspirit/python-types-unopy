@@ -46,6 +46,7 @@ class NSSProfile(object):
             Path (str, optional): Path value.
             Type (MozillaProductType, optional): Type value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class NSSProfile(object):
         
         Normally the name will reflect the name of the Mozilla profile. But the profile list also contains the following special entries: MANUAL and MOZILLA_CERTIFICATE_FOLDER. These will have a product type of MozillaProductType.Default and might have an empty path, if that value is not available.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class NSSProfile(object):
         """
         the path to the NSS databases
         """
+        ...
 
 
     @property
@@ -69,5 +72,6 @@ class NSSProfile(object):
         """
         the type of the NSS profile
         """
+        ...
 
 

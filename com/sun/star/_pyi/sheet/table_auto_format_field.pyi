@@ -49,156 +49,187 @@ class TableAutoFormatField(XPropertySet_bc180bfa):
         """
         contains the cell background color.
         """
+        ...
     @property
     def CharColor(self) -> 'Color_68e908c5':
         """
         contains the value of the text color.
         """
+        ...
     @property
     def CharContoured(self) -> bool:
         """
         is TRUE if the characters are contoured.
         """
+        ...
     @property
     def CharCrossedOut(self) -> bool:
         """
         is TRUE if the characters are crossed out.
         """
+        ...
     @property
     def CharFontCharSet(self) -> str:
         """
         contains the value of the character set of the western font.
         """
+        ...
     @property
     def CharFontCharSetAsian(self) -> str:
         """
         contains the value of the character set of the Asian font.
         """
+        ...
     @property
     def CharFontCharSetComplex(self) -> str:
         """
         contains the value of the character set of the complex font.
         """
+        ...
     @property
     def CharFontFamily(self) -> str:
         """
         contains the value of the western font family.
         """
+        ...
     @property
     def CharFontFamilyAsian(self) -> str:
         """
         contains the value of the Asian font family.
         """
+        ...
     @property
     def CharFontFamilyComplex(self) -> str:
         """
         contains the value of the complex font family.
         """
+        ...
     @property
     def CharFontName(self) -> str:
         """
         specifies the name of the western font.
         """
+        ...
     @property
     def CharFontNameAsian(self) -> str:
         """
         specifies the name of the Asian font.
         """
+        ...
     @property
     def CharFontNameComplex(self) -> str:
         """
         specifies the name of the complex font.
         """
+        ...
     @property
     def CharFontPitch(self) -> str:
         """
         contains the value of the pitch of the western font.
         """
+        ...
     @property
     def CharFontPitchAsian(self) -> str:
         """
         contains the value of the pitch of the Asian font.
         """
+        ...
     @property
     def CharFontPitchComplex(self) -> str:
         """
         contains the value of the pitch of the complex font.
         """
+        ...
     @property
     def CharFontStyleName(self) -> str:
         """
         specifies the name of the western font style.
         """
+        ...
     @property
     def CharFontStyleNameAsian(self) -> str:
         """
         specifies the name of the Asian font style.
         """
+        ...
     @property
     def CharFontStyleNameComplex(self) -> str:
         """
         specifies the name of the complex font style.
         """
+        ...
     @property
     def CharHeight(self) -> float:
         """
         contains the height of characters of the western font in point.
         """
+        ...
     @property
     def CharHeightAsian(self) -> float:
         """
         contains the height of characters of the Asian font in point.
         """
+        ...
     @property
     def CharHeightComplex(self) -> float:
         """
         contains the height of characters of the complex font in point.
         """
+        ...
     @property
     def CharPosture(self) -> 'FontSlant_849509ed':
         """
         contains the value of the posture of characters of the western font.
         """
+        ...
     @property
     def CharPostureAsian(self) -> 'FontSlant_849509ed':
         """
         contains the value of the posture of characters of the Asian font.
         """
+        ...
     @property
     def CharPostureComplex(self) -> 'FontSlant_849509ed':
         """
         contains the value of the posture of characters of the complex font.
         """
+        ...
     @property
     def CharShadowed(self) -> bool:
         """
         is TRUE if the characters are shadowed.
         """
+        ...
     @property
     def CharUnderline(self) -> int:
         """
         contains the value for the character underline.
         """
+        ...
     @property
     def CharWeight(self) -> float:
         """
         contains the value for the weight of characters of the western font.
         """
+        ...
     @property
     def CharWeightAsian(self) -> float:
         """
         contains the value for the weight of characters of the Asian font.
         """
+        ...
     @property
     def CharWeightComplex(self) -> float:
         """
         contains the value for the weight of characters of the complex font.
         """
+        ...
     @property
     def HoriJustify(self) -> 'CellHoriJustify_e0470d10':
         """
         specifies the horizontal alignment of the cell contents.
         """
+        ...
     @property
     def IsCellBackgroundTransparent(self) -> bool:
         """
@@ -206,11 +237,13 @@ class TableAutoFormatField(XPropertySet_bc180bfa):
         
         In this case the TableAutoFormatField.CellBackColor value is not used.
         """
+        ...
     @property
     def IsTextWrapped(self) -> bool:
         """
         is TRUE if text breaks automatically at cell borders.
         """
+        ...
     @property
     def Orientation(self) -> 'CellOrientation_e0e40d1c':
         """
@@ -218,31 +251,37 @@ class TableAutoFormatField(XPropertySet_bc180bfa):
         
         top-to-bottom or stacked).
         """
+        ...
     @property
     def ParaBottomMargin(self) -> int:
         """
         contains the margin between cell contents and bottom border (in 1/100 mm).
         """
+        ...
     @property
     def ParaLeftMargin(self) -> int:
         """
         contains the margin between cell contents and left border (in 1/100 mm).
         """
+        ...
     @property
     def ParaRightMargin(self) -> int:
         """
         contains the margin between cell contents and right border (in 1/100 mm).
         """
+        ...
     @property
     def ParaTopMargin(self) -> int:
         """
         contains the margin between cell contents and top border (in 1/100 mm).
         """
+        ...
     @property
     def RotateAngle(self) -> int:
         """
         contains the rotation angle of the cell contents.
         """
+        ...
     @property
     def RotateReference(self) -> int:
         """
@@ -250,11 +289,13 @@ class TableAutoFormatField(XPropertySet_bc180bfa):
         
         changed from com.sun.star.table.CellVertJustify to long in LibO 3.5
         """
+        ...
     @property
     def ShadowFormat(self) -> 'ShadowFormat_bb840bdf':
         """
         contains a description of the shadow.
         """
+        ...
     @property
     def TableBorder(self) -> 'TableBorder_aedf0b56':
         """
@@ -264,6 +305,7 @@ class TableAutoFormatField(XPropertySet_bc180bfa):
         
             OOo 1.1.2
         """
+        ...
     @property
     def TableBorder2(self) -> 'TableBorder2_ba670b88':
         """
@@ -275,6 +317,7 @@ class TableAutoFormatField(XPropertySet_bc180bfa):
         
             LibreOffice 3.6
         """
+        ...
     @property
     def VertJustify(self) -> int:
         """
@@ -282,5 +325,6 @@ class TableAutoFormatField(XPropertySet_bc180bfa):
         
         changed from com.sun.star.table.CellVertJustify to long in LibO 3.5
         """
+        ...
 
 

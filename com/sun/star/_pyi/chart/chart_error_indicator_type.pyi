@@ -32,6 +32,7 @@ class ChartErrorIndicatorType(Enum):
     See Also:
         `API ChartErrorIndicatorType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart.html#a1391f7495aa3a95d4bc29dbf29a809ea>`_
     """
+    typeName: str = 'com.sun.star.chart.ChartErrorIndicatorType'
 
     LOWER: 'uno.Enum'
     """

@@ -32,6 +32,7 @@ class PhaseType(Enum):
     See Also:
         `API PhaseType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1xml_1_1dom_1_1events.html#af00a42ecad444bbda75cde1b64bd7e72>`_
     """
+    typeName: str = 'com.sun.star.xml.dom.events.PhaseType'
 
     AT_TARGET: 'uno.Enum'
     """

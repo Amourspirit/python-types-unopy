@@ -49,38 +49,27 @@ Start of simple numerical formats (first format)
 """
 NUMBER_STANDARD: Literal[0]
 """
-The \"General\" standard format
-formatindex=\"0\".
+The \"General\" standard format formatindex=\"0\".
 """
 NUMBER_INT: Literal[1]
 """
-0
-Integer number
-formatindex=\"1\"
+0 Integer number formatindex=\"1\"
 """
 NUMBER_DEC2: Literal[2]
 """
-0.00
-Decimal number with 2 decimals
-formatindex=\"2\"
+0.00 Decimal number with 2 decimals formatindex=\"2\"
 """
 NUMBER_1000INT: Literal[3]
 """
-#,##0
-Integer number with group separator
-formatindex=\"3\"
+#,##0 Integer number with group separator formatindex=\"3\"
 """
 NUMBER_1000DEC2: Literal[4]
 """
-#,##0.00
-Decimal number with group separator
-formatindex=\"4\"
+#,##0.00 Decimal number with group separator formatindex=\"4\"
 """
 NUMBER_SYSTEM: Literal[5]
 """
-#,##0.00
-In SO5/Win this format was retrieved from the Regional Settings
-formatindex=\"5\"
+#,##0.00 In SO5/Win this format was retrieved from the Regional Settings formatindex=\"5\"
 """
 NUMBER_END: Literal[5]
 """
@@ -92,15 +81,11 @@ Start of Scientific formats (first format)
 """
 SCIENTIFIC_000E000: Literal[6]
 """
-0.00E+000
-Number in scientific notation with exponent in 3 digit placeholders
-formatindex=\"6\"
+0.00E+000 Number in scientific notation with exponent in 3 digit placeholders formatindex=\"6\"
 """
 SCIENTIFIC_000E00: Literal[7]
 """
-0.00E+00
-Number in scientific notation with exponent in 2 digit placeholders
-formatindex=\"7\"
+0.00E+00 Number in scientific notation with exponent in 2 digit placeholders formatindex=\"7\"
 """
 SCIENTIFIC_END: Literal[7]
 """
@@ -112,15 +97,11 @@ Start of Percent formats (first format)
 """
 PERCENT_INT: Literal[8]
 """
-0%
-Percentage format, rounded to integer
-formatindex=\"8\"
+0% Percentage format, rounded to integer formatindex=\"8\"
 """
 PERCENT_DEC2: Literal[9]
 """
-0.00%
-Percentage format, rounded to 2 decimals
-formatindex=\"9\"
+0.00% Percentage format, rounded to 2 decimals formatindex=\"9\"
 """
 PERCENT_END: Literal[9]
 """
@@ -142,39 +123,27 @@ Start of Currency formats (first format)
 """
 CURRENCY_1000INT: Literal[12]
 """
-#,##0 DM
-Integer currency format with group separator
-formatindex=\"12\"
+#,##0 DM Integer currency format with group separator formatindex=\"12\"
 """
 CURRENCY_1000DEC2: Literal[13]
 """
-#,##0.00 DM
-Decimal currency format with group separator
-formatindex=\"13\"
+#,##0.00 DM Decimal currency format with group separator formatindex=\"13\"
 """
 CURRENCY_1000INT_RED: Literal[14]
 """
-#,##0 DM
-Integer currency format with negative in red
-formatindex=\"14\"
+#,##0 DM Integer currency format with negative in red formatindex=\"14\"
 """
 CURRENCY_1000DEC2_RED: Literal[15]
 """
-#,##0.00 DM
-Decimal currency format with negative in red
-formatindex=\"15\"
+#,##0.00 DM Decimal currency format with negative in red formatindex=\"15\"
 """
 CURRENCY_1000DEC2_CCC: Literal[16]
 """
-#,##0.00 DEM
-Currency in ISO-4217 abbreviation format
-formatindex=\"16\"
+#,##0.00 DEM Currency in ISO-4217 abbreviation format formatindex=\"16\"
 """
 CURRENCY_1000DEC2_DASHED: Literal[17]
 """
-#,##0.– DM
-Currency format with dash representing 0 in decimals
-formatindex=\"17\"
+#,##0.– DM Currency format with dash representing 0 in decimals formatindex=\"17\"
 """
 CURRENCY_END: Literal[17]
 """
@@ -186,32 +155,23 @@ Start of Date formats (first format)
 """
 DATE_SYSTEM_SHORT: Literal[18]
 """
-08.10.97
-see also DATE_SYSTEM_... explanation
-formatindex=\"18\"
+08.10.97 see also DATE_SYSTEM_... explanation formatindex=\"18\"
 """
 DATE_SYSTEM_LONG: Literal[19]
 """
 Wednesday, 8.
 
-October 1997
-see also DATE_SYSTEM_... explanation
-formatindex=\"19\"
+October 1997 see also DATE_SYSTEM_... explanation formatindex=\"19\"
 """
 DATE_SYS_DDMMYY: Literal[20]
 """
-08.10.97
-see also DATE_SYS_... explanation
-formatindex=\"20\"
+08.10.97 see also DATE_SYS_... explanation formatindex=\"20\"
 """
 DATE_SYS_DDMMYYYY: Literal[21]
 """
-08.10.1997
-see also DATE_SYS_...
+08.10.1997 see also DATE_SYS_...
 
-explanation
-Note: When editing already existing date data this format is forced in order to always edit the full century.
-formatindex=\"21\"
+explanation Note: When editing already existing date data this format is forced in order to always edit the full century. formatindex=\"21\"
 """
 DATE_SYS_DMMMYY: Literal[22]
 DATE_SYS_DMMMYYYY: Literal[23]
@@ -220,71 +180,51 @@ DATE_SYS_DMMMMYYYY: Literal[25]
 DATE_DIN_DMMMMYYYY: Literal[26]
 DATE_SYS_NNDMMMYY: Literal[27]
 """
-Wed, 8. Oct 97
-see also DATE_SYS_... explanation
-formatindex=\"27\".
+Wed, 8. Oct 97 see also DATE_SYS_... explanation formatindex=\"27\".
 """
 DATE_DEF_NNDDMMMYY: Literal[28]
 """
-Wed 08.Oct 97
-see also DATE_DEF_... explanation
-formatindex=\"28\".
+Wed 08.Oct 97 see also DATE_DEF_... explanation formatindex=\"28\".
 """
 DATE_SYS_NNDMMMMYYYY: Literal[29]
 """
-Wed, 8. October 1997
-see also DATE_SYS_... explanation
-formatindex=\"29\".
+Wed, 8. October 1997 see also DATE_SYS_... explanation formatindex=\"29\".
 """
 DATE_SYS_NNNNDMMMMYYYY: Literal[30]
 """
-Wednesday, 8. October 1997
-formatindex=\"30\".
+Wednesday, 8. October 1997 formatindex=\"30\".
 """
 DATE_DIN_MMDD: Literal[31]
 """
-10-08
-DIN/EN
-formatindex=\"31\"
+10-08 DIN/EN formatindex=\"31\"
 """
 DATE_DIN_YYMMDD: Literal[32]
 """
-97-10-08
-DIN/EN
-formatindex=\"32\"
+97-10-08 DIN/EN formatindex=\"32\"
 """
 DATE_DIN_YYYYMMDD: Literal[33]
 """
-1997-10-08
-DIN/EN/ISO
-formatindex=\"33\"
+1997-10-08 DIN/EN/ISO formatindex=\"33\"
 """
 DATE_SYS_MMYY: Literal[34]
 """
-10.97
-see also DATE_SYS_... explanation
-formatindex=\"34\"
+10.97 see also DATE_SYS_... explanation formatindex=\"34\"
 """
 DATE_SYS_DDMMM: Literal[35]
 """
-08.Oct
-see also DATE_SYS_... explanation
-formatindex=\"35\"
+08.Oct see also DATE_SYS_... explanation formatindex=\"35\"
 """
 DATE_MMMM: Literal[36]
 """
-October
-formatindex=\"36\".
+October formatindex=\"36\".
 """
 DATE_QQJJ: Literal[37]
 """
-4th quarter 97
-formatindex=\"37\"
+4th quarter 97 formatindex=\"37\"
 """
 DATE_WW: Literal[38]
 """
-week of year
-formatindex=\"38\"
+week of year formatindex=\"38\"
 """
 DATE_END: Literal[38]
 """
@@ -296,45 +236,31 @@ Start of Time formats (first format)
 """
 TIME_HHMM: Literal[39]
 """
-HH:MM
-Time format with hour and minute
-formatindex=\"39\".
+HH:MM Time format with hour and minute formatindex=\"39\".
 """
 TIME_HHMMSS: Literal[40]
 """
-HH:MM:SS
-Time format with hour, minute and second
-formatindex=\"40\".
+HH:MM:SS Time format with hour, minute and second formatindex=\"40\".
 """
 TIME_HHMMAMPM: Literal[41]
 """
-HH:MM AM/PM
-Time format with hour, minute and morning/afternoon notation
-formatindex=\"41\".
+HH:MM AM/PM Time format with hour, minute and morning/afternoon notation formatindex=\"41\".
 """
 TIME_HHMMSSAMPM: Literal[42]
 """
-HH:MM:SS AM/PM
-Time format with hour, minute, second and morning/afternoon notation
-formatindex=\"42\".
+HH:MM:SS AM/PM Time format with hour, minute, second and morning/afternoon notation formatindex=\"42\".
 """
 TIME_HH_MMSS: Literal[43]
 """
-[HH]:MM:SS
-Time format with amount of hours
-formatindex=\"43\"
+[HH]:MM:SS Time format with amount of hours formatindex=\"43\"
 """
 TIME_MMSS00: Literal[44]
 """
-MM:SS,00
-Time format with second in fraction
-formatindex=\"44\".
+MM:SS,00 Time format with second in fraction formatindex=\"44\".
 """
 TIME_HH_MMSS00: Literal[45]
 """
-[HH]:MM:SS,00
-Time format with amount of hours and seconds with fraction
-formatindex=\"45\"
+[HH]:MM:SS,00 Time format with amount of hours and seconds with fraction formatindex=\"45\"
 """
 TIME_END: Literal[45]
 """
@@ -346,13 +272,11 @@ Start of DateTime formats (first format)
 """
 DATETIME_SYSTEM_SHORT_HHMM: Literal[46]
 """
-08.10.97 01:23 Date/time format
-formatindex=\"46\"
+08.10.97 01:23 Date/time format formatindex=\"46\"
 """
 DATETIME_SYS_DDMMYYYY_HHMMSS: Literal[47]
 """
-08.10.1997 01:23:45 Date/time format with second
-Note: When editing already existing date/time data this format is forced in order to always edit the full century.
+08.10.1997 01:23:45 Date/time format with second Note: When editing already existing date/time data this format is forced in order to always edit the full century.
 
 formatindex=\"47\"
 """

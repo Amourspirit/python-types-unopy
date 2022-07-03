@@ -42,5 +42,6 @@ class UnoControl(XAccessible_1cbc0eb6, XControl_7a9c098d, XView_5f670847, XWindo
     See Also:
         `API UnoControl <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControl.html>`_
     """
+    ...
 
 

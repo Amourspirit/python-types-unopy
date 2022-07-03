@@ -40,6 +40,7 @@ class XAutoTextGroup(XNameAccess_e2ab0cf6):
         
         The order of the entries corresponds to the output of the function getElementNames().
         """
+        ...
     def insertNewByName(self, aName: str, aTitle: str, xTextRange: 'XTextRange_9a910ab7') -> 'XAutoTextEntry_c96f0c75':
         """
         creates a new AutoTextEntry entry.
@@ -47,6 +48,7 @@ class XAutoTextGroup(XNameAccess_e2ab0cf6):
         Raises:
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def removeByName(self, aEntryName: str) -> None:
         """
         removes the specified autotext entry.
@@ -54,6 +56,7 @@ class XAutoTextGroup(XNameAccess_e2ab0cf6):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def renameByName(self, aElementName: str, aNewElementName: str, aNewElementTitle: str) -> None:
         """
         renames an entry in the autotext group.
@@ -65,4 +68,6 @@ class XAutoTextGroup(XNameAccess_e2ab0cf6):
             com.sun.star.container.ElementExistException: ``ElementExistException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

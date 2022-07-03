@@ -31,5 +31,6 @@ class CharacterClassification(XCharacterClassification_4ac00fd9):
     See Also:
         `API CharacterClassification <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1i18n_1_1CharacterClassification.html>`_
     """
+    ...
 
 

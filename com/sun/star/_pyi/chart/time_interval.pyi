@@ -45,6 +45,7 @@ class TimeInterval(object):
             Number (int, optional): Number value.
             TimeUnit (int, optional): TimeUnit value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class TimeInterval(object):
         """
         specifies the number of units
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class TimeInterval(object):
         
         is a value out of the constant group com.sun.star.chart.TimeUnit.
         """
+        ...
 
 

@@ -46,6 +46,7 @@ class TimeIncrement(object):
             MinorTimeInterval (object, optional): MinorTimeInterval value.
             TimeResolution (object, optional): TimeResolution value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class TimeIncrement(object):
         
         Otherwise, if the any is empty or contains an incompatible type, the distance between major tickmarks is calculated automatically by the application.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class TimeIncrement(object):
         
         Otherwise, if the any is empty or contains an incompatible type, the distance between minor tickmarks is calculated automatically by the application.
         """
+        ...
 
 
     @property
@@ -73,5 +76,6 @@ class TimeIncrement(object):
         
         Otherwise, if the any is empty or contains an incompatible type, the resolution is chosen automatically by the application.
         """
+        ...
 
 

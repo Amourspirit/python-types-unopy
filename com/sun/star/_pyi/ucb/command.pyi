@@ -42,6 +42,7 @@ class Command(object):
             Handle (int, optional): Handle value.
             Argument (object, optional): Argument value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class Command(object):
         """
         contains the name of the command.
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class Command(object):
         
         It must be -1 if the implementation has no handle. 0 is a valid command handle.
         """
+        ...
 
 
     @property
@@ -65,5 +68,6 @@ class Command(object):
         """
         contains the argument of the command
         """
+        ...
 
 

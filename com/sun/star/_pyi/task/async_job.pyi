@@ -34,5 +34,6 @@ class AsyncJob(XAsyncJob_8eb50a2c, XCloseable_99ee0aa8):
     See Also:
         `API AsyncJob <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1task_1_1AsyncJob.html>`_
     """
+    ...
 
 

@@ -48,8 +48,11 @@ class XAcceptor(XInterface_8f010a43):
             ConnectionSetupException: ``ConnectionSetupException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def stopAccepting(self) -> None:
         """
         pushes acceptor out of the accept-call.
         """
+        ...
+
 

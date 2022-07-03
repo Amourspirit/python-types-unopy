@@ -64,6 +64,7 @@ class CopyTableWizard(XCopyTableWizard_89b7114f):
             : ````
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def createWithInteractionHandler(self, Source: 'XPropertySet_bc180bfa', Destination: 'XPropertySet_bc180bfa', InteractionHandler: 'XInteractionHandler_bf80e51') -> None:
         """
         creates an executable wizard dialog, which is to guide the user through copying a table from one database to another.
@@ -77,5 +78,6 @@ class CopyTableWizard(XCopyTableWizard_89b7114f):
             : ````
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
 
 

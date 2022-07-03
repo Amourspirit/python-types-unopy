@@ -28,5 +28,6 @@ class InteractionRequestStringResolver(XInteractionRequestStringResolver_23b1445
     See Also:
         `API InteractionRequestStringResolver <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1task_1_1InteractionRequestStringResolver.html>`_
     """
+    ...
 
 

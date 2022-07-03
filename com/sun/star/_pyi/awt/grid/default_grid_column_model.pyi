@@ -33,5 +33,6 @@ class DefaultGridColumnModel(XGridColumnModel_16290e65):
     See Also:
         `API DefaultGridColumnModel <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1grid_1_1DefaultGridColumnModel.html>`_
     """
+    ...
 
 

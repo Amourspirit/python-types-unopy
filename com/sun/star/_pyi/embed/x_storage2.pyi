@@ -52,6 +52,7 @@ class XStorage2(XStorage_8e460a32):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def openEncryptedStream(self, sStreamName: str, nOpenMode: int, aEncryptionData: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> 'XStream_678908a4':
         """
         allows to get access to a child encrypted stream with EncryptionData.
@@ -68,4 +69,6 @@ class XStorage2(XStorage_8e460a32):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
+
 

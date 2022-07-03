@@ -41,6 +41,7 @@ class Implementation(object):
             unoID (str, optional): unoID value.
             isDefault (bool, optional): isDefault value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class Implementation(object):
         """
         The implementation name.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class Implementation(object):
         """
         If this is the default implementation.
         """
+        ...
 
 

@@ -38,14 +38,18 @@ class XStarBasicModuleInfo(XInterface_8f010a43):
         """
         returns the type of the script language as string, for example, \"StarBasic\" or \"JavaScript\".
         """
+        ...
     def getName(self) -> str:
         """
         returns the name of the module
         """
+        ...
     def getSource(self) -> str:
         """
         returns the script source code as string.
         
         The code has to correspond with the language defined by Language.
         """
+        ...
+
 

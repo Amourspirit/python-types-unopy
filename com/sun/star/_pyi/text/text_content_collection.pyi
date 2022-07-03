@@ -30,5 +30,6 @@ class TextContentCollection(XContainer_d6fb0cc6, XNameAccess_e2ab0cf6):
     See Also:
         `API TextContentCollection <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1TextContentCollection.html>`_
     """
+    ...
 
 

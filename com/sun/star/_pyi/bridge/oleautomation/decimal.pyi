@@ -48,6 +48,7 @@ class Decimal(object):
             MiddleValue (int, optional): MiddleValue value.
             HighValue (int, optional): HighValue value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class Decimal(object):
         """
         corresponds to DECIMAL.scale.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class Decimal(object):
         """
         corresponds to DECIMAL.sign.
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class Decimal(object):
         """
         corresponds to DECIMAL.Lo32.
         """
+        ...
 
 
     @property
@@ -76,6 +80,7 @@ class Decimal(object):
         """
         corresponds to DECIMAL.Mid32.
         """
+        ...
 
 
     @property
@@ -83,5 +88,6 @@ class Decimal(object):
         """
         corresponds to DECIMAL.Hi32.
         """
+        ...
 
 

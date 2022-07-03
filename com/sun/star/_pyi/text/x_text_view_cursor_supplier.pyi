@@ -38,4 +38,6 @@ class XTextViewCursorSupplier(XInterface_8f010a43):
     def getViewCursor(self) -> 'XTextViewCursor_d6aa0ce3':
         """
         """
+        ...
+
 

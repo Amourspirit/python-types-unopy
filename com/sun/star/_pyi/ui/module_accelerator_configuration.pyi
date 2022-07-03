@@ -35,5 +35,6 @@ class ModuleAcceleratorConfiguration(XAcceleratorConfiguration_46580ffb):
     def createWithModuleIdentifier(self, ModuleIdentifier: str) -> None:
         """
         """
+        ...
 
 

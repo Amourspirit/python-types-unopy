@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.drawing
 from typing_extensions import Literal
-import typing
+import uno
 from abc import ABC
 
 class XShapes3(ABC):
@@ -35,7 +35,7 @@ class XShapes3(ABC):
     """
     __pyunointerface__: Literal['com.sun.star.drawing.XShapes3']
 
-    def sort(self, sortOrder: 'typing.Tuple[int, ...]') -> None:
+    def sort(self, sortOrder: uno.ByteSequence) -> None:
         """
         Sort shapes according to given sort order, for perf reason just rearrange and don't broadcast.
         
@@ -46,4 +46,6 @@ class XShapes3(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

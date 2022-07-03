@@ -32,6 +32,7 @@ class MeasureKind(Enum):
     See Also:
         `API MeasureKind <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#aba601430b0385cb6c2e7db8f7814cbff>`_
     """
+    typeName: str = 'com.sun.star.drawing.MeasureKind'
 
     RADIUS: 'uno.Enum'
     """

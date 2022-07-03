@@ -37,5 +37,6 @@ class LayerParser(XLayer_4cd50fcb, XActiveDataSink_b8d00ba3, XInitialization_d46
     See Also:
         `API LayerParser <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1xml_1_1LayerParser.html>`_
     """
+    ...
 
 

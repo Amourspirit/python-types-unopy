@@ -32,5 +32,6 @@ class CartesianCoordinateSystem2d(XCoordinateSystem_7ff0e31):
     See Also:
         `API CartesianCoordinateSystem2d <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart2_1_1CartesianCoordinateSystem2d.html>`_
     """
+    ...
 
 

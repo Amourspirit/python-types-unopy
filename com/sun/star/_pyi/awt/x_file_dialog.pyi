@@ -39,20 +39,26 @@ class XFileDialog(XInterface_8f010a43):
         """
         returns the currently selected filter.
         """
+        ...
     def getPath(self) -> str:
         """
         returns the path.
         """
+        ...
     def setCurrentFilter(self, Filter: str) -> None:
         """
         sets the current filter.
         """
+        ...
     def setFilters(self, rFilterNames: 'typing.Tuple[str, ...]', rMasks: 'typing.Tuple[str, ...]') -> None:
         """
         sets the filters.
         """
+        ...
     def setPath(self, Path: str) -> None:
         """
         sets the path.
         """
+        ...
+
 

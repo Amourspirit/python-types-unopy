@@ -33,15 +33,18 @@ class XCompatWriterDocProperties(ABC):
     def Category(self) -> str:
         """
         """
+        ...
 
     @property
     def Company(self) -> str:
         """
         """
+        ...
 
     @property
     def Manager(self) -> str:
         """
         """
+        ...
 
 

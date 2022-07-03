@@ -49,17 +49,20 @@ class LockedOnSavingRequest(Exception_85530a09):
             DocumentURL (str, optional): DocumentURL value.
             UserInfo (str, optional): UserInfo value.
         """
+        ...
     @property
     def DocumentURL(self) -> str:
         """
         The URL of the locked document.
         """
+        ...
 
     @property
     def UserInfo(self) -> str:
         """
         The user information of the locked document.
         """
+        ...
 
 
 __all__ = ['LockedOnSavingRequest']

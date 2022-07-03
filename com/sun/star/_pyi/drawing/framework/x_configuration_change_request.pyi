@@ -41,4 +41,6 @@ class XConfigurationChangeRequest(ABC):
         """
         Commit the configuration change request represented by the called object to the given configuration.
         """
+        ...
+
 

@@ -39,6 +39,7 @@ class RedlinePortion(TextPortion_a6f80b5d):
         """
         determines whether the portion is member of a header or footer text.
         """
+        ...
     @property
     def MergeLastPara(self) -> bool:
         """
@@ -46,21 +47,25 @@ class RedlinePortion(TextPortion_a6f80b5d):
         
         a text table)
         """
+        ...
     @property
     def RedlineAuthor(self) -> str:
         """
         contains the name of the author of the change.
         """
+        ...
     @property
     def RedlineComment(self) -> str:
         """
         contains a comment for the change.
         """
+        ...
     @property
     def RedlineDateTime(self) -> 'DateTime_84de09d3':
         """
         contains the date and time of the change.
         """
+        ...
     @property
     def RedlineIdentifier(self) -> str:
         """
@@ -68,6 +73,7 @@ class RedlinePortion(TextPortion_a6f80b5d):
         
         This is necessary for file export filters to able to recognize redline portions that point to the same redline.
         """
+        ...
     @property
     def RedlineSuccessorData(self) -> 'PropertyValues_d6470ce6':
         """
@@ -75,6 +81,7 @@ class RedlinePortion(TextPortion_a6f80b5d):
         
         The elements of the sequence are:
         """
+        ...
     @property
     def RedlineText(self) -> 'XText_690408ca':
         """
@@ -82,6 +89,7 @@ class RedlinePortion(TextPortion_a6f80b5d):
         
         This interface is only provided if the change is not visible. The visibility depends on the redline display options that are set at the documents property set (RedlineDisplayType).
         """
+        ...
     @property
     def RedlineType(self) -> str:
         """
@@ -89,5 +97,6 @@ class RedlinePortion(TextPortion_a6f80b5d):
         
         Valid type names are:
         """
+        ...
 
 

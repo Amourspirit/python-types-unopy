@@ -51,6 +51,7 @@ class TableColumnSeparator(object):
             Position (int, optional): Position value.
             IsVisible (bool, optional): IsVisible value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class TableColumnSeparator(object):
         """
         contains the position of the separator.
         """
+        ...
 
 
     @property
@@ -65,5 +67,6 @@ class TableColumnSeparator(object):
         """
         determines if the separator is visible.
         """
+        ...
 
 

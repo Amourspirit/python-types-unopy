@@ -46,6 +46,7 @@ class UpdateInformationEntry(object):
             UpdateDocument (XElement, optional): UpdateDocument value.
             Description (str, optional): Description value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class UpdateInformationEntry(object):
         """
         the DOM representation of an update information entry
         """
+        ...
 
 
     @property
@@ -60,5 +62,6 @@ class UpdateInformationEntry(object):
         """
         the (optional) description for an update information entry extracted from the update feed container
         """
+        ...
 
 

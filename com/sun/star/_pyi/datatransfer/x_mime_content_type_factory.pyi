@@ -42,4 +42,6 @@ class XMimeContentTypeFactory(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

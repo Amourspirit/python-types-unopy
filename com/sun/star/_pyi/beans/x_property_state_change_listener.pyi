@@ -37,4 +37,6 @@ class XPropertyStateChangeListener(XEventListener_c7230c4a):
         """
         is called when a bound property's state is changed.
         """
+        ...
+
 

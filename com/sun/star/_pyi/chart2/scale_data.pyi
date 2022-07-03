@@ -54,6 +54,7 @@ class ScaleData(object):
             IncrementData (IncrementData, optional): IncrementData value.
             TimeIncrement (TimeIncrement, optional): TimeIncrement value.
         """
+        ...
 
 
     @property
@@ -65,6 +66,7 @@ class ScaleData(object):
         
         If the maximum is automatic, this means, each view that represents the model containing this scale, has to calculate a maximum by its own means.
         """
+        ...
 
 
     @property
@@ -76,6 +78,7 @@ class ScaleData(object):
         
         If the minimum is automatic, this means, each view that represents the model containing this scale, has to calculate a minimum by its own means.
         """
+        ...
 
 
     @property
@@ -85,6 +88,7 @@ class ScaleData(object):
         
         If the any contains a double value that value is used. Otherwise an appropriate value has to be calculated by that instances using Origin.
         """
+        ...
 
 
     @property
@@ -96,6 +100,7 @@ class ScaleData(object):
         
         Note: Is this a good place for the axis orientation? Two axes may use the same scale, but point into two different directions.
         """
+        ...
 
 
     @property
@@ -115,6 +120,7 @@ class ScaleData(object):
         
         It can be a real number axis or a category axis or something else. AxisType is one value out of the constant group AxisType.
         """
+        ...
 
 
     @property
@@ -122,6 +128,7 @@ class ScaleData(object):
         """
         if true an AxisType CATEGORY is interpreted as DATE if the underlying data given in Categories are dates
         """
+        ...
 
 
     @property
@@ -129,6 +136,7 @@ class ScaleData(object):
         """
         describes whether data points on category or date axis are placed between tickmarks or not if true the maximum on the scale will be expanded for one interval
         """
+        ...
 
 
     @property
@@ -136,6 +144,7 @@ class ScaleData(object):
         """
         increment data to be used for not date-time axis
         """
+        ...
 
 
     @property
@@ -143,5 +152,6 @@ class ScaleData(object):
         """
         increment data to be used in case of date-time axis
         """
+        ...
 
 

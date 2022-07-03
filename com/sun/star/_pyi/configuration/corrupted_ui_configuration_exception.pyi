@@ -48,6 +48,7 @@ class CorruptedUIConfigurationException(CorruptedConfigurationException_a229173f
             Context (XInterface, optional): Context value.
             Details (str, optional): Details value.
         """
+        ...
 
 __all__ = ['CorruptedUIConfigurationException']
 

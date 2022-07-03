@@ -29,6 +29,7 @@ Enum
 See Also:
     `API PageStyleLayout <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style.html#ae13f8c21c10b194207bb33f84a33d50f>`_
 """
+typeName: str = 'com.sun.star.style.PageStyleLayout'
 
 ALL: 'uno.Enum'
 """

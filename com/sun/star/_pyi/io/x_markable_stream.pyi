@@ -37,6 +37,7 @@ class XMarkableStream(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def deleteMark(self, Mark: int) -> None:
         """
         deletes the mark that you previously created with XMarkableStream.createMark().
@@ -47,6 +48,7 @@ class XMarkableStream(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def jumpToFurthest(self) -> None:
         """
         jumps to the furthest position of the stream.
@@ -56,6 +58,7 @@ class XMarkableStream(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def jumpToMark(self, nMark: int) -> None:
         """
         jumps to a previously created mark.
@@ -64,6 +67,7 @@ class XMarkableStream(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def offsetToMark(self, nMark: int) -> int:
         """
 
@@ -71,4 +75,6 @@ class XMarkableStream(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

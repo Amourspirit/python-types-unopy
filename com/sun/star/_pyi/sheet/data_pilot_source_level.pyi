@@ -19,6 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.sheet
 import typing
+import uno
 from ..beans.x_property_set import XPropertySet as XPropertySet_bc180bfa
 from ..container.x_named import XNamed as XNamed_a6520b08
 from .x_data_pilot_member_results import XDataPilotMemberResults as XDataPilotMemberResults_56421045
@@ -46,8 +47,9 @@ class DataPilotSourceLevel(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotMem
         
         The subtotals are calculated with the members of this level.
         """
+        ...
     @property
-    def SubTotals2(self) -> 'typing.Tuple[int, ...]':
+    def SubTotals2(self) -> uno.ByteSequence:
         """
         specifies the subtotals that are inserted for the level.
         
@@ -57,10 +59,12 @@ class DataPilotSourceLevel(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotMem
         
             LibreOffice 5.3
         """
+        ...
     @property
     def ShowEmpty(self) -> bool:
         """
         specifies whether empty members are shown.
         """
+        ...
 
 

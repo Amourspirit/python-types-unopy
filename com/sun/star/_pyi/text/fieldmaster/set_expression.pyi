@@ -36,15 +36,18 @@ class SetExpression(TextFieldMaster_d6410cc2):
         
         This values is used if the field master is set as number sequence.
         """
+        ...
     @property
     def NumberingSeparator(self) -> str:
         """
         determines the numbering separator string if the field master is set as number sequence.
         """
+        ...
     @property
     def SubType(self) -> int:
         """
         determines the type of the field as com.sun.star.text.SetVariableType
         """
+        ...
 
 

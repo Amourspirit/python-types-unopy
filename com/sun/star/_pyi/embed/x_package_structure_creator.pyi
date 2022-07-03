@@ -40,4 +40,6 @@ class XPackageStructureCreator(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

@@ -48,6 +48,7 @@ class TableFilterField3(object):
             Field (int, optional): Field value.
             Operator (int, optional): Operator value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class TableFilterField3(object):
         
         Each filter field may have one or more values.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class TableFilterField3(object):
         """
         specifies how the condition is connected to the previous condition.
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class TableFilterField3(object):
         """
         specifies which field (column) is used for the condition.
         """
+        ...
 
 
     @property
@@ -78,5 +82,6 @@ class TableFilterField3(object):
         """
         specifies the type of the condition as defined in FilterOperator2.
         """
+        ...
 
 

@@ -49,11 +49,13 @@ class PlatformException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             package (XPackage, optional): package value.
         """
+        ...
     @property
     def package(self) -> XPackage_cb1f0c4d:
         """
         The package which does not support the current platform.
         """
+        ...
 
 
 __all__ = ['PlatformException']

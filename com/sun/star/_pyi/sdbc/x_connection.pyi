@@ -49,6 +49,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def createStatement(self) -> 'XStatement_98e90ab1':
         """
         creates a new com.sun.star.sdbc.Statement object for sending SQL statements to the database.
@@ -62,6 +63,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getAutoCommit(self) -> bool:
         """
         gets the current auto-commit state.
@@ -69,6 +71,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getCatalog(self) -> str:
         """
         returns the Connection's current catalog name.
@@ -76,6 +79,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getMetaData(self) -> 'XDatabaseMetaData_eafd0d12':
         """
         gets the metadata regarding this connection's database.
@@ -85,6 +89,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getTransactionIsolation(self) -> int:
         """
         gets this Connection's current transaction isolation level.
@@ -92,6 +97,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getTypeMap(self) -> 'XNameAccess_e2ab0cf6':
         """
         gets the type map object associated with this connection.
@@ -103,6 +109,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isClosed(self) -> bool:
         """
         tests to see if a connection is closed.
@@ -112,6 +119,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isReadOnly(self) -> bool:
         """
         tests to see if the connection is in read-only mode.
@@ -119,6 +127,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def nativeSQL(self, sql: str) -> str:
         """
         converts the given SQL statement into the system's native SQL grammar.
@@ -128,18 +137,19 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def prepareCall(self, sql: str) -> 'XPreparedStatement_fbc80de4':
         """
         creates a com.sun.star.sdbc.CallableStatement object for calling database stored procedures.
         
         The CallableStatement provides methods for setting up its IN and OUT parameters, and methods for executing the call to a stored procedure.
         
-        Note:  This method is optimized for handling stored procedure call statements. Some drivers may send the call statement to the database when the method prepareCall is done;
-        others may wait until the CallableStatement is executed. This has no direct effect on users; however, it does affect which method throws certain SQLExceptions. Result sets created using the returned CallableStatement will have forward-only type and read-only concurrency, by default.
+        Note:  This method is optimized for handling stored procedure call statements. Some drivers may send the call statement to the database when the method prepareCall is done; others may wait until the CallableStatement is executed. This has no direct effect on users; however, it does affect which method throws certain SQLExceptions. Result sets created using the returned CallableStatement will have forward-only type and read-only concurrency, by default.
 
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def prepareStatement(self, sql: str) -> 'XPreparedStatement_fbc80de4':
         """
         creates a com.sun.star.sdbc.PreparedStatement object for sending parameterized SQL statements to the database.
@@ -155,6 +165,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def rollback(self) -> None:
         """
         drops all changes made since the previous commit/rollback and releases any database locks currently held by this Connection.
@@ -164,6 +175,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setAutoCommit(self, autoCommit: bool) -> None:
         """
         sets this connection's auto-commit mode.
@@ -175,6 +187,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setCatalog(self, catalog: str) -> None:
         """
         sets a catalog name in order to select a subspace of this Connection's database in which to work.
@@ -184,6 +197,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setReadOnly(self, readOnly: bool) -> None:
         """
         puts this connection in read-only mode as a hint to enable database optimizations.
@@ -193,6 +207,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setTransactionIsolation(self, level: int) -> None:
         """
         attempts to change the transaction isolation level to the one given.
@@ -204,6 +219,7 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def setTypeMap(self, typeMap: 'XNameAccess_e2ab0cf6') -> None:
         """
         installs the given type map as the type map for this connection.
@@ -215,4 +231,6 @@ class XConnection(XCloseable_98290a86):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

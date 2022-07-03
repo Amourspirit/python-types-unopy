@@ -29,6 +29,7 @@ Enum
 See Also:
     `API ClickAction <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1presentation.html#a85fe75121d351785616b75b2c5661d8f>`_
 """
+typeName: str = 'com.sun.star.presentation.ClickAction'
 
 BOOKMARK: 'uno.Enum'
 """

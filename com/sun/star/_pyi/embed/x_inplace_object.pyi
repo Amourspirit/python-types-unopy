@@ -44,6 +44,7 @@ class XInplaceObject(XInterface_8f010a43):
             com.sun.star.embed.WrongStateException: ``WrongStateException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def setObjectRectangles(self, aPosRect: 'Rectangle_84b109e9', aClipRect: 'Rectangle_84b109e9') -> None:
         """
         sets the visible part of the inplace object.
@@ -56,6 +57,7 @@ class XInplaceObject(XInterface_8f010a43):
             com.sun.star.embed.WrongStateException: ``WrongStateException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def translateAccelerators(self, aKeys: 'typing.Tuple[KeyEvent_7a78097f, ...]') -> None:
         """
         provides accelerator table the container wants to use during inplace editing.
@@ -63,4 +65,6 @@ class XInplaceObject(XInterface_8f010a43):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
+
 

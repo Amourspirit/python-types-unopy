@@ -36,57 +36,71 @@ class XOpenCLSelection(XInterface_8f010a43):
         """
         Disables automatic OpenCL Device Selection.
         """
+        ...
     def disableOpcodeSubsetTest(self) -> None:
         """
         """
+        ...
     def enableAutomaticDeviceSelection(self, force: bool) -> None:
         """
         Enables automatic OpenCL Device Selection.
         """
+        ...
     def enableOpcodeSubsetTest(self) -> None:
         """
         """
+        ...
     def enableOpenCL(self, enable: bool) -> None:
         """
         Enables or disables use of OpenCL for calculations.
         
         When using this API to enable OpenCL the configuration parameters are set to their built-in default values, not ones read from the installation of user-specific configuration.
         """
+        ...
     def getDeviceID(self) -> int:
         """
         returns the index of the currently selected device.
         
         This is an index into the sequence of devices in the OpenCLPLatform object the device is part of in the current instance of LibreOffice (and not some a priori defined identifier for a specific model of device accessed through a specific platform).
         """
+        ...
     def getFormulaCellNumberLimit(self) -> int:
         """
         """
+        ...
     def getOpenCLPlatforms(self) -> 'typing.Tuple[OpenCLPlatform_36540f36, ...]':
         """
         lists all OpenCL devices and platforms
         """
+        ...
     def getPlatformID(self) -> int:
         """
         returns the index of the platform of the currently selected device.
         
         This is an index into the sequence that getOpenCLPlatforms returns in the current instance of LibreOffice (and not some a priori defined identifier for an OpenCL platform).
         """
+        ...
     def isOpcodeSubsetTested(self) -> bool:
         """
         """
+        ...
     def isOpenCLEnabled(self) -> bool:
         """
         Returns true if calculation with OpenCL is enabled (at all).
         
         The actual use of OpenCL for a formula is also affected by the configuration settings specifying whether OpenCL is used for all opcodes or just for a subset, and the deny- and allowlists of OpenCL implementations that are in use.
         """
+        ...
     def selectOpenCLDevice(self, platform: int, device: int) -> None:
         """
         Select the OpenCL device with the given platform and device number.
         
         The platform number corresponds to an index into the sequence returned by getOpenCLPlatforms, and the device number corresponds to an index into the sequence of devices in that platform.
         """
+        ...
     def setFormulaCellNumberLimit(self, number: int) -> None:
         """
         """
+        ...
+
 

@@ -36,5 +36,6 @@ class KeyColumnDescriptor(Descriptor_a5200b3b):
         """
         is the name of a reference column out of the referenced table.
         """
+        ...
 
 

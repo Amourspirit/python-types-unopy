@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.accessibility
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XAccessibleStateSet(XInterface_8f010a43):
@@ -41,18 +41,23 @@ class XAccessibleStateSet(XInterface_8f010a43):
         """
         Checks if the given state is a member of the state set of the called object.
         """
-    def containsAll(self, aStateSet: 'typing.Tuple[int, ...]') -> bool:
+        ...
+    def containsAll(self, aStateSet: uno.ByteSequence) -> bool:
         """
         Checks if all of the given states are in the state set of the called object.
         """
-    def getStates(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getStates(self) -> uno.ByteSequence:
         """
         Get all currently set states as a sequence of state ids.
         
         The purpose of this function is to reduce the communication between accessibility objects and AT. Without this function an AT-Tool had to call contains() for every state type. Now a single call is sufficient.
         """
+        ...
     def isEmpty(self) -> bool:
         """
         Checks whether the current state set is empty.
         """
+        ...
+
 

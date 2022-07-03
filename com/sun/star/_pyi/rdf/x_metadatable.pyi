@@ -47,6 +47,8 @@ class XMetadatable(XURI_5682078c):
         
         If this object already has a metadata reference, do nothing; otherwise, create metadata reference with a fresh, unique XML ID and assign it to the MetadataReference attribute.
         """
+        ...
+
     @property
     def MetadataReference(self) -> 'StringPair_a4bc0b14':
         """
@@ -54,5 +56,6 @@ class XMetadatable(XURI_5682078c):
         
         Note that this metadata reference must be unique for the ODF document. This implies that the XML ID part must be unique for every stream. A pair of two empty strings signifies \"no metadata reference\". For example: Pair(\"content.xml\", \"foo-element-1\")
         """
+        ...
 
 

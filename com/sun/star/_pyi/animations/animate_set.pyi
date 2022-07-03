@@ -32,5 +32,6 @@ class AnimateSet(XAnimate_ca680c52):
     See Also:
         `API AnimateSet <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1animations_1_1AnimateSet.html>`_
     """
+    ...
 
 

@@ -26,8 +26,7 @@ class StatusbarController(XStatusbarController_2a730f48):
 
     is an abstract service for a component which offers a more complex user interface to users within a status bar.
     
-    A generic status bar function is represented as a text field which provides status information to the user. A status bar controller can be added to a status bar and provides information or functions with a more sophisticated user interface.
-    A typical example for a status bar controller is the zoom level chooser within the statusbar. It provides an option to change the zoom level of an application.
+    A generic status bar function is represented as a text field which provides status information to the user. A status bar controller can be added to a status bar and provides information or functions with a more sophisticated user interface.A typical example for a status bar controller is the zoom level chooser within the statusbar. It provides an option to change the zoom level of an application.
     
     **since**
     
@@ -36,5 +35,6 @@ class StatusbarController(XStatusbarController_2a730f48):
     See Also:
         `API StatusbarController <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1frame_1_1StatusbarController.html>`_
     """
+    ...
 
 

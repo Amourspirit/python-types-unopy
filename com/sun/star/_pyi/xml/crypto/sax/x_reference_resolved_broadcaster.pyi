@@ -41,10 +41,13 @@ class XReferenceResolvedBroadcaster(XInterface_8f010a43):
         
         When the element collector has completely collected that element, this listener will receive a notification.
         """
+        ...
     def removeReferenceResolvedListener(self, referenceId: int, listener: 'XReferenceResolvedListener_3a2d1513') -> None:
         """
         Removes a listener from an element collector.
         
         When a listener is removed, it will not receive notification when collection completes.
         """
+        ...
+
 

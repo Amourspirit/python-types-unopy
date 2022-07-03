@@ -37,6 +37,7 @@ class XMutableTreeNode(XTreeNode_baaf0ba0):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def insertChildByIndex(self, Index: int, ChildNode: 'XMutableTreeNode') -> None:
         """
         inserts ChildNode to this instance at the given index.
@@ -45,6 +46,7 @@ class XMutableTreeNode(XTreeNode_baaf0ba0):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def removeChildByIndex(self, Index: int) -> None:
         """
         removes the node from this instance at the specified index.
@@ -52,32 +54,39 @@ class XMutableTreeNode(XTreeNode_baaf0ba0):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setCollapsedGraphicURL(self, URL: str) -> None:
         """
         The URL for a graphic that is rendered to visualize collapsed non leaf nodes.
         
         If URL is empty, XTreeControl.DefaultCollapsedGraphicURL is used.
         """
+        ...
     def setDisplayValue(self, Value: object) -> None:
         """
         sets the display value of this node
         """
+        ...
     def setExpandedGraphicURL(self, URL: str) -> None:
         """
         The URL for a graphic that is rendered to visualize expanded non leaf nodes.
         
         If URL is empty, XTreeControl.DefaultExpandedGraphicURL is used.
         """
+        ...
     def setHasChildrenOnDemand(self, ChildrenOnDemand: bool) -> None:
         """
         Changes if the children of this node are created on demand.
         """
+        ...
     def setNodeGraphicURL(self, URL: str) -> None:
         """
         The URL for a graphic that is rendered before the text part of this node.
         
         If this URL is empty, no graphic is rendered.
         """
+        ...
+
     @property
     def DataValue(self) -> object:
         """
@@ -85,5 +94,6 @@ class XMutableTreeNode(XTreeNode_baaf0ba0):
         
         You can use this attribute to store data for this node that is independent of the display value
         """
+        ...
 
 

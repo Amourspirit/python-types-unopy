@@ -33,10 +33,12 @@ class XProtectable(XInterface_8f010a43):
     def isProtected(self) -> bool:
         """
         """
+        ...
     def protect(self, aPassword: str) -> None:
         """
         activates the protection.
         """
+        ...
     def unprotect(self, aPassword: str) -> None:
         """
         removes the protection.
@@ -44,4 +46,6 @@ class XProtectable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

@@ -42,30 +42,38 @@ class XTabPageContainer(ABC):
         """
         Adds a listener for the TabPageActivedEvent posted after the tab page was activated.
         """
+        ...
     def getTabPage(self, tabPageIndex: int) -> 'XTabPage_a2060aa5':
         """
         Returns tab page for the given index.
         """
+        ...
     def getTabPageByID(self, tabPageID: int) -> 'XTabPage_a2060aa5':
         """
         Returns tab page for the given ID.
         """
+        ...
     def getTabPageCount(self) -> int:
         """
         Returns the number of tab pages.
         """
+        ...
     def isTabPageActive(self, tabPageIndex: int) -> bool:
         """
         Checks whether a tab page is activated.
         """
+        ...
     def removeTabPageContainerListener(self, listener: 'XTabPageContainerListener_940d118e') -> None:
         """
         Removes a listener previously added with addTabPageListener().
         """
+        ...
+
     @property
     def ActiveTabPageID(self) -> int:
         """
         Specifies the ID of the current active tab page.
         """
+        ...
 
 

@@ -42,6 +42,7 @@ class XTextTable(XTextContent_b16e0ba5):
         
         Initially the cursor is positioned in the cell with the specified name.
         """
+        ...
     def getCellByName(self, aCellName: str) -> 'XCell_70d408e8':
         """
         Example: The cell in the 4th column and third row has the name \"D3\".
@@ -50,19 +51,25 @@ class XTextTable(XTextContent_b16e0ba5):
         
         Example: If the cell \"D3\" is horizontally split, it now contains the cells \"D3.1.1\" and \"D3.1.2\"
         """
+        ...
     def getCellNames(self) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def getColumns(self) -> 'XTableColumns_c66d0c31':
         """
         """
+        ...
     def getRows(self) -> 'XTableRows_a37e0afb':
         """
         """
+        ...
     def initialize(self, nRows: int, nColumns: int) -> None:
         """
         determines the numbers of rows and columns of the text table.
         
         This method must be called after the object is created and before the object is insert or attached elsewhere.
         """
+        ...
+
 

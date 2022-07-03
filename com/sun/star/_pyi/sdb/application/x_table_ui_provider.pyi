@@ -47,10 +47,13 @@ class XTableUIProvider(ABC):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def getTableIcon(self, TableName: str, ColorMode: int) -> 'XGraphic_a4da0afc':
         """
         provides the icon which should be used to represent the table in the database application window.
         
         The icon will usually be requested once per table, and cached. It might be requested again if the application settings change, for instance, if another desktop theme has been activated.
         """
+        ...
+
 

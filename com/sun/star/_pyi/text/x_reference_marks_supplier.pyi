@@ -40,4 +40,6 @@ class XReferenceMarksSupplier(XInterface_8f010a43):
     def getReferenceMarks(self) -> 'XNameAccess_e2ab0cf6':
         """
         """
+        ...
+
 

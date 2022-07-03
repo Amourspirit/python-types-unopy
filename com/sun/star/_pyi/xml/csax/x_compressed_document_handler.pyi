@@ -43,46 +43,55 @@ class XCompressedDocumentHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def compressedEndDocument(self) -> None:
         """
 
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def compressedEndElement(self, aName: str) -> None:
         """
 
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def compressedIgnorableWhitespace(self, aWhitespaces: str) -> None:
         """
 
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def compressedProcessingInstruction(self, aTarget: str, aData: str) -> None:
         """
 
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def compressedSetDocumentLocator(self, columnNumber: int, lineNumber: int, publicId: str, systemId: str) -> None:
         """
 
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def compressedStartDocument(self) -> None:
         """
 
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def compressedStartElement(self, aName: str, aAttributes: 'typing.Tuple[XMLAttribute_df0f0cdb, ...]') -> None:
         """
 
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
+
 

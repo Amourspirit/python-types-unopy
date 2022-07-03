@@ -39,6 +39,7 @@ class XDataOutputStream(XOutputStream_a4e00b35):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def writeByte(self, Value: int) -> None:
         """
         writes an 8-bit byte.
@@ -46,6 +47,7 @@ class XDataOutputStream(XOutputStream_a4e00b35):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def writeChar(self, Value: str) -> None:
         """
         writes a 16-bit character.
@@ -53,6 +55,7 @@ class XDataOutputStream(XOutputStream_a4e00b35):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def writeDouble(self, Value: float) -> None:
         """
         writes a 64-bit IEEE double.
@@ -60,6 +63,7 @@ class XDataOutputStream(XOutputStream_a4e00b35):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def writeFloat(self, Value: float) -> None:
         """
         writes a 32-bit IEEE float.
@@ -67,6 +71,7 @@ class XDataOutputStream(XOutputStream_a4e00b35):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def writeHyper(self, Value: int) -> None:
         """
         writes a 64-bit big endian integer.
@@ -74,6 +79,7 @@ class XDataOutputStream(XOutputStream_a4e00b35):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def writeLong(self, Value: int) -> None:
         """
         writes a 32-bit big endian integer.
@@ -81,6 +87,7 @@ class XDataOutputStream(XOutputStream_a4e00b35):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def writeShort(self, Value: int) -> None:
         """
         writes a 16-bit big endian integer.
@@ -88,6 +95,7 @@ class XDataOutputStream(XOutputStream_a4e00b35):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def writeUTF(self, Value: str) -> None:
         """
         writes a string in UTF format.
@@ -95,4 +103,6 @@ class XDataOutputStream(XOutputStream_a4e00b35):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

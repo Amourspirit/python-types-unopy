@@ -29,5 +29,6 @@ class FileSystemStorage(BaseStorage_ae680b55):
     See Also:
         `API FileSystemStorage <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1embed_1_1FileSystemStorage.html>`_
     """
+    ...
 
 

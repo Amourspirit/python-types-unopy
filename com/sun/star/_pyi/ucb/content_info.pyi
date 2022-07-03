@@ -43,6 +43,7 @@ class ContentInfo(object):
             Type (str, optional): Type value.
             Attributes (int, optional): Attributes value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class ContentInfo(object):
         
         Important: The required properties must have one of the following basic data types (in order to make it possible to implement client applications with a small set of generic input methods for the values):
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class ContentInfo(object):
         
         This is an implementation specific string characterizing the kind of a content (e.g. \"application/vnd.sun.star.hierarchy-link\"). The value of this member should match the value returned by XContent.getContentType() of an appropriate content.
         """
+        ...
 
 
     @property
@@ -78,5 +81,6 @@ class ContentInfo(object):
         
         The value can be one of the ContentInfoAttribute constants.
         """
+        ...
 
 

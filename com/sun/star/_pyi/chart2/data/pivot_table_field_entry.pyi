@@ -47,6 +47,7 @@ class PivotTableFieldEntry(object):
             DimensionPositionIndex (int, optional): DimensionPositionIndex value.
             HasHiddenMembers (bool, optional): HasHiddenMembers value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class PivotTableFieldEntry(object):
         """
         Name of the field entry.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class PivotTableFieldEntry(object):
         """
         The index of the field entry.
         """
+        ...
 
 
     @property
@@ -68,6 +71,7 @@ class PivotTableFieldEntry(object):
         """
         The output position of the field entry in its field type.
         """
+        ...
 
 
     @property
@@ -75,5 +79,6 @@ class PivotTableFieldEntry(object):
         """
         Does it have some members that are hidden (filtered).
         """
+        ...
 
 

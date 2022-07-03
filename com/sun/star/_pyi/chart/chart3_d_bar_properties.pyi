@@ -34,5 +34,6 @@ class Chart3DBarProperties(XPropertySet_bc180bfa):
         """
         Specifies the solid shape of a data point.
         """
+        ...
 
 

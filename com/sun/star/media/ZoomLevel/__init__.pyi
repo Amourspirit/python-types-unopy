@@ -29,6 +29,7 @@ ENUM ZoomLevel
 See Also:
     `API ZoomLevel <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1media.html#aa2569917c2883c1d1c0c0ee02e671ac6>`_
 """
+typeName: str = 'com.sun.star.media.ZoomLevel'
 
 FIT_TO_WINDOW: 'uno.Enum'
 """

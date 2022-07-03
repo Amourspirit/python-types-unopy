@@ -57,6 +57,7 @@ class XDatabaseDocumentUI(ABC):
         
             OOo 3.0
         """
+        ...
     def connect(self) -> None:
         """
         lets the application connect to the database
@@ -68,6 +69,7 @@ class XDatabaseDocumentUI(ABC):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def createComponent(self, ObjectType: int, DocumentDefinition: 'XComponent_98dc0ab5') -> 'XComponent_98dc0ab5':
         """
         creates a new sub component of the given type
@@ -78,6 +80,7 @@ class XDatabaseDocumentUI(ABC):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def createComponentWithArguments(self, ObjectType: int, Arguments: 'typing.Tuple[PropertyValue_c9610c73, ...]', DocumentDefinition: 'XComponent_98dc0ab5') -> 'XComponent_98dc0ab5':
         """
         creates a new sub component of the given type
@@ -91,6 +94,7 @@ class XDatabaseDocumentUI(ABC):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def identifySubComponent(self, SubComponent: 'XComponent_98dc0ab5') -> 'typing.Tuple[int, str]':
         """
         identifies the given sub component
@@ -98,10 +102,12 @@ class XDatabaseDocumentUI(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def isConnected(self) -> bool:
         """
         determines whether the application is currently connected to the database
         """
+        ...
     def loadComponent(self, ObjectType: int, ObjectName: str, ForEditing: bool) -> 'XComponent_98dc0ab5':
         """
         loads the given sub component of the database document
@@ -121,6 +127,7 @@ class XDatabaseDocumentUI(ABC):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def loadComponentWithArguments(self, ObjectType: int, ObjectName: str, ForEditing: bool, Arguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> 'XComponent_98dc0ab5':
         """
         loads the given sub component of the database document
@@ -134,6 +141,8 @@ class XDatabaseDocumentUI(ABC):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
     @property
     def SubComponents(self) -> 'typing.Tuple[XComponent_98dc0ab5, ...]':
         """
@@ -147,6 +156,7 @@ class XDatabaseDocumentUI(ABC):
         
             OOo 3.0
         """
+        ...
 
     @property
     def ActiveConnection(self) -> 'XConnection_a36a0b0c':
@@ -155,6 +165,7 @@ class XDatabaseDocumentUI(ABC):
         
         Note that the connection returned here is really the working connection of the application. Clients should not misuse it, in particular, closing the connection can yield unexpected results and should definitely be avoided. If you need a separate connection to the data source, use com.sun.star.sdbc.XDataSource.getConnection().
         """
+        ...
 
     @property
     def ApplicationMainWindow(self) -> 'XWindow_713b0924':
@@ -163,11 +174,13 @@ class XDatabaseDocumentUI(ABC):
         
         Note that reading this attribute is equivalent to querying the component for the com.sun.star.frame.XController interface, asking the controller for its frame, and asking this frame for its container window.
         """
+        ...
 
     @property
     def DataSource(self) -> 'XDataSource_a2990ae7':
         """
         provides access to the data source belong to the database document
         """
+        ...
 
 

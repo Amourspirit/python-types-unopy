@@ -36,5 +36,6 @@ class FileContentProvider(XPropertySet_bc180bfa, XContentIdentifierFactory_56b91
     See Also:
         `API FileContentProvider <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1FileContentProvider.html>`_
     """
+    ...
 
 

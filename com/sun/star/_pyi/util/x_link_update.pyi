@@ -34,4 +34,6 @@ class XLinkUpdate(XInterface_8f010a43):
         """
         initiates the reloading of all linked document content like linked graphics, linked text sections.
         """
+        ...
+
 

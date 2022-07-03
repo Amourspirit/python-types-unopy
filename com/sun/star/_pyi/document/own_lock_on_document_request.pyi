@@ -50,23 +50,27 @@ class OwnLockOnDocumentRequest(Exception_85530a09):
             TimeInfo (str, optional): TimeInfo value.
             IsStoring (bool, optional): IsStoring value.
         """
+        ...
     @property
     def DocumentURL(self) -> str:
         """
         The URL of the locked document.
         """
+        ...
 
     @property
     def TimeInfo(self) -> str:
         """
         The time from which the document is locked.
         """
+        ...
 
     @property
     def IsStoring(self) -> bool:
         """
         Whether the request is related to storing process.
         """
+        ...
 
 
 __all__ = ['OwnLockOnDocumentRequest']

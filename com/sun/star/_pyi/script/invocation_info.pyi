@@ -47,6 +47,7 @@ class InvocationInfo(object):
             PropertyAttribute (int, optional): PropertyAttribute value.
             aType (object, optional): aType value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class InvocationInfo(object):
         """
         Types method parameters, for properties this sequence is empty.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class InvocationInfo(object):
         """
         Mode of method parameters (IN, OUT, INOUT), for properties this sequence is empty.
         """
+        ...
 
 
     @property
@@ -68,6 +71,7 @@ class InvocationInfo(object):
         """
         Name of the method or property.
         """
+        ...
 
 
     @property
@@ -75,6 +79,7 @@ class InvocationInfo(object):
         """
         Kind of the member (method or property).
         """
+        ...
 
 
     @property
@@ -86,6 +91,7 @@ class InvocationInfo(object):
         
         For methods this field is irrelevant and is set to 0.
         """
+        ...
 
 
     @property
@@ -93,5 +99,6 @@ class InvocationInfo(object):
         """
         Type of the member, for methods the return type.
         """
+        ...
 
 

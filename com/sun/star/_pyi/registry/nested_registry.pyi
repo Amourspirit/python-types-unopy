@@ -33,14 +33,13 @@ class NestedRegistry(XInitialization_d46c0cca, XSimpleRegistry_10150e9c):
     
     Functions of XRegistryKey:
     
-    How to initialize the registries:
-    Use a sequence of XSimpleRegistry with two elements. The first element must be the registry which is opened with read/write rights and the second element must be the read-only one.
-    Two different ways are possible:
+    How to initialize the registries:Use a sequence of XSimpleRegistry with two elements. The first element must be the registry which is opened with read/write rights and the second element must be the read-only one.Two different ways are possible:
     
     Guarantees:
 
     See Also:
         `API NestedRegistry <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1registry_1_1NestedRegistry.html>`_
     """
+    ...
 
 

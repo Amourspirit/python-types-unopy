@@ -39,6 +39,7 @@ class XTerminateListener(XEventListener_c7230c4a):
         
         No veto will be accepted then.
         """
+        ...
     def queryTermination(self, Event: 'EventObject_a3d70b03') -> None:
         """
         is called when the master environment (e.g., desktop) is about to terminate.
@@ -48,4 +49,6 @@ class XTerminateListener(XEventListener_c7230c4a):
         Raises:
             TerminationVetoException: ``TerminationVetoException``
         """
+        ...
+
 

@@ -37,5 +37,6 @@ class LayerWriter(XLayerHandler_c5d61289, XActiveDataSource_d1900c7f, XInitializ
     See Also:
         `API LayerWriter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1xml_1_1LayerWriter.html>`_
     """
+    ...
 
 

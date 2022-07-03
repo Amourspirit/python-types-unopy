@@ -57,6 +57,7 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
             LibreOffice 6.1
         """
+        ...
     @property
     def BorderColor(self) -> int:
         """
@@ -64,6 +65,7 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         See LineColor.
         """
+        ...
     @property
     def BorderDash(self) -> 'LineDash_a54e0afc':
         """
@@ -71,11 +73,13 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         See LineDash.
         """
+        ...
     @property
     def BorderDashName(self) -> str:
         """
         The name of a dash that can be found in the com.sun.star.container.XNameContainer \"com.sun.star.drawing.LineDashTable\", that can be created via the com.sun.star.uno.XMultiServiceFactory of the ChartDocument.
         """
+        ...
     @property
     def BorderStyle(self) -> 'LineStyle_b1600b8d':
         """
@@ -83,6 +87,7 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         See LineStyle.
         """
+        ...
     @property
     def BorderTransparency(self) -> int:
         """
@@ -90,6 +95,7 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         See LineTransparence.
         """
+        ...
     @property
     def BorderWidth(self) -> int:
         """
@@ -97,6 +103,7 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         See LineWidth.
         """
+        ...
     @property
     def Color(self) -> int:
         """
@@ -106,6 +113,7 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         For charts with filled areas, like bar-charts, this should map to the FillColor of the objects. For line-charts this should map to the LineColor property.
         """
+        ...
     @property
     def CustomLabelPosition(self) -> 'RelativePosition_fae10ddd':
         """
@@ -115,6 +123,7 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
             LibreOffice 7.0
         """
+        ...
     @property
     def ErrorBarX(self) -> 'XPropertySet_bc180bfa':
         """
@@ -122,6 +131,7 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         The com.sun.star.beans.XPropertySet must support the service ErrorBar.
         """
+        ...
     @property
     def ErrorBarY(self) -> 'XPropertySet_bc180bfa':
         """
@@ -129,11 +139,13 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         The com.sun.star.beans.XPropertySet must support the service ErrorBar.
         """
+        ...
     @property
     def FillBackground(self) -> bool:
         """
         If TRUE, fills the background of a hatch with the color given in the Color property.
         """
+        ...
     @property
     def FillBitmapLogicalSize(self) -> bool:
         """
@@ -141,15 +153,18 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         If this is TRUE, the properties FillBitmapSizeX and FillBitmapSizeY contain the size of the tile in percent of the size of the original bitmap. If this is FALSE, the size of the tile is specified with 1/100th mm.
         """
+        ...
     @property
     def FillBitmapMode(self) -> 'BitmapMode_bced0bd6':
         """
         this enum selects how an area is filled with a single bitmap.
         """
+        ...
     @property
     def FillBitmapName(self) -> str:
         """
         """
+        ...
     @property
     def FillBitmapOffsetX(self) -> int:
         """
@@ -157,6 +172,7 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         It is given in percent in relation to the width of the bitmap.
         """
+        ...
     @property
     def FillBitmapOffsetY(self) -> int:
         """
@@ -164,21 +180,25 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         It is given in percent in relation to the width of the bitmap.
         """
+        ...
     @property
     def FillBitmapPositionOffsetX(self) -> int:
         """
         Every second line of tiles is moved the given percent of the width of the bitmap.
         """
+        ...
     @property
     def FillBitmapPositionOffsetY(self) -> int:
         """
         Every second row of tiles is moved the given percent of the width of the bitmap.
         """
+        ...
     @property
     def FillBitmapRectanglePoint(self) -> 'RectanglePoint_f0ff0d93':
         """
         The RectanglePoint specifies the position inside of the bitmap to use as the top left position for rendering.
         """
+        ...
     @property
     def FillBitmapSizeX(self) -> int:
         """
@@ -186,6 +206,7 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         Depending on the property FillBitmapLogicalSize, this is either relative or absolute.
         """
+        ...
     @property
     def FillBitmapSizeY(self) -> int:
         """
@@ -193,11 +214,13 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         Depending on the property FillBitmapLogicalSize, this is either relative or absolute.
         """
+        ...
     @property
     def FillStyle(self) -> 'FillStyle_b1460b8c':
         """
         This enumeration selects the style with which the area will be filled.
         """
+        ...
     @property
     def Geometry3D(self) -> int:
         """
@@ -209,60 +232,73 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         CUBOID==0 CYLINDER==1 CONE==2 PYRAMID==3 CUBOID==else
         """
+        ...
     @property
     def Gradient(self) -> 'Gradient_7a8a0982':
         """
         """
+        ...
     @property
     def GradientName(self) -> str:
         """
         """
+        ...
     @property
     def Hatch(self) -> 'Hatch_859b09dc':
         """
         """
+        ...
     @property
     def HatchName(self) -> str:
         """
         """
+        ...
     @property
     def Label(self) -> 'DataPointLabel_dd530cb0':
         """
         """
+        ...
     @property
     def LabelPlacement(self) -> int:
         """
         specifies a relative position for the data label
         """
+        ...
     @property
     def LabelSeparator(self) -> str:
         """
         specifies a string that is used to separate the parts of a data label (caption)
         """
+        ...
     @property
     def LineDash(self) -> 'LineDash_a54e0afc':
         """
         Is only used for line-chart types.
         """
+        ...
     @property
     def LineDashName(self) -> str:
         """
         The name of a dash that can be found in the com.sun.star.container.XNameContainer \"com.sun.star.drawing.LineDashTable\", that can be created via the com.sun.star.uno.XMultiServiceFactory of the ChartDocument.
         """
+        ...
     @property
     def LineStyle(self) -> 'LineStyle_b1600b8d':
         """
         """
+        ...
     @property
     def LineWidth(self) -> int:
         """
         Is only used for line-chart types.
         """
+        ...
     @property
     def NumberFormat(self) -> int:
         """
         specifies a number format for the display of the value in the data label
         """
+        ...
     @property
     def Offset(self) -> float:
         """
@@ -270,16 +306,19 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         This is especially useful for the explosion of pie-chart segments.
         """
+        ...
     @property
     def PercentDiagonal(self) -> int:
         """
         A value between 0 and 100 indicating the percentage how round an edge should be.
         """
+        ...
     @property
     def PercentageNumberFormat(self) -> int:
         """
         specifies a number format for the display of the percentage value in the data label
         """
+        ...
     @property
     def ReferencePageSize(self) -> 'Size_576707ef':
         """
@@ -287,15 +326,18 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         This size is used to resize text in the view when the size of the page has changed since the font sizes were set (automatic text scaling).
         """
+        ...
     @property
     def ShowErrorBox(self) -> bool:
         """
         In case ErrorBarX and ErrorBarY both are set, and error bars are shown, a box spanning all error-indicators is rendered.
         """
+        ...
     @property
     def Symbol(self) -> 'Symbol_83c109c2':
         """
         """
+        ...
     @property
     def TextWordWrap(self) -> bool:
         """
@@ -305,6 +347,7 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
             LibreOffice 5.1
         """
+        ...
     @property
     def Transparency(self) -> int:
         """
@@ -312,14 +355,17 @@ class DataPointProperties(PropertySet_b0e70ba2, FillProperties_f1200da8):
         
         For charts with filled areas, like bar-charts, this should map to the FillTransparence of the objects. For line-charts this should map to the LineTransparence property.
         """
+        ...
     @property
     def TransparencyGradient(self) -> 'Gradient_7a8a0982':
         """
         This describes the transparency of the fill area as a gradient.
         """
+        ...
     @property
     def TransparencyGradientName(self) -> str:
         """
         """
+        ...
 
 

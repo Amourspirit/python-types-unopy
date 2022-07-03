@@ -36,18 +36,23 @@ class XStreamListener(XEventListener_c7230c4a):
         
         The termination could be done using the method XActiveDataControl.terminate().
         """
+        ...
     def error(self, aException: object) -> None:
         """
         gets called when an internal error in source or sink has occurred.
         
         After the method is called, the close is called on the connected streams.
         """
+        ...
     def started(self) -> None:
         """
         gets called as soon as data transfer has started.
         """
+        ...
     def terminated(self) -> None:
         """
         gets called when XActiveDataControl.terminate() is called.
         """
+        ...
+
 

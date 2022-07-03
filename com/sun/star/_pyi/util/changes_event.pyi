@@ -45,6 +45,7 @@ class ChangesEvent(EventObject_a3d70b03):
             Base (object, optional): Base value.
             Changes (ChangesSet, optional): Changes value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class ChangesEvent(EventObject_a3d70b03):
         
         Type and value of the accessor depend on the service.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class ChangesEvent(EventObject_a3d70b03):
         """
         contains the changes which occurred.
         """
+        ...
 
 

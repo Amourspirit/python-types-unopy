@@ -30,5 +30,6 @@ class Text(TextProperties_f2980dc6, XText_690408ca):
     See Also:
         `API Text <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1Text.html>`_
     """
+    ...
 
 

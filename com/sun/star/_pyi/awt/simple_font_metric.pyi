@@ -45,6 +45,7 @@ class SimpleFontMetric(object):
             FirstChar (str, optional): FirstChar value.
             LastChar (str, optional): LastChar value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class SimpleFontMetric(object):
         
         The ascent is measured in pixels, thus the font metric is device dependent.
         """
+        ...
 
 
     @property
@@ -67,6 +69,7 @@ class SimpleFontMetric(object):
         
         The descent is measured in pixels, thus the font metric is device dependent.
         """
+        ...
 
 
     @property
@@ -76,6 +79,7 @@ class SimpleFontMetric(object):
         
         The leading is measured in pixels, thus the font metric is device dependent.
         """
+        ...
 
 
     @property
@@ -85,6 +89,7 @@ class SimpleFontMetric(object):
         
         The slant is measured in degrees from 0 to 359.
         """
+        ...
 
 
     @property
@@ -92,6 +97,7 @@ class SimpleFontMetric(object):
         """
         specifies the code of the first printable character in the font.
         """
+        ...
 
 
     @property
@@ -99,5 +105,6 @@ class SimpleFontMetric(object):
         """
         specifies the code of the last printable character in the font.
         """
+        ...
 
 

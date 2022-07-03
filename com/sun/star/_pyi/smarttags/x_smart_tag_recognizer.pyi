@@ -48,14 +48,17 @@ class XSmartTagRecognizer(XInitialization_d46c0cca):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getDescription(self, aLocale: 'Locale_70d308fa') -> str:
         """
         obtains a detailed description of this recognizer component.
         """
+        ...
     def getName(self, aLocale: 'Locale_70d308fa') -> str:
         """
         obtains a name that describes this recognizer component.
         """
+        ...
     def getSmartTagDownloadURL(self, nSmartTagIndex: int) -> str:
         """
         obtains the URL that can be used to download new or updated recognizers.
@@ -63,6 +66,7 @@ class XSmartTagRecognizer(XInitialization_d46c0cca):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getSmartTagName(self, nSmartTagIndex: int) -> str:
         """
         obtains the name of one specific smart tag type supported by this recognizer component.
@@ -70,6 +74,7 @@ class XSmartTagRecognizer(XInitialization_d46c0cca):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def hasPropertyPage(self, nSmartTagIndex: int, aLocale: 'Locale_70d308fa') -> bool:
         """
         indicates whether there is a property page for a smart tag type.
@@ -77,14 +82,18 @@ class XSmartTagRecognizer(XInitialization_d46c0cca):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def recognize(self, aText: str, nStart: int, nLength: int, eDataType: 'SmartTagRecognizerMode_9179119e', aLocale: 'Locale_70d308fa', xTextMarkup: 'XTextMarkup_a5d60b3a', aApplicationName: str, xController: 'XController_b00e0b8f', xTokenizer: 'XBreakIterator_bf270bcf') -> None:
         """
         recognizes smart tags.
         """
+        ...
+
     @property
     def SmartTagCount(self) -> int:
         """
         The number of smart tag types supported by this recognizer component.
         """
+        ...
 
 

@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.awt
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XSystemDependentMenuPeer(XInterface_8f010a43):
@@ -31,12 +31,12 @@ class XSystemDependentMenuPeer(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.awt.XSystemDependentMenuPeer']
 
-    def getMenuHandle(self, ProcessId: 'typing.Tuple[int, ...]', SystemType: int) -> object:
+    def getMenuHandle(self, ProcessId: uno.ByteSequence, SystemType: int) -> object:
         """
         returns a system-specific window handle.
         
-        You must check the machine ID and the process ID.
-        WIN32: Returns an HMENU if possible, otherwise 0.
-        WIN16: Returns an HMENU if possible, otherwise 0.
+        You must check the machine ID and the process ID.WIN32: Returns an HMENU if possible, otherwise 0.WIN16: Returns an HMENU if possible, otherwise 0.
         """
+        ...
+
 

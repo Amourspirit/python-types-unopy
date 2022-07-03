@@ -36,6 +36,7 @@ class String(XDataType_83f209cb):
         
         Note that you cannot specify Length together with MinLength or MaxLength.
         """
+        ...
     @property
     def MaxLength(self) -> int:
         """
@@ -43,6 +44,7 @@ class String(XDataType_83f209cb):
         
         Note that you cannot specify MaxLength together with Length.
         """
+        ...
     @property
     def MinLength(self) -> int:
         """
@@ -50,5 +52,6 @@ class String(XDataType_83f209cb):
         
         Note that you cannot specify MinLength together with Length.
         """
+        ...
 
 

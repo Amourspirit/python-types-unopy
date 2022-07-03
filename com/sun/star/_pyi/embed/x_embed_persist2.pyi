@@ -33,4 +33,6 @@ class XEmbedPersist2(XEmbedPersist_c5660c24):
         """
         Checks whether or not the object has created its persistent representation counterpart of its in-memory model.
         """
+        ...
+
 

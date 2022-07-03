@@ -47,6 +47,7 @@ class PaintEvent(EventObject_a3d70b03):
             UpdateRect (Rectangle, optional): UpdateRect value.
             Count (int, optional): Count value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class PaintEvent(EventObject_a3d70b03):
         """
         contains the rectangle area which needs to be repainted.
         """
+        ...
 
 
     @property
@@ -63,5 +65,6 @@ class PaintEvent(EventObject_a3d70b03):
         
         You can collect the PaintEvent until Count is zero.
         """
+        ...
 
 

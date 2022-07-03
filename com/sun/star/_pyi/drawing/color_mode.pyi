@@ -32,6 +32,7 @@ class ColorMode(Enum):
     See Also:
         `API ColorMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a0e887cb85702e0dccbf34d7dbe40443f>`_
     """
+    typeName: str = 'com.sun.star.drawing.ColorMode'
 
     GREYS: 'uno.Enum'
     """

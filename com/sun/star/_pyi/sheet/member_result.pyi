@@ -47,6 +47,7 @@ class MemberResult(object):
             Flags (int, optional): Flags value.
             Value (float, optional): Value value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class MemberResult(object):
         """
         the internal name of the field.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class MemberResult(object):
         """
         the visible name of the field.
         """
+        ...
 
 
     @property
@@ -68,6 +71,7 @@ class MemberResult(object):
         """
         contains flags describing the result.
         """
+        ...
 
 
     @property
@@ -81,5 +85,6 @@ class MemberResult(object):
         
             LibreOffice 5.3
         """
+        ...
 
 

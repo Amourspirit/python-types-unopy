@@ -44,6 +44,7 @@ class VertOrientationFormat(object):
             VerticalOrientation (int, optional): VerticalOrientation value.
             VerticalRelation (int, optional): VerticalRelation value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class VertOrientationFormat(object):
         
         Only valid if the property VerticalOrientation contains the value VERT_NONE.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class VertOrientationFormat(object):
         
         The values refer to com.sun.star.VertOrientation.
         """
+        ...
 
 
     @property
@@ -69,5 +72,6 @@ class VertOrientationFormat(object):
         """
         determines the reference position of the vertical alignment.
         """
+        ...
 
 

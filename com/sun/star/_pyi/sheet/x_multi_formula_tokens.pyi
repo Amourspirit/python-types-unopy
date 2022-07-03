@@ -39,6 +39,7 @@ class XMultiFormulaTokens(ABC):
         """
         returns the number of formulas allowed in this formula token set.
         """
+        ...
     def getTokens(self, nIndex: int) -> 'typing.Tuple[FormulaToken_bd1c0bf8, ...]':
         """
         returns the formula at specified index as sequence of tokens.
@@ -46,6 +47,7 @@ class XMultiFormulaTokens(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setTokens(self, nIndex: int, aTokens: 'typing.Tuple[FormulaToken_bd1c0bf8, ...]') -> None:
         """
         sets the formula at specified index as sequence of tokens.
@@ -53,4 +55,6 @@ class XMultiFormulaTokens(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

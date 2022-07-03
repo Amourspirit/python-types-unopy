@@ -43,8 +43,11 @@ class XActivationBroadcaster(XInterface_8f010a43):
         
         The component will be notified with a ActivationEvent every time the active sheet changes.
         """
+        ...
     def removeActivationEventListener(self, aListener: 'XActivationEventListener_6a6310d3') -> None:
         """
         removes a previously registered listener.
         """
+        ...
+
 

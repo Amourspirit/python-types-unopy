@@ -39,8 +39,11 @@ class XSpreadsheetView(XInterface_8f010a43):
         """
         returns the sheet that is shown in the view.
         """
+        ...
     def setActiveSheet(self, xActiveSheet: 'XSpreadsheet_bc910bf1') -> None:
         """
         sets the sheet that is shown in the view.
         """
+        ...
+
 

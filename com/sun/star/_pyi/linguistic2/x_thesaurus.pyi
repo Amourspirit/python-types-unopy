@@ -44,4 +44,6 @@ class XThesaurus(XSupportedLocales_5bda1056):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

@@ -45,4 +45,6 @@ class XAsyncOutputMonitor(ABC):
         Raises:
             IOException: ``IOException``
         """
+        ...
+
 

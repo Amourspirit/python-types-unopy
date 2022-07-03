@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.awt
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .size import Size as Size_576707ef
@@ -33,16 +34,20 @@ class XBitmap(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.awt.XBitmap']
 
-    def getDIB(self) -> 'typing.Tuple[int, ...]':
+    def getDIB(self) -> uno.ByteSequence:
         """
         returns the device independent bitmap.
         """
-    def getMaskDIB(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getMaskDIB(self) -> uno.ByteSequence:
         """
         returns the transparency mask of the device independent bitmap.
         """
+        ...
     def getSize(self) -> 'Size_576707ef':
         """
         returns the size of the bitmap in pixel.
         """
+        ...
+
 

@@ -45,6 +45,7 @@ class DispatchInformation(object):
             Command (str, optional): Command value.
             GroupId (int, optional): GroupId value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class DispatchInformation(object):
         """
         command URL of a supported command.
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class DispatchInformation(object):
         """
         group identifier to which the supported command belong.
         """
+        ...
 
 

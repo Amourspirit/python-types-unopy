@@ -32,6 +32,7 @@ class SmartTagRecognizerMode(Enum):
     See Also:
         `API SmartTagRecognizerMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1smarttags.html#a2eab74f21d11f78b5aa7826b0c60604f>`_
     """
+    typeName: str = 'com.sun.star.smarttags.SmartTagRecognizerMode'
 
     CELL: 'uno.Enum'
     """

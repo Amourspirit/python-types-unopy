@@ -32,5 +32,6 @@ class CheckBox(UnoControlCheckBox_ef690d6e, XBoundControl_bba00bed):
     See Also:
         `API CheckBox <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1control_1_1CheckBox.html>`_
     """
+    ...
 
 

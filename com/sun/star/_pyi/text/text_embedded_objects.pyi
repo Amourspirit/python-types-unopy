@@ -30,5 +30,6 @@ class TextEmbeddedObjects(XIndexAccess_f0910d6d, XNameAccess_e2ab0cf6):
     See Also:
         `API TextEmbeddedObjects <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1TextEmbeddedObjects.html>`_
     """
+    ...
 
 

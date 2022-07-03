@@ -30,5 +30,6 @@ class DatabaseDateField(DataAwareControlModel_27110ef8, DateField_c8a0e1f):
     See Also:
         `API DatabaseDateField <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1component_1_1DatabaseDateField.html>`_
     """
+    ...
 
 

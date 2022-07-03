@@ -40,5 +40,6 @@ class thePackageManagerFactory(XPackageManagerFactory_9f9611e0):
     See Also:
         `API thePackageManagerFactory <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1deployment_1_1thePackageManagerFactory.html>`_
     """
+    ...
 
 

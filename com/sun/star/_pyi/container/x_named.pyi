@@ -35,8 +35,11 @@ class XNamed(XInterface_8f010a43):
     def getName(self) -> str:
         """
         """
+        ...
     def setName(self, aName: str) -> None:
         """
         sets the programmatic name of the object.
         """
+        ...
+
 

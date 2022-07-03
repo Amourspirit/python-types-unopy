@@ -39,6 +39,7 @@ class XStorageBasedDocument(XInterface_8f010a43):
         """
         allows to register a listener that will be notified when another storage is set to the document.
         """
+        ...
     def getDocumentStorage(self) -> 'XStorage_8e460a32':
         """
         allows to get the storage the document is based on.
@@ -47,6 +48,7 @@ class XStorageBasedDocument(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def loadFromStorage(self, xStorage: 'XStorage_8e460a32', aMediaDescriptor: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         lets the document load itself using provided storage.
@@ -57,10 +59,12 @@ class XStorageBasedDocument(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def removeStorageChangeListener(self, xListener: 'XStorageChangeListener_7c7d1120') -> None:
         """
         allows to deregister the listener.
         """
+        ...
     def storeToStorage(self, xStorage: 'XStorage_8e460a32', aMediaDescriptor: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         lets the document store itself to the provided storage.
@@ -70,6 +74,7 @@ class XStorageBasedDocument(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def switchToStorage(self, xStorage: 'XStorage_8e460a32') -> None:
         """
         allows to switch the document to the provided storage.
@@ -79,4 +84,6 @@ class XStorageBasedDocument(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

@@ -45,5 +45,6 @@ class UserDefinedAttributesSupplier(ABC):
         
         The com.sun.star.container.XNameContainer supports the service AttributeContainer.
         """
+        ...
 
 

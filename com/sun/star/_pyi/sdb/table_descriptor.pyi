@@ -30,5 +30,6 @@ class TableDescriptor(DataSettings_a3000b0c, TableDescriptor_e1470d23):
     See Also:
         `API TableDescriptor <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1TableDescriptor.html>`_
     """
+    ...
 
 

@@ -38,5 +38,6 @@ class HierarchyFolderContent(XPropertiesChangeNotifier_7a7b111c, XPropertyContai
     See Also:
         `API HierarchyFolderContent <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1HierarchyFolderContent.html>`_
     """
+    ...
 
 

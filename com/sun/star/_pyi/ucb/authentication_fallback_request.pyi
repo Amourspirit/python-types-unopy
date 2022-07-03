@@ -51,17 +51,20 @@ class AuthenticationFallbackRequest(ClassifiedInteractionRequest_9f72121b):
             instructions (str, optional): instructions value.
             url (str, optional): url value.
         """
+        ...
     @property
     def instructions(self) -> str:
         """
         Instructions to be followed by the user.
         """
+        ...
 
     @property
     def url(self) -> str:
         """
         url to be opened in browser
         """
+        ...
 
 
 __all__ = ['AuthenticationFallbackRequest']

@@ -32,6 +32,7 @@ class LockScope(Enum):
     See Also:
         `API LockScope <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb.html#ae15ecbfc9e84371b6044661d1493e6a5>`_
     """
+    typeName: str = 'com.sun.star.ucb.LockScope'
 
     EXCLUSIVE: 'uno.Enum'
     """

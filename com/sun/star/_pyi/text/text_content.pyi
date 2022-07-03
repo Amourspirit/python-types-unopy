@@ -42,15 +42,18 @@ class TextContent(XTextContent_b16e0ba5):
         """
         contains the anchor type of the text content.
         """
+        ...
     @property
     def AnchorType(self) -> 'TextContentAnchorType_2cbe0f4a':
         """
         specifies how the text content is attached to its surrounding Text.
         """
+        ...
     @property
     def TextWrap(self) -> 'WrapTextMode_b1dd0b91':
         """
         specifies if the text content is a shape and how the text is wrapped around the shape.
         """
+        ...
 
 

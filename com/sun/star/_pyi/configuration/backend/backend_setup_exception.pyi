@@ -50,6 +50,7 @@ class BackendSetupException(CannotLoadConfigurationException_b325176a):
             Context (XInterface, optional): Context value.
             BackendException (object, optional): BackendException value.
         """
+        ...
     @property
     def BackendException(self) -> object:
         """
@@ -57,6 +58,7 @@ class BackendSetupException(CannotLoadConfigurationException_b325176a):
         
         May be a numeric error code, a message string or VOID, if the original exception is not represented as a com.sun.star.uno.Exception.
         """
+        ...
 
 
 __all__ = ['BackendSetupException']

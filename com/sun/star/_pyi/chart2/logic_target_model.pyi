@@ -37,16 +37,19 @@ class LogicTargetModel(ABC):
         """
         not BOUND nor CONSTRAINED in terms of Listener notifications, each element in the sequence must implement the service com.sun.star.chart2.CoordinateSystem
         """
+        ...
     @property
     def LogicTargetModels(self) -> 'typing.Tuple[XPropertySet_bc180bfa, ...]':
         """
         MAYBEVOID, not BOUND nor CONSTRAINED in terms of Listener notifications, each element in the sequence must implement the service com.sun.star.chart2.LogicTargetModel.
         """
+        ...
     @property
     def ID(self) -> str:
         """
         identifies an instance of this service within one chart document.
         """
+        ...
     @property
     def LegendID(self) -> str:
         """
@@ -54,5 +57,6 @@ class LogicTargetModel(ABC):
         
         that instance is used to automatically calculate missing properties
         """
+        ...
 
 

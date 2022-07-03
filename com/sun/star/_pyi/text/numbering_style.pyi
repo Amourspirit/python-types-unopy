@@ -30,5 +30,6 @@ class NumberingStyle(Style_7336094a, NumberingRules_cabc0c7f):
     See Also:
         `API NumberingStyle <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1NumberingStyle.html>`_
     """
+    ...
 
 

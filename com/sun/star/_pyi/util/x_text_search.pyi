@@ -40,14 +40,18 @@ class XTextSearch(XInterface_8f010a43):
         
         The endpos must be lower than the startpos, because the function searches backward! The result is returned in the SearchResult.
         """
+        ...
     def searchForward(self, searchStr: str, startPos: int, endPos: int) -> 'SearchResult_b1070b9b':
         """
         search forward in the searchStr, starts at startPos and ends by endpos.
         
         The result is returned in the SearchResult.
         """
+        ...
     def setOptions(self, options: 'SearchOptions_bd140c08') -> None:
         """
         set the options for the forward or backward search.
         """
+        ...
+
 

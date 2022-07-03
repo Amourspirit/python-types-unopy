@@ -44,6 +44,7 @@ class XSubDocument(ABC):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def open(self) -> 'XComponent_98dc0ab5':
         """
         opens the sub document
@@ -53,6 +54,7 @@ class XSubDocument(ABC):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def openDesign(self) -> 'XComponent_98dc0ab5':
         """
         opens the sub document in design mode
@@ -60,6 +62,7 @@ class XSubDocument(ABC):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def store(self) -> None:
         """
         stores the sub document, if it had previously been opened in either mode
@@ -67,4 +70,6 @@ class XSubDocument(ABC):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

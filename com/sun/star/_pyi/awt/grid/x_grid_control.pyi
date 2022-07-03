@@ -38,22 +38,26 @@ class XGridControl(ABC):
         """
         retrieves the column which a given point belongs to
         """
+        ...
     def getCurrentColumn(self) -> int:
         """
         returns the column index of the currently active cell
         
         If the grid control's does not contain any cells (which happens if the grid column model does not contain any columns, or if grid data model does not contain any rows), then -1 is returned.
         """
+        ...
     def getCurrentRow(self) -> int:
         """
         returns the row index of the currently active cell
         
         If the grid control's does not contain any cells (which happens if the grid column model does not contain any columns, or if grid data model does not contain any rows), then -1 is returned.
         """
+        ...
     def getRowAtPoint(self, X: int, Y: int) -> int:
         """
         retrieves the row which a given point belongs to
         """
+        ...
     def goToCell(self, ColumnIndex: int, RowIndex: int) -> None:
         """
         moves the cursor to the given cell
@@ -62,4 +66,6 @@ class XGridControl(ABC):
             : ````
             com.sun.star.util.VetoException: ``VetoException``
         """
+        ...
+
 

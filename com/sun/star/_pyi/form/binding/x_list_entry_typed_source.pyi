@@ -41,4 +41,6 @@ class XListEntryTypedSource(XListEntrySource_576b103c):
 
         * ``DataValues`` is an out direction argument.
         """
+        ...
+
 

@@ -41,6 +41,7 @@ class AtomDescription(object):
             atom (int, optional): atom value.
             description (str, optional): description value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class AtomDescription(object):
         """
         the atom itself
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class AtomDescription(object):
         """
         the string it stands for
         """
+        ...
 
 

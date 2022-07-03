@@ -39,7 +39,10 @@ class XModule(XInterface_8f010a43):
     def getIdentifier(self) -> str:
         """
         """
+        ...
     def setIdentifier(self, Identifier: str) -> None:
         """
         """
+        ...
+
 

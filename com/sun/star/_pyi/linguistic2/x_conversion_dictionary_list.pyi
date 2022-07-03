@@ -52,6 +52,7 @@ class XConversionDictionaryList(XInterface_8f010a43):
             com.sun.star.lang.NoSupportException: ``NoSupportException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def getDictionaryContainer(self) -> 'XNameContainer_cb90e47':
         """
         The interface can be used to add, remove or retrieve dictionaries from the list by specifying the name of the dictionary, and (in case of inserting) the interface to the dictionary as second parameter.
@@ -60,6 +61,7 @@ class XConversionDictionaryList(XInterface_8f010a43):
         
         The com.sun.star.container.XNameReplace.replaceByName function is implemented empty since renaming of dictionaries is not allowed.
         """
+        ...
     def queryConversions(self, aText: str, nStartPos: int, nLength: int, aLocale: 'Locale_70d308fa', nConversionDictionaryType: int, eDirection: 'ConversionDirection_7dfe113c', nTextConversionOptions: int) -> 'typing.Tuple[str, ...]':
         """
         searches for entries that match the given text.
@@ -72,6 +74,7 @@ class XConversionDictionaryList(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def queryMaxCharCount(self, aLocale: 'Locale_70d308fa', nConversionDictionaryType: int, eDirection: 'ConversionDirection_7dfe113c') -> int:
         """
         returns the maximum number of characters used as left or right text in entries.
@@ -80,4 +83,6 @@ class XConversionDictionaryList(XInterface_8f010a43):
         
         The parameter eDirection specifies if only the left text or the right text from entries should be considered.
         """
+        ...
+
 

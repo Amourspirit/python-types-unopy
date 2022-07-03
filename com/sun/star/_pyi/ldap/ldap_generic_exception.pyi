@@ -50,11 +50,13 @@ class LdapGenericException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             ErrorCode (int, optional): ErrorCode value.
         """
+        ...
     @property
     def ErrorCode(self) -> int:
         """
         LDAP error code, see LDAP SDK documentation for complete list of possible values and their meaning.
         """
+        ...
 
 
 __all__ = ['LdapGenericException']

@@ -46,11 +46,14 @@ class XPersistentLibraryContainer(XLibraryContainer2_1c490e9f, XModifiable_a4f60
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
     @property
     def ContainerLocationName(self) -> str:
         """
         denotes the name of the sub location where the container elements are actually stored.
         """
+        ...
 
     @property
     def RootLocation(self) -> object:
@@ -61,5 +64,6 @@ class XPersistentLibraryContainer(XLibraryContainer2_1c490e9f, XModifiable_a4f60
         
         All operations of the library container take place in a location below the root location, the so-called container location, whose name is exposed as ContainerLocationName.
         """
+        ...
 
 

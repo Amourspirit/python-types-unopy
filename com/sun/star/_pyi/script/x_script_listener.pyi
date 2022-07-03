@@ -40,10 +40,13 @@ class XScriptListener(XEventListener_c7230c4a):
         Raises:
             com.sun.star.reflection.InvocationTargetException: ``InvocationTargetException``
         """
+        ...
     def firing(self, aEvent: 'ScriptEvent_be710c14') -> None:
         """
         gets called when an event takes place.
         
         For that a ScriptEventDescriptor is registered at and attached to an object by an XEventAttacherManager.
         """
+        ...
+
 

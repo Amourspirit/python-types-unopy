@@ -49,6 +49,7 @@ class XOptimizedStorage(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def copyElementDirectlyTo(self, sSourceName: str, xTargetStorage: 'XOptimizedStorage', sTargetName: str) -> None:
         """
         allows to copy storage element directly, not guaranteed to work.
@@ -61,6 +62,7 @@ class XOptimizedStorage(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def copyStreamElementData(self, sStreamName: str, xTargetStream: 'XStream_678908a4') -> None:
         """
         fills the provided stream with the last flushed version of data from the child stream of the storage.
@@ -72,6 +74,7 @@ class XOptimizedStorage(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def getElementPropertyValue(self, sElementName: str, sPropertyName: str) -> object:
         """
         allows to get property of the child element with the specified name.
@@ -87,6 +90,7 @@ class XOptimizedStorage(ABC):
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def insertRawNonEncrStreamElementDirect(self, sStreamName: str, xInStream: 'XInputStream_98d40ab4') -> None:
         """
         allows to insert a raw stream representing non-encrypted stream with header.
@@ -99,6 +103,7 @@ class XOptimizedStorage(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def insertStreamElementDirect(self, sStreamName: str, xInStream: 'XInputStream_98d40ab4', aProperties: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         allows to insert a stream to the storage directly.
@@ -112,6 +117,7 @@ class XOptimizedStorage(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
     def writeAndAttachToStream(self, xStream: 'XStream_678908a4') -> None:
         """
         allows to switch storage persistence to the provided stream.
@@ -124,4 +130,6 @@ class XOptimizedStorage(ABC):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.embed.StorageWrappedTargetException: ``StorageWrappedTargetException``
         """
+        ...
+
 

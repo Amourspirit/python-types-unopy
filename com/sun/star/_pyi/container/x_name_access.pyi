@@ -40,12 +40,16 @@ class XNameAccess(XElementAccess_cd60e3f):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def getElementNames(self) -> 'typing.Tuple[str, ...]':
         """
         The order of the names is not specified.
         """
+        ...
     def hasByName(self, aName: str) -> bool:
         """
         In many cases the next call is XNameAccess.getByName(). You should optimize this case.
         """
+        ...
+
 

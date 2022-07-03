@@ -39,5 +39,6 @@ class AnyCompareFactory(XAnyCompareFactory_ec090d61):
     def createWithLocale(self, aLocale: 'Locale_70d308fa') -> None:
         """
         """
+        ...
 
 

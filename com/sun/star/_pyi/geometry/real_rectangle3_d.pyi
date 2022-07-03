@@ -49,6 +49,7 @@ class RealRectangle3D(object):
             Y2 (float, optional): Y2 value.
             Z2 (float, optional): Z2 value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class RealRectangle3D(object):
         """
         minimum X coordinate.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class RealRectangle3D(object):
         """
         minimum Y coordinate.
         """
+        ...
 
 
     @property
@@ -70,6 +73,7 @@ class RealRectangle3D(object):
         """
         minimum Z coordinate.
         """
+        ...
 
 
     @property
@@ -81,6 +85,7 @@ class RealRectangle3D(object):
         
         .
         """
+        ...
 
 
     @property
@@ -90,6 +95,7 @@ class RealRectangle3D(object):
         
         Must be greater than Y1 for non-empty cubes.
         """
+        ...
 
 
     @property
@@ -99,5 +105,6 @@ class RealRectangle3D(object):
         
         Must be greater than Z1 for non-empty cubes.
         """
+        ...
 
 

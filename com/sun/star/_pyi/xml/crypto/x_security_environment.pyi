@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.xml.crypto
 from typing_extensions import Literal
 import typing
+import uno
 from ...uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ...security.x_certificate import XCertificate as XCertificate_e55b0d3b
@@ -44,6 +45,7 @@ class XSecurityEnvironment(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.SecurityException: ``SecurityException``
         """
+        ...
     def createCertificateFromAscii(self, asciiCertificate: str) -> 'XCertificate_e55b0d3b':
         """
         Create certificate interface from a Base64 encoded certificate.
@@ -51,13 +53,15 @@ class XSecurityEnvironment(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.SecurityException: ``SecurityException``
         """
-    def createCertificateFromRaw(self, rawCertificate: 'typing.Tuple[int, ...]') -> 'XCertificate_e55b0d3b':
+        ...
+    def createCertificateFromRaw(self, rawCertificate: uno.ByteSequence) -> 'XCertificate_e55b0d3b':
         """
         Create certificate interface from raw DER encoded certificate.
 
         Raises:
             com.sun.star.uno.SecurityException: ``SecurityException``
         """
+        ...
     def getAllCertificates(self) -> 'typing.Tuple[XCertificate_e55b0d3b, ...]':
         """
         List all certificates, private (as returned by getPersonalCertificates) as well as those of other people/orgas.
@@ -69,13 +73,15 @@ class XSecurityEnvironment(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.SecurityException: ``SecurityException``
         """
-    def getCertificate(self, issuerName: str, serialNumber: 'typing.Tuple[int, ...]') -> 'XCertificate_e55b0d3b':
+        ...
+    def getCertificate(self, issuerName: str, serialNumber: uno.ByteSequence) -> 'XCertificate_e55b0d3b':
         """
         Get certificate from the environment by issuer name and serial number.
 
         Raises:
             com.sun.star.uno.SecurityException: ``SecurityException``
         """
+        ...
     def getCertificateCharacters(self, xCertificate: 'XCertificate_e55b0d3b') -> int:
         """
         Get a certificate characters.
@@ -87,6 +93,7 @@ class XSecurityEnvironment(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.SecurityException: ``SecurityException``
         """
+        ...
     def getPersonalCertificates(self) -> 'typing.Tuple[XCertificate_e55b0d3b, ...]':
         """
         Get personal certificates from the environment.
@@ -94,10 +101,12 @@ class XSecurityEnvironment(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.SecurityException: ``SecurityException``
         """
+        ...
     def getSecurityEnvironmentInformation(self) -> str:
         """
         Get the Environment detail information.
         """
+        ...
     def verifyCertificate(self, xEECertificate: 'XCertificate_e55b0d3b', intermediateCertificates: 'typing.Tuple[XCertificate_e55b0d3b, ...]') -> int:
         """
         Verify a certificate.
@@ -107,4 +116,6 @@ class XSecurityEnvironment(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.SecurityException: ``SecurityException``
         """
+        ...
+
 

@@ -53,6 +53,7 @@ class DropTargetDragEnterEvent(DropTargetDragEvent_d60612e7):
             SourceActions (int, optional): SourceActions value.
             SupportedDataFlavors (typing.Tuple[DataFlavor, ...], optional): SupportedDataFlavors value.
         """
+        ...
 
 
     @property
@@ -60,5 +61,6 @@ class DropTargetDragEnterEvent(DropTargetDragEvent_d60612e7):
         """
         A sequence of supported com.sun.star.datatransfer.DataFlavor types.
         """
+        ...
 
 

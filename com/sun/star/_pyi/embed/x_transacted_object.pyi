@@ -38,6 +38,7 @@ class XTransactedObject(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def revert(self) -> None:
         """
         removes all the changes made for the object after last commit or loading.
@@ -46,4 +47,6 @@ class XTransactedObject(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

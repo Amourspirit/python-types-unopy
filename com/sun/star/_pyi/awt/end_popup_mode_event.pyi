@@ -45,6 +45,7 @@ class EndPopupModeEvent(EventObject_a3d70b03):
             bTearoff (bool, optional): bTearoff value.
             FloatingPosition (Point, optional): FloatingPosition value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class EndPopupModeEvent(EventObject_a3d70b03):
         """
         specifies how the pop-up mode was ended TRUE means the window should be teared-off and positioned at FloatingPosition FALSE means the window was closed
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class EndPopupModeEvent(EventObject_a3d70b03):
         """
         specifies the new position of the floating window in frame coordinates if bTearoff is TRUE
         """
+        ...
 
 

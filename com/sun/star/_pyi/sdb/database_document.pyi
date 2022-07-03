@@ -44,10 +44,12 @@ class DatabaseDocument(XPropertySet_bc180bfa, XDataDescriptorFactory_46170fe5, X
         """
         is the name of the document.
         """
+        ...
     @property
     def URL(self) -> str:
         """
         is the URL of the document.
         """
+        ...
 
 

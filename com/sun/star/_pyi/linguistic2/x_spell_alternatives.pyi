@@ -38,16 +38,22 @@ class XSpellAlternatives(XInterface_8f010a43):
     def getAlternatives(self) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def getAlternativesCount(self) -> int:
         """
         """
+        ...
     def getFailureType(self) -> int:
         """
         """
+        ...
     def getLocale(self) -> 'Locale_70d308fa':
         """
         """
+        ...
     def getWord(self) -> str:
         """
         """
+        ...
+
 

@@ -41,5 +41,6 @@ class GridControl(UnoControl_8f2c0a67, XBoundComponent_d4830cbf, XGridControl_af
     See Also:
         `API GridControl <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1control_1_1GridControl.html>`_
     """
+    ...
 
 

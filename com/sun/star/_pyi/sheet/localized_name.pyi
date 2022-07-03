@@ -42,6 +42,7 @@ class LocalizedName(object):
             Locale (Locale, optional): Locale value.
             Name (str, optional): Name value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class LocalizedName(object):
         """
         The locale for which this name is valid.
         """
+        ...
 
 
     @property
@@ -56,5 +58,6 @@ class LocalizedName(object):
         """
         The name itself.
         """
+        ...
 
 

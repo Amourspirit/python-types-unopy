@@ -39,16 +39,21 @@ class XLabelRange(XInterface_8f010a43):
         """
         returns the cell range address for which the labels are valid.
         """
+        ...
     def getLabelArea(self) -> 'CellRangeAddress_ec450d43':
         """
         returns the cell range address that contains the labels.
         """
+        ...
     def setDataArea(self, aDataArea: 'CellRangeAddress_ec450d43') -> None:
         """
         sets the cell range address for which the labels are valid.
         """
+        ...
     def setLabelArea(self, aLabelArea: 'CellRangeAddress_ec450d43') -> None:
         """
         sets the cell range address that contains the labels.
         """
+        ...
+
 

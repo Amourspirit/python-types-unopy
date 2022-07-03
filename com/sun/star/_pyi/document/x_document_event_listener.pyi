@@ -43,4 +43,6 @@ class XDocumentEventListener(XEventListener_c7230c4a):
         """
         is called whenever a document event occurred
         """
+        ...
+
 

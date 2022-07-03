@@ -50,6 +50,7 @@ class XDocumentProperties(ABC):
         
         The returned object also implements the interface com.sun.star.beans.XPropertySet.
         """
+        ...
     def loadFromMedium(self, URL: str, Medium: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         loads document properties from an ODF package or an OLE container.
@@ -61,6 +62,7 @@ class XDocumentProperties(ABC):
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def loadFromStorage(self, Storage: 'XStorage_8e460a32', Medium: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         loads document properties from an ODF package.
@@ -75,12 +77,14 @@ class XDocumentProperties(ABC):
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def resetUserData(self, Author: str) -> None:
         """
         resets all attributes that could identify the user.
         
         Clears the document properties, such that it appears the document has just been created. This is a convenience method which resets several attributes at once, as follows:
         """
+        ...
     def storeToMedium(self, URL: str, Medium: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         stores document properties to an ODF package or an OLE container.
@@ -91,6 +95,7 @@ class XDocumentProperties(ABC):
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def storeToStorage(self, Storage: 'XStorage_8e460a32', Medium: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         stores document properties to an ODF package.
@@ -104,6 +109,8 @@ class XDocumentProperties(ABC):
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
     @property
     def DocumentStatistics(self) -> 'typing.Tuple[NamedValue_a37a0af3, ...]':
         """
@@ -111,18 +118,21 @@ class XDocumentProperties(ABC):
         
         The contained statistics may be specific to the type of the document.
         """
+        ...
 
     @property
     def Keywords(self) -> 'typing.Tuple[str, ...]':
         """
         contains a list of keywords for the document.
         """
+        ...
 
     @property
     def Author(self) -> str:
         """
         contains the initial author of the document.
         """
+        ...
 
     @property
     def AutoloadSecs(self) -> int:
@@ -131,6 +141,7 @@ class XDocumentProperties(ABC):
         
         A value of 0 is valid and describes a redirection. A value of 0 together with an empty string as AutoloadURL describes a case where no autoload is specified.
         """
+        ...
 
     @property
     def AutoloadURL(self) -> str:
@@ -139,12 +150,14 @@ class XDocumentProperties(ABC):
         
         An empty URL is valid and describes a case where the document shall be reloaded from its original location after some time described by the attribute AutoloadSecs. An empty string together with an AutoloadSecs value of 0 describes a case where no autoload is specified.
         """
+        ...
 
     @property
     def CreationDate(self) -> 'DateTime_84de09d3':
         """
         contains the date and time when the document was created.
         """
+        ...
 
     @property
     def DefaultTarget(self) -> str:
@@ -153,6 +166,7 @@ class XDocumentProperties(ABC):
         
         This applies to the autoload feature too, but to others as well.
         """
+        ...
 
     @property
     def Description(self) -> str:
@@ -161,18 +175,21 @@ class XDocumentProperties(ABC):
         
         Line delimiters can be UNIX, Macintosh or DOS style.
         """
+        ...
 
     @property
     def EditingCycles(self) -> int:
         """
         describes how often the document was edited and saved.
         """
+        ...
 
     @property
     def EditingDuration(self) -> int:
         """
         contains the net time of editing the document (in seconds).
         """
+        ...
 
     @property
     def Generator(self) -> str:
@@ -181,12 +198,14 @@ class XDocumentProperties(ABC):
         
         The generating application will set this attribute when it creates a new document or it saves a document. When a document is loaded that itself contains such an attribute it will be preserved until the document is saved again.
         """
+        ...
 
     @property
     def Language(self) -> 'Locale_70d308fa':
         """
         contains the default language of the document.
         """
+        ...
 
     @property
     def ModificationDate(self) -> 'DateTime_84de09d3':
@@ -195,12 +214,14 @@ class XDocumentProperties(ABC):
         
         If the document has never been stored, contains a default value.
         """
+        ...
 
     @property
     def ModifiedBy(self) -> str:
         """
         contains the name of the person who most recently stored the document.
         """
+        ...
 
     @property
     def PrintDate(self) -> 'DateTime_84de09d3':
@@ -209,24 +230,28 @@ class XDocumentProperties(ABC):
         
         If the document has never been printed, contains a default value.
         """
+        ...
 
     @property
     def PrintedBy(self) -> str:
         """
         contains the name of the person who most recently printed the document.
         """
+        ...
 
     @property
     def Subject(self) -> str:
         """
         contains the subject of the document.
         """
+        ...
 
     @property
     def TemplateDate(self) -> 'DateTime_84de09d3':
         """
         contains the date and time of when the document was created or updated from the template.
         """
+        ...
 
     @property
     def TemplateName(self) -> str:
@@ -235,6 +260,7 @@ class XDocumentProperties(ABC):
         
         The value is an empty string if the document was not created from a template or if it was detached from the template.
         """
+        ...
 
     @property
     def TemplateURL(self) -> str:
@@ -243,11 +269,13 @@ class XDocumentProperties(ABC):
         
         The value is an empty string if the document was not created from a template or if it was detached from the template.
         """
+        ...
 
     @property
     def Title(self) -> str:
         """
         contains the title of the document.
         """
+        ...
 
 

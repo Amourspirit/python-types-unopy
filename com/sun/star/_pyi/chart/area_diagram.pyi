@@ -35,5 +35,6 @@ class AreaDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
     See Also:
         `API AreaDiagram <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart_1_1AreaDiagram.html>`_
     """
+    ...
 
 

@@ -47,6 +47,7 @@ class XAccessibleHyperlink(XAccessibleAction_7ccc1114):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getAccessibleActionObject(self, nIndex: int) -> object:
         """
         Returns an object that represents the link anchor, as appropriate for that link.
@@ -56,22 +57,27 @@ class XAccessibleHyperlink(XAccessibleAction_7ccc1114):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getEndIndex(self) -> int:
         """
         Returns the index at which the textual representation of the hyperlink (group) ends.
         
         The returned value relates to the XAccessibleText interface that owns this hyperlink.
         """
+        ...
     def getStartIndex(self) -> int:
         """
         Returns the index at which the textual representation of the hyperlink (group) starts.
         
         The returned value relates to the XAccessibleText interface that owns this hyperlink.
         """
+        ...
     def isValid(self) -> bool:
         """
         Returns whether the document referenced by this links is still valid.
         
         This is a volatile state that may change without further warning like e.g. sending an appropriate event.
         """
+        ...
+
 

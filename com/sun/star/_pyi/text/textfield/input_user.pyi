@@ -34,6 +34,7 @@ class InputUser(TextField_90260a56):
         """
         contains the name of the corresponding field master.
         """
+        ...
     @property
     def Hint(self) -> str:
         """
@@ -41,5 +42,6 @@ class InputUser(TextField_90260a56):
         
         This hint may be used as help tip or as headline of a corresponding dialog to edit the field content.
         """
+        ...
 
 

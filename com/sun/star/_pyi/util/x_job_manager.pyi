@@ -37,12 +37,16 @@ class XJobManager(XInterface_8f010a43):
         """
         cancel all registered jobs.
         """
+        ...
     def registerJob(self, Job: 'XCancellable_afc30b64') -> None:
         """
         registers a cancelable job.
         """
+        ...
     def releaseJob(self, Job: 'XCancellable_afc30b64') -> None:
         """
         deregisters a cancelable jobs.
         """
+        ...
+
 

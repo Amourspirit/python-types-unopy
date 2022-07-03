@@ -42,6 +42,7 @@ class XStringResourceWithStorage(XStringResourcePersistence_cabc130c):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def storeAsStorage(self, Storage: 'XStorage_8e460a32') -> None:
         """
         Stores all string table data to a storage and associates this storage to this instance as if setStorage() was called with this storage.
@@ -53,4 +54,6 @@ class XStringResourceWithStorage(XStringResourcePersistence_cabc130c):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

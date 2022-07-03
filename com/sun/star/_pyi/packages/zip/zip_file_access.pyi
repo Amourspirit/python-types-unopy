@@ -38,5 +38,6 @@ class ZipFileAccess(XZipFileAccess2_45470f57):
             com.sun.star.ucb.InteractiveIOException: ``InteractiveIOException``
             com.sun.star.packages.zip.ZipException: ``ZipException``
         """
+        ...
 
 

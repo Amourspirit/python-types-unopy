@@ -41,6 +41,7 @@ class DataPilotFieldFilter(object):
             MatchValueName (str, optional): MatchValueName value.
             MatchValue (str, optional): MatchValue value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class DataPilotFieldFilter(object):
         """
         Field name.
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class DataPilotFieldFilter(object):
         
         This is the value as name/label as also displayed in the filter popup dialog, maybe formatted by user applied number formats.
         """
+        ...
 
 
     @property
@@ -66,5 +69,6 @@ class DataPilotFieldFilter(object):
         
         This is the underlying value formatted in a standardized way, for example ISO 8601 YYYY-MM-DD for dates.
         """
+        ...
 
 

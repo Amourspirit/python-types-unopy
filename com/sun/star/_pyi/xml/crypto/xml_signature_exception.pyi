@@ -42,6 +42,7 @@ class XMLSignatureException(SignatureException_3f870fe1):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['XMLSignatureException']
 

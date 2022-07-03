@@ -30,5 +30,6 @@ class UnoControlComboBox(UnoControlEdit_bc4e0bed, XComboBox_83b409c5):
     See Also:
         `API UnoControlComboBox <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlComboBox.html>`_
     """
+    ...
 
 

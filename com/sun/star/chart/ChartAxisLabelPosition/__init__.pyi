@@ -29,6 +29,7 @@ Enum
 See Also:
     `API ChartAxisLabelPosition <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart.html#a693b6b549818a6055effeaf72501bd26>`_
 """
+typeName: str = 'com.sun.star.chart.ChartAxisLabelPosition'
 
 NEAR_AXIS: 'uno.Enum'
 """

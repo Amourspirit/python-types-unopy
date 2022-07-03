@@ -30,5 +30,6 @@ class ChartLine(LineProperties_f13f0da9, XPropertySet_bc180bfa):
     See Also:
         `API ChartLine <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart_1_1ChartLine.html>`_
     """
+    ...
 
 

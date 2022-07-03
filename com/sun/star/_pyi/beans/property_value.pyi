@@ -44,6 +44,7 @@ class PropertyValue(object):
             Value (object, optional): Value value.
             State (PropertyState, optional): State value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class PropertyValue(object):
         
         The name is unique within a sequence of PropertyValues. Upper and lower case are distinguished.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class PropertyValue(object):
         
         It may be -1 if the implementation has no handle. If available it can be used for fast lookups.
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class PropertyValue(object):
         """
         contains the value of the property or VOID, if no value is available.
         """
+        ...
 
 
     @property
@@ -76,5 +80,6 @@ class PropertyValue(object):
         """
         determines if the value comes from the object itself or from a default and if the value cannot be determined exactly.
         """
+        ...
 
 

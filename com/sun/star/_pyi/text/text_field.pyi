@@ -46,6 +46,7 @@ class TextField(TextContent_a6810b4d, XPropertySet_bc180bfa, XTextField_9a630aae
         
             OOo 2.0.1
         """
+        ...
     @property
     def IsFieldUsed(self) -> bool:
         """
@@ -57,5 +58,6 @@ class TextField(TextContent_a6810b4d, XPropertySet_bc180bfa, XTextField_9a630aae
         
             OOo 2.0.1
         """
+        ...
 
 

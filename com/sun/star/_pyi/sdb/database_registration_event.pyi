@@ -49,6 +49,7 @@ class DatabaseRegistrationEvent(EventObject_a3d70b03):
             OldLocation (str, optional): OldLocation value.
             NewLocation (str, optional): NewLocation value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class DatabaseRegistrationEvent(EventObject_a3d70b03):
         """
         is the name of the database registration affected by the event
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class DatabaseRegistrationEvent(EventObject_a3d70b03):
         """
         is the old location of the database which is affected by the event
         """
+        ...
 
 
     @property
@@ -70,5 +73,6 @@ class DatabaseRegistrationEvent(EventObject_a3d70b03):
         """
         is the new location of the database which is affected by the event
         """
+        ...
 
 

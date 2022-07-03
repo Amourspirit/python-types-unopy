@@ -33,5 +33,6 @@ class Desktop(XDesktop2_98eb0a77):
     See Also:
         `API Desktop <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1frame_1_1Desktop.html>`_
     """
+    ...
 
 

@@ -29,6 +29,7 @@ Enum
 See Also:
     `API GradientStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt.html#aa6b9d577a1700f29923f49f7b77d165f>`_
 """
+typeName: str = 'com.sun.star.awt.GradientStyle'
 
 AXIAL: 'uno.Enum'
 """

@@ -38,20 +38,25 @@ class XInteractionPassword2(XInteractionPassword_1ba00ee6):
         """
         gets \"password to modify\" from the continuation.
         """
+        ...
     def getRecommendReadOnly(self) -> bool:
         """
         gets \"recommend readonly\" from the continuation.
         
         It specifies whether the document should be loaded readonly per default.
         """
+        ...
     def setPasswordToModify(self, aPasswd: str) -> None:
         """
         stores \"password to modify\" to the continuation.
         """
+        ...
     def setRecommendReadOnly(self, bReadOnly: bool) -> None:
         """
         stores \"recommend readonly\" to the continuation.
         
         It specifies whether the document should be loaded readonly per default.
         """
+        ...
+
 

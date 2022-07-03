@@ -31,5 +31,6 @@ class Cell(CellProperties_d4360cbd, XCell_70d408e8, XText_690408ca):
     See Also:
         `API Cell <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1table_1_1Cell.html>`_
     """
+    ...
 
 

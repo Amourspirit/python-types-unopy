@@ -29,6 +29,7 @@ Enum
 See Also:
     `API LineJoint <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#aa36e7b530c7d0049f623b0effe54d04f>`_
 """
+typeName: str = 'com.sun.star.drawing.LineJoint'
 
 BEVEL: 'uno.Enum'
 """

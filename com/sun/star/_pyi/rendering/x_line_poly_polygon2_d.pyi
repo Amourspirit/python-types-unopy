@@ -44,6 +44,7 @@ class XLinePolyPolygon2D(XPolyPolygon2D_e1b0e20):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getPoints(self, nPolygonIndex: int, nNumberOfPolygons: int, nPointIndex: int, nNumberOfPoints: int) -> 'typing.Tuple[typing.Tuple[RealPoint2D_d6e70c78, ...], ...]':
         """
         Query subset of this poly-polygon, starting at the given polygon and the given point within that polygon, and containing the specified number of polygons and points in the last polygon.
@@ -51,6 +52,7 @@ class XLinePolyPolygon2D(XPolyPolygon2D_e1b0e20):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setPoint(self, point: 'RealPoint2D_d6e70c78', nPolygonIndex: int, nPointIndex: int) -> None:
         """
         Set a single point on the poly-polygon.
@@ -60,6 +62,7 @@ class XLinePolyPolygon2D(XPolyPolygon2D_e1b0e20):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setPoints(self, points: 'typing.Tuple[typing.Tuple[RealPoint2D_d6e70c78, ...], ...]', nPolygonIndex: int) -> None:
         """
         Set the specified sequence of points to the poly-polygon.
@@ -69,4 +72,6 @@ class XLinePolyPolygon2D(XPolyPolygon2D_e1b0e20):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

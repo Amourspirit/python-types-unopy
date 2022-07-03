@@ -41,6 +41,7 @@ class XCellRangesAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getCellRangeByPosition(self, nLeft: int, nTop: int, nRight: int, nBottom: int, nSheet: int) -> 'XCellRange_a2f70ad5':
         """
         Returns a sub-range of cells within the range.
@@ -48,6 +49,7 @@ class XCellRangesAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getCellRangesByName(self, aRange: str) -> 'typing.Tuple[XCellRange_a2f70ad5, ...]':
         """
         Returns a sub-range of cells within the range.
@@ -57,4 +59,6 @@ class XCellRangesAccess(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

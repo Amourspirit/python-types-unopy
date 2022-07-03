@@ -48,6 +48,7 @@ class StringContext(object):
             StartPosition (int, optional): StartPosition value.
             Length (int, optional): Length value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class StringContext(object):
         """
         The complete text, from which a subset is selected by the parameters below.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class StringContext(object):
         
         The first character has index 0.
         """
+        ...
 
 
     @property
@@ -73,5 +76,6 @@ class StringContext(object):
         
         Must be within the range [0,INTMAX].
         """
+        ...
 
 

@@ -43,6 +43,7 @@ class VerbDescriptor(object):
             VerbFlags (int, optional): VerbFlags value.
             VerbAttributes (int, optional): VerbAttributes value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class VerbDescriptor(object):
         """
         specifies the id of the verb.
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class VerbDescriptor(object):
         """
         specifies the name of the verb.
         """
+        ...
 
 
     @property
@@ -66,6 +69,7 @@ class VerbDescriptor(object):
         
         The flags can be used to build the verb's menu.
         """
+        ...
 
 
     @property
@@ -75,5 +79,6 @@ class VerbDescriptor(object):
         
         It can take values from VerbAttributes.
         """
+        ...
 
 

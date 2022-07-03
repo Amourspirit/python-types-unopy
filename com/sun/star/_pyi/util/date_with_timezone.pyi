@@ -46,6 +46,7 @@ class DateWithTimezone(object):
             DateInTZ (Date, optional): DateInTZ value.
             Timezone (int, optional): Timezone value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class DateWithTimezone(object):
         """
         the date.
         """
+        ...
 
 
     @property
@@ -60,5 +62,6 @@ class DateWithTimezone(object):
         """
         contains the time zone, as signed offset in minutes from UTC, that is east of UTC, that is the amount of minutes that should be added to UTC time to obtain time in that timezone.
         """
+        ...
 
 

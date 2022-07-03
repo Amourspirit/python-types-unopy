@@ -45,30 +45,38 @@ class XExtendedIndexEntrySupplier(XIndexEntrySupplier_1cb0dfe):
         
         Note that loadAlgorithm should be called before calling this function.
         """
+        ...
     def getAlgorithmList(self, aLocale: 'Locale_70d308fa') -> 'typing.Tuple[str, ...]':
         """
         Returns index algorithm list for specific locale.
         """
+        ...
     def getIndexKey(self, aIndexEntry: str, aPhoneticEntry: str, aLocale: 'Locale_70d308fa') -> str:
         """
         Returns index key.
         
         Note that loadAlgorithm should be called before calling this function.
         """
+        ...
     def getLocaleList(self) -> 'typing.Tuple[Locale_70d308fa, ...]':
         """
         Returns locale list for which the IndexEntrySupplier provides service.
         """
+        ...
     def getPhoneticCandidate(self, aIndexEntry: str, aLocale: 'Locale_70d308fa') -> str:
         """
         Returns phonetic candidate for index entry for the locale.
         """
+        ...
     def loadAlgorithm(self, aLocale: 'Locale_70d308fa', aIndexAlgorithm: str, nCollatorOptions: int) -> bool:
         """
         Loads index algorithm for the locale.
         """
+        ...
     def usePhoneticEntry(self, aLocale: 'Locale_70d308fa') -> bool:
         """
         Checks if Phonetic Entry should be used for the locale.
         """
+        ...
+
 

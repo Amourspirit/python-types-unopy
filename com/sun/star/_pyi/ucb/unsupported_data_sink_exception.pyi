@@ -46,11 +46,13 @@ class UnsupportedDataSinkException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             Sink (XInterface, optional): Sink value.
         """
+        ...
     @property
     def Sink(self) -> XInterface_8f010a43:
         """
         contains the data sink that is not supported.
         """
+        ...
 
 
 __all__ = ['UnsupportedDataSinkException']

@@ -39,5 +39,6 @@ class AccessibleTableView(XAccessibleComponent_b2f21269, XAccessibleContext_8eae
     See Also:
         `API AccessibleTableView <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1table_1_1AccessibleTableView.html>`_
     """
+    ...
 
 

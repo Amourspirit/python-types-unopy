@@ -43,34 +43,41 @@ class XSlideShowController(ABC):
         """
         activates the user interface of this slide show.
         """
+        ...
     def addSlideShowListener(self, Listener: 'XSlideShowListener_81671154') -> None:
         """
         adds a listener that receives events while the slide show is running.
         """
+        ...
     def blankScreen(self, Color: int) -> None:
         """
         pauses the slide show and blanks the screen in the given color.
         
         Change attribute Pause to false to unpause the slide show.
         """
+        ...
     def deactivate(self) -> None:
         """
         can be called to deactivate the user interface of this slide show.
         
         A deactivated
         """
+        ...
     def getCurrentSlide(self) -> 'XDrawPage_b07a0b57':
         """
         returns slide that is currently displayed
         """
+        ...
     def getCurrentSlideIndex(self) -> int:
         """
         returns the index of the current slide.
         """
+        ...
     def getNextSlideIndex(self) -> int:
         """
         the index for the slide that is displayed next.
         """
+        ...
     def getSlideByIndex(self, Index: int) -> 'XDrawPage_b07a0b57':
         """
         gives access to the slides that will be shown in this slide show.
@@ -80,53 +87,63 @@ class XSlideShowController(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getSlideCount(self) -> int:
         """
         """
+        ...
     def getSlideShow(self) -> 'XSlideShow_2a80e0e':
         """
         returns the actual XSlideShow instance that runs the slide show.
         
         Normally all navigation should be done using this controller and not the XSlideShow itself.
         """
+        ...
     def gotoBookmark(self, Bookmark: str) -> None:
         """
         goto the given textual bookmark
         """
+        ...
     def gotoFirstSlide(self) -> None:
         """
         goto and display first slide
         """
+        ...
     def gotoLastSlide(self) -> None:
         """
         goto and display last slide.
         
         Remaining effects on the current slide will be skipped.
         """
+        ...
     def gotoNextEffect(self) -> None:
         """
         start next effects that wait on a generic trigger.
         
         If no generic triggers are waiting the next slide will be displayed.
         """
+        ...
     def gotoNextSlide(self) -> None:
         """
         goto and display next slide.
         
         Remaining effects on the current slide will be skipped.
         """
+        ...
     def gotoPreviousEffect(self) -> None:
         """
         undo the last effects that were triggered by a generic trigger.
         
         If there is no previous effect that can be undone then the previous slide will be displayed.
         """
+        ...
     def gotoPreviousSlide(self) -> None:
         """
         goto and display previous slide.
         
         Remaining effects on the current slide will be skipped.
         """
+        ...
     def gotoSlide(self, Page: 'XDrawPage_b07a0b57') -> None:
         """
         jumps to the given slide.
@@ -136,32 +153,39 @@ class XSlideShowController(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def gotoSlideIndex(self, Index: int) -> None:
         """
         jumps to the slide at the given index.
         """
+        ...
     def isActive(self) -> bool:
         """
         determines if the slide show is active.
         """
+        ...
     def isEndless(self) -> bool:
         """
         returns TRUE if the slide show was started to run endlessly.
         """
+        ...
     def isFullScreen(self) -> bool:
         """
         Returns TRUE if the slide show was started in full-screen mode.
         """
+        ...
     def isPaused(self) -> bool:
         """
         returns TRUE if the slide show is currently paused.
         """
+        ...
     def isRunning(self) -> bool:
         """
         returns true if the slide show is still running.
         
         If this returns false, this component is already disposed. You can start a new slide show and get a new instance of XSlideShowController from XPresentation2
         """
+        ...
     def pause(self) -> None:
         """
         pauses the slide show.
@@ -170,14 +194,17 @@ class XSlideShowController(ABC):
         
         The slide show continues on next user input or if resume() is called.
         """
+        ...
     def removeSlideShowListener(self, Listener: 'XSlideShowListener_81671154') -> None:
         """
         removes a listener.
         """
+        ...
     def resume(self) -> None:
         """
         resumes a paused slide show.
         """
+        ...
     def setEraseAllInk(self, EraseAllInk: bool) -> None:
         """
         This method clears ink drawing from the slideshow being played.
@@ -186,27 +213,33 @@ class XSlideShowController(ABC):
         
             LibreOffice 7.2
         """
+        ...
     def stopSound(self) -> None:
         """
         stop all currently played sounds
         """
+        ...
+
     @property
     def AlwaysOnTop(self) -> bool:
         """
         If this attribute is set to TRUE, the window of the slide show is always on top of all other windows.
         """
+        ...
 
     @property
     def MouseVisible(self) -> bool:
         """
         If this attribute is TRUE, the mouse is visible during the slide show.
         """
+        ...
 
     @property
     def PenColor(self) -> int:
         """
         This attribute changes the color of the pen.
         """
+        ...
 
     @property
     def PenWidth(self) -> float:
@@ -217,6 +250,7 @@ class XSlideShowController(ABC):
         
             LibreOffice 4.2
         """
+        ...
 
     @property
     def UsePen(self) -> bool:
@@ -225,5 +259,6 @@ class XSlideShowController(ABC):
         
         You can draw on the presentation with this pen.
         """
+        ...
 
 

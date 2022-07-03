@@ -40,24 +40,30 @@ class XItemListListener(XEventListener_c7230c4a):
         
         after an invocation of XItemList.removeAllItems()
         """
+        ...
     def itemListChanged(self, Event: 'EventObject_a3d70b03') -> None:
         """
         is called when the changes to the item list which occurred are too complex to be notified in single events.
         
         Consumers of this event should discard their cached information about the current item list, and completely refresh it from the XItemList's current state.
         """
+        ...
     def listItemInserted(self, Event: 'ItemListEvent_afba0b81') -> None:
         """
         is called when an item is inserted into the list
         """
+        ...
     def listItemModified(self, Event: 'ItemListEvent_afba0b81') -> None:
         """
         is called when an item in the list is modified, i.e.
         
         its text or image changed
         """
+        ...
     def listItemRemoved(self, Event: 'ItemListEvent_afba0b81') -> None:
         """
         is called when an item is removed from the list
         """
+        ...
+
 

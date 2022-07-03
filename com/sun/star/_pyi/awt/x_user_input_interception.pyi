@@ -46,18 +46,23 @@ class XUserInputInterception(XInterface_8f010a43):
         
         Every listener is given the opportunity to consume the event, i.e. prevent the not yet called listeners from being called.
         """
+        ...
     def addMouseClickHandler(self, xHandler: 'XMouseClickHandler_edcb0d59') -> None:
         """
         Add a new listener that is called on com.sun.star.awt.MouseEvent.
         
         Every listener is given the opportunity to consume the event, i.e. prevent the not yet called listeners from being called.
         """
+        ...
     def removeKeyHandler(self, xHandler: 'XKeyHandler_98520a93') -> None:
         """
         Remove the specified listener from the list of listeners.
         """
+        ...
     def removeMouseClickHandler(self, xHandler: 'XMouseClickHandler_edcb0d59') -> None:
         """
         Remove the specified listener from the list of listeners.
         """
+        ...
+
 

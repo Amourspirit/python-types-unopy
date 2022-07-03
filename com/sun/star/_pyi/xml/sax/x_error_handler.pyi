@@ -41,6 +41,7 @@ class XErrorHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def fatalError(self, aSAXParseException: object) -> None:
         """
         receives notification of a non-recoverable error.
@@ -48,6 +49,7 @@ class XErrorHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def warning(self, aSAXParseException: object) -> None:
         """
         receives notification of a warning.
@@ -55,4 +57,6 @@ class XErrorHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
+
 

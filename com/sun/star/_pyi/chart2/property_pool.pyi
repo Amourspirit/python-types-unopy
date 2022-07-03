@@ -29,5 +29,6 @@ class PropertyPool(Style_7336094a, XDefaultsSupplier_ffc40e1d):
     See Also:
         `API PropertyPool <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart2_1_1PropertyPool.html>`_
     """
+    ...
 
 

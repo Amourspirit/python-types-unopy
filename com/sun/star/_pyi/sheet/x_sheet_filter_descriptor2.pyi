@@ -43,8 +43,11 @@ class XSheetFilterDescriptor2(XInterface_8f010a43):
         """
         returns the collection of filter fields.
         """
+        ...
     def setFilterFields2(self, aFilterFields: 'typing.Tuple[TableFilterField2_fbfb0d85, ...]') -> None:
         """
         sets a new collection of filter fields.
         """
+        ...
+
 

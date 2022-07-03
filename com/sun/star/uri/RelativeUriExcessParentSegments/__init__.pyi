@@ -29,6 +29,7 @@ Enum
 See Also:
     `API RelativeUriExcessParentSegments <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1uri.html#ac4782e395626cbc2118cab947e07af22>`_
 """
+typeName: str = 'com.sun.star.uri.RelativeUriExcessParentSegments'
 
 ERROR: 'uno.Enum'
 """

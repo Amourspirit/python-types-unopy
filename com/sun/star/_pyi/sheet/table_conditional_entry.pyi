@@ -30,5 +30,6 @@ class TableConditionalEntry(XSheetCondition_e1940d19, XSheetConditionalEntry_484
     See Also:
         `API TableConditionalEntry <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1TableConditionalEntry.html>`_
     """
+    ...
 
 

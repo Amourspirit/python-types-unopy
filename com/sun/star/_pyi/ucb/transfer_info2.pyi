@@ -45,6 +45,7 @@ class TransferInfo2(TransferInfo_a4600b13):
             NameClash (int, optional): NameClash value.
             MimeType (str, optional): MimeType value.
         """
+        ...
 
 
     @property
@@ -52,5 +53,6 @@ class TransferInfo2(TransferInfo_a4600b13):
         """
         contains the MIME type of the source of the action
         """
+        ...
 
 

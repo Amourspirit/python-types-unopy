@@ -44,6 +44,7 @@ class XViewAccess(XConnectionSupplier_57f3105c):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getCommand(self, view: 'XPropertySet_bc180bfa') -> str:
         """
         returns the SQL statement of the view
@@ -51,4 +52,6 @@ class XViewAccess(XConnectionSupplier_57f3105c):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

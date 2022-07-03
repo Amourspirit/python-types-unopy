@@ -42,6 +42,7 @@ class XRegressionCurveCalculator(XInterface_8f010a43):
         
         The value of r is signed. Often r2 is used instead of r to denote a regression curve's accuracy.
         """
+        ...
     def getCurveValue(self, x: float) -> float:
         """
         calculates the value of the regression curve for x.
@@ -49,6 +50,7 @@ class XRegressionCurveCalculator(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getCurveValues(self, min: float, max: float, nPointCount: int, xScalingX: 'XScaling_97500a65', xScalingY: 'XScaling_97500a65', bMaySkipPointsInCalculation: bool) -> 'typing.Tuple[RealPoint2D_d6e70c78, ...]':
         """
         calculate multiple points of a regression curve at once.
@@ -60,26 +62,33 @@ class XRegressionCurveCalculator(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getFormattedRepresentation(self, xNumFmtSupplier: 'XNumberFormatsSupplier_3afb0fb7', nNumberFormatKey: int, nFormulaLength: int) -> str:
         """
         Returns a representation using the given number format for formatting all numbers contained in the formula.
         
         Wrap equation to fit in nFormulaLength characters
         """
+        ...
     def getRepresentation(self) -> str:
         """
         Retrieve a string showing the regression curve's function with calculated parameters.
         """
+        ...
     def recalculateRegression(self, aXValues: 'typing.Tuple[float, ...]', aYValues: 'typing.Tuple[float, ...]') -> None:
         """
         recalculates the parameters of the internal regression curve according to the x- and y-values given.
         """
+        ...
     def setRegressionProperties(self, degree: int, forceIntercept: bool, interceptValue: float, period: int, movingType: int) -> None:
         """
         set calculation properties for curve calculation.
         """
+        ...
     def setXYNames(self, aXName: str, aYName: str) -> None:
         """
         Set the names of X and Y variables of the equation to replace \"x\" and \"f(x)\" in representation.
         """
+        ...
+
 

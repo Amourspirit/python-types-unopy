@@ -45,6 +45,7 @@ class ItemStatus(object):
             State (int, optional): State value.
             aStateData (object, optional): aStateData value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class ItemStatus(object):
         """
         numerical value which describes the current state of an item.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class ItemStatus(object):
         
         The content is dependent on the specific implementation.
         """
+        ...
 
 

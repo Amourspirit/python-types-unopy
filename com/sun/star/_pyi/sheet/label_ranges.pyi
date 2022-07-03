@@ -30,5 +30,6 @@ class LabelRanges(XEnumerationAccess_4bac0ffc, XLabelRanges_bac20bb9):
     See Also:
         `API LabelRanges <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1LabelRanges.html>`_
     """
+    ...
 
 

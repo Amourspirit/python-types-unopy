@@ -43,6 +43,7 @@ class SQLErrorEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Reason (object, optional): Reason value.
         """
+        ...
 
 
     @property
@@ -50,5 +51,6 @@ class SQLErrorEvent(EventObject_a3d70b03):
         """
         contains the exception that is going to be fired.
         """
+        ...
 
 

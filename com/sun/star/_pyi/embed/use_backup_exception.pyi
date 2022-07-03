@@ -48,11 +48,13 @@ class UseBackupException(IOException_8c450a27):
             Context (XInterface, optional): Context value.
             TemporaryFileURL (str, optional): TemporaryFileURL value.
         """
+        ...
     @property
     def TemporaryFileURL(self) -> str:
         """
         The URL of the temporary file the storage is based on now.
         """
+        ...
 
 
 __all__ = ['UseBackupException']

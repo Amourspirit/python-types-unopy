@@ -46,6 +46,7 @@ class XRenderable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getRendererCount(self, aSelection: object, xOptions: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> int:
         """
         If a selection is given, the count has to be calculated based on this selection. The other methods of this interface will rely on this value if called.
@@ -55,6 +56,7 @@ class XRenderable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def render(self, nRenderer: int, aSelection: object, xOptions: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         renders the object.
@@ -66,4 +68,6 @@ class XRenderable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

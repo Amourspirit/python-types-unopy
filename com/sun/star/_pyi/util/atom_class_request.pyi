@@ -19,6 +19,7 @@
 # Namespace: com.sun.star.util
 # Libre Office Version: 7.2
 from typing_extensions import Literal
+import uno
 import typing
 
 
@@ -33,21 +34,23 @@ class AtomClassRequest(object):
     """
     typeName: Literal['com.sun.star.util.AtomClassRequest']
 
-    def __init__(self, atoms: typing.Optional[typing.Tuple[int, ...]] = ..., atomClass: typing.Optional[int] = ...) -> None:
+    def __init__(self, atoms: typing.Optional[uno.ByteSequence] = ..., atomClass: typing.Optional[int] = ...) -> None:
         """
         Constructor
 
         Arguments:
-            atoms (typing.Tuple[int, ...], optional): atoms value.
+            atoms (uno.ByteSequence, optional): atoms value.
             atomClass (int, optional): atomClass value.
         """
+        ...
 
 
     @property
-    def atoms(self) -> typing.Tuple[int, ...]:
+    def atoms(self) -> uno.ByteSequence:
         """
         the atoms requested from class AtomClassRequest.atomClass().
         """
+        ...
 
 
     @property
@@ -55,5 +58,6 @@ class AtomClassRequest(object):
         """
         the class of the atoms described in member AtomClassRequest.atoms().
         """
+        ...
 
 

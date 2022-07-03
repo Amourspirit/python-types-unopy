@@ -37,4 +37,6 @@ class XSheetAnnotationsSupplier(XInterface_8f010a43):
         """
         returns the collection of cell annotations.
         """
+        ...
+
 

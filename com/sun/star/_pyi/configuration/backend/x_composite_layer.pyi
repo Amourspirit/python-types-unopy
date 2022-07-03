@@ -44,6 +44,7 @@ class XCompositeLayer(XLayer_4cd50fcb):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def readSubLayerData(self, aHandler: 'XLayerHandler_c5d61289', aSubLayerId: str) -> None:
         """
         Describes the content of a particular sublayer to an XLayerHandler.
@@ -56,4 +57,6 @@ class XCompositeLayer(XLayer_4cd50fcb):
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
             MalformedDataException: ``MalformedDataException``
         """
+        ...
+
 

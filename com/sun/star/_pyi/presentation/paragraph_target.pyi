@@ -42,6 +42,7 @@ class ParagraphTarget(object):
             Shape (XShape, optional): Shape value.
             Paragraph (int, optional): Paragraph value.
         """
+        ...
 
 
     @property

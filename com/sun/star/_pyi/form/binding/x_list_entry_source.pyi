@@ -42,10 +42,12 @@ class XListEntrySource(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.NullPointerException: ``NullPointerException``
         """
+        ...
     def getAllListEntries(self) -> 'typing.Tuple[str, ...]':
         """
         provides access to the entirety of all list entries
         """
+        ...
     def getListEntry(self, Position: int) -> str:
         """
         provides access to a single list entry
@@ -53,10 +55,12 @@ class XListEntrySource(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getListEntryCount(self) -> int:
         """
         retrieves the number of entries in the list
         """
+        ...
     def removeListEntryListener(self, Listener: 'XListEntryListener_78de1111') -> None:
         """
         revokes the given listener from the list of components which will be notified about changes in the entry list.
@@ -64,4 +68,6 @@ class XListEntrySource(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.NullPointerException: ``NullPointerException``
         """
+        ...
+
 

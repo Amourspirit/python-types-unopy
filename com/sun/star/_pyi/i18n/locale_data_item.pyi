@@ -57,6 +57,7 @@ class LocaleDataItem(object):
             LongDateMonthSeparator (str, optional): LongDateMonthSeparator value.
             LongDateYearSeparator (str, optional): LongDateYearSeparator value.
         """
+        ...
 
 
     @property
@@ -64,6 +65,7 @@ class LocaleDataItem(object):
         """
         internal ID string, not unique, not meaningful to the outer world
         """
+        ...
 
 
     @property
@@ -71,6 +73,7 @@ class LocaleDataItem(object):
         """
         date separator, for example, \"/\" or \".\" or \"-\"
         """
+        ...
 
 
     @property
@@ -78,6 +81,7 @@ class LocaleDataItem(object):
         """
         group and thousand separator, for example, \",\" or \".\"
         """
+        ...
 
 
     @property
@@ -85,6 +89,7 @@ class LocaleDataItem(object):
         """
         decimal separator, for example, \".\" or \",\"
         """
+        ...
 
 
     @property
@@ -92,6 +97,7 @@ class LocaleDataItem(object):
         """
         time separator, for example, \":\"
         """
+        ...
 
 
     @property
@@ -99,6 +105,7 @@ class LocaleDataItem(object):
         """
         time 100th seconds separator, for example, \",\"
         """
+        ...
 
 
     @property
@@ -106,6 +113,7 @@ class LocaleDataItem(object):
         """
         list separator, for example, \";\"
         """
+        ...
 
 
     @property
@@ -113,6 +121,7 @@ class LocaleDataItem(object):
         """
         single quotation mark start
         """
+        ...
 
 
     @property
@@ -120,6 +129,7 @@ class LocaleDataItem(object):
         """
         single quotation mark end
         """
+        ...
 
 
     @property
@@ -127,6 +137,7 @@ class LocaleDataItem(object):
         """
         double quotation mark start
         """
+        ...
 
 
     @property
@@ -134,6 +145,7 @@ class LocaleDataItem(object):
         """
         double quotation mark end
         """
+        ...
 
 
     @property
@@ -141,6 +153,7 @@ class LocaleDataItem(object):
         """
         time AM symbol, for example, \"AM\" or \"am\"
         """
+        ...
 
 
     @property
@@ -148,6 +161,7 @@ class LocaleDataItem(object):
         """
         time PM symbol, for example, \"PM\" or \"pm\"
         """
+        ...
 
 
     @property
@@ -155,6 +169,7 @@ class LocaleDataItem(object):
         """
         measurement system, \"metric\" or \"us\"
         """
+        ...
 
 
     @property
@@ -162,6 +177,7 @@ class LocaleDataItem(object):
         """
         long date day of week separator, for example, \", \"
         """
+        ...
 
 
     @property
@@ -169,6 +185,7 @@ class LocaleDataItem(object):
         """
         long date day separator, for example, \", \"
         """
+        ...
 
 
     @property
@@ -176,6 +193,7 @@ class LocaleDataItem(object):
         """
         long date month separator, for example, \" \"
         """
+        ...
 
 
     @property
@@ -183,5 +201,6 @@ class LocaleDataItem(object):
         """
         long date year separator, for example, \" \"
         """
+        ...
 
 

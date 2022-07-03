@@ -29,6 +29,7 @@ Enum
 See Also:
     `API Priority <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb.html#a315655b1bb5848c063491adffde62b15>`_
 """
+typeName: str = 'com.sun.star.ucb.Priority'
 
 HIGH: 'uno.Enum'
 """

@@ -38,5 +38,6 @@ class BaseIndexMark(TextContent_a6810b4d):
         
         If AlternativeText is empty then the string that is marked by the TextRange is inserted into the index.
         """
+        ...
 
 

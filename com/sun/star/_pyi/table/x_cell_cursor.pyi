@@ -34,24 +34,30 @@ class XCellCursor(XCellRange_a2f70ad5):
         """
         points the cursor to a single cell which is the end of a contiguous series of (filled) cells.
         """
+        ...
     def gotoNext(self) -> None:
         """
         points the cursor to the next unprotected cell.
         
         If the sheet is not protected, this is the next cell to the right.
         """
+        ...
     def gotoOffset(self, nColumnOffset: int, nRowOffset: int) -> None:
         """
         moves the origin of the cursor relative to the current position.
         """
+        ...
     def gotoPrevious(self) -> None:
         """
         points the cursor to the previous unprotected cell.
         
         If the sheet is not protected, this is the next cell to the left.
         """
+        ...
     def gotoStart(self) -> None:
         """
         points the cursor to a single cell which is the beginning of a contiguous series of (filled) cells.
         """
+        ...
+
 

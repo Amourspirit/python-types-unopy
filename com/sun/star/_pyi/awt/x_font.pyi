@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.awt
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .font_descriptor import FontDescriptor as FontDescriptor_bc110c0a
@@ -40,21 +41,25 @@ class XFont(XInterface_8f010a43):
         """
         returns the width of the specified character.
         """
-    def getCharWidths(self, nFirst: str, nLast: str) -> 'typing.Tuple[int, ...]':
+        ...
+    def getCharWidths(self, nFirst: str, nLast: str) -> uno.ByteSequence:
         """
         returns the widths of the specified characters.
         """
+        ...
     def getFontDescriptor(self) -> 'FontDescriptor_bc110c0a':
         """
         returns the description of the font.
         
         The unit of measurement is pixels for the device.
         """
+        ...
     def getFontMetric(self) -> 'SimpleFontMetric_d53c0cb9':
         """
         returns additional information about the font.
         """
-    def getKernPairs(self, Chars1: 'typing.Tuple[str, ...]', Chars2: 'typing.Tuple[str, ...]', Kerns: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def getKernPairs(self, Chars1: 'typing.Tuple[str, ...]', Chars2: 'typing.Tuple[str, ...]', Kerns: uno.ByteSequence) -> None:
         """
         queries the kerning pair table.
 
@@ -62,14 +67,18 @@ class XFont(XInterface_8f010a43):
         * ``Chars2`` is an out direction argument.
         * ``Kerns`` is an out direction argument.
         """
+        ...
     def getStringWidth(self, str: str) -> int:
         """
         returns the string width.
         """
-    def getStringWidthArray(self, str: str, aDXArray: 'typing.Tuple[int, ...]') -> int:
+        ...
+    def getStringWidthArray(self, str: str, aDXArray: uno.ByteSequence) -> int:
         """
         returns the string and the character widths.
 
         * ``aDXArray`` is an out direction argument.
         """
+        ...
+
 

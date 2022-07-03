@@ -36,5 +36,6 @@ class PreparedStatement(PreparedStatement_eef40d8c):
         
         The default is FALSE.
         """
+        ...
 
 

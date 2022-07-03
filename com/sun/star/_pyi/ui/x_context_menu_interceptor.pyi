@@ -40,4 +40,6 @@ class XContextMenuInterceptor(XInterface_8f010a43):
         
         The interceptor has to decide whether the menu should be executed with or without being modified or may ignore the call.
         """
+        ...
+
 

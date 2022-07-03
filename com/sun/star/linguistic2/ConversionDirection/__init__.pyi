@@ -29,6 +29,7 @@ Enum
 See Also:
     `API ConversionDirection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1linguistic2.html#a884af1a9fc4a39bcfd381c3acaa30997>`_
 """
+typeName: str = 'com.sun.star.linguistic2.ConversionDirection'
 
 FROM_LEFT: 'uno.Enum'
 """

@@ -29,5 +29,6 @@ class Collator(XCollator_892a09e0):
     See Also:
         `API Collator <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1i18n_1_1Collator.html>`_
     """
+    ...
 
 

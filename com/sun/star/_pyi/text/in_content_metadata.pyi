@@ -36,5 +36,6 @@ class InContentMetadata(TextContent_a6810b4d, XChild_a6390b07, XEnumerationAcces
     See Also:
         `API InContentMetadata <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1InContentMetadata.html>`_
     """
+    ...
 
 

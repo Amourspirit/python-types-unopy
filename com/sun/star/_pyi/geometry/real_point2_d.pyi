@@ -47,6 +47,7 @@ class RealPoint2D(object):
             X (float, optional): X value.
             Y (float, optional): Y value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class RealPoint2D(object):
         """
         The x coordinate of the point.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class RealPoint2D(object):
         """
         The x coordinate of the point.
         """
+        ...
 
 

@@ -37,64 +37,81 @@ class XDateField(XInterface_8f010a43):
         """
         returns the date value which is currently displayed in the date field.
         """
+        ...
     def getFirst(self) -> 'Date_60040844':
         """
         returns the currently set first value which is set on POS1 key.
         """
+        ...
     def getLast(self) -> 'Date_60040844':
         """
         returns the currently set last value which is set on END key.
         """
+        ...
     def getMax(self) -> 'Date_60040844':
         """
         returns the currently set maximum date value that can be entered by the user.
         """
+        ...
     def getMin(self) -> 'Date_60040844':
         """
         returns the currently set minimum date value that can be entered by the user.
         """
+        ...
     def isEmpty(self) -> bool:
         """
         returns whether currently an empty value is set for the date.
         """
+        ...
     def isLongFormat(self) -> bool:
         """
         determines if the long date format is currently used.
         """
+        ...
     def isStrictFormat(self) -> bool:
         """
         returns whether the format is currently checked during user input.
         """
+        ...
     def setDate(self, Date: 'Date_60040844') -> None:
         """
         sets the date value which is displayed in the date field.
         """
+        ...
     def setEmpty(self) -> None:
         """
         sets an empty value for the date.
         """
+        ...
     def setFirst(self, Date: 'Date_60040844') -> None:
         """
         sets the first value to be set on POS1 key.
         """
+        ...
     def setLast(self, Date: 'Date_60040844') -> None:
         """
         sets the last value to be set on END key.
         """
+        ...
     def setLongFormat(self, bLong: bool) -> None:
         """
         determines if the long date format is to be used.
         """
+        ...
     def setMax(self, Date: 'Date_60040844') -> None:
         """
         sets the maximum date value that can be entered by the user.
         """
+        ...
     def setMin(self, Date: 'Date_60040844') -> None:
         """
         sets the minimum date value that can be entered by the user.
         """
+        ...
     def setStrictFormat(self, bStrict: bool) -> None:
         """
         determines if the format is checked during user input.
         """
+        ...
+
 

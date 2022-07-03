@@ -30,5 +30,6 @@ class Column(ColumnSettings_bbba0c00, Column_7b1d098a):
     See Also:
         `API Column <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1Column.html>`_
     """
+    ...
 
 

@@ -36,4 +36,6 @@ class XSidebar(ABC):
         
         Call this method when one of the panels wants to change its size due to late initialization or different content after a context change.
         """
+        ...
+
 

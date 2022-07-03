@@ -39,10 +39,13 @@ class XFilePickerNotifier(XInterface_8f010a43):
         
         Invalid interfaces or NULL values will be ignored.
         """
+        ...
     def removeFilePickerListener(self, xListener: 'XFilePickerListener_64041073') -> None:
         """
         Interface for clients to unregister as XFilePickerListener.
         
         Invalid interfaces or NULL values will be ignored.
         """
+        ...
+
 

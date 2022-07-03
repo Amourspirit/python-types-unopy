@@ -46,16 +46,20 @@ class XDockingAreaAcceptor(XInterface_8f010a43):
         
         Additionally the layout manager uses this window to create its own child windows for docking purposes.
         """
+        ...
     def requestDockingAreaSpace(self, RequestedSpace: 'Rectangle_84b109e9') -> bool:
         """
         method to ask an implementation if the provided space for docking windows is available or not.
         
         The com.sun.star.awt.Rectangle parameter is filled by the caller with pixel data. The members of com.sun.star.awt.Rectangle must be filled as following:
         """
+        ...
     def setDockingAreaSpace(self, BorderSpace: 'Rectangle_84b109e9') -> None:
         """
         method to brief an implementation that we need new border space.
         
         The callee must size its document window so that we have the amount of space we have provided. The com.sun.star.awt.Rectangle parameter is filled by the caller with pixel data. The members of com.sun.star.awt.Rectangle must be filled as following:
         """
+        ...
+
 

@@ -37,25 +37,30 @@ class FunctionDescription(ABC):
         """
         returns a sequence of localized descriptions of the function's arguments (in the order specified by the function).
         """
+        ...
     @property
     def Category(self) -> int:
         """
         returns the function's category.
         """
+        ...
     @property
     def Description(self) -> str:
         """
         returns a localized description of the function.
         """
+        ...
     @property
     def Id(self) -> int:
         """
         returns the function's unique identifier.
         """
+        ...
     @property
     def Name(self) -> str:
         """
         returns the localized function's name.
         """
+        ...
 
 

@@ -36,10 +36,13 @@ class XInteractionFilterSelect(XInteractionContinuation_5af0108e):
         """
         used by detection to get selected filter
         """
+        ...
     def setFilter(self, Name: str) -> None:
         """
         used by interaction to set selected filter
         
         This value must be saved till another one will be set and must be provided on getFilter() for interest users.
         """
+        ...
+
 

@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.svg
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..xml.sax.x_document_handler import XDocumentHandler as XDocumentHandler_9b90e28
@@ -36,7 +37,9 @@ class XSVGWriter(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.svg.XSVGWriter']
 
-    def write(self, aHandler: 'XDocumentHandler_9b90e28', aMtf: 'typing.Tuple[int, ...]') -> None:
+    def write(self, aHandler: 'XDocumentHandler_9b90e28', aMtf: uno.ByteSequence) -> None:
         """
         """
+        ...
+
 

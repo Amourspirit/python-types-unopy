@@ -46,6 +46,7 @@ class Template(object):
             Value (int, optional): Value value.
             StyleNameIdentifier (str, optional): StyleNameIdentifier value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class Template(object):
         """
         specifies a style name.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class Template(object):
         """
         specifies a value that is bound to the style name.
         """
+        ...
 
 
     @property
@@ -71,5 +74,6 @@ class Template(object):
         
             LO 7.2
         """
+        ...
 
 

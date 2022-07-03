@@ -42,6 +42,7 @@ class ObjectInspectorModel(XObjectInspectorModel_9077119b):
         """
         creates a default ObjectInspectorModel, whose one and only handler factory creates a GenericPropertyHandler.
         """
+        ...
     def createWithHandlerFactories(self, handlerFactories: 'typing.Tuple[object, ...]') -> None:
         """
         creates a default ObjectInspectorModel, using an externally provided sequence of property handler factories.
@@ -49,6 +50,7 @@ class ObjectInspectorModel(XObjectInspectorModel_9077119b):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def createWithHandlerFactoriesAndHelpSection(self, handlerFactories: 'typing.Tuple[object, ...]', minHelpTextLines: int, maxHelpTextLines: int) -> None:
         """
         creates a default ObjectInspectorModel, using an externally provided sequence of property handler factories, and describing an ObjectInspector which has a help section.
@@ -60,5 +62,6 @@ class ObjectInspectorModel(XObjectInspectorModel_9077119b):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

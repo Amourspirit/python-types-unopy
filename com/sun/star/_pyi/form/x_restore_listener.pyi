@@ -45,4 +45,6 @@ class XRestoreListener(XEventListener_c7230c4a):
         """
         is invoked when a modified record has been restored
         """
+        ...
+
 

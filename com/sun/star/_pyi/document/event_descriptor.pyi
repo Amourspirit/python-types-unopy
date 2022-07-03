@@ -38,10 +38,12 @@ class EventDescriptor(ABC):
         
         This list is extensible.
         """
+        ...
     @property
     def Script(self) -> str:
         """
         specifies the script source code
         """
+        ...
 
 

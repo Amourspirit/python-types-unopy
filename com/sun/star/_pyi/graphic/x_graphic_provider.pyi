@@ -46,6 +46,7 @@ class XGraphicProvider(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def queryGraphicDescriptor(self, MediaProperties: 'PropertyValues_d6470ce6') -> 'XPropertySet_bc180bfa':
         """
         Calling this method returns a com.sun.star.beans.XPropertySet interface that gives access to the properties of the unloaded graphic.
@@ -57,6 +58,7 @@ class XGraphicProvider(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def storeGraphic(self, Graphic: 'XGraphic_a4da0afc', MediaProperties: 'PropertyValues_d6470ce6') -> None:
         """
         Store the graphic content, represented through the XGraphic interface at the specified location.
@@ -66,4 +68,6 @@ class XGraphicProvider(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

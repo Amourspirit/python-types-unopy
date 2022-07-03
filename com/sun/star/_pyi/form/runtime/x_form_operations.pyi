@@ -35,11 +35,7 @@ class XFormOperations(XComponent_98dc0ab5):
     
     This instance allows for operations on a user interface form, by saving its clients from various tedious and error-prone operations.
     
-    As an example, imagine you have a database form, displayed in some user interface, which you want to move to the next record.
-    It is as easy as calling com.sun.star.sdbc.XResultSet.next() on this form, right? Wrong. First, you need to care for saving the current record, so the user doesn't lose her input. So you need to call com.sun.star.sdbc.XResultSetUpdate.updateRow() or com.sun.star.sdbc.XResultSetUpdate.insertRow(), depending on the form's com.sun.star.sdb.RowSet.IsNew property.
-    But then you're done, right? Wrong, again.
-    When the user just entered some data into one of the form fields, but did not yet leave this field, then the data is not yet committed to the form, not to talk about being committed to the underlying database. So, before everything else, you would need to obtain the active control of the form, and commit it.
-    Now you're done ...
+    As an example, imagine you have a database form, displayed in some user interface, which you want to move to the next record.It is as easy as calling com.sun.star.sdbc.XResultSet.next() on this form, right? Wrong. First, you need to care for saving the current record, so the user doesn't lose her input. So you need to call com.sun.star.sdbc.XResultSetUpdate.updateRow() or com.sun.star.sdbc.XResultSetUpdate.insertRow(), depending on the form's com.sun.star.sdb.RowSet.IsNew property.But then you're done, right? Wrong, again.When the user just entered some data into one of the form fields, but did not yet leave this field, then the data is not yet committed to the form, not to talk about being committed to the underlying database. So, before everything else, you would need to obtain the active control of the form, and commit it.Now you're done ...
     
     As another example, consider that you want to delete the current record from the form. You have to take into account any com.sun.star.form.XConfirmDeleteListeners registered at the com.sun.star.form.FormController or the com.sun.star.form.component.DataForm.
     
@@ -61,6 +57,7 @@ class XFormOperations(XComponent_98dc0ab5):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def commitCurrentRecord(self, RecordInserted: bool) -> bool:
         """
         commits the current record of the form
@@ -70,6 +67,7 @@ class XFormOperations(XComponent_98dc0ab5):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def execute(self, Feature: int) -> None:
         """
         executes the operation associated with the given feature
@@ -79,6 +77,7 @@ class XFormOperations(XComponent_98dc0ab5):
             : ````
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def executeWithArguments(self, Feature: int, Arguments: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> None:
         """
         executes the operation associated with the given feature, with passing arguments for execution
@@ -88,18 +87,21 @@ class XFormOperations(XComponent_98dc0ab5):
             : ````
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def getState(self, Feature: int) -> 'FeatureState_1c3f0ebb':
         """
         retrieves the current state of the given feature
         
         You would usually use this to update some user interface to reflect this state. For instance, you could imagine a toolbar button which is associated with a given feature. This button would be enabled if and only if the respective feature is currently available, and be checked if and only if the feature state is a boolean evaluating to TRUE.
         """
+        ...
     def isEnabled(self, Feature: int) -> bool:
         """
         determines whether a feature is currently enabled.
         
         Calling this is equivalent to calling getState(), and evaluating the FeatureState.Enabled member.
         """
+        ...
     def isInsertionRow(self) -> bool:
         """
         determines whether the form is currently positioned on the insertion row
@@ -109,6 +111,7 @@ class XFormOperations(XComponent_98dc0ab5):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def isModifiedRow(self) -> bool:
         """
         determines whether the current row of the form is modified
@@ -118,6 +121,8 @@ class XFormOperations(XComponent_98dc0ab5):
         Raises:
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
     @property
     def Controller(self) -> 'XFormController_4a570ffe':
         """
@@ -125,12 +130,14 @@ class XFormOperations(XComponent_98dc0ab5):
         
         Note that it is possible to operate on a user interface form without actually having access to the form controller instance. However, in this case some functionality will not be available. In particular, every feature which relies on the active control of the controller might be of limited use.
         """
+        ...
 
     @property
     def Cursor(self) -> 'XRowSet_7a090960':
         """
         provides access to the cursor of the form the instance is operating on.
         """
+        ...
 
     @property
     def FeatureInvalidation(self) -> 'XFeatureInvalidation_9f4211f4':
@@ -143,11 +150,13 @@ class XFormOperations(XComponent_98dc0ab5):
         
         Note that the instance does not actually notify changes in the feature states, but only potential changes: It's up to the callee to react on this appropriately. This is since OpenOffice.org's application framework features own mechanisms to cache and invalidate feature states, so we do not burden this implementation here with such mechanisms.
         """
+        ...
 
     @property
     def UpdateCursor(self) -> 'XResultSetUpdate_e0fb0d0a':
         """
         provides access to the update cursor of the form the instance is operating on.
         """
+        ...
 
 

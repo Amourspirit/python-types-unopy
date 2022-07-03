@@ -47,16 +47,19 @@ class DrawingDocumentDrawView(Controller_a5330b37, XWindow_713b0924, XPropertySe
         """
         This is the drawing page that is currently visible.
         """
+        ...
     @property
     def IsLayerMode(self) -> bool:
         """
         If the view is in layer mode, the user can modify the layer of the model of this view in the user interface.
         """
+        ...
     @property
     def IsMasterPageMode(self) -> bool:
         """
         If the view is in master page mode, the view shows the master pages of this model.
         """
+        ...
     @property
     def ViewOffset(self) -> 'Point_5fb2085e':
         """
@@ -66,11 +69,13 @@ class DrawingDocumentDrawView(Controller_a5330b37, XWindow_713b0924, XPropertySe
         
             OOo 1.1.2
         """
+        ...
     @property
     def VisibleArea(self) -> 'Rectangle_84b109e9':
         """
         This is the area that is currently visible.
         """
+        ...
     @property
     def ZoomType(self) -> int:
         """
@@ -82,6 +87,7 @@ class DrawingDocumentDrawView(Controller_a5330b37, XWindow_713b0924, XPropertySe
         
             OOo 1.1.2
         """
+        ...
     @property
     def ZoomValue(self) -> int:
         """
@@ -93,5 +99,6 @@ class DrawingDocumentDrawView(Controller_a5330b37, XWindow_713b0924, XPropertySe
         
             OOo 1.1.2
         """
+        ...
 
 

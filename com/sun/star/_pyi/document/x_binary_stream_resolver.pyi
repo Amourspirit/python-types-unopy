@@ -44,12 +44,16 @@ class XBinaryStreamResolver(XInterface_8f010a43):
         
         After writing, a URL can be retrieved by a call to XBinaryStreamResolver.resolveOutputStream().
         """
+        ...
     def getInputStream(self, aURL: str) -> 'XInputStream_98d40ab4':
         """
         converts the given URL from the source URL namespace to an input stream, from which binary data can be read
         """
+        ...
     def resolveOutputStream(self, aBinaryStream: 'XOutputStream_a4e00b35') -> str:
         """
         converts the output stream, data has been written to, to a URL in source URL namespace.
         """
+        ...
+
 

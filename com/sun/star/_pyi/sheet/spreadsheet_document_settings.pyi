@@ -48,31 +48,37 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         """
         specifies whether calculations are performed with the rounded values displayed in cells (set to TRUE) instead of the internal values (set to FALSE).
         """
+        ...
     @property
     def CharLocale(self) -> 'Locale_70d308fa':
         """
         contains the standard document language for Western text.
         """
+        ...
     @property
     def CharLocaleAsian(self) -> 'Locale_70d308fa':
         """
         contains the standard document language for Asian text.
         """
+        ...
     @property
     def CharLocaleComplex(self) -> 'Locale_70d308fa':
         """
         contains the standard document language for Complex text.
         """
+        ...
     @property
     def DefaultTabStop(self) -> int:
         """
         specifies the width of default tabulators.
         """
+        ...
     @property
     def ForbiddenCharacters(self) -> 'XForbiddenCharacters_df60e2d':
         """
         contains the interface XForbiddenCharacters.
         """
+        ...
     @property
     def HasDrawPages(self) -> bool:
         """
@@ -80,11 +86,13 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
         Use this property to find out, whether the document has DrawPages or not, because the getDrawPage method on the XDrawPageSupplier and the getDrawPages method on the XDrawPagesSupplier always creates the DrawPages if there are none; and this is very slow and needs more memory.
         """
+        ...
     @property
     def IgnoreCase(self) -> bool:
         """
         specifies whether upper and lower cases are treated as equal when comparing cells.
         """
+        ...
     @property
     def IsAdjustHeightEnabled(self) -> bool:
         """
@@ -96,6 +104,7 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
             OOo 3.0
         """
+        ...
     @property
     def IsExecuteLinkEnabled(self) -> bool:
         """
@@ -105,11 +114,13 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
             OOo 3.0
         """
+        ...
     @property
     def IsIterationEnabled(self) -> bool:
         """
         enables iterated calculation of circular references.
         """
+        ...
     @property
     def IsLoaded(self) -> bool:
         """
@@ -119,6 +130,7 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
             OOo 3.0
         """
+        ...
     @property
     def IsRecordChangesProtected(self) -> bool:
         """
@@ -128,6 +140,7 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
             LibreOffice 5.0
         """
+        ...
     @property
     def IsUndoEnabled(self) -> bool:
         """
@@ -137,6 +150,7 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
             OOo 3.0
         """
+        ...
     @property
     def IterationCount(self) -> int:
         """
@@ -144,6 +158,7 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
         This setting is only used, if iteration is enabled using SpreadsheetDocumentSettings.IsIterationEnabled.
         """
+        ...
     @property
     def IterationEpsilon(self) -> float:
         """
@@ -153,6 +168,7 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
         This setting is only used, if iteration is enabled using SpreadsheetDocumentSettings.IsIterationEnabled.
         """
+        ...
     @property
     def LookUpLabels(self) -> bool:
         """
@@ -160,16 +176,19 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
         Explicitly defined label ranges are used even if this property is set to FALSE.
         """
+        ...
     @property
     def MatchWholeCell(self) -> bool:
         """
         specifies whether filter criteria must match entire cell contents.
         """
+        ...
     @property
     def NullDate(self) -> 'Date_60040844':
         """
         specifies the date that is represented by the value zero.
         """
+        ...
     @property
     def RecordChanges(self) -> bool:
         """
@@ -181,6 +200,7 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
             LibreOffice 5.0
         """
+        ...
     @property
     def ReferenceDevice(self) -> 'XDevice_70ba08fc':
         """
@@ -190,6 +210,7 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
             OOo 3.0
         """
+        ...
     @property
     def RegularExpressions(self) -> bool:
         """
@@ -197,16 +218,19 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
         RegularExpressions and Wildcards are mutually exclusive, only one can have the value TRUE. If both are set to TRUE via API calls then the last one set takes precedence.
         """
+        ...
     @property
     def SpellOnline(self) -> bool:
         """
         enables online spell checking.
         """
+        ...
     @property
     def StandardDecimals(self) -> int:
         """
         specifies the number of decimals in the default number format.
         """
+        ...
     @property
     def Wildcards(self) -> bool:
         """
@@ -218,5 +242,6 @@ class SpreadsheetDocumentSettings(XPropertySet_bc180bfa):
         
             LibreOffice 5.2
         """
+        ...
 
 

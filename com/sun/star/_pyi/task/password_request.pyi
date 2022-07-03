@@ -49,11 +49,13 @@ class PasswordRequest(ClassifiedInteractionRequest_9f72121b):
             Classification (InteractionClassification, optional): Classification value.
             Mode (PasswordRequestMode, optional): Mode value.
         """
+        ...
     @property
     def Mode(self) -> PasswordRequestMode_ec10e7c:
         """
         the mode in which password should be asked
         """
+        ...
 
 
 __all__ = ['PasswordRequest']

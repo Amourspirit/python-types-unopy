@@ -43,14 +43,17 @@ class XSimpleTabController(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def addTabListener(self, Listener: 'XTabListener_a36e0b09') -> None:
         """
         register listener for inserting/removing tabs and changing their properties.
         """
+        ...
     def getActiveTabID(self) -> int:
         """
         return the unique ID of the current active tab.
         """
+        ...
     def getTabProps(self, ID: int) -> 'typing.Tuple[NamedValue_a37a0af3, ...]':
         """
         retrieve the set of properties for the specified tab.
@@ -58,10 +61,12 @@ class XSimpleTabController(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def insertTab(self) -> int:
         """
         create a new tab and return a unique ID, which can be used further to address this tab by using other methods of this interface.
         """
+        ...
     def removeTab(self, ID: int) -> None:
         """
         remove a tab with the given ID.
@@ -69,10 +74,12 @@ class XSimpleTabController(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def removeTabListener(self, Listener: 'XTabListener_a36e0b09') -> None:
         """
         unregister listener for inserting/removing tabs and changing their properties.
         """
+        ...
     def setTabProps(self, ID: int, Properties: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> None:
         """
         change some properties of the specified tab.
@@ -80,4 +87,6 @@ class XSimpleTabController(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

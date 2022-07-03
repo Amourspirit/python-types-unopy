@@ -36,10 +36,13 @@ class XStyleSupplier(XInterface_8f010a43):
         """
         get the currently set style.
         """
+        ...
     def setStyle(self, xStyle: 'XStyle_7c7f09a2') -> None:
         """
 
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

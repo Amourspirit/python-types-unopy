@@ -51,6 +51,7 @@ class DropTargetDragEvent(DropTargetEvent_8d651169):
             LocationY (int, optional): LocationY value.
             SourceActions (int, optional): SourceActions value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class DropTargetDragEvent(DropTargetEvent_8d651169):
         """
         The drop target context of the current drag operation.
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class DropTargetDragEvent(DropTargetEvent_8d651169):
         """
         This value represents the currently selected drop action.
         """
+        ...
 
 
     @property
@@ -72,6 +75,7 @@ class DropTargetDragEvent(DropTargetEvent_8d651169):
         """
         The cursor's current x location within the window's coordinates.
         """
+        ...
 
 
     @property
@@ -79,6 +83,7 @@ class DropTargetDragEvent(DropTargetEvent_8d651169):
         """
         The cursor's current y location within the window's coordinates.
         """
+        ...
 
 
     @property
@@ -90,5 +95,6 @@ class DropTargetDragEvent(DropTargetEvent_8d651169):
         
         To combine different actions use a logical OR.
         """
+        ...
 
 

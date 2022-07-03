@@ -41,6 +41,7 @@ class SendMediaTypes(object):
             Value (typing.Tuple[str, ...], optional): Value value.
             ProtocolType (str, optional): ProtocolType value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class SendMediaTypes(object):
         """
         a list of Internet media types
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class SendMediaTypes(object):
         
         \"NNTP\", \"SMTP\", \"VIM\").
         """
+        ...
 
 

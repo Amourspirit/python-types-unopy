@@ -47,36 +47,45 @@ class XPresenterHelper(ABC):
         
         Note that this is a potentially dangerous method. Not calling releaseMouse eventually can lead to an unresponsive application.
         """
+        ...
     def createCanvas(self, xWindow: 'XWindow_713b0924', nRequestedCanvasFeatureList: int, sOptionalCanvasServiceName: str) -> 'XCanvas_b19b0b7a':
         """
         Create a new canvas for the given window.
         """
+        ...
     def createSharedCanvas(self, xUpdateCanvas: 'XSpriteCanvas_ff8b0df1', xUpdateWindow: 'XWindow_713b0924', xSharedCanvas: 'XCanvas_b19b0b7a', xSharedWindow: 'XWindow_713b0924', xWindow: 'XWindow_713b0924') -> 'XCanvas_b19b0b7a':
         """
         Create a new canvas for the given window.
         
         The new canvas is a wrapper around the given shared canvas. The wrapper only modifies the origin in all output and clipping methods.
         """
+        ...
     def createWindow(self, xParentWindow: 'XWindow_713b0924', bCreateSystemChildWindow: bool, bInitiallyVisible: bool, bEnableChildTransparentMode: bool, bEnableParentClip: bool) -> 'XWindow_713b0924':
         """
         Create a new window as child window of the given parent window.
         """
+        ...
     def getWindowExtentsRelative(self, xChildWindow: 'XWindow_713b0924', xParentWindow: 'XWindow_713b0924') -> 'Rectangle_84b109e9':
         """
         Return the bounding box of the given child window relative to the direct or indirect parent window.
         """
+        ...
     def loadBitmap(self, id: str, xCanvas: 'XCanvas_b19b0b7a') -> 'XBitmap_b1b70b7b':
         """
         Load a bitmap with a given ID.
         """
+        ...
     def releaseMouse(self, xWindow: 'XWindow_713b0924') -> None:
         """
         Release a previously captured mouse.
         """
+        ...
     def toTop(self, xWindow: 'XWindow_713b0924') -> None:
         """
         Move the specified window to the top of its stacking order.
         
         As a result the window will be painted over all its overlapping siblings.
         """
+        ...
+
 

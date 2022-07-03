@@ -32,6 +32,7 @@ class WritingMode(Enum):
     See Also:
         `API WritingMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text.html#a46d11c2d08142ef2d32761c04d1aaa26>`_
     """
+    typeName: str = 'com.sun.star.text.WritingMode'
 
     LR_TB: 'uno.Enum'
     """

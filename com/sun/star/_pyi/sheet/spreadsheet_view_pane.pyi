@@ -31,5 +31,6 @@ class SpreadsheetViewPane(XCellRangeReferrer_91c0e23, XViewPane_99a40a98, XContr
     See Also:
         `API SpreadsheetViewPane <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1SpreadsheetViewPane.html>`_
     """
+    ...
 
 

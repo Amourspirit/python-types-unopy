@@ -30,5 +30,6 @@ class DataPilotSourceHierarchy(XNamed_a6520b08, XLevelsSupplier_e2c30d38):
     See Also:
         `API DataPilotSourceHierarchy <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1DataPilotSourceHierarchy.html>`_
     """
+    ...
 
 

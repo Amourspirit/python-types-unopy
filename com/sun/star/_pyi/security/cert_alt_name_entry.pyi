@@ -42,6 +42,7 @@ class CertAltNameEntry(object):
             Type (ExtAltNameType, optional): Type value.
             Value (object, optional): Value value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class CertAltNameEntry(object):
         
         With this information you can determine how to interpret the Any value.
         """
+        ...
 
 
     @property
@@ -58,5 +60,6 @@ class CertAltNameEntry(object):
         """
         stores the value of entry.
         """
+        ...
 
 

@@ -39,8 +39,11 @@ class XDatabaseParameterBroadcaster(XInterface_8f010a43):
         """
         adds the specified listener, to allow it to fill in necessary parameter values.
         """
+        ...
     def removeParameterListener(self, aListener: 'XDatabaseParameterListener_77e01110') -> None:
         """
         removes the specified listener.
         """
+        ...
+
 

@@ -37,48 +37,61 @@ class XRegion(XInterface_8f010a43):
         """
         makes this region an empty region.
         """
+        ...
     def excludeRectangle(self, Rect: 'Rectangle_84b109e9') -> None:
         """
         removes the area of the specified rectangle from this region.
         """
+        ...
     def excludeRegion(self, Region: 'XRegion') -> None:
         """
         removes the area of the specified region from this region.
         """
+        ...
     def getBounds(self) -> 'Rectangle_84b109e9':
         """
         returns the bounding box of the shape.
         """
+        ...
     def getRectangles(self) -> 'typing.Tuple[Rectangle_84b109e9, ...]':
         """
         returns all rectangles which are making up this region.
         """
+        ...
     def intersectRectangle(self, Region: 'Rectangle_84b109e9') -> None:
         """
         intersects the specified rectangle with the current region.
         """
+        ...
     def intersectRegion(self, Region: 'XRegion') -> None:
         """
         intersects the specified region with the current region.
         """
+        ...
     def move(self, nHorzMove: int, nVertMove: int) -> None:
         """
         moves this region by the specified horizontal and vertical delta.
         """
+        ...
     def unionRectangle(self, Rect: 'Rectangle_84b109e9') -> None:
         """
         adds the specified rectangle to this region.
         """
+        ...
     def unionRegion(self, Region: 'XRegion') -> None:
         """
         adds the specified region to this region.
         """
+        ...
     def xOrRectangle(self, Rect: 'Rectangle_84b109e9') -> None:
         """
         applies an exclusive-or operation with the specified rectangle to this region.
         """
+        ...
     def xOrRegion(self, Region: 'XRegion') -> None:
         """
         applies an exclusive-or operation with the specified region to this region.
         """
+        ...
+
 

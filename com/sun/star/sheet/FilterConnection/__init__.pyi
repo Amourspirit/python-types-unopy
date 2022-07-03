@@ -29,6 +29,7 @@ Enum
 See Also:
     `API FilterConnection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html#a946b76fb59cd525a1296ff815333d110>`_
 """
+typeName: str = 'com.sun.star.sheet.FilterConnection'
 
 AND: 'uno.Enum'
 """

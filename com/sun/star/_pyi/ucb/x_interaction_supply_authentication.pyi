@@ -39,64 +39,77 @@ class XInteractionSupplyAuthentication(XInteractionContinuation_5af0108e):
         """
         Specifies if an \"account\" value can be handed back.
         """
+        ...
     def canSetPassword(self) -> bool:
         """
         Specifies if a \"password\" value can be handed back.
         """
+        ...
     def canSetRealm(self) -> bool:
         """
         Specifies if a new \"realm\" value can be handed back.
         """
+        ...
     def canSetUserName(self) -> bool:
         """
         Specifies if a \"user name\" value can be handed back.
         """
+        ...
     def getRememberAccountModes(self, Default: 'RememberAuthentication_28a80f31') -> 'typing.Tuple[RememberAuthentication_28a80f31, ...]':
         """
         Specifies the available modes of how long to remember the account.
 
         * ``Default`` is an out direction argument.
         """
+        ...
     def getRememberPasswordModes(self, Default: 'RememberAuthentication_28a80f31') -> 'typing.Tuple[RememberAuthentication_28a80f31, ...]':
         """
         Specifies the available modes of how long to remember the password.
 
         * ``Default`` is an out direction argument.
         """
+        ...
     def setAccount(self, Account: str) -> None:
         """
         Set a new \"account\" value to hand back.
         
         This method should be called before com.sun.star.task.XInteractionContinuation.select(), and should only be called if XInteractionSupplyAuthentication.canSetAccount() returned TRUE.
         """
+        ...
     def setPassword(self, Password: str) -> None:
         """
         Set a new \"password\" value to hand back.
         
         This method should be called before com.sun.star.task.XInteractionContinuation.select(), and should only be called if XInteractionSupplyAuthentication.canSetPassword() returned TRUE.
         """
+        ...
     def setRealm(self, Realm: str) -> None:
         """
         Set a new \"realm\" value to hand back.
         
         This method should be called before com.sun.star.task.XInteractionContinuation.select(), and should only be called if XInteractionSupplyAuthentication.canSetRealm() returned TRUE.
         """
+        ...
     def setRememberAccount(self, Remember: 'RememberAuthentication_28a80f31') -> None:
         """
         Set a new mode of how long to remember the account.
         
         This method should be called before com.sun.star.task.XInteractionContinuation.select(), and should only be called if XInteractionSupplyAuthentication.setAccount() is also called.
         """
+        ...
     def setRememberPassword(self, Remember: 'RememberAuthentication_28a80f31') -> None:
         """
         Set a new mode of how long to remember the password.
         
         This method should be called before com.sun.star.task.XInteractionContinuation.select(), and should only be called if XInteractionSupplyAuthentication.setPassword() is also called.
         """
+        ...
     def setUserName(self, UserName: str) -> None:
         """
         Set a new \"user name\" value to hand back.
         
         This method should be called before com.sun.star.task.XInteractionContinuation.select(), and should only be called if XInteractionSupplyAuthentication.canSetUserName() returned TRUE.
         """
+        ...
+
 

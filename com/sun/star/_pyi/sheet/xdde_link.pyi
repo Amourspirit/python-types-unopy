@@ -38,12 +38,16 @@ class XDDELink(XInterface_8f010a43):
         """
         returns the application from which data are requested (the DDE server application).
         """
+        ...
     def getItem(self) -> str:
         """
         returns the DDE item from which data are requested.
         """
+        ...
     def getTopic(self) -> str:
         """
         returns the DDE topic from which data are requested.
         """
+        ...
+
 

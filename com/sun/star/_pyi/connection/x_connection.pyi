@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.connection
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XConnection(XInterface_8f010a43):
@@ -42,6 +42,7 @@ class XConnection(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def flush(self) -> None:
         """
         Empties all internal buffers.
@@ -49,13 +50,15 @@ class XConnection(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def getDescription(self) -> str:
         """
         A unique string describing the connection.
         
         This string is different from the arguments to XConnection.accept() and XConnector.connect(). In general, the string contains an additional handle value. For example, \"socket,host=localhost,port=2002,uniqueValue=2324\".
         """
-    def read(self, aReadBytes: 'typing.Tuple[int, ...]', nBytesToRead: int) -> int:
+        ...
+    def read(self, aReadBytes: uno.ByteSequence, nBytesToRead: int) -> int:
         """
         reads a requested number of bytes from the connection.
         
@@ -68,7 +71,8 @@ class XConnection(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
-    def write(self, aData: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def write(self, aData: uno.ByteSequence) -> None:
         """
         writes the given bytesequence to the stream.
         
@@ -77,4 +81,6 @@ class XConnection(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

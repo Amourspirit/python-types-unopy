@@ -41,6 +41,7 @@ class SetPropertyTolerantFailed(object):
             Name (str, optional): Name value.
             Result (int, optional): Result value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class SetPropertyTolerantFailed(object):
         """
         specifies the name of the property.
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class SetPropertyTolerantFailed(object):
         
         Since the property was not successful set the result will never be com.sun.star.beans.TolerantPropertySetResultType.SUCCESS.
         """
+        ...
 
 

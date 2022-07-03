@@ -51,17 +51,20 @@ class FilterOptionsRequest(Exception_85530a09):
             rProperties (typing.Tuple[PropertyValue, ...], optional): rProperties value.
             rModel (XModel, optional): rModel value.
         """
+        ...
     @property
     def rProperties(self) -> typing.Tuple[PropertyValue_c9610c73, ...]:
         """
         The Media-descriptor of the document.
         """
+        ...
 
     @property
     def rModel(self) -> XModel_7a6e095c:
         """
         The model of the document that should be provided to filters that supports XExporter interface.
         """
+        ...
 
 
 __all__ = ['FilterOptionsRequest']

@@ -39,8 +39,11 @@ class XApproveActionBroadcaster(XInterface_8f010a43):
         """
         adds the specified listener to receive the XApproveActionListener.approveAction() event.
         """
+        ...
     def removeApproveActionListener(self, aListener: 'XApproveActionListener_390f0f95') -> None:
         """
         removes the specified listener
         """
+        ...
+
 

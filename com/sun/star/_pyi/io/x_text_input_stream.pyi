@@ -44,6 +44,7 @@ class XTextInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readLine(self) -> str:
         """
         reads text until a line break (CR, LF, or CR/LF) or EOF is found and returns it as string (without CR, LF).
@@ -53,6 +54,7 @@ class XTextInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def readString(self, Delimiters: 'typing.Tuple[str, ...]', bRemoveDelimiter: bool) -> str:
         """
         reads text until one of the given delimiter characters or EOF is found and returns it as string (without delimiter).
@@ -62,8 +64,11 @@ class XTextInputStream(XInputStream_98d40ab4):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def setEncoding(self, Encoding: str) -> None:
         """
         sets character encoding.
         """
+        ...
+
 

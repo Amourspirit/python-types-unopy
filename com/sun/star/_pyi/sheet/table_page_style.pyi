@@ -43,11 +43,13 @@ class TablePageStyle(PageStyle_9b210ac7):
         """
         determines whether the table is centered horizontally on the page.
         """
+        ...
     @property
     def CenterVertically(self) -> bool:
         """
         determines whether the table is centered vertically on the page.
         """
+        ...
     @property
     def FirstPageNumber(self) -> int:
         """
@@ -55,6 +57,7 @@ class TablePageStyle(PageStyle_9b210ac7):
         
         The value 0 indicates that the page numbers are continued from the previous sheet.
         """
+        ...
     @property
     def LeftPageFooterContent(self) -> 'XHeaderFooterContent_275c0f0c':
         """
@@ -62,6 +65,7 @@ class TablePageStyle(PageStyle_9b210ac7):
         
         After changing the footer text contents, this property has to be reinserted into the property set.
         """
+        ...
     @property
     def LeftPageHeaderContent(self) -> 'XHeaderFooterContent_275c0f0c':
         """
@@ -69,21 +73,25 @@ class TablePageStyle(PageStyle_9b210ac7):
         
         After changing the header text contents, this property has to be reinserted into the property set.
         """
+        ...
     @property
     def PageScale(self) -> int:
         """
         contains the scaling factor (in percent) for printing the sheet.
         """
+        ...
     @property
     def PrintAnnotations(self) -> bool:
         """
         enables printing of cell annotations.
         """
+        ...
     @property
     def PrintCharts(self) -> bool:
         """
         enables printing of charts.
         """
+        ...
     @property
     def PrintDownFirst(self) -> bool:
         """
@@ -91,36 +99,43 @@ class TablePageStyle(PageStyle_9b210ac7):
         
         If TRUE, the order for printing pages begins with top-to-bottom, then continues with the next set of cell columns to the right. If FALSE, the order for printing pages begins with left-to-right, then continues with the next set of cell rows to the bottom.
         """
+        ...
     @property
     def PrintDrawing(self) -> bool:
         """
         enables printing of drawing objects.
         """
+        ...
     @property
     def PrintFormulas(self) -> bool:
         """
         enables printing of formulas instead of their results.
         """
+        ...
     @property
     def PrintGrid(self) -> bool:
         """
         enables printing of the cell grid.
         """
+        ...
     @property
     def PrintHeaders(self) -> bool:
         """
         enables printing of column and row headers.
         """
+        ...
     @property
     def PrintObjects(self) -> bool:
         """
         enables printing of embedded objects.
         """
+        ...
     @property
     def PrintZeroValues(self) -> bool:
         """
         enables printing of zero-values.
         """
+        ...
     @property
     def RightPageFooterContent(self) -> 'XHeaderFooterContent_275c0f0c':
         """
@@ -128,6 +143,7 @@ class TablePageStyle(PageStyle_9b210ac7):
         
         After changing the footer text contents, this property has to be reinserted into the property set.
         """
+        ...
     @property
     def RightPageHeaderContent(self) -> 'XHeaderFooterContent_275c0f0c':
         """
@@ -135,11 +151,13 @@ class TablePageStyle(PageStyle_9b210ac7):
         
         After changing the header text contents, this property has to be reinserted into the property set.
         """
+        ...
     @property
     def ScaleToPages(self) -> int:
         """
         contains the number of pages the sheet will printed.
         """
+        ...
     @property
     def ScaleToPagesX(self) -> int:
         """
@@ -149,6 +167,7 @@ class TablePageStyle(PageStyle_9b210ac7):
         
             OOo 2.0
         """
+        ...
     @property
     def ScaleToPagesY(self) -> int:
         """
@@ -158,5 +177,6 @@ class TablePageStyle(PageStyle_9b210ac7):
         
             OOo 2.0
         """
+        ...
 
 

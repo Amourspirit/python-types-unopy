@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.rendering
 from typing_extensions import Literal
 import typing
+import uno
 from abc import ABC
 if typing.TYPE_CHECKING:
     from ..beans.property_value import PropertyValue as PropertyValue_c9610c73
@@ -47,6 +48,7 @@ class XColorSpace(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertFromARGB(self, rgbColor: 'typing.Tuple[ARGBColor_c6ee0be1, ...]') -> 'typing.Tuple[ColorComponent_e4c0e78, ...]':
         """
         Convert sRGB color with linear alpha into this color space.
@@ -56,6 +58,7 @@ class XColorSpace(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertFromPARGB(self, rgbColor: 'typing.Tuple[ARGBColor_c6ee0be1, ...]') -> 'typing.Tuple[ColorComponent_e4c0e78, ...]':
         """
         Convert premultiplied sRGB color with linear alpha into this color space.
@@ -65,6 +68,7 @@ class XColorSpace(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertFromRGB(self, rgbColor: 'typing.Tuple[RGBColor_bbdf0ba0, ...]') -> 'typing.Tuple[ColorComponent_e4c0e78, ...]':
         """
         Convert sRGB color to a representation in this color space.
@@ -74,6 +78,7 @@ class XColorSpace(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertToARGB(self, deviceColor: 'typing.Tuple[ColorComponent_e4c0e78, ...]') -> 'typing.Tuple[ARGBColor_c6ee0be1, ...]':
         """
         Convert color value in this color space to sRGB color values, with linear alpha.
@@ -83,6 +88,7 @@ class XColorSpace(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertToPARGB(self, deviceColor: 'typing.Tuple[ColorComponent_e4c0e78, ...]') -> 'typing.Tuple[ARGBColor_c6ee0be1, ...]':
         """
         Convert color value in this color space to premultiplied sRGB color values, with linear alpha.
@@ -92,6 +98,7 @@ class XColorSpace(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def convertToRGB(self, deviceColor: 'typing.Tuple[ColorComponent_e4c0e78, ...]') -> 'typing.Tuple[RGBColor_bbdf0ba0, ...]':
         """
         Convert color value in this color space to sRGB color values.
@@ -101,7 +108,8 @@ class XColorSpace(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def getComponentTags(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getComponentTags(self) -> uno.ByteSequence:
         """
         Query the kind for each color component.
         
@@ -109,18 +117,23 @@ class XColorSpace(ABC):
         
         At the same time, the number of elements in this sequence corresponds to the number of color channels for this color space.
         """
+        ...
     def getProperties(self) -> 'typing.Tuple[PropertyValue_c9610c73, ...]':
         """
         Query various optional properties from the color space.
         
         If this color space has an ICC color profile, the sequence contains an element named ICCProfile. Some color spaces also have properties Gamma, Whitepoint and Blackpoint. Background information for these is available here.
         """
+        ...
     def getRenderingIntent(self) -> int:
         """
         Query rendering intent of this color space.
         """
+        ...
     def getType(self) -> int:
         """
         Query type of this color space.
         """
+        ...
+
 

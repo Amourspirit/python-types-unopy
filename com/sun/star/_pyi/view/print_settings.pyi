@@ -36,6 +36,7 @@ class PrintSettings(ABC):
         """
         determines how annotations are printed.
         """
+        ...
     @property
     def PrintBlackFonts(self) -> bool:
         """
@@ -43,36 +44,43 @@ class PrintSettings(ABC):
         
         It is useful for printing colored text on a b/w printer.
         """
+        ...
     @property
     def PrintControls(self) -> bool:
         """
         If TRUE, control shapes are included in printing.
         """
+        ...
     @property
     def PrintDrawings(self) -> bool:
         """
         If TRUE, drawing objects (shapes) are included in printing.
         """
+        ...
     @property
     def PrintGraphics(self) -> bool:
         """
         If TRUE, graphic objects are included in printing.
         """
+        ...
     @property
     def PrintLeftPages(self) -> bool:
         """
         If TRUE, left pages are included in printing.
         """
+        ...
     @property
     def PrintPageBackground(self) -> bool:
         """
         If TRUE, the background of the page is printed.
         """
+        ...
     @property
     def PrintProspect(self) -> bool:
         """
         If TRUE, the pages are printed in the order of prospects.
         """
+        ...
     @property
     def PrintReversed(self) -> bool:
         """
@@ -80,15 +88,18 @@ class PrintSettings(ABC):
         
         The last page is printed first.
         """
+        ...
     @property
     def PrintRightPages(self) -> bool:
         """
         If TRUE, right pages are included in printing.
         """
+        ...
     @property
     def PrintTables(self) -> bool:
         """
         If TRUE, tables are included in printing.
         """
+        ...
 
 

@@ -54,6 +54,7 @@ class DocumentEvent(EventObject_a3d70b03):
             ViewController (XController2, optional): ViewController value.
             Supplement (object, optional): Supplement value.
         """
+        ...
 
 
     @property
@@ -63,6 +64,7 @@ class DocumentEvent(EventObject_a3d70b03):
         
         It's the responsibility of the component supporting the XDocumentEventBroadcaster interface to specify which events it supports.
         """
+        ...
 
 
     @property
@@ -72,6 +74,7 @@ class DocumentEvent(EventObject_a3d70b03):
         
         Might be NULL if the event is not related to a concrete view of the document.
         """
+        ...
 
 
     @property
@@ -81,5 +84,6 @@ class DocumentEvent(EventObject_a3d70b03):
         
         The semantics of this additional information needs to be specified by the broadcaster of the event.
         """
+        ...
 
 

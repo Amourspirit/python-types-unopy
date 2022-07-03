@@ -40,25 +40,30 @@ class Index(XPropertySet_bc180bfa, XColumnsSupplier_f0600da9, XDataDescriptorFac
         """
         is the name of the index catalog, may be empty.
         """
+        ...
     @property
     def IsClustered(self) -> bool:
         """
         indicates that the index is clustered.
         """
+        ...
     @property
     def IsPrimaryKeyIndex(self) -> bool:
         """
         indicates that the index is used for the primary key.
         """
+        ...
     @property
     def IsUnique(self) -> bool:
         """
         indicates that the index allow only unique values.
         """
+        ...
     @property
     def Name(self) -> str:
         """
         is the name of the index.
         """
+        ...
 
 

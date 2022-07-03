@@ -34,6 +34,7 @@ class Revision(TextField_90260a56):
         """
         contains content information.
         """
+        ...
     @property
     def CurrentPresentation(self) -> str:
         """
@@ -41,10 +42,12 @@ class Revision(TextField_90260a56):
         
         This property is especially useful for import/export purposes.
         """
+        ...
     @property
     def IsFixed(self) -> bool:
         """
         If this flag is set to FALSE the content updated every time the document information is changed.
         """
+        ...
 
 

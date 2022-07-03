@@ -40,6 +40,7 @@ class DatabaseSetNumber(DependentTextField_fed90ded):
         """
         specifies the database name.
         """
+        ...
     @property
     def DataBaseResource(self) -> str:
         """
@@ -49,6 +50,7 @@ class DatabaseSetNumber(DependentTextField_fed90ded):
         
             OOo 2.0
         """
+        ...
     @property
     def DataBaseURL(self) -> str:
         """
@@ -58,25 +60,30 @@ class DatabaseSetNumber(DependentTextField_fed90ded):
         
             OOo 2.0
         """
+        ...
     @property
     def DataCommandType(self) -> int:
         """
         determines the interpretation of the property DataTableName.
         """
+        ...
     @property
     def DataTableName(self) -> str:
         """
         contains the name of the database table, query or a statement depending on the DataCommandType property.
         """
+        ...
     @property
     def NumberingType(self) -> int:
         """
         specifies the type of the numbering as com.sun.star.style.NumberingType
         """
+        ...
     @property
     def SetNumber(self) -> int:
         """
         contains the number of the database set.
         """
+        ...
 
 

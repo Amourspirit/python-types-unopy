@@ -28,5 +28,6 @@ class FastShapeContextHandler(XFastShapeContextHandler_8790114d):
     See Also:
         `API FastShapeContextHandler <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1sax_1_1FastShapeContextHandler.html>`_
     """
+    ...
 
 

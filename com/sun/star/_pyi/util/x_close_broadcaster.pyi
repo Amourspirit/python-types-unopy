@@ -39,8 +39,11 @@ class XCloseBroadcaster(XInterface_8f010a43):
         """
         adds the specified listener to receive or have a veto for \"close\" events
         """
+        ...
     def removeCloseListener(self, Listener: 'XCloseListener_c8a60c5a') -> None:
         """
         removes the specified listener
         """
+        ...
+
 

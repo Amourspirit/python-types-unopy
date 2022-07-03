@@ -32,6 +32,7 @@ class PropertyValueState(Enum):
     See Also:
         `API PropertyValueState <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb.html#a82ef3fdcd414866879e7aae1e52748d0>`_
     """
+    typeName: str = 'com.sun.star.ucb.PropertyValueState'
 
     INVALID_NAME: 'uno.Enum'
     """

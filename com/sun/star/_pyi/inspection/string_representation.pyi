@@ -37,11 +37,13 @@ class StringRepresentation(XStringRepresentation_939311e6):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def createConstant(self, TypeConverter: 'XTypeConverter_e48b0d4f', Constant: str, Values: 'typing.Tuple[str, ...]') -> None:
         """
 
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

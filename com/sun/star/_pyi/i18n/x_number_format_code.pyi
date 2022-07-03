@@ -38,16 +38,21 @@ class XNumberFormatCode(XInterface_8f010a43):
         """
         returns all format codes for a given nFormatUsage and locale.
         """
+        ...
     def getAllFormatCodes(self, rLocale: 'Locale_70d308fa') -> 'typing.Tuple[NumberFormatCode_d9a00c95, ...]':
         """
         returns all format codes for a given locale.
         """
+        ...
     def getDefault(self, nFormatType: int, nFormatUsage: int, rLocale: 'Locale_70d308fa') -> 'NumberFormatCode_d9a00c95':
         """
         returns the default number format code of a specific category (usage group) for a given locale and format length type.
         """
+        ...
     def getFormatCode(self, nFormatIndex: int, rLocale: 'Locale_70d308fa') -> 'NumberFormatCode_d9a00c95':
         """
         returns the number format pointed to by nFormatIndex for a given locale.
         """
+        ...
+
 

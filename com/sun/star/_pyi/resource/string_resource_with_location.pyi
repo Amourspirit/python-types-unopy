@@ -40,5 +40,6 @@ class StringResourceWithLocation(XStringResourceWithLocation_dd27135c):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

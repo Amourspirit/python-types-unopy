@@ -34,5 +34,6 @@ class ContentIndexMark(BaseIndexMark_bbb30bcb):
         """
         contains the level into which the index mark will be inserted into the content index.
         """
+        ...
 
 

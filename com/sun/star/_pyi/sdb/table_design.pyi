@@ -38,5 +38,6 @@ class TableDesign(XController_b00e0b8f, XInitialization_d46c0cca):
     See Also:
         `API TableDesign <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1TableDesign.html>`_
     """
+    ...
 
 

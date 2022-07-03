@@ -32,6 +32,7 @@ class LineStyle(Enum):
     See Also:
         `API LineStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a86e0f5648542856159bb40775c854aa7>`_
     """
+    typeName: str = 'com.sun.star.drawing.LineStyle'
 
     DASH: 'uno.Enum'
     """

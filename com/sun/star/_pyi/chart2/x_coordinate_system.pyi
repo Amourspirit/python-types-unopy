@@ -41,16 +41,19 @@ class XCoordinateSystem(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getCoordinateSystemType(self) -> str:
         """
         identifies the type of coordinate system (e.g.
         
         Cartesian, polar ...)
         """
+        ...
     def getDimension(self) -> int:
         """
         the dimension of the coordinate-system.
         """
+        ...
     def getMaximumAxisIndexByDimension(self, nDimension: int) -> int:
         """
         In one dimension there could be several axes to enable main and secondary axis and maybe more in future.
@@ -60,10 +63,12 @@ class XCoordinateSystem(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getViewServiceName(self) -> str:
         """
         return a service name from which the view component for this coordinate system can be created
         """
+        ...
     def setAxisByDimension(self, nDimension: int, xAxis: 'XAxis_796b0939', nIndex: int) -> None:
         """
         The dimension says whether it is a x, y or z axis.
@@ -73,4 +78,6 @@ class XCoordinateSystem(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

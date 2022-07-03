@@ -42,6 +42,7 @@ class SubTotalColumn(object):
             Column (int, optional): Column value.
             Function (GeneralFunction, optional): Function value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class SubTotalColumn(object):
         """
         the index of the column inside the source data area.
         """
+        ...
 
 
     @property
@@ -56,5 +58,6 @@ class SubTotalColumn(object):
         """
         specifies what kind of subtotals are calculated.
         """
+        ...
 
 

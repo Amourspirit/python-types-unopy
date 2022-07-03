@@ -51,6 +51,7 @@ class XAccessibleTextMarkup(XAccessibleText_5b77105b):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getTextMarkupAtIndex(self, CharIndex: int, TextMarkupType: int) -> 'typing.Tuple[TextSegment_1e5b0ee8, ...]':
         """
         returns a sequence of the text segments of the text markups at the given character index and of the given text markup type.
@@ -63,6 +64,7 @@ class XAccessibleTextMarkup(XAccessibleText_5b77105b):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getTextMarkupCount(self, TextMarkupType: int) -> int:
         """
         Returns the number of text markup of the given text markup type of a text.
@@ -72,4 +74,6 @@ class XAccessibleTextMarkup(XAccessibleText_5b77105b):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

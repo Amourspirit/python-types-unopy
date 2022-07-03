@@ -48,6 +48,7 @@ class FeatureStateEvent(EventObject_a3d70b03):
             Requery (bool, optional): Requery value.
             State (object, optional): State value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class FeatureStateEvent(EventObject_a3d70b03):
         """
         contains the URL of the feature.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class FeatureStateEvent(EventObject_a3d70b03):
         """
         contains a descriptor of the feature for the user interface.
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class FeatureStateEvent(EventObject_a3d70b03):
         """
         specifies whether the feature is currently enabled or disabled.
         """
+        ...
 
 
     @property
@@ -78,6 +82,7 @@ class FeatureStateEvent(EventObject_a3d70b03):
         
         Interest code should listen for FrameActionEvent too, to update own feature states and dispatch listener on FrameAction.CONTEXT_CHANGED.
         """
+        ...
 
 
     @property
@@ -87,5 +92,6 @@ class FeatureStateEvent(EventObject_a3d70b03):
         
         This can be, for example, simply TRUE for a boolean feature like underline on/off. Some simple types like string or boolean are useful here for generic UI elements, like a checkmark in a menu.
         """
+        ...
 
 

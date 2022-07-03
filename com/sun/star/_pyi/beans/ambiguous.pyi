@@ -43,6 +43,7 @@ class Ambiguous(object):
             Value (object, optional): Value value.
             IsAmbiguous (bool, optional): IsAmbiguous value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class Ambiguous(object):
         
         Even if this structure instance is ambiguous, this member should contain a useful value. If there is no useful value for an ambiguous structure instance, com.sun.star.beans.Optional can be used as the type of this member.
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class Ambiguous(object):
         """
         Marks this structure instance as ambiguous.
         """
+        ...
 
 

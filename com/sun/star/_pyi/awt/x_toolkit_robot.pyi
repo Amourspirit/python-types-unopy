@@ -41,16 +41,22 @@ class XToolkitRobot(ABC):
     def keyPress(self, aKeyEvent: 'KeyEvent_7a78097f') -> None:
         """
         """
+        ...
     def keyRelease(self, aKeyEvent: 'KeyEvent_7a78097f') -> None:
         """
         """
+        ...
     def mouseMove(self, aMouseEvent: 'MouseEvent_8f430a5f') -> None:
         """
         """
+        ...
     def mousePress(self, aMouseEvent: 'MouseEvent_8f430a5f') -> None:
         """
         """
+        ...
     def mouseRelease(self, aMouseEvent: 'MouseEvent_8f430a5f') -> None:
         """
         """
+        ...
+
 

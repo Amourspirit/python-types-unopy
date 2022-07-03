@@ -48,6 +48,7 @@ class Date(object):
         Arguments:
             Value (float, optional): Value value.
         """
+        ...
 
 
     @property
@@ -55,5 +56,6 @@ class Date(object):
         """
         corresponds to the Automation type DATE.
         """
+        ...
 
 

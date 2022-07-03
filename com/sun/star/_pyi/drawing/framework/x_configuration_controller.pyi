@@ -52,16 +52,19 @@ class XConfigurationController(XConfigurationControllerBroadcaster_5e871a2e, XCo
         
         Modifications to the returned configuration have no effect on the drawing framework.
         """
+        ...
     def getRequestedConfiguration(self) -> 'XConfiguration_8f0511a0':
         """
         Return a copy of the requested configuration.
         
         Modifications to the returned configuration have no effect on the drawing framework.
         """
+        ...
     def getResource(self, xResourceId: 'XResourceId_5be3103d') -> 'XResource_3bcd0f90':
         """
         Return the active resource specified by the given resource id.
         """
+        ...
     def lock(self) -> None:
         """
         Lock the processing of configuration change requests.
@@ -70,6 +73,7 @@ class XConfigurationController(XConfigurationControllerBroadcaster_5e871a2e, XCo
         
         Recursive lock() calls are recognized: the configuration controller is locked while lock() was called more often than unlock().
         """
+        ...
     def requestResourceActivation(self, xResourceId: 'XResourceId_5be3103d', eMode: 'ResourceActivationMode_2b5e14cf') -> None:
         """
         Request the activation of a resource.
@@ -80,6 +84,7 @@ class XConfigurationController(XConfigurationControllerBroadcaster_5e871a2e, XCo
         
         When eMode is ADD then the resource is requested without further changes.
         """
+        ...
     def requestResourceDeactivation(self, xResourceId: 'XResourceId_5be3103d') -> None:
         """
         Request the deactivation of a resource.
@@ -88,6 +93,7 @@ class XConfigurationController(XConfigurationControllerBroadcaster_5e871a2e, XCo
         
         Requesting the deactivation of a resource that is not active is not an error.
         """
+        ...
     def restoreConfiguration(self, xConfiguration: 'XConfiguration_8f0511a0') -> None:
         """
         Replace the requested configuration with the given configuration and schedule an update of the current configuration.
@@ -98,16 +104,20 @@ class XConfigurationController(XConfigurationControllerBroadcaster_5e871a2e, XCo
         
         Note that because of the configuration change notifications listeners can make more configuration change requests, so that the resulting requested configuration can be different from the given configuration.
         """
+        ...
     def unlock(self) -> None:
         """
         Unlock the processing of configuration change requests.
         
         When unlock() is called as many times as lock() and the queue of configuration change requests is not empty the configuration controller continues the processing of the change requests. An update of the current configuration will eventually being made.
         """
+        ...
     def update(self) -> None:
         """
         Explicitly request an update of the current configuration.
         
         Call it when a resource is activated or deactivated without the control and knowledge of the drawing framework. Calling this method (from outside the drawing framework) should hardly every be necessary.
         """
+        ...
+
 

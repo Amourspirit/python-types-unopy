@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.awt
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .x_window_peer import XWindowPeer as XWindowPeer_99760ab0
@@ -33,16 +34,16 @@ class XSystemChildFactory(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.awt.XSystemChildFactory']
 
-    def createSystemChild(self, Parent: object, ProcessId: 'typing.Tuple[int, ...]', SystemType: int) -> 'XWindowPeer_99760ab0':
+    def createSystemChild(self, Parent: object, ProcessId: uno.ByteSequence, SystemType: int) -> 'XWindowPeer_99760ab0':
         """
         creates a system child window.
         
-        You must check the machine ID and the process ID.
-        WIN32: HWND.
-        WIN16: HWND.
+        You must check the machine ID and the process ID.WIN32: HWND.WIN16: HWND.
         
         JAVA: global reference to a java.awt.Component object provided from the JNI-API.
         
         MAC: (NSView*) pointer.
         """
+        ...
+
 

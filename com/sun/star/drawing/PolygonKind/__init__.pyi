@@ -29,6 +29,7 @@ Enum
 See Also:
     `API PolygonKind <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#adec70dcaa1fdfc08f03cf30ccee65ef6>`_
 """
+typeName: str = 'com.sun.star.drawing.PolygonKind'
 
 FREEFILL: 'uno.Enum'
 """

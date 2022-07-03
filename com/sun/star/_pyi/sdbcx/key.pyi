@@ -36,25 +36,30 @@ class Key(XPropertySet_bc180bfa, XColumnsSupplier_f0600da9, XDataDescriptorFacto
         """
         is the rule which is applied for deletions; only used for foreign keys.
         """
+        ...
     @property
     def Name(self) -> str:
         """
         is the name of the key
         """
+        ...
     @property
     def ReferencedTable(self) -> str:
         """
         is the name of the referenced table, only used for foreign keys.
         """
+        ...
     @property
     def Type(self) -> int:
         """
         indicates the type of the key.
         """
+        ...
     @property
     def UpdateRule(self) -> int:
         """
         is the rule which is applied for updates; only used for foreign keys.
         """
+        ...
 
 

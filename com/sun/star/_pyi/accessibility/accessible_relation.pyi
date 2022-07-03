@@ -48,6 +48,7 @@ class AccessibleRelation(object):
             TargetSet (typing.Tuple[XInterface, ...], optional): TargetSet value.
             RelationType (int, optional): RelationType value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class AccessibleRelation(object):
         
         The content of this set is undefined if the relation's type is INVALID. The set must not contain references to one object more than once.
         """
+        ...
 
 
     @property
@@ -66,5 +68,6 @@ class AccessibleRelation(object):
         
         Its value has to be one of the constants defined by AccessibleRelationType. If that value is INVALID then the whole relation is regarded as invalid. The content of the TargetSet is then undefined.
         """
+        ...
 
 

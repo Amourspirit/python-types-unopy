@@ -33,5 +33,6 @@ class TableChart(XNamed_a6520b08, XEmbeddedObjectSupplier_8b631174, XTableChart_
     See Also:
         `API TableChart <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1table_1_1TableChart.html>`_
     """
+    ...
 
 

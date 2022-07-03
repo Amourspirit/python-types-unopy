@@ -31,5 +31,6 @@ class TextInputStream(XTextInputStream2_d4390c8b):
     See Also:
         `API TextInputStream <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1io_1_1TextInputStream.html>`_
     """
+    ...
 
 

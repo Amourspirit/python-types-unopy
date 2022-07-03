@@ -41,16 +41,21 @@ class XConnectorShape(XShape_8fd00a3d):
         """
         connects the end of this instance.
         """
+        ...
     def connectStart(self, xShape: 'XConnectableShape_1abe0e9b', nPos: 'ConnectionType_f1940da6') -> None:
         """
         connects the start of this instance
         """
+        ...
     def disconnectBegin(self, xShape: 'XConnectableShape_1abe0e9b') -> None:
         """
         disconnects the given Shape from the start of this instance.
         """
+        ...
     def disconnectEnd(self, xShape: 'XConnectableShape_1abe0e9b') -> None:
         """
         disconnects the given Shape from the end of this instance.
         """
+        ...
+
 

@@ -46,5 +46,6 @@ class Schema(XSchema_5ce7101f):
         
             OOo 2.0
         """
+        ...
 
 

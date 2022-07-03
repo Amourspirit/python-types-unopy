@@ -44,6 +44,7 @@ class LanguageCountryInfo(object):
             CountryDefaultName (str, optional): CountryDefaultName value.
             Variant (str, optional): Variant value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class LanguageCountryInfo(object):
         """
         ISO-639 language code, for example, \"en\" or \"de\".
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class LanguageCountryInfo(object):
         """
         Descriptive language name, for example, \"English\" or \"German\".
         """
+        ...
 
 
     @property
@@ -65,6 +68,7 @@ class LanguageCountryInfo(object):
         """
         ISO-3166 country code, for example, \"US\" or \"DE\".
         """
+        ...
 
 
     @property
@@ -72,6 +76,7 @@ class LanguageCountryInfo(object):
         """
         Descriptive country name, for example, \"United States\" or \"Germany\".
         """
+        ...
 
 
     @property
@@ -79,5 +84,6 @@ class LanguageCountryInfo(object):
         """
         A variant name.
         """
+        ...
 
 

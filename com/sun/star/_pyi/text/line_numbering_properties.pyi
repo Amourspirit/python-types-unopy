@@ -38,41 +38,49 @@ class LineNumberingProperties(ABC):
         """
         The name of the character style that is used for the line number.
         """
+        ...
     @property
     def CountEmptyLines(self) -> bool:
         """
         If TRUE, empty lines are counted.
         """
+        ...
     @property
     def CountLinesInFrames(self) -> bool:
         """
         If TRUE, lines in frames are included in counting.
         """
+        ...
     @property
     def Distance(self) -> int:
         """
         specifies the distance between the line number and the start or end of the text area.
         """
+        ...
     @property
     def Interval(self) -> int:
         """
         Line numbers are shown on every Intervalth line.
         """
+        ...
     @property
     def IsOn(self) -> bool:
         """
         If TRUE, line numbering is used.
         """
+        ...
     @property
     def NumberPosition(self) -> int:
         """
         specifies the position of the line number (constant LineNumberPositions left/right/inside/outside).
         """
+        ...
     @property
     def NumberingType(self) -> int:
         """
         specifies the type of the numbering.
         """
+        ...
     @property
     def RestartAtEachPage(self) -> bool:
         """
@@ -84,15 +92,18 @@ class LineNumberingProperties(ABC):
         
             OOo 2.0
         """
+        ...
     @property
     def SeparatorInterval(self) -> int:
         """
         The line separator is shown every SeparatorIntervalth line.
         """
+        ...
     @property
     def SeparatorText(self) -> str:
         """
         specifies the string that is used for the line separator.
         """
+        ...
 
 

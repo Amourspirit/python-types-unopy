@@ -50,6 +50,7 @@ class WindowEvent(EventObject_a3d70b03):
             RightInset (int, optional): RightInset value.
             BottomInset (int, optional): BottomInset value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class WindowEvent(EventObject_a3d70b03):
         """
         specifies the outer x position of the window.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class WindowEvent(EventObject_a3d70b03):
         """
         specifies the outer y position of the window.
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class WindowEvent(EventObject_a3d70b03):
         """
         specifies the outer (total) width of the window.
         """
+        ...
 
 
     @property
@@ -78,6 +82,7 @@ class WindowEvent(EventObject_a3d70b03):
         """
         specifies the outer (total) height of the window.
         """
+        ...
 
 
     @property
@@ -87,6 +92,7 @@ class WindowEvent(EventObject_a3d70b03):
         
         The inset is the distance between the outer and the inner window, that means the left inset is the width of the left border.
         """
+        ...
 
 
     @property
@@ -96,6 +102,7 @@ class WindowEvent(EventObject_a3d70b03):
         
         The inset is the distance between the outer and the inner window, that means the top inset is the height of the top border.
         """
+        ...
 
 
     @property
@@ -105,6 +112,7 @@ class WindowEvent(EventObject_a3d70b03):
         
         The inset is the distance between the outer and the inner window, that means the right inset is the width of the right border.
         """
+        ...
 
 
     @property
@@ -114,5 +122,6 @@ class WindowEvent(EventObject_a3d70b03):
         
         The inset is the distance between the outer and the inner window, that means the bottom inset is the height of the bottom border.
         """
+        ...
 
 

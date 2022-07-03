@@ -40,10 +40,13 @@ class XCommandEnvironment(XInterface_8f010a43):
         
         If called multiple times, this method should consistently return the same value (to allow caching).
         """
+        ...
     def getProgressHandler(self) -> 'XProgressHandler_d4190cad':
         """
         returns the command's progress handler.
         
         If called multiple times, this method should consistently return the same value (to allow caching).
         """
+        ...
+
 

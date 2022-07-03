@@ -30,5 +30,6 @@ class ResultSet(ResultSet_9a6d0ac7, XColumnsSupplier_f0600da9):
     See Also:
         `API ResultSet <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1ResultSet.html>`_
     """
+    ...
 
 

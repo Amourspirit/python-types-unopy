@@ -45,6 +45,7 @@ class RowsChangeEvent(RowChangeEvent_ba0c0bc1):
             Rows (int, optional): Rows value.
             Bookmarks (typing.Tuple[object, ...], optional): Bookmarks value.
         """
+        ...
 
 
     @property

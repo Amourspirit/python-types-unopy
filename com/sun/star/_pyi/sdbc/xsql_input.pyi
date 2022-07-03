@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.sdbc
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..io.x_input_stream import XInputStream as XInputStream_98d40ab4
@@ -51,6 +52,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readBinaryStream(self) -> 'XInputStream_98d40ab4':
         """
         reads the next attribute in the stream as sequence of bytes.
@@ -58,6 +60,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readBlob(self) -> 'XBlob_6773087b':
         """
         reads a BLOB from the stream.
@@ -65,6 +68,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readBoolean(self) -> bool:
         """
         reads the next attribute in the stream as boolean.
@@ -72,6 +76,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readByte(self) -> int:
         """
         reads the next attribute in the stream as byte.
@@ -79,13 +84,15 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
-    def readBytes(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def readBytes(self) -> uno.ByteSequence:
         """
         reads the next attribute in the stream as sequence of bytes.
 
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readCharacterStream(self) -> 'XInputStream_98d40ab4':
         """
         reads the next attribute in the stream as a Unicode string.
@@ -93,6 +100,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readClob(self) -> 'XClob_6777087c':
         """
         reads a CLOB from the stream.
@@ -100,6 +108,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readDate(self) -> 'Date_60040844':
         """
         reads the next attribute in the stream as date.
@@ -107,6 +116,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readDouble(self) -> float:
         """
         reads the next attribute in the stream as double.
@@ -114,6 +124,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readFloat(self) -> float:
         """
         reads the next attribute in the stream as float.
@@ -121,6 +132,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readInt(self) -> int:
         """
         reads the next attribute in the stream as long.
@@ -128,6 +140,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readLong(self) -> int:
         """
         reads the next attribute in the stream as hyper.
@@ -135,6 +148,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readObject(self) -> object:
         """
         returns the datum at the head of the stream as an any.
@@ -148,6 +162,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readRef(self) -> 'XRef_5f110819':
         """
         reads a REF(&lt;structured-type&gt;) from the stream.
@@ -155,6 +170,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readShort(self) -> int:
         """
         reads the next attribute in the stream as short.
@@ -162,6 +178,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readString(self) -> str:
         """
         reads the next attribute in the stream as string.
@@ -169,6 +186,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readTime(self) -> 'Time_604e0855':
         """
         reads the next attribute in the stream as time.
@@ -176,6 +194,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def readTimestamp(self) -> 'DateTime_84de09d3':
         """
         reads the next attribute in the stream as datetime.
@@ -183,6 +202,7 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def wasNull(self) -> bool:
         """
         determines whether the last value read was null.
@@ -190,4 +210,6 @@ class XSQLInput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

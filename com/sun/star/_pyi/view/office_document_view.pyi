@@ -31,5 +31,6 @@ class OfficeDocumentView(XControlAccess_c89d0c4e, XSelectionSupplier_fed20e15, X
     See Also:
         `API OfficeDocumentView <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1view_1_1OfficeDocumentView.html>`_
     """
+    ...
 
 

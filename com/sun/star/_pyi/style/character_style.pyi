@@ -35,30 +35,36 @@ class CharacterStyle(CharacterProperties_1d4f0ef3, Style_7336094a):
         """
         This value contains the character height as difference in point to the height of the character in the parent style.
         """
+        ...
     @property
     def CharDiffHeightAsian(self) -> float:
         """
         This value contains the character height as difference in point to the height of the character in the parent style in Asian text.
         """
+        ...
     @property
     def CharDiffHeightComplex(self) -> float:
         """
         This value contains the character height as difference in point to the height of the character in the parent style in complex text.
         """
+        ...
     @property
     def CharPropHeight(self) -> int:
         """
         This value contains the character height as percentage value relative to the height of the character in the parent style.
         """
+        ...
     @property
     def CharPropHeightAsian(self) -> int:
         """
         This value contains the character height as percentage value relative to the height of the character in the parent style in Asian text.
         """
+        ...
     @property
     def CharPropHeightComplex(self) -> int:
         """
         This value contains the character height as percentage value relative to the height of the character in the parent style in complex text.
         """
+        ...
 
 

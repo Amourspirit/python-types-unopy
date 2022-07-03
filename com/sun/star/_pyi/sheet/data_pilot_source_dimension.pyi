@@ -52,16 +52,19 @@ class DataPilotSourceDimension(XPropertySet_bc180bfa, XNamed_a6520b08, XHierarch
         """
         specifies which values are used.
         """
+        ...
     @property
     def Flags(self) -> int:
         """
         contains flags that control the usage of the dimension.
         """
+        ...
     @property
     def Function(self) -> 'GeneralFunction_e2280d25':
         """
         specifies how data are aggregated.
         """
+        ...
     @property
     def Function2(self) -> int:
         """
@@ -71,30 +74,36 @@ class DataPilotSourceDimension(XPropertySet_bc180bfa, XNamed_a6520b08, XHierarch
         
             LibreOffice 5.3
         """
+        ...
     @property
     def IsDataLayoutDimension(self) -> bool:
         """
         contains TRUE if this is the dimension used to layout the different data dimensions.
         """
+        ...
     @property
     def Orientation(self) -> 'DataPilotFieldOrientation_78701113':
         """
         specifies where the dimension is used.
         """
+        ...
     @property
     def Original(self) -> 'XNamed_a6520b08':
         """
         returns the name of the dimension from which this dimension was cloned, or NULL if it was not cloned.
         """
+        ...
     @property
     def Position(self) -> int:
         """
         specifies the position of the dimension within its orientation.
         """
+        ...
     @property
     def UsedHierarchy(self) -> int:
         """
         specifies which hierarchy of the dimension is used.
         """
+        ...
 
 

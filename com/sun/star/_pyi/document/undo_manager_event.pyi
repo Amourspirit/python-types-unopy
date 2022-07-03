@@ -48,6 +48,7 @@ class UndoManagerEvent(EventObject_a3d70b03):
             UndoActionTitle (str, optional): UndoActionTitle value.
             UndoContextDepth (int, optional): UndoContextDepth value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class UndoManagerEvent(EventObject_a3d70b03):
         """
         the title of the undo action which is described by the event
         """
+        ...
 
 
     @property
@@ -62,5 +64,6 @@ class UndoManagerEvent(EventObject_a3d70b03):
         """
         denotes the number of Undo contexts which are open, and not yet closed, at the time the event is fired.
         """
+        ...
 
 

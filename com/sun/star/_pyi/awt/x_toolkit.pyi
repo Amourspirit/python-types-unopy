@@ -43,10 +43,12 @@ class XToolkit(XInterface_8f010a43):
         """
         creates a region.
         """
+        ...
     def createScreenCompatibleDevice(self, Width: int, Height: int) -> 'XDevice_70ba08fc':
         """
         creates a virtual device that is compatible with the screen.
         """
+        ...
     def createWindow(self, Descriptor: 'WindowDescriptor_d61e0ceb') -> 'XWindowPeer_99760ab0':
         """
         creates a new window using the given descriptor.
@@ -54,6 +56,7 @@ class XToolkit(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def createWindows(self, Descriptors: 'typing.Tuple[WindowDescriptor_d61e0ceb, ...]') -> 'typing.Tuple[XWindowPeer_99760ab0, ...]':
         """
         returns a sequence of windows which are newly created using the given descriptors.
@@ -61,14 +64,18 @@ class XToolkit(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getDesktopWindow(self) -> 'XWindowPeer_99760ab0':
         """
         returns the desktop window.
         """
+        ...
     def getWorkArea(self) -> 'Rectangle_84b109e9':
         """
         For LibreOffice versions < 4.1, this method just returned an empty rectangle.
         
         After that, it started returning a valid value.
         """
+        ...
+
 

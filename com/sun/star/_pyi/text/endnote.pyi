@@ -29,5 +29,6 @@ class Endnote(Footnote_86390a1b):
     See Also:
         `API Endnote <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1Endnote.html>`_
     """
+    ...
 
 

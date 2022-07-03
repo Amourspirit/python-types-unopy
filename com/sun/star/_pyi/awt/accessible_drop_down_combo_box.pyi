@@ -35,5 +35,6 @@ class AccessibleDropDownComboBox(AccessibleContext_7e0e1143, XAccessibleAction_7
     See Also:
         `API AccessibleDropDownComboBox <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1AccessibleDropDownComboBox.html>`_
     """
+    ...
 
 

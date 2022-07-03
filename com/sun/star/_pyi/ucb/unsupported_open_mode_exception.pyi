@@ -46,11 +46,13 @@ class UnsupportedOpenModeException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             Mode (int, optional): Mode value.
         """
+        ...
     @property
     def Mode(self) -> int:
         """
         contains the OpenMode that is not supported.
         """
+        ...
 
 
 __all__ = ['UnsupportedOpenModeException']

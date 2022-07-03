@@ -32,6 +32,7 @@ class ChartAxisMarkPosition(Enum):
     See Also:
         `API ChartAxisMarkPosition <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart.html#aed594287d3f18573f625e8f708a27555>`_
     """
+    typeName: str = 'com.sun.star.chart.ChartAxisMarkPosition'
 
     AT_AXIS: 'uno.Enum'
     """

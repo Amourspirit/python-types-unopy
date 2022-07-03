@@ -45,11 +45,13 @@ class XURI(XResource_842709e4):
         """
         suffix
         """
+        ...
 
     @property
     def Namespace(self) -> str:
         """
         prefix
         """
+        ...
 
 

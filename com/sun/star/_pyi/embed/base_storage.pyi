@@ -37,10 +37,12 @@ class BaseStorage(XPropertySet_bc180bfa, XStorage_8e460a32):
         
         Can be a combination of values from ElementModes.
         """
+        ...
     @property
     def URL(self) -> str:
         """
         allows to retrieve URL the storage is based on.
         """
+        ...
 
 

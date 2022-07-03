@@ -48,6 +48,7 @@ class XValidatableFormComponent(XValidatable_49570fc6):
         Raises:
             com.sun.star.lang.NullPointerException: ``NullPointerException``
         """
+        ...
     def getCurrentValue(self) -> object:
         """
         retrieves the current value of the component.
@@ -58,6 +59,7 @@ class XValidatableFormComponent(XValidatable_49570fc6):
         
         If no validator has been set (XValidatable.setValidator()), the value returned here is defined by the service implementing this interface.
         """
+        ...
     def isValid(self) -> bool:
         """
         determines whether the current value of the component passed the validity test at the validator.
@@ -66,6 +68,7 @@ class XValidatableFormComponent(XValidatable_49570fc6):
         
         If no validator has been set (XValidatable.setValidator()), this method returns true.
         """
+        ...
     def removeFormComponentValidityListener(self, Listener: 'XFormComponentValidityListener_ac141740') -> None:
         """
         registers the given listener.
@@ -73,4 +76,6 @@ class XValidatableFormComponent(XValidatable_49570fc6):
         Raises:
             com.sun.star.lang.NullPointerException: ``NullPointerException``
         """
+        ...
+
 

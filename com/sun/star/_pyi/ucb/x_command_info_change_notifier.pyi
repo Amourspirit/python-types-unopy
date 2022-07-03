@@ -37,8 +37,11 @@ class XCommandInfoChangeNotifier(XInterface_8f010a43):
         """
         registers a listener for CommandInfoChangeEvents.
         """
+        ...
     def removeCommandInfoChangeListener(self, Listener: 'XCommandInfoChangeListener_635a1071') -> None:
         """
         removes a listener for CommandInfoChangeEvents.
         """
+        ...
+
 

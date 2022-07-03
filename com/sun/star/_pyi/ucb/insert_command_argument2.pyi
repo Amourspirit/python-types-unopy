@@ -45,6 +45,7 @@ class InsertCommandArgument2(InsertCommandArgument_19550eb9):
             MimeType (str, optional): MimeType value.
             DocumentId (str, optional): DocumentId value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class InsertCommandArgument2(InsertCommandArgument_19550eb9):
         """
         contains the MIME type of the document to insert
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class InsertCommandArgument2(InsertCommandArgument_19550eb9):
         """
         contains the Document Id of the document to insert
         """
+        ...
 
 

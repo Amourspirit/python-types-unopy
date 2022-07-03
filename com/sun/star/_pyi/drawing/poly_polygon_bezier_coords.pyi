@@ -43,6 +43,7 @@ class PolyPolygonBezierCoords(object):
             Coordinates (PointSequenceSequence, optional): Coordinates value.
             Flags (FlagSequenceSequence, optional): Flags value.
         """
+        ...
 
 
     @property

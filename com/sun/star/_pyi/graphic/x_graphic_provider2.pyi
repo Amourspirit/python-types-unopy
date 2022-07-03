@@ -51,4 +51,6 @@ class XGraphicProvider2(XGraphicProvider_b5b0e47):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

@@ -34,15 +34,18 @@ class JumpEdit(TextField_90260a56):
         """
         determines a hint that is displayed at the user interface as tip.
         """
+        ...
     @property
     def PlaceHolder(self) -> str:
         """
         determines the text of the place holder.
         """
+        ...
     @property
     def PlaceHolderType(self) -> int:
         """
         determines the type of the place holder as described in com.sun.star.text.PlaceholderType.
         """
+        ...
 
 

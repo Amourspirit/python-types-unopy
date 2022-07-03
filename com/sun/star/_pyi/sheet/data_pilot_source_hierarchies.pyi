@@ -29,5 +29,6 @@ class DataPilotSourceHierarchies(XNameAccess_e2ab0cf6):
     See Also:
         `API DataPilotSourceHierarchies <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1DataPilotSourceHierarchies.html>`_
     """
+    ...
 
 

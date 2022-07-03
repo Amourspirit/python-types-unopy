@@ -51,6 +51,7 @@ class LeftRightMarginScale(object):
             ScaleFirstLine (int, optional): ScaleFirstLine value.
             AutoFirstLine (bool, optional): AutoFirstLine value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class LeftRightMarginScale(object):
         """
         specifies a left text margin in 1/100th mm.
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class LeftRightMarginScale(object):
         """
         specifies a left margin in 1/100th mm.
         """
+        ...
 
 
     @property
@@ -72,6 +75,7 @@ class LeftRightMarginScale(object):
         """
         specifies a right margin in 1/100th mm.
         """
+        ...
 
 
     @property
@@ -79,6 +83,7 @@ class LeftRightMarginScale(object):
         """
         specifies a first line indent relative to TextLeft in 1/100th mm.
         """
+        ...
 
 
     @property
@@ -86,6 +91,7 @@ class LeftRightMarginScale(object):
         """
         specifies a scale value for the left margin in percent.
         """
+        ...
 
 
     @property
@@ -93,6 +99,7 @@ class LeftRightMarginScale(object):
         """
         specifies a scale value for the right margin in percent.
         """
+        ...
 
 
     @property
@@ -100,6 +107,7 @@ class LeftRightMarginScale(object):
         """
         specifies a scale value for the first line margin in percent.
         """
+        ...
 
 
     @property
@@ -107,5 +115,6 @@ class LeftRightMarginScale(object):
         """
         specifies if the automatic calculation of the first line indent occurs.
         """
+        ...
 
 

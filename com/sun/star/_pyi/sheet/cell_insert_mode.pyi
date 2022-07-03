@@ -32,6 +32,7 @@ class CellInsertMode(Enum):
     See Also:
         `API CellInsertMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet.html#a93cdb08109d5d34543f2fe04d1ef605a>`_
     """
+    typeName: str = 'com.sun.star.sheet.CellInsertMode'
 
     COLUMNS: 'uno.Enum'
     """

@@ -46,6 +46,7 @@ class XInfobarProvider(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def hasInfobar(self, id: str) -> bool:
         """
         Check if Infobar exists.
@@ -54,6 +55,7 @@ class XInfobarProvider(XInterface_8f010a43):
         
             LibreOffice 7.0
         """
+        ...
     def removeInfobar(self, id: str) -> None:
         """
         Removes an existing Infobar.
@@ -61,6 +63,7 @@ class XInfobarProvider(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def updateInfobar(self, id: str, primaryMessage: str, secondaryMessage: str, infobarType: int) -> None:
         """
         Updates an existing Infobar.
@@ -70,4 +73,6 @@ class XInfobarProvider(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

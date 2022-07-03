@@ -36,4 +36,6 @@ class XTransferableEx(XInterface_8f010a43):
     def queryTransferDataFlavors(self, requestedFlavors: 'typing.Tuple[DataFlavor_ffd30deb, ...]') -> 'typing.Tuple[DataFlavor_ffd30deb, ...]':
         """
         """
+        ...
+
 

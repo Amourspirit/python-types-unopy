@@ -32,5 +32,6 @@ class PersistentPropertySet(XPropertyAccess_e1d40d20, XPropertyContainer_c600e71
     See Also:
         `API PersistentPropertySet <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1PersistentPropertySet.html>`_
     """
+    ...
 
 

@@ -38,24 +38,30 @@ class XTextColumns(XInterface_8f010a43):
     def getColumnCount(self) -> int:
         """
         """
+        ...
     def getColumns(self) -> 'typing.Tuple[TextColumn_9b3f0ae0, ...]':
         """
         returns the column description of the object.
         """
+        ...
     def getReferenceValue(self) -> int:
         """
         As described above, the width values are relative.
         """
+        ...
     def setColumnCount(self, nColumns: int) -> None:
         """
         sets the number of columns.
         
         The minimum is 1 column.
         """
+        ...
     def setColumns(self, Columns: 'typing.Tuple[TextColumn_9b3f0ae0, ...]') -> None:
         """
         sets the descriptors of all columns.
         
         The number of members in the sequence must be the same as the number of columns of the object.
         """
+        ...
+
 

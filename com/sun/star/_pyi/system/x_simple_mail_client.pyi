@@ -37,6 +37,7 @@ class XSimpleMailClient(XInterface_8f010a43):
         """
         Create a simple mail message object that implements the interface XSimpleMailMessage.
         """
+        ...
     def sendSimpleMailMessage(self, xSimpleMailMessage: 'XSimpleMailMessage_1d420eb7', aFlag: int) -> None:
         """
         Sends a given simple mail message object that implements the interface XSimpleMailMessage.
@@ -47,4 +48,6 @@ class XSimpleMailClient(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

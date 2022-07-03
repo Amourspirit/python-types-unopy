@@ -41,10 +41,13 @@ class XDatabaseParameterBroadcaster2(XDatabaseParameterBroadcaster_ac7f1234):
         
         This method behaves exactly as the XDatabaseParameterBroadcaster.addParameterListener() method inherited from the base interface.
         """
+        ...
     def removeDatabaseParameterListener(self, aListener: 'XDatabaseParameterListener_77e01110') -> None:
         """
         revokes an XDatabaseParameterListener
         
         This method behaves exactly as the XDatabaseParameterBroadcaster.removeParameterListener() method inherited from the base interface.
         """
+        ...
+
 

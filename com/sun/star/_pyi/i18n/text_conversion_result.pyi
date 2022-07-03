@@ -46,6 +46,7 @@ class TextConversionResult(object):
             Candidates (typing.Tuple[str, ...], optional): Candidates value.
             Boundary (Boundary, optional): Boundary value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class TextConversionResult(object):
         """
         A list of replacement candidates for the first convertible word found in the given text.
         """
+        ...
 
 
     @property
@@ -62,5 +64,6 @@ class TextConversionResult(object):
         
         If there is no convertible word found in the text, startPos and endPos for Boundary equal 0.
         """
+        ...
 
 

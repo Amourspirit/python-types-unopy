@@ -43,6 +43,7 @@ class Boundary(object):
             startPos (int, optional): startPos value.
             endPos (int, optional): endPos value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class Boundary(object):
         """
         Start position of a word, inclusive
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class Boundary(object):
         """
         End position of a word, exclusive
         """
+        ...
 
 

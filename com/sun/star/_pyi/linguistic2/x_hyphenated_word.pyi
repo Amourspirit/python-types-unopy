@@ -39,23 +39,30 @@ class XHyphenatedWord(XInterface_8f010a43):
         """
         The value has to be in the range from 0 (after the first character) to m-2 (before the last character) where m is the length of the hyphenated word.
         """
+        ...
     def getHyphenatedWord(self) -> str:
         """
         """
+        ...
     def getHyphenationPos(self) -> int:
         """
         The value has to be in the range from 0 (after the first character) to n-2 (before the last character) where n is the length of the word.
         """
+        ...
     def getLocale(self) -> 'Locale_70d308fa':
         """
         """
+        ...
     def getWord(self) -> str:
         """
         """
+        ...
     def isAlternativeSpelling(self) -> bool:
         """
         is used to query if the hyphenation result is an alternative spelling.
         
         A hyphenation result is an alternative spelling if the hyphenated word is different from the word that was hyphenated.
         """
+        ...
+
 

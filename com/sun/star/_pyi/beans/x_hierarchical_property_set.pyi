@@ -45,6 +45,7 @@ class XHierarchicalPropertySet(XInterface_8f010a43):
         """
         retrieve information about the hierarchy of properties
         """
+        ...
     def getHierarchicalPropertyValue(self, aHierarchicalPropertyName: str) -> object:
         """
 
@@ -53,6 +54,7 @@ class XHierarchicalPropertySet(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def setHierarchicalPropertyValue(self, aHierarchicalPropertyName: str, aValue: object) -> None:
         """
         sets the value of the property with the specified nested name.
@@ -63,4 +65,6 @@ class XHierarchicalPropertySet(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

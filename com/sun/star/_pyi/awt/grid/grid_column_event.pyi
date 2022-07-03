@@ -50,6 +50,7 @@ class GridColumnEvent(EventObject_a3d70b03):
             NewValue (object, optional): NewValue value.
             ColumnIndex (int, optional): ColumnIndex value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class GridColumnEvent(EventObject_a3d70b03):
         """
         Contains the name of the attributes whose value changed.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class GridColumnEvent(EventObject_a3d70b03):
         """
         Contains the old value.
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class GridColumnEvent(EventObject_a3d70b03):
         """
         Contains the new value.
         """
+        ...
 
 
     @property
@@ -78,5 +82,6 @@ class GridColumnEvent(EventObject_a3d70b03):
         """
         Contains the index of the changed column.
         """
+        ...
 
 

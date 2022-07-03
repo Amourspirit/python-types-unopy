@@ -52,6 +52,7 @@ class TableFilterField2(object):
             NumericValue (float, optional): NumericValue value.
             StringValue (str, optional): StringValue value.
         """
+        ...
 
 
     @property
@@ -59,6 +60,7 @@ class TableFilterField2(object):
         """
         specifies how the condition is connected to the previous condition.
         """
+        ...
 
 
     @property
@@ -66,6 +68,7 @@ class TableFilterField2(object):
         """
         specifies which field (column) is used for the condition.
         """
+        ...
 
 
     @property
@@ -73,6 +76,7 @@ class TableFilterField2(object):
         """
         specifies the type of the condition as defined in FilterOperator2.
         """
+        ...
 
 
     @property
@@ -80,6 +84,7 @@ class TableFilterField2(object):
         """
         selects whether the TableFilterField2.NumericValue or the TableFilterField2.StringValue is used.
         """
+        ...
 
 
     @property
@@ -87,6 +92,7 @@ class TableFilterField2(object):
         """
         specifies a numeric value for the condition.
         """
+        ...
 
 
     @property
@@ -94,5 +100,6 @@ class TableFilterField2(object):
         """
         specifies a string value for the condition.
         """
+        ...
 
 

@@ -55,6 +55,7 @@ class InterruptEngineEvent(EventObject_a3d70b03):
             ErrorMessage (str, optional): ErrorMessage value.
             Reason (InterruptReason, optional): Reason value.
         """
+        ...
 
 
     @property
@@ -64,6 +65,7 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         
         If the module or function can't be addressed by name (for example, in case that a runtime-generated eval-module is executed), this string is empty.
         """
+        ...
 
 
     @property
@@ -73,6 +75,7 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         
         If the source can be accessed using the ModuleName, or if the source is unknown (executing compiled code), this string can be empty.
         """
+        ...
 
 
     @property
@@ -82,6 +85,7 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         
         If \"name\" addresses a function, all line and column values are nevertheless given relative to the module's source. If source code is not available, this value addresses a binary position in the compiled code.
         """
+        ...
 
 
     @property
@@ -89,6 +93,7 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         contains the first column in the \"StartLine\" that is affected by the event that took place.
         """
+        ...
 
 
     @property
@@ -96,6 +101,7 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         contains the last line in the module's source code that is affected by the event that took place.
         """
+        ...
 
 
     @property
@@ -103,6 +109,7 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         contains the first column in the \"EndLine\" which is NOT affected by the event that took place.
         """
+        ...
 
 
     @property
@@ -112,6 +119,7 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         
         Only valid if Reason is RuntimeError or CompileError.
         """
+        ...
 
 
     @property
@@ -119,5 +127,6 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         contains the interrupt reason.
         """
+        ...
 
 

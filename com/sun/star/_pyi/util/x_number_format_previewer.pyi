@@ -41,6 +41,7 @@ class XNumberFormatPreviewer(XInterface_8f010a43):
         Raises:
             com.sun.star.util.MalformedNumberFormatException: ``MalformedNumberFormatException``
         """
+        ...
     def queryPreviewColorForNumber(self, aFormat: str, fValue: float, nLocale: 'Locale_70d308fa', bAllowEnglish: bool, aDefaultColor: 'Color_68e908c5') -> 'Color_68e908c5':
         """
         returns the color which is to be used for a number.
@@ -48,4 +49,6 @@ class XNumberFormatPreviewer(XInterface_8f010a43):
         Raises:
             com.sun.star.util.MalformedNumberFormatException: ``MalformedNumberFormatException``
         """
+        ...
+
 

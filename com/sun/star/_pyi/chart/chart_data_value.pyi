@@ -48,6 +48,7 @@ class ChartDataValue(object):
             HighError (float, optional): HighError value.
             LowError (float, optional): LowError value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class ChartDataValue(object):
         """
         value by itself.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class ChartDataValue(object):
         """
         highest possible error value.
         """
+        ...
 
 
     @property
@@ -69,5 +72,6 @@ class ChartDataValue(object):
         """
         lowest possible error value.
         """
+        ...
 
 

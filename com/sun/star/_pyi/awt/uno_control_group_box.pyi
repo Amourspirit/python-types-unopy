@@ -29,5 +29,6 @@ class UnoControlGroupBox(UnoControl_8f2c0a67):
     See Also:
         `API UnoControlGroupBox <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlGroupBox.html>`_
     """
+    ...
 
 

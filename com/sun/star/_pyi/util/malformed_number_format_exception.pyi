@@ -44,11 +44,13 @@ class MalformedNumberFormatException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             CheckPos (int, optional): CheckPos value.
         """
+        ...
     @property
     def CheckPos(self) -> int:
         """
         contains the character position in the string where the malformation begins.
         """
+        ...
 
 
 __all__ = ['MalformedNumberFormatException']

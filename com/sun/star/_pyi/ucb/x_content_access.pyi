@@ -40,14 +40,18 @@ class XContentAccess(XInterface_8f010a43):
         """
         returns the content ( \"most expensive method\" ).
         """
+        ...
     def queryContentIdentifier(self) -> 'XContentIdentifier_edc90d78':
         """
         returns the identifier object of the content.
         """
+        ...
     def queryContentIdentifierString(self) -> str:
         """
         returns the identifier string of the content ( \"cheap method\" ).
         
         Note that this string can be used later to recreate the content.
         """
+        ...
+
 

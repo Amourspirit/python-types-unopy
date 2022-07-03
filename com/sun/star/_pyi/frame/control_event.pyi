@@ -48,6 +48,7 @@ class ControlEvent(object):
             aURL (URL, optional): aURL value.
             Event (str, optional): Event value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class ControlEvent(object):
         
         The number and types of named values depend on the event.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class ControlEvent(object):
         """
         fully parsed URL describing the control that sends this notification.
         """
+        ...
 
 
     @property
@@ -71,5 +74,6 @@ class ControlEvent(object):
         """
         specifies the event which has occurred.
         """
+        ...
 
 

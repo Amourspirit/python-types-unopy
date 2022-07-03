@@ -43,4 +43,6 @@ class XLayoutManagerListener(XEventListener_c7230c4a):
         """
         is invoked when a layout manager has made a certain operation.
         """
+        ...
+
 

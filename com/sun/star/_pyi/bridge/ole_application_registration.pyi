@@ -41,5 +41,6 @@ class OleApplicationRegistration(XInterface_8f010a43):
     See Also:
         `API OleApplicationRegistration <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1bridge_1_1OleApplicationRegistration.html>`_
     """
+    ...
 
 

@@ -36,5 +36,6 @@ class BrowseNode(XInvocation_be070c0f, XBrowseNode_1d000ead):
     See Also:
         `API BrowseNode <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1script_1_1browse_1_1BrowseNode.html>`_
     """
+    ...
 
 

@@ -41,6 +41,7 @@ class Selection(object):
             Min (int, optional): Min value.
             Max (int, optional): Max value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class Selection(object):
         """
         specifies the lower limit of the range.
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class Selection(object):
         """
         specifies the upper limit of the range.
         """
+        ...
 
 

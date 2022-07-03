@@ -38,8 +38,11 @@ class XShapeCombiner(XInterface_8f010a43):
         """
         combines Shapes
         """
+        ...
     def split(self, Group: 'XShape_8fd00a3d') -> None:
         """
         splits Shapes.
         """
+        ...
+
 

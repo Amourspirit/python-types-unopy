@@ -37,4 +37,6 @@ class XDriverAccess(XInterface_8f010a43):
         """
         get a driver which accepts a given url.
         """
+        ...
+
 

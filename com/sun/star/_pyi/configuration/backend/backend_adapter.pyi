@@ -34,5 +34,6 @@ class BackendAdapter(Backend_5cb2101e, XInitialization_d46c0cca):
     See Also:
         `API BackendAdapter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1BackendAdapter.html>`_
     """
+    ...
 
 

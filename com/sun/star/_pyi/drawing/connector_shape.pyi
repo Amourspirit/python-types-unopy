@@ -43,16 +43,19 @@ class ConnectorShape(ConnectorProperties_3c5e0fcc, LineProperties_f13f0da9, Rota
         """
         This property contains the distance of line 1.
         """
+        ...
     @property
     def EdgeLine2Delta(self) -> int:
         """
         This property contains the distance of line 2.
         """
+        ...
     @property
     def EdgeLine3Delta(self) -> int:
         """
         This property contains the distance of line 3.
         """
+        ...
     @property
     def EndGluePointIndex(self) -> int:
         """
@@ -60,21 +63,25 @@ class ConnectorShape(ConnectorProperties_3c5e0fcc, LineProperties_f13f0da9, Rota
         
         For unconnected end points you can get and set the position. For connected end points you can only get the position.
         """
+        ...
     @property
     def EndPosition(self) -> 'Point_5fb2085e':
         """
         this property holds the index of the glue point the end point of this connector is glued on.
         """
+        ...
     @property
     def EndShape(self) -> 'XShape_8fd00a3d':
         """
         this property either holds the shape that the end point of this connector is connected to, or is empty when the end point of the connector is not connected to a shape.
         """
+        ...
     @property
     def StartGluePointIndex(self) -> int:
         """
         this property holds the index of the glue point the start point of this connector is glued on.
         """
+        ...
     @property
     def StartPosition(self) -> 'Point_5fb2085e':
         """
@@ -82,10 +89,12 @@ class ConnectorShape(ConnectorProperties_3c5e0fcc, LineProperties_f13f0da9, Rota
         
         For unconnected start points you can get and set the position. For connected start points you can only get the position.
         """
+        ...
     @property
     def StartShape(self) -> 'XShape_8fd00a3d':
         """
         this property either holds the shape that the start point of this connector is connected to, or is empty when the start point of the connector is not connected to a shape.
         """
+        ...
 
 

@@ -30,5 +30,6 @@ class TextViewCursor(TextLayoutCursor_e5530d6e, XScreenCursor_bc4a0bf9):
     See Also:
         `API TextViewCursor <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1TextViewCursor.html>`_
     """
+    ...
 
 

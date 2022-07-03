@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.xml.crypto
 from typing_extensions import Literal
-import typing
+import uno
 from ...uno.x_interface import XInterface as XInterface_8f010a43
 
 class XCipherContext(XInterface_8f010a43):
@@ -37,7 +37,7 @@ class XCipherContext(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.xml.crypto.XCipherContext']
 
-    def convertWithCipherContext(self, aData: 'typing.Tuple[int, ...]') -> 'typing.Tuple[int, ...]':
+    def convertWithCipherContext(self, aData: uno.ByteSequence) -> uno.ByteSequence:
         """
         encrypts/decrypts the data using the cipher.
         
@@ -49,11 +49,14 @@ class XCipherContext(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.DisposedException: ``DisposedException``
         """
-    def finalizeCipherContextAndDispose(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def finalizeCipherContextAndDispose(self) -> uno.ByteSequence:
         """
         finalizes cipher and disposes context.
 
         Raises:
             com.sun.star.lang.DisposedException: ``DisposedException``
         """
+        ...
+
 

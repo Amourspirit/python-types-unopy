@@ -33,13 +33,16 @@ class IllustrationsIndex(BaseIndex_8f0d0a40):
     def CreateFromLabels(self) -> bool:
         """
         """
+        ...
     @property
     def LabelCategory(self) -> str:
         """
         """
+        ...
     @property
     def LabelDisplayType(self) -> int:
         """
         """
+        ...
 
 

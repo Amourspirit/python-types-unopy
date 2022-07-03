@@ -39,6 +39,7 @@ class XToolkitExperimental(XToolkit2_84a309c4):
         """
         Get the number of OpenGL buffer swaps.
         """
+        ...
     def getRecordingAndClear(self) -> 'typing.Tuple[str, ...]':
         """
         Query time logs and clear recording.
@@ -49,18 +50,22 @@ class XToolkitExperimental(XToolkit2_84a309c4):
         
             LibreOffice 6.0
         """
+        ...
     def pause(self, nMilliseconds: int) -> None:
         """
         Pause the main thread of LibreOffice for the requested amount of time.
         """
+        ...
     def processEventsToIdle(self) -> None:
         """
         Process all pending idle events.
         """
+        ...
     def setDeterministicScheduling(self, bDeterministicMode: bool) -> None:
         """
         Turn on or off deterministic scheduling (off is the default).
         """
+        ...
     def startRecording(self) -> None:
         """
         Start time logging.
@@ -69,6 +74,7 @@ class XToolkitExperimental(XToolkit2_84a309c4):
         
             LibreOffice 6.0
         """
+        ...
     def stopRecording(self) -> None:
         """
         Stop time logging.
@@ -77,4 +83,6 @@ class XToolkitExperimental(XToolkit2_84a309c4):
         
             LibreOffice 6.0
         """
+        ...
+
 

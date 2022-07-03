@@ -33,5 +33,6 @@ class Pipe(XPipe_567d07c6):
     See Also:
         `API Pipe <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1io_1_1Pipe.html>`_
     """
+    ...
 
 

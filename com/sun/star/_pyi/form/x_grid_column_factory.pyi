@@ -42,8 +42,11 @@ class XGridColumnFactory(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getColumnTypes(self) -> 'typing.Tuple[str, ...]':
         """
         returns a list of available column types.
         """
+        ...
+
 

@@ -48,23 +48,27 @@ class AmbigousFilterRequest(Exception_85530a09):
             SelectedFilter (str, optional): SelectedFilter value.
             DetectedFilter (str, optional): DetectedFilter value.
         """
+        ...
     @property
     def URL(self) -> str:
         """
         transport URL which couldn't be detected right
         """
+        ...
 
     @property
     def SelectedFilter(self) -> str:
         """
         transport the preselected filter
         """
+        ...
 
     @property
     def DetectedFilter(self) -> str:
         """
         transport the real detected filter, which stands in conflict to the pre selected one
         """
+        ...
 
 
 __all__ = ['AmbigousFilterRequest']

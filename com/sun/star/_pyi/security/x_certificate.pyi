@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.security
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .certificate_kind import CertificateKind as CertificateKind_ffd0e69
@@ -41,63 +42,74 @@ class XCertificate(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.security.XCertificate']
 
-    def findCertificateExtension(self, oid: 'typing.Tuple[int, ...]') -> 'XCertificateExtension_6ead10f8':
+    def findCertificateExtension(self, oid: uno.ByteSequence) -> 'XCertificateExtension_6ead10f8':
         """
         Find an extension with an object identifier.
         """
+        ...
     def getCertificateUsage(self) -> int:
         """
         get the certificate usage.
         
         The return value is a set of bits, as defined in RFC3280 for the KeyUsage BIT STRING. Note the bit and byte order used in ASN.1, so for instance the bit dataEncipherment in KeyUsage, \"bit 3\", corresponds to CERT_DATA_ENCIPHERMENT_KEY_USAGE in Win32 and KU_DATA_ENCIPHERMENT in NSS, both with value 0x10.
         """
+        ...
+
     @property
-    def Encoded(self) -> 'typing.Tuple[int, ...]':
+    def Encoded(self) -> uno.ByteSequence:
         """
         the DER encoded form of the certificate
         """
+        ...
 
     @property
     def Extensions(self) -> 'typing.Tuple[XCertificateExtension_6ead10f8, ...]':
         """
         all extensions of a certificate.
         """
+        ...
 
     @property
-    def IssuerUniqueID(self) -> 'typing.Tuple[int, ...]':
+    def IssuerUniqueID(self) -> uno.ByteSequence:
         """
         the issuer unique ID attribute of the certificate.
         """
+        ...
 
     @property
-    def MD5Thumbprint(self) -> 'typing.Tuple[int, ...]':
+    def MD5Thumbprint(self) -> uno.ByteSequence:
         """
         the MD5 thumbprint
         """
+        ...
 
     @property
-    def SHA1Thumbprint(self) -> 'typing.Tuple[int, ...]':
+    def SHA1Thumbprint(self) -> uno.ByteSequence:
         """
         the SHA-1 thumbprint
         """
+        ...
 
     @property
-    def SerialNumber(self) -> 'typing.Tuple[int, ...]':
+    def SerialNumber(self) -> uno.ByteSequence:
         """
         the serial number attribute of the certificate.
         """
+        ...
 
     @property
-    def SubjectPublicKeyValue(self) -> 'typing.Tuple[int, ...]':
+    def SubjectPublicKeyValue(self) -> uno.ByteSequence:
         """
         the value of the subject public key
         """
+        ...
 
     @property
-    def SubjectUniqueID(self) -> 'typing.Tuple[int, ...]':
+    def SubjectUniqueID(self) -> uno.ByteSequence:
         """
         the subject unique ID attribute of the certificate.
         """
+        ...
 
     @property
     def CertificateKind(self) -> 'CertificateKind_ffd0e69':
@@ -108,47 +120,55 @@ class XCertificate(XInterface_8f010a43):
         
             LibreOffice 5.4
         """
+        ...
 
     @property
     def IssuerName(self) -> str:
         """
         the issuer name attribute of the certificate.
         """
+        ...
 
     @property
     def NotValidAfter(self) -> 'DateTime_84de09d3':
         """
         the validity NotAfter date attribute of the certificate.
         """
+        ...
 
     @property
     def NotValidBefore(self) -> 'DateTime_84de09d3':
         """
         the validity NotBefore date attribute of the certificate.
         """
+        ...
 
     @property
     def SignatureAlgorithm(self) -> str:
         """
         the signature algorithm
         """
+        ...
 
     @property
     def SubjectName(self) -> str:
         """
         the subject name attribute of the certificate.
         """
+        ...
 
     @property
     def SubjectPublicKeyAlgorithm(self) -> str:
         """
         the algorithm of the subject public key
         """
+        ...
 
     @property
     def Version(self) -> int:
         """
         the version number attribute of the certificate.
         """
+        ...
 
 

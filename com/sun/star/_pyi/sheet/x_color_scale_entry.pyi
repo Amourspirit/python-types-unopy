@@ -35,21 +35,28 @@ class XColorScaleEntry(ABC):
     def getColor(self) -> 'Color_68e908c5':
         """
         """
+        ...
     def getFormula(self) -> str:
         """
         """
+        ...
     def getType(self) -> int:
         """
         See com.sun.star.sheet.ColorScaleEntryType for possible values.
         """
+        ...
     def setColor(self, Color: 'Color_68e908c5') -> None:
         """
         """
+        ...
     def setFormula(self, Formula: str) -> None:
         """
         """
+        ...
     def setType(self, Type: int) -> None:
         """
         See com.sun.star.sheet.ColorScaleEntryType for possible values.
         """
+        ...
+
 

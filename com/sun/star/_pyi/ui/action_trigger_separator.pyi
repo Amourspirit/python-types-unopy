@@ -36,5 +36,6 @@ class ActionTriggerSeparator(ABC):
         """
         determines the type of the separator using constants from ActionTriggerSeparatorType.
         """
+        ...
 
 

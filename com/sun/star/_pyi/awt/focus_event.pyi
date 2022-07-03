@@ -47,6 +47,7 @@ class FocusEvent(EventObject_a3d70b03):
             NextFocus (XInterface, optional): NextFocus value.
             Temporary (bool, optional): Temporary value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class FocusEvent(EventObject_a3d70b03):
         """
         specifies the reason for the focus change as an arithmetic-or combination of FocusChangeReason.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class FocusEvent(EventObject_a3d70b03):
         """
         contains the window which gets the focus on a lose focus event.
         """
+        ...
 
 
     @property
@@ -68,5 +71,6 @@ class FocusEvent(EventObject_a3d70b03):
         """
         specifies if this focus change event is a temporary change.
         """
+        ...
 
 

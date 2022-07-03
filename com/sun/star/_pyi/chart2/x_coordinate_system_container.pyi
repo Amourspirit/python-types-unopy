@@ -39,10 +39,12 @@ class XCoordinateSystemContainer(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getCoordinateSystems(self) -> 'typing.Tuple[XCoordinateSystem_7ff0e31, ...]':
         """
         retrieve all coordinate systems
         """
+        ...
     def removeCoordinateSystem(self, aCoordSys: 'XCoordinateSystem_7ff0e31') -> None:
         """
         removes one coordinate system from the coordinate system container.
@@ -50,6 +52,7 @@ class XCoordinateSystemContainer(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def setCoordinateSystems(self, aCoordinateSystems: 'typing.Tuple[XCoordinateSystem_7ff0e31, ...]') -> None:
         """
         set all coordinate systems
@@ -57,4 +60,6 @@ class XCoordinateSystemContainer(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

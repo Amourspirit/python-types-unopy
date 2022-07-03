@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.security
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XCertificateExtension(XInterface_8f010a43):
@@ -37,16 +37,20 @@ class XCertificateExtension(XInterface_8f010a43):
         """
         Check whether it is a critical extension.
         """
+        ...
+
     @property
-    def ExtensionId(self) -> 'typing.Tuple[int, ...]':
+    def ExtensionId(self) -> uno.ByteSequence:
         """
         Get the extension object identifier in string.
         """
+        ...
 
     @property
-    def ExtensionValue(self) -> 'typing.Tuple[int, ...]':
+    def ExtensionValue(self) -> uno.ByteSequence:
         """
         Get the extension value.
         """
+        ...
 
 

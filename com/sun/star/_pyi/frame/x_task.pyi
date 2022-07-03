@@ -37,14 +37,19 @@ class XTask(XFrame_7a570956):
     def arrangeWindowsHorizontal(self) -> None:
         """
         """
+        ...
     def arrangeWindowsVertical(self) -> None:
         """
         """
+        ...
     def close(self) -> bool:
         """
         use com.sun.star.util.XCloseable or com.sun.star.lang.XComponent.dispose() at a Frame instead of this one
         """
+        ...
     def tileWindows(self) -> None:
         """
         """
+        ...
+
 

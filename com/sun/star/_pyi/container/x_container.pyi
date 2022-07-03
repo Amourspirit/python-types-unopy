@@ -43,10 +43,13 @@ class XContainer(XInterface_8f010a43):
         
         It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
         """
+        ...
     def removeContainerListener(self, xListener: 'XContainerListener_4b89100c') -> None:
         """
         removes the specified listener so it does not receive any events from this container.
         
         It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
         """
+        ...
+
 

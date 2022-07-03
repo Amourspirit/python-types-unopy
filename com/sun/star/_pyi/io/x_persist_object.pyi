@@ -48,6 +48,7 @@ class XPersistObject(XInterface_8f010a43):
         
         This name is used to create such an object by a factory during deserialization.
         """
+        ...
     def read(self, InStream: 'XObjectInputStream_dfb60d0b') -> None:
         """
         reads all the persistent data of the object from the stream.
@@ -59,6 +60,7 @@ class XPersistObject(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def write(self, OutStream: 'XObjectOutputStream_ee190d8c') -> None:
         """
         writes all the persistent data of the object to the stream.
@@ -68,4 +70,6 @@ class XPersistObject(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

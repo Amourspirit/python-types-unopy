@@ -32,6 +32,7 @@ class CellVertJustify(Enum):
     See Also:
         `API CellVertJustify <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1table.html#a17834bec5bf9ac4432141dee1c03b50b>`_
     """
+    typeName: str = 'com.sun.star.table.CellVertJustify'
 
     BOTTOM: 'uno.Enum'
     """

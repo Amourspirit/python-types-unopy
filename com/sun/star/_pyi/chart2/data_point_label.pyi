@@ -48,6 +48,7 @@ class DataPointLabel(object):
             ShowCustomLabel (bool, optional): ShowCustomLabel value.
             ShowSeriesName (bool, optional): ShowSeriesName value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class DataPointLabel(object):
         """
         if TRUE, the value that is represented by a data point is displayed next to it.
         """
+        ...
 
 
     @property
@@ -66,6 +68,7 @@ class DataPointLabel(object):
         
         That means, if a data point is the first one of a series, the percentage is calculated by using the first data points of all available series.
         """
+        ...
 
 
     @property
@@ -73,6 +76,7 @@ class DataPointLabel(object):
         """
         The caption contains the category name of the category to which a data point belongs.
         """
+        ...
 
 
     @property
@@ -80,6 +84,7 @@ class DataPointLabel(object):
         """
         The symbol of data series is additionally displayed in the caption.
         """
+        ...
 
 
     @property
@@ -91,6 +96,7 @@ class DataPointLabel(object):
         
             LibreOffice 7.1
         """
+        ...
 
 
     @property
@@ -102,5 +108,6 @@ class DataPointLabel(object):
         
             LibreOffice 7.2
         """
+        ...
 
 

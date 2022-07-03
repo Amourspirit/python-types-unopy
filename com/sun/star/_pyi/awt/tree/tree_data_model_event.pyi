@@ -47,6 +47,7 @@ class TreeDataModelEvent(EventObject_a3d70b03):
             Nodes (typing.Tuple[XTreeNode, ...], optional): Nodes value.
             ParentNode (XTreeNode, optional): ParentNode value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class TreeDataModelEvent(EventObject_a3d70b03):
         
         All nodes must have ParentNode as parent.
         """
+        ...
 
 
     @property
@@ -65,5 +67,6 @@ class TreeDataModelEvent(EventObject_a3d70b03):
         
         If this is null, Nodes must contain only the root node
         """
+        ...
 
 

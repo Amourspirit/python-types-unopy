@@ -35,4 +35,6 @@ class XTextualDataSequence(XInterface_8f010a43):
         """
         retrieves the data as strings
         """
+        ...
+
 

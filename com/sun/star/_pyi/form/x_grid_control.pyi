@@ -42,8 +42,11 @@ class XGridControl(XGrid_6836089a, XGridFieldDataSupplier_34aa0f4c):
         """
         registers a listener which is to be notified about state changes in the grid control
         """
+        ...
     def removeGridControlListener(self, listener: 'XGridControlListener_19a70ec1') -> None:
         """
         revokes a previously registered grid control listener
         """
+        ...
+
 

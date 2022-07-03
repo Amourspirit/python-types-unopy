@@ -35,25 +35,32 @@ class XVBACompatibility(ABC):
     def addVBAScriptListener(self, Listener: 'XVBAScriptListener_533e0ff0') -> None:
         """
         """
+        ...
     def broadcastVBAScriptEvent(self, Identifier: int, ModuleName: str) -> None:
         """
         """
+        ...
     def removeVBAScriptListener(self, Listener: 'XVBAScriptListener_533e0ff0') -> None:
         """
         """
+        ...
+
     @property
     def ProjectName(self) -> str:
         """
         """
+        ...
 
     @property
     def RunningVBAScripts(self) -> int:
         """
         """
+        ...
 
     @property
     def VBACompatibilityMode(self) -> bool:
         """
         """
+        ...
 
 

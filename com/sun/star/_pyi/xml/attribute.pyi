@@ -42,6 +42,7 @@ class Attribute(object):
             NamespaceURL (str, optional): NamespaceURL value.
             Value (str, optional): Value value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class Attribute(object):
         """
         the attribute name
         """
+        ...
 
 
     @property
@@ -56,6 +58,7 @@ class Attribute(object):
         """
         the attribute namespace URL
         """
+        ...
 
 
     @property
@@ -63,5 +66,6 @@ class Attribute(object):
         """
         the attribute value
         """
+        ...
 
 

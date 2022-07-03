@@ -45,11 +45,13 @@ class DatabaseImportDescriptor(ABC):
         
             OOo 2.0
         """
+        ...
     @property
     def DatabaseName(self) -> str:
         """
         specifies the name of the database from which data is imported.
         """
+        ...
     @property
     def IsNative(self) -> bool:
         """
@@ -59,6 +61,7 @@ class DatabaseImportDescriptor(ABC):
         
             OOo 2.0
         """
+        ...
     @property
     def SourceObject(self) -> str:
         """
@@ -66,10 +69,12 @@ class DatabaseImportDescriptor(ABC):
         
         The meaning of this is determined by the DatabaseImportDescriptor.SourceType attribute.
         """
+        ...
     @property
     def SourceType(self) -> 'DataImportMode_d4630c9b':
         """
         enables importing and specifies from what type of source data is imported.
         """
+        ...
 
 

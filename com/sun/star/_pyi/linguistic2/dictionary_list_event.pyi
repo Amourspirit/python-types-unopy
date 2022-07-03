@@ -47,6 +47,7 @@ class DictionaryListEvent(EventObject_a3d70b03):
             aDictionaryEvents (typing.Tuple[DictionaryEvent, ...], optional): aDictionaryEvents value.
             nCondensedEvent (int, optional): nCondensedEvent value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class DictionaryListEvent(EventObject_a3d70b03):
         
         It will be empty if all com.sun.star.linguistic2.XDictionaryListEventListener are satisfied with the condensed representation of the com.sun.star.linguistic2.DictionaryListEvent.nCondensedEvent().
         """
+        ...
 
 
     @property
@@ -65,5 +67,6 @@ class DictionaryListEvent(EventObject_a3d70b03):
         
         The value can be the combination of multiple com.sun.star.linguistic2.DictionaryListEventFlags by applying the logical OR to them.
         """
+        ...
 
 

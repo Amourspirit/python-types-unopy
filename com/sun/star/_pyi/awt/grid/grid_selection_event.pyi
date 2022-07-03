@@ -19,6 +19,7 @@
 # Namespace: com.sun.star.awt.grid
 # Libre Office Version: 7.2
 from typing_extensions import Literal
+import uno
 from ...lang.event_object import EventObject as EventObject_a3d70b03
 from ...uno.x_interface import XInterface as XInterface_8f010a43
 import typing
@@ -35,28 +36,31 @@ class GridSelectionEvent(EventObject_a3d70b03):
     """
     typeName: Literal['com.sun.star.awt.grid.GridSelectionEvent']
 
-    def __init__(self, Source: typing.Optional[XInterface_8f010a43] = ..., SelectedRowIndexes: typing.Optional[typing.Tuple[int, ...]] = ..., SelectedColumnIndexes: typing.Optional[typing.Tuple[int, ...]] = ...) -> None:
+    def __init__(self, Source: typing.Optional[XInterface_8f010a43] = ..., SelectedRowIndexes: typing.Optional[uno.ByteSequence] = ..., SelectedColumnIndexes: typing.Optional[uno.ByteSequence] = ...) -> None:
         """
         Constructor
 
         Arguments:
             Source (XInterface, optional): Source value.
-            SelectedRowIndexes (typing.Tuple[int, ...], optional): SelectedRowIndexes value.
-            SelectedColumnIndexes (typing.Tuple[int, ...], optional): SelectedColumnIndexes value.
+            SelectedRowIndexes (uno.ByteSequence, optional): SelectedRowIndexes value.
+            SelectedColumnIndexes (uno.ByteSequence, optional): SelectedColumnIndexes value.
         """
+        ...
 
 
     @property
-    def SelectedRowIndexes(self) -> typing.Tuple[int, ...]:
+    def SelectedRowIndexes(self) -> uno.ByteSequence:
         """
         denotes the indexes of the rows being selected at the time the event was fired.
         """
+        ...
 
 
     @property
-    def SelectedColumnIndexes(self) -> typing.Tuple[int, ...]:
+    def SelectedColumnIndexes(self) -> uno.ByteSequence:
         """
         denotes the indexes of the columns being selected at the time the event was fired.
         """
+        ...
 
 

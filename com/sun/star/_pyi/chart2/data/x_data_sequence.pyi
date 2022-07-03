@@ -55,10 +55,12 @@ class XDataSequence(XInterface_8f010a43):
         
         Which strings exactly you return depends on the naming scheme of the application which provides its tabular data.
         """
+        ...
     def getData(self) -> 'typing.Tuple[object, ...]':
         """
         retrieves the data stored in this component.
         """
+        ...
     def getNumberFormatKeyByIndex(self, nIndex: int) -> int:
         """
         returns a number format key for the value at the given index in the data sequence.
@@ -72,8 +74,11 @@ class XDataSequence(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getSourceRangeRepresentation(self) -> str:
         """
         returns the (UI) range representation string used by this XDataSequence.
         """
+        ...
+
 

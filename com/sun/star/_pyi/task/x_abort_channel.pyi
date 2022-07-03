@@ -36,4 +36,6 @@ class XAbortChannel(ABC):
         """
         sends an abort notification to all commands associated with this channel.
         """
+        ...
+
 

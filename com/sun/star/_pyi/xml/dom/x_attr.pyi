@@ -36,18 +36,22 @@ class XAttr(XNode_83fb09a5):
         """
         Returns the name of this attribute.
         """
+        ...
     def getOwnerElement(self) -> 'XElement_a33d0ae9':
         """
         The Element node this attribute is attached to or null if this attribute is not in use.
         """
+        ...
     def getSpecified(self) -> bool:
         """
         If this attribute was explicitly given a value in the original document, this is true; otherwise, it is false.
         """
+        ...
     def getValue(self) -> str:
         """
         On retrieval, the value of the attribute is returned as a string.
         """
+        ...
     def setValue(self, value: str) -> None:
         """
         Sets the value of the attribute from a string.
@@ -57,4 +61,6 @@ class XAttr(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
+
 

@@ -38,14 +38,17 @@ class XShape(XShapeDescriptor_be80e5c):
         """
         gets the current position of this object.
         """
+        ...
     def getSize(self) -> 'Size_576707ef':
         """
         gets the size of this object.
         """
+        ...
     def setPosition(self, aPosition: 'Point_5fb2085e') -> None:
         """
         sets the current position of this object
         """
+        ...
     def setSize(self, aSize: 'Size_576707ef') -> None:
         """
         sets the size of this object.
@@ -53,4 +56,6 @@ class XShape(XShapeDescriptor_be80e5c):
         Raises:
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
         """
+        ...
+
 

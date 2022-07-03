@@ -42,6 +42,7 @@ class CommandInfo(object):
             Handle (int, optional): Handle value.
             ArgType (object, optional): ArgType value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class CommandInfo(object):
         """
         contains the name of a command.
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class CommandInfo(object):
         
         It may be -1 if the implementation has no handle.
         """
+        ...
 
 
     @property
@@ -65,5 +68,6 @@ class CommandInfo(object):
         """
         contains the type of the command's argument.
         """
+        ...
 
 

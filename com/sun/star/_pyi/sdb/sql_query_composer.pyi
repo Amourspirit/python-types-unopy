@@ -33,5 +33,6 @@ class SQLQueryComposer(XSQLQueryComposer_dd370ce7, XColumnsSupplier_f0600da9, XT
     See Also:
         `API SQLQueryComposer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1SQLQueryComposer.html>`_
     """
+    ...
 
 

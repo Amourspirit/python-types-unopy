@@ -36,5 +36,6 @@ class theDefaultProvider(XMultiServiceFactory_191e0eb6):
     See Also:
         `API theDefaultProvider <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1configuration_1_1theDefaultProvider.html>`_
     """
+    ...
 
 

@@ -37,5 +37,6 @@ class ChartGrid(LineProperties_f13f0da9, UserDefinedAttributesSupplier_9fbe1222,
     See Also:
         `API ChartGrid <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart_1_1ChartGrid.html>`_
     """
+    ...
 
 

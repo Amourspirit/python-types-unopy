@@ -40,5 +40,6 @@ class XSanExtension(XCertificateExtension_6ead10f8):
         """
         Contains the alternative names of a certificate.
         """
+        ...
 
 

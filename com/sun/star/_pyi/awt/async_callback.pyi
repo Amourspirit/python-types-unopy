@@ -29,5 +29,6 @@ class AsyncCallback(XRequestCallback_d4ac0ca2):
     See Also:
         `API AsyncCallback <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1AsyncCallback.html>`_
     """
+    ...
 
 

@@ -48,8 +48,7 @@ class XFastParser(XInterface_8f010a43):
     
     Setting a XFastTokenHandler with setTokenHandler() is optional, but without a XFastTokenHandler you will only get unknown sax events. This can be useful if you are only interested in the namespace handling and/or the context feature.
     
-    For each element the parser sends a create child element event to the elements parent context by calling XFastContextHandler.createFastChildContext() for known elements or XFastContextHandler.createUnknownChildContext() for unknown elements.
-    The parent context for the root element is the XFastDocumentHandler itself.
+    For each element the parser sends a create child element event to the elements parent context by calling XFastContextHandler.createFastChildContext() for known elements or XFastContextHandler.createUnknownChildContext() for unknown elements. The parent context for the root element is the XFastDocumentHandler itself.
     
     If the parent context returns an empty reference, no further events for the element and all of its children are created.
     
@@ -77,6 +76,7 @@ class XFastParser(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def parseStream(self, aInputSource: 'InputSource_c88c0c54') -> None:
         """
         parses an XML document from a stream.
@@ -87,6 +87,7 @@ class XFastParser(XInterface_8f010a43):
             SAXException: ``SAXException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def registerNamespace(self, NamespaceURL: str, NamespaceToken: int) -> None:
         """
         registers a known namespace url with the given integer token.
@@ -94,6 +95,7 @@ class XFastParser(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setCustomEntityNames(self, replacements: 'typing.Tuple[typing.Tuple[str, str], ...]') -> None:
         """
         Simulate a DTD file.
@@ -104,31 +106,39 @@ class XFastParser(XInterface_8f010a43):
         
             LibreOffice 7.1
         """
+        ...
     def setEntityResolver(self, Resolver: 'XEntityResolver_fcf10dfa') -> None:
         """
         allows an application to register a DTD-Handler.
         """
+        ...
     def setErrorHandler(self, Handler: 'XErrorHandler_e0860cf3') -> None:
         """
         allows an application to register an error event handler.
         
         Note that the error handler can throw an exception when an error or warning occurs. Note that an exception is thrown by the parser when an unrecoverable (fatal) error occurs.
         """
+        ...
     def setFastDocumentHandler(self, Handler: 'XFastDocumentHandler_454c0fb6') -> None:
         """
         Application must register a document event handler to get sax events for the parsed stream.
         """
+        ...
     def setLocale(self, locale: 'Locale_70d308fa') -> None:
         """
         sets a locale specified for localization of warnings and error messages.
         
         Set the language of the error messages. Useful when the parsing errors will be presented to the user.
         """
+        ...
     def setNamespaceHandler(self, Handler: 'XFastNamespaceHandler_549c1004') -> None:
         """
         """
+        ...
     def setTokenHandler(self, Handler: 'XFastTokenHandler_17510e78') -> None:
         """
         must be registered to translate known XML names to integer tokens.
         """
+        ...
+
 

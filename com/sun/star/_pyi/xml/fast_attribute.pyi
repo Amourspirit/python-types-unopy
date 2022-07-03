@@ -41,6 +41,7 @@ class FastAttribute(object):
             Token (int, optional): Token value.
             Value (str, optional): Value value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class FastAttribute(object):
         """
         the token corresponding to the attribute
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class FastAttribute(object):
         """
         the attribute value
         """
+        ...
 
 

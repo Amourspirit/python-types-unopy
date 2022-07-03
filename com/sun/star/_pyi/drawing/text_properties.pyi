@@ -53,6 +53,7 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         """
         If this is TRUE, numbering is ON for the text of this Shape.
         """
+        ...
     @property
     def NumberingRules(self) -> 'XIndexReplace_feed0dd7':
         """
@@ -60,11 +61,13 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         
         The different rules accessible with this com.sun.star.container.XIndexReplace interface are sequences of property values as described in the service com.sun.star.style.NumberingRule.
         """
+        ...
     @property
     def TextAnimationAmount(self) -> int:
         """
         This is the number of pixels the text is moved in each animation step.
         """
+        ...
     @property
     def TextAnimationCount(self) -> int:
         """
@@ -72,41 +75,49 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         
         If this is set to zero, the repeat is endless.
         """
+        ...
     @property
     def TextAnimationDelay(self) -> int:
         """
         This is the delay in thousandths of a second between each of the animation steps.
         """
+        ...
     @property
     def TextAnimationDirection(self) -> 'TextAnimationDirection_6c5510da':
         """
         This enumeration defines the direction in which the text moves.
         """
+        ...
     @property
     def TextAnimationKind(self) -> 'TextAnimationKind_1c710ebf':
         """
         This value defines the type of animation.
         """
+        ...
     @property
     def TextAnimationStartInside(self) -> bool:
         """
         If this value is TRUE, the text is visible at the start of the animation.
         """
+        ...
     @property
     def TextAnimationStopInside(self) -> bool:
         """
         If this value is TRUE, the text is visible at the end of the animation.
         """
+        ...
     @property
     def TextAutoGrowHeight(self) -> bool:
         """
         If this value is TRUE, the height of the Shape is automatically expanded/shrunk when text is added to or removed from the Shape.
         """
+        ...
     @property
     def TextAutoGrowWidth(self) -> bool:
         """
         If this value is TRUE, the width of the Shape is automatically expanded/shrunk when text is added to or removed from the Shape.
         """
+        ...
     @property
     def TextColumns(self) -> 'XTextColumns_b17f0bab':
         """
@@ -116,21 +127,25 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         
             LibreOffice 7.2
         """
+        ...
     @property
     def TextContourFrame(self) -> bool:
         """
         If this value is TRUE, the left edge of every line of text is aligned with the left edge of this Shape.
         """
+        ...
     @property
     def TextFitToSize(self) -> 'TextFitToSizeType_1bd90ebc':
         """
         With this set to a value other than NONE, the text inside of the Shape is stretched or scaled to fit into the Shape.
         """
+        ...
     @property
     def TextHorizontalAdjust(self) -> 'TextHorizontalAdjust_4cf9102e':
         """
         adjusts the horizontal position of the text inside of the Shape.
         """
+        ...
     @property
     def TextLeftDistance(self) -> int:
         """
@@ -138,6 +153,7 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         
         This is only useful if Text.TextHorizontalAdjust is BLOCK or STRETCH or if Text.TextFitSize is TRUE.
         """
+        ...
     @property
     def TextLowerDistance(self) -> int:
         """
@@ -145,6 +161,7 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         
         This is only useful if Text.TextVerticalAdjust is BLOCK or if Text.TextFitSize is TRUE.
         """
+        ...
     @property
     def TextMaximumFrameHeight(self) -> int:
         """
@@ -152,6 +169,7 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         
         On edit, the auto grow feature will not grow the object higher than the value of this property.
         """
+        ...
     @property
     def TextMaximumFrameWidth(self) -> int:
         """
@@ -159,6 +177,7 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         
         On edit, the auto grow feature will not grow the objects wider than the value of this property.
         """
+        ...
     @property
     def TextMinimumFrameHeight(self) -> int:
         """
@@ -166,6 +185,7 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         
         On edit, the auto grow feature will not shrink the objects height smaller than the value of this property.
         """
+        ...
     @property
     def TextMinimumFrameWidth(self) -> int:
         """
@@ -173,6 +193,7 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         
         On edit, the auto grow feature will not shrink the object width smaller than the value of this property.
         """
+        ...
     @property
     def TextRightDistance(self) -> int:
         """
@@ -180,6 +201,7 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         
         This is only useful if Text.TextHorizontalAdjust is BLOCK or STRETCH or if Text.TextFitSize is TRUE.
         """
+        ...
     @property
     def TextUpperDistance(self) -> int:
         """
@@ -187,15 +209,18 @@ class TextProperties(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a
         
         This is only useful if Text.TextVerticalAdjust is BLOCK or if Text.TextFitSize is TRUE.
         """
+        ...
     @property
     def TextVerticalAdjust(self) -> 'TextVerticalAdjust_2c160f3e':
         """
         adjusts the vertical position of the text inside of the Shape.
         """
+        ...
     @property
     def TextWritingMode(self) -> 'WritingMode_a6dd0b36':
         """
         This value selects the writing mode for the text.
         """
+        ...
 
 

@@ -44,31 +44,37 @@ class LineProperties(ABC):
         """
         This property defines the rendering of ends of thick lines.
         """
+        ...
     @property
     def LineColor(self) -> 'Color_68e908c5':
         """
         This property contains the line color.
         """
+        ...
     @property
     def LineDash(self) -> 'LineDash_a54e0afc':
         """
         This property contains the dash of the line.
         """
+        ...
     @property
     def LineDashName(self) -> str:
         """
         This property contains the name of the dash of the line.
         """
+        ...
     @property
     def LineEnd(self) -> 'PolyPolygonBezierCoords_7ec5114b':
         """
         This property contains the line end in the form of a poly polygon Bezier.
         """
+        ...
     @property
     def LineEndCenter(self) -> bool:
         """
         If this property is TRUE, the line will end in the center of the polygon.
         """
+        ...
     @property
     def LineEndName(self) -> str:
         """
@@ -76,26 +82,31 @@ class LineProperties(ABC):
         
         If this string is empty, no line end polygon is rendered.
         """
+        ...
     @property
     def LineEndWidth(self) -> int:
         """
         This property contains the width of the line end polygon.
         """
+        ...
     @property
     def LineJoint(self) -> 'LineJoint_b1020b80':
         """
         This property defines the rendering of joints between thick lines.
         """
+        ...
     @property
     def LineStart(self) -> 'PolyPolygonBezierCoords_7ec5114b':
         """
         This property contains the line start in the form of a poly polygon Bezier.
         """
+        ...
     @property
     def LineStartCenter(self) -> bool:
         """
         If this property is TRUE, the line will start from the center of the polygon.
         """
+        ...
     @property
     def LineStartName(self) -> str:
         """
@@ -103,25 +114,30 @@ class LineProperties(ABC):
         
         If this string is empty, no line start polygon is rendered.
         """
+        ...
     @property
     def LineStartWidth(self) -> int:
         """
         This property contains the width of the line start polygon.
         """
+        ...
     @property
     def LineStyle(self) -> 'LineStyle_b1600b8d':
         """
         This property contains the type of the line.
         """
+        ...
     @property
     def LineTransparence(self) -> int:
         """
         This property contains the extent of transparency.
         """
+        ...
     @property
     def LineWidth(self) -> int:
         """
         This property contains the width of the line in 1/100th mm.
         """
+        ...
 
 

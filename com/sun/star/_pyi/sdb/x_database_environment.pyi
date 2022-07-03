@@ -43,10 +43,13 @@ class XDatabaseEnvironment(XDriverManager_c6470c23):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getDatabaseAccess(self, URL: str) -> 'XDatabaseAccess_c47a0c00':
         """
 
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

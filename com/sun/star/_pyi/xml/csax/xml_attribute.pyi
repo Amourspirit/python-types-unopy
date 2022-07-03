@@ -41,6 +41,7 @@ class XMLAttribute(object):
             sName (str, optional): sName value.
             sValue (str, optional): sValue value.
         """
+        ...
 
 
     @property
@@ -48,6 +49,7 @@ class XMLAttribute(object):
         """
         the attribute name
         """
+        ...
 
 
     @property
@@ -55,5 +57,6 @@ class XMLAttribute(object):
         """
         the attribute value
         """
+        ...
 
 

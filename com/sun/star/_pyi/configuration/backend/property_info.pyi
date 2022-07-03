@@ -43,6 +43,7 @@ class PropertyInfo(object):
             Value (object, optional): Value value.
             Protected (bool, optional): Protected value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class PropertyInfo(object):
         
         org.openoffice.Inet/Settings/ooInetHTTPProxyName
         """
+        ...
 
 
     @property
@@ -59,6 +61,7 @@ class PropertyInfo(object):
         """
         The type of the Property.
         """
+        ...
 
 
     @property
@@ -66,6 +69,7 @@ class PropertyInfo(object):
         """
         The value of the property.
         """
+        ...
 
 
     @property
@@ -73,5 +77,6 @@ class PropertyInfo(object):
         """
         Is the property protected, if true the property can not be over written in later layer.
         """
+        ...
 
 

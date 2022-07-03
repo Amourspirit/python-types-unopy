@@ -32,5 +32,6 @@ class PrimitiveFactory2D(XPrimitiveFactory2D_398c0f45):
     See Also:
         `API PrimitiveFactory2D <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1graphic_1_1PrimitiveFactory2D.html>`_
     """
+    ...
 
 

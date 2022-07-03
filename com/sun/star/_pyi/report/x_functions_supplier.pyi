@@ -38,5 +38,6 @@ class XFunctionsSupplier(ABC):
         """
         access to the functions
         """
+        ...
 
 

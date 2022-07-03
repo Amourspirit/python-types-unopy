@@ -45,6 +45,7 @@ class XShapes2(ABC):
         
             LibreOffice 4.2
         """
+        ...
     def addTop(self, xShape: 'XShape_8fd00a3d') -> None:
         """
         Insert a new shape to the top of the stack.
@@ -53,4 +54,6 @@ class XShapes2(ABC):
         
             LibreOffice 4.2
         """
+        ...
+
 

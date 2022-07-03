@@ -35,5 +35,6 @@ class AccessibleIconChoiceControl(AccessibleContext_7e0e1143, XAccessibleCompone
     See Also:
         `API AccessibleIconChoiceControl <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1AccessibleIconChoiceControl.html>`_
     """
+    ...
 
 

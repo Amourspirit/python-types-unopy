@@ -42,5 +42,6 @@ class FilterOptionsDialog(XPropertyAccess_e1d40d20, XExecutableDialog_450f0fa1):
     See Also:
         `API FilterOptionsDialog <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ui_1_1dialogs_1_1FilterOptionsDialog.html>`_
     """
+    ...
 
 

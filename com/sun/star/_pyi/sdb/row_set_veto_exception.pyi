@@ -46,6 +46,7 @@ class RowSetVetoException(SQLException_acc90b43):
             ErrorCode (int, optional): ErrorCode value.
             NextException (object, optional): NextException value.
         """
+        ...
 
 __all__ = ['RowSetVetoException']
 

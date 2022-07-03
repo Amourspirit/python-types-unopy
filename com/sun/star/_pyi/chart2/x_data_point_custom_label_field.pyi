@@ -40,13 +40,18 @@ class XDataPointCustomLabelField(XFormattedString2_8010df3):
     def getFieldType(self) -> 'DataPointCustomLabelFieldType_cc7712b1':
         """
         """
+        ...
     def getGuid(self) -> str:
         """
         """
+        ...
     def setFieldType(self, fieldType: 'DataPointCustomLabelFieldType_cc7712b1') -> None:
         """
         """
+        ...
     def setGuid(self, guid: str) -> None:
         """
         """
+        ...
+
 

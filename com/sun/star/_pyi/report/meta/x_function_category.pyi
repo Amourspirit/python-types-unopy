@@ -42,16 +42,20 @@ class XFunctionCategory(XPropertySet_bc180bfa, XIndexAccess_f0910d6d):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
     @property
     def Name(self) -> str:
         """
         returns the localized category's name.
         """
+        ...
 
     @property
     def Number(self) -> int:
         """
         specifies the category number.
         """
+        ...
 
 

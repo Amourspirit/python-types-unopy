@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.lang
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XUnoTunnel(XInterface_8f010a43):
@@ -35,10 +35,12 @@ class XUnoTunnel(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.lang.XUnoTunnel']
 
-    def getSomething(self, aIdentifier: 'typing.Tuple[int, ...]') -> int:
+    def getSomething(self, aIdentifier: uno.ByteSequence) -> int:
         """
         Call this method to get something which is not specified in UNO, e.g.
         
         an address to some C++ object.
         """
+        ...
+
 

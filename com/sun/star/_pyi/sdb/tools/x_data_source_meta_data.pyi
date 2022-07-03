@@ -36,4 +36,6 @@ class XDataSourceMetaData(ABC):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

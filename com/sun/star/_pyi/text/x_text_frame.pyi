@@ -36,4 +36,6 @@ class XTextFrame(XTextContent_b16e0ba5):
     def getText(self) -> 'XText_690408ca':
         """
         """
+        ...
+
 

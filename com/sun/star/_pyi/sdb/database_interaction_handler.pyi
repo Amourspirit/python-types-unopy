@@ -33,5 +33,6 @@ class DatabaseInteractionHandler(XInteractionHandler2_1a7b0e83):
     See Also:
         `API DatabaseInteractionHandler <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1DatabaseInteractionHandler.html>`_
     """
+    ...
 
 

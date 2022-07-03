@@ -49,6 +49,7 @@ class XAccessController(XInterface_8f010a43):
         Raises:
             AccessControlException: ``AccessControlException``
         """
+        ...
     def doPrivileged(self, action: 'XAction_a72e0b36', restriction: 'XAccessControlContext_6d6a10f0') -> object:
         """
         Perform the specified action adding a set of permissions defined by the given XAccessControlContext.
@@ -60,6 +61,7 @@ class XAccessController(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def doRestricted(self, action: 'XAction_a72e0b36', restriction: 'XAccessControlContext_6d6a10f0') -> object:
         """
         Perform the specified action restricting permissions to the given XAccessControlContext.
@@ -71,10 +73,13 @@ class XAccessController(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getContext(self) -> 'XAccessControlContext_6d6a10f0':
         """
         This method takes a \"snapshot\" of the current calling context and returns it.
         
         This context may then be checked at a later point, possibly in another thread.
         """
+        ...
+
 

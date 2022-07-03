@@ -54,6 +54,7 @@ class XSingleLayerStratum(XInterface_8f010a43):
             BackendAccessException: ``BackendAccessException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getUpdatableLayer(self, aComponent: str) -> 'XUpdatableLayer_ec97135d':
         """
         retrieves a writable representation of the layer for a component.
@@ -63,4 +64,6 @@ class XSingleLayerStratum(XInterface_8f010a43):
             com.sun.star.lang.NoSupportException: ``NoSupportException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

@@ -35,5 +35,6 @@ class OleBridgeSupplier(XBridgeSupplier_ede00d6e):
     See Also:
         `API OleBridgeSupplier <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1bridge_1_1OleBridgeSupplier.html>`_
     """
+    ...
 
 

@@ -44,6 +44,7 @@ class ClipboardEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Contents (XTransferable, optional): Contents value.
         """
+        ...
 
 
     @property
@@ -51,5 +52,6 @@ class ClipboardEvent(EventObject_a3d70b03):
         """
         The current content of the clipboard.
         """
+        ...
 
 

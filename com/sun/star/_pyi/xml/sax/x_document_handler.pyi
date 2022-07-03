@@ -43,6 +43,7 @@ class XDocumentHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def endDocument(self) -> None:
         """
         receives notification of the end of a document.
@@ -50,6 +51,7 @@ class XDocumentHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def endElement(self, aName: str) -> None:
         """
         receives notification of the end of an element.
@@ -57,6 +59,7 @@ class XDocumentHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def ignorableWhitespace(self, aWhitespaces: str) -> None:
         """
         receives notification of white space that can be ignored.
@@ -64,6 +67,7 @@ class XDocumentHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def processingInstruction(self, aTarget: str, aData: str) -> None:
         """
         receives notification of a processing instruction.
@@ -71,6 +75,7 @@ class XDocumentHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def setDocumentLocator(self, xLocator: 'XLocator_a3fb0aff') -> None:
         """
         receives an object for locating the origin of SAX document events.
@@ -78,6 +83,7 @@ class XDocumentHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def startDocument(self) -> None:
         """
         receives notification of the beginning of a document.
@@ -85,6 +91,7 @@ class XDocumentHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def startElement(self, aName: str, xAttribs: 'XAttributeList_eec70d7b') -> None:
         """
         receives notification of the beginning of an element .
@@ -92,4 +99,6 @@ class XDocumentHandler(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
+
 

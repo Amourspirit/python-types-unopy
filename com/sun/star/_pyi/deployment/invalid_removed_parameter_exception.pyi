@@ -50,11 +50,13 @@ class InvalidRemovedParameterException(Exception_85530a09):
             PreviousValue (bool, optional): PreviousValue value.
             Extension (XPackage, optional): Extension value.
         """
+        ...
     @property
     def PreviousValue(self) -> bool:
         """
         the value of the removed parameter which was used in XPackageRegistry.bindPackage() to create the currently existing XPackage object.
         """
+        ...
 
     @property
     def Extension(self) -> XPackage_cb1f0c4d:
@@ -63,6 +65,7 @@ class InvalidRemovedParameterException(Exception_85530a09):
         
         Must not be NULL.
         """
+        ...
 
 
 __all__ = ['InvalidRemovedParameterException']

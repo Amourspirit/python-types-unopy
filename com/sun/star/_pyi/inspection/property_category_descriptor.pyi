@@ -46,6 +46,7 @@ class PropertyCategoryDescriptor(object):
             UIName (str, optional): UIName value.
             HelpURL (str, optional): HelpURL value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class PropertyCategoryDescriptor(object):
         
         This programmatic name is used internally: XPropertyHandler.describePropertyLine() sets a programmatic category name at LineDescriptor.Category, and an object inspector uses this to find the proper PropertyCategoryDescriptor.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class PropertyCategoryDescriptor(object):
         """
         provides a human-readable name (which can be presented at the UI) for a category.
         """
+        ...
 
 
     @property
@@ -69,5 +72,6 @@ class PropertyCategoryDescriptor(object):
         """
         provides a help URL to be associated with a category
         """
+        ...
 
 

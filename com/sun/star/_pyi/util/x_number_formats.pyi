@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.util
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..beans.x_property_set import XPropertySet as XPropertySet_bc180bfa
@@ -43,6 +44,7 @@ class XNumberFormats(XInterface_8f010a43):
         Raises:
             com.sun.star.util.MalformedNumberFormatException: ``MalformedNumberFormatException``
         """
+        ...
     def addNewConverted(self, aFormat: str, nLocale: 'Locale_70d308fa', nNewLocale: 'Locale_70d308fa') -> int:
         """
         adds a new number format to the list, using a format string in a different locale than the desired locale of the resulting number format.
@@ -50,22 +52,29 @@ class XNumberFormats(XInterface_8f010a43):
         Raises:
             com.sun.star.util.MalformedNumberFormatException: ``MalformedNumberFormatException``
         """
+        ...
     def generateFormat(self, nBaseKey: int, nLocale: 'Locale_70d308fa', bThousands: bool, bRed: bool, nDecimals: int, nLeading: int) -> str:
         """
         generates a format string from several parameters without creating an actual number format.
         """
+        ...
     def getByKey(self, nKey: int) -> 'XPropertySet_bc180bfa':
         """
         """
+        ...
     def queryKey(self, aFormat: str, nLocale: 'Locale_70d308fa', bScan: bool) -> int:
         """
         finds a number format by its format string and returns its key.
         """
-    def queryKeys(self, nType: int, nLocale: 'Locale_70d308fa', bCreate: bool) -> 'typing.Tuple[int, ...]':
+        ...
+    def queryKeys(self, nType: int, nLocale: 'Locale_70d308fa', bCreate: bool) -> uno.ByteSequence:
         """
         """
+        ...
     def removeByKey(self, nKey: int) -> None:
         """
         removes a number format from the list.
         """
+        ...
+
 

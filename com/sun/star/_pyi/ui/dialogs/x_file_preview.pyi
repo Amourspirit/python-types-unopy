@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.ui.dialogs
 from typing_extensions import Literal
 import typing
+import uno
 from ...uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ...util.color import Color as Color_68e908c5
@@ -39,26 +40,31 @@ class XFilePreview(XInterface_8f010a43):
         
         If a service implementation doesn't support a file preview 0 will be returned.
         """
+        ...
     def getAvailableWidth(self) -> int:
         """
         The method returns the available width of the preview window even if the window is invisible or could not be created.
         
         If a service implementation doesn't support a file preview 0 will be returned.
         """
+        ...
     def getShowState(self) -> bool:
         """
         Returns the current show state of the preview.
         
         A value of FALSE if the preview window is invisible.
         """
-    def getSupportedImageFormats(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getSupportedImageFormats(self) -> uno.ByteSequence:
         """
         The method returns all image formats that the preview supports.
         """
+        ...
     def getTargetColorDepth(self) -> 'Color_68e908c5':
         """
         The method returns the supported color depth of the target device.
         """
+        ...
     def setImage(self, aImageFormat: int, aImage: object) -> None:
         """
         Sets a new image.
@@ -68,6 +74,7 @@ class XFilePreview(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setShowState(self, bShowState: bool) -> bool:
         """
         Optionally sets the current show state of the preview.
@@ -78,4 +85,6 @@ class XFilePreview(XInterface_8f010a43):
         
         A value of FALSE if the operation fails for any reason or the preview implementation doesn't support hiding the preview.
         """
+        ...
+
 

@@ -41,6 +41,7 @@ class XStringKeyMap(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getValue(self, aKey: str) -> object:
         """
         reads data from the map.
@@ -48,6 +49,7 @@ class XStringKeyMap(ABC):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def getValueByIndex(self, nIndex: int) -> object:
         """
         obtains the value of an element by index.
@@ -55,10 +57,12 @@ class XStringKeyMap(ABC):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def hasValue(self, aKey: str) -> bool:
         """
         checks for element existence.
         """
+        ...
     def insertValue(self, aKey: str, aValue: object) -> None:
         """
         writes data to the map.
@@ -67,10 +71,13 @@ class XStringKeyMap(ABC):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
+
     @property
     def Count(self) -> int:
         """
         the number of elements in the map.
         """
+        ...
 
 

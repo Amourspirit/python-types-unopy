@@ -38,4 +38,6 @@ class XPrinterServer2(XPrinterServer_bc810c07):
         """
         returns the current default printer name
         """
+        ...
+
 

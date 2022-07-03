@@ -34,36 +34,46 @@ class XAttributes(XInterface_8f010a43):
         """
         Gets attribute index passing a QName.
         """
+        ...
     def getIndexByUidName(self, uid: int, localName: str) -> int:
         """
         Gets attribute index passing a namespace uid and a local name.
         """
+        ...
     def getLength(self) -> int:
         """
         Gets the number of attributes.
         """
+        ...
     def getLocalNameByIndex(self, nIndex: int) -> str:
         """
         Gets the local name of an attribute.
         """
+        ...
     def getQNameByIndex(self, nIndex: int) -> str:
         """
         Gets the QName of an attribute.
         """
+        ...
     def getTypeByIndex(self, nIndex: int) -> str:
         """
         Gets the type of an attribute, if possible.
         """
+        ...
     def getUidByIndex(self, nIndex: int) -> int:
         """
         Gets the namespace uid of an attribute.
         """
+        ...
     def getValueByIndex(self, nIndex: int) -> str:
         """
         Gets the value of an attribute.
         """
+        ...
     def getValueByUidName(self, uid: int, localName: str) -> str:
         """
         For convenience: Gets the value of an attribute passing uid, local name.
         """
+        ...
+
 

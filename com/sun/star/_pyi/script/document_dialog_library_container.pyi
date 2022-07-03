@@ -47,8 +47,10 @@ class DocumentDialogLibraryContainer(XStorageBasedLibraryContainer_d72a1321):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def createWithURL(self, URL: str) -> None:
         """
         """
+        ...
 
 

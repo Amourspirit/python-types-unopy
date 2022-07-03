@@ -31,8 +31,7 @@ class XObjectNames(ABC):
     
     All of the functionality present in this interface depends on a connection, thus it entry point for obtaining it is a com.sun.star.sdb.Connection service.
     
-    The component itself does not have life-time control mechanisms, i.e. you cannot explicitly dispose it (com.sun.star.lang.XComponent.dispose()), and you cannot be notified when it dies.
-    However, if your try to access any of its methods or attributes, after the connection which was used to create it was closed, a com.sun.star.lang.DisposedException will be thrown.
+    The component itself does not have life-time control mechanisms, i.e. you cannot explicitly dispose it (com.sun.star.lang.XComponent.dispose()), and you cannot be notified when it dies.However, if your try to access any of its methods or attributes, after the connection which was used to create it was closed, a com.sun.star.lang.DisposedException will be thrown.
     
     **since**
     
@@ -52,12 +51,14 @@ class XObjectNames(ABC):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def convertToSQLName(self, Name: str) -> str:
         """
         converts the given object name to a name which is valid in the database.
         
         The conversion takes place by converting every character which is neither allowed by the SQL-92 standard, nor part of the special characters supported by the database, with an underscore character (_).
         """
+        ...
     def isNameUsed(self, CommandType: int, Name: str) -> bool:
         """
         checks whether a given name is used as table respectively query name in the database.
@@ -70,6 +71,7 @@ class XObjectNames(ABC):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def isNameValid(self, CommandType: int, Name: str) -> bool:
         """
         checks whether a given name is valid as table or query name
@@ -81,6 +83,7 @@ class XObjectNames(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def suggestName(self, CommandType: int, BaseName: str) -> str:
         """
         suggests a (unique) table or query name
@@ -95,4 +98,6 @@ class XObjectNames(ABC):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

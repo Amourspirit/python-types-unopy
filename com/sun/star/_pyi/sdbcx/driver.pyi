@@ -36,5 +36,6 @@ class Driver(Driver_70e70910, XCreateCatalog_d3410c83, XDataDefinitionSupplier_5
     See Also:
         `API Driver <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdbcx_1_1Driver.html>`_
     """
+    ...
 
 

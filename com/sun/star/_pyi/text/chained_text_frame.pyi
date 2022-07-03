@@ -38,6 +38,7 @@ class ChainedTextFrame(TextFrame_90410a5d):
         
         An empty string indicates that there is no previous frame.
         """
+        ...
     @property
     def ChainPrevName(self) -> str:
         """
@@ -45,5 +46,6 @@ class ChainedTextFrame(TextFrame_90410a5d):
         
         An empty string indicates that there is no next frame.
         """
+        ...
 
 

@@ -31,5 +31,6 @@ class SharedLibrary(XImplementationLoader_498f0ff4):
     See Also:
         `API SharedLibrary <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1loader_1_1SharedLibrary.html>`_
     """
+    ...
 
 

@@ -47,6 +47,7 @@ class ContentEvent(EventObject_a3d70b03):
             Content (XContent, optional): Content value.
             Id (XContentIdentifier, optional): Id value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class ContentEvent(EventObject_a3d70b03):
         
         The value can be one of the ContentAction constants.
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class ContentEvent(EventObject_a3d70b03):
         
         This member must be filled as follows:
         """
+        ...
 
 
     @property
@@ -74,5 +77,6 @@ class ContentEvent(EventObject_a3d70b03):
         
         This member must be filled as follows:
         """
+        ...
 
 

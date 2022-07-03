@@ -45,10 +45,12 @@ class XParametricPolyPolygon2D(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getColorSpace(self) -> 'XColorSpace_e3940d09':
         """
         Query the color space employed by this object.
         """
+        ...
     def getOutline(self, t: float) -> 'XPolyPolygon2D_e1b0e20':
         """
         Query the polygonal outline at the specified value.
@@ -58,6 +60,7 @@ class XParametricPolyPolygon2D(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getPointColor(self, point: 'RealPoint2D_d6e70c78') -> 'typing.Tuple[ColorComponent_e4c0e78, ...]':
         """
         Query the color for a dedicated point in the plane.
@@ -65,4 +68,6 @@ class XParametricPolyPolygon2D(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

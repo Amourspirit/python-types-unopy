@@ -33,5 +33,6 @@ class GlobalAcceleratorConfiguration(XAcceleratorConfiguration_46580ffb):
     See Also:
         `API GlobalAcceleratorConfiguration <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ui_1_1GlobalAcceleratorConfiguration.html>`_
     """
+    ...
 
 

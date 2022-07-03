@@ -36,35 +36,42 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         """
         determines the category of a paragraph style.
         """
+        ...
     @property
     def CharDiffHeight(self) -> float:
         """
         """
+        ...
     @property
     def CharDiffHeightAsian(self) -> float:
         """
         This value contains the character height as difference in point to the height of the character in the parent style in Asian text.
         """
+        ...
     @property
     def CharDiffHeightComplex(self) -> float:
         """
         This value contains the character height as difference in point to the height of the character in the parent style in complex text.
         """
+        ...
     @property
     def CharPropHeight(self) -> int:
         """
         This value contains the character height as percentage value relative to the height of the character in the parent style.
         """
+        ...
     @property
     def CharPropHeightAsian(self) -> int:
         """
         This value contains the character height as percentage value relative to the height of the character in the parent style in Asian text.
         """
+        ...
     @property
     def CharPropHeightComplex(self) -> int:
         """
         This value contains the character height as percentage value relative to the height of the character in the parent style in complex text.
         """
+        ...
     @property
     def PageStyleName(self) -> str:
         """
@@ -72,6 +79,7 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         
         For setting the page style you have to use the com.sun.star.text.PageDescName properties.
         """
+        ...
     @property
     def ParaBottomMarginRelative(self) -> int:
         """
@@ -79,6 +87,7 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         
         If the value of ParaBottomMarginRelative is 100 the current ParaBottomMargin value is used.
         """
+        ...
     @property
     def ParaLeftMarginRelative(self) -> int:
         """
@@ -86,6 +95,7 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         
         If the value of ParaLeftMarginRelative is 100 the current ParaLeftMargin value is used.
         """
+        ...
     @property
     def ParaRightMarginRelative(self) -> int:
         """
@@ -93,6 +103,7 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         
         If the value of ParaRightMarginRelative is 100 the current ParaRightMargin value is used.
         """
+        ...
     @property
     def ParaTopMarginRelative(self) -> int:
         """
@@ -100,5 +111,6 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         
         If the value of ParaTopMarginRelative is 100 the current ParaTopMargin value is used.
         """
+        ...
 
 

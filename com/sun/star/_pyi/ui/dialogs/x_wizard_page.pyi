@@ -41,6 +41,7 @@ class XWizardPage(XComponent_98dc0ab5):
         """
         called when the page is activated
         """
+        ...
     def canAdvance(self) -> bool:
         """
         determines whether it is allowed to travel to a later page in the wizard
@@ -49,12 +50,15 @@ class XWizardPage(XComponent_98dc0ab5):
         
         If checked for validity is expensive, or if you prefer giving your user more detailed feedback on validity than a disabled Next button in the wizard, then move your checks to the commitPage() method.
         """
+        ...
     def commitPage(self, Reason: int) -> bool:
         """
         is called when the page is about to be left
         
         An implementation can veto the leave by returning FALSE here. Usually, the decision about this depends on the current state of the page.
         """
+        ...
+
     @property
     def PageId(self) -> int:
         """
@@ -62,11 +66,13 @@ class XWizardPage(XComponent_98dc0ab5):
         
         Within a wizard, no two pages are allowed to have the same ID.
         """
+        ...
 
     @property
     def Window(self) -> 'XWindow_713b0924':
         """
         provides read-only access to the window of the page
         """
+        ...
 
 

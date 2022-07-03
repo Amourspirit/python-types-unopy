@@ -36,5 +36,6 @@ class ReferencePageGet(TextField_90260a56):
         """
         specifies the type of the numbering as com.sun.star.style.NumberingType
         """
+        ...
 
 

@@ -53,6 +53,7 @@ class Gradient(object):
             EndIntensity (int, optional): EndIntensity value.
             StepCount (int, optional): StepCount value.
         """
+        ...
 
 
     @property
@@ -60,6 +61,7 @@ class Gradient(object):
         """
         specifies the style of the gradient.
         """
+        ...
 
 
     @property
@@ -67,6 +69,7 @@ class Gradient(object):
         """
         specifies the color at the start point of the gradient.
         """
+        ...
 
 
     @property
@@ -74,6 +77,7 @@ class Gradient(object):
         """
         specifies the color at the end point of the gradient.
         """
+        ...
 
 
     @property
@@ -81,6 +85,7 @@ class Gradient(object):
         """
         angle of the gradient in 1/10 degree.
         """
+        ...
 
 
     @property
@@ -88,6 +93,7 @@ class Gradient(object):
         """
         per cent of the total width where just the start color is used.
         """
+        ...
 
 
     @property
@@ -97,6 +103,7 @@ class Gradient(object):
         
         This is effectively the center of the RADIAL, ELLIPTICAL, SQUARE and RECT style gradients.
         """
+        ...
 
 
     @property
@@ -106,6 +113,7 @@ class Gradient(object):
         
         See previous field.
         """
+        ...
 
 
     @property
@@ -115,6 +123,7 @@ class Gradient(object):
         
         What that means is undefined.
         """
+        ...
 
 
     @property
@@ -122,6 +131,7 @@ class Gradient(object):
         """
         specifies the intensity at the end point of the gradient.
         """
+        ...
 
 
     @property
@@ -131,5 +141,6 @@ class Gradient(object):
         
         What that means is undefined.
         """
+        ...
 
 

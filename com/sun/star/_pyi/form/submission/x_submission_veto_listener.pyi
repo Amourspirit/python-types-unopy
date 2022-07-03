@@ -40,4 +40,6 @@ class XSubmissionVetoListener(XEventListener_c7230c4a):
         Raises:
             com.sun.star.util.VetoException: ``VetoException``
         """
+        ...
+
 

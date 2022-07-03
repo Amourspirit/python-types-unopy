@@ -40,6 +40,7 @@ class GraphicRendererVCL(XPropertySet_bc180bfa, XGraphicRenderer_aca0e33):
         """
         Specifies the destination rectangle, into which the graphic content is to be rendered onto the device.
         """
+        ...
     @property
     def Device(self) -> object:
         """
@@ -47,10 +48,12 @@ class GraphicRendererVCL(XPropertySet_bc180bfa, XGraphicRenderer_aca0e33):
         
         In case of using VCL Devices, this property should hold a com.sun.star.awt.XDevice interface
         """
+        ...
     @property
     def RenderData(self) -> object:
         """
         Additional properties for rendering, unspecified at the moment.
         """
+        ...
 
 

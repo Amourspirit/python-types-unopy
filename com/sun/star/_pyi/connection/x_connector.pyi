@@ -43,4 +43,6 @@ class XConnector(XInterface_8f010a43):
             NoConnectException: ``NoConnectException``
             ConnectionSetupException: ``ConnectionSetupException``
         """
+        ...
+
 

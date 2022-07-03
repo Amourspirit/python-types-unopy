@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.sdbc
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..io.x_input_stream import XInputStream as XInputStream_98d40ab4
@@ -39,8 +40,7 @@ class XSQLOutput(XInterface_8f010a43):
     
     This interface, used only for custom mapping, is used by the driver, and its methods are never directly invoked by a programmer.
     
-    When an object of a class implementing interface com.sun.star.sdbc.XSQLData is passed as an argument to a SQL statement, the JDBC driver calls com.sun.star.sdbc.SQLData.getSQLType() to determine the kind of SQL datum being passed to the database.
-    The driver then creates an instance of XSQLOutput and passes it to the method com.sun.star.sdbc.XSQLData.writeSQL() . The method writeSQL in turn calls the appropriate XSQLOutput.writeXXX methods to write data from the com.sun.star.sdbc.XSQLData object to the XSQLOutput output stream as the representation of a SQL user-defined type.
+    When an object of a class implementing interface com.sun.star.sdbc.XSQLData is passed as an argument to a SQL statement, the JDBC driver calls com.sun.star.sdbc.SQLData.getSQLType() to determine the kind of SQL datum being passed to the database. The driver then creates an instance of XSQLOutput and passes it to the method com.sun.star.sdbc.XSQLData.writeSQL() . The method writeSQL in turn calls the appropriate XSQLOutput.writeXXX methods to write data from the com.sun.star.sdbc.XSQLData object to the XSQLOutput output stream as the representation of a SQL user-defined type.
 
     See Also:
         `API XSQLOutput <https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1sdbc_1_1XSQLOutput.html>`_
@@ -54,6 +54,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeBinaryStream(self, x: 'XInputStream_98d40ab4') -> None:
         """
         writes the next attribute to the stream as a stream of uninterpreted bytes.
@@ -61,6 +62,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeBlob(self, x: 'XBlob_6773087b') -> None:
         """
         writes a BLOB to the stream.
@@ -68,6 +70,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeBoolean(self, x: bool) -> None:
         """
         writes the next attribute to the stream as boolean.
@@ -75,6 +78,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeByte(self, x: int) -> None:
         """
         writes the next attribute to the stream as byte.
@@ -82,13 +86,15 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
-    def writeBytes(self, x: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def writeBytes(self, x: uno.ByteSequence) -> None:
         """
         writes the next attribute to the stream as byte sequence.
 
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeCharacterStream(self, x: 'XInputStream_98d40ab4') -> None:
         """
         writes the next attribute to the stream as a stream of Unicode string.
@@ -96,6 +102,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeClob(self, x: 'XClob_6777087c') -> None:
         """
         writes a CLOB to the stream.
@@ -103,6 +110,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeDate(self, x: 'Date_60040844') -> None:
         """
         writes the next attribute to the stream as a date.
@@ -110,6 +118,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeDouble(self, x: float) -> None:
         """
         writes the next attribute to the stream as double.
@@ -117,6 +126,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeFloat(self, x: float) -> None:
         """
         writes the next attribute to the stream as float.
@@ -124,6 +134,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeInt(self, x: int) -> None:
         """
         writes the next attribute to the stream as long.
@@ -131,6 +142,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeLong(self, x: int) -> None:
         """
         writes the next attribute to the stream as hyper.
@@ -138,16 +150,17 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeObject(self, x: 'XSQLData_81fe0966') -> None:
         """
         writes to the stream the data contained in the given XSQLData object.
         
-        When the XSQLData object is NULL , this method writes an SQL NULL to the stream. Otherwise, it calls the com.sun.star.sdbc.XSQLData.writeSQL() method of the given object, which writes the object's attributes to the stream. The implementation of the method XSQLData.writeSQL() calls the appropriate XSQLOutput.writeXXX method(s) for writing each of the object's attributes in order.
-        The attributes must be read from an com.sun.star.sdbc.XSQLInput input stream and written to an XSQLOutput output stream in the same order in which they were listed in the SQL definition of the user-defined type.
+        When the XSQLData object is NULL , this method writes an SQL NULL to the stream. Otherwise, it calls the com.sun.star.sdbc.XSQLData.writeSQL() method of the given object, which writes the object's attributes to the stream. The implementation of the method XSQLData.writeSQL() calls the appropriate XSQLOutput.writeXXX method(s) for writing each of the object's attributes in order. The attributes must be read from an com.sun.star.sdbc.XSQLInput input stream and written to an XSQLOutput output stream in the same order in which they were listed in the SQL definition of the user-defined type.
 
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeRef(self, x: 'XRef_5f110819') -> None:
         """
         writes a REF(&lt;structured-type&gt;) to the stream.
@@ -155,6 +168,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeShort(self, x: int) -> None:
         """
         writes the next attribute to the stream as short.
@@ -162,6 +176,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeString(self, x: str) -> None:
         """
         writes the next attribute to the stream as a string.
@@ -169,6 +184,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeStruct(self, x: 'XStruct_7a760981') -> None:
         """
         writes a structured-type to the stream.
@@ -176,6 +192,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeTime(self, x: 'Time_604e0855') -> None:
         """
         writes the next attribute to the stream as a time.
@@ -183,6 +200,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeTimestamp(self, x: 'DateTime_84de09d3') -> None:
         """
         writes the next attribute to the stream as a datetime.
@@ -190,4 +208,6 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

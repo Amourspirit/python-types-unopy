@@ -42,6 +42,7 @@ class CryptographyException(SecurityException_e4950d61):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['CryptographyException']
 

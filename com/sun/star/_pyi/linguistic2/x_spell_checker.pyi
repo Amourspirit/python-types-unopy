@@ -46,6 +46,7 @@ class XSpellChecker(XSupportedLocales_5bda1056):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def spell(self, aWord: str, aLocale: 'Locale_70d308fa', aProperties: 'PropertyValues_d6470ce6') -> 'XSpellAlternatives_6ad110bf':
         """
         This method checks if a word is spelled correctly in a given language.
@@ -55,4 +56,6 @@ class XSpellChecker(XSupportedLocales_5bda1056):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

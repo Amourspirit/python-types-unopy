@@ -32,6 +32,7 @@ class SAXDocumentBuilderState(Enum):
     See Also:
         `API SAXDocumentBuilderState <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1xml_1_1dom.html#a8e1d723b2d19d95078879bf81b535b36>`_
     """
+    typeName: str = 'com.sun.star.xml.dom.SAXDocumentBuilderState'
 
     BUILDING_DOCUMENT: 'uno.Enum'
     """

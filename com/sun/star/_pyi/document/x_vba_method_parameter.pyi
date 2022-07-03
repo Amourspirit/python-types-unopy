@@ -33,8 +33,11 @@ class XVbaMethodParameter(XInterface_8f010a43):
         """
         returns the value of the parameter with the specified name.
         """
+        ...
     def setVbaMethodParameter(self, PropertyName: str, Value: object) -> None:
         """
         sets the value of the parameter with the specified name.
         """
+        ...
+
 

@@ -39,5 +39,6 @@ class TypeDescriptionProvider(XHierarchicalNameAccess_9e2611b5, XComponent_98dc0
     See Also:
         `API TypeDescriptionProvider <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1reflection_1_1TypeDescriptionProvider.html>`_
     """
+    ...
 
 

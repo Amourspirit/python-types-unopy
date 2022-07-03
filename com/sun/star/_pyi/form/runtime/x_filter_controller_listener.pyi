@@ -45,6 +45,7 @@ class XFilterControllerListener(XEventListener_c7230c4a):
         
         FilterEvent.FilterComponent and FilterEvent.PredicateExpression are not used for this event type.
         """
+        ...
     def disjunctiveTermRemoved(self, Event: 'FilterEvent_d780e56') -> None:
         """
         is fired when a disjunctive term was removed from the filter of the filter controller.
@@ -53,6 +54,7 @@ class XFilterControllerListener(XEventListener_c7230c4a):
         
         FilterEvent.FilterComponent and FilterEvent.PredicateExpression are not used for this event type.
         """
+        ...
     def predicateExpressionChanged(self, Event: 'FilterEvent_d780e56') -> None:
         """
         is fired when a single predicate expression of the filter represented by the filter controller changed.
@@ -63,4 +65,6 @@ class XFilterControllerListener(XEventListener_c7230c4a):
         
         FilterEvent.PredicateExpression is the new predicate expressions.
         """
+        ...
+
 

@@ -36,5 +36,6 @@ class KeyColumn(Column_7b1d098a):
         """
         is the name of a reference column out of the referenced table.
         """
+        ...
 
 

@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.linguistic2
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..lang.locale import Locale as Locale_70d308fa
@@ -35,16 +36,21 @@ class XPossibleHyphens(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.linguistic2.XPossibleHyphens']
 
-    def getHyphenationPositions(self) -> 'typing.Tuple[int, ...]':
+    def getHyphenationPositions(self) -> uno.ByteSequence:
         """
         """
+        ...
     def getLocale(self) -> 'Locale_70d308fa':
         """
         """
+        ...
     def getPossibleHyphens(self) -> str:
         """
         """
+        ...
     def getWord(self) -> str:
         """
         """
+        ...
+
 

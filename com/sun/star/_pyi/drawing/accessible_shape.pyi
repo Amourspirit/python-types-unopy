@@ -45,5 +45,6 @@ class AccessibleShape(XAccessible_1cbc0eb6, XAccessibleContext_8eae119b, XAccess
     See Also:
         `API AccessibleShape <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1AccessibleShape.html>`_
     """
+    ...
 
 

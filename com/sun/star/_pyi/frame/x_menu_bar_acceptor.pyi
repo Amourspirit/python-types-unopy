@@ -44,4 +44,6 @@ class XMenuBarAcceptor(XInterface_8f010a43):
         
         This is used in inplace editing mode where we have to merge our own menu into the container applications menu.
         """
+        ...
+
 

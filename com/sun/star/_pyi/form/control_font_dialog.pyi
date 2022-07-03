@@ -38,5 +38,6 @@ class ControlFontDialog(XExecutableDialog_450f0fa1):
     def createWithGridModel(self, GridModel: 'XPropertySet_bc180bfa') -> None:
         """
         """
+        ...
 
 

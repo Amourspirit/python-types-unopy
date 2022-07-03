@@ -36,10 +36,13 @@ class XActiveDataSource(XInterface_8f010a43):
     def getOutputStream(self) -> 'XOutputStream_a4e00b35':
         """
         """
+        ...
     def setOutputStream(self, aStream: 'XOutputStream_a4e00b35') -> None:
         """
         plugs the output stream.
         
         If XConnectable is also implemented, this method should query aStream for a XConnectable and connect both.
         """
+        ...
+
 

@@ -32,6 +32,7 @@ class TableSortFieldType(Enum):
     See Also:
         `API TableSortFieldType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1table.html#a8f4f5a263cd762ae00ab0f462ed1ae1c>`_
     """
+    typeName: str = 'com.sun.star.table.TableSortFieldType'
 
     ALPHANUMERIC: 'uno.Enum'
     """

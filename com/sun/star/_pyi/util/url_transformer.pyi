@@ -29,5 +29,6 @@ class URLTransformer(XURLTransformer_d3760ca4):
     See Also:
         `API URLTransformer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1util_1_1URLTransformer.html>`_
     """
+    ...
 
 

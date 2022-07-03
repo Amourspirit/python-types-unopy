@@ -39,8 +39,11 @@ class XModifyBroadcaster(XInterface_8f010a43):
         """
         adds the specified listener to receive events \"modified.\"
         """
+        ...
     def removeModifyListener(self, aListener: 'XModifyListener_d5c60ccc') -> None:
         """
         removes the specified listener.
         """
+        ...
+
 

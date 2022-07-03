@@ -42,6 +42,7 @@ class FootnoteSettings(ABC):
         
             OOo 2.0
         """
+        ...
     @property
     def BeginNotice(self) -> str:
         """
@@ -49,11 +50,13 @@ class FootnoteSettings(ABC):
         
         For footnotes only.
         """
+        ...
     @property
     def CharStyleName(self) -> str:
         """
         contains the name of the character style that is used for the label in front of the footnote/endnote text.
         """
+        ...
     @property
     def EndNotice(self) -> str:
         """
@@ -61,6 +64,7 @@ class FootnoteSettings(ABC):
         
         For footnotes only.
         """
+        ...
     @property
     def FootnoteCounting(self) -> int:
         """
@@ -68,21 +72,25 @@ class FootnoteSettings(ABC):
         
         For footnotes only.
         """
+        ...
     @property
     def NumberingType(self) -> int:
         """
         contains the numbering type for the numbering of the footnotes/endnotes.
         """
+        ...
     @property
     def PageStyleName(self) -> str:
         """
         contains the page style that is used for the page that contains the footnote/endnote texts
         """
+        ...
     @property
     def ParaStyleName(self) -> str:
         """
         contains the paragraph style that is used for the footnote/endnote text.
         """
+        ...
     @property
     def PositionEndOfDoc(self) -> bool:
         """
@@ -90,20 +98,24 @@ class FootnoteSettings(ABC):
         
         For footnotes only.
         """
+        ...
     @property
     def Prefix(self) -> str:
         """
         contains the prefix for the footnote/endnote symbol.
         """
+        ...
     @property
     def StartAt(self) -> int:
         """
         contains the first number of the automatic numbering of footnotes/endnotes.
         """
+        ...
     @property
     def Suffix(self) -> str:
         """
         contains the suffix for the footnote/endnote symbol.
         """
+        ...
 
 

@@ -40,5 +40,6 @@ class AddressBookSourceDialog(XExecutableDialog_450f0fa1):
     def createWithDataSource(self, ParentWindow: 'XWindow_713b0924', DataSource: 'XPropertySet_bc180bfa', DataSourceName: str, Command: str, Title: str) -> None:
         """
         """
+        ...
 
 

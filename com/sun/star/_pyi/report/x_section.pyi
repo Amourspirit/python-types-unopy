@@ -47,12 +47,14 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         """
         Defines the background color of the section.
         """
+        ...
 
     @property
     def BackTransparent(self) -> bool:
         """
         determines if the background color is set to transparent.
         """
+        ...
 
     @property
     def CanGrow(self) -> bool:
@@ -61,12 +63,14 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         
         If this property is disabled the content will be truncated when its size is larger than the container.
         """
+        ...
 
     @property
     def CanShrink(self) -> bool:
         """
         Represents ...
         """
+        ...
 
     @property
     def ConditionalPrintExpression(self) -> str:
@@ -75,6 +79,7 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         
         If the return value of the expression is TRUE then the section will be printed.
         """
+        ...
 
     @property
     def ForceNewPage(self) -> int:
@@ -83,18 +88,21 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         
         Not valid for page header or page footer.
         """
+        ...
 
     @property
     def Group(self) -> 'XGroup_86540a09':
         """
         Specifies the parent of the section if it is a group header or group footer.
         """
+        ...
 
     @property
     def Height(self) -> int:
         """
         Defines the height of the section.
         """
+        ...
 
     @property
     def KeepTogether(self) -> bool:
@@ -103,12 +111,14 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         
         Not valid for page header or page footer.
         """
+        ...
 
     @property
     def Name(self) -> str:
         """
         Defines the name of the section.
         """
+        ...
 
     @property
     def NewRowOrCol(self) -> int:
@@ -117,6 +127,7 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         
         Not valid for page header or page footer.
         """
+        ...
 
     @property
     def RepeatSection(self) -> bool:
@@ -125,17 +136,20 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         
         It only applies to group headers.
         """
+        ...
 
     @property
     def ReportDefinition(self) -> 'XReportDefinition_ec30e81':
         """
         Specifies the parent of the section if it is a page header or page footer.
         """
+        ...
 
     @property
     def Visible(self) -> bool:
         """
         Defines if the section should be visible in report.
         """
+        ...
 
 

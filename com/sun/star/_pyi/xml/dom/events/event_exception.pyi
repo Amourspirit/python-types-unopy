@@ -43,10 +43,12 @@ class EventException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             code (int, optional): code value.
         """
+        ...
     @property
     def code(self) -> int:
         """
         """
+        ...
 
 
 __all__ = ['EventException']

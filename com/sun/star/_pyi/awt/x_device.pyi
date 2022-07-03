@@ -44,32 +44,40 @@ class XDevice(XInterface_8f010a43):
         
         If the specified area does not lie entirely in the device, the bits outside are not specified.
         """
+        ...
     def createDevice(self, nWidth: int, nHeight: int) -> 'XDevice':
         """
         creates a new device which is compatible with this one.
         
         If the device does not support the GETBITS device capability, this method returns NULL.
         """
+        ...
     def createDisplayBitmap(self, Bitmap: 'XBitmap_70cd0909') -> 'XDisplayBitmap_bb550bdf':
         """
         creates a device compatible bitmap.
         
         The data of the bitmap is in process memory instead of in the device, so that the output operation is fast.
         """
+        ...
     def createGraphics(self) -> 'XGraphics_842309dd':
         """
         creates a new graphics whose output operation is directed to this device.
         """
+        ...
     def getFont(self, aDescriptor: 'FontDescriptor_bc110c0a') -> 'XFont_5f480843':
         """
         returns information about a font offered by this device.
         """
+        ...
     def getFontDescriptors(self) -> 'typing.Tuple[FontDescriptor_bc110c0a, ...]':
         """
         returns the list of available font descriptors.
         """
+        ...
     def getInfo(self) -> 'DeviceInfo_8e370a30':
         """
         returns information about the device.
         """
+        ...
+
 

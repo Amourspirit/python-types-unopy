@@ -41,8 +41,11 @@ class XCertificateContainer(ABC):
         """
         Store the certificate in memory.
         """
+        ...
     def hasCertificate(self, url: str, cert: str) -> 'CertificateContainerStatus_c9f8130a':
         """
         Check if a certificate was stored earlier before.
         """
+        ...
+
 

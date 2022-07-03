@@ -42,22 +42,28 @@ class XDropTargetListener(XEventListener_c7230c4a):
         """
         Called when a drag operation has encountered the drop target.
         """
+        ...
     def dragExit(self, dte: 'DropTargetEvent_8d651169') -> None:
         """
         The drag operation has departed the drop target without dropping.
         """
+        ...
     def dragOver(self, dtde: 'DropTargetDragEvent_d60612e7') -> None:
         """
         Called when a drag operation is ongoing on the drop target.
         """
+        ...
     def drop(self, dtde: 'DropTargetDropEvent_d69e12fe') -> None:
         """
         The drag operation has terminated with a drop on this drop target.
         
         NOTE: The implementation has to wait until the method XDropTargetDropContext.dropComplete() is called before releasing the data for the drop operation. This should occur before returning from drop in a normal flow of operation. Also, the implementor of XDropTargetListener should not assume the DropTargetDropEvent to be meaningful after returning from the XDropTargetListener.drop() method.
         """
+        ...
     def dropActionChanged(self, dtde: 'DropTargetDragEvent_d60612e7') -> None:
         """
         Called when the user has modified the drop gesture.
         """
+        ...
+
 

@@ -29,5 +29,6 @@ class Solver(XSolver_853909f4):
     See Also:
         `API Solver <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1Solver.html>`_
     """
+    ...
 
 

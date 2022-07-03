@@ -35,4 +35,6 @@ class XPropertySetOption(XInterface_8f010a43):
         
         This option is turned on by default.
         """
+        ...
+
 

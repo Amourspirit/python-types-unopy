@@ -37,5 +37,6 @@ class XStyleSettingsSupplier(ABC):
     def StyleSettings(self) -> 'XStyleSettings_bcc40c0e':
         """
         """
+        ...
 
 

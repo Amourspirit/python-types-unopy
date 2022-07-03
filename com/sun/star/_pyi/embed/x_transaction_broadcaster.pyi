@@ -37,8 +37,11 @@ class XTransactionBroadcaster(XInterface_8f010a43):
         """
         adds the specified listener to receive events about commits and reverts.
         """
+        ...
     def removeTransactionListener(self, aListener: 'XTransactionListener_28840f29') -> None:
         """
         removes the specified listener.
         """
+        ...
+
 

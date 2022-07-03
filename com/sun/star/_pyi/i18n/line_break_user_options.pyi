@@ -44,6 +44,7 @@ class LineBreakUserOptions(object):
             allowPunctuationOutsideMargin (bool, optional): allowPunctuationOutsideMargin value.
             allowHyphenateEnglish (bool, optional): allowHyphenateEnglish value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class LineBreakUserOptions(object):
         """
         Characters not allowed at the beginning of a line.
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class LineBreakUserOptions(object):
         """
         Characters not allowed at the end of a line.
         """
+        ...
 
 
     @property
@@ -65,6 +68,7 @@ class LineBreakUserOptions(object):
         """
         If the forbidden characters rules are to be applied or not.
         """
+        ...
 
 
     @property
@@ -72,6 +76,7 @@ class LineBreakUserOptions(object):
         """
         If punctuation characters are allowed at the end of the line if outside of the margins, resulting in a line not being wrapped if only the punctuation would wrap.
         """
+        ...
 
 
     @property
@@ -79,5 +84,6 @@ class LineBreakUserOptions(object):
         """
         Allow English hyphenation.
         """
+        ...
 
 

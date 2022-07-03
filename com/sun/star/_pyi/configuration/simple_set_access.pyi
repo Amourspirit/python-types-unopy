@@ -38,5 +38,6 @@ class SimpleSetAccess(XTemplateContainer_928f11b7, XContainer_d6fb0cc6, XNameAcc
     See Also:
         `API SimpleSetAccess <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1SimpleSetAccess.html>`_
     """
+    ...
 
 

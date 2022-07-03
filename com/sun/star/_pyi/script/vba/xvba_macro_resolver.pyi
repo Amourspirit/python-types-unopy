@@ -37,6 +37,7 @@ class XVBAMacroResolver(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def resolveVBAMacroToScriptURL(self, aVBAMacroName: str) -> str:
         """
         Returns the script URL representing the passed VBA macro name.
@@ -44,4 +45,6 @@ class XVBAMacroResolver(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

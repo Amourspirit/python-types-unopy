@@ -55,23 +55,27 @@ class AuthenticationRequest(ClassifiedInteractionRequest_9f72121b):
             HasAccount (bool, optional): HasAccount value.
             Account (str, optional): Account value.
         """
+        ...
     @property
     def ServerName(self) -> str:
         """
         The name of the server (if applicable).
         """
+        ...
 
     @property
     def Diagnostic(self) -> str:
         """
         Any diagnostic message about the failure to log in (if applicable; it will typically be an English phrase or sentence).
         """
+        ...
 
     @property
     def HasRealm(self) -> bool:
         """
         Specifies if the authentication involves a \"realm\" (as can be the case for HTTP).
         """
+        ...
 
     @property
     def Realm(self) -> str:
@@ -80,12 +84,14 @@ class AuthenticationRequest(ClassifiedInteractionRequest_9f72121b):
         
         If HasRealm is false, this member should be ignored.
         """
+        ...
 
     @property
     def HasUserName(self) -> bool:
         """
         Specifies if the authentication involves a \"user name\" (as is almost always the case).
         """
+        ...
 
     @property
     def UserName(self) -> str:
@@ -94,12 +100,14 @@ class AuthenticationRequest(ClassifiedInteractionRequest_9f72121b):
         
         If HasUserName is false, this member should be ignored.
         """
+        ...
 
     @property
     def HasPassword(self) -> bool:
         """
         Specifies if the authentication involves a \"password\" (as is almost always the case).
         """
+        ...
 
     @property
     def Password(self) -> str:
@@ -108,12 +116,14 @@ class AuthenticationRequest(ClassifiedInteractionRequest_9f72121b):
         
         If HasPassword is false, this member should be ignored.
         """
+        ...
 
     @property
     def HasAccount(self) -> bool:
         """
         Specifies if the authentication involves an \"account\" (as can be the case for FTP).
         """
+        ...
 
     @property
     def Account(self) -> str:
@@ -122,6 +132,7 @@ class AuthenticationRequest(ClassifiedInteractionRequest_9f72121b):
         
         If HasAccount is false, this member should be ignored.
         """
+        ...
 
 
 __all__ = ['AuthenticationRequest']

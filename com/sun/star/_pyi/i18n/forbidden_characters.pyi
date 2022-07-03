@@ -43,6 +43,7 @@ class ForbiddenCharacters(object):
             beginLine (str, optional): beginLine value.
             endLine (str, optional): endLine value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class ForbiddenCharacters(object):
         """
         Characters forbidden at the start of a line.
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class ForbiddenCharacters(object):
         """
         Characters forbidden at the end of a line.
         """
+        ...
 
 

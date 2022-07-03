@@ -35,4 +35,6 @@ class XSessionManagerListener2(XSessionManagerListener_582d1050):
         
         Under these circumstances bringing up further UI will usually be impossible and must be avoided.
         """
+        ...
+
 

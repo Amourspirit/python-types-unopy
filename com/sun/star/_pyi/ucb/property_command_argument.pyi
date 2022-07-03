@@ -46,6 +46,7 @@ class PropertyCommandArgument(object):
             Property (Property, optional): Property value.
             DefaultValue (object, optional): DefaultValue value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class PropertyCommandArgument(object):
         """
         The property that the command has to add.
         """
+        ...
 
 
     @property
@@ -60,5 +62,6 @@ class PropertyCommandArgument(object):
         """
         The default value of the property.
         """
+        ...
 
 

@@ -36,20 +36,25 @@ class XCalculatable(XInterface_8f010a43):
         
         This calculates all formula cells which have not yet been calculated after their precedents have changed.
         """
+        ...
     def calculateAll(self) -> None:
         """
         recalculates all cells.
         """
+        ...
     def enableAutomaticCalculation(self, bEnabled: bool) -> None:
         """
         enables automatic calculation.
         
         With automatic calculation, each formula cell is recalculated whenever its value is needed after its precedents have changed. The value is needed if the cell is displayed or used in another calculation.
         """
+        ...
     def isAutomaticCalculationEnabled(self) -> bool:
         """
         returns whether automatic calculation is enabled.
         
         With automatic calculation, each formula cell is recalculated whenever its value is needed after its precedents have changed. The value is needed if the cell is displayed or used in another calculation.
         """
+        ...
+
 

@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.awt
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .font_descriptor import FontDescriptor as FontDescriptor_bc110c0a
@@ -45,120 +46,150 @@ class XGraphics(XInterface_8f010a43):
         """
         copies a rectangle of pixels from another device into this one.
         """
+        ...
     def draw(self, xBitmapHandle: 'XDisplayBitmap_bb550bdf', SourceX: int, SourceY: int, SourceWidth: int, SourceHeight: int, DestX: int, DestY: int, DestWidth: int, DestHeight: int) -> None:
         """
         draws a part of the specified bitmap to the output device.
         """
+        ...
     def drawArc(self, X: int, Y: int, Width: int, Height: int, X1: int, Y1: int, X2: int, Y2: int) -> None:
         """
         draws an arc (part of a circle) in the output device.
         """
+        ...
     def drawChord(self, nX: int, nY: int, nWidth: int, nHeight: int, nX1: int, nY1: int, nX2: int, nY2: int) -> None:
         """
         draws a chord of a circular area in the output device.
         
         A chord is a segment of a circle. You get two chords from a circle if you intersect the circle with a straight line joining two points on the circle.
         """
+        ...
     def drawEllipse(self, X: int, Y: int, Width: int, Height: int) -> None:
         """
         draws an ellipse in the output device.
         """
+        ...
     def drawGradient(self, nX: int, nY: int, nWidth: int, Height: int, aGradient: 'Gradient_7a8a0982') -> None:
         """
         draws a color dispersion in the output device.
         """
+        ...
     def drawLine(self, X1: int, Y1: int, X2: int, Y2: int) -> None:
         """
         draws a line in the output device.
         """
+        ...
     def drawPie(self, X: int, Y: int, Width: int, Height: int, X1: int, Y1: int, X2: int, Y2: int) -> None:
         """
         draws a circular area in the output device.
         """
+        ...
     def drawPixel(self, X: int, Y: int) -> None:
         """
         sets a single pixel in the output device.
         """
-    def drawPolyLine(self, DataX: 'typing.Tuple[int, ...]', DataY: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def drawPolyLine(self, DataX: uno.ByteSequence, DataY: uno.ByteSequence) -> None:
         """
         draws multiple lines in the output device at once.
         """
-    def drawPolyPolygon(self, DataX: 'typing.Tuple[typing.Tuple[int, ...], ...]', DataY: 'typing.Tuple[typing.Tuple[int, ...], ...]') -> None:
+        ...
+    def drawPolyPolygon(self, DataX: 'typing.Tuple[uno.ByteSequence, ...]', DataY: 'typing.Tuple[uno.ByteSequence, ...]') -> None:
         """
         draws multiple polygons in the output device at once.
         """
-    def drawPolygon(self, DataX: 'typing.Tuple[int, ...]', DataY: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def drawPolygon(self, DataX: uno.ByteSequence, DataY: uno.ByteSequence) -> None:
         """
         draws a polygon line in the output device.
         """
+        ...
     def drawRect(self, X: int, Y: int, Width: int, Height: int) -> None:
         """
         draws a rectangle in the output device.
         """
+        ...
     def drawRoundedRect(self, X: int, Y: int, Width: int, Height: int, nHorzRound: int, nVertRound: int) -> None:
         """
         draws a rectangle with rounded corners in the output device.
         """
+        ...
     def drawText(self, X: int, Y: int, Text: str) -> None:
         """
         draws text in the output device.
         """
-    def drawTextArray(self, X: int, Y: int, Text: str, Longs: 'typing.Tuple[int, ...]') -> None:
+        ...
+    def drawTextArray(self, X: int, Y: int, Text: str, Longs: uno.ByteSequence) -> None:
         """
         draws texts in the output device using an explicit kerning table.
         """
+        ...
     def getDevice(self) -> 'XDevice_70ba08fc':
         """
         returns the device of this graphics.
         """
+        ...
     def getFontMetric(self) -> 'SimpleFontMetric_d53c0cb9':
         """
         returns the font metric of the current font.
         """
+        ...
     def intersectClipRegion(self, xClipping: 'XRegion_70f30910') -> None:
         """
         builds the intersection with the current region.
         """
+        ...
     def pop(self) -> None:
         """
         restores all previous saved settings.
         """
+        ...
     def push(self) -> None:
         """
         saves all current settings (Font, TextColor, TextFillColor, LineColor, FillColor, RasterOp, ClipRegion).
         """
+        ...
     def selectFont(self, aDescription: 'FontDescriptor_bc110c0a') -> None:
         """
         creates a new font and sets the font.
         """
+        ...
     def setClipRegion(self, Clipping: 'XRegion_70f30910') -> None:
         """
         sets the clip region to specified clipping.
         """
+        ...
     def setFillColor(self, nColor: 'Color_68e908c5') -> None:
         """
         sets the fill color.
         """
+        ...
     def setFont(self, xNewFont: 'XFont_5f480843') -> None:
         """
         sets the font used by text operations.
         """
+        ...
     def setLineColor(self, nColor: 'Color_68e908c5') -> None:
         """
         sets the line color.
         """
+        ...
     def setRasterOp(self, ROP: 'RasterOperation_c9430c76') -> None:
         """
         sets the raster operation.
         
         If the device does not support raster operations then this call is ignored.
         """
+        ...
     def setTextColor(self, nColor: 'Color_68e908c5') -> None:
         """
         sets the text color used by text operations.
         """
+        ...
     def setTextFillColor(self, nColor: 'Color_68e908c5') -> None:
         """
         sets the fill color used by text operations.
         """
+        ...
+
 

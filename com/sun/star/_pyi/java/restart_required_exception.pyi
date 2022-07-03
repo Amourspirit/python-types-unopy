@@ -47,6 +47,7 @@ class RestartRequiredException(JavaInitializationException_8b6211a3):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['RestartRequiredException']
 

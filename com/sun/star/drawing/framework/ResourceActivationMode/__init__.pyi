@@ -29,6 +29,7 @@ Enum
 See Also:
     `API ResourceActivationMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing_1_1framework.html#a9b6ee17a97f260847a6fa2df1be8f104>`_
 """
+typeName: str = 'com.sun.star.drawing.framework.ResourceActivationMode'
 
 ADD: 'uno.Enum'
 """

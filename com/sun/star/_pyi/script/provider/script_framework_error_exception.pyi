@@ -46,23 +46,27 @@ class ScriptFrameworkErrorException(Exception_85530a09):
             language (str, optional): language value.
             errorType (int, optional): errorType value.
         """
+        ...
     @property
     def scriptName(self) -> str:
         """
         Name of script where error occurred.
         """
+        ...
 
     @property
     def language(self) -> str:
         """
         Scripting language of script that generated exception.
         """
+        ...
 
     @property
     def errorType(self) -> int:
         """
         error type com.sun.star.script.provider.ScriptFrameworkErrorType
         """
+        ...
 
 
 __all__ = ['ScriptFrameworkErrorException']

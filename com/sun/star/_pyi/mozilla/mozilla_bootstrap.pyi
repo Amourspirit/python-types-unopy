@@ -29,5 +29,6 @@ class MozillaBootstrap(XMozillaBootstrap_1db70eee):
     See Also:
         `API MozillaBootstrap <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1mozilla_1_1MozillaBootstrap.html>`_
     """
+    ...
 
 

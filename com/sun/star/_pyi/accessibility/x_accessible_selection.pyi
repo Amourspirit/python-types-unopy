@@ -47,6 +47,7 @@ class XAccessibleSelection(XInterface_8f010a43):
         """
         Clears the selection, so that no children of the object are selected.
         """
+        ...
     def deselectAccessibleChild(self, nChildIndex: int) -> None:
         """
         Removes the specified child from the set of this object's selected children.
@@ -56,6 +57,7 @@ class XAccessibleSelection(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getSelectedAccessibleChild(self, nSelectedChildIndex: int) -> 'XAccessible_1cbc0eb6':
         """
         Returns the specified selected Accessible child.
@@ -63,12 +65,14 @@ class XAccessibleSelection(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getSelectedAccessibleChildCount(self) -> int:
         """
         Returns the number of Accessible children that are currently selected.
         
         This number specifies the valid interval of indices that can be used as arguments for the methods XAccessibleSelection.getSelectedChild() and XAccessibleSelection.deselectSelectedChild().
         """
+        ...
     def isAccessibleChildSelected(self, nChildIndex: int) -> bool:
         """
         Determines if the specified child of this object is selected.
@@ -76,6 +80,7 @@ class XAccessibleSelection(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def selectAccessibleChild(self, nChildIndex: int) -> None:
         """
         Selects the specified Accessible child of the object.
@@ -85,10 +90,13 @@ class XAccessibleSelection(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def selectAllAccessibleChildren(self) -> None:
         """
         Select all children.
         
         Causes every child of the object to be selected if the object supports multiple selections. If multiple selection is not supported then the first child, if it exists, is selected and all other children are deselected.
         """
+        ...
+
 

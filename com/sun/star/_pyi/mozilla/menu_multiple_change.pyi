@@ -19,6 +19,7 @@
 # Namespace: com.sun.star.mozilla
 # Libre Office Version: 7.2
 from typing_extensions import Literal
+import uno
 import typing
 
 
@@ -33,12 +34,12 @@ class MenuMultipleChange(object):
     """
     typeName: Literal['com.sun.star.mozilla.MenuMultipleChange']
 
-    def __init__(self, Image: typing.Optional[typing.Tuple[int, ...]] = ..., ID: typing.Optional[int] = ..., GroupID: typing.Optional[int] = ..., PreItemID: typing.Optional[int] = ..., ItemText: typing.Optional[str] = ..., IsVisible: typing.Optional[bool] = ..., IsActive: typing.Optional[bool] = ..., IsCheckable: typing.Optional[bool] = ..., IsChecked: typing.Optional[bool] = ...) -> None:
+    def __init__(self, Image: typing.Optional[uno.ByteSequence] = ..., ID: typing.Optional[int] = ..., GroupID: typing.Optional[int] = ..., PreItemID: typing.Optional[int] = ..., ItemText: typing.Optional[str] = ..., IsVisible: typing.Optional[bool] = ..., IsActive: typing.Optional[bool] = ..., IsCheckable: typing.Optional[bool] = ..., IsChecked: typing.Optional[bool] = ...) -> None:
         """
         Constructor
 
         Arguments:
-            Image (typing.Tuple[int, ...], optional): Image value.
+            Image (uno.ByteSequence, optional): Image value.
             ID (int, optional): ID value.
             GroupID (int, optional): GroupID value.
             PreItemID (int, optional): PreItemID value.
@@ -48,13 +49,15 @@ class MenuMultipleChange(object):
             IsCheckable (bool, optional): IsCheckable value.
             IsChecked (bool, optional): IsChecked value.
         """
+        ...
 
 
     @property
-    def Image(self) -> typing.Tuple[int, ...]:
+    def Image(self) -> uno.ByteSequence:
         """
         sequence of bytes representing a possible image
         """
+        ...
 
 
     @property
@@ -62,6 +65,7 @@ class MenuMultipleChange(object):
         """
         unique ID of this menu item
         """
+        ...
 
 
     @property
@@ -69,6 +73,7 @@ class MenuMultipleChange(object):
         """
         unique ID of the group this menu item belongs to
         """
+        ...
 
 
     @property
@@ -76,6 +81,7 @@ class MenuMultipleChange(object):
         """
         unique ID of the item directly above this menu item, used for fuzzy placement
         """
+        ...
 
 
     @property
@@ -83,6 +89,7 @@ class MenuMultipleChange(object):
         """
         text of the menu item
         """
+        ...
 
 
     @property
@@ -90,6 +97,7 @@ class MenuMultipleChange(object):
         """
         true if visible
         """
+        ...
 
 
     @property
@@ -97,6 +105,7 @@ class MenuMultipleChange(object):
         """
         true if active, so clickable
         """
+        ...
 
 
     @property
@@ -104,6 +113,7 @@ class MenuMultipleChange(object):
         """
         true if checkable, so there can be a checkmark
         """
+        ...
 
 
     @property
@@ -111,5 +121,6 @@ class MenuMultipleChange(object):
         """
         true if there is a checkmark
         """
+        ...
 
 

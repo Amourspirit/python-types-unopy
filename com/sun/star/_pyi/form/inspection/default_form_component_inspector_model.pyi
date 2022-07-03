@@ -43,6 +43,7 @@ class DefaultFormComponentInspectorModel(XObjectInspectorModel_9077119b):
         
             OOo 2.2
         """
+        ...
     def createWithHelpSection(self, minHelpTextLines: int, maxHelpTextLines: int) -> None:
         """
         creates a default DefaultFormComponentInspectorModel, providing factories for all handlers listed above, and describing an ObjectInspector which has a help section.
@@ -54,5 +55,6 @@ class DefaultFormComponentInspectorModel(XObjectInspectorModel_9077119b):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

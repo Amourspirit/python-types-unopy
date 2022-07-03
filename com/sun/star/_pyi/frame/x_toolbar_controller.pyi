@@ -28,8 +28,7 @@ class XToolbarController(XInterface_8f010a43):
     """
     is an abstract service for a component which offers a more complex user interface to users within a toolbar.
     
-    A generic toolbar function is represented as a button which has a state (enabled,disabled and selected, not selected). A toolbar controller can be added to a toolbar and provide information or functions with a more sophisticated user interface.
-    A typical example for toolbar controller is a font chooser on a toolbar. It provides all available fonts in a dropdown box and shows the current chosen font.
+    A generic toolbar function is represented as a button which has a state (enabled,disabled and selected, not selected). A toolbar controller can be added to a toolbar and provide information or functions with a more sophisticated user interface.A typical example for toolbar controller is a font chooser on a toolbar. It provides all available fonts in a dropdown box and shows the current chosen font.
     
     **since**
     
@@ -44,22 +43,28 @@ class XToolbarController(XInterface_8f010a43):
         """
         notifies a component that a single click has been made on the toolbar item.
         """
+        ...
     def createItemWindow(self, Parent: 'XWindow_713b0924') -> 'XWindow_713b0924':
         """
         requests to create an item window which can be added to the toolbar.
         """
+        ...
     def createPopupWindow(self) -> 'XWindow_713b0924':
         """
         requests to create a pop-up window for additional functions.
         """
+        ...
     def doubleClick(self) -> None:
         """
         notifies a component that a double click has been made on the toolbar item.
         """
+        ...
     def execute(self, KeyModifier: int) -> None:
         """
         provides a function to execute the command which is bound to the toolbar controller.
         
         This function is usually called by a toolbar implementation when a user clicked on a toolbar button or pressed enter on the keyboard when the item has the input focus.
         """
+        ...
+
 

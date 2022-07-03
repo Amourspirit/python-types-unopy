@@ -55,86 +55,102 @@ class XSlideShow(XInterface_8f010a43):
         
         This method adds a listener to the slide show, which will get notified when a mouse click is performed on the given shape. This can be used by clients of the slide show to trigger external actions, such as jumps to different slides.
         """
+        ...
     def addSlideShowListener(self, xListener: 'XSlideShowListener_81671154') -> None:
         """
         Add a slide show listener.
         
         This method adds a listener to the slide show, which will get notified when a registered shape is clicked upon, or a new slide is about to be displayed. Note that the listeners will not be notified, when the slide change is directly requested by one of the nextSlide(), previousSlide() or displaySlide() methods.
         """
+        ...
     def addView(self, xView: 'XSlideShowView_3eb40fa9') -> bool:
         """
         Add a view to the slide show.
         
         This method adds a view to the slide show. After successful completion of this method, the slide show will be visible on the added view, scaled according to the view's output area.
         """
+        ...
     def displaySlide(self, xSlide: 'XDrawPage_b07a0b57', xDrawPages: 'XDrawPagesSupplier_29650f1e', AnimationNode: 'XAnimationNode_1cf10eb9', aProperties: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         Jump to the given slide.
         
         This method ends all effects on the current slide, displays a possible slide transition, followed by the given slide. If the current slide is equal to the requested slide here, this method does nothing (this especially means, that any currently active effects will remain running).
         """
+        ...
     def getCurrentSlide(self) -> 'XDrawPage_b07a0b57':
         """
         Query the currently displayed slide.
         """
+        ...
     def nextEffect(self) -> bool:
         """
         Trigger the next effect of the slide show.
         
         This method triggers the next effect on the currently displayed slide. If there is currently no slide show running, this method does nothing. If there are no more effects on the current slide, a possible slide transition effect is issued and the next slide is displayed.
         """
+        ...
     def pause(self, bPauseShow: bool) -> bool:
         """
         Change the pause state of the slide show.
         
         This method either pauses the slide show (all currently running effects are stopped), or starts a previously stopped show again (all paused effects start again).
         """
+        ...
     def previousEffect(self) -> bool:
         """
         Undo the last effect in the main sequence of the slide show.
         
         The current slide is displayed as if the last user-triggered effect has never been triggered. If there is no previous effect on the current slide then slideEnded(true) is called at the registered XSlideShowListener objects, which can then trigger a change to the previous slide. Note that this command is executed asynchronously. Multiple calls to update() may be necessary to complete its execution. If there is currently no slide show running, this method does nothing.
         """
+        ...
     def registerUserPaintPolygons(self, xDocFactory: 'XMultiServiceFactory_191e0eb6') -> None:
         """
         Register drawn polygons in presentation mode.
         """
+        ...
     def removeShapeEventListener(self, xListener: 'XShapeEventListener_92a311b5', xShape: 'XShape_8fd00a3d') -> None:
         """
         Revoke a previously registered shape event listener.
         """
+        ...
     def removeSlideShowListener(self, xListener: 'XSlideShowListener_81671154') -> None:
         """
         Revoke a previously registered slide show listener.
         """
+        ...
     def removeView(self, xView: 'XSlideShowView_3eb40fa9') -> bool:
         """
         Remove view from the slide show.
         
         This method removes the given view from the slide show. After successful completion of this method, the slide show will cease to display on this view.
         """
+        ...
     def setProperty(self, aShowProperty: 'PropertyValue_c9610c73') -> bool:
         """
         Change a property of the slide show.
         """
+        ...
     def setShapeCursor(self, xShape: 'XShape_8fd00a3d', nPointerShape: int) -> None:
         """
         Set a special mouse cursor for a shape.
         
         This method requests the slide show to display a special cursor, whenever the mouse is hovering over the given shape.
         """
+        ...
     def startShapeActivity(self, xShape: 'XShape_8fd00a3d') -> bool:
         """
         Start a shape-intrinsic animation or activity.
         
         This method starts an animation or activity intrinsic to the given shape. Shape-intrinsic activities are things like video playback for multimedia shapes, sounds, GIF animations and drawing layer animations (flipping between shapes in a group, or scroll text).
         """
+        ...
     def stopShapeActivity(self, xShape: 'XShape_8fd00a3d') -> bool:
         """
         Stop a shape-intrinsic animation or activity.
         
         This method stops an animation or activity intrinsic to the given shape. Shape-intrinsic activities are things like video playback for multimedia shapes, sounds, GIF animations and drawing layer animations (flipping between shapes in a group, or scroll text).
         """
+        ...
     def update(self, nNextTimeout: float) -> bool:
         """
         Update the animations.
@@ -143,4 +159,6 @@ class XSlideShow(XInterface_8f010a43):
 
         * ``nNextTimeout`` is an out direction argument.
         """
+        ...
+
 

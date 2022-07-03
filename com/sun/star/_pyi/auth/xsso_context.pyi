@@ -38,18 +38,23 @@ class XSSOContext(XInterface_8f010a43):
         """
         retrieves the mechanism associated with the context.
         """
+        ...
     def getMutual(self) -> bool:
         """
         retrieves whether or not the context supports mutual authentication
         """
+        ...
     def getSource(self) -> str:
         """
         retrieves the principal name of the source/initiator of the context.
         
         In the case of an acceptor side security context, the source principal name is available only after the initiator has been authenticated.
         """
+        ...
     def getTarget(self) -> str:
         """
         retrieves the principal name of the target/acceptor of the context.
         """
+        ...
+
 

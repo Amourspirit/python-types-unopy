@@ -45,6 +45,7 @@ class ConnectException(SocketException_bb650bf8):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['ConnectException']
 

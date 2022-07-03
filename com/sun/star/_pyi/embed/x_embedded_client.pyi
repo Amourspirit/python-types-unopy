@@ -38,6 +38,7 @@ class XEmbeddedClient(XComponentSupplier_adb0e64):
             com.sun.star.embed.ObjectSaveVetoException: ``ObjectSaveVetoException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def visibilityChanged(self, bVisible: bool) -> None:
         """
         An object can use this method to notify the client when the object outplace window becomes visible or invisible.
@@ -45,4 +46,6 @@ class XEmbeddedClient(XComponentSupplier_adb0e64):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
+
 

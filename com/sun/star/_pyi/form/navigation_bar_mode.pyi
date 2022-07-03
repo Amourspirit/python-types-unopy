@@ -32,6 +32,7 @@ class NavigationBarMode(Enum):
     See Also:
         `API NavigationBarMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1form.html#ad79e40635743aa91020c7ddf34c3af31>`_
     """
+    typeName: str = 'com.sun.star.form.NavigationBarMode'
 
     CURRENT: 'uno.Enum'
     """

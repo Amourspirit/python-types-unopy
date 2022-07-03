@@ -48,10 +48,12 @@ class XAccessibleHypertext(XAccessibleText_5b77105b):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getHyperLinkCount(self) -> int:
         """
         Returns the number of links and link groups contained within this hypertext document.
         """
+        ...
     def getHyperLinkIndex(self, nCharIndex: int) -> int:
         """
         Returns the index of the hyperlink that is associated with this character index.
@@ -61,4 +63,6 @@ class XAccessibleHypertext(XAccessibleText_5b77105b):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

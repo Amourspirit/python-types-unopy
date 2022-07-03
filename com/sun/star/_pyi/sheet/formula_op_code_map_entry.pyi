@@ -42,6 +42,7 @@ class FormulaOpCodeMapEntry(object):
             Name (str, optional): Name value.
             Token (FormulaToken, optional): Token value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class FormulaOpCodeMapEntry(object):
         """
         The function name, or operator.
         """
+        ...
 
 
     @property
@@ -56,5 +58,6 @@ class FormulaOpCodeMapEntry(object):
         """
         The corresponding mapping.
         """
+        ...
 
 

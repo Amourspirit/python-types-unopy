@@ -34,5 +34,6 @@ class Presentation2(Presentation_21ed0f20, XPresentation2_40330faa):
     See Also:
         `API Presentation2 <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1Presentation2.html>`_
     """
+    ...
 
 

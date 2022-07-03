@@ -39,8 +39,11 @@ class XSecuritySAXEventKeeper(XSAXEventKeeper_65aa1044):
         """
         Adds a new element collector on the next element in the SAX event stream.
         """
+        ...
     def setSecurityId(self, id: int, securityId: int) -> None:
         """
         Sets security id for an element mark.
         """
+        ...
+
 

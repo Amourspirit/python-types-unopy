@@ -19,6 +19,7 @@
 # Namespace: com.sun.star.packages.zip
 # Libre Office Version: 7.2
 from typing_extensions import Literal
+import uno
 import typing
 
 
@@ -35,12 +36,12 @@ class ZipEntry(object):
     """
     typeName: Literal['com.sun.star.packages.zip.ZipEntry']
 
-    def __init__(self, extra: typing.Optional[typing.Tuple[int, ...]] = ..., nVersion: typing.Optional[int] = ..., nFlag: typing.Optional[int] = ..., nMethod: typing.Optional[int] = ..., nTime: typing.Optional[int] = ..., nCrc: typing.Optional[int] = ..., nCompressedSize: typing.Optional[int] = ..., nSize: typing.Optional[int] = ..., nOffset: typing.Optional[int] = ..., nDiskNumber: typing.Optional[int] = ..., sName: typing.Optional[str] = ..., sComment: typing.Optional[str] = ...) -> None:
+    def __init__(self, extra: typing.Optional[uno.ByteSequence] = ..., nVersion: typing.Optional[int] = ..., nFlag: typing.Optional[int] = ..., nMethod: typing.Optional[int] = ..., nTime: typing.Optional[int] = ..., nCrc: typing.Optional[int] = ..., nCompressedSize: typing.Optional[int] = ..., nSize: typing.Optional[int] = ..., nOffset: typing.Optional[int] = ..., nDiskNumber: typing.Optional[int] = ..., sName: typing.Optional[str] = ..., sComment: typing.Optional[str] = ...) -> None:
         """
         Constructor
 
         Arguments:
-            extra (typing.Tuple[int, ...], optional): extra value.
+            extra (uno.ByteSequence, optional): extra value.
             nVersion (int, optional): nVersion value.
             nFlag (int, optional): nFlag value.
             nMethod (int, optional): nMethod value.
@@ -53,13 +54,15 @@ class ZipEntry(object):
             sName (str, optional): sName value.
             sComment (str, optional): sComment value.
         """
+        ...
 
 
     @property
-    def extra(self) -> typing.Tuple[int, ...]:
+    def extra(self) -> uno.ByteSequence:
         """
         optional extra field data for entry
         """
+        ...
 
 
     @property
@@ -67,6 +70,7 @@ class ZipEntry(object):
         """
         version needed to extract
         """
+        ...
 
 
     @property
@@ -74,6 +78,7 @@ class ZipEntry(object):
         """
         bit flags
         """
+        ...
 
 
     @property
@@ -81,6 +86,7 @@ class ZipEntry(object):
         """
         compression method
         """
+        ...
 
 
     @property
@@ -88,6 +94,7 @@ class ZipEntry(object):
         """
         modification time
         """
+        ...
 
 
     @property
@@ -95,6 +102,7 @@ class ZipEntry(object):
         """
         CRC-32 of entry data.
         """
+        ...
 
 
     @property
@@ -102,6 +110,7 @@ class ZipEntry(object):
         """
         uncompressed size of entry data
         """
+        ...
 
 
     @property
@@ -109,6 +118,7 @@ class ZipEntry(object):
         """
         uncompressed size of entry data
         """
+        ...
 
 
     @property
@@ -116,6 +126,7 @@ class ZipEntry(object):
         """
         offset of LOC header
         """
+        ...
 
 
     @property
@@ -123,6 +134,7 @@ class ZipEntry(object):
         """
         The number of the disk this entry is saved on.
         """
+        ...
 
 
     @property
@@ -130,6 +142,7 @@ class ZipEntry(object):
         """
         the entry name
         """
+        ...
 
 
     @property
@@ -137,5 +150,6 @@ class ZipEntry(object):
         """
         optional comment
         """
+        ...
 
 

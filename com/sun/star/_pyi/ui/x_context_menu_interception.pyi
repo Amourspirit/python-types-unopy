@@ -37,10 +37,13 @@ class XContextMenuInterception(XInterface_8f010a43):
         """
         registers an XContextMenuInterceptor, which will become the first interceptor in the chain of registered interceptors.
         """
+        ...
     def releaseContextMenuInterceptor(self, Interceptor: 'XContextMenuInterceptor_295c0f47') -> None:
         """
         removes an XContextMenuInterceptor which was previously registered using XContextMenuInterception.registerContextMenuInterceptor().
         
         The order of removals is arbitrary. It is not necessary to remove the last registered interceptor first.
         """
+        ...
+
 

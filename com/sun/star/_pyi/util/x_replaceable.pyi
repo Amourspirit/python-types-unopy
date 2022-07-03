@@ -40,8 +40,11 @@ class XReplaceable(XSearchable_a4e80b08):
         """
         creates a descriptor which contains properties that specify a search in this container.
         """
+        ...
     def replaceAll(self, xDesc: 'XSearchDescriptor_ef600d93') -> int:
         """
         searches for all occurrences of whatever is specified.
         """
+        ...
+
 

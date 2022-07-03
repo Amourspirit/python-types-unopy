@@ -35,5 +35,6 @@ class AccessibleHeaderFooterView(XAccessibleComponent_b2f21269, XAccessibleConte
     See Also:
         `API AccessibleHeaderFooterView <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1AccessibleHeaderFooterView.html>`_
     """
+    ...
 
 

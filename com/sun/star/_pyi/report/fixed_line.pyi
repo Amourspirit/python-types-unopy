@@ -28,5 +28,6 @@ class FixedLine(XFixedLine_b1760b74):
     See Also:
         `API FixedLine <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1report_1_1FixedLine.html>`_
     """
+    ...
 
 

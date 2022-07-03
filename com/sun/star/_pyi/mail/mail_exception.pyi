@@ -47,6 +47,7 @@ class MailException(Exception_85530a09):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['MailException']
 

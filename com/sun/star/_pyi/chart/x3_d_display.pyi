@@ -37,10 +37,13 @@ class X3DDisplay(XInterface_8f010a43):
         """
         This is only valid for three-dimensional diagrams.
         """
+        ...
     def getWall(self) -> 'XPropertySet_bc180bfa':
         """
         This specifies the properties of the two side walls of the chart scene.
         
         Note that this property is also valid for two-dimensional diagrams. There the properties returned here affect the background rectangle of the diagram.
         """
+        ...
+
 

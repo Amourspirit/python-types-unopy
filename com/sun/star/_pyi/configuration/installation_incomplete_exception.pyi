@@ -43,6 +43,7 @@ class InstallationIncompleteException(CannotLoadConfigurationException_b325176a)
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['InstallationIncompleteException']
 

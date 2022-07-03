@@ -49,6 +49,7 @@ class NativeNumberXmlAttributes(object):
             Format (str, optional): Format value.
             Style (str, optional): Style value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class NativeNumberXmlAttributes(object):
         """
         The locale of the native number representation.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class NativeNumberXmlAttributes(object):
         """
         The number \"1\" expressed as a native number string.
         """
+        ...
 
 
     @property
@@ -70,5 +73,6 @@ class NativeNumberXmlAttributes(object):
         """
         The type of the number string, for example, \"short\" or \"medium\" or \"long\".
         """
+        ...
 
 

@@ -41,14 +41,17 @@ class XFlatParagraphIterator(XInterface_8f010a43):
         """
         get the first flat paragraph to be checked or an empty reference if there are no more paragraphs to check.
         """
+        ...
     def getLastPara(self) -> 'XFlatParagraph_c8310c42':
         """
         get the last flat paragraph
         """
+        ...
     def getNextPara(self) -> 'XFlatParagraph_c8310c42':
         """
         get the next flat paragraph to be checked or an empty reference if there are no more paragraphs to check.
         """
+        ...
     def getParaAfter(self, xPara: 'XFlatParagraph_c8310c42') -> 'XFlatParagraph_c8310c42':
         """
         get the flat paragraph just following this one
@@ -56,6 +59,7 @@ class XFlatParagraphIterator(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getParaBefore(self, xPara: 'XFlatParagraph_c8310c42') -> 'XFlatParagraph_c8310c42':
         """
         get the flat paragraph before this one
@@ -63,4 +67,6 @@ class XFlatParagraphIterator(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

@@ -46,4 +46,6 @@ class XGeneratedResultSet(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

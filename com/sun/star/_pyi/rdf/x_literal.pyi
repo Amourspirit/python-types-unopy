@@ -46,17 +46,20 @@ class XLiteral(XNode_5ee40822):
         """
         the data type of the literal; may be NULL
         """
+        ...
 
     @property
     def Language(self) -> str:
         """
         the language of the literal; may be the empty string
         """
+        ...
 
     @property
     def Value(self) -> str:
         """
         the content of the literal
         """
+        ...
 
 

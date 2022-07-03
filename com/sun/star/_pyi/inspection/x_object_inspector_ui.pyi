@@ -48,20 +48,24 @@ class XObjectInspectorUI(ABC):
         
         This is usually used by an XPropertyHandler if it handles properties, where one does only make sense if another one has a certain value.
         """
+        ...
     def enablePropertyUIElements(self, PropertyName: str, Elements: int, Enable: bool) -> None:
         """
         enables or disables the single elements which can be part of the UI representation of a property
         
         Note that the complete UI for the property must be enabled in order for these settings to be evaluated. That is, enablePropertyUIElements() does not have any effect if somebody previously disabled the complete UI for this property with enablePropertyUI().
         """
+        ...
     def getPropertyControl(self, PropertyName: str) -> 'XPropertyControl_3f260fe2':
         """
         retrieves the control currently used to display a given property
         """
+        ...
     def hidePropertyUI(self, PropertyName: str) -> None:
         """
         hides the UI for a given property
         """
+        ...
     def rebuildPropertyUI(self, PropertyName: str) -> None:
         """
         completely rebuilds the UI for the given property.
@@ -72,6 +76,7 @@ class XObjectInspectorUI(ABC):
         
         Note that the property whose UI should be rebuilt must not necessarily be (though usually is) in the responsibility of the handler which calls this method. The object inspector will look up the handler with the responsibility for PropertyName and call its XPropertyHandler.describePropertyLine()
         """
+        ...
     def registerControlObserver(self, Observer: 'XPropertyControlObserver_cc6d132a') -> None:
         """
         registers an observer for all property controls
@@ -82,6 +87,7 @@ class XObjectInspectorUI(ABC):
         
             OOo 2.2
         """
+        ...
     def revokeControlObserver(self, Observer: 'XPropertyControlObserver_cc6d132a') -> None:
         """
         revokes a previously registered control observer
@@ -90,6 +96,7 @@ class XObjectInspectorUI(ABC):
         
             OOo 2.2
         """
+        ...
     def setHelpSectionText(self, HelpText: str) -> None:
         """
         sets the text of the help section, if the object inspector contains one.
@@ -101,12 +108,16 @@ class XObjectInspectorUI(ABC):
         Raises:
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def showCategory(self, Category: str, Show: bool) -> None:
         """
         shows or hides all properties belonging to a given category
         """
+        ...
     def showPropertyUI(self, PropertyName: str) -> None:
         """
         shows the UI for a given property
         """
+        ...
+
 

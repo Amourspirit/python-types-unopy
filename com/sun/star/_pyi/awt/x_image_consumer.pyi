@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.awt
 from typing_extensions import Literal
 import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .x_image_producer import XImageProducer as XImageProducer_ba930bd3
@@ -41,24 +42,30 @@ class XImageConsumer(XInterface_8f010a43):
         
         The complete method is called when the image producer has finished delivering all of the pixels that the source image contains, or when a single frame of a multi-frame animation has been completed, or when an error in loading or producing the image has occurred. The image consumer should remove itself from the list of consumers registered with the image producer at this time, unless it is interested in successive frames.
         """
+        ...
     def init(self, Width: int, Height: int) -> None:
         """
         initializes the consumer with image dimensions.
         """
-    def setColorModel(self, BitCount: int, RGBAPal: 'typing.Tuple[int, ...]', RedMask: int, GreenMask: int, BlueMask: int, AlphaMask: int) -> None:
+        ...
+    def setColorModel(self, BitCount: int, RGBAPal: uno.ByteSequence, RedMask: int, GreenMask: int, BlueMask: int, AlphaMask: int) -> None:
         """
         changes color model for next pixels typically called once after initialization.
         """
-    def setPixelsByBytes(self, nX: int, nY: int, nWidth: int, nHeight: int, aProducerData: 'typing.Tuple[int, ...]', nOffset: int, nScanSize: int) -> None:
+        ...
+    def setPixelsByBytes(self, nX: int, nY: int, nWidth: int, nHeight: int, aProducerData: uno.ByteSequence, nOffset: int, nScanSize: int) -> None:
         """
         delivers a chunk of pixels as long values.
         
         The pixels of the image are delivered using one or more calls to this method. Each call specifies the location and size of the rectangle of source pixels that are contained in the array of pixels. The specified color model object should be used to convert the pixels into their corresponding color and alpha components. Pixel (m,n) is stored in the pixels array at index (n * nScanSize
         """
-    def setPixelsByLongs(self, nX: int, nY: int, nWidth: int, nHeight: int, aProducerData: 'typing.Tuple[int, ...]', nOffset: int, nScanSize: int) -> None:
+        ...
+    def setPixelsByLongs(self, nX: int, nY: int, nWidth: int, nHeight: int, aProducerData: uno.ByteSequence, nOffset: int, nScanSize: int) -> None:
         """
         delivers a chunk of pixels as byte values.
         
         The pixels of the image are delivered using one or more calls to this method. Each call specifies the location and size of the rectangle of source pixels that are contained in the array of pixels. The specified color model object should be used to convert the pixels into their corresponding color and alpha components. Pixel (m,n) is stored in the pixels array at index (n * nScanSize
         """
+        ...
+
 

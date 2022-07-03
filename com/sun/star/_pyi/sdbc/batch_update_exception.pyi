@@ -20,6 +20,7 @@
 # Libre Office Version: 7.2
 from typing_extensions import Literal
 import typing
+import uno
 from .sql_exception import SQLException as SQLException_acc90b43
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
@@ -37,7 +38,7 @@ class BatchUpdateException(SQLException_acc90b43):
 
     typeName: Literal['com.sun.star.sdbc.BatchUpdateException']
 
-    def __init__(self, Message: typing.Optional[str] = ..., Context: typing.Optional[XInterface_8f010a43] = ..., SQLState: typing.Optional[str] = ..., ErrorCode: typing.Optional[int] = ..., NextException: typing.Optional[object] = ..., UpdateCounts: typing.Optional[typing.Tuple[int, ...]] = ...) -> None:
+    def __init__(self, Message: typing.Optional[str] = ..., Context: typing.Optional[XInterface_8f010a43] = ..., SQLState: typing.Optional[str] = ..., ErrorCode: typing.Optional[int] = ..., NextException: typing.Optional[object] = ..., UpdateCounts: typing.Optional[uno.ByteSequence] = ...) -> None:
         """
         Constructor
 
@@ -47,13 +48,15 @@ class BatchUpdateException(SQLException_acc90b43):
             SQLState (str, optional): SQLState value.
             ErrorCode (int, optional): ErrorCode value.
             NextException (object, optional): NextException value.
-            UpdateCounts (typing.Tuple[int, ...], optional): UpdateCounts value.
+            UpdateCounts (uno.ByteSequence, optional): UpdateCounts value.
         """
+        ...
     @property
-    def UpdateCounts(self) -> typing.Tuple[int, ...]:
+    def UpdateCounts(self) -> uno.ByteSequence:
         """
         is an array of long , with each element indicating the update count for a SQL command that executed successfully before the exception was thrown.
         """
+        ...
 
 
 __all__ = ['BatchUpdateException']

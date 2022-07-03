@@ -33,5 +33,6 @@ class ChartDocument(XChartDocument_dd6f0cd5, XTitled_8d490a0a, XDataReceiver_117
     See Also:
         `API ChartDocument <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart2_1_1ChartDocument.html>`_
     """
+    ...
 
 

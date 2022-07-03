@@ -39,52 +39,62 @@ class XSolver(XInterface_8f010a43):
         """
         executes the calculation and tries to find a solution.
         """
+        ...
+
     @property
     def Constraints(self) -> 'typing.Tuple[SolverConstraint_f1e30dc1, ...]':
         """
         The constraints of the model.
         """
+        ...
 
     @property
     def Solution(self) -> 'typing.Tuple[float, ...]':
         """
         contains the solution's value for each of the variables, if a solution was found.
         """
+        ...
 
     @property
     def Variables(self) -> 'typing.Tuple[CellAddress_ae5f0b56, ...]':
         """
         The addresses of the cells that contain the variables.
         """
+        ...
 
     @property
     def Document(self) -> 'XSpreadsheetDocument_2a1f0f30':
         """
         The spreadsheet document that contains the cells.
         """
+        ...
 
     @property
     def Maximize(self) -> bool:
         """
         selects if the objective value is maximized or minimized.
         """
+        ...
 
     @property
     def Objective(self) -> 'CellAddress_ae5f0b56':
         """
         The address of the cell that contains the objective value.
         """
+        ...
 
     @property
     def ResultValue(self) -> float:
         """
         contains the objective value for the solution, if a solution was found.
         """
+        ...
 
     @property
     def Success(self) -> bool:
         """
         contains TRUE if a solution was found.
         """
+        ...
 
 

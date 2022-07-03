@@ -48,11 +48,13 @@ class SAXException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             WrappedException (object, optional): WrappedException value.
         """
+        ...
     @property
     def WrappedException(self) -> object:
         """
         This field may contain a wrapped exception.
         """
+        ...
 
 
 __all__ = ['SAXException']

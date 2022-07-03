@@ -46,6 +46,7 @@ class QRCode(object):
             ErrorCorrection (int, optional): ErrorCorrection value.
             Border (int, optional): Border value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class QRCode(object):
         """
         Text for which QR Code is made.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class QRCode(object):
         """
         Qr Code Error Correction Level.
         """
+        ...
 
 
     @property
@@ -69,5 +72,6 @@ class QRCode(object):
         
         One Border unit is equal to one dot in the generated QR code.
         """
+        ...
 
 

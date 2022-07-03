@@ -40,6 +40,7 @@ class UserRecord(object):
             Passwords (typing.Tuple[str, ...], optional): Passwords value.
             UserName (str, optional): UserName value.
         """
+        ...
 
 
     @property
@@ -47,6 +48,7 @@ class UserRecord(object):
         """
         specifies the passwords for the given user.
         """
+        ...
 
 
     @property
@@ -54,5 +56,6 @@ class UserRecord(object):
         """
         specifies the user name.
         """
+        ...
 
 

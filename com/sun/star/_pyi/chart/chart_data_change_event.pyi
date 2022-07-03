@@ -48,6 +48,7 @@ class ChartDataChangeEvent(EventObject_a3d70b03):
             StartRow (int, optional): StartRow value.
             EndRow (int, optional): EndRow value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class ChartDataChangeEvent(EventObject_a3d70b03):
         """
         specifies the type of change to the data.
         """
+        ...
 
 
     @property
@@ -62,6 +64,7 @@ class ChartDataChangeEvent(EventObject_a3d70b03):
         """
         specifies the column number in which the changes begin.
         """
+        ...
 
 
     @property
@@ -69,6 +72,7 @@ class ChartDataChangeEvent(EventObject_a3d70b03):
         """
         specifies the column number in which the changes end.
         """
+        ...
 
 
     @property
@@ -76,6 +80,7 @@ class ChartDataChangeEvent(EventObject_a3d70b03):
         """
         specifies the row number in which the changes begin.
         """
+        ...
 
 
     @property
@@ -83,5 +88,6 @@ class ChartDataChangeEvent(EventObject_a3d70b03):
         """
         specifies the row number in which the changes end.
         """
+        ...
 
 

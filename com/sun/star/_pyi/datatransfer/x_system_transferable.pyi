@@ -19,7 +19,7 @@
 # Libre Office Version: 7.2
 # Namespace: com.sun.star.datatransfer
 from typing_extensions import Literal
-import typing
+import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 
 class XSystemTransferable(XInterface_8f010a43):
@@ -33,7 +33,7 @@ class XSystemTransferable(XInterface_8f010a43):
     """
     __pyunointerface__: Literal['com.sun.star.datatransfer.XSystemTransferable']
 
-    def getData(self, aProcessId: 'typing.Tuple[int, ...]') -> object:
+    def getData(self, aProcessId: uno.ByteSequence) -> object:
         """
         Called by a data consumer to obtain a system specific data object from the source.
         
@@ -41,4 +41,6 @@ class XSystemTransferable(XInterface_8f010a43):
         
         Notes:Under Windows the returned any contains an unsigned long which represents a pointer to an IDataObject interface. The caller of getData has to release the data object (IDataObject.Release) if it is no longer needed. The caller must also make sure that the current thread has been initialized for OLE (use OleInitialize).
         """
+        ...
+
 

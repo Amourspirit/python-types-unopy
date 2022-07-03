@@ -46,6 +46,7 @@ class DriverPropertyInfo(object):
             IsRequired (bool, optional): IsRequired value.
             Value (str, optional): Value value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class DriverPropertyInfo(object):
         """
         contains a sequence of possible values if the value for the field DriverPropertyInfo.value may be selected from a particular set of values; otherwise empty.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class DriverPropertyInfo(object):
         """
         is the name of the property.
         """
+        ...
 
 
     @property
@@ -67,6 +70,7 @@ class DriverPropertyInfo(object):
         """
         is a brief description of the property, which may be null.
         """
+        ...
 
 
     @property
@@ -74,6 +78,7 @@ class DriverPropertyInfo(object):
         """
         is TRUE if a value must be supplied for this property during Driver.connect and FALSE otherwise.
         """
+        ...
 
 
     @property
@@ -83,5 +88,6 @@ class DriverPropertyInfo(object):
         
         This field may be empty if no value is known.
         """
+        ...
 
 

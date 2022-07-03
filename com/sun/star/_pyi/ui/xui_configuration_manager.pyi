@@ -44,18 +44,21 @@ class XUIConfigurationManager(XInterface_8f010a43):
         """
         creates an empty settings data container.
         """
+        ...
     def getEventsManager(self) -> 'XInterface_8f010a43':
         """
         retrieves the events manager from the user interface configuration manager.
         
         Every user interface configuration manager has one events manager instance which controls the mapping of events to script URLs of a module or document.
         """
+        ...
     def getImageManager(self) -> 'XInterface_8f010a43':
         """
         retrieves the image manager from the user interface configuration manager.
         
         Every user interface configuration manager has one image manager instance which controls all images of a module or document.
         """
+        ...
     def getSettings(self, ResourceURL: str, bWriteable: bool) -> 'XIndexAccess_f0910d6d':
         """
         retrieves the settings of a user interface element.
@@ -64,12 +67,14 @@ class XUIConfigurationManager(XInterface_8f010a43):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getShortCutManager(self) -> 'XAcceleratorConfiguration_46580ffb':
         """
         retrieves the keyboard short cut manager from the user interface configuration manager.
         
         Every user interface configuration manager has one keyboard short cut manager instance which controls all short cuts of a module or document.
         """
+        ...
     def getUIElementsInfo(self, ElementType: int) -> 'typing.Tuple[typing.Tuple[PropertyValue_c9610c73, ...], ...]':
         """
         retrieves information about all user interface elements within the user interface configuration manager.
@@ -79,6 +84,7 @@ class XUIConfigurationManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def hasSettings(self, ResourceURL: str) -> bool:
         """
         determines if the settings of a user interface element is part the user interface configuration manager.
@@ -86,6 +92,7 @@ class XUIConfigurationManager(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def insertSettings(self, NewResourceURL: str, aNewData: 'XIndexAccess_f0910d6d') -> None:
         """
         inserts the settings of a new user interface element.
@@ -97,6 +104,7 @@ class XUIConfigurationManager(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.IllegalAccessException: ``IllegalAccessException``
         """
+        ...
     def removeSettings(self, ResourceURL: str) -> None:
         """
         removes the settings of an existing user interface element.
@@ -108,6 +116,7 @@ class XUIConfigurationManager(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.IllegalAccessException: ``IllegalAccessException``
         """
+        ...
     def replaceSettings(self, ResourceURL: str, aNewData: 'XIndexAccess_f0910d6d') -> None:
         """
         replaces the settings of a user interface element with new settings.
@@ -119,10 +128,13 @@ class XUIConfigurationManager(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.IllegalAccessException: ``IllegalAccessException``
         """
+        ...
     def reset(self) -> None:
         """
         resets the configuration manager to the default user interface configuration data.
         
         This means that all user interface configuration data of the instance will be removed. A module based user interface configuration manager removes user defined elements, but set all other elements back to default. It is not possible to remove default elements from a module user interface configuration manager.
         """
+        ...
+
 

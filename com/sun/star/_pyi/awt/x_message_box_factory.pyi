@@ -45,4 +45,6 @@ class XMessageBoxFactory(XInterface_8f010a43):
         
         A com.sun.star.awt.MessageBoxType.INFOBOX ignores this parameter, instead it uses a com.sun.star.awt.MessageBoxButtons.BUTTONS_OK.
         """
+        ...
+
 

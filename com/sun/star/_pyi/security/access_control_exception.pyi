@@ -48,11 +48,13 @@ class AccessControlException(SecurityException_e4950d61):
             Context (XInterface, optional): Context value.
             LackingPermission (object, optional): LackingPermission value.
         """
+        ...
     @property
     def LackingPermission(self) -> object:
         """
         lacking permission.
         """
+        ...
 
 
 __all__ = ['AccessControlException']

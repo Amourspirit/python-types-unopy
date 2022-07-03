@@ -46,6 +46,7 @@ class ControlCommand(object):
             Arguments (typing.Tuple[NamedValue, ...], optional): Arguments value.
             Command (str, optional): Command value.
         """
+        ...
 
 
     @property
@@ -55,6 +56,7 @@ class ControlCommand(object):
         
         The number and type of arguments depend on the command and control.
         """
+        ...
 
 
     @property
@@ -62,5 +64,6 @@ class ControlCommand(object):
         """
         specifies the command which should be processed by the toolbar control.
         """
+        ...
 
 

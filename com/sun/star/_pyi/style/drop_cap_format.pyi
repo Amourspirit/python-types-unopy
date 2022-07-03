@@ -42,6 +42,7 @@ class DropCapFormat(object):
             Count (int, optional): Count value.
             Distance (int, optional): Distance value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class DropCapFormat(object):
         """
         This is the number of lines used for a drop cap.
         """
+        ...
 
 
     @property
@@ -56,6 +58,7 @@ class DropCapFormat(object):
         """
         This is the number of characters in the drop cap.
         """
+        ...
 
 
     @property
@@ -63,5 +66,6 @@ class DropCapFormat(object):
         """
         This is the distance between the drop cap in the following text.
         """
+        ...
 
 

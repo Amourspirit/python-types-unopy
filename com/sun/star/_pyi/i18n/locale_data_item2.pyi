@@ -63,6 +63,7 @@ class LocaleDataItem2(LocaleDataItem_beff0ba1):
             LongDateYearSeparator (str, optional): LongDateYearSeparator value.
             decimalSeparatorAlternative (str, optional): decimalSeparatorAlternative value.
         """
+        ...
 
 
     @property
@@ -72,5 +73,6 @@ class LocaleDataItem2(LocaleDataItem_beff0ba1):
         
         This separator is optional, an empty string denotes no alternative decimal separator shall be used.
         """
+        ...
 
 

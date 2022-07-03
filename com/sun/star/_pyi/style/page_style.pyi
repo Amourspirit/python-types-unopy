@@ -30,5 +30,6 @@ class PageStyle(PageProperties_d7220ce3, Style_7336094a):
     See Also:
         `API PageStyle <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1style_1_1PageStyle.html>`_
     """
+    ...
 
 

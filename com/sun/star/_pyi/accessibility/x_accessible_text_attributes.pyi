@@ -48,6 +48,7 @@ class XAccessibleTextAttributes(ABC):
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def getRunAttributes(self, Index: int, RequestedAttributes: 'typing.Tuple[str, ...]') -> 'typing.Tuple[PropertyValue_c9610c73, ...]':
         """
         Get the run attribute set for the specified position.
@@ -60,4 +61,6 @@ class XAccessibleTextAttributes(ABC):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

@@ -48,6 +48,7 @@ class XTextConversion(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def getConversions(self, aText: str, nStartPos: int, nLength: int, Locale: 'Locale_70d308fa', nTextConversionType: int, nTextConversionOptions: int) -> 'TextConversionResult_12d10e92':
         """
         Method to search dictionaries for the conversion candidates.
@@ -56,6 +57,7 @@ class XTextConversion(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def interactiveConversion(self, Locale: 'Locale_70d308fa', nTextConversionType: int, nTextConversionOptions: int) -> bool:
         """
         Method to query if the conversion type should be interactive or non-interactive mode.
@@ -64,4 +66,6 @@ class XTextConversion(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
+
 

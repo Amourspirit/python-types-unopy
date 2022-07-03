@@ -46,4 +46,6 @@ class XVersionedSchemaSupplier(XSchemaSupplier_eca11373):
             BackendAccessException: ``BackendAccessException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

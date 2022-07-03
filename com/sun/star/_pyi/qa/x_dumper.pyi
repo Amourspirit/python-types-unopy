@@ -44,4 +44,6 @@ class XDumper(XInterface_8f010a43):
         
             LibreOffice 3.6
         """
+        ...
+
 

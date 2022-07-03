@@ -55,6 +55,7 @@ class Duration(object):
             Seconds (int, optional): Seconds value.
             NanoSeconds (int, optional): NanoSeconds value.
         """
+        ...
 
 
     @property
@@ -62,6 +63,7 @@ class Duration(object):
         """
         explicit sign bit.
         """
+        ...
 
 
     @property
@@ -69,6 +71,7 @@ class Duration(object):
         """
         contains the years.
         """
+        ...
 
 
     @property
@@ -76,6 +79,7 @@ class Duration(object):
         """
         contains the months.
         """
+        ...
 
 
     @property
@@ -83,6 +87,7 @@ class Duration(object):
         """
         contains the days.
         """
+        ...
 
 
     @property
@@ -90,6 +95,7 @@ class Duration(object):
         """
         contains the hours.
         """
+        ...
 
 
     @property
@@ -97,6 +103,7 @@ class Duration(object):
         """
         contains the minutes.
         """
+        ...
 
 
     @property
@@ -104,6 +111,7 @@ class Duration(object):
         """
         contains the seconds.
         """
+        ...
 
 
     @property
@@ -111,5 +119,6 @@ class Duration(object):
         """
         contains the nanoseconds.
         """
+        ...
 
 

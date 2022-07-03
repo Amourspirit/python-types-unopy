@@ -37,24 +37,31 @@ class XProfileManager(XInterface_8f010a43):
         """
         attempts to init XPCOM runtime using given profile.
         """
+        ...
     def getCurrentProduct(self) -> 'MozillaProductType_2e210f5b':
         """
         attempts to get the current product.
         """
+        ...
     def getCurrentProfile(self) -> str:
         """
         attempts to get the current profile name.
         """
+        ...
     def isCurrentProfileLocked(self) -> bool:
         """
         attempts to check whether the current profile locked or not
         """
+        ...
     def setCurrentProfile(self, product: 'MozillaProductType_2e210f5b', profileName: str) -> str:
         """
         attempts to set the current used profile name for the given product.
         """
+        ...
     def shutdownProfile(self) -> int:
         """
         attempts to shutdown the current profile.
         """
+        ...
+
 
