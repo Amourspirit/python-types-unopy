@@ -34,16 +34,21 @@ class XLineCursor(XInterface_8f010a43):
         """
         moves the cursor to the end of the current line.
         """
+        ...
     def gotoStartOfLine(self, bExpand: bool) -> None:
         """
         moves the cursor to the start of the current line.
         """
+        ...
     def isAtEndOfLine(self) -> bool:
         """
         determines if the cursor is positioned at the end of a line.
         """
+        ...
     def isAtStartOfLine(self) -> bool:
         """
         determines if the cursor is positioned at the start of a line.
         """
+        ...
+
 

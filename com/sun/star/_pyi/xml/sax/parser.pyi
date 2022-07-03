@@ -29,5 +29,6 @@ class Parser(XParser_99250a98):
     See Also:
         `API Parser <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1sax_1_1Parser.html>`_
     """
+    ...
 
 

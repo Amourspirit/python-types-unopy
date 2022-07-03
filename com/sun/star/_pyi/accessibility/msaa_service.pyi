@@ -28,5 +28,6 @@ class MSAAService(XMSAAService_28a50ebb):
     See Also:
         `API MSAAService <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1accessibility_1_1MSAAService.html>`_
     """
+    ...
 
 

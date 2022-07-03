@@ -45,4 +45,6 @@ class XStorable2(XStorable_998f0aa7):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

@@ -52,11 +52,13 @@ class InteractiveLockingException(ClassifiedInteractionRequest_9f72121b):
             Classification (InteractionClassification, optional): Classification value.
             Url (str, optional): Url value.
         """
+        ...
     @property
     def Url(self) -> str:
         """
         The Url of the resource this exception is related to.
         """
+        ...
 
 
 __all__ = ['InteractiveLockingException']

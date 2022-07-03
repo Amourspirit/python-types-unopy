@@ -29,5 +29,6 @@ class JobManager(XJobManager_a40d0af4):
     See Also:
         `API JobManager <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1util_1_1JobManager.html>`_
     """
+    ...
 
 

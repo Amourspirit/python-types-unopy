@@ -36,5 +36,6 @@ class AccessibleList(AccessibleContext_7e0e1143, XAccessible_1cbc0eb6, XAccessib
     See Also:
         `API AccessibleList <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1AccessibleList.html>`_
     """
+    ...
 
 

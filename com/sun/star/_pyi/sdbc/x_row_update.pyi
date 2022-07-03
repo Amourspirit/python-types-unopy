@@ -44,6 +44,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateBoolean(self, columnIndex: int, x: bool) -> None:
         """
         updates a column with a boolean value.
@@ -51,6 +52,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateByte(self, columnIndex: int, x: int) -> None:
         """
         updates a column with a byte value.
@@ -58,6 +60,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateBytes(self, columnIndex: int, x: uno.ByteSequence) -> None:
         """
         updates a column with a byte array value.
@@ -65,6 +68,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateCharacterStream(self, columnIndex: int, x: 'XInputStream_98d40ab4', length: int) -> None:
         """
         updates a column with a stream value.
@@ -72,6 +76,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateDate(self, columnIndex: int, x: 'Date_60040844') -> None:
         """
         updates a column with a date value.
@@ -79,6 +84,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateDouble(self, columnIndex: int, x: float) -> None:
         """
         updates a column with a double value.
@@ -86,6 +92,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateFloat(self, columnIndex: int, x: float) -> None:
         """
         updates a column with a float value.
@@ -93,6 +100,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateInt(self, columnIndex: int, x: int) -> None:
         """
         updates a column with an long value.
@@ -100,6 +108,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateLong(self, columnIndex: int, x: int) -> None:
         """
         updates a column with a hyper value.
@@ -107,6 +116,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateNull(self, columnIndex: int) -> None:
         """
         gives a nullable column a null value.
@@ -114,6 +124,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateNumericObject(self, columnIndex: int, x: object, scale: int) -> None:
         """
         updates a column with an object value.
@@ -121,6 +132,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateObject(self, columnIndex: int, x: object) -> None:
         """
         updates a column with an object value.
@@ -128,6 +140,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateShort(self, columnIndex: int, x: int) -> None:
         """
         updates a column with a short value.
@@ -135,6 +148,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateString(self, columnIndex: int, x: str) -> None:
         """
         updates a column with a string value.
@@ -142,6 +156,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateTime(self, columnIndex: int, x: 'Time_604e0855') -> None:
         """
         updates a column with a time value.
@@ -149,6 +164,7 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def updateTimestamp(self, columnIndex: int, x: 'DateTime_84de09d3') -> None:
         """
         updates a column with a timestamp value.
@@ -156,4 +172,6 @@ class XRowUpdate(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

@@ -44,6 +44,7 @@ class XDataSinkEncrSupport(XInterface_8f010a43):
             com.sun.star.packages.zip.ZipException: ``ZipException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def getPlainRawStream(self) -> 'XInputStream_98d40ab4':
         """
         Allows to get access to the raw data of the stream as it is stored in the package.
@@ -52,6 +53,7 @@ class XDataSinkEncrSupport(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.packages.NoEncryptionException: ``NoEncryptionException``
         """
+        ...
     def getRawStream(self) -> 'XInputStream_98d40ab4':
         """
         Allows to get access to the data of the PackageStream as to raw stream.
@@ -64,6 +66,7 @@ class XDataSinkEncrSupport(XInterface_8f010a43):
             com.sun.star.packages.NoEncryptionException: ``NoEncryptionException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def setDataStream(self, aStream: 'XInputStream_98d40ab4') -> None:
         """
         Allows to set a data stream for the PackageStream.
@@ -73,6 +76,7 @@ class XDataSinkEncrSupport(XInterface_8f010a43):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def setRawStream(self, aStream: 'XInputStream_98d40ab4') -> None:
         """
         Allows to set raw stream for the PackageStream.
@@ -84,4 +88,6 @@ class XDataSinkEncrSupport(XInterface_8f010a43):
             com.sun.star.packages.NoRawFormatException: ``NoRawFormatException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

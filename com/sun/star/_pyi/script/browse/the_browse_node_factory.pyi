@@ -36,5 +36,6 @@ class theBrowseNodeFactory(XBrowseNodeFactory_8e541185):
     See Also:
         `API theBrowseNodeFactory <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1script_1_1browse_1_1theBrowseNodeFactory.html>`_
     """
+    ...
 
 

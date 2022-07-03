@@ -38,25 +38,30 @@ class ColumnDescriptorControlModel(UnoControlModel_c8ce0c58):
         """
         specifies the connection to a database.
         """
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
     @property
     def Column(self) -> 'XPropertySet_bc180bfa':
         """
         specifies the column descriptor where the values will be stored in.
         """
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
+        ...
     @property
     def Tabstop(self) -> bool:
         """
         specifies that the control can be reached with the TAB key.
         """
+        ...
 
 

@@ -37,10 +37,13 @@ class XListEntrySink(XInterface_8f010a43):
         """
         retrieves the current source for the list entries of the component.
         """
+        ...
     def setListEntrySource(self, Source: 'XListEntrySource_576b103c') -> None:
         """
         sets the new source for the list entries of the component
         
         The list represented by this component will be cleared, and initially filled with the entries from the new list source.
         """
+        ...
+
 

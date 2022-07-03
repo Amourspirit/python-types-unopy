@@ -32,5 +32,6 @@ class GenericClipboard(XClipboardEx_c626128a, XClipboardNotifier_3e4e150d, XComp
     See Also:
         `API GenericClipboard <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1datatransfer_1_1clipboard_1_1GenericClipboard.html>`_
     """
+    ...
 
 

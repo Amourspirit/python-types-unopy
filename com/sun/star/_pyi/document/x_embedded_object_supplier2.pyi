@@ -40,16 +40,20 @@ class XEmbeddedObjectSupplier2(XEmbeddedObjectSupplier_8b631174):
         
         This method does not return the model that is controlled by the embedded object, but the embedded object itself.
         """
+        ...
+
     @property
     def Aspect(self) -> int:
         """
         allows to control the aspect of the object.
         """
+        ...
 
     @property
     def ReplacementGraphic(self) -> 'XGraphic_a4da0afc':
         """
         allows to get the replacement image of the object.
         """
+        ...
 
 

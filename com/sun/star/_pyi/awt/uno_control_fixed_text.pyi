@@ -31,5 +31,6 @@ class UnoControlFixedText(UnoControl_8f2c0a67, XFixedText_8e2a0a41, XLayoutConst
     See Also:
         `API UnoControlFixedText <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlFixedText.html>`_
     """
+    ...
 
 

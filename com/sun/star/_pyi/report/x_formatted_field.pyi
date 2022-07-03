@@ -40,11 +40,13 @@ class XFormattedField(XReportControlModel_2d800f4a):
         
         This value is meaningful relative to the FormatsSupplier attribute only.
         """
+        ...
 
     @property
     def FormatsSupplier(self) -> 'XNumberFormatsSupplier_3afb0fb7':
         """
         supplies the formats the field should work with.
         """
+        ...
 
 

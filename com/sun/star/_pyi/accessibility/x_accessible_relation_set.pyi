@@ -43,6 +43,7 @@ class XAccessibleRelationSet(XInterface_8f010a43):
         """
         Tests whether the relation set contains a relation matching the specified key.
         """
+        ...
     def getRelation(self, nIndex: int) -> 'AccessibleRelation_8f8b119c':
         """
         Returns the relation of this relation set that is specified by the given index.
@@ -50,12 +51,16 @@ class XAccessibleRelationSet(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getRelationByType(self, aRelationType: int) -> 'AccessibleRelation_8f8b119c':
         """
         Retrieve and return the relation with the given relation type.
         """
+        ...
     def getRelationCount(self) -> int:
         """
         Returns the number of relations in this relation set.
         """
+        ...
+
 

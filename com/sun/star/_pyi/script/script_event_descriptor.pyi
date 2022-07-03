@@ -44,6 +44,7 @@ class ScriptEventDescriptor(object):
             ScriptType (str, optional): ScriptType value.
             ScriptCode (str, optional): ScriptCode value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class ScriptEventDescriptor(object):
         """
         listener type as string, same as listener-XIdlClass.getName().
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class ScriptEventDescriptor(object):
         """
         event method as string.
         """
+        ...
 
 
     @property
@@ -67,6 +70,7 @@ class ScriptEventDescriptor(object):
         
         If the type of this parameter is different from string, it will be converted, when added.
         """
+        ...
 
 
     @property
@@ -74,6 +78,7 @@ class ScriptEventDescriptor(object):
         """
         type of the script language as string; for example, \"Basic\" or \"StarScript\".
         """
+        ...
 
 
     @property
@@ -81,5 +86,6 @@ class ScriptEventDescriptor(object):
         """
         script code as string (the code has to correspond with the language defined by ScriptType).
         """
+        ...
 
 

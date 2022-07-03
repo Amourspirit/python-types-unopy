@@ -37,8 +37,11 @@ class XTitleChangeBroadcaster(XInterface_8f010a43):
         """
         Add a listener.
         """
+        ...
     def removeTitleChangeListener(self, xListener: 'XTitleChangeListener_26cf0ef9') -> None:
         """
         Remove a listener.
         """
+        ...
+
 

@@ -31,5 +31,6 @@ class NumberFormatter(XNumberFormatter2_f0840d6d):
     See Also:
         `API NumberFormatter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1util_1_1NumberFormatter.html>`_
     """
+    ...
 
 

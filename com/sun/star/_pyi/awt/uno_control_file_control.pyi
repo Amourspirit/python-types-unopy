@@ -31,5 +31,6 @@ class UnoControlFileControl(UnoControlEdit_bc4e0bed):
     See Also:
         `API UnoControlFileControl <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlFileControl.html>`_
     """
+    ...
 
 

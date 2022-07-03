@@ -39,6 +39,7 @@ class XWarningsSupplier(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getWarnings(self) -> object:
         """
         returns the first warning reported by calls on an object that supports the usage of warnings.
@@ -48,4 +49,6 @@ class XWarningsSupplier(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

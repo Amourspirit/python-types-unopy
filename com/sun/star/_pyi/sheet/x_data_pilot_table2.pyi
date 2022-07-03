@@ -45,6 +45,7 @@ class XDataPilotTable2(XDataPilotTable_e0530ce3):
         """
         When the address of a cell within the result area is given, XDataPilotTable2.getDrillDownData() returns its drill-down output table that includes only those rows that contribute to the value of that cell.
         """
+        ...
     def getOutputRangeByType(self, nType: int) -> 'CellRangeAddress_ec450d43':
         """
         This method returns a different output range of a DataPilot table per specified output range type.
@@ -52,16 +53,20 @@ class XDataPilotTable2(XDataPilotTable_e0530ce3):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getPositionData(self, aAddr: 'CellAddress_ae5f0b56') -> 'DataPilotTablePositionData_8a0c115a':
         """
         Given a cell address, it returns the information about that cell.
         
         The type of information returned depends upon whether the cell is within the result area or column/row header area.
         """
+        ...
     def insertDrillDownSheet(self, aAddr: 'CellAddress_ae5f0b56') -> None:
         """
         This method inserts a new sheet to display the drill-down data for a specified result cell. A drill-down data for a result cell consists of a subset of rows from the original data source that contribute to the value displayed in that cell.
         
         The new sheet is always inserted to the immediate left of the current sheet where the DataPilot table is. Note that when the drill-down data is empty, no new sheet is inserted.
         """
+        ...
+
 

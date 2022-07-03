@@ -43,12 +43,16 @@ class XInterfaceAttributeTypeDescription2(XInterfaceAttributeTypeDescription_98c
         """
         Returns the exceptions that can be raised by the attribute's getter.
         """
+        ...
     def getSetExceptions(self) -> 'typing.Tuple[XCompoundTypeDescription_c7be12f6, ...]':
         """
         Returns the exceptions that can be raised by the attribute's setter.
         """
+        ...
     def isBound(self) -> bool:
         """
         Returns whether this object reflects a bound attribute.
         """
+        ...
+
 

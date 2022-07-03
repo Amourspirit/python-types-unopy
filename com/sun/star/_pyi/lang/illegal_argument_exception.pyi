@@ -44,6 +44,7 @@ class IllegalArgumentException(RuntimeException_d7390ced):
             Context (XInterface, optional): Context value.
             ArgumentPosition (int, optional): ArgumentPosition value.
         """
+        ...
     @property
     def ArgumentPosition(self) -> int:
         """
@@ -51,6 +52,7 @@ class IllegalArgumentException(RuntimeException_d7390ced):
         
         This field is -1 if the position is not known.
         """
+        ...
 
 
 __all__ = ['IllegalArgumentException']

@@ -37,8 +37,11 @@ class XInteractionRequest(XInterface_8f010a43):
         """
         Get the set of com.sun.star.task.XInteractionContinuations the client supports for this request.
         """
+        ...
     def getRequest(self) -> object:
         """
         Get information about the request itself.
         """
+        ...
+
 

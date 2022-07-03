@@ -36,5 +36,6 @@ class TableCellStyle(CellStyle_9b190aca, CharacterProperties_1d4f0ef3, Character
     See Also:
         `API TableCellStyle <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1TableCellStyle.html>`_
     """
+    ...
 
 

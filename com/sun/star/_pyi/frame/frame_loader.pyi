@@ -33,5 +33,6 @@ class FrameLoader(XNamed_a6520b08, XFrameLoader_ba3a0bad, XInitialization_d46c0c
     See Also:
         `API FrameLoader <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1frame_1_1FrameLoader.html>`_
     """
+    ...
 
 

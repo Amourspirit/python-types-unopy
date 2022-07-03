@@ -36,25 +36,34 @@ class XLabeled(ABC):
     def getLabel(self) -> 'XTitle_833f09a6':
         """
         """
+        ...
     def getLabelAnchor(self) -> 'RectanglePoint_f0ff0d93':
         """
         """
+        ...
     def getOffset(self) -> 'typing.Tuple[float, ...]':
         """
         """
+        ...
     def getOwnAnchor(self) -> 'RectanglePoint_f0ff0d93':
         """
         """
+        ...
     def setLabel(self, xTitle: 'XTitle_833f09a6') -> None:
         """
         """
+        ...
     def setLabelAnchor(self, aAnchorPoint: 'RectanglePoint_f0ff0d93') -> None:
         """
         """
+        ...
     def setOffset(self, aOffsetVector: 'typing.Tuple[float, ...]') -> None:
         """
         """
+        ...
     def setOwnAnchor(self, aAnchorPoint: 'RectanglePoint_f0ff0d93') -> None:
         """
         """
+        ...
+
 

@@ -39,4 +39,6 @@ class XQueriesSupplier(XInterface_8f010a43):
         
         The single elements of the container support the Query service.
         """
+        ...
+
 

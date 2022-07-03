@@ -44,6 +44,7 @@ class AllPermission(object):
         Arguments:
             dummy (int, optional): dummy value.
         """
+        ...
 
 
     @property

@@ -38,20 +38,24 @@ class Layer(XPropertySet_bc180bfa):
         """
         If a Layer is locked, the objects in this Layer cannot be edited in the user interface.
         """
+        ...
     @property
     def IsPrintable(self) -> bool:
         """
         If a Layer is not printable, the objects in this Layer are not printed.
         """
+        ...
     @property
     def IsVisible(self) -> bool:
         """
         If a Layer is not visible, the objects in this Layer are not shown in the user interface.
         """
+        ...
     @property
     def Name(self) -> str:
         """
         The name of a Layer is used to identify the Layer in the user interface.
         """
+        ...
 
 

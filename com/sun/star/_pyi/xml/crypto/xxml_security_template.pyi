@@ -40,10 +40,12 @@ class XXMLSecurityTemplate(XInterface_8f010a43):
         """
         Get the template status.
         """
+        ...
     def getTemplate(self) -> 'XXMLElementWrapper_66c0107c':
         """
         Get the XML signature element that represents the signature template.
         """
+        ...
     def setStatus(self, status: 'SecurityOperationStatus_b66e12b5') -> None:
         """
         Set the template status.
@@ -51,6 +53,7 @@ class XXMLSecurityTemplate(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setTarget(self, aXmlElement: 'XXMLElementWrapper_66c0107c') -> None:
         """
         Load the target XML element, i.e.
@@ -60,6 +63,7 @@ class XXMLSecurityTemplate(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setTemplate(self, aXmlElement: 'XXMLElementWrapper_66c0107c') -> None:
         """
         Load a XML signature template from XML signature element.
@@ -67,4 +71,6 @@ class XXMLSecurityTemplate(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

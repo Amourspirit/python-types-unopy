@@ -46,11 +46,13 @@ class NameClashException(ClassifiedInteractionRequest_9f72121b):
             Classification (InteractionClassification, optional): Classification value.
             Name (str, optional): Name value.
         """
+        ...
     @property
     def Name(self) -> str:
         """
         contains the clashing name.
         """
+        ...
 
 
 __all__ = ['NameClashException']

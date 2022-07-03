@@ -38,8 +38,11 @@ class XColumnRowRange(XInterface_8f010a43):
         """
         returns the collection of columns in the range.
         """
+        ...
     def getRows(self) -> 'XTableRows_a37e0afb':
         """
         returns the collection of rows in the range.
         """
+        ...
+
 

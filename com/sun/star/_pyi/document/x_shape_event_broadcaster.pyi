@@ -42,8 +42,11 @@ class XShapeEventBroadcaster(XEventBroadcaster_2b120f2b):
         """
         registers the given listener
         """
+        ...
     def removeShapeEventListener(self, Shape: 'XShape_8fd00a3d', Listener: 'XShapeEventListener_4a2d0ff8') -> None:
         """
         unregisters the given listener
         """
+        ...
+
 

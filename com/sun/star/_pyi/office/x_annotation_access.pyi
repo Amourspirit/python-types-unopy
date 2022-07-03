@@ -38,9 +38,11 @@ class XAnnotationAccess(ABC):
         """
         creates a new annotation and inserts it into the document content.
         """
+        ...
     def createAnnotationEnumeration(self) -> 'XAnnotationEnumeration_58fe106e':
         """
         """
+        ...
     def removeAnnotation(self, annotation: 'XAnnotation_bb8f0be7') -> None:
         """
         removes the annotation from this document content.
@@ -48,4 +50,6 @@ class XAnnotationAccess(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

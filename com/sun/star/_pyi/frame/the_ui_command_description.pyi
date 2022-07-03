@@ -42,5 +42,6 @@ class theUICommandDescription(XNameAccess_e2ab0cf6):
     See Also:
         `API theUICommandDescription <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1frame_1_1theUICommandDescription.html>`_
     """
+    ...
 
 

@@ -39,14 +39,18 @@ class XCopyTableListener(XEventListener_c7230c4a):
         
         This method is called right after a row has been successfully copied. It might be used, for instance, to update a progress indicator.
         """
+        ...
     def copyRowError(self, Event: 'CopyTableRowEvent_9be911c0') -> int:
         """
         is called when copying a row failed.
         """
+        ...
     def copyingRow(self, Event: 'CopyTableRowEvent_9be911c0') -> None:
         """
         is called when a row is about to be copied.
         
         This method is called immediately before a row is copied. It might be used, for instance, to update a progress indicator.
         """
+        ...
+
 

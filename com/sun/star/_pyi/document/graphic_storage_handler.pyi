@@ -39,5 +39,6 @@ class GraphicStorageHandler(XGraphicStorageHandler_7c171110):
     def createWithStorage(self, Storage: 'XStorage_8e460a32') -> None:
         """
         """
+        ...
 
 

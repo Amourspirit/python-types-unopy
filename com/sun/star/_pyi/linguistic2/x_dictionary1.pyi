@@ -41,46 +41,62 @@ class XDictionary1(XNamed_a6520b08):
     def add(self, aWord: str, bIsNegative: bool, aRplcText: str) -> bool:
         """
         """
+        ...
     def addDictionaryEventListener(self, xListener: 'XDictionaryEventListener_d74c132b') -> bool:
         """
         """
+        ...
     def addEntry(self, xDicEntry: 'XDictionaryEntry_49ef0ff5') -> bool:
         """
         """
+        ...
     def clear(self) -> None:
         """
         """
+        ...
     def getCount(self) -> int:
         """
         """
+        ...
     def getDictionaryType(self) -> 'DictionaryType_2ba50f2d':
         """
         """
+        ...
     def getEntries(self) -> 'typing.Tuple[XDictionaryEntry_49ef0ff5, ...]':
         """
         """
+        ...
     def getEntry(self, aWord: str) -> 'XDictionaryEntry_49ef0ff5':
         """
         """
+        ...
     def getLanguage(self) -> int:
         """
         """
+        ...
     def isActive(self) -> bool:
         """
         """
+        ...
     def isFull(self) -> bool:
         """
         """
+        ...
     def remove(self, aWord: str) -> bool:
         """
         """
+        ...
     def removeDictionaryEventListener(self, xListener: 'XDictionaryEventListener_d74c132b') -> bool:
         """
         """
+        ...
     def setActive(self, bActivate: bool) -> None:
         """
         """
+        ...
     def setLanguage(self, nLang: int) -> None:
         """
         """
+        ...
+
 

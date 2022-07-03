@@ -42,30 +42,37 @@ class XDesktop(XInterface_8f010a43):
         """
         registers an event listener to the desktop, which is called when the desktop is queried to terminate, and when it really terminates.
         """
+        ...
     def getComponents(self) -> 'XEnumerationAccess_4bac0ffc':
         """
         provides read access to collection of all currently loaded components inside the frame tree
         
         The component is, by definition, the model of the control which is loaded into a frame, or if no model exists, into the control itself. The service Components which is available from this method is a collection of all components of the desktop which are open within a frame of the desktop.
         """
+        ...
     def getCurrentComponent(self) -> 'XComponent_98dc0ab5':
         """
         provides read access to the component inside the tree which has the UI focus
         
         Normally, the component is the model part of the active component. If no model exists it is the active controller (view) itself.
         """
+        ...
     def getCurrentFrame(self) -> 'XFrame_7a570956':
         """
         provides read access to the frame which contains the current component
         """
+        ...
     def removeTerminateListener(self, Listener: 'XTerminateListener_b760e5a') -> None:
         """
         unregisters an event listener for termination events.
         """
+        ...
     def terminate(self) -> bool:
         """
         tries to terminate the desktop.
         
         First, every terminate listener is called by his XTerminateListener.queryTermination() method. Throwing of a TerminationVetoException can break the termination process and the listener how has done that will be the new \"controller\" of the desktop lifetime. He should try to terminate it by himself after his own processes will be finished. If nobody disagree with the termination request, every listener will be called by his XTerminateListener.notifyTermination() method.
         """
+        ...
+
 

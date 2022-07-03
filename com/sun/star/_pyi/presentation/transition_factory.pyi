@@ -28,5 +28,6 @@ class TransitionFactory(XTransitionFactory_8364117f):
     See Also:
         `API TransitionFactory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1TransitionFactory.html>`_
     """
+    ...
 
 

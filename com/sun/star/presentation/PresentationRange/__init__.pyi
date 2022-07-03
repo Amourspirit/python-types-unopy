@@ -29,6 +29,7 @@ Enum
 See Also:
     `API PresentationRange <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1presentation.html#a69c71b14b95cc70bce7122a7b8287045>`_
 """
+typeName: str = 'com.sun.star.presentation.PresentationRange'
 
 PRESENTATIONRANGE_ALL: 'uno.Enum'
 """

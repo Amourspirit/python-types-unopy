@@ -33,5 +33,6 @@ class FunctionDescriptions(XEnumerationAccess_4bac0ffc, XNameAccess_e2ab0cf6, XF
     See Also:
         `API FunctionDescriptions <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1FunctionDescriptions.html>`_
     """
+    ...
 
 

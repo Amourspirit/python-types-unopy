@@ -46,6 +46,7 @@ class EndDockingEvent(EventObject_a3d70b03):
             bFloating (bool, optional): bFloating value.
             bCancelled (bool, optional): bCancelled value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class EndDockingEvent(EventObject_a3d70b03):
         """
         specifies the new bounding rectangle of the window
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class EndDockingEvent(EventObject_a3d70b03):
         """
         specifies if the window is now floating TRUE or docked FALSE
         """
+        ...
 
 
     @property
@@ -67,5 +70,6 @@ class EndDockingEvent(EventObject_a3d70b03):
         """
         specifies that the docking procedure was canceled
         """
+        ...
 
 

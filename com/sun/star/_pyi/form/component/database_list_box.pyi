@@ -46,6 +46,7 @@ class DatabaseListBox(DataAwareControlModel_27110ef8, ListBox_f1530d82):
         """
         The selected values.
         """
+        ...
     @property
     def BoundColumn(self) -> int:
         """
@@ -55,6 +56,7 @@ class DatabaseListBox(DataAwareControlModel_27110ef8, ListBox_f1530d82):
         
         The bound column property is only used if a list source is defined and the list source matches with the types com.sun.star.form.ListSourceType.TABLE, com.sun.star.form.ListSourceType.QUERY, com.sun.star.form.ListSourceType.SQL or com.sun.star.form.ListSourceType.SQLPASSTHROUGH. Otherwise the property is ignored, as there is no result set from which to get the column values.
         """
+        ...
     @property
     def ListSourceType(self) -> 'ListSourceType_c9850c6b':
         """
@@ -62,10 +64,12 @@ class DatabaseListBox(DataAwareControlModel_27110ef8, ListBox_f1530d82):
         
         Depending on the value of this property, the way the value of ListBox.ListSource is evaluated varies.
         """
+        ...
     @property
     def SelectedValue(self) -> object:
         """
         The selected value, if there is at most one.
         """
+        ...
 
 

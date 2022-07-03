@@ -42,16 +42,21 @@ class XNativeNumberSupplier(XInterface_8f010a43):
         """
         Convert XML attributes to a NatNum value.
         """
+        ...
     def convertToXmlAttributes(self, aLocale: 'Locale_70d308fa', nNativeNumberMode: int) -> 'NativeNumberXmlAttributes_5e4f1070':
         """
         Convert a specific NatNum/Locale combination to attributes used in the XML file format.
         """
+        ...
     def getNativeNumberString(self, aNumberString: str, aLocale: 'Locale_70d308fa', nNativeNumberMode: int) -> str:
         """
         Returns native number string for given number string.
         """
+        ...
     def isValidNatNum(self, aLocale: 'Locale_70d308fa', nNativeNumberMode: int) -> bool:
         """
         Check if the NatNum is valid for the given locale.
         """
+        ...
+
 

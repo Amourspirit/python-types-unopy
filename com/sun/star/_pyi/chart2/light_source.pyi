@@ -43,6 +43,7 @@ class LightSource(object):
             bIsEnabled (bool, optional): bIsEnabled value.
             bSpecular (bool, optional): bSpecular value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class LightSource(object):
         """
         the light source's color
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class LightSource(object):
         """
         the direction into which the light-source points
         """
+        ...
 
 
     @property
@@ -69,5 +72,6 @@ class LightSource(object):
         """
         When TRUE, the specularity of material is taken into account when lighting an object.
         """
+        ...
 
 

@@ -32,15 +32,20 @@ class XDataBarEntry(ABC):
     def getFormula(self) -> str:
         """
         """
+        ...
     def getType(self) -> int:
         """
         See com.sun.star.sheet.DataBarEntryType for possible values.
         """
+        ...
     def setFormula(self, Formula: str) -> None:
         """
         """
+        ...
     def setType(self, Type: int) -> None:
         """
         See com.sun.star.sheet.DataBarEntryType for possible values.
         """
+        ...
+
 

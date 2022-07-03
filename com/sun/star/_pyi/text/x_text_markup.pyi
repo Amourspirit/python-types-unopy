@@ -42,11 +42,15 @@ class XTextMarkup(ABC):
         """
         submits a new markup range.
         """
+        ...
     def commitTextRangeMarkup(self, nType: int, aIdentifier: str, xRange: 'XTextRange_9a910ab7', xMarkupInfoContainer: 'XStringKeyMap_ffc60de1') -> None:
         """
         """
+        ...
     def getMarkupInfoContainer(self) -> 'XStringKeyMap_ffc60de1':
         """
         obtains a container to store additional user defined text markup information.
         """
+        ...
+
 

@@ -33,5 +33,6 @@ class GraphicMapper(XGraphicMapper_eec10d61):
     See Also:
         `API GraphicMapper <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1graphic_1_1GraphicMapper.html>`_
     """
+    ...
 
 

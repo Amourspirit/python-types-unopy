@@ -36,5 +36,6 @@ class LayerFilter(XLayer_4cd50fcb, XInitialization_d46c0cca):
     See Also:
         `API LayerFilter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1LayerFilter.html>`_
     """
+    ...
 
 

@@ -46,6 +46,7 @@ class PropertyPutArgument(object):
         Arguments:
             Value (object, optional): Value value.
         """
+        ...
 
 
     @property
@@ -53,5 +54,6 @@ class PropertyPutArgument(object):
         """
         contains the actual argument.
         """
+        ...
 
 

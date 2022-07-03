@@ -29,5 +29,6 @@ class DialogProvider2(XDialogProvider2_d3880c79):
     See Also:
         `API DialogProvider2 <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1DialogProvider2.html>`_
     """
+    ...
 
 

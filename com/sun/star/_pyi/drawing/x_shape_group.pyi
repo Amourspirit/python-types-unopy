@@ -42,6 +42,7 @@ class XShapeGroup(XShape_8fd00a3d):
         
         This affects only the user interface. The behavior is not specified if this instance is not visible on any view. In this case it may or may not work.
         """
+        ...
     def leaveGroup(self) -> None:
         """
         leaves the group, which disables the editing function for the parts of a grouped Shape.
@@ -50,4 +51,6 @@ class XShapeGroup(XShape_8fd00a3d):
         
         This affects only the user interface. The behavior is not specified if this instance is not visible on any view. In this case it may or may not work.
         """
+        ...
+
 

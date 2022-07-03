@@ -38,8 +38,11 @@ class XFormulaParser(ABC):
         """
         parses a formula into a sequence of tokens.
         """
+        ...
     def printFormula(self, aTokens: 'typing.Tuple[FormulaToken_bd1c0bf8, ...]', aReferencePos: 'CellAddress_ae5f0b56') -> str:
         """
         converts a formula into a string.
         """
+        ...
+
 

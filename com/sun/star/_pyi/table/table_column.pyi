@@ -36,16 +36,19 @@ class TableColumn(XPropertySet_bc180bfa, XNamed_a6520b08, XCellRange_a2f70ad5):
         """
         is TRUE, if there is a manual horizontal page break attached to the column.
         """
+        ...
     @property
     def IsVisible(self) -> bool:
         """
         is TRUE, if the column is visible.
         """
+        ...
     @property
     def OptimalWidth(self) -> bool:
         """
         is TRUE, if the column always keeps its optimal width.
         """
+        ...
     @property
     def Width(self) -> int:
         """
@@ -53,5 +56,6 @@ class TableColumn(XPropertySet_bc180bfa, XNamed_a6520b08, XCellRange_a2f70ad5):
         
         When hidden, it returns the width which the column would have, if it were visible.
         """
+        ...
 
 

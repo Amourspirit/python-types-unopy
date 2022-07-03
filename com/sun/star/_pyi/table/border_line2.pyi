@@ -51,6 +51,7 @@ class BorderLine2(BorderLine_a3f80af6):
             LineStyle (int, optional): LineStyle value.
             LineWidth (int, optional): LineWidth value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class BorderLine2(BorderLine_a3f80af6):
         """
         Style of the border.
         """
+        ...
 
 
     @property
@@ -69,5 +71,6 @@ class BorderLine2(BorderLine_a3f80af6):
         
         This property is prevailing on the old Out, In and Dist width from BorderLine. If this property is set to 0, then the other widths will be used to guess the border width.
         """
+        ...
 
 

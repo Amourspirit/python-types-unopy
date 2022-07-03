@@ -41,6 +41,7 @@ class ChartTableAddressSupplier(ABC):
         
         This sequence should contain one element for each series in the chart.
         """
+        ...
     @property
     def CategoriesRangeAddress(self) -> str:
         """
@@ -48,15 +49,18 @@ class ChartTableAddressSupplier(ABC):
         
         Note: Each value of a data series belongs exactly to one category.
         """
+        ...
     @property
     def MainTitleAddress(self) -> str:
         """
         contains the address to the main title.
         """
+        ...
     @property
     def SubTitleAddress(self) -> str:
         """
         contains the address to the sub title.
         """
+        ...
 
 

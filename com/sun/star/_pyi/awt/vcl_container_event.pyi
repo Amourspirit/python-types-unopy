@@ -45,6 +45,7 @@ class VclContainerEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Child (XInterface, optional): Child value.
         """
+        ...
 
 
     @property
@@ -52,5 +53,6 @@ class VclContainerEvent(EventObject_a3d70b03):
         """
         returns the child component that was added or removed.
         """
+        ...
 
 

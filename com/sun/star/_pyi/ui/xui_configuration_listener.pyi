@@ -41,12 +41,16 @@ class XUIConfigurationListener(XEventListener_c7230c4a):
         """
         is invoked when a configuration has inserted an user interface element.
         """
+        ...
     def elementRemoved(self, Event: 'ConfigurationEvent_e2a60d40') -> None:
         """
         is invoked when a configuration has removed an user interface element.
         """
+        ...
     def elementReplaced(self, Event: 'ConfigurationEvent_e2a60d40') -> None:
         """
         is invoked when a configuration has replaced an user interface element.
         """
+        ...
+
 

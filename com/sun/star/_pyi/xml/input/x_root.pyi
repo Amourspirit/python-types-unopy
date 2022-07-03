@@ -43,6 +43,7 @@ class XRoot(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def processingInstruction(self, target: str, data: str) -> None:
         """
         Receives notification of a processing instruction.
@@ -50,6 +51,7 @@ class XRoot(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def setDocumentLocator(self, locator: 'XLocator_a3fb0aff') -> None:
         """
         Receives an object for locating the origin of SAX document events.
@@ -57,6 +59,7 @@ class XRoot(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def startDocument(self, xMapping: 'XNamespaceMapping_38700f68') -> None:
         """
         Receives notification of the beginning of a document.
@@ -64,6 +67,7 @@ class XRoot(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
     def startRootElement(self, uid: int, localName: str, xAttributes: 'XAttributes_e31a0d36') -> 'XElement_bc5b0bd9':
         """
         Called upon root element.
@@ -71,4 +75,6 @@ class XRoot(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.sax.SAXException: ``SAXException``
         """
+        ...
+
 

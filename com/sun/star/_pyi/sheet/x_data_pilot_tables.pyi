@@ -42,12 +42,16 @@ class XDataPilotTables(XNameAccess_e2ab0cf6):
         
         This descriptor can be used with XDataPilotTables.addTable().
         """
+        ...
     def insertNewByName(self, aName: str, OutputAddress: 'CellAddress_ae5f0b56', xDescriptor: 'XDataPilotDescriptor_27650f1a') -> None:
         """
         creates a new data pilot table and adds it to the collection.
         """
+        ...
     def removeByName(self, aName: str) -> None:
         """
         deletes a data pilot table from the collection.
         """
+        ...
+
 

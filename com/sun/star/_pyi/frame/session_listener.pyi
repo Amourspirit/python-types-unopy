@@ -36,5 +36,6 @@ class SessionListener(XSessionManagerListener2_68af1082):
     def createWithOnQuitFlag(self, AllowUserInteractionOnQuit: bool) -> None:
         """
         """
+        ...
 
 

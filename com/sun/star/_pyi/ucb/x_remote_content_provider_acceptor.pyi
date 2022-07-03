@@ -40,8 +40,11 @@ class XRemoteContentProviderAcceptor(XInterface_8f010a43):
         
         To enable connection control, it is recommended that this argument also implements the interface XRemoteContentProviderConnectionControl.
         """
+        ...
     def removeRemoteContentProvider(self, Identifier: str) -> bool:
         """
         Remove a remote content provider.
         """
+        ...
+
 

@@ -38,8 +38,11 @@ class XTableCharts(XNameAccess_e2ab0cf6):
         """
         creates a chart and adds it to the collection.
         """
+        ...
     def removeByName(self, aName: str) -> None:
         """
         removes a chart from the collection.
         """
+        ...
+
 

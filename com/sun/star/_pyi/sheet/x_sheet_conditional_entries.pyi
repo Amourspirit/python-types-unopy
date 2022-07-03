@@ -39,12 +39,16 @@ class XSheetConditionalEntries(XIndexAccess_f0910d6d):
         
         Supported properties are:
         """
+        ...
     def clear(self) -> None:
         """
         clears all condition entries.
         """
+        ...
     def removeByIndex(self, nIndex: int) -> None:
         """
         removes a conditional entry from the format.
         """
+        ...
+
 

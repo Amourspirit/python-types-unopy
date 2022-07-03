@@ -35,5 +35,6 @@ class SingleBackendAdapter(BackendAdapter_d7e012df):
     See Also:
         `API SingleBackendAdapter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1SingleBackendAdapter.html>`_
     """
+    ...
 
 

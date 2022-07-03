@@ -51,6 +51,7 @@ class FilePermission(object):
             URL (str, optional): URL value.
             Actions (str, optional): Actions value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class FilePermission(object):
         """
         target file url
         """
+        ...
 
 
     @property
@@ -65,5 +67,6 @@ class FilePermission(object):
         """
         comma separated actions list
         """
+        ...
 
 

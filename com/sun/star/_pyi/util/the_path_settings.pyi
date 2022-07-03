@@ -38,5 +38,6 @@ class thePathSettings(XPathSettings_bc930bfc):
     See Also:
         `API thePathSettings <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1util_1_1thePathSettings.html>`_
     """
+    ...
 
 

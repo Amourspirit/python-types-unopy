@@ -53,6 +53,7 @@ class MasterPasswordRequest(PasswordRequest_d7280cf7):
             Classification (InteractionClassification, optional): Classification value.
             Mode (PasswordRequestMode, optional): Mode value.
         """
+        ...
 
 __all__ = ['MasterPasswordRequest']
 

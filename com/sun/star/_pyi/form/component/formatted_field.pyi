@@ -31,5 +31,6 @@ class FormattedField(UnoControlFormattedFieldModel_9fb511e2, FormControlModel_e2
     See Also:
         `API FormattedField <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1component_1_1FormattedField.html>`_
     """
+    ...
 
 

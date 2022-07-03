@@ -29,5 +29,6 @@ class SimpleFileAccess(XSimpleFileAccess3_ebe70d09):
     See Also:
         `API SimpleFileAccess <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1SimpleFileAccess.html>`_
     """
+    ...
 
 

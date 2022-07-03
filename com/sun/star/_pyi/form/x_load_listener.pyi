@@ -39,24 +39,30 @@ class XLoadListener(XEventListener_c7230c4a):
         """
         is invoked when the object has successfully connected to a datasource.
         """
+        ...
     def reloaded(self, aEvent: 'EventObject_a3d70b03') -> None:
         """
         is invoked when the object has been reloaded.
         """
+        ...
     def reloading(self, aEvent: 'EventObject_a3d70b03') -> None:
         """
         is invoked when the object is about to be reloaded.
         
         Components may use this to stop any other event processing related to the event source until they get the reloaded event.
         """
+        ...
     def unloaded(self, aEvent: 'EventObject_a3d70b03') -> None:
         """
         is invoked after the object has disconnected from a datasource.
         """
+        ...
     def unloading(self, aEvent: 'EventObject_a3d70b03') -> None:
         """
         is invoked when the object is about to be unloaded.
         
         Components may use this to stop any other event processing related to the event source before the object is unloaded.
         """
+        ...
+
 

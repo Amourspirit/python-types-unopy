@@ -45,6 +45,7 @@ class ArrayWrapper(object):
             IsZeroIndex (bool, optional): IsZeroIndex value.
             Array (object, optional): Array value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class ArrayWrapper(object):
         """
         Indicates whether the Array should be have 1 or 0 based indexing.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class ArrayWrapper(object):
         
         Multi-dimensional arrays can only be represented as a sequence where the elements of the sequence are themselves sequences. N-Levels of indirection are possible, where N is the number of dimensions. Note: its perfectly legal to use this structure with a single dimensioned array just to indicate the array indexing.
         """
+        ...
 
 

@@ -45,6 +45,7 @@ class XBlob(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getBytes(self, pos: int, length: int) -> uno.ByteSequence:
         """
         returns as an array of bytes part or all of the  BLOB  value that this Blob object designates.
@@ -54,6 +55,7 @@ class XBlob(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def length(self) -> int:
         """
         returns the number of bytes in the  BLOB  value designated by this Blob object.
@@ -61,6 +63,7 @@ class XBlob(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def position(self, pattern: uno.ByteSequence, start: int) -> int:
         """
         determines the byte position at which the specified byte pattern begins within the  BLOB  value that this Blob object represents.
@@ -70,6 +73,7 @@ class XBlob(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def positionOfBlob(self, pattern: 'XBlob', start: int) -> int:
         """
         determines the byte position in the  BLOB  value designated by this Blob object at which pattern begins.
@@ -79,4 +83,6 @@ class XBlob(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

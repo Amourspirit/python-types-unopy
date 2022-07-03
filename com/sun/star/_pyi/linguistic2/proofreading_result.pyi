@@ -58,6 +58,7 @@ class ProofreadingResult(object):
             nStartOfNextSentencePosition (int, optional): nStartOfNextSentencePosition value.
             xProofreader (XProofreader, optional): xProofreader value.
         """
+        ...
 
 
     @property

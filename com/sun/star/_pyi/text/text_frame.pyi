@@ -47,11 +47,13 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
         
         (This is usually used in forms.)
         """
+        ...
     @property
     def FrameHeightAbsolute(self) -> int:
         """
         contains the metric height value of the frame.
         """
+        ...
     @property
     def FrameHeightPercent(self) -> int:
         """
@@ -59,16 +61,19 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
         
         If the value for \"HeightPercent\" is 0, the absolute value from is used.
         """
+        ...
     @property
     def FrameIsAutomaticHeight(self) -> bool:
         """
         If \"AutomaticHeight\" is set, then the object grows if it is required by the frame content.
         """
+        ...
     @property
     def FrameWidthAbsolute(self) -> int:
         """
         contains the metric width value of the frame.
         """
+        ...
     @property
     def FrameWidthPercent(self) -> int:
         """
@@ -76,6 +81,7 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
         
         If the value for \"WidthPercent\" is 0, the absolute value from is used.
         """
+        ...
     @property
     def IsFollowingTextFlow(self) -> bool:
         """
@@ -87,6 +93,7 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
         
         Note: The areas for the vertical orientation relation at page areas are interpreted in dependence to this property (
         """
+        ...
     @property
     def ParentText(self) -> 'XText_690408ca':
         """
@@ -98,11 +105,13 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
         
             LibreOffice 6.3
         """
+        ...
     @property
     def SizeType(self) -> int:
         """
         determines the interpretation of the height and relative height properties.
         """
+        ...
     @property
     def TextVerticalAdjust(self) -> 'TextVerticalAdjust_2c160f3e':
         """
@@ -112,6 +121,7 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
         
             LibreOffice 4.3
         """
+        ...
     @property
     def WidthType(self) -> int:
         """
@@ -121,10 +131,12 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
         
             OOo 2.4
         """
+        ...
     @property
     def WritingMode(self) -> int:
         """
         contains the writing direction, as represented by the com.sun.star.text.WritingMode2 constants
         """
+        ...
 
 

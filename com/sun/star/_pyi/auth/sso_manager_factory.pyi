@@ -37,5 +37,6 @@ class SSOManagerFactory(XSSOManagerFactory_f7ef0d9a):
     See Also:
         `API SSOManagerFactory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1auth_1_1SSOManagerFactory.html>`_
     """
+    ...
 
 

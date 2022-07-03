@@ -40,12 +40,14 @@ class XCellRange(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getCellRangeByName(self, aRange: str) -> 'XCellRange':
         """
         Returns a sub-range of cells within the range.
         
         The sub-range is specified by its name. The format of the range name is dependent of the context of the table. In spreadsheets valid names may be \"A1:C5\" or \"$B$2\" or even defined names for cell ranges such as \"MySpecialCell\".
         """
+        ...
     def getCellRangeByPosition(self, nLeft: int, nTop: int, nRight: int, nBottom: int) -> 'XCellRange':
         """
         Returns a sub-range of cells within the range.
@@ -53,4 +55,6 @@ class XCellRange(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

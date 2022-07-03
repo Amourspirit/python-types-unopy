@@ -38,5 +38,6 @@ class UpdatableLayer(Layer_3d4f0f73, XUpdatableLayer_ec97135d):
     See Also:
         `API UpdatableLayer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1UpdatableLayer.html>`_
     """
+    ...
 
 

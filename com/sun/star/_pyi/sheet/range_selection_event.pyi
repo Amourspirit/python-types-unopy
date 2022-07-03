@@ -43,6 +43,7 @@ class RangeSelectionEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             RangeDescriptor (str, optional): RangeDescriptor value.
         """
+        ...
 
 
     @property
@@ -50,5 +51,6 @@ class RangeSelectionEvent(EventObject_a3d70b03):
         """
         contains a textual representation of the selected range.
         """
+        ...
 
 

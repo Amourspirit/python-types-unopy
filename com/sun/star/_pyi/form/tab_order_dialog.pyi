@@ -40,5 +40,6 @@ class TabOrderDialog(XExecutableDialog_450f0fa1):
     def createWithModel(self, TabbingModel: 'XTabControllerModel_fbef0dd8', ControlContext: 'XControlContainer_e22d0d30', ParentWindow: 'XWindow_713b0924') -> None:
         """
         """
+        ...
 
 

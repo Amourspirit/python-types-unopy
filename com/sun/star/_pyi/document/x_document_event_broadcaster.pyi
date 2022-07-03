@@ -44,6 +44,7 @@ class XDocumentEventBroadcaster(ABC):
         """
         registers a listener which is notified about document events
         """
+        ...
     def notifyDocumentEvent(self, EventName: str, ViewController: 'XController2_bbcf0bc1', Supplement: object) -> None:
         """
         causes the broadcaster to notify all registered listeners of the given event
@@ -58,8 +59,11 @@ class XDocumentEventBroadcaster(ABC):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.lang.NoSupportException: ``NoSupportException``
         """
+        ...
     def removeDocumentEventListener(self, Listener: 'XDocumentEventListener_7db01146') -> None:
         """
         revokes a listener which has previously been registered to be notified about document events.
         """
+        ...
+
 

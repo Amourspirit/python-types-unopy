@@ -34,5 +34,6 @@ class theMacroExpander(XMacroExpander_c8360c47):
     See Also:
         `API theMacroExpander <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1util_1_1theMacroExpander.html>`_
     """
+    ...
 
 

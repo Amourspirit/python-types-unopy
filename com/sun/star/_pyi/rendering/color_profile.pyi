@@ -40,6 +40,7 @@ class ColorProfile(object):
         Arguments:
             dummy (int, optional): dummy value.
         """
+        ...
 
 
     @property

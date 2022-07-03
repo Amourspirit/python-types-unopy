@@ -44,46 +44,57 @@ class XSAXEventKeeper(XInterface_8f010a43):
         
         No SAX event starting from the next element will be forwarded until this blocker is removed.
         """
+        ...
     def addElementCollector(self) -> int:
         """
         Adds a new element collector on the next element in the SAX event stream.
         """
+        ...
     def getCurrentBlockingNode(self) -> 'XXMLElementWrapper_66c0107c':
         """
         Gets the element which current blocking happens.
         
         This element is the working element of the first blocker in tree order.
         """
+        ...
     def getElement(self, id: int) -> 'XXMLElementWrapper_66c0107c':
         """
         Gets the element of an element mark.
         """
+        ...
     def isBlocking(self) -> bool:
         """
         Checks whether the SAX event stream is blocking.
         """
+        ...
     def printBufferNodeTree(self) -> str:
         """
         Prints information about all buffered elements.
         """
+        ...
     def removeBlocker(self, id: int) -> None:
         """
         Removes a blocker.
         """
+        ...
     def removeElementCollector(self, id: int) -> None:
         """
         Removes an element collector.
         """
+        ...
     def setElement(self, id: int, aElement: 'XXMLElementWrapper_66c0107c') -> None:
         """
         Sets the element of an element mark.
         
         When an element is replaced outside of this interface, then uses this method can restore the link between an element mark and its working element.
         """
+        ...
     def setNextHandler(self, nextHandler: 'XDocumentHandler_9b90e28') -> 'XDocumentHandler_9b90e28':
         """
         Sets the next document handler in the SAX chain.
         
         This handler will receive SAX events forwarded by the SAXEventKeeper.
         """
+        ...
+
 

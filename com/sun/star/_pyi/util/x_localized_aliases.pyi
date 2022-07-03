@@ -43,10 +43,12 @@ class XLocalizedAliases(XInterface_8f010a43):
         Raises:
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def listAliases(self, locale: 'Locale_70d308fa') -> 'typing.Tuple[AliasProgrammaticPair_2a930f22, ...]':
         """
         retrieves a list of all registered aliases for a certain language.
         """
+        ...
     def lookupAlias(self, locale: 'Locale_70d308fa', Alias: str) -> str:
         """
         retrieves a registered programmatic name identified by an alias.
@@ -54,6 +56,7 @@ class XLocalizedAliases(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def lookupProgrammatic(self, locale: 'Locale_70d308fa', programmatic: str) -> str:
         """
         retrieves a given alias for a programmatic name.
@@ -61,6 +64,7 @@ class XLocalizedAliases(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def rebindAliases(self, currentProgrammatic: str, newProgrammatic: str) -> None:
         """
         rebinds all aliases registered to a given URL to a new one.
@@ -69,6 +73,7 @@ class XLocalizedAliases(XInterface_8f010a43):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def renameAlias(self, locale: 'Locale_70d308fa', oldName: str, aNewName: str) -> None:
         """
         renames an alias for a programmatic name.
@@ -77,6 +82,7 @@ class XLocalizedAliases(XInterface_8f010a43):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def unbindAlias(self, locale: 'Locale_70d308fa', alias: str) -> None:
         """
         revokes an alias for a programmatic name.
@@ -84,6 +90,7 @@ class XLocalizedAliases(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def unbindAliases(self, programmaticName: str) -> None:
         """
         removes all aliases for a programmatic name.
@@ -91,4 +98,6 @@ class XLocalizedAliases(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

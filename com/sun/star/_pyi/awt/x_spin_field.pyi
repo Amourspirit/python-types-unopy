@@ -37,28 +37,36 @@ class XSpinField(XInterface_8f010a43):
         """
         registers a listener for spin events.
         """
+        ...
     def down(self) -> None:
         """
         decreases the value by one step.
         """
+        ...
     def enableRepeat(self, bRepeat: bool) -> None:
         """
         enables/disables automatic repeat mode.
         """
+        ...
     def first(self) -> None:
         """
         sets the value to the previously set lower value.
         """
+        ...
     def last(self) -> None:
         """
         sets the value to the previously set upper value.
         """
+        ...
     def removeSpinListener(self, l: 'XSpinListener_afee0b8c') -> None:
         """
         unregisters a listener for spin events.
         """
+        ...
     def up(self) -> None:
         """
         increases the value by one step.
         """
+        ...
+
 

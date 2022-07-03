@@ -55,6 +55,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
         Raises:
             com.sun.star.lang.NullPointerException: ``NullPointerException``
         """
+        ...
     def addPropertyChangeListener(self, Listener: 'XPropertyChangeListener_58e4105a') -> None:
         """
         registers a listener for notification about property value changes
@@ -66,6 +67,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
         Raises:
             com.sun.star.lang.NullPointerException: ``NullPointerException``
         """
+        ...
     def convertToControlValue(self, PropertyName: str, PropertyValue: object, ControlValueType: object) -> object:
         """
         converts a given property value to a control-compatible value
@@ -81,6 +83,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def convertToPropertyValue(self, PropertyName: str, ControlValue: object) -> object:
         """
         converts a given control-compatible value to a property value
@@ -92,6 +95,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def describePropertyLine(self, PropertyName: str, ControlFactory: 'XPropertyControlFactory_b8ed12ba') -> 'LineDescriptor_1e460eeb':
         """
         describes the UI to be used to represent the property
@@ -100,6 +104,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.NullPointerException: ``NullPointerException``
         """
+        ...
     def getActuatingProperties(self) -> 'typing.Tuple[str, ...]':
         """
         retrieve the actuating properties which this handler is interested in
@@ -112,6 +117,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
         
         If getSupportedProperties() returned an empty sequence, this method will not be called
         """
+        ...
     def getPropertyState(self, PropertyName: str) -> 'PropertyState_c97b0c77':
         """
         returns the state of a property
@@ -119,6 +125,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def getPropertyValue(self, PropertyName: str) -> object:
         """
         retrieves the current value of a property
@@ -126,6 +133,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def getSupersededProperties(self) -> 'typing.Tuple[str, ...]':
         """
         returns the properties which are to be superseded by this handler
@@ -144,6 +152,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
         
         If getSupportedProperties() returned an empty sequence, this method will not be called.
         """
+        ...
     def getSupportedProperties(self) -> 'typing.Tuple[Property_8f4e0a76, ...]':
         """
         returns the properties which the handler can handle
@@ -152,6 +161,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
         
         In the case of returning an empty sequence here, the property handler is ignored by all further processing in the object inspector.
         """
+        ...
     def inspect(self, Component: 'XInterface_8f010a43') -> None:
         """
         binds the property handler to a new component
@@ -159,6 +169,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
         Raises:
             com.sun.star.lang.NullPointerException: ``NullPointerException``
         """
+        ...
     def isComposable(self, PropertyName: str) -> bool:
         """
         determines whether a given property, which the handler is responsible for, is composable.
@@ -168,6 +179,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def onInteractivePropertySelection(self, PropertyName: str, Primary: bool, outData: object, InspectorUI: 'XObjectInspectorUI_5ccd1048') -> 'InteractiveSelectionResult_f27a13e7':
         """
         called when a browse button belonging to a property UI representation has been clicked
@@ -190,10 +202,12 @@ class XPropertyHandler(XComponent_98dc0ab5):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.NullPointerException: ``NullPointerException``
         """
+        ...
     def removePropertyChangeListener(self, Listener: 'XPropertyChangeListener_58e4105a') -> None:
         """
         revokes a listener for notification about property value changes
         """
+        ...
     def setPropertyValue(self, PropertyName: str, Value: object) -> None:
         """
         sets the value of a property
@@ -202,6 +216,7 @@ class XPropertyHandler(XComponent_98dc0ab5):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
         """
+        ...
     def suspend(self, Suspend: bool) -> bool:
         """
         suspends the handler
@@ -212,4 +227,6 @@ class XPropertyHandler(XComponent_98dc0ab5):
         
         If suspension is not to be vetoed, then all non-modal UI components opened by the handler should have been closed when it returns from the suspend() call.
         """
+        ...
+
 

@@ -46,6 +46,7 @@ class DispatchResultEvent(EventObject_a3d70b03):
             State (int, optional): State value.
             Result (object, optional): Result value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class DispatchResultEvent(EventObject_a3d70b03):
         """
         describes state of dispatch
         """
+        ...
 
 
     @property
@@ -60,5 +62,6 @@ class DispatchResultEvent(EventObject_a3d70b03):
         """
         describes result for given State
         """
+        ...
 
 

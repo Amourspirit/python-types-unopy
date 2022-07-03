@@ -43,6 +43,7 @@ class GetPropertyTolerantResult(object):
             State (PropertyState, optional): State value.
             Value (object, optional): Value value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class GetPropertyTolerantResult(object):
         """
         specifies a success or error code for the retrieval operation.
         """
+        ...
 
 
     @property
@@ -59,6 +61,7 @@ class GetPropertyTolerantResult(object):
         
         The value is undefined if Result is not com.sun.star.beans.TolerantPropertySetResultType.SUCCESS.
         """
+        ...
 
 
     @property
@@ -68,5 +71,6 @@ class GetPropertyTolerantResult(object):
         
         The value is undefined if Result is not com.sun.star.beans.TolerantPropertySetResultType.SUCCESS.
         """
+        ...
 
 

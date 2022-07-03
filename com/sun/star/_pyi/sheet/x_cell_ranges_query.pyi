@@ -43,6 +43,7 @@ class XCellRangesQuery(XInterface_8f010a43):
         
         This method takes each column of the current cell range(s) and compares all cells with the cell in the specified row. All cells which are different to this comparison cell will be returned.
         """
+        ...
     def queryContentCells(self, nContentFlags: int) -> 'XSheetCellRanges_edef0d52':
         """
         queries all cells with the specified content type(s).
@@ -51,26 +52,33 @@ class XCellRangesQuery(XInterface_8f010a43):
         
         Attention: Empty cells in the range may be skipped depending on the content flag used. For instance, when querying for STYLES, the returned ranges may not include empty cells even if styles are applied to those cells.
         """
+        ...
     def queryEmptyCells(self) -> 'XSheetCellRanges_edef0d52':
         """
         queries all empty cells.
         """
+        ...
     def queryFormulaCells(self, nResultFlags: int) -> 'XSheetCellRanges_edef0d52':
         """
         queries all formula cells with the specified result type.
         """
+        ...
     def queryIntersection(self, aRange: 'CellRangeAddress_ec450d43') -> 'XSheetCellRanges_edef0d52':
         """
         intersects the current cell range(s) with the specified cell range.
         """
+        ...
     def queryRowDifferences(self, aCompare: 'CellAddress_ae5f0b56') -> 'XSheetCellRanges_edef0d52':
         """
         queries all cells with different values in a specified column.
         
         This method takes each row of the current cell range(s) and compares all cells with the cell in the specified column. All cells which are different to this comparison cell will be returned.
         """
+        ...
     def queryVisibleCells(self) -> 'XSheetCellRanges_edef0d52':
         """
         queries all visible cells.
         """
+        ...
+
 

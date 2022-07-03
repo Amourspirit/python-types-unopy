@@ -32,6 +32,7 @@ class LayerType(Enum):
     See Also:
         `API LayerType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing.html#a56943a0946e5f15e5e58054b8e7a04a4>`_
     """
+    typeName: str = 'com.sun.star.drawing.LayerType'
 
     CONTROLSA: 'uno.Enum'
     """

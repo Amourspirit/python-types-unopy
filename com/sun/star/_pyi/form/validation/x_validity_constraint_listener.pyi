@@ -37,4 +37,6 @@ class XValidityConstraintListener(XEventListener_c7230c4a):
         """
         called when the validity constraint represented by an XValidator, at which the listener is registered, changed.
         """
+        ...
+
 

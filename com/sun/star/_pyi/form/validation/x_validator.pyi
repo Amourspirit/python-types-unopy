@@ -48,14 +48,17 @@ class XValidator(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.NullPointerException: ``NullPointerException``
         """
+        ...
     def explainInvalid(self, Value: object) -> str:
         """
         retrieves a justification for the invalidity of the given value
         """
+        ...
     def isValid(self, Value: object) -> bool:
         """
         determines whether the given value is valid
         """
+        ...
     def removeValidityConstraintListener(self, Listener: 'XValidityConstraintListener_69a2161e') -> None:
         """
         revokes the given validity listener
@@ -63,4 +66,6 @@ class XValidator(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.NullPointerException: ``NullPointerException``
         """
+        ...
+
 

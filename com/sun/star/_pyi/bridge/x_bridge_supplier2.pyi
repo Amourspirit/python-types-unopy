@@ -48,4 +48,6 @@ class XBridgeSupplier2(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

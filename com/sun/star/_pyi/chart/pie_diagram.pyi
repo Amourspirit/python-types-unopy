@@ -30,5 +30,6 @@ class PieDiagram(Diagram_844409cf, Dim3DDiagram_b7a60b60):
     See Also:
         `API PieDiagram <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart_1_1PieDiagram.html>`_
     """
+    ...
 
 

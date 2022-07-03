@@ -49,12 +49,14 @@ class XSprite(XInterface_8f010a43):
         
         Specifying an empty interface denotes no clipping, i.e. everything contained in the sprite will be visible (subject to device-dependent constraints, of course). Specifying an empty XPolyPolygon2D, i.e. a poly-polygon containing zero polygons, or an XPolyPolygon2D with any number of empty sub-polygons, denotes the NULL clip. That means, nothing from the sprite will be visible.
         """
+        ...
     def hide(self) -> None:
         """
         Make the sprite invisible.
         
         This method makes the sprite invisible.
         """
+        ...
     def move(self, aNewPos: 'RealPoint2D_d6e70c78', aViewState: 'ViewState_cab30c62', aRenderState: 'RenderState_e4490d27') -> None:
         """
         Move sprite to the specified position.
@@ -66,6 +68,7 @@ class XSprite(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setAlpha(self, nAlpha: float) -> None:
         """
         Set overall transparency of the sprite.
@@ -77,18 +80,21 @@ class XSprite(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setPriority(self, nPriority: float) -> None:
         """
         Set sprite priority.
         
         The sprite priority determines the order of rendering relative to all other sprites of the associated canvas. The higher the priority, the later will the sprite be rendered, or, in other words, the closer to the screen surface the sprite is shown.
         """
+        ...
     def show(self) -> None:
         """
         Make the sprite visible.
         
         This method makes the sprite visible on the canvas it was created on.
         """
+        ...
     def transform(self, aTransformation: 'AffineMatrix2D_ff040da8') -> None:
         """
         Apply a local transformation to the sprite.
@@ -100,4 +106,6 @@ class XSprite(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

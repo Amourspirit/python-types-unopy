@@ -43,6 +43,7 @@ class PolyPolygonShape3D(object):
             SequenceY (DoubleSequenceSequence, optional): SequenceY value.
             SequenceZ (DoubleSequenceSequence, optional): SequenceZ value.
         """
+        ...
 
 
     @property

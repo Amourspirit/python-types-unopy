@@ -35,4 +35,6 @@ class XVBAScriptListener(XEventListener_c7230c4a):
     def notifyVBAScriptEvent(self, Event: 'VBAScriptEvent_16750e54') -> None:
         """
         """
+        ...
+
 

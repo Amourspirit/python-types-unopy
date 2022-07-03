@@ -43,6 +43,7 @@ class CellProtection(object):
             IsHidden (bool, optional): IsHidden value.
             IsPrintHidden (bool, optional): IsPrintHidden value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class CellProtection(object):
         """
         specifies if the cell is locked from modifications by the user.
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class CellProtection(object):
         """
         specifies if the formula is hidden from the user.
         """
+        ...
 
 
     @property
@@ -64,6 +67,7 @@ class CellProtection(object):
         """
         specifies if the cell is hidden from the user.
         """
+        ...
 
 
     @property
@@ -71,5 +75,6 @@ class CellProtection(object):
         """
         specifies if the cell is hidden on printouts.
         """
+        ...
 
 

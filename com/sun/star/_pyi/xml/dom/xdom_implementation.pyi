@@ -42,6 +42,7 @@ class XDOMImplementation(XInterface_8f010a43):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def createDocumentType(self, qualifiedName: str, publicId: str, systemId: str) -> 'XDocumentType_e0340d00':
         """
         Creates an empty DocumentType node.
@@ -51,8 +52,11 @@ class XDOMImplementation(XInterface_8f010a43):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
     def hasFeature(self, feature: str, ver: str) -> bool:
         """
         Test if the DOM implementation implements a specific feature.
         """
+        ...
+
 

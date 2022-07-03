@@ -38,11 +38,13 @@ class TextEmbeddedObject(BaseFrame_8f020a33, XEmbeddedObjectSupplier_8b631174):
     def CLSID(self) -> str:
         """
         """
+        ...
     @property
     def Component(self) -> 'XComponent_98dc0ab5':
         """
         This is the component for the OLE2 object.
         """
+        ...
     @property
     def Model(self) -> 'XModel_7a6e095c':
         """
@@ -50,5 +52,6 @@ class TextEmbeddedObject(BaseFrame_8f020a33, XEmbeddedObjectSupplier_8b631174):
         
         This property if void if the OLE2 is not an Office component.
         """
+        ...
 
 

@@ -44,4 +44,6 @@ class XLocaleData2(XLocaleData_9d100a6a):
         """
         returns all LC_CURRENCY currencies for a locale.
         """
+        ...
+
 

@@ -48,6 +48,7 @@ class XSSOManager(XInterface_8f010a43):
             InvalidPrincipalException: ``InvalidPrincipalException``
             UnsupportedException: ``UnsupportedException``
         """
+        ...
     def createInitiatorContext(self, SourcePrincipal: str, TargetPrincipal: str, TargetHost: str) -> 'XSSOInitiatorContext_168c0e9f':
         """
         creates an initiator side security context.
@@ -58,8 +59,11 @@ class XSSOManager(XInterface_8f010a43):
             InvalidPrincipalException: ``InvalidPrincipalException``
             UnsupportedException: ``UnsupportedException``
         """
+        ...
     def getMechanism(self) -> str:
         """
         retrieves the mechanism name of all security contexts created using this manager.
         """
+        ...
+
 

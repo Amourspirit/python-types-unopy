@@ -52,6 +52,7 @@ class URL(object):
             Arguments (str, optional): Arguments value.
             Mark (str, optional): Mark value.
         """
+        ...
 
 
     @property
@@ -61,6 +62,7 @@ class URL(object):
         
         It is used as a central input/output or input parameter for the interfaces of XURLTransformer. The usage of one of the XURLTransformer function is mandatory to validate the URL. It cannot be assumed that URL.Complete represents always a valid URL!
         """
+        ...
 
 
     @property
@@ -68,6 +70,7 @@ class URL(object):
         """
         contains the URL without a mark and without arguments, for example, http://www.sun.de:8080/pub/test/foo.txt
         """
+        ...
 
 
     @property
@@ -75,6 +78,7 @@ class URL(object):
         """
         contains the protocol (scheme) of the URL, for example, \"http\"
         """
+        ...
 
 
     @property
@@ -82,6 +86,7 @@ class URL(object):
         """
         contains the user-identifier of the URL, for example, \"me\"
         """
+        ...
 
 
     @property
@@ -89,6 +94,7 @@ class URL(object):
         """
         contains the users password of the URL, for example, \"pass\"
         """
+        ...
 
 
     @property
@@ -96,6 +102,7 @@ class URL(object):
         """
         contains the server part of the URL, for example, \"www.sun.de\"
         """
+        ...
 
 
     @property
@@ -103,6 +110,7 @@ class URL(object):
         """
         contains the port at the server of the URL, for example, \"8080\"
         """
+        ...
 
 
     @property
@@ -110,6 +118,7 @@ class URL(object):
         """
         contains all segments but the last one of the hierarchical path of the URL, for example, \"/pub/test/\"
         """
+        ...
 
 
     @property
@@ -119,6 +128,7 @@ class URL(object):
         
         Attention:A service implementing the XURLTransformer interface will normally not detect if the last segment is a folder or a file. So it is possible that the last segment describes a folder. If you want to be sure that a file URL that references a folder will be correctly put into the URL fields you should append a \"/\" at the end of the hierarchical path.
         """
+        ...
 
 
     @property
@@ -126,6 +136,7 @@ class URL(object):
         """
         contains the arguments part of the URL, for example, \"a=b\"
         """
+        ...
 
 
     @property
@@ -133,5 +144,6 @@ class URL(object):
         """
         contains the mark part of the URL, for example, \"xyz\"
         """
+        ...
 
 

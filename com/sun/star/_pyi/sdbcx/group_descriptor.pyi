@@ -34,5 +34,6 @@ class GroupDescriptor(Descriptor_a5200b3b):
         """
         is the name of the group.
         """
+        ...
 
 

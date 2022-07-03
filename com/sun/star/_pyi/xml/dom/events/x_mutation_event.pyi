@@ -36,19 +36,26 @@ class XMutationEvent(XEvent_e0c30ce4):
     def getAttrChange(self) -> 'AttrChangeType_55dd100d':
         """
         """
+        ...
     def getAttrName(self) -> str:
         """
         """
+        ...
     def getNewValue(self) -> str:
         """
         """
+        ...
     def getPrevValue(self) -> str:
         """
         """
+        ...
     def getRelatedNode(self) -> 'XNode_83fb09a5':
         """
         """
+        ...
     def initMutationEvent(self, typeArg: str, canBubbleArg: bool, cancelableArg: bool, relatedNodeArg: 'XNode_83fb09a5', prevValueArg: str, newValueArg: str, attrNameArg: str, attrChangeArg: 'AttrChangeType_55dd100d') -> None:
         """
         """
+        ...
+
 

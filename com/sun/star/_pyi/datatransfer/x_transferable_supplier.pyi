@@ -36,6 +36,7 @@ class XTransferableSupplier(ABC):
         """
         To get access to a transferable representation of a selected part of an object.
         """
+        ...
     def insertTransferable(self, xTrans: 'XTransferable_2d800f38') -> None:
         """
         Hands over a transferable object that shall be inserted.
@@ -45,4 +46,6 @@ class XTransferableSupplier(ABC):
         Raises:
             UnsupportedFlavorException: ``UnsupportedFlavorException``
         """
+        ...
+
 

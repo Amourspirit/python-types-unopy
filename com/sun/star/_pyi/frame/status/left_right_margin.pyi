@@ -45,6 +45,7 @@ class LeftRightMargin(object):
             Left (int, optional): Left value.
             Right (int, optional): Right value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class LeftRightMargin(object):
         """
         specifies a left side margin in 1/100th mm.
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class LeftRightMargin(object):
         """
         specifies a right side margin in 1/100th mm.
         """
+        ...
 
 

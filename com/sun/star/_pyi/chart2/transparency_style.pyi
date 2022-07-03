@@ -32,6 +32,7 @@ class TransparencyStyle(Enum):
     See Also:
         `API TransparencyStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart2.html#acc7ba74ba6531a134bb92607b8616cb6>`_
     """
+    typeName: str = 'com.sun.star.chart2.TransparencyStyle'
 
     GRADIENT: 'uno.Enum'
     """

@@ -41,18 +41,22 @@ class XDocumentBuilder(XInterface_8f010a43):
         """
         Obtain an instance of a DOMImplementation object.
         """
+        ...
     def isNamespaceAware(self) -> bool:
         """
         Indicates whether or not this parser is configured to understand namespaces.
         """
+        ...
     def isValidating(self) -> bool:
         """
         Indicates whether or not this parser is configured to validate XML documents.
         """
+        ...
     def newDocument(self) -> 'XDocument_aebc0b5e':
         """
         Obtain a new instance of a DOM Document object to build a DOM tree with.
         """
+        ...
     def parse(self, is_: 'XInputStream_98d40ab4') -> 'XDocument_aebc0b5e':
         """
         Parse the content of the given InputStream as an XML document and return a new DOM Document object.
@@ -61,6 +65,7 @@ class XDocumentBuilder(XInterface_8f010a43):
             com.sun.star.xml.sax.SAXException: ``SAXException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def parseURI(self, uri: str) -> 'XDocument_aebc0b5e':
         """
         Parse the content of the given URI as an XML document and return a new DOM Document object.
@@ -69,12 +74,16 @@ class XDocumentBuilder(XInterface_8f010a43):
             com.sun.star.xml.sax.SAXException: ``SAXException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def setEntityResolver(self, er: 'XEntityResolver_fcf10dfa') -> None:
         """
         Specify the EntityResolver to be used to resolve entities present in the XML document to be parsed.
         """
+        ...
     def setErrorHandler(self, eh: 'XErrorHandler_e0860cf3') -> None:
         """
         Specify the ErrorHandler to be used to report errors present in the XML document to be parsed.
         """
+        ...
+
 

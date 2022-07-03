@@ -46,4 +46,6 @@ class XImplementationRegistration2(XImplementationRegistration_df8c139a):
         Raises:
             com.sun.star.registry.CannotRegisterImplementationException: ``CannotRegisterImplementationException``
         """
+        ...
+
 

@@ -36,5 +36,6 @@ class SetUpdate(SetAccess_1ae0dfe, SimpleSetUpdate_5f4d1079):
     See Also:
         `API SetUpdate <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1SetUpdate.html>`_
     """
+    ...
 
 

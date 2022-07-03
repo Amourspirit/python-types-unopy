@@ -43,12 +43,14 @@ class XDataProvider(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def createDataSequenceByRangeRepresentationPossible(self, aRangeRepresentation: str) -> bool:
         """
         If TRUE is returned, a call to createDataSequenceByRangeRepresentation with the same argument must return a valid XDataSequence object.
         
         If FALSE is returned, createDataSequenceByRangeRepresentation throws an exception.
         """
+        ...
     def createDataSequenceByValueArray(self, aRole: str, aValueArray: str, aRoleQualifier: str) -> 'XDataSequence_11f00e1f':
         """
         Creates a single data sequence from the string value array representation.
@@ -56,6 +58,7 @@ class XDataProvider(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def createDataSource(self, aArguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> 'XDataSource_f6340d57':
         """
         Creates a data source object that matches the given range representation string.
@@ -67,12 +70,14 @@ class XDataProvider(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def createDataSourcePossible(self, aArguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> bool:
         """
         If TRUE is returned, a call to createDataSource with the same arguments must return a valid XDataSequence object.
         
         If FALSE is returned, createDataSource throws an exception.
         """
+        ...
     def detectArguments(self, xDataSource: 'XDataSource_f6340d57') -> 'typing.Tuple[PropertyValue_c9610c73, ...]':
         """
         Tries to find out with what parameters the passed DataSource most probably was created.
@@ -81,6 +86,7 @@ class XDataProvider(XInterface_8f010a43):
         
         This method may merge representation strings together if adjacent ranges appear successively in the range identifiers. E.g., if the first range refers to \"$Sheet1.$A$1:$A$8\" and the second range refers to \"$Sheet1.$B$1:$B$8\", those should be merged together to \"$Sheet1.$A$1:$B$8\".
         """
+        ...
     def getRangeSelection(self) -> 'XRangeSelection_e1310d0c':
         """
         Returns a component that is able to change a given range representation to another one.
@@ -89,4 +95,6 @@ class XDataProvider(XInterface_8f010a43):
         
         This method may return nothing, if it does not support range selection or if there is no current controller available that offers the functionality.
         """
+        ...
+
 

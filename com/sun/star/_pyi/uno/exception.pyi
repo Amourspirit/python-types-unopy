@@ -46,6 +46,7 @@ class Exception(BException):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
     @property
     def Message(self) -> str:
         """
@@ -53,6 +54,7 @@ class Exception(BException):
         
         The description should be as detailed as possible.
         """
+        ...
 
     @property
     def Context(self) -> XInterface_8f010a43:
@@ -61,6 +63,7 @@ class Exception(BException):
         
         May be NULL.
         """
+        ...
 
 
 __all__ = ['Exception']

@@ -39,8 +39,11 @@ class XIdlMember(XInterface_8f010a43):
         
         the type having the member declared (interface, enum, struct, exception).
         """
+        ...
     def getName(self) -> str:
         """
         Returns the fully-qualified name of the member.
         """
+        ...
+
 

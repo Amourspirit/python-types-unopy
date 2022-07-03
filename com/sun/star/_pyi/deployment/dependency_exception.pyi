@@ -51,6 +51,7 @@ class DependencyException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             UnsatisfiedDependencies (typing.Tuple[XElement, ...], optional): UnsatisfiedDependencies value.
         """
+        ...
     @property
     def UnsatisfiedDependencies(self) -> typing.Tuple[XElement_a33d0ae9, ...]:
         """
@@ -60,6 +61,7 @@ class DependencyException(Exception_85530a09):
         
         The sequence must not be empty, and none of the elements may be NULL.
         """
+        ...
 
 
 __all__ = ['DependencyException']

@@ -38,5 +38,6 @@ class theIntrospection(XIntrospection_d5510cda):
     See Also:
         `API theIntrospection <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1beans_1_1theIntrospection.html>`_
     """
+    ...
 
 

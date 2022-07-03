@@ -37,6 +37,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getColumnCount(self) -> int:
         """
         returns the number of columns in this ResultSet.
@@ -44,6 +45,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getColumnDisplaySize(self, column: int) -> int:
         """
         indicates the column's normal max width in chars.
@@ -51,6 +53,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getColumnLabel(self, column: int) -> str:
         """
         gets the suggested column title for use in printouts and displays.
@@ -58,6 +61,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getColumnName(self, column: int) -> str:
         """
         gets a column's name.
@@ -65,6 +69,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getColumnServiceName(self, column: int) -> str:
         """
         returns the fully-qualified name of the service whose instances are manufactured if the method com.sun.star.sdbc.XResultSet..getObject() is called to retrieve a value from the column.
@@ -72,6 +77,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getColumnType(self, column: int) -> int:
         """
         retrieves a column's SQL type.
@@ -79,6 +85,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getColumnTypeName(self, column: int) -> str:
         """
         retrieves a column's database-specific type name.
@@ -86,6 +93,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getPrecision(self, column: int) -> int:
         """
         gets a column's number of decimal digits.
@@ -93,6 +101,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getScale(self, column: int) -> int:
         """
         gets a column's number of digits to right of the decimal point.
@@ -100,6 +109,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getSchemaName(self, column: int) -> str:
         """
         gets a column's table's schema.
@@ -107,6 +117,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def getTableName(self, column: int) -> str:
         """
         gets a column's table name.
@@ -114,6 +125,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isAutoIncrement(self, column: int) -> bool:
         """
         indicates whether the column is automatically numbered, thus read-only.
@@ -121,6 +133,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isCaseSensitive(self, column: int) -> bool:
         """
         indicates whether a column's case matters.
@@ -128,6 +141,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isCurrency(self, column: int) -> bool:
         """
         indicates whether the column is a cash value.
@@ -135,6 +149,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isDefinitelyWritable(self, column: int) -> bool:
         """
         indicates whether a write on the column will definitely succeed.
@@ -142,6 +157,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isNullable(self, column: int) -> int:
         """
         indicates the nullability of values in the designated column.
@@ -149,6 +165,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isReadOnly(self, column: int) -> bool:
         """
         indicates whether a column is definitely not writable.
@@ -156,6 +173,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isSearchable(self, column: int) -> bool:
         """
         indicates whether the column can be used in a where clause.
@@ -163,6 +181,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isSigned(self, column: int) -> bool:
         """
         indicates whether values in the column are signed numbers.
@@ -170,6 +189,7 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def isWritable(self, column: int) -> bool:
         """
         indicates whether it is possible for a write on the column to succeed.
@@ -177,4 +197,6 @@ class XResultSetMetaData(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

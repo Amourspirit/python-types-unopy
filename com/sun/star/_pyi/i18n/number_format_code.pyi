@@ -46,6 +46,7 @@ class NumberFormatCode(object):
             Index (int, optional): Index value.
             Default (bool, optional): Default value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class NumberFormatCode(object):
         """
         One of KNumberFormatType values.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class NumberFormatCode(object):
         """
         One of KNumberFormatUsage values.
         """
+        ...
 
 
     @property
@@ -67,6 +70,7 @@ class NumberFormatCode(object):
         """
         Format code, for example, \"YYYY-MM-DD\".
         """
+        ...
 
 
     @property
@@ -74,6 +78,7 @@ class NumberFormatCode(object):
         """
         Descriptive name of the format for this locale.
         """
+        ...
 
 
     @property
@@ -81,6 +86,7 @@ class NumberFormatCode(object):
         """
         Message identifier to be used if the name of the format is localized.
         """
+        ...
 
 
     @property
@@ -88,6 +94,7 @@ class NumberFormatCode(object):
         """
         Index of the code as defined in NumberFormatIndex.
         """
+        ...
 
 
     @property
@@ -95,5 +102,6 @@ class NumberFormatCode(object):
         """
         If this format is the default format of the Usage group.
         """
+        ...
 
 

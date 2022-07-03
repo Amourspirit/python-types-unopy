@@ -45,6 +45,7 @@ class FetchResult(object):
             Orientation (bool, optional): Orientation value.
             FetchError (int, optional): FetchError value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class FetchResult(object):
         
         One any contains the data of one whole row. Those methods which use this struct have to specify, what the any has to contain.
         """
+        ...
 
 
     @property
@@ -65,6 +67,7 @@ class FetchResult(object):
         
         The following rows are one after the other, but the direction depends on the value of FetchResult.Direction
         """
+        ...
 
 
     @property
@@ -74,6 +77,7 @@ class FetchResult(object):
         
         When FetchResult.Orientation equals TRUE, the rows in FetchResult.Rows are ordered in the same way as in the original result set.
         """
+        ...
 
 
     @property
@@ -83,5 +87,6 @@ class FetchResult(object):
         
         The value may contain zero or more constants of the FetchError constants group.
         """
+        ...
 
 

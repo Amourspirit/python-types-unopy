@@ -32,6 +32,7 @@ class FadeEffect(Enum):
     See Also:
         `API FadeEffect <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1presentation.html#a9db0b8c5e72e0ae290ff76da0dd53e3d>`_
     """
+    typeName: str = 'com.sun.star.presentation.FadeEffect'
 
     CLOCKWISE: 'uno.Enum'
     """

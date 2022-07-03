@@ -33,5 +33,6 @@ class PrinterServer(XPrinterServer2_c8ba0c39):
     See Also:
         `API PrinterServer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1PrinterServer.html>`_
     """
+    ...
 
 

@@ -46,6 +46,7 @@ class InputSource(object):
             sPublicId (str, optional): sPublicId value.
             sSystemId (str, optional): sSystemId value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class InputSource(object):
         """
         contains the byte input stream of the document.
         """
+        ...
 
 
     @property
@@ -64,6 +66,7 @@ class InputSource(object):
         
         Note that in general you do not need to specify an encoding. Either it is UTF-8 or UTF-16 which is recognized by the parser or it is specified in the first line of the XML-File ( e.g. ?xml encoding=\"EUC-JP\"? ).
         """
+        ...
 
 
     @property
@@ -71,6 +74,7 @@ class InputSource(object):
         """
         contains the public Id of the document, for example, needed in exception-message strings.
         """
+        ...
 
 
     @property
@@ -78,5 +82,6 @@ class InputSource(object):
         """
         contains the system ID of the document.
         """
+        ...
 
 

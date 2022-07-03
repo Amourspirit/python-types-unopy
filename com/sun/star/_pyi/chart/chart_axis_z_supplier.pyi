@@ -34,25 +34,30 @@ class ChartAxisZSupplier(XAxisZSupplier_d44c0cb5):
         """
         Determines if the z-axis is shown or hidden.
         """
+        ...
     @property
     def HasZAxisDescription(self) -> bool:
         """
         Determines if the description of the z-axis is shown or hidden.
         """
+        ...
     @property
     def HasZAxisGrid(self) -> bool:
         """
         Determines if the major grid of the z-axis is shown or hidden.
         """
+        ...
     @property
     def HasZAxisHelpGrid(self) -> bool:
         """
         Determines if the minor grid of the z-axis is shown or hidden.
         """
+        ...
     @property
     def HasZAxisTitle(self) -> bool:
         """
         Determines if the title of the z-axis is shown or hidden.
         """
+        ...
 
 

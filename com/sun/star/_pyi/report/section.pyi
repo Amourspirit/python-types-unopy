@@ -28,5 +28,6 @@ class Section(XSection_9b630ad1):
     See Also:
         `API Section <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1report_1_1Section.html>`_
     """
+    ...
 
 

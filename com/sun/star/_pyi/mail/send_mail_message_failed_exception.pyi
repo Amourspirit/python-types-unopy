@@ -52,23 +52,27 @@ class SendMailMessageFailedException(MailException_ba9e0bdd):
             ValidSentAddresses (typing.Tuple[str, ...], optional): ValidSentAddresses value.
             ValidUnsentAddresses (typing.Tuple[str, ...], optional): ValidUnsentAddresses value.
         """
+        ...
     @property
     def InvalidAddresses(self) -> typing.Tuple[str, ...]:
         """
         The addresses which are invalid because they do not conform to RFC 822.
         """
+        ...
 
     @property
     def ValidSentAddresses(self) -> typing.Tuple[str, ...]:
         """
         The addresses to which the mail message was sent successfully.
         """
+        ...
 
     @property
     def ValidUnsentAddresses(self) -> typing.Tuple[str, ...]:
         """
         The addresses which are valid but to which the message was not sent.
         """
+        ...
 
 
 __all__ = ['SendMailMessageFailedException']

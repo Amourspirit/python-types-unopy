@@ -44,5 +44,6 @@ class DatabaseImageControl(UnoControlImageControlModel_7b36111c, DataAwareContro
         """
         indicates if it is possible to change the image being displayed.
         """
+        ...
 
 

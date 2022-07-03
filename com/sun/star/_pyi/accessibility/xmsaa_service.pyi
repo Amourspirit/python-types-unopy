@@ -34,7 +34,10 @@ class XMSAAService(XComponent_98dc0ab5):
         """
         Return com object pointer.
         """
+        ...
     def handleWindowOpened(self, i: int) -> None:
         """
         """
+        ...
+
 

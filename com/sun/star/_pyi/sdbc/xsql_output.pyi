@@ -54,6 +54,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeBinaryStream(self, x: 'XInputStream_98d40ab4') -> None:
         """
         writes the next attribute to the stream as a stream of uninterpreted bytes.
@@ -61,6 +62,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeBlob(self, x: 'XBlob_6773087b') -> None:
         """
         writes a BLOB to the stream.
@@ -68,6 +70,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeBoolean(self, x: bool) -> None:
         """
         writes the next attribute to the stream as boolean.
@@ -75,6 +78,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeByte(self, x: int) -> None:
         """
         writes the next attribute to the stream as byte.
@@ -82,6 +86,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeBytes(self, x: uno.ByteSequence) -> None:
         """
         writes the next attribute to the stream as byte sequence.
@@ -89,6 +94,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeCharacterStream(self, x: 'XInputStream_98d40ab4') -> None:
         """
         writes the next attribute to the stream as a stream of Unicode string.
@@ -96,6 +102,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeClob(self, x: 'XClob_6777087c') -> None:
         """
         writes a CLOB to the stream.
@@ -103,6 +110,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeDate(self, x: 'Date_60040844') -> None:
         """
         writes the next attribute to the stream as a date.
@@ -110,6 +118,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeDouble(self, x: float) -> None:
         """
         writes the next attribute to the stream as double.
@@ -117,6 +126,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeFloat(self, x: float) -> None:
         """
         writes the next attribute to the stream as float.
@@ -124,6 +134,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeInt(self, x: int) -> None:
         """
         writes the next attribute to the stream as long.
@@ -131,6 +142,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeLong(self, x: int) -> None:
         """
         writes the next attribute to the stream as hyper.
@@ -138,6 +150,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeObject(self, x: 'XSQLData_81fe0966') -> None:
         """
         writes to the stream the data contained in the given XSQLData object.
@@ -147,6 +160,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeRef(self, x: 'XRef_5f110819') -> None:
         """
         writes a REF(&lt;structured-type&gt;) to the stream.
@@ -154,6 +168,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeShort(self, x: int) -> None:
         """
         writes the next attribute to the stream as short.
@@ -161,6 +176,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeString(self, x: str) -> None:
         """
         writes the next attribute to the stream as a string.
@@ -168,6 +184,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeStruct(self, x: 'XStruct_7a760981') -> None:
         """
         writes a structured-type to the stream.
@@ -175,6 +192,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeTime(self, x: 'Time_604e0855') -> None:
         """
         writes the next attribute to the stream as a time.
@@ -182,6 +200,7 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def writeTimestamp(self, x: 'DateTime_84de09d3') -> None:
         """
         writes the next attribute to the stream as a datetime.
@@ -189,4 +208,6 @@ class XSQLOutput(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

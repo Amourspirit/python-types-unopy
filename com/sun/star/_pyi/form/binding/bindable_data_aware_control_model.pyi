@@ -42,5 +42,6 @@ class BindableDataAwareControlModel(DataAwareControlModel_27110ef8, BindableCont
     See Also:
         `API BindableDataAwareControlModel <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1binding_1_1BindableDataAwareControlModel.html>`_
     """
+    ...
 
 

@@ -52,14 +52,17 @@ class XConnectionTools(ABC):
         
         The returned object is guaranteed to not be NULL.
         """
+        ...
     def getComposer(self, commandType: int, command: str) -> 'XSingleSelectQueryComposer_66e310b9':
         """
         get the composer initialized with a command and command type.
         """
+        ...
     def getDataSourceMetaData(self) -> 'XDataSourceMetaData_547c0fe4':
         """
         provides access to the application-level data source meta data
         """
+        ...
     def getFieldsByCommandDescriptor(self, commandType: int, command: str, keepFieldsAlive: 'XComponent_98dc0ab5') -> 'XNameAccess_e2ab0cf6':
         """
         get fields for a result set given by a \"command descriptor\"
@@ -71,10 +74,13 @@ class XConnectionTools(ABC):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def getObjectNames(self) -> 'XObjectNames_ed550d43':
         """
         returns an instance supporting the XObjectNames interface, which provides access to functionality around table and query names.
         
         The returned object is guaranteed to not be NULL.
         """
+        ...
+
 

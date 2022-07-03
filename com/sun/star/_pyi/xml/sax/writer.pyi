@@ -32,5 +32,6 @@ class Writer(XWriter_99830aa8):
     See Also:
         `API Writer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1xml_1_1sax_1_1Writer.html>`_
     """
+    ...
 
 

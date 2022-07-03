@@ -40,6 +40,7 @@ class StorageStream(XPropertySet_bc180bfa, XEncryptionProtectedSource_8cdf11a3, 
         """
         specifies if the stream should be compressed next time it is stored.
         """
+        ...
     @property
     def IsEncrypted(self) -> bool:
         """
@@ -49,16 +50,19 @@ class StorageStream(XPropertySet_bc180bfa, XEncryptionProtectedSource_8cdf11a3, 
         
         If somebody sets a password explicitly by using XEncryptionProtectedSource interface the value is automatically set to TRUE. If the interface is used to remove the encryption - the value is automatically set to FALSE.
         """
+        ...
     @property
     def MediaType(self) -> str:
         """
         allows to get and set media type of the stream.
         """
+        ...
     @property
     def Size(self) -> int:
         """
         allows to detect size of the stream in bytes.
         """
+        ...
     @property
     def UseCommonStoragePasswordEncryption(self) -> bool:
         """
@@ -72,5 +76,6 @@ class StorageStream(XPropertySet_bc180bfa, XEncryptionProtectedSource_8cdf11a3, 
         
         In case stream is encrypted one and the value is set to TRUE the stream becomes non-encrypted until the common storage password holder is committed. The data about previously set password ( if any ) will be removed and the stream can be accessed as non-encrypted stream.
         """
+        ...
 
 

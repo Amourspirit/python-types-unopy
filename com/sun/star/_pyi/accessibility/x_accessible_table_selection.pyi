@@ -35,22 +35,27 @@ class XAccessibleTableSelection(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def selectRow(self, row: int) -> bool:
         """
 
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def unselectColumn(self, column: int) -> bool:
         """
 
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def unselectRow(self, row: int) -> bool:
         """
 
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
+
 

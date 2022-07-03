@@ -29,6 +29,7 @@ ENUM Timing
 See Also:
     `API Timing <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1animations.html#ad073880fe621cbabcd7a7cf904ef332f>`_
 """
+typeName: str = 'com.sun.star.animations.Timing'
 
 INDEFINITE: 'uno.Enum'
 """

@@ -40,20 +40,25 @@ class XOfficeInstallationDirectories(XInterface_8f010a43):
         """
         returns the absolute URL containing the directory of the current office installation (for example \"file:///opt/LibreOffice\")
         """
+        ...
     def getOfficeUserDataDirectoryURL(self) -> str:
         """
         returns the absolute URL containing the directory where the current office installation expects its user data (for example \"file:///home/kso/.config/libreoffice/4\")
         """
+        ...
     def makeAbsoluteURL(self, URL: str) -> str:
         """
         the counterpart of makeRelocatableURL.
         
         If the given URL contains a placeholder for an absolute reference to the current office installation directory or for the office user data directory, that was created using makeRelocatableURL, the respective placeholder will be replaced by an absolute reference to the current office installation directory or office user data directory.
         """
+        ...
     def makeRelocatableURL(self, URL: str) -> str:
         """
         calculates a relocatable URL from the given URL.
         
         If the given URL contains an absolute reference to the current office installation directory or office user data directory, this method will replace the absolute reference by an opaque placeholder string. makeRelocatableURL must be used in order to re-replace the placeholder by an absolute reference.
         """
+        ...
+
 

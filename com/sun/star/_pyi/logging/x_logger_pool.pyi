@@ -43,6 +43,7 @@ class XLoggerPool(ABC):
         
         Calling this method is equivalent to calling getNamedLogger( \"org.openoffice.logging.DefaultLogger\" ).
         """
+        ...
     def getNamedLogger(self, Name: str) -> 'XLogger_9a510aa7':
         """
         retrieves a logger with the given name
@@ -51,4 +52,6 @@ class XLoggerPool(ABC):
         
         Newly created logger instances are initialized via configuration. See the configuration module /org.openoffice.Office.Logging for an explanation of the initialization pattern.
         """
+        ...
+
 

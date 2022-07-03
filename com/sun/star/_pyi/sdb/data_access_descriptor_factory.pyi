@@ -30,5 +30,6 @@ class DataAccessDescriptorFactory(XDataAccessDescriptorFactory_8473115c):
     See Also:
         `API DataAccessDescriptorFactory <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1sdb_1_1DataAccessDescriptorFactory.html>`_
     """
+    ...
 
 

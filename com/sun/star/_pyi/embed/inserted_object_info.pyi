@@ -43,6 +43,7 @@ class InsertedObjectInfo(object):
             Options (typing.Tuple[NamedValue, ...], optional): Options value.
             Object (XEmbeddedObject, optional): Object value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class InsertedObjectInfo(object):
         
         A dialog related to embedded object creation usually allows user to make some choices that can be container related. This information can be provided by this member.
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class InsertedObjectInfo(object):
         """
         The new created embedded object.
         """
+        ...
 
 

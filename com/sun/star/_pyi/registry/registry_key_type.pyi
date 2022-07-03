@@ -32,6 +32,7 @@ class RegistryKeyType(Enum):
     See Also:
         `API RegistryKeyType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1registry.html#a096c2bade01504c38ba808bfeadff2b2>`_
     """
+    typeName: str = 'com.sun.star.registry.RegistryKeyType'
 
     KEY: 'uno.Enum'
     """

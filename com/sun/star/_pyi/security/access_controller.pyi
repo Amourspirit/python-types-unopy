@@ -35,5 +35,6 @@ class AccessController(XAccessController_2cc60f4e):
     See Also:
         `API AccessController <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1security_1_1AccessController.html>`_
     """
+    ...
 
 

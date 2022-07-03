@@ -45,6 +45,7 @@ class ExternalLinkInfo(object):
             Type (int, optional): Type value.
             Data (object, optional): Data value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class ExternalLinkInfo(object):
         """
         Link type, one of ExternalLinkType constants.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class ExternalLinkInfo(object):
         
         Modes used:
         """
+        ...
 
 

@@ -53,6 +53,7 @@ class FontRequest(object):
             ReferenceAdvancement (float, optional): ReferenceAdvancement value.
             Locale (Locale, optional): Locale value.
         """
+        ...
 
 
     @property
@@ -62,6 +63,7 @@ class FontRequest(object):
         
         This member contains the description of the font as returned by the font listing methods.
         """
+        ...
 
 
     @property
@@ -77,6 +79,7 @@ class FontRequest(object):
         
         For distorted fonts, the render transformation must be used. That is, the size specified here corresponds to device pixel only if the combined render transformation during text output equals the identity transform. This also applies to all query methods, for both XCanvasFont and XTextLayout.
         """
+        ...
 
 
     @property
@@ -90,6 +93,7 @@ class FontRequest(object):
         
         This member and the cellSize member are mutually exclusive, one of them has to be set to 0 (which means don't care). For distorted fonts, the font matrix must be used.
         """
+        ...
 
 
     @property
@@ -99,5 +103,6 @@ class FontRequest(object):
         
         This member supplements the FontInfo.UnicodeRange0 entry with a specific locale; this is e.g. important when selecting between traditional and simplified Chinese is necessary (since the letters have the same Unicode ranges and character values).
         """
+        ...
 
 

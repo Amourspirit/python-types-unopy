@@ -50,16 +50,20 @@ class XConversionDictionary(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def clear(self) -> None:
         """
         removes all entries from the dictionary.
         """
+        ...
     def getConversionEntries(self, eDirection: 'ConversionDirection_7dfe113c') -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def getConversionType(self) -> int:
         """
         """
+        ...
     def getConversions(self, aText: str, nStartPos: int, nLength: int, eDirection: 'ConversionDirection_7dfe113c', nTextConversionOptions: int) -> 'typing.Tuple[str, ...]':
         """
         searches for entries or conversions that match the given text.
@@ -69,19 +73,24 @@ class XConversionDictionary(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getLocale(self) -> 'Locale_70d308fa':
         """
         """
+        ...
     def getMaxCharCount(self, eDirection: 'ConversionDirection_7dfe113c') -> int:
         """
         returns the maximum number of characters used as left or right text in entries.
         """
+        ...
     def getName(self) -> str:
         """
         """
+        ...
     def isActive(self) -> bool:
         """
         """
+        ...
     def removeEntry(self, aLeftText: str, aRightText: str) -> None:
         """
         removes a conversion pair from the dictionary.
@@ -89,8 +98,11 @@ class XConversionDictionary(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def setActive(self, bActivate: bool) -> None:
         """
         specifies whether the dictionary should be used or not .
         """
+        ...
+
 

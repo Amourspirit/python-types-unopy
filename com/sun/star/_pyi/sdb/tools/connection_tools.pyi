@@ -38,5 +38,6 @@ class ConnectionTools(XConnectionTools_28110f19):
     def createWithConnection(self, Connection: 'XConnection_a36a0b0c') -> None:
         """
         """
+        ...
 
 

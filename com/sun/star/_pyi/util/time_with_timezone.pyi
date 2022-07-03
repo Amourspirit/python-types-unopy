@@ -46,6 +46,7 @@ class TimeWithTimezone(object):
             TimeInTZ (Time, optional): TimeInTZ value.
             Timezone (int, optional): Timezone value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class TimeWithTimezone(object):
         """
         the time (in TimeZone)
         """
+        ...
 
 
     @property
@@ -62,5 +64,6 @@ class TimeWithTimezone(object):
         
         To obtain UTC time from TimeInTZ, you need to subtract TimeZone minutes.
         """
+        ...
 
 

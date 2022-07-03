@@ -49,6 +49,7 @@ class TextMarkupDescriptor(object):
             nLength (int, optional): nLength value.
             xMarkupInfoContainer (XStringKeyMap, optional): xMarkupInfoContainer value.
         """
+        ...
 
 
     @property
@@ -56,6 +57,7 @@ class TextMarkupDescriptor(object):
         """
         Type of text markup see TextMarkupType.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class TextMarkupDescriptor(object):
         """
         A string used to identify the caller.
         """
+        ...
 
 
     @property
@@ -70,6 +73,7 @@ class TextMarkupDescriptor(object):
         """
         Start of the markup range.
         """
+        ...
 
 
     @property
@@ -77,6 +81,7 @@ class TextMarkupDescriptor(object):
         """
         Length of the markup range.
         """
+        ...
 
 
     @property
@@ -92,5 +97,6 @@ class TextMarkupDescriptor(object):
         
             6.3: BOLDWAVE, BOLD | See: com::sun::star::awt::FontUnderline
         """
+        ...
 
 

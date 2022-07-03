@@ -43,5 +43,6 @@ class Container(XEnumerationAccess_4bac0ffc, XIndexAccess_f0910d6d, XNameAccess_
     See Also:
         `API Container <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdbcx_1_1Container.html>`_
     """
+    ...
 
 

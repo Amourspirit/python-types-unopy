@@ -43,6 +43,7 @@ class XOutParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
     def registerOutParameter(self, parameterIndex: int, sqlType: int, typeName: str) -> None:
         """
         registers the designated output parameter.
@@ -58,4 +59,6 @@ class XOutParameters(XInterface_8f010a43):
         Raises:
             SQLException: ``SQLException``
         """
+        ...
+
 

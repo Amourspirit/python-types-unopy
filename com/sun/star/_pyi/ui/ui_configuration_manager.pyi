@@ -33,5 +33,6 @@ class UIConfigurationManager(XUIConfigurationManager2_34030f21):
     See Also:
         `API UIConfigurationManager <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ui_1_1UIConfigurationManager.html>`_
     """
+    ...
 
 

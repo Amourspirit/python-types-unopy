@@ -54,6 +54,7 @@ class DocumentSaveRequest(ClassifiedInteractionRequest_9f72121b):
             Content (XContent, optional): Content value.
             Name (str, optional): Name value.
         """
+        ...
     @property
     def Content(self) -> XContent_79db0975:
         """
@@ -61,12 +62,14 @@ class DocumentSaveRequest(ClassifiedInteractionRequest_9f72121b):
         
         Somebody handling the request could, e.g., use the content as root content to display the hierarchy of the sub contents.
         """
+        ...
 
     @property
     def Name(self) -> str:
         """
         The default name of the document, may be empty.
         """
+        ...
 
 
 __all__ = ['DocumentSaveRequest']

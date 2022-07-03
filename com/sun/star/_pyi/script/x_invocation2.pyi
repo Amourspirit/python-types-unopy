@@ -37,6 +37,7 @@ class XInvocation2(XInvocation_be070c0f):
         """
         returns information items for all methods and properties accessible via XInvocation.
         """
+        ...
     def getInfoForName(self, aName: str, bExact: bool) -> 'InvocationInfo_e5270d43':
         """
         returns information item for the method or property defined by aName
@@ -44,8 +45,11 @@ class XInvocation2(XInvocation_be070c0f):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getMemberNames(self) -> 'typing.Tuple[str, ...]':
         """
         returns the names of all methods and properties accessible via XInvocation.
         """
+        ...
+
 

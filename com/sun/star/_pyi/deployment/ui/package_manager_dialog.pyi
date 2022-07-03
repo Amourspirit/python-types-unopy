@@ -40,15 +40,18 @@ class PackageManagerDialog(XAsynchronousExecutableDialog_255014ad):
         """
         Create a GUI using the specific parent window and focus on the given context.
         """
+        ...
     def createAndInstall(self, extensionURL: str) -> None:
         """
         Create a GUI and pass the URL of the extension which shall be installed right away.
         
         This constructor is intended for the case when unopkg is run as result of clicking an extension in a file browser, etc. The extensions will always be installed for the current user.
         """
+        ...
     def createDefault(self) -> None:
         """
         Create a default GUI.
         """
+        ...
 
 

@@ -35,4 +35,6 @@ class XXPathExtension(XInterface_8f010a43):
     def getLibxml2ExtensionHandle(self) -> 'Libxml2ExtensionHandle_8a2f114f':
         """
         """
+        ...
+
 

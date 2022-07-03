@@ -43,6 +43,7 @@ class TitleChangedEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Title (str, optional): Title value.
         """
+        ...
 
 
     @property
@@ -50,5 +51,6 @@ class TitleChangedEvent(EventObject_a3d70b03):
         """
         The new title.
         """
+        ...
 
 

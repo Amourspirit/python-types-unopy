@@ -47,6 +47,7 @@ class RealSize2D(object):
             Width (float, optional): Width value.
             Height (float, optional): Height value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class RealSize2D(object):
         """
         Amount of space occupied in the x direction.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class RealSize2D(object):
         """
         Amount of space occupied in the y direction.
         """
+        ...
 
 

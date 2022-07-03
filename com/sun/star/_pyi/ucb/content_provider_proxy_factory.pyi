@@ -29,5 +29,6 @@ class ContentProviderProxyFactory(XContentProviderFactory_37fd0f98):
     See Also:
         `API ContentProviderProxyFactory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1ContentProviderProxyFactory.html>`_
     """
+    ...
 
 

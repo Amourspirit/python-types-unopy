@@ -29,5 +29,6 @@ class ConfigurationRegistry(XSimpleRegistry_10150e9c, XFlushable_9a420ab4):
     See Also:
         `API ConfigurationRegistry <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1ConfigurationRegistry.html>`_
     """
+    ...
 
 

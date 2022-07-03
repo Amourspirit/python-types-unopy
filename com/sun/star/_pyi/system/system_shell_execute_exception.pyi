@@ -46,11 +46,13 @@ class SystemShellExecuteException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             PosixError (int, optional): PosixError value.
         """
+        ...
     @property
     def PosixError(self) -> int:
         """
         A POSIX conforming error code or -1 for unknown errors.
         """
+        ...
 
 
 __all__ = ['SystemShellExecuteException']

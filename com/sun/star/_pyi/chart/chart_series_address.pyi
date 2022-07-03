@@ -44,6 +44,7 @@ class ChartSeriesAddress(object):
             DataRangeAddress (str, optional): DataRangeAddress value.
             LabelAddress (str, optional): LabelAddress value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class ChartSeriesAddress(object):
         
         For XY (scatter) diagrams at least one series has a domain. Most of the other chart types use an empty sequence here.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class ChartSeriesAddress(object):
         """
         contains the cell range address of the data for this series.
         """
+        ...
 
 
     @property
@@ -69,5 +72,6 @@ class ChartSeriesAddress(object):
         
         name) of this series.
         """
+        ...
 
 

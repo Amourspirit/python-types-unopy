@@ -39,28 +39,35 @@ class XNamedRange(XNamed_a6520b08):
         
         The content can be a reference to a cell or cell range or any formula expression.
         """
+        ...
     def getReferencePosition(self) -> 'CellAddress_ae5f0b56':
         """
         returns the position in the document which is used as a base for relative references in the content.
         """
+        ...
     def getType(self) -> int:
         """
         returns the type of the named range.
         
         This is a combination of flags as defined in NamedRangeFlag.
         """
+        ...
     def setContent(self, aContent: str) -> None:
         """
         sets the content of the named range.
         
         The content can be a reference to a cell or cell range or any formula expression.
         """
+        ...
     def setReferencePosition(self, aReferencePosition: 'CellAddress_ae5f0b56') -> None:
         """
         sets the position in the document which is used as a base for relative references in the content.
         """
+        ...
     def setType(self, nType: int) -> None:
         """
         sets the type of the named range.
         """
+        ...
+
 

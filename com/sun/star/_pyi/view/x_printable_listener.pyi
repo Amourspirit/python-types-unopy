@@ -39,4 +39,6 @@ class XPrintableListener(XEventListener_c7230c4a):
         """
         informs the user of the new state in print progress.
         """
+        ...
+
 

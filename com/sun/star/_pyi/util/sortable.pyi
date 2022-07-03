@@ -37,5 +37,6 @@ class Sortable(XSortable_8ff20a5a):
     See Also:
         `API Sortable <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1util_1_1Sortable.html>`_
     """
+    ...
 
 

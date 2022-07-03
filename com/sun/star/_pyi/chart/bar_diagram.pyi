@@ -42,6 +42,7 @@ class BarDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartSt
         
         If FALSE the arrangement of bars is like in two-dimensional bar charts.
         """
+        ...
     @property
     def GroupBarsPerAxis(self) -> bool:
         """
@@ -53,6 +54,7 @@ class BarDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartSt
         
         If all data series of a bar or column chart are attached to only one axis, this property has no effect.
         """
+        ...
     @property
     def NumberOfLines(self) -> int:
         """
@@ -60,6 +62,7 @@ class BarDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartSt
         
         If this property differs from zero the last BarDiagram.NumberOfLines data rows are shown as lines. It is currently supported by two dimensional vertical bar charts only.
         """
+        ...
     @property
     def StackedBarsConnected(self) -> bool:
         """
@@ -67,6 +70,7 @@ class BarDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartSt
         
         Currently, bar charts with horizontal bars do not support this property.
         """
+        ...
     @property
     def Vertical(self) -> bool:
         """
@@ -76,5 +80,6 @@ class BarDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartSt
         
         If Vertical is FALSE you get a column chart rather than a bar chart.
         """
+        ...
 
 

@@ -45,6 +45,7 @@ class ArrayIndexOutOfBoundsException(IndexOutOfBoundsException_66d010a9):
             Message (str, optional): Message value.
             Context (XInterface, optional): Context value.
         """
+        ...
 
 __all__ = ['ArrayIndexOutOfBoundsException']
 

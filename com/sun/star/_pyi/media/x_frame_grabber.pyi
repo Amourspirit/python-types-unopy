@@ -37,4 +37,6 @@ class XFrameGrabber(ABC):
         """
         returns the image of the underlying stream at a given position
         """
+        ...
+
 

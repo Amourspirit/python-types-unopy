@@ -54,31 +54,37 @@ class GenericDrawPage(XPropertySet_bc180bfa, XNamed_a6520b08, XShapeBinder_d4f70
         
             LibreOffice 7.2
         """
+        ...
     @property
     def BorderBottom(self) -> int:
         """
         This is the border at the bottom.
         """
+        ...
     @property
     def BorderLeft(self) -> int:
         """
         This is the border at the left.
         """
+        ...
     @property
     def BorderRight(self) -> int:
         """
         This is the border at the right.
         """
+        ...
     @property
     def BorderTop(self) -> int:
         """
         This is the border at the top.
         """
+        ...
     @property
     def Height(self) -> int:
         """
         This is the height.
         """
+        ...
     @property
     def IsBackgroundDark(self) -> bool:
         """
@@ -86,6 +92,7 @@ class GenericDrawPage(XPropertySet_bc180bfa, XNamed_a6520b08, XShapeBinder_d4f70
         
         This can be used to determine the actual value of an auto color.
         """
+        ...
     @property
     def NavigationOrder(self) -> 'XIndexAccess_f0910d6d':
         """
@@ -93,16 +100,19 @@ class GenericDrawPage(XPropertySet_bc180bfa, XNamed_a6520b08, XShapeBinder_d4f70
         
         By default this is equal to the index access of the slide itself, making the z-order the default navigation order for top level shapes.
         """
+        ...
     @property
     def Number(self) -> int:
         """
         This is the number of this page, starting with 1.
         """
+        ...
     @property
     def Orientation(self) -> 'PaperOrientation_e36f0d47':
         """
         This is the orientation of this page.
         """
+        ...
     @property
     def UserDefinedAttributes(self) -> 'XNameContainer_cb90e47':
         """
@@ -110,10 +120,12 @@ class GenericDrawPage(XPropertySet_bc180bfa, XNamed_a6520b08, XShapeBinder_d4f70
         
         They will be saved to and restored from automatic styles inside xml files.
         """
+        ...
     @property
     def Width(self) -> int:
         """
         This is the width.
         """
+        ...
 
 

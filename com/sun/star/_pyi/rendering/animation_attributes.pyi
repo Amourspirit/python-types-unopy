@@ -47,6 +47,7 @@ class AnimationAttributes(object):
             RepeatMode (int, optional): RepeatMode value.
             UntransformedSize (RealSize2D, optional): UntransformedSize value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class AnimationAttributes(object):
         """
         Preferred duration of the animation sequence in seconds.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class AnimationAttributes(object):
         
         This value determines how the [0,1] parameter space of the animation should be swept through. Permissible values are given in AnimationRepeat.
         """
+        ...
 
 
     @property
@@ -72,5 +75,6 @@ class AnimationAttributes(object):
         
         This value specifies the size of the animation when rendered with the identity view transform. This permits e.g. XSprite implementations to cache rendered animation content in finite-sized bitmaps.
         """
+        ...
 
 

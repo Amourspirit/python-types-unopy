@@ -42,11 +42,13 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
         """
         specifies the background color (RGB) of the control.
         """
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
     @property
     def BorderColor(self) -> int:
         """
@@ -58,11 +60,13 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
+        ...
     @property
     def Graphic(self) -> 'XGraphic_a4da0afc':
         """
@@ -74,31 +78,37 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
         
             OOo 2.1
         """
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the control.
         """
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the control.
         """
+        ...
     @property
     def ImageURL(self) -> str:
         """
         specifies a URL to an image to use for the control.
         """
+        ...
     @property
     def Printable(self) -> bool:
         """
         specifies that the control will be printed with the document.
         """
+        ...
     @property
     def ScaleImage(self) -> bool:
         """
         specifies if the image is automatically scaled to the size of the control.
         """
+        ...
     @property
     def ScaleMode(self) -> int:
         """
@@ -112,6 +122,7 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
         
             OOo 3.1
         """
+        ...
     @property
     def Tabstop(self) -> bool:
         """
@@ -121,5 +132,6 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
         
             OOo 1.1.2
         """
+        ...
 
 

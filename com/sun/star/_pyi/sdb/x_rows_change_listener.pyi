@@ -37,4 +37,6 @@ class XRowsChangeListener(XEventListener_c7230c4a):
         """
         is called when rows are inserted, updated, or deleted.
         """
+        ...
+
 

@@ -36,4 +36,6 @@ class XContentTransmitter(XInterface_8f010a43):
     def transmit(self, Source: str, Destination: str, Flags: int) -> None:
         """
         """
+        ...
+
 

@@ -38,5 +38,6 @@ class DatabaseDefinition(XGroupsSupplier_e3410d48, XTablesSupplier_e1ad0d23, XUs
     See Also:
         `API DatabaseDefinition <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdbcx_1_1DatabaseDefinition.html>`_
     """
+    ...
 
 

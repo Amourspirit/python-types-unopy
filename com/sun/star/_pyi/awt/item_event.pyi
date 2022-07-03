@@ -45,6 +45,7 @@ class ItemEvent(EventObject_a3d70b03):
             Highlighted (int, optional): Highlighted value.
             ItemId (int, optional): ItemId value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class ItemEvent(EventObject_a3d70b03):
         """
         specifies which item is newly selected.
         """
+        ...
 
 
     @property
@@ -59,6 +61,7 @@ class ItemEvent(EventObject_a3d70b03):
         """
         specifies which item is newly highlighted.
         """
+        ...
 
 
     @property
@@ -66,5 +69,6 @@ class ItemEvent(EventObject_a3d70b03):
         """
         specifies the id of the item.
         """
+        ...
 
 

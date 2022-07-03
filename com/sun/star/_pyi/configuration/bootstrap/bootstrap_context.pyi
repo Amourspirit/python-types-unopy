@@ -41,5 +41,6 @@ class BootstrapContext(XComponentContext_e2e10d4a):
     See Also:
         `API BootstrapContext <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1configuration_1_1bootstrap_1_1BootstrapContext.html>`_
     """
+    ...
 
 

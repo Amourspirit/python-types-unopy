@@ -38,10 +38,12 @@ class XPrinterPropertySet(XPropertySet_bc180bfa):
         """
         returns a binary encoded version of the printer setup.
         """
+        ...
     def getFormDescriptions(self) -> 'typing.Tuple[str, ...]':
         """
         returns descriptions of all available printer forms.
         """
+        ...
     def selectForm(self, aFormDescription: str) -> None:
         """
         sets the form that should be used.
@@ -52,6 +54,7 @@ class XPrinterPropertySet(XPropertySet_bc180bfa):
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setBinarySetup(self, data: uno.ByteSequence) -> None:
         """
         sets the data specific to the printer driver.
@@ -62,6 +65,7 @@ class XPrinterPropertySet(XPropertySet_bc180bfa):
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def setHorizontal(self, bHorizontal: bool) -> None:
         """
         sets the orientation.
@@ -70,4 +74,6 @@ class XPrinterPropertySet(XPropertySet_bc180bfa):
             com.sun.star.beans.PropertyVetoException: ``PropertyVetoException``
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

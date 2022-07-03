@@ -46,6 +46,7 @@ class SingleReference(object):
             RelativeSheet (int, optional): RelativeSheet value.
             Flags (int, optional): Flags value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class SingleReference(object):
         """
         is the absolute column number.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class SingleReference(object):
         """
         is the relative column number.
         """
+        ...
 
 
     @property
@@ -67,6 +70,7 @@ class SingleReference(object):
         """
         is the absolute row number.
         """
+        ...
 
 
     @property
@@ -74,6 +78,7 @@ class SingleReference(object):
         """
         is the relative row number.
         """
+        ...
 
 
     @property
@@ -81,6 +86,7 @@ class SingleReference(object):
         """
         is the absolute sheet number.
         """
+        ...
 
 
     @property
@@ -88,6 +94,7 @@ class SingleReference(object):
         """
         is the relative sheet number.
         """
+        ...
 
 
     @property
@@ -95,5 +102,6 @@ class SingleReference(object):
         """
         contains flags.
         """
+        ...
 
 

@@ -37,5 +37,6 @@ class DocumentContainer(DefinitionContainer_fc1e0ded, DefinitionContent_e0d20d25
     See Also:
         `API DocumentContainer <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1DocumentContainer.html>`_
     """
+    ...
 
 

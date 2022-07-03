@@ -52,6 +52,7 @@ class DataAccessDescriptor(ABC):
         
         If the sequence is empty, it is ignored.
         """
+        ...
     @property
     def Selection(self) -> 'typing.Tuple[object, ...]':
         """
@@ -63,6 +64,7 @@ class DataAccessDescriptor(ABC):
         
         If the elements specify bookmarks, and a ResultSet has been specified, then this result set is required to support the com.sun.star.sdbcx.XRowLocate interface.
         """
+        ...
     @property
     def ActiveConnection(self) -> 'XConnection_a36a0b0c':
         """
@@ -72,6 +74,7 @@ class DataAccessDescriptor(ABC):
         
         If no ActiveConnection is given, then a DataSourceName is required.
         """
+        ...
     @property
     def BookmarkSelection(self) -> bool:
         """
@@ -81,6 +84,7 @@ class DataAccessDescriptor(ABC):
         
         If TRUE, then the single elements of the array specified by Selection are bookmarks relative to the result set, if FALSE, they're record numbers.
         """
+        ...
     @property
     def Column(self) -> 'XPropertySet_bc180bfa':
         """
@@ -90,6 +94,7 @@ class DataAccessDescriptor(ABC):
         
         The object will at least support the com.sun.star.sdbcx.Column service, but more often it will even be a Column from the com.sun.star.sdb module.
         """
+        ...
     @property
     def ColumnName(self) -> str:
         """
@@ -97,6 +102,7 @@ class DataAccessDescriptor(ABC):
         
         This property is usually used together with the Command and CommandType properties.
         """
+        ...
     @property
     def Command(self) -> str:
         """
@@ -104,6 +110,7 @@ class DataAccessDescriptor(ABC):
         
         This property is only meaningful together with the CommandType property, thus either both or none of them are present.
         """
+        ...
     @property
     def CommandType(self) -> int:
         """
@@ -113,6 +120,7 @@ class DataAccessDescriptor(ABC):
         
         This property is only meaningful together with the Command property, thus either both or none of them are present.
         """
+        ...
     @property
     def ConnectionResource(self) -> str:
         """
@@ -120,6 +128,7 @@ class DataAccessDescriptor(ABC):
         
         This database URL is usually used to create a Connection. If no ConnectionResource is given, then an ActiveConnection is required.
         """
+        ...
     @property
     def DataSourceName(self) -> str:
         """
@@ -127,6 +136,7 @@ class DataAccessDescriptor(ABC):
         
         This data source is usually used to create a Connection. If no DataSourceName is given and the DatabaseLocation and the ConnectionResource are empty, then an ActiveConnection is required.
         """
+        ...
     @property
     def DatabaseLocation(self) -> str:
         """
@@ -134,6 +144,7 @@ class DataAccessDescriptor(ABC):
         
         This database location is usually used to create a Connection. If no DatabaseLocation is given and the ConnectionResource is empty, then an ActiveConnection is required.
         """
+        ...
     @property
     def EscapeProcessing(self) -> bool:
         """
@@ -143,6 +154,7 @@ class DataAccessDescriptor(ABC):
         
         This property is usually present together with the Command and CommandType properties, and is evaluated if and only if CommandType equals CommandType.COMMAND.
         """
+        ...
     @property
     def Filter(self) -> str:
         """
@@ -154,6 +166,7 @@ class DataAccessDescriptor(ABC):
         
         Note that the Filter property does not make sense if a ResultSet has been specified in the DataAccessDescriptor.
         """
+        ...
     @property
     def GroupBy(self) -> str:
         """
@@ -161,6 +174,7 @@ class DataAccessDescriptor(ABC):
         
         The keyword GROUP BY itself is not part of this property.
         """
+        ...
     @property
     def HavingClause(self) -> str:
         """
@@ -168,6 +182,7 @@ class DataAccessDescriptor(ABC):
         
         The keyword HAVING itself is not part of this property.
         """
+        ...
     @property
     def Order(self) -> str:
         """
@@ -175,6 +190,7 @@ class DataAccessDescriptor(ABC):
         
         The keyword ORDER BY itself is not part of this property.
         """
+        ...
     @property
     def ResultSet(self) -> 'XResultSet_98e30aa7':
         """
@@ -186,5 +202,6 @@ class DataAccessDescriptor(ABC):
         
         Note that any superservices of com.sun.star.sdbc.ResultSet are also allowed. Especially, this member can denote an instance of the com.sun.star.sdb.RowSet, or an instance obtained by calling com.sun.star.sdb.XResultSetAccess.createResultSet() on such a com.sun.star.sdb.RowSet. This becomes important in conjunction with the Selection property.
         """
+        ...
 
 

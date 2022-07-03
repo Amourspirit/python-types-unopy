@@ -34,16 +34,20 @@ class XMessageBox(ABC):
         """
         shows the message box.
         """
+        ...
+
     @property
     def CaptionText(self) -> str:
         """
         the caption text.
         """
+        ...
 
     @property
     def MessageText(self) -> str:
         """
         the message text.
         """
+        ...
 
 

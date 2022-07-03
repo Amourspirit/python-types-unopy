@@ -43,6 +43,7 @@ class XEmbedPersist(XCommonEmbedPersist_16930e8d):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def hasEntry(self) -> bool:
         """
         allows to detect if the object has entry.
@@ -50,6 +51,7 @@ class XEmbedPersist(XCommonEmbedPersist_16930e8d):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
     def saveCompleted(self, bUseNew: bool) -> None:
         """
         specifies whether the object should use an old storage or a new one after \"save as\" operation.
@@ -58,6 +60,7 @@ class XEmbedPersist(XCommonEmbedPersist_16930e8d):
             com.sun.star.embed.WrongStateException: ``WrongStateException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def setPersistentEntry(self, xStorage: 'XStorage_8e460a32', sEntName: str, nEntryConnectionMode: int, aMediaArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]', aObjectArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         provides object with a parent storage and a name for object's entry.
@@ -74,6 +77,7 @@ class XEmbedPersist(XCommonEmbedPersist_16930e8d):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def storeAsEntry(self, xStorage: 'XStorage_8e460a32', sEntName: str, aMediaArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]', aObjectArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         lets the object store itself to an entry in destination storage and prepare to use the new entry for own persistence.
@@ -86,6 +90,7 @@ class XEmbedPersist(XCommonEmbedPersist_16930e8d):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def storeToEntry(self, xStorage: 'XStorage_8e460a32', sEntName: str, aMediaArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]', aObjectArgs: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         lets the object store itself to an entry in destination storage, the own persistence entry is not changed.
@@ -96,4 +101,6 @@ class XEmbedPersist(XCommonEmbedPersist_16930e8d):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

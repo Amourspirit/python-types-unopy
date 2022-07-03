@@ -30,5 +30,6 @@ class LayerManager(XNameAccess_e2ab0cf6, XLayerManager_e24b0d04):
     See Also:
         `API LayerManager <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1LayerManager.html>`_
     """
+    ...
 
 

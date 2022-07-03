@@ -39,5 +39,6 @@ class Task(XTask_712808fe):
     See Also:
         `API Task <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1frame_1_1Task.html>`_
     """
+    ...
 
 

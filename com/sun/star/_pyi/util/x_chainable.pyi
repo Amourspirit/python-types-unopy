@@ -33,13 +33,16 @@ class XChainable(XInterface_8f010a43):
     def getPredecessor(self) -> 'XChainable':
         """
         """
+        ...
     def getSuccessor(self) -> 'XChainable':
         """
         """
+        ...
     def isChainable(self, xChainable: 'XChainable') -> bool:
         """
         checks if the specified object can be linked to this.
         """
+        ...
     def setSuccessor(self, xChainable: 'XChainable') -> None:
         """
         connects the specified object to this object as the successor in a chain.
@@ -49,4 +52,6 @@ class XChainable(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

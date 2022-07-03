@@ -39,5 +39,6 @@ class CanvasFactory(XMultiComponentFactory_381b0f98):
     See Also:
         `API CanvasFactory <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1rendering_1_1CanvasFactory.html>`_
     """
+    ...
 
 

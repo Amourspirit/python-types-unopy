@@ -43,10 +43,13 @@ class XMapping2D(XInterface_8f010a43):
         """
         Forward 2D mapping function.
         """
+        ...
     def mapInverse(self, aPoint: 'RealPoint2D_d6e70c78') -> 'RealPoint2D_d6e70c78':
         """
         Inverse 2D mapping function.
         
         The following invariant must hold: map(mapInverse(p))=p. This effectively rules out non-bijective mappings.
         """
+        ...
+
 

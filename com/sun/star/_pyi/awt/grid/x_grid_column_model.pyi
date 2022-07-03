@@ -52,12 +52,14 @@ class XGridColumnModel(XContainer_d6fb0cc6, XComponent_98dc0ab5, XCloneable_99d0
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def createColumn(self) -> 'XGridColumn_d2370c74':
         """
         creates a new column for use with the column model.
         
         The newly created column is not yet inserted into the column container, you need to call addColumn() after you initialized the column object.
         """
+        ...
     def getColumn(self, index: int) -> 'XGridColumn_d2370c74':
         """
         Returns a specific column.
@@ -65,14 +67,17 @@ class XGridColumnModel(XContainer_d6fb0cc6, XComponent_98dc0ab5, XCloneable_99d0
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def getColumnCount(self) -> int:
         """
         Returns the number of columns.
         """
+        ...
     def getColumns(self) -> 'typing.Tuple[XGridColumn_d2370c74, ...]':
         """
         Returns all columns of the model.
         """
+        ...
     def removeColumn(self, ColumnIndex: int) -> None:
         """
         removes a column from the model
@@ -82,10 +87,13 @@ class XGridColumnModel(XContainer_d6fb0cc6, XComponent_98dc0ab5, XCloneable_99d0
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setDefaultColumns(self, elements: int) -> None:
         """
         Fills the model with the given number of default columns.
         
         Existing columns will be removed before adding new columns. Listeners at the column model will be notified one com.sun.star.container.XContainerListener.elementRemoved() event for each removed column, and one com.sun.star.container.XContainerListener.elementInserted() event for each insertion.
         """
+        ...
+
 

@@ -37,4 +37,6 @@ class XInteractionHandler(XInterface_8f010a43):
         """
         Handle an interaction request.
         """
+        ...
+
 

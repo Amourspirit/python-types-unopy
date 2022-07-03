@@ -32,6 +32,7 @@ class NotePrintMode(Enum):
     See Also:
         `API NotePrintMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text.html#a95d9f731f1389ee9f277e756b476251c>`_
     """
+    typeName: str = 'com.sun.star.text.NotePrintMode'
 
     DOC_END: 'uno.Enum'
     """

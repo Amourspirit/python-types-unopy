@@ -33,8 +33,11 @@ class XNotation(XNode_83fb09a5):
         """
         The public identifier of this notation.
         """
+        ...
     def getSystemId(self) -> str:
         """
         The system identifier of this notation.
         """
+        ...
+
 

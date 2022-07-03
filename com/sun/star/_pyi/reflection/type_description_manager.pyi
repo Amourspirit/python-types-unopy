@@ -38,5 +38,6 @@ class TypeDescriptionManager(XHierarchicalNameAccess_9e2611b5, XSet_90c40a4f, XC
     See Also:
         `API TypeDescriptionManager <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1reflection_1_1TypeDescriptionManager.html>`_
     """
+    ...
 
 

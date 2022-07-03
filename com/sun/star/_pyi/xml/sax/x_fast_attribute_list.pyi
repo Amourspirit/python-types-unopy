@@ -42,22 +42,26 @@ class XFastAttributeList(XInterface_8f010a43):
         """
         returns a sequence of attributes which names and or namespaces URLS are translated to tokens.
         """
+        ...
     def getOptionalValue(self, Token: int) -> str:
         """
         retrieves the value of an attribute.
         
         If the attribute name has a namespace that was registered with the XFastParser, Token contains the integer token of the attributes local name from the XFastTokenHandler and the integer token of the namespace combined with an arithmetic or operation.
         """
+        ...
     def getOptionalValueToken(self, Token: int, Default: int) -> int:
         """
         retrieves the token of an attribute value.
         
         If the attribute name has a namespace that was registered with the XFastParser, Token contains the integer token of the attributes local name from the XFastTokenHandler and the integer token of the namespace combined with an arithmetic or operation.
         """
+        ...
     def getUnknownAttributes(self) -> 'typing.Tuple[Attribute_85880a0d, ...]':
         """
         returns a sequence of attributes which names and or namespaces URLS can not be translated to tokens.
         """
+        ...
     def getValue(self, Token: int) -> str:
         """
         retrieves the value of an attribute.
@@ -67,6 +71,7 @@ class XFastAttributeList(XInterface_8f010a43):
         Raises:
             SAXException: ``SAXException``
         """
+        ...
     def getValueToken(self, Token: int) -> int:
         """
         retrieves the token of an attribute value.
@@ -76,10 +81,13 @@ class XFastAttributeList(XInterface_8f010a43):
         Raises:
             SAXException: ``SAXException``
         """
+        ...
     def hasAttribute(self, Token: int) -> bool:
         """
         checks if an attribute is available.
         
         If the attribute name has a namespace that was registered with the XFastParser, Token contains the integer token of the attributes local name from the XFastTokenHandler and the integer token of the namespace combined with an arithmetic or operation.
         """
+        ...
+
 

@@ -39,18 +39,23 @@ class XControllerBorder(XInterface_8f010a43):
         """
         adds the specified listener to receive events about controller's border resizing.
         """
+        ...
     def getBorder(self) -> 'BorderWidths_bb920be4':
         """
         allows to get current border sizes of the document.
         """
+        ...
     def queryBorderedArea(self, aPreliminaryRectangle: 'Rectangle_84b109e9') -> 'Rectangle_84b109e9':
         """
         allows to get suggestion for resizing of object area surrounded by the border.
         
         If the view is going to be resized/moved this method can be used to get suggested object area. Pixels are used as units.
         """
+        ...
     def removeBorderResizeListener(self, xListener: 'XBorderResizeListener_37520f81') -> None:
         """
         removes the specified listener.
         """
+        ...
+
 

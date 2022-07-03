@@ -48,11 +48,13 @@ class ReloadEditableRequest(Exception_85530a09):
             Context (XInterface, optional): Context value.
             DocumentURL (str, optional): DocumentURL value.
         """
+        ...
     @property
     def DocumentURL(self) -> str:
         """
         The URL of the document that is open but was made editable.
         """
+        ...
 
 
 __all__ = ['ReloadEditableRequest']

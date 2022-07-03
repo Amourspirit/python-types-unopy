@@ -43,6 +43,7 @@ class DataPilotFieldReference(object):
             ReferenceItemType (int, optional): ReferenceItemType value.
             ReferenceItemName (str, optional): ReferenceItemName value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class DataPilotFieldReference(object):
         """
         contains the type of the reference.
         """
+        ...
 
 
     @property
@@ -57,6 +59,7 @@ class DataPilotFieldReference(object):
         """
         contains the reference field
         """
+        ...
 
 
     @property
@@ -64,6 +67,7 @@ class DataPilotFieldReference(object):
         """
         selects between a named reference item and using the previous or next item for each item from the reference field.
         """
+        ...
 
 
     @property
@@ -71,5 +75,6 @@ class DataPilotFieldReference(object):
         """
         contains the name of the reference item, when the DataPilotFieldReference.ReferenceItemType is NAMED otherwise is empty
         """
+        ...
 
 

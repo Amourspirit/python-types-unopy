@@ -42,6 +42,7 @@ class XXPathAPI(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.xpath.XPathException: ``XPathException``
         """
+        ...
     def evalNS(self, contextNode: 'XNode_83fb09a5', expr: str, namespaceNode: 'XNode_83fb09a5') -> 'XXPathObject_ee270d40':
         """
         Evaluate XPath Expression.
@@ -49,15 +50,19 @@ class XXPathAPI(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.xpath.XPathException: ``XPathException``
         """
+        ...
     def registerExtension(self, serviceName: str) -> None:
         """
         """
+        ...
     def registerExtensionInstance(self, aExtension: 'XXPathExtension_194c0ea6') -> None:
         """
         """
+        ...
     def registerNS(self, prefix: str, url: str) -> None:
         """
         """
+        ...
     def selectNodeList(self, contextNode: 'XNode_83fb09a5', expr: str) -> 'XNodeList_ae540b41':
         """
         Evaluate an XPath expression to select a list of nodes.
@@ -65,6 +70,7 @@ class XXPathAPI(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.xpath.XPathException: ``XPathException``
         """
+        ...
     def selectNodeListNS(self, contextNode: 'XNode_83fb09a5', expr: str, namespaceNode: 'XNode_83fb09a5') -> 'XNodeList_ae540b41':
         """
         Evaluate an XPath expression to select a list of nodes.
@@ -72,6 +78,7 @@ class XXPathAPI(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.xpath.XPathException: ``XPathException``
         """
+        ...
     def selectSingleNode(self, contextNode: 'XNode_83fb09a5', expr: str) -> 'XNode_83fb09a5':
         """
         Evaluate an XPath expression to select a single node.
@@ -79,6 +86,7 @@ class XXPathAPI(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.xpath.XPathException: ``XPathException``
         """
+        ...
     def selectSingleNodeNS(self, contextNode: 'XNode_83fb09a5', expr: str, namespaceNode: 'XNode_83fb09a5') -> 'XNode_83fb09a5':
         """
         Evaluate an XPath expression to select a single node.
@@ -86,7 +94,10 @@ class XXPathAPI(XInterface_8f010a43):
         Raises:
             com.sun.star.xml.xpath.XPathException: ``XPathException``
         """
+        ...
     def unregisterNS(self, prefix: str, url: str) -> None:
         """
         """
+        ...
+
 

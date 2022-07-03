@@ -43,5 +43,6 @@ class TransientDocumentsStreamContent(XPropertiesChangeNotifier_7a7b111c, XPrope
     See Also:
         `API TransientDocumentsStreamContent <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1TransientDocumentsStreamContent.html>`_
     """
+    ...
 
 

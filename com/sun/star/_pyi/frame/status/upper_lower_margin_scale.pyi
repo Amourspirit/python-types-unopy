@@ -47,6 +47,7 @@ class UpperLowerMarginScale(object):
             ScaleUpper (int, optional): ScaleUpper value.
             ScaleLower (int, optional): ScaleLower value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class UpperLowerMarginScale(object):
         """
         specifies a upper margin in 1/100th mm.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class UpperLowerMarginScale(object):
         """
         specifies a lower margin in 1/100th mm.
         """
+        ...
 
 
     @property
@@ -68,6 +71,7 @@ class UpperLowerMarginScale(object):
         """
         specifies a scale value for the upper margin.
         """
+        ...
 
 
     @property
@@ -75,5 +79,6 @@ class UpperLowerMarginScale(object):
         """
         specifies a scale value for the lower margin.
         """
+        ...
 
 

@@ -19,6 +19,7 @@
 # Libre Office Version: 7.3
 # Namespace: com.sun.star.ui.dialogs
 import typing
+import uno
 from .x_wizard import XWizard as XWizard_bae60bc0
 if typing.TYPE_CHECKING:
     from .x_wizard_controller import XWizardController as XWizardController_469d0fe4
@@ -36,19 +37,21 @@ class Wizard(XWizard_bae60bc0):
     See Also:
         `API Wizard <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ui_1_1dialogs_1_1Wizard.html>`_
     """
-    def createMultiplePathsWizard(self, PageIds: 'typing.Tuple[typing.Tuple[int, ...], ...]', Controller: 'XWizardController_469d0fe4') -> None:
+    def createMultiplePathsWizard(self, PageIds: 'typing.Tuple[uno.ByteSequence, ...]', Controller: 'XWizardController_469d0fe4') -> None:
         """
         creates a wizard with a multiple possible execution paths
 
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
-    def createSinglePathWizard(self, PageIds: 'typing.Tuple[int, ...]', Controller: 'XWizardController_469d0fe4') -> None:
+        ...
+    def createSinglePathWizard(self, PageIds: uno.ByteSequence, Controller: 'XWizardController_469d0fe4') -> None:
         """
         creates a wizard with a single execution path
 
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
 
 

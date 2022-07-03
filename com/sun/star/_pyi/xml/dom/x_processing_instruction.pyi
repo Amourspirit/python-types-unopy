@@ -33,10 +33,12 @@ class XProcessingInstruction(XNode_83fb09a5):
         """
         The content of this processing instruction.
         """
+        ...
     def getTarget(self) -> str:
         """
         The target of this processing instruction.
         """
+        ...
     def setData(self, data: str) -> None:
         """
         The content of this processing instruction.
@@ -46,4 +48,6 @@ class XProcessingInstruction(XNode_83fb09a5):
         Raises:
             DOMException: ``DOMException``
         """
+        ...
+
 

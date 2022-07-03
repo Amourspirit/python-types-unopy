@@ -42,6 +42,7 @@ class XGraphicTransformer(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def applyDuotone(self, In: 'XGraphic_a4da0afc', ColorOne: int, ColorTwo: int) -> 'XGraphic_a4da0afc':
         """
         applies Duotone effect
@@ -49,6 +50,7 @@ class XGraphicTransformer(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def colorChange(self, In: 'XGraphic_a4da0afc', ColorFrom: int, tolerance: int, ColorTo: int, AlphaTo: int) -> 'XGraphic_a4da0afc':
         """
         transforms a Graphic
@@ -56,4 +58,6 @@ class XGraphicTransformer(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

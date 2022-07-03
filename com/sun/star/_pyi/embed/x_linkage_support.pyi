@@ -49,6 +49,7 @@ class XLinkageSupport(XCommonEmbedPersist_16930e8d):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def getLinkURL(self) -> str:
         """
         returns the URL of the link object.
@@ -57,6 +58,7 @@ class XLinkageSupport(XCommonEmbedPersist_16930e8d):
             com.sun.star.embed.WrongStateException: ``WrongStateException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def isLink(self) -> bool:
         """
         allows to detect whether the object is a linked one.
@@ -66,4 +68,6 @@ class XLinkageSupport(XCommonEmbedPersist_16930e8d):
         Raises:
             com.sun.star.embed.WrongStateException: ``WrongStateException``
         """
+        ...
+
 

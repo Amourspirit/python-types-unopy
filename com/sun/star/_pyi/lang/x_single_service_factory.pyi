@@ -44,6 +44,7 @@ class XSingleServiceFactory(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def createInstanceWithArguments(self, aArguments: 'typing.Tuple[object, ...]') -> 'XInterface_8f010a43':
         """
         Creates an instance of a service implementation initialized with some arguments.
@@ -51,4 +52,6 @@ class XSingleServiceFactory(XInterface_8f010a43):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

@@ -34,12 +34,16 @@ class XMergeableCell(XCell_70d408e8):
         """
         returns the number of rows this cell spans.
         """
+        ...
     def getRowSpan(self) -> int:
         """
         returns the number of columns this cell spans.
         """
+        ...
     def isMerged(self) -> bool:
         """
         returns TRUE if this cell is merged with another cell.
         """
+        ...
+
 

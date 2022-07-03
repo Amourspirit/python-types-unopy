@@ -32,5 +32,6 @@ class CellAnnotation(XChild_a6390b07, XSheetAnnotation_ef4a0d8d, XSheetAnnotatio
     See Also:
         `API CellAnnotation <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1CellAnnotation.html>`_
     """
+    ...
 
 

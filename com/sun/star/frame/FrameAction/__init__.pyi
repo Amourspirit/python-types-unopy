@@ -29,6 +29,7 @@ Enum
 See Also:
     `API FrameAction <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1frame.html#a793fdb3e5cab69d63a9c89b5e4f83dfd>`_
 """
+typeName: str = 'com.sun.star.frame.FrameAction'
 
 COMPONENT_ATTACHED: 'uno.Enum'
 """

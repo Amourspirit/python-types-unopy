@@ -43,16 +43,21 @@ class XForbiddenCharacters(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def hasForbiddenCharacters(self, aLocale: 'Locale_70d308fa') -> bool:
         """
         determines if forbidden characters are set for a given locale.
         """
+        ...
     def removeForbiddenCharacters(self, aLocale: 'Locale_70d308fa') -> None:
         """
         removes the setting of forbidden characters for a given locale.
         """
+        ...
     def setForbiddenCharacters(self, aLocale: 'Locale_70d308fa', aForbiddenCharacters: 'ForbiddenCharacters_ce0dd5') -> None:
         """
         sets the forbidden characters for a given Locale.
         """
+        ...
+
 

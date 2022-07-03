@@ -30,5 +30,6 @@ class TemplateAccess(XDocumentTemplates_b000e59, XLocalizable_aee00b64):
     See Also:
         `API TemplateAccess <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1frame_1_1TemplateAccess.html>`_
     """
+    ...
 
 

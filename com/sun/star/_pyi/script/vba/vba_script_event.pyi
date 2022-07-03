@@ -44,6 +44,7 @@ class VBAScriptEvent(EventObject_a3d70b03):
             Identifier (int, optional): Identifier value.
             ModuleName (str, optional): ModuleName value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class VBAScriptEvent(EventObject_a3d70b03):
         """
         Identifies the type of the event.
         """
+        ...
 
 
     @property
@@ -58,5 +60,6 @@ class VBAScriptEvent(EventObject_a3d70b03):
         """
         Contains the name of the involved VBA module.
         """
+        ...
 
 

@@ -33,8 +33,11 @@ class XSearchDescriptor(XPropertySet_bc180bfa):
     def getSearchString(self) -> str:
         """
         """
+        ...
     def setSearchString(self, aString: str) -> None:
         """
         sets the string of characters to look for.
         """
+        ...
+
 

@@ -33,5 +33,6 @@ class ReportDesign(XController2_bbcf0bc1):
     See Also:
         `API ReportDesign <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1ReportDesign.html>`_
     """
+    ...
 
 

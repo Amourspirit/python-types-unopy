@@ -36,5 +36,6 @@ class AccessibleGraphicShape(AccessibleShape_fdd20dd3, XAccessibleImage_6bc11099
     See Also:
         `API AccessibleGraphicShape <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1AccessibleGraphicShape.html>`_
     """
+    ...
 
 

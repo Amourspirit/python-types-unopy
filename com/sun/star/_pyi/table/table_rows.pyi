@@ -30,5 +30,6 @@ class TableRows(XEnumerationAccess_4bac0ffc, XTableRows_a37e0afb):
     See Also:
         `API TableRows <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1table_1_1TableRows.html>`_
     """
+    ...
 
 

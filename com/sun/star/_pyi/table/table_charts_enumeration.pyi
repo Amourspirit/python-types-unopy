@@ -29,5 +29,6 @@ class TableChartsEnumeration(XEnumeration_f2180daa):
     See Also:
         `API TableChartsEnumeration <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1table_1_1TableChartsEnumeration.html>`_
     """
+    ...
 
 

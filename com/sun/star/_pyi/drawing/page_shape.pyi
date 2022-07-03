@@ -38,5 +38,6 @@ class PageShape(Shape_85cc09e5):
         
         For page shapes on notes pages, this can't be changed. For page shapes on handout pages, this value only describes the relative order of the different page shapes on the page.
         """
+        ...
 
 

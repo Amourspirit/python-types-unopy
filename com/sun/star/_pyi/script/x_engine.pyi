@@ -44,46 +44,56 @@ class XEngine(XInterface_8f010a43):
         
         It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
         """
+        ...
     def cancel(self) -> None:
         """
         terminates the execution of the running script.
         
         The waiting queue is cleared too.
         """
+        ...
     def compile(self, ModuleName: str, Script: str, CreateDebugInfo: bool) -> bool:
         """
         compiles a script module in the scope of the root object.
         """
+        ...
     def getRoot(self) -> 'XInterface_8f010a43':
         """
         gets an interface to the object which is the scripting root.
         """
+        ...
     def removeEngineListener(self, Listener: 'XEngineListener_f0b70d91') -> None:
         """
         removes an engine listener.
         
         It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
         """
+        ...
     def run(self, aScript: str, xThis: 'XInterface_8f010a43', aArgs: 'typing.Tuple[object, ...]') -> object:
         """
         runs a script specified by a string.
         
         The arguments given in aArgs can be ignored by the engine. The Script is executed synchronously.
         """
+        ...
     def runAsync(self, acript: str, xThis: 'XInterface_8f010a43', args: 'typing.Tuple[object, ...]', xCallback: 'XEngineListener_f0b70d91') -> None:
         """
         runs the script specified by a string and makes callbacks.
         
         The arguments given in aArgs can be ignored by the engine. The script is executed asynchronously.
         """
+        ...
     def setLibraryAccess(self, Library: 'XLibraryAccess_e32a0d1c') -> None:
         """
         sets an access object to get external functions.
         """
+        ...
     def setRoot(self, xRoot: 'XInterface_8f010a43') -> None:
         """
         sets an interface to an object as a scripting root.
         
         If the root object implements the XInvocation interface, then the engine uses this interface to set/get properties and call methods.
         """
+        ...
+
 

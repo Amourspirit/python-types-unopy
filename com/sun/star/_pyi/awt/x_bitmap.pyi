@@ -38,12 +38,16 @@ class XBitmap(XInterface_8f010a43):
         """
         returns the device independent bitmap.
         """
+        ...
     def getMaskDIB(self) -> uno.ByteSequence:
         """
         returns the transparency mask of the device independent bitmap.
         """
+        ...
     def getSize(self) -> 'Size_576707ef':
         """
         returns the size of the bitmap in pixel.
         """
+        ...
+
 

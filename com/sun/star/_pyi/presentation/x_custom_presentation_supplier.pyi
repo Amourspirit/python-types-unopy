@@ -36,4 +36,6 @@ class XCustomPresentationSupplier(XInterface_8f010a43):
     def getCustomPresentations(self) -> 'XNameContainer_cb90e47':
         """
         """
+        ...
+
 

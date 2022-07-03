@@ -39,10 +39,12 @@ class ResultSet(ResultSet_8ecf0a4f, XDeleteRows_af5c0b72, XRowLocate_a4730b04, X
         
         This may not work, as the result set may contain automatic generated data which is used as key information.
         """
+        ...
     @property
     def IsBookmarkable(self) -> bool:
         """
         returns if the result set supports bookmark navigation.
         """
+        ...
 
 

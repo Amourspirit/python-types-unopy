@@ -37,5 +37,6 @@ class AccessibleChartDocumentView(XAccessible_1cbc0eb6, XAccessibleComponent_b2f
     See Also:
         `API AccessibleChartDocumentView <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart_1_1AccessibleChartDocumentView.html>`_
     """
+    ...
 
 

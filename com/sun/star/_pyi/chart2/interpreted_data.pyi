@@ -43,6 +43,7 @@ class InterpretedData(object):
             Series (typing.Tuple[typing.Tuple[XDataSeries, ...], ...], optional): Series value.
             Categories (XLabeledDataSequence, optional): Categories value.
         """
+        ...
 
 
     @property

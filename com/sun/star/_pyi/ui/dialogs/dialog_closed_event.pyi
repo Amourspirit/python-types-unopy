@@ -45,6 +45,7 @@ class DialogClosedEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             DialogResult (int, optional): DialogResult value.
         """
+        ...
 
 
     @property

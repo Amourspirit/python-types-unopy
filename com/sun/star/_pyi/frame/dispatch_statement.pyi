@@ -49,6 +49,7 @@ class DispatchStatement(object):
             nFlags (int, optional): nFlags value.
             bIsComment (bool, optional): bIsComment value.
         """
+        ...
 
 
     @property
@@ -58,6 +59,7 @@ class DispatchStatement(object):
         
         That means the Arguments parameter of a corresponding XDispatch.dispatch() request.
         """
+        ...
 
 
     @property
@@ -67,6 +69,7 @@ class DispatchStatement(object):
         
         That means the URL parameter of a corresponding XDispatchProvider.queryDispatch() request.
         """
+        ...
 
 
     @property
@@ -76,6 +79,7 @@ class DispatchStatement(object):
         
         That means the TargetFrameName parameter of a corresponding XDispatchProvider.queryDispatch() request.
         """
+        ...
 
 
     @property
@@ -85,6 +89,7 @@ class DispatchStatement(object):
         
         That means the SearchFlags parameter of a corresponding XDispatchProvider.queryDispatch() request.
         """
+        ...
 
 
     @property
@@ -92,5 +97,6 @@ class DispatchStatement(object):
         """
         specifies if this statement should be recorded as commented out or not
         """
+        ...
 
 

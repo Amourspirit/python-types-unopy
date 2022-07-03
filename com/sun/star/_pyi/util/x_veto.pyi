@@ -37,11 +37,13 @@ class XVeto(ABC):
         
         The concrete semantics of this attribute is to be defined in the service implementing this interface.
         """
+        ...
 
     @property
     def Reason(self) -> str:
         """
         describes the reason for the veto
         """
+        ...
 
 

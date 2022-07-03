@@ -29,5 +29,6 @@ class MutableTreeNode(XMutableTreeNode_17d80e6a):
     See Also:
         `API MutableTreeNode <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1tree_1_1MutableTreeNode.html>`_
     """
+    ...
 
 

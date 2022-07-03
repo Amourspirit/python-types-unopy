@@ -50,6 +50,7 @@ class DragSourceDropEvent(DragSourceEvent_8ccf115c):
             DropAction (int, optional): DropAction value.
             DropSuccess (bool, optional): DropSuccess value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class DragSourceDropEvent(DragSourceEvent_8ccf115c):
         """
         The action performed by the target on the subject of the drop.
         """
+        ...
 
 
     @property
@@ -64,5 +66,6 @@ class DragSourceDropEvent(DragSourceEvent_8ccf115c):
         """
         Indicates if the drop was successful.
         """
+        ...
 
 

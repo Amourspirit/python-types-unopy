@@ -43,6 +43,7 @@ class XFunctionManager(XIndexAccess_f0910d6d, XComponent_98dc0ab5):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def getFunctionByName(self, name: str) -> 'XFunctionDescription_8d8d119b':
         """
         get the function description by name
@@ -50,4 +51,6 @@ class XFunctionManager(XIndexAccess_f0910d6d, XComponent_98dc0ab5):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

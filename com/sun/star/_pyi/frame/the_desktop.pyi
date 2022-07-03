@@ -38,5 +38,6 @@ class theDesktop(XDesktop2_98eb0a77):
     See Also:
         `API theDesktop <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1frame_1_1theDesktop.html>`_
     """
+    ...
 
 

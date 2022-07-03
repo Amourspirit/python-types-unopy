@@ -63,10 +63,12 @@ class XDynamicResultSet(XComponent_98dc0ab5):
             : ````
             com.sun.star.ucb.ServiceNotFoundException: ``ServiceNotFoundException``
         """
+        ...
     def getCapabilities(self) -> int:
         """
         Using this method you can get information, whether the offered ContentResultSets are sorted or filtered etc correctly as demanded during the creation of the XDynamicResultSet.
         """
+        ...
     def getStaticResultSet(self) -> 'XResultSet_98e30aa7':
         """
         Call this, if you don't care about any changes.
@@ -74,6 +76,7 @@ class XDynamicResultSet(XComponent_98dc0ab5):
         Raises:
             com.sun.star.ucb.ListenerAlreadySetException: ``ListenerAlreadySetException``
         """
+        ...
     def setListener(self, Listener: 'XDynamicResultSetListener_56e41050') -> None:
         """
         Call this, if you want to get notifications about changes.
@@ -83,4 +86,6 @@ class XDynamicResultSet(XComponent_98dc0ab5):
         Raises:
             com.sun.star.ucb.ListenerAlreadySetException: ``ListenerAlreadySetException``
         """
+        ...
+
 

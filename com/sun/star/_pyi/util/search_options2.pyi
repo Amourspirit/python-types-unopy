@@ -57,6 +57,7 @@ class SearchOptions2(SearchOptions_bd140c08):
             AlgorithmType2 (int, optional): AlgorithmType2 value.
             WildcardEscapeCharacter (int, optional): WildcardEscapeCharacter value.
         """
+        ...
 
 
     @property
@@ -66,6 +67,7 @@ class SearchOptions2(SearchOptions_bd140c08):
         
         This is preferred over the content of the SearchAlgorithms SearchOptions.algorithmType enum field.
         """
+        ...
 
 
     @property
@@ -77,5 +79,6 @@ class SearchOptions2(SearchOptions_bd140c08):
         
         Common values are '\\' (U+005C REVERSE SOLIDUS) aka backslash in text processing context, or '~' (U+007E TILDE) in spreadsheet processing context.
         """
+        ...
 
 

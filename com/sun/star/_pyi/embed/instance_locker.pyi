@@ -46,6 +46,7 @@ class InstanceLocker(XComponent_98dc0ab5):
             com.sun.star.frame.DoubleInitializationException: ``DoubleInitializationException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def InstanceLockerCtor2(self, xInstance: 'XInterface_8f010a43', nActions: int, xApprove: 'XActionsApproval_ed4b0d73') -> None:
         """
         is used to initialize the object on it's creation.
@@ -55,5 +56,6 @@ class InstanceLocker(XComponent_98dc0ab5):
             com.sun.star.frame.DoubleInitializationException: ``DoubleInitializationException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
 
 

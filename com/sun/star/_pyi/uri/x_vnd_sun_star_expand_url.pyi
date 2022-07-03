@@ -46,4 +46,6 @@ class XVndSunStarExpandUrl(ABC):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

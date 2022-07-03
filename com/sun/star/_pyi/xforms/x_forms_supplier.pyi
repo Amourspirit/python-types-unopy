@@ -37,4 +37,6 @@ class XFormsSupplier(XInterface_8f010a43):
         """
         access XForms model container.
         """
+        ...
+
 

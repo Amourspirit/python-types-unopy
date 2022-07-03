@@ -49,6 +49,7 @@ class ErrorEvent(EventObject_a3d70b03):
             Source (XInterface, optional): Source value.
             Reason (object, optional): Reason value.
         """
+        ...
 
 
     @property

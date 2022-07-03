@@ -50,6 +50,7 @@ class ScriptEvent(AllEventObject_e2c20d0f):
             ScriptType (str, optional): ScriptType value.
             ScriptCode (str, optional): ScriptCode value.
         """
+        ...
 
 
     @property
@@ -57,6 +58,7 @@ class ScriptEvent(AllEventObject_e2c20d0f):
         """
         type of the script language as string; for example, \"Basic\" or \"StarScript\".
         """
+        ...
 
 
     @property
@@ -66,5 +68,6 @@ class ScriptEvent(AllEventObject_e2c20d0f):
         
         The code has to correspond with the language defined by ScriptType.
         """
+        ...
 
 

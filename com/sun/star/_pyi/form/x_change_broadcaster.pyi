@@ -39,8 +39,11 @@ class XChangeBroadcaster(XInterface_8f010a43):
         """
         adds the specified listener to receive the \"changed\" event.
         """
+        ...
     def removeChangeListener(self, aListener: 'XChangeListener_d3700ca0') -> None:
         """
         removes the specified listener.
         """
+        ...
+
 

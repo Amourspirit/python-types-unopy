@@ -36,4 +36,6 @@ class XMasterPagesSupplier(XInterface_8f010a43):
     def getMasterPages(self) -> 'XDrawPages_bc440bca':
         """
         """
+        ...
+
 

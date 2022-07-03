@@ -50,11 +50,13 @@ class InteractiveAppException(ClassifiedInteractionRequest_9f72121b):
             Classification (InteractionClassification, optional): Classification value.
             Code (int, optional): Code value.
         """
+        ...
     @property
     def Code(self) -> int:
         """
         The type of application error.
         """
+        ...
 
 
 __all__ = ['InteractiveAppException']

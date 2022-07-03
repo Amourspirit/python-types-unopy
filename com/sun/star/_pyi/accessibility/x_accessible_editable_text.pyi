@@ -50,6 +50,7 @@ class XAccessibleEditableText(XAccessibleText_5b77105b):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def deleteText(self, nStartIndex: int, nEndIndex: int) -> bool:
         """
         Deletes a range of text.
@@ -61,6 +62,7 @@ class XAccessibleEditableText(XAccessibleText_5b77105b):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def insertText(self, sText: str, nIndex: int) -> bool:
         """
         Inserts text at the specified position.
@@ -70,6 +72,7 @@ class XAccessibleEditableText(XAccessibleText_5b77105b):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def pasteText(self, nIndex: int) -> bool:
         """
         Pastes text from the clipboard.
@@ -79,6 +82,7 @@ class XAccessibleEditableText(XAccessibleText_5b77105b):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def replaceText(self, nStartIndex: int, nEndIndex: int, sReplacement: str) -> bool:
         """
         Replaces text.
@@ -90,6 +94,7 @@ class XAccessibleEditableText(XAccessibleText_5b77105b):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setAttributes(self, nStartIndex: int, nEndIndex: int, aAttributeSet: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> bool:
         """
         Replaces the attributes of a text range by the given set of attributes.
@@ -101,10 +106,13 @@ class XAccessibleEditableText(XAccessibleText_5b77105b):
         Raises:
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def setText(self, sText: str) -> bool:
         """
         Replaces the whole text with the given text.
         
         The text content of this object is set to the given string.
         """
+        ...
+
 

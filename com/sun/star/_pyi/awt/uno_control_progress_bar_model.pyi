@@ -41,11 +41,13 @@ class UnoControlProgressBarModel(UnoControlModel_c8ce0c58):
         """
         specifies the background color (RGB) of the control.
         """
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
     @property
     def BorderColor(self) -> int:
         """
@@ -57,45 +59,54 @@ class UnoControlProgressBarModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
+        ...
     @property
     def FillColor(self) -> 'Color_68e908c5':
         """
         specifies the fill color (RGB) of the control.
         """
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the control.
         """
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the control.
         """
+        ...
     @property
     def Printable(self) -> bool:
         """
         specifies that the control will be printed with the document.
         """
+        ...
     @property
     def ProgressValue(self) -> int:
         """
         specifies the progress value of the control.
         """
+        ...
     @property
     def ProgressValueMax(self) -> int:
         """
         specifies the maximum progress value of the control.
         """
+        ...
     @property
     def ProgressValueMin(self) -> int:
         """
         specifies the minimum progress value of the control.
         """
+        ...
 
 

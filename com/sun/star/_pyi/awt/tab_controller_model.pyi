@@ -30,5 +30,6 @@ class TabControllerModel(XTabControllerModel_fbef0dd8, XPersistObject_af2f0b79):
     See Also:
         `API TabControllerModel <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1TabControllerModel.html>`_
     """
+    ...
 
 

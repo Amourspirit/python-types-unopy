@@ -39,12 +39,16 @@ class XReset(XInterface_8f010a43):
         """
         adds the specified listener to receive events related to resetting the component.
         """
+        ...
     def removeResetListener(self, aListener: 'XResetListener_c86e0c5d') -> None:
         """
         removes the specified listener
         """
+        ...
     def reset(self) -> None:
         """
         resets a component to some default value.
         """
+        ...
+
 

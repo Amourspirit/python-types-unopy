@@ -45,6 +45,7 @@ class NamedDatabaseObject(object):
             Type (int, optional): Type value.
             Name (str, optional): Name value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class NamedDatabaseObject(object):
         
         This member is one of the DatabaseObject or DatabaseObjectContainer constants.
         """
+        ...
 
 
     @property
@@ -71,5 +73,6 @@ class NamedDatabaseObject(object):
         
         In case of the virtual folders denoted by DatabaseObjectContainer.TABLES, DatabaseObjectContainer.QUERIES, DatabaseObjectContainer.DATA_SOURCE, DatabaseObjectContainer.FORMS or DatabaseObjectContainer.REPORTS, this denotes the name of the data source (as denoted by com.sun.star.sdb.DataSource.Name)
         """
+        ...
 
 

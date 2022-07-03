@@ -44,10 +44,13 @@ class XTextContent(XComponent_98dc0ab5):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def getAnchor(self) -> 'XTextRange_9a910ab7':
         """
         Note: The anchor of the actual implementation for text tables does not have a position in the text. Thus that anchor can not be used for some operation like attach() for example or com.sun.star.text.insertTextContent or other function that require the object to have a position in the text.
         
         The reason why a text table still needs an anchor is that for example tables should be insertable via com.sun.star.text.insertTextContent and that interface uses a parameter of that type.
         """
+        ...
+
 

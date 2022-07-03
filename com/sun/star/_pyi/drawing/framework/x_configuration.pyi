@@ -44,6 +44,7 @@ class XConfiguration(XCloneable_99d00aa3):
         
         This method should be used only by objects that implement the XConfigurationRequest interface or by the configuration controller.
         """
+        ...
     def getResources(self, xAnchorId: 'XResourceId_5be3103d', sTargetURLPrefix: str, eSearchMode: 'AnchorBindingMode_c46b128b') -> 'typing.Tuple[XResourceId_5be3103d, ...]':
         """
         Returns the list of resources that are bound directly and/or indirectly to the given anchor.
@@ -52,16 +53,20 @@ class XConfiguration(XCloneable_99d00aa3):
         
         Use an empty string to prevent filtering out resource ids.
         """
+        ...
     def hasResource(self, xResourceId: 'XResourceId_5be3103d') -> bool:
         """
         Returns whether the specified resource is part of the configuration.
         
         This is independent of whether the resource does really exist and is active, i.e. has a visible representation in the GUI.
         """
+        ...
     def removeResource(self, xResourceId: 'XResourceId_5be3103d') -> None:
         """
         Remove a resource from the configuration.
         
         This method should be used only by objects that implement the XConfigurationRequest interface or by the configuration controller.
         """
+        ...
+
 

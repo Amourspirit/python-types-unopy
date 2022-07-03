@@ -38,55 +38,66 @@ class DocumentIndex(BaseIndex_8f0d0a40):
         """
         contains all index marks that are related to this index.
         """
+        ...
     @property
     def IsCaseSensitive(self) -> bool:
         """
         determines if the similarity of index entries is checked case sensitively.
         """
+        ...
     @property
     def Locale(self) -> 'Locale_70d308fa':
         """
         contains the locale of the index.
         """
+        ...
     @property
     def MainEntryCharacterStyleName(self) -> str:
         """
         determines the name of the character style that is applied to the number of a page where main index entry is located.
         """
+        ...
     @property
     def SortAlgorithm(self) -> str:
         """
         contains the name of the sort algorithm that is used to sort the entries.
         """
+        ...
     @property
     def UseAlphabeticalSeparators(self) -> bool:
         """
         determines if alphabetical separators are generated.
         """
+        ...
     @property
     def UseCombinedEntries(self) -> bool:
         """
         determines if same entries on different pages are combined into one index entry.
         """
+        ...
     @property
     def UseDash(self) -> bool:
         """
         determines if following page numbers are displayed using a dash.
         """
+        ...
     @property
     def UseKeyAsEntry(self) -> bool:
         """
         determines if an index entry is generated for each primary/secondary key.
         """
+        ...
     @property
     def UsePP(self) -> bool:
         """
         determines if following page numbers are displayed using a \"pp.\".
         """
+        ...
     @property
     def UseUpperCase(self) -> bool:
         """
         determines if all entries start with a capital letter.
         """
+        ...
 
 

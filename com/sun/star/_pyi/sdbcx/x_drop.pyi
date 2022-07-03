@@ -38,6 +38,7 @@ class XDrop(XInterface_8f010a43):
             com.sun.star.sdbc.SQLException: ``SQLException``
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
         """
+        ...
     def dropByName(self, elementName: str) -> None:
         """
         drops an object of the related container identified by its name.
@@ -46,4 +47,6 @@ class XDrop(XInterface_8f010a43):
             com.sun.star.sdbc.SQLException: ``SQLException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

@@ -32,6 +32,7 @@ class PageNumberType(Enum):
     See Also:
         `API PageNumberType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text.html#aeffd73e249af906f303724f66f1f01c5>`_
     """
+    typeName: str = 'com.sun.star.text.PageNumberType'
 
     CURRENT: 'uno.Enum'
     """

@@ -47,6 +47,7 @@ class IntegerPoint2D(object):
             X (int, optional): X value.
             Y (int, optional): Y value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class IntegerPoint2D(object):
         """
         The x coordinate of the point.
         """
+        ...
 
 
     @property
@@ -61,5 +63,6 @@ class IntegerPoint2D(object):
         """
         The x coordinate of the point.
         """
+        ...
 
 

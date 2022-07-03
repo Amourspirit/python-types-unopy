@@ -42,6 +42,7 @@ class ContentProviderInfo(object):
             ContentProvider (XContentProvider, optional): ContentProvider value.
             Scheme (str, optional): Scheme value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class ContentProviderInfo(object):
         """
         The content provider.
         """
+        ...
 
 
     @property
@@ -56,5 +58,6 @@ class ContentProviderInfo(object):
         """
         The scheme the Provider is registered for.
         """
+        ...
 
 

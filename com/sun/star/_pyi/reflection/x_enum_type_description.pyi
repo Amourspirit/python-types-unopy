@@ -20,6 +20,7 @@
 # Namespace: com.sun.star.reflection
 from typing_extensions import Literal
 import typing
+import uno
 from .x_type_description import XTypeDescription as XTypeDescription_3c210fb1
 
 class XEnumTypeDescription(XTypeDescription_3c210fb1):
@@ -35,12 +36,16 @@ class XEnumTypeDescription(XTypeDescription_3c210fb1):
         """
         Returns the default enum value.
         """
+        ...
     def getEnumNames(self) -> 'typing.Tuple[str, ...]':
         """
         Returns the enum member values.
         """
-    def getEnumValues(self) -> 'typing.Tuple[int, ...]':
+        ...
+    def getEnumValues(self) -> uno.ByteSequence:
         """
         Returns the enum member names.
         """
+        ...
+
 

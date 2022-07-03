@@ -37,5 +37,6 @@ class UnoControlPatternField(UnoControlEdit_bc4e0bed, XPatternField_afc10b6e, XS
     See Also:
         `API UnoControlPatternField <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1UnoControlPatternField.html>`_
     """
+    ...
 
 

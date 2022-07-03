@@ -31,5 +31,6 @@ class DrawPages(XDrawPageExpander_19560e8e, XDrawPageSummarizer_387b0f86, XDrawP
     See Also:
         `API DrawPages <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1DrawPages.html>`_
     """
+    ...
 
 

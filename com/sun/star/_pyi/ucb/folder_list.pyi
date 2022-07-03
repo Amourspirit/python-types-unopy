@@ -43,6 +43,7 @@ class FolderList(object):
             List (typing.Tuple[FolderListEntry, ...], optional): List value.
             Command (FolderListCommand, optional): Command value.
         """
+        ...
 
 
     @property
@@ -50,6 +51,7 @@ class FolderList(object):
         """
         The list of folders (only used in conjunction with FolderListCommand.SET).
         """
+        ...
 
 
     @property
@@ -57,5 +59,6 @@ class FolderList(object):
         """
         The command to process on this list of folders.
         """
+        ...
 
 

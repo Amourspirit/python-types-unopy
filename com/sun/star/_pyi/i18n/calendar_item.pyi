@@ -44,6 +44,7 @@ class CalendarItem(object):
             AbbrevName (str, optional): AbbrevName value.
             FullName (str, optional): FullName value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class CalendarItem(object):
         """
         A unique ID for an entry of this type, usually the lower case abbreviated English name, for example, \"sun\" for Sunday.
         """
+        ...
 
 
     @property
@@ -58,6 +60,7 @@ class CalendarItem(object):
         """
         The abbreviated name, for example, \"Sun\".
         """
+        ...
 
 
     @property
@@ -65,5 +68,6 @@ class CalendarItem(object):
         """
         The full name, for example, \"Sunday\".
         """
+        ...
 
 

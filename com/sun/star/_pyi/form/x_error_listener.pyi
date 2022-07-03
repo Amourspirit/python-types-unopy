@@ -45,4 +45,6 @@ class XErrorListener(XEventListener_c7230c4a):
         """
         is invoked when a database action performed by a database form raises an exception.
         """
+        ...
+
 

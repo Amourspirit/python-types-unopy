@@ -29,5 +29,6 @@ class ChartData(XChartData_a3580ade):
     See Also:
         `API ChartData <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart_1_1ChartData.html>`_
     """
+    ...
 
 

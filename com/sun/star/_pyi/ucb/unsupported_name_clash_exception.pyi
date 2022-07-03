@@ -48,11 +48,13 @@ class UnsupportedNameClashException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             NameClash (int, optional): NameClash value.
         """
+        ...
     @property
     def NameClash(self) -> int:
         """
         contains the NameClash that is not supported.
         """
+        ...
 
 
 __all__ = ['UnsupportedNameClashException']

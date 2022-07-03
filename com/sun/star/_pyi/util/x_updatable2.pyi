@@ -36,8 +36,11 @@ class XUpdatable2(XUpdatable_9a420ab0):
         """
         Perform update, even when the controller is locked.
         """
+        ...
     def updateSoft(self) -> None:
         """
         Perform update, but update may not always be performed especially when the controller is locked.
         """
+        ...
+
 

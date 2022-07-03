@@ -48,16 +48,20 @@ class XBitmap(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             VolatileContentDestroyedException: ``VolatileContentDestroyedException``
         """
+        ...
     def getSize(self) -> 'IntegerSize2D_f2690d53':
         """
         Query the size of the bitmap.
         
         This method queries the bitmap size in pixel.
         """
+        ...
     def hasAlpha(self) -> bool:
         """
         Query transparency status of the bitmap.
         
         The method checks, whether the bitmap contains any alpha information. The same information is also available at the XColorSpace associated with this bitmap, though much easier to access here (the color space then has a component flagged ColorComponentTag.ALPHA).
         """
+        ...
+
 

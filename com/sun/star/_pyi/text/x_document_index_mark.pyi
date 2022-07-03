@@ -33,10 +33,13 @@ class XDocumentIndexMark(XTextContent_b16e0ba5):
     def getMarkEntry(self) -> str:
         """
         """
+        ...
     def setMarkEntry(self, aIndexEntry: str) -> None:
         """
         sets an explicit string for this index mark to use in the index.
         
         If empty, the string of the TextRange to which the TextContent refers is used in the index.
         """
+        ...
+
 

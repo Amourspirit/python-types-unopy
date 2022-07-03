@@ -36,4 +36,6 @@ class XNumberingRulesSupplier(XInterface_8f010a43):
     def getNumberingRules(self) -> 'XIndexAccess_f0910d6d':
         """
         """
+        ...
+
 

@@ -53,23 +53,27 @@ class DataTruncation(SQLWarning_96f10a6a):
             DataSize (int, optional): DataSize value.
             TransferSize (int, optional): TransferSize value.
         """
+        ...
     @property
     def Index(self) -> int:
         """
         is the index of the parameter or column value.
         """
+        ...
 
     @property
     def IsParameter(self) -> bool:
         """
         is TRUE if a parameter value is truncated.
         """
+        ...
 
     @property
     def DuringRead(self) -> bool:
         """
         is TRUE if a read was truncated.
         """
+        ...
 
     @property
     def DataSize(self) -> int:
@@ -78,6 +82,7 @@ class DataTruncation(SQLWarning_96f10a6a):
         
         This number may be approximate if data conversions were being performed. The value may be -1 if the size is unknown.
         """
+        ...
 
     @property
     def TransferSize(self) -> int:
@@ -86,6 +91,7 @@ class DataTruncation(SQLWarning_96f10a6a):
         
         The value may be -1 if the size is unknown.
         """
+        ...
 
 
 __all__ = ['DataTruncation']

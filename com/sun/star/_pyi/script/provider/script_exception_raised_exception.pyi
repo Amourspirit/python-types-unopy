@@ -47,11 +47,13 @@ class ScriptExceptionRaisedException(ScriptErrorRaisedException_585f15bc):
             lineNum (int, optional): lineNum value.
             exceptionType (str, optional): exceptionType value.
         """
+        ...
     @property
     def exceptionType(self) -> str:
         """
         Name of script where error occurred.
         """
+        ...
 
 
 __all__ = ['ScriptExceptionRaisedException']

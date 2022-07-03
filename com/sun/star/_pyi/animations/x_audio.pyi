@@ -42,6 +42,7 @@ class XAudio(XAnimationNode_1cf10eb9):
         
             LibreOffice 7.2
         """
+        ...
 
     @property
     def Narration(self) -> bool:
@@ -52,16 +53,19 @@ class XAudio(XAnimationNode_1cf10eb9):
         
             LibreOffice 7.2
         """
+        ...
 
     @property
     def Source(self) -> object:
         """
         This attribute specifies the source element that contains the audio.
         """
+        ...
 
     @property
     def Volume(self) -> float:
         """
         """
+        ...
 
 

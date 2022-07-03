@@ -34,5 +34,6 @@ class SequenceInputStream(XSeekableInputStream_fa7f0dd0):
         """
         allows to create a stream based on the sequence.
         """
+        ...
 
 

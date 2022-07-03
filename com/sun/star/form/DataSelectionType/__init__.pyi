@@ -29,6 +29,7 @@ Enum
 See Also:
     `API DataSelectionType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1form.html#abce772d425e368c8a4f81abe7afa7279>`_
 """
+typeName: str = 'com.sun.star.form.DataSelectionType'
 
 QUERY: 'uno.Enum'
 """

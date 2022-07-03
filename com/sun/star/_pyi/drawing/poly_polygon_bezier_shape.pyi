@@ -35,5 +35,6 @@ class PolyPolygonBezierShape(FillProperties_f1200da8, LineProperties_f13f0da9, P
     See Also:
         `API PolyPolygonBezierShape <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1PolyPolygonBezierShape.html>`_
     """
+    ...
 
 

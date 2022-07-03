@@ -43,6 +43,7 @@ class XStringResourcePersistence(XStringResourceManager_80421142):
         
         See importBinary()).
         """
+        ...
     def importBinary(self, Data: uno.ByteSequence) -> None:
         """
         Initializes the string resource with binary data.
@@ -58,16 +59,19 @@ class XStringResourcePersistence(XStringResourceManager_80421142):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def isModified(self) -> bool:
         """
         provides the current modify state of the StringResourceManager instance.
         """
+        ...
     def setComment(self, Comment: str) -> None:
         """
         Sets the comment stored first in each locale data file.
         
         This interface method can be used to overwrite the comment used during initialization of the services StringResourceWithLocation or StringResourceWithStorage
         """
+        ...
     def store(self) -> None:
         """
         Stores all string table data respectively all data modified since the last call to store() to the location or storage associated with the StringResourceManager.
@@ -88,6 +92,7 @@ class XStringResourcePersistence(XStringResourceManager_80421142):
             com.sun.star.lang.NoSupportException: ``NoSupportException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def storeToStorage(self, Storage: 'XStorage_8e460a32', BaseName: str, Comment: str) -> None:
         """
         Stores all string table data to the provided storage.
@@ -101,6 +106,7 @@ class XStringResourcePersistence(XStringResourceManager_80421142):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def storeToURL(self, URL: str, BaseName: str, Comment: str, Handler: 'XInteractionHandler_bf80e51') -> None:
         """
         Stores all string table data to the location specified by the passed URL string.
@@ -112,4 +118,6 @@ class XStringResourcePersistence(XStringResourceManager_80421142):
         Raises:
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

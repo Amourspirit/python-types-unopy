@@ -47,6 +47,7 @@ class PropertySetInfoChangeEvent(EventObject_a3d70b03):
             Handle (int, optional): Handle value.
             Reason (int, optional): Reason value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class PropertySetInfoChangeEvent(EventObject_a3d70b03):
         """
         contains the name of the property.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class PropertySetInfoChangeEvent(EventObject_a3d70b03):
         
         May be -1 if the implementation has no handle.
         """
+        ...
 
 
     @property
@@ -70,5 +73,6 @@ class PropertySetInfoChangeEvent(EventObject_a3d70b03):
         """
         contains the reason for the event.
         """
+        ...
 
 

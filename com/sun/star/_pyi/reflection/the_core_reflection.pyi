@@ -33,5 +33,6 @@ class theCoreReflection(XIdlReflection_1b8b0eaf):
     See Also:
         `API theCoreReflection <https://api.libreoffice.org/docs/idl/ref/singletoncom_1_1sun_1_1star_1_1reflection_1_1theCoreReflection.html>`_
     """
+    ...
 
 

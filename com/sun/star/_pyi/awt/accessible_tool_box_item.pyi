@@ -37,5 +37,6 @@ class AccessibleToolBoxItem(AccessibleContext_7e0e1143, XAccessibleAction_7ccc11
     See Also:
         `API AccessibleToolBoxItem <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1AccessibleToolBoxItem.html>`_
     """
+    ...
 
 

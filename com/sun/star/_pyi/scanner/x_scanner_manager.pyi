@@ -42,10 +42,12 @@ class XScannerManager(XInterface_8f010a43):
         Raises:
             com.sun.star.scanner.ScannerException: ``ScannerException``
         """
+        ...
     def getAvailableScanners(self) -> 'typing.Tuple[ScannerContext_f0c60da1, ...]':
         """
         returns all available scanner devices
         """
+        ...
     def getBitmap(self, scannerContext: 'ScannerContext_f0c60da1') -> 'XBitmap_70cd0909':
         """
         get the image after completion of scan
@@ -53,6 +55,7 @@ class XScannerManager(XInterface_8f010a43):
         Raises:
             com.sun.star.scanner.ScannerException: ``ScannerException``
         """
+        ...
     def getError(self, scannerContext: 'ScannerContext_f0c60da1') -> 'ScanError_b0d90b81':
         """
         get the state of scanning after completion of scan
@@ -60,6 +63,7 @@ class XScannerManager(XInterface_8f010a43):
         Raises:
             com.sun.star.scanner.ScannerException: ``ScannerException``
         """
+        ...
     def startScan(self, scannerContext: 'ScannerContext_f0c60da1', listener: 'XEventListener_c7230c4a') -> None:
         """
         start the scanning process listener will be called when scan is complete the EventObject of the disposing call will contain the ScannerManager if the scan was successful, an empty interface otherwise
@@ -67,4 +71,6 @@ class XScannerManager(XInterface_8f010a43):
         Raises:
             com.sun.star.scanner.ScannerException: ``ScannerException``
         """
+        ...
+
 

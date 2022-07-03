@@ -45,6 +45,7 @@ class Property(object):
             Type (object, optional): Type value.
             Attributes (int, optional): Attributes value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class Property(object):
         
         The name is unique within an XPropertySet. Upper and lower case are distinguished.
         """
+        ...
 
 
     @property
@@ -63,6 +65,7 @@ class Property(object):
         
         It may be -1 if the implementation has no handle. You can use this handle to get values from the XFastPropertySet.
         """
+        ...
 
 
     @property
@@ -72,6 +75,7 @@ class Property(object):
         
         If the property has multiple types or the type is not known, but not an any, then void must be returned.
         """
+        ...
 
 
     @property
@@ -79,5 +83,6 @@ class Property(object):
         """
         This field may contain zero or more constants of the PropertyAttribute constants group.
         """
+        ...
 
 

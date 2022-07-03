@@ -45,6 +45,7 @@ class ShadowFormat(object):
             IsTransparent (bool, optional): IsTransparent value.
             Color (Color, optional): Color value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class ShadowFormat(object):
         """
         contains the location of the shadow.
         """
+        ...
 
 
     @property
@@ -59,6 +61,7 @@ class ShadowFormat(object):
         """
         contains the size of the shadow.
         """
+        ...
 
 
     @property
@@ -66,6 +69,7 @@ class ShadowFormat(object):
         """
         is TRUE, if shadow is transparent.
         """
+        ...
 
 
     @property
@@ -73,5 +77,6 @@ class ShadowFormat(object):
         """
         contains the color value of the shadow.
         """
+        ...
 
 

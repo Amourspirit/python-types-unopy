@@ -48,6 +48,7 @@ class XLoadable(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
     def load(self, lArguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
         loads a component from a URL
@@ -57,4 +58,6 @@ class XLoadable(XInterface_8f010a43):
             com.sun.star.io.IOException: ``IOException``
             com.sun.star.uno.Exception: ``Exception``
         """
+        ...
+
 

@@ -42,6 +42,7 @@ class FunctionArgument(object):
             Description (str, optional): Description value.
             IsOptional (bool, optional): IsOptional value.
         """
+        ...
 
 
     @property
@@ -49,6 +50,7 @@ class FunctionArgument(object):
         """
         the name of the argument.
         """
+        ...
 
 
     @property
@@ -56,6 +58,7 @@ class FunctionArgument(object):
         """
         a description of the argument.
         """
+        ...
 
 
     @property
@@ -63,5 +66,6 @@ class FunctionArgument(object):
         """
         determines whether the argument is optional.
         """
+        ...
 
 

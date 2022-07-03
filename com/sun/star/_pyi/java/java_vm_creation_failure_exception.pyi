@@ -50,6 +50,7 @@ class JavaVMCreationFailureException(JavaInitializationException_8b6211a3):
             Context (XInterface, optional): Context value.
             ErrorCode (int, optional): ErrorCode value.
         """
+        ...
     @property
     def ErrorCode(self) -> int:
         """
@@ -57,6 +58,7 @@ class JavaVMCreationFailureException(JavaInitializationException_8b6211a3):
         
         A negative value represents the returned error code of JNI_CreateJavaVM. All other values indicate a different cause.
         """
+        ...
 
 
 __all__ = ['JavaVMCreationFailureException']

@@ -38,7 +38,10 @@ class XDiagramProvider(XInterface_8f010a43):
     def getDiagram(self) -> 'XDiagram_96fe0a59':
         """
         """
+        ...
     def setDiagram(self, xDiagram: 'XDiagram_96fe0a59') -> None:
         """
         """
+        ...
+
 

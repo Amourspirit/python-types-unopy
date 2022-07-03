@@ -29,5 +29,6 @@ class DataSink(XDataSink_dbc40c7b):
     See Also:
         `API DataSink <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1chart2_1_1data_1_1DataSink.html>`_
     """
+    ...
 
 

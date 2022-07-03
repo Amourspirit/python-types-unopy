@@ -50,6 +50,7 @@ class CalendarItem2(CalendarItem_a86c0af1):
             FullName (str, optional): FullName value.
             NarrowName (str, optional): NarrowName value.
         """
+        ...
 
 
     @property
@@ -57,5 +58,6 @@ class CalendarItem2(CalendarItem_a86c0af1):
         """
         The narrow name, for example, \"S\" for Sunday or \"J\" for January.
         """
+        ...
 
 

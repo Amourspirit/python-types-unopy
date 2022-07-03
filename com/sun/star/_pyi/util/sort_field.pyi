@@ -47,6 +47,7 @@ class SortField(object):
             SortAscending (bool, optional): SortAscending value.
             FieldType (SortFieldType, optional): FieldType value.
         """
+        ...
 
 
     @property
@@ -54,6 +55,7 @@ class SortField(object):
         """
         index of the field in the table; 0-based.
         """
+        ...
 
 
     @property
@@ -61,6 +63,7 @@ class SortField(object):
         """
         TRUE if data are sorted in ascending order, FALSE if in descending order.
         """
+        ...
 
 
     @property
@@ -68,5 +71,6 @@ class SortField(object):
         """
         type of contents in the field.
         """
+        ...
 
 

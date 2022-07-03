@@ -57,6 +57,7 @@ class Calendar2(object):
             Default (bool, optional): Default value.
             Name (str, optional): Name value.
         """
+        ...
 
 
     @property
@@ -64,6 +65,7 @@ class Calendar2(object):
         """
         The days of the week.
         """
+        ...
 
 
     @property
@@ -71,6 +73,7 @@ class Calendar2(object):
         """
         The months of the year.
         """
+        ...
 
 
     @property
@@ -78,6 +81,7 @@ class Calendar2(object):
         """
         The months of the year in possessive genitive case.
         """
+        ...
 
 
     @property
@@ -85,6 +89,7 @@ class Calendar2(object):
         """
         The months of the year in partitive case.
         """
+        ...
 
 
     @property
@@ -92,6 +97,7 @@ class Calendar2(object):
         """
         The possible eras.
         """
+        ...
 
 
     @property
@@ -99,6 +105,7 @@ class Calendar2(object):
         """
         The ID of the day with which the week begins.
         """
+        ...
 
 
     @property
@@ -106,6 +113,7 @@ class Calendar2(object):
         """
         How many days must reside in the first week of a year.
         """
+        ...
 
 
     @property
@@ -113,6 +121,7 @@ class Calendar2(object):
         """
         If this is the default calendar for a given locale.
         """
+        ...
 
 
     @property
@@ -120,5 +129,6 @@ class Calendar2(object):
         """
         The name of the calendar, for example, Gregorian.
         """
+        ...
 
 

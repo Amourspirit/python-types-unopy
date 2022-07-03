@@ -33,5 +33,6 @@ class GraphicObject(XGraphicObject_ee970d53):
         """
         Creates a GraphicObject.
         """
+        ...
 
 

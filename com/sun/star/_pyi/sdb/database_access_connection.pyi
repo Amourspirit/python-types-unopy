@@ -41,5 +41,6 @@ class DatabaseAccessConnection(Connection_98fe0ab4, DatabaseDefinition_9d00e3a, 
     See Also:
         `API DatabaseAccessConnection <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1DatabaseAccessConnection.html>`_
     """
+    ...
 
 

@@ -38,11 +38,13 @@ class SearchDescriptor(XSearchDescriptor_ef600d93):
         """
         If TRUE, the search is done backwards in the document.
         """
+        ...
     @property
     def SearchCaseSensitive(self) -> bool:
         """
         If TRUE, the case of the letters is important for the match.
         """
+        ...
     @property
     def SearchRegularExpression(self) -> bool:
         """
@@ -50,6 +52,7 @@ class SearchDescriptor(XSearchDescriptor_ef600d93):
         
         SearchRegularExpression, SearchWildcard and SearchSimilarity are mutually exclusive, only one can be TRUE at the same time.
         """
+        ...
     @property
     def SearchSimilarity(self) -> bool:
         """
@@ -59,16 +62,19 @@ class SearchDescriptor(XSearchDescriptor_ef600d93):
         
         SearchRegularExpression, SearchWildcard and SearchSimilarity are mutually exclusive, only one can be TRUE at the same time.
         """
+        ...
     @property
     def SearchSimilarityAdd(self) -> int:
         """
         specifies the number of characters that must be added to match the search pattern.
         """
+        ...
     @property
     def SearchSimilarityExchange(self) -> int:
         """
         This property specifies the number of characters that must be replaced to match the search pattern.
         """
+        ...
     @property
     def SearchSimilarityRelax(self) -> bool:
         """
@@ -76,16 +82,19 @@ class SearchDescriptor(XSearchDescriptor_ef600d93):
         
         In the case of a relaxed similarity search, the following properties are applied together:
         """
+        ...
     @property
     def SearchSimilarityRemove(self) -> int:
         """
         This property specifies the number of characters that may be ignored to match the search pattern.
         """
+        ...
     @property
     def SearchStyles(self) -> bool:
         """
         If TRUE, it is searched for positions where the paragraph style with the name of the search pattern is applied.
         """
+        ...
     @property
     def SearchWildcard(self) -> bool:
         """
@@ -99,10 +108,12 @@ class SearchDescriptor(XSearchDescriptor_ef600d93):
         
             LibreOffice 5.2
         """
+        ...
     @property
     def SearchWords(self) -> bool:
         """
         If TRUE, only complete words will be found.
         """
+        ...
 
 

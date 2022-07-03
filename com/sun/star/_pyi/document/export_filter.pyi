@@ -34,5 +34,6 @@ class ExportFilter(XNamed_a6520b08, XExporter_be500c18, XFilter_a6300b25, XIniti
     See Also:
         `API ExportFilter <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1document_1_1ExportFilter.html>`_
     """
+    ...
 
 

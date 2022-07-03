@@ -43,6 +43,7 @@ class XObjectInspectorModel(ABC):
         
         Properties can be sorted into different categories, described by the LineDescriptor.Category attribute, which is filled in XPropertyHandler.describePropertyLine() method of your property handler.Those names provided by the handlers are programmatic names. All other information about categories is part of the PropertyCategoryDescriptor, and describeCategories() assembles information about all categories which all property handlers provided by the model use.
         """
+        ...
     def getPropertyOrderIndex(self, PropertyName: str) -> int:
         """
         retrieves an index in a global property ordering, for a given property name
@@ -53,6 +54,8 @@ class XObjectInspectorModel(ABC):
         
         If for two different properties the same order index is returned, the ObjectInspector will assume the order in which those properties were provided by the respective property handler (XPropertyHandler.getSupportedProperties()).If two such properties originate from different handlers, they will be ordered according to the order of the handlers, as provided in the HandlerFactories attribute.
         """
+        ...
+
     @property
     def HandlerFactories(self) -> 'typing.Tuple[object, ...]':
         """
@@ -64,6 +67,7 @@ class XObjectInspectorModel(ABC):
         
         The order of factories is important: If two property handlers declare themselves responsible for the same property, the one whose factory is listed last wins. Also, if a handler B wants to supersede a property of another handler A, A's factory must precede the factory of B.
         """
+        ...
 
     @property
     def HasHelpSection(self) -> bool:
@@ -76,6 +80,7 @@ class XObjectInspectorModel(ABC):
         
             OOo 2.2
         """
+        ...
 
     @property
     def IsReadOnly(self) -> bool:
@@ -86,6 +91,7 @@ class XObjectInspectorModel(ABC):
         
         In a read-only object inspector, the property controls are readonly or disabled themselves, and the primary and secondary buttons of a property line are both disabled.
         """
+        ...
 
     @property
     def MaxHelpTextLines(self) -> int:
@@ -100,6 +106,7 @@ class XObjectInspectorModel(ABC):
         
             OOo 2.2
         """
+        ...
 
     @property
     def MinHelpTextLines(self) -> int:
@@ -114,5 +121,6 @@ class XObjectInspectorModel(ABC):
         
             OOo 2.2
         """
+        ...
 
 

@@ -47,6 +47,7 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
         """
         contains the background color.
         """
+        ...
     @property
     def BackGraphic(self) -> 'XGraphic_a4da0afc':
         """
@@ -56,16 +57,19 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
         
             LibreOffice 6.1
         """
+        ...
     @property
     def BackGraphicFilter(self) -> str:
         """
         contains the name of the graphic filter of the background graphic.
         """
+        ...
     @property
     def BackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         determines the position of the background graphic.
         """
+        ...
     @property
     def BackGraphicURL(self) -> str:
         """
@@ -73,46 +77,55 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
         
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the BackGraphic property.
         """
+        ...
     @property
     def BackTransparent(self) -> bool:
         """
         determines whether the background is transparent.
         """
+        ...
     @property
     def BottomBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the bottom border line.
         """
+        ...
     @property
     def BottomBorderDistance(self) -> int:
         """
         contains the distance of the bottom border.
         """
+        ...
     @property
     def CellName(self) -> str:
         """
         contains the cell name, see SwXTextTable.getCellByName for more information
         """
+        ...
     @property
     def IsProtected(self) -> bool:
         """
         determines whether the cell is write protected or not.
         """
+        ...
     @property
     def LeftBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the left border line.
         """
+        ...
     @property
     def LeftBorderDistance(self) -> int:
         """
         contains the distance of the left border.
         """
+        ...
     @property
     def NumberFormat(self) -> int:
         """
         contains the number format.
         """
+        ...
     @property
     def ParentText(self) -> 'XText_690408ca':
         """
@@ -124,35 +137,42 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
         
             LibreOffice 6.3
         """
+        ...
     @property
     def RightBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the right border line.
         """
+        ...
     @property
     def RightBorderDistance(self) -> int:
         """
         contains the distance of the right border.
         """
+        ...
     @property
     def TextSection(self) -> 'XTextSection_b1730b9f':
         """
         contains the text section the text table is contained in if there is any.
         """
+        ...
     @property
     def TopBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the top border line.
         """
+        ...
     @property
     def TopBorderDistance(self) -> int:
         """
         contains the distance of the top border.
         """
+        ...
     @property
     def VertOrient(self) -> int:
         """
         the vertical orientation of the text inside of the table cells in this row.
         """
+        ...
 
 

@@ -29,6 +29,7 @@ Enum
 See Also:
     `API RubyAdjust <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text.html#adf417fe4b45f486fe88af93ad0b59efb>`_
 """
+typeName: str = 'com.sun.star.text.RubyAdjust'
 
 BLOCK: 'uno.Enum'
 """

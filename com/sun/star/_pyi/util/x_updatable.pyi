@@ -34,4 +34,6 @@ class XUpdatable(XInterface_8f010a43):
         """
         refreshes the data of the object from the connected data source.
         """
+        ...
+
 

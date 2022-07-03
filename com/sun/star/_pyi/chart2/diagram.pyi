@@ -40,23 +40,28 @@ class Diagram(X3DDefaultSetter_e9630d25, XCoordinateSystemContainer_995411d4, XD
         """
         Draw connection lines for stacked bar charts.
         """
+        ...
     @property
     def DataTableHBorder(self) -> bool:
         """
         Chart Datatable flags.
         """
+        ...
     @property
     def DataTableOutline(self) -> bool:
         """
         """
+        ...
     @property
     def DataTableVBorder(self) -> bool:
         """
         """
+        ...
     @property
     def ExternalData(self) -> str:
         """
         """
+        ...
     @property
     def GroupBarsPerAxis(self) -> bool:
         """
@@ -68,21 +73,25 @@ class Diagram(X3DDefaultSetter_e9630d25, XCoordinateSystemContainer_995411d4, XD
         
         If all data series of a bar or column chart are attached to only one axis, this property has no effect.
         """
+        ...
     @property
     def MissingValueTreatment(self) -> int:
         """
         specifies how empty or invalid cells in the provided data should be handled when displayed
         """
+        ...
     @property
     def Perspective(self) -> int:
         """
         Perspective of 3D charts ( [0,100] ).
         """
+        ...
     @property
     def PosSizeExcludeLabels(self) -> bool:
         """
         The attributes RelativePosition and RelativeSize should be used for the inner coordinate region without axis labels and without data labels.
         """
+        ...
     @property
     def RelativePosition(self) -> 'RelativePosition_fae10ddd':
         """
@@ -90,34 +99,41 @@ class Diagram(X3DDefaultSetter_e9630d25, XCoordinateSystemContainer_995411d4, XD
         
         If a relative position is given the diagram is not automatically placed, but instead is placed relative on the page.
         """
+        ...
     @property
     def RelativeSize(self) -> 'RelativeSize_c6020c23':
         """
         The size of the diagram as relative size of the page size.
         """
+        ...
     @property
     def RightAngledAxes(self) -> bool:
         """
         """
+        ...
     @property
     def RotationHorizontal(self) -> int:
         """
         Horizontal rotation of 3D charts in degrees ( ]-180,180] ).
         """
+        ...
     @property
     def RotationVertical(self) -> int:
         """
         Vertical rotation of 3D charts in degrees ( ]-180,180] ).
         """
+        ...
     @property
     def SortByXValues(self) -> bool:
         """
         Sort data points by x values for rendering.
         """
+        ...
     @property
     def StartingAngle(self) -> int:
         """
         Starting angle in degrees for pie charts and doughnut charts.
         """
+        ...
 
 

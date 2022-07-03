@@ -37,8 +37,11 @@ class XSpreadsheet(XSheetCellRange_e09d0cdf):
         """
         creates a cell cursor including the whole spreadsheet.
         """
+        ...
     def createCursorByRange(self, aRange: 'XSheetCellRange_e09d0cdf') -> 'XSheetCellCursor_ee400d70':
         """
         creates a cell cursor to travel in the given range context.
         """
+        ...
+
 

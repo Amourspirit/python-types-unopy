@@ -28,5 +28,6 @@ class PackageEncryption(XPackageEncryption_36ec0f76):
     See Also:
         `API PackageEncryption <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1packages_1_1PackageEncryption.html>`_
     """
+    ...
 
 

@@ -53,6 +53,7 @@ class ConfigurationChangeEvent(EventObject_a3d70b03):
             ResourceObject (XInterface, optional): ResourceObject value.
             UserData (object, optional): UserData value.
         """
+        ...
 
 
     @property
@@ -62,6 +63,7 @@ class ConfigurationChangeEvent(EventObject_a3d70b03):
         
         This is the only member that is always set. The values of the other members depend on the configuration change type and may or may not be set.
         """
+        ...
 
 
     @property
@@ -71,6 +73,7 @@ class ConfigurationChangeEvent(EventObject_a3d70b03):
         
         May be an empty reference.
         """
+        ...
 
 
     @property
@@ -78,6 +81,7 @@ class ConfigurationChangeEvent(EventObject_a3d70b03):
         """
         The resource id that is part of the configuration change.
         """
+        ...
 
 
     @property
@@ -87,6 +91,7 @@ class ConfigurationChangeEvent(EventObject_a3d70b03):
         
         May be an empty reference.
         """
+        ...
 
 
     @property
@@ -94,5 +99,6 @@ class ConfigurationChangeEvent(EventObject_a3d70b03):
         """
         Each listener is called with exactly the UserData that was given when the listener was registered.
         """
+        ...
 
 

@@ -36,8 +36,11 @@ class XLocalizable(XInterface_8f010a43):
     def getLocale(self) -> 'Locale_70d308fa':
         """
         """
+        ...
     def setLocale(self, eLocale: 'Locale_70d308fa') -> None:
         """
         sets the locale to be used by this object.
         """
+        ...
+
 

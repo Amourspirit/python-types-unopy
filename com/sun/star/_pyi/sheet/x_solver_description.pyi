@@ -34,16 +34,20 @@ class XSolverDescription(XInterface_8f010a43):
         """
         returns a short description for a property in the component's com.sun.star.beans.XPropertySet interface.
         """
+        ...
+
     @property
     def ComponentDescription(self) -> str:
         """
         A user-visible name of the component.
         """
+        ...
 
     @property
     def StatusDescription(self) -> str:
         """
         After calling solve, a message describing the status (explaining why no solution was found).
         """
+        ...
 
 

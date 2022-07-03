@@ -44,11 +44,13 @@ class ErrorCodeIOException(IOException_8c450a27):
             Context (XInterface, optional): Context value.
             ErrCode (int, optional): ErrCode value.
         """
+        ...
     @property
     def ErrCode(self) -> int:
         """
         specifies the error code; see tools/errcode.hxx for details.
         """
+        ...
 
 
 __all__ = ['ErrorCodeIOException']

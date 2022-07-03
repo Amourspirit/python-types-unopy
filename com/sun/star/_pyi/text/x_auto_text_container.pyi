@@ -47,6 +47,7 @@ class XAutoTextContainer(XNameAccess_e2ab0cf6):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def removeByName(self, aGroupName: str) -> None:
         """
         deletes the specified AutoText group.
@@ -54,4 +55,6 @@ class XAutoTextContainer(XNameAccess_e2ab0cf6):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

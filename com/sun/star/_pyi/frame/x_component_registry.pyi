@@ -39,4 +39,6 @@ class XComponentRegistry(XInterface_8f010a43):
     def createObject(self, URL: str, Uik: 'Uik_4fac0783') -> 'XInterface_8f010a43':
         """
         """
+        ...
+
 

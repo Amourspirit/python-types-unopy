@@ -43,12 +43,14 @@ class XPropertyState(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def getPropertyState(self, PropertyName: str) -> 'PropertyState_c97b0c77':
         """
 
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def getPropertyStates(self, aPropertyName: 'typing.Tuple[str, ...]') -> 'typing.Tuple[PropertyState_c97b0c77, ...]':
         """
         The order of the states is correlating to the order of the given property names.
@@ -56,6 +58,7 @@ class XPropertyState(XInterface_8f010a43):
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
     def setPropertyToDefault(self, PropertyName: str) -> None:
         """
         Sets the property to default value.
@@ -65,4 +68,6 @@ class XPropertyState(XInterface_8f010a43):
         Raises:
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
+        ...
+
 

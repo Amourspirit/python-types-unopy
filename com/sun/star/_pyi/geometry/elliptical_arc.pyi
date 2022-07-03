@@ -55,6 +55,7 @@ class EllipticalArc(object):
             IsLargeArc (bool, optional): IsLargeArc value.
             IsClockwiseSweep (bool, optional): IsClockwiseSweep value.
         """
+        ...
 
 
     @property
@@ -62,6 +63,7 @@ class EllipticalArc(object):
         """
         Start point of the arc.
         """
+        ...
 
 
     @property
@@ -69,6 +71,7 @@ class EllipticalArc(object):
         """
         End point of the arc.
         """
+        ...
 
 
     @property
@@ -76,6 +79,7 @@ class EllipticalArc(object):
         """
         Main radius in x direction of the ellipse this arc is part of.
         """
+        ...
 
 
     @property
@@ -83,6 +87,7 @@ class EllipticalArc(object):
         """
         Main radius in y direction of the ellipse this arc is part of.
         """
+        ...
 
 
     @property
@@ -90,6 +95,7 @@ class EllipticalArc(object):
         """
         Rotation angle of the x axis of the ellipse relative to the x axis of the reference coordinate system.
         """
+        ...
 
 
     @property
@@ -97,6 +103,7 @@ class EllipticalArc(object):
         """
         If TRUE, and there's a choice, take the longer one of two arcs connecting start and end point.
         """
+        ...
 
 
     @property
@@ -104,5 +111,6 @@ class EllipticalArc(object):
         """
         If TRUE, and there's a choice, take the arc that goes clock-wise from start to end point.
         """
+        ...
 
 

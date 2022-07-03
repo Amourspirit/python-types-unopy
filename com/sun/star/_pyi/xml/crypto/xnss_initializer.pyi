@@ -45,6 +45,8 @@ class XNSSInitializer(XCipherContextSupplier_9fd31214, XDigestContextSupplier_a0
         
             LibreOffice 7.1
         """
+        ...
+
     @property
     def IsNSSinitialized(self) -> bool:
         """
@@ -56,6 +58,7 @@ class XNSSInitializer(XCipherContextSupplier_9fd31214, XDigestContextSupplier_a0
         
             LibreOffice 7.1
         """
+        ...
 
     @property
     def NSSPath(self) -> str:
@@ -68,5 +71,6 @@ class XNSSInitializer(XCipherContextSupplier_9fd31214, XDigestContextSupplier_a0
         
             LibreOffice 7.1
         """
+        ...
 
 

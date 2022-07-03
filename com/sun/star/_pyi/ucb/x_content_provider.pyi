@@ -38,6 +38,7 @@ class XContentProvider(XInterface_8f010a43):
         """
         compares two XContentIdentifiers.
         """
+        ...
     def queryContent(self, Identifier: 'XContentIdentifier_edc90d78') -> 'XContent_79db0975':
         """
         creates a new XContent instance, if the given XContentIdentifier matches a content provided by the implementation of this interface.
@@ -45,4 +46,6 @@ class XContentProvider(XInterface_8f010a43):
         Raises:
             com.sun.star.ucb.IllegalIdentifierException: ``IllegalIdentifierException``
         """
+        ...
+
 

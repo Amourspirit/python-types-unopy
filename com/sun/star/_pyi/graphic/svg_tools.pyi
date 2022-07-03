@@ -31,5 +31,6 @@ class SvgTools(XSvgParser_bc350bdb):
     See Also:
         `API SvgTools <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1graphic_1_1SvgTools.html>`_
     """
+    ...
 
 

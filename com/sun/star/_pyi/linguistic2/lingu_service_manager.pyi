@@ -31,5 +31,6 @@ class LinguServiceManager(XLinguServiceManager2_9dec118a):
     See Also:
         `API LinguServiceManager <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1linguistic2_1_1LinguServiceManager.html>`_
     """
+    ...
 
 

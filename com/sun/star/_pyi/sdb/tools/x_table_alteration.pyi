@@ -46,6 +46,7 @@ class XTableAlteration(XConnectionSupplier_57f3105c):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def alterColumnByName(self, table: 'XPropertySet_bc180bfa', columnName: str, columnDescriptor: 'XPropertySet_bc180bfa') -> None:
         """
         alter the column defined by name
@@ -53,6 +54,7 @@ class XTableAlteration(XConnectionSupplier_57f3105c):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
     def dropColumn(self, table: 'XPropertySet_bc180bfa', columnName: str) -> None:
         """
         drops an object of the related container identified by its name.
@@ -60,4 +62,6 @@ class XTableAlteration(XConnectionSupplier_57f3105c):
         Raises:
             com.sun.star.sdbc.SQLException: ``SQLException``
         """
+        ...
+
 

@@ -43,6 +43,7 @@ class Defaulted(object):
             Value (object, optional): Value value.
             IsDefaulted (bool, optional): IsDefaulted value.
         """
+        ...
 
 
     @property
@@ -52,6 +53,7 @@ class Defaulted(object):
         
         Even if this structure instance is defaulted, this member should contain a useful value. If there is no useful value for a defaulted structure instance, com.sun.star.beans.Optional can be used as the type of this member.
         """
+        ...
 
 
     @property
@@ -59,5 +61,6 @@ class Defaulted(object):
         """
         Marks this structure instance as defaulted.
         """
+        ...
 
 

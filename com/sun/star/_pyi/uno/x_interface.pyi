@@ -50,6 +50,7 @@ class XInterface(ABC):
         
         Every call to acquire must be followed by a corresponding call to release some time later, which may eventually lead to the destruction of the object.
         """
+        ...
     def queryInterface(self, aType: object) -> object:
         """
         queries for a new interface to an existing UNO object.
@@ -72,6 +73,7 @@ class XInterface(ABC):
         
         The rules mentioned above are basically identical to the rules of QueryInterface in MS COM.
         """
+        ...
     def release(self) -> None:
         """
         decreases the reference counter by one.
@@ -80,4 +82,6 @@ class XInterface(ABC):
         
         Calling release() on the object is often called releasing or clearing the reference to an object.
         """
+        ...
+
 

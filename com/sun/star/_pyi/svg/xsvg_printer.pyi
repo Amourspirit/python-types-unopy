@@ -40,10 +40,14 @@ class XSVGPrinter(XInterface_8f010a43):
     def endJob(self) -> None:
         """
         """
+        ...
     def printPage(self, aPrintPage: uno.ByteSequence) -> None:
         """
         """
+        ...
     def startJob(self, aHandler: 'XDocumentHandler_9b90e28', aJobSetup: uno.ByteSequence, aJobName: str, nCopies: int, bCollate: bool) -> bool:
         """
         """
+        ...
+
 

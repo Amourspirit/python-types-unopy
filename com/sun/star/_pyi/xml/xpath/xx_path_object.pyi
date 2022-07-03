@@ -37,40 +37,51 @@ class XXPathObject(XInterface_8f010a43):
         """
         get value of a boolean object
         """
+        ...
     def getByte(self) -> int:
         """
         get number as byte
         """
+        ...
     def getDouble(self) -> float:
         """
         get number as double
         """
+        ...
     def getFloat(self) -> float:
         """
         get number as float
         """
+        ...
     def getHyper(self) -> int:
         """
         get number as hyper
         """
+        ...
     def getLong(self) -> int:
         """
         get number as long
         """
+        ...
     def getNodeList(self) -> 'XNodeList_ae540b41':
         """
         get the nodes from a node list type object
         """
+        ...
     def getObjectType(self) -> 'XPathObjectType_190a0e8a':
         """
         get object type
         """
+        ...
     def getShort(self) -> int:
         """
         get number as short
         """
+        ...
     def getString(self) -> str:
         """
         get string value
         """
+        ...
+
 

@@ -54,6 +54,7 @@ class Currency2(Currency_80230993):
             DecimalPlaces (int, optional): DecimalPlaces value.
             LegacyOnly (bool, optional): LegacyOnly value.
         """
+        ...
 
 
     @property
@@ -65,5 +66,6 @@ class Currency2(Currency_80230993):
         
             OOo 2.0.3
         """
+        ...
 
 

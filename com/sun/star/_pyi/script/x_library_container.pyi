@@ -41,6 +41,7 @@ class XLibraryContainer(XNameAccess_e2ab0cf6):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def createLibraryLink(self, Name: str, StorageURL: str, ReadOnly: bool) -> 'XNameAccess_e2ab0cf6':
         """
         Creates a link to an \"external\" library that then can be accessed using this library manager.
@@ -51,6 +52,7 @@ class XLibraryContainer(XNameAccess_e2ab0cf6):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.ElementExistException: ``ElementExistException``
         """
+        ...
     def isLibraryLoaded(self, Name: str) -> bool:
         """
         returns true if the accessed library is already loaded from the storage, otherwise false.
@@ -58,6 +60,7 @@ class XLibraryContainer(XNameAccess_e2ab0cf6):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def loadLibrary(self, Name: str) -> None:
         """
         Causes the accessed library to be loaded from its storage if it hasn't already been loaded.
@@ -66,6 +69,7 @@ class XLibraryContainer(XNameAccess_e2ab0cf6):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
     def removeLibrary(self, Name: str) -> None:
         """
         removes the library item with the specified name.
@@ -76,4 +80,6 @@ class XLibraryContainer(XNameAccess_e2ab0cf6):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
+        ...
+
 

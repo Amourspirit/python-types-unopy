@@ -57,6 +57,7 @@ class SocketPermission(object):
             Host (str, optional): Host value.
             Actions (str, optional): Actions value.
         """
+        ...
 
 
     @property
@@ -64,6 +65,7 @@ class SocketPermission(object):
         """
         target host with optional portrange
         """
+        ...
 
 
     @property
@@ -71,5 +73,6 @@ class SocketPermission(object):
         """
         comma separated actions list
         """
+        ...
 
 

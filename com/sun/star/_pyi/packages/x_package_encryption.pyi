@@ -45,12 +45,14 @@ class XPackageEncryption(XInterface_8f010a43):
         
         Some implementations might for example check HMAC values here. Call this before trusting encrypted data.
         """
+        ...
     def createEncryptionData(self, rPassword: str) -> 'typing.Tuple[NamedValue_a37a0af3, ...]':
         """
         Create key-value list of encryption meta data.
         
         After generateEncryptionKey() succeeded in setting up crypto, use this method to create requisite meta data. Depending on underlying crypto, this can be a salt, init vector, or other algorithm-specific information that needs to be stored alongside an encrypted document
         """
+        ...
     def decrypt(self, rxInputStream: 'XInputStream_98d40ab4', rxOutputStream: 'XOutputStream_a4e00b35') -> bool:
         """
         Decrypt document content.
@@ -59,24 +61,30 @@ class XPackageEncryption(XInterface_8f010a43):
 
         * ``rxOutputStream`` is an out direction argument.
         """
+        ...
     def encrypt(self, rxInputStream: 'XInputStream_98d40ab4') -> 'typing.Tuple[NamedValue_a37a0af3, ...]':
         """
         Encrypt given stream.
         
         After setting up crypto via setupEncryption(), use this method to encrypt content.
         """
+        ...
     def generateEncryptionKey(self, rPassword: str) -> bool:
         """
         Set or refresh encryption key.
         """
+        ...
     def readEncryptionInfo(self, rStreams: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> bool:
         """
         Read package crypto information.
         """
+        ...
     def setupEncryption(self, rMediaEncData: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> bool:
         """
         Set key-value list of encryption meta data.
         
         Use this method to setup requisite encryption meta data. Depending on the underlying crypto, this can be a salt, init vector, or other algorithm-specific information that needs to be stored alongside an encrypted document
         """
+        ...
+
 

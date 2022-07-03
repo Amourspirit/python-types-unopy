@@ -38,4 +38,6 @@ class XTextEmbeddedObjectsSupplier(XInterface_8f010a43):
     def getEmbeddedObjects(self) -> 'XNameAccess_e2ab0cf6':
         """
         """
+        ...
+
 

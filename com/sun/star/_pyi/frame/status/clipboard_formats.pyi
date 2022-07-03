@@ -19,6 +19,7 @@
 # Namespace: com.sun.star.frame.status
 # Libre Office Version: 7.3
 from typing_extensions import Literal
+import uno
 import typing
 
 
@@ -37,21 +38,23 @@ class ClipboardFormats(object):
     """
     typeName: Literal['com.sun.star.frame.status.ClipboardFormats']
 
-    def __init__(self, Identifiers: typing.Optional[typing.Tuple[int, ...]] = ..., Names: typing.Optional[typing.Tuple[str, ...]] = ...) -> None:
+    def __init__(self, Identifiers: typing.Optional[uno.ByteSequence] = ..., Names: typing.Optional[typing.Tuple[str, ...]] = ...) -> None:
         """
         Constructor
 
         Arguments:
-            Identifiers (typing.Tuple[int, ...], optional): Identifiers value.
+            Identifiers (uno.ByteSequence, optional): Identifiers value.
             Names (typing.Tuple[str, ...], optional): Names value.
         """
+        ...
 
 
     @property
-    def Identifiers(self) -> typing.Tuple[int, ...]:
+    def Identifiers(self) -> uno.ByteSequence:
         """
         specifies a sequence of format IDs which are contained in the system clipboard.
         """
+        ...
 
 
     @property
@@ -59,5 +62,6 @@ class ClipboardFormats(object):
         """
         specifies a sequence of format names which are contained in the system clipboard.
         """
+        ...
 
 

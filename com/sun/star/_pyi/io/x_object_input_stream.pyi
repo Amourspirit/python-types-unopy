@@ -42,4 +42,6 @@ class XObjectInputStream(XDataInputStream_c56e0c2e):
         Raises:
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

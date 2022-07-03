@@ -52,6 +52,7 @@ class RenderState(object):
             Clip (XPolyPolygon2D, optional): Clip value.
             CompositeOperation (int, optional): CompositeOperation value.
         """
+        ...
 
 
     @property
@@ -61,6 +62,7 @@ class RenderState(object):
         
         Note that this need not be RGB here, but depends on the active device color space.
         """
+        ...
 
 
     @property
@@ -70,6 +72,7 @@ class RenderState(object):
         
         This is used to transform coordinates of canvas primitives from user space to view space (from which they are subsequently transformed to device space by the view transform).
         """
+        ...
 
 
     @property
@@ -81,6 +84,7 @@ class RenderState(object):
         
         Specifying an empty interface denotes no clipping, i.e. everything rendered to the canvas will be visible (subject to device-dependent constraints, of course). Specifying an empty XPolyPolygon2D, i.e. a poly-polygon containing zero polygons, or an XPolyPolygon2D with any number of empty sub-polygons, denotes the NULL clip. That means, nothing rendered to the canvas will be visible.
         """
+        ...
 
 
     @property
@@ -90,5 +94,6 @@ class RenderState(object):
         
         The composite mode determines in which way the primitive and possibly existing background is combined. The permissible values must be one out of the CompositeOperation constants.
         """
+        ...
 
 

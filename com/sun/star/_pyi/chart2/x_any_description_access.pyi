@@ -43,16 +43,21 @@ class XAnyDescriptionAccess(XComplexDescriptionAccess_7a521120):
         """
         retrieves the descriptions for all columns.
         """
+        ...
     def getAnyRowDescriptions(self) -> 'typing.Tuple[typing.Tuple[object, ...], ...]':
         """
         retrieves the descriptions for all rows.
         """
+        ...
     def setAnyColumnDescriptions(self, rColumnDescriptions: 'typing.Tuple[typing.Tuple[object, ...], ...]') -> None:
         """
         sets the descriptions for all columns.
         """
+        ...
     def setAnyRowDescriptions(self, rRowDescriptions: 'typing.Tuple[typing.Tuple[object, ...], ...]') -> None:
         """
         sets the descriptions for all rows.
         """
+        ...
+
 

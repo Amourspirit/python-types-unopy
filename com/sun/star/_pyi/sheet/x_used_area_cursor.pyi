@@ -36,8 +36,11 @@ class XUsedAreaCursor(XInterface_8f010a43):
         """
         points the cursor to the end of the used area.
         """
+        ...
     def gotoStartOfUsedArea(self, bExpand: bool) -> None:
         """
         points the cursor to the start of the used area.
         """
+        ...
+
 

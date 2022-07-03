@@ -35,4 +35,6 @@ class XDocumentEvent(XInterface_8f010a43):
     def createEvent(self, eventType: str) -> 'XEvent_e0c30ce4':
         """
         """
+        ...
+
 

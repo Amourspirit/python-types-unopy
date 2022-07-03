@@ -34,6 +34,7 @@ class XNamespaceMapping(XInterface_8f010a43):
         """
         Creates a unique ordinal passing an XML namespace URI.
         """
+        ...
     def getUriByUid(self, uid: int) -> str:
         """
         Gets the corresponding XML namespace URI passing a uid (created using getUidByUri()).
@@ -41,4 +42,6 @@ class XNamespaceMapping(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 

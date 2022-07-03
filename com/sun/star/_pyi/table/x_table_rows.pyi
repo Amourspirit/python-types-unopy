@@ -36,10 +36,13 @@ class XTableRows(XIndexAccess_f0910d6d):
         
         When the index or combination of index and count is out of bounds an exception will be thrown.
         """
+        ...
     def removeByIndex(self, nIndex: int, nCount: int) -> None:
         """
         deletes rows.
         
         When the index or combination of index and count is out of bounds an exception will be thrown.
         """
+        ...
+
 

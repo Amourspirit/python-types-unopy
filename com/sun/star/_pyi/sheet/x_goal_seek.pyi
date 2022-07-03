@@ -38,4 +38,6 @@ class XGoalSeek(XInterface_8f010a43):
         """
         calculates a value which gives a specified result in a formula.
         """
+        ...
+
 

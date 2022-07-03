@@ -47,12 +47,14 @@ class XDataReceiver(XInterface_8f010a43):
         
         The previously set data provider will be released.
         """
+        ...
     def attachNumberFormatsSupplier(self, xSupplier: 'XNumberFormatsSupplier_3afb0fb7') -> None:
         """
         attaches an XNumberFormatsSupplier to this XDataReceiver.
         
         The given number formats will be used for display purposes.
         """
+        ...
     def getPopupRequest(self) -> 'XRequestCallback_d4ac0ca2':
         """
         A callback object to execute a foreign popup menu window.
@@ -61,6 +63,7 @@ class XDataReceiver(XInterface_8f010a43):
         
             LibreOffice 5.4
         """
+        ...
     def getRangeHighlighter(self) -> 'XRangeHighlighter_4e810fc8':
         """
         Returns a component at which a view representing the data of the attached data provider may listen for highlighting the data ranges used by the currently selected objects in the data receiver component.
@@ -69,20 +72,25 @@ class XDataReceiver(XInterface_8f010a43):
         
         The range highlighter is optional, i.e., this method may return an empty object.
         """
+        ...
     def getUsedData(self) -> 'XDataSource_f6340d57':
         """
         Returns the data requested by the most recently attached data provider, that is still used.
         """
+        ...
     def getUsedRangeRepresentations(self) -> 'typing.Tuple[str, ...]':
         """
         returns a list of all range strings for which data has been requested by the most recently attached data provider, and which is still used.
         
         This list may be used by the data provider to swap charts out of memory, but still get informed by changes of ranges while the chart is not loaded.
         """
+        ...
     def setArguments(self, aArguments: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
         """
 
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

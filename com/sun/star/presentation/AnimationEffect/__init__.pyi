@@ -29,6 +29,7 @@ Enum
 See Also:
     `API AnimationEffect <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1presentation.html#a10f2a3114ab31c0e6f7dc48f656fd260>`_
 """
+typeName: str = 'com.sun.star.presentation.AnimationEffect'
 
 APPEAR: 'uno.Enum'
 """

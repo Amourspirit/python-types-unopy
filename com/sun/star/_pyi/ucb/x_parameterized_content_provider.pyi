@@ -40,6 +40,7 @@ class XParameterizedContentProvider(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
     def registerInstance(self, Template: str, Arguments: str, ReplaceExisting: bool) -> 'XContentProvider_d4150cc0':
         """
         Register a content provider on a URL template and supplementary arguments.
@@ -47,4 +48,6 @@ class XParameterizedContentProvider(XInterface_8f010a43):
         Raises:
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
         """
+        ...
+
 

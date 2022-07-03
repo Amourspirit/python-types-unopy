@@ -29,5 +29,6 @@ class LocaleCalendar(XCalendar3_927a09ed):
     See Also:
         `API LocaleCalendar <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1i18n_1_1LocaleCalendar.html>`_
     """
+    ...
 
 

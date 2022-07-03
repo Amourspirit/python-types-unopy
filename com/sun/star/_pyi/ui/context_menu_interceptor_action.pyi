@@ -32,6 +32,7 @@ class ContextMenuInterceptorAction(Enum):
     See Also:
         `API ContextMenuInterceptorAction <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui.html#a6e0452a8960be949dce52c427920ebbe>`_
     """
+    typeName: str = 'com.sun.star.ui.ContextMenuInterceptorAction'
 
     CANCELLED: 'uno.Enum'
     """

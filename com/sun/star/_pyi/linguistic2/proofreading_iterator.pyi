@@ -35,5 +35,6 @@ class ProofreadingIterator(XProofreadingIterator_a00011f7):
     See Also:
         `API ProofreadingIterator <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1linguistic2_1_1ProofreadingIterator.html>`_
     """
+    ...
 
 

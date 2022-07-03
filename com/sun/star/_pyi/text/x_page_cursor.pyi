@@ -33,32 +33,41 @@ class XPageCursor(XInterface_8f010a43):
     def getPage(self) -> int:
         """
         """
+        ...
     def jumpToEndOfPage(self) -> bool:
         """
         moves the cursor to the end of the current page.
         """
+        ...
     def jumpToFirstPage(self) -> bool:
         """
         moves the cursor to the first page.
         """
+        ...
     def jumpToLastPage(self) -> bool:
         """
         moves the cursor to the last page.
         """
+        ...
     def jumpToNextPage(self) -> bool:
         """
         moves the cursor to the next page.
         """
+        ...
     def jumpToPage(self, nPage: int) -> bool:
         """
         moves the cursor to the specified page.
         """
+        ...
     def jumpToPreviousPage(self) -> bool:
         """
         moves the cursor to the previous page.
         """
+        ...
     def jumpToStartOfPage(self) -> bool:
         """
         moves the cursor to the start of the current page.
         """
+        ...
+
 

@@ -43,5 +43,6 @@ class UnoControlGrid(UnoControl_8f2c0a67, XGridControl_df2e0ce7, XGridRowSelecti
     See Also:
         `API UnoControlGrid <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1awt_1_1grid_1_1UnoControlGrid.html>`_
     """
+    ...
 
 

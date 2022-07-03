@@ -44,16 +44,19 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         """
         specifies the horizontal alignment of the text in the control.
         """
+        ...
     @property
     def BackgroundColor(self) -> 'Color_68e908c5':
         """
         specifies the background color (RGB) of the control.
         """
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
     @property
     def BorderColor(self) -> int:
         """
@@ -65,6 +68,7 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def EffectiveDefault(self) -> object:
         """
@@ -72,6 +76,7 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
         This may be a numeric value (double) or a string, depending on the formatting of the field.
         """
+        ...
     @property
     def EffectiveMax(self) -> float:
         """
@@ -79,6 +84,7 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
         This property is ignored if the format of the field is no numeric format.
         """
+        ...
     @property
     def EffectiveMin(self) -> float:
         """
@@ -86,6 +92,7 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
         This property is ignored if the format of the field is no numeric format.
         """
+        ...
     @property
     def EffectiveValue(self) -> float:
         """
@@ -93,26 +100,31 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
         This may be a numeric value (double) or a string, depending on the formatting of the field.
         """
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
+        ...
     @property
     def FontDescriptor(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font attributes of the text in the control.
         """
+        ...
     @property
     def FontEmphasisMark(self) -> int:
         """
         specifies the com.sun.star.text.FontEmphasis value of the text in the control.
         """
+        ...
     @property
     def FontRelief(self) -> int:
         """
         specifies the com.sun.star.text.FontRelief value of the text in the control.
         """
+        ...
     @property
     def FormatKey(self) -> int:
         """
@@ -120,21 +132,25 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
         This value is meaningful relative to the FormatsSupplier property only.
         """
+        ...
     @property
     def FormatsSupplier(self) -> 'XNumberFormatsSupplier_3afb0fb7':
         """
         supplies the formats the field should work with.
         """
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the control.
         """
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the control.
         """
+        ...
     @property
     def HideInactiveSelection(self) -> bool:
         """
@@ -144,6 +160,7 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def MaxTextLen(self) -> int:
         """
@@ -151,6 +168,7 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
         There's no limitation, if set to 0.
         """
+        ...
     @property
     def MouseWheelBehavior(self) -> int:
         """
@@ -158,16 +176,19 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
         Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the MouseWheelBehavior constants, you can control under which circumstances this is possible.
         """
+        ...
     @property
     def Printable(self) -> bool:
         """
         specifies that the control will be printed with the document.
         """
+        ...
     @property
     def ReadOnly(self) -> bool:
         """
         specifies that the content of the control cannot be modified by the user.
         """
+        ...
     @property
     def Repeat(self) -> bool:
         """
@@ -179,6 +200,7 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def RepeatDelay(self) -> int:
         """
@@ -190,11 +212,13 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
     @property
     def Spin(self) -> bool:
         """
         specifies that the control has a spin button.
         """
+        ...
     @property
     def StrictFormat(self) -> bool:
         """
@@ -202,31 +226,37 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
         This property is optional - not every component implementing this service is required to provide it, as real-time input checking on a formatted field may be pretty expensive.
         """
+        ...
     @property
     def Tabstop(self) -> bool:
         """
         specifies that the control can be reached with the TAB key.
         """
+        ...
     @property
     def Text(self) -> str:
         """
         specifies the text displayed in the control.
         """
+        ...
     @property
     def TextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color (RGB) of the control.
         """
+        ...
     @property
     def TextLineColor(self) -> 'Color_68e908c5':
         """
         specifies the text line color (RGB) of the control.
         """
+        ...
     @property
     def TreatAsNumber(self) -> bool:
         """
         specifies that the text is treated as a number.
         """
+        ...
     @property
     def VerticalAlign(self) -> 'VerticalAlignment_8d0e12':
         """
@@ -236,6 +266,7 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
             OOo 3.3
         """
+        ...
     @property
     def WritingMode(self) -> int:
         """
@@ -247,5 +278,6 @@ class UnoControlFormattedFieldModel(UnoControlModel_c8ce0c58):
         
             OOo 3.1
         """
+        ...
 
 

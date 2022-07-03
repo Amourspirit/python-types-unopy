@@ -36,9 +36,11 @@ class XImplementationRegistration(XInterface_8f010a43):
     def checkInstantiation(self, implementationName: str) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def getImplementations(self, aImplementationLoader: str, aLocation: str) -> 'typing.Tuple[str, ...]':
         """
         """
+        ...
     def registerImplementation(self, aImplementationLoader: str, aLocation: str, xReg: 'XSimpleRegistry_10150e9c') -> None:
         """
         registers a component which provides one or more implementations.
@@ -46,8 +48,11 @@ class XImplementationRegistration(XInterface_8f010a43):
         Raises:
             com.sun.star.registry.CannotRegisterImplementationException: ``CannotRegisterImplementationException``
         """
+        ...
     def revokeImplementation(self, aLocation: str, xReg: 'XSimpleRegistry_10150e9c') -> bool:
         """
         revokes a component and all their provided implementations from the registry.
         """
+        ...
+
 

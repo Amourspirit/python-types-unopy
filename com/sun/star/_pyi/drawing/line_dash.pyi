@@ -46,6 +46,7 @@ class LineDash(object):
             DashLen (int, optional): DashLen value.
             Distance (int, optional): Distance value.
         """
+        ...
 
 
     @property
@@ -53,6 +54,7 @@ class LineDash(object):
         """
         This sets the style of this LineDash.
         """
+        ...
 
 
     @property
@@ -60,6 +62,7 @@ class LineDash(object):
         """
         This is the number of dots in this LineDash.
         """
+        ...
 
 
     @property
@@ -67,6 +70,7 @@ class LineDash(object):
         """
         This is the length of a dot.
         """
+        ...
 
 
     @property
@@ -74,6 +78,7 @@ class LineDash(object):
         """
         This is the number of dashes.
         """
+        ...
 
 
     @property
@@ -81,6 +86,7 @@ class LineDash(object):
         """
         This is the length of a single dash.
         """
+        ...
 
 
     @property
@@ -88,5 +94,6 @@ class LineDash(object):
         """
         This is the distance between the dots.
         """
+        ...
 
 

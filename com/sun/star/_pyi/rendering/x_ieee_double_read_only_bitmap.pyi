@@ -55,12 +55,14 @@ class XIeeeDoubleReadOnlyBitmap(XBitmap_b1b70b7b):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             VolatileContentDestroyedException: ``VolatileContentDestroyedException``
         """
+        ...
     def getMemoryLayout(self) -> 'FloatingPointBitmapLayout_c66812df':
         """
         Query the memory layout for this bitmap.
         
         Please note that for volatile bitmaps, the memory layout might change between subsequent calls.
         """
+        ...
     def getPixel(self, bitmapLayout: 'FloatingPointBitmapLayout_c66812df', pos: 'IntegerPoint2D_8f0dc2') -> 'typing.Tuple[float, ...]':
         """
         Get a single pixel of the bitmap, returning its color value.
@@ -73,4 +75,6 @@ class XIeeeDoubleReadOnlyBitmap(XBitmap_b1b70b7b):
             com.sun.star.lang.IndexOutOfBoundsException: ``IndexOutOfBoundsException``
             VolatileContentDestroyedException: ``VolatileContentDestroyedException``
         """
+        ...
+
 

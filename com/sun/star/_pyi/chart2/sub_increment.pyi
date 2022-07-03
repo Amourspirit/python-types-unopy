@@ -40,6 +40,7 @@ class SubIncrement(object):
             IntervalCount (object, optional): IntervalCount value.
             PostEquidistant (object, optional): PostEquidistant value.
         """
+        ...
 
 
     @property
@@ -47,6 +48,7 @@ class SubIncrement(object):
         """
         should contain nothing for auto, or an integer value for an explicit interval count.
         """
+        ...
 
 
     @property
@@ -54,5 +56,6 @@ class SubIncrement(object):
         """
         should contain nothing for auto, or a boolean value for an explicit setting.
         """
+        ...
 
 

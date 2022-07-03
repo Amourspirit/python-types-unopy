@@ -41,6 +41,7 @@ class TableValidation(XPropertySet_bc180bfa, XSheetCondition_e1940d19):
         
         This is used only if TableValidation.ShowErrorMessage is set to TRUE.
         """
+        ...
     @property
     def ErrorMessage(self) -> str:
         """
@@ -48,6 +49,7 @@ class TableValidation(XPropertySet_bc180bfa, XSheetCondition_e1940d19):
         
         This is only used if TableValidation.ShowErrorMessage is set to TRUE.
         """
+        ...
     @property
     def ErrorTitle(self) -> str:
         """
@@ -55,11 +57,13 @@ class TableValidation(XPropertySet_bc180bfa, XSheetCondition_e1940d19):
         
         This is only used if TableValidation.ShowErrorMessage is set to TRUE.
         """
+        ...
     @property
     def IgnoreBlankCells(self) -> bool:
         """
         specifies if blank cells should be allowed.
         """
+        ...
     @property
     def InputMessage(self) -> str:
         """
@@ -67,6 +71,7 @@ class TableValidation(XPropertySet_bc180bfa, XSheetCondition_e1940d19):
         
         This is only used if TableValidation.ShowInputMessage is set to TRUE.
         """
+        ...
     @property
     def InputTitle(self) -> str:
         """
@@ -74,16 +79,19 @@ class TableValidation(XPropertySet_bc180bfa, XSheetCondition_e1940d19):
         
         This is only used if TableValidation.ShowInputMessage is set to TRUE.
         """
+        ...
     @property
     def ShowErrorMessage(self) -> bool:
         """
         specifies if an error message is displayed when invalid data is entered.
         """
+        ...
     @property
     def ShowInputMessage(self) -> bool:
         """
         specifies if an input message is shown when the cursor is in a cell with these validation settings.
         """
+        ...
     @property
     def ShowList(self) -> int:
         """
@@ -91,10 +99,12 @@ class TableValidation(XPropertySet_bc180bfa, XSheetCondition_e1940d19):
         
         See also TableValidationVisibility
         """
+        ...
     @property
     def Type(self) -> 'ValidationType_d6110cce':
         """
         specifies the type of validation.
         """
+        ...
 
 

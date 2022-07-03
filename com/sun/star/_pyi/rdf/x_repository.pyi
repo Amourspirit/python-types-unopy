@@ -53,6 +53,7 @@ class XRepository(ABC):
         """
         creates a fresh unique blank node.
         """
+        ...
     def createGraph(self, GraphName: 'XURI_5682078c') -> 'XNamedGraph_97680a73':
         """
         creates a graph with the given name.
@@ -64,6 +65,7 @@ class XRepository(ABC):
             com.sun.star.container.ElementExistException: ``ElementExistException``
             RepositoryException: ``RepositoryException``
         """
+        ...
     def destroyGraph(self, GraphName: 'XURI_5682078c') -> None:
         """
         destroys the graph with the given name, and removes it from the repository.
@@ -75,6 +77,7 @@ class XRepository(ABC):
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
             RepositoryException: ``RepositoryException``
         """
+        ...
     def exportGraph(self, Format: int, OutStream: 'XOutputStream_a4e00b35', GraphName: 'XURI_5682078c', BaseURI: 'XURI_5682078c') -> None:
         """
         exports a named graph from the repository.
@@ -88,6 +91,7 @@ class XRepository(ABC):
             RepositoryException: ``RepositoryException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def getGraph(self, GraphName: 'XURI_5682078c') -> 'XNamedGraph_97680a73':
         """
         gets a graph by its name.
@@ -96,6 +100,7 @@ class XRepository(ABC):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             RepositoryException: ``RepositoryException``
         """
+        ...
     def getGraphNames(self) -> 'typing.Tuple[XURI_5682078c, ...]':
         """
         gets the names of all the graphs in the repository.
@@ -103,6 +108,7 @@ class XRepository(ABC):
         Raises:
             RepositoryException: ``RepositoryException``
         """
+        ...
     def getStatements(self, Subject: 'XResource_842709e4', Predicate: 'XURI_5682078c', Object: 'XNode_5ee40822') -> 'XEnumeration_f2180daa':
         """
         gets matching RDF statements from the repository.
@@ -112,6 +118,7 @@ class XRepository(ABC):
         Raises:
             RepositoryException: ``RepositoryException``
         """
+        ...
     def importGraph(self, Format: int, InStream: 'XInputStream_98d40ab4', GraphName: 'XURI_5682078c', BaseURI: 'XURI_5682078c') -> 'XNamedGraph_97680a73':
         """
         imports a named graph into the repository.
@@ -126,6 +133,7 @@ class XRepository(ABC):
             RepositoryException: ``RepositoryException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
     def queryAsk(self, Query: str) -> bool:
         """
         executes a SPARQL \"ASK\" query.
@@ -136,6 +144,7 @@ class XRepository(ABC):
             QueryException: ``QueryException``
             RepositoryException: ``RepositoryException``
         """
+        ...
     def queryConstruct(self, Query: str) -> 'XEnumeration_f2180daa':
         """
         executes a SPARQL \"CONSTRUCT\" query.
@@ -146,6 +155,7 @@ class XRepository(ABC):
             QueryException: ``QueryException``
             RepositoryException: ``RepositoryException``
         """
+        ...
     def querySelect(self, Query: str) -> 'XQuerySelectResult_eebb0d91':
         """
         executes a SPARQL \"SELECT\" query.
@@ -156,4 +166,6 @@ class XRepository(ABC):
             QueryException: ``QueryException``
             RepositoryException: ``RepositoryException``
         """
+        ...
+
 

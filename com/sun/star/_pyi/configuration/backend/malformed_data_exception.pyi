@@ -48,6 +48,7 @@ class MalformedDataException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             ErrorDetails (object, optional): ErrorDetails value.
         """
+        ...
     @property
     def ErrorDetails(self) -> object:
         """
@@ -59,6 +60,7 @@ class MalformedDataException(Exception_85530a09):
         
         If no more detail information is available, this may be left VOID.
         """
+        ...
 
 
 __all__ = ['MalformedDataException']

@@ -45,11 +45,13 @@ class InvalidTextContentException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             TextContent (XTextContent, optional): TextContent value.
         """
+        ...
     @property
     def TextContent(self) -> XTextContent_b16e0ba5:
         """
         contains the interface of the text content that caused the exception.
         """
+        ...
 
 
 __all__ = ['InvalidTextContentException']

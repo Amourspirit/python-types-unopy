@@ -44,6 +44,7 @@ class RuleSet(object):
             Rules (typing.Tuple[Rule, ...], optional): Rules value.
             HandleFolder (bool, optional): HandleFolder value.
         """
+        ...
 
 
     @property
@@ -51,6 +52,7 @@ class RuleSet(object):
         """
         contains a number of rules.
         """
+        ...
 
 
     @property
@@ -58,5 +60,6 @@ class RuleSet(object):
         """
         is a flag indicating whether the rules apply to folders, too.
         """
+        ...
 
 

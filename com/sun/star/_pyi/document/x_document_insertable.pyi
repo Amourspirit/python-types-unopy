@@ -41,4 +41,6 @@ class XDocumentInsertable(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.io.IOException: ``IOException``
         """
+        ...
+
 

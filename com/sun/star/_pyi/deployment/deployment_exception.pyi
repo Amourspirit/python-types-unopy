@@ -48,6 +48,7 @@ class DeploymentException(Exception_85530a09):
             Context (XInterface, optional): Context value.
             Cause (object, optional): Cause value.
         """
+        ...
     @property
     def Cause(self) -> object:
         """
@@ -55,6 +56,7 @@ class DeploymentException(Exception_85530a09):
         
         Commonly an exception.
         """
+        ...
 
 
 __all__ = ['DeploymentException']

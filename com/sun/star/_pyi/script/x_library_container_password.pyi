@@ -50,6 +50,7 @@ class XLibraryContainerPassword(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def isLibraryPasswordProtected(self, Name: str) -> bool:
         """
         Returns true if the accessed library item is protected by a password.
@@ -59,6 +60,7 @@ class XLibraryContainerPassword(XInterface_8f010a43):
         Raises:
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def isLibraryPasswordVerified(self, Name: str) -> bool:
         """
         Returns true if the accessed library item is protected by a password (see isLibraryPasswordProtected) and the password was already verified with verifyLibraryPassword or if an initial password was set with changeLibraryPassword.
@@ -71,6 +73,7 @@ class XLibraryContainerPassword(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
     def verifyLibraryPassword(self, Name: str, Password: str) -> bool:
         """
         Verifies the library's password.
@@ -87,4 +90,6 @@ class XLibraryContainerPassword(XInterface_8f010a43):
             com.sun.star.lang.IllegalArgumentException: ``IllegalArgumentException``
             com.sun.star.container.NoSuchElementException: ``NoSuchElementException``
         """
+        ...
+
 
