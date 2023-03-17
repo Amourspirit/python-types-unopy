@@ -69,6 +69,7 @@ from .._pyi.util.x_accounting import XAccounting as XAccounting
 from .._pyi.util.x_atom_server import XAtomServer as XAtomServer
 from .._pyi.util.x_binary_data_container import XBinaryDataContainer as XBinaryDataContainer
 from .._pyi.util.x_broadcaster import XBroadcaster as XBroadcaster
+from .._pyi.util.x_cache_info import XCacheInfo as XCacheInfo
 from .._pyi.util.x_cancellable import XCancellable as XCancellable
 from .._pyi.util.x_chainable import XChainable as XChainable
 from .._pyi.util.x_changes_batch import XChangesBatch as XChangesBatch
