@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "types-unopy"
+version = "0.4.8"
+description = "Type annotations for LibreOffice API"
+# name regex
+# https://github.com/python-poetry/poetry-core/commit/01602122f9b2a4cc927d94c543efb5020dfa3817
+authors = [":Barry-Thomas-Paul: Moss <bigbytetech@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.rst"
+homepage = "https://github.com/Amourspirit/python-types-unopy"
+repository = "https://github.com/Amourspirit/python-types-unopy"
+classifiers=[
+        "Environment :: Other Environment",
+        "Intended Audience :: Developers",
+        "Operating System :: OS Independent",
+        "Topic :: Office/Business",
+        "Typing :: Typed",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+    ]
+packages = [
+    { include = "com" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+types-uno-script = "^0.1.1"
+esbonio = "^0.13.1"
+typing_extensions = { version = ">= 3.7.4.3", markers = "python_version < '3.7'" }
+
+[tool.poetry.dev-dependencies]
+esbonio = "^0.13.1"
+Sphinx = "4.5.0"
+
+
+[[tool.poetry.source]]
+name = "pypi-test"
+url = "https://test.pypi.org/legacy/"
+default = false
+secondary = false
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
