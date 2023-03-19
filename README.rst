@@ -16,7 +16,7 @@ VERSION
 This package is for Version ``7.4`` + of `LibreOffice API <https://api.libreoffice.org/>`_.
 
 From one version of LibreOffice to the next, geneally speaking, the API does not changed much.
-Because this is the case it is very likley this current version of ``LibreOffice API Typings``
+Because this is the case it is very likely this current version of ``LibreOffice API Typings``
 will work fine with other versions of LibreOffice. This a typing package so not much can go wrong in other versions.
 
 Installation
