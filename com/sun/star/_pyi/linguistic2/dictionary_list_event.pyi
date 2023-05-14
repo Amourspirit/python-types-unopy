@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class DictionaryListEvent(EventObject_a3d70b03):
         """
         ...
 
+    @aDictionaryEvents.setter
+    def aDictionaryEvents(self, value: typing.Tuple[DictionaryEvent_3ae00f8d, ...]) -> None:
+        ...
 
     @property
     def nCondensedEvent(self) -> int:
@@ -69,4 +72,7 @@ class DictionaryListEvent(EventObject_a3d70b03):
         """
         ...
 
+    @nCondensedEvent.setter
+    def nCondensedEvent(self, value: int) -> None:
+        ...
 

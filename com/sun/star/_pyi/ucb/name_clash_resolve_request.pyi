@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,14 +59,18 @@ class NameClashResolveRequest(ClassifiedInteractionRequest_9f72121b):
         contains the URL of the folder that contains the clashing resource.
         """
         ...
-
+    @TargetFolderURL.setter
+    def TargetFolderURL(self, value: str) -> None:
+        ...
     @property
     def ClashingName(self) -> str:
         """
         contains the clashing name.
         """
         ...
-
+    @ClashingName.setter
+    def ClashingName(self, value: str) -> None:
+        ...
     @property
     def ProposedNewName(self) -> str:
         """
@@ -75,7 +79,9 @@ class NameClashResolveRequest(ClassifiedInteractionRequest_9f72121b):
         This field may be left empty if the implementation is not able to suggest a new name.
         """
         ...
-
+    @ProposedNewName.setter
+    def ProposedNewName(self, value: str) -> None:
+        ...
 
 __all__ = ['NameClashResolveRequest']
 

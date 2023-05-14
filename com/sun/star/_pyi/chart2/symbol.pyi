@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,6 +60,9 @@ class Symbol(object):
         """
         ...
 
+    @Style.setter
+    def Style(self, value: SymbolStyle_baa20bd3) -> None:
+        ...
 
     @property
     def PolygonCoords(self) -> PolyPolygonBezierCoords_7ec5114b:
@@ -68,6 +71,9 @@ class Symbol(object):
         """
         ...
 
+    @PolygonCoords.setter
+    def PolygonCoords(self, value: PolyPolygonBezierCoords_7ec5114b) -> None:
+        ...
 
     @property
     def StandardSymbol(self) -> int:
@@ -80,6 +86,9 @@ class Symbol(object):
         """
         ...
 
+    @StandardSymbol.setter
+    def StandardSymbol(self, value: int) -> None:
+        ...
 
     @property
     def Graphic(self) -> XGraphic_a4da0afc:
@@ -88,6 +97,9 @@ class Symbol(object):
         """
         ...
 
+    @Graphic.setter
+    def Graphic(self, value: XGraphic_a4da0afc) -> None:
+        ...
 
     @property
     def Size(self) -> Size_576707ef:
@@ -96,6 +108,9 @@ class Symbol(object):
         """
         ...
 
+    @Size.setter
+    def Size(self, value: Size_576707ef) -> None:
+        ...
 
     @property
     def BorderColor(self) -> int:
@@ -106,6 +121,9 @@ class Symbol(object):
         """
         ...
 
+    @BorderColor.setter
+    def BorderColor(self, value: int) -> None:
+        ...
 
     @property
     def FillColor(self) -> int:
@@ -116,4 +134,7 @@ class Symbol(object):
         """
         ...
 
+    @FillColor.setter
+    def FillColor(self, value: int) -> None:
+        ...
 

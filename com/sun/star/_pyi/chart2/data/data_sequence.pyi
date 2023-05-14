@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,11 +49,17 @@ class DataSequence(XPropertySet_bc180bfa, XDataSequence_11f00e1f, XNumericalData
         a sequence of indexes that identify values that are hidden in the underlying data provider.
         """
         ...
+    @HiddenValues.setter
+    def HiddenValues(self, value: uno.ByteSequence) -> None:
+        ...
     @property
     def IncludeHiddenCells(self) -> bool:
         """
         If set to false FALSE, values from hidden cells are not returned.
         """
+        ...
+    @IncludeHiddenCells.setter
+    def IncludeHiddenCells(self, value: bool) -> None:
         ...
     @property
     def Role(self) -> 'DataSequenceRole_3f520f59':
@@ -64,5 +70,8 @@ class DataSequence(XPropertySet_bc180bfa, XDataSequence_11f00e1f, XNumericalData
         
         The role of the series inside a data series. This may be any string. However some strings are predefined and should always be used in the same way.
         """
+        ...
+    @Role.setter
+    def Role(self, value: 'DataSequenceRole_3f520f59') -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,11 +38,17 @@ class PageNumber(TextField_90260a56):
         determines the type of the numbering.
         """
         ...
+    @NumberingType.setter
+    def NumberingType(self, value: int) -> None:
+        ...
     @property
     def Offset(self) -> int:
         """
         determines an offset value to show a different page number.
         """
+        ...
+    @Offset.setter
+    def Offset(self, value: int) -> None:
         ...
     @property
     def SubType(self) -> 'PageNumberType_c8ed0c55':
@@ -50,10 +56,16 @@ class PageNumber(TextField_90260a56):
         determines which page the field refers to.
         """
         ...
+    @SubType.setter
+    def SubType(self, value: 'PageNumberType_c8ed0c55') -> None:
+        ...
     @property
     def UserText(self) -> str:
         """
         if the user text string is set then it is displayed when the value of NumberingType is set to com.sun.star.style.NumberingType.CHAR_SPECIAL
         """
+        ...
+    @UserText.setter
+    def UserText(self, value: str) -> None:
         ...
 

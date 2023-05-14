@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,14 +49,23 @@ class HomogenMatrixLine3(object):
     def Column1(self) -> float:
         ...
 
+    @Column1.setter
+    def Column1(self, value: float) -> None:
+        ...
 
     @property
     def Column2(self) -> float:
         ...
 
+    @Column2.setter
+    def Column2(self, value: float) -> None:
+        ...
 
     @property
     def Column3(self) -> float:
         ...
 
+    @Column3.setter
+    def Column3(self, value: float) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -65,6 +65,9 @@ class EllipticalArc(object):
         """
         ...
 
+    @StartPosition.setter
+    def StartPosition(self, value: RealPoint2D_d6e70c78) -> None:
+        ...
 
     @property
     def EndPosition(self) -> RealPoint2D_d6e70c78:
@@ -73,6 +76,9 @@ class EllipticalArc(object):
         """
         ...
 
+    @EndPosition.setter
+    def EndPosition(self, value: RealPoint2D_d6e70c78) -> None:
+        ...
 
     @property
     def RadiusX(self) -> float:
@@ -81,6 +87,9 @@ class EllipticalArc(object):
         """
         ...
 
+    @RadiusX.setter
+    def RadiusX(self, value: float) -> None:
+        ...
 
     @property
     def RadiusY(self) -> float:
@@ -89,6 +98,9 @@ class EllipticalArc(object):
         """
         ...
 
+    @RadiusY.setter
+    def RadiusY(self, value: float) -> None:
+        ...
 
     @property
     def XAxisRotation(self) -> float:
@@ -97,6 +109,9 @@ class EllipticalArc(object):
         """
         ...
 
+    @XAxisRotation.setter
+    def XAxisRotation(self, value: float) -> None:
+        ...
 
     @property
     def IsLargeArc(self) -> bool:
@@ -105,6 +120,9 @@ class EllipticalArc(object):
         """
         ...
 
+    @IsLargeArc.setter
+    def IsLargeArc(self, value: bool) -> None:
+        ...
 
     @property
     def IsClockwiseSweep(self) -> bool:
@@ -113,4 +131,7 @@ class EllipticalArc(object):
         """
         ...
 
+    @IsClockwiseSweep.setter
+    def IsClockwiseSweep(self, value: bool) -> None:
+        ...
 

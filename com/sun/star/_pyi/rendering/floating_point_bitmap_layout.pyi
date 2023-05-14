@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -66,6 +66,9 @@ class FloatingPointBitmapLayout(object):
         """
         ...
 
+    @ScanLines.setter
+    def ScanLines(self, value: int) -> None:
+        ...
 
     @property
     def ScanLineBytes(self) -> int:
@@ -76,6 +79,9 @@ class FloatingPointBitmapLayout(object):
         """
         ...
 
+    @ScanLineBytes.setter
+    def ScanLineBytes(self, value: int) -> None:
+        ...
 
     @property
     def ScanLineStride(self) -> int:
@@ -86,6 +92,9 @@ class FloatingPointBitmapLayout(object):
         """
         ...
 
+    @ScanLineStride.setter
+    def ScanLineStride(self, value: int) -> None:
+        ...
 
     @property
     def PlaneStride(self) -> int:
@@ -96,6 +105,9 @@ class FloatingPointBitmapLayout(object):
         """
         ...
 
+    @PlaneStride.setter
+    def PlaneStride(self, value: int) -> None:
+        ...
 
     @property
     def ColorSpace(self) -> XColorSpace_e3940d09:
@@ -104,6 +116,9 @@ class FloatingPointBitmapLayout(object):
         """
         ...
 
+    @ColorSpace.setter
+    def ColorSpace(self, value: XColorSpace_e3940d09) -> None:
+        ...
 
     @property
     def NumComponents(self) -> int:
@@ -114,6 +129,9 @@ class FloatingPointBitmapLayout(object):
         """
         ...
 
+    @NumComponents.setter
+    def NumComponents(self, value: int) -> None:
+        ...
 
     @property
     def Endianness(self) -> int:
@@ -124,6 +142,9 @@ class FloatingPointBitmapLayout(object):
         """
         ...
 
+    @Endianness.setter
+    def Endianness(self, value: int) -> None:
+        ...
 
     @property
     def Format(self) -> int:
@@ -134,4 +155,7 @@ class FloatingPointBitmapLayout(object):
         """
         ...
 
+    @Format.setter
+    def Format(self, value: int) -> None:
+        ...
 

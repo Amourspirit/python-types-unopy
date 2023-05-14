@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,6 +61,9 @@ class IntegerBezierSegment2D(object):
         """
         ...
 
+    @Px.setter
+    def Px(self, value: int) -> None:
+        ...
 
     @property
     def Py(self) -> int:
@@ -69,6 +72,9 @@ class IntegerBezierSegment2D(object):
         """
         ...
 
+    @Py.setter
+    def Py(self, value: int) -> None:
+        ...
 
     @property
     def C1x(self) -> int:
@@ -77,6 +83,9 @@ class IntegerBezierSegment2D(object):
         """
         ...
 
+    @C1x.setter
+    def C1x(self, value: int) -> None:
+        ...
 
     @property
     def C1y(self) -> int:
@@ -85,6 +94,9 @@ class IntegerBezierSegment2D(object):
         """
         ...
 
+    @C1y.setter
+    def C1y(self, value: int) -> None:
+        ...
 
     @property
     def C2x(self) -> int:
@@ -93,6 +105,9 @@ class IntegerBezierSegment2D(object):
         """
         ...
 
+    @C2x.setter
+    def C2x(self, value: int) -> None:
+        ...
 
     @property
     def C2y(self) -> int:
@@ -101,4 +116,7 @@ class IntegerBezierSegment2D(object):
         """
         ...
 
+    @C2y.setter
+    def C2y(self, value: int) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,6 +54,9 @@ class DataFlavor(object):
         """
         ...
 
+    @MimeType.setter
+    def MimeType(self, value: str) -> None:
+        ...
 
     @property
     def HumanPresentableName(self) -> str:
@@ -62,6 +65,9 @@ class DataFlavor(object):
         """
         ...
 
+    @HumanPresentableName.setter
+    def HumanPresentableName(self, value: str) -> None:
+        ...
 
     @property
     def DataType(self) -> object:
@@ -70,4 +76,7 @@ class DataFlavor(object):
         """
         ...
 
+    @DataType.setter
+    def DataType(self, value: object) -> None:
+        ...
 

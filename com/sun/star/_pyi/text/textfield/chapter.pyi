@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,6 +35,9 @@ class Chapter(TextField_90260a56):
         determines how the chapter should be displayed as described in com.sun.star.text.ChapterFormat.
         """
         ...
+    @ChapterFormat.setter
+    def ChapterFormat(self, value: int) -> None:
+        ...
     @property
     def Level(self) -> int:
         """
@@ -42,5 +45,8 @@ class Chapter(TextField_90260a56):
         
         The highest chapter level has the value 0.
         """
+        ...
+    @Level.setter
+    def Level(self, value: int) -> None:
         ...
 

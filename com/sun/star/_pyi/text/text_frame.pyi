@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,11 +48,17 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
         (This is usually used in forms.)
         """
         ...
+    @EditInReadonly.setter
+    def EditInReadonly(self, value: bool) -> None:
+        ...
     @property
     def FrameHeightAbsolute(self) -> int:
         """
         contains the metric height value of the frame.
         """
+        ...
+    @FrameHeightAbsolute.setter
+    def FrameHeightAbsolute(self, value: int) -> None:
         ...
     @property
     def FrameHeightPercent(self) -> int:
@@ -62,17 +68,26 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
         If the value for \"HeightPercent\" is 0, the absolute value from is used.
         """
         ...
+    @FrameHeightPercent.setter
+    def FrameHeightPercent(self, value: int) -> None:
+        ...
     @property
     def FrameIsAutomaticHeight(self) -> bool:
         """
         If \"AutomaticHeight\" is set, then the object grows if it is required by the frame content.
         """
         ...
+    @FrameIsAutomaticHeight.setter
+    def FrameIsAutomaticHeight(self, value: bool) -> None:
+        ...
     @property
     def FrameWidthAbsolute(self) -> int:
         """
         contains the metric width value of the frame.
         """
+        ...
+    @FrameWidthAbsolute.setter
+    def FrameWidthAbsolute(self, value: int) -> None:
         ...
     @property
     def FrameWidthPercent(self) -> int:
@@ -81,6 +96,9 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
         
         If the value for \"WidthPercent\" is 0, the absolute value from is used.
         """
+        ...
+    @FrameWidthPercent.setter
+    def FrameWidthPercent(self, value: int) -> None:
         ...
     @property
     def IsFollowingTextFlow(self) -> bool:
@@ -94,6 +112,9 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
         Note: The areas for the vertical orientation relation at page areas are interpreted in dependence to this property (
         """
         ...
+    @IsFollowingTextFlow.setter
+    def IsFollowingTextFlow(self, value: bool) -> None:
+        ...
     @property
     def ParentText(self) -> 'XText_690408ca':
         """
@@ -106,11 +127,17 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
             LibreOffice 6.3
         """
         ...
+    @ParentText.setter
+    def ParentText(self, value: 'XText_690408ca') -> None:
+        ...
     @property
     def SizeType(self) -> int:
         """
         determines the interpretation of the height and relative height properties.
         """
+        ...
+    @SizeType.setter
+    def SizeType(self, value: int) -> None:
         ...
     @property
     def TextVerticalAdjust(self) -> 'TextVerticalAdjust_2c160f3e':
@@ -122,6 +149,9 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
             LibreOffice 4.3
         """
         ...
+    @TextVerticalAdjust.setter
+    def TextVerticalAdjust(self, value: 'TextVerticalAdjust_2c160f3e') -> None:
+        ...
     @property
     def WidthType(self) -> int:
         """
@@ -132,10 +162,16 @@ class TextFrame(BaseFrame_8f020a33, XTextFrame_9a7e0ab5):
             OOo 2.4
         """
         ...
+    @WidthType.setter
+    def WidthType(self, value: int) -> None:
+        ...
     @property
     def WritingMode(self) -> int:
         """
         contains the writing direction, as represented by the com.sun.star.text.WritingMode2 constants
         """
+        ...
+    @WritingMode.setter
+    def WritingMode(self, value: int) -> None:
         ...
 

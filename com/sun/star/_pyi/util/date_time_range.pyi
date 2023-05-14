@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -68,6 +68,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @StartNanoSeconds.setter
+    def StartNanoSeconds(self, value: int) -> None:
+        ...
 
     @property
     def StartSeconds(self) -> int:
@@ -76,6 +79,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @StartSeconds.setter
+    def StartSeconds(self, value: int) -> None:
+        ...
 
     @property
     def StartMinutes(self) -> int:
@@ -84,6 +90,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @StartMinutes.setter
+    def StartMinutes(self, value: int) -> None:
+        ...
 
     @property
     def StartHours(self) -> int:
@@ -92,6 +101,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @StartHours.setter
+    def StartHours(self, value: int) -> None:
+        ...
 
     @property
     def StartDay(self) -> int:
@@ -100,6 +112,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @StartDay.setter
+    def StartDay(self, value: int) -> None:
+        ...
 
     @property
     def StartMonth(self) -> int:
@@ -108,6 +123,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @StartMonth.setter
+    def StartMonth(self, value: int) -> None:
+        ...
 
     @property
     def StartYear(self) -> int:
@@ -116,6 +134,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @StartYear.setter
+    def StartYear(self, value: int) -> None:
+        ...
 
     @property
     def EndNanoSeconds(self) -> int:
@@ -124,6 +145,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @EndNanoSeconds.setter
+    def EndNanoSeconds(self, value: int) -> None:
+        ...
 
     @property
     def EndSeconds(self) -> int:
@@ -132,6 +156,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @EndSeconds.setter
+    def EndSeconds(self, value: int) -> None:
+        ...
 
     @property
     def EndMinutes(self) -> int:
@@ -140,6 +167,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @EndMinutes.setter
+    def EndMinutes(self, value: int) -> None:
+        ...
 
     @property
     def EndHours(self) -> int:
@@ -148,6 +178,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @EndHours.setter
+    def EndHours(self, value: int) -> None:
+        ...
 
     @property
     def EndDay(self) -> int:
@@ -156,6 +189,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @EndDay.setter
+    def EndDay(self, value: int) -> None:
+        ...
 
     @property
     def EndMonth(self) -> int:
@@ -164,6 +200,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @EndMonth.setter
+    def EndMonth(self, value: int) -> None:
+        ...
 
     @property
     def EndYear(self) -> int:
@@ -172,6 +211,9 @@ class DateTimeRange(object):
         """
         ...
 
+    @EndYear.setter
+    def EndYear(self, value: int) -> None:
+        ...
 
     @property
     def IsUTC(self) -> bool:
@@ -184,4 +226,7 @@ class DateTimeRange(object):
         """
         ...
 
+    @IsUTC.setter
+    def IsUTC(self, value: bool) -> None:
+        ...
 

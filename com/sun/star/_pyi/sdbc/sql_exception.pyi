@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,7 +57,9 @@ class SQLException(Exception_85530a09):
         The values of the SQLState string are described in the XOPEN SQL spec.
         """
         ...
-
+    @SQLState.setter
+    def SQLState(self, value: str) -> None:
+        ...
     @property
     def ErrorCode(self) -> int:
         """
@@ -66,7 +68,9 @@ class SQLException(Exception_85530a09):
         Normally this will be the actual error code returned by the underlying database.
         """
         ...
-
+    @ErrorCode.setter
+    def ErrorCode(self, value: int) -> None:
+        ...
     @property
     def NextException(self) -> object:
         """
@@ -75,7 +79,9 @@ class SQLException(Exception_85530a09):
         This can be used to provide additional error information.
         """
         ...
-
+    @NextException.setter
+    def NextException(self, value: object) -> None:
+        ...
 
 __all__ = ['SQLException']
 

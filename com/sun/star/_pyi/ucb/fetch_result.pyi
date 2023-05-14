@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class FetchResult(object):
         """
         ...
 
+    @Rows.setter
+    def Rows(self, value: typing.Tuple[object, ...]) -> None:
+        ...
 
     @property
     def StartIndex(self) -> int:
@@ -69,6 +72,9 @@ class FetchResult(object):
         """
         ...
 
+    @StartIndex.setter
+    def StartIndex(self, value: int) -> None:
+        ...
 
     @property
     def Orientation(self) -> bool:
@@ -79,6 +85,9 @@ class FetchResult(object):
         """
         ...
 
+    @Orientation.setter
+    def Orientation(self, value: bool) -> None:
+        ...
 
     @property
     def FetchError(self) -> int:
@@ -89,4 +98,7 @@ class FetchResult(object):
         """
         ...
 
+    @FetchError.setter
+    def FetchError(self, value: int) -> None:
+        ...
 

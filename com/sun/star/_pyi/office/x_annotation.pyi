@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,28 +43,36 @@ class XAnnotation(XPropertySet_bc180bfa, XComponent_98dc0ab5):
         a reference to the document content this annotation is anchored to.
         """
         ...
-
+    @Anchor.setter
+    def Anchor(self, value: object) -> None:
+        ...
     @property
     def Author(self) -> str:
         """
         stores the full name of the author who created this annotation.
         """
         ...
-
+    @Author.setter
+    def Author(self, value: str) -> None:
+        ...
     @property
     def DateTime(self) -> 'DateTime_84de09d3':
         """
         stores the date and time this annotation was last edited.
         """
         ...
-
+    @DateTime.setter
+    def DateTime(self, value: 'DateTime_84de09d3') -> None:
+        ...
     @property
     def Initials(self) -> str:
         """
         stores the initials of the author who created this annotation.
         """
         ...
-
+    @Initials.setter
+    def Initials(self, value: str) -> None:
+        ...
     @property
     def Position(self) -> 'RealPoint2D_d6e70c78':
         """
@@ -73,19 +81,25 @@ class XAnnotation(XPropertySet_bc180bfa, XComponent_98dc0ab5):
         This could be an offset to the annotations anchor.
         """
         ...
-
+    @Position.setter
+    def Position(self, value: 'RealPoint2D_d6e70c78') -> None:
+        ...
     @property
     def Size(self) -> 'RealSize2D_ca1a0c09':
         """
         this is an optional size that gives the user interface a hint how large the annotation should be rendered.
         """
         ...
-
+    @Size.setter
+    def Size(self, value: 'RealSize2D_ca1a0c09') -> None:
+        ...
     @property
     def TextRange(self) -> 'XText_690408ca':
         """
         gives access to the annotations text.
         """
         ...
-
+    @TextRange.setter
+    def TextRange(self, value: 'XText_690408ca') -> None:
+        ...
 

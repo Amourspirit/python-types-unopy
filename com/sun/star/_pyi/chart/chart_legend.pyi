@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -46,6 +46,9 @@ class ChartLegend(Shape_85cc09e5, CharacterProperties_1d4f0ef3, UserDefinedAttri
         determines the alignment of the legend relative to the diagram.
         """
         ...
+    @Alignment.setter
+    def Alignment(self, value: 'ChartLegendPosition_18bc0eb0') -> None:
+        ...
     @property
     def AutomaticPosition(self) -> bool:
         """
@@ -53,5 +56,8 @@ class ChartLegend(Shape_85cc09e5, CharacterProperties_1d4f0ef3, UserDefinedAttri
         
         Setting this property to false will have no effect. Instead use the interface com.sun.star.drawing.XShape to set a concrete position.
         """
+        ...
+    @AutomaticPosition.setter
+    def AutomaticPosition(self, value: bool) -> None:
         ...
 

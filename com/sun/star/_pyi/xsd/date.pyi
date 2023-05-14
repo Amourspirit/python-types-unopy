@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,11 +38,17 @@ class Date(XDataType_83f209cb):
         specifies the exclusive upper bound for the value
         """
         ...
+    @MaxExclusiveDate.setter
+    def MaxExclusiveDate(self, value: 'Date_60040844') -> None:
+        ...
     @property
     def MaxInclusiveDate(self) -> 'Date_60040844':
         """
         specifies the inclusive upper bound for the value
         """
+        ...
+    @MaxInclusiveDate.setter
+    def MaxInclusiveDate(self, value: 'Date_60040844') -> None:
         ...
     @property
     def MinExclusiveDate(self) -> 'Date_60040844':
@@ -50,10 +56,16 @@ class Date(XDataType_83f209cb):
         specifies the exclusive lower bound for the value
         """
         ...
+    @MinExclusiveDate.setter
+    def MinExclusiveDate(self, value: 'Date_60040844') -> None:
+        ...
     @property
     def MinInclusiveDate(self) -> 'Date_60040844':
         """
         specifies the inclusive lower bound for the value
         """
+        ...
+    @MinInclusiveDate.setter
+    def MinInclusiveDate(self, value: 'Date_60040844') -> None:
         ...
 

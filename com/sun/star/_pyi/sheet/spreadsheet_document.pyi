@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,11 +56,17 @@ class SpreadsheetDocument(OfficeDocument_fecd0df2, SpreadsheetDocumentSettings_a
         contains the collection of area links in the document.
         """
         ...
+    @AreaLinks.setter
+    def AreaLinks(self, value: 'XAreaLinks_a3ce0af3') -> None:
+        ...
     @property
     def ColumnLabelRanges(self) -> 'XLabelRanges_bac20bb9':
         """
         contains the collection of column label ranges in the document.
         """
+        ...
+    @ColumnLabelRanges.setter
+    def ColumnLabelRanges(self, value: 'XLabelRanges_bac20bb9') -> None:
         ...
     @property
     def DDELinks(self) -> 'XNameAccess_e2ab0cf6':
@@ -68,11 +74,17 @@ class SpreadsheetDocument(OfficeDocument_fecd0df2, SpreadsheetDocumentSettings_a
         contains the collection of DDE links in the document.
         """
         ...
+    @DDELinks.setter
+    def DDELinks(self, value: 'XNameAccess_e2ab0cf6') -> None:
+        ...
     @property
     def DatabaseRanges(self) -> 'XDatabaseRanges_e0690cee':
         """
         contains the collection of database ranges in the document.
         """
+        ...
+    @DatabaseRanges.setter
+    def DatabaseRanges(self, value: 'XDatabaseRanges_e0690cee') -> None:
         ...
     @property
     def NamedRanges(self) -> 'XNamedRanges_bb030bbe':
@@ -80,16 +92,25 @@ class SpreadsheetDocument(OfficeDocument_fecd0df2, SpreadsheetDocumentSettings_a
         contains the collection of named ranges in the document.
         """
         ...
+    @NamedRanges.setter
+    def NamedRanges(self, value: 'XNamedRanges_bb030bbe') -> None:
+        ...
     @property
     def RowLabelRanges(self) -> 'XLabelRanges_bac20bb9':
         """
         contains the collection of row label ranges in the document.
         """
         ...
+    @RowLabelRanges.setter
+    def RowLabelRanges(self, value: 'XLabelRanges_bac20bb9') -> None:
+        ...
     @property
     def SheetLinks(self) -> 'XNameAccess_e2ab0cf6':
         """
         contains the collection of sheet links in the document.
         """
+        ...
+    @SheetLinks.setter
+    def SheetLinks(self, value: 'XNameAccess_e2ab0cf6') -> None:
         ...
 

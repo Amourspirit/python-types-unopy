@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -46,6 +46,9 @@ class EnhancedCustomShapeExtrusion(ABC):
         This attribute specifies the brightness of a scene in percent.
         """
         ...
+    @Brightness.setter
+    def Brightness(self, value: float) -> None:
+        ...
     @property
     def Depth(self) -> 'EnhancedCustomShapeParameterPair_262914a3':
         """
@@ -54,11 +57,17 @@ class EnhancedCustomShapeExtrusion(ABC):
         The second value (0.0 to 1.0) specifies the fraction of the extrusion that lies before the shape, a value of 0 is default.
         """
         ...
+    @Depth.setter
+    def Depth(self, value: 'EnhancedCustomShapeParameterPair_262914a3') -> None:
+        ...
     @property
     def Diffusion(self) -> float:
         """
         This attribute specifies the amount of diffusion reflected by the shape in percent.
         """
+        ...
+    @Diffusion.setter
+    def Diffusion(self, value: float) -> None:
         ...
     @property
     def Extrusion(self) -> bool:
@@ -68,11 +77,17 @@ class EnhancedCustomShapeExtrusion(ABC):
         The default for this property is \"false\"
         """
         ...
+    @Extrusion.setter
+    def Extrusion(self, value: bool) -> None:
+        ...
     @property
     def ExtrusionColor(self) -> bool:
         """
         This attribute specifies if the \"SecondFillColor\" is used as extrusion color.
         """
+        ...
+    @ExtrusionColor.setter
+    def ExtrusionColor(self, value: bool) -> None:
         ...
     @property
     def FirstLightDirection(self) -> 'Direction3D_c9370c0c':
@@ -80,11 +95,17 @@ class EnhancedCustomShapeExtrusion(ABC):
         Specifies the direction of the first light.
         """
         ...
+    @FirstLightDirection.setter
+    def FirstLightDirection(self, value: 'Direction3D_c9370c0c') -> None:
+        ...
     @property
     def FirstLightHarsh(self) -> bool:
         """
         Specifies if the primary light is harsh.
         """
+        ...
+    @FirstLightHarsh.setter
+    def FirstLightHarsh(self, value: bool) -> None:
         ...
     @property
     def FirstLightLevel(self) -> float:
@@ -92,17 +113,26 @@ class EnhancedCustomShapeExtrusion(ABC):
         Specifies the intensity for the first light in percent.
         """
         ...
+    @FirstLightLevel.setter
+    def FirstLightLevel(self, value: float) -> None:
+        ...
     @property
     def LightFace(self) -> bool:
         """
         Specifies if the front face of the extrusion responds to lightning changes.
         """
         ...
+    @LightFace.setter
+    def LightFace(self, value: bool) -> None:
+        ...
     @property
     def Metal(self) -> bool:
         """
         Specifies if the surface of the extrusion object looks like metal.
         """
+        ...
+    @Metal.setter
+    def Metal(self, value: bool) -> None:
         ...
     @property
     def MetalType(self) -> int:
@@ -116,6 +146,9 @@ class EnhancedCustomShapeExtrusion(ABC):
             LibreOffice 7.4
         """
         ...
+    @MetalType.setter
+    def MetalType(self, value: int) -> None:
+        ...
     @property
     def NumberOfLineSegments(self) -> int:
         """
@@ -124,17 +157,26 @@ class EnhancedCustomShapeExtrusion(ABC):
         The higher the number the more line segments are used.
         """
         ...
+    @NumberOfLineSegments.setter
+    def NumberOfLineSegments(self, value: int) -> None:
+        ...
     @property
     def Origin(self) -> 'EnhancedCustomShapeParameterPair_262914a3':
         """
         This attribute specifies the origin within the bounding box of the shape in terms of the shape size fractions.
         """
         ...
+    @Origin.setter
+    def Origin(self, value: 'EnhancedCustomShapeParameterPair_262914a3') -> None:
+        ...
     @property
     def ProjectionMode(self) -> 'ProjectionMode_f1ff0d96':
         """
         This property defines the projection mode.
         """
+        ...
+    @ProjectionMode.setter
+    def ProjectionMode(self, value: 'ProjectionMode_f1ff0d96') -> None:
         ...
     @property
     def RotateAngle(self) -> 'EnhancedCustomShapeParameterPair_262914a3':
@@ -144,11 +186,17 @@ class EnhancedCustomShapeExtrusion(ABC):
         The order of rotation is: z-axis, y-axis and then x-axis. The z-axis is specified by the draw:rotate-angle.
         """
         ...
+    @RotateAngle.setter
+    def RotateAngle(self, value: 'EnhancedCustomShapeParameterPair_262914a3') -> None:
+        ...
     @property
     def RotationCenter(self) -> 'Direction3D_c9370c0c':
         """
         This attribute specifies the position of the rotate center in terms of shape size fractions, if the property is omitted, then the geometrical center of the shape is used (this is the default).
         """
+        ...
+    @RotationCenter.setter
+    def RotationCenter(self, value: 'Direction3D_c9370c0c') -> None:
         ...
     @property
     def SecondLightDirection(self) -> 'Direction3D_c9370c0c':
@@ -156,11 +204,17 @@ class EnhancedCustomShapeExtrusion(ABC):
         Specifies the direction of the second light.
         """
         ...
+    @SecondLightDirection.setter
+    def SecondLightDirection(self, value: 'Direction3D_c9370c0c') -> None:
+        ...
     @property
     def SecondLightHarsh(self) -> bool:
         """
         Specifies if the secondary light is harsh.
         """
+        ...
+    @SecondLightHarsh.setter
+    def SecondLightHarsh(self, value: bool) -> None:
         ...
     @property
     def SecondLightLevel(self) -> float:
@@ -168,17 +222,26 @@ class EnhancedCustomShapeExtrusion(ABC):
         Specifies the intensity for the second light in percent.
         """
         ...
+    @SecondLightLevel.setter
+    def SecondLightLevel(self, value: float) -> None:
+        ...
     @property
     def ShadeMode(self) -> 'ShadeMode_b0c60b5e':
         """
         This property defines the shade mode.
         """
         ...
+    @ShadeMode.setter
+    def ShadeMode(self, value: 'ShadeMode_b0c60b5e') -> None:
+        ...
     @property
     def Shininess(self) -> float:
         """
         The draw:extrusion-shininess specifies the shininess of a mirror in percent.
         """
+        ...
+    @Shininess.setter
+    def Shininess(self, value: float) -> None:
         ...
     @property
     def Skew(self) -> 'EnhancedCustomShapeParameterPair_262914a3':
@@ -188,16 +251,25 @@ class EnhancedCustomShapeExtrusion(ABC):
         The second parameter specifies the skew-angle. Skew settings are only applied if the attribute ProjectionMode is ProjectionMode_PARALLEL.
         """
         ...
+    @Skew.setter
+    def Skew(self, value: 'EnhancedCustomShapeParameterPair_262914a3') -> None:
+        ...
     @property
     def Specularity(self) -> float:
         """
         This attribute specifies the specularity of an extrusion object in percent.
         """
         ...
+    @Specularity.setter
+    def Specularity(self, value: float) -> None:
+        ...
     @property
     def ViewPoint(self) -> 'Position3D_bddc0bc0':
         """
         This attribute specifies the viewpoint of the observer.
         """
+        ...
+    @ViewPoint.setter
+    def ViewPoint(self, value: 'Position3D_bddc0bc0') -> None:
         ...
 

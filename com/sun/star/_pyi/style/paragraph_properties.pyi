@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,11 +60,17 @@ class ParagraphProperties(ABC):
             LibreOffice 4.2
         """
         ...
+    @ParaInteropGrabBag.setter
+    def ParaInteropGrabBag(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def ParaTabStops(self) -> 'typing.Tuple[TabStop_860309f6, ...]':
         """
         specifies the positions and kinds of the tab stops within this paragraph.
         """
+        ...
+    @ParaTabStops.setter
+    def ParaTabStops(self, value: 'typing.Tuple[TabStop_860309f6, ...]') -> None:
         ...
     @property
     def BorderDistance(self) -> int:
@@ -72,11 +78,17 @@ class ParagraphProperties(ABC):
         contains the distance from the border to the object.
         """
         ...
+    @BorderDistance.setter
+    def BorderDistance(self, value: int) -> None:
+        ...
     @property
     def BottomBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the bottom border of the object.
         """
+        ...
+    @BottomBorder.setter
+    def BottomBorder(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def BottomBorderDistance(self) -> int:
@@ -84,11 +96,17 @@ class ParagraphProperties(ABC):
         contains the distance from the bottom border to the object.
         """
         ...
+    @BottomBorderDistance.setter
+    def BottomBorderDistance(self, value: int) -> None:
+        ...
     @property
     def BreakType(self) -> 'BreakType_9b050ac0':
         """
         determines the type of break that is applied at the beginning of the table.
         """
+        ...
+    @BreakType.setter
+    def BreakType(self, value: 'BreakType_9b050ac0') -> None:
         ...
     @property
     def ContinueingPreviousSubTree(self) -> bool:
@@ -100,11 +118,17 @@ class ParagraphProperties(ABC):
             OOo 3.0.1
         """
         ...
+    @ContinueingPreviousSubTree.setter
+    def ContinueingPreviousSubTree(self, value: bool) -> None:
+        ...
     @property
     def DropCapCharStyleName(self) -> str:
         """
         specifies the character style name for drop caps.
         """
+        ...
+    @DropCapCharStyleName.setter
+    def DropCapCharStyleName(self, value: str) -> None:
         ...
     @property
     def DropCapFormat(self) -> 'DropCapFormat_c95f0c4b':
@@ -112,11 +136,17 @@ class ParagraphProperties(ABC):
         specifies whether the first characters of the paragraph are displayed in capital letters and how they are formatted.
         """
         ...
+    @DropCapFormat.setter
+    def DropCapFormat(self, value: 'DropCapFormat_c95f0c4b') -> None:
+        ...
     @property
     def DropCapWholeWord(self) -> bool:
         """
         specifies if the property DropCapFormat is applied to the whole first word.
         """
+        ...
+    @DropCapWholeWord.setter
+    def DropCapWholeWord(self, value: bool) -> None:
         ...
     @property
     def LeftBorder(self) -> 'BorderLine_a3f80af6':
@@ -124,17 +154,26 @@ class ParagraphProperties(ABC):
         contains the left border of the object.
         """
         ...
+    @LeftBorder.setter
+    def LeftBorder(self, value: 'BorderLine_a3f80af6') -> None:
+        ...
     @property
     def LeftBorderDistance(self) -> int:
         """
         contains the distance from the left border to the object.
         """
         ...
+    @LeftBorderDistance.setter
+    def LeftBorderDistance(self, value: int) -> None:
+        ...
     @property
     def ListId(self) -> str:
         """
         specifies the id of the list to which the paragraph belongs
         """
+        ...
+    @ListId.setter
+    def ListId(self, value: str) -> None:
         ...
     @property
     def ListLabelString(self) -> str:
@@ -146,6 +185,9 @@ class ParagraphProperties(ABC):
             OOo 3.0.1
         """
         ...
+    @ListLabelString.setter
+    def ListLabelString(self, value: str) -> None:
+        ...
     @property
     def NumberingIsNumber(self) -> bool:
         """
@@ -156,11 +198,17 @@ class ParagraphProperties(ABC):
         If the paragraph is not part of a numbering the property is void.
         """
         ...
+    @NumberingIsNumber.setter
+    def NumberingIsNumber(self, value: bool) -> None:
+        ...
     @property
     def NumberingLevel(self) -> int:
         """
         specifies the numbering level of the paragraph.
         """
+        ...
+    @NumberingLevel.setter
+    def NumberingLevel(self, value: int) -> None:
         ...
     @property
     def NumberingRules(self) -> 'XIndexReplace_feed0dd7':
@@ -168,11 +216,17 @@ class ParagraphProperties(ABC):
         contains the numbering rules applied to this paragraph.
         """
         ...
+    @NumberingRules.setter
+    def NumberingRules(self, value: 'XIndexReplace_feed0dd7') -> None:
+        ...
     @property
     def NumberingStartValue(self) -> int:
         """
         specifies the start value for numbering if a new numbering starts at this paragraph.
         """
+        ...
+    @NumberingStartValue.setter
+    def NumberingStartValue(self, value: int) -> None:
         ...
     @property
     def NumberingStyleName(self) -> str:
@@ -181,6 +235,9 @@ class ParagraphProperties(ABC):
         
         The name must be one of the names which are available via XStyleFamiliesSupplier.
         """
+        ...
+    @NumberingStyleName.setter
+    def NumberingStyleName(self, value: str) -> None:
         ...
     @property
     def OutlineLevel(self) -> int:
@@ -196,11 +253,17 @@ class ParagraphProperties(ABC):
             OOo 3.1
         """
         ...
+    @OutlineLevel.setter
+    def OutlineLevel(self, value: int) -> None:
+        ...
     @property
     def PageDescName(self) -> str:
         """
         If this property is set, it creates a page break before the paragraph it belongs to and assigns the value as the name of the new page style sheet to use.
         """
+        ...
+    @PageDescName.setter
+    def PageDescName(self, value: str) -> None:
         ...
     @property
     def PageNumberOffset(self) -> int:
@@ -208,11 +271,17 @@ class ParagraphProperties(ABC):
         If a page break property is set at a paragraph, this property contains the new value for the page number.
         """
         ...
+    @PageNumberOffset.setter
+    def PageNumberOffset(self, value: int) -> None:
+        ...
     @property
     def PageStyleName(self) -> str:
         """
         contains the name of the current page style.
         """
+        ...
+    @PageStyleName.setter
+    def PageStyleName(self, value: str) -> None:
         ...
     @property
     def ParaAdjust(self) -> 'ParagraphAdjust_e42a0d3a':
@@ -220,11 +289,17 @@ class ParagraphProperties(ABC):
         determines the adjustment of a paragraph.
         """
         ...
+    @ParaAdjust.setter
+    def ParaAdjust(self, value: 'ParagraphAdjust_e42a0d3a') -> None:
+        ...
     @property
     def ParaBackColor(self) -> 'Color_68e908c5':
         """
         contains the paragraph background color.
         """
+        ...
+    @ParaBackColor.setter
+    def ParaBackColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def ParaBackGraphic(self) -> 'XGraphic_a4da0afc':
@@ -236,17 +311,26 @@ class ParagraphProperties(ABC):
             LibreOffice 6.1
         """
         ...
+    @ParaBackGraphic.setter
+    def ParaBackGraphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def ParaBackGraphicFilter(self) -> str:
         """
         contains the name of the graphic filter for the background graphic of a paragraph.
         """
         ...
+    @ParaBackGraphicFilter.setter
+    def ParaBackGraphicFilter(self, value: str) -> None:
+        ...
     @property
     def ParaBackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         contains the value for the position of a background graphic.
         """
+        ...
+    @ParaBackGraphicLocation.setter
+    def ParaBackGraphicLocation(self, value: 'GraphicLocation_e3ef0d30') -> None:
         ...
     @property
     def ParaBackGraphicURL(self) -> str:
@@ -256,11 +340,17 @@ class ParagraphProperties(ABC):
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the ParaBackGraphic property.
         """
         ...
+    @ParaBackGraphicURL.setter
+    def ParaBackGraphicURL(self, value: str) -> None:
+        ...
     @property
     def ParaBackTransparent(self) -> bool:
         """
         This value is TRUE if the paragraph background color is set to transparent.
         """
+        ...
+    @ParaBackTransparent.setter
+    def ParaBackTransparent(self, value: bool) -> None:
         ...
     @property
     def ParaBottomMargin(self) -> int:
@@ -271,6 +361,9 @@ class ParagraphProperties(ABC):
         
         The greater one is chosen.
         """
+        ...
+    @ParaBottomMargin.setter
+    def ParaBottomMargin(self, value: int) -> None:
         ...
     @property
     def ParaContextMargin(self) -> bool:
@@ -284,6 +377,9 @@ class ParagraphProperties(ABC):
             LibreOffice 3.6
         """
         ...
+    @ParaContextMargin.setter
+    def ParaContextMargin(self, value: bool) -> None:
+        ...
     @property
     def ParaExpandSingleWord(self) -> bool:
         """
@@ -292,11 +388,17 @@ class ParagraphProperties(ABC):
         It is only valid if ParagraphProperties.ParaAdjust and ParagraphProperties.ParaLastLineAdjust are also valid.
         """
         ...
+    @ParaExpandSingleWord.setter
+    def ParaExpandSingleWord(self, value: bool) -> None:
+        ...
     @property
     def ParaFirstLineIndent(self) -> int:
         """
         specifies the indent for the first line.
         """
+        ...
+    @ParaFirstLineIndent.setter
+    def ParaFirstLineIndent(self, value: int) -> None:
         ...
     @property
     def ParaHyphenationMaxHyphens(self) -> int:
@@ -304,17 +406,26 @@ class ParagraphProperties(ABC):
         specifies the maximum number of consecutive hyphens.
         """
         ...
+    @ParaHyphenationMaxHyphens.setter
+    def ParaHyphenationMaxHyphens(self, value: int) -> None:
+        ...
     @property
     def ParaHyphenationMaxLeadingChars(self) -> int:
         """
         specifies the minimum number of characters to remain before the hyphen character (when hyphenation is applied).
         """
         ...
+    @ParaHyphenationMaxLeadingChars.setter
+    def ParaHyphenationMaxLeadingChars(self, value: int) -> None:
+        ...
     @property
     def ParaHyphenationMaxTrailingChars(self) -> int:
         """
         specifies the minimum number of characters to remain after the hyphen character (when hyphenation is applied).
         """
+        ...
+    @ParaHyphenationMaxTrailingChars.setter
+    def ParaHyphenationMaxTrailingChars(self, value: int) -> None:
         ...
     @property
     def ParaHyphenationMinWordLength(self) -> int:
@@ -325,6 +436,9 @@ class ParagraphProperties(ABC):
         
             LibreOffice 7.4
         """
+        ...
+    @ParaHyphenationMinWordLength.setter
+    def ParaHyphenationMinWordLength(self, value: int) -> None:
         ...
     @property
     def ParaHyphenationNoCaps(self) -> bool:
@@ -338,6 +452,9 @@ class ParagraphProperties(ABC):
             LibreOffice 6.4
         """
         ...
+    @ParaHyphenationNoCaps.setter
+    def ParaHyphenationNoCaps(self, value: bool) -> None:
+        ...
     @property
     def ParaHyphenationNoLastWord(self) -> bool:
         """
@@ -349,6 +466,9 @@ class ParagraphProperties(ABC):
         
             LibreOffice 7.4
         """
+        ...
+    @ParaHyphenationNoLastWord.setter
+    def ParaHyphenationNoLastWord(self, value: bool) -> None:
         ...
     @property
     def ParaHyphenationZone(self) -> int:
@@ -362,11 +482,17 @@ class ParagraphProperties(ABC):
             LibreOffice 7.4
         """
         ...
+    @ParaHyphenationZone.setter
+    def ParaHyphenationZone(self, value: int) -> None:
+        ...
     @property
     def ParaIsAutoFirstLineIndent(self) -> bool:
         """
         determines if the first line should be indented automatically.
         """
+        ...
+    @ParaIsAutoFirstLineIndent.setter
+    def ParaIsAutoFirstLineIndent(self, value: bool) -> None:
         ...
     @property
     def ParaIsConnectBorder(self) -> bool:
@@ -376,17 +502,26 @@ class ParagraphProperties(ABC):
         Borders are only merged if they are identical.
         """
         ...
+    @ParaIsConnectBorder.setter
+    def ParaIsConnectBorder(self, value: bool) -> None:
+        ...
     @property
     def ParaIsHyphenation(self) -> bool:
         """
         specifies if automatic hyphenation is applied.
         """
         ...
+    @ParaIsHyphenation.setter
+    def ParaIsHyphenation(self, value: bool) -> None:
+        ...
     @property
     def ParaIsNumberingRestart(self) -> bool:
         """
         determines if the numbering rules restart, counting at the current paragraph.
         """
+        ...
+    @ParaIsNumberingRestart.setter
+    def ParaIsNumberingRestart(self, value: bool) -> None:
         ...
     @property
     def ParaKeepTogether(self) -> bool:
@@ -396,6 +531,9 @@ class ParagraphProperties(ABC):
         This feature is useful for preventing title paragraphs to be the last line on a page or column.
         """
         ...
+    @ParaKeepTogether.setter
+    def ParaKeepTogether(self, value: bool) -> None:
+        ...
     @property
     def ParaLastLineAdjust(self) -> int:
         """
@@ -404,11 +542,17 @@ class ParagraphProperties(ABC):
         It is only valid if ParagraphProperties.ParaAdjust is set to ParagraphAdjust.BLOCK.
         """
         ...
+    @ParaLastLineAdjust.setter
+    def ParaLastLineAdjust(self, value: int) -> None:
+        ...
     @property
     def ParaLeftMargin(self) -> int:
         """
         determines the left margin of the paragraph in 100th mm.
         """
+        ...
+    @ParaLeftMargin.setter
+    def ParaLeftMargin(self, value: int) -> None:
         ...
     @property
     def ParaLineNumberCount(self) -> bool:
@@ -416,11 +560,17 @@ class ParagraphProperties(ABC):
         determines if the paragraph is included in the line numbering.
         """
         ...
+    @ParaLineNumberCount.setter
+    def ParaLineNumberCount(self, value: bool) -> None:
+        ...
     @property
     def ParaLineNumberStartValue(self) -> int:
         """
         contains the start value for the line numbering.
         """
+        ...
+    @ParaLineNumberStartValue.setter
+    def ParaLineNumberStartValue(self, value: int) -> None:
         ...
     @property
     def ParaLineSpacing(self) -> 'LineSpacing_b1ad0b86':
@@ -428,11 +578,17 @@ class ParagraphProperties(ABC):
         contains the type of the line spacing of a paragraph.
         """
         ...
+    @ParaLineSpacing.setter
+    def ParaLineSpacing(self, value: 'LineSpacing_b1ad0b86') -> None:
+        ...
     @property
     def ParaOrphans(self) -> int:
         """
         specifies the minimum number of lines of the paragraph that have to be at bottom of a page if the paragraph is spread over more than one page.
         """
+        ...
+    @ParaOrphans.setter
+    def ParaOrphans(self, value: int) -> None:
         ...
     @property
     def ParaRegisterModeActive(self) -> bool:
@@ -442,11 +598,17 @@ class ParagraphProperties(ABC):
         Remark: Register mode is only used if the register mode property of the page style is switched on.
         """
         ...
+    @ParaRegisterModeActive.setter
+    def ParaRegisterModeActive(self, value: bool) -> None:
+        ...
     @property
     def ParaRightMargin(self) -> int:
         """
         determines the right margin of the paragraph in 100th mm.
         """
+        ...
+    @ParaRightMargin.setter
+    def ParaRightMargin(self, value: int) -> None:
         ...
     @property
     def ParaShadowFormat(self) -> 'ShadowFormat_bb840bdf':
@@ -454,17 +616,26 @@ class ParagraphProperties(ABC):
         determines the type, color, and size of the shadow.
         """
         ...
+    @ParaShadowFormat.setter
+    def ParaShadowFormat(self, value: 'ShadowFormat_bb840bdf') -> None:
+        ...
     @property
     def ParaSplit(self) -> bool:
         """
         Setting this property to FALSE prevents the paragraph from getting split into two pages or columns.
         """
         ...
+    @ParaSplit.setter
+    def ParaSplit(self, value: bool) -> None:
+        ...
     @property
     def ParaStyleName(self) -> str:
         """
         contains the name of the current paragraph style.
         """
+        ...
+    @ParaStyleName.setter
+    def ParaStyleName(self, value: str) -> None:
         ...
     @property
     def ParaTopMargin(self) -> int:
@@ -476,6 +647,9 @@ class ParagraphProperties(ABC):
         The greater one is chosen.
         """
         ...
+    @ParaTopMargin.setter
+    def ParaTopMargin(self, value: int) -> None:
+        ...
     @property
     def ParaUserDefinedAttributes(self) -> 'XNameContainer_cb90e47':
         """
@@ -484,11 +658,17 @@ class ParagraphProperties(ABC):
         They will be saved to and restored from automatic styles inside xml files.
         """
         ...
+    @ParaUserDefinedAttributes.setter
+    def ParaUserDefinedAttributes(self, value: 'XNameContainer_cb90e47') -> None:
+        ...
     @property
     def ParaVertAlignment(self) -> int:
         """
         specifies the vertical alignment of a paragraph.
         """
+        ...
+    @ParaVertAlignment.setter
+    def ParaVertAlignment(self, value: int) -> None:
         ...
     @property
     def ParaWidows(self) -> int:
@@ -496,11 +676,17 @@ class ParagraphProperties(ABC):
         specifies the minimum number of lines of the paragraph that have to be at top of a page if the paragraph is spread over more than one page.
         """
         ...
+    @ParaWidows.setter
+    def ParaWidows(self, value: int) -> None:
+        ...
     @property
     def RightBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the right border of the object.
         """
+        ...
+    @RightBorder.setter
+    def RightBorder(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def RightBorderDistance(self) -> int:
@@ -508,16 +694,25 @@ class ParagraphProperties(ABC):
         contains the distance from the right border to the object.
         """
         ...
+    @RightBorderDistance.setter
+    def RightBorderDistance(self, value: int) -> None:
+        ...
     @property
     def TopBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the top border of the object.
         """
         ...
+    @TopBorder.setter
+    def TopBorder(self, value: 'BorderLine_a3f80af6') -> None:
+        ...
     @property
     def TopBorderDistance(self) -> int:
         """
         contains the distance from the top border to the object.
         """
+        ...
+    @TopBorderDistance.setter
+    def TopBorderDistance(self, value: int) -> None:
         ...
 

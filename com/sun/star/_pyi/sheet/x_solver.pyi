@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -47,54 +47,70 @@ class XSolver(XInterface_8f010a43):
         The constraints of the model.
         """
         ...
-
+    @Constraints.setter
+    def Constraints(self, value: 'typing.Tuple[SolverConstraint_f1e30dc1, ...]') -> None:
+        ...
     @property
     def Solution(self) -> 'typing.Tuple[float, ...]':
         """
         contains the solution's value for each of the variables, if a solution was found.
         """
         ...
-
+    @Solution.setter
+    def Solution(self, value: 'typing.Tuple[float, ...]') -> None:
+        ...
     @property
     def Variables(self) -> 'typing.Tuple[CellAddress_ae5f0b56, ...]':
         """
         The addresses of the cells that contain the variables.
         """
         ...
-
+    @Variables.setter
+    def Variables(self, value: 'typing.Tuple[CellAddress_ae5f0b56, ...]') -> None:
+        ...
     @property
     def Document(self) -> 'XSpreadsheetDocument_2a1f0f30':
         """
         The spreadsheet document that contains the cells.
         """
         ...
-
+    @Document.setter
+    def Document(self, value: 'XSpreadsheetDocument_2a1f0f30') -> None:
+        ...
     @property
     def Maximize(self) -> bool:
         """
         selects if the objective value is maximized or minimized.
         """
         ...
-
+    @Maximize.setter
+    def Maximize(self, value: bool) -> None:
+        ...
     @property
     def Objective(self) -> 'CellAddress_ae5f0b56':
         """
         The address of the cell that contains the objective value.
         """
         ...
-
+    @Objective.setter
+    def Objective(self, value: 'CellAddress_ae5f0b56') -> None:
+        ...
     @property
     def ResultValue(self) -> float:
         """
         contains the objective value for the solution, if a solution was found.
         """
         ...
-
+    @ResultValue.setter
+    def ResultValue(self, value: float) -> None:
+        ...
     @property
     def Success(self) -> bool:
         """
         contains TRUE if a solution was found.
         """
         ...
-
+    @Success.setter
+    def Success(self, value: bool) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,16 +35,25 @@ class HeaderFooterSettings(XPropertySet_bc180bfa):
         enables or disables the printing of the date in the header or footer
         """
         ...
+    @IsPrintDate.setter
+    def IsPrintDate(self, value: bool) -> None:
+        ...
     @property
     def IsPrintPageName(self) -> bool:
         """
         enables or disables the printing of the page name in the header or footer
         """
         ...
+    @IsPrintPageName.setter
+    def IsPrintPageName(self, value: bool) -> None:
+        ...
     @property
     def IsPrintTime(self) -> bool:
         """
         enables or disables the printing of the current time in the header or footer
         """
+        ...
+    @IsPrintTime.setter
+    def IsPrintTime(self, value: bool) -> None:
         ...
 

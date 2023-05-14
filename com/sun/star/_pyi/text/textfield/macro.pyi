@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,16 +35,25 @@ class Macro(TextField_90260a56):
         contains a tip that is displayed at the user interface.
         """
         ...
+    @Hint.setter
+    def Hint(self, value: str) -> None:
+        ...
     @property
     def MacroLibrary(self) -> str:
         """
         contains the library name of a StarBASIC macro.
         """
         ...
+    @MacroLibrary.setter
+    def MacroLibrary(self, value: str) -> None:
+        ...
     @property
     def MacroName(self) -> str:
         """
         contains the macro name of a StarBASIC macro.
         """
+        ...
+    @MacroName.setter
+    def MacroName(self, value: str) -> None:
         ...
 

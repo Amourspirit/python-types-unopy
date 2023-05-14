@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class ComplexReference(object):
         """
         ...
 
+    @Reference1.setter
+    def Reference1(self, value: SingleReference_e27e0d12) -> None:
+        ...
 
     @property
     def Reference2(self) -> SingleReference_e27e0d12:
@@ -60,4 +63,7 @@ class ComplexReference(object):
         """
         ...
 
+    @Reference2.setter
+    def Reference2(self, value: SingleReference_e27e0d12) -> None:
+        ...
 

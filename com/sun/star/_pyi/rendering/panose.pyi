@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class Panose(object):
         """
         ...
 
+    @FamilyType.setter
+    def FamilyType(self, value: int) -> None:
+        ...
 
     @property
     def SerifStyle(self) -> int:
@@ -66,6 +69,9 @@ class Panose(object):
         """
         ...
 
+    @SerifStyle.setter
+    def SerifStyle(self, value: int) -> None:
+        ...
 
     @property
     def Weight(self) -> int:
@@ -74,6 +80,9 @@ class Panose(object):
         """
         ...
 
+    @Weight.setter
+    def Weight(self, value: int) -> None:
+        ...
 
     @property
     def Proportion(self) -> int:
@@ -82,6 +91,9 @@ class Panose(object):
         """
         ...
 
+    @Proportion.setter
+    def Proportion(self, value: int) -> None:
+        ...
 
     @property
     def Contrast(self) -> int:
@@ -90,6 +102,9 @@ class Panose(object):
         """
         ...
 
+    @Contrast.setter
+    def Contrast(self, value: int) -> None:
+        ...
 
     @property
     def StrokeVariation(self) -> int:
@@ -98,6 +113,9 @@ class Panose(object):
         """
         ...
 
+    @StrokeVariation.setter
+    def StrokeVariation(self, value: int) -> None:
+        ...
 
     @property
     def ArmStyle(self) -> int:
@@ -106,6 +124,9 @@ class Panose(object):
         """
         ...
 
+    @ArmStyle.setter
+    def ArmStyle(self, value: int) -> None:
+        ...
 
     @property
     def Letterform(self) -> int:
@@ -114,6 +135,9 @@ class Panose(object):
         """
         ...
 
+    @Letterform.setter
+    def Letterform(self, value: int) -> None:
+        ...
 
     @property
     def Midline(self) -> int:
@@ -122,6 +146,9 @@ class Panose(object):
         """
         ...
 
+    @Midline.setter
+    def Midline(self, value: int) -> None:
+        ...
 
     @property
     def XHeight(self) -> int:
@@ -130,4 +157,7 @@ class Panose(object):
         """
         ...
 
+    @XHeight.setter
+    def XHeight(self, value: int) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -39,11 +39,17 @@ class RangeSelectionArguments(ABC):
         specifies if the range selection is finished when the mouse button is released, after selecting cells.
         """
         ...
+    @CloseOnMouseRelease.setter
+    def CloseOnMouseRelease(self, value: bool) -> None:
+        ...
     @property
     def InitialValue(self) -> str:
         """
         contains the initial value for the range descriptor.
         """
+        ...
+    @InitialValue.setter
+    def InitialValue(self, value: str) -> None:
         ...
     @property
     def SingleCellMode(self) -> bool:
@@ -57,10 +63,16 @@ class RangeSelectionArguments(ABC):
             OOo 2.0.3
         """
         ...
+    @SingleCellMode.setter
+    def SingleCellMode(self, value: bool) -> None:
+        ...
     @property
     def Title(self) -> str:
         """
         contains a title for the operation.
         """
+        ...
+    @Title.setter
+    def Title(self, value: str) -> None:
         ...
 

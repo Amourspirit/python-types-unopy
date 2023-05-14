@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class DeviceInfo(object):
         """
         ...
 
+    @Width.setter
+    def Width(self, value: int) -> None:
+        ...
 
     @property
     def Height(self) -> int:
@@ -67,6 +70,9 @@ class DeviceInfo(object):
         """
         ...
 
+    @Height.setter
+    def Height(self, value: int) -> None:
+        ...
 
     @property
     def LeftInset(self) -> int:
@@ -75,6 +81,9 @@ class DeviceInfo(object):
         """
         ...
 
+    @LeftInset.setter
+    def LeftInset(self, value: int) -> None:
+        ...
 
     @property
     def TopInset(self) -> int:
@@ -83,6 +92,9 @@ class DeviceInfo(object):
         """
         ...
 
+    @TopInset.setter
+    def TopInset(self, value: int) -> None:
+        ...
 
     @property
     def RightInset(self) -> int:
@@ -91,6 +103,9 @@ class DeviceInfo(object):
         """
         ...
 
+    @RightInset.setter
+    def RightInset(self, value: int) -> None:
+        ...
 
     @property
     def BottomInset(self) -> int:
@@ -99,6 +114,9 @@ class DeviceInfo(object):
         """
         ...
 
+    @BottomInset.setter
+    def BottomInset(self, value: int) -> None:
+        ...
 
     @property
     def PixelPerMeterX(self) -> float:
@@ -107,6 +125,9 @@ class DeviceInfo(object):
         """
         ...
 
+    @PixelPerMeterX.setter
+    def PixelPerMeterX(self, value: float) -> None:
+        ...
 
     @property
     def PixelPerMeterY(self) -> float:
@@ -115,6 +136,9 @@ class DeviceInfo(object):
         """
         ...
 
+    @PixelPerMeterY.setter
+    def PixelPerMeterY(self, value: float) -> None:
+        ...
 
     @property
     def BitsPerPixel(self) -> int:
@@ -123,6 +147,9 @@ class DeviceInfo(object):
         """
         ...
 
+    @BitsPerPixel.setter
+    def BitsPerPixel(self, value: int) -> None:
+        ...
 
     @property
     def Capabilities(self) -> int:
@@ -131,4 +158,7 @@ class DeviceInfo(object):
         """
         ...
 
+    @Capabilities.setter
+    def Capabilities(self, value: int) -> None:
+        ...
 

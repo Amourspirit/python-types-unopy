@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,39 +59,63 @@ class SingleProofreadingError(object):
     def aSuggestions(self) -> typing.Tuple[str, ...]:
         ...
 
+    @aSuggestions.setter
+    def aSuggestions(self, value: typing.Tuple[str, ...]) -> None:
+        ...
 
     @property
     def aProperties(self) -> typing.Tuple[PropertyValue_c9610c73, ...]:
         ...
 
+    @aProperties.setter
+    def aProperties(self, value: typing.Tuple[PropertyValue_c9610c73, ...]) -> None:
+        ...
 
     @property
     def nErrorStart(self) -> int:
         ...
 
+    @nErrorStart.setter
+    def nErrorStart(self, value: int) -> None:
+        ...
 
     @property
     def nErrorLength(self) -> int:
         ...
 
+    @nErrorLength.setter
+    def nErrorLength(self, value: int) -> None:
+        ...
 
     @property
     def nErrorType(self) -> int:
         ...
 
+    @nErrorType.setter
+    def nErrorType(self, value: int) -> None:
+        ...
 
     @property
     def aRuleIdentifier(self) -> str:
         ...
 
+    @aRuleIdentifier.setter
+    def aRuleIdentifier(self, value: str) -> None:
+        ...
 
     @property
     def aShortComment(self) -> str:
         ...
 
+    @aShortComment.setter
+    def aShortComment(self, value: str) -> None:
+        ...
 
     @property
     def aFullComment(self) -> str:
         ...
 
+    @aFullComment.setter
+    def aFullComment(self, value: str) -> None:
+        ...
 

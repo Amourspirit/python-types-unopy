@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,11 +43,17 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
         specifies the background color (RGB) of the control.
         """
         ...
+    @BackgroundColor.setter
+    def BackgroundColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
+    @Border.setter
+    def Border(self, value: int) -> None:
         ...
     @property
     def BorderColor(self) -> int:
@@ -61,11 +67,17 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @BorderColor.setter
+    def BorderColor(self, value: int) -> None:
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
+        ...
+    @Enabled.setter
+    def Enabled(self, value: bool) -> None:
         ...
     @property
     def Graphic(self) -> 'XGraphic_a4da0afc':
@@ -79,11 +91,17 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
             OOo 2.1
         """
         ...
+    @Graphic.setter
+    def Graphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the control.
         """
+        ...
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
         ...
     @property
     def HelpURL(self) -> str:
@@ -91,11 +109,17 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
         specifies the help URL of the control.
         """
         ...
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
+        ...
     @property
     def ImageURL(self) -> str:
         """
         specifies a URL to an image to use for the control.
         """
+        ...
+    @ImageURL.setter
+    def ImageURL(self, value: str) -> None:
         ...
     @property
     def Printable(self) -> bool:
@@ -103,11 +127,17 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
         specifies that the control will be printed with the document.
         """
         ...
+    @Printable.setter
+    def Printable(self, value: bool) -> None:
+        ...
     @property
     def ScaleImage(self) -> bool:
         """
         specifies if the image is automatically scaled to the size of the control.
         """
+        ...
+    @ScaleImage.setter
+    def ScaleImage(self, value: bool) -> None:
         ...
     @property
     def ScaleMode(self) -> int:
@@ -123,6 +153,9 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
             OOo 3.1
         """
         ...
+    @ScaleMode.setter
+    def ScaleMode(self, value: int) -> None:
+        ...
     @property
     def Tabstop(self) -> bool:
         """
@@ -132,5 +165,8 @@ class UnoControlImageControlModel(UnoControlModel_c8ce0c58):
         
             OOo 1.1.2
         """
+        ...
+    @Tabstop.setter
+    def Tabstop(self, value: bool) -> None:
         ...
 

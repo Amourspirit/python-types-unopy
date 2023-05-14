@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -50,14 +50,23 @@ class PolyPolygonShape3D(object):
     def SequenceX(self) -> DoubleSequenceSequence_6b8010c1:
         ...
 
+    @SequenceX.setter
+    def SequenceX(self, value: DoubleSequenceSequence_6b8010c1) -> None:
+        ...
 
     @property
     def SequenceY(self) -> DoubleSequenceSequence_6b8010c1:
         ...
 
+    @SequenceY.setter
+    def SequenceY(self, value: DoubleSequenceSequence_6b8010c1) -> None:
+        ...
 
     @property
     def SequenceZ(self) -> DoubleSequenceSequence_6b8010c1:
         ...
 
+    @SequenceZ.setter
+    def SequenceZ(self, value: DoubleSequenceSequence_6b8010c1) -> None:
+        ...
 

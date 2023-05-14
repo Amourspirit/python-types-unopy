@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -64,6 +64,9 @@ class RenderState(object):
         """
         ...
 
+    @DeviceColor.setter
+    def DeviceColor(self, value: typing.Tuple[ColorComponent_e4c0e78, ...]) -> None:
+        ...
 
     @property
     def AffineTransform(self) -> AffineMatrix2D_ff040da8:
@@ -74,6 +77,9 @@ class RenderState(object):
         """
         ...
 
+    @AffineTransform.setter
+    def AffineTransform(self, value: AffineMatrix2D_ff040da8) -> None:
+        ...
 
     @property
     def Clip(self) -> XPolyPolygon2D_e1b0e20:
@@ -86,6 +92,9 @@ class RenderState(object):
         """
         ...
 
+    @Clip.setter
+    def Clip(self, value: XPolyPolygon2D_e1b0e20) -> None:
+        ...
 
     @property
     def CompositeOperation(self) -> int:
@@ -96,4 +105,7 @@ class RenderState(object):
         """
         ...
 
+    @CompositeOperation.setter
+    def CompositeOperation(self, value: int) -> None:
+        ...
 

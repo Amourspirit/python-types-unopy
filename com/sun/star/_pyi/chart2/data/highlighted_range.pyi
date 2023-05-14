@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class HighlightedRange(object):
         """
         ...
 
+    @RangeRepresentation.setter
+    def RangeRepresentation(self, value: str) -> None:
+        ...
 
     @property
     def Index(self) -> int:
@@ -62,6 +65,9 @@ class HighlightedRange(object):
         """
         ...
 
+    @Index.setter
+    def Index(self, value: int) -> None:
+        ...
 
     @property
     def PreferredColor(self) -> int:
@@ -72,6 +78,9 @@ class HighlightedRange(object):
         """
         ...
 
+    @PreferredColor.setter
+    def PreferredColor(self, value: int) -> None:
+        ...
 
     @property
     def AllowMerginigWithOtherRanges(self) -> bool:
@@ -80,4 +89,7 @@ class HighlightedRange(object):
         """
         ...
 
+    @AllowMerginigWithOtherRanges.setter
+    def AllowMerginigWithOtherRanges(self, value: bool) -> None:
+        ...
 

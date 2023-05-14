@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -69,7 +69,9 @@ class XFormulaOpCodeMapper(ABC):
         Needed to be able to identify which of the function names map to an Add-In implementation where this OpCode is used in the returned mapping and the programmatic name is available as additional information.
         """
         ...
-
+    @OpCodeExternal.setter
+    def OpCodeExternal(self, value: int) -> None:
+        ...
     @property
     def OpCodeUnknown(self) -> int:
         """
@@ -78,5 +80,7 @@ class XFormulaOpCodeMapper(ABC):
         Used to identify which of the function names queried with getMappings() are unknown to the implementation.
         """
         ...
-
+    @OpCodeUnknown.setter
+    def OpCodeUnknown(self, value: int) -> None:
+        ...
 

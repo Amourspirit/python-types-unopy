@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class Time(object):
         """
         ...
 
+    @NanoSeconds.setter
+    def NanoSeconds(self, value: int) -> None:
+        ...
 
     @property
     def Seconds(self) -> int:
@@ -66,6 +69,9 @@ class Time(object):
         """
         ...
 
+    @Seconds.setter
+    def Seconds(self, value: int) -> None:
+        ...
 
     @property
     def Minutes(self) -> int:
@@ -74,6 +80,9 @@ class Time(object):
         """
         ...
 
+    @Minutes.setter
+    def Minutes(self, value: int) -> None:
+        ...
 
     @property
     def Hours(self) -> int:
@@ -82,6 +91,9 @@ class Time(object):
         """
         ...
 
+    @Hours.setter
+    def Hours(self, value: int) -> None:
+        ...
 
     @property
     def IsUTC(self) -> bool:
@@ -94,4 +106,7 @@ class Time(object):
         """
         ...
 
+    @IsUTC.setter
+    def IsUTC(self, value: bool) -> None:
+        ...
 

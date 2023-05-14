@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,6 +54,9 @@ class CellRangeAddress(object):
         """
         ...
 
+    @Sheet.setter
+    def Sheet(self, value: int) -> None:
+        ...
 
     @property
     def StartColumn(self) -> int:
@@ -62,6 +65,9 @@ class CellRangeAddress(object):
         """
         ...
 
+    @StartColumn.setter
+    def StartColumn(self, value: int) -> None:
+        ...
 
     @property
     def StartRow(self) -> int:
@@ -70,6 +76,9 @@ class CellRangeAddress(object):
         """
         ...
 
+    @StartRow.setter
+    def StartRow(self, value: int) -> None:
+        ...
 
     @property
     def EndColumn(self) -> int:
@@ -78,6 +87,9 @@ class CellRangeAddress(object):
         """
         ...
 
+    @EndColumn.setter
+    def EndColumn(self, value: int) -> None:
+        ...
 
     @property
     def EndRow(self) -> int:
@@ -86,4 +98,7 @@ class CellRangeAddress(object):
         """
         ...
 
+    @EndRow.setter
+    def EndRow(self, value: int) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,6 +53,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         If this property has a value of VOID, rows will be painted in alternating background colors, every second row having a background color derived from the control's selection color.
         """
         ...
+    @RowBackgroundColors.setter
+    def RowBackgroundColors(self, value: 'typing.Tuple[Color_68e908c5, ...]') -> None:
+        ...
     @property
     def ActiveSelectionBackgroundColor(self) -> 'Color_68e908c5':
         """
@@ -61,6 +64,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         If this property has a value of VOID, the grid control renderer will use some default color, depending on the control's style settings.
         """
         ...
+    @ActiveSelectionBackgroundColor.setter
+    def ActiveSelectionBackgroundColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def ActiveSelectionTextColor(self) -> 'Color_68e908c5':
         """
@@ -68,6 +74,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         
         If this property has a value of VOID, the grid control renderer will use some default color, depending on the control's style settings.
         """
+        ...
+    @ActiveSelectionTextColor.setter
+    def ActiveSelectionTextColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def ColumnHeaderHeight(self) -> int:
@@ -81,6 +90,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         If the property is VOID, the grid control shall automatically determine a height which conveniently allows, according to the used font, to display one line of text.
         """
         ...
+    @ColumnHeaderHeight.setter
+    def ColumnHeaderHeight(self, value: int) -> None:
+        ...
     @property
     def ColumnModel(self) -> 'XGridColumnModel_16290e65':
         """
@@ -93,11 +105,17 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         The default for this property is an empty instance of the DefaultGridColumnModel.
         """
         ...
+    @ColumnModel.setter
+    def ColumnModel(self, value: 'XGridColumnModel_16290e65') -> None:
+        ...
     @property
     def FontDescriptor(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font attributes of the text in the control.
         """
+        ...
+    @FontDescriptor.setter
+    def FontDescriptor(self, value: 'FontDescriptor_bc110c0a') -> None:
         ...
     @property
     def FontEmphasisMark(self) -> int:
@@ -105,11 +123,17 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         specifies the com.sun.star.text.FontEmphasis value of the text in the control.
         """
         ...
+    @FontEmphasisMark.setter
+    def FontEmphasisMark(self, value: int) -> None:
+        ...
     @property
     def FontRelief(self) -> int:
         """
         specifies the com.sun.star.text.FontRelief value of the text in the control.
         """
+        ...
+    @FontRelief.setter
+    def FontRelief(self, value: int) -> None:
         ...
     @property
     def GridDataModel(self) -> 'XGridDataModel_f8b20d71':
@@ -123,6 +147,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         The default for this property is an empty instance of the DefaultGridDataModel.
         """
         ...
+    @GridDataModel.setter
+    def GridDataModel(self, value: 'XGridDataModel_f8b20d71') -> None:
+        ...
     @property
     def GridLineColor(self) -> 'Color_68e908c5':
         """
@@ -130,6 +157,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         
         If this property has a value of VOID, the grid control renderer will use some default color, depending on the control's style settings.
         """
+        ...
+    @GridLineColor.setter
+    def GridLineColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def HScroll(self) -> bool:
@@ -139,6 +169,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         The default value is FALSE
         """
         ...
+    @HScroll.setter
+    def HScroll(self, value: bool) -> None:
+        ...
     @property
     def HeaderBackgroundColor(self) -> 'Color_68e908c5':
         """
@@ -146,6 +179,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         
         If this property has a value of VOID, the grid control renderer will use some default color, depending on the control's style settings.
         """
+        ...
+    @HeaderBackgroundColor.setter
+    def HeaderBackgroundColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def HeaderTextColor(self) -> 'Color_68e908c5':
@@ -155,17 +191,26 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         If this property has a value of VOID, the grid control renderer will use some default color, depending on the control's style settings.
         """
         ...
+    @HeaderTextColor.setter
+    def HeaderTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the control.
         """
         ...
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the control.
         """
+        ...
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
         ...
     @property
     def InactiveSelectionBackgroundColor(self) -> 'Color_68e908c5':
@@ -175,6 +220,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         If this property has a value of VOID, the grid control renderer will use some default color, depending on the control's style settings.
         """
         ...
+    @InactiveSelectionBackgroundColor.setter
+    def InactiveSelectionBackgroundColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def InactiveSelectionTextColor(self) -> 'Color_68e908c5':
         """
@@ -182,6 +230,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         
         If this property has a value of VOID, the grid control renderer will use some default color, depending on the control's style settings.
         """
+        ...
+    @InactiveSelectionTextColor.setter
+    def InactiveSelectionTextColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def RowHeaderWidth(self) -> int:
@@ -193,6 +244,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         The value given here is ignored if ShowRowHeader is FALSE.
         """
         ...
+    @RowHeaderWidth.setter
+    def RowHeaderWidth(self, value: int) -> None:
+        ...
     @property
     def RowHeight(self) -> int:
         """
@@ -200,6 +254,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         
         The height is specified in application font units - see com.sun.star.util.MeasureUnit.
         """
+        ...
+    @RowHeight.setter
+    def RowHeight(self, value: int) -> None:
         ...
     @property
     def SelectionModel(self) -> 'SelectionType_bd790c0b':
@@ -209,6 +266,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         The default value is com.sun.star.view.SelectionType.SINGLE
         """
         ...
+    @SelectionModel.setter
+    def SelectionModel(self, value: 'SelectionType_bd790c0b') -> None:
+        ...
     @property
     def ShowColumnHeader(self) -> bool:
         """
@@ -216,6 +276,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         
         The default value is TRUE
         """
+        ...
+    @ShowColumnHeader.setter
+    def ShowColumnHeader(self, value: bool) -> None:
         ...
     @property
     def ShowRowHeader(self) -> bool:
@@ -225,11 +288,17 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         The default value is FALSE
         """
         ...
+    @ShowRowHeader.setter
+    def ShowRowHeader(self, value: bool) -> None:
+        ...
     @property
     def Tabstop(self) -> bool:
         """
         Specifies that the control can be reached with the TAB key.
         """
+        ...
+    @Tabstop.setter
+    def Tabstop(self, value: bool) -> None:
         ...
     @property
     def TextColor(self) -> 'Color_68e908c5':
@@ -239,6 +308,9 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         If this property has a value of VOID, the grid control renderer will use some default color, depending on the control's style settings.
         """
         ...
+    @TextColor.setter
+    def TextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def TextLineColor(self) -> 'Color_68e908c5':
         """
@@ -247,11 +319,17 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         If this property has a value of VOID, the grid control renderer will use some default color, depending on the control's style settings.
         """
         ...
+    @TextLineColor.setter
+    def TextLineColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def UseGridLines(self) -> bool:
         """
         controls whether or not to paint horizontal and vertical lines between the grid cells.
         """
+        ...
+    @UseGridLines.setter
+    def UseGridLines(self, value: bool) -> None:
         ...
     @property
     def VScroll(self) -> bool:
@@ -261,10 +339,16 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
         The default value is FALSE
         """
         ...
+    @VScroll.setter
+    def VScroll(self, value: bool) -> None:
+        ...
     @property
     def VerticalAlign(self) -> 'VerticalAlignment_8d0e12':
         """
         specifies the vertical alignment of the content in the control.
         """
+        ...
+    @VerticalAlign.setter
+    def VerticalAlign(self, value: 'VerticalAlignment_8d0e12') -> None:
         ...
 

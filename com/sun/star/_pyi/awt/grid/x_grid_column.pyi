@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,7 +56,9 @@ class XGridColumn(XComponent_98dc0ab5, XCloneable_99d00aa3):
         specifies the current width of the column.
         """
         ...
-
+    @ColumnWidth.setter
+    def ColumnWidth(self, value: int) -> None:
+        ...
     @property
     def DataColumnIndex(self) -> int:
         """
@@ -69,7 +71,9 @@ class XGridColumn(XComponent_98dc0ab5, XCloneable_99d00aa3):
         If DataColumnIndex is negative, the it will be ignored, then the column's index within its column model, as determined by the Index attribute, will be used.
         """
         ...
-
+    @DataColumnIndex.setter
+    def DataColumnIndex(self, value: int) -> None:
+        ...
     @property
     def Flexibility(self) -> int:
         """
@@ -84,7 +88,9 @@ class XGridColumn(XComponent_98dc0ab5, XCloneable_99d00aa3):
         A column's flexibility cannot be negative, attempts to set a negative value will raise an exception.
         """
         ...
-
+    @Flexibility.setter
+    def Flexibility(self, value: int) -> None:
+        ...
     @property
     def HelpText(self) -> str:
         """
@@ -93,14 +99,18 @@ class XGridColumn(XComponent_98dc0ab5, XCloneable_99d00aa3):
         A grid control will usually display a column's help text as tooltip.
         """
         ...
-
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
+        ...
     @property
     def HorizontalAlign(self) -> 'HorizontalAlignment_1f800f02':
         """
         Specifies the horizontal alignment of the content in the control.
         """
         ...
-
+    @HorizontalAlign.setter
+    def HorizontalAlign(self, value: 'HorizontalAlignment_1f800f02') -> None:
+        ...
     @property
     def Identifier(self) -> object:
         """
@@ -109,7 +119,9 @@ class XGridColumn(XComponent_98dc0ab5, XCloneable_99d00aa3):
         This identifier will not be evaluated by the grid control, or its model. It is merely for clients to identify particular columns.
         """
         ...
-
+    @Identifier.setter
+    def Identifier(self, value: object) -> None:
+        ...
     @property
     def Index(self) -> int:
         """
@@ -118,21 +130,27 @@ class XGridColumn(XComponent_98dc0ab5, XCloneable_99d00aa3):
         If the column is not yet part of a column model, Index is -1.
         """
         ...
-
+    @Index.setter
+    def Index(self, value: int) -> None:
+        ...
     @property
     def MaxWidth(self) -> int:
         """
         specifies the maximal width the column can have.
         """
         ...
-
+    @MaxWidth.setter
+    def MaxWidth(self, value: int) -> None:
+        ...
     @property
     def MinWidth(self) -> int:
         """
         specifies the minimal width the column can have.
         """
         ...
-
+    @MinWidth.setter
+    def MinWidth(self, value: int) -> None:
+        ...
     @property
     def Resizeable(self) -> bool:
         """
@@ -141,12 +159,16 @@ class XGridColumn(XComponent_98dc0ab5, XCloneable_99d00aa3):
         If this is TRUE, the user can interactively change the column's width. Also, the column is subject to auto-resizing, if its Flexibility attribute is greater 0.
         """
         ...
-
+    @Resizeable.setter
+    def Resizeable(self, value: bool) -> None:
+        ...
     @property
     def Title(self) -> str:
         """
         A title is displayed in the column header row if UnoControlGridModel.ShowColumnHeader() is set to TRUE
         """
         ...
-
+    @Title.setter
+    def Title(self, value: str) -> None:
+        ...
 

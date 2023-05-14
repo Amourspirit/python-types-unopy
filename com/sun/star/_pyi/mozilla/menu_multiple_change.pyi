@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class MenuMultipleChange(object):
         """
         ...
 
+    @Image.setter
+    def Image(self, value: uno.ByteSequence) -> None:
+        ...
 
     @property
     def ID(self) -> int:
@@ -67,6 +70,9 @@ class MenuMultipleChange(object):
         """
         ...
 
+    @ID.setter
+    def ID(self, value: int) -> None:
+        ...
 
     @property
     def GroupID(self) -> int:
@@ -75,6 +81,9 @@ class MenuMultipleChange(object):
         """
         ...
 
+    @GroupID.setter
+    def GroupID(self, value: int) -> None:
+        ...
 
     @property
     def PreItemID(self) -> int:
@@ -83,6 +92,9 @@ class MenuMultipleChange(object):
         """
         ...
 
+    @PreItemID.setter
+    def PreItemID(self, value: int) -> None:
+        ...
 
     @property
     def ItemText(self) -> str:
@@ -91,6 +103,9 @@ class MenuMultipleChange(object):
         """
         ...
 
+    @ItemText.setter
+    def ItemText(self, value: str) -> None:
+        ...
 
     @property
     def IsVisible(self) -> bool:
@@ -99,6 +114,9 @@ class MenuMultipleChange(object):
         """
         ...
 
+    @IsVisible.setter
+    def IsVisible(self, value: bool) -> None:
+        ...
 
     @property
     def IsActive(self) -> bool:
@@ -107,6 +125,9 @@ class MenuMultipleChange(object):
         """
         ...
 
+    @IsActive.setter
+    def IsActive(self, value: bool) -> None:
+        ...
 
     @property
     def IsCheckable(self) -> bool:
@@ -115,6 +136,9 @@ class MenuMultipleChange(object):
         """
         ...
 
+    @IsCheckable.setter
+    def IsCheckable(self, value: bool) -> None:
+        ...
 
     @property
     def IsChecked(self) -> bool:
@@ -123,4 +147,7 @@ class MenuMultipleChange(object):
         """
         ...
 
+    @IsChecked.setter
+    def IsChecked(self, value: bool) -> None:
+        ...
 

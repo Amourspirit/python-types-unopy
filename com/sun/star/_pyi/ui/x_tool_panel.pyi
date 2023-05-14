@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,5 +48,7 @@ class XToolPanel(ABC):
         It is allowed for an implementation to return NULL here, but in this case some functionality, for instance automatic positioning of the tool panel, might not be available, and must be implemented by the tool panel itself.
         """
         ...
-
+    @Window.setter
+    def Window(self, value: 'XWindow_713b0924') -> None:
+        ...
 

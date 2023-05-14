@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,11 +35,17 @@ class Author(TextField_90260a56):
         this is the display format for this field
         """
         ...
+    @AuthorFormat.setter
+    def AuthorFormat(self, value: int) -> None:
+        ...
     @property
     def Content(self) -> str:
         """
         the is the content of this field
         """
+        ...
+    @Content.setter
+    def Content(self, value: str) -> None:
         ...
     @property
     def CurrentPresentation(self) -> str:
@@ -49,16 +55,25 @@ class Author(TextField_90260a56):
         This property is especially useful for import/export purposes.
         """
         ...
+    @CurrentPresentation.setter
+    def CurrentPresentation(self, value: str) -> None:
+        ...
     @property
     def FullName(self) -> bool:
         """
         determines whether the full name of the author is displayed rather than the initials.
         """
         ...
+    @FullName.setter
+    def FullName(self, value: bool) -> None:
+        ...
     @property
     def IsFixed(self) -> bool:
         """
         If this flag is set to false the author will be overridden by the current author each time the document is saved.
         """
+        ...
+    @IsFixed.setter
+    def IsFixed(self, value: bool) -> None:
         ...
 

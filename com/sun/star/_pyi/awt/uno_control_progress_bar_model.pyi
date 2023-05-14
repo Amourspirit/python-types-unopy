@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -42,11 +42,17 @@ class UnoControlProgressBarModel(UnoControlModel_c8ce0c58):
         specifies the background color (RGB) of the control.
         """
         ...
+    @BackgroundColor.setter
+    def BackgroundColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
+    @Border.setter
+    def Border(self, value: int) -> None:
         ...
     @property
     def BorderColor(self) -> int:
@@ -60,11 +66,17 @@ class UnoControlProgressBarModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @BorderColor.setter
+    def BorderColor(self, value: int) -> None:
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
+        ...
+    @Enabled.setter
+    def Enabled(self, value: bool) -> None:
         ...
     @property
     def FillColor(self) -> 'Color_68e908c5':
@@ -72,11 +84,17 @@ class UnoControlProgressBarModel(UnoControlModel_c8ce0c58):
         specifies the fill color (RGB) of the control.
         """
         ...
+    @FillColor.setter
+    def FillColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the control.
         """
+        ...
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
         ...
     @property
     def HelpURL(self) -> str:
@@ -84,11 +102,17 @@ class UnoControlProgressBarModel(UnoControlModel_c8ce0c58):
         specifies the help URL of the control.
         """
         ...
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
+        ...
     @property
     def Printable(self) -> bool:
         """
         specifies that the control will be printed with the document.
         """
+        ...
+    @Printable.setter
+    def Printable(self, value: bool) -> None:
         ...
     @property
     def ProgressValue(self) -> int:
@@ -96,16 +120,25 @@ class UnoControlProgressBarModel(UnoControlModel_c8ce0c58):
         specifies the progress value of the control.
         """
         ...
+    @ProgressValue.setter
+    def ProgressValue(self, value: int) -> None:
+        ...
     @property
     def ProgressValueMax(self) -> int:
         """
         specifies the maximum progress value of the control.
         """
         ...
+    @ProgressValueMax.setter
+    def ProgressValueMax(self, value: int) -> None:
+        ...
     @property
     def ProgressValueMin(self) -> int:
         """
         specifies the minimum progress value of the control.
         """
+        ...
+    @ProgressValueMin.setter
+    def ProgressValueMin(self, value: int) -> None:
         ...
 

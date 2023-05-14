@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -47,11 +47,17 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         specifies the background color (RGB) of the dialog.
         """
         ...
+    @BackgroundColor.setter
+    def BackgroundColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def Closeable(self) -> bool:
         """
         specifies if the dialog is closeable.
         """
+        ...
+    @Closeable.setter
+    def Closeable(self, value: bool) -> None:
         ...
     @property
     def DesktopAsParent(self) -> bool:
@@ -63,11 +69,17 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
             OOo 2.3
         """
         ...
+    @DesktopAsParent.setter
+    def DesktopAsParent(self, value: bool) -> None:
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether a dialog is enabled or disabled.
         """
+        ...
+    @Enabled.setter
+    def Enabled(self, value: bool) -> None:
         ...
     @property
     def FontDescriptor(self) -> 'FontDescriptor_bc110c0a':
@@ -75,17 +87,26 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         specifies the font attributes of the text in the caption bar of the dialog.
         """
         ...
+    @FontDescriptor.setter
+    def FontDescriptor(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def FontEmphasisMark(self) -> int:
         """
         specifies the com.sun.star.text.FontEmphasis value of the text in the caption bar of the dialog.
         """
         ...
+    @FontEmphasisMark.setter
+    def FontEmphasisMark(self, value: int) -> None:
+        ...
     @property
     def FontRelief(self) -> int:
         """
         specifies the com.sun.star.text.FontRelief value of the text in the caption bar of the dialog.
         """
+        ...
+    @FontRelief.setter
+    def FontRelief(self, value: int) -> None:
         ...
     @property
     def Graphic(self) -> 'XGraphic_a4da0afc':
@@ -99,6 +120,9 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
             OOo 2.4
         """
         ...
+    @Graphic.setter
+    def Graphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def HScroll(self) -> bool:
         """
@@ -109,17 +133,26 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
             LibreOffice 4.0
         """
         ...
+    @HScroll.setter
+    def HScroll(self, value: bool) -> None:
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the dialog.
         """
         ...
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the dialog.
         """
+        ...
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
         ...
     @property
     def ImageURL(self) -> str:
@@ -131,11 +164,17 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
             OOo 2.4
         """
         ...
+    @ImageURL.setter
+    def ImageURL(self, value: str) -> None:
+        ...
     @property
     def Moveable(self) -> bool:
         """
         specifies if the dialog is moveable.
         """
+        ...
+    @Moveable.setter
+    def Moveable(self, value: bool) -> None:
         ...
     @property
     def ScrollHeight(self) -> int:
@@ -147,6 +186,9 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
             LibreOffice 4.0
         """
         ...
+    @ScrollHeight.setter
+    def ScrollHeight(self, value: int) -> None:
+        ...
     @property
     def ScrollLeft(self) -> int:
         """
@@ -156,6 +198,9 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         
             LibreOffice 4.0
         """
+        ...
+    @ScrollLeft.setter
+    def ScrollLeft(self, value: int) -> None:
         ...
     @property
     def ScrollTop(self) -> int:
@@ -167,6 +212,9 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
             LibreOffice 4.0
         """
         ...
+    @ScrollTop.setter
+    def ScrollTop(self, value: int) -> None:
+        ...
     @property
     def ScrollWidth(self) -> int:
         """
@@ -177,11 +225,17 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
             LibreOffice 4.0
         """
         ...
+    @ScrollWidth.setter
+    def ScrollWidth(self, value: int) -> None:
+        ...
     @property
     def Sizeable(self) -> bool:
         """
         specifies if the dialog is sizeable.
         """
+        ...
+    @Sizeable.setter
+    def Sizeable(self, value: bool) -> None:
         ...
     @property
     def TextColor(self) -> 'Color_68e908c5':
@@ -189,17 +243,26 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         specifies the text color (RGB) of the dialog.
         """
         ...
+    @TextColor.setter
+    def TextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def TextLineColor(self) -> 'Color_68e908c5':
         """
         specifies the text line color (RGB) of the dialog.
         """
         ...
+    @TextLineColor.setter
+    def TextLineColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def Title(self) -> str:
         """
         specifies the text that is displayed in the caption bar of the dialog.
         """
+        ...
+    @Title.setter
+    def Title(self, value: str) -> None:
         ...
     @property
     def VScroll(self) -> bool:
@@ -210,5 +273,8 @@ class UnoControlDialogModel(UnoControlModel_c8ce0c58, XContainer_d6fb0cc6, XName
         
             LibreOffice 4.0
         """
+        ...
+    @VScroll.setter
+    def VScroll(self, value: bool) -> None:
         ...
 

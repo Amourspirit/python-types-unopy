@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,16 +40,25 @@ class PluginShape(Shape_85cc09e5):
         This sequence contains parameters that are passed to the application that renders the plugin when it is initialized.
         """
         ...
+    @PluginCommands.setter
+    def PluginCommands(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def PluginMimeType(self) -> str:
         """
         This property specifies the media-type to which this plugin should be registered.
         """
         ...
+    @PluginMimeType.setter
+    def PluginMimeType(self, value: str) -> None:
+        ...
     @property
     def PluginURL(self) -> str:
         """
         This property specifies the url to the binary object.
         """
+        ...
+    @PluginURL.setter
+    def PluginURL(self, value: str) -> None:
         ...
 

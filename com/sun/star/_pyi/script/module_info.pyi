@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,9 +48,15 @@ class ModuleInfo(object):
     def ModuleObject(self) -> XInterface_8f010a43:
         ...
 
+    @ModuleObject.setter
+    def ModuleObject(self, value: XInterface_8f010a43) -> None:
+        ...
 
     @property
     def ModuleType(self) -> int:
         ...
 
+    @ModuleType.setter
+    def ModuleType(self, value: int) -> None:
+        ...
 

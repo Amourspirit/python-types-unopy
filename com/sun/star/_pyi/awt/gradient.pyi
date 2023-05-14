@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -63,6 +63,9 @@ class Gradient(object):
         """
         ...
 
+    @Style.setter
+    def Style(self, value: GradientStyle_b02b0b93) -> None:
+        ...
 
     @property
     def StartColor(self) -> Color_68e908c5:
@@ -71,6 +74,9 @@ class Gradient(object):
         """
         ...
 
+    @StartColor.setter
+    def StartColor(self, value: Color_68e908c5) -> None:
+        ...
 
     @property
     def EndColor(self) -> Color_68e908c5:
@@ -79,6 +85,9 @@ class Gradient(object):
         """
         ...
 
+    @EndColor.setter
+    def EndColor(self, value: Color_68e908c5) -> None:
+        ...
 
     @property
     def Angle(self) -> int:
@@ -87,6 +96,9 @@ class Gradient(object):
         """
         ...
 
+    @Angle.setter
+    def Angle(self, value: int) -> None:
+        ...
 
     @property
     def Border(self) -> int:
@@ -95,6 +107,9 @@ class Gradient(object):
         """
         ...
 
+    @Border.setter
+    def Border(self, value: int) -> None:
+        ...
 
     @property
     def XOffset(self) -> int:
@@ -105,6 +120,9 @@ class Gradient(object):
         """
         ...
 
+    @XOffset.setter
+    def XOffset(self, value: int) -> None:
+        ...
 
     @property
     def YOffset(self) -> int:
@@ -115,6 +133,9 @@ class Gradient(object):
         """
         ...
 
+    @YOffset.setter
+    def YOffset(self, value: int) -> None:
+        ...
 
     @property
     def StartIntensity(self) -> int:
@@ -125,6 +146,9 @@ class Gradient(object):
         """
         ...
 
+    @StartIntensity.setter
+    def StartIntensity(self, value: int) -> None:
+        ...
 
     @property
     def EndIntensity(self) -> int:
@@ -133,6 +157,9 @@ class Gradient(object):
         """
         ...
 
+    @EndIntensity.setter
+    def EndIntensity(self, value: int) -> None:
+        ...
 
     @property
     def StepCount(self) -> int:
@@ -143,4 +170,7 @@ class Gradient(object):
         """
         ...
 
+    @StepCount.setter
+    def StepCount(self, value: int) -> None:
+        ...
 

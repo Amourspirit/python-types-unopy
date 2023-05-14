@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,11 +41,17 @@ class DatabaseNumberOfSet(DependentTextField_fed90ded):
         contains the conditions that determines whether the SetNumber is applied or not.
         """
         ...
+    @Condition.setter
+    def Condition(self, value: str) -> None:
+        ...
     @property
     def DataBaseName(self) -> str:
         """
         specifies the database name.
         """
+        ...
+    @DataBaseName.setter
+    def DataBaseName(self, value: str) -> None:
         ...
     @property
     def DataBaseResource(self) -> str:
@@ -57,6 +63,9 @@ class DatabaseNumberOfSet(DependentTextField_fed90ded):
             OOo 2.0
         """
         ...
+    @DataBaseResource.setter
+    def DataBaseResource(self, value: str) -> None:
+        ...
     @property
     def DataBaseURL(self) -> str:
         """
@@ -67,11 +76,17 @@ class DatabaseNumberOfSet(DependentTextField_fed90ded):
             OOo 2.0
         """
         ...
+    @DataBaseURL.setter
+    def DataBaseURL(self, value: str) -> None:
+        ...
     @property
     def DataCommandType(self) -> int:
         """
         determines the interpretation of the property DataTableName.
         """
+        ...
+    @DataCommandType.setter
+    def DataCommandType(self, value: int) -> None:
         ...
     @property
     def DataTableName(self) -> str:
@@ -79,10 +94,16 @@ class DatabaseNumberOfSet(DependentTextField_fed90ded):
         contains the name of the database table, query or a statement depending on the DataCommandType property.
         """
         ...
+    @DataTableName.setter
+    def DataTableName(self, value: str) -> None:
+        ...
     @property
     def SetNumber(self) -> int:
         """
         contains the set number that is to be applied.
         """
+        ...
+    @SetNumber.setter
+    def SetNumber(self, value: int) -> None:
         ...
 

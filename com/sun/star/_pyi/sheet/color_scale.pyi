@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,5 +35,8 @@ class ColorScale(XConditionEntry_e2340d32):
     def ColorScaleEntries(self) -> 'typing.Tuple[XColorScaleEntry_ee810d72, ...]':
         """
         """
+        ...
+    @ColorScaleEntries.setter
+    def ColorScaleEntries(self, value: 'typing.Tuple[XColorScaleEntry_ee810d72, ...]') -> None:
         ...
 

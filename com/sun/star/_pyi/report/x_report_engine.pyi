@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -89,7 +89,9 @@ class XReportEngine(XPropertySet_bc180bfa, XComponent_98dc0ab5):
         specifies the active connection which is used to create the resulting report.
         """
         ...
-
+    @ActiveConnection.setter
+    def ActiveConnection(self, value: 'XConnection_a36a0b0c') -> None:
+        ...
     @property
     def MaxRows(self) -> int:
         """
@@ -98,19 +100,25 @@ class XReportEngine(XPropertySet_bc180bfa, XComponent_98dc0ab5):
         If the limit is exceeded, the excess rows are silently dropped. There is no limitation, if set to zero.
         """
         ...
-
+    @MaxRows.setter
+    def MaxRows(self, value: int) -> None:
+        ...
     @property
     def ReportDefinition(self) -> 'XReportDefinition_ec30e81':
         """
         specifies the report definition object which is used to create the resulting report.
         """
         ...
-
+    @ReportDefinition.setter
+    def ReportDefinition(self, value: 'XReportDefinition_ec30e81') -> None:
+        ...
     @property
     def StatusIndicator(self) -> 'XStatusIndicator_e2d00d34':
         """
         specifies the status indicator which shows the progress of the report generation process.
         """
         ...
-
+    @StatusIndicator.setter
+    def StatusIndicator(self, value: 'XStatusIndicator_e2d00d34') -> None:
+        ...
 

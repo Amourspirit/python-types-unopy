@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,16 +35,25 @@ class JumpEdit(TextField_90260a56):
         determines a hint that is displayed at the user interface as tip.
         """
         ...
+    @Hint.setter
+    def Hint(self, value: str) -> None:
+        ...
     @property
     def PlaceHolder(self) -> str:
         """
         determines the text of the place holder.
         """
         ...
+    @PlaceHolder.setter
+    def PlaceHolder(self, value: str) -> None:
+        ...
     @property
     def PlaceHolderType(self) -> int:
         """
         determines the type of the place holder as described in com.sun.star.text.PlaceholderType.
         """
+        ...
+    @PlaceHolderType.setter
+    def PlaceHolderType(self, value: int) -> None:
         ...
 

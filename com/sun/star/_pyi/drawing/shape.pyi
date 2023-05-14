@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -55,11 +55,17 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
             LibreOffice 4.2
         """
         ...
+    @InteropGrabBag.setter
+    def InteropGrabBag(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def Hyperlink(self) -> str:
         """
         this property lets you get and set a hyperlink for this shape.
         """
+        ...
+    @Hyperlink.setter
+    def Hyperlink(self, value: str) -> None:
         ...
     @property
     def LayerID(self) -> int:
@@ -67,11 +73,17 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         This is the ID of the Layer to which this Shape is attached.
         """
         ...
+    @LayerID.setter
+    def LayerID(self, value: int) -> None:
+        ...
     @property
     def LayerName(self) -> str:
         """
         This is the name of the Layer to which this Shape is attached.
         """
+        ...
+    @LayerName.setter
+    def LayerName(self, value: str) -> None:
         ...
     @property
     def MoveProtect(self) -> bool:
@@ -79,11 +91,17 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         With this set to TRUE, this Shape cannot be moved interactively in the user interface.
         """
         ...
+    @MoveProtect.setter
+    def MoveProtect(self, value: bool) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
         This is the name of this Shape.
         """
+        ...
+    @Name.setter
+    def Name(self, value: str) -> None:
         ...
     @property
     def NavigationOrder(self) -> int:
@@ -93,11 +111,17 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         If this value is negative, the navigation order for this shapes page is equal to the z-order.
         """
         ...
+    @NavigationOrder.setter
+    def NavigationOrder(self, value: int) -> None:
+        ...
     @property
     def Printable(self) -> bool:
         """
         If this is FALSE, the Shape is not visible on printer outputs.
         """
+        ...
+    @Printable.setter
+    def Printable(self, value: bool) -> None:
         ...
     @property
     def RelativeHeight(self) -> int:
@@ -111,6 +135,9 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
             LibreOffice 4.3
         """
         ...
+    @RelativeHeight.setter
+    def RelativeHeight(self, value: int) -> None:
+        ...
     @property
     def RelativeHeightRelation(self) -> int:
         """
@@ -122,6 +149,9 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         
             LibreOffice 4.3
         """
+        ...
+    @RelativeHeightRelation.setter
+    def RelativeHeightRelation(self, value: int) -> None:
         ...
     @property
     def RelativeWidth(self) -> int:
@@ -135,6 +165,9 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
             LibreOffice 4.3
         """
         ...
+    @RelativeWidth.setter
+    def RelativeWidth(self, value: int) -> None:
+        ...
     @property
     def RelativeWidthRelation(self) -> int:
         """
@@ -147,6 +180,9 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
             LibreOffice 4.3
         """
         ...
+    @RelativeWidthRelation.setter
+    def RelativeWidthRelation(self, value: int) -> None:
+        ...
     @property
     def ShapeUserDefinedAttributes(self) -> 'XNameContainer_cb90e47':
         """
@@ -155,17 +191,26 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         They will be saved to and restored from automatic styles inside xml files.
         """
         ...
+    @ShapeUserDefinedAttributes.setter
+    def ShapeUserDefinedAttributes(self, value: 'XNameContainer_cb90e47') -> None:
+        ...
     @property
     def SizeProtect(self) -> bool:
         """
         With this set to TRUE, this Shape may not be sized interactively in the user interface.
         """
         ...
+    @SizeProtect.setter
+    def SizeProtect(self, value: bool) -> None:
+        ...
     @property
     def Style(self) -> 'XStyle_7c7f09a2':
         """
         this property lets you get and set a style for this shape.
         """
+        ...
+    @Style.setter
+    def Style(self, value: 'XStyle_7c7f09a2') -> None:
         ...
     @property
     def Transformation(self) -> 'HomogenMatrix3_f0fb0d69':
@@ -175,6 +220,9 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         The transformation is a 3x3 homogeneous matrix and can contain translation, rotation, shearing and scaling.
         """
         ...
+    @Transformation.setter
+    def Transformation(self, value: 'HomogenMatrix3_f0fb0d69') -> None:
+        ...
     @property
     def Visible(self) -> bool:
         """
@@ -183,10 +231,16 @@ class Shape(XPropertySet_bc180bfa, XTolerantMultiPropertySet_7bd4114e, XGluePoin
         Please note that the Shape may still be visible when printed, see Printable.
         """
         ...
+    @Visible.setter
+    def Visible(self, value: bool) -> None:
+        ...
     @property
     def ZOrder(self) -> int:
         """
         is used to query or change the ZOrder of this Shape.
         """
+        ...
+    @ZOrder.setter
+    def ZOrder(self, value: int) -> None:
         ...
 

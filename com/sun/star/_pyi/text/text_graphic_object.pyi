@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,6 +43,9 @@ class TextGraphicObject(BaseFrame_8f020a33):
         contains the original size of the bitmap in the graphic object.
         """
         ...
+    @ActualSize.setter
+    def ActualSize(self, value: 'Size_576707ef') -> None:
+        ...
     @property
     def AdjustBlue(self) -> int:
         """
@@ -50,6 +53,9 @@ class TextGraphicObject(BaseFrame_8f020a33):
         
         It contains percentage values between -100 and +100.
         """
+        ...
+    @AdjustBlue.setter
+    def AdjustBlue(self, value: int) -> None:
         ...
     @property
     def AdjustContrast(self) -> int:
@@ -59,6 +65,9 @@ class TextGraphicObject(BaseFrame_8f020a33):
         It contains percentage values between -100 and +100.
         """
         ...
+    @AdjustContrast.setter
+    def AdjustContrast(self, value: int) -> None:
+        ...
     @property
     def AdjustGreen(self) -> int:
         """
@@ -66,6 +75,9 @@ class TextGraphicObject(BaseFrame_8f020a33):
         
         It contains percentage values between -100 and +100.
         """
+        ...
+    @AdjustGreen.setter
+    def AdjustGreen(self, value: int) -> None:
         ...
     @property
     def AdjustLuminance(self) -> int:
@@ -75,6 +87,9 @@ class TextGraphicObject(BaseFrame_8f020a33):
         It contains percentage values between -100 and +100.
         """
         ...
+    @AdjustLuminance.setter
+    def AdjustLuminance(self, value: int) -> None:
+        ...
     @property
     def AdjustRed(self) -> int:
         """
@@ -83,11 +98,17 @@ class TextGraphicObject(BaseFrame_8f020a33):
         It contains percentage values between -100 and +100.
         """
         ...
+    @AdjustRed.setter
+    def AdjustRed(self, value: int) -> None:
+        ...
     @property
     def ContentProtected(self) -> bool:
         """
         determines if the content is protected against changes from the user interface.
         """
+        ...
+    @ContentProtected.setter
+    def ContentProtected(self, value: bool) -> None:
         ...
     @property
     def ContourOutside(self) -> bool:
@@ -95,11 +116,17 @@ class TextGraphicObject(BaseFrame_8f020a33):
         the text flows only around the contour of the object.
         """
         ...
+    @ContourOutside.setter
+    def ContourOutside(self, value: bool) -> None:
+        ...
     @property
     def ContourPolyPolygon(self) -> 'PointSequenceSequence_5c591070':
         """
         contains the contour of the object as PolyPolygon.
         """
+        ...
+    @ContourPolyPolygon.setter
+    def ContourPolyPolygon(self, value: 'PointSequenceSequence_5c591070') -> None:
         ...
     @property
     def Gamma(self) -> float:
@@ -107,11 +134,17 @@ class TextGraphicObject(BaseFrame_8f020a33):
         determines the gamma value of the graphic.
         """
         ...
+    @Gamma.setter
+    def Gamma(self, value: float) -> None:
+        ...
     @property
     def Graphic(self) -> 'XGraphic_a4da0afc':
         """
         contains the background graphic of the object.
         """
+        ...
+    @Graphic.setter
+    def Graphic(self, value: 'XGraphic_a4da0afc') -> None:
         ...
     @property
     def GraphicColorMode(self) -> 'ColorMode_b13e0b78':
@@ -119,17 +152,26 @@ class TextGraphicObject(BaseFrame_8f020a33):
         contains the ColorMode as com.sun.star.drawing.ColorMode.
         """
         ...
+    @GraphicColorMode.setter
+    def GraphicColorMode(self, value: 'ColorMode_b13e0b78') -> None:
+        ...
     @property
     def GraphicCrop(self) -> 'GraphicCrop_a58e0b1f':
         """
         contains the cropping of the object.
         """
         ...
+    @GraphicCrop.setter
+    def GraphicCrop(self, value: 'GraphicCrop_a58e0b1f') -> None:
+        ...
     @property
     def GraphicFilter(self) -> str:
         """
         contains the name of the filter of the background graphic of the object.
         """
+        ...
+    @GraphicFilter.setter
+    def GraphicFilter(self, value: str) -> None:
         ...
     @property
     def GraphicIsInverted(self) -> bool:
@@ -139,6 +181,9 @@ class TextGraphicObject(BaseFrame_8f020a33):
         It contains percentage values between -100 and +100.
         """
         ...
+    @GraphicIsInverted.setter
+    def GraphicIsInverted(self, value: bool) -> None:
+        ...
     @property
     def GraphicURL(self) -> str:
         """
@@ -147,11 +192,17 @@ class TextGraphicObject(BaseFrame_8f020a33):
         Note the new behaviour since it was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When a URL is set, then it will load the image and set the Graphic property.
         """
         ...
+    @GraphicURL.setter
+    def GraphicURL(self, value: str) -> None:
+        ...
     @property
     def HoriMirroredOnEvenPages(self) -> bool:
         """
         determines if the object is horizontally mirrored on even pages.
         """
+        ...
+    @HoriMirroredOnEvenPages.setter
+    def HoriMirroredOnEvenPages(self, value: bool) -> None:
         ...
     @property
     def HoriMirroredOnOddPages(self) -> bool:
@@ -159,11 +210,17 @@ class TextGraphicObject(BaseFrame_8f020a33):
         determines if the object is horizontally mirrored on odd pages.
         """
         ...
+    @HoriMirroredOnOddPages.setter
+    def HoriMirroredOnOddPages(self, value: bool) -> None:
+        ...
     @property
     def ImageMap(self) -> 'XIndexContainer_1c040ebe':
         """
         returns the client-side image map if one is assigned to the object.
         """
+        ...
+    @ImageMap.setter
+    def ImageMap(self, value: 'XIndexContainer_1c040ebe') -> None:
         ...
     @property
     def SurroundContour(self) -> bool:
@@ -171,16 +228,25 @@ class TextGraphicObject(BaseFrame_8f020a33):
         determines if the text wraps around the contour of the object.
         """
         ...
+    @SurroundContour.setter
+    def SurroundContour(self, value: bool) -> None:
+        ...
     @property
     def Transparency(self) -> int:
         """
         contains percentage values between -100 and +100.
         """
         ...
+    @Transparency.setter
+    def Transparency(self, value: int) -> None:
+        ...
     @property
     def VertMirrored(self) -> bool:
         """
         determines if the object is mirrored vertically.
         """
+        ...
+    @VertMirrored.setter
+    def VertMirrored(self, value: bool) -> None:
         ...
 

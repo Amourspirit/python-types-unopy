@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -67,6 +67,9 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 
     @property
     def SourceCode(self) -> str:
@@ -77,6 +80,9 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         ...
 
+    @SourceCode.setter
+    def SourceCode(self, value: str) -> None:
+        ...
 
     @property
     def StartLine(self) -> int:
@@ -87,6 +93,9 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         ...
 
+    @StartLine.setter
+    def StartLine(self, value: int) -> None:
+        ...
 
     @property
     def StartColumn(self) -> int:
@@ -95,6 +104,9 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         ...
 
+    @StartColumn.setter
+    def StartColumn(self, value: int) -> None:
+        ...
 
     @property
     def EndLine(self) -> int:
@@ -103,6 +115,9 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         ...
 
+    @EndLine.setter
+    def EndLine(self, value: int) -> None:
+        ...
 
     @property
     def EndColumn(self) -> int:
@@ -111,6 +126,9 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         ...
 
+    @EndColumn.setter
+    def EndColumn(self, value: int) -> None:
+        ...
 
     @property
     def ErrorMessage(self) -> str:
@@ -121,6 +139,9 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         ...
 
+    @ErrorMessage.setter
+    def ErrorMessage(self, value: str) -> None:
+        ...
 
     @property
     def Reason(self) -> InterruptReason_f3d00dd2:
@@ -129,4 +150,7 @@ class InterruptEngineEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Reason.setter
+    def Reason(self, value: InterruptReason_f3d00dd2) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -39,11 +39,17 @@ class CharacterPropertiesAsian(ABC):
         This property contains the text encoding of the font as specified in com.sun.star.awt.CharSet.
         """
         ...
+    @CharFontCharSetAsian.setter
+    def CharFontCharSetAsian(self, value: int) -> None:
+        ...
     @property
     def CharFontFamilyAsian(self) -> int:
         """
         This property contains font family as specified in com.sun.star.awt.FontFamily .
         """
+        ...
+    @CharFontFamilyAsian.setter
+    def CharFontFamilyAsian(self, value: int) -> None:
         ...
     @property
     def CharFontNameAsian(self) -> str:
@@ -53,11 +59,17 @@ class CharacterPropertiesAsian(ABC):
         It may contain more than one name separated by comma.
         """
         ...
+    @CharFontNameAsian.setter
+    def CharFontNameAsian(self, value: str) -> None:
+        ...
     @property
     def CharFontPitchAsian(self) -> int:
         """
         This property contains the font pitch as specified in com.sun.star.awt.FontPitch.
         """
+        ...
+    @CharFontPitchAsian.setter
+    def CharFontPitchAsian(self, value: int) -> None:
         ...
     @property
     def CharFontStyleNameAsian(self) -> str:
@@ -67,11 +79,17 @@ class CharacterPropertiesAsian(ABC):
         This property may be empty.
         """
         ...
+    @CharFontStyleNameAsian.setter
+    def CharFontStyleNameAsian(self, value: str) -> None:
+        ...
     @property
     def CharHeightAsian(self) -> float:
         """
         This value contains the height of the characters in point.
         """
+        ...
+    @CharHeightAsian.setter
+    def CharHeightAsian(self, value: float) -> None:
         ...
     @property
     def CharLocaleAsian(self) -> 'Locale_70d308fa':
@@ -79,16 +97,25 @@ class CharacterPropertiesAsian(ABC):
         contains the value of the locale.
         """
         ...
+    @CharLocaleAsian.setter
+    def CharLocaleAsian(self, value: 'Locale_70d308fa') -> None:
+        ...
     @property
     def CharPostureAsian(self) -> 'FontSlant_849509ed':
         """
         This property contains the value of the posture of the document.
         """
         ...
+    @CharPostureAsian.setter
+    def CharPostureAsian(self, value: 'FontSlant_849509ed') -> None:
+        ...
     @property
     def CharWeightAsian(self) -> float:
         """
         This property contains the value of the font weight.
         """
+        ...
+    @CharWeightAsian.setter
+    def CharWeightAsian(self, value: float) -> None:
         ...
 

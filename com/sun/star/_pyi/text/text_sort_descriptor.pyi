@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -39,11 +39,17 @@ class TextSortDescriptor(SortDescriptor_ca680c8d):
         contains the character that marks the separation of columns.
         """
         ...
+    @Delimiter.setter
+    def Delimiter(self, value: str) -> None:
+        ...
     @property
     def IsSortAscending0(self) -> bool:
         """
         determines if the sorting in the first search key is done in ascending or descending order.
         """
+        ...
+    @IsSortAscending0.setter
+    def IsSortAscending0(self, value: bool) -> None:
         ...
     @property
     def IsSortAscending1(self) -> bool:
@@ -51,11 +57,17 @@ class TextSortDescriptor(SortDescriptor_ca680c8d):
         determines if the sorting in the second search key is done in ascending or descending order.
         """
         ...
+    @IsSortAscending1.setter
+    def IsSortAscending1(self, value: bool) -> None:
+        ...
     @property
     def IsSortAscending2(self) -> bool:
         """
         determines if the sorting in the third search key is done in ascending or descending order.
         """
+        ...
+    @IsSortAscending2.setter
+    def IsSortAscending2(self, value: bool) -> None:
         ...
     @property
     def IsSortInTable(self) -> bool:
@@ -63,11 +75,17 @@ class TextSortDescriptor(SortDescriptor_ca680c8d):
         determines if the content of a table is to be sorted.
         """
         ...
+    @IsSortInTable.setter
+    def IsSortInTable(self, value: bool) -> None:
+        ...
     @property
     def IsSortNumeric0(self) -> bool:
         """
         determines if the sorting in the first search key is done numeric or alphanumeric order.
         """
+        ...
+    @IsSortNumeric0.setter
+    def IsSortNumeric0(self, value: bool) -> None:
         ...
     @property
     def IsSortNumeric1(self) -> bool:
@@ -75,11 +93,17 @@ class TextSortDescriptor(SortDescriptor_ca680c8d):
         determines if the sorting in the second search key is done in numeric or alphanumeric order.
         """
         ...
+    @IsSortNumeric1.setter
+    def IsSortNumeric1(self, value: bool) -> None:
+        ...
     @property
     def IsSortNumeric2(self) -> bool:
         """
         determines if the sorting in the third search key is done in numeric or alphanumeric order.
         """
+        ...
+    @IsSortNumeric2.setter
+    def IsSortNumeric2(self, value: bool) -> None:
         ...
     @property
     def SortRowOrColumnNo0(self) -> int:
@@ -87,16 +111,25 @@ class TextSortDescriptor(SortDescriptor_ca680c8d):
         contains the row or column index used in the first search key.
         """
         ...
+    @SortRowOrColumnNo0.setter
+    def SortRowOrColumnNo0(self, value: int) -> None:
+        ...
     @property
     def SortRowOrColumnNo1(self) -> int:
         """
         contains the row or column index used in the second search key.
         """
         ...
+    @SortRowOrColumnNo1.setter
+    def SortRowOrColumnNo1(self, value: int) -> None:
+        ...
     @property
     def SortRowOrColumnNo2(self) -> int:
         """
         contains the row or column index used in the third search key.
         """
+        ...
+    @SortRowOrColumnNo2.setter
+    def SortRowOrColumnNo2(self, value: int) -> None:
         ...
 

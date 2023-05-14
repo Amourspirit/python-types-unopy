@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -67,6 +67,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @ProtocolType.setter
+    def ProtocolType(self, value: str) -> None:
+        ...
 
     @property
     def State(self) -> OutgoingMessageState_c200e54:
@@ -75,6 +78,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @State.setter
+    def State(self, value: OutgoingMessageState_c200e54) -> None:
+        ...
 
     @property
     def To(self) -> str:
@@ -87,6 +93,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @To.setter
+    def To(self, value: str) -> None:
+        ...
 
     @property
     def CC(self) -> str:
@@ -99,6 +108,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @CC.setter
+    def CC(self, value: str) -> None:
+        ...
 
     @property
     def BCC(self) -> str:
@@ -111,6 +123,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @BCC.setter
+    def BCC(self, value: str) -> None:
+        ...
 
     @property
     def Newsgroups(self) -> str:
@@ -121,6 +136,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @Newsgroups.setter
+    def Newsgroups(self, value: str) -> None:
+        ...
 
     @property
     def Server(self) -> str:
@@ -129,6 +147,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @Server.setter
+    def Server(self, value: str) -> None:
+        ...
 
     @property
     def Username(self) -> str:
@@ -137,6 +158,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @Username.setter
+    def Username(self, value: str) -> None:
+        ...
 
     @property
     def Password(self) -> str:
@@ -145,6 +169,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @Password.setter
+    def Password(self, value: str) -> None:
+        ...
 
     @property
     def VIMPostOfficePath(self) -> str:
@@ -153,6 +180,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @VIMPostOfficePath.setter
+    def VIMPostOfficePath(self, value: str) -> None:
+        ...
 
     @property
     def ProtocolErrorString(self) -> str:
@@ -161,6 +191,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @ProtocolErrorString.setter
+    def ProtocolErrorString(self, value: str) -> None:
+        ...
 
     @property
     def ProtocolErrorNumber(self) -> int:
@@ -169,6 +202,9 @@ class RecipientInfo(object):
         """
         ...
 
+    @ProtocolErrorNumber.setter
+    def ProtocolErrorNumber(self, value: int) -> None:
+        ...
 
     @property
     def SendTries(self) -> int:
@@ -179,4 +215,7 @@ class RecipientInfo(object):
         """
         ...
 
+    @SendTries.setter
+    def SendTries(self, value: int) -> None:
+        ...
 

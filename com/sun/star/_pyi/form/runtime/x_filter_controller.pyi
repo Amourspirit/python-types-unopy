@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -105,14 +105,18 @@ class XFilterController(ABC):
         denotes the active term of the filter controller.
         """
         ...
-
+    @ActiveTerm.setter
+    def ActiveTerm(self, value: int) -> None:
+        ...
     @property
     def DisjunctiveTerms(self) -> int:
         """
         is the number of disjunctive terms of the filter expression represented by the form based filter.
         """
         ...
-
+    @DisjunctiveTerms.setter
+    def DisjunctiveTerms(self, value: int) -> None:
+        ...
     @property
     def FilterComponents(self) -> int:
         """
@@ -121,5 +125,7 @@ class XFilterController(ABC):
         This number is constant during one session of the form based filter.
         """
         ...
-
+    @FilterComponents.setter
+    def FilterComponents(self, value: int) -> None:
+        ...
 

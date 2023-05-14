@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,6 +41,9 @@ class CommandButton(UnoControlButtonModel_1c000ed4, FormControlModel_e2990d22, X
         describes the action to be executed by the button when pressed.
         """
         ...
+    @ButtonType.setter
+    def ButtonType(self, value: 'FormButtonType_c92d0c6e') -> None:
+        ...
     @property
     def DefaultState(self) -> bool:
         """
@@ -50,6 +53,9 @@ class CommandButton(UnoControlButtonModel_1c000ed4, FormControlModel_e2990d22, X
         
         For a given implementation of the interface, if this (optional) property is present, then also the optional interface com.sun.star.form.XReset must be present.
         """
+        ...
+    @DefaultState.setter
+    def DefaultState(self, value: bool) -> None:
         ...
     @property
     def TargetFrame(self) -> str:
@@ -61,6 +67,9 @@ class CommandButton(UnoControlButtonModel_1c000ed4, FormControlModel_e2990d22, X
         As always, there is a number of target names which have a special meaning, and force a special com.sun.star.frame.Frame to be used.
         """
         ...
+    @TargetFrame.setter
+    def TargetFrame(self, value: str) -> None:
+        ...
     @property
     def TargetURL(self) -> str:
         """
@@ -68,5 +77,8 @@ class CommandButton(UnoControlButtonModel_1c000ed4, FormControlModel_e2990d22, X
         
         This property is evaluated if the button is of type URL.
         """
+        ...
+    @TargetURL.setter
+    def TargetURL(self, value: str) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,6 +60,9 @@ class GluePoint(object):
         """
         ...
 
+    @Position.setter
+    def Position(self, value: Point_5fb2085e) -> None:
+        ...
 
     @property
     def EscapeDirection(self) -> int:
@@ -68,6 +71,9 @@ class GluePoint(object):
         """
         ...
 
+    @EscapeDirection.setter
+    def EscapeDirection(self, value: int) -> None:
+        ...
 
     @property
     def PositionAbsolute(self) -> bool:
@@ -76,6 +82,9 @@ class GluePoint(object):
         """
         ...
 
+    @PositionAbsolute.setter
+    def PositionAbsolute(self, value: bool) -> None:
+        ...
 
     @property
     def Alignment(self) -> int:
@@ -84,4 +93,7 @@ class GluePoint(object):
         """
         ...
 
+    @Alignment.setter
+    def Alignment(self, value: int) -> None:
+        ...
 

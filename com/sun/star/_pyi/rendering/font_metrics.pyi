@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -64,6 +64,9 @@ class FontMetrics(object):
         """
         ...
 
+    @Ascent.setter
+    def Ascent(self, value: float) -> None:
+        ...
 
     @property
     def Descent(self) -> float:
@@ -72,6 +75,9 @@ class FontMetrics(object):
         """
         ...
 
+    @Descent.setter
+    def Descent(self, value: float) -> None:
+        ...
 
     @property
     def InternalLeading(self) -> float:
@@ -80,6 +86,9 @@ class FontMetrics(object):
         """
         ...
 
+    @InternalLeading.setter
+    def InternalLeading(self, value: float) -> None:
+        ...
 
     @property
     def ExternalLeading(self) -> float:
@@ -90,6 +99,9 @@ class FontMetrics(object):
         """
         ...
 
+    @ExternalLeading.setter
+    def ExternalLeading(self, value: float) -> None:
+        ...
 
     @property
     def ReferenceCharSize(self) -> float:
@@ -100,6 +112,9 @@ class FontMetrics(object):
         """
         ...
 
+    @ReferenceCharSize.setter
+    def ReferenceCharSize(self, value: float) -> None:
+        ...
 
     @property
     def UnderlineOffset(self) -> float:
@@ -108,6 +123,9 @@ class FontMetrics(object):
         """
         ...
 
+    @UnderlineOffset.setter
+    def UnderlineOffset(self, value: float) -> None:
+        ...
 
     @property
     def StrikeThroughOffset(self) -> float:
@@ -116,4 +134,7 @@ class FontMetrics(object):
         """
         ...
 
+    @StrikeThroughOffset.setter
+    def StrikeThroughOffset(self, value: float) -> None:
+        ...
 

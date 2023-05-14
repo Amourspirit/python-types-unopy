@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,19 +49,31 @@ class Libxml2ExtensionHandle(object):
     def functionLookupFunction(self) -> int:
         ...
 
+    @functionLookupFunction.setter
+    def functionLookupFunction(self, value: int) -> None:
+        ...
 
     @property
     def functionData(self) -> int:
         ...
 
+    @functionData.setter
+    def functionData(self, value: int) -> None:
+        ...
 
     @property
     def variableLookupFunction(self) -> int:
         ...
 
+    @variableLookupFunction.setter
+    def variableLookupFunction(self, value: int) -> None:
+        ...
 
     @property
     def variableData(self) -> int:
         ...
 
+    @variableData.setter
+    def variableData(self, value: int) -> None:
+        ...
 

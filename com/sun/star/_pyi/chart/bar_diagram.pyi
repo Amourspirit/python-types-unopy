@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,6 +43,9 @@ class BarDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartSt
         If FALSE the arrangement of bars is like in two-dimensional bar charts.
         """
         ...
+    @Deep.setter
+    def Deep(self, value: bool) -> None:
+        ...
     @property
     def GroupBarsPerAxis(self) -> bool:
         """
@@ -55,6 +58,9 @@ class BarDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartSt
         If all data series of a bar or column chart are attached to only one axis, this property has no effect.
         """
         ...
+    @GroupBarsPerAxis.setter
+    def GroupBarsPerAxis(self, value: bool) -> None:
+        ...
     @property
     def NumberOfLines(self) -> int:
         """
@@ -63,6 +69,9 @@ class BarDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartSt
         If this property differs from zero the last BarDiagram.NumberOfLines data rows are shown as lines. It is currently supported by two dimensional vertical bar charts only.
         """
         ...
+    @NumberOfLines.setter
+    def NumberOfLines(self, value: int) -> None:
+        ...
     @property
     def StackedBarsConnected(self) -> bool:
         """
@@ -70,6 +79,9 @@ class BarDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartSt
         
         Currently, bar charts with horizontal bars do not support this property.
         """
+        ...
+    @StackedBarsConnected.setter
+    def StackedBarsConnected(self, value: bool) -> None:
         ...
     @property
     def Vertical(self) -> bool:
@@ -80,5 +92,8 @@ class BarDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartSt
         
         If Vertical is FALSE you get a column chart rather than a bar chart.
         """
+        ...
+    @Vertical.setter
+    def Vertical(self, value: bool) -> None:
         ...
 

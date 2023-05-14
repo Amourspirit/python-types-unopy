@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,6 +35,9 @@ class Script(TextField_90260a56):
         contains the script text or a URL that points to a script depending on the URLContent property.
         """
         ...
+    @Content.setter
+    def Content(self, value: str) -> None:
+        ...
     @property
     def ScriptType(self) -> str:
         """
@@ -43,10 +46,16 @@ class Script(TextField_90260a56):
         JavaScript)
         """
         ...
+    @ScriptType.setter
+    def ScriptType(self, value: str) -> None:
+        ...
     @property
     def URLContent(self) -> bool:
         """
         determines whether the property Content contains a URL or a script.
         """
+        ...
+    @URLContent.setter
+    def URLContent(self, value: bool) -> None:
         ...
 

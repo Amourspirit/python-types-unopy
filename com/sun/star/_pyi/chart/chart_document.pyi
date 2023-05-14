@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,16 +44,25 @@ class ChartDocument(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180bf
         determines if the legend is shown or hidden.
         """
         ...
+    @HasLegend.setter
+    def HasLegend(self, value: bool) -> None:
+        ...
     @property
     def HasMainTitle(self) -> bool:
         """
         determines if the main title is shown or hidden.
         """
         ...
+    @HasMainTitle.setter
+    def HasMainTitle(self, value: bool) -> None:
+        ...
     @property
     def HasSubTitle(self) -> bool:
         """
         determines if the subtitle is shown or hidden.
         """
+        ...
+    @HasSubTitle.setter
+    def HasSubTitle(self, value: bool) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,7 +59,9 @@ class InteractiveLockingException(ClassifiedInteractionRequest_9f72121b):
         The Url of the resource this exception is related to.
         """
         ...
-
+    @Url.setter
+    def Url(self, value: str) -> None:
+        ...
 
 __all__ = ['InteractiveLockingException']
 

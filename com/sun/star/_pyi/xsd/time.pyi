@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,11 +38,17 @@ class Time(XDataType_83f209cb):
         specifies the exclusive upper bound for the value
         """
         ...
+    @MaxExclusiveTime.setter
+    def MaxExclusiveTime(self, value: 'Time_604e0855') -> None:
+        ...
     @property
     def MaxInclusiveTime(self) -> 'Time_604e0855':
         """
         specifies the inclusive upper bound for the value
         """
+        ...
+    @MaxInclusiveTime.setter
+    def MaxInclusiveTime(self, value: 'Time_604e0855') -> None:
         ...
     @property
     def MinExclusiveTime(self) -> 'Time_604e0855':
@@ -50,10 +56,16 @@ class Time(XDataType_83f209cb):
         specifies the exclusive lower bound for the value
         """
         ...
+    @MinExclusiveTime.setter
+    def MinExclusiveTime(self, value: 'Time_604e0855') -> None:
+        ...
     @property
     def MinInclusiveTime(self) -> 'Time_604e0855':
         """
         specifies the inclusive lower bound for the value
         """
+        ...
+    @MinInclusiveTime.setter
+    def MinInclusiveTime(self, value: 'Time_604e0855') -> None:
         ...
 

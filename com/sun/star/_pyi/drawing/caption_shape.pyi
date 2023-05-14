@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -47,11 +47,17 @@ class CaptionShape(FillProperties_f1200da8, LineProperties_f13f0da9, RotationDes
         It is only used if CaptionIsFixedAngle is set to TRUE
         """
         ...
+    @CaptionAngle.setter
+    def CaptionAngle(self, value: int) -> None:
+        ...
     @property
     def CaptionEscapeAbsolute(self) -> int:
         """
         This property specifies the absolute escape distance for the line of a caption.
         """
+        ...
+    @CaptionEscapeAbsolute.setter
+    def CaptionEscapeAbsolute(self, value: int) -> None:
         ...
     @property
     def CaptionEscapeDirection(self) -> int:
@@ -59,11 +65,17 @@ class CaptionShape(FillProperties_f1200da8, LineProperties_f13f0da9, RotationDes
         This property specifies the escape direction for the line of a caption.
         """
         ...
+    @CaptionEscapeDirection.setter
+    def CaptionEscapeDirection(self, value: int) -> None:
+        ...
     @property
     def CaptionEscapeRelative(self) -> int:
         """
         This property specifies the relative escape distance for the line of a caption.
         """
+        ...
+    @CaptionEscapeRelative.setter
+    def CaptionEscapeRelative(self, value: int) -> None:
         ...
     @property
     def CaptionGap(self) -> int:
@@ -71,17 +83,26 @@ class CaptionShape(FillProperties_f1200da8, LineProperties_f13f0da9, RotationDes
         This property specifies the distance between the text area of the caption and the start of the line.
         """
         ...
+    @CaptionGap.setter
+    def CaptionGap(self, value: int) -> None:
+        ...
     @property
     def CaptionIsEscapeRelative(self) -> bool:
         """
         If this property is TRUE, the property CaptionEscapeRelative is used, else the property CaptionEscapeAbsolute is used.
         """
         ...
+    @CaptionIsEscapeRelative.setter
+    def CaptionIsEscapeRelative(self, value: bool) -> None:
+        ...
     @property
     def CaptionIsFitLineLength(self) -> bool:
         """
         If this property is TRUE, the application determines the best possible length for the caption line.
         """
+        ...
+    @CaptionIsFitLineLength.setter
+    def CaptionIsFitLineLength(self, value: bool) -> None:
         ...
     @property
     def CaptionIsFixedAngle(self) -> bool:
@@ -91,11 +112,17 @@ class CaptionShape(FillProperties_f1200da8, LineProperties_f13f0da9, RotationDes
         If this is set to FALSE, the application can choose the best possible angle. If not, the value in CaptionAngle is used.
         """
         ...
+    @CaptionIsFixedAngle.setter
+    def CaptionIsFixedAngle(self, value: bool) -> None:
+        ...
     @property
     def CaptionLineLength(self) -> int:
         """
         This property specifies the length of the caption line.
         """
+        ...
+    @CaptionLineLength.setter
+    def CaptionLineLength(self, value: int) -> None:
         ...
     @property
     def CaptionPoint(self) -> 'Point_5fb2085e':
@@ -105,16 +132,25 @@ class CaptionShape(FillProperties_f1200da8, LineProperties_f13f0da9, RotationDes
         A set of lines are rendered from the caption area.
         """
         ...
+    @CaptionPoint.setter
+    def CaptionPoint(self, value: 'Point_5fb2085e') -> None:
+        ...
     @property
     def CaptionType(self) -> int:
         """
         This property specifies the geometry of the line of a caption.
         """
         ...
+    @CaptionType.setter
+    def CaptionType(self, value: int) -> None:
+        ...
     @property
     def CornerRadius(self) -> int:
         """
         This is the radius of the caption area corners.
         """
+        ...
+    @CornerRadius.setter
+    def CornerRadius(self, value: int) -> None:
         ...
 

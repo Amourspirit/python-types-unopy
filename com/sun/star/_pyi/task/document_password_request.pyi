@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,7 +61,9 @@ class DocumentPasswordRequest(PasswordRequest_d7280cf7):
         the name of the document (more properly, the URL of the document)
         """
         ...
-
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 
 __all__ = ['DocumentPasswordRequest']
 

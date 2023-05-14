@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,11 +40,17 @@ class ChartTwoAxisXSupplier(ChartAxisXSupplier_a950e4d, XTwoAxisXSupplier_fcdb0d
         determines if the secondary x-axis is shown or hidden.
         """
         ...
+    @HasSecondaryXAxis.setter
+    def HasSecondaryXAxis(self, value: bool) -> None:
+        ...
     @property
     def HasSecondaryXAxisDescription(self) -> bool:
         """
         determines for the secondary x-axis if the labels at the tick marks are shown or hidden.
         """
+        ...
+    @HasSecondaryXAxisDescription.setter
+    def HasSecondaryXAxisDescription(self, value: bool) -> None:
         ...
     @property
     def HasSecondaryXAxisTitle(self) -> bool:
@@ -55,5 +61,8 @@ class ChartTwoAxisXSupplier(ChartAxisXSupplier_a950e4d, XTwoAxisXSupplier_fcdb0d
         
             OOo 3.0
         """
+        ...
+    @HasSecondaryXAxisTitle.setter
+    def HasSecondaryXAxisTitle(self, value: bool) -> None:
         ...
 

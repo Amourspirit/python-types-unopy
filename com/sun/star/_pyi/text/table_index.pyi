@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,16 +35,25 @@ class TableIndex(BaseIndex_8f0d0a40):
         determines if the name or the label of an object is used to create the index.
         """
         ...
+    @CreateFromLabels.setter
+    def CreateFromLabels(self, value: bool) -> None:
+        ...
     @property
     def LabelCategory(self) -> str:
         """
         determines the name of the sequence field that is evaluated to create the index.
         """
         ...
+    @LabelCategory.setter
+    def LabelCategory(self, value: str) -> None:
+        ...
     @property
     def LabelDisplayType(self) -> int:
         """
         determines the way the paragraph containing a label is included in the index.
         """
+        ...
+    @LabelDisplayType.setter
+    def LabelDisplayType(self, value: int) -> None:
         ...
 

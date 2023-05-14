@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -62,6 +62,9 @@ class AccessibleTableModelChange(object):
         """
         ...
 
+    @Type.setter
+    def Type(self, value: int) -> None:
+        ...
 
     @property
     def FirstRow(self) -> int:
@@ -72,6 +75,9 @@ class AccessibleTableModelChange(object):
         """
         ...
 
+    @FirstRow.setter
+    def FirstRow(self, value: int) -> None:
+        ...
 
     @property
     def LastRow(self) -> int:
@@ -82,6 +88,9 @@ class AccessibleTableModelChange(object):
         """
         ...
 
+    @LastRow.setter
+    def LastRow(self, value: int) -> None:
+        ...
 
     @property
     def FirstColumn(self) -> int:
@@ -92,6 +101,9 @@ class AccessibleTableModelChange(object):
         """
         ...
 
+    @FirstColumn.setter
+    def FirstColumn(self, value: int) -> None:
+        ...
 
     @property
     def LastColumn(self) -> int:
@@ -102,4 +114,7 @@ class AccessibleTableModelChange(object):
         """
         ...
 
+    @LastColumn.setter
+    def LastColumn(self, value: int) -> None:
+        ...
 

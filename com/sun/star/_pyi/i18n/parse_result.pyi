@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class ParseResult(object):
         """
         ...
 
+    @LeadingWhiteSpace.setter
+    def LeadingWhiteSpace(self, value: int) -> None:
+        ...
 
     @property
     def EndPos(self) -> int:
@@ -65,6 +68,9 @@ class ParseResult(object):
         """
         ...
 
+    @EndPos.setter
+    def EndPos(self, value: int) -> None:
+        ...
 
     @property
     def CharLen(self) -> int:
@@ -73,6 +79,9 @@ class ParseResult(object):
         """
         ...
 
+    @CharLen.setter
+    def CharLen(self, value: int) -> None:
+        ...
 
     @property
     def Value(self) -> float:
@@ -81,6 +90,9 @@ class ParseResult(object):
         """
         ...
 
+    @Value.setter
+    def Value(self, value: float) -> None:
+        ...
 
     @property
     def TokenType(self) -> int:
@@ -89,6 +101,9 @@ class ParseResult(object):
         """
         ...
 
+    @TokenType.setter
+    def TokenType(self, value: int) -> None:
+        ...
 
     @property
     def StartFlags(self) -> int:
@@ -99,6 +114,9 @@ class ParseResult(object):
         """
         ...
 
+    @StartFlags.setter
+    def StartFlags(self, value: int) -> None:
+        ...
 
     @property
     def ContFlags(self) -> int:
@@ -107,6 +125,9 @@ class ParseResult(object):
         """
         ...
 
+    @ContFlags.setter
+    def ContFlags(self, value: int) -> None:
+        ...
 
     @property
     def DequotedNameOrString(self) -> str:
@@ -115,4 +136,7 @@ class ParseResult(object):
         """
         ...
 
+    @DequotedNameOrString.setter
+    def DequotedNameOrString(self, value: str) -> None:
+        ...
 

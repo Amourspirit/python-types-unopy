@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,6 +38,9 @@ class EnhancedCustomShapeTextPath(ABC):
         This property specifies if the text is scaled using the shape path.
         """
         ...
+    @ScaleX.setter
+    def ScaleX(self, value: bool) -> None:
+        ...
     @property
     def TextPath(self) -> bool:
         """
@@ -46,10 +49,16 @@ class EnhancedCustomShapeTextPath(ABC):
         The default is false.
         """
         ...
+    @TextPath.setter
+    def TextPath(self, value: bool) -> None:
+        ...
     @property
     def TextPathMode(self) -> 'EnhancedCustomShapeTextPathMode_119f142d':
         """
         This property specifies how the text is drawn.
         """
+        ...
+    @TextPathMode.setter
+    def TextPathMode(self, value: 'EnhancedCustomShapeTextPathMode_119f142d') -> None:
         ...
 

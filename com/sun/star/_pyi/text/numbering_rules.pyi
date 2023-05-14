@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,11 +38,17 @@ class NumberingRules(XPropertySet_bc180bfa, XIndexReplace_feed0dd7):
         id of default list for the numbering rules instance
         """
         ...
+    @DefaultListId.setter
+    def DefaultListId(self, value: str) -> None:
+        ...
     @property
     def IsAbsoluteMargins(self) -> bool:
         """
         determines if the margins are absolute or relative to the preceding numbering level.
         """
+        ...
+    @IsAbsoluteMargins.setter
+    def IsAbsoluteMargins(self, value: bool) -> None:
         ...
     @property
     def IsAutomatic(self) -> bool:
@@ -50,11 +56,17 @@ class NumberingRules(XPropertySet_bc180bfa, XIndexReplace_feed0dd7):
         determines if the numbering rules are automatically created as opposed to numbering rules that are part of a numbering style.
         """
         ...
+    @IsAutomatic.setter
+    def IsAutomatic(self, value: bool) -> None:
+        ...
     @property
     def IsContinuousNumbering(self) -> bool:
         """
         determines if the numbering levels are counted continuously or if each numbering level is counted separately.
         """
+        ...
+    @IsContinuousNumbering.setter
+    def IsContinuousNumbering(self, value: bool) -> None:
         ...
     @property
     def Name(self) -> str:
@@ -64,6 +76,9 @@ class NumberingRules(XPropertySet_bc180bfa, XIndexReplace_feed0dd7):
         It is used to identify a certain numbering rules property
         """
         ...
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def NumberingIsOutline(self) -> bool:
         """
@@ -72,10 +87,16 @@ class NumberingRules(XPropertySet_bc180bfa, XIndexReplace_feed0dd7):
         headings).
         """
         ...
+    @NumberingIsOutline.setter
+    def NumberingIsOutline(self, value: bool) -> None:
+        ...
     @property
     def NumberingType(self) -> int:
         """
         the type of numbering (Arabic, characters, roman numbers, etc.).
         """
+        ...
+    @NumberingType.setter
+    def NumberingType(self, value: int) -> None:
         ...
 

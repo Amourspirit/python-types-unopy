@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -62,7 +62,9 @@ class DocumentPasswordRequest2(DocumentPasswordRequest_4bb71036):
         specifies if the requested password is for opening a document or for modifying it.
         """
         ...
-
+    @IsRequestPasswordToModify.setter
+    def IsRequestPasswordToModify(self, value: bool) -> None:
+        ...
 
 __all__ = ['DocumentPasswordRequest2']
 

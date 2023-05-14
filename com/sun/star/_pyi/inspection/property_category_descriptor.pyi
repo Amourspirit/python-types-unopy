@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class PropertyCategoryDescriptor(object):
         """
         ...
 
+    @ProgrammaticName.setter
+    def ProgrammaticName(self, value: str) -> None:
+        ...
 
     @property
     def UIName(self) -> str:
@@ -66,6 +69,9 @@ class PropertyCategoryDescriptor(object):
         """
         ...
 
+    @UIName.setter
+    def UIName(self, value: str) -> None:
+        ...
 
     @property
     def HelpURL(self) -> str:
@@ -74,4 +80,7 @@ class PropertyCategoryDescriptor(object):
         """
         ...
 
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
+        ...
 

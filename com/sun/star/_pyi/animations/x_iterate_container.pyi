@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,7 +38,9 @@ class XIterateContainer(XTimeContainer_1cca0ec5):
         the time interval in second before the next iterated content is animated.
         """
         ...
-
+    @IterateInterval.setter
+    def IterateInterval(self, value: float) -> None:
+        ...
     @property
     def IterateType(self) -> int:
         """
@@ -47,7 +49,9 @@ class XIterateContainer(XTimeContainer_1cca0ec5):
         See documentation of used animation engine for supported iteration types.
         """
         ...
-
+    @IterateType.setter
+    def IterateType(self, value: int) -> None:
+        ...
     @property
     def SubItem(self) -> int:
         """
@@ -56,7 +60,9 @@ class XIterateContainer(XTimeContainer_1cca0ec5):
         A value of zero should always be the default and animate the complete target. See documentation of used animation engine for supported subitems.
         """
         ...
-
+    @SubItem.setter
+    def SubItem(self, value: int) -> None:
+        ...
     @property
     def Target(self) -> object:
         """
@@ -65,5 +71,7 @@ class XIterateContainer(XTimeContainer_1cca0ec5):
         a paragraph. See documentation of used animation engine for supported targets.
         """
         ...
-
+    @Target.setter
+    def Target(self, value: object) -> None:
+        ...
 

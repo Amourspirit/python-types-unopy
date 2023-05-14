@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,19 +38,25 @@ class XTopWindow2(XTopWindow_8ebb0a57):
         When retrieving this property, in case the window is positioned on multiple displays, the number returned will be of the display containing the upper left pixel of the frame area (that is of the client area on system decorated windows, or the frame area of undecorated resp. owner decorated windows).
         """
         ...
-
+    @Display.setter
+    def Display(self, value: int) -> None:
+        ...
     @property
     def IsMaximized(self) -> bool:
         """
         controls whether the window is currently maximized
         """
         ...
-
+    @IsMaximized.setter
+    def IsMaximized(self, value: bool) -> None:
+        ...
     @property
     def IsMinimized(self) -> bool:
         """
         controls whether the window is currently minimized
         """
         ...
-
+    @IsMinimized.setter
+    def IsMinimized(self, value: bool) -> None:
+        ...
 

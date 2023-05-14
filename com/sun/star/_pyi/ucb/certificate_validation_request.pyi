@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,21 +56,27 @@ class CertificateValidationRequest(ClassifiedInteractionRequest_9f72121b):
         This value describes the validity of the certificate.
         """
         ...
-
+    @CertificateValidity.setter
+    def CertificateValidity(self, value: int) -> None:
+        ...
     @property
     def Certificate(self) -> XCertificate_e55b0d3b:
         """
         The certificate himself.
         """
         ...
-
+    @Certificate.setter
+    def Certificate(self, value: XCertificate_e55b0d3b) -> None:
+        ...
     @property
     def HostName(self) -> str:
         """
         The host name.
         """
         ...
-
+    @HostName.setter
+    def HostName(self, value: str) -> None:
+        ...
 
 __all__ = ['CertificateValidationRequest']
 

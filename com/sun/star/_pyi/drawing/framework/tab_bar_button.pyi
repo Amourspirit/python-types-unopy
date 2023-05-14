@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class TabBarButton(object):
         """
         ...
 
+    @ButtonLabel.setter
+    def ButtonLabel(self, value: str) -> None:
+        ...
 
     @property
     def HelpText(self) -> str:
@@ -67,6 +70,9 @@ class TabBarButton(object):
         """
         ...
 
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
+        ...
 
     @property
     def ResourceId(self) -> XResourceId_5be3103d:
@@ -77,4 +83,7 @@ class TabBarButton(object):
         """
         ...
 
+    @ResourceId.setter
+    def ResourceId(self, value: XResourceId_5be3103d) -> None:
+        ...
 

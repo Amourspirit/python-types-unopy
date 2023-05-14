@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -62,6 +62,9 @@ class DragGestureEvent(EventObject_a3d70b03):
         """
         ...
 
+    @DragAction.setter
+    def DragAction(self, value: int) -> None:
+        ...
 
     @property
     def DragOriginX(self) -> int:
@@ -70,6 +73,9 @@ class DragGestureEvent(EventObject_a3d70b03):
         """
         ...
 
+    @DragOriginX.setter
+    def DragOriginX(self, value: int) -> None:
+        ...
 
     @property
     def DragOriginY(self) -> int:
@@ -78,6 +84,9 @@ class DragGestureEvent(EventObject_a3d70b03):
         """
         ...
 
+    @DragOriginY.setter
+    def DragOriginY(self, value: int) -> None:
+        ...
 
     @property
     def DragSource(self) -> XDragSource_49900fb2:
@@ -86,6 +95,9 @@ class DragGestureEvent(EventObject_a3d70b03):
         """
         ...
 
+    @DragSource.setter
+    def DragSource(self, value: XDragSource_49900fb2) -> None:
+        ...
 
     @property
     def Event(self) -> object:
@@ -96,4 +108,7 @@ class DragGestureEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Event.setter
+    def Event(self, value: object) -> None:
+        ...
 

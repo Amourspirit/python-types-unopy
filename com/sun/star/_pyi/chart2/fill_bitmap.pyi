@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -62,6 +62,9 @@ class FillBitmap(object):
         """
         ...
 
+    @aURL.setter
+    def aURL(self, value: str) -> None:
+        ...
 
     @property
     def aOffset(self) -> Point_5fb2085e:
@@ -72,6 +75,9 @@ class FillBitmap(object):
         """
         ...
 
+    @aOffset.setter
+    def aOffset(self, value: Point_5fb2085e) -> None:
+        ...
 
     @property
     def aPositionOffset(self) -> Point_5fb2085e:
@@ -80,6 +86,9 @@ class FillBitmap(object):
         """
         ...
 
+    @aPositionOffset.setter
+    def aPositionOffset(self, value: Point_5fb2085e) -> None:
+        ...
 
     @property
     def aRectanglePoint(self) -> RectanglePoint_f0ff0d93:
@@ -88,6 +97,9 @@ class FillBitmap(object):
         """
         ...
 
+    @aRectanglePoint.setter
+    def aRectanglePoint(self, value: RectanglePoint_f0ff0d93) -> None:
+        ...
 
     @property
     def bLogicalSize(self) -> bool:
@@ -98,6 +110,9 @@ class FillBitmap(object):
         """
         ...
 
+    @bLogicalSize.setter
+    def bLogicalSize(self, value: bool) -> None:
+        ...
 
     @property
     def aSize(self) -> Size_576707ef:
@@ -108,6 +123,9 @@ class FillBitmap(object):
         """
         ...
 
+    @aSize.setter
+    def aSize(self, value: Size_576707ef) -> None:
+        ...
 
     @property
     def aBitmapMode(self) -> BitmapMode_bced0bd6:
@@ -118,4 +136,7 @@ class FillBitmap(object):
         """
         ...
 
+    @aBitmapMode.setter
+    def aBitmapMode(self, value: BitmapMode_bced0bd6) -> None:
+        ...
 

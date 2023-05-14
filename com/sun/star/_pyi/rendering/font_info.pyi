@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -66,6 +66,9 @@ class FontInfo(object):
         """
         ...
 
+    @FontDescription.setter
+    def FontDescription(self, value: Panose_a6bc0b2c) -> None:
+        ...
 
     @property
     def FamilyName(self) -> str:
@@ -78,6 +81,9 @@ class FontInfo(object):
         """
         ...
 
+    @FamilyName.setter
+    def FamilyName(self, value: str) -> None:
+        ...
 
     @property
     def StyleName(self) -> str:
@@ -88,6 +94,9 @@ class FontInfo(object):
         """
         ...
 
+    @StyleName.setter
+    def StyleName(self, value: str) -> None:
+        ...
 
     @property
     def UnicodeRanges0(self) -> int:
@@ -100,21 +109,33 @@ class FontInfo(object):
         """
         ...
 
+    @UnicodeRanges0.setter
+    def UnicodeRanges0(self, value: int) -> None:
+        ...
 
     @property
     def UnicodeRanges1(self) -> int:
         ...
 
+    @UnicodeRanges1.setter
+    def UnicodeRanges1(self, value: int) -> None:
+        ...
 
     @property
     def UnicodeRanges2(self) -> int:
         ...
 
+    @UnicodeRanges2.setter
+    def UnicodeRanges2(self, value: int) -> None:
+        ...
 
     @property
     def UnicodeRanges3(self) -> int:
         ...
 
+    @UnicodeRanges3.setter
+    def UnicodeRanges3(self, value: int) -> None:
+        ...
 
     @property
     def IsSymbolFont(self) -> TriState_85af09f6:
@@ -125,6 +146,9 @@ class FontInfo(object):
         """
         ...
 
+    @IsSymbolFont.setter
+    def IsSymbolFont(self, value: TriState_85af09f6) -> None:
+        ...
 
     @property
     def IsVertical(self) -> TriState_85af09f6:
@@ -135,4 +159,7 @@ class FontInfo(object):
         """
         ...
 
+    @IsVertical.setter
+    def IsVertical(self, value: TriState_85af09f6) -> None:
+        ...
 

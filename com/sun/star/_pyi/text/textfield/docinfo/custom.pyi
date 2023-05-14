@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,16 +41,25 @@ class Custom(TextField_90260a56):
         This property is useful for import/export purposes.
         """
         ...
+    @CurrentPresentation.setter
+    def CurrentPresentation(self, value: str) -> None:
+        ...
     @property
     def IsFixed(self) -> bool:
         """
         If this flag is set to FALSE, the content is updated when the document information changes.
         """
         ...
+    @IsFixed.setter
+    def IsFixed(self, value: bool) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
         the name of the user-defined property that this field refers to.
         """
+        ...
+    @Name.setter
+    def Name(self, value: str) -> None:
         ...
 

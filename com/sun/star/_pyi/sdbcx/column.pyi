@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -36,11 +36,17 @@ class Column(XPropertySet_bc180bfa, XDataDescriptorFactory_46170fe5):
         keeps a default value for a column, is provided as string.
         """
         ...
+    @DefaultValue.setter
+    def DefaultValue(self, value: str) -> None:
+        ...
     @property
     def Description(self) -> str:
         """
         keeps a description of the object.
         """
+        ...
+    @Description.setter
+    def Description(self, value: str) -> None:
         ...
     @property
     def IsAutoIncrement(self) -> bool:
@@ -48,11 +54,17 @@ class Column(XPropertySet_bc180bfa, XDataDescriptorFactory_46170fe5):
         indicates whether the column is automatically numbered, thus read-only.
         """
         ...
+    @IsAutoIncrement.setter
+    def IsAutoIncrement(self, value: bool) -> None:
+        ...
     @property
     def IsCurrency(self) -> bool:
         """
         indicates whether the column is a cash value.
         """
+        ...
+    @IsCurrency.setter
+    def IsCurrency(self, value: bool) -> None:
         ...
     @property
     def IsNullable(self) -> int:
@@ -60,11 +72,17 @@ class Column(XPropertySet_bc180bfa, XDataDescriptorFactory_46170fe5):
         indicates the nullability of values in the designated column.
         """
         ...
+    @IsNullable.setter
+    def IsNullable(self, value: int) -> None:
+        ...
     @property
     def IsRowVersion(self) -> bool:
         """
         indicates that the column contains some kind of time or date stamp used to track updates.
         """
+        ...
+    @IsRowVersion.setter
+    def IsRowVersion(self, value: bool) -> None:
         ...
     @property
     def Name(self) -> str:
@@ -72,11 +90,17 @@ class Column(XPropertySet_bc180bfa, XDataDescriptorFactory_46170fe5):
         is the name of the column.
         """
         ...
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def Precision(self) -> int:
         """
         gets a column's number of decimal digits.
         """
+        ...
+    @Precision.setter
+    def Precision(self, value: int) -> None:
         ...
     @property
     def Scale(self) -> int:
@@ -84,11 +108,17 @@ class Column(XPropertySet_bc180bfa, XDataDescriptorFactory_46170fe5):
         gets a column's number of digits to right of the decimal point.
         """
         ...
+    @Scale.setter
+    def Scale(self, value: int) -> None:
+        ...
     @property
     def Type(self) -> int:
         """
         is the com.sun.star.sdbc.DataType of the column.
         """
+        ...
+    @Type.setter
+    def Type(self, value: int) -> None:
         ...
     @property
     def TypeName(self) -> str:
@@ -97,5 +127,8 @@ class Column(XPropertySet_bc180bfa, XDataDescriptorFactory_46170fe5):
         
         If the column type is a user-defined type, then a fully-qualified type name is returned.  Note:  May be empty.
         """
+        ...
+    @TypeName.setter
+    def TypeName(self, value: str) -> None:
         ...
 

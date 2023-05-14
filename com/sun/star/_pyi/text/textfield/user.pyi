@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,11 +43,17 @@ class User(DependentTextField_fed90ded):
             OOo 1.1.2
         """
         ...
+    @IsFixedLanguage.setter
+    def IsFixedLanguage(self, value: bool) -> None:
+        ...
     @property
     def IsShowFormula(self) -> bool:
         """
         determines if the content is shown as text rather than as value.
         """
+        ...
+    @IsShowFormula.setter
+    def IsShowFormula(self, value: bool) -> None:
         ...
     @property
     def IsVisible(self) -> bool:
@@ -55,10 +61,16 @@ class User(DependentTextField_fed90ded):
         determines if the field is visible.
         """
         ...
+    @IsVisible.setter
+    def IsVisible(self, value: bool) -> None:
+        ...
     @property
     def NumberFormat(self) -> int:
         """
         this is the number format for this field.
         """
+        ...
+    @NumberFormat.setter
+    def NumberFormat(self, value: int) -> None:
         ...
 

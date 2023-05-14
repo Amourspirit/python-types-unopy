@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -50,6 +50,9 @@ class NamedRange(XCellRangeReferrer_91c0e23, XNamedRange_af450b4b):
             OOo 3.0
         """
         ...
+    @IsSharedFormula.setter
+    def IsSharedFormula(self, value: bool) -> None:
+        ...
     @property
     def TokenIndex(self) -> int:
         """
@@ -61,5 +64,8 @@ class NamedRange(XCellRangeReferrer_91c0e23, XNamedRange_af450b4b):
         
             OOo 3.0
         """
+        ...
+    @TokenIndex.setter
+    def TokenIndex(self, value: int) -> None:
         ...
 

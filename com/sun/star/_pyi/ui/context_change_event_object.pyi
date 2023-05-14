@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,6 +53,9 @@ class ContextChangeEventObject(EventObject_a3d70b03):
         """
         ...
 
+    @ApplicationName.setter
+    def ApplicationName(self, value: str) -> None:
+        ...
 
     @property
     def ContextName(self) -> str:
@@ -61,4 +64,7 @@ class ContextChangeEventObject(EventObject_a3d70b03):
         """
         ...
 
+    @ContextName.setter
+    def ContextName(self, value: str) -> None:
+        ...
 

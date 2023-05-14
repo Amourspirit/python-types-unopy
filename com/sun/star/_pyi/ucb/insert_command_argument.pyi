@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,6 +54,9 @@ class InsertCommandArgument(object):
         """
         ...
 
+    @Data.setter
+    def Data(self, value: XInputStream_98d40ab4) -> None:
+        ...
 
     @property
     def ReplaceExisting(self) -> bool:
@@ -64,4 +67,7 @@ class InsertCommandArgument(object):
         """
         ...
 
+    @ReplaceExisting.setter
+    def ReplaceExisting(self, value: bool) -> None:
+        ...
 

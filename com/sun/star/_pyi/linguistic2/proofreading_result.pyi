@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -65,49 +65,79 @@ class ProofreadingResult(object):
     def aErrors(self) -> typing.Tuple[SingleProofreadingError_c54812c1, ...]:
         ...
 
+    @aErrors.setter
+    def aErrors(self, value: typing.Tuple[SingleProofreadingError_c54812c1, ...]) -> None:
+        ...
 
     @property
     def aProperties(self) -> typing.Tuple[PropertyValue_c9610c73, ...]:
         ...
 
+    @aProperties.setter
+    def aProperties(self, value: typing.Tuple[PropertyValue_c9610c73, ...]) -> None:
+        ...
 
     @property
     def aDocumentIdentifier(self) -> str:
         ...
 
+    @aDocumentIdentifier.setter
+    def aDocumentIdentifier(self, value: str) -> None:
+        ...
 
     @property
     def xFlatParagraph(self) -> XFlatParagraph_c8310c42:
         ...
 
+    @xFlatParagraph.setter
+    def xFlatParagraph(self, value: XFlatParagraph_c8310c42) -> None:
+        ...
 
     @property
     def aText(self) -> str:
         ...
 
+    @aText.setter
+    def aText(self, value: str) -> None:
+        ...
 
     @property
     def aLocale(self) -> Locale_70d308fa:
         ...
 
+    @aLocale.setter
+    def aLocale(self, value: Locale_70d308fa) -> None:
+        ...
 
     @property
     def nStartOfSentencePosition(self) -> int:
         ...
 
+    @nStartOfSentencePosition.setter
+    def nStartOfSentencePosition(self, value: int) -> None:
+        ...
 
     @property
     def nBehindEndOfSentencePosition(self) -> int:
         ...
 
+    @nBehindEndOfSentencePosition.setter
+    def nBehindEndOfSentencePosition(self, value: int) -> None:
+        ...
 
     @property
     def nStartOfNextSentencePosition(self) -> int:
         ...
 
+    @nStartOfNextSentencePosition.setter
+    def nStartOfNextSentencePosition(self, value: int) -> None:
+        ...
 
     @property
     def xProofreader(self) -> XProofreader_dab0e46:
         ...
 
+    @xProofreader.setter
+    def xProofreader(self, value: XProofreader_dab0e46) -> None:
+        ...
 

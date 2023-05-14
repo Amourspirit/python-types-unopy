@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,6 +53,9 @@ class LightSource(object):
         """
         ...
 
+    @nDiffuseColor.setter
+    def nDiffuseColor(self, value: int) -> None:
+        ...
 
     @property
     def aDirection(self) -> Direction3D_c9370c0c:
@@ -61,11 +64,17 @@ class LightSource(object):
         """
         ...
 
+    @aDirection.setter
+    def aDirection(self, value: Direction3D_c9370c0c) -> None:
+        ...
 
     @property
     def bIsEnabled(self) -> bool:
         ...
 
+    @bIsEnabled.setter
+    def bIsEnabled(self, value: bool) -> None:
+        ...
 
     @property
     def bSpecular(self) -> bool:
@@ -74,4 +83,7 @@ class LightSource(object):
         """
         ...
 
+    @bSpecular.setter
+    def bSpecular(self, value: bool) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -69,6 +69,9 @@ class SearchOptions2(SearchOptions_bd140c08):
         """
         ...
 
+    @AlgorithmType2.setter
+    def AlgorithmType2(self, value: int) -> None:
+        ...
 
     @property
     def WildcardEscapeCharacter(self) -> int:
@@ -81,4 +84,7 @@ class SearchOptions2(SearchOptions_bd140c08):
         """
         ...
 
+    @WildcardEscapeCharacter.setter
+    def WildcardEscapeCharacter(self, value: int) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -45,70 +45,90 @@ class XGroup(XPropertySet_bc180bfa, XChild_a6390b07, XComponent_98dc0ab5, XFunct
         Defines either a column name or an expression.
         """
         ...
-
+    @Expression.setter
+    def Expression(self, value: str) -> None:
+        ...
     @property
     def Footer(self) -> 'XSection_9b630ad1':
         """
         returns the group footer.
         """
         ...
-
+    @Footer.setter
+    def Footer(self, value: 'XSection_9b630ad1') -> None:
+        ...
     @property
     def FooterOn(self) -> bool:
         """
         Defines if a group has a footer.
         """
         ...
-
+    @FooterOn.setter
+    def FooterOn(self, value: bool) -> None:
+        ...
     @property
     def GroupInterval(self) -> int:
         """
         Defines an interval value that rows are grouped by.
         """
         ...
-
+    @GroupInterval.setter
+    def GroupInterval(self, value: int) -> None:
+        ...
     @property
     def GroupOn(self) -> int:
         """
         Specifies how to group data.
         """
         ...
-
+    @GroupOn.setter
+    def GroupOn(self, value: int) -> None:
+        ...
     @property
     def Groups(self) -> 'XGroups_90d00a7c':
         """
         Specifies the parent of the group.
         """
         ...
-
+    @Groups.setter
+    def Groups(self, value: 'XGroups_90d00a7c') -> None:
+        ...
     @property
     def Header(self) -> 'XSection_9b630ad1':
         """
         returns the group header.
         """
         ...
-
+    @Header.setter
+    def Header(self, value: 'XSection_9b630ad1') -> None:
+        ...
     @property
     def HeaderOn(self) -> bool:
         """
         Defines if a group has a header.
         """
         ...
-
+    @HeaderOn.setter
+    def HeaderOn(self, value: bool) -> None:
+        ...
     @property
     def KeepTogether(self) -> int:
         """
         Specifies if a group header, detail, and footer section is printed on the same page.
         """
         ...
-
+    @KeepTogether.setter
+    def KeepTogether(self, value: int) -> None:
+        ...
     @property
     def ResetPageNumber(self) -> bool:
         """
         Specifies that the group header should always be printed on a new page and the reset of the page number to zero.
         """
         ...
-
+    @ResetPageNumber.setter
+    def ResetPageNumber(self, value: bool) -> None:
+        ...
     @property
     def SortAscending(self) -> bool:
         """
@@ -117,12 +137,16 @@ class XGroup(XPropertySet_bc180bfa, XChild_a6390b07, XComponent_98dc0ab5, XFunct
         The default is TRUE.
         """
         ...
-
+    @SortAscending.setter
+    def SortAscending(self, value: bool) -> None:
+        ...
     @property
     def StartNewColumn(self) -> bool:
         """
         Specifies that the group header should always be printed on a new column.
         """
         ...
-
+    @StartNewColumn.setter
+    def StartNewColumn(self, value: bool) -> None:
+        ...
 

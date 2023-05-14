@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -68,6 +68,9 @@ class ScaleData(object):
         """
         ...
 
+    @Minimum.setter
+    def Minimum(self, value: object) -> None:
+        ...
 
     @property
     def Maximum(self) -> object:
@@ -80,6 +83,9 @@ class ScaleData(object):
         """
         ...
 
+    @Maximum.setter
+    def Maximum(self, value: object) -> None:
+        ...
 
     @property
     def Origin(self) -> object:
@@ -90,6 +96,9 @@ class ScaleData(object):
         """
         ...
 
+    @Origin.setter
+    def Origin(self, value: object) -> None:
+        ...
 
     @property
     def Orientation(self) -> AxisOrientation_ecba0d6d:
@@ -102,16 +111,25 @@ class ScaleData(object):
         """
         ...
 
+    @Orientation.setter
+    def Orientation(self, value: AxisOrientation_ecba0d6d) -> None:
+        ...
 
     @property
     def Scaling(self) -> XScaling_97500a65:
         ...
 
+    @Scaling.setter
+    def Scaling(self, value: XScaling_97500a65) -> None:
+        ...
 
     @property
     def Categories(self) -> XLabeledDataSequence_7e1a10c8:
         ...
 
+    @Categories.setter
+    def Categories(self, value: XLabeledDataSequence_7e1a10c8) -> None:
+        ...
 
     @property
     def AxisType(self) -> int:
@@ -122,6 +140,9 @@ class ScaleData(object):
         """
         ...
 
+    @AxisType.setter
+    def AxisType(self, value: int) -> None:
+        ...
 
     @property
     def AutoDateAxis(self) -> bool:
@@ -130,6 +151,9 @@ class ScaleData(object):
         """
         ...
 
+    @AutoDateAxis.setter
+    def AutoDateAxis(self, value: bool) -> None:
+        ...
 
     @property
     def ShiftedCategoryPosition(self) -> bool:
@@ -138,6 +162,9 @@ class ScaleData(object):
         """
         ...
 
+    @ShiftedCategoryPosition.setter
+    def ShiftedCategoryPosition(self, value: bool) -> None:
+        ...
 
     @property
     def IncrementData(self) -> IncrementData_d2000c6b:
@@ -146,6 +173,9 @@ class ScaleData(object):
         """
         ...
 
+    @IncrementData.setter
+    def IncrementData(self, value: IncrementData_d2000c6b) -> None:
+        ...
 
     @property
     def TimeIncrement(self) -> TimeIncrement_c7e70c4e:
@@ -154,4 +184,7 @@ class ScaleData(object):
         """
         ...
 
+    @TimeIncrement.setter
+    def TimeIncrement(self, value: TimeIncrement_c7e70c4e) -> None:
+        ...
 

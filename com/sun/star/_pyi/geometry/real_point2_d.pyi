@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class RealPoint2D(object):
         """
         ...
 
+    @X.setter
+    def X(self, value: float) -> None:
+        ...
 
     @property
     def Y(self) -> float:
@@ -65,4 +68,7 @@ class RealPoint2D(object):
         """
         ...
 
+    @Y.setter
+    def Y(self, value: float) -> None:
+        ...
 

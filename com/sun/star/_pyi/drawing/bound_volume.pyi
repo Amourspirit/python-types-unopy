@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class BoundVolume(object):
         """
         ...
 
+    @min.setter
+    def min(self, value: Position3D_bddc0bc0) -> None:
+        ...
 
     @property
     def max(self) -> Position3D_bddc0bc0:
@@ -60,4 +63,7 @@ class BoundVolume(object):
         """
         ...
 
+    @max.setter
+    def max(self, value: Position3D_bddc0bc0) -> None:
+        ...
 

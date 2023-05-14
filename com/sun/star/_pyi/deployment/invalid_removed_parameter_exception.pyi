@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,7 +57,9 @@ class InvalidRemovedParameterException(Exception_85530a09):
         the value of the removed parameter which was used in XPackageRegistry.bindPackage() to create the currently existing XPackage object.
         """
         ...
-
+    @PreviousValue.setter
+    def PreviousValue(self, value: bool) -> None:
+        ...
     @property
     def Extension(self) -> XPackage_cb1f0c4d:
         """
@@ -66,7 +68,9 @@ class InvalidRemovedParameterException(Exception_85530a09):
         Must not be NULL.
         """
         ...
-
+    @Extension.setter
+    def Extension(self, value: XPackage_cb1f0c4d) -> None:
+        ...
 
 __all__ = ['InvalidRemovedParameterException']
 

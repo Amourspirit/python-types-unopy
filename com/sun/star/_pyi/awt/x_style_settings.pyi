@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,361 +56,467 @@ class XStyleSettings(ABC):
         specifies the color of the border of active windows
         """
         ...
-
+    @ActiveBorderColor.setter
+    def ActiveBorderColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def ActiveColor(self) -> 'Color_68e908c5':
         """
         """
         ...
-
+    @ActiveColor.setter
+    def ActiveColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def ActiveTabColor(self) -> 'Color_68e908c5':
         """
         specifies the color of the active tab of a tab control
         """
         ...
-
+    @ActiveTabColor.setter
+    def ActiveTabColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def ActiveTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color for active UI components
         """
         ...
-
+    @ActiveTextColor.setter
+    def ActiveTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def ApplicationFont(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the application font
         """
         ...
-
+    @ApplicationFont.setter
+    def ApplicationFont(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def ButtonRolloverTextColor(self) -> 'Color_68e908c5':
         """
         specifies the color to use for text on buttons which are hovered with the mouse
         """
         ...
-
+    @ButtonRolloverTextColor.setter
+    def ButtonRolloverTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def ButtonTextColor(self) -> 'Color_68e908c5':
         """
         specifies the color to use for text on buttons
         """
         ...
-
+    @ButtonTextColor.setter
+    def ButtonTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def CheckedColor(self) -> 'Color_68e908c5':
         """
         """
         ...
-
+    @CheckedColor.setter
+    def CheckedColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def DarkShadowColor(self) -> 'Color_68e908c5':
         """
         specifies the dark portion of the shadow to use for UI elements
         """
         ...
-
+    @DarkShadowColor.setter
+    def DarkShadowColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def DeactiveBorderColor(self) -> 'Color_68e908c5':
         """
         specifies the color of the border of inactive windows
         """
         ...
-
+    @DeactiveBorderColor.setter
+    def DeactiveBorderColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def DeactiveColor(self) -> 'Color_68e908c5':
         """
         """
         ...
-
+    @DeactiveColor.setter
+    def DeactiveColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def DeactiveTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color for inactive UI components
         """
         ...
-
+    @DeactiveTextColor.setter
+    def DeactiveTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def DialogColor(self) -> 'Color_68e908c5':
         """
         specifies the background color of dialogs
         """
         ...
-
+    @DialogColor.setter
+    def DialogColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def DialogTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color of dialogs
         """
         ...
-
+    @DialogTextColor.setter
+    def DialogTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def DisableColor(self) -> 'Color_68e908c5':
         """
         specifies the text color for disabled UI elements
         """
         ...
-
+    @DisableColor.setter
+    def DisableColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def FaceColor(self) -> 'Color_68e908c5':
         """
         """
         ...
-
+    @FaceColor.setter
+    def FaceColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def FaceGradientColor(self) -> 'Color_68e908c5':
         """
         """
         ...
-
+    @FaceGradientColor.setter
+    def FaceGradientColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def FieldColor(self) -> 'Color_68e908c5':
         """
         specifies the background color for dialog input controls
         """
         ...
-
+    @FieldColor.setter
+    def FieldColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def FieldFont(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font for dialog input controls
         """
         ...
-
+    @FieldFont.setter
+    def FieldFont(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def FieldRolloverTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color for dialog input controls which are hovered with the mouse
         """
         ...
-
+    @FieldRolloverTextColor.setter
+    def FieldRolloverTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def FieldTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color for dialog input controls
         """
         ...
-
+    @FieldTextColor.setter
+    def FieldTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def FloatTitleFont(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font to use the title of floating windows
         """
         ...
-
+    @FloatTitleFont.setter
+    def FloatTitleFont(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def GroupFont(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font for dialog elements used for grouping other elements
         """
         ...
-
+    @GroupFont.setter
+    def GroupFont(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def GroupTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color for dialog elements used for grouping other elements
         """
         ...
-
+    @GroupTextColor.setter
+    def GroupTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def HelpColor(self) -> 'Color_68e908c5':
         """
         specifies the background color for dialog elements displaying help content
         """
         ...
-
+    @HelpColor.setter
+    def HelpColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def HelpFont(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the help font
         """
         ...
-
+    @HelpFont.setter
+    def HelpFont(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def HelpTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color for dialog elements displaying help content
         """
         ...
-
+    @HelpTextColor.setter
+    def HelpTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def HighContrastMode(self) -> bool:
         """
         controls whether the an UI component should use a high-contrast mode
         """
         ...
-
+    @HighContrastMode.setter
+    def HighContrastMode(self, value: bool) -> None:
+        ...
     @property
     def HighlightColor(self) -> 'Color_68e908c5':
         """
         specifies the background color for UI elements which are highlighted
         """
         ...
-
+    @HighlightColor.setter
+    def HighlightColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def HighlightTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color for UI elements which are highlighted
         """
         ...
-
+    @HighlightTextColor.setter
+    def HighlightTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def InactiveTabColor(self) -> 'Color_68e908c5':
         """
         specifies the color of inactive tabs of a tab control
         """
         ...
-
+    @InactiveTabColor.setter
+    def InactiveTabColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def LabelFont(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font for label controls
         """
         ...
-
+    @LabelFont.setter
+    def LabelFont(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def LabelTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color of label elements in dialogs
         """
         ...
-
+    @LabelTextColor.setter
+    def LabelTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def LightColor(self) -> 'Color_68e908c5':
         """
         """
         ...
-
+    @LightColor.setter
+    def LightColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def MenuBarColor(self) -> 'Color_68e908c5':
         """
         specifies the background color of menu bars
         """
         ...
-
+    @MenuBarColor.setter
+    def MenuBarColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def MenuBarTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color of menu bars
         """
         ...
-
+    @MenuBarTextColor.setter
+    def MenuBarTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def MenuBorderColor(self) -> 'Color_68e908c5':
         """
         specifies the border color of menus
         """
         ...
-
+    @MenuBorderColor.setter
+    def MenuBorderColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def MenuColor(self) -> 'Color_68e908c5':
         """
         """
         ...
-
+    @MenuColor.setter
+    def MenuColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def MenuFont(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font to use for menus
         """
         ...
-
+    @MenuFont.setter
+    def MenuFont(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def MenuHighlightColor(self) -> 'Color_68e908c5':
         """
         specifies the background color of highlighted menu items
         """
         ...
-
+    @MenuHighlightColor.setter
+    def MenuHighlightColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def MenuHighlightTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color of highlighted menu items
         """
         ...
-
+    @MenuHighlightTextColor.setter
+    def MenuHighlightTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def MenuTextColor(self) -> 'Color_68e908c5':
         """
         """
         ...
-
+    @MenuTextColor.setter
+    def MenuTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def MonoColor(self) -> 'Color_68e908c5':
         """
         specifies the color to use for monochrome control elements such as flat borders of controls
         """
         ...
-
+    @MonoColor.setter
+    def MonoColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def PushButtonFont(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font of push buttons
         """
         ...
-
+    @PushButtonFont.setter
+    def PushButtonFont(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def RadioCheckFont(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font of radio buttons and check boxes
         """
         ...
-
+    @RadioCheckFont.setter
+    def RadioCheckFont(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def RadioCheckTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color of radio buttons and check boxes
         """
         ...
-
+    @RadioCheckTextColor.setter
+    def RadioCheckTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def SeparatorColor(self) -> 'Color_68e908c5':
         """
         specifies the color of separators between UI elements
         """
         ...
-
+    @SeparatorColor.setter
+    def SeparatorColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def ShadowColor(self) -> 'Color_68e908c5':
         """
         specifies the color to use for UI elements
         """
         ...
-
+    @ShadowColor.setter
+    def ShadowColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def TitleFont(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font to use for window titles
         """
         ...
-
+    @TitleFont.setter
+    def TitleFont(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def ToolFont(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font to use for tool elements
         """
         ...
-
+    @ToolFont.setter
+    def ToolFont(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def WindowColor(self) -> 'Color_68e908c5':
         """
         specifies the background color to use for non-dialog windows
         """
         ...
-
+    @WindowColor.setter
+    def WindowColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def WindowTextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color to use for non-dialog windows
         """
         ...
-
+    @WindowTextColor.setter
+    def WindowTextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def WorkspaceColor(self) -> 'Color_68e908c5':
         """
         specifies the background color to use for document workspaces
         """
         ...
-
+    @WorkspaceColor.setter
+    def WorkspaceColor(self, value: 'Color_68e908c5') -> None:
+        ...
 

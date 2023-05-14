@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -62,6 +62,9 @@ class LogRecord(object):
         """
         ...
 
+    @LoggerName.setter
+    def LoggerName(self, value: str) -> None:
+        ...
 
     @property
     def SourceClassName(self) -> str:
@@ -72,6 +75,9 @@ class LogRecord(object):
         """
         ...
 
+    @SourceClassName.setter
+    def SourceClassName(self, value: str) -> None:
+        ...
 
     @property
     def SourceMethodName(self) -> str:
@@ -82,6 +88,9 @@ class LogRecord(object):
         """
         ...
 
+    @SourceMethodName.setter
+    def SourceMethodName(self, value: str) -> None:
+        ...
 
     @property
     def Message(self) -> str:
@@ -90,6 +99,9 @@ class LogRecord(object):
         """
         ...
 
+    @Message.setter
+    def Message(self, value: str) -> None:
+        ...
 
     @property
     def LogTime(self) -> DateTime_84de09d3:
@@ -98,6 +110,9 @@ class LogRecord(object):
         """
         ...
 
+    @LogTime.setter
+    def LogTime(self, value: DateTime_84de09d3) -> None:
+        ...
 
     @property
     def SequenceNumber(self) -> int:
@@ -108,6 +123,9 @@ class LogRecord(object):
         """
         ...
 
+    @SequenceNumber.setter
+    def SequenceNumber(self, value: int) -> None:
+        ...
 
     @property
     def ThreadID(self) -> str:
@@ -116,6 +134,9 @@ class LogRecord(object):
         """
         ...
 
+    @ThreadID.setter
+    def ThreadID(self, value: str) -> None:
+        ...
 
     @property
     def Level(self) -> int:
@@ -124,4 +145,7 @@ class LogRecord(object):
         """
         ...
 
+    @Level.setter
+    def Level(self, value: int) -> None:
+        ...
 

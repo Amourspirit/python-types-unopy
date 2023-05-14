@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,17 +48,26 @@ class DrawingDocumentDrawView(Controller_a5330b37, XWindow_713b0924, XPropertySe
         This is the drawing page that is currently visible.
         """
         ...
+    @CurrentPage.setter
+    def CurrentPage(self, value: 'XDrawPage_b07a0b57') -> None:
+        ...
     @property
     def IsLayerMode(self) -> bool:
         """
         If the view is in layer mode, the user can modify the layer of the model of this view in the user interface.
         """
         ...
+    @IsLayerMode.setter
+    def IsLayerMode(self, value: bool) -> None:
+        ...
     @property
     def IsMasterPageMode(self) -> bool:
         """
         If the view is in master page mode, the view shows the master pages of this model.
         """
+        ...
+    @IsMasterPageMode.setter
+    def IsMasterPageMode(self, value: bool) -> None:
         ...
     @property
     def ViewOffset(self) -> 'Point_5fb2085e':
@@ -70,11 +79,17 @@ class DrawingDocumentDrawView(Controller_a5330b37, XWindow_713b0924, XPropertySe
             OOo 1.1.2
         """
         ...
+    @ViewOffset.setter
+    def ViewOffset(self, value: 'Point_5fb2085e') -> None:
+        ...
     @property
     def VisibleArea(self) -> 'Rectangle_84b109e9':
         """
         This is the area that is currently visible.
         """
+        ...
+    @VisibleArea.setter
+    def VisibleArea(self, value: 'Rectangle_84b109e9') -> None:
         ...
     @property
     def ZoomType(self) -> int:
@@ -88,6 +103,9 @@ class DrawingDocumentDrawView(Controller_a5330b37, XWindow_713b0924, XPropertySe
             OOo 1.1.2
         """
         ...
+    @ZoomType.setter
+    def ZoomType(self, value: int) -> None:
+        ...
     @property
     def ZoomValue(self) -> int:
         """
@@ -99,5 +117,8 @@ class DrawingDocumentDrawView(Controller_a5330b37, XWindow_713b0924, XPropertySe
         
             OOo 1.1.2
         """
+        ...
+    @ZoomValue.setter
+    def ZoomValue(self, value: int) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,6 +53,9 @@ class VerbDescriptor(object):
         """
         ...
 
+    @VerbID.setter
+    def VerbID(self, value: int) -> None:
+        ...
 
     @property
     def VerbName(self) -> str:
@@ -61,6 +64,9 @@ class VerbDescriptor(object):
         """
         ...
 
+    @VerbName.setter
+    def VerbName(self, value: str) -> None:
+        ...
 
     @property
     def VerbFlags(self) -> int:
@@ -71,6 +77,9 @@ class VerbDescriptor(object):
         """
         ...
 
+    @VerbFlags.setter
+    def VerbFlags(self, value: int) -> None:
+        ...
 
     @property
     def VerbAttributes(self) -> int:
@@ -81,4 +90,7 @@ class VerbDescriptor(object):
         """
         ...
 
+    @VerbAttributes.setter
+    def VerbAttributes(self, value: int) -> None:
+        ...
 

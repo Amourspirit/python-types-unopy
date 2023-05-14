@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -45,11 +45,17 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
         specifies the horizontal alignment of the text in the control.
         """
         ...
+    @Align.setter
+    def Align(self, value: int) -> None:
+        ...
     @property
     def BackgroundColor(self) -> 'Color_68e908c5':
         """
         specifies the background color (RGB) of the control.
         """
+        ...
+    @BackgroundColor.setter
+    def BackgroundColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def DefaultButton(self) -> bool:
@@ -57,11 +63,17 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
         specifies that the button is the default button on the document.
         """
         ...
+    @DefaultButton.setter
+    def DefaultButton(self, value: bool) -> None:
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
+        ...
+    @Enabled.setter
+    def Enabled(self, value: bool) -> None:
         ...
     @property
     def FocusOnClick(self) -> bool:
@@ -75,11 +87,17 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @FocusOnClick.setter
+    def FocusOnClick(self, value: bool) -> None:
+        ...
     @property
     def FontDescriptor(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font attributes of the text in the control.
         """
+        ...
+    @FontDescriptor.setter
+    def FontDescriptor(self, value: 'FontDescriptor_bc110c0a') -> None:
         ...
     @property
     def FontEmphasisMark(self) -> int:
@@ -87,11 +105,17 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
         specifies the com.sun.star.text.FontEmphasis value of the text in the control.
         """
         ...
+    @FontEmphasisMark.setter
+    def FontEmphasisMark(self, value: int) -> None:
+        ...
     @property
     def FontRelief(self) -> int:
         """
         specifies the com.sun.star.text.FontRelief value of the text in the control.
         """
+        ...
+    @FontRelief.setter
+    def FontRelief(self, value: int) -> None:
         ...
     @property
     def Graphic(self) -> 'XGraphic_a4da0afc':
@@ -105,11 +129,17 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
             OOo 2.1
         """
         ...
+    @Graphic.setter
+    def Graphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the control.
         """
+        ...
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
         ...
     @property
     def HelpURL(self) -> str:
@@ -117,11 +147,17 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
         specifies the help URL of the control.
         """
         ...
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
+        ...
     @property
     def ImageAlign(self) -> int:
         """
         specifies the alignment of the image inside the button as ImageAlign value.
         """
+        ...
+    @ImageAlign.setter
+    def ImageAlign(self, value: int) -> None:
         ...
     @property
     def ImagePosition(self) -> int:
@@ -133,17 +169,26 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
         If this property is present, it supersedes the ImageAlign property - setting one of both properties sets the other one to the best possible match.
         """
         ...
+    @ImagePosition.setter
+    def ImagePosition(self, value: int) -> None:
+        ...
     @property
     def ImageURL(self) -> str:
         """
         specifies a URL to an image to use for the button.
         """
         ...
+    @ImageURL.setter
+    def ImageURL(self, value: str) -> None:
+        ...
     @property
     def Label(self) -> str:
         """
         specifies the label of the control.
         """
+        ...
+    @Label.setter
+    def Label(self, value: str) -> None:
         ...
     @property
     def MultiLine(self) -> bool:
@@ -155,17 +200,26 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @MultiLine.setter
+    def MultiLine(self, value: bool) -> None:
+        ...
     @property
     def Printable(self) -> bool:
         """
         specifies that the control will be printed with the document.
         """
         ...
+    @Printable.setter
+    def Printable(self, value: bool) -> None:
+        ...
     @property
     def PushButtonType(self) -> int:
         """
         specifies the default action of the button as PushButtonType value.
         """
+        ...
+    @PushButtonType.setter
+    def PushButtonType(self, value: int) -> None:
         ...
     @property
     def Repeat(self) -> bool:
@@ -179,6 +233,9 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @Repeat.setter
+    def Repeat(self, value: bool) -> None:
+        ...
     @property
     def RepeatDelay(self) -> int:
         """
@@ -191,6 +248,9 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @RepeatDelay.setter
+    def RepeatDelay(self, value: int) -> None:
+        ...
     @property
     def State(self) -> int:
         """
@@ -199,11 +259,17 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
         If Toggle property is set to TRUE, the pressed state is enabled and its pressed state can be obtained with this property.
         """
         ...
+    @State.setter
+    def State(self, value: int) -> None:
+        ...
     @property
     def Tabstop(self) -> bool:
         """
         specifies that the control can be reached with the TAB key.
         """
+        ...
+    @Tabstop.setter
+    def Tabstop(self, value: bool) -> None:
         ...
     @property
     def TextColor(self) -> 'Color_68e908c5':
@@ -211,11 +277,17 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
         specifies the text color (RGB) of the control.
         """
         ...
+    @TextColor.setter
+    def TextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def TextLineColor(self) -> 'Color_68e908c5':
         """
         specifies the text line color (RGB) of the control.
         """
+        ...
+    @TextLineColor.setter
+    def TextLineColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def Toggle(self) -> bool:
@@ -231,6 +303,9 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @Toggle.setter
+    def Toggle(self, value: bool) -> None:
+        ...
     @property
     def VerticalAlign(self) -> 'VerticalAlignment_8d0e12':
         """
@@ -240,5 +315,8 @@ class UnoControlButtonModel(UnoControlModel_c8ce0c58):
         
             OOo 2.0
         """
+        ...
+    @VerticalAlign.setter
+    def VerticalAlign(self, value: 'VerticalAlignment_8d0e12') -> None:
         ...
 

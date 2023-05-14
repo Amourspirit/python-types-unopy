@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,6 +40,9 @@ class AppletShape(Shape_85cc09e5):
         This sequence contains parameters that are passed to the applet when it is initialized.
         """
         ...
+    @AppletCommands.setter
+    def AppletCommands(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def AppletCode(self) -> str:
         """
@@ -47,6 +50,9 @@ class AppletShape(Shape_85cc09e5):
         
         The path to the class, including the class file itself.
         """
+        ...
+    @AppletCode.setter
+    def AppletCode(self, value: str) -> None:
         ...
     @property
     def AppletCodeBase(self) -> str:
@@ -56,16 +62,25 @@ class AppletShape(Shape_85cc09e5):
         If this property is empty, then it defaults the same base URI as for the current document.
         """
         ...
+    @AppletCodeBase.setter
+    def AppletCodeBase(self, value: str) -> None:
+        ...
     @property
     def AppletIsScript(self) -> bool:
         """
         This property specifies whether or not the applet can be scripted.
         """
         ...
+    @AppletIsScript.setter
+    def AppletIsScript(self, value: bool) -> None:
+        ...
     @property
     def AppletName(self) -> str:
         """
         this is an optional name for the applet.
         """
+        ...
+    @AppletName.setter
+    def AppletName(self, value: str) -> None:
         ...
 

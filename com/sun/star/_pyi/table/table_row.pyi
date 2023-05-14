@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,11 +38,17 @@ class TableRow(XPropertySet_bc180bfa, XCellRange_a2f70ad5):
         When hidden, it returns the height which the row would have, if it were visible.
         """
         ...
+    @Height.setter
+    def Height(self, value: int) -> None:
+        ...
     @property
     def IsStartOfNewPage(self) -> bool:
         """
         is TRUE, if there is a manual vertical page break attached to the row.
         """
+        ...
+    @IsStartOfNewPage.setter
+    def IsStartOfNewPage(self, value: bool) -> None:
         ...
     @property
     def IsVisible(self) -> bool:
@@ -50,10 +56,16 @@ class TableRow(XPropertySet_bc180bfa, XCellRange_a2f70ad5):
         is TRUE, if the row is visible.
         """
         ...
+    @IsVisible.setter
+    def IsVisible(self, value: bool) -> None:
+        ...
     @property
     def OptimalHeight(self) -> bool:
         """
         is TRUE, if the row always keeps its optimal height.
         """
+        ...
+    @OptimalHeight.setter
+    def OptimalHeight(self, value: bool) -> None:
         ...
 

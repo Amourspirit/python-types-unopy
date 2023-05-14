@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class ContentProviderInfo(object):
         """
         ...
 
+    @ContentProvider.setter
+    def ContentProvider(self, value: XContentProvider_d4150cc0) -> None:
+        ...
 
     @property
     def Scheme(self) -> str:
@@ -60,4 +63,7 @@ class ContentProviderInfo(object):
         """
         ...
 
+    @Scheme.setter
+    def Scheme(self, value: str) -> None:
+        ...
 

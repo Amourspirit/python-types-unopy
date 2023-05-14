@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -47,6 +47,9 @@ class TextField(TextContent_a6810b4d, XPropertySet_bc180bfa, XTextField_9a630aae
             OOo 2.0.1
         """
         ...
+    @IsFieldDisplayed.setter
+    def IsFieldDisplayed(self, value: bool) -> None:
+        ...
     @property
     def IsFieldUsed(self) -> bool:
         """
@@ -59,6 +62,9 @@ class TextField(TextContent_a6810b4d, XPropertySet_bc180bfa, XTextField_9a630aae
             OOo 2.0.1
         """
         ...
+    @IsFieldUsed.setter
+    def IsFieldUsed(self, value: bool) -> None:
+        ...
     @property
     def Title(self) -> str:
         """
@@ -68,5 +74,8 @@ class TextField(TextContent_a6810b4d, XPropertySet_bc180bfa, XTextField_9a630aae
         
             LibreOffice 7.4
         """
+        ...
+    @Title.setter
+    def Title(self, value: str) -> None:
         ...
 

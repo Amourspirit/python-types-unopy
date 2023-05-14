@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,11 +43,17 @@ class Annotation(TextField_90260a56):
         contains the name of the author of the annotation.
         """
         ...
+    @Author.setter
+    def Author(self, value: str) -> None:
+        ...
     @property
     def Content(self) -> str:
         """
         contains the annotation's content
         """
+        ...
+    @Content.setter
+    def Content(self, value: str) -> None:
         ...
     @property
     def Date(self) -> 'Date_60040844':
@@ -55,11 +61,17 @@ class Annotation(TextField_90260a56):
         contains the creation date.
         """
         ...
+    @Date.setter
+    def Date(self, value: 'Date_60040844') -> None:
+        ...
     @property
     def DateTimeValue(self) -> 'DateTime_84de09d3':
         """
         contains the creation date.
         """
+        ...
+    @DateTimeValue.setter
+    def DateTimeValue(self, value: 'DateTime_84de09d3') -> None:
         ...
     @property
     def Initials(self) -> str:
@@ -71,6 +83,9 @@ class Annotation(TextField_90260a56):
             LibreOffice 4.0
         """
         ...
+    @Initials.setter
+    def Initials(self, value: str) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
@@ -80,5 +95,8 @@ class Annotation(TextField_90260a56):
         
             LibreOffice 4.0
         """
+        ...
+    @Name.setter
+    def Name(self, value: str) -> None:
         ...
 

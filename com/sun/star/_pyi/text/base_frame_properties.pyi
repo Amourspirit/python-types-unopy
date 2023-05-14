@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             LibreOffice 4.2
         """
         ...
+    @FrameInteropGrabBag.setter
+    def FrameInteropGrabBag(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def AllowOverlap(self) -> bool:
         """
@@ -68,6 +71,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             LibreOffice 6.4
         """
         ...
+    @AllowOverlap.setter
+    def AllowOverlap(self, value: bool) -> None:
+        ...
     @property
     def AnchorFrame(self) -> 'XTextFrame_9a7e0ab5':
         """
@@ -75,6 +81,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         
         The value is valid only if the AnchorType is TextContentAnchorType.AT_FRAME.
         """
+        ...
+    @AnchorFrame.setter
+    def AnchorFrame(self, value: 'XTextFrame_9a7e0ab5') -> None:
         ...
     @property
     def AnchorPageNo(self) -> int:
@@ -84,11 +93,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         The value is valid only if the AnchorType is TextContentAnchorType.AT_PAGE.
         """
         ...
+    @AnchorPageNo.setter
+    def AnchorPageNo(self, value: int) -> None:
+        ...
     @property
     def BackColor(self) -> 'Color_68e908c5':
         """
         contains the color of the background of the object.
         """
+        ...
+    @BackColor.setter
+    def BackColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def BackGraphic(self) -> 'XGraphic_a4da0afc':
@@ -100,17 +115,26 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             LibreOffice 6.1
         """
         ...
+    @BackGraphic.setter
+    def BackGraphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def BackGraphicFilter(self) -> str:
         """
         contains the name of the file filter for the background graphic.
         """
         ...
+    @BackGraphicFilter.setter
+    def BackGraphicFilter(self, value: str) -> None:
+        ...
     @property
     def BackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         determines the position of the background graphic.
         """
+        ...
+    @BackGraphicLocation.setter
+    def BackGraphicLocation(self, value: 'GraphicLocation_e3ef0d30') -> None:
         ...
     @property
     def BackGraphicURL(self) -> str:
@@ -120,11 +144,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the BackGraphic property.
         """
         ...
+    @BackGraphicURL.setter
+    def BackGraphicURL(self, value: str) -> None:
+        ...
     @property
     def BackTransparent(self) -> bool:
         """
         If TRUE, the \"BackColor\" is ignored.
         """
+        ...
+    @BackTransparent.setter
+    def BackTransparent(self, value: bool) -> None:
         ...
     @property
     def BorderDistance(self) -> int:
@@ -132,11 +162,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         contains the distance from the border to the object.
         """
         ...
+    @BorderDistance.setter
+    def BorderDistance(self, value: int) -> None:
+        ...
     @property
     def BottomBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the bottom border of the object.
         """
+        ...
+    @BottomBorder.setter
+    def BottomBorder(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def BottomBorderDistance(self) -> int:
@@ -144,17 +180,26 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         contains the distance from the bottom border to the object.
         """
         ...
+    @BottomBorderDistance.setter
+    def BottomBorderDistance(self, value: int) -> None:
+        ...
     @property
     def BottomMargin(self) -> int:
         """
         contains the bottom margin of the object.
         """
         ...
+    @BottomMargin.setter
+    def BottomMargin(self, value: int) -> None:
+        ...
     @property
     def ContentProtected(self) -> bool:
         """
         determines if the content is protected.
         """
+        ...
+    @ContentProtected.setter
+    def ContentProtected(self, value: bool) -> None:
         ...
     @property
     def Description(self) -> str:
@@ -168,6 +213,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             OOo 3.2
         """
         ...
+    @Description.setter
+    def Description(self, value: str) -> None:
+        ...
     @property
     def FillGradient(self) -> 'Gradient_7a8a0982':
         """
@@ -178,6 +226,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             LibreOffice 4.1
         """
         ...
+    @FillGradient.setter
+    def FillGradient(self, value: 'Gradient_7a8a0982') -> None:
+        ...
     @property
     def FillGradientName(self) -> str:
         """
@@ -187,6 +238,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         
             LibreOffice 4.1
         """
+        ...
+    @FillGradientName.setter
+    def FillGradientName(self, value: str) -> None:
         ...
     @property
     def FillStyle(self) -> 'FillStyle_b1460b8c':
@@ -200,6 +254,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             LibreOffice 4.1
         """
         ...
+    @FillStyle.setter
+    def FillStyle(self, value: 'FillStyle_b1460b8c') -> None:
+        ...
     @property
     def Height(self) -> int:
         """
@@ -208,11 +265,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         It is only valid if TextEmbeddedObject.RelativeHeight is zero.
         """
         ...
+    @Height.setter
+    def Height(self, value: int) -> None:
+        ...
     @property
     def HoriOrient(self) -> int:
         """
         determines the horizontal orientation of the object.
         """
+        ...
+    @HoriOrient.setter
+    def HoriOrient(self, value: int) -> None:
         ...
     @property
     def HoriOrientPosition(self) -> int:
@@ -222,11 +285,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         It is only valid if \"HoriOrient\" is HoriOrientation_NONE.
         """
         ...
+    @HoriOrientPosition.setter
+    def HoriOrientPosition(self, value: int) -> None:
+        ...
     @property
     def HoriOrientRelation(self) -> int:
         """
         determines the environment of the object to which the orientation is related.
         """
+        ...
+    @HoriOrientRelation.setter
+    def HoriOrientRelation(self, value: int) -> None:
         ...
     @property
     def HyperLinkName(self) -> str:
@@ -234,11 +303,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         contains the name of the hyperlink that is set at the object.
         """
         ...
+    @HyperLinkName.setter
+    def HyperLinkName(self, value: str) -> None:
+        ...
     @property
     def HyperLinkTarget(self) -> str:
         """
         contains the name of the target for a hyperlink that is set at the object.
         """
+        ...
+    @HyperLinkTarget.setter
+    def HyperLinkTarget(self, value: str) -> None:
         ...
     @property
     def HyperLinkURL(self) -> str:
@@ -246,17 +321,26 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         contains the URL of a hyperlink that is set at the object.
         """
         ...
+    @HyperLinkURL.setter
+    def HyperLinkURL(self, value: str) -> None:
+        ...
     @property
     def IsSyncHeightToWidth(self) -> bool:
         """
         determines whether the height follows the width.
         """
         ...
+    @IsSyncHeightToWidth.setter
+    def IsSyncHeightToWidth(self, value: bool) -> None:
+        ...
     @property
     def IsSyncWidthToHeight(self) -> bool:
         """
         determines whether the width follows the height.
         """
+        ...
+    @IsSyncWidthToHeight.setter
+    def IsSyncWidthToHeight(self, value: bool) -> None:
         ...
     @property
     def LayoutSize(self) -> 'Size_576707ef':
@@ -270,11 +354,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             OOo 2.0.4
         """
         ...
+    @LayoutSize.setter
+    def LayoutSize(self, value: 'Size_576707ef') -> None:
+        ...
     @property
     def LeftBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the left border of the object.
         """
+        ...
+    @LeftBorder.setter
+    def LeftBorder(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def LeftBorderDistance(self) -> int:
@@ -282,11 +372,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         contains the distance from the left border to the object.
         """
         ...
+    @LeftBorderDistance.setter
+    def LeftBorderDistance(self, value: int) -> None:
+        ...
     @property
     def LeftMargin(self) -> int:
         """
         contains the left margin of the object.
         """
+        ...
+    @LeftMargin.setter
+    def LeftMargin(self, value: int) -> None:
         ...
     @property
     def Opaque(self) -> bool:
@@ -294,11 +390,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         determines if the object is opaque or transparent for text.
         """
         ...
+    @Opaque.setter
+    def Opaque(self, value: bool) -> None:
+        ...
     @property
     def PageToggle(self) -> bool:
         """
         determines if the object is mirrored on even pages.
         """
+        ...
+    @PageToggle.setter
+    def PageToggle(self, value: bool) -> None:
         ...
     @property
     def PositionProtected(self) -> bool:
@@ -306,11 +408,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         determines if the position is protected.
         """
         ...
+    @PositionProtected.setter
+    def PositionProtected(self, value: bool) -> None:
+        ...
     @property
     def Print(self) -> bool:
         """
         determines if the object is included in printing.
         """
+        ...
+    @Print.setter
+    def Print(self, value: bool) -> None:
         ...
     @property
     def RelativeHeight(self) -> int:
@@ -319,6 +427,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         
         It is only valid if it is greater than zero.
         """
+        ...
+    @RelativeHeight.setter
+    def RelativeHeight(self, value: int) -> None:
         ...
     @property
     def RelativeHeightRelation(self) -> int:
@@ -332,6 +443,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             LibreOffice 4.3
         """
         ...
+    @RelativeHeightRelation.setter
+    def RelativeHeightRelation(self, value: int) -> None:
+        ...
     @property
     def RelativeWidth(self) -> int:
         """
@@ -339,6 +453,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         
         It is only valid if it is greater than zero.
         """
+        ...
+    @RelativeWidth.setter
+    def RelativeWidth(self, value: int) -> None:
         ...
     @property
     def RelativeWidthRelation(self) -> int:
@@ -352,11 +469,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             LibreOffice 4.3
         """
         ...
+    @RelativeWidthRelation.setter
+    def RelativeWidthRelation(self, value: int) -> None:
+        ...
     @property
     def RightBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the right border of the object.
         """
+        ...
+    @RightBorder.setter
+    def RightBorder(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def RightBorderDistance(self) -> int:
@@ -364,11 +487,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         contains the distance from the right border to the object.
         """
         ...
+    @RightBorderDistance.setter
+    def RightBorderDistance(self, value: int) -> None:
+        ...
     @property
     def RightMargin(self) -> int:
         """
         contains the right margin of the object.
         """
+        ...
+    @RightMargin.setter
+    def RightMargin(self, value: int) -> None:
         ...
     @property
     def ServerMap(self) -> bool:
@@ -376,11 +505,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         determines if the object gets an image map from a server.
         """
         ...
+    @ServerMap.setter
+    def ServerMap(self, value: bool) -> None:
+        ...
     @property
     def ShadowFormat(self) -> 'ShadowFormat_bb840bdf':
         """
         contains the type of the shadow of the object.
         """
+        ...
+    @ShadowFormat.setter
+    def ShadowFormat(self, value: 'ShadowFormat_bb840bdf') -> None:
         ...
     @property
     def ShadowTransparence(self) -> int:
@@ -394,11 +529,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             LibreOffice 4.2
         """
         ...
+    @ShadowTransparence.setter
+    def ShadowTransparence(self, value: int) -> None:
+        ...
     @property
     def Size(self) -> 'Size_576707ef':
         """
         contains the size of the object.
         """
+        ...
+    @Size.setter
+    def Size(self, value: 'Size_576707ef') -> None:
         ...
     @property
     def SizeProtected(self) -> bool:
@@ -406,17 +547,26 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         determines if the size is protected.
         """
         ...
+    @SizeProtected.setter
+    def SizeProtected(self, value: bool) -> None:
+        ...
     @property
     def Surround(self) -> 'WrapTextMode_b1dd0b91':
         """
         determines the type of the surrounding text.
         """
         ...
+    @Surround.setter
+    def Surround(self, value: 'WrapTextMode_b1dd0b91') -> None:
+        ...
     @property
     def SurroundAnchorOnly(self) -> bool:
         """
         determines if the text of the paragraph in which the object is anchored, wraps around the object.
         """
+        ...
+    @SurroundAnchorOnly.setter
+    def SurroundAnchorOnly(self, value: bool) -> None:
         ...
     @property
     def Title(self) -> str:
@@ -430,6 +580,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             OOo 3.2
         """
         ...
+    @Title.setter
+    def Title(self, value: str) -> None:
+        ...
     @property
     def Tooltip(self) -> str:
         """
@@ -440,11 +593,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
             LibreOffice 7.4
         """
         ...
+    @Tooltip.setter
+    def Tooltip(self, value: str) -> None:
+        ...
     @property
     def TopBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the top border of the object.
         """
+        ...
+    @TopBorder.setter
+    def TopBorder(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def TopBorderDistance(self) -> int:
@@ -452,17 +611,26 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         contains the distance from the top border to the object.
         """
         ...
+    @TopBorderDistance.setter
+    def TopBorderDistance(self, value: int) -> None:
+        ...
     @property
     def TopMargin(self) -> int:
         """
         contains the top margin of the object.
         """
         ...
+    @TopMargin.setter
+    def TopMargin(self, value: int) -> None:
+        ...
     @property
     def VertOrient(self) -> int:
         """
         determines the vertical orientation of the object.
         """
+        ...
+    @VertOrient.setter
+    def VertOrient(self, value: int) -> None:
         ...
     @property
     def VertOrientPosition(self) -> int:
@@ -472,11 +640,17 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         It is only valid if TextEmbeddedObject.VertOrient is VertOrientation.NONE.
         """
         ...
+    @VertOrientPosition.setter
+    def VertOrientPosition(self, value: int) -> None:
+        ...
     @property
     def VertOrientRelation(self) -> int:
         """
         determines the environment of the object to which the orientation is related.
         """
+        ...
+    @VertOrientRelation.setter
+    def VertOrientRelation(self, value: int) -> None:
         ...
     @property
     def Width(self) -> int:
@@ -485,6 +659,9 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         
         It is only valid if TextEmbeddedObject.RelativeWidth is zero.
         """
+        ...
+    @Width.setter
+    def Width(self, value: int) -> None:
         ...
     @property
     def WrapInfluenceOnPosition(self) -> int:
@@ -497,5 +674,8 @@ class BaseFrameProperties(UserDefinedAttributesSupplier_9fbe1222):
         
             OOo 2.0
         """
+        ...
+    @WrapInfluenceOnPosition.setter
+    def WrapInfluenceOnPosition(self, value: int) -> None:
         ...
 

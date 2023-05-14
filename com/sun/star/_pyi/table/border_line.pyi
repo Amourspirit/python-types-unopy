@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,6 +54,9 @@ class BorderLine(object):
         """
         ...
 
+    @Color.setter
+    def Color(self, value: Color_68e908c5) -> None:
+        ...
 
     @property
     def InnerLineWidth(self) -> int:
@@ -64,6 +67,9 @@ class BorderLine(object):
         """
         ...
 
+    @InnerLineWidth.setter
+    def InnerLineWidth(self, value: int) -> None:
+        ...
 
     @property
     def OuterLineWidth(self) -> int:
@@ -74,6 +80,9 @@ class BorderLine(object):
         """
         ...
 
+    @OuterLineWidth.setter
+    def OuterLineWidth(self, value: int) -> None:
+        ...
 
     @property
     def LineDistance(self) -> int:
@@ -82,4 +91,7 @@ class BorderLine(object):
         """
         ...
 
+    @LineDistance.setter
+    def LineDistance(self, value: int) -> None:
+        ...
 

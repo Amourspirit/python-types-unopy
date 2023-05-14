@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class Position3D(object):
         """
         ...
 
+    @PositionX.setter
+    def PositionX(self, value: float) -> None:
+        ...
 
     @property
     def PositionY(self) -> float:
@@ -60,6 +63,9 @@ class Position3D(object):
         """
         ...
 
+    @PositionY.setter
+    def PositionY(self, value: float) -> None:
+        ...
 
     @property
     def PositionZ(self) -> float:
@@ -68,4 +74,7 @@ class Position3D(object):
         """
         ...
 
+    @PositionZ.setter
+    def PositionZ(self, value: float) -> None:
+        ...
 

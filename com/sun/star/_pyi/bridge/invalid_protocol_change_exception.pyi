@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,14 +53,18 @@ class InvalidProtocolChangeException(Exception_85530a09):
         The first invalid property.
         """
         ...
-
+    @invalidProperty.setter
+    def invalidProperty(self, value: ProtocolProperty_ff280e2c) -> None:
+        ...
     @property
     def reason(self) -> int:
         """
         Contains 1, if the property name is unknown to the thrower; or contains 2, if the property's value can't be accepted by the thrower.
         """
         ...
-
+    @reason.setter
+    def reason(self, value: int) -> None:
+        ...
 
 __all__ = ['InvalidProtocolChangeException']
 

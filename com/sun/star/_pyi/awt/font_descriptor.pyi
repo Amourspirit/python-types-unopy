@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -68,6 +68,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 
     @property
     def Height(self) -> int:
@@ -76,6 +79,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @Height.setter
+    def Height(self, value: int) -> None:
+        ...
 
     @property
     def Width(self) -> int:
@@ -84,6 +90,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @Width.setter
+    def Width(self, value: int) -> None:
+        ...
 
     @property
     def StyleName(self) -> str:
@@ -92,6 +101,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @StyleName.setter
+    def StyleName(self, value: str) -> None:
+        ...
 
     @property
     def Family(self) -> int:
@@ -102,6 +114,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @Family.setter
+    def Family(self, value: int) -> None:
+        ...
 
     @property
     def CharSet(self) -> int:
@@ -112,6 +127,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @CharSet.setter
+    def CharSet(self, value: int) -> None:
+        ...
 
     @property
     def Pitch(self) -> int:
@@ -122,6 +140,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @Pitch.setter
+    def Pitch(self, value: int) -> None:
+        ...
 
     @property
     def CharacterWidth(self) -> float:
@@ -134,6 +155,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @CharacterWidth.setter
+    def CharacterWidth(self, value: float) -> None:
+        ...
 
     @property
     def Weight(self) -> float:
@@ -146,6 +170,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @Weight.setter
+    def Weight(self, value: float) -> None:
+        ...
 
     @property
     def Slant(self) -> FontSlant_849509ed:
@@ -154,6 +181,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @Slant.setter
+    def Slant(self, value: FontSlant_849509ed) -> None:
+        ...
 
     @property
     def Underline(self) -> int:
@@ -164,6 +194,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @Underline.setter
+    def Underline(self, value: int) -> None:
+        ...
 
     @property
     def Strikeout(self) -> int:
@@ -174,6 +207,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @Strikeout.setter
+    def Strikeout(self, value: int) -> None:
+        ...
 
     @property
     def Orientation(self) -> float:
@@ -184,6 +220,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @Orientation.setter
+    def Orientation(self, value: float) -> None:
+        ...
 
     @property
     def Kerning(self) -> bool:
@@ -194,6 +233,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @Kerning.setter
+    def Kerning(self, value: bool) -> None:
+        ...
 
     @property
     def WordLineMode(self) -> bool:
@@ -206,6 +248,9 @@ class FontDescriptor(object):
         """
         ...
 
+    @WordLineMode.setter
+    def WordLineMode(self, value: bool) -> None:
+        ...
 
     @property
     def Type(self) -> int:
@@ -216,4 +261,7 @@ class FontDescriptor(object):
         """
         ...
 
+    @Type.setter
+    def Type(self, value: int) -> None:
+        ...
 

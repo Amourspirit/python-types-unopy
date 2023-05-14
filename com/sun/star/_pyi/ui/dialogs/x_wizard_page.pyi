@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -67,12 +67,16 @@ class XWizardPage(XComponent_98dc0ab5):
         Within a wizard, no two pages are allowed to have the same ID.
         """
         ...
-
+    @PageId.setter
+    def PageId(self, value: int) -> None:
+        ...
     @property
     def Window(self) -> 'XWindow_713b0924':
         """
         provides read-only access to the window of the page
         """
         ...
-
+    @Window.setter
+    def Window(self, value: 'XWindow_713b0924') -> None:
+        ...
 

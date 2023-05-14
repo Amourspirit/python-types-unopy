@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,6 +49,9 @@ class DataAwareControlModel(FormControlModel_e2990d22, XBoundComponent_d4830cbf,
         Applies only if the form the control model belongs to is loaded and the control is valid bound. The referenced field supports the com.sun.star.sdb.Column service.
         """
         ...
+    @BoundField.setter
+    def BoundField(self, value: 'XPropertySet_bc180bfa') -> None:
+        ...
     @property
     def DataField(self) -> str:
         """
@@ -58,6 +61,9 @@ class DataAwareControlModel(FormControlModel_e2990d22, XBoundComponent_d4830cbf,
         
         Not every control model can be bound to every database column. Usually, super services of the DataAwareControlModel restrict the column types they can be used with.
         """
+        ...
+    @DataField.setter
+    def DataField(self, value: str) -> None:
         ...
     @property
     def InputRequired(self) -> bool:
@@ -71,6 +77,9 @@ class DataAwareControlModel(FormControlModel_e2990d22, XBoundComponent_d4830cbf,
             OOo 3.1
         """
         ...
+    @InputRequired.setter
+    def InputRequired(self, value: bool) -> None:
+        ...
     @property
     def LabelControl(self) -> 'XPropertySet_bc180bfa':
         """
@@ -80,5 +89,8 @@ class DataAwareControlModel(FormControlModel_e2990d22, XBoundComponent_d4830cbf,
         
         When setting the property, a number of constraints apply:
         """
+        ...
+    @LabelControl.setter
+    def LabelControl(self, value: 'XPropertySet_bc180bfa') -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,7 +38,9 @@ class XAnimateColor(XAnimate_ca680c52):
         defines the color space which is used to perform the interpolation.
         """
         ...
-
+    @ColorInterpolation.setter
+    def ColorInterpolation(self, value: int) -> None:
+        ...
     @property
     def Direction(self) -> bool:
         """
@@ -49,5 +51,7 @@ class XAnimateColor(XAnimate_ca680c52):
         This attribute will be ignored for color spaces where this does not make any sense.
         """
         ...
-
+    @Direction.setter
+    def Direction(self, value: bool) -> None:
+        ...
 

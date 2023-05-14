@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,6 +35,9 @@ class StackableDiagram(ABC):
         If TRUE, the series of the diagram are stacked and each category sums up to 100%.
         """
         ...
+    @Percent.setter
+    def Percent(self, value: bool) -> None:
+        ...
     @property
     def Stacked(self) -> bool:
         """
@@ -42,5 +45,8 @@ class StackableDiagram(ABC):
         
         If you have a stacked bar chart, you can easily determine the sum of data in each category, by taking the top of the topmost bar.
         """
+        ...
+    @Stacked.setter
+    def Stacked(self, value: bool) -> None:
         ...
 

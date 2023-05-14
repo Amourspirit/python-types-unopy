@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -69,6 +69,9 @@ class Matrix2D(object):
         """
         ...
 
+    @m00.setter
+    def m00(self, value: float) -> None:
+        ...
 
     @property
     def m01(self) -> float:
@@ -77,6 +80,9 @@ class Matrix2D(object):
         """
         ...
 
+    @m01.setter
+    def m01(self, value: float) -> None:
+        ...
 
     @property
     def m10(self) -> float:
@@ -85,6 +91,9 @@ class Matrix2D(object):
         """
         ...
 
+    @m10.setter
+    def m10(self, value: float) -> None:
+        ...
 
     @property
     def m11(self) -> float:
@@ -93,4 +102,7 @@ class Matrix2D(object):
         """
         ...
 
+    @m11.setter
+    def m11(self, value: float) -> None:
+        ...
 

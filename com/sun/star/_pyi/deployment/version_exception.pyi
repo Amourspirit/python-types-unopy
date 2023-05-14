@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,14 +60,18 @@ class VersionException(Exception_85530a09):
         the version of the extension which is being installed.
         """
         ...
-
+    @NewVersion.setter
+    def NewVersion(self, value: str) -> None:
+        ...
     @property
     def NewDisplayName(self) -> str:
         """
         the display name of the extension which is being installed.
         """
         ...
-
+    @NewDisplayName.setter
+    def NewDisplayName(self, value: str) -> None:
+        ...
     @property
     def Deployed(self) -> XPackage_cb1f0c4d:
         """
@@ -76,7 +80,9 @@ class VersionException(Exception_85530a09):
         Must not be NULL.
         """
         ...
-
+    @Deployed.setter
+    def Deployed(self, value: XPackage_cb1f0c4d) -> None:
+        ...
 
 __all__ = ['VersionException']
 

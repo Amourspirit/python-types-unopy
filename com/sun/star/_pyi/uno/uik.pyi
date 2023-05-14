@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,6 +60,9 @@ class Uik(object):
         """
         ...
 
+    @Data1.setter
+    def Data1(self, value: int) -> None:
+        ...
 
     @property
     def Data2(self) -> int:
@@ -68,6 +71,9 @@ class Uik(object):
         """
         ...
 
+    @Data2.setter
+    def Data2(self, value: int) -> None:
+        ...
 
     @property
     def Data3(self) -> int:
@@ -76,6 +82,9 @@ class Uik(object):
         """
         ...
 
+    @Data3.setter
+    def Data3(self, value: int) -> None:
+        ...
 
     @property
     def Data4(self) -> int:
@@ -84,6 +93,9 @@ class Uik(object):
         """
         ...
 
+    @Data4.setter
+    def Data4(self, value: int) -> None:
+        ...
 
     @property
     def Data5(self) -> int:
@@ -92,4 +104,7 @@ class Uik(object):
         """
         ...
 
+    @Data5.setter
+    def Data5(self, value: int) -> None:
+        ...
 

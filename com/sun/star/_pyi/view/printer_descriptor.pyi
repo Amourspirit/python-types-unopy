@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -42,11 +42,17 @@ class PrinterDescriptor(ABC):
         indicates, whether the printer allows changes to PrinterDescriptor.PaperFormat.
         """
         ...
+    @CanSetPaperFormat.setter
+    def CanSetPaperFormat(self, value: bool) -> None:
+        ...
     @property
     def CanSetPaperOrientation(self) -> bool:
         """
         indicates, whether the printer allows changes to PrinterDescriptor.PaperOrientation.
         """
+        ...
+    @CanSetPaperOrientation.setter
+    def CanSetPaperOrientation(self, value: bool) -> None:
         ...
     @property
     def CanSetPaperSize(self) -> bool:
@@ -54,11 +60,17 @@ class PrinterDescriptor(ABC):
         indicates if the printer allows changes to PrinterDescriptor.PaperSize.
         """
         ...
+    @CanSetPaperSize.setter
+    def CanSetPaperSize(self, value: bool) -> None:
+        ...
     @property
     def IsBusy(self) -> bool:
         """
         indicates, whether the printer is busy or not.
         """
+        ...
+    @IsBusy.setter
+    def IsBusy(self, value: bool) -> None:
         ...
     @property
     def Name(self) -> str:
@@ -68,6 +80,9 @@ class PrinterDescriptor(ABC):
         Which printer queues are available, can be figured out with the system library of the used programming language/environment.
         """
         ...
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def PaperFormat(self) -> 'PaperFormat_a5340b24':
         """
@@ -76,11 +91,17 @@ class PrinterDescriptor(ABC):
         Setting this property may change the value of PrinterDescriptor.PaperSize.
         """
         ...
+    @PaperFormat.setter
+    def PaperFormat(self, value: 'PaperFormat_a5340b24') -> None:
+        ...
     @property
     def PaperOrientation(self) -> 'PaperOrientation_e36f0d47':
         """
         specifies the orientation of the paper.
         """
+        ...
+    @PaperOrientation.setter
+    def PaperOrientation(self, value: 'PaperOrientation_e36f0d47') -> None:
         ...
     @property
     def PaperSize(self) -> 'Size_576707ef':
@@ -89,5 +110,8 @@ class PrinterDescriptor(ABC):
         
         Setting this property may change the value of PrinterDescriptor.PaperFormat.
         """
+        ...
+    @PaperSize.setter
+    def PaperSize(self, value: 'Size_576707ef') -> None:
         ...
 

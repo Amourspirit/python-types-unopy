@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class RealRectangle2D(object):
         """
         ...
 
+    @X1.setter
+    def X1(self, value: float) -> None:
+        ...
 
     @property
     def Y1(self) -> float:
@@ -65,6 +68,9 @@ class RealRectangle2D(object):
         """
         ...
 
+    @Y1.setter
+    def Y1(self, value: float) -> None:
+        ...
 
     @property
     def X2(self) -> float:
@@ -77,6 +83,9 @@ class RealRectangle2D(object):
         """
         ...
 
+    @X2.setter
+    def X2(self, value: float) -> None:
+        ...
 
     @property
     def Y2(self) -> float:
@@ -87,4 +96,7 @@ class RealRectangle2D(object):
         """
         ...
 
+    @Y2.setter
+    def Y2(self, value: float) -> None:
+        ...
 

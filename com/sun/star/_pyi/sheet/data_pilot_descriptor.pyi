@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,6 +48,9 @@ class DataPilotDescriptor(XPropertySet_bc180bfa, XDataPilotDataLayoutFieldSuppli
             OOo 3.3
         """
         ...
+    @ImportDescriptor.setter
+    def ImportDescriptor(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def ServiceArguments(self) -> 'typing.Tuple[PropertyValue_c9610c73, ...]':
         """
@@ -58,17 +61,26 @@ class DataPilotDescriptor(XPropertySet_bc180bfa, XDataPilotDataLayoutFieldSuppli
             OOo 3.3
         """
         ...
+    @ServiceArguments.setter
+    def ServiceArguments(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def ColumnGrand(self) -> bool:
         """
         specifies if columns for grand total results are created.
         """
         ...
+    @ColumnGrand.setter
+    def ColumnGrand(self, value: bool) -> None:
+        ...
     @property
     def DrillDownOnDoubleClick(self) -> bool:
         """
         specifies whether to drill down to details or go into edit mode.
         """
+        ...
+    @DrillDownOnDoubleClick.setter
+    def DrillDownOnDoubleClick(self, value: bool) -> None:
         ...
     @property
     def GrandTotalName(self) -> str:
@@ -80,11 +92,17 @@ class DataPilotDescriptor(XPropertySet_bc180bfa, XDataPilotDataLayoutFieldSuppli
             OOo 3.4
         """
         ...
+    @GrandTotalName.setter
+    def GrandTotalName(self, value: str) -> None:
+        ...
     @property
     def IgnoreEmptyRows(self) -> bool:
         """
         specifies if empty rows in the source data are ignored.
         """
+        ...
+    @IgnoreEmptyRows.setter
+    def IgnoreEmptyRows(self, value: bool) -> None:
         ...
     @property
     def RepeatIfEmpty(self) -> bool:
@@ -92,17 +110,26 @@ class DataPilotDescriptor(XPropertySet_bc180bfa, XDataPilotDataLayoutFieldSuppli
         specifies if empty category cells in the source data should be treated as repetition of the content from the previous row.
         """
         ...
+    @RepeatIfEmpty.setter
+    def RepeatIfEmpty(self, value: bool) -> None:
+        ...
     @property
     def RowGrand(self) -> bool:
         """
         specifies if rows for grand total results are created.
         """
         ...
+    @RowGrand.setter
+    def RowGrand(self, value: bool) -> None:
+        ...
     @property
     def ShowFilterButton(self) -> bool:
         """
         specifies whether the filter button is shown.
         """
+        ...
+    @ShowFilterButton.setter
+    def ShowFilterButton(self, value: bool) -> None:
         ...
     @property
     def SourceServiceName(self) -> str:
@@ -113,5 +140,8 @@ class DataPilotDescriptor(XPropertySet_bc180bfa, XDataPilotDataLayoutFieldSuppli
         
             OOo 3.3
         """
+        ...
+    @SourceServiceName.setter
+    def SourceServiceName(self, value: str) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,11 +40,17 @@ class TableAutoFormat(XPropertySet_bc180bfa, XEnumerationAccess_4bac0ffc, XIndex
         specifies whether the background settings from the fields are used.
         """
         ...
+    @IncludeBackground.setter
+    def IncludeBackground(self, value: bool) -> None:
+        ...
     @property
     def IncludeBorder(self) -> bool:
         """
         specifies whether the border settings from the fields are used.
         """
+        ...
+    @IncludeBorder.setter
+    def IncludeBorder(self, value: bool) -> None:
         ...
     @property
     def IncludeFont(self) -> bool:
@@ -52,11 +58,17 @@ class TableAutoFormat(XPropertySet_bc180bfa, XEnumerationAccess_4bac0ffc, XIndex
         specifies whether the font settings from the fields are used.
         """
         ...
+    @IncludeFont.setter
+    def IncludeFont(self, value: bool) -> None:
+        ...
     @property
     def IncludeJustify(self) -> bool:
         """
         specifies whether the justification settings from the fields are used.
         """
+        ...
+    @IncludeJustify.setter
+    def IncludeJustify(self, value: bool) -> None:
         ...
     @property
     def IncludeNumberFormat(self) -> bool:
@@ -64,10 +76,16 @@ class TableAutoFormat(XPropertySet_bc180bfa, XEnumerationAccess_4bac0ffc, XIndex
         specifies whether the number format settings from the fields are used.
         """
         ...
+    @IncludeNumberFormat.setter
+    def IncludeNumberFormat(self, value: bool) -> None:
+        ...
     @property
     def IncludeWidthAndHeight(self) -> bool:
         """
         specifies whether the column widths and row heights should be updated after applying the format.
         """
+        ...
+    @IncludeWidthAndHeight.setter
+    def IncludeWidthAndHeight(self, value: bool) -> None:
         ...
 

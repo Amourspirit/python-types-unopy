@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -51,24 +51,39 @@ class EventListener(object):
     def AllListener(self) -> XAllListener_c91b0c54:
         ...
 
+    @AllListener.setter
+    def AllListener(self, value: XAllListener_c91b0c54) -> None:
+        ...
 
     @property
     def Helper(self) -> object:
         ...
 
+    @Helper.setter
+    def Helper(self, value: object) -> None:
+        ...
 
     @property
     def ListenerType(self) -> str:
         ...
 
+    @ListenerType.setter
+    def ListenerType(self, value: str) -> None:
+        ...
 
     @property
     def AddListenerParam(self) -> str:
         ...
 
+    @AddListenerParam.setter
+    def AddListenerParam(self, value: str) -> None:
+        ...
 
     @property
     def EventMethod(self) -> str:
         ...
 
+    @EventMethod.setter
+    def EventMethod(self, value: str) -> None:
+        ...
 

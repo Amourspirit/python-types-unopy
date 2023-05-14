@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -67,6 +67,9 @@ class Calendar2(object):
         """
         ...
 
+    @Days.setter
+    def Days(self, value: typing.Tuple[CalendarItem2_b38f0b23, ...]) -> None:
+        ...
 
     @property
     def Months(self) -> typing.Tuple[CalendarItem2_b38f0b23, ...]:
@@ -75,6 +78,9 @@ class Calendar2(object):
         """
         ...
 
+    @Months.setter
+    def Months(self, value: typing.Tuple[CalendarItem2_b38f0b23, ...]) -> None:
+        ...
 
     @property
     def GenitiveMonths(self) -> typing.Tuple[CalendarItem2_b38f0b23, ...]:
@@ -83,6 +89,9 @@ class Calendar2(object):
         """
         ...
 
+    @GenitiveMonths.setter
+    def GenitiveMonths(self, value: typing.Tuple[CalendarItem2_b38f0b23, ...]) -> None:
+        ...
 
     @property
     def PartitiveMonths(self) -> typing.Tuple[CalendarItem2_b38f0b23, ...]:
@@ -91,6 +100,9 @@ class Calendar2(object):
         """
         ...
 
+    @PartitiveMonths.setter
+    def PartitiveMonths(self, value: typing.Tuple[CalendarItem2_b38f0b23, ...]) -> None:
+        ...
 
     @property
     def Eras(self) -> typing.Tuple[CalendarItem2_b38f0b23, ...]:
@@ -99,6 +111,9 @@ class Calendar2(object):
         """
         ...
 
+    @Eras.setter
+    def Eras(self, value: typing.Tuple[CalendarItem2_b38f0b23, ...]) -> None:
+        ...
 
     @property
     def StartOfWeek(self) -> str:
@@ -107,6 +122,9 @@ class Calendar2(object):
         """
         ...
 
+    @StartOfWeek.setter
+    def StartOfWeek(self, value: str) -> None:
+        ...
 
     @property
     def MinimumNumberOfDaysForFirstWeek(self) -> int:
@@ -115,6 +133,9 @@ class Calendar2(object):
         """
         ...
 
+    @MinimumNumberOfDaysForFirstWeek.setter
+    def MinimumNumberOfDaysForFirstWeek(self, value: int) -> None:
+        ...
 
     @property
     def Default(self) -> bool:
@@ -123,6 +144,9 @@ class Calendar2(object):
         """
         ...
 
+    @Default.setter
+    def Default(self, value: bool) -> None:
+        ...
 
     @property
     def Name(self) -> str:
@@ -131,4 +155,7 @@ class Calendar2(object):
         """
         ...
 
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 

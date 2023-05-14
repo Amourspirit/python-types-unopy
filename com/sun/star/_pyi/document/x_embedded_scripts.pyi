@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -45,19 +45,25 @@ class XEmbeddedScripts(ABC):
         Effectively, this attribute is an evaluation of the document's MacroExecMode against possibly applicable configuration settings, the document location in relation to the trusted location, and the like.
         """
         ...
-
+    @AllowMacroExecution.setter
+    def AllowMacroExecution(self, value: bool) -> None:
+        ...
     @property
     def BasicLibraries(self) -> 'XStorageBasedLibraryContainer_d72a1321':
         """
         is the container of StarBasic macro libraries contained in the document
         """
         ...
-
+    @BasicLibraries.setter
+    def BasicLibraries(self, value: 'XStorageBasedLibraryContainer_d72a1321') -> None:
+        ...
     @property
     def DialogLibraries(self) -> 'XStorageBasedLibraryContainer_d72a1321':
         """
         is the container of dialogs libraries contained in the document
         """
         ...
-
+    @DialogLibraries.setter
+    def DialogLibraries(self, value: 'XStorageBasedLibraryContainer_d72a1321') -> None:
+        ...
 

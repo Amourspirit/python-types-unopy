@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -45,17 +45,26 @@ class TableSortDescriptor(SortDescriptor_ca680c8d):
         specifies the descriptions of the individual sort fields.
         """
         ...
+    @SortFields.setter
+    def SortFields(self, value: 'typing.Tuple[SortField_90080a52, ...]') -> None:
+        ...
     @property
     def ContainsHeader(self) -> bool:
         """
         specifies whether the first row or column (depending on com.sun.star.util.SortDescriptor.SortColumns) is a header which should not be sorted.
         """
         ...
+    @ContainsHeader.setter
+    def ContainsHeader(self, value: bool) -> None:
+        ...
     @property
     def MaxFieldCount(self) -> int:
         """
         contains the maximum number of sort fields the descriptor can hold.
         """
+        ...
+    @MaxFieldCount.setter
+    def MaxFieldCount(self, value: int) -> None:
         ...
     @property
     def Orientation(self) -> 'TableOrientation_ee780d84':
@@ -64,5 +73,8 @@ class TableSortDescriptor(SortDescriptor_ca680c8d):
         
         Some implementations may not support sorting columns.
         """
+        ...
+    @Orientation.setter
+    def Orientation(self, value: 'TableOrientation_ee780d84') -> None:
         ...
 

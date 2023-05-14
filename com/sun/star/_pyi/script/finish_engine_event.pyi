@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,6 +60,9 @@ class FinishEngineEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Finish.setter
+    def Finish(self, value: FinishReason_ca230c66) -> None:
+        ...
 
     @property
     def ErrorMessage(self) -> str:
@@ -70,6 +73,9 @@ class FinishEngineEvent(EventObject_a3d70b03):
         """
         ...
 
+    @ErrorMessage.setter
+    def ErrorMessage(self, value: str) -> None:
+        ...
 
     @property
     def Return(self) -> object:
@@ -80,4 +86,7 @@ class FinishEngineEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Return.setter
+    def Return(self, value: object) -> None:
+        ...
 

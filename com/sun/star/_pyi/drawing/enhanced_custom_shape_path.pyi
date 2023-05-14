@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,11 +41,17 @@ class EnhancedCustomShapePath(ABC):
         This property is specifying the points that makes the geometry of the shape.
         """
         ...
+    @Coordinates.setter
+    def Coordinates(self, value: 'typing.Tuple[EnhancedCustomShapeParameterPair_262914a3, ...]') -> None:
+        ...
     @property
     def GluePointLeavingDirections(self) -> 'typing.Tuple[float, ...]':
         """
         This property specifies GluePoint leaving directions.
         """
+        ...
+    @GluePointLeavingDirections.setter
+    def GluePointLeavingDirections(self, value: 'typing.Tuple[float, ...]') -> None:
         ...
     @property
     def GluePoints(self) -> 'typing.Tuple[EnhancedCustomShapeParameterPair_262914a3, ...]':
@@ -53,17 +59,26 @@ class EnhancedCustomShapePath(ABC):
         This property specifies custom gluepoints.
         """
         ...
+    @GluePoints.setter
+    def GluePoints(self, value: 'typing.Tuple[EnhancedCustomShapeParameterPair_262914a3, ...]') -> None:
+        ...
     @property
     def Segments(self) -> 'typing.Tuple[EnhancedCustomShapeSegment_b07b1249, ...]':
         """
         This property specifies the commands and the way the Coordinates have to be interpreted.
         """
         ...
+    @Segments.setter
+    def Segments(self, value: 'typing.Tuple[EnhancedCustomShapeSegment_b07b1249, ...]') -> None:
+        ...
     @property
     def SubViewSize(self) -> 'typing.Tuple[Size_576707ef, ...]':
         """
         This property specifies view size per sub path.
         """
+        ...
+    @SubViewSize.setter
+    def SubViewSize(self, value: 'typing.Tuple[Size_576707ef, ...]') -> None:
         ...
     @property
     def TextFrames(self) -> 'typing.Tuple[EnhancedCustomShapeTextFrame_d6321306, ...]':
@@ -73,6 +88,9 @@ class EnhancedCustomShapePath(ABC):
         In general the first text frame is used, except the shape is containing vertical text, then the object tries to use the second text frame. The default text frame will be as big as the shape.
         """
         ...
+    @TextFrames.setter
+    def TextFrames(self, value: 'typing.Tuple[EnhancedCustomShapeTextFrame_d6321306, ...]') -> None:
+        ...
     @property
     def ConcentricGradientFillAllowed(self) -> bool:
         """
@@ -80,6 +98,9 @@ class EnhancedCustomShapePath(ABC):
         
         The default is false.
         """
+        ...
+    @ConcentricGradientFillAllowed.setter
+    def ConcentricGradientFillAllowed(self, value: bool) -> None:
         ...
     @property
     def ExtrusionAllowed(self) -> bool:
@@ -89,6 +110,9 @@ class EnhancedCustomShapePath(ABC):
         The default is true.
         """
         ...
+    @ExtrusionAllowed.setter
+    def ExtrusionAllowed(self, value: bool) -> None:
+        ...
     @property
     def GluePointType(self) -> int:
         """
@@ -96,6 +120,9 @@ class EnhancedCustomShapePath(ABC):
         
         The values that can be used are specified in com.sun.star.drawing.EnhancedCustomShapeGluePointType
         """
+        ...
+    @GluePointType.setter
+    def GluePointType(self, value: int) -> None:
         ...
     @property
     def StretchX(self) -> int:
@@ -105,6 +132,9 @@ class EnhancedCustomShapePath(ABC):
         No stretching is used if this property is omitted.
         """
         ...
+    @StretchX.setter
+    def StretchX(self, value: int) -> None:
+        ...
     @property
     def StretchY(self) -> int:
         """
@@ -113,6 +143,9 @@ class EnhancedCustomShapePath(ABC):
         No stretching is used if this property is omitted.
         """
         ...
+    @StretchY.setter
+    def StretchY(self, value: int) -> None:
+        ...
     @property
     def TextPathAllowed(self) -> bool:
         """
@@ -120,5 +153,8 @@ class EnhancedCustomShapePath(ABC):
         
         The default is false;
         """
+        ...
+    @TextPathAllowed.setter
+    def TextPathAllowed(self, value: bool) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class ContextMenuExecuteEvent(object):
         """
         ...
 
+    @SourceWindow.setter
+    def SourceWindow(self, value: XWindow_713b0924) -> None:
+        ...
 
     @property
     def ExecutePosition(self) -> Point_5fb2085e:
@@ -65,6 +68,9 @@ class ContextMenuExecuteEvent(object):
         """
         ...
 
+    @ExecutePosition.setter
+    def ExecutePosition(self, value: Point_5fb2085e) -> None:
+        ...
 
     @property
     def ActionTriggerContainer(self) -> XIndexContainer_1c040ebe:
@@ -75,6 +81,9 @@ class ContextMenuExecuteEvent(object):
         """
         ...
 
+    @ActionTriggerContainer.setter
+    def ActionTriggerContainer(self, value: XIndexContainer_1c040ebe) -> None:
+        ...
 
     @property
     def Selection(self) -> XSelectionSupplier_fed20e15:
@@ -83,4 +92,7 @@ class ContextMenuExecuteEvent(object):
         """
         ...
 
+    @Selection.setter
+    def Selection(self, value: XSelectionSupplier_fed20e15) -> None:
+        ...
 

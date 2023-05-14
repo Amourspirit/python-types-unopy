@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class ChartDataValue(object):
         """
         ...
 
+    @Value.setter
+    def Value(self, value: float) -> None:
+        ...
 
     @property
     def HighError(self) -> float:
@@ -66,6 +69,9 @@ class ChartDataValue(object):
         """
         ...
 
+    @HighError.setter
+    def HighError(self, value: float) -> None:
+        ...
 
     @property
     def LowError(self) -> float:
@@ -74,4 +80,7 @@ class ChartDataValue(object):
         """
         ...
 
+    @LowError.setter
+    def LowError(self, value: float) -> None:
+        ...
 

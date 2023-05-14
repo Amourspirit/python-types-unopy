@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,11 +41,17 @@ class TableFormula(TextField_90260a56):
         This property is especially useful for import/export purposes.
         """
         ...
+    @CurrentPresentation.setter
+    def CurrentPresentation(self, value: str) -> None:
+        ...
     @property
     def Formula(self) -> str:
         """
         contains the formula.
         """
+        ...
+    @Formula.setter
+    def Formula(self, value: str) -> None:
         ...
     @property
     def IsShowFormula(self) -> bool:
@@ -53,10 +59,16 @@ class TableFormula(TextField_90260a56):
         determines whether the formula displayed as text or evaluated.
         """
         ...
+    @IsShowFormula.setter
+    def IsShowFormula(self, value: bool) -> None:
+        ...
     @property
     def NumberFormat(self) -> int:
         """
         this is the number format for this field.
         """
+        ...
+    @NumberFormat.setter
+    def NumberFormat(self, value: int) -> None:
         ...
 

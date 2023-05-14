@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,11 +35,17 @@ class ChartAxisXSupplier(XAxisXSupplier_d43a0cb3):
         This property determines if the x-axis is shown or hidden.
         """
         ...
+    @HasXAxis.setter
+    def HasXAxis(self, value: bool) -> None:
+        ...
     @property
     def HasXAxisDescription(self) -> bool:
         """
         Determines if the description of the x-axis is shown or hidden.
         """
+        ...
+    @HasXAxisDescription.setter
+    def HasXAxisDescription(self, value: bool) -> None:
         ...
     @property
     def HasXAxisGrid(self) -> bool:
@@ -47,16 +53,25 @@ class ChartAxisXSupplier(XAxisXSupplier_d43a0cb3):
         Determines if the major grid of the x-axis is shown or hidden.
         """
         ...
+    @HasXAxisGrid.setter
+    def HasXAxisGrid(self, value: bool) -> None:
+        ...
     @property
     def HasXAxisHelpGrid(self) -> bool:
         """
         Determines if the minor grid of the x-axis is shown or hidden.
         """
         ...
+    @HasXAxisHelpGrid.setter
+    def HasXAxisHelpGrid(self, value: bool) -> None:
+        ...
     @property
     def HasXAxisTitle(self) -> bool:
         """
         Determines if the title of the x-axis is shown or hidden.
         """
+        ...
+    @HasXAxisTitle.setter
+    def HasXAxisTitle(self, value: bool) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,6 +49,9 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
         determines if the chart type has lines connecting the data points or contains just symbols.
         """
         ...
+    @Lines.setter
+    def Lines(self, value: bool) -> None:
+        ...
     @property
     def SplineOrder(self) -> int:
         """
@@ -57,11 +60,17 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
         This property is only valid for B-splines
         """
         ...
+    @SplineOrder.setter
+    def SplineOrder(self, value: int) -> None:
+        ...
     @property
     def SplineResolution(self) -> int:
         """
         determines the number of sampling points of a spline
         """
+        ...
+    @SplineResolution.setter
+    def SplineResolution(self, value: int) -> None:
         ...
     @property
     def SplineType(self) -> int:
@@ -70,6 +79,9 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
         
         You can set the following values:
         """
+        ...
+    @SplineType.setter
+    def SplineType(self, value: int) -> None:
         ...
     @property
     def SymbolBitmap(self) -> 'XGraphic_a4da0afc':
@@ -81,6 +93,9 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
             LibreOffice 6.1
         """
         ...
+    @SymbolBitmap.setter
+    def SymbolBitmap(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def SymbolBitmapURL(self) -> str:
         """
@@ -91,11 +106,17 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
         When you query this value you get an internal URL of the embedded graphic.
         """
         ...
+    @SymbolBitmapURL.setter
+    def SymbolBitmapURL(self, value: str) -> None:
+        ...
     @property
     def SymbolSize(self) -> 'Size_576707ef':
         """
         specifies the size of symbols in 1/100th of a millimeter.
         """
+        ...
+    @SymbolSize.setter
+    def SymbolSize(self, value: 'Size_576707ef') -> None:
         ...
     @property
     def SymbolType(self) -> int:
@@ -106,5 +127,8 @@ class LineDiagram(ChartAxisXSupplier_a950e4d, ChartAxisZSupplier_aa70e4f, ChartS
         
         If you set this property to ChartSymbolType.AUTO, you can change the symbol shape for objects supporting the service ChartDataPointProperties or ChartDataRowProperties.
         """
+        ...
+    @SymbolType.setter
+    def SymbolType(self, value: int) -> None:
         ...
 

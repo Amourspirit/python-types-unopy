@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,7 +37,9 @@ class XFormatCondition(XPropertySet_bc180bfa, XReportControlFormat_3d4e0fc2):
         specifies if the condition is enabled or not.
         """
         ...
-
+    @Enabled.setter
+    def Enabled(self, value: bool) -> None:
+        ...
     @property
     def Formula(self) -> str:
         """
@@ -46,5 +48,7 @@ class XFormatCondition(XPropertySet_bc180bfa, XReportControlFormat_3d4e0fc2):
         If the formula evaluates to TRUE then the format will be applied.
         """
         ...
-
+    @Formula.setter
+    def Formula(self, value: str) -> None:
+        ...
 

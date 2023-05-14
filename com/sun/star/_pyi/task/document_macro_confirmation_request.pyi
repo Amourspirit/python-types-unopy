@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,14 +58,18 @@ class DocumentMacroConfirmationRequest(ClassifiedInteractionRequest_9f72121b):
         contains information about the signatures in the document
         """
         ...
-
+    @DocumentSignatureInformation.setter
+    def DocumentSignatureInformation(self, value: typing.Tuple[DocumentSignatureInformation_f36c13f7, ...]) -> None:
+        ...
     @property
     def DocumentURL(self) -> str:
         """
         specifies the URL of the document which contains macros whose execution should be approved or rejected.
         """
         ...
-
+    @DocumentURL.setter
+    def DocumentURL(self, value: str) -> None:
+        ...
     @property
     def DocumentStorage(self) -> XStorage_8e460a32:
         """
@@ -74,14 +78,18 @@ class DocumentMacroConfirmationRequest(ClassifiedInteractionRequest_9f72121b):
         This storage is necessary e.g. for displaying the existing signatures to the user, to allow him a decision whether or not to trust those signatures and thus the signed macros.
         """
         ...
-
+    @DocumentStorage.setter
+    def DocumentStorage(self, value: XStorage_8e460a32) -> None:
+        ...
     @property
     def DocumentVersion(self) -> str:
         """
         contains information about the ODF version of the document
         """
         ...
-
+    @DocumentVersion.setter
+    def DocumentVersion(self, value: str) -> None:
+        ...
 
 __all__ = ['DocumentMacroConfirmationRequest']
 

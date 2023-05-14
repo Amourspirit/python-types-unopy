@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,7 +40,9 @@ class XNumericControl(XPropertyControl_3f260fe2):
         describes the number of decimal digits to use for the value
         """
         ...
-
+    @DecimalDigits.setter
+    def DecimalDigits(self, value: int) -> None:
+        ...
     @property
     def DisplayUnit(self) -> int:
         """
@@ -49,21 +51,27 @@ class XNumericControl(XPropertyControl_3f260fe2):
         Only a certain set of com.sun.star.util.MeasureUnit values is supported. In particular, every value which denotes a fraction of another unit (like 100th millimeters) cannot be used as DisplayUnit.
         """
         ...
-
+    @DisplayUnit.setter
+    def DisplayUnit(self, value: int) -> None:
+        ...
     @property
     def MaxValue(self) -> object:
         """
         describes the maximum value which is allowed to be entered in the control
         """
         ...
-
+    @MaxValue.setter
+    def MaxValue(self, value: object) -> None:
+        ...
     @property
     def MinValue(self) -> object:
         """
         describes the minimum value which is allowed to be entered in the control
         """
         ...
-
+    @MinValue.setter
+    def MinValue(self, value: object) -> None:
+        ...
     @property
     def ValueUnit(self) -> int:
         """
@@ -72,5 +80,7 @@ class XNumericControl(XPropertyControl_3f260fe2):
         The core measurement unit for a property value might differ from the unit which is used by the control to display it. For instance, your property value might require that your values denote 100th millimeters, but to the user, you want to present the value as, say, inches. In this case, a numeric control can automatically handle the value conversion for you, if you give it a ValueUnit different from the DisplayUnit.
         """
         ...
-
+    @ValueUnit.setter
+    def ValueUnit(self, value: int) -> None:
+        ...
 

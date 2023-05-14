@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class Calendar(object):
         """
         ...
 
+    @Days.setter
+    def Days(self, value: typing.Tuple[CalendarItem_a86c0af1, ...]) -> None:
+        ...
 
     @property
     def Months(self) -> typing.Tuple[CalendarItem_a86c0af1, ...]:
@@ -65,6 +68,9 @@ class Calendar(object):
         """
         ...
 
+    @Months.setter
+    def Months(self, value: typing.Tuple[CalendarItem_a86c0af1, ...]) -> None:
+        ...
 
     @property
     def Eras(self) -> typing.Tuple[CalendarItem_a86c0af1, ...]:
@@ -73,6 +79,9 @@ class Calendar(object):
         """
         ...
 
+    @Eras.setter
+    def Eras(self, value: typing.Tuple[CalendarItem_a86c0af1, ...]) -> None:
+        ...
 
     @property
     def StartOfWeek(self) -> str:
@@ -81,6 +90,9 @@ class Calendar(object):
         """
         ...
 
+    @StartOfWeek.setter
+    def StartOfWeek(self, value: str) -> None:
+        ...
 
     @property
     def MinimumNumberOfDaysForFirstWeek(self) -> int:
@@ -89,6 +101,9 @@ class Calendar(object):
         """
         ...
 
+    @MinimumNumberOfDaysForFirstWeek.setter
+    def MinimumNumberOfDaysForFirstWeek(self, value: int) -> None:
+        ...
 
     @property
     def Default(self) -> bool:
@@ -97,6 +112,9 @@ class Calendar(object):
         """
         ...
 
+    @Default.setter
+    def Default(self, value: bool) -> None:
+        ...
 
     @property
     def Name(self) -> str:
@@ -105,4 +123,7 @@ class Calendar(object):
         """
         ...
 
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 

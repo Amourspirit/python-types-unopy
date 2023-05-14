@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,11 +37,17 @@ class PrintOptions(ABC):
         advises the printer to collate the pages of the copies.
         """
         ...
+    @Collate.setter
+    def Collate(self, value: bool) -> None:
+        ...
     @property
     def CopyCount(self) -> int:
         """
         specifies the number of copies to print.
         """
+        ...
+    @CopyCount.setter
+    def CopyCount(self, value: int) -> None:
         ...
     @property
     def DuplexMode(self) -> int:
@@ -49,11 +55,17 @@ class PrintOptions(ABC):
         determines the duplex mode for the print job.
         """
         ...
+    @DuplexMode.setter
+    def DuplexMode(self, value: int) -> None:
+        ...
     @property
     def FileName(self) -> str:
         """
         if set, specifies the name of a file to print to.
         """
+        ...
+    @FileName.setter
+    def FileName(self, value: str) -> None:
         ...
     @property
     def Pages(self) -> str:
@@ -63,11 +75,17 @@ class PrintOptions(ABC):
         This range is given as at the user interface. For example: \"1-4;10\" to print the pages 1 to 4 and 10.
         """
         ...
+    @Pages.setter
+    def Pages(self, value: str) -> None:
+        ...
     @property
     def PrinterName(self) -> str:
         """
         if set, specifies name of the printer to use.
         """
+        ...
+    @PrinterName.setter
+    def PrinterName(self, value: str) -> None:
         ...
     @property
     def SinglePrintJobs(self) -> bool:
@@ -75,16 +93,25 @@ class PrintOptions(ABC):
         advises the printer to create a single print job for each copy.
         """
         ...
+    @SinglePrintJobs.setter
+    def SinglePrintJobs(self, value: bool) -> None:
+        ...
     @property
     def Sort(self) -> bool:
         """
         advises the printer to sort the pages of the copies.
         """
         ...
+    @Sort.setter
+    def Sort(self, value: bool) -> None:
+        ...
     @property
     def Wait(self) -> bool:
         """
         if set to TRUE, the corresponding XPrintable.print() request will be executed synchronous.
         """
+        ...
+    @Wait.setter
+    def Wait(self, value: bool) -> None:
         ...
 

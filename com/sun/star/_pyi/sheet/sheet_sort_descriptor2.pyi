@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,11 +44,17 @@ class SheetSortDescriptor2(TableSortDescriptor2_27e00ef1):
         specifies if cell formats are moved with the contents they belong to.
         """
         ...
+    @BindFormatsToContent.setter
+    def BindFormatsToContent(self, value: bool) -> None:
+        ...
     @property
     def ContainsHeader(self) -> bool:
         """
         specifies whether the first row or column (depending on com.sun.star.table.TableSortDescriptor.Orientation) is a header which should not be sorted.
         """
+        ...
+    @ContainsHeader.setter
+    def ContainsHeader(self, value: bool) -> None:
         ...
     @property
     def CopyOutputData(self) -> bool:
@@ -56,11 +62,17 @@ class SheetSortDescriptor2(TableSortDescriptor2_27e00ef1):
         specifies if the sorted data should be copied to another position in the document.
         """
         ...
+    @CopyOutputData.setter
+    def CopyOutputData(self, value: bool) -> None:
+        ...
     @property
     def IsUserListEnabled(self) -> bool:
         """
         specifies if a user defined sorting list is used.
         """
+        ...
+    @IsUserListEnabled.setter
+    def IsUserListEnabled(self, value: bool) -> None:
         ...
     @property
     def OutputPosition(self) -> 'CellAddress_ae5f0b56':
@@ -70,6 +82,9 @@ class SheetSortDescriptor2(TableSortDescriptor2_27e00ef1):
         This property is only used, if SheetSortDescriptor.CopyOutputData is TRUE.
         """
         ...
+    @OutputPosition.setter
+    def OutputPosition(self, value: 'CellAddress_ae5f0b56') -> None:
+        ...
     @property
     def UserListIndex(self) -> int:
         """
@@ -77,5 +92,8 @@ class SheetSortDescriptor2(TableSortDescriptor2_27e00ef1):
         
         This property is only used, if SheetSortDescriptor.IsUserListEnabled is TRUE.
         """
+        ...
+    @UserListIndex.setter
+    def UserListIndex(self, value: int) -> None:
         ...
 

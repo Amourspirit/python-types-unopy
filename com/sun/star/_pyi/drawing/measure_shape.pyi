@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,10 +43,16 @@ class MeasureShape(LineProperties_f13f0da9, MeasureProperties_1d340ef3, Rotation
         this point is the end of the measured distance
         """
         ...
+    @EndPosition.setter
+    def EndPosition(self, value: 'Point_5fb2085e') -> None:
+        ...
     @property
     def StartPosition(self) -> 'Point_5fb2085e':
         """
         this point is the start of the measured distance
         """
+        ...
+    @StartPosition.setter
+    def StartPosition(self, value: 'Point_5fb2085e') -> None:
         ...
 
