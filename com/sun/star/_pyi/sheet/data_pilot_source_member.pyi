@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -42,6 +42,9 @@ class DataPilotSourceMember(XPropertySet_bc180bfa, XNamed_a6520b08):
         specifies whether the member is visible.
         """
         ...
+    @IsVisible.setter
+    def IsVisible(self, value: bool) -> None:
+        ...
     @property
     def Position(self) -> bool:
         """
@@ -52,10 +55,16 @@ class DataPilotSourceMember(XPropertySet_bc180bfa, XNamed_a6520b08):
             OOo 2.4
         """
         ...
+    @Position.setter
+    def Position(self, value: bool) -> None:
+        ...
     @property
     def ShowDetails(self) -> bool:
         """
         specifies whether details for the member are shown.
         """
+        ...
+    @ShowDetails.setter
+    def ShowDetails(self, value: bool) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -102,7 +102,9 @@ class XMap(XElementAccess_cd60e3f):
         Implementations are free to accept any supertype of KeyType as keys.
         """
         ...
-
+    @KeyType.setter
+    def KeyType(self, value: object) -> None:
+        ...
     @property
     def ValueType(self) -> object:
         """
@@ -111,5 +113,7 @@ class XMap(XElementAccess_cd60e3f):
         Implementations are free to accept any supertype of the ValueType as values.
         """
         ...
-
+    @ValueType.setter
+    def ValueType(self, value: object) -> None:
+        ...
 

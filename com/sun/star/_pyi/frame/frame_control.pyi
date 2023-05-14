@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,6 +37,9 @@ class FrameControl(UnoControl_8f2c0a67):
         contains the type of the component which is loaded into the frame, or the document which implicitly specifies the type
         """
         ...
+    @ComponentUrl.setter
+    def ComponentUrl(self, value: str) -> None:
+        ...
     @property
     def Frame(self) -> str:
         """
@@ -44,5 +47,8 @@ class FrameControl(UnoControl_8f2c0a67):
         
         The Frame is created if the control is shown and the ComponentUrl is set.
         """
+        ...
+    @Frame.setter
+    def Frame(self, value: str) -> None:
         ...
 

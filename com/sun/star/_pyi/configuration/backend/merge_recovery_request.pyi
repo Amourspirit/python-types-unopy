@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -63,14 +63,18 @@ class MergeRecoveryRequest(Exception_85530a09):
         If no more detail information is available, this may be left VOID.
         """
         ...
-
+    @ErrorDetails.setter
+    def ErrorDetails(self, value: object) -> None:
+        ...
     @property
     def ErrorLayerId(self) -> str:
         """
         Identifier of the layer object containing the invalid data.
         """
         ...
-
+    @ErrorLayerId.setter
+    def ErrorLayerId(self, value: str) -> None:
+        ...
     @property
     def IsRemovalRequest(self) -> bool:
         """
@@ -79,7 +83,9 @@ class MergeRecoveryRequest(Exception_85530a09):
         If TRUE the requester wants to remove the underlying data of the layer.If FALSE the request is to skip the underlying data this time, but without removing it.
         """
         ...
-
+    @IsRemovalRequest.setter
+    def IsRemovalRequest(self, value: bool) -> None:
+        ...
 
 __all__ = ['MergeRecoveryRequest']
 

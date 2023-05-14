@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -87,12 +87,16 @@ class XGridDataModel(XComponent_98dc0ab5, XCloneable_99d00aa3):
         denotes the number of columns for which the model can provide data
         """
         ...
-
+    @ColumnCount.setter
+    def ColumnCount(self, value: int) -> None:
+        ...
     @property
     def RowCount(self) -> int:
         """
         denotes the number of rows for which the model can provide data
         """
         ...
-
+    @RowCount.setter
+    def RowCount(self, value: int) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -51,7 +51,9 @@ class XDatabaseDataProvider(XPropertySet_bc180bfa, XDataProvider_122f0e31, XRang
         If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
         """
         ...
-
+    @DetailFields.setter
+    def DetailFields(self, value: 'typing.Tuple[str, ...]') -> None:
+        ...
     @property
     def MasterFields(self) -> 'typing.Tuple[str, ...]':
         """
@@ -62,21 +64,27 @@ class XDatabaseDataProvider(XPropertySet_bc180bfa, XDataProvider_122f0e31, XRang
         If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
         """
         ...
-
+    @MasterFields.setter
+    def MasterFields(self, value: 'typing.Tuple[str, ...]') -> None:
+        ...
     @property
     def ActiveConnection(self) -> 'XConnection_a36a0b0c':
         """
         specifies the active connection which is used to create the resulting report.
         """
         ...
-
+    @ActiveConnection.setter
+    def ActiveConnection(self, value: 'XConnection_a36a0b0c') -> None:
+        ...
     @property
     def ApplyFilter(self) -> bool:
         """
         indicates whether the filter should be applied or not, default is FALSE.
         """
         ...
-
+    @ApplyFilter.setter
+    def ApplyFilter(self, value: bool) -> None:
+        ...
     @property
     def Command(self) -> str:
         """
@@ -85,7 +93,9 @@ class XDatabaseDataProvider(XPropertySet_bc180bfa, XDataProvider_122f0e31, XRang
         In case of a CommandType of CommandType.COMMAND, means in case the Command specifies an SQL statement, the inherited com.sun.star.sdbc.RowSet.EscapeProcessing becomes relevant:It then can be to used to specify whether the SQL statement should be analyzed on the client side before sending it to the database server.The default value for com.sun.star.sdbc.RowSet.EscapeProcessing is TRUE. By switching it to FALSE, you can pass backend-specific SQL statements, which are not standard SQL, to your database.
         """
         ...
-
+    @Command.setter
+    def Command(self, value: str) -> None:
+        ...
     @property
     def CommandType(self) -> int:
         """
@@ -96,14 +106,18 @@ class XDatabaseDataProvider(XPropertySet_bc180bfa, XDataProvider_122f0e31, XRang
         This property is only meaningful together with the Command property, thus either both or none of them are present.
         """
         ...
-
+    @CommandType.setter
+    def CommandType(self, value: int) -> None:
+        ...
     @property
     def DataSourceName(self) -> str:
         """
         is the name of the data source to use, this could be a named data source or the URL of a data access component.
         """
         ...
-
+    @DataSourceName.setter
+    def DataSourceName(self, value: str) -> None:
+        ...
     @property
     def EscapeProcessing(self) -> bool:
         """
@@ -114,7 +128,9 @@ class XDatabaseDataProvider(XPropertySet_bc180bfa, XDataProvider_122f0e31, XRang
         This property is usually present together with the Command and CommandType properties, and is evaluated if and only if CommandType equals CommandType.COMMAND.
         """
         ...
-
+    @EscapeProcessing.setter
+    def EscapeProcessing(self, value: bool) -> None:
+        ...
     @property
     def Filter(self) -> str:
         """
@@ -127,28 +143,36 @@ class XDatabaseDataProvider(XPropertySet_bc180bfa, XDataProvider_122f0e31, XRang
         Note that the Filter property does not make sense if a resultSet has been specified in the DataAccessDescriptor.
         """
         ...
-
+    @Filter.setter
+    def Filter(self, value: str) -> None:
+        ...
     @property
     def GroupBy(self) -> str:
         """
         additional group by for the row set
         """
         ...
-
+    @GroupBy.setter
+    def GroupBy(self, value: str) -> None:
+        ...
     @property
     def HavingClause(self) -> str:
         """
         additional having clause for the row set
         """
         ...
-
+    @HavingClause.setter
+    def HavingClause(self, value: str) -> None:
+        ...
     @property
     def Order(self) -> str:
         """
         is an additional sort order definition for a row set.
         """
         ...
-
+    @Order.setter
+    def Order(self, value: str) -> None:
+        ...
     @property
     def RowLimit(self) -> int:
         """
@@ -157,5 +181,7 @@ class XDatabaseDataProvider(XPropertySet_bc180bfa, XDataProvider_122f0e31, XRang
         A value of zero implies that no limit exists.
         """
         ...
-
+    @RowLimit.setter
+    def RowLimit(self, value: int) -> None:
+        ...
 

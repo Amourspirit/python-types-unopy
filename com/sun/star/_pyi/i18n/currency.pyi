@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,6 +56,9 @@ class Currency(object):
         """
         ...
 
+    @ID.setter
+    def ID(self, value: str) -> None:
+        ...
 
     @property
     def Symbol(self) -> str:
@@ -64,6 +67,9 @@ class Currency(object):
         """
         ...
 
+    @Symbol.setter
+    def Symbol(self, value: str) -> None:
+        ...
 
     @property
     def BankSymbol(self) -> str:
@@ -74,6 +80,9 @@ class Currency(object):
         """
         ...
 
+    @BankSymbol.setter
+    def BankSymbol(self, value: str) -> None:
+        ...
 
     @property
     def Name(self) -> str:
@@ -84,6 +93,9 @@ class Currency(object):
         """
         ...
 
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 
     @property
     def Default(self) -> bool:
@@ -92,6 +104,9 @@ class Currency(object):
         """
         ...
 
+    @Default.setter
+    def Default(self, value: bool) -> None:
+        ...
 
     @property
     def UsedInCompatibleFormatCodes(self) -> bool:
@@ -102,6 +117,9 @@ class Currency(object):
         """
         ...
 
+    @UsedInCompatibleFormatCodes.setter
+    def UsedInCompatibleFormatCodes(self, value: bool) -> None:
+        ...
 
     @property
     def DecimalPlaces(self) -> int:
@@ -110,4 +128,7 @@ class Currency(object):
         """
         ...
 
+    @DecimalPlaces.setter
+    def DecimalPlaces(self, value: int) -> None:
+        ...
 

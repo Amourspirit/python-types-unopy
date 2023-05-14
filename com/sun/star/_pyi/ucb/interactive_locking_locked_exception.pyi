@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,7 +60,9 @@ class InteractiveLockingLockedException(InteractiveLockingException_7af31136):
         TRUE, the lock has been obtained by this OOo session. FALSE the lock has been obtained by another principal.
         """
         ...
-
+    @SelfOwned.setter
+    def SelfOwned(self, value: bool) -> None:
+        ...
 
 __all__ = ['InteractiveLockingLockedException']
 

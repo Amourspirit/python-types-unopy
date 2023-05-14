@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class UpperLowerMarginScale(object):
         """
         ...
 
+    @Upper.setter
+    def Upper(self, value: int) -> None:
+        ...
 
     @property
     def Lower(self) -> int:
@@ -65,6 +68,9 @@ class UpperLowerMarginScale(object):
         """
         ...
 
+    @Lower.setter
+    def Lower(self, value: int) -> None:
+        ...
 
     @property
     def ScaleUpper(self) -> int:
@@ -73,6 +79,9 @@ class UpperLowerMarginScale(object):
         """
         ...
 
+    @ScaleUpper.setter
+    def ScaleUpper(self, value: int) -> None:
+        ...
 
     @property
     def ScaleLower(self) -> int:
@@ -81,4 +90,7 @@ class UpperLowerMarginScale(object):
         """
         ...
 
+    @ScaleLower.setter
+    def ScaleLower(self, value: int) -> None:
+        ...
 

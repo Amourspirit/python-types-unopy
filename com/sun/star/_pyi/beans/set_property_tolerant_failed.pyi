@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -51,6 +51,9 @@ class SetPropertyTolerantFailed(object):
         """
         ...
 
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 
     @property
     def Result(self) -> int:
@@ -61,4 +64,7 @@ class SetPropertyTolerantFailed(object):
         """
         ...
 
+    @Result.setter
+    def Result(self, value: int) -> None:
+        ...
 

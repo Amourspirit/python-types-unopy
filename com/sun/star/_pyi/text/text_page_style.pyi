@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -46,6 +46,9 @@ class TextPageStyle(ABC):
         contains the interface to the text of the footer.
         """
         ...
+    @FooterText.setter
+    def FooterText(self, value: 'XText_690408ca') -> None:
+        ...
     @property
     def FooterTextFirst(self) -> 'XText_690408ca':
         """
@@ -56,17 +59,26 @@ class TextPageStyle(ABC):
             LibreOffice 4.0
         """
         ...
+    @FooterTextFirst.setter
+    def FooterTextFirst(self, value: 'XText_690408ca') -> None:
+        ...
     @property
     def FooterTextLeft(self) -> 'XText_690408ca':
         """
         contains the interface to the text of the footer of a left page.
         """
         ...
+    @FooterTextLeft.setter
+    def FooterTextLeft(self, value: 'XText_690408ca') -> None:
+        ...
     @property
     def FooterTextRight(self) -> 'XText_690408ca':
         """
         contains the interface to the text of the footer of a right page.
         """
+        ...
+    @FooterTextRight.setter
+    def FooterTextRight(self, value: 'XText_690408ca') -> None:
         ...
     @property
     def FootnoteHeight(self) -> int:
@@ -76,11 +88,17 @@ class TextPageStyle(ABC):
         If set to zero, the height of the current page is used as limit.
         """
         ...
+    @FootnoteHeight.setter
+    def FootnoteHeight(self, value: int) -> None:
+        ...
     @property
     def FootnoteLineAdjust(self) -> int:
         """
         contains the adjustment of the separator line between the text and the footnote area.
         """
+        ...
+    @FootnoteLineAdjust.setter
+    def FootnoteLineAdjust(self, value: int) -> None:
         ...
     @property
     def FootnoteLineColor(self) -> 'Color_68e908c5':
@@ -88,11 +106,17 @@ class TextPageStyle(ABC):
         contains the color of the separator line between the text and the footnote area.
         """
         ...
+    @FootnoteLineColor.setter
+    def FootnoteLineColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def FootnoteLineDistance(self) -> int:
         """
         contains the distance between the footnote area and the separator line between the text and the footnote area (in 1/100 mm).
         """
+        ...
+    @FootnoteLineDistance.setter
+    def FootnoteLineDistance(self, value: int) -> None:
         ...
     @property
     def FootnoteLineRelativeWidth(self) -> int:
@@ -100,11 +124,17 @@ class TextPageStyle(ABC):
         contains the relative width of the separator line between the text and the footnote area (in percent).
         """
         ...
+    @FootnoteLineRelativeWidth.setter
+    def FootnoteLineRelativeWidth(self, value: int) -> None:
+        ...
     @property
     def FootnoteLineTextDistance(self) -> int:
         """
         contains the distance between the text and the separator line between the text and the footnote area (in 1/100 mm).
         """
+        ...
+    @FootnoteLineTextDistance.setter
+    def FootnoteLineTextDistance(self, value: int) -> None:
         ...
     @property
     def FootnoteLineWeight(self) -> int:
@@ -112,11 +142,17 @@ class TextPageStyle(ABC):
         contains the weight of the separator line between the text and the footnote area (in 1/100 mm).
         """
         ...
+    @FootnoteLineWeight.setter
+    def FootnoteLineWeight(self, value: int) -> None:
+        ...
     @property
     def HeaderText(self) -> 'XText_690408ca':
         """
         contains the interface to the text of the header.
         """
+        ...
+    @HeaderText.setter
+    def HeaderText(self, value: 'XText_690408ca') -> None:
         ...
     @property
     def HeaderTextFirst(self) -> 'XText_690408ca':
@@ -128,11 +164,17 @@ class TextPageStyle(ABC):
             LibreOffice 4.0
         """
         ...
+    @HeaderTextFirst.setter
+    def HeaderTextFirst(self, value: 'XText_690408ca') -> None:
+        ...
     @property
     def HeaderTextLeft(self) -> 'XText_690408ca':
         """
         contains the interface to the text of the header of left pages.
         """
+        ...
+    @HeaderTextLeft.setter
+    def HeaderTextLeft(self, value: 'XText_690408ca') -> None:
         ...
     @property
     def HeaderTextRight(self) -> 'XText_690408ca':
@@ -140,11 +182,17 @@ class TextPageStyle(ABC):
         contains the interface to the text of the header of right pages.
         """
         ...
+    @HeaderTextRight.setter
+    def HeaderTextRight(self, value: 'XText_690408ca') -> None:
+        ...
     @property
     def RegisterModeActive(self) -> bool:
         """
         determines whether the register mode is active on that page.
         """
+        ...
+    @RegisterModeActive.setter
+    def RegisterModeActive(self, value: bool) -> None:
         ...
     @property
     def RegisterParagraphStyle(self) -> str:
@@ -152,10 +200,16 @@ class TextPageStyle(ABC):
         contains the name of the paragraph style that is used as reference of the register mode.
         """
         ...
+    @RegisterParagraphStyle.setter
+    def RegisterParagraphStyle(self, value: str) -> None:
+        ...
     @property
     def TextColumns(self) -> 'XTextColumns_b17f0bab':
         """
         contains the column settings of the page.
         """
+        ...
+    @TextColumns.setter
+    def TextColumns(self, value: 'XTextColumns_b17f0bab') -> None:
         ...
 

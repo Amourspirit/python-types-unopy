@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -63,6 +63,9 @@ class DDELinkInfo(object):
         """
         ...
 
+    @Items.setter
+    def Items(self, value: typing.Tuple[DDEItemInfo_ac870b09, ...]) -> None:
+        ...
 
     @property
     def Service(self) -> str:
@@ -71,6 +74,9 @@ class DDELinkInfo(object):
         """
         ...
 
+    @Service.setter
+    def Service(self, value: str) -> None:
+        ...
 
     @property
     def Topic(self) -> str:
@@ -79,4 +85,7 @@ class DDELinkInfo(object):
         """
         ...
 
+    @Topic.setter
+    def Topic(self, value: str) -> None:
+        ...
 

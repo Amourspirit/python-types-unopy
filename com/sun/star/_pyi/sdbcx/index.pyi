@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,11 +41,17 @@ class Index(XPropertySet_bc180bfa, XColumnsSupplier_f0600da9, XDataDescriptorFac
         is the name of the index catalog, may be empty.
         """
         ...
+    @Catalog.setter
+    def Catalog(self, value: str) -> None:
+        ...
     @property
     def IsClustered(self) -> bool:
         """
         indicates that the index is clustered.
         """
+        ...
+    @IsClustered.setter
+    def IsClustered(self, value: bool) -> None:
         ...
     @property
     def IsPrimaryKeyIndex(self) -> bool:
@@ -53,16 +59,25 @@ class Index(XPropertySet_bc180bfa, XColumnsSupplier_f0600da9, XDataDescriptorFac
         indicates that the index is used for the primary key.
         """
         ...
+    @IsPrimaryKeyIndex.setter
+    def IsPrimaryKeyIndex(self, value: bool) -> None:
+        ...
     @property
     def IsUnique(self) -> bool:
         """
         indicates that the index allow only unique values.
         """
         ...
+    @IsUnique.setter
+    def IsUnique(self, value: bool) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
         is the name of the index.
         """
+        ...
+    @Name.setter
+    def Name(self, value: str) -> None:
         ...
 

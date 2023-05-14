@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class DatabaseRegistrationEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 
     @property
     def OldLocation(self) -> str:
@@ -67,6 +70,9 @@ class DatabaseRegistrationEvent(EventObject_a3d70b03):
         """
         ...
 
+    @OldLocation.setter
+    def OldLocation(self, value: str) -> None:
+        ...
 
     @property
     def NewLocation(self) -> str:
@@ -75,4 +81,7 @@ class DatabaseRegistrationEvent(EventObject_a3d70b03):
         """
         ...
 
+    @NewLocation.setter
+    def NewLocation(self, value: str) -> None:
+        ...
 

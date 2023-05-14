@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -36,11 +36,17 @@ class CharacterStyle(CharacterProperties_1d4f0ef3, Style_7336094a):
         This value contains the character height as difference in point to the height of the character in the parent style.
         """
         ...
+    @CharDiffHeight.setter
+    def CharDiffHeight(self, value: float) -> None:
+        ...
     @property
     def CharDiffHeightAsian(self) -> float:
         """
         This value contains the character height as difference in point to the height of the character in the parent style in Asian text.
         """
+        ...
+    @CharDiffHeightAsian.setter
+    def CharDiffHeightAsian(self, value: float) -> None:
         ...
     @property
     def CharDiffHeightComplex(self) -> float:
@@ -48,11 +54,17 @@ class CharacterStyle(CharacterProperties_1d4f0ef3, Style_7336094a):
         This value contains the character height as difference in point to the height of the character in the parent style in complex text.
         """
         ...
+    @CharDiffHeightComplex.setter
+    def CharDiffHeightComplex(self, value: float) -> None:
+        ...
     @property
     def CharPropHeight(self) -> int:
         """
         This value contains the character height as percentage value relative to the height of the character in the parent style.
         """
+        ...
+    @CharPropHeight.setter
+    def CharPropHeight(self, value: int) -> None:
         ...
     @property
     def CharPropHeightAsian(self) -> int:
@@ -60,10 +72,16 @@ class CharacterStyle(CharacterProperties_1d4f0ef3, Style_7336094a):
         This value contains the character height as percentage value relative to the height of the character in the parent style in Asian text.
         """
         ...
+    @CharPropHeightAsian.setter
+    def CharPropHeightAsian(self, value: int) -> None:
+        ...
     @property
     def CharPropHeightComplex(self) -> int:
         """
         This value contains the character height as percentage value relative to the height of the character in the parent style in complex text.
         """
+        ...
+    @CharPropHeightComplex.setter
+    def CharPropHeightComplex(self, value: int) -> None:
         ...
 

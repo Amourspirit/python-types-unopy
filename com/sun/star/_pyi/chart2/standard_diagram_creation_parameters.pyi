@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,6 +35,9 @@ class StandardDiagramCreationParameters(ABC):
         States whether the first XLabeledDataSequence in a data-source is used as categories.
         """
         ...
+    @HasCategories.setter
+    def HasCategories(self, value: bool) -> None:
+        ...
     @property
     def UseCategoriesAsX(self) -> bool:
         """
@@ -42,5 +45,8 @@ class StandardDiagramCreationParameters(ABC):
         
         Default is true.
         """
+        ...
+    @UseCategoriesAsX.setter
+    def UseCategoriesAsX(self, value: bool) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class Command(object):
         """
         ...
 
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 
     @property
     def Handle(self) -> int:
@@ -62,6 +65,9 @@ class Command(object):
         """
         ...
 
+    @Handle.setter
+    def Handle(self, value: int) -> None:
+        ...
 
     @property
     def Argument(self) -> object:
@@ -70,4 +76,7 @@ class Command(object):
         """
         ...
 
+    @Argument.setter
+    def Argument(self, value: object) -> None:
+        ...
 

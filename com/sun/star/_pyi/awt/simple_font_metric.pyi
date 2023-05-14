@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class SimpleFontMetric(object):
         """
         ...
 
+    @Ascent.setter
+    def Ascent(self, value: int) -> None:
+        ...
 
     @property
     def Descent(self) -> int:
@@ -71,6 +74,9 @@ class SimpleFontMetric(object):
         """
         ...
 
+    @Descent.setter
+    def Descent(self, value: int) -> None:
+        ...
 
     @property
     def Leading(self) -> int:
@@ -81,6 +87,9 @@ class SimpleFontMetric(object):
         """
         ...
 
+    @Leading.setter
+    def Leading(self, value: int) -> None:
+        ...
 
     @property
     def Slant(self) -> int:
@@ -91,6 +100,9 @@ class SimpleFontMetric(object):
         """
         ...
 
+    @Slant.setter
+    def Slant(self, value: int) -> None:
+        ...
 
     @property
     def FirstChar(self) -> str:
@@ -99,6 +111,9 @@ class SimpleFontMetric(object):
         """
         ...
 
+    @FirstChar.setter
+    def FirstChar(self, value: str) -> None:
+        ...
 
     @property
     def LastChar(self) -> str:
@@ -107,4 +122,7 @@ class SimpleFontMetric(object):
         """
         ...
 
+    @LastChar.setter
+    def LastChar(self, value: str) -> None:
+        ...
 

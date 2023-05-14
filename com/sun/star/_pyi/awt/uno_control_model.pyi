@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -42,5 +42,8 @@ class UnoControlModel(UnoControlDialogElement_38ef0f81, XControlModel_affc0b7e, 
         """
         specifies the service name of the default control for this model.
         """
+        ...
+    @DefaultControl.setter
+    def DefaultControl(self, value: str) -> None:
         ...
 

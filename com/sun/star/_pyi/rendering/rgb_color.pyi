@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,6 +53,9 @@ class RGBColor(object):
         """
         ...
 
+    @Red.setter
+    def Red(self, value: ColorComponent_e4c0e78) -> None:
+        ...
 
     @property
     def Green(self) -> ColorComponent_e4c0e78:
@@ -61,6 +64,9 @@ class RGBColor(object):
         """
         ...
 
+    @Green.setter
+    def Green(self, value: ColorComponent_e4c0e78) -> None:
+        ...
 
     @property
     def Blue(self) -> ColorComponent_e4c0e78:
@@ -69,4 +75,7 @@ class RGBColor(object):
         """
         ...
 
+    @Blue.setter
+    def Blue(self, value: ColorComponent_e4c0e78) -> None:
+        ...
 

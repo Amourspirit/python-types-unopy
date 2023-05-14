@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -45,6 +45,9 @@ class NumberingLevel(ABC):
         adjusts the numbering (HoriOrientation_LEFT/RIGHT/CENTER)
         """
         ...
+    @Adjust.setter
+    def Adjust(self, value: int) -> None:
+        ...
     @property
     def BulletChar(self) -> str:
         """
@@ -52,6 +55,9 @@ class NumberingLevel(ABC):
         
         This is only valid if the numbering type is com.sun.star.style.NumberingType.CHAR_SPECIAL.
         """
+        ...
+    @BulletChar.setter
+    def BulletChar(self, value: str) -> None:
         ...
     @property
     def BulletColor(self) -> 'Color_68e908c5':
@@ -61,11 +67,17 @@ class NumberingLevel(ABC):
         This is only valid if the numbering type is com.sun.star.style.NumberingType.CHAR_SPECIAL.
         """
         ...
+    @BulletColor.setter
+    def BulletColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def BulletFont(self) -> 'FontDescriptor_bc110c0a':
         """
         the font used to paint the bullet.
         """
+        ...
+    @BulletFont.setter
+    def BulletFont(self, value: 'FontDescriptor_bc110c0a') -> None:
         ...
     @property
     def BulletFontName(self) -> str:
@@ -75,6 +87,9 @@ class NumberingLevel(ABC):
         This is only valid if the numbering type is com.sun.star.style.NumberingType.CHAR_SPECIAL.
         """
         ...
+    @BulletFontName.setter
+    def BulletFontName(self, value: str) -> None:
+        ...
     @property
     def BulletId(self) -> int:
         """
@@ -82,6 +97,9 @@ class NumberingLevel(ABC):
         
         This is only valid if the numbering type is com.sun.star.style.NumberingType.CHAR_SPECIAL.
         """
+        ...
+    @BulletId.setter
+    def BulletId(self, value: int) -> None:
         ...
     @property
     def BulletRelSize(self) -> int:
@@ -91,11 +109,17 @@ class NumberingLevel(ABC):
         This is only valid if the numbering type is com.sun.star.style.NumberingType.CHAR_SPECIAL.
         """
         ...
+    @BulletRelSize.setter
+    def BulletRelSize(self, value: int) -> None:
+        ...
     @property
     def CharStyleName(self) -> str:
         """
         Name of the character style that is used for the numbering symbol.
         """
+        ...
+    @CharStyleName.setter
+    def CharStyleName(self, value: str) -> None:
         ...
     @property
     def FirstLineIndent(self) -> int:
@@ -103,11 +127,17 @@ class NumberingLevel(ABC):
         additional line indent for the first text line
         """
         ...
+    @FirstLineIndent.setter
+    def FirstLineIndent(self, value: int) -> None:
+        ...
     @property
     def FirstLineOffset(self) -> int:
         """
         specifies the offset between the beginning of the first line and the beginning of the following lines of the paragraph.
         """
+        ...
+    @FirstLineOffset.setter
+    def FirstLineOffset(self, value: int) -> None:
         ...
     @property
     def GraphicBitmap(self) -> 'XBitmap_70cd0909':
@@ -117,11 +147,17 @@ class NumberingLevel(ABC):
         This is only valid if the numbering type is com.sun.star.style.NumberingType.BITMAP.
         """
         ...
+    @GraphicBitmap.setter
+    def GraphicBitmap(self, value: 'XBitmap_70cd0909') -> None:
+        ...
     @property
     def GraphicSize(self) -> 'Size_576707ef':
         """
         size of the graphic that is used as bullet.
         """
+        ...
+    @GraphicSize.setter
+    def GraphicSize(self, value: 'Size_576707ef') -> None:
         ...
     @property
     def GraphicURL(self) -> str:
@@ -133,6 +169,9 @@ class NumberingLevel(ABC):
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the bitmap and set the GraphicBitmap property.
         """
         ...
+    @GraphicURL.setter
+    def GraphicURL(self, value: str) -> None:
+        ...
     @property
     def HeadingStyleName(self) -> str:
         """
@@ -141,11 +180,17 @@ class NumberingLevel(ABC):
         It is only contained in the levels of chapter numbering rules.
         """
         ...
+    @HeadingStyleName.setter
+    def HeadingStyleName(self, value: str) -> None:
+        ...
     @property
     def IndentAt(self) -> int:
         """
         indentation of the text lines
         """
+        ...
+    @IndentAt.setter
+    def IndentAt(self, value: int) -> None:
         ...
     @property
     def LabelFollowedBy(self) -> int:
@@ -153,11 +198,17 @@ class NumberingLevel(ABC):
         character following the list label
         """
         ...
+    @LabelFollowedBy.setter
+    def LabelFollowedBy(self, value: int) -> None:
+        ...
     @property
     def LeftMargin(self) -> int:
         """
         specifies the left margin of the numbering
         """
+        ...
+    @LeftMargin.setter
+    def LeftMargin(self, value: int) -> None:
         ...
     @property
     def ListtabStopPosition(self) -> int:
@@ -165,11 +216,17 @@ class NumberingLevel(ABC):
         list tab position
         """
         ...
+    @ListtabStopPosition.setter
+    def ListtabStopPosition(self, value: int) -> None:
+        ...
     @property
     def NumberingType(self) -> int:
         """
         specifies the type of numbering.
         """
+        ...
+    @NumberingType.setter
+    def NumberingType(self, value: int) -> None:
         ...
     @property
     def ParagraphStyleName(self) -> str:
@@ -183,11 +240,17 @@ class NumberingLevel(ABC):
             LibreOffice 3.6
         """
         ...
+    @ParagraphStyleName.setter
+    def ParagraphStyleName(self, value: str) -> None:
+        ...
     @property
     def ParentNumbering(self) -> int:
         """
         number of upper levels that are included in the current numbering symbol.
         """
+        ...
+    @ParentNumbering.setter
+    def ParentNumbering(self, value: int) -> None:
         ...
     @property
     def PositionAndSpaceMode(self) -> int:
@@ -195,11 +258,17 @@ class NumberingLevel(ABC):
         position and space mode
         """
         ...
+    @PositionAndSpaceMode.setter
+    def PositionAndSpaceMode(self, value: int) -> None:
+        ...
     @property
     def Prefix(self) -> str:
         """
         the prefix of the numbering symbol.
         """
+        ...
+    @Prefix.setter
+    def Prefix(self, value: str) -> None:
         ...
     @property
     def StartWith(self) -> int:
@@ -209,17 +278,26 @@ class NumberingLevel(ABC):
         This property is only valid if the numbering type is not com.sun.star.style.NumberingType.BITMAP or com.sun.star.style.NumberingType.CHAR_SPECIAL.
         """
         ...
+    @StartWith.setter
+    def StartWith(self, value: int) -> None:
+        ...
     @property
     def Suffix(self) -> str:
         """
         the suffix of the numbering symbol.
         """
         ...
+    @Suffix.setter
+    def Suffix(self, value: str) -> None:
+        ...
     @property
     def SymbolTextDistance(self) -> int:
         """
         specifies the distance between the numbering symbol and the text of the paragraph.
         """
+        ...
+    @SymbolTextDistance.setter
+    def SymbolTextDistance(self, value: int) -> None:
         ...
     @property
     def VertOrient(self) -> int:
@@ -228,5 +306,8 @@ class NumberingLevel(ABC):
         
         It is set using com.sun.star.text.VertOrientation.
         """
+        ...
+    @VertOrient.setter
+    def VertOrient(self, value: int) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,11 +40,17 @@ class NumberingAlignment(ABC):
         Use the com.sun.star.style.HorizontalAlignment enum to change the alignment.
         """
         ...
+    @Alignment.setter
+    def Alignment(self, value: 'HorizontalAlignment_1f800f02') -> None:
+        ...
     @property
     def Insertion(self) -> int:
         """
         the distance between the numbering symbol and text.
         """
+        ...
+    @Insertion.setter
+    def Insertion(self, value: int) -> None:
         ...
     @property
     def TextMarginDistance(self) -> int:
@@ -52,10 +58,16 @@ class NumberingAlignment(ABC):
         the minimum distance between the numbering symbol and the following text.
         """
         ...
+    @TextMarginDistance.setter
+    def TextMarginDistance(self, value: int) -> None:
+        ...
     @property
     def TextNumberingDistance(self) -> int:
         """
         the distance between left margin and the numbering symbol.
         """
+        ...
+    @TextNumberingDistance.setter
+    def TextNumberingDistance(self, value: int) -> None:
         ...
 

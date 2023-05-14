@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,16 +44,25 @@ class TableSortDescriptor2(SortDescriptor2_d7270cbf):
         Each entry specifies properties that state the row/column to be sorted and how that should be done.
         """
         ...
+    @SortFields.setter
+    def SortFields(self, value: 'typing.Tuple[TableSortField_d3860c84, ...]') -> None:
+        ...
     @property
     def IsSortColumns(self) -> bool:
         """
         specifies if the columns or rows are to be sorted.
         """
         ...
+    @IsSortColumns.setter
+    def IsSortColumns(self, value: bool) -> None:
+        ...
     @property
     def MaxSortFieldsCount(self) -> int:
         """
         contains the maximum number of sort fields the descriptor can hold.
         """
+        ...
+    @MaxSortFieldsCount.setter
+    def MaxSortFieldsCount(self, value: int) -> None:
         ...
 

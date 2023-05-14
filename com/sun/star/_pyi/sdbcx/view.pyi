@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,11 +41,17 @@ class View(XPropertySet_bc180bfa, XAlterView_a42a0b07, XRename_848c09cc):
         is the name of the views catalog, may be empty.
         """
         ...
+    @CatalogName.setter
+    def CatalogName(self, value: str) -> None:
+        ...
     @property
     def CheckOption(self) -> int:
         """
         indicates if a check option should be used for the view.
         """
+        ...
+    @CheckOption.setter
+    def CheckOption(self, value: int) -> None:
         ...
     @property
     def Command(self) -> str:
@@ -57,16 +63,25 @@ class View(XPropertySet_bc180bfa, XAlterView_a42a0b07, XRename_848c09cc):
         This property might be empty when a backend does not support retrieving the current SQL command of a view. However, if the View supports altering its command via the XAlterView interface, then it's required to also provide the current SQL command in the Command property.
         """
         ...
+    @Command.setter
+    def Command(self, value: str) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
         is the name of the view.
         """
         ...
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def SchemaName(self) -> str:
         """
         is the name of the view's schema, may be empty.
         """
+        ...
+    @SchemaName.setter
+    def SchemaName(self, value: str) -> None:
         ...
 

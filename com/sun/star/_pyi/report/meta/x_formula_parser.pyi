@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,12 +44,16 @@ class XFormulaParser(XPropertySet_bc180bfa, XComponent_98dc0ab5, XFormulaParser_
         Names and symbols not defined here lead to a parser/print error.
         """
         ...
-
+    @OpCodeMap.setter
+    def OpCodeMap(self, value: 'typing.Tuple[FormulaOpCodeMapEntry_37da0f61, ...]') -> None:
+        ...
     @property
     def FormulaOpCodeMapper(self) -> 'XFormulaOpCodeMapper_27ff0eee':
         """
         return the mapper for op codes.
         """
         ...
-
+    @FormulaOpCodeMapper.setter
+    def FormulaOpCodeMapper(self, value: 'XFormulaOpCodeMapper_27ff0eee') -> None:
+        ...
 

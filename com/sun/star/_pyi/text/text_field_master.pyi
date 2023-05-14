@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,11 +38,17 @@ class TextFieldMaster(XPropertySet_bc180bfa):
         contains a sequence of all fields that depend on this master.
         """
         ...
+    @DependentTextFields.setter
+    def DependentTextFields(self, value: 'typing.Tuple[XDependentTextField_c3d0e45, ...]') -> None:
+        ...
     @property
     def InstanceName(self) -> str:
         """
         contains the instance name as it is used in the com.sun.star.text.XTextFieldsSupplier.
         """
+        ...
+    @InstanceName.setter
+    def InstanceName(self, value: str) -> None:
         ...
     @property
     def Name(self) -> str:
@@ -51,5 +57,8 @@ class TextFieldMaster(XPropertySet_bc180bfa):
         
         The name is void as long as the instance is not member of the document structure. When the value is being set the instance is inserted into the document and the name cannot be changed afterwards. That does not apply to the Database text field master.
         """
+        ...
+    @Name.setter
+    def Name(self, value: str) -> None:
         ...
 

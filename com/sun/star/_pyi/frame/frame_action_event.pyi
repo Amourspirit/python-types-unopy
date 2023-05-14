@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,6 +56,9 @@ class FrameActionEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Frame.setter
+    def Frame(self, value: XFrame_7a570956) -> None:
+        ...
 
     @property
     def Action(self) -> FrameAction_aef40b5c:
@@ -64,4 +67,7 @@ class FrameActionEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Action.setter
+    def Action(self, value: FrameAction_aef40b5c) -> None:
+        ...
 

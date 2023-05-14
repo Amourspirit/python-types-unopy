@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,6 +61,9 @@ class BorderLine2(BorderLine_a3f80af6):
         """
         ...
 
+    @LineStyle.setter
+    def LineStyle(self, value: int) -> None:
+        ...
 
     @property
     def LineWidth(self) -> int:
@@ -73,4 +76,7 @@ class BorderLine2(BorderLine_a3f80af6):
         """
         ...
 
+    @LineWidth.setter
+    def LineWidth(self, value: int) -> None:
+        ...
 

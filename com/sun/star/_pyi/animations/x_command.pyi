@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,7 +38,9 @@ class XCommand(XAnimationNode_1cf10eb9):
         See documentation of used application for commands.
         """
         ...
-
+    @Command.setter
+    def Command(self, value: int) -> None:
+        ...
     @property
     def Parameter(self) -> object:
         """
@@ -47,7 +49,9 @@ class XCommand(XAnimationNode_1cf10eb9):
         See documentation of used application for supported parameters for different commands and target combinations.
         """
         ...
-
+    @Parameter.setter
+    def Parameter(self, value: object) -> None:
+        ...
     @property
     def Target(self) -> object:
         """
@@ -56,5 +60,7 @@ class XCommand(XAnimationNode_1cf10eb9):
         See documentation of used application for supported targets.
         """
         ...
-
+    @Target.setter
+    def Target(self, value: object) -> None:
+        ...
 

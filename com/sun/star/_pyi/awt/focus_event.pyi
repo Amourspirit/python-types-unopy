@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class FocusEvent(EventObject_a3d70b03):
         """
         ...
 
+    @FocusFlags.setter
+    def FocusFlags(self, value: int) -> None:
+        ...
 
     @property
     def NextFocus(self) -> XInterface_8f010a43:
@@ -65,6 +68,9 @@ class FocusEvent(EventObject_a3d70b03):
         """
         ...
 
+    @NextFocus.setter
+    def NextFocus(self, value: XInterface_8f010a43) -> None:
+        ...
 
     @property
     def Temporary(self) -> bool:
@@ -73,4 +79,7 @@ class FocusEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Temporary.setter
+    def Temporary(self, value: bool) -> None:
+        ...
 

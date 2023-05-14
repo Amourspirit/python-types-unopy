@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,7 +52,9 @@ class XReportControlModel(XContainer_d6fb0cc6, XIndexContainer_1c040ebe, XReport
         If the expression evaluates to true than the report control model will be printed otherwise not.
         """
         ...
-
+    @ConditionalPrintExpression.setter
+    def ConditionalPrintExpression(self, value: str) -> None:
+        ...
     @property
     def DataField(self) -> str:
         """
@@ -61,7 +63,9 @@ class XReportControlModel(XContainer_d6fb0cc6, XIndexContainer_1c040ebe, XReport
         The value can be
         """
         ...
-
+    @DataField.setter
+    def DataField(self, value: str) -> None:
+        ...
     @property
     def PrintWhenGroupChange(self) -> bool:
         """
@@ -70,5 +74,7 @@ class XReportControlModel(XContainer_d6fb0cc6, XIndexContainer_1c040ebe, XReport
         The default value is TRUE.
         """
         ...
-
+    @PrintWhenGroupChange.setter
+    def PrintWhenGroupChange(self, value: bool) -> None:
+        ...
 

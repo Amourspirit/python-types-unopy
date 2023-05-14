@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,10 +37,16 @@ class AutoTextGroup(XIndexAccess_f0910d6d, XNamed_a6520b08, XAutoTextGroup_c9770
         The path to the file containing the AutoTextEntry's in this group.
         """
         ...
+    @FilePath.setter
+    def FilePath(self, value: str) -> None:
+        ...
     @property
     def Title(self) -> str:
         """
         The title of this AutoTextGroup.
         """
+        ...
+    @Title.setter
+    def Title(self, value: str) -> None:
         ...
 

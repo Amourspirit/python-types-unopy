@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,6 +44,9 @@ class ValueBinding(XPropertySet_bc180bfa, XValueBinding_271b0ed5, XComponent_98d
         As long as this property is TRUE, the value binding should throw an InvalidBindingStateException when its XValueBinding.setValue() method is invoked.
         """
         ...
+    @ReadOnly.setter
+    def ReadOnly(self, value: bool) -> None:
+        ...
     @property
     def Relevant(self) -> bool:
         """
@@ -55,5 +58,8 @@ class ValueBinding(XPropertySet_bc180bfa, XValueBinding_271b0ed5, XComponent_98d
         
         One possible reaction could be that user interface elements which are associated with the XBindableValue are disabled as long as Relevant is FALSE.
         """
+        ...
+    @Relevant.setter
+    def Relevant(self, value: bool) -> None:
         ...
 

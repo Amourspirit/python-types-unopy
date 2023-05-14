@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -39,11 +39,17 @@ class ColumnDescriptorControlModel(UnoControlModel_c8ce0c58):
         specifies the connection to a database.
         """
         ...
+    @ActiveConnection.setter
+    def ActiveConnection(self, value: 'XConnection_a36a0b0c') -> None:
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
+    @Border.setter
+    def Border(self, value: int) -> None:
         ...
     @property
     def Column(self) -> 'XPropertySet_bc180bfa':
@@ -51,16 +57,25 @@ class ColumnDescriptorControlModel(UnoControlModel_c8ce0c58):
         specifies the column descriptor where the values will be stored in.
         """
         ...
+    @Column.setter
+    def Column(self, value: 'XPropertySet_bc180bfa') -> None:
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
         ...
+    @Enabled.setter
+    def Enabled(self, value: bool) -> None:
+        ...
     @property
     def Tabstop(self) -> bool:
         """
         specifies that the control can be reached with the TAB key.
         """
+        ...
+    @Tabstop.setter
+    def Tabstop(self, value: bool) -> None:
         ...
 

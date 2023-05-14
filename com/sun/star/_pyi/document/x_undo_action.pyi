@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,5 +57,7 @@ class XUndoAction(ABC):
         is the human-readable, localized description of the action.
         """
         ...
-
+    @Title.setter
+    def Title(self, value: str) -> None:
+        ...
 

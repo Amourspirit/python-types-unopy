@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,6 +54,9 @@ class LineBreakUserOptions(object):
         """
         ...
 
+    @forbiddenBeginCharacters.setter
+    def forbiddenBeginCharacters(self, value: str) -> None:
+        ...
 
     @property
     def forbiddenEndCharacters(self) -> str:
@@ -62,6 +65,9 @@ class LineBreakUserOptions(object):
         """
         ...
 
+    @forbiddenEndCharacters.setter
+    def forbiddenEndCharacters(self, value: str) -> None:
+        ...
 
     @property
     def applyForbiddenRules(self) -> bool:
@@ -70,6 +76,9 @@ class LineBreakUserOptions(object):
         """
         ...
 
+    @applyForbiddenRules.setter
+    def applyForbiddenRules(self, value: bool) -> None:
+        ...
 
     @property
     def allowPunctuationOutsideMargin(self) -> bool:
@@ -78,6 +87,9 @@ class LineBreakUserOptions(object):
         """
         ...
 
+    @allowPunctuationOutsideMargin.setter
+    def allowPunctuationOutsideMargin(self, value: bool) -> None:
+        ...
 
     @property
     def allowHyphenateEnglish(self) -> bool:
@@ -86,4 +98,7 @@ class LineBreakUserOptions(object):
         """
         ...
 
+    @allowHyphenateEnglish.setter
+    def allowHyphenateEnglish(self, value: bool) -> None:
+        ...
 

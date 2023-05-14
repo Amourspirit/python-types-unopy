@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,7 +49,9 @@ class XReportComponent(XPropertySet_bc180bfa, XChild_a6390b07, XShape_8fd00a3d, 
         If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
         """
         ...
-
+    @DetailFields.setter
+    def DetailFields(self, value: 'typing.Tuple[str, ...]') -> None:
+        ...
     @property
     def MasterFields(self) -> 'typing.Tuple[str, ...]':
         """
@@ -60,21 +62,27 @@ class XReportComponent(XPropertySet_bc180bfa, XChild_a6390b07, XShape_8fd00a3d, 
         If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
         """
         ...
-
+    @MasterFields.setter
+    def MasterFields(self, value: 'typing.Tuple[str, ...]') -> None:
+        ...
     @property
     def AutoGrow(self) -> bool:
         """
         Specifies that the control containing data shall automatically grow to the optimal height to show the data without wasting space.
         """
         ...
-
+    @AutoGrow.setter
+    def AutoGrow(self, value: bool) -> None:
+        ...
     @property
     def ControlBorder(self) -> int:
         """
         specifies the border style of the control.
         """
         ...
-
+    @ControlBorder.setter
+    def ControlBorder(self, value: int) -> None:
+        ...
     @property
     def ControlBorderColor(self) -> int:
         """
@@ -83,35 +91,45 @@ class XReportComponent(XPropertySet_bc180bfa, XChild_a6390b07, XShape_8fd00a3d, 
         Not every border style (see Border) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
         """
         ...
-
+    @ControlBorderColor.setter
+    def ControlBorderColor(self, value: int) -> None:
+        ...
     @property
     def Height(self) -> int:
         """
         specifies the height of the control.
         """
         ...
-
+    @Height.setter
+    def Height(self, value: int) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
         the name of the component.
         """
         ...
-
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def PositionX(self) -> int:
         """
         specifies the horizontal position of the control.
         """
         ...
-
+    @PositionX.setter
+    def PositionX(self, value: int) -> None:
+        ...
     @property
     def PositionY(self) -> int:
         """
         specifies the vertical position of the control.
         """
         ...
-
+    @PositionY.setter
+    def PositionY(self, value: int) -> None:
+        ...
     @property
     def PrintRepeatedValues(self) -> bool:
         """
@@ -120,7 +138,9 @@ class XReportComponent(XPropertySet_bc180bfa, XChild_a6390b07, XShape_8fd00a3d, 
         If set to TRUE then the value will be printed every time. If set to FALSE then the value will only be printed once. The default value is TRUE.
         """
         ...
-
+    @PrintRepeatedValues.setter
+    def PrintRepeatedValues(self, value: bool) -> None:
+        ...
     @property
     def Section(self) -> 'XSection_9b630ad1':
         """
@@ -129,12 +149,16 @@ class XReportComponent(XPropertySet_bc180bfa, XChild_a6390b07, XShape_8fd00a3d, 
         This is a shortcut to get control hierarchy up. This value is NULL when the control was not inserted in any section.
         """
         ...
-
+    @Section.setter
+    def Section(self, value: 'XSection_9b630ad1') -> None:
+        ...
     @property
     def Width(self) -> int:
         """
         specifies the width of the control.
         """
         ...
-
+    @Width.setter
+    def Width(self, value: int) -> None:
+        ...
 

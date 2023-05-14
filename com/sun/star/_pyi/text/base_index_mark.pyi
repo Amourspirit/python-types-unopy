@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,5 +38,8 @@ class BaseIndexMark(TextContent_a6810b4d):
         
         If AlternativeText is empty then the string that is marked by the TextRange is inserted into the index.
         """
+        ...
+    @AlternativeText.setter
+    def AlternativeText(self, value: str) -> None:
         ...
 

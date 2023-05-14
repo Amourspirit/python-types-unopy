@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -70,11 +70,17 @@ class GenericTextDocument(OfficeDocument_fecd0df2, XPropertySet_bc180bfa, XMulti
         contains the identifier of the default locale of the document.
         """
         ...
+    @CharLocale.setter
+    def CharLocale(self, value: 'Locale_70d308fa') -> None:
+        ...
     @property
     def CharacterCount(self) -> int:
         """
         contains the count of all characters in the document.
         """
+        ...
+    @CharacterCount.setter
+    def CharacterCount(self, value: int) -> None:
         ...
     @property
     def IndexAutoMarkFileURL(self) -> str:
@@ -88,11 +94,17 @@ class GenericTextDocument(OfficeDocument_fecd0df2, XPropertySet_bc180bfa, XMulti
             OOo 1.1.2
         """
         ...
+    @IndexAutoMarkFileURL.setter
+    def IndexAutoMarkFileURL(self, value: str) -> None:
+        ...
     @property
     def ParagraphCount(self) -> int:
         """
         contains the count of all paragraphs in the document.
         """
+        ...
+    @ParagraphCount.setter
+    def ParagraphCount(self, value: int) -> None:
         ...
     @property
     def RecordChanges(self) -> bool:
@@ -103,6 +115,9 @@ class GenericTextDocument(OfficeDocument_fecd0df2, XPropertySet_bc180bfa, XMulti
         
             OOo 1.1.2
         """
+        ...
+    @RecordChanges.setter
+    def RecordChanges(self, value: bool) -> None:
         ...
     @property
     def TwoDigitYear(self) -> int:
@@ -116,11 +131,17 @@ class GenericTextDocument(OfficeDocument_fecd0df2, XPropertySet_bc180bfa, XMulti
             OOo 1.1.2
         """
         ...
+    @TwoDigitYear.setter
+    def TwoDigitYear(self, value: int) -> None:
+        ...
     @property
     def WordCount(self) -> int:
         """
         contains the count of all words in the document.
         """
+        ...
+    @WordCount.setter
+    def WordCount(self, value: int) -> None:
         ...
     @property
     def WordSeparator(self) -> str:
@@ -129,5 +150,8 @@ class GenericTextDocument(OfficeDocument_fecd0df2, XPropertySet_bc180bfa, XMulti
         
         I.e. slash and backslash. Whitespace (tab stop, space, paragraph break, line break) always separate words.
         """
+        ...
+    @WordSeparator.setter
+    def WordSeparator(self, value: str) -> None:
         ...
 

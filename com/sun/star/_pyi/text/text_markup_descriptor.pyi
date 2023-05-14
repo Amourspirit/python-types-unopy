@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class TextMarkupDescriptor(object):
         """
         ...
 
+    @nType.setter
+    def nType(self, value: int) -> None:
+        ...
 
     @property
     def aIdentifier(self) -> str:
@@ -67,6 +70,9 @@ class TextMarkupDescriptor(object):
         """
         ...
 
+    @aIdentifier.setter
+    def aIdentifier(self, value: str) -> None:
+        ...
 
     @property
     def nOffset(self) -> int:
@@ -75,6 +81,9 @@ class TextMarkupDescriptor(object):
         """
         ...
 
+    @nOffset.setter
+    def nOffset(self, value: int) -> None:
+        ...
 
     @property
     def nLength(self) -> int:
@@ -83,6 +92,9 @@ class TextMarkupDescriptor(object):
         """
         ...
 
+    @nLength.setter
+    def nLength(self, value: int) -> None:
+        ...
 
     @property
     def xMarkupInfoContainer(self) -> XStringKeyMap_ffc60de1:
@@ -99,4 +111,7 @@ class TextMarkupDescriptor(object):
         """
         ...
 
+    @xMarkupInfoContainer.setter
+    def xMarkupInfoContainer(self, value: XStringKeyMap_ffc60de1) -> None:
+        ...
 

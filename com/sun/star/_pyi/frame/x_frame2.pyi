@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,7 +56,9 @@ class XFrame2(XDispatchInformationProvider_afb6126c, XDispatchProvider_fc690de6,
             OOo 1.1.2
         """
         ...
-
+    @DispatchRecorderSupplier.setter
+    def DispatchRecorderSupplier(self, value: 'XDispatchRecorderSupplier_79301125') -> None:
+        ...
     @property
     def LayoutManager(self) -> 'XInterface_8f010a43':
         """
@@ -65,7 +67,9 @@ class XFrame2(XDispatchInformationProvider_afb6126c, XDispatchProvider_fc690de6,
         This is actually of type XLayoutManager, but this API is still experimental (unpublished).
         """
         ...
-
+    @LayoutManager.setter
+    def LayoutManager(self, value: 'XInterface_8f010a43') -> None:
+        ...
     @property
     def Title(self) -> str:
         """
@@ -74,12 +78,16 @@ class XFrame2(XDispatchInformationProvider_afb6126c, XDispatchProvider_fc690de6,
         It depends from the type of the frame container window. If it is a system task window all will be OK. Otherwise the title can't be set. Setting/getting of the pure value of this property must be possible in every case. Only showing on the UI can be fail.
         """
         ...
-
+    @Title.setter
+    def Title(self, value: str) -> None:
+        ...
     @property
     def UserDefinedAttributes(self) -> 'XNameContainer_cb90e47':
         """
         contains user defined attributes.
         """
         ...
-
+    @UserDefinedAttributes.setter
+    def UserDefinedAttributes(self, value: 'XNameContainer_cb90e47') -> None:
+        ...
 

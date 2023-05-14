@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -154,12 +154,16 @@ class XWizard(XExecutableDialog_450f0fa1):
         """
         """
         ...
-
+    @DialogWindow.setter
+    def DialogWindow(self, value: 'XWindow_713b0924') -> None:
+        ...
     @property
     def HelpURL(self) -> str:
         """
         is the help URL of the wizard's main window.
         """
         ...
-
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
+        ...
 

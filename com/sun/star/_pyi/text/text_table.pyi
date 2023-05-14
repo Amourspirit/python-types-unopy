@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -63,6 +63,9 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         contains the column description of the table.
         """
         ...
+    @TableColumnSeparators.setter
+    def TableColumnSeparators(self, value: 'typing.Tuple[TableColumnSeparator_1b630ed4, ...]') -> None:
+        ...
     @property
     def TableInteropGrabBag(self) -> 'typing.Tuple[PropertyValue_c9610c73, ...]':
         """
@@ -75,11 +78,17 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
             LibreOffice 4.3
         """
         ...
+    @TableInteropGrabBag.setter
+    def TableInteropGrabBag(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def BackColor(self) -> 'Color_68e908c5':
         """
         contains the color of the background.
         """
+        ...
+    @BackColor.setter
+    def BackColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def BackGraphic(self) -> 'XGraphic_a4da0afc':
@@ -91,17 +100,26 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
             LibreOffice 6.1
         """
         ...
+    @BackGraphic.setter
+    def BackGraphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def BackGraphicFilter(self) -> str:
         """
         contains the name of the file filter for the background graphic.
         """
         ...
+    @BackGraphicFilter.setter
+    def BackGraphicFilter(self, value: str) -> None:
+        ...
     @property
     def BackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         determines the position of the background graphic.
         """
+        ...
+    @BackGraphicLocation.setter
+    def BackGraphicLocation(self, value: 'GraphicLocation_e3ef0d30') -> None:
         ...
     @property
     def BackGraphicURL(self) -> str:
@@ -111,11 +129,17 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the BackGraphic property.
         """
         ...
+    @BackGraphicURL.setter
+    def BackGraphicURL(self, value: str) -> None:
+        ...
     @property
     def BackTransparent(self) -> bool:
         """
         determines if the background color is transparent.
         """
+        ...
+    @BackTransparent.setter
+    def BackTransparent(self, value: bool) -> None:
         ...
     @property
     def BottomMargin(self) -> int:
@@ -123,11 +147,17 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         determines the bottom margin.
         """
         ...
+    @BottomMargin.setter
+    def BottomMargin(self, value: int) -> None:
+        ...
     @property
     def BreakType(self) -> 'BreakType_9b050ac0':
         """
         determines the type of break that is applied at the beginning of the table.
         """
+        ...
+    @BreakType.setter
+    def BreakType(self, value: 'BreakType_9b050ac0') -> None:
         ...
     @property
     def ChartColumnAsLabel(self) -> bool:
@@ -135,11 +165,17 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         determines if the first column of the table should be treated as axis labels when a chart is to be created.
         """
         ...
+    @ChartColumnAsLabel.setter
+    def ChartColumnAsLabel(self, value: bool) -> None:
+        ...
     @property
     def ChartRowAsLabel(self) -> bool:
         """
         determines if the first row of the table should be treated as axis labels when a chart is to be created.
         """
+        ...
+    @ChartRowAsLabel.setter
+    def ChartRowAsLabel(self, value: bool) -> None:
         ...
     @property
     def CollapsingBorders(self) -> bool:
@@ -147,11 +183,17 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         determines whether borders of neighboring table cells are collapsed into one
         """
         ...
+    @CollapsingBorders.setter
+    def CollapsingBorders(self, value: bool) -> None:
+        ...
     @property
     def HeaderRowCount(self) -> int:
         """
         determines the number of rows of the table repeated on every new page.
         """
+        ...
+    @HeaderRowCount.setter
+    def HeaderRowCount(self, value: int) -> None:
         ...
     @property
     def HoriOrient(self) -> int:
@@ -159,11 +201,17 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         contains the horizontal orientation.
         """
         ...
+    @HoriOrient.setter
+    def HoriOrient(self, value: int) -> None:
+        ...
     @property
     def IsWidthRelative(self) -> bool:
         """
         determines if the value of the relative width is valid.
         """
+        ...
+    @IsWidthRelative.setter
+    def IsWidthRelative(self, value: bool) -> None:
         ...
     @property
     def KeepTogether(self) -> bool:
@@ -171,11 +219,17 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         Setting this property to TRUE prevents page or column breaks between this table and the following paragraph or text table.
         """
         ...
+    @KeepTogether.setter
+    def KeepTogether(self, value: bool) -> None:
+        ...
     @property
     def LeftMargin(self) -> int:
         """
         contains the left margin of the table.
         """
+        ...
+    @LeftMargin.setter
+    def LeftMargin(self, value: int) -> None:
         ...
     @property
     def PageDescName(self) -> str:
@@ -183,11 +237,17 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         If this property is set, it creates a page break before the table and assigns the value as the name of the new page style sheet to use.
         """
         ...
+    @PageDescName.setter
+    def PageDescName(self, value: str) -> None:
+        ...
     @property
     def PageNumberOffset(self) -> int:
         """
         If a page break property is set at the table, this property contains the new value for the page number.
         """
+        ...
+    @PageNumberOffset.setter
+    def PageNumberOffset(self, value: int) -> None:
         ...
     @property
     def RelativeWidth(self) -> int:
@@ -195,11 +255,17 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         determines the width of the table relative to its environment.
         """
         ...
+    @RelativeWidth.setter
+    def RelativeWidth(self, value: int) -> None:
+        ...
     @property
     def RepeatHeadline(self) -> bool:
         """
         determines if the first row of the table is repeated on every new page.
         """
+        ...
+    @RepeatHeadline.setter
+    def RepeatHeadline(self, value: bool) -> None:
         ...
     @property
     def RightMargin(self) -> int:
@@ -207,11 +273,17 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         contains the right margin of the table.
         """
         ...
+    @RightMargin.setter
+    def RightMargin(self, value: int) -> None:
+        ...
     @property
     def ShadowFormat(self) -> 'ShadowFormat_bb840bdf':
         """
         determines the type, color and size of the shadow.
         """
+        ...
+    @ShadowFormat.setter
+    def ShadowFormat(self, value: 'ShadowFormat_bb840bdf') -> None:
         ...
     @property
     def Split(self) -> bool:
@@ -219,17 +291,26 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         Setting this property to FALSE prevents the table from getting spread on two pages.
         """
         ...
+    @Split.setter
+    def Split(self, value: bool) -> None:
+        ...
     @property
     def TableBorder(self) -> 'TableBorder_aedf0b56':
         """
         contains the description of the table borders.
         """
         ...
+    @TableBorder.setter
+    def TableBorder(self, value: 'TableBorder_aedf0b56') -> None:
+        ...
     @property
     def TableColumnRelativeSum(self) -> int:
         """
         contains the sum of the column width values used in TableColumnSeparators.
         """
+        ...
+    @TableColumnRelativeSum.setter
+    def TableColumnRelativeSum(self, value: int) -> None:
         ...
     @property
     def TableTemplateName(self) -> str:
@@ -241,11 +322,17 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
             LibreOffice 5.3
         """
         ...
+    @TableTemplateName.setter
+    def TableTemplateName(self, value: str) -> None:
+        ...
     @property
     def TopMargin(self) -> int:
         """
         determines the top margin.
         """
+        ...
+    @TopMargin.setter
+    def TopMargin(self, value: int) -> None:
         ...
     @property
     def Width(self) -> int:
@@ -254,5 +341,8 @@ class TextTable(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, XC
         
         As this is only a describing property the value of the actual table may vary depending on the environment the table is located in and the settings of LeftMargin, RightMargin and HoriOrient.
         """
+        ...
+    @Width.setter
+    def Width(self, value: int) -> None:
         ...
 

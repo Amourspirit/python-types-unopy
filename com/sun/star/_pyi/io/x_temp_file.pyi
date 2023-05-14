@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,19 +37,25 @@ class XTempFile(XSeekable_79540954, XStream_678908a4):
         This attribute controls whether the file will be automatically removed on object destruction.
         """
         ...
-
+    @RemoveFile.setter
+    def RemoveFile(self, value: bool) -> None:
+        ...
     @property
     def ResourceName(self) -> str:
         """
         This attribute specifies the temp file name.
         """
         ...
-
+    @ResourceName.setter
+    def ResourceName(self, value: str) -> None:
+        ...
     @property
     def Uri(self) -> str:
         """
         This attribute specifies the URL of the temp file.
         """
         ...
-
+    @Uri.setter
+    def Uri(self, value: str) -> None:
+        ...
 

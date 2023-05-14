@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -47,11 +47,17 @@ class Settings(XPropertySet_bc180bfa):
         This property serves to capture the current printer setup settings, such as paper tray, printer options, etc. The data can typically be interpreted only by the system that generated it. The PrinterSetup property may be used to save and restore the user's printer settings.
         """
         ...
+    @PrinterSetup.setter
+    def PrinterSetup(self, value: uno.ByteSequence) -> None:
+        ...
     @property
     def AddExternalLeading(self) -> bool:
         """
         layout engine should add value of a Font's \"external leading\" attribute to the line spacing.
         """
+        ...
+    @AddExternalLeading.setter
+    def AddExternalLeading(self, value: bool) -> None:
         ...
     @property
     def ApplyUserData(self) -> bool:
@@ -59,15 +65,24 @@ class Settings(XPropertySet_bc180bfa):
         specifies if the user-specific settings saved within a document should be loaded with the document.
         """
         ...
+    @ApplyUserData.setter
+    def ApplyUserData(self, value: bool) -> None:
+        ...
     @property
     def AutoCalculate(self) -> bool:
         """
         """
         ...
+    @AutoCalculate.setter
+    def AutoCalculate(self, value: bool) -> None:
+        ...
     @property
     def BitmapTableURL(self) -> str:
         """
         """
+        ...
+    @BitmapTableURL.setter
+    def BitmapTableURL(self, value: str) -> None:
         ...
     @property
     def CharacterCompressionType(self) -> int:
@@ -75,11 +90,17 @@ class Settings(XPropertySet_bc180bfa):
         specifies the compression (character spacing) type used for Asian characters.
         """
         ...
+    @CharacterCompressionType.setter
+    def CharacterCompressionType(self, value: int) -> None:
+        ...
     @property
     def ColorTableURL(self) -> str:
         """
         contains the URL that points to a color table (file extension .soc) that will be used for showing a palette in dialogs using colors.
         """
+        ...
+    @ColorTableURL.setter
+    def ColorTableURL(self, value: str) -> None:
         ...
     @property
     def CurrentDatabaseCommand(self) -> str:
@@ -87,11 +108,17 @@ class Settings(XPropertySet_bc180bfa):
         a string value, specifying the name of the object displayed currently (or the SQL statement used).
         """
         ...
+    @CurrentDatabaseCommand.setter
+    def CurrentDatabaseCommand(self, value: str) -> None:
+        ...
     @property
     def CurrentDatabaseCommandType(self) -> int:
         """
         determines the interpretation of the property DataTableName.
         """
+        ...
+    @CurrentDatabaseCommandType.setter
+    def CurrentDatabaseCommandType(self, value: int) -> None:
         ...
     @property
     def CurrentDatabaseDataSource(self) -> str:
@@ -101,15 +128,24 @@ class Settings(XPropertySet_bc180bfa):
         The data source can e.g. be used for feeding a form letter.
         """
         ...
+    @CurrentDatabaseDataSource.setter
+    def CurrentDatabaseDataSource(self, value: str) -> None:
+        ...
     @property
     def DashTableURL(self) -> str:
         """
         """
         ...
+    @DashTableURL.setter
+    def DashTableURL(self, value: str) -> None:
+        ...
     @property
     def DefaultTabStop(self) -> int:
         """
         """
+        ...
+    @DefaultTabStop.setter
+    def DefaultTabStop(self, value: int) -> None:
         ...
     @property
     def EmbedAsianScriptFonts(self) -> bool:
@@ -121,6 +157,9 @@ class Settings(XPropertySet_bc180bfa):
             LibreOffice 6.2
         """
         ...
+    @EmbedAsianScriptFonts.setter
+    def EmbedAsianScriptFonts(self, value: bool) -> None:
+        ...
     @property
     def EmbedComplexScriptFonts(self) -> bool:
         """
@@ -130,6 +169,9 @@ class Settings(XPropertySet_bc180bfa):
         
             LibreOffice 6.2
         """
+        ...
+    @EmbedComplexScriptFonts.setter
+    def EmbedComplexScriptFonts(self, value: bool) -> None:
         ...
     @property
     def EmbedFonts(self) -> bool:
@@ -143,6 +185,9 @@ class Settings(XPropertySet_bc180bfa):
             LibreOffice 4.0
         """
         ...
+    @EmbedFonts.setter
+    def EmbedFonts(self, value: bool) -> None:
+        ...
     @property
     def EmbedLatinScriptFonts(self) -> bool:
         """
@@ -153,6 +198,9 @@ class Settings(XPropertySet_bc180bfa):
             LibreOffice 6.2
         """
         ...
+    @EmbedLatinScriptFonts.setter
+    def EmbedLatinScriptFonts(self, value: bool) -> None:
+        ...
     @property
     def EmbedOnlyUsedFonts(self) -> bool:
         """
@@ -162,6 +210,9 @@ class Settings(XPropertySet_bc180bfa):
         
             LibreOffice 6.2
         """
+        ...
+    @EmbedOnlyUsedFonts.setter
+    def EmbedOnlyUsedFonts(self, value: bool) -> None:
         ...
     @property
     def EmbedSystemFonts(self) -> bool:
@@ -175,11 +226,17 @@ class Settings(XPropertySet_bc180bfa):
             LibreOffice 4.0
         """
         ...
+    @EmbedSystemFonts.setter
+    def EmbedSystemFonts(self, value: bool) -> None:
+        ...
     @property
     def FieldAutoUpdate(self) -> bool:
         """
         specifies if fields in text documents are updated automatically.
         """
+        ...
+    @FieldAutoUpdate.setter
+    def FieldAutoUpdate(self, value: bool) -> None:
         ...
     @property
     def ForbiddenCharacters(self) -> 'XForbiddenCharacters_df60e2d':
@@ -187,15 +244,24 @@ class Settings(XPropertySet_bc180bfa):
         gives access to the set of forbidden characters.
         """
         ...
+    @ForbiddenCharacters.setter
+    def ForbiddenCharacters(self, value: 'XForbiddenCharacters_df60e2d') -> None:
+        ...
     @property
     def GradientTableURL(self) -> str:
         """
         """
         ...
+    @GradientTableURL.setter
+    def GradientTableURL(self, value: str) -> None:
+        ...
     @property
     def HatchTableURL(self) -> str:
         """
         """
+        ...
+    @HatchTableURL.setter
+    def HatchTableURL(self, value: str) -> None:
         ...
     @property
     def IsKernAsianPunctuation(self) -> bool:
@@ -205,6 +271,9 @@ class Settings(XPropertySet_bc180bfa):
         Applies only if kerning is enabled.
         """
         ...
+    @IsKernAsianPunctuation.setter
+    def IsKernAsianPunctuation(self, value: bool) -> None:
+        ...
     @property
     def IsPrintBooklet(self) -> bool:
         """
@@ -212,6 +281,9 @@ class Settings(XPropertySet_bc180bfa):
         
         Note, that you have to print in duplex mode, if both, IsPrintBookletFront and IsPrintBookletBack are set to TRUE.
         """
+        ...
+    @IsPrintBooklet.setter
+    def IsPrintBooklet(self, value: bool) -> None:
         ...
     @property
     def IsPrintBookletBack(self) -> bool:
@@ -223,6 +295,9 @@ class Settings(XPropertySet_bc180bfa):
         This is especially useful, if your printer does not supply duplex printing.
         """
         ...
+    @IsPrintBookletBack.setter
+    def IsPrintBookletBack(self, value: bool) -> None:
+        ...
     @property
     def IsPrintBookletFront(self) -> bool:
         """
@@ -233,10 +308,16 @@ class Settings(XPropertySet_bc180bfa):
         This is especially useful, if your printer does not supply duplex printing.
         """
         ...
+    @IsPrintBookletFront.setter
+    def IsPrintBookletFront(self, value: bool) -> None:
+        ...
     @property
     def LineEndTableURL(self) -> str:
         """
         """
+        ...
+    @LineEndTableURL.setter
+    def LineEndTableURL(self, value: str) -> None:
         ...
     @property
     def LinkUpdateMode(self) -> int:
@@ -246,11 +327,17 @@ class Settings(XPropertySet_bc180bfa):
         For supported values see the constants group LinkUpdateModes.
         """
         ...
+    @LinkUpdateMode.setter
+    def LinkUpdateMode(self, value: int) -> None:
+        ...
     @property
     def PrintQuality(self) -> int:
         """
         how printing uses color.
         """
+        ...
+    @PrintQuality.setter
+    def PrintQuality(self, value: int) -> None:
         ...
     @property
     def PrinterIndependentLayout(self) -> int:
@@ -260,17 +347,26 @@ class Settings(XPropertySet_bc180bfa):
         For supported values see the constants group PrinterIndependentLayout.
         """
         ...
+    @PrinterIndependentLayout.setter
+    def PrinterIndependentLayout(self, value: int) -> None:
+        ...
     @property
     def PrinterName(self) -> str:
         """
         printer used by the document.
         """
         ...
+    @PrinterName.setter
+    def PrinterName(self, value: str) -> None:
+        ...
     @property
     def SaveVersionOnClose(self) -> bool:
         """
         specifies if a new version is created if a document has been modified and you want to close it.
         """
+        ...
+    @SaveVersionOnClose.setter
+    def SaveVersionOnClose(self, value: bool) -> None:
         ...
     @property
     def UpdateFromTemplate(self) -> bool:
@@ -279,5 +375,8 @@ class Settings(XPropertySet_bc180bfa):
         
         Applies only for documents that were created from a template.
         """
+        ...
+    @UpdateFromTemplate.setter
+    def UpdateFromTemplate(self, value: bool) -> None:
         ...
 

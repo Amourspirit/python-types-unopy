@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -107,14 +107,18 @@ class XFormController(XTabController_bacd0be7, XChild_a6390b07, XEnumerationAcce
         allows to delegate certain tasks to the context of the form controller
         """
         ...
-
+    @Context.setter
+    def Context(self, value: 'XFormControllerContext_c54112e3') -> None:
+        ...
     @property
     def CurrentControl(self) -> 'XControl_7a9c098d':
         """
         provides access to the currently active control
         """
         ...
-
+    @CurrentControl.setter
+    def CurrentControl(self, value: 'XControl_7a9c098d') -> None:
+        ...
     @property
     def FormOperations(self) -> 'XFormOperations_4a450ffe':
         """
@@ -123,12 +127,16 @@ class XFormController(XTabController_bacd0be7, XChild_a6390b07, XEnumerationAcce
         This instance can be used, for instance, to determine the current state of certain form features.
         """
         ...
-
+    @FormOperations.setter
+    def FormOperations(self, value: 'XFormOperations_4a450ffe') -> None:
+        ...
     @property
     def InteractionHandler(self) -> 'XInteractionHandler_bf80e51':
         """
         used (if not NULL) for user interactions triggered by the form controller.
         """
         ...
-
+    @InteractionHandler.setter
+    def InteractionHandler(self, value: 'XInteractionHandler_bf80e51') -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -46,6 +46,9 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
             OOo 2.0
         """
         ...
+    @AddParaSpacingToTableCells.setter
+    def AddParaSpacingToTableCells(self, value: bool) -> None:
+        ...
     @property
     def AddParaTableSpacing(self) -> bool:
         """
@@ -53,6 +56,9 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
         If between two paragraphs, two tables, or a paragraph and a table, you have defined spacing above and below each object, usually only the larger one of the two spaces is used. If the spacing between the objects are to be added this property has to be TRUE.
         """
+        ...
+    @AddParaTableSpacing.setter
+    def AddParaTableSpacing(self, value: bool) -> None:
         ...
     @property
     def AddParaTableSpacingAtStart(self) -> bool:
@@ -62,6 +68,9 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         If TRUE, the paragraph or table spacing to the top will also be effective at the beginning of a page or column if the paragraph or table is positioned on the first page of the document. The same applies for a page break.
         """
         ...
+    @AddParaTableSpacingAtStart.setter
+    def AddParaTableSpacingAtStart(self, value: bool) -> None:
+        ...
     @property
     def AlignTabStopPosition(self) -> bool:
         """
@@ -70,6 +79,9 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         If TRUE centered and right-aligned paragraphs containing tabs are formatted as a whole in the center or aligned to the right. If FALSE, only the text to the right of the last tab, for example, is aligned to the right, while the text to the left remains where it is.
         """
         ...
+    @AlignTabStopPosition.setter
+    def AlignTabStopPosition(self, value: bool) -> None:
+        ...
     @property
     def ChartAutoUpdate(self) -> bool:
         """
@@ -77,6 +89,9 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
         This has no effect if \"FieldAutoUpdate\" is FALSE.
         """
+        ...
+    @ChartAutoUpdate.setter
+    def ChartAutoUpdate(self, value: bool) -> None:
         ...
     @property
     def ConsiderTextWrapOnObjPos(self) -> bool:
@@ -90,6 +105,9 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
             OOo 2.0
         """
         ...
+    @ConsiderTextWrapOnObjPos.setter
+    def ConsiderTextWrapOnObjPos(self, value: bool) -> None:
+        ...
     @property
     def IsLabelDocument(self) -> bool:
         """
@@ -97,6 +115,9 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
         This property indicates that the document contains multiple text frames and that the content of one frame is duplicated into the other frames by internally linked text sections.
         """
+        ...
+    @IsLabelDocument.setter
+    def IsLabelDocument(self, value: bool) -> None:
         ...
     @property
     def MathBaselineAlignment(self) -> bool:
@@ -110,6 +131,9 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
             OOo 3.4
         """
         ...
+    @MathBaselineAlignment.setter
+    def MathBaselineAlignment(self, value: bool) -> None:
+        ...
     @property
     def SaveGlobalDocumentLinks(self) -> bool:
         """
@@ -119,6 +143,9 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
         Note: This name is a bit misleading, it should be something like SaveLinkedDocumentContent.
         """
+        ...
+    @SaveGlobalDocumentLinks.setter
+    def SaveGlobalDocumentLinks(self, value: bool) -> None:
         ...
     @property
     def UseFormerLineSpacing(self) -> bool:
@@ -132,6 +159,9 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
             OOo 2.0
         """
         ...
+    @UseFormerLineSpacing.setter
+    def UseFormerLineSpacing(self, value: bool) -> None:
+        ...
     @property
     def UseFormerObjectPositioning(self) -> bool:
         """
@@ -143,5 +173,8 @@ class DocumentSettings(Settings_b2bc0bb8, PrintSettings_bea20c2b):
         
             OOo 2.0
         """
+        ...
+    @UseFormerObjectPositioning.setter
+    def UseFormerObjectPositioning(self, value: bool) -> None:
         ...
 

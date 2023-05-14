@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,6 +60,9 @@ class StrokeAttributes(object):
         """
         ...
 
+    @DashArray.setter
+    def DashArray(self, value: typing.Tuple[float, ...]) -> None:
+        ...
 
     @property
     def LineArray(self) -> typing.Tuple[float, ...]:
@@ -70,6 +73,9 @@ class StrokeAttributes(object):
         """
         ...
 
+    @LineArray.setter
+    def LineArray(self, value: typing.Tuple[float, ...]) -> None:
+        ...
 
     @property
     def StrokeWidth(self) -> float:
@@ -80,6 +86,9 @@ class StrokeAttributes(object):
         """
         ...
 
+    @StrokeWidth.setter
+    def StrokeWidth(self, value: float) -> None:
+        ...
 
     @property
     def MiterLimit(self) -> float:
@@ -92,6 +101,9 @@ class StrokeAttributes(object):
         """
         ...
 
+    @MiterLimit.setter
+    def MiterLimit(self, value: float) -> None:
+        ...
 
     @property
     def StartCapType(self) -> int:
@@ -102,6 +114,9 @@ class StrokeAttributes(object):
         """
         ...
 
+    @StartCapType.setter
+    def StartCapType(self, value: int) -> None:
+        ...
 
     @property
     def EndCapType(self) -> int:
@@ -112,6 +127,9 @@ class StrokeAttributes(object):
         """
         ...
 
+    @EndCapType.setter
+    def EndCapType(self, value: int) -> None:
+        ...
 
     @property
     def JoinType(self) -> int:
@@ -122,4 +140,7 @@ class StrokeAttributes(object):
         """
         ...
 
+    @JoinType.setter
+    def JoinType(self, value: int) -> None:
+        ...
 

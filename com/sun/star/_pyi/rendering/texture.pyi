@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -72,6 +72,9 @@ class Texture(object):
         """
         ...
 
+    @AffineTransform.setter
+    def AffineTransform(self, value: AffineMatrix2D_ff040da8) -> None:
+        ...
 
     @property
     def Alpha(self) -> float:
@@ -82,6 +85,9 @@ class Texture(object):
         """
         ...
 
+    @Alpha.setter
+    def Alpha(self, value: float) -> None:
+        ...
 
     @property
     def NumberOfHatchPolygons(self) -> int:
@@ -92,6 +98,9 @@ class Texture(object):
         """
         ...
 
+    @NumberOfHatchPolygons.setter
+    def NumberOfHatchPolygons(self, value: int) -> None:
+        ...
 
     @property
     def Bitmap(self) -> XBitmap_b1b70b7b:
@@ -104,6 +113,9 @@ class Texture(object):
         """
         ...
 
+    @Bitmap.setter
+    def Bitmap(self, value: XBitmap_b1b70b7b) -> None:
+        ...
 
     @property
     def Gradient(self) -> XParametricPolyPolygon2D_b3511228:
@@ -114,6 +126,9 @@ class Texture(object):
         """
         ...
 
+    @Gradient.setter
+    def Gradient(self, value: XParametricPolyPolygon2D_b3511228) -> None:
+        ...
 
     @property
     def Hatching(self) -> XParametricPolyPolygon2D_b3511228:
@@ -124,6 +139,9 @@ class Texture(object):
         """
         ...
 
+    @Hatching.setter
+    def Hatching(self, value: XParametricPolyPolygon2D_b3511228) -> None:
+        ...
 
     @property
     def HatchAttributes(self) -> StrokeAttributes_2dd10f65:
@@ -134,6 +152,9 @@ class Texture(object):
         """
         ...
 
+    @HatchAttributes.setter
+    def HatchAttributes(self, value: StrokeAttributes_2dd10f65) -> None:
+        ...
 
     @property
     def RepeatModeX(self) -> int:
@@ -144,6 +165,9 @@ class Texture(object):
         """
         ...
 
+    @RepeatModeX.setter
+    def RepeatModeX(self, value: int) -> None:
+        ...
 
     @property
     def RepeatModeY(self) -> int:
@@ -154,4 +178,7 @@ class Texture(object):
         """
         ...
 
+    @RepeatModeY.setter
+    def RepeatModeY(self, value: int) -> None:
+        ...
 

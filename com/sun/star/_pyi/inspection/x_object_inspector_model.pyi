@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -68,7 +68,9 @@ class XObjectInspectorModel(ABC):
         The order of factories is important: If two property handlers declare themselves responsible for the same property, the one whose factory is listed last wins. Also, if a handler B wants to supersede a property of another handler A, A's factory must precede the factory of B.
         """
         ...
-
+    @HandlerFactories.setter
+    def HandlerFactories(self, value: 'typing.Tuple[object, ...]') -> None:
+        ...
     @property
     def HasHelpSection(self) -> bool:
         """
@@ -81,7 +83,9 @@ class XObjectInspectorModel(ABC):
             OOo 2.2
         """
         ...
-
+    @HasHelpSection.setter
+    def HasHelpSection(self, value: bool) -> None:
+        ...
     @property
     def IsReadOnly(self) -> bool:
         """
@@ -92,7 +96,9 @@ class XObjectInspectorModel(ABC):
         In a read-only object inspector, the property controls are readonly or disabled themselves, and the primary and secondary buttons of a property line are both disabled.
         """
         ...
-
+    @IsReadOnly.setter
+    def IsReadOnly(self, value: bool) -> None:
+        ...
     @property
     def MaxHelpTextLines(self) -> int:
         """
@@ -107,7 +113,9 @@ class XObjectInspectorModel(ABC):
             OOo 2.2
         """
         ...
-
+    @MaxHelpTextLines.setter
+    def MaxHelpTextLines(self, value: int) -> None:
+        ...
     @property
     def MinHelpTextLines(self) -> int:
         """
@@ -122,5 +130,7 @@ class XObjectInspectorModel(ABC):
             OOo 2.2
         """
         ...
-
+    @MinHelpTextLines.setter
+    def MinHelpTextLines(self, value: int) -> None:
+        ...
 

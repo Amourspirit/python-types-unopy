@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,14 +48,18 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         Defines the background color of the section.
         """
         ...
-
+    @BackColor.setter
+    def BackColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def BackTransparent(self) -> bool:
         """
         determines if the background color is set to transparent.
         """
         ...
-
+    @BackTransparent.setter
+    def BackTransparent(self, value: bool) -> None:
+        ...
     @property
     def CanGrow(self) -> bool:
         """
@@ -64,14 +68,18 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         If this property is disabled the content will be truncated when its size is larger than the container.
         """
         ...
-
+    @CanGrow.setter
+    def CanGrow(self, value: bool) -> None:
+        ...
     @property
     def CanShrink(self) -> bool:
         """
         Represents ...
         """
         ...
-
+    @CanShrink.setter
+    def CanShrink(self, value: bool) -> None:
+        ...
     @property
     def ConditionalPrintExpression(self) -> str:
         """
@@ -80,7 +88,9 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         If the return value of the expression is TRUE then the section will be printed.
         """
         ...
-
+    @ConditionalPrintExpression.setter
+    def ConditionalPrintExpression(self, value: str) -> None:
+        ...
     @property
     def ForceNewPage(self) -> int:
         """
@@ -89,21 +99,27 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         Not valid for page header or page footer.
         """
         ...
-
+    @ForceNewPage.setter
+    def ForceNewPage(self, value: int) -> None:
+        ...
     @property
     def Group(self) -> 'XGroup_86540a09':
         """
         Specifies the parent of the section if it is a group header or group footer.
         """
         ...
-
+    @Group.setter
+    def Group(self, value: 'XGroup_86540a09') -> None:
+        ...
     @property
     def Height(self) -> int:
         """
         Defines the height of the section.
         """
         ...
-
+    @Height.setter
+    def Height(self, value: int) -> None:
+        ...
     @property
     def KeepTogether(self) -> bool:
         """
@@ -112,14 +128,18 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         Not valid for page header or page footer.
         """
         ...
-
+    @KeepTogether.setter
+    def KeepTogether(self, value: bool) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
         Defines the name of the section.
         """
         ...
-
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def NewRowOrCol(self) -> int:
         """
@@ -128,7 +148,9 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         Not valid for page header or page footer.
         """
         ...
-
+    @NewRowOrCol.setter
+    def NewRowOrCol(self, value: int) -> None:
+        ...
     @property
     def RepeatSection(self) -> bool:
         """
@@ -137,19 +159,25 @@ class XSection(XPropertySet_bc180bfa, XChild_a6390b07, XContainer_d6fb0cc6, XEnu
         It only applies to group headers.
         """
         ...
-
+    @RepeatSection.setter
+    def RepeatSection(self, value: bool) -> None:
+        ...
     @property
     def ReportDefinition(self) -> 'XReportDefinition_ec30e81':
         """
         Specifies the parent of the section if it is a page header or page footer.
         """
         ...
-
+    @ReportDefinition.setter
+    def ReportDefinition(self, value: 'XReportDefinition_ec30e81') -> None:
+        ...
     @property
     def Visible(self) -> bool:
         """
         Defines if the section should be visible in report.
         """
         ...
-
+    @Visible.setter
+    def Visible(self, value: bool) -> None:
+        ...
 

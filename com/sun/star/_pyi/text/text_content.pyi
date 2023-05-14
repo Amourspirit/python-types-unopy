@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,16 +43,25 @@ class TextContent(XTextContent_b16e0ba5):
         contains the anchor type of the text content.
         """
         ...
+    @AnchorTypes.setter
+    def AnchorTypes(self, value: 'typing.Tuple[TextContentAnchorType_2cbe0f4a, ...]') -> None:
+        ...
     @property
     def AnchorType(self) -> 'TextContentAnchorType_2cbe0f4a':
         """
         specifies how the text content is attached to its surrounding Text.
         """
         ...
+    @AnchorType.setter
+    def AnchorType(self, value: 'TextContentAnchorType_2cbe0f4a') -> None:
+        ...
     @property
     def TextWrap(self) -> 'WrapTextMode_b1dd0b91':
         """
         specifies if the text content is a shape and how the text is wrapped around the shape.
         """
+        ...
+    @TextWrap.setter
+    def TextWrap(self, value: 'WrapTextMode_b1dd0b91') -> None:
         ...
 

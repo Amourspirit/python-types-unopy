@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,6 +54,9 @@ class RuleSet(object):
         """
         ...
 
+    @Rules.setter
+    def Rules(self, value: typing.Tuple[Rule_571307da, ...]) -> None:
+        ...
 
     @property
     def HandleFolder(self) -> bool:
@@ -62,4 +65,7 @@ class RuleSet(object):
         """
         ...
 
+    @HandleFolder.setter
+    def HandleFolder(self, value: bool) -> None:
+        ...
 

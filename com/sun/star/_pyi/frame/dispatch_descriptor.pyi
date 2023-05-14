@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class DispatchDescriptor(object):
         """
         ...
 
+    @FeatureURL.setter
+    def FeatureURL(self, value: URL_57ad07b9) -> None:
+        ...
 
     @property
     def FrameName(self) -> str:
@@ -67,6 +70,9 @@ class DispatchDescriptor(object):
         """
         ...
 
+    @FrameName.setter
+    def FrameName(self, value: str) -> None:
+        ...
 
     @property
     def SearchFlags(self) -> int:
@@ -77,4 +83,7 @@ class DispatchDescriptor(object):
         """
         ...
 
+    @SearchFlags.setter
+    def SearchFlags(self, value: int) -> None:
+        ...
 

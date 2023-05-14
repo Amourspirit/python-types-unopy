@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,7 +54,9 @@ class ScriptExceptionRaisedException(ScriptErrorRaisedException_585f15bc):
         Name of script where error occurred.
         """
         ...
-
+    @exceptionType.setter
+    def exceptionType(self, value: str) -> None:
+        ...
 
 __all__ = ['ScriptExceptionRaisedException']
 

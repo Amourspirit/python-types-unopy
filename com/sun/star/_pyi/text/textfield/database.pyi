@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,6 +37,9 @@ class Database(DependentTextField_fed90ded):
         Initially it contains the column name in parenthesis (<>).
         """
         ...
+    @Content.setter
+    def Content(self, value: str) -> None:
+        ...
     @property
     def CurrentPresentation(self) -> str:
         """
@@ -45,16 +48,25 @@ class Database(DependentTextField_fed90ded):
         This property is especially useful for import/export purposes.
         """
         ...
+    @CurrentPresentation.setter
+    def CurrentPresentation(self, value: str) -> None:
+        ...
     @property
     def DataBaseFormat(self) -> bool:
         """
         determines whether the number format is number display format is read from the database settings.
         """
         ...
+    @DataBaseFormat.setter
+    def DataBaseFormat(self, value: bool) -> None:
+        ...
     @property
     def NumberFormat(self) -> int:
         """
         this is the number format for this field.
         """
+        ...
+    @NumberFormat.setter
+    def NumberFormat(self, value: int) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class DataPilotFieldSortInfo(object):
         """
         ...
 
+    @Field.setter
+    def Field(self, value: str) -> None:
+        ...
 
     @property
     def IsAscending(self) -> bool:
@@ -60,6 +63,9 @@ class DataPilotFieldSortInfo(object):
         """
         ...
 
+    @IsAscending.setter
+    def IsAscending(self, value: bool) -> None:
+        ...
 
     @property
     def Mode(self) -> int:
@@ -68,4 +74,7 @@ class DataPilotFieldSortInfo(object):
         """
         ...
 
+    @Mode.setter
+    def Mode(self, value: int) -> None:
+        ...
 

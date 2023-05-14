@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,11 +35,17 @@ class DDE(TextFieldMaster_d6410cc2):
         contains the content.
         """
         ...
+    @Content.setter
+    def Content(self, value: str) -> None:
+        ...
     @property
     def DDECommandElement(self) -> str:
         """
         contains the element string of the DDE command.
         """
+        ...
+    @DDECommandElement.setter
+    def DDECommandElement(self, value: str) -> None:
         ...
     @property
     def DDECommandFile(self) -> str:
@@ -47,16 +53,25 @@ class DDE(TextFieldMaster_d6410cc2):
         contains the file string of the DDE command.
         """
         ...
+    @DDECommandFile.setter
+    def DDECommandFile(self, value: str) -> None:
+        ...
     @property
     def DDECommandType(self) -> str:
         """
         contains the type string of the DDE command.
         """
         ...
+    @DDECommandType.setter
+    def DDECommandType(self, value: str) -> None:
+        ...
     @property
     def IsAutomaticUpdate(self) -> bool:
         """
         determines whether DDE link is updated automatically.
         """
+        ...
+    @IsAutomaticUpdate.setter
+    def IsAutomaticUpdate(self, value: bool) -> None:
         ...
 

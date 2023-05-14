@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,16 +35,25 @@ class ParagraphPropertiesAsian(ABC):
         determines if a distance between Asian text, western text or complex text is set.
         """
         ...
+    @ParaIsCharacterDistance.setter
+    def ParaIsCharacterDistance(self, value: bool) -> None:
+        ...
     @property
     def ParaIsForbiddenRules(self) -> bool:
         """
         determines if the rules for forbidden characters at the start or end of text lines are considered.
         """
         ...
+    @ParaIsForbiddenRules.setter
+    def ParaIsForbiddenRules(self, value: bool) -> None:
+        ...
     @property
     def ParaIsHangingPunctuation(self) -> bool:
         """
         determines if hanging punctuation is allowed.
         """
+        ...
+    @ParaIsHangingPunctuation.setter
+    def ParaIsHangingPunctuation(self, value: bool) -> None:
         ...
 

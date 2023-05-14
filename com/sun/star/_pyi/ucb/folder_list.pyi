@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,6 +53,9 @@ class FolderList(object):
         """
         ...
 
+    @List.setter
+    def List(self, value: typing.Tuple[FolderListEntry_c6c30c4c, ...]) -> None:
+        ...
 
     @property
     def Command(self) -> FolderListCommand_e0140cf9:
@@ -61,4 +64,7 @@ class FolderList(object):
         """
         ...
 
+    @Command.setter
+    def Command(self, value: FolderListCommand_e0140cf9) -> None:
+        ...
 

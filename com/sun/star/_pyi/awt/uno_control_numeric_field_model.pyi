@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,11 +44,17 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
         specifies the background color(RGB) of the control.
         """
         ...
+    @BackgroundColor.setter
+    def BackgroundColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
+    @Border.setter
+    def Border(self, value: int) -> None:
         ...
     @property
     def BorderColor(self) -> int:
@@ -62,11 +68,17 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @BorderColor.setter
+    def BorderColor(self, value: int) -> None:
+        ...
     @property
     def DecimalAccuracy(self) -> int:
         """
         specifies the decimal accuracy.
         """
+        ...
+    @DecimalAccuracy.setter
+    def DecimalAccuracy(self, value: int) -> None:
         ...
     @property
     def Enabled(self) -> bool:
@@ -74,11 +86,17 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
         determines whether the control is enabled or disabled.
         """
         ...
+    @Enabled.setter
+    def Enabled(self, value: bool) -> None:
+        ...
     @property
     def FontDescriptor(self) -> 'FontDescriptor_bc110c0a':
         """
         specifies the font attributes of the text in the control.
         """
+        ...
+    @FontDescriptor.setter
+    def FontDescriptor(self, value: 'FontDescriptor_bc110c0a') -> None:
         ...
     @property
     def FontEmphasisMark(self) -> int:
@@ -86,11 +104,17 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
         specifies the com.sun.star.text.FontEmphasis value of the text in the control.
         """
         ...
+    @FontEmphasisMark.setter
+    def FontEmphasisMark(self, value: int) -> None:
+        ...
     @property
     def FontRelief(self) -> int:
         """
         specifies the com.sun.star.text.FontRelief value of the text in the control.
         """
+        ...
+    @FontRelief.setter
+    def FontRelief(self, value: int) -> None:
         ...
     @property
     def HelpText(self) -> str:
@@ -98,11 +122,17 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
         specifies the help text of the control.
         """
         ...
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the control.
         """
+        ...
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
         ...
     @property
     def HideInactiveSelection(self) -> bool:
@@ -114,6 +144,9 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @HideInactiveSelection.setter
+    def HideInactiveSelection(self, value: bool) -> None:
+        ...
     @property
     def MouseWheelBehavior(self) -> int:
         """
@@ -122,17 +155,26 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
         Usually, the mouse wheel spins the numeric value displayed in the control. Using this property, and one of the MouseWheelBehavior constants, you can control under which circumstances this is possible.
         """
         ...
+    @MouseWheelBehavior.setter
+    def MouseWheelBehavior(self, value: int) -> None:
+        ...
     @property
     def Printable(self) -> bool:
         """
         specifies that the control will be printed with the document.
         """
         ...
+    @Printable.setter
+    def Printable(self, value: bool) -> None:
+        ...
     @property
     def ReadOnly(self) -> bool:
         """
         specifies that the content of the control cannot be modified by the user.
         """
+        ...
+    @ReadOnly.setter
+    def ReadOnly(self, value: bool) -> None:
         ...
     @property
     def Repeat(self) -> bool:
@@ -146,6 +188,9 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @Repeat.setter
+    def Repeat(self, value: bool) -> None:
+        ...
     @property
     def RepeatDelay(self) -> int:
         """
@@ -158,11 +203,17 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @RepeatDelay.setter
+    def RepeatDelay(self, value: int) -> None:
+        ...
     @property
     def ShowThousandsSeparator(self) -> bool:
         """
         specifies whether the thousands separator is to be displayed.
         """
+        ...
+    @ShowThousandsSeparator.setter
+    def ShowThousandsSeparator(self, value: bool) -> None:
         ...
     @property
     def Spin(self) -> bool:
@@ -170,11 +221,17 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
         specifies that the control has a spin button.
         """
         ...
+    @Spin.setter
+    def Spin(self, value: bool) -> None:
+        ...
     @property
     def StrictFormat(self) -> bool:
         """
         specifies that the value is checked during the user input.
         """
+        ...
+    @StrictFormat.setter
+    def StrictFormat(self, value: bool) -> None:
         ...
     @property
     def Tabstop(self) -> bool:
@@ -182,11 +239,17 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
         specifies that the control can be reached with the TAB key.
         """
         ...
+    @Tabstop.setter
+    def Tabstop(self, value: bool) -> None:
+        ...
     @property
     def TextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color (RGB) of the control.
         """
+        ...
+    @TextColor.setter
+    def TextColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def TextLineColor(self) -> 'Color_68e908c5':
@@ -194,11 +257,17 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
         specifies the text line color (RGB) of the control.
         """
         ...
+    @TextLineColor.setter
+    def TextLineColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def Value(self) -> float:
         """
         specifies the value displayed in the control.
         """
+        ...
+    @Value.setter
+    def Value(self, value: float) -> None:
         ...
     @property
     def ValueMax(self) -> float:
@@ -206,17 +275,26 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
         specifies the maximum value that can be entered.
         """
         ...
+    @ValueMax.setter
+    def ValueMax(self, value: float) -> None:
+        ...
     @property
     def ValueMin(self) -> float:
         """
         specifies the minimum value that can be entered.
         """
         ...
+    @ValueMin.setter
+    def ValueMin(self, value: float) -> None:
+        ...
     @property
     def ValueStep(self) -> float:
         """
         specifies the value step when using the spin button.
         """
+        ...
+    @ValueStep.setter
+    def ValueStep(self, value: float) -> None:
         ...
     @property
     def VerticalAlign(self) -> 'VerticalAlignment_8d0e12':
@@ -227,6 +305,9 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
         
             OOo 3.3
         """
+        ...
+    @VerticalAlign.setter
+    def VerticalAlign(self, value: 'VerticalAlignment_8d0e12') -> None:
         ...
     @property
     def WritingMode(self) -> int:
@@ -239,5 +320,8 @@ class UnoControlNumericFieldModel(UnoControlModel_c8ce0c58):
         
             OOo 3.1
         """
+        ...
+    @WritingMode.setter
+    def WritingMode(self, value: int) -> None:
         ...
 

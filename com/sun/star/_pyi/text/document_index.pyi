@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -39,11 +39,17 @@ class DocumentIndex(BaseIndex_8f0d0a40):
         contains all index marks that are related to this index.
         """
         ...
+    @DocumentIndexMarks.setter
+    def DocumentIndexMarks(self, value: 'typing.Tuple[XDocumentIndexMark_fe490de7, ...]') -> None:
+        ...
     @property
     def IsCaseSensitive(self) -> bool:
         """
         determines if the similarity of index entries is checked case sensitively.
         """
+        ...
+    @IsCaseSensitive.setter
+    def IsCaseSensitive(self, value: bool) -> None:
         ...
     @property
     def Locale(self) -> 'Locale_70d308fa':
@@ -51,11 +57,17 @@ class DocumentIndex(BaseIndex_8f0d0a40):
         contains the locale of the index.
         """
         ...
+    @Locale.setter
+    def Locale(self, value: 'Locale_70d308fa') -> None:
+        ...
     @property
     def MainEntryCharacterStyleName(self) -> str:
         """
         determines the name of the character style that is applied to the number of a page where main index entry is located.
         """
+        ...
+    @MainEntryCharacterStyleName.setter
+    def MainEntryCharacterStyleName(self, value: str) -> None:
         ...
     @property
     def SortAlgorithm(self) -> str:
@@ -63,11 +75,17 @@ class DocumentIndex(BaseIndex_8f0d0a40):
         contains the name of the sort algorithm that is used to sort the entries.
         """
         ...
+    @SortAlgorithm.setter
+    def SortAlgorithm(self, value: str) -> None:
+        ...
     @property
     def UseAlphabeticalSeparators(self) -> bool:
         """
         determines if alphabetical separators are generated.
         """
+        ...
+    @UseAlphabeticalSeparators.setter
+    def UseAlphabeticalSeparators(self, value: bool) -> None:
         ...
     @property
     def UseCombinedEntries(self) -> bool:
@@ -75,11 +93,17 @@ class DocumentIndex(BaseIndex_8f0d0a40):
         determines if same entries on different pages are combined into one index entry.
         """
         ...
+    @UseCombinedEntries.setter
+    def UseCombinedEntries(self, value: bool) -> None:
+        ...
     @property
     def UseDash(self) -> bool:
         """
         determines if following page numbers are displayed using a dash.
         """
+        ...
+    @UseDash.setter
+    def UseDash(self, value: bool) -> None:
         ...
     @property
     def UseKeyAsEntry(self) -> bool:
@@ -87,16 +111,25 @@ class DocumentIndex(BaseIndex_8f0d0a40):
         determines if an index entry is generated for each primary/secondary key.
         """
         ...
+    @UseKeyAsEntry.setter
+    def UseKeyAsEntry(self, value: bool) -> None:
+        ...
     @property
     def UsePP(self) -> bool:
         """
         determines if following page numbers are displayed using a \"pp.\".
         """
         ...
+    @UsePP.setter
+    def UsePP(self, value: bool) -> None:
+        ...
     @property
     def UseUpperCase(self) -> bool:
         """
         determines if all entries start with a capital letter.
         """
+        ...
+    @UseUpperCase.setter
+    def UseUpperCase(self, value: bool) -> None:
         ...
 

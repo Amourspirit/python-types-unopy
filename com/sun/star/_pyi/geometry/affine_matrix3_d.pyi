@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -75,6 +75,9 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m00.setter
+    def m00(self, value: float) -> None:
+        ...
 
     @property
     def m01(self) -> float:
@@ -83,6 +86,9 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m01.setter
+    def m01(self, value: float) -> None:
+        ...
 
     @property
     def m02(self) -> float:
@@ -91,6 +97,9 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m02.setter
+    def m02(self, value: float) -> None:
+        ...
 
     @property
     def m03(self) -> float:
@@ -99,6 +108,9 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m03.setter
+    def m03(self, value: float) -> None:
+        ...
 
     @property
     def m10(self) -> float:
@@ -107,6 +119,9 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m10.setter
+    def m10(self, value: float) -> None:
+        ...
 
     @property
     def m11(self) -> float:
@@ -115,6 +130,9 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m11.setter
+    def m11(self, value: float) -> None:
+        ...
 
     @property
     def m12(self) -> float:
@@ -123,6 +141,9 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m12.setter
+    def m12(self, value: float) -> None:
+        ...
 
     @property
     def m13(self) -> float:
@@ -131,6 +152,9 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m13.setter
+    def m13(self, value: float) -> None:
+        ...
 
     @property
     def m20(self) -> float:
@@ -139,6 +163,9 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m20.setter
+    def m20(self, value: float) -> None:
+        ...
 
     @property
     def m21(self) -> float:
@@ -147,6 +174,9 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m21.setter
+    def m21(self, value: float) -> None:
+        ...
 
     @property
     def m22(self) -> float:
@@ -155,6 +185,9 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m22.setter
+    def m22(self, value: float) -> None:
+        ...
 
     @property
     def m23(self) -> float:
@@ -163,4 +196,7 @@ class AffineMatrix3D(object):
         """
         ...
 
+    @m23.setter
+    def m23(self, value: float) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,11 +48,17 @@ class DataPilotSource(XPropertySet_bc180bfa, XDataPilotResults_fc0c0ded, XDimens
             OOo 3.0
         """
         ...
+    @ColumnFieldCount.setter
+    def ColumnFieldCount(self, value: int) -> None:
+        ...
     @property
     def ColumnGrand(self) -> bool:
         """
         specifies if grand totals for the columns are inserted.
         """
+        ...
+    @ColumnGrand.setter
+    def ColumnGrand(self, value: bool) -> None:
         ...
     @property
     def DataFieldCount(self) -> int:
@@ -64,6 +70,9 @@ class DataPilotSource(XPropertySet_bc180bfa, XDataPilotResults_fc0c0ded, XDimens
             OOo 3.0
         """
         ...
+    @DataFieldCount.setter
+    def DataFieldCount(self, value: int) -> None:
+        ...
     @property
     def RowFieldCount(self) -> int:
         """
@@ -74,10 +83,16 @@ class DataPilotSource(XPropertySet_bc180bfa, XDataPilotResults_fc0c0ded, XDimens
             OOo 3.0
         """
         ...
+    @RowFieldCount.setter
+    def RowFieldCount(self, value: int) -> None:
+        ...
     @property
     def RowGrand(self) -> bool:
         """
         specifies if grand totals for the rows are inserted.
         """
+        ...
+    @RowGrand.setter
+    def RowGrand(self, value: bool) -> None:
         ...
 

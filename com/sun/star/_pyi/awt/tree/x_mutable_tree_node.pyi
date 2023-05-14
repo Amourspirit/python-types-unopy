@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -95,5 +95,7 @@ class XMutableTreeNode(XTreeNode_baaf0ba0):
         You can use this attribute to store data for this node that is independent of the display value
         """
         ...
-
+    @DataValue.setter
+    def DataValue(self, value: object) -> None:
+        ...
 

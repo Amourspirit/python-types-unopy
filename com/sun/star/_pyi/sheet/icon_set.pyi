@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -36,20 +36,32 @@ class IconSet(XConditionEntry_e2340d32):
         """
         """
         ...
+    @IconSetEntries.setter
+    def IconSetEntries(self, value: 'typing.Tuple[XIconSetEntry_c7620c40, ...]') -> None:
+        ...
     @property
     def Icons(self) -> int:
         """
         See com.sun.star.sheet.IconSetType for possible values.
         """
         ...
+    @Icons.setter
+    def Icons(self, value: int) -> None:
+        ...
     @property
     def Reverse(self) -> bool:
         """
         """
         ...
+    @Reverse.setter
+    def Reverse(self, value: bool) -> None:
+        ...
     @property
     def ShowValue(self) -> bool:
         """
         """
+        ...
+    @ShowValue.setter
+    def ShowValue(self, value: bool) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -63,7 +63,9 @@ class XTableName(ABC):
         denotes the name of the catalog which the table is a part of
         """
         ...
-
+    @CatalogName.setter
+    def CatalogName(self, value: str) -> None:
+        ...
     @property
     def NameForSelect(self) -> str:
         """
@@ -72,14 +74,18 @@ class XTableName(ABC):
         On a per-data-source basis, OpenOffice.org allows to override database meta data information in that you can specify to not use catalog and or schema names in SELECT statements. Using this attribute, you can generate a table name which respects those settings.
         """
         ...
-
+    @NameForSelect.setter
+    def NameForSelect(self, value: str) -> None:
+        ...
     @property
     def SchemaName(self) -> str:
         """
         denotes the name of the schema which the table is a part of
         """
         ...
-
+    @SchemaName.setter
+    def SchemaName(self, value: str) -> None:
+        ...
     @property
     def Table(self) -> 'XPropertySet_bc180bfa':
         """
@@ -88,12 +94,16 @@ class XTableName(ABC):
         Retrieving this attribute is equivalent to obtaining the tables container from the connection (via com.sun.star.sdbcx.XTablesSupplier), and calling its com.sun.star.container.XNameAccess.getByName() method with the ComposedName.
         """
         ...
-
+    @Table.setter
+    def Table(self, value: 'XPropertySet_bc180bfa') -> None:
+        ...
     @property
     def TableName(self) -> str:
         """
         denotes the mere, unqualified table name, excluding any catalog and schema.
         """
         ...
-
+    @TableName.setter
+    def TableName(self, value: str) -> None:
+        ...
 

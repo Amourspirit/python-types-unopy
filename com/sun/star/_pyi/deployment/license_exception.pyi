@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,21 +59,27 @@ class LicenseException(Exception_85530a09):
         The display name of the extension. See XPackage.getDisplayName()
         """
         ...
-
+    @ExtensionName.setter
+    def ExtensionName(self, value: str) -> None:
+        ...
     @property
     def Text(self) -> str:
         """
         contains the text of the license.
         """
         ...
-
+    @Text.setter
+    def Text(self, value: str) -> None:
+        ...
     @property
     def AcceptBy(self) -> str:
         """
         contains the value of the attribute /description/registration/simple-license/@accept-by from the description.xml
         """
         ...
-
+    @AcceptBy.setter
+    def AcceptBy(self, value: str) -> None:
+        ...
 
 __all__ = ['LicenseException']
 

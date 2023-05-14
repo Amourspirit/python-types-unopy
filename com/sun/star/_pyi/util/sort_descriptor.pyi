@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,17 +44,26 @@ class SortDescriptor(XPropertySet_bc180bfa):
         The collator algorithm may be defined for separate keys in specific implementations. For those this property may not need to be set.
         """
         ...
+    @CollatorAlgorithm.setter
+    def CollatorAlgorithm(self, value: str) -> None:
+        ...
     @property
     def CollatorLocale(self) -> 'Locale_70d308fa':
         """
         specifies the locale for the compare operator (collator).
         """
         ...
+    @CollatorLocale.setter
+    def CollatorLocale(self, value: 'Locale_70d308fa') -> None:
+        ...
     @property
     def IsCaseSensitive(self) -> bool:
         """
         specifies if the case of letters is important when comparing entries.
         """
+        ...
+    @IsCaseSensitive.setter
+    def IsCaseSensitive(self, value: bool) -> None:
         ...
     @property
     def SortAscending(self) -> bool:
@@ -64,10 +73,16 @@ class SortDescriptor(XPropertySet_bc180bfa):
         The sorting order may be defined for separate keys in specific implementations. For those this property may not need to be set.
         """
         ...
+    @SortAscending.setter
+    def SortAscending(self, value: bool) -> None:
+        ...
     @property
     def SortColumns(self) -> bool:
         """
         specifies if the columns are sorted.
         """
+        ...
+    @SortColumns.setter
+    def SortColumns(self, value: bool) -> None:
         ...
 

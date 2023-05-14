@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class VisualRepresentation(object):
         """
         ...
 
+    @Flavor.setter
+    def Flavor(self, value: DataFlavor_ffd30deb) -> None:
+        ...
 
     @property
     def Data(self) -> object:
@@ -60,4 +63,7 @@ class VisualRepresentation(object):
         """
         ...
 
+    @Data.setter
+    def Data(self, value: object) -> None:
+        ...
 

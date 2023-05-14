@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,6 +48,9 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
         contains the background color.
         """
         ...
+    @BackColor.setter
+    def BackColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def BackGraphic(self) -> 'XGraphic_a4da0afc':
         """
@@ -58,17 +61,26 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
             LibreOffice 6.1
         """
         ...
+    @BackGraphic.setter
+    def BackGraphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def BackGraphicFilter(self) -> str:
         """
         contains the name of the graphic filter of the background graphic.
         """
         ...
+    @BackGraphicFilter.setter
+    def BackGraphicFilter(self, value: str) -> None:
+        ...
     @property
     def BackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         determines the position of the background graphic.
         """
+        ...
+    @BackGraphicLocation.setter
+    def BackGraphicLocation(self, value: 'GraphicLocation_e3ef0d30') -> None:
         ...
     @property
     def BackGraphicURL(self) -> str:
@@ -78,11 +90,17 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the BackGraphic property.
         """
         ...
+    @BackGraphicURL.setter
+    def BackGraphicURL(self, value: str) -> None:
+        ...
     @property
     def BackTransparent(self) -> bool:
         """
         determines whether the background is transparent.
         """
+        ...
+    @BackTransparent.setter
+    def BackTransparent(self, value: bool) -> None:
         ...
     @property
     def BottomBorder(self) -> 'BorderLine_a3f80af6':
@@ -90,11 +108,17 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
         contains the bottom border line.
         """
         ...
+    @BottomBorder.setter
+    def BottomBorder(self, value: 'BorderLine_a3f80af6') -> None:
+        ...
     @property
     def BottomBorderDistance(self) -> int:
         """
         contains the distance of the bottom border.
         """
+        ...
+    @BottomBorderDistance.setter
+    def BottomBorderDistance(self, value: int) -> None:
         ...
     @property
     def CellName(self) -> str:
@@ -102,11 +126,17 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
         contains the cell name, see SwXTextTable.getCellByName for more information
         """
         ...
+    @CellName.setter
+    def CellName(self, value: str) -> None:
+        ...
     @property
     def IsProtected(self) -> bool:
         """
         determines whether the cell is write protected or not.
         """
+        ...
+    @IsProtected.setter
+    def IsProtected(self, value: bool) -> None:
         ...
     @property
     def LeftBorder(self) -> 'BorderLine_a3f80af6':
@@ -114,17 +144,26 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
         contains the left border line.
         """
         ...
+    @LeftBorder.setter
+    def LeftBorder(self, value: 'BorderLine_a3f80af6') -> None:
+        ...
     @property
     def LeftBorderDistance(self) -> int:
         """
         contains the distance of the left border.
         """
         ...
+    @LeftBorderDistance.setter
+    def LeftBorderDistance(self, value: int) -> None:
+        ...
     @property
     def NumberFormat(self) -> int:
         """
         contains the number format.
         """
+        ...
+    @NumberFormat.setter
+    def NumberFormat(self, value: int) -> None:
         ...
     @property
     def ParentText(self) -> 'XText_690408ca':
@@ -138,11 +177,17 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
             LibreOffice 6.3
         """
         ...
+    @ParentText.setter
+    def ParentText(self, value: 'XText_690408ca') -> None:
+        ...
     @property
     def RightBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains the right border line.
         """
+        ...
+    @RightBorder.setter
+    def RightBorder(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def RightBorderDistance(self) -> int:
@@ -150,11 +195,17 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
         contains the distance of the right border.
         """
         ...
+    @RightBorderDistance.setter
+    def RightBorderDistance(self, value: int) -> None:
+        ...
     @property
     def TextSection(self) -> 'XTextSection_b1730b9f':
         """
         contains the text section the text table is contained in if there is any.
         """
+        ...
+    @TextSection.setter
+    def TextSection(self, value: 'XTextSection_b1730b9f') -> None:
         ...
     @property
     def TopBorder(self) -> 'BorderLine_a3f80af6':
@@ -162,16 +213,25 @@ class CellProperties(UserDefinedAttributesSupplier_9fbe1222, XPropertySet_bc180b
         contains the top border line.
         """
         ...
+    @TopBorder.setter
+    def TopBorder(self, value: 'BorderLine_a3f80af6') -> None:
+        ...
     @property
     def TopBorderDistance(self) -> int:
         """
         contains the distance of the top border.
         """
         ...
+    @TopBorderDistance.setter
+    def TopBorderDistance(self, value: int) -> None:
+        ...
     @property
     def VertOrient(self) -> int:
         """
         the vertical orientation of the text inside of the table cells in this row.
         """
+        ...
+    @VertOrient.setter
+    def VertOrient(self, value: int) -> None:
         ...
 

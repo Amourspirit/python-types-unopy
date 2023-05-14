@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -45,15 +45,24 @@ class DesktopTask(XPropertySet_bc180bfa, XDesktopTask_bb4c0bd8, XFramesSupplier_
         """
         """
         ...
+    @IsAlwaysVisible.setter
+    def IsAlwaysVisible(self, value: bool) -> None:
+        ...
     @property
     def IsDesktop(self) -> bool:
         """
         """
         ...
+    @IsDesktop.setter
+    def IsDesktop(self, value: bool) -> None:
+        ...
     @property
     def IsFloating(self) -> bool:
         """
         """
+        ...
+    @IsFloating.setter
+    def IsFloating(self, value: bool) -> None:
         ...
     @property
     def IsVisible(self) -> bool:
@@ -61,11 +70,17 @@ class DesktopTask(XPropertySet_bc180bfa, XDesktopTask_bb4c0bd8, XFramesSupplier_
         use th visible state of the frame container window instead of this
         """
         ...
+    @IsVisible.setter
+    def IsVisible(self, value: bool) -> None:
+        ...
     @property
     def Position(self) -> 'Point_5fb2085e':
         """
         use the position of the frame container window instead of this
         """
+        ...
+    @Position.setter
+    def Position(self, value: 'Point_5fb2085e') -> None:
         ...
     @property
     def Size(self) -> 'Size_576707ef':
@@ -73,10 +88,16 @@ class DesktopTask(XPropertySet_bc180bfa, XDesktopTask_bb4c0bd8, XFramesSupplier_
         use the size of the frame container window instead of this
         """
         ...
+    @Size.setter
+    def Size(self, value: 'Size_576707ef') -> None:
+        ...
     @property
     def Title(self) -> str:
         """
         use property Frame.Title instead of that
         """
+        ...
+    @Title.setter
+    def Title(self, value: str) -> None:
         ...
 

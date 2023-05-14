@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,6 +37,9 @@ class String(XDataType_83f209cb):
         Note that you cannot specify Length together with MinLength or MaxLength.
         """
         ...
+    @Length.setter
+    def Length(self, value: int) -> None:
+        ...
     @property
     def MaxLength(self) -> int:
         """
@@ -45,6 +48,9 @@ class String(XDataType_83f209cb):
         Note that you cannot specify MaxLength together with Length.
         """
         ...
+    @MaxLength.setter
+    def MaxLength(self, value: int) -> None:
+        ...
     @property
     def MinLength(self) -> int:
         """
@@ -52,5 +58,8 @@ class String(XDataType_83f209cb):
         
         Note that you cannot specify MinLength together with Length.
         """
+        ...
+    @MinLength.setter
+    def MinLength(self, value: int) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class ContentEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Action.setter
+    def Action(self, value: int) -> None:
+        ...
 
     @property
     def Content(self) -> XContent_79db0975:
@@ -69,6 +72,9 @@ class ContentEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Content.setter
+    def Content(self, value: XContent_79db0975) -> None:
+        ...
 
     @property
     def Id(self) -> XContentIdentifier_edc90d78:
@@ -79,4 +85,7 @@ class ContentEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Id.setter
+    def Id(self, value: XContentIdentifier_edc90d78) -> None:
+        ...
 

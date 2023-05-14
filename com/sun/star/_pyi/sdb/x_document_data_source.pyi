@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -47,5 +47,7 @@ class XDocumentDataSource(ABC):
         Additionally, if the caller does long-lasting processing on the document, it's advised to add itself as com.sun.star.util.XCloseListener to the document, to prevent closing as long as the processing lasts.
         """
         ...
-
+    @DatabaseDocument.setter
+    def DatabaseDocument(self, value: 'XOfficeDatabaseDocument_327f0f39') -> None:
+        ...
 

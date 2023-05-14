@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,21 +53,27 @@ class WrongJavaVersionException(Exception_85530a09):
         contains the lowest Java version for which the operation would succeed, or is left empty if this is unknown.
         """
         ...
-
+    @LowestSupportedVersion.setter
+    def LowestSupportedVersion(self, value: str) -> None:
+        ...
     @property
     def HighestSupportedVersion(self) -> str:
         """
         contains the highest Java version for which the operation would succeed, or is left empty if this is unknown.
         """
         ...
-
+    @HighestSupportedVersion.setter
+    def HighestSupportedVersion(self, value: str) -> None:
+        ...
     @property
     def DetectedVersion(self) -> str:
         """
         contains the Java version that has been detected, or is left empty if this is unknown.
         """
         ...
-
+    @DetectedVersion.setter
+    def DetectedVersion(self, value: str) -> None:
+        ...
 
 __all__ = ['WrongJavaVersionException']
 

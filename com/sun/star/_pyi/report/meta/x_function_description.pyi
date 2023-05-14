@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -50,33 +50,43 @@ class XFunctionDescription(XPropertySet_bc180bfa):
         returns a sequence of localized descriptions of the function's arguments (in the order specified by the function).
         """
         ...
-
+    @Arguments.setter
+    def Arguments(self, value: 'typing.Tuple[FunctionArgument_f1080daa, ...]') -> None:
+        ...
     @property
     def Category(self) -> 'XFunctionCategory_59e21055':
         """
         specifies the category number.
         """
         ...
-
+    @Category.setter
+    def Category(self, value: 'XFunctionCategory_59e21055') -> None:
+        ...
     @property
     def Description(self) -> str:
         """
         returns a localized description of the function.
         """
         ...
-
+    @Description.setter
+    def Description(self, value: str) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
         returns the localized function's name.
         """
         ...
-
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def Signature(self) -> str:
         """
         returns the signature of the function.
         """
         ...
-
+    @Signature.setter
+    def Signature(self, value: str) -> None:
+        ...
 

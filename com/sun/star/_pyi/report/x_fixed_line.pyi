@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,40 +40,52 @@ class XFixedLine(XReportControlModel_2d800f4a):
         This property contains the line color.
         """
         ...
-
+    @LineColor.setter
+    def LineColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def LineDash(self) -> 'LineDash_a54e0afc':
         """
         This property contains the dash of the line.
         """
         ...
-
+    @LineDash.setter
+    def LineDash(self, value: 'LineDash_a54e0afc') -> None:
+        ...
     @property
     def LineStyle(self) -> 'LineStyle_b1600b8d':
         """
         This property contains the type of the line.
         """
         ...
-
+    @LineStyle.setter
+    def LineStyle(self, value: 'LineStyle_b1600b8d') -> None:
+        ...
     @property
     def LineTransparence(self) -> int:
         """
         This property contains the extent of transparency.
         """
         ...
-
+    @LineTransparence.setter
+    def LineTransparence(self, value: int) -> None:
+        ...
     @property
     def LineWidth(self) -> int:
         """
         This property contains the width of the line in 1/100th mm.
         """
         ...
-
+    @LineWidth.setter
+    def LineWidth(self, value: int) -> None:
+        ...
     @property
     def Orientation(self) -> int:
         """
         specifies the orientation of the control.
         """
         ...
-
+    @Orientation.setter
+    def Orientation(self, value: int) -> None:
+        ...
 

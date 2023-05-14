@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,6 +56,9 @@ class RuleTerm(object):
         """
         ...
 
+    @Property.setter
+    def Property(self, value: str) -> None:
+        ...
 
     @property
     def Operand(self) -> object:
@@ -64,6 +67,9 @@ class RuleTerm(object):
         """
         ...
 
+    @Operand.setter
+    def Operand(self, value: object) -> None:
+        ...
 
     @property
     def Operator(self) -> int:
@@ -76,6 +82,9 @@ class RuleTerm(object):
         """
         ...
 
+    @Operator.setter
+    def Operator(self, value: int) -> None:
+        ...
 
     @property
     def CaseSensitive(self) -> bool:
@@ -84,6 +93,9 @@ class RuleTerm(object):
         """
         ...
 
+    @CaseSensitive.setter
+    def CaseSensitive(self, value: bool) -> None:
+        ...
 
     @property
     def RegularExpression(self) -> bool:
@@ -92,4 +104,7 @@ class RuleTerm(object):
         """
         ...
 
+    @RegularExpression.setter
+    def RegularExpression(self, value: bool) -> None:
+        ...
 

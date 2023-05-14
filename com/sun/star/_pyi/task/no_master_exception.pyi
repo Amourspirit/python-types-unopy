@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,7 +52,9 @@ class NoMasterException(RuntimeException_d7390ced):
         specifies the mode in which password should be queried.
         """
         ...
-
+    @Mode.setter
+    def Mode(self, value: PasswordRequestMode_ec10e7c) -> None:
+        ...
 
 __all__ = ['NoMasterException']
 

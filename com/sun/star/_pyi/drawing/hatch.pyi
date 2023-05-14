@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class Hatch(object):
         """
         ...
 
+    @Style.setter
+    def Style(self, value: HatchStyle_bcfe0bed) -> None:
+        ...
 
     @property
     def Color(self) -> Color_68e908c5:
@@ -65,6 +68,9 @@ class Hatch(object):
         """
         ...
 
+    @Color.setter
+    def Color(self, value: Color_68e908c5) -> None:
+        ...
 
     @property
     def Distance(self) -> int:
@@ -73,6 +79,9 @@ class Hatch(object):
         """
         ...
 
+    @Distance.setter
+    def Distance(self, value: int) -> None:
+        ...
 
     @property
     def Angle(self) -> int:
@@ -83,4 +92,7 @@ class Hatch(object):
         """
         ...
 
+    @Angle.setter
+    def Angle(self, value: int) -> None:
+        ...
 

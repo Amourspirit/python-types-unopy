@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -33,10 +33,16 @@ class ConditionFormatEntry(XConditionEntry_e2340d32):
         """
         """
         ...
+    @Formula1.setter
+    def Formula1(self, value: str) -> None:
+        ...
     @property
     def Formula2(self) -> str:
         """
         """
+        ...
+    @Formula2.setter
+    def Formula2(self, value: str) -> None:
         ...
     @property
     def Operator(self) -> int:
@@ -44,9 +50,15 @@ class ConditionFormatEntry(XConditionEntry_e2340d32):
         See com.sun.star.sheet.ConditionFormatOperator for valid values.
         """
         ...
+    @Operator.setter
+    def Operator(self, value: int) -> None:
+        ...
     @property
     def StyleName(self) -> str:
         """
         """
+        ...
+    @StyleName.setter
+    def StyleName(self, value: str) -> None:
         ...
 

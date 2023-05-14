@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,21 +59,27 @@ class SendMailMessageFailedException(MailException_ba9e0bdd):
         The addresses which are invalid because they do not conform to RFC 822.
         """
         ...
-
+    @InvalidAddresses.setter
+    def InvalidAddresses(self, value: typing.Tuple[str, ...]) -> None:
+        ...
     @property
     def ValidSentAddresses(self) -> typing.Tuple[str, ...]:
         """
         The addresses to which the mail message was sent successfully.
         """
         ...
-
+    @ValidSentAddresses.setter
+    def ValidSentAddresses(self, value: typing.Tuple[str, ...]) -> None:
+        ...
     @property
     def ValidUnsentAddresses(self) -> typing.Tuple[str, ...]:
         """
         The addresses which are valid but to which the message was not sent.
         """
         ...
-
+    @ValidUnsentAddresses.setter
+    def ValidUnsentAddresses(self, value: typing.Tuple[str, ...]) -> None:
+        ...
 
 __all__ = ['SendMailMessageFailedException']
 

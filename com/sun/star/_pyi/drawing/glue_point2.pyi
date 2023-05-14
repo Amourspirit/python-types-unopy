@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,6 +61,9 @@ class GluePoint2(object):
         """
         ...
 
+    @Position.setter
+    def Position(self, value: Point_5fb2085e) -> None:
+        ...
 
     @property
     def IsRelative(self) -> bool:
@@ -69,6 +72,9 @@ class GluePoint2(object):
         """
         ...
 
+    @IsRelative.setter
+    def IsRelative(self, value: bool) -> None:
+        ...
 
     @property
     def PositionAlignment(self) -> Alignment_b1400b93:
@@ -79,6 +85,9 @@ class GluePoint2(object):
         """
         ...
 
+    @PositionAlignment.setter
+    def PositionAlignment(self, value: Alignment_b1400b93) -> None:
+        ...
 
     @property
     def Escape(self) -> EscapeDirection_fdc50de6:
@@ -89,6 +98,9 @@ class GluePoint2(object):
         """
         ...
 
+    @Escape.setter
+    def Escape(self, value: EscapeDirection_fdc50de6) -> None:
+        ...
 
     @property
     def IsUserDefined(self) -> bool:
@@ -99,4 +111,7 @@ class GluePoint2(object):
         """
         ...
 
+    @IsUserDefined.setter
+    def IsUserDefined(self, value: bool) -> None:
+        ...
 

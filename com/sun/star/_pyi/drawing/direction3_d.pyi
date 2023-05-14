@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,14 +49,23 @@ class Direction3D(object):
     def DirectionX(self) -> float:
         ...
 
+    @DirectionX.setter
+    def DirectionX(self, value: float) -> None:
+        ...
 
     @property
     def DirectionY(self) -> float:
         ...
 
+    @DirectionY.setter
+    def DirectionY(self, value: float) -> None:
+        ...
 
     @property
     def DirectionZ(self) -> float:
         ...
 
+    @DirectionZ.setter
+    def DirectionZ(self, value: float) -> None:
+        ...
 

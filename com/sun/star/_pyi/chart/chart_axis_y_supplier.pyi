@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,11 +35,17 @@ class ChartAxisYSupplier(XAxisYSupplier_d4430cb4):
         Determines if the y-axis is shown or hidden.
         """
         ...
+    @HasYAxis.setter
+    def HasYAxis(self, value: bool) -> None:
+        ...
     @property
     def HasYAxisDescription(self) -> bool:
         """
         Determines if the description of the y-axis is shown or hidden.
         """
+        ...
+    @HasYAxisDescription.setter
+    def HasYAxisDescription(self, value: bool) -> None:
         ...
     @property
     def HasYAxisGrid(self) -> bool:
@@ -47,16 +53,25 @@ class ChartAxisYSupplier(XAxisYSupplier_d4430cb4):
         Determines if the major grid of the y-axis is shown or hidden.
         """
         ...
+    @HasYAxisGrid.setter
+    def HasYAxisGrid(self, value: bool) -> None:
+        ...
     @property
     def HasYAxisHelpGrid(self) -> bool:
         """
         Determines if the minor grid of the y-axis is shown or hidden.
         """
         ...
+    @HasYAxisHelpGrid.setter
+    def HasYAxisHelpGrid(self, value: bool) -> None:
+        ...
     @property
     def HasYAxisTitle(self) -> bool:
         """
         Determines if the title of the y-axis is shown or hidden.
         """
+        ...
+    @HasYAxisTitle.setter
+    def HasYAxisTitle(self, value: bool) -> None:
         ...
 

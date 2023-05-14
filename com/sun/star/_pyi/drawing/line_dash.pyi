@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,6 +56,9 @@ class LineDash(object):
         """
         ...
 
+    @Style.setter
+    def Style(self, value: DashStyle_b10d0b85) -> None:
+        ...
 
     @property
     def Dots(self) -> int:
@@ -64,6 +67,9 @@ class LineDash(object):
         """
         ...
 
+    @Dots.setter
+    def Dots(self, value: int) -> None:
+        ...
 
     @property
     def DotLen(self) -> int:
@@ -72,6 +78,9 @@ class LineDash(object):
         """
         ...
 
+    @DotLen.setter
+    def DotLen(self, value: int) -> None:
+        ...
 
     @property
     def Dashes(self) -> int:
@@ -80,6 +89,9 @@ class LineDash(object):
         """
         ...
 
+    @Dashes.setter
+    def Dashes(self, value: int) -> None:
+        ...
 
     @property
     def DashLen(self) -> int:
@@ -88,6 +100,9 @@ class LineDash(object):
         """
         ...
 
+    @DashLen.setter
+    def DashLen(self, value: int) -> None:
+        ...
 
     @property
     def Distance(self) -> int:
@@ -96,4 +111,7 @@ class LineDash(object):
         """
         ...
 
+    @Distance.setter
+    def Distance(self, value: int) -> None:
+        ...
 

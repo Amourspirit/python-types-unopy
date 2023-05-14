@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,6 +56,9 @@ class SingleReference(object):
         """
         ...
 
+    @Column.setter
+    def Column(self, value: int) -> None:
+        ...
 
     @property
     def RelativeColumn(self) -> int:
@@ -64,6 +67,9 @@ class SingleReference(object):
         """
         ...
 
+    @RelativeColumn.setter
+    def RelativeColumn(self, value: int) -> None:
+        ...
 
     @property
     def Row(self) -> int:
@@ -72,6 +78,9 @@ class SingleReference(object):
         """
         ...
 
+    @Row.setter
+    def Row(self, value: int) -> None:
+        ...
 
     @property
     def RelativeRow(self) -> int:
@@ -80,6 +89,9 @@ class SingleReference(object):
         """
         ...
 
+    @RelativeRow.setter
+    def RelativeRow(self, value: int) -> None:
+        ...
 
     @property
     def Sheet(self) -> int:
@@ -88,6 +100,9 @@ class SingleReference(object):
         """
         ...
 
+    @Sheet.setter
+    def Sheet(self, value: int) -> None:
+        ...
 
     @property
     def RelativeSheet(self) -> int:
@@ -96,6 +111,9 @@ class SingleReference(object):
         """
         ...
 
+    @RelativeSheet.setter
+    def RelativeSheet(self, value: int) -> None:
+        ...
 
     @property
     def Flags(self) -> int:
@@ -104,4 +122,7 @@ class SingleReference(object):
         """
         ...
 
+    @Flags.setter
+    def Flags(self, value: int) -> None:
+        ...
 

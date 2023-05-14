@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,49 +49,63 @@ class XStatusbarItem(ABC):
         the accessible name of the status bar item
         """
         ...
-
+    @AccessibleName.setter
+    def AccessibleName(self, value: str) -> None:
+        ...
     @property
     def Command(self) -> str:
         """
         the command of the status bar item
         """
         ...
-
+    @Command.setter
+    def Command(self, value: str) -> None:
+        ...
     @property
     def HelpText(self) -> str:
         """
         the help text of the status bar item when extended help tips are on
         """
         ...
-
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
+        ...
     @property
     def ItemId(self) -> int:
         """
         the unique ID of the control within the status bar
         """
         ...
-
+    @ItemId.setter
+    def ItemId(self, value: int) -> None:
+        ...
     @property
     def ItemRect(self) -> 'Rectangle_84b109e9':
         """
         the rectangle on the status bar device onto which the item is drawn
         """
         ...
-
+    @ItemRect.setter
+    def ItemRect(self, value: 'Rectangle_84b109e9') -> None:
+        ...
     @property
     def Offset(self) -> int:
         """
         the offset between this status bar item and the following
         """
         ...
-
+    @Offset.setter
+    def Offset(self, value: int) -> None:
+        ...
     @property
     def QuickHelpText(self) -> str:
         """
         the help text of the status bar item when help tips are on
         """
         ...
-
+    @QuickHelpText.setter
+    def QuickHelpText(self, value: str) -> None:
+        ...
     @property
     def Style(self) -> int:
         """
@@ -104,26 +118,34 @@ class XStatusbarItem(ABC):
             LibreOffice 6.1)
         """
         ...
-
+    @Style.setter
+    def Style(self, value: int) -> None:
+        ...
     @property
     def Text(self) -> str:
         """
         the text of status bar item
         """
         ...
-
+    @Text.setter
+    def Text(self, value: str) -> None:
+        ...
     @property
     def Visible(self) -> bool:
         """
         whether the item is visible or not
         """
         ...
-
+    @Visible.setter
+    def Visible(self, value: bool) -> None:
+        ...
     @property
     def Width(self) -> int:
         """
         the width of the status bar item
         """
         ...
-
+    @Width.setter
+    def Width(self, value: int) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -66,6 +66,9 @@ class IntegerBitmapLayout(object):
         """
         ...
 
+    @ScanLines.setter
+    def ScanLines(self, value: int) -> None:
+        ...
 
     @property
     def ScanLineBytes(self) -> int:
@@ -76,6 +79,9 @@ class IntegerBitmapLayout(object):
         """
         ...
 
+    @ScanLineBytes.setter
+    def ScanLineBytes(self, value: int) -> None:
+        ...
 
     @property
     def ScanLineStride(self) -> int:
@@ -86,6 +92,9 @@ class IntegerBitmapLayout(object):
         """
         ...
 
+    @ScanLineStride.setter
+    def ScanLineStride(self, value: int) -> None:
+        ...
 
     @property
     def PlaneStride(self) -> int:
@@ -96,6 +105,9 @@ class IntegerBitmapLayout(object):
         """
         ...
 
+    @PlaneStride.setter
+    def PlaneStride(self, value: int) -> None:
+        ...
 
     @property
     def ColorSpace(self) -> XIntegerBitmapColorSpace_b1691234:
@@ -106,6 +118,9 @@ class IntegerBitmapLayout(object):
         """
         ...
 
+    @ColorSpace.setter
+    def ColorSpace(self, value: XIntegerBitmapColorSpace_b1691234) -> None:
+        ...
 
     @property
     def Palette(self) -> XBitmapPalette_cf20e4a:
@@ -116,6 +131,9 @@ class IntegerBitmapLayout(object):
         """
         ...
 
+    @Palette.setter
+    def Palette(self, value: XBitmapPalette_cf20e4a) -> None:
+        ...
 
     @property
     def IsMsbFirst(self) -> bool:
@@ -128,4 +146,7 @@ class IntegerBitmapLayout(object):
         """
         ...
 
+    @IsMsbFirst.setter
+    def IsMsbFirst(self, value: bool) -> None:
+        ...
 

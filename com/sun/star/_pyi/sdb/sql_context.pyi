@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,7 +58,9 @@ class SQLContext(SQLWarning_96f10a6a):
         As usual for SQLExceptions, several SQLContext-objects may be chained, then the most recent context is appended to the list's tail
         """
         ...
-
+    @Details.setter
+    def Details(self, value: str) -> None:
+        ...
 
 __all__ = ['SQLContext']
 

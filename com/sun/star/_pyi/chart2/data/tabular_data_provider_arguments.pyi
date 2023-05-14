@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,6 +44,9 @@ class TabularDataProviderArguments(ABC):
         If the given SequenceMapping does not cover all existing labeled sequences just put the remaining sequences in old order behind the others. For example you have 4 sequences and a SequenceMapping [3,1]. The result should be as if [3,1,0,2] was given.
         """
         ...
+    @SequenceMapping.setter
+    def SequenceMapping(self, value: uno.ByteSequence) -> None:
+        ...
     @property
     def CellRangeRepresentation(self) -> str:
         """
@@ -58,6 +61,9 @@ class TabularDataProviderArguments(ABC):
         When used as output of XDataProvider.detectArguments() this is the range that spans the ranges of all given XDataSequences. If the result is ambiguous, i.e., a splitting of this range would not yield the same result, this property should be empty. The latter is the case, when ranges are overlapping, the lengths of sequences are not equal or even if the order of two sequences is swapped (e.g. data comes from column A, C, B).
         """
         ...
+    @CellRangeRepresentation.setter
+    def CellRangeRepresentation(self, value: str) -> None:
+        ...
     @property
     def DataRowSource(self) -> 'ChartDataRowSource_9a00e2f':
         """
@@ -65,6 +71,9 @@ class TabularDataProviderArguments(ABC):
         
         If this property is not given as argument it is assumed to com.sun.star.chart.ChartDataRowSource.COLUMNS, i.e., the default is \"take data from columns\".
         """
+        ...
+    @DataRowSource.setter
+    def DataRowSource(self, value: 'ChartDataRowSource_9a00e2f') -> None:
         ...
     @property
     def FirstCellAsLabel(self) -> bool:
@@ -75,6 +84,9 @@ class TabularDataProviderArguments(ABC):
         
         If this property is not given as argument it is assumed to be FALSE, i.e., the default is \"no labels\".
         """
+        ...
+    @FirstCellAsLabel.setter
+    def FirstCellAsLabel(self, value: bool) -> None:
         ...
     @property
     def HasCategories(self) -> bool:
@@ -88,6 +100,9 @@ class TabularDataProviderArguments(ABC):
         The generic category labeled sequence returned should be the first one in the returned XDataSource. It needs no label. The values should have their role set to \"categories\". The generic strings returned should also be localized.
         """
         ...
+    @HasCategories.setter
+    def HasCategories(self, value: bool) -> None:
+        ...
     @property
     def TableNumberList(self) -> str:
         """
@@ -99,5 +114,8 @@ class TabularDataProviderArguments(ABC):
         
         .
         """
+        ...
+    @TableNumberList.setter
+    def TableNumberList(self, value: str) -> None:
         ...
 

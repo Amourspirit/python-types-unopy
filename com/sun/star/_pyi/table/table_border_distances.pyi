@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,6 +61,9 @@ class TableBorderDistances(object):
         """
         ...
 
+    @TopDistance.setter
+    def TopDistance(self, value: int) -> None:
+        ...
 
     @property
     def IsTopDistanceValid(self) -> bool:
@@ -69,6 +72,9 @@ class TableBorderDistances(object):
         """
         ...
 
+    @IsTopDistanceValid.setter
+    def IsTopDistanceValid(self, value: bool) -> None:
+        ...
 
     @property
     def BottomDistance(self) -> int:
@@ -77,6 +83,9 @@ class TableBorderDistances(object):
         """
         ...
 
+    @BottomDistance.setter
+    def BottomDistance(self, value: int) -> None:
+        ...
 
     @property
     def IsBottomDistanceValid(self) -> bool:
@@ -85,6 +94,9 @@ class TableBorderDistances(object):
         """
         ...
 
+    @IsBottomDistanceValid.setter
+    def IsBottomDistanceValid(self, value: bool) -> None:
+        ...
 
     @property
     def LeftDistance(self) -> int:
@@ -93,6 +105,9 @@ class TableBorderDistances(object):
         """
         ...
 
+    @LeftDistance.setter
+    def LeftDistance(self, value: int) -> None:
+        ...
 
     @property
     def IsLeftDistanceValid(self) -> bool:
@@ -101,6 +116,9 @@ class TableBorderDistances(object):
         """
         ...
 
+    @IsLeftDistanceValid.setter
+    def IsLeftDistanceValid(self, value: bool) -> None:
+        ...
 
     @property
     def RightDistance(self) -> int:
@@ -109,6 +127,9 @@ class TableBorderDistances(object):
         """
         ...
 
+    @RightDistance.setter
+    def RightDistance(self, value: int) -> None:
+        ...
 
     @property
     def IsRightDistanceValid(self) -> bool:
@@ -117,4 +138,7 @@ class TableBorderDistances(object):
         """
         ...
 
+    @IsRightDistanceValid.setter
+    def IsRightDistanceValid(self, value: bool) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -64,6 +64,9 @@ class URL(object):
         """
         ...
 
+    @Complete.setter
+    def Complete(self, value: str) -> None:
+        ...
 
     @property
     def Main(self) -> str:
@@ -72,6 +75,9 @@ class URL(object):
         """
         ...
 
+    @Main.setter
+    def Main(self, value: str) -> None:
+        ...
 
     @property
     def Protocol(self) -> str:
@@ -80,6 +86,9 @@ class URL(object):
         """
         ...
 
+    @Protocol.setter
+    def Protocol(self, value: str) -> None:
+        ...
 
     @property
     def User(self) -> str:
@@ -88,6 +97,9 @@ class URL(object):
         """
         ...
 
+    @User.setter
+    def User(self, value: str) -> None:
+        ...
 
     @property
     def Password(self) -> str:
@@ -96,6 +108,9 @@ class URL(object):
         """
         ...
 
+    @Password.setter
+    def Password(self, value: str) -> None:
+        ...
 
     @property
     def Server(self) -> str:
@@ -104,6 +119,9 @@ class URL(object):
         """
         ...
 
+    @Server.setter
+    def Server(self, value: str) -> None:
+        ...
 
     @property
     def Port(self) -> int:
@@ -112,6 +130,9 @@ class URL(object):
         """
         ...
 
+    @Port.setter
+    def Port(self, value: int) -> None:
+        ...
 
     @property
     def Path(self) -> str:
@@ -120,6 +141,9 @@ class URL(object):
         """
         ...
 
+    @Path.setter
+    def Path(self, value: str) -> None:
+        ...
 
     @property
     def Name(self) -> str:
@@ -130,6 +154,9 @@ class URL(object):
         """
         ...
 
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 
     @property
     def Arguments(self) -> str:
@@ -138,6 +165,9 @@ class URL(object):
         """
         ...
 
+    @Arguments.setter
+    def Arguments(self, value: str) -> None:
+        ...
 
     @property
     def Mark(self) -> str:
@@ -146,4 +176,7 @@ class URL(object):
         """
         ...
 
+    @Mark.setter
+    def Mark(self, value: str) -> None:
+        ...
 

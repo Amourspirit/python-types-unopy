@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -46,11 +46,17 @@ class DatabaseImportDescriptor(ABC):
             OOo 2.0
         """
         ...
+    @ConnectionResource.setter
+    def ConnectionResource(self, value: str) -> None:
+        ...
     @property
     def DatabaseName(self) -> str:
         """
         specifies the name of the database from which data is imported.
         """
+        ...
+    @DatabaseName.setter
+    def DatabaseName(self, value: str) -> None:
         ...
     @property
     def IsNative(self) -> bool:
@@ -62,6 +68,9 @@ class DatabaseImportDescriptor(ABC):
             OOo 2.0
         """
         ...
+    @IsNative.setter
+    def IsNative(self, value: bool) -> None:
+        ...
     @property
     def SourceObject(self) -> str:
         """
@@ -70,10 +79,16 @@ class DatabaseImportDescriptor(ABC):
         The meaning of this is determined by the DatabaseImportDescriptor.SourceType attribute.
         """
         ...
+    @SourceObject.setter
+    def SourceObject(self, value: str) -> None:
+        ...
     @property
     def SourceType(self) -> 'DataImportMode_d4630c9b':
         """
         enables importing and specifies from what type of source data is imported.
         """
+        ...
+    @SourceType.setter
+    def SourceType(self, value: 'DataImportMode_d4630c9b') -> None:
         ...
 

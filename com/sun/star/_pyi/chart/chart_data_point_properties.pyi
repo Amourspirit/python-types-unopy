@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,11 +48,17 @@ class ChartDataPointProperties(Chart3DBarProperties_22f00ec5, FillProperties_f12
         specifies how the captions of data points are displayed.
         """
         ...
+    @DataCaption.setter
+    def DataCaption(self, value: int) -> None:
+        ...
     @property
     def LabelPlacement(self) -> int:
         """
         specifies a relative position for the data label
         """
+        ...
+    @LabelPlacement.setter
+    def LabelPlacement(self, value: int) -> None:
         ...
     @property
     def LabelSeparator(self) -> str:
@@ -60,17 +66,26 @@ class ChartDataPointProperties(Chart3DBarProperties_22f00ec5, FillProperties_f12
         specifies a string that is used to separate the parts of a data label (caption)
         """
         ...
+    @LabelSeparator.setter
+    def LabelSeparator(self, value: str) -> None:
+        ...
     @property
     def NumberFormat(self) -> int:
         """
         specifies a number format for the display of the value in the data label
         """
         ...
+    @NumberFormat.setter
+    def NumberFormat(self, value: int) -> None:
+        ...
     @property
     def PercentageNumberFormat(self) -> int:
         """
         specifies a number format for the display of the percentage value in the data label
         """
+        ...
+    @PercentageNumberFormat.setter
+    def PercentageNumberFormat(self, value: int) -> None:
         ...
     @property
     def SegmentOffset(self) -> int:
@@ -79,6 +94,9 @@ class ChartDataPointProperties(Chart3DBarProperties_22f00ec5, FillProperties_f12
         
         This value is given in percent of the radius.
         """
+        ...
+    @SegmentOffset.setter
+    def SegmentOffset(self, value: int) -> None:
         ...
     @property
     def SymbolBitmap(self) -> 'XGraphic_a4da0afc':
@@ -92,6 +110,9 @@ class ChartDataPointProperties(Chart3DBarProperties_22f00ec5, FillProperties_f12
             LibreOffice 6.1
         """
         ...
+    @SymbolBitmap.setter
+    def SymbolBitmap(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def SymbolBitmapURL(self) -> str:
         """
@@ -102,11 +123,17 @@ class ChartDataPointProperties(Chart3DBarProperties_22f00ec5, FillProperties_f12
         When you query this value you get an internal URL of the embedded graphic.
         """
         ...
+    @SymbolBitmapURL.setter
+    def SymbolBitmapURL(self, value: str) -> None:
+        ...
     @property
     def SymbolType(self) -> int:
         """
         specifies the type of symbols if the current chart type supports the usage of symbols.
         """
+        ...
+    @SymbolType.setter
+    def SymbolType(self, value: int) -> None:
         ...
     @property
     def TextWordWrap(self) -> bool:
@@ -117,5 +144,8 @@ class ChartDataPointProperties(Chart3DBarProperties_22f00ec5, FillProperties_f12
         
             LibreOffice 5.1
         """
+        ...
+    @TextWordWrap.setter
+    def TextWordWrap(self, value: bool) -> None:
         ...
 

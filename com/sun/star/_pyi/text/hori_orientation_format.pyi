@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class HoriOrientationFormat(object):
         """
         ...
 
+    @XPos.setter
+    def XPos(self, value: int) -> None:
+        ...
 
     @property
     def HorizontalOrientation(self) -> int:
@@ -69,6 +72,9 @@ class HoriOrientationFormat(object):
         """
         ...
 
+    @HorizontalOrientation.setter
+    def HorizontalOrientation(self, value: int) -> None:
+        ...
 
     @property
     def HorizontalRelation(self) -> int:
@@ -77,6 +83,9 @@ class HoriOrientationFormat(object):
         """
         ...
 
+    @HorizontalRelation.setter
+    def HorizontalRelation(self, value: int) -> None:
+        ...
 
     @property
     def PositionToggle(self) -> bool:
@@ -85,4 +94,7 @@ class HoriOrientationFormat(object):
         """
         ...
 
+    @PositionToggle.setter
+    def PositionToggle(self, value: bool) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,11 +49,17 @@ class SearchResult(object):
     def startOffset(self) -> uno.ByteSequence:
         ...
 
+    @startOffset.setter
+    def startOffset(self, value: uno.ByteSequence) -> None:
+        ...
 
     @property
     def endOffset(self) -> uno.ByteSequence:
         ...
 
+    @endOffset.setter
+    def endOffset(self, value: uno.ByteSequence) -> None:
+        ...
 
     @property
     def subRegExpressions(self) -> int:
@@ -70,4 +76,7 @@ class SearchResult(object):
         """
         ...
 
+    @subRegExpressions.setter
+    def subRegExpressions(self, value: int) -> None:
+        ...
 

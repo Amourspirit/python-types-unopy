@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,6 +41,9 @@ class EmbeddedObjectDescriptor(ABC):
         allows to provide a dispatch interceptor for outplace activation.
         """
         ...
+    @OutplaceDispatchInterceptor.setter
+    def OutplaceDispatchInterceptor(self, value: 'XDispatchProviderInterceptor_afda1275') -> None:
+        ...
     @property
     def RecoveryStorage(self) -> 'XStorage_8e460a32':
         """
@@ -53,6 +56,9 @@ class EmbeddedObjectDescriptor(ABC):
         The object will still be based on the storage denoted in the XEmbedObjectCreator method call, i.e., subsequent save operations will still use that storage. RecoveryStorage is used at loading time only, and then discarded.
         """
         ...
+    @RecoveryStorage.setter
+    def RecoveryStorage(self, value: 'XStorage_8e460a32') -> None:
+        ...
     @property
     def StoreVisualReplacement(self) -> bool:
         """
@@ -60,5 +66,8 @@ class EmbeddedObjectDescriptor(ABC):
         
         Setting of this property to true tells the embedded object that controls the document to store or not to store the graphical representation of the document into the object persistence. If this property is not set the object makes the decision itself.
         """
+        ...
+    @StoreVisualReplacement.setter
+    def StoreVisualReplacement(self, value: bool) -> None:
         ...
 

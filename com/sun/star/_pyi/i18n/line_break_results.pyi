@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,6 +53,9 @@ class LineBreakResults(object):
         """
         ...
 
+    @breakType.setter
+    def breakType(self, value: int) -> None:
+        ...
 
     @property
     def breakIndex(self) -> int:
@@ -61,6 +64,9 @@ class LineBreakResults(object):
         """
         ...
 
+    @breakIndex.setter
+    def breakIndex(self, value: int) -> None:
+        ...
 
     @property
     def rHyphenatedWord(self) -> XHyphenatedWord_3a880f73:
@@ -69,4 +75,7 @@ class LineBreakResults(object):
         """
         ...
 
+    @rHyphenatedWord.setter
+    def rHyphenatedWord(self, value: XHyphenatedWord_3a880f73) -> None:
+        ...
 

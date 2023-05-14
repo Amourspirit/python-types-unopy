@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,6 +61,9 @@ class DispatchStatement(object):
         """
         ...
 
+    @aArgs.setter
+    def aArgs(self, value: typing.Tuple[PropertyValue_c9610c73, ...]) -> None:
+        ...
 
     @property
     def aCommand(self) -> str:
@@ -71,6 +74,9 @@ class DispatchStatement(object):
         """
         ...
 
+    @aCommand.setter
+    def aCommand(self, value: str) -> None:
+        ...
 
     @property
     def aTarget(self) -> str:
@@ -81,6 +87,9 @@ class DispatchStatement(object):
         """
         ...
 
+    @aTarget.setter
+    def aTarget(self, value: str) -> None:
+        ...
 
     @property
     def nFlags(self) -> int:
@@ -91,6 +100,9 @@ class DispatchStatement(object):
         """
         ...
 
+    @nFlags.setter
+    def nFlags(self, value: int) -> None:
+        ...
 
     @property
     def bIsComment(self) -> bool:
@@ -99,4 +111,7 @@ class DispatchStatement(object):
         """
         ...
 
+    @bIsComment.setter
+    def bIsComment(self, value: bool) -> None:
+        ...
 

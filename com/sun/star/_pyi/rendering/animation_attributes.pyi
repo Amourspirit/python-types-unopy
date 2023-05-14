@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class AnimationAttributes(object):
         """
         ...
 
+    @Duration.setter
+    def Duration(self, value: float) -> None:
+        ...
 
     @property
     def RepeatMode(self) -> int:
@@ -67,6 +70,9 @@ class AnimationAttributes(object):
         """
         ...
 
+    @RepeatMode.setter
+    def RepeatMode(self, value: int) -> None:
+        ...
 
     @property
     def UntransformedSize(self) -> RealSize2D_ca1a0c09:
@@ -77,4 +83,7 @@ class AnimationAttributes(object):
         """
         ...
 
+    @UntransformedSize.setter
+    def UntransformedSize(self, value: RealSize2D_ca1a0c09) -> None:
+        ...
 

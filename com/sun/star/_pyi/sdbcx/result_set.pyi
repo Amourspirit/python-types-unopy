@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,10 +40,16 @@ class ResultSet(ResultSet_8ecf0a4f, XDeleteRows_af5c0b72, XRowLocate_a4730b04, X
         This may not work, as the result set may contain automatic generated data which is used as key information.
         """
         ...
+    @CanUpdateInsertedRows.setter
+    def CanUpdateInsertedRows(self, value: bool) -> None:
+        ...
     @property
     def IsBookmarkable(self) -> bool:
         """
         returns if the result set supports bookmark navigation.
         """
+        ...
+    @IsBookmarkable.setter
+    def IsBookmarkable(self, value: bool) -> None:
         ...
 

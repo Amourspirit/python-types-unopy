@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,11 +52,17 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         The axis description may be arranged in a special order for a better placement.
         """
         ...
+    @ArrangeOrder.setter
+    def ArrangeOrder(self, value: 'ChartAxisArrangeOrderType_783b10ff') -> None:
+        ...
     @property
     def AutoMax(self) -> bool:
         """
         The maximum value of the axis scale is calculated by the chart if this property is TRUE.
         """
+        ...
+    @AutoMax.setter
+    def AutoMax(self, value: bool) -> None:
         ...
     @property
     def AutoMin(self) -> bool:
@@ -64,11 +70,17 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         The minimum value of the axis scale is calculated by the chart if this property is TRUE.
         """
         ...
+    @AutoMin.setter
+    def AutoMin(self, value: bool) -> None:
+        ...
     @property
     def AutoOrigin(self) -> bool:
         """
         The origin is calculated by the chart if this property is TRUE.
         """
+        ...
+    @AutoOrigin.setter
+    def AutoOrigin(self, value: bool) -> None:
         ...
     @property
     def AutoStepHelp(self) -> bool:
@@ -76,11 +88,17 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         The number of help intervals within a main interval is calculated by the chart if this property is TRUE.
         """
         ...
+    @AutoStepHelp.setter
+    def AutoStepHelp(self, value: bool) -> None:
+        ...
     @property
     def AutoStepMain(self) -> bool:
         """
         The distance between the main tick marks is calculated by the chart if this property is TRUE.
         """
+        ...
+    @AutoStepMain.setter
+    def AutoStepMain(self, value: bool) -> None:
         ...
     @property
     def AxisType(self) -> int:
@@ -94,17 +112,26 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
             OOo 3.4
         """
         ...
+    @AxisType.setter
+    def AxisType(self, value: int) -> None:
+        ...
     @property
     def CrossoverPosition(self) -> 'ChartAxisPosition_fcaa0df6':
         """
         Determines where the axis crosses the other axis.
         """
         ...
+    @CrossoverPosition.setter
+    def CrossoverPosition(self, value: 'ChartAxisPosition_fcaa0df6') -> None:
+        ...
     @property
     def CrossoverValue(self) -> float:
         """
         Determines the scale value on the other axis when CrossoverPosition is set to VALUE.
         """
+        ...
+    @CrossoverValue.setter
+    def CrossoverValue(self, value: float) -> None:
         ...
     @property
     def DisplayLabels(self) -> bool:
@@ -114,6 +141,9 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         Determines whether to display text at the axis or not.
         """
         ...
+    @DisplayLabels.setter
+    def DisplayLabels(self, value: bool) -> None:
+        ...
     @property
     def GapWidth(self) -> int:
         """
@@ -122,17 +152,26 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         The value is given in percent of the width of a bar; the valid range is 0 to 600%.
         """
         ...
+    @GapWidth.setter
+    def GapWidth(self, value: int) -> None:
+        ...
     @property
     def HelpMarks(self) -> int:
         """
         Determines the type of the help marks.
         """
         ...
+    @HelpMarks.setter
+    def HelpMarks(self, value: int) -> None:
+        ...
     @property
     def LabelPosition(self) -> 'ChartAxisLabelPosition_463a0fd6':
         """
         Determines where the axis labels are placed.
         """
+        ...
+    @LabelPosition.setter
+    def LabelPosition(self, value: 'ChartAxisLabelPosition_463a0fd6') -> None:
         ...
     @property
     def LinkNumberFormatToSource(self) -> bool:
@@ -142,17 +181,26 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         a spreadsheet document, or from the own property NumberFormat.
         """
         ...
+    @LinkNumberFormatToSource.setter
+    def LinkNumberFormatToSource(self, value: bool) -> None:
+        ...
     @property
     def Logarithmic(self) -> bool:
         """
         Determines if the axis is scaled logarithmically or not (linear).
         """
         ...
+    @Logarithmic.setter
+    def Logarithmic(self, value: bool) -> None:
+        ...
     @property
     def MarkPosition(self) -> 'ChartAxisMarkPosition_373b0f81':
         """
         Determines where the interval marks are placed.
         """
+        ...
+    @MarkPosition.setter
+    def MarkPosition(self, value: 'ChartAxisMarkPosition_373b0f81') -> None:
         ...
     @property
     def Marks(self) -> int:
@@ -162,6 +210,9 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         Determines the type of the marks.
         """
         ...
+    @Marks.setter
+    def Marks(self, value: int) -> None:
+        ...
     @property
     def Max(self) -> float:
         """
@@ -170,17 +221,26 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         Contains the maximum value for the axis scale.
         """
         ...
+    @Max.setter
+    def Max(self, value: float) -> None:
+        ...
     @property
     def Min(self) -> float:
         """
         Contains the minimum value for the axis scale.
         """
         ...
+    @Min.setter
+    def Min(self, value: float) -> None:
+        ...
     @property
     def NumberFormat(self) -> int:
         """
         Contains the type id for the number formatter of the axis.
         """
+        ...
+    @NumberFormat.setter
+    def NumberFormat(self, value: int) -> None:
         ...
     @property
     def Origin(self) -> float:
@@ -189,6 +249,9 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         
         This property has only an effect when the used ODF file format does not allow for further axis positioning or the axis is a secondary y-axis.
         """
+        ...
+    @Origin.setter
+    def Origin(self, value: float) -> None:
         ...
     @property
     def Overlap(self) -> int:
@@ -200,16 +263,25 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         The value is given in percent of the width of the bars. The valid range is -100% to +100%. +100% means full overlap, -100% indicates a distance of one bar between 2 neighboring bars.
         """
         ...
+    @Overlap.setter
+    def Overlap(self, value: int) -> None:
+        ...
     @property
     def ReverseDirection(self) -> bool:
         """
         Determines if the axis orientation is mathematical or reversed.
         """
         ...
+    @ReverseDirection.setter
+    def ReverseDirection(self, value: bool) -> None:
+        ...
     @property
     def StepHelp(self) -> float:
         """
         """
+        ...
+    @StepHelp.setter
+    def StepHelp(self, value: float) -> None:
         ...
     @property
     def StepHelpCount(self) -> int:
@@ -219,17 +291,26 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         E.g. a StepHelpCount of 5 divides the main interval into 5 pieces and thus produces 4 help tick marks.
         """
         ...
+    @StepHelpCount.setter
+    def StepHelpCount(self, value: int) -> None:
+        ...
     @property
     def StepMain(self) -> float:
         """
         Contains the distance between the main tick marks.
         """
         ...
+    @StepMain.setter
+    def StepMain(self, value: float) -> None:
+        ...
     @property
     def TextBreak(self) -> bool:
         """
         Determines if long text is broken into multiple lines.
         """
+        ...
+    @TextBreak.setter
+    def TextBreak(self, value: bool) -> None:
         ...
     @property
     def TextCanOverlap(self) -> bool:
@@ -239,11 +320,17 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         In this case, the value of this property must be set to FALSE.
         """
         ...
+    @TextCanOverlap.setter
+    def TextCanOverlap(self, value: bool) -> None:
+        ...
     @property
     def TextRotation(self) -> int:
         """
         Determines the rotation of the text elements (axis description) in 100th degrees.
         """
+        ...
+    @TextRotation.setter
+    def TextRotation(self, value: int) -> None:
         ...
     @property
     def TimeIncrement(self) -> 'TimeIncrement_c7e70c4e':
@@ -254,5 +341,8 @@ class ChartAxis(LineProperties_f13f0da9, CharacterProperties_1d4f0ef3, UserDefin
         
             OOo 3.4
         """
+        ...
+    @TimeIncrement.setter
+    def TimeIncrement(self, value: 'TimeIncrement_c7e70c4e') -> None:
         ...
 

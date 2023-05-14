@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -55,6 +55,9 @@ class DataSource(XPropertySet_bc180bfa, XBookmarksSupplier_ee870d96, XCompletedC
         Instead, the values in this property have two use cases:
         """
         ...
+    @Info.setter
+    def Info(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def TableFilter(self) -> 'typing.Tuple[str, ...]':
         """
@@ -62,6 +65,9 @@ class DataSource(XPropertySet_bc180bfa, XBookmarksSupplier_ee870d96, XCompletedC
         
         If empty, all tables are rejected.
         """
+        ...
+    @TableFilter.setter
+    def TableFilter(self, value: 'typing.Tuple[str, ...]') -> None:
         ...
     @property
     def TableTypeFilter(self) -> 'typing.Tuple[str, ...]':
@@ -71,17 +77,26 @@ class DataSource(XPropertySet_bc180bfa, XBookmarksSupplier_ee870d96, XCompletedC
         If empty, all table types are rejected.
         """
         ...
+    @TableTypeFilter.setter
+    def TableTypeFilter(self, value: 'typing.Tuple[str, ...]') -> None:
+        ...
     @property
     def IsPasswordRequired(self) -> bool:
         """
         indicates that a password is always necessary.
         """
         ...
+    @IsPasswordRequired.setter
+    def IsPasswordRequired(self, value: bool) -> None:
+        ...
     @property
     def IsReadOnly(self) -> bool:
         """
         determines whether modifications on the data source are allowed or not.
         """
+        ...
+    @IsReadOnly.setter
+    def IsReadOnly(self, value: bool) -> None:
         ...
     @property
     def Name(self) -> str:
@@ -93,11 +108,17 @@ class DataSource(XPropertySet_bc180bfa, XBookmarksSupplier_ee870d96, XCompletedC
         If the same data source is registered under different names, the value of the Name property is not defined.
         """
         ...
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def NumberFormatsSupplier(self) -> 'XNumberFormatsSupplier_3afb0fb7':
         """
         provides an object for formatting numbers.
         """
+        ...
+    @NumberFormatsSupplier.setter
+    def NumberFormatsSupplier(self, value: 'XNumberFormatsSupplier_3afb0fb7') -> None:
         ...
     @property
     def Password(self) -> str:
@@ -106,6 +127,9 @@ class DataSource(XPropertySet_bc180bfa, XBookmarksSupplier_ee870d96, XCompletedC
         
         The password is not persistent.
         """
+        ...
+    @Password.setter
+    def Password(self, value: str) -> None:
         ...
     @property
     def Settings(self) -> 'XPropertySet_bc180bfa':
@@ -131,11 +155,17 @@ class DataSource(XPropertySet_bc180bfa, XBookmarksSupplier_ee870d96, XCompletedC
         Similar, when you obtain the Info property of a DataSource, the Settings bag is asked for all its property values, and the ones which are removable and in state default are stripped, and not returned in the Info sequence.
         """
         ...
+    @Settings.setter
+    def Settings(self, value: 'XPropertySet_bc180bfa') -> None:
+        ...
     @property
     def SuppressVersionColumns(self) -> bool:
         """
         indicates that components displaying data obtained from this data source should suppress columns used for versioning.
         """
+        ...
+    @SuppressVersionColumns.setter
+    def SuppressVersionColumns(self, value: bool) -> None:
         ...
     @property
     def URL(self) -> str:
@@ -143,10 +173,16 @@ class DataSource(XPropertySet_bc180bfa, XBookmarksSupplier_ee870d96, XCompletedC
         indicates a database url of the form  jdbc:subprotocol:subname or sdbc:subprotocol:subname
         """
         ...
+    @URL.setter
+    def URL(self, value: str) -> None:
+        ...
     @property
     def User(self) -> str:
         """
         determines a users login name.
         """
+        ...
+    @User.setter
+    def User(self, value: str) -> None:
         ...
 

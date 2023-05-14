@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,6 +61,9 @@ class LeftRightMarginScale(object):
         """
         ...
 
+    @TextLeft.setter
+    def TextLeft(self, value: int) -> None:
+        ...
 
     @property
     def Left(self) -> int:
@@ -69,6 +72,9 @@ class LeftRightMarginScale(object):
         """
         ...
 
+    @Left.setter
+    def Left(self, value: int) -> None:
+        ...
 
     @property
     def Right(self) -> int:
@@ -77,6 +83,9 @@ class LeftRightMarginScale(object):
         """
         ...
 
+    @Right.setter
+    def Right(self, value: int) -> None:
+        ...
 
     @property
     def FirstLine(self) -> int:
@@ -85,6 +94,9 @@ class LeftRightMarginScale(object):
         """
         ...
 
+    @FirstLine.setter
+    def FirstLine(self, value: int) -> None:
+        ...
 
     @property
     def ScaleLeft(self) -> int:
@@ -93,6 +105,9 @@ class LeftRightMarginScale(object):
         """
         ...
 
+    @ScaleLeft.setter
+    def ScaleLeft(self, value: int) -> None:
+        ...
 
     @property
     def ScaleRight(self) -> int:
@@ -101,6 +116,9 @@ class LeftRightMarginScale(object):
         """
         ...
 
+    @ScaleRight.setter
+    def ScaleRight(self, value: int) -> None:
+        ...
 
     @property
     def ScaleFirstLine(self) -> int:
@@ -109,6 +127,9 @@ class LeftRightMarginScale(object):
         """
         ...
 
+    @ScaleFirstLine.setter
+    def ScaleFirstLine(self, value: int) -> None:
+        ...
 
     @property
     def AutoFirstLine(self) -> bool:
@@ -117,4 +138,7 @@ class LeftRightMarginScale(object):
         """
         ...
 
+    @AutoFirstLine.setter
+    def AutoFirstLine(self, value: bool) -> None:
+        ...
 

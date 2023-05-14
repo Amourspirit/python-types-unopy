@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,5 +57,7 @@ class XMetadatable(XURI_5682078c):
         Note that this metadata reference must be unique for the ODF document. This implies that the XML ID part must be unique for every stream. A pair of two empty strings signifies \"no metadata reference\". For example: Pair(\"content.xml\", \"foo-element-1\")
         """
         ...
-
+    @MetadataReference.setter
+    def MetadataReference(self, value: 'StringPair_a4bc0b14') -> None:
+        ...
 

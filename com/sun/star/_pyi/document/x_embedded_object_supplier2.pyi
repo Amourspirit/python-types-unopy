@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,12 +48,16 @@ class XEmbeddedObjectSupplier2(XEmbeddedObjectSupplier_8b631174):
         allows to control the aspect of the object.
         """
         ...
-
+    @Aspect.setter
+    def Aspect(self, value: int) -> None:
+        ...
     @property
     def ReplacementGraphic(self) -> 'XGraphic_a4da0afc':
         """
         allows to get the replacement image of the object.
         """
         ...
-
+    @ReplacementGraphic.setter
+    def ReplacementGraphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
 

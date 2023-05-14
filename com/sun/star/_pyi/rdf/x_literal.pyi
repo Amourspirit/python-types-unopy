@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -47,19 +47,25 @@ class XLiteral(XNode_5ee40822):
         the data type of the literal; may be NULL
         """
         ...
-
+    @Datatype.setter
+    def Datatype(self, value: 'XURI_5682078c') -> None:
+        ...
     @property
     def Language(self) -> str:
         """
         the language of the literal; may be the empty string
         """
         ...
-
+    @Language.setter
+    def Language(self, value: str) -> None:
+        ...
     @property
     def Value(self) -> str:
         """
         the content of the literal
         """
         ...
-
+    @Value.setter
+    def Value(self, value: str) -> None:
+        ...
 

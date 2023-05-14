@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -55,6 +55,9 @@ class DataPilotFieldAutoShowInfo(object):
         """
         ...
 
+    @IsEnabled.setter
+    def IsEnabled(self, value: bool) -> None:
+        ...
 
     @property
     def ShowItemsMode(self) -> int:
@@ -63,6 +66,9 @@ class DataPilotFieldAutoShowInfo(object):
         """
         ...
 
+    @ShowItemsMode.setter
+    def ShowItemsMode(self, value: int) -> None:
+        ...
 
     @property
     def ItemCount(self) -> int:
@@ -71,6 +77,9 @@ class DataPilotFieldAutoShowInfo(object):
         """
         ...
 
+    @ItemCount.setter
+    def ItemCount(self, value: int) -> None:
+        ...
 
     @property
     def DataField(self) -> str:
@@ -79,4 +88,7 @@ class DataPilotFieldAutoShowInfo(object):
         """
         ...
 
+    @DataField.setter
+    def DataField(self, value: str) -> None:
+        ...
 

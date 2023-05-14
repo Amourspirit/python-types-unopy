@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,10 +35,16 @@ class ReferencePageSet(TextField_90260a56):
         determines whether the ReferencePageGet text fields are displayed or not.
         """
         ...
+    @NameOn.setter
+    def NameOn(self, value: bool) -> None:
+        ...
     @property
     def Offset(self) -> int:
         """
         determines an offset value to change the displayed value of a ReferencePageGet text field.
         """
+        ...
+    @Offset.setter
+    def Offset(self, value: int) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,33 +38,43 @@ class XFunction(XPropertySet_bc180bfa, XChild_a6390b07, XComponent_98dc0ab5):
         specifies if sub reports should be traversed as well.
         """
         ...
-
+    @DeepTraversing.setter
+    def DeepTraversing(self, value: bool) -> None:
+        ...
     @property
     def Formula(self) -> str:
         """
         defines the formula of this function
         """
         ...
-
+    @Formula.setter
+    def Formula(self, value: str) -> None:
+        ...
     @property
     def InitialFormula(self) -> object:
         """
         defines the formula for the initial value
         """
         ...
-
+    @InitialFormula.setter
+    def InitialFormula(self, value: object) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
         defines the name of the function
         """
         ...
-
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def PreEvaluated(self) -> bool:
         """
         specifies if the function should be evaluated before the report element will be executed.
         """
         ...
-
+    @PreEvaluated.setter
+    def PreEvaluated(self, value: bool) -> None:
+        ...
 

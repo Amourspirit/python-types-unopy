@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,14 +52,18 @@ class UnreachableStateException(Exception_85530a09):
         The current state of the object.
         """
         ...
-
+    @CurrentState.setter
+    def CurrentState(self, value: int) -> None:
+        ...
     @property
     def NextState(self) -> int:
         """
         The state that could not be reached.
         """
         ...
-
+    @NextState.setter
+    def NextState(self, value: int) -> None:
+        ...
 
 __all__ = ['UnreachableStateException']
 

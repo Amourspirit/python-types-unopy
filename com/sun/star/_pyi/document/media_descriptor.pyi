@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,6 +56,9 @@ class MediaDescriptor(ABC):
         The encryption data is generated based on the password.
         """
         ...
+    @EncryptionData.setter
+    def EncryptionData(self, value: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> None:
+        ...
     @property
     def PostData(self) -> uno.ByteSequence:
         """
@@ -63,6 +66,9 @@ class MediaDescriptor(ABC):
         
         Data to send to a location described by the media descriptor to get a result in return that will be loaded as a component (usually in webforms). Default is: no PostData.
         """
+        ...
+    @PostData.setter
+    def PostData(self, value: uno.ByteSequence) -> None:
         ...
     @property
     def Aborted(self) -> bool:
@@ -72,6 +78,9 @@ class MediaDescriptor(ABC):
         while entering a password.
         """
         ...
+    @Aborted.setter
+    def Aborted(self, value: bool) -> None:
+        ...
     @property
     def AsTemplate(self) -> bool:
         """
@@ -79,6 +88,9 @@ class MediaDescriptor(ABC):
         
         Loading a component of type \"template\" creates a new untitled document by default, but setting the \"AsTemplate\" property to FALSE loads the template document for editing. Setting \"AsTemplate\" to TRUE creates a new untitled document out of the loaded document, even if it has not a \"template\" type.
         """
+        ...
+    @AsTemplate.setter
+    def AsTemplate(self, value: bool) -> None:
         ...
     @property
     def Author(self) -> str:
@@ -88,6 +100,9 @@ class MediaDescriptor(ABC):
         Only for storing versions in components supporting versioning: author of version.
         """
         ...
+    @Author.setter
+    def Author(self, value: str) -> None:
+        ...
     @property
     def CharacterSet(self) -> str:
         """
@@ -96,6 +111,9 @@ class MediaDescriptor(ABC):
         Defines the character set for document formats that contain single byte characters (if necessary).
         """
         ...
+    @CharacterSet.setter
+    def CharacterSet(self, value: str) -> None:
+        ...
     @property
     def Comment(self) -> str:
         """
@@ -103,6 +121,9 @@ class MediaDescriptor(ABC):
         
         Only for storing versions in components supporting versioning: comment (description) for stored version.
         """
+        ...
+    @Comment.setter
+    def Comment(self, value: str) -> None:
         ...
     @property
     def ComponentData(self) -> object:
@@ -114,11 +135,17 @@ class MediaDescriptor(ABC):
         For extensibility, it is recommended to use values of type sequence<com.sun.star.beans.NamedValue> with this property.
         """
         ...
+    @ComponentData.setter
+    def ComponentData(self, value: object) -> None:
+        ...
     @property
     def DocumentBaseURL(self) -> str:
         """
         The base URL of the document to be used to resolve relative links.
         """
+        ...
+    @DocumentBaseURL.setter
+    def DocumentBaseURL(self, value: str) -> None:
         ...
     @property
     def DocumentTitle(self) -> str:
@@ -128,6 +155,9 @@ class MediaDescriptor(ABC):
         This parameter can be used to specify a title for a document.
         """
         ...
+    @DocumentTitle.setter
+    def DocumentTitle(self, value: str) -> None:
+        ...
     @property
     def FileName(self) -> str:
         """
@@ -135,6 +165,9 @@ class MediaDescriptor(ABC):
         
         It will be supported for compatibility reasons only.
         """
+        ...
+    @FileName.setter
+    def FileName(self, value: str) -> None:
         ...
     @property
     def FilterData(self) -> object:
@@ -144,6 +177,9 @@ class MediaDescriptor(ABC):
         This is a parameter that can be used for any properties specific for a special filter type. It should be used if MediaDescriptor.FilterOptions isn't enough.
         """
         ...
+    @FilterData.setter
+    def FilterData(self, value: object) -> None:
+        ...
     @property
     def FilterFlags(self) -> str:
         """
@@ -151,6 +187,9 @@ class MediaDescriptor(ABC):
         
         It will be supported for compatibility reasons only.
         """
+        ...
+    @FilterFlags.setter
+    def FilterFlags(self, value: str) -> None:
         ...
     @property
     def FilterName(self) -> str:
@@ -162,6 +201,9 @@ class MediaDescriptor(ABC):
         See this page for a list of internal filter names: https://help.libreoffice.org/latest/en-US/text/shared/guide/convertfilters.html
         """
         ...
+    @FilterName.setter
+    def FilterName(self, value: str) -> None:
+        ...
     @property
     def FilterOptions(self) -> str:
         """
@@ -169,6 +211,9 @@ class MediaDescriptor(ABC):
         
         Some filters need additional parameters; use only together with property MediaDescriptor.FilterName. Details must be documented by the filter. This is an old format for some filters. If a string is not enough, filters can use the property MediaDescriptor.FilterData.
         """
+        ...
+    @FilterOptions.setter
+    def FilterOptions(self, value: str) -> None:
         ...
     @property
     def Frame(self) -> 'XFrame_7a570956':
@@ -178,6 +223,9 @@ class MediaDescriptor(ABC):
         May be empty.
         """
         ...
+    @Frame.setter
+    def Frame(self, value: 'XFrame_7a570956') -> None:
+        ...
     @property
     def Hidden(self) -> bool:
         """
@@ -186,11 +234,17 @@ class MediaDescriptor(ABC):
         Defines if the loaded component is made visible. If this property is not specified, the component is made visible by default.
         """
         ...
+    @Hidden.setter
+    def Hidden(self, value: bool) -> None:
+        ...
     @property
     def HierarchicalDocumentName(self) -> str:
         """
         The hierarchical path to the embedded document from topmost container.
         """
+        ...
+    @HierarchicalDocumentName.setter
+    def HierarchicalDocumentName(self, value: str) -> None:
         ...
     @property
     def InputStream(self) -> 'XInputStream_98d40ab4':
@@ -200,6 +254,9 @@ class MediaDescriptor(ABC):
         If used when loading a document: reading must be done using this stream. If no stream is provided, the loader will create a stream by itself using the other properties. It is not allowed to keep a reference to this InputStream after loading the component, and it would be useless, because in general an InputStream is usable for reading only once, except when it also implements the com.sun.star.io.XSeekable interface.
         """
         ...
+    @InputStream.setter
+    def InputStream(self, value: 'XInputStream_98d40ab4') -> None:
+        ...
     @property
     def InteractionHandler(self) -> 'XInteractionHandler_bf80e51':
         """
@@ -208,6 +265,9 @@ class MediaDescriptor(ABC):
         Object implementing the com.sun.star.task.InteractionHandler service that is used to handle exceptional situations where proceeding with the task is impossible without additional information or impossible at all. The implemented API provides a default implementation for it that can handle many situations. If no InteractionHandler is set, a suitable exception is thrown. It is not allowed to keep a reference to this object, even not in the loaded or stored component's copy of the MediaDescriptor provided by its arguments attribute.
         """
         ...
+    @InteractionHandler.setter
+    def InteractionHandler(self, value: 'XInteractionHandler_bf80e51') -> None:
+        ...
     @property
     def JumpMark(self) -> str:
         """
@@ -215,6 +275,9 @@ class MediaDescriptor(ABC):
         
         This is the same as the text behind a \"#\" in a http URL. But this syntax with a \"#\" is not specified in most URL schemas.
         """
+        ...
+    @JumpMark.setter
+    def JumpMark(self, value: str) -> None:
         ...
     @property
     def LockContentExtraction(self) -> bool:
@@ -228,6 +291,9 @@ class MediaDescriptor(ABC):
             LibreOffice 6.4
         """
         ...
+    @LockContentExtraction.setter
+    def LockContentExtraction(self, value: bool) -> None:
+        ...
     @property
     def LockEditDoc(self) -> bool:
         """
@@ -237,6 +303,9 @@ class MediaDescriptor(ABC):
         
             LibreOffice 6.4
         """
+        ...
+    @LockEditDoc.setter
+    def LockEditDoc(self, value: bool) -> None:
         ...
     @property
     def LockExport(self) -> bool:
@@ -250,6 +319,9 @@ class MediaDescriptor(ABC):
             LibreOffice 6.4
         """
         ...
+    @LockExport.setter
+    def LockExport(self, value: bool) -> None:
+        ...
     @property
     def LockPrint(self) -> bool:
         """
@@ -260,6 +332,9 @@ class MediaDescriptor(ABC):
             LibreOffice 6.4
         """
         ...
+    @LockPrint.setter
+    def LockPrint(self, value: bool) -> None:
+        ...
     @property
     def LockSave(self) -> bool:
         """
@@ -269,6 +344,9 @@ class MediaDescriptor(ABC):
         
             LibreOffice 6.4
         """
+        ...
+    @LockSave.setter
+    def LockSave(self, value: bool) -> None:
         ...
     @property
     def MacroExecutionMode(self) -> int:
@@ -282,6 +360,9 @@ class MediaDescriptor(ABC):
             OOo 1.1.2
         """
         ...
+    @MacroExecutionMode.setter
+    def MacroExecutionMode(self, value: int) -> None:
+        ...
     @property
     def MediaType(self) -> str:
         """
@@ -289,6 +370,9 @@ class MediaDescriptor(ABC):
         
         Type of the medium to load, that must match to one of the types defined in the TypeDetection configuration (otherwise it's ignored). This bypasses the type detection of the com.sun.star.frame.Desktop environment, so passing a wrong MediaType will cause failure of loading.
         """
+        ...
+    @MediaType.setter
+    def MediaType(self, value: str) -> None:
         ...
     @property
     def OpenFlags(self) -> str:
@@ -298,6 +382,9 @@ class MediaDescriptor(ABC):
         String that summarizes some flags for loading. The string contains capital letters for the flags:
         """
         ...
+    @OpenFlags.setter
+    def OpenFlags(self, value: str) -> None:
+        ...
     @property
     def OpenNewView(self) -> bool:
         """
@@ -305,6 +392,9 @@ class MediaDescriptor(ABC):
         
         Setting this to TRUE forces the component to create a new window on loading in any case. If the component supports multiple views, a second view is opened, if not, the component is loaded one more time. Otherwise the behavior depends on the default window handling of the com.sun.star.frame.Desktop environment.
         """
+        ...
+    @OpenNewView.setter
+    def OpenNewView(self, value: bool) -> None:
         ...
     @property
     def OutputStream(self) -> 'XOutputStream_a4e00b35':
@@ -314,6 +404,9 @@ class MediaDescriptor(ABC):
         If used when storing a document: writing must be done using this stream. If no stream is provided, the loader will create a stream by itself using the other properties. It is not allowed to keep a reference to this OutputStream after storing the component.
         """
         ...
+    @OutputStream.setter
+    def OutputStream(self, value: 'XOutputStream_a4e00b35') -> None:
+        ...
     @property
     def Overwrite(self) -> bool:
         """
@@ -322,6 +415,9 @@ class MediaDescriptor(ABC):
         For storing only: overwrite any existing file, default is TRUE. Setting this to FALSE raises an error, if the target file already exists.
         """
         ...
+    @Overwrite.setter
+    def Overwrite(self, value: bool) -> None:
+        ...
     @property
     def Password(self) -> str:
         """
@@ -329,6 +425,9 @@ class MediaDescriptor(ABC):
         
         It contains a password for loading or storing a component (if necessary). If neither password nor encryption data is specified, loading of a password protected document will fail, storing will be done without encryption. If both are provided, the encryption data is used ( if the filter supports it ).
         """
+        ...
+    @Password.setter
+    def Password(self, value: str) -> None:
         ...
     @property
     def PickListEntry(self) -> bool:
@@ -342,6 +441,9 @@ class MediaDescriptor(ABC):
             LibreOffice 5.1
         """
         ...
+    @PickListEntry.setter
+    def PickListEntry(self, value: bool) -> None:
+        ...
     @property
     def PostString(self) -> str:
         """
@@ -349,6 +451,9 @@ class MediaDescriptor(ABC):
         
         Same as PostData, but the data is transferred as a string (just for compatibility).
         """
+        ...
+    @PostString.setter
+    def PostString(self, value: str) -> None:
         ...
     @property
     def Preview(self) -> bool:
@@ -358,6 +463,9 @@ class MediaDescriptor(ABC):
         Setting this to TRUE tells the a loaded component that it is loaded as a preview, so it can optimize loading and viewing for this special purpose. Default is FALSE.
         """
         ...
+    @Preview.setter
+    def Preview(self, value: bool) -> None:
+        ...
     @property
     def ReadOnly(self) -> bool:
         """
@@ -366,6 +474,9 @@ class MediaDescriptor(ABC):
         Tells whether a document should be loaded in a (logical) readonly or in read/write mode. If opening in the desired mode is impossible, an error occurs. By default the loaded content decides what to do: if its UCB content supports a \"readonly\" property, the logical open mode depends on that, otherwise it will be read/write. This is only a UI related property, opening a document in read only mode will not prevent the component from being modified by API calls, but all modifying functionality in the UI will be disabled or removed.
         """
         ...
+    @ReadOnly.setter
+    def ReadOnly(self, value: bool) -> None:
+        ...
     @property
     def Referer(self) -> str:
         """
@@ -373,6 +484,9 @@ class MediaDescriptor(ABC):
         
         A URL describing the environment of the request; e.g. a referrer may be a URL of a document, if a hyperlink inside this document is clicked to load another document. The referrer may be evaluated by the addressed UCB content or the loaded document. Without a referrer the processing of URLs that needs security checks will be denied, e.g. \"macro:\" URLs. Don't be confused about the wrong spelling; it is kept for compatibility reasons.
         """
+        ...
+    @Referer.setter
+    def Referer(self, value: str) -> None:
         ...
     @property
     def RepairPackage(self) -> bool:
@@ -385,6 +499,9 @@ class MediaDescriptor(ABC):
         
             OOo 1.1.2
         """
+        ...
+    @RepairPackage.setter
+    def RepairPackage(self, value: bool) -> None:
         ...
     @property
     def Replaceable(self) -> bool:
@@ -400,6 +517,9 @@ class MediaDescriptor(ABC):
             LibreOffice 7.0
         """
         ...
+    @Replaceable.setter
+    def Replaceable(self, value: bool) -> None:
+        ...
     @property
     def StartPresentation(self) -> bool:
         """
@@ -407,6 +527,9 @@ class MediaDescriptor(ABC):
         
         Tells the component loading the document that a presentation that is in the document is to be started right away.
         """
+        ...
+    @StartPresentation.setter
+    def StartPresentation(self, value: bool) -> None:
         ...
     @property
     def StatusIndicator(self) -> 'XStatusIndicator_e2d00d34':
@@ -416,6 +539,9 @@ class MediaDescriptor(ABC):
         Object implementing the com.sun.star.task.XStatusIndicator interface that can be used to give status information (text or progress) for the task. The office provides a default implementation for it. It is not allowed to keep a reference to this object, even not in the loaded or stored component's copy of the MediaDescriptor provided by its arguments attribute.
         """
         ...
+    @StatusIndicator.setter
+    def StatusIndicator(self, value: 'XStatusIndicator_e2d00d34') -> None:
+        ...
     @property
     def SuggestedSaveAsDir(self) -> str:
         """
@@ -423,6 +549,9 @@ class MediaDescriptor(ABC):
         
         If the parameter is specified, the URL will be used by SaveAs dialog next time as target folder.
         """
+        ...
+    @SuggestedSaveAsDir.setter
+    def SuggestedSaveAsDir(self, value: str) -> None:
         ...
     @property
     def SuggestedSaveAsName(self) -> str:
@@ -432,6 +561,9 @@ class MediaDescriptor(ABC):
         If the parameter is specified, the file name will be suggested by SaveAs dialog next time.
         """
         ...
+    @SuggestedSaveAsName.setter
+    def SuggestedSaveAsName(self, value: str) -> None:
+        ...
     @property
     def TemplateName(self) -> str:
         """
@@ -439,6 +571,9 @@ class MediaDescriptor(ABC):
         
         The logical name of a template to load. Together with the MediaDescriptor.TemplateRegion property it can be used instead of the URL of the template. Use always in conjunction with MediaDescriptor.TemplateRegionName.
         """
+        ...
+    @TemplateName.setter
+    def TemplateName(self, value: str) -> None:
         ...
     @property
     def TemplateRegionName(self) -> str:
@@ -448,6 +583,9 @@ class MediaDescriptor(ABC):
         See MediaDescriptor.TemplateName. The template region names are the folder names you see in the templates dialog.
         """
         ...
+    @TemplateRegionName.setter
+    def TemplateRegionName(self, value: str) -> None:
+        ...
     @property
     def URL(self) -> str:
         """
@@ -456,6 +594,9 @@ class MediaDescriptor(ABC):
         The location of the component in URL syntax. It must be a fully qualified URL.
         """
         ...
+    @URL.setter
+    def URL(self, value: str) -> None:
+        ...
     @property
     def Unpacked(self) -> bool:
         """
@@ -463,6 +604,9 @@ class MediaDescriptor(ABC):
         
         For storing: Setting this to TRUE means, don't use a zip file to save the document, use a folder instead (only usable for UCB contents, that support folders). Default is FALSE.
         """
+        ...
+    @Unpacked.setter
+    def Unpacked(self, value: bool) -> None:
         ...
     @property
     def UpdateDocMode(self) -> int:
@@ -476,6 +620,9 @@ class MediaDescriptor(ABC):
             OOo 1.1.2
         """
         ...
+    @UpdateDocMode.setter
+    def UpdateDocMode(self, value: int) -> None:
+        ...
     @property
     def Version(self) -> int:
         """
@@ -483,6 +630,9 @@ class MediaDescriptor(ABC):
         
         For components supporting versioning: the number of the version to be loaded or saved. Default is zero and means: no version is created or loaded, the \"main\" document is processed.
         """
+        ...
+    @Version.setter
+    def Version(self, value: int) -> None:
         ...
     @property
     def ViewControllerName(self) -> str:
@@ -496,6 +646,9 @@ class MediaDescriptor(ABC):
             OOo 3.0
         """
         ...
+    @ViewControllerName.setter
+    def ViewControllerName(self, value: str) -> None:
+        ...
     @property
     def ViewData(self) -> object:
         """
@@ -504,6 +657,9 @@ class MediaDescriptor(ABC):
         Data to set a special view state after loading. The type depends on the component and is usually retrieved from a com.sun.star.frame.Controller object by its com.sun.star.frame.XController interface. Default is: no view data.
         """
         ...
+    @ViewData.setter
+    def ViewData(self, value: object) -> None:
+        ...
     @property
     def ViewId(self) -> int:
         """
@@ -511,5 +667,8 @@ class MediaDescriptor(ABC):
         
         For components supporting different views: a number to define the view that should be constructed after loading. Default is: zero, and this should be treated by the component as the default view.
         """
+        ...
+    @ViewId.setter
+    def ViewId(self, value: int) -> None:
         ...
 

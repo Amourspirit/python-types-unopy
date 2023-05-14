@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -70,6 +70,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @DisplayName.setter
+    def DisplayName(self, value: str) -> None:
+        ...
 
     @property
     def Control(self) -> XPropertyControl_3f260fe2:
@@ -78,6 +81,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @Control.setter
+    def Control(self, value: XPropertyControl_3f260fe2) -> None:
+        ...
 
     @property
     def HelpURL(self) -> str:
@@ -86,6 +92,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
+        ...
 
     @property
     def HasPrimaryButton(self) -> bool:
@@ -96,6 +105,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @HasPrimaryButton.setter
+    def HasPrimaryButton(self, value: bool) -> None:
+        ...
 
     @property
     def PrimaryButtonId(self) -> str:
@@ -108,6 +120,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @PrimaryButtonId.setter
+    def PrimaryButtonId(self, value: str) -> None:
+        ...
 
     @property
     def PrimaryButtonImageURL(self) -> str:
@@ -122,6 +137,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @PrimaryButtonImageURL.setter
+    def PrimaryButtonImageURL(self, value: str) -> None:
+        ...
 
     @property
     def PrimaryButtonImage(self) -> XGraphic_a4da0afc:
@@ -132,6 +150,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @PrimaryButtonImage.setter
+    def PrimaryButtonImage(self, value: XGraphic_a4da0afc) -> None:
+        ...
 
     @property
     def HasSecondaryButton(self) -> bool:
@@ -142,6 +163,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @HasSecondaryButton.setter
+    def HasSecondaryButton(self, value: bool) -> None:
+        ...
 
     @property
     def SecondaryButtonId(self) -> str:
@@ -152,6 +176,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @SecondaryButtonId.setter
+    def SecondaryButtonId(self, value: str) -> None:
+        ...
 
     @property
     def SecondaryButtonImageURL(self) -> str:
@@ -166,6 +193,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @SecondaryButtonImageURL.setter
+    def SecondaryButtonImageURL(self, value: str) -> None:
+        ...
 
     @property
     def SecondaryButtonImage(self) -> XGraphic_a4da0afc:
@@ -176,6 +206,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @SecondaryButtonImage.setter
+    def SecondaryButtonImage(self, value: XGraphic_a4da0afc) -> None:
+        ...
 
     @property
     def IndentLevel(self) -> int:
@@ -188,6 +221,9 @@ class LineDescriptor(object):
         """
         ...
 
+    @IndentLevel.setter
+    def IndentLevel(self, value: int) -> None:
+        ...
 
     @property
     def Category(self) -> str:
@@ -200,4 +236,7 @@ class LineDescriptor(object):
         """
         ...
 
+    @Category.setter
+    def Category(self, value: str) -> None:
+        ...
 

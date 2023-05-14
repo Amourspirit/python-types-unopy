@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,6 +48,9 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
         specifies the color of the background.
         """
         ...
+    @BackColor.setter
+    def BackColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def BackGraphic(self) -> 'XGraphic_a4da0afc':
         """
@@ -58,17 +61,26 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
             LibreOffice 6.1
         """
         ...
+    @BackGraphic.setter
+    def BackGraphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def BackGraphicFilter(self) -> str:
         """
         contains the name of the filter of the graphic file that is displayed as background graphic
         """
         ...
+    @BackGraphicFilter.setter
+    def BackGraphicFilter(self, value: str) -> None:
+        ...
     @property
     def BackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         determines the position of the background graphic.
         """
+        ...
+    @BackGraphicLocation.setter
+    def BackGraphicLocation(self, value: 'GraphicLocation_e3ef0d30') -> None:
         ...
     @property
     def BackGraphicURL(self) -> str:
@@ -78,17 +90,26 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the BackGraphic property.
         """
         ...
+    @BackGraphicURL.setter
+    def BackGraphicURL(self, value: str) -> None:
+        ...
     @property
     def BackTransparent(self) -> bool:
         """
         If TRUE, the background color value in \"BackColor\" is not visible.
         """
         ...
+    @BackTransparent.setter
+    def BackTransparent(self, value: bool) -> None:
+        ...
     @property
     def ContentSection(self) -> 'XTextSection_b1730b9f':
         """
         the text section containing the content of the index
         """
+        ...
+    @ContentSection.setter
+    def ContentSection(self, value: 'XTextSection_b1730b9f') -> None:
         ...
     @property
     def CreateFromChapter(self) -> bool:
@@ -98,17 +119,26 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
         It is not available in the bibliography
         """
         ...
+    @CreateFromChapter.setter
+    def CreateFromChapter(self, value: bool) -> None:
+        ...
     @property
     def HeaderSection(self) -> 'XTextSection_b1730b9f':
         """
         the text section containing the header of the index
         """
         ...
+    @HeaderSection.setter
+    def HeaderSection(self, value: 'XTextSection_b1730b9f') -> None:
+        ...
     @property
     def IsProtected(self) -> bool:
         """
         determines if the index is protected.
         """
+        ...
+    @IsProtected.setter
+    def IsProtected(self, value: bool) -> None:
         ...
     @property
     def LevelFormat(self) -> 'XIndexReplace_feed0dd7':
@@ -118,11 +148,17 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
         The description of the format of the levels depends on the type of the document index.
         """
         ...
+    @LevelFormat.setter
+    def LevelFormat(self, value: 'XIndexReplace_feed0dd7') -> None:
+        ...
     @property
     def ParaStyleHeading(self) -> str:
         """
         contains the name of the paragraph style that is applied to the heading.
         """
+        ...
+    @ParaStyleHeading.setter
+    def ParaStyleHeading(self, value: str) -> None:
         ...
     @property
     def ParaStyleLevel1(self) -> str:
@@ -130,11 +166,17 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
         contains the name of the paragraph style that is applied to the 1st level.
         """
         ...
+    @ParaStyleLevel1.setter
+    def ParaStyleLevel1(self, value: str) -> None:
+        ...
     @property
     def ParaStyleLevel10(self) -> str:
         """
         contains the name of the paragraph style that is applied to the 10th level.
         """
+        ...
+    @ParaStyleLevel10.setter
+    def ParaStyleLevel10(self, value: str) -> None:
         ...
     @property
     def ParaStyleLevel2(self) -> str:
@@ -142,11 +184,17 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
         contains the name of the paragraph style that is applied to the 2nd level.
         """
         ...
+    @ParaStyleLevel2.setter
+    def ParaStyleLevel2(self, value: str) -> None:
+        ...
     @property
     def ParaStyleLevel3(self) -> str:
         """
         contains the name of the paragraph style that is applied to the 3rd level.
         """
+        ...
+    @ParaStyleLevel3.setter
+    def ParaStyleLevel3(self, value: str) -> None:
         ...
     @property
     def ParaStyleLevel4(self) -> str:
@@ -154,11 +202,17 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
         contains the name of the paragraph style that is applied to the 4th level.
         """
         ...
+    @ParaStyleLevel4.setter
+    def ParaStyleLevel4(self, value: str) -> None:
+        ...
     @property
     def ParaStyleLevel5(self) -> str:
         """
         contains the name of the paragraph style that is applied to the 5th level.
         """
+        ...
+    @ParaStyleLevel5.setter
+    def ParaStyleLevel5(self, value: str) -> None:
         ...
     @property
     def ParaStyleLevel6(self) -> str:
@@ -166,11 +220,17 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
         contains the name of the paragraph style that is applied to the 6th level.
         """
         ...
+    @ParaStyleLevel6.setter
+    def ParaStyleLevel6(self, value: str) -> None:
+        ...
     @property
     def ParaStyleLevel7(self) -> str:
         """
         contains the name of the paragraph style that is applied to the 7th level.
         """
+        ...
+    @ParaStyleLevel7.setter
+    def ParaStyleLevel7(self, value: str) -> None:
         ...
     @property
     def ParaStyleLevel8(self) -> str:
@@ -178,11 +238,17 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
         contains the name of the paragraph style that is applied to the 8th level.
         """
         ...
+    @ParaStyleLevel8.setter
+    def ParaStyleLevel8(self, value: str) -> None:
+        ...
     @property
     def ParaStyleLevel9(self) -> str:
         """
         contains the name of the paragraph style that is applied to the 9th level.
         """
+        ...
+    @ParaStyleLevel9.setter
+    def ParaStyleLevel9(self, value: str) -> None:
         ...
     @property
     def ParaStyleSeparator(self) -> str:
@@ -190,16 +256,25 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
         contains the name of the paragraph style that is applied to the separator level.
         """
         ...
+    @ParaStyleSeparator.setter
+    def ParaStyleSeparator(self, value: str) -> None:
+        ...
     @property
     def TextColumns(self) -> 'XTextColumns_b17f0bab':
         """
         contains the column interface.
         """
         ...
+    @TextColumns.setter
+    def TextColumns(self, value: 'XTextColumns_b17f0bab') -> None:
+        ...
     @property
     def Title(self) -> str:
         """
         contains the title of the index.
         """
+        ...
+    @Title.setter
+    def Title(self, value: str) -> None:
         ...
 

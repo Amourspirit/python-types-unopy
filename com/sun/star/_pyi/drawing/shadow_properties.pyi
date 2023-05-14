@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,11 +40,17 @@ class ShadowProperties(ABC):
         The other shadow properties are only applied if this is set to TRUE.
         """
         ...
+    @Shadow.setter
+    def Shadow(self, value: bool) -> None:
+        ...
     @property
     def ShadowBlur(self) -> int:
         """
         This defines the degree of blur of the shadow in points.
         """
+        ...
+    @ShadowBlur.setter
+    def ShadowBlur(self, value: int) -> None:
         ...
     @property
     def ShadowColor(self) -> 'Color_68e908c5':
@@ -52,11 +58,17 @@ class ShadowProperties(ABC):
         This is the color of the shadow of this Shape.
         """
         ...
+    @ShadowColor.setter
+    def ShadowColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def ShadowTransparence(self) -> int:
         """
         This defines the degree of transparence of the shadow in percent.
         """
+        ...
+    @ShadowTransparence.setter
+    def ShadowTransparence(self, value: int) -> None:
         ...
     @property
     def ShadowXDistance(self) -> int:
@@ -64,10 +76,16 @@ class ShadowProperties(ABC):
         This is the horizontal distance of the left edge of the Shape to the shadow.
         """
         ...
+    @ShadowXDistance.setter
+    def ShadowXDistance(self, value: int) -> None:
+        ...
     @property
     def ShadowYDistance(self) -> int:
         """
         This is the vertical distance of the top edge of the Shape to the shadow.
         """
+        ...
+    @ShadowYDistance.setter
+    def ShadowYDistance(self, value: int) -> None:
         ...
 

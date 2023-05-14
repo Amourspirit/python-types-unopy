@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -146,5 +146,7 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
         If you'd be interested in the composed filter, you would set the QueryDefinition.Command as ElementaryQuery, add your filter, and propagate the resulting query (XSingleSelectQueryAnalyzer.getQuery()) to an SingleSelectQueryAnalyzer instance via XSingleSelectQueryAnalyzer.setQuery().
         """
         ...
-
+    @ElementaryQuery.setter
+    def ElementaryQuery(self, value: str) -> None:
+        ...
 

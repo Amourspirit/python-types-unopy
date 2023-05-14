@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,10 +37,16 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         determines the category of a paragraph style.
         """
         ...
+    @Category.setter
+    def Category(self, value: int) -> None:
+        ...
     @property
     def CharDiffHeight(self) -> float:
         """
         """
+        ...
+    @CharDiffHeight.setter
+    def CharDiffHeight(self, value: float) -> None:
         ...
     @property
     def CharDiffHeightAsian(self) -> float:
@@ -48,11 +54,17 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         This value contains the character height as difference in point to the height of the character in the parent style in Asian text.
         """
         ...
+    @CharDiffHeightAsian.setter
+    def CharDiffHeightAsian(self, value: float) -> None:
+        ...
     @property
     def CharDiffHeightComplex(self) -> float:
         """
         This value contains the character height as difference in point to the height of the character in the parent style in complex text.
         """
+        ...
+    @CharDiffHeightComplex.setter
+    def CharDiffHeightComplex(self, value: float) -> None:
         ...
     @property
     def CharPropHeight(self) -> int:
@@ -60,17 +72,26 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         This value contains the character height as percentage value relative to the height of the character in the parent style.
         """
         ...
+    @CharPropHeight.setter
+    def CharPropHeight(self, value: int) -> None:
+        ...
     @property
     def CharPropHeightAsian(self) -> int:
         """
         This value contains the character height as percentage value relative to the height of the character in the parent style in Asian text.
         """
         ...
+    @CharPropHeightAsian.setter
+    def CharPropHeightAsian(self, value: int) -> None:
+        ...
     @property
     def CharPropHeightComplex(self) -> int:
         """
         This value contains the character height as percentage value relative to the height of the character in the parent style in complex text.
         """
+        ...
+    @CharPropHeightComplex.setter
+    def CharPropHeightComplex(self, value: int) -> None:
         ...
     @property
     def PageStyleName(self) -> str:
@@ -80,6 +101,9 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         For setting the page style you have to use the com.sun.star.text.PageDescName properties.
         """
         ...
+    @PageStyleName.setter
+    def PageStyleName(self, value: str) -> None:
+        ...
     @property
     def ParaBottomMarginRelative(self) -> int:
         """
@@ -87,6 +111,9 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         
         If the value of ParaBottomMarginRelative is 100 the current ParaBottomMargin value is used.
         """
+        ...
+    @ParaBottomMarginRelative.setter
+    def ParaBottomMarginRelative(self, value: int) -> None:
         ...
     @property
     def ParaLeftMarginRelative(self) -> int:
@@ -96,6 +123,9 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         If the value of ParaLeftMarginRelative is 100 the current ParaLeftMargin value is used.
         """
         ...
+    @ParaLeftMarginRelative.setter
+    def ParaLeftMarginRelative(self, value: int) -> None:
+        ...
     @property
     def ParaRightMarginRelative(self) -> int:
         """
@@ -104,6 +134,9 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         If the value of ParaRightMarginRelative is 100 the current ParaRightMargin value is used.
         """
         ...
+    @ParaRightMarginRelative.setter
+    def ParaRightMarginRelative(self, value: int) -> None:
+        ...
     @property
     def ParaTopMarginRelative(self) -> int:
         """
@@ -111,5 +144,8 @@ class ParagraphStyle(ParagraphProperties_1e240efc, Style_7336094a, ParaUserDefin
         
         If the value of ParaTopMarginRelative is 100 the current ParaTopMargin value is used.
         """
+        ...
+    @ParaTopMarginRelative.setter
+    def ParaTopMarginRelative(self, value: int) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,6 +56,9 @@ class NumberFormatCode(object):
         """
         ...
 
+    @Type.setter
+    def Type(self, value: int) -> None:
+        ...
 
     @property
     def Usage(self) -> int:
@@ -64,6 +67,9 @@ class NumberFormatCode(object):
         """
         ...
 
+    @Usage.setter
+    def Usage(self, value: int) -> None:
+        ...
 
     @property
     def Code(self) -> str:
@@ -72,6 +78,9 @@ class NumberFormatCode(object):
         """
         ...
 
+    @Code.setter
+    def Code(self, value: str) -> None:
+        ...
 
     @property
     def DefaultName(self) -> str:
@@ -80,6 +89,9 @@ class NumberFormatCode(object):
         """
         ...
 
+    @DefaultName.setter
+    def DefaultName(self, value: str) -> None:
+        ...
 
     @property
     def NameID(self) -> str:
@@ -88,6 +100,9 @@ class NumberFormatCode(object):
         """
         ...
 
+    @NameID.setter
+    def NameID(self, value: str) -> None:
+        ...
 
     @property
     def Index(self) -> int:
@@ -96,6 +111,9 @@ class NumberFormatCode(object):
         """
         ...
 
+    @Index.setter
+    def Index(self, value: int) -> None:
+        ...
 
     @property
     def Default(self) -> bool:
@@ -104,4 +122,7 @@ class NumberFormatCode(object):
         """
         ...
 
+    @Default.setter
+    def Default(self, value: bool) -> None:
+        ...
 

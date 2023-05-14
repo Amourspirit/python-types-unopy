@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -62,21 +62,27 @@ class AuthenticationRequest(ClassifiedInteractionRequest_9f72121b):
         The name of the server (if applicable).
         """
         ...
-
+    @ServerName.setter
+    def ServerName(self, value: str) -> None:
+        ...
     @property
     def Diagnostic(self) -> str:
         """
         Any diagnostic message about the failure to log in (if applicable; it will typically be an English phrase or sentence).
         """
         ...
-
+    @Diagnostic.setter
+    def Diagnostic(self, value: str) -> None:
+        ...
     @property
     def HasRealm(self) -> bool:
         """
         Specifies if the authentication involves a \"realm\" (as can be the case for HTTP).
         """
         ...
-
+    @HasRealm.setter
+    def HasRealm(self, value: bool) -> None:
+        ...
     @property
     def Realm(self) -> str:
         """
@@ -85,14 +91,18 @@ class AuthenticationRequest(ClassifiedInteractionRequest_9f72121b):
         If HasRealm is false, this member should be ignored.
         """
         ...
-
+    @Realm.setter
+    def Realm(self, value: str) -> None:
+        ...
     @property
     def HasUserName(self) -> bool:
         """
         Specifies if the authentication involves a \"user name\" (as is almost always the case).
         """
         ...
-
+    @HasUserName.setter
+    def HasUserName(self, value: bool) -> None:
+        ...
     @property
     def UserName(self) -> str:
         """
@@ -101,14 +111,18 @@ class AuthenticationRequest(ClassifiedInteractionRequest_9f72121b):
         If HasUserName is false, this member should be ignored.
         """
         ...
-
+    @UserName.setter
+    def UserName(self, value: str) -> None:
+        ...
     @property
     def HasPassword(self) -> bool:
         """
         Specifies if the authentication involves a \"password\" (as is almost always the case).
         """
         ...
-
+    @HasPassword.setter
+    def HasPassword(self, value: bool) -> None:
+        ...
     @property
     def Password(self) -> str:
         """
@@ -117,14 +131,18 @@ class AuthenticationRequest(ClassifiedInteractionRequest_9f72121b):
         If HasPassword is false, this member should be ignored.
         """
         ...
-
+    @Password.setter
+    def Password(self, value: str) -> None:
+        ...
     @property
     def HasAccount(self) -> bool:
         """
         Specifies if the authentication involves an \"account\" (as can be the case for FTP).
         """
         ...
-
+    @HasAccount.setter
+    def HasAccount(self, value: bool) -> None:
+        ...
     @property
     def Account(self) -> str:
         """
@@ -133,7 +151,9 @@ class AuthenticationRequest(ClassifiedInteractionRequest_9f72121b):
         If HasAccount is false, this member should be ignored.
         """
         ...
-
+    @Account.setter
+    def Account(self, value: str) -> None:
+        ...
 
 __all__ = ['AuthenticationRequest']
 

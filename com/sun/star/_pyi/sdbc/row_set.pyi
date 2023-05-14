@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,11 +44,17 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         is the command which should be executed.
         """
         ...
+    @Command.setter
+    def Command(self, value: str) -> None:
+        ...
     @property
     def DataSourceName(self) -> str:
         """
         is the name of a named datasource to use.
         """
+        ...
+    @DataSourceName.setter
+    def DataSourceName(self, value: str) -> None:
         ...
     @property
     def EscapeProcessing(self) -> bool:
@@ -58,6 +64,9 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         If escape scanning is on (the default), the driver will do escape substitution before sending the SQL to the database. This is only evaluated, if the CommandType is COMMAND.
         """
         ...
+    @EscapeProcessing.setter
+    def EscapeProcessing(self, value: bool) -> None:
+        ...
     @property
     def MaxFieldSize(self) -> int:
         """
@@ -65,6 +74,9 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         
         This limit is the maximum number of bytes that can be returned for any column value. The limit applies only to com.sun.star.sdbc.DataType.BINARY , com.sun.star.sdbc.DataType.VARBINARY , com.sun.star.sdbc.DataType.LONGVARBINARY , com.sun.star.sdbc.DataType.CHAR , com.sun.star.sdbc.DataType.VARCHAR , and com.sun.star.sdbc.DataType.LONGVARCHAR columns. If the limit is exceeded, the excess data is silently discarded. There is no limitation, if set to zero.
         """
+        ...
+    @MaxFieldSize.setter
+    def MaxFieldSize(self, value: int) -> None:
         ...
     @property
     def MaxRows(self) -> int:
@@ -74,11 +86,17 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         If the limit is exceeded, the excess rows are silently dropped. There is no limitation, if set to zero.
         """
         ...
+    @MaxRows.setter
+    def MaxRows(self, value: int) -> None:
+        ...
     @property
     def Password(self) -> str:
         """
         determines the user for whom to open the connection.
         """
+        ...
+    @Password.setter
+    def Password(self, value: str) -> None:
         ...
     @property
     def QueryTimeOut(self) -> int:
@@ -88,11 +106,17 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         If the limit is exceeded, a com.sun.star.sdbc.SQLException is thrown. There is no limitation, if set to zero.
         """
         ...
+    @QueryTimeOut.setter
+    def QueryTimeOut(self, value: int) -> None:
+        ...
     @property
     def ResultSetType(self) -> int:
         """
         determine the result set type.
         """
+        ...
+    @ResultSetType.setter
+    def ResultSetType(self, value: int) -> None:
         ...
     @property
     def TransactionIsolation(self) -> int:
@@ -100,11 +124,17 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         indicates the transaction isolation level, which should be used for the connection.
         """
         ...
+    @TransactionIsolation.setter
+    def TransactionIsolation(self, value: int) -> None:
+        ...
     @property
     def TypeMap(self) -> 'XNameAccess_e2ab0cf6':
         """
         is the type map that will be used for the custom mapping of SQL structured types and distinct types.
         """
+        ...
+    @TypeMap.setter
+    def TypeMap(self, value: 'XNameAccess_e2ab0cf6') -> None:
         ...
     @property
     def URL(self) -> str:
@@ -114,10 +144,16 @@ class RowSet(ResultSet_8ecf0a4f, XParameters_a36c0b10, XRowSet_7a090960):
         Could be used instead of the DataSourceName.
         """
         ...
+    @URL.setter
+    def URL(self, value: str) -> None:
+        ...
     @property
     def User(self) -> str:
         """
         determines the user for whom to open the connection.
         """
+        ...
+    @User.setter
+    def User(self, value: str) -> None:
         ...
 

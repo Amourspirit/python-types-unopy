@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -95,7 +95,9 @@ class XMailMessage(XInterface_8f010a43):
         It is expected that the transferable delivers the data as a string. Although a transferable may support multiple data flavors only the first data flavor supplied will be used to retrieve the data and it is expected that the data will be provided as a string.
         """
         ...
-
+    @Body.setter
+    def Body(self, value: 'XTransferable_2d800f38') -> None:
+        ...
     @property
     def ReplyToAddress(self) -> str:
         """
@@ -104,7 +106,9 @@ class XMailMessage(XInterface_8f010a43):
         If the e-mail address doesn't conform to RFC 822 sending the mail message later will fail. If no ReplyToAddress is set replies go to the SenderAddress.
         """
         ...
-
+    @ReplyToAddress.setter
+    def ReplyToAddress(self, value: str) -> None:
+        ...
     @property
     def SenderAddress(self) -> str:
         """
@@ -113,19 +117,25 @@ class XMailMessage(XInterface_8f010a43):
         The e-mail address has to conform to RFC 822.
         """
         ...
-
+    @SenderAddress.setter
+    def SenderAddress(self, value: str) -> None:
+        ...
     @property
     def SenderName(self) -> str:
         """
         The display name of the sender of this mail message.
         """
         ...
-
+    @SenderName.setter
+    def SenderName(self, value: str) -> None:
+        ...
     @property
     def Subject(self) -> str:
         """
         The subject of a mail message.
         """
         ...
-
+    @Subject.setter
+    def Subject(self, value: str) -> None:
+        ...
 

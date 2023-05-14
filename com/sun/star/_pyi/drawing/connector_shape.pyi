@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,17 +44,26 @@ class ConnectorShape(ConnectorProperties_3c5e0fcc, LineProperties_f13f0da9, Rota
         This property contains the distance of line 1.
         """
         ...
+    @EdgeLine1Delta.setter
+    def EdgeLine1Delta(self, value: int) -> None:
+        ...
     @property
     def EdgeLine2Delta(self) -> int:
         """
         This property contains the distance of line 2.
         """
         ...
+    @EdgeLine2Delta.setter
+    def EdgeLine2Delta(self, value: int) -> None:
+        ...
     @property
     def EdgeLine3Delta(self) -> int:
         """
         This property contains the distance of line 3.
         """
+        ...
+    @EdgeLine3Delta.setter
+    def EdgeLine3Delta(self, value: int) -> None:
         ...
     @property
     def EndGluePointIndex(self) -> int:
@@ -64,11 +73,17 @@ class ConnectorShape(ConnectorProperties_3c5e0fcc, LineProperties_f13f0da9, Rota
         For unconnected end points you can get and set the position. For connected end points you can only get the position.
         """
         ...
+    @EndGluePointIndex.setter
+    def EndGluePointIndex(self, value: int) -> None:
+        ...
     @property
     def EndPosition(self) -> 'Point_5fb2085e':
         """
         this property holds the index of the gluepoint the end point of this connector is glued on.
         """
+        ...
+    @EndPosition.setter
+    def EndPosition(self, value: 'Point_5fb2085e') -> None:
         ...
     @property
     def EndShape(self) -> 'XShape_8fd00a3d':
@@ -76,11 +91,17 @@ class ConnectorShape(ConnectorProperties_3c5e0fcc, LineProperties_f13f0da9, Rota
         this property either holds the shape that the end point of this connector is connected to, or is empty when the end point of the connector is not connected to a shape.
         """
         ...
+    @EndShape.setter
+    def EndShape(self, value: 'XShape_8fd00a3d') -> None:
+        ...
     @property
     def StartGluePointIndex(self) -> int:
         """
         this property holds the index of the gluepoint the start point of this connector is glued on.
         """
+        ...
+    @StartGluePointIndex.setter
+    def StartGluePointIndex(self, value: int) -> None:
         ...
     @property
     def StartPosition(self) -> 'Point_5fb2085e':
@@ -90,10 +111,16 @@ class ConnectorShape(ConnectorProperties_3c5e0fcc, LineProperties_f13f0da9, Rota
         For unconnected start points you can get and set the position. For connected start points you can only get the position.
         """
         ...
+    @StartPosition.setter
+    def StartPosition(self, value: 'Point_5fb2085e') -> None:
+        ...
     @property
     def StartShape(self) -> 'XShape_8fd00a3d':
         """
         this property either holds the shape that the start point of this connector is connected to, or is empty when the start point of the connector is not connected to a shape.
         """
+        ...
+    @StartShape.setter
+    def StartShape(self, value: 'XShape_8fd00a3d') -> None:
         ...
 

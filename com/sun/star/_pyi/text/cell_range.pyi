@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class CellRange(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a10df,
         contains color of the background.
         """
         ...
+    @BackColor.setter
+    def BackColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def BackGraphic(self) -> 'XGraphic_a4da0afc':
         """
@@ -62,17 +65,26 @@ class CellRange(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a10df,
             LibreOffice 6.1
         """
         ...
+    @BackGraphic.setter
+    def BackGraphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def BackGraphicFilter(self) -> str:
         """
         contains the filter name of the background graphic.
         """
         ...
+    @BackGraphicFilter.setter
+    def BackGraphicFilter(self, value: str) -> None:
+        ...
     @property
     def BackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         determines the location of the background graphic.
         """
+        ...
+    @BackGraphicLocation.setter
+    def BackGraphicLocation(self, value: 'GraphicLocation_e3ef0d30') -> None:
         ...
     @property
     def BackGraphicURL(self) -> str:
@@ -82,11 +94,17 @@ class CellRange(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a10df,
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the BackGraphic property.
         """
         ...
+    @BackGraphicURL.setter
+    def BackGraphicURL(self, value: str) -> None:
+        ...
     @property
     def BackTransparent(self) -> bool:
         """
         determines if the background color is transparent.
         """
+        ...
+    @BackTransparent.setter
+    def BackTransparent(self, value: bool) -> None:
         ...
     @property
     def ChartColumnAsLabel(self) -> bool:
@@ -94,16 +112,25 @@ class CellRange(CharacterProperties_1d4f0ef3, CharacterPropertiesAsian_6d8a10df,
         determines if the first column of the table should be treated as axis labels when a chart is to be created.
         """
         ...
+    @ChartColumnAsLabel.setter
+    def ChartColumnAsLabel(self, value: bool) -> None:
+        ...
     @property
     def ChartRowAsLabel(self) -> bool:
         """
         determines if the first row of the table should be treated as axis labels when a chart is to be created.
         """
         ...
+    @ChartRowAsLabel.setter
+    def ChartRowAsLabel(self, value: bool) -> None:
+        ...
     @property
     def NumberFormat(self) -> int:
         """
         contains the number format.
         """
+        ...
+    @NumberFormat.setter
+    def NumberFormat(self, value: int) -> None:
         ...
 

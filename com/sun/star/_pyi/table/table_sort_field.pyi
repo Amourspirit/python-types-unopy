@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,6 +61,9 @@ class TableSortField(object):
         """
         ...
 
+    @Field.setter
+    def Field(self, value: int) -> None:
+        ...
 
     @property
     def IsAscending(self) -> bool:
@@ -69,6 +72,9 @@ class TableSortField(object):
         """
         ...
 
+    @IsAscending.setter
+    def IsAscending(self, value: bool) -> None:
+        ...
 
     @property
     def IsCaseSensitive(self) -> bool:
@@ -77,6 +83,9 @@ class TableSortField(object):
         """
         ...
 
+    @IsCaseSensitive.setter
+    def IsCaseSensitive(self, value: bool) -> None:
+        ...
 
     @property
     def FieldType(self) -> TableSortFieldType_9a50e26:
@@ -87,6 +96,9 @@ class TableSortField(object):
         """
         ...
 
+    @FieldType.setter
+    def FieldType(self, value: TableSortFieldType_9a50e26) -> None:
+        ...
 
     @property
     def CollatorLocale(self) -> Locale_70d308fa:
@@ -97,6 +109,9 @@ class TableSortField(object):
         """
         ...
 
+    @CollatorLocale.setter
+    def CollatorLocale(self, value: Locale_70d308fa) -> None:
+        ...
 
     @property
     def CollatorAlgorithm(self) -> str:
@@ -107,4 +122,7 @@ class TableSortField(object):
         """
         ...
 
+    @CollatorAlgorithm.setter
+    def CollatorAlgorithm(self, value: str) -> None:
+        ...
 

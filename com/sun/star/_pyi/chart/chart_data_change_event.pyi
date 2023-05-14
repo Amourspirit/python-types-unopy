@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class ChartDataChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Type.setter
+    def Type(self, value: ChartDataChangeType_16cc0e6e) -> None:
+        ...
 
     @property
     def StartColumn(self) -> int:
@@ -66,6 +69,9 @@ class ChartDataChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @StartColumn.setter
+    def StartColumn(self, value: int) -> None:
+        ...
 
     @property
     def EndColumn(self) -> int:
@@ -74,6 +80,9 @@ class ChartDataChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @EndColumn.setter
+    def EndColumn(self, value: int) -> None:
+        ...
 
     @property
     def StartRow(self) -> int:
@@ -82,6 +91,9 @@ class ChartDataChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @StartRow.setter
+    def StartRow(self, value: int) -> None:
+        ...
 
     @property
     def EndRow(self) -> int:
@@ -90,4 +102,7 @@ class ChartDataChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @EndRow.setter
+    def EndRow(self, value: int) -> None:
+        ...
 

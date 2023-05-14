@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,6 +53,9 @@ class CmisVersion(object):
         """
         ...
 
+    @Id.setter
+    def Id(self, value: str) -> None:
+        ...
 
     @property
     def TimeStamp(self) -> object:
@@ -61,6 +64,9 @@ class CmisVersion(object):
         """
         ...
 
+    @TimeStamp.setter
+    def TimeStamp(self, value: object) -> None:
+        ...
 
     @property
     def Author(self) -> str:
@@ -69,6 +75,9 @@ class CmisVersion(object):
         """
         ...
 
+    @Author.setter
+    def Author(self, value: str) -> None:
+        ...
 
     @property
     def Comment(self) -> str:
@@ -77,4 +86,7 @@ class CmisVersion(object):
         """
         ...
 
+    @Comment.setter
+    def Comment(self, value: str) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,6 +37,9 @@ class DataColumn(ResultColumn_a4980b2e, XColumn_70650907, XColumnUpdate_aebd0b6a
         contains the original value of the column.
         """
         ...
+    @OriginalValue.setter
+    def OriginalValue(self, value: object) -> None:
+        ...
     @property
     def Value(self) -> object:
         """
@@ -44,5 +47,8 @@ class DataColumn(ResultColumn_a4980b2e, XColumn_70650907, XColumnUpdate_aebd0b6a
         
         This could be a constraint property, to veto modifications, if a new value does not fit into rules defined for the column.
         """
+        ...
+    @Value.setter
+    def Value(self, value: object) -> None:
         ...
 

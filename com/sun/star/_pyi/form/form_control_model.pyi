@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,6 +40,9 @@ class FormControlModel(UnoControlModel_c8ce0c58, FormComponent_bc700c03, XFastPr
         specifies the ID for classification of the component.
         """
         ...
+    @ClassId.setter
+    def ClassId(self, value: int) -> None:
+        ...
     @property
     def TabIndex(self) -> int:
         """
@@ -52,6 +55,9 @@ class FormControlModel(UnoControlModel_c8ce0c58, FormComponent_bc700c03, XFastPr
         Normally, a FormController instance is evaluating this property.
         """
         ...
+    @TabIndex.setter
+    def TabIndex(self, value: int) -> None:
+        ...
     @property
     def Tag(self) -> str:
         """
@@ -59,5 +65,8 @@ class FormControlModel(UnoControlModel_c8ce0c58, FormComponent_bc700c03, XFastPr
         
         No semantics is given for this property, it will usually be used by the creator of a document containing form controls.
         """
+        ...
+    @Tag.setter
+    def Tag(self, value: str) -> None:
         ...
 

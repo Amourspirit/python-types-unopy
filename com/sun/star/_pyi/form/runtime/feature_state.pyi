@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class FeatureState(object):
         """
         ...
 
+    @Enabled.setter
+    def Enabled(self, value: bool) -> None:
+        ...
 
     @property
     def State(self) -> object:
@@ -67,4 +70,7 @@ class FeatureState(object):
         """
         ...
 
+    @State.setter
+    def State(self, value: object) -> None:
+        ...
 

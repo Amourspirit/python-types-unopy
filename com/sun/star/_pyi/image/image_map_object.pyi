@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -36,11 +36,17 @@ class ImageMapObject(XPropertySet_bc180bfa, XEventsSupplier_ecd0e88):
         This is an optional description text for the link.
         """
         ...
+    @Description.setter
+    def Description(self, value: str) -> None:
+        ...
     @property
     def IsActive(self) -> bool:
         """
         If an object is not active, it is ignored when the user clicks on the ImageMap.
         """
+        ...
+    @IsActive.setter
+    def IsActive(self, value: bool) -> None:
         ...
     @property
     def Name(self) -> str:
@@ -48,16 +54,25 @@ class ImageMapObject(XPropertySet_bc180bfa, XEventsSupplier_ecd0e88):
         Optionally, objects could be named.
         """
         ...
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def Target(self) -> str:
         """
         This is the target frame.
         """
         ...
+    @Target.setter
+    def Target(self, value: str) -> None:
+        ...
     @property
     def URL(self) -> str:
         """
         This is the URL for this object.
         """
+        ...
+    @URL.setter
+    def URL(self, value: str) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,7 +54,9 @@ class XPersistentLibraryContainer(XLibraryContainer2_1c490e9f, XModifiable_a4f60
         denotes the name of the sub location where the container elements are actually stored.
         """
         ...
-
+    @ContainerLocationName.setter
+    def ContainerLocationName(self, value: str) -> None:
+        ...
     @property
     def RootLocation(self) -> object:
         """
@@ -65,5 +67,7 @@ class XPersistentLibraryContainer(XLibraryContainer2_1c490e9f, XModifiable_a4f60
         All operations of the library container take place in a location below the root location, the so-called container location, whose name is exposed as ContainerLocationName.
         """
         ...
-
+    @RootLocation.setter
+    def RootLocation(self, value: object) -> None:
+        ...
 

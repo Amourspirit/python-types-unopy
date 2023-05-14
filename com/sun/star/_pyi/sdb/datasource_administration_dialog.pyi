@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,10 +44,16 @@ class DatasourceAdministrationDialog(XPropertySet_bc180bfa, XInitialization_d46c
         This property can't be set while the dialog is being displayed.
         """
         ...
+    @ParentWindow.setter
+    def ParentWindow(self, value: 'XWindow_713b0924') -> None:
+        ...
     @property
     def Title(self) -> str:
         """
         the title of the (dialog) window
         """
+        ...
+    @Title.setter
+    def Title(self, value: str) -> None:
         ...
 

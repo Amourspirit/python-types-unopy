@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,6 +56,9 @@ class InputSource(object):
         """
         ...
 
+    @aInputStream.setter
+    def aInputStream(self, value: XInputStream_98d40ab4) -> None:
+        ...
 
     @property
     def sEncoding(self) -> str:
@@ -68,6 +71,9 @@ class InputSource(object):
         """
         ...
 
+    @sEncoding.setter
+    def sEncoding(self, value: str) -> None:
+        ...
 
     @property
     def sPublicId(self) -> str:
@@ -76,6 +82,9 @@ class InputSource(object):
         """
         ...
 
+    @sPublicId.setter
+    def sPublicId(self, value: str) -> None:
+        ...
 
     @property
     def sSystemId(self) -> str:
@@ -84,4 +93,7 @@ class InputSource(object):
         """
         ...
 
+    @sSystemId.setter
+    def sSystemId(self, value: str) -> None:
+        ...
 

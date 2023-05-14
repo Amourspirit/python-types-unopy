@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,11 +38,17 @@ class PrintSettings(ABC):
         determines how notes are printed.
         """
         ...
+    @PrintAnnotationMode.setter
+    def PrintAnnotationMode(self, value: 'NotePrintMode_bdae0bf5') -> None:
+        ...
     @property
     def PrintBlackFonts(self) -> bool:
         """
         determines if characters are always printed in black.
         """
+        ...
+    @PrintBlackFonts.setter
+    def PrintBlackFonts(self, value: bool) -> None:
         ...
     @property
     def PrintControls(self) -> bool:
@@ -50,11 +56,17 @@ class PrintSettings(ABC):
         determines if control shapes are printed.
         """
         ...
+    @PrintControls.setter
+    def PrintControls(self, value: bool) -> None:
+        ...
     @property
     def PrintDrawings(self) -> bool:
         """
         determines if shapes are printed.
         """
+        ...
+    @PrintDrawings.setter
+    def PrintDrawings(self, value: bool) -> None:
         ...
     @property
     def PrintEmptyPages(self) -> bool:
@@ -62,11 +74,17 @@ class PrintSettings(ABC):
         determines if automatically inserted empty pages are printed.
         """
         ...
+    @PrintEmptyPages.setter
+    def PrintEmptyPages(self, value: bool) -> None:
+        ...
     @property
     def PrintFaxName(self) -> str:
         """
         contains the name of the fax.
         """
+        ...
+    @PrintFaxName.setter
+    def PrintFaxName(self, value: str) -> None:
         ...
     @property
     def PrintGraphics(self) -> bool:
@@ -74,17 +92,26 @@ class PrintSettings(ABC):
         determines if graphic objects are printed
         """
         ...
+    @PrintGraphics.setter
+    def PrintGraphics(self, value: bool) -> None:
+        ...
     @property
     def PrintLeftPages(self) -> bool:
         """
         determines if left pages are printed.
         """
         ...
+    @PrintLeftPages.setter
+    def PrintLeftPages(self, value: bool) -> None:
+        ...
     @property
     def PrintPageBackground(self) -> bool:
         """
         determines if the background color / background graphic of pages is printed.
         """
+        ...
+    @PrintPageBackground.setter
+    def PrintPageBackground(self, value: bool) -> None:
         ...
     @property
     def PrintPaperFromSetup(self) -> bool:
@@ -94,11 +121,17 @@ class PrintSettings(ABC):
         If com.sun.star.view.PrintSettings.PaperFromSetup is FALSE, then the paper tray selection of the page styles is used.
         """
         ...
+    @PrintPaperFromSetup.setter
+    def PrintPaperFromSetup(self, value: bool) -> None:
+        ...
     @property
     def PrintProspect(self) -> bool:
         """
         determines if prospect printing is used.
         """
+        ...
+    @PrintProspect.setter
+    def PrintProspect(self, value: bool) -> None:
         ...
     @property
     def PrintReversed(self) -> bool:
@@ -106,16 +139,25 @@ class PrintSettings(ABC):
         determines if the pages are printed in the reverse order, starting with the last page.
         """
         ...
+    @PrintReversed.setter
+    def PrintReversed(self, value: bool) -> None:
+        ...
     @property
     def PrintRightPages(self) -> bool:
         """
         determines if right pages are printed.
         """
         ...
+    @PrintRightPages.setter
+    def PrintRightPages(self, value: bool) -> None:
+        ...
     @property
     def PrintTables(self) -> bool:
         """
         determines if text tables are printed.
         """
+        ...
+    @PrintTables.setter
+    def PrintTables(self, value: bool) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,6 +61,9 @@ class DateTime(object):
         """
         ...
 
+    @NanoSeconds.setter
+    def NanoSeconds(self, value: int) -> None:
+        ...
 
     @property
     def Seconds(self) -> int:
@@ -69,6 +72,9 @@ class DateTime(object):
         """
         ...
 
+    @Seconds.setter
+    def Seconds(self, value: int) -> None:
+        ...
 
     @property
     def Minutes(self) -> int:
@@ -77,6 +83,9 @@ class DateTime(object):
         """
         ...
 
+    @Minutes.setter
+    def Minutes(self, value: int) -> None:
+        ...
 
     @property
     def Hours(self) -> int:
@@ -85,6 +94,9 @@ class DateTime(object):
         """
         ...
 
+    @Hours.setter
+    def Hours(self, value: int) -> None:
+        ...
 
     @property
     def Day(self) -> int:
@@ -93,6 +105,9 @@ class DateTime(object):
         """
         ...
 
+    @Day.setter
+    def Day(self, value: int) -> None:
+        ...
 
     @property
     def Month(self) -> int:
@@ -101,6 +116,9 @@ class DateTime(object):
         """
         ...
 
+    @Month.setter
+    def Month(self, value: int) -> None:
+        ...
 
     @property
     def Year(self) -> int:
@@ -109,6 +127,9 @@ class DateTime(object):
         """
         ...
 
+    @Year.setter
+    def Year(self, value: int) -> None:
+        ...
 
     @property
     def IsUTC(self) -> bool:
@@ -121,4 +142,7 @@ class DateTime(object):
         """
         ...
 
+    @IsUTC.setter
+    def IsUTC(self, value: bool) -> None:
+        ...
 

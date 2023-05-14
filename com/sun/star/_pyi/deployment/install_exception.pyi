@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,7 +57,9 @@ class InstallException(Exception_85530a09):
         the display name of the extension, which is to be installed.
         """
         ...
-
+    @displayName.setter
+    def displayName(self, value: str) -> None:
+        ...
 
 __all__ = ['InstallException']
 

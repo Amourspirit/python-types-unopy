@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,6 +61,9 @@ class Lock(LockEntry_839e09dd):
         """
         ...
 
+    @LockTokens.setter
+    def LockTokens(self, value: typing.Tuple[str, ...]) -> None:
+        ...
 
     @property
     def Depth(self) -> LockDepth_835c09c0:
@@ -69,6 +72,9 @@ class Lock(LockEntry_839e09dd):
         """
         ...
 
+    @Depth.setter
+    def Depth(self, value: LockDepth_835c09c0) -> None:
+        ...
 
     @property
     def Owner(self) -> object:
@@ -79,6 +85,9 @@ class Lock(LockEntry_839e09dd):
         """
         ...
 
+    @Owner.setter
+    def Owner(self, value: object) -> None:
+        ...
 
     @property
     def Timeout(self) -> int:
@@ -89,4 +98,7 @@ class Lock(LockEntry_839e09dd):
         """
         ...
 
+    @Timeout.setter
+    def Timeout(self, value: int) -> None:
+        ...
 

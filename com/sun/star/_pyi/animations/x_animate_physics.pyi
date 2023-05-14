@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -42,7 +42,9 @@ class XAnimatePhysics(XAnimate_ca680c52):
         Takes a value between [0,1], 1 being no energy loss on collisions Has a default value of 0.1
         """
         ...
-
+    @Bounciness.setter
+    def Bounciness(self, value: object) -> None:
+        ...
     @property
     def Density(self) -> object:
         """
@@ -51,7 +53,9 @@ class XAnimatePhysics(XAnimate_ca680c52):
         Expressed in kg/m^2. Should be non-negative. Has a default value of 1.
         """
         ...
-
+    @Density.setter
+    def Density(self, value: object) -> None:
+        ...
     @property
     def StartVelocityX(self) -> object:
         """
@@ -60,7 +64,9 @@ class XAnimatePhysics(XAnimate_ca680c52):
         Expressed in 1/100 mm.
         """
         ...
-
+    @StartVelocityX.setter
+    def StartVelocityX(self, value: object) -> None:
+        ...
     @property
     def StartVelocityY(self) -> object:
         """
@@ -69,5 +75,7 @@ class XAnimatePhysics(XAnimate_ca680c52):
         Expressed in 1/100 mm.
         """
         ...
-
+    @StartVelocityY.setter
+    def StartVelocityY(self, value: object) -> None:
+        ...
 
