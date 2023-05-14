@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,21 +60,27 @@ class DataTruncation(SQLWarning_96f10a6a):
         is the index of the parameter or column value.
         """
         ...
-
+    @Index.setter
+    def Index(self, value: int) -> None:
+        ...
     @property
     def IsParameter(self) -> bool:
         """
         is TRUE if a parameter value is truncated.
         """
         ...
-
+    @IsParameter.setter
+    def IsParameter(self, value: bool) -> None:
+        ...
     @property
     def DuringRead(self) -> bool:
         """
         is TRUE if a read was truncated.
         """
         ...
-
+    @DuringRead.setter
+    def DuringRead(self, value: bool) -> None:
+        ...
     @property
     def DataSize(self) -> int:
         """
@@ -83,7 +89,9 @@ class DataTruncation(SQLWarning_96f10a6a):
         This number may be approximate if data conversions were being performed. The value may be -1 if the size is unknown.
         """
         ...
-
+    @DataSize.setter
+    def DataSize(self, value: int) -> None:
+        ...
     @property
     def TransferSize(self) -> int:
         """
@@ -92,7 +100,9 @@ class DataTruncation(SQLWarning_96f10a6a):
         The value may be -1 if the size is unknown.
         """
         ...
-
+    @TransferSize.setter
+    def TransferSize(self, value: int) -> None:
+        ...
 
 __all__ = ['DataTruncation']
 

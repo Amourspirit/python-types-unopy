@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -68,6 +68,9 @@ class TableBorder(object):
         """
         ...
 
+    @TopLine.setter
+    def TopLine(self, value: BorderLine_a3f80af6) -> None:
+        ...
 
     @property
     def IsTopLineValid(self) -> bool:
@@ -76,6 +79,9 @@ class TableBorder(object):
         """
         ...
 
+    @IsTopLineValid.setter
+    def IsTopLineValid(self, value: bool) -> None:
+        ...
 
     @property
     def BottomLine(self) -> BorderLine_a3f80af6:
@@ -84,6 +90,9 @@ class TableBorder(object):
         """
         ...
 
+    @BottomLine.setter
+    def BottomLine(self, value: BorderLine_a3f80af6) -> None:
+        ...
 
     @property
     def IsBottomLineValid(self) -> bool:
@@ -92,6 +101,9 @@ class TableBorder(object):
         """
         ...
 
+    @IsBottomLineValid.setter
+    def IsBottomLineValid(self, value: bool) -> None:
+        ...
 
     @property
     def LeftLine(self) -> BorderLine_a3f80af6:
@@ -100,6 +112,9 @@ class TableBorder(object):
         """
         ...
 
+    @LeftLine.setter
+    def LeftLine(self, value: BorderLine_a3f80af6) -> None:
+        ...
 
     @property
     def IsLeftLineValid(self) -> bool:
@@ -108,6 +123,9 @@ class TableBorder(object):
         """
         ...
 
+    @IsLeftLineValid.setter
+    def IsLeftLineValid(self, value: bool) -> None:
+        ...
 
     @property
     def RightLine(self) -> BorderLine_a3f80af6:
@@ -116,6 +134,9 @@ class TableBorder(object):
         """
         ...
 
+    @RightLine.setter
+    def RightLine(self, value: BorderLine_a3f80af6) -> None:
+        ...
 
     @property
     def IsRightLineValid(self) -> bool:
@@ -124,6 +145,9 @@ class TableBorder(object):
         """
         ...
 
+    @IsRightLineValid.setter
+    def IsRightLineValid(self, value: bool) -> None:
+        ...
 
     @property
     def HorizontalLine(self) -> BorderLine_a3f80af6:
@@ -132,6 +156,9 @@ class TableBorder(object):
         """
         ...
 
+    @HorizontalLine.setter
+    def HorizontalLine(self, value: BorderLine_a3f80af6) -> None:
+        ...
 
     @property
     def IsHorizontalLineValid(self) -> bool:
@@ -140,6 +167,9 @@ class TableBorder(object):
         """
         ...
 
+    @IsHorizontalLineValid.setter
+    def IsHorizontalLineValid(self, value: bool) -> None:
+        ...
 
     @property
     def VerticalLine(self) -> BorderLine_a3f80af6:
@@ -148,6 +178,9 @@ class TableBorder(object):
         """
         ...
 
+    @VerticalLine.setter
+    def VerticalLine(self, value: BorderLine_a3f80af6) -> None:
+        ...
 
     @property
     def IsVerticalLineValid(self) -> bool:
@@ -156,6 +189,9 @@ class TableBorder(object):
         """
         ...
 
+    @IsVerticalLineValid.setter
+    def IsVerticalLineValid(self, value: bool) -> None:
+        ...
 
     @property
     def Distance(self) -> int:
@@ -164,6 +200,9 @@ class TableBorder(object):
         """
         ...
 
+    @Distance.setter
+    def Distance(self, value: int) -> None:
+        ...
 
     @property
     def IsDistanceValid(self) -> bool:
@@ -172,4 +211,7 @@ class TableBorder(object):
         """
         ...
 
+    @IsDistanceValid.setter
+    def IsDistanceValid(self, value: bool) -> None:
+        ...
 

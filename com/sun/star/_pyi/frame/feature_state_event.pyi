@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class FeatureStateEvent(EventObject_a3d70b03):
         """
         ...
 
+    @FeatureURL.setter
+    def FeatureURL(self, value: URL_57ad07b9) -> None:
+        ...
 
     @property
     def FeatureDescriptor(self) -> str:
@@ -66,6 +69,9 @@ class FeatureStateEvent(EventObject_a3d70b03):
         """
         ...
 
+    @FeatureDescriptor.setter
+    def FeatureDescriptor(self, value: str) -> None:
+        ...
 
     @property
     def IsEnabled(self) -> bool:
@@ -74,6 +80,9 @@ class FeatureStateEvent(EventObject_a3d70b03):
         """
         ...
 
+    @IsEnabled.setter
+    def IsEnabled(self, value: bool) -> None:
+        ...
 
     @property
     def Requery(self) -> bool:
@@ -84,6 +93,9 @@ class FeatureStateEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Requery.setter
+    def Requery(self, value: bool) -> None:
+        ...
 
     @property
     def State(self) -> object:
@@ -94,4 +106,7 @@ class FeatureStateEvent(EventObject_a3d70b03):
         """
         ...
 
+    @State.setter
+    def State(self, value: object) -> None:
+        ...
 

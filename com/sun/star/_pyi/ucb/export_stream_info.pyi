@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class ExportStreamInfo(object):
         """
         ...
 
+    @Target.setter
+    def Target(self, value: XOutputStream_a4e00b35) -> None:
+        ...
 
     @property
     def ForceBodies(self) -> bool:
@@ -60,4 +63,7 @@ class ExportStreamInfo(object):
         """
         ...
 
+    @ForceBodies.setter
+    def ForceBodies(self, value: bool) -> None:
+        ...
 

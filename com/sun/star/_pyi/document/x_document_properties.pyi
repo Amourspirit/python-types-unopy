@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -119,21 +119,27 @@ class XDocumentProperties(ABC):
         The contained statistics may be specific to the type of the document.
         """
         ...
-
+    @DocumentStatistics.setter
+    def DocumentStatistics(self, value: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> None:
+        ...
     @property
     def Keywords(self) -> 'typing.Tuple[str, ...]':
         """
         contains a list of keywords for the document.
         """
         ...
-
+    @Keywords.setter
+    def Keywords(self, value: 'typing.Tuple[str, ...]') -> None:
+        ...
     @property
     def Author(self) -> str:
         """
         contains the initial author of the document.
         """
         ...
-
+    @Author.setter
+    def Author(self, value: str) -> None:
+        ...
     @property
     def AutoloadSecs(self) -> int:
         """
@@ -142,7 +148,9 @@ class XDocumentProperties(ABC):
         A value of 0 is valid and describes a redirection. A value of 0 together with an empty string as AutoloadURL describes a case where no autoload is specified.
         """
         ...
-
+    @AutoloadSecs.setter
+    def AutoloadSecs(self, value: int) -> None:
+        ...
     @property
     def AutoloadURL(self) -> str:
         """
@@ -151,14 +159,18 @@ class XDocumentProperties(ABC):
         An empty URL is valid and describes a case where the document shall be reloaded from its original location after some time described by the attribute AutoloadSecs. An empty string together with an AutoloadSecs value of 0 describes a case where no autoload is specified.
         """
         ...
-
+    @AutoloadURL.setter
+    def AutoloadURL(self, value: str) -> None:
+        ...
     @property
     def CreationDate(self) -> 'DateTime_84de09d3':
         """
         contains the date and time when the document was created.
         """
         ...
-
+    @CreationDate.setter
+    def CreationDate(self, value: 'DateTime_84de09d3') -> None:
+        ...
     @property
     def DefaultTarget(self) -> str:
         """
@@ -167,7 +179,9 @@ class XDocumentProperties(ABC):
         This applies to the autoload feature too, but to others as well.
         """
         ...
-
+    @DefaultTarget.setter
+    def DefaultTarget(self, value: str) -> None:
+        ...
     @property
     def Description(self) -> str:
         """
@@ -176,21 +190,27 @@ class XDocumentProperties(ABC):
         Line delimiters can be UNIX, Macintosh or DOS style.
         """
         ...
-
+    @Description.setter
+    def Description(self, value: str) -> None:
+        ...
     @property
     def EditingCycles(self) -> int:
         """
         describes how often the document was edited and saved.
         """
         ...
-
+    @EditingCycles.setter
+    def EditingCycles(self, value: int) -> None:
+        ...
     @property
     def EditingDuration(self) -> int:
         """
         contains the net time of editing the document (in seconds).
         """
         ...
-
+    @EditingDuration.setter
+    def EditingDuration(self, value: int) -> None:
+        ...
     @property
     def Generator(self) -> str:
         """
@@ -199,14 +219,18 @@ class XDocumentProperties(ABC):
         The generating application will set this attribute when it creates a new document or it saves a document. When a document is loaded that itself contains such an attribute it will be preserved until the document is saved again.
         """
         ...
-
+    @Generator.setter
+    def Generator(self, value: str) -> None:
+        ...
     @property
     def Language(self) -> 'Locale_70d308fa':
         """
         contains the default language of the document.
         """
         ...
-
+    @Language.setter
+    def Language(self, value: 'Locale_70d308fa') -> None:
+        ...
     @property
     def ModificationDate(self) -> 'DateTime_84de09d3':
         """
@@ -215,14 +239,18 @@ class XDocumentProperties(ABC):
         If the document has never been stored, contains a default value.
         """
         ...
-
+    @ModificationDate.setter
+    def ModificationDate(self, value: 'DateTime_84de09d3') -> None:
+        ...
     @property
     def ModifiedBy(self) -> str:
         """
         contains the name of the person who most recently stored the document.
         """
         ...
-
+    @ModifiedBy.setter
+    def ModifiedBy(self, value: str) -> None:
+        ...
     @property
     def PrintDate(self) -> 'DateTime_84de09d3':
         """
@@ -231,28 +259,36 @@ class XDocumentProperties(ABC):
         If the document has never been printed, contains a default value.
         """
         ...
-
+    @PrintDate.setter
+    def PrintDate(self, value: 'DateTime_84de09d3') -> None:
+        ...
     @property
     def PrintedBy(self) -> str:
         """
         contains the name of the person who most recently printed the document.
         """
         ...
-
+    @PrintedBy.setter
+    def PrintedBy(self, value: str) -> None:
+        ...
     @property
     def Subject(self) -> str:
         """
         contains the subject of the document.
         """
         ...
-
+    @Subject.setter
+    def Subject(self, value: str) -> None:
+        ...
     @property
     def TemplateDate(self) -> 'DateTime_84de09d3':
         """
         contains the date and time of when the document was created or updated from the template.
         """
         ...
-
+    @TemplateDate.setter
+    def TemplateDate(self, value: 'DateTime_84de09d3') -> None:
+        ...
     @property
     def TemplateName(self) -> str:
         """
@@ -261,7 +297,9 @@ class XDocumentProperties(ABC):
         The value is an empty string if the document was not created from a template or if it was detached from the template.
         """
         ...
-
+    @TemplateName.setter
+    def TemplateName(self, value: str) -> None:
+        ...
     @property
     def TemplateURL(self) -> str:
         """
@@ -270,12 +308,16 @@ class XDocumentProperties(ABC):
         The value is an empty string if the document was not created from a template or if it was detached from the template.
         """
         ...
-
+    @TemplateURL.setter
+    def TemplateURL(self, value: str) -> None:
+        ...
     @property
     def Title(self) -> str:
         """
         contains the title of the document.
         """
         ...
-
+    @Title.setter
+    def Title(self, value: str) -> None:
+        ...
 

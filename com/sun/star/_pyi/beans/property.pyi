@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class Property(object):
         """
         ...
 
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 
     @property
     def Handle(self) -> int:
@@ -67,6 +70,9 @@ class Property(object):
         """
         ...
 
+    @Handle.setter
+    def Handle(self, value: int) -> None:
+        ...
 
     @property
     def Type(self) -> object:
@@ -77,6 +83,9 @@ class Property(object):
         """
         ...
 
+    @Type.setter
+    def Type(self, value: object) -> None:
+        ...
 
     @property
     def Attributes(self) -> int:
@@ -85,4 +94,7 @@ class Property(object):
         """
         ...
 
+    @Attributes.setter
+    def Attributes(self, value: int) -> None:
+        ...
 

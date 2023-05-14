@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -55,6 +55,9 @@ class OpenCommandArgument(object):
         """
         ...
 
+    @Properties.setter
+    def Properties(self, value: typing.Tuple[Property_8f4e0a76, ...]) -> None:
+        ...
 
     @property
     def Mode(self) -> int:
@@ -65,6 +68,9 @@ class OpenCommandArgument(object):
         """
         ...
 
+    @Mode.setter
+    def Mode(self, value: int) -> None:
+        ...
 
     @property
     def Priority(self) -> int:
@@ -73,6 +79,9 @@ class OpenCommandArgument(object):
         """
         ...
 
+    @Priority.setter
+    def Priority(self, value: int) -> None:
+        ...
 
     @property
     def Sink(self) -> XInterface_8f010a43:
@@ -85,4 +94,7 @@ class OpenCommandArgument(object):
         """
         ...
 
+    @Sink.setter
+    def Sink(self, value: XInterface_8f010a43) -> None:
+        ...
 

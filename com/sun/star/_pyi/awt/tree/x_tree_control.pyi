@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -177,7 +177,9 @@ class XTreeControl(XMultiSelectionSupplier_4b0d1020):
         This can be overridden for individual nodes by XTreeNode.getCollapsedGraphicURL()
         """
         ...
-
+    @DefaultCollapsedGraphicURL.setter
+    def DefaultCollapsedGraphicURL(self, value: str) -> None:
+        ...
     @property
     def DefaultExpandedGraphicURL(self) -> str:
         """
@@ -186,5 +188,7 @@ class XTreeControl(XMultiSelectionSupplier_4b0d1020):
         This can be overridden for individual nodes by XTreeNode.getExpandedGraphicURL()
         """
         ...
-
+    @DefaultExpandedGraphicURL.setter
+    def DefaultExpandedGraphicURL(self, value: str) -> None:
+        ...
 

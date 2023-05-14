@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -47,6 +47,9 @@ class Table(XPropertySet_bc180bfa, XAlterTable_af4d0b54, XColumnsSupplier_f0600d
         is the name of the table catalog.
         """
         ...
+    @CatalogName.setter
+    def CatalogName(self, value: str) -> None:
+        ...
     @property
     def Description(self) -> str:
         """
@@ -55,17 +58,26 @@ class Table(XPropertySet_bc180bfa, XAlterTable_af4d0b54, XColumnsSupplier_f0600d
         Could be empty, if not supported by the driver.
         """
         ...
+    @Description.setter
+    def Description(self, value: str) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
         is the name of the table.
         """
         ...
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def SchemaName(self) -> str:
         """
         is the name of the table schema.
         """
+        ...
+    @SchemaName.setter
+    def SchemaName(self, value: str) -> None:
         ...
     @property
     def Type(self) -> str:
@@ -74,5 +86,8 @@ class Table(XPropertySet_bc180bfa, XAlterTable_af4d0b54, XColumnsSupplier_f0600d
         
         Could be empty, if not supported by the driver.
         """
+        ...
+    @Type.setter
+    def Type(self, value: str) -> None:
         ...
 

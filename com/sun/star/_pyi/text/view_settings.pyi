@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,6 +43,9 @@ class ViewSettings(XPropertySet_bc180bfa):
             LibreOffice 5.1
         """
         ...
+    @HideWhitespace.setter
+    def HideWhitespace(self, value: bool) -> None:
+        ...
     @property
     def HorizontalRulerMetric(self) -> int:
         """
@@ -55,6 +58,9 @@ class ViewSettings(XPropertySet_bc180bfa):
             OOo 3.1
         """
         ...
+    @HorizontalRulerMetric.setter
+    def HorizontalRulerMetric(self, value: int) -> None:
+        ...
     @property
     def IsExecuteHyperlinks(self) -> bool:
         """
@@ -62,6 +68,9 @@ class ViewSettings(XPropertySet_bc180bfa):
         
         Otherwise they are handled like normal text.
         """
+        ...
+    @IsExecuteHyperlinks.setter
+    def IsExecuteHyperlinks(self, value: bool) -> None:
         ...
     @property
     def IsRasterVisible(self) -> bool:
@@ -73,6 +82,9 @@ class ViewSettings(XPropertySet_bc180bfa):
             OOo 2.0
         """
         ...
+    @IsRasterVisible.setter
+    def IsRasterVisible(self, value: bool) -> None:
+        ...
     @property
     def IsSnapToRaster(self) -> bool:
         """
@@ -83,11 +95,17 @@ class ViewSettings(XPropertySet_bc180bfa):
             OOo 2.0
         """
         ...
+    @IsSnapToRaster.setter
+    def IsSnapToRaster(self, value: bool) -> None:
+        ...
     @property
     def IsVertRulerRightAligned(self) -> bool:
         """
         If this property is TRUE, the vertical ruler is aligned to the right side of the view and the vertical scrollbar is on the left.
         """
+        ...
+    @IsVertRulerRightAligned.setter
+    def IsVertRulerRightAligned(self, value: bool) -> None:
         ...
     @property
     def RasterResolutionX(self) -> int:
@@ -101,6 +119,9 @@ class ViewSettings(XPropertySet_bc180bfa):
             OOo 2.0
         """
         ...
+    @RasterResolutionX.setter
+    def RasterResolutionX(self, value: int) -> None:
+        ...
     @property
     def RasterResolutionY(self) -> int:
         """
@@ -112,6 +133,9 @@ class ViewSettings(XPropertySet_bc180bfa):
         
             OOo 2.0
         """
+        ...
+    @RasterResolutionY.setter
+    def RasterResolutionY(self, value: int) -> None:
         ...
     @property
     def RasterSubdivisionX(self) -> int:
@@ -125,6 +149,9 @@ class ViewSettings(XPropertySet_bc180bfa):
             OOo 2.0
         """
         ...
+    @RasterSubdivisionX.setter
+    def RasterSubdivisionX(self, value: int) -> None:
+        ...
     @property
     def RasterSubdivisionY(self) -> int:
         """
@@ -137,11 +164,17 @@ class ViewSettings(XPropertySet_bc180bfa):
             OOo 2.0
         """
         ...
+    @RasterSubdivisionY.setter
+    def RasterSubdivisionY(self, value: int) -> None:
+        ...
     @property
     def ShowAnnotations(self) -> bool:
         """
         If this property is TRUE, annotations (notes) are visible.
         """
+        ...
+    @ShowAnnotations.setter
+    def ShowAnnotations(self, value: bool) -> None:
         ...
     @property
     def ShowBookmarks(self) -> bool:
@@ -153,11 +186,17 @@ class ViewSettings(XPropertySet_bc180bfa):
             LibreOffice 7.0
         """
         ...
+    @ShowBookmarks.setter
+    def ShowBookmarks(self, value: bool) -> None:
+        ...
     @property
     def ShowBreaks(self) -> bool:
         """
         If this property is TRUE, paragraph line breaks are visible.
         """
+        ...
+    @ShowBreaks.setter
+    def ShowBreaks(self, value: bool) -> None:
         ...
     @property
     def ShowChangesInMargin(self) -> bool:
@@ -169,6 +208,9 @@ class ViewSettings(XPropertySet_bc180bfa):
             LibreOffice 7.1
         """
         ...
+    @ShowChangesInMargin.setter
+    def ShowChangesInMargin(self, value: bool) -> None:
+        ...
     @property
     def ShowContentTips(self) -> bool:
         """
@@ -179,11 +221,17 @@ class ViewSettings(XPropertySet_bc180bfa):
             LibreOffice 4.1
         """
         ...
+    @ShowContentTips.setter
+    def ShowContentTips(self, value: bool) -> None:
+        ...
     @property
     def ShowDrawings(self) -> bool:
         """
         If this property is TRUE, shapes are visible.
         """
+        ...
+    @ShowDrawings.setter
+    def ShowDrawings(self, value: bool) -> None:
         ...
     @property
     def ShowFieldCommands(self) -> bool:
@@ -191,17 +239,26 @@ class ViewSettings(XPropertySet_bc180bfa):
         If this property is TRUE, text fields are shown with their commands; otherwise the content is visible.
         """
         ...
+    @ShowFieldCommands.setter
+    def ShowFieldCommands(self, value: bool) -> None:
+        ...
     @property
     def ShowFootnoteBackground(self) -> bool:
         """
         If this property is TRUE, footnotes symbols are displayed with gray background.
         """
         ...
+    @ShowFootnoteBackground.setter
+    def ShowFootnoteBackground(self, value: bool) -> None:
+        ...
     @property
     def ShowGraphics(self) -> bool:
         """
         If this property is TRUE, graphic objects are visible.
         """
+        ...
+    @ShowGraphics.setter
+    def ShowGraphics(self, value: bool) -> None:
         ...
     @property
     def ShowHiddenCharacters(self) -> bool:
@@ -213,11 +270,17 @@ class ViewSettings(XPropertySet_bc180bfa):
             OOo 3.0
         """
         ...
+    @ShowHiddenCharacters.setter
+    def ShowHiddenCharacters(self, value: bool) -> None:
+        ...
     @property
     def ShowHiddenParagraphs(self) -> bool:
         """
         If this property is TRUE, hidden paragraphs are displayed.
         """
+        ...
+    @ShowHiddenParagraphs.setter
+    def ShowHiddenParagraphs(self, value: bool) -> None:
         ...
     @property
     def ShowHiddenText(self) -> bool:
@@ -225,11 +288,17 @@ class ViewSettings(XPropertySet_bc180bfa):
         If this property is TRUE, hidden text is displayed.
         """
         ...
+    @ShowHiddenText.setter
+    def ShowHiddenText(self, value: bool) -> None:
+        ...
     @property
     def ShowHoriRuler(self) -> bool:
         """
         If this property is TRUE and the property ShowRulers is TRUE, the horizontal ruler is displayed.
         """
+        ...
+    @ShowHoriRuler.setter
+    def ShowHoriRuler(self, value: bool) -> None:
         ...
     @property
     def ShowHoriScrollBar(self) -> bool:
@@ -237,11 +306,17 @@ class ViewSettings(XPropertySet_bc180bfa):
         If this property is TRUE and the property ShowRulers is TRUE, the horizontal scroll bar is displayed.
         """
         ...
+    @ShowHoriScrollBar.setter
+    def ShowHoriScrollBar(self, value: bool) -> None:
+        ...
     @property
     def ShowIndexMarkBackground(self) -> bool:
         """
         If this property is TRUE, index marks are displayed with gray background.
         """
+        ...
+    @ShowIndexMarkBackground.setter
+    def ShowIndexMarkBackground(self, value: bool) -> None:
         ...
     @property
     def ShowInlineTooltips(self) -> bool:
@@ -252,6 +327,9 @@ class ViewSettings(XPropertySet_bc180bfa):
         
             LibreOffice 6.1
         """
+        ...
+    @ShowInlineTooltips.setter
+    def ShowInlineTooltips(self, value: bool) -> None:
         ...
     @property
     def ShowNonprintingCharacters(self) -> bool:
@@ -265,11 +343,17 @@ class ViewSettings(XPropertySet_bc180bfa):
             OOo 3.0
         """
         ...
+    @ShowNonprintingCharacters.setter
+    def ShowNonprintingCharacters(self, value: bool) -> None:
+        ...
     @property
     def ShowOnlineLayout(self) -> bool:
         """
         If this property is TRUE the document will be displayed as if it were a HTML document.
         """
+        ...
+    @ShowOnlineLayout.setter
+    def ShowOnlineLayout(self, value: bool) -> None:
         ...
     @property
     def ShowOutlineContentVisibilityButton(self) -> bool:
@@ -281,11 +365,17 @@ class ViewSettings(XPropertySet_bc180bfa):
             LibreOffice 7.1
         """
         ...
+    @ShowOutlineContentVisibilityButton.setter
+    def ShowOutlineContentVisibilityButton(self, value: bool) -> None:
+        ...
     @property
     def ShowParaBreaks(self) -> bool:
         """
         If this property is TRUE, paragraph breaks are visible.
         """
+        ...
+    @ShowParaBreaks.setter
+    def ShowParaBreaks(self, value: bool) -> None:
         ...
     @property
     def ShowProtectedSpaces(self) -> bool:
@@ -293,11 +383,17 @@ class ViewSettings(XPropertySet_bc180bfa):
         If this property is TRUE, protected spaces (hard spaces) are displayed with gray background.
         """
         ...
+    @ShowProtectedSpaces.setter
+    def ShowProtectedSpaces(self, value: bool) -> None:
+        ...
     @property
     def ShowRulers(self) -> bool:
         """
         ShowHoriRuler and ShowVertRuler determine whether a ruler is visible.
         """
+        ...
+    @ShowRulers.setter
+    def ShowRulers(self, value: bool) -> None:
         ...
     @property
     def ShowScrollBarTips(self) -> bool:
@@ -309,11 +405,17 @@ class ViewSettings(XPropertySet_bc180bfa):
             LibreOffice 4.2
         """
         ...
+    @ShowScrollBarTips.setter
+    def ShowScrollBarTips(self, value: bool) -> None:
+        ...
     @property
     def ShowSoftHyphens(self) -> bool:
         """
         If this property is TRUE, soft hyphens are displayed with gray background.
         """
+        ...
+    @ShowSoftHyphens.setter
+    def ShowSoftHyphens(self, value: bool) -> None:
         ...
     @property
     def ShowSpaces(self) -> bool:
@@ -321,11 +423,17 @@ class ViewSettings(XPropertySet_bc180bfa):
         If this property is TRUE, spaces are displayed with dots.
         """
         ...
+    @ShowSpaces.setter
+    def ShowSpaces(self, value: bool) -> None:
+        ...
     @property
     def ShowTableBoundaries(self) -> bool:
         """
         If this property is TRUE, table boundaries are displayed.
         """
+        ...
+    @ShowTableBoundaries.setter
+    def ShowTableBoundaries(self, value: bool) -> None:
         ...
     @property
     def ShowTables(self) -> bool:
@@ -333,11 +441,17 @@ class ViewSettings(XPropertySet_bc180bfa):
         If this property is TRUE, tables are visible.
         """
         ...
+    @ShowTables.setter
+    def ShowTables(self, value: bool) -> None:
+        ...
     @property
     def ShowTabstops(self) -> bool:
         """
         If this property is TRUE, tab stops are visible.
         """
+        ...
+    @ShowTabstops.setter
+    def ShowTabstops(self, value: bool) -> None:
         ...
     @property
     def ShowTextBoundaries(self) -> bool:
@@ -345,11 +459,17 @@ class ViewSettings(XPropertySet_bc180bfa):
         If this property is TRUE, text boundaries are displayed.
         """
         ...
+    @ShowTextBoundaries.setter
+    def ShowTextBoundaries(self, value: bool) -> None:
+        ...
     @property
     def ShowTextFieldBackground(self) -> bool:
         """
         If this property is TRUE, text fields are displayed with gray background.
         """
+        ...
+    @ShowTextFieldBackground.setter
+    def ShowTextFieldBackground(self, value: bool) -> None:
         ...
     @property
     def ShowVertRuler(self) -> bool:
@@ -357,17 +477,26 @@ class ViewSettings(XPropertySet_bc180bfa):
         If this property is TRUE, the vertical ruler is displayed.
         """
         ...
+    @ShowVertRuler.setter
+    def ShowVertRuler(self, value: bool) -> None:
+        ...
     @property
     def ShowVertScrollBar(self) -> bool:
         """
         If this property is TRUE, the vertical scroll bar is displayed.
         """
         ...
+    @ShowVertScrollBar.setter
+    def ShowVertScrollBar(self, value: bool) -> None:
+        ...
     @property
     def SmoothScrolling(self) -> bool:
         """
         If this property is TRUE, smooth scrolling is active.
         """
+        ...
+    @SmoothScrolling.setter
+    def SmoothScrolling(self, value: bool) -> None:
         ...
     @property
     def TreatSubOutlineLevelsAsContent(self) -> bool:
@@ -379,6 +508,9 @@ class ViewSettings(XPropertySet_bc180bfa):
             LibreOffice 7.2
         """
         ...
+    @TreatSubOutlineLevelsAsContent.setter
+    def TreatSubOutlineLevelsAsContent(self, value: bool) -> None:
+        ...
     @property
     def UseHeaderFooterMenu(self) -> bool:
         """
@@ -388,6 +520,9 @@ class ViewSettings(XPropertySet_bc180bfa):
         
             LibreOffice 6.2
         """
+        ...
+    @UseHeaderFooterMenu.setter
+    def UseHeaderFooterMenu(self, value: bool) -> None:
         ...
     @property
     def VerticalRulerMetric(self) -> int:
@@ -401,11 +536,17 @@ class ViewSettings(XPropertySet_bc180bfa):
             OOo 3.1
         """
         ...
+    @VerticalRulerMetric.setter
+    def VerticalRulerMetric(self, value: int) -> None:
+        ...
     @property
     def ZoomType(self) -> int:
         """
         This property defines the zoom type for the document.
         """
+        ...
+    @ZoomType.setter
+    def ZoomType(self, value: int) -> None:
         ...
     @property
     def ZoomValue(self) -> int:
@@ -414,5 +555,8 @@ class ViewSettings(XPropertySet_bc180bfa):
         
         Valid only if the ZoomType is set to com.sun.star.view.DocumentZoomType.BY_VALUE.
         """
+        ...
+    @ZoomValue.setter
+    def ZoomValue(self, value: int) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -42,11 +42,17 @@ class GalleryItem(XPropertySet_bc180bfa, XGalleryItem_d5730caf):
         This is an optional property and may not available for every item
         """
         ...
+    @Drawing.setter
+    def Drawing(self, value: 'XComponent_98dc0ab5') -> None:
+        ...
     @property
     def GalleryItemType(self) -> int:
         """
         The type of the Gallery item.
         """
+        ...
+    @GalleryItemType.setter
+    def GalleryItemType(self, value: int) -> None:
         ...
     @property
     def Graphic(self) -> 'XGraphic_a4da0afc':
@@ -56,6 +62,9 @@ class GalleryItem(XPropertySet_bc180bfa, XGalleryItem_d5730caf):
         This is an optional property and may not available for every item
         """
         ...
+    @Graphic.setter
+    def Graphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def Thumbnail(self) -> 'XGraphic_a4da0afc':
         """
@@ -64,11 +73,17 @@ class GalleryItem(XPropertySet_bc180bfa, XGalleryItem_d5730caf):
         The thumbnail may be either a pixel or a vector graphic
         """
         ...
+    @Thumbnail.setter
+    def Thumbnail(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def Title(self) -> str:
         """
         the title of the Gallery item
         """
+        ...
+    @Title.setter
+    def Title(self, value: str) -> None:
         ...
     @property
     def URL(self) -> str:
@@ -77,5 +92,8 @@ class GalleryItem(XPropertySet_bc180bfa, XGalleryItem_d5730caf):
         
         The interpretation of the URL depends on the type of the Gallery item. In case of graphic and media items, the URL is a \"real\" URL, in case of drawings it is a private URL
         """
+        ...
+    @URL.setter
+    def URL(self, value: str) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -62,6 +62,9 @@ class MouseEvent(InputEvent_8f520a66):
         """
         ...
 
+    @Buttons.setter
+    def Buttons(self, value: int) -> None:
+        ...
 
     @property
     def X(self) -> int:
@@ -70,6 +73,9 @@ class MouseEvent(InputEvent_8f520a66):
         """
         ...
 
+    @X.setter
+    def X(self, value: int) -> None:
+        ...
 
     @property
     def Y(self) -> int:
@@ -78,6 +84,9 @@ class MouseEvent(InputEvent_8f520a66):
         """
         ...
 
+    @Y.setter
+    def Y(self, value: int) -> None:
+        ...
 
     @property
     def ClickCount(self) -> int:
@@ -86,6 +95,9 @@ class MouseEvent(InputEvent_8f520a66):
         """
         ...
 
+    @ClickCount.setter
+    def ClickCount(self, value: int) -> None:
+        ...
 
     @property
     def PopupTrigger(self) -> bool:
@@ -98,4 +110,7 @@ class MouseEvent(InputEvent_8f520a66):
         """
         ...
 
+    @PopupTrigger.setter
+    def PopupTrigger(self, value: bool) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,16 +35,25 @@ class User(TextFieldMaster_d6410cc2):
         contains the content.
         """
         ...
+    @Content.setter
+    def Content(self, value: str) -> None:
+        ...
     @property
     def IsExpression(self) -> bool:
         """
         determines whether the field contains an expression.
         """
         ...
+    @IsExpression.setter
+    def IsExpression(self, value: bool) -> None:
+        ...
     @property
     def Value(self) -> float:
         """
         contains the value.
         """
+        ...
+    @Value.setter
+    def Value(self, value: float) -> None:
         ...
 

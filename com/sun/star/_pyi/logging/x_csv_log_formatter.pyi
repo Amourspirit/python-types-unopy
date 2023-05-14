@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,33 +53,43 @@ class XCsvLogFormatter(XLogFormatter_e23d0d1d):
         if this is set to more than one column, the messages need to be preformatted using formatMultiColumn
         """
         ...
-
+    @Columnnames.setter
+    def Columnnames(self, value: 'typing.Tuple[str, ...]') -> None:
+        ...
     @property
     def LogEventNo(self) -> bool:
         """
         Defines if the EventNo should be logged.
         """
         ...
-
+    @LogEventNo.setter
+    def LogEventNo(self, value: bool) -> None:
+        ...
     @property
     def LogSource(self) -> bool:
         """
         Defines if the Source should be logged.
         """
         ...
-
+    @LogSource.setter
+    def LogSource(self, value: bool) -> None:
+        ...
     @property
     def LogThread(self) -> bool:
         """
         Defines if the ThreadId should be logged.
         """
         ...
-
+    @LogThread.setter
+    def LogThread(self, value: bool) -> None:
+        ...
     @property
     def LogTimestamp(self) -> bool:
         """
         Defines if the Timestamp should be logged.
         """
         ...
-
+    @LogTimestamp.setter
+    def LogTimestamp(self, value: bool) -> None:
+        ...
 

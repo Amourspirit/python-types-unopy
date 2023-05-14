@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -46,17 +46,26 @@ class UnoControlScrollBarModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @BackgroundColor.setter
+    def BackgroundColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def BlockIncrement(self) -> int:
         """
         specifies the increment for a block move.
         """
         ...
+    @BlockIncrement.setter
+    def BlockIncrement(self, value: int) -> None:
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
+    @Border.setter
+    def Border(self, value: int) -> None:
         ...
     @property
     def BorderColor(self) -> int:
@@ -70,11 +79,17 @@ class UnoControlScrollBarModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @BorderColor.setter
+    def BorderColor(self, value: int) -> None:
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether the control is enabled or disabled.
         """
+        ...
+    @Enabled.setter
+    def Enabled(self, value: bool) -> None:
         ...
     @property
     def HelpText(self) -> str:
@@ -82,17 +97,26 @@ class UnoControlScrollBarModel(UnoControlModel_c8ce0c58):
         specifies the help text of the control.
         """
         ...
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the control.
         """
         ...
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
+        ...
     @property
     def LineIncrement(self) -> int:
         """
         specifies the increment for a single line move.
         """
+        ...
+    @LineIncrement.setter
+    def LineIncrement(self, value: int) -> None:
         ...
     @property
     def LiveScroll(self) -> bool:
@@ -106,17 +130,26 @@ class UnoControlScrollBarModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @LiveScroll.setter
+    def LiveScroll(self, value: bool) -> None:
+        ...
     @property
     def Orientation(self) -> int:
         """
         specifies the ScrollBarOrientation of the control.
         """
         ...
+    @Orientation.setter
+    def Orientation(self, value: int) -> None:
+        ...
     @property
     def Printable(self) -> bool:
         """
         specifies that the control will be printed with the document.
         """
+        ...
+    @Printable.setter
+    def Printable(self, value: bool) -> None:
         ...
     @property
     def RepeatDelay(self) -> int:
@@ -130,17 +163,26 @@ class UnoControlScrollBarModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @RepeatDelay.setter
+    def RepeatDelay(self, value: int) -> None:
+        ...
     @property
     def ScrollValue(self) -> int:
         """
         specifies the scroll value of the control.
         """
         ...
+    @ScrollValue.setter
+    def ScrollValue(self, value: int) -> None:
+        ...
     @property
     def ScrollValueMax(self) -> int:
         """
         specifies the maximum scroll value of the control.
         """
+        ...
+    @ScrollValueMax.setter
+    def ScrollValueMax(self, value: int) -> None:
         ...
     @property
     def ScrollValueMin(self) -> int:
@@ -149,6 +191,9 @@ class UnoControlScrollBarModel(UnoControlModel_c8ce0c58):
         
         If this optional property is not present, clients of the component should assume a minimal scroll value of 0.
         """
+        ...
+    @ScrollValueMin.setter
+    def ScrollValueMin(self, value: int) -> None:
         ...
     @property
     def SymbolColor(self) -> 'Color_68e908c5':
@@ -160,6 +205,9 @@ class UnoControlScrollBarModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @SymbolColor.setter
+    def SymbolColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def Tabstop(self) -> bool:
         """
@@ -170,10 +218,16 @@ class UnoControlScrollBarModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @Tabstop.setter
+    def Tabstop(self, value: bool) -> None:
+        ...
     @property
     def VisibleSize(self) -> int:
         """
         specifies the visible size of the scroll bar.
         """
+        ...
+    @VisibleSize.setter
+    def VisibleSize(self, value: int) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,5 +61,7 @@ class XStorageBasedLibraryContainer(XPersistentLibraryContainer_b6b2129e):
         You should only set this attribute to a new value if you previously called storeLibrariesToStorage with the same storage. Setting this attribute to a storage into which the container has not been stored previously might result in unexpected behavior.
         """
         ...
-
+    @RootStorage.setter
+    def RootStorage(self, value: 'XStorage_8e460a32') -> None:
+        ...
 

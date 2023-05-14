@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,7 +57,9 @@ class MissingJavaRuntimeException(JavaInitializationException_8b6211a3):
         contains the path to the runtime lib as file URL.
         """
         ...
-
+    @URLRuntimeLib.setter
+    def URLRuntimeLib(self, value: str) -> None:
+        ...
 
 __all__ = ['MissingJavaRuntimeException']
 

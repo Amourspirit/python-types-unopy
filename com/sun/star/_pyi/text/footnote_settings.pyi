@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,6 +43,9 @@ class FootnoteSettings(ABC):
             OOo 2.0
         """
         ...
+    @AnchorCharStyleName.setter
+    def AnchorCharStyleName(self, value: str) -> None:
+        ...
     @property
     def BeginNotice(self) -> str:
         """
@@ -51,11 +54,17 @@ class FootnoteSettings(ABC):
         For footnotes only.
         """
         ...
+    @BeginNotice.setter
+    def BeginNotice(self, value: str) -> None:
+        ...
     @property
     def CharStyleName(self) -> str:
         """
         contains the name of the character style that is used for the label in front of the footnote/endnote text.
         """
+        ...
+    @CharStyleName.setter
+    def CharStyleName(self, value: str) -> None:
         ...
     @property
     def EndNotice(self) -> str:
@@ -65,6 +74,9 @@ class FootnoteSettings(ABC):
         For footnotes only.
         """
         ...
+    @EndNotice.setter
+    def EndNotice(self, value: str) -> None:
+        ...
     @property
     def FootnoteCounting(self) -> int:
         """
@@ -73,11 +85,17 @@ class FootnoteSettings(ABC):
         For footnotes only.
         """
         ...
+    @FootnoteCounting.setter
+    def FootnoteCounting(self, value: int) -> None:
+        ...
     @property
     def NumberingType(self) -> int:
         """
         contains the numbering type for the numbering of the footnotes/endnotes.
         """
+        ...
+    @NumberingType.setter
+    def NumberingType(self, value: int) -> None:
         ...
     @property
     def PageStyleName(self) -> str:
@@ -85,11 +103,17 @@ class FootnoteSettings(ABC):
         contains the page style that is used for the page that contains the footnote/endnote texts
         """
         ...
+    @PageStyleName.setter
+    def PageStyleName(self, value: str) -> None:
+        ...
     @property
     def ParaStyleName(self) -> str:
         """
         contains the paragraph style that is used for the footnote/endnote text.
         """
+        ...
+    @ParaStyleName.setter
+    def ParaStyleName(self, value: str) -> None:
         ...
     @property
     def PositionEndOfDoc(self) -> bool:
@@ -99,11 +123,17 @@ class FootnoteSettings(ABC):
         For footnotes only.
         """
         ...
+    @PositionEndOfDoc.setter
+    def PositionEndOfDoc(self, value: bool) -> None:
+        ...
     @property
     def Prefix(self) -> str:
         """
         contains the prefix for the footnote/endnote symbol.
         """
+        ...
+    @Prefix.setter
+    def Prefix(self, value: str) -> None:
         ...
     @property
     def StartAt(self) -> int:
@@ -111,10 +141,16 @@ class FootnoteSettings(ABC):
         contains the first number of the automatic numbering of footnotes/endnotes.
         """
         ...
+    @StartAt.setter
+    def StartAt(self, value: int) -> None:
+        ...
     @property
     def Suffix(self) -> str:
         """
         contains the suffix for the footnote/endnote symbol.
         """
+        ...
+    @Suffix.setter
+    def Suffix(self, value: str) -> None:
         ...
 

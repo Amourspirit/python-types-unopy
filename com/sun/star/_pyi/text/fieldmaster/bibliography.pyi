@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,17 +41,26 @@ class Bibliography(TextFieldMaster_d6410cc2):
         This property is used if the property IsSortByPosition is not set. Each contained element of the sequence is a sequence of the following two properties:
         """
         ...
+    @SortKeys.setter
+    def SortKeys(self, value: 'typing.Tuple[PropertyValues_d6470ce6, ...]') -> None:
+        ...
     @property
     def BracketAfter(self) -> str:
         """
         determines the closing bracket used to display the bibliography text fields.
         """
         ...
+    @BracketAfter.setter
+    def BracketAfter(self, value: str) -> None:
+        ...
     @property
     def BracketBefore(self) -> str:
         """
         determines the opening bracket used to display the bibliography text fields.
         """
+        ...
+    @BracketBefore.setter
+    def BracketBefore(self, value: str) -> None:
         ...
     @property
     def IsNumberEntries(self) -> bool:
@@ -61,6 +70,9 @@ class Bibliography(TextFieldMaster_d6410cc2):
         If FALSE the short name of the bibliography entry is displayed instead.
         """
         ...
+    @IsNumberEntries.setter
+    def IsNumberEntries(self, value: bool) -> None:
+        ...
     @property
     def IsSortByPosition(self) -> bool:
         """
@@ -69,16 +81,25 @@ class Bibliography(TextFieldMaster_d6410cc2):
         If FALSE the SortKey property determines the sorting of the entries.
         """
         ...
+    @IsSortByPosition.setter
+    def IsSortByPosition(self, value: bool) -> None:
+        ...
     @property
     def Locale(self) -> 'Locale_70d308fa':
         """
         contains the locale of the field master
         """
         ...
+    @Locale.setter
+    def Locale(self, value: 'Locale_70d308fa') -> None:
+        ...
     @property
     def SortAlgorithm(self) -> str:
         """
         contains the name of the sort algorithm that is used to sort the text fields.
         """
+        ...
+    @SortAlgorithm.setter
+    def SortAlgorithm(self, value: str) -> None:
         ...
 

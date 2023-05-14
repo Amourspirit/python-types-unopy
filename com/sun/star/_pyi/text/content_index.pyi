@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,11 +38,17 @@ class ContentIndex(BaseIndex_8f0d0a40):
         contains TRUE if the document index marks are included in this index.
         """
         ...
+    @CreateFromMarks.setter
+    def CreateFromMarks(self, value: bool) -> None:
+        ...
     @property
     def CreateFromOutline(self) -> bool:
         """
         determines if the document index is created from outlines.
         """
+        ...
+    @CreateFromOutline.setter
+    def CreateFromOutline(self, value: bool) -> None:
         ...
     @property
     def Level(self) -> int:
@@ -50,10 +56,16 @@ class ContentIndex(BaseIndex_8f0d0a40):
         determines the depth of outline levels that are included into the content index.
         """
         ...
+    @Level.setter
+    def Level(self, value: int) -> None:
+        ...
     @property
     def LevelParagraphStyles(self) -> 'XIndexReplace_feed0dd7':
         """
         contains the interface to access the paragraph style names that are included in this index.
         """
+        ...
+    @LevelParagraphStyles.setter
+    def LevelParagraphStyles(self, value: 'XIndexReplace_feed0dd7') -> None:
         ...
 

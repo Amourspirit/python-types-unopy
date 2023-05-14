@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,6 +43,9 @@ class DocumentIndexMarkAsian(ABC):
         It is used to build a hierarchical document index.
         """
         ...
+    @PrimaryKeyReading.setter
+    def PrimaryKeyReading(self, value: str) -> None:
+        ...
     @property
     def SecondaryKeyReading(self) -> str:
         """
@@ -51,10 +54,16 @@ class DocumentIndexMarkAsian(ABC):
         It is used to build a hierarchical document index.
         """
         ...
+    @SecondaryKeyReading.setter
+    def SecondaryKeyReading(self, value: str) -> None:
+        ...
     @property
     def TextReading(self) -> str:
         """
         contains the reading of the string which has been chosen for the index entry.
         """
+        ...
+    @TextReading.setter
+    def TextReading(self, value: str) -> None:
         ...
 

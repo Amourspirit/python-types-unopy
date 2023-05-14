@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,7 +57,9 @@ class XController2(XController_b00e0b8f):
         Usually, controllers are created via XModel2.createViewController(), where the caller can pass not only a controller name, but also arguments parameterizing the to-be-created instance. Those arguments used at creation time can subsequently be retrieved using the CreationArguments member.
         """
         ...
-
+    @CreationArguments.setter
+    def CreationArguments(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def ComponentWindow(self) -> 'XWindow_713b0924':
         """
@@ -66,7 +68,9 @@ class XController2(XController_b00e0b8f):
         If the controller is plugged into a frame, this window acts as the frame's ComponentWindow.
         """
         ...
-
+    @ComponentWindow.setter
+    def ComponentWindow(self, value: 'XWindow_713b0924') -> None:
+        ...
     @property
     def ViewControllerName(self) -> str:
         """
@@ -75,5 +79,7 @@ class XController2(XController_b00e0b8f):
         A view name is a logical name, which can be used to create views of the same type. The name is meaningful only in conjunction with XModel2.createViewController()
         """
         ...
-
+    @ViewControllerName.setter
+    def ViewControllerName(self, value: str) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,6 +53,9 @@ class CellProtection(object):
         """
         ...
 
+    @IsLocked.setter
+    def IsLocked(self, value: bool) -> None:
+        ...
 
     @property
     def IsFormulaHidden(self) -> bool:
@@ -61,6 +64,9 @@ class CellProtection(object):
         """
         ...
 
+    @IsFormulaHidden.setter
+    def IsFormulaHidden(self, value: bool) -> None:
+        ...
 
     @property
     def IsHidden(self) -> bool:
@@ -69,6 +75,9 @@ class CellProtection(object):
         """
         ...
 
+    @IsHidden.setter
+    def IsHidden(self, value: bool) -> None:
+        ...
 
     @property
     def IsPrintHidden(self) -> bool:
@@ -77,4 +86,7 @@ class CellProtection(object):
         """
         ...
 
+    @IsPrintHidden.setter
+    def IsPrintHidden(self, value: bool) -> None:
+        ...
 

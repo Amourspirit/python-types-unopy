@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class GraphicCrop(object):
         """
         ...
 
+    @Top.setter
+    def Top(self, value: int) -> None:
+        ...
 
     @property
     def Bottom(self) -> int:
@@ -67,6 +70,9 @@ class GraphicCrop(object):
         """
         ...
 
+    @Bottom.setter
+    def Bottom(self, value: int) -> None:
+        ...
 
     @property
     def Left(self) -> int:
@@ -75,6 +81,9 @@ class GraphicCrop(object):
         """
         ...
 
+    @Left.setter
+    def Left(self, value: int) -> None:
+        ...
 
     @property
     def Right(self) -> int:
@@ -83,4 +92,7 @@ class GraphicCrop(object):
         """
         ...
 
+    @Right.setter
+    def Right(self, value: int) -> None:
+        ...
 

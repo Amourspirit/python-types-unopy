@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,7 +59,9 @@ class BackendSetupException(CannotLoadConfigurationException_b325176a):
         May be a numeric error code, a message string or VOID, if the original exception is not represented as a com.sun.star.uno.Exception.
         """
         ...
-
+    @BackendException.setter
+    def BackendException(self, value: object) -> None:
+        ...
 
 __all__ = ['BackendSetupException']
 

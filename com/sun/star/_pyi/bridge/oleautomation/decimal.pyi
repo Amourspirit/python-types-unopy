@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class Decimal(object):
         """
         ...
 
+    @Scale.setter
+    def Scale(self, value: int) -> None:
+        ...
 
     @property
     def Sign(self) -> int:
@@ -66,6 +69,9 @@ class Decimal(object):
         """
         ...
 
+    @Sign.setter
+    def Sign(self, value: int) -> None:
+        ...
 
     @property
     def LowValue(self) -> int:
@@ -74,6 +80,9 @@ class Decimal(object):
         """
         ...
 
+    @LowValue.setter
+    def LowValue(self, value: int) -> None:
+        ...
 
     @property
     def MiddleValue(self) -> int:
@@ -82,6 +91,9 @@ class Decimal(object):
         """
         ...
 
+    @MiddleValue.setter
+    def MiddleValue(self, value: int) -> None:
+        ...
 
     @property
     def HighValue(self) -> int:
@@ -90,4 +102,7 @@ class Decimal(object):
         """
         ...
 
+    @HighValue.setter
+    def HighValue(self, value: int) -> None:
+        ...
 

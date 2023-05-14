@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class SearchOptions(object):
         """
         ...
 
+    @algorithmType.setter
+    def algorithmType(self, value: SearchAlgorithms_e2c00d36) -> None:
+        ...
 
     @property
     def searchFlag(self) -> int:
@@ -67,6 +70,9 @@ class SearchOptions(object):
         """
         ...
 
+    @searchFlag.setter
+    def searchFlag(self, value: int) -> None:
+        ...
 
     @property
     def searchString(self) -> str:
@@ -75,6 +81,9 @@ class SearchOptions(object):
         """
         ...
 
+    @searchString.setter
+    def searchString(self, value: str) -> None:
+        ...
 
     @property
     def replaceString(self) -> str:
@@ -83,6 +92,9 @@ class SearchOptions(object):
         """
         ...
 
+    @replaceString.setter
+    def replaceString(self, value: str) -> None:
+        ...
 
     @property
     def Locale(self) -> Locale_70d308fa:
@@ -91,6 +103,9 @@ class SearchOptions(object):
         """
         ...
 
+    @Locale.setter
+    def Locale(self, value: Locale_70d308fa) -> None:
+        ...
 
     @property
     def changedChars(self) -> int:
@@ -99,6 +114,9 @@ class SearchOptions(object):
         """
         ...
 
+    @changedChars.setter
+    def changedChars(self, value: int) -> None:
+        ...
 
     @property
     def deletedChars(self) -> int:
@@ -107,6 +125,9 @@ class SearchOptions(object):
         """
         ...
 
+    @deletedChars.setter
+    def deletedChars(self, value: int) -> None:
+        ...
 
     @property
     def insertedChars(self) -> int:
@@ -115,6 +136,9 @@ class SearchOptions(object):
         """
         ...
 
+    @insertedChars.setter
+    def insertedChars(self, value: int) -> None:
+        ...
 
     @property
     def transliterateFlags(self) -> int:
@@ -125,4 +149,7 @@ class SearchOptions(object):
         """
         ...
 
+    @transliterateFlags.setter
+    def transliterateFlags(self, value: int) -> None:
+        ...
 

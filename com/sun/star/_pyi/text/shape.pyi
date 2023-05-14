@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -51,6 +51,9 @@ class Shape(Shape_85cc09e5):
             LibreOffice 6.4
         """
         ...
+    @AllowOverlap.setter
+    def AllowOverlap(self, value: bool) -> None:
+        ...
     @property
     def AnchorFrame(self) -> 'XTextFrame_9a7e0ab5':
         """
@@ -58,6 +61,9 @@ class Shape(Shape_85cc09e5):
         
         The value is valid only if the AnchorType is TextContentAnchorType.AT_FRAME.
         """
+        ...
+    @AnchorFrame.setter
+    def AnchorFrame(self, value: 'XTextFrame_9a7e0ab5') -> None:
         ...
     @property
     def AnchorPageNo(self) -> int:
@@ -67,11 +73,17 @@ class Shape(Shape_85cc09e5):
         The value is valid only if the AnchorType is TextContentAnchorType.AT_PAGE.
         """
         ...
+    @AnchorPageNo.setter
+    def AnchorPageNo(self, value: int) -> None:
+        ...
     @property
     def AnchorType(self) -> 'TextContentAnchorType_2cbe0f4a':
         """
         specifies how the text content is attached to its surrounding Text.
         """
+        ...
+    @AnchorType.setter
+    def AnchorType(self, value: 'TextContentAnchorType_2cbe0f4a') -> None:
         ...
     @property
     def BottomMargin(self) -> int:
@@ -79,11 +91,17 @@ class Shape(Shape_85cc09e5):
         contains the bottom margin of the object.
         """
         ...
+    @BottomMargin.setter
+    def BottomMargin(self, value: int) -> None:
+        ...
     @property
     def ContourOutside(self) -> bool:
         """
         the text flows only around the contour of the object.
         """
+        ...
+    @ContourOutside.setter
+    def ContourOutside(self, value: bool) -> None:
         ...
     @property
     def EndPositionInHoriL2R(self) -> 'Point_5fb2085e':
@@ -97,11 +115,17 @@ class Shape(Shape_85cc09e5):
             OOo 2.0
         """
         ...
+    @EndPositionInHoriL2R.setter
+    def EndPositionInHoriL2R(self, value: 'Point_5fb2085e') -> None:
+        ...
     @property
     def HoriOrient(self) -> int:
         """
         determines the horizontal orientation of the object.
         """
+        ...
+    @HoriOrient.setter
+    def HoriOrient(self, value: int) -> None:
         ...
     @property
     def HoriOrientPosition(self) -> int:
@@ -111,11 +135,17 @@ class Shape(Shape_85cc09e5):
         It is only valid if \"HoriOrient\" is HoriOrientation_NONE.
         """
         ...
+    @HoriOrientPosition.setter
+    def HoriOrientPosition(self, value: int) -> None:
+        ...
     @property
     def HoriOrientRelation(self) -> int:
         """
         determines the environment of the object to which the orientation is related.
         """
+        ...
+    @HoriOrientRelation.setter
+    def HoriOrientRelation(self, value: int) -> None:
         ...
     @property
     def LeftMargin(self) -> int:
@@ -123,11 +153,17 @@ class Shape(Shape_85cc09e5):
         contains the left margin of the object.
         """
         ...
+    @LeftMargin.setter
+    def LeftMargin(self, value: int) -> None:
+        ...
     @property
     def Opaque(self) -> bool:
         """
         determines if the object is opaque or transparent for text.
         """
+        ...
+    @Opaque.setter
+    def Opaque(self, value: bool) -> None:
         ...
     @property
     def PositionLayoutDir(self) -> int:
@@ -141,11 +177,17 @@ class Shape(Shape_85cc09e5):
             OOo 2.0
         """
         ...
+    @PositionLayoutDir.setter
+    def PositionLayoutDir(self, value: int) -> None:
+        ...
     @property
     def RightMargin(self) -> int:
         """
         contains the right margin of the object.
         """
+        ...
+    @RightMargin.setter
+    def RightMargin(self, value: int) -> None:
         ...
     @property
     def StartPositionInHoriL2R(self) -> 'Point_5fb2085e':
@@ -159,11 +201,17 @@ class Shape(Shape_85cc09e5):
             OOo 2.0
         """
         ...
+    @StartPositionInHoriL2R.setter
+    def StartPositionInHoriL2R(self, value: 'Point_5fb2085e') -> None:
+        ...
     @property
     def Surround(self) -> 'WrapTextMode_b1dd0b91':
         """
         determines the type of the surrounding text.
         """
+        ...
+    @Surround.setter
+    def Surround(self, value: 'WrapTextMode_b1dd0b91') -> None:
         ...
     @property
     def SurroundAnchorOnly(self) -> bool:
@@ -171,11 +219,17 @@ class Shape(Shape_85cc09e5):
         determines if the text of the paragraph in which the object is anchored, wraps around the object.
         """
         ...
+    @SurroundAnchorOnly.setter
+    def SurroundAnchorOnly(self, value: bool) -> None:
+        ...
     @property
     def SurroundContour(self) -> bool:
         """
         determines if the text wraps around the contour of the object.
         """
+        ...
+    @SurroundContour.setter
+    def SurroundContour(self, value: bool) -> None:
         ...
     @property
     def TextRange(self) -> 'XTextRange_9a910ab7':
@@ -187,11 +241,17 @@ class Shape(Shape_85cc09e5):
         This property is used when the shape gets inserted/added and becomes invalid after that.
         """
         ...
+    @TextRange.setter
+    def TextRange(self, value: 'XTextRange_9a910ab7') -> None:
+        ...
     @property
     def TopMargin(self) -> int:
         """
         contains the top margin of the object.
         """
+        ...
+    @TopMargin.setter
+    def TopMargin(self, value: int) -> None:
         ...
     @property
     def TransformationInHoriL2R(self) -> 'HomogenMatrix3_f0fb0d69':
@@ -205,11 +265,17 @@ class Shape(Shape_85cc09e5):
             OOo 2.0
         """
         ...
+    @TransformationInHoriL2R.setter
+    def TransformationInHoriL2R(self, value: 'HomogenMatrix3_f0fb0d69') -> None:
+        ...
     @property
     def VertOrient(self) -> int:
         """
         determines the vertical orientation of the object.
         """
+        ...
+    @VertOrient.setter
+    def VertOrient(self, value: int) -> None:
         ...
     @property
     def VertOrientPosition(self) -> int:
@@ -219,11 +285,17 @@ class Shape(Shape_85cc09e5):
         It is only valid if TextEmbeddedObject.VertOrient is VertOrientation.NONE.
         """
         ...
+    @VertOrientPosition.setter
+    def VertOrientPosition(self, value: int) -> None:
+        ...
     @property
     def VertOrientRelation(self) -> int:
         """
         determines the environment of the object to which the orientation is related.
         """
+        ...
+    @VertOrientRelation.setter
+    def VertOrientRelation(self, value: int) -> None:
         ...
     @property
     def WrapInfluenceOnPosition(self) -> int:
@@ -236,5 +308,8 @@ class Shape(Shape_85cc09e5):
         
             OOo 2.0
         """
+        ...
+    @WrapInfluenceOnPosition.setter
+    def WrapInfluenceOnPosition(self, value: int) -> None:
         ...
 

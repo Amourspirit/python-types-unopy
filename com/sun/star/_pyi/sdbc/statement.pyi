@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,6 +48,9 @@ class Statement(XPropertySet_bc180bfa, XComponent_98dc0ab5, XBatchExecution_d1eb
         Note:  By definition, positioned update/delete execution must be done by a different Statement than the one which generated the ResultSet being used for positioning. Also, cursor names must be unique within a connection.
         """
         ...
+    @CursorName.setter
+    def CursorName(self, value: str) -> None:
+        ...
     @property
     def EscapeProcessing(self) -> bool:
         """
@@ -55,6 +58,9 @@ class Statement(XPropertySet_bc180bfa, XComponent_98dc0ab5, XBatchExecution_d1eb
         
         If escape scanning is on (the default), the driver will do escape substitution before sending the SQL to the database.
         """
+        ...
+    @EscapeProcessing.setter
+    def EscapeProcessing(self, value: bool) -> None:
         ...
     @property
     def FetchDirection(self) -> int:
@@ -64,6 +70,9 @@ class Statement(XPropertySet_bc180bfa, XComponent_98dc0ab5, XBatchExecution_d1eb
         If this Statement object has not set a fetch direction, the return value is implementation-specific.
         """
         ...
+    @FetchDirection.setter
+    def FetchDirection(self, value: int) -> None:
+        ...
     @property
     def FetchSize(self) -> int:
         """
@@ -71,6 +80,9 @@ class Statement(XPropertySet_bc180bfa, XComponent_98dc0ab5, XBatchExecution_d1eb
         
         If this Statement object has not set a fetch size, the return value is implementation-specific.
         """
+        ...
+    @FetchSize.setter
+    def FetchSize(self, value: int) -> None:
         ...
     @property
     def MaxFieldSize(self) -> int:
@@ -80,6 +92,9 @@ class Statement(XPropertySet_bc180bfa, XComponent_98dc0ab5, XBatchExecution_d1eb
         This limit is the maximum number of bytes that can be returned for any column value. The limit applies only to com.sun.star.sdbc.DataType.BINARY , com.sun.star.sdbc.DataType.VARBINARY , com.sun.star.sdbc.DataType.LONGVARBINARY , com.sun.star.sdbc.DataType.CHAR , com.sun.star.sdbc.DataType.VARCHAR , and com.sun.star.sdbc.DataType.LONGVARCHAR columns. If the limit is exceeded, the excess data is silently discarded. There is no limitation, if set to zero.
         """
         ...
+    @MaxFieldSize.setter
+    def MaxFieldSize(self, value: int) -> None:
+        ...
     @property
     def MaxRows(self) -> int:
         """
@@ -87,6 +102,9 @@ class Statement(XPropertySet_bc180bfa, XComponent_98dc0ab5, XBatchExecution_d1eb
         
         If the limit is exceeded, the excess rows are silently dropped. There is no limitation, if set to zero.
         """
+        ...
+    @MaxRows.setter
+    def MaxRows(self, value: int) -> None:
         ...
     @property
     def QueryTimeOut(self) -> int:
@@ -96,16 +114,25 @@ class Statement(XPropertySet_bc180bfa, XComponent_98dc0ab5, XBatchExecution_d1eb
         If the limit is exceeded, a SQLException is thrown. There is no limitation, if set to zero.
         """
         ...
+    @QueryTimeOut.setter
+    def QueryTimeOut(self, value: int) -> None:
+        ...
     @property
     def ResultSetConcurrency(self) -> int:
         """
         retrieves the result set concurrency.
         """
         ...
+    @ResultSetConcurrency.setter
+    def ResultSetConcurrency(self, value: int) -> None:
+        ...
     @property
     def ResultSetType(self) -> int:
         """
         determine the result set type.
         """
+        ...
+    @ResultSetType.setter
+    def ResultSetType(self, value: int) -> None:
         ...
 

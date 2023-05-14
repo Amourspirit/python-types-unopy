@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,14 +58,18 @@ class AuthenticationFallbackRequest(ClassifiedInteractionRequest_9f72121b):
         Instructions to be followed by the user.
         """
         ...
-
+    @instructions.setter
+    def instructions(self, value: str) -> None:
+        ...
     @property
     def url(self) -> str:
         """
         url to be opened in browser
         """
         ...
-
+    @url.setter
+    def url(self, value: str) -> None:
+        ...
 
 __all__ = ['AuthenticationFallbackRequest']
 

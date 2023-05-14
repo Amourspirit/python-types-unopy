@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class CellAddress(object):
         """
         ...
 
+    @Sheet.setter
+    def Sheet(self, value: int) -> None:
+        ...
 
     @property
     def Column(self) -> int:
@@ -60,6 +63,9 @@ class CellAddress(object):
         """
         ...
 
+    @Column.setter
+    def Column(self, value: int) -> None:
+        ...
 
     @property
     def Row(self) -> int:
@@ -68,4 +74,7 @@ class CellAddress(object):
         """
         ...
 
+    @Row.setter
+    def Row(self, value: int) -> None:
+        ...
 

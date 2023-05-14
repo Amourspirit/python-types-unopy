@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,7 +37,9 @@ class XAnimationNode(XChild_a6390b07):
         """
         """
         ...
-
+    @UserData.setter
+    def UserData(self, value: 'typing.Tuple[NamedValue_a37a0af3, ...]') -> None:
+        ...
     @property
     def Acceleration(self) -> float:
         """
@@ -48,7 +50,9 @@ class XAnimationNode(XChild_a6390b07):
         Acceleration is a value between 0 (no acceleration) and 1 (acceleration until end of the elements duration).
         """
         ...
-
+    @Acceleration.setter
+    def Acceleration(self, value: float) -> None:
+        ...
     @property
     def AutoReverse(self) -> bool:
         """
@@ -57,14 +61,18 @@ class XAnimationNode(XChild_a6390b07):
         AutoReverse is
         """
         ...
-
+    @AutoReverse.setter
+    def AutoReverse(self, value: bool) -> None:
+        ...
     @property
     def Begin(self) -> object:
         """
         a sequence of values that define the beginning of this element Begin is
         """
         ...
-
+    @Begin.setter
+    def Begin(self, value: object) -> None:
+        ...
     @property
     def Decelerate(self) -> float:
         """
@@ -75,7 +83,9 @@ class XAnimationNode(XChild_a6390b07):
         Decelerate is a value between 0 (no deceleration) and 1 (deceleration from beginning of the elements duration).
         """
         ...
-
+    @Decelerate.setter
+    def Decelerate(self, value: float) -> None:
+        ...
     @property
     def Duration(self) -> object:
         """
@@ -84,14 +94,18 @@ class XAnimationNode(XChild_a6390b07):
         Duration is
         """
         ...
-
+    @Duration.setter
+    def Duration(self, value: object) -> None:
+        ...
     @property
     def End(self) -> object:
         """
         a sequence of values that define the ending of this element End is
         """
         ...
-
+    @End.setter
+    def End(self, value: object) -> None:
+        ...
     @property
     def EndSync(self) -> object:
         """
@@ -102,7 +116,9 @@ class XAnimationNode(XChild_a6390b07):
         EndSync is either a short constant from EndSync, an interface reference to a child XTimeContainer or VOID.
         """
         ...
-
+    @EndSync.setter
+    def EndSync(self, value: object) -> None:
+        ...
     @property
     def Fill(self) -> int:
         """
@@ -111,7 +127,9 @@ class XAnimationNode(XChild_a6390b07):
         Fill is a value from AnimationFill.
         """
         ...
-
+    @Fill.setter
+    def Fill(self, value: int) -> None:
+        ...
     @property
     def FillDefault(self) -> int:
         """
@@ -120,7 +138,9 @@ class XAnimationNode(XChild_a6390b07):
         FillDefault is
         """
         ...
-
+    @FillDefault.setter
+    def FillDefault(self, value: int) -> None:
+        ...
     @property
     def RepeatCount(self) -> object:
         """
@@ -129,7 +149,9 @@ class XAnimationNode(XChild_a6390b07):
         RepeatCount is
         """
         ...
-
+    @RepeatCount.setter
+    def RepeatCount(self, value: object) -> None:
+        ...
     @property
     def RepeatDuration(self) -> object:
         """
@@ -138,7 +160,9 @@ class XAnimationNode(XChild_a6390b07):
         RepeatDuration is
         """
         ...
-
+    @RepeatDuration.setter
+    def RepeatDuration(self, value: object) -> None:
+        ...
     @property
     def Restart(self) -> int:
         """
@@ -147,19 +171,25 @@ class XAnimationNode(XChild_a6390b07):
         Restart is a short value from AnimationRestart.
         """
         ...
-
+    @Restart.setter
+    def Restart(self, value: int) -> None:
+        ...
     @property
     def RestartDefault(self) -> int:
         """
         defines the default restart behavior for this element and all descendants.
         """
         ...
-
+    @RestartDefault.setter
+    def RestartDefault(self, value: int) -> None:
+        ...
     @property
     def Type(self) -> int:
         """
         a value from AnimationNodeType.
         """
         ...
-
+    @Type.setter
+    def Type(self, value: int) -> None:
+        ...
 

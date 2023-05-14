@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class DictionaryEvent(EventObject_a3d70b03):
         """
         ...
 
+    @nEvent.setter
+    def nEvent(self, value: int) -> None:
+        ...
 
     @property
     def xDictionaryEntry(self) -> XDictionaryEntry_49ef0ff5:
@@ -69,4 +72,7 @@ class DictionaryEvent(EventObject_a3d70b03):
         """
         ...
 
+    @xDictionaryEntry.setter
+    def xDictionaryEntry(self, value: XDictionaryEntry_49ef0ff5) -> None:
+        ...
 

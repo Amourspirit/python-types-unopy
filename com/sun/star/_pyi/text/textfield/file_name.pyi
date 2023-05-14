@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,16 +37,25 @@ class FileName(TextField_90260a56):
         This property is especially useful for import/export purposes.
         """
         ...
+    @CurrentPresentation.setter
+    def CurrentPresentation(self, value: str) -> None:
+        ...
     @property
     def FileFormat(self) -> int:
         """
         determines the format the file name is displayed as specified in com.sun.star.text.FilenameDisplayFormat.
         """
         ...
+    @FileFormat.setter
+    def FileFormat(self, value: int) -> None:
+        ...
     @property
     def IsFixed(self) -> bool:
         """
         If this flag is set to FALSE the content is regularly updated.
         """
+        ...
+    @IsFixed.setter
+    def IsFixed(self, value: bool) -> None:
         ...
 

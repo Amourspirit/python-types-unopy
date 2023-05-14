@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class WindowDescriptor(object):
         """
         ...
 
+    @Type.setter
+    def Type(self, value: WindowClass_99f60ac2) -> None:
+        ...
 
     @property
     def WindowServiceName(self) -> str:
@@ -68,6 +71,9 @@ class WindowDescriptor(object):
         """
         ...
 
+    @WindowServiceName.setter
+    def WindowServiceName(self, value: str) -> None:
+        ...
 
     @property
     def Parent(self) -> XWindowPeer_99760ab0:
@@ -78,6 +84,9 @@ class WindowDescriptor(object):
         """
         ...
 
+    @Parent.setter
+    def Parent(self, value: XWindowPeer_99760ab0) -> None:
+        ...
 
     @property
     def ParentIndex(self) -> int:
@@ -88,6 +97,9 @@ class WindowDescriptor(object):
         """
         ...
 
+    @ParentIndex.setter
+    def ParentIndex(self, value: int) -> None:
+        ...
 
     @property
     def Bounds(self) -> Rectangle_84b109e9:
@@ -98,6 +110,9 @@ class WindowDescriptor(object):
         """
         ...
 
+    @Bounds.setter
+    def Bounds(self, value: Rectangle_84b109e9) -> None:
+        ...
 
     @property
     def WindowAttributes(self) -> int:
@@ -108,4 +123,7 @@ class WindowDescriptor(object):
         """
         ...
 
+    @WindowAttributes.setter
+    def WindowAttributes(self, value: int) -> None:
+        ...
 

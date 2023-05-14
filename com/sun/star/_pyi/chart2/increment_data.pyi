@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,6 +56,9 @@ class IncrementData(object):
         """
         ...
 
+    @SubIncrements.setter
+    def SubIncrements(self, value: typing.Tuple[SubIncrement_c5630c1b, ...]) -> None:
+        ...
 
     @property
     def Distance(self) -> object:
@@ -66,6 +69,9 @@ class IncrementData(object):
         """
         ...
 
+    @Distance.setter
+    def Distance(self, value: object) -> None:
+        ...
 
     @property
     def PostEquidistant(self) -> object:
@@ -76,6 +82,9 @@ class IncrementData(object):
         """
         ...
 
+    @PostEquidistant.setter
+    def PostEquidistant(self, value: object) -> None:
+        ...
 
     @property
     def BaseValue(self) -> object:
@@ -86,4 +95,7 @@ class IncrementData(object):
         """
         ...
 
+    @BaseValue.setter
+    def BaseValue(self, value: object) -> None:
+        ...
 

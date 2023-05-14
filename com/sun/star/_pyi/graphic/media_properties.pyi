@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,6 +40,9 @@ class MediaProperties(ABC):
         Additional properties that will be passed to the appropriate filter module.
         """
         ...
+    @FilterData.setter
+    def FilterData(self, value: 'PropertyValues_d6470ce6') -> None:
+        ...
     @property
     def InputStream(self) -> 'XInputStream_98d40ab4':
         """
@@ -47,6 +50,9 @@ class MediaProperties(ABC):
         
         A InputStream can be used instead of the URL property
         """
+        ...
+    @InputStream.setter
+    def InputStream(self, value: 'XInputStream_98d40ab4') -> None:
         ...
     @property
     def MimeType(self) -> str:
@@ -56,6 +62,9 @@ class MediaProperties(ABC):
         At the moment, the following mime types are supported for storing graphics:
         """
         ...
+    @MimeType.setter
+    def MimeType(self, value: str) -> None:
+        ...
     @property
     def OutputStream(self) -> 'XStream_678908a4':
         """
@@ -63,6 +72,9 @@ class MediaProperties(ABC):
         
         A OutputStream can be used instead of the URL property
         """
+        ...
+    @OutputStream.setter
+    def OutputStream(self, value: 'XStream_678908a4') -> None:
         ...
     @property
     def URL(self) -> str:
@@ -75,5 +87,8 @@ class MediaProperties(ABC):
         
         Note: As of LibreOffice 6.1 GraphicObject scheme URLs are not supported anymore. For example:
         """
+        ...
+    @URL.setter
+    def URL(self, value: str) -> None:
         ...
 

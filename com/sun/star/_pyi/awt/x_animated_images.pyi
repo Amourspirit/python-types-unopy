@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -83,7 +83,9 @@ class XAnimatedImages(XContainer_d6fb0cc6):
         The default value for this attribute is TRUE.
         """
         ...
-
+    @AutoRepeat.setter
+    def AutoRepeat(self, value: bool) -> None:
+        ...
     @property
     def ScaleMode(self) -> int:
         """
@@ -92,7 +94,9 @@ class XAnimatedImages(XContainer_d6fb0cc6):
         Allowed values are those from the ImageScaleMode constants group.
         """
         ...
-
+    @ScaleMode.setter
+    def ScaleMode(self, value: int) -> None:
+        ...
     @property
     def StepTime(self) -> int:
         """
@@ -101,5 +105,7 @@ class XAnimatedImages(XContainer_d6fb0cc6):
         This is the minimum time, the actual value might be longer due to system load. The default value will be 100 ms.
         """
         ...
-
+    @StepTime.setter
+    def StepTime(self, value: int) -> None:
+        ...
 

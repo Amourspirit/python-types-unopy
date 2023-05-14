@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,11 +40,17 @@ class OLE2Shape(Shape_85cc09e5):
         If you set it, an empty OLE2 document stream with this CLSID is created within this OLE2 shape.
         """
         ...
+    @CLSID.setter
+    def CLSID(self, value: str) -> None:
+        ...
     @property
     def IsInternal(self) -> bool:
         """
         This property returns TRUE for all OLE2 that are internal Office components.
         """
+        ...
+    @IsInternal.setter
+    def IsInternal(self, value: bool) -> None:
         ...
     @property
     def Model(self) -> 'XModel_7a6e095c':
@@ -54,10 +60,16 @@ class OLE2Shape(Shape_85cc09e5):
         This property returns an empty reference if the OLE2 is not an Office component.
         """
         ...
+    @Model.setter
+    def Model(self, value: 'XModel_7a6e095c') -> None:
+        ...
     @property
     def PersistName(self) -> str:
         """
         this is the internal storage name that keeps this OLE2 persist.
         """
+        ...
+    @PersistName.setter
+    def PersistName(self, value: str) -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class FilterFieldValue(object):
         """
         ...
 
+    @IsNumeric.setter
+    def IsNumeric(self, value: bool) -> None:
+        ...
 
     @property
     def NumericValue(self) -> float:
@@ -66,6 +69,9 @@ class FilterFieldValue(object):
         """
         ...
 
+    @NumericValue.setter
+    def NumericValue(self, value: float) -> None:
+        ...
 
     @property
     def StringValue(self) -> str:
@@ -74,6 +80,9 @@ class FilterFieldValue(object):
         """
         ...
 
+    @StringValue.setter
+    def StringValue(self, value: str) -> None:
+        ...
 
     @property
     def FilterType(self) -> int:
@@ -86,6 +95,9 @@ class FilterFieldValue(object):
         """
         ...
 
+    @FilterType.setter
+    def FilterType(self, value: int) -> None:
+        ...
 
     @property
     def ColorValue(self) -> Color_68e908c5:
@@ -98,4 +110,7 @@ class FilterFieldValue(object):
         """
         ...
 
+    @ColorValue.setter
+    def ColorValue(self, value: Color_68e908c5) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class KeyStroke(object):
         """
         ...
 
+    @Modifiers.setter
+    def Modifiers(self, value: int) -> None:
+        ...
 
     @property
     def KeyCode(self) -> int:
@@ -69,6 +72,9 @@ class KeyStroke(object):
         """
         ...
 
+    @KeyCode.setter
+    def KeyCode(self, value: int) -> None:
+        ...
 
     @property
     def KeyChar(self) -> str:
@@ -77,6 +83,9 @@ class KeyStroke(object):
         """
         ...
 
+    @KeyChar.setter
+    def KeyChar(self, value: str) -> None:
+        ...
 
     @property
     def KeyFunc(self) -> int:
@@ -87,4 +96,7 @@ class KeyStroke(object):
         """
         ...
 
+    @KeyFunc.setter
+    def KeyFunc(self, value: int) -> None:
+        ...
 

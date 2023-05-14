@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,17 +38,26 @@ class LogicTargetModel(ABC):
         not BOUND nor CONSTRAINED in terms of Listener notifications, each element in the sequence must implement the service com.sun.star.chart2.CoordinateSystem
         """
         ...
+    @CoordinateSystems.setter
+    def CoordinateSystems(self, value: 'typing.Tuple[XPropertySet_bc180bfa, ...]') -> None:
+        ...
     @property
     def LogicTargetModels(self) -> 'typing.Tuple[XPropertySet_bc180bfa, ...]':
         """
         MAYBEVOID, not BOUND nor CONSTRAINED in terms of Listener notifications, each element in the sequence must implement the service com.sun.star.chart2.LogicTargetModel.
         """
         ...
+    @LogicTargetModels.setter
+    def LogicTargetModels(self, value: 'typing.Tuple[XPropertySet_bc180bfa, ...]') -> None:
+        ...
     @property
     def ID(self) -> str:
         """
         identifies an instance of this service within one chart document.
         """
+        ...
+    @ID.setter
+    def ID(self, value: str) -> None:
         ...
     @property
     def LegendID(self) -> str:
@@ -57,5 +66,8 @@ class LogicTargetModel(ABC):
         
         that instance is used to automatically calculate missing properties
         """
+        ...
+    @LegendID.setter
+    def LegendID(self, value: str) -> None:
         ...
 

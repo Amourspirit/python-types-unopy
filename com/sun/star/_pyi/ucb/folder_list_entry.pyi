@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -55,6 +55,9 @@ class FolderListEntry(object):
         """
         ...
 
+    @Title.setter
+    def Title(self, value: str) -> None:
+        ...
 
     @property
     def ID(self) -> str:
@@ -63,6 +66,9 @@ class FolderListEntry(object):
         """
         ...
 
+    @ID.setter
+    def ID(self, value: str) -> None:
+        ...
 
     @property
     def Subscribed(self) -> bool:
@@ -71,6 +77,9 @@ class FolderListEntry(object):
         """
         ...
 
+    @Subscribed.setter
+    def Subscribed(self, value: bool) -> None:
+        ...
 
     @property
     def New(self) -> bool:
@@ -79,6 +88,9 @@ class FolderListEntry(object):
         """
         ...
 
+    @New.setter
+    def New(self, value: bool) -> None:
+        ...
 
     @property
     def Removed(self) -> bool:
@@ -87,6 +99,9 @@ class FolderListEntry(object):
         """
         ...
 
+    @Removed.setter
+    def Removed(self, value: bool) -> None:
+        ...
 
     @property
     def Purge(self) -> bool:
@@ -95,4 +110,7 @@ class FolderListEntry(object):
         """
         ...
 
+    @Purge.setter
+    def Purge(self, value: bool) -> None:
+        ...
 

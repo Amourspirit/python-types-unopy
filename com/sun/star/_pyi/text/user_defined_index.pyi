@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -39,11 +39,17 @@ class UserDefinedIndex(BaseIndex_8f0d0a40):
         contains all index marks that are related to this index.
         """
         ...
+    @DocumentIndexMarks.setter
+    def DocumentIndexMarks(self, value: 'typing.Tuple[XDocumentIndexMark_fe490de7, ...]') -> None:
+        ...
     @property
     def CreateFromEmbeddedObjects(self) -> bool:
         """
         determines if embedded objects are included in the index.
         """
+        ...
+    @CreateFromEmbeddedObjects.setter
+    def CreateFromEmbeddedObjects(self, value: bool) -> None:
         ...
     @property
     def CreateFromGraphicObjects(self) -> bool:
@@ -51,11 +57,17 @@ class UserDefinedIndex(BaseIndex_8f0d0a40):
         determines if graphic objects are included in the index.
         """
         ...
+    @CreateFromGraphicObjects.setter
+    def CreateFromGraphicObjects(self, value: bool) -> None:
+        ...
     @property
     def CreateFromMarks(self) -> bool:
         """
         determines if the document index marks are included in this index.
         """
+        ...
+    @CreateFromMarks.setter
+    def CreateFromMarks(self, value: bool) -> None:
         ...
     @property
     def CreateFromTables(self) -> bool:
@@ -63,11 +75,17 @@ class UserDefinedIndex(BaseIndex_8f0d0a40):
         determines if tables are included in the index.
         """
         ...
+    @CreateFromTables.setter
+    def CreateFromTables(self, value: bool) -> None:
+        ...
     @property
     def CreateFromTextFrames(self) -> bool:
         """
         determines if text frames are included in the index.
         """
+        ...
+    @CreateFromTextFrames.setter
+    def CreateFromTextFrames(self, value: bool) -> None:
         ...
     @property
     def LevelParagraphStyles(self) -> 'XIndexReplace_feed0dd7':
@@ -75,10 +93,16 @@ class UserDefinedIndex(BaseIndex_8f0d0a40):
         contains the interface to access the paragraph style names that are included in this index.
         """
         ...
+    @LevelParagraphStyles.setter
+    def LevelParagraphStyles(self, value: 'XIndexReplace_feed0dd7') -> None:
+        ...
     @property
     def UseLevelFromSource(self) -> bool:
         """
         determines if the outline level of the location of the indexed object is used as index level of the index entry.
         """
+        ...
+    @UseLevelFromSource.setter
+    def UseLevelFromSource(self, value: bool) -> None:
         ...
 

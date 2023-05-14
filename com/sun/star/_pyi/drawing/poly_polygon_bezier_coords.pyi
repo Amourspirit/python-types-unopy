@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -50,9 +50,15 @@ class PolyPolygonBezierCoords(object):
     def Coordinates(self) -> PointSequenceSequence_5c591070:
         ...
 
+    @Coordinates.setter
+    def Coordinates(self, value: PointSequenceSequence_5c591070) -> None:
+        ...
 
     @property
     def Flags(self) -> FlagSequenceSequence_49130fe0:
         ...
 
+    @Flags.setter
+    def Flags(self, value: FlagSequenceSequence_49130fe0) -> None:
+        ...
 

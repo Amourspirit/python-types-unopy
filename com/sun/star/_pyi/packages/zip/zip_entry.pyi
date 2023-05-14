@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -64,6 +64,9 @@ class ZipEntry(object):
         """
         ...
 
+    @extra.setter
+    def extra(self, value: uno.ByteSequence) -> None:
+        ...
 
     @property
     def nVersion(self) -> int:
@@ -72,6 +75,9 @@ class ZipEntry(object):
         """
         ...
 
+    @nVersion.setter
+    def nVersion(self, value: int) -> None:
+        ...
 
     @property
     def nFlag(self) -> int:
@@ -80,6 +86,9 @@ class ZipEntry(object):
         """
         ...
 
+    @nFlag.setter
+    def nFlag(self, value: int) -> None:
+        ...
 
     @property
     def nMethod(self) -> int:
@@ -88,6 +97,9 @@ class ZipEntry(object):
         """
         ...
 
+    @nMethod.setter
+    def nMethod(self, value: int) -> None:
+        ...
 
     @property
     def nTime(self) -> int:
@@ -96,6 +108,9 @@ class ZipEntry(object):
         """
         ...
 
+    @nTime.setter
+    def nTime(self, value: int) -> None:
+        ...
 
     @property
     def nCrc(self) -> int:
@@ -104,6 +119,9 @@ class ZipEntry(object):
         """
         ...
 
+    @nCrc.setter
+    def nCrc(self, value: int) -> None:
+        ...
 
     @property
     def nCompressedSize(self) -> int:
@@ -112,6 +130,9 @@ class ZipEntry(object):
         """
         ...
 
+    @nCompressedSize.setter
+    def nCompressedSize(self, value: int) -> None:
+        ...
 
     @property
     def nSize(self) -> int:
@@ -120,6 +141,9 @@ class ZipEntry(object):
         """
         ...
 
+    @nSize.setter
+    def nSize(self, value: int) -> None:
+        ...
 
     @property
     def nOffset(self) -> int:
@@ -128,6 +152,9 @@ class ZipEntry(object):
         """
         ...
 
+    @nOffset.setter
+    def nOffset(self, value: int) -> None:
+        ...
 
     @property
     def nDiskNumber(self) -> int:
@@ -136,6 +163,9 @@ class ZipEntry(object):
         """
         ...
 
+    @nDiskNumber.setter
+    def nDiskNumber(self, value: int) -> None:
+        ...
 
     @property
     def sName(self) -> str:
@@ -144,6 +174,9 @@ class ZipEntry(object):
         """
         ...
 
+    @sName.setter
+    def sName(self, value: str) -> None:
+        ...
 
     @property
     def sComment(self) -> str:
@@ -152,4 +185,7 @@ class ZipEntry(object):
         """
         ...
 
+    @sComment.setter
+    def sComment(self, value: str) -> None:
+        ...
 

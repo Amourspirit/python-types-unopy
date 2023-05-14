@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,11 +43,17 @@ class Database(TextFieldMaster_d6410cc2):
         (0 = table, 1 = query, 2 = statement)
         """
         ...
+    @CommandType.setter
+    def CommandType(self, value: int) -> None:
+        ...
     @property
     def DataBaseName(self) -> str:
         """
         specifies the database name.
         """
+        ...
+    @DataBaseName.setter
+    def DataBaseName(self, value: str) -> None:
         ...
     @property
     def DataBaseResource(self) -> str:
@@ -59,6 +65,9 @@ class Database(TextFieldMaster_d6410cc2):
             OOo 2.0
         """
         ...
+    @DataBaseResource.setter
+    def DataBaseResource(self, value: str) -> None:
+        ...
     @property
     def DataBaseURL(self) -> str:
         """
@@ -69,11 +78,17 @@ class Database(TextFieldMaster_d6410cc2):
             OOo 2.0
         """
         ...
+    @DataBaseURL.setter
+    def DataBaseURL(self, value: str) -> None:
+        ...
     @property
     def DataColumnName(self) -> str:
         """
         contains the name of the data base table.
         """
+        ...
+    @DataColumnName.setter
+    def DataColumnName(self, value: str) -> None:
         ...
     @property
     def DataTableName(self) -> str:
@@ -82,6 +97,9 @@ class Database(TextFieldMaster_d6410cc2):
         
         Depending on the CommandType property this can be the name of a data base table, a data query or a statement.
         """
+        ...
+    @DataTableName.setter
+    def DataTableName(self, value: str) -> None:
         ...
     @property
     def Name(self) -> str:
@@ -92,5 +110,8 @@ class Database(TextFieldMaster_d6410cc2):
         
             OOo 2.3
         """
+        ...
+    @Name.setter
+    def Name(self, value: str) -> None:
         ...
 

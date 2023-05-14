@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,11 +35,17 @@ class Month(XDataType_83f209cb):
         specifies the exclusive upper bound for the value
         """
         ...
+    @MaxExclusiveInt.setter
+    def MaxExclusiveInt(self, value: int) -> None:
+        ...
     @property
     def MaxInclusiveInt(self) -> int:
         """
         specifies the inclusive upper bound for the value
         """
+        ...
+    @MaxInclusiveInt.setter
+    def MaxInclusiveInt(self, value: int) -> None:
         ...
     @property
     def MinExclusiveInt(self) -> int:
@@ -47,10 +53,16 @@ class Month(XDataType_83f209cb):
         specifies the exclusive lower bound for the value
         """
         ...
+    @MinExclusiveInt.setter
+    def MinExclusiveInt(self, value: int) -> None:
+        ...
     @property
     def MinInclusiveInt(self) -> int:
         """
         specifies the inclusive lower bound for the value
         """
+        ...
+    @MinInclusiveInt.setter
+    def MinInclusiveInt(self, value: int) -> None:
         ...
 

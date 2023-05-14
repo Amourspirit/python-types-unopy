@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -157,7 +157,9 @@ class XDatabaseDocumentUI(ABC):
             OOo 3.0
         """
         ...
-
+    @SubComponents.setter
+    def SubComponents(self, value: 'typing.Tuple[XComponent_98dc0ab5, ...]') -> None:
+        ...
     @property
     def ActiveConnection(self) -> 'XConnection_a36a0b0c':
         """
@@ -166,7 +168,9 @@ class XDatabaseDocumentUI(ABC):
         Note that the connection returned here is really the working connection of the application. Clients should not misuse it, in particular, closing the connection can yield unexpected results and should definitely be avoided. If you need a separate connection to the data source, use com.sun.star.sdbc.XDataSource.getConnection().
         """
         ...
-
+    @ActiveConnection.setter
+    def ActiveConnection(self, value: 'XConnection_a36a0b0c') -> None:
+        ...
     @property
     def ApplicationMainWindow(self) -> 'XWindow_713b0924':
         """
@@ -175,12 +179,16 @@ class XDatabaseDocumentUI(ABC):
         Note that reading this attribute is equivalent to querying the component for the com.sun.star.frame.XController interface, asking the controller for its frame, and asking this frame for its container window.
         """
         ...
-
+    @ApplicationMainWindow.setter
+    def ApplicationMainWindow(self, value: 'XWindow_713b0924') -> None:
+        ...
     @property
     def DataSource(self) -> 'XDataSource_a2990ae7':
         """
         provides access to the data source belong to the database document
         """
         ...
-
+    @DataSource.setter
+    def DataSource(self, value: 'XDataSource_a2990ae7') -> None:
+        ...
 

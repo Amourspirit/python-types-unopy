@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,7 +43,9 @@ class XAudio(XAnimationNode_1cf10eb9):
             LibreOffice 7.2
         """
         ...
-
+    @HideDuringShow.setter
+    def HideDuringShow(self, value: bool) -> None:
+        ...
     @property
     def Narration(self) -> bool:
         """
@@ -54,18 +56,24 @@ class XAudio(XAnimationNode_1cf10eb9):
             LibreOffice 7.2
         """
         ...
-
+    @Narration.setter
+    def Narration(self, value: bool) -> None:
+        ...
     @property
     def Source(self) -> object:
         """
         This attribute specifies the source element that contains the audio.
         """
         ...
-
+    @Source.setter
+    def Source(self, value: object) -> None:
+        ...
     @property
     def Volume(self) -> float:
         """
         """
         ...
-
+    @Volume.setter
+    def Volume(self, value: float) -> None:
+        ...
 

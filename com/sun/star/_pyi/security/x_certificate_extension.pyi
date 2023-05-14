@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -45,12 +45,16 @@ class XCertificateExtension(XInterface_8f010a43):
         Get the extension object identifier in string.
         """
         ...
-
+    @ExtensionId.setter
+    def ExtensionId(self, value: uno.ByteSequence) -> None:
+        ...
     @property
     def ExtensionValue(self) -> uno.ByteSequence:
         """
         Get the extension value.
         """
         ...
-
+    @ExtensionValue.setter
+    def ExtensionValue(self, value: uno.ByteSequence) -> None:
+        ...
 

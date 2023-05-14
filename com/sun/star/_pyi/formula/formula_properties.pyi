@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -39,6 +39,9 @@ class FormulaProperties(ABC):
         contains the alignment of the formula.
         """
         ...
+    @Alignment.setter
+    def Alignment(self, value: int) -> None:
+        ...
     @property
     def BaseFontHeight(self) -> int:
         """
@@ -46,6 +49,9 @@ class FormulaProperties(ABC):
         
         All properties containing relative values are related to this value.
         """
+        ...
+    @BaseFontHeight.setter
+    def BaseFontHeight(self, value: int) -> None:
         ...
     @property
     def BaseLine(self) -> int:
@@ -57,11 +63,17 @@ class FormulaProperties(ABC):
             OOo 3.4
         """
         ...
+    @BaseLine.setter
+    def BaseLine(self, value: int) -> None:
+        ...
     @property
     def BottomMargin(self) -> int:
         """
         contains the metric value of the bottom margin of the formula.
         """
+        ...
+    @BottomMargin.setter
+    def BottomMargin(self, value: int) -> None:
         ...
     @property
     def CustomFontNameFixed(self) -> str:
@@ -69,11 +81,17 @@ class FormulaProperties(ABC):
         customized name for fixed font.
         """
         ...
+    @CustomFontNameFixed.setter
+    def CustomFontNameFixed(self, value: str) -> None:
+        ...
     @property
     def CustomFontNameSans(self) -> str:
         """
         customized name for sans serif font
         """
+        ...
+    @CustomFontNameSans.setter
+    def CustomFontNameSans(self, value: str) -> None:
         ...
     @property
     def CustomFontNameSerif(self) -> str:
@@ -81,11 +99,17 @@ class FormulaProperties(ABC):
         customized name for serif font
         """
         ...
+    @CustomFontNameSerif.setter
+    def CustomFontNameSerif(self, value: str) -> None:
+        ...
     @property
     def FontFixedIsBold(self) -> bool:
         """
         determines if the customized fixed font is bold.
         """
+        ...
+    @FontFixedIsBold.setter
+    def FontFixedIsBold(self, value: bool) -> None:
         ...
     @property
     def FontFixedIsItalic(self) -> bool:
@@ -93,11 +117,17 @@ class FormulaProperties(ABC):
         determines if the customized fixed font is italic.
         """
         ...
+    @FontFixedIsItalic.setter
+    def FontFixedIsItalic(self, value: bool) -> None:
+        ...
     @property
     def FontFunctionsIsBold(self) -> bool:
         """
         determines if the font that is used to display functions is bold.
         """
+        ...
+    @FontFunctionsIsBold.setter
+    def FontFunctionsIsBold(self, value: bool) -> None:
         ...
     @property
     def FontFunctionsIsItalic(self) -> bool:
@@ -105,11 +135,17 @@ class FormulaProperties(ABC):
         determines if the font that is used to display functions is italic.
         """
         ...
+    @FontFunctionsIsItalic.setter
+    def FontFunctionsIsItalic(self, value: bool) -> None:
+        ...
     @property
     def FontNameFunctions(self) -> str:
         """
         contains the name of the font that is used to display functions contained in the formula.
         """
+        ...
+    @FontNameFunctions.setter
+    def FontNameFunctions(self, value: str) -> None:
         ...
     @property
     def FontNameNumbers(self) -> str:
@@ -117,11 +153,17 @@ class FormulaProperties(ABC):
         contains the name of the font that is used to display numbers contained in the formula.
         """
         ...
+    @FontNameNumbers.setter
+    def FontNameNumbers(self, value: str) -> None:
+        ...
     @property
     def FontNameText(self) -> str:
         """
         contains the name of the font that is used to display text contained in the formula.
         """
+        ...
+    @FontNameText.setter
+    def FontNameText(self, value: str) -> None:
         ...
     @property
     def FontNameVariables(self) -> str:
@@ -129,11 +171,17 @@ class FormulaProperties(ABC):
         contains the name of the font that is used to display variables contained in the formula.
         """
         ...
+    @FontNameVariables.setter
+    def FontNameVariables(self, value: str) -> None:
+        ...
     @property
     def FontNumbersIsBold(self) -> bool:
         """
         determines if the font that is used to display numbers is bold.
         """
+        ...
+    @FontNumbersIsBold.setter
+    def FontNumbersIsBold(self, value: bool) -> None:
         ...
     @property
     def FontNumbersIsItalic(self) -> bool:
@@ -141,11 +189,17 @@ class FormulaProperties(ABC):
         determines if the font that is used to display numbers is italic.
         """
         ...
+    @FontNumbersIsItalic.setter
+    def FontNumbersIsItalic(self, value: bool) -> None:
+        ...
     @property
     def FontSansIsBold(self) -> bool:
         """
         determines if the customized sans serif font is bold.
         """
+        ...
+    @FontSansIsBold.setter
+    def FontSansIsBold(self, value: bool) -> None:
         ...
     @property
     def FontSansIsItalic(self) -> bool:
@@ -153,11 +207,17 @@ class FormulaProperties(ABC):
         determines if the customized sans serif font is italic.
         """
         ...
+    @FontSansIsItalic.setter
+    def FontSansIsItalic(self, value: bool) -> None:
+        ...
     @property
     def FontSerifIsBold(self) -> bool:
         """
         determines if the customized serif font is bold.
         """
+        ...
+    @FontSerifIsBold.setter
+    def FontSerifIsBold(self, value: bool) -> None:
         ...
     @property
     def FontSerifIsItalic(self) -> bool:
@@ -165,11 +225,17 @@ class FormulaProperties(ABC):
         determines if the customized serif font is italic.
         """
         ...
+    @FontSerifIsItalic.setter
+    def FontSerifIsItalic(self, value: bool) -> None:
+        ...
     @property
     def FontTextIsBold(self) -> bool:
         """
         determines if the font that is used to display text is bold.
         """
+        ...
+    @FontTextIsBold.setter
+    def FontTextIsBold(self, value: bool) -> None:
         ...
     @property
     def FontTextIsItalic(self) -> bool:
@@ -177,11 +243,17 @@ class FormulaProperties(ABC):
         determines if the font that is used to display text is italic.
         """
         ...
+    @FontTextIsItalic.setter
+    def FontTextIsItalic(self, value: bool) -> None:
+        ...
     @property
     def FontVariablesIsBold(self) -> bool:
         """
         determines if the font that is used to display variables is bold.
         """
+        ...
+    @FontVariablesIsBold.setter
+    def FontVariablesIsBold(self, value: bool) -> None:
         ...
     @property
     def FontVariablesIsItalic(self) -> bool:
@@ -189,17 +261,26 @@ class FormulaProperties(ABC):
         determines if the font that is used to display variables is italic.
         """
         ...
+    @FontVariablesIsItalic.setter
+    def FontVariablesIsItalic(self, value: bool) -> None:
+        ...
     @property
     def Formula(self) -> str:
         """
         contains the command string of the formula
         """
         ...
+    @Formula.setter
+    def Formula(self, value: str) -> None:
+        ...
     @property
     def IsScaleAllBrackets(self) -> bool:
         """
         decides if all brackets (even those without \"left\"/\"right\" modifier) are scaled.
         """
+        ...
+    @IsScaleAllBrackets.setter
+    def IsScaleAllBrackets(self, value: bool) -> None:
         ...
     @property
     def IsTextMode(self) -> bool:
@@ -209,11 +290,17 @@ class FormulaProperties(ABC):
         This is a mode where formulas are displayed the same height as a line of text.
         """
         ...
+    @IsTextMode.setter
+    def IsTextMode(self, value: bool) -> None:
+        ...
     @property
     def LeftMargin(self) -> int:
         """
         contains the metric value of the left margin of the formula.
         """
+        ...
+    @LeftMargin.setter
+    def LeftMargin(self, value: int) -> None:
         ...
     @property
     def RelativeBracketDistance(self) -> int:
@@ -221,11 +308,17 @@ class FormulaProperties(ABC):
         contains the relative distance of brackets.
         """
         ...
+    @RelativeBracketDistance.setter
+    def RelativeBracketDistance(self, value: int) -> None:
+        ...
     @property
     def RelativeBracketExcessSize(self) -> int:
         """
         contains the relative excess size of brackets.
         """
+        ...
+    @RelativeBracketExcessSize.setter
+    def RelativeBracketExcessSize(self, value: int) -> None:
         ...
     @property
     def RelativeFontHeightFunctions(self) -> int:
@@ -235,6 +328,9 @@ class FormulaProperties(ABC):
         The values unit is percent of the com.sun.star.formula.FormulaProperties.BaseFontHeight
         """
         ...
+    @RelativeFontHeightFunctions.setter
+    def RelativeFontHeightFunctions(self, value: int) -> None:
+        ...
     @property
     def RelativeFontHeightIndices(self) -> int:
         """
@@ -242,6 +338,9 @@ class FormulaProperties(ABC):
         
         The values unit is percent of the com.sun.star.formula.FormulaProperties.BaseFontHeight
         """
+        ...
+    @RelativeFontHeightIndices.setter
+    def RelativeFontHeightIndices(self, value: int) -> None:
         ...
     @property
     def RelativeFontHeightLimits(self) -> int:
@@ -251,6 +350,9 @@ class FormulaProperties(ABC):
         The values unit is percent of the com.sun.star.formula.FormulaProperties.BaseFontHeight
         """
         ...
+    @RelativeFontHeightLimits.setter
+    def RelativeFontHeightLimits(self, value: int) -> None:
+        ...
     @property
     def RelativeFontHeightOperators(self) -> int:
         """
@@ -258,6 +360,9 @@ class FormulaProperties(ABC):
         
         The values unit is percent of the com.sun.star.formula.FormulaProperties.BaseFontHeight
         """
+        ...
+    @RelativeFontHeightOperators.setter
+    def RelativeFontHeightOperators(self, value: int) -> None:
         ...
     @property
     def RelativeFontHeightText(self) -> int:
@@ -267,11 +372,17 @@ class FormulaProperties(ABC):
         The values unit is percent of the com.sun.star.formula.FormulaProperties.BaseFontHeight
         """
         ...
+    @RelativeFontHeightText.setter
+    def RelativeFontHeightText(self, value: int) -> None:
+        ...
     @property
     def RelativeFractionBarExcessLength(self) -> int:
         """
         contains the relative excess length of a fraction bar.
         """
+        ...
+    @RelativeFractionBarExcessLength.setter
+    def RelativeFractionBarExcessLength(self, value: int) -> None:
         ...
     @property
     def RelativeFractionBarLineWeight(self) -> int:
@@ -279,11 +390,17 @@ class FormulaProperties(ABC):
         contains the relative line weight of a fraction bar.
         """
         ...
+    @RelativeFractionBarLineWeight.setter
+    def RelativeFractionBarLineWeight(self, value: int) -> None:
+        ...
     @property
     def RelativeFractionDenominatorDepth(self) -> int:
         """
         contains the relative depth of the denominator of a fraction
         """
+        ...
+    @RelativeFractionDenominatorDepth.setter
+    def RelativeFractionDenominatorDepth(self, value: int) -> None:
         ...
     @property
     def RelativeFractionNumeratorHeight(self) -> int:
@@ -291,11 +408,17 @@ class FormulaProperties(ABC):
         contains the relative height of the numerator of a fraction.
         """
         ...
+    @RelativeFractionNumeratorHeight.setter
+    def RelativeFractionNumeratorHeight(self, value: int) -> None:
+        ...
     @property
     def RelativeIndexSubscript(self) -> int:
         """
         contains the relative superscript of indices.
         """
+        ...
+    @RelativeIndexSubscript.setter
+    def RelativeIndexSubscript(self, value: int) -> None:
         ...
     @property
     def RelativeIndexSuperscript(self) -> int:
@@ -303,11 +426,17 @@ class FormulaProperties(ABC):
         contains the relative subscript of indices.
         """
         ...
+    @RelativeIndexSuperscript.setter
+    def RelativeIndexSuperscript(self, value: int) -> None:
+        ...
     @property
     def RelativeLineSpacing(self) -> int:
         """
         contains the relative line spacing.
         """
+        ...
+    @RelativeLineSpacing.setter
+    def RelativeLineSpacing(self, value: int) -> None:
         ...
     @property
     def RelativeLowerLimitDistance(self) -> int:
@@ -315,11 +444,17 @@ class FormulaProperties(ABC):
         contains the relative distance of lower limits.
         """
         ...
+    @RelativeLowerLimitDistance.setter
+    def RelativeLowerLimitDistance(self, value: int) -> None:
+        ...
     @property
     def RelativeMatrixColumnSpacing(self) -> int:
         """
         contains the relative column spacing of matrices.
         """
+        ...
+    @RelativeMatrixColumnSpacing.setter
+    def RelativeMatrixColumnSpacing(self, value: int) -> None:
         ...
     @property
     def RelativeMatrixLineSpacing(self) -> int:
@@ -327,11 +462,17 @@ class FormulaProperties(ABC):
         contains the relative line spacing of matrices.
         """
         ...
+    @RelativeMatrixLineSpacing.setter
+    def RelativeMatrixLineSpacing(self, value: int) -> None:
+        ...
     @property
     def RelativeOperatorExcessSize(self) -> int:
         """
         contains the relative excess of operators.
         """
+        ...
+    @RelativeOperatorExcessSize.setter
+    def RelativeOperatorExcessSize(self, value: int) -> None:
         ...
     @property
     def RelativeOperatorSpacing(self) -> int:
@@ -339,11 +480,17 @@ class FormulaProperties(ABC):
         contains the relative spacing of operators.
         """
         ...
+    @RelativeOperatorSpacing.setter
+    def RelativeOperatorSpacing(self, value: int) -> None:
+        ...
     @property
     def RelativeRootSpacing(self) -> int:
         """
         contains the relative root spacing
         """
+        ...
+    @RelativeRootSpacing.setter
+    def RelativeRootSpacing(self, value: int) -> None:
         ...
     @property
     def RelativeScaleBracketExcessSize(self) -> int:
@@ -351,11 +498,17 @@ class FormulaProperties(ABC):
         contains the relative scaling of the bracket excess.
         """
         ...
+    @RelativeScaleBracketExcessSize.setter
+    def RelativeScaleBracketExcessSize(self, value: int) -> None:
+        ...
     @property
     def RelativeSpacing(self) -> int:
         """
         contains the relative spacing.
         """
+        ...
+    @RelativeSpacing.setter
+    def RelativeSpacing(self, value: int) -> None:
         ...
     @property
     def RelativeSymbolMinimumHeight(self) -> int:
@@ -363,11 +516,17 @@ class FormulaProperties(ABC):
         contains the relative minimum height of the formula.
         """
         ...
+    @RelativeSymbolMinimumHeight.setter
+    def RelativeSymbolMinimumHeight(self, value: int) -> None:
+        ...
     @property
     def RelativeSymbolPrimaryHeight(self) -> int:
         """
         contains the relative primary height of symbols.
         """
+        ...
+    @RelativeSymbolPrimaryHeight.setter
+    def RelativeSymbolPrimaryHeight(self, value: int) -> None:
         ...
     @property
     def RelativeUpperLimitDistance(self) -> int:
@@ -375,16 +534,25 @@ class FormulaProperties(ABC):
         contains the relative distance of upper limits
         """
         ...
+    @RelativeUpperLimitDistance.setter
+    def RelativeUpperLimitDistance(self, value: int) -> None:
+        ...
     @property
     def RightMargin(self) -> int:
         """
         contains the metric value of the right margin of the formula.
         """
         ...
+    @RightMargin.setter
+    def RightMargin(self, value: int) -> None:
+        ...
     @property
     def TopMargin(self) -> int:
         """
         contains the metric value of the top margin of the formula.
         """
+        ...
+    @TopMargin.setter
+    def TopMargin(self, value: int) -> None:
         ...
 

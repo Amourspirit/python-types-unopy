@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -67,6 +67,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @unoID.setter
+    def unoID(self, value: str) -> None:
+        ...
 
     @property
     def dateSeparator(self) -> str:
@@ -75,6 +78,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @dateSeparator.setter
+    def dateSeparator(self, value: str) -> None:
+        ...
 
     @property
     def thousandSeparator(self) -> str:
@@ -83,6 +89,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @thousandSeparator.setter
+    def thousandSeparator(self, value: str) -> None:
+        ...
 
     @property
     def decimalSeparator(self) -> str:
@@ -91,6 +100,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @decimalSeparator.setter
+    def decimalSeparator(self, value: str) -> None:
+        ...
 
     @property
     def timeSeparator(self) -> str:
@@ -99,6 +111,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @timeSeparator.setter
+    def timeSeparator(self, value: str) -> None:
+        ...
 
     @property
     def time100SecSeparator(self) -> str:
@@ -107,6 +122,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @time100SecSeparator.setter
+    def time100SecSeparator(self, value: str) -> None:
+        ...
 
     @property
     def listSeparator(self) -> str:
@@ -115,6 +133,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @listSeparator.setter
+    def listSeparator(self, value: str) -> None:
+        ...
 
     @property
     def quotationStart(self) -> str:
@@ -123,6 +144,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @quotationStart.setter
+    def quotationStart(self, value: str) -> None:
+        ...
 
     @property
     def quotationEnd(self) -> str:
@@ -131,6 +155,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @quotationEnd.setter
+    def quotationEnd(self, value: str) -> None:
+        ...
 
     @property
     def doubleQuotationStart(self) -> str:
@@ -139,6 +166,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @doubleQuotationStart.setter
+    def doubleQuotationStart(self, value: str) -> None:
+        ...
 
     @property
     def doubleQuotationEnd(self) -> str:
@@ -147,6 +177,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @doubleQuotationEnd.setter
+    def doubleQuotationEnd(self, value: str) -> None:
+        ...
 
     @property
     def timeAM(self) -> str:
@@ -155,6 +188,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @timeAM.setter
+    def timeAM(self, value: str) -> None:
+        ...
 
     @property
     def timePM(self) -> str:
@@ -163,6 +199,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @timePM.setter
+    def timePM(self, value: str) -> None:
+        ...
 
     @property
     def measurementSystem(self) -> str:
@@ -171,6 +210,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @measurementSystem.setter
+    def measurementSystem(self, value: str) -> None:
+        ...
 
     @property
     def LongDateDayOfWeekSeparator(self) -> str:
@@ -179,6 +221,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @LongDateDayOfWeekSeparator.setter
+    def LongDateDayOfWeekSeparator(self, value: str) -> None:
+        ...
 
     @property
     def LongDateDaySeparator(self) -> str:
@@ -187,6 +232,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @LongDateDaySeparator.setter
+    def LongDateDaySeparator(self, value: str) -> None:
+        ...
 
     @property
     def LongDateMonthSeparator(self) -> str:
@@ -195,6 +243,9 @@ class LocaleDataItem(object):
         """
         ...
 
+    @LongDateMonthSeparator.setter
+    def LongDateMonthSeparator(self, value: str) -> None:
+        ...
 
     @property
     def LongDateYearSeparator(self) -> str:
@@ -203,4 +254,7 @@ class LocaleDataItem(object):
         """
         ...
 
+    @LongDateYearSeparator.setter
+    def LongDateYearSeparator(self, value: str) -> None:
+        ...
 

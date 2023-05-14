@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -39,11 +39,17 @@ class Decimal(XDataType_83f209cb):
         See http://www.w3.org/TR/xmlschema-2/#rf-fractionDigits
         """
         ...
+    @FractionDigits.setter
+    def FractionDigits(self, value: int) -> None:
+        ...
     @property
     def MaxExclusiveDouble(self) -> float:
         """
         specifies the exclusive upper bound for the value
         """
+        ...
+    @MaxExclusiveDouble.setter
+    def MaxExclusiveDouble(self, value: float) -> None:
         ...
     @property
     def MaxInclusiveDouble(self) -> float:
@@ -51,17 +57,26 @@ class Decimal(XDataType_83f209cb):
         specifies the inclusive upper bound for the value
         """
         ...
+    @MaxInclusiveDouble.setter
+    def MaxInclusiveDouble(self, value: float) -> None:
+        ...
     @property
     def MinExclusiveDouble(self) -> float:
         """
         specifies the exclusive lower bound for the value
         """
         ...
+    @MinExclusiveDouble.setter
+    def MinExclusiveDouble(self, value: float) -> None:
+        ...
     @property
     def MinInclusiveDouble(self) -> float:
         """
         specifies the inclusive lower bound for the value
         """
+        ...
+    @MinInclusiveDouble.setter
+    def MinInclusiveDouble(self, value: float) -> None:
         ...
     @property
     def TotalDigits(self) -> int:
@@ -72,5 +87,8 @@ class Decimal(XDataType_83f209cb):
         
         See http://www.w3.org/TR/xmlschema-2/#rf-totalDigits
         """
+        ...
+    @TotalDigits.setter
+    def TotalDigits(self, value: int) -> None:
         ...
 

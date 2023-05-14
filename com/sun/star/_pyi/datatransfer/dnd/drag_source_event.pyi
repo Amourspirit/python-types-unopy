@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class DragSourceEvent(EventObject_a3d70b03):
         """
         ...
 
+    @DragSourceContext.setter
+    def DragSourceContext(self, value: XDragSourceContext_c2661297) -> None:
+        ...
 
     @property
     def DragSource(self) -> XDragSource_49900fb2:
@@ -66,4 +69,7 @@ class DragSourceEvent(EventObject_a3d70b03):
         """
         ...
 
+    @DragSource.setter
+    def DragSource(self, value: XDragSource_49900fb2) -> None:
+        ...
 

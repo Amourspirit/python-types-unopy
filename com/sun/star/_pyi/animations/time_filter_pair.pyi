@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -47,9 +47,15 @@ class TimeFilterPair(object):
     def Time(self) -> float:
         ...
 
+    @Time.setter
+    def Time(self, value: float) -> None:
+        ...
 
     @property
     def Progress(self) -> float:
         ...
 
+    @Progress.setter
+    def Progress(self, value: float) -> None:
+        ...
 

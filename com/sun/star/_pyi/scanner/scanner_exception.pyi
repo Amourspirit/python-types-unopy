@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,7 +52,9 @@ class ScannerException(Exception_85530a09):
         Error: contains the specific reason for failure.
         """
         ...
-
+    @Error.setter
+    def Error(self, value: ScanError_b0d90b81) -> None:
+        ...
 
 __all__ = ['ScannerException']
 

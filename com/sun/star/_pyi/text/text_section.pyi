@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,17 +58,26 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
             LibreOffice 6.1
         """
         ...
+    @BackGraphic.setter
+    def BackGraphic(self, value: 'XGraphic_a4da0afc') -> None:
+        ...
     @property
     def BackGraphicFilter(self) -> str:
         """
         contains the name of the file filter for the background graphic.
         """
         ...
+    @BackGraphicFilter.setter
+    def BackGraphicFilter(self, value: str) -> None:
+        ...
     @property
     def BackGraphicLocation(self) -> 'GraphicLocation_e3ef0d30':
         """
         determines the position of the background graphic.
         """
+        ...
+    @BackGraphicLocation.setter
+    def BackGraphicLocation(self, value: 'GraphicLocation_e3ef0d30') -> None:
         ...
     @property
     def BackGraphicURL(self) -> str:
@@ -78,6 +87,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         Note the new behaviour since it this was deprecated: This property can only be set and only external URLs are supported (no more vnd.sun.star.GraphicObject scheme). When an URL is set, then it will load the graphic and set the BackGraphic property.
         """
         ...
+    @BackGraphicURL.setter
+    def BackGraphicURL(self, value: str) -> None:
+        ...
     @property
     def Condition(self) -> str:
         """
@@ -85,6 +97,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         
         If the result of the conditional expression is TRUE and the property TextSection.IsVisible is FALSE, then the section is hidden.
         """
+        ...
+    @Condition.setter
+    def Condition(self, value: str) -> None:
         ...
     @property
     def DDECommandElement(self) -> str:
@@ -94,11 +109,17 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         The element can be i.e. a name of a cell in a sheet or a bookmark.
         """
         ...
+    @DDECommandElement.setter
+    def DDECommandElement(self, value: str) -> None:
+        ...
     @property
     def DDECommandFile(self) -> str:
         """
         specifies the source file name of the command string for a DDE operation.
         """
+        ...
+    @DDECommandFile.setter
+    def DDECommandFile(self, value: str) -> None:
         ...
     @property
     def DDECommandType(self) -> str:
@@ -108,11 +129,17 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         The type can be the name of the application that provides a DDE source.
         """
         ...
+    @DDECommandType.setter
+    def DDECommandType(self, value: str) -> None:
+        ...
     @property
     def EndnoteIsCollectAtTextEnd(self) -> bool:
         """
         determines whether endnotes inside the section are displayed at the end of the section text.
         """
+        ...
+    @EndnoteIsCollectAtTextEnd.setter
+    def EndnoteIsCollectAtTextEnd(self, value: bool) -> None:
         ...
     @property
     def EndnoteIsOwnNumbering(self) -> bool:
@@ -122,6 +149,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         This is only valid if EndnoteIsRestartNumbering is set.
         """
         ...
+    @EndnoteIsOwnNumbering.setter
+    def EndnoteIsOwnNumbering(self, value: bool) -> None:
+        ...
     @property
     def EndnoteIsRestartNumbering(self) -> bool:
         """
@@ -129,6 +159,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         
         This is only valid if EndnoteIsRestartNumbering is set.
         """
+        ...
+    @EndnoteIsRestartNumbering.setter
+    def EndnoteIsRestartNumbering(self, value: bool) -> None:
         ...
     @property
     def EndnoteNumberingPrefix(self) -> str:
@@ -138,6 +171,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         This is only valid if EndnoteIsOwnNumbering is set.
         """
         ...
+    @EndnoteNumberingPrefix.setter
+    def EndnoteNumberingPrefix(self, value: str) -> None:
+        ...
     @property
     def EndnoteNumberingSuffix(self) -> str:
         """
@@ -145,6 +181,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         
         This is only valid if EndnoteIsOwnNumbering is set.
         """
+        ...
+    @EndnoteNumberingSuffix.setter
+    def EndnoteNumberingSuffix(self, value: str) -> None:
         ...
     @property
     def EndnoteNumberingType(self) -> int:
@@ -154,6 +193,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         This is only valid if EndoteIsOwnNumbering is set.
         """
         ...
+    @EndnoteNumberingType.setter
+    def EndnoteNumberingType(self, value: int) -> None:
+        ...
     @property
     def EndnoteRestartNumberingAt(self) -> int:
         """
@@ -162,17 +204,26 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         This is only valid if EndnoteIsRestartNumbering is set.
         """
         ...
+    @EndnoteRestartNumberingAt.setter
+    def EndnoteRestartNumberingAt(self, value: int) -> None:
+        ...
     @property
     def FileLink(self) -> 'SectionFileLink_d63e0cb0':
         """
         If this property is set, then the content of the section is read from the specified document.
         """
         ...
+    @FileLink.setter
+    def FileLink(self, value: 'SectionFileLink_d63e0cb0') -> None:
+        ...
     @property
     def FootnoteIsCollectAtTextEnd(self) -> bool:
         """
         determines whether footnotes inside the section are displayed at the end of the section text.
         """
+        ...
+    @FootnoteIsCollectAtTextEnd.setter
+    def FootnoteIsCollectAtTextEnd(self, value: bool) -> None:
         ...
     @property
     def FootnoteIsOwnNumbering(self) -> bool:
@@ -182,6 +233,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         This is only valid if FootnoteIsRestartNumbering is set.
         """
         ...
+    @FootnoteIsOwnNumbering.setter
+    def FootnoteIsOwnNumbering(self, value: bool) -> None:
+        ...
     @property
     def FootnoteIsRestartNumbering(self) -> bool:
         """
@@ -189,6 +243,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         
         This is only valid if FootnoteIsRestartNumbering is set.
         """
+        ...
+    @FootnoteIsRestartNumbering.setter
+    def FootnoteIsRestartNumbering(self, value: bool) -> None:
         ...
     @property
     def FootnoteNumberingPrefix(self) -> str:
@@ -198,6 +255,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         This is only valid if FootnoteIsOwnNumbering is set.
         """
         ...
+    @FootnoteNumberingPrefix.setter
+    def FootnoteNumberingPrefix(self, value: str) -> None:
+        ...
     @property
     def FootnoteNumberingSuffix(self) -> str:
         """
@@ -205,6 +265,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         
         This is only valid if FootnoteIsOwnNumbering is set.
         """
+        ...
+    @FootnoteNumberingSuffix.setter
+    def FootnoteNumberingSuffix(self, value: str) -> None:
         ...
     @property
     def FootnoteNumberingType(self) -> int:
@@ -214,6 +277,9 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         This is only valid if FootnoteIsOwnNumbering is set.
         """
         ...
+    @FootnoteNumberingType.setter
+    def FootnoteNumberingType(self, value: int) -> None:
+        ...
     @property
     def FootnoteRestartNumberingAt(self) -> int:
         """
@@ -222,11 +288,17 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         This is only valid if FootnoteIsRestartNumbering is set.
         """
         ...
+    @FootnoteRestartNumberingAt.setter
+    def FootnoteRestartNumberingAt(self, value: int) -> None:
+        ...
     @property
     def IsAutomaticUpdate(self) -> bool:
         """
         determines if a DDE link is updated automatically.
         """
+        ...
+    @IsAutomaticUpdate.setter
+    def IsAutomaticUpdate(self, value: bool) -> None:
         ...
     @property
     def IsProtected(self) -> bool:
@@ -234,11 +306,17 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         If this property is TRUE, the text section is protected and cannot be modified from the user interface.
         """
         ...
+    @IsProtected.setter
+    def IsProtected(self, value: bool) -> None:
+        ...
     @property
     def IsVisible(self) -> bool:
         """
         If this property is FALSE, the text section is hidden.
         """
+        ...
+    @IsVisible.setter
+    def IsVisible(self, value: bool) -> None:
         ...
     @property
     def LinkRegion(self) -> str:
@@ -248,11 +326,17 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         The source may be a text section or a bookmark. If TextSection.FileLink is empty, then the current document is searched for the source. If this property is empty and TextSection.FileLink is set, then the complete document content is linked into this section.
         """
         ...
+    @LinkRegion.setter
+    def LinkRegion(self, value: str) -> None:
+        ...
     @property
     def SectionLeftMargin(self) -> int:
         """
         determines the left margin of the section
         """
+        ...
+    @SectionLeftMargin.setter
+    def SectionLeftMargin(self, value: int) -> None:
         ...
     @property
     def SectionRightMargin(self) -> int:
@@ -260,10 +344,16 @@ class TextSection(TextContent_a6810b4d, UserDefinedAttributesSupplier_9fbe1222, 
         determines the left margin of the section
         """
         ...
+    @SectionRightMargin.setter
+    def SectionRightMargin(self, value: int) -> None:
+        ...
     @property
     def TextColumns(self) -> 'XTextColumns_b17f0bab':
         """
         allows columns to be set into the text section
         """
+        ...
+    @TextColumns.setter
+    def TextColumns(self, value: 'XTextColumns_b17f0bab') -> None:
         ...
 

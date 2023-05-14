@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -131,14 +131,18 @@ class XFormOperations(XComponent_98dc0ab5):
         Note that it is possible to operate on a user interface form without actually having access to the form controller instance. However, in this case some functionality will not be available. In particular, every feature which relies on the active control of the controller might be of limited use.
         """
         ...
-
+    @Controller.setter
+    def Controller(self, value: 'XFormController_4a570ffe') -> None:
+        ...
     @property
     def Cursor(self) -> 'XRowSet_7a090960':
         """
         provides access to the cursor of the form the instance is operating on.
         """
         ...
-
+    @Cursor.setter
+    def Cursor(self, value: 'XRowSet_7a090960') -> None:
+        ...
     @property
     def FeatureInvalidation(self) -> 'XFeatureInvalidation_9f4211f4':
         """
@@ -151,12 +155,16 @@ class XFormOperations(XComponent_98dc0ab5):
         Note that the instance does not actually notify changes in the feature states, but only potential changes: It's up to the callee to react on this appropriately. This is since OpenOffice.org's application framework features own mechanisms to cache and invalidate feature states, so we do not burden this implementation here with such mechanisms.
         """
         ...
-
+    @FeatureInvalidation.setter
+    def FeatureInvalidation(self, value: 'XFeatureInvalidation_9f4211f4') -> None:
+        ...
     @property
     def UpdateCursor(self) -> 'XResultSetUpdate_e0fb0d0a':
         """
         provides access to the update cursor of the form the instance is operating on.
         """
         ...
-
+    @UpdateCursor.setter
+    def UpdateCursor(self, value: 'XResultSetUpdate_e0fb0d0a') -> None:
+        ...
 

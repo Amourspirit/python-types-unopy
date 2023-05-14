@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,6 +60,9 @@ class DataPilotFieldGroupInfo(object):
         """
         ...
 
+    @HasAutoStart.setter
+    def HasAutoStart(self, value: bool) -> None:
+        ...
 
     @property
     def HasAutoEnd(self) -> bool:
@@ -68,6 +71,9 @@ class DataPilotFieldGroupInfo(object):
         """
         ...
 
+    @HasAutoEnd.setter
+    def HasAutoEnd(self, value: bool) -> None:
+        ...
 
     @property
     def HasDateValues(self) -> bool:
@@ -76,6 +82,9 @@ class DataPilotFieldGroupInfo(object):
         """
         ...
 
+    @HasDateValues.setter
+    def HasDateValues(self, value: bool) -> None:
+        ...
 
     @property
     def Start(self) -> float:
@@ -84,6 +93,9 @@ class DataPilotFieldGroupInfo(object):
         """
         ...
 
+    @Start.setter
+    def Start(self, value: float) -> None:
+        ...
 
     @property
     def End(self) -> float:
@@ -92,6 +104,9 @@ class DataPilotFieldGroupInfo(object):
         """
         ...
 
+    @End.setter
+    def End(self, value: float) -> None:
+        ...
 
     @property
     def Step(self) -> float:
@@ -102,6 +117,9 @@ class DataPilotFieldGroupInfo(object):
         """
         ...
 
+    @Step.setter
+    def Step(self, value: float) -> None:
+        ...
 
     @property
     def GroupBy(self) -> int:
@@ -110,6 +128,9 @@ class DataPilotFieldGroupInfo(object):
         """
         ...
 
+    @GroupBy.setter
+    def GroupBy(self, value: int) -> None:
+        ...
 
     @property
     def SourceField(self) -> XDataPilotField_e0350cdf:
@@ -120,6 +141,9 @@ class DataPilotFieldGroupInfo(object):
         """
         ...
 
+    @SourceField.setter
+    def SourceField(self, value: XDataPilotField_e0350cdf) -> None:
+        ...
 
     @property
     def Groups(self) -> XNameAccess_e2ab0cf6:
@@ -130,4 +154,7 @@ class DataPilotFieldGroupInfo(object):
         """
         ...
 
+    @Groups.setter
+    def Groups(self, value: XNameAccess_e2ab0cf6) -> None:
+        ...
 

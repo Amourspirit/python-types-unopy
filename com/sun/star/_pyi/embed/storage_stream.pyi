@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,6 +41,9 @@ class StorageStream(XPropertySet_bc180bfa, XEncryptionProtectedSource_8cdf11a3, 
         specifies if the stream should be compressed next time it is stored.
         """
         ...
+    @IsCompressed.setter
+    def IsCompressed(self, value: bool) -> None:
+        ...
     @property
     def IsEncrypted(self) -> bool:
         """
@@ -51,17 +54,26 @@ class StorageStream(XPropertySet_bc180bfa, XEncryptionProtectedSource_8cdf11a3, 
         If somebody sets a password explicitly by using XEncryptionProtectedSource interface the value is automatically set to TRUE. If the interface is used to remove the encryption - the value is automatically set to FALSE.
         """
         ...
+    @IsEncrypted.setter
+    def IsEncrypted(self, value: bool) -> None:
+        ...
     @property
     def MediaType(self) -> str:
         """
         allows to get and set media type of the stream.
         """
         ...
+    @MediaType.setter
+    def MediaType(self, value: str) -> None:
+        ...
     @property
     def Size(self) -> int:
         """
         allows to detect size of the stream in bytes.
         """
+        ...
+    @Size.setter
+    def Size(self, value: int) -> None:
         ...
     @property
     def UseCommonStoragePasswordEncryption(self) -> bool:
@@ -76,5 +88,8 @@ class StorageStream(XPropertySet_bc180bfa, XEncryptionProtectedSource_8cdf11a3, 
         
         In case stream is encrypted one and the value is set to TRUE the stream becomes non-encrypted until the common storage password holder is committed. The data about previously set password ( if any ) will be removed and the stream can be accessed as non-encrypted stream.
         """
+        ...
+    @UseCommonStoragePasswordEncryption.setter
+    def UseCommonStoragePasswordEncryption(self, value: bool) -> None:
         ...
 

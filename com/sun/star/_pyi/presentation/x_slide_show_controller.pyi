@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -226,21 +226,27 @@ class XSlideShowController(ABC):
         If this attribute is set to TRUE, the window of the slide show is always on top of all other windows.
         """
         ...
-
+    @AlwaysOnTop.setter
+    def AlwaysOnTop(self, value: bool) -> None:
+        ...
     @property
     def MouseVisible(self) -> bool:
         """
         If this attribute is TRUE, the mouse is visible during the slide show.
         """
         ...
-
+    @MouseVisible.setter
+    def MouseVisible(self, value: bool) -> None:
+        ...
     @property
     def PenColor(self) -> int:
         """
         This attribute changes the color of the pen.
         """
         ...
-
+    @PenColor.setter
+    def PenColor(self, value: int) -> None:
+        ...
     @property
     def PenWidth(self) -> float:
         """
@@ -251,7 +257,9 @@ class XSlideShowController(ABC):
             LibreOffice 4.2
         """
         ...
-
+    @PenWidth.setter
+    def PenWidth(self, value: float) -> None:
+        ...
     @property
     def UsePen(self) -> bool:
         """
@@ -260,5 +268,7 @@ class XSlideShowController(ABC):
         You can draw on the presentation with this pen.
         """
         ...
-
+    @UsePen.setter
+    def UsePen(self, value: bool) -> None:
+        ...
 

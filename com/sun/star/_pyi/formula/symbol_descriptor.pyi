@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -62,6 +62,9 @@ class SymbolDescriptor(object):
         """
         ...
 
+    @sName.setter
+    def sName(self, value: str) -> None:
+        ...
 
     @property
     def sExportName(self) -> str:
@@ -70,6 +73,9 @@ class SymbolDescriptor(object):
         """
         ...
 
+    @sExportName.setter
+    def sExportName(self, value: str) -> None:
+        ...
 
     @property
     def sSymbolSet(self) -> str:
@@ -78,6 +84,9 @@ class SymbolDescriptor(object):
         """
         ...
 
+    @sSymbolSet.setter
+    def sSymbolSet(self, value: str) -> None:
+        ...
 
     @property
     def nCharacter(self) -> int:
@@ -86,6 +95,9 @@ class SymbolDescriptor(object):
         """
         ...
 
+    @nCharacter.setter
+    def nCharacter(self, value: int) -> None:
+        ...
 
     @property
     def sFontName(self) -> str:
@@ -94,6 +106,9 @@ class SymbolDescriptor(object):
         """
         ...
 
+    @sFontName.setter
+    def sFontName(self, value: str) -> None:
+        ...
 
     @property
     def nCharSet(self) -> int:
@@ -102,6 +117,9 @@ class SymbolDescriptor(object):
         """
         ...
 
+    @nCharSet.setter
+    def nCharSet(self, value: int) -> None:
+        ...
 
     @property
     def nFamily(self) -> int:
@@ -110,6 +128,9 @@ class SymbolDescriptor(object):
         """
         ...
 
+    @nFamily.setter
+    def nFamily(self, value: int) -> None:
+        ...
 
     @property
     def nPitch(self) -> int:
@@ -118,6 +139,9 @@ class SymbolDescriptor(object):
         """
         ...
 
+    @nPitch.setter
+    def nPitch(self, value: int) -> None:
+        ...
 
     @property
     def nWeight(self) -> int:
@@ -128,6 +152,9 @@ class SymbolDescriptor(object):
         """
         ...
 
+    @nWeight.setter
+    def nWeight(self, value: int) -> None:
+        ...
 
     @property
     def nItalic(self) -> int:
@@ -138,4 +165,7 @@ class SymbolDescriptor(object):
         """
         ...
 
+    @nItalic.setter
+    def nItalic(self, value: int) -> None:
+        ...
 

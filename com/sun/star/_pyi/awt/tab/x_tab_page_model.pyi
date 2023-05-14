@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,33 +40,43 @@ class XTabPageModel(ABC):
         determines whether a tab page is enabled or disabled.
         """
         ...
-
+    @Enabled.setter
+    def Enabled(self, value: bool) -> None:
+        ...
     @property
     def ImageURL(self) -> str:
         """
         specifies a URL that references a graphic that should be displayed in the tab bar.
         """
         ...
-
+    @ImageURL.setter
+    def ImageURL(self, value: str) -> None:
+        ...
     @property
     def TabPageID(self) -> int:
         """
         ID for tab page.
         """
         ...
-
+    @TabPageID.setter
+    def TabPageID(self, value: int) -> None:
+        ...
     @property
     def Title(self) -> str:
         """
         specifies the text that is displayed in the tab bar of the tab page.
         """
         ...
-
+    @Title.setter
+    def Title(self, value: str) -> None:
+        ...
     @property
     def ToolTip(self) -> str:
         """
         specifies a tooltip text that should be displayed in the tab bar.
         """
         ...
-
+    @ToolTip.setter
+    def ToolTip(self, value: str) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,11 +38,17 @@ class NumberFormatProperties(ABC):
         contains a comment regarding the number format for display to the user.
         """
         ...
+    @Comment.setter
+    def Comment(self, value: str) -> None:
+        ...
     @property
     def FormatString(self) -> str:
         """
         contains the format string of the number format.
         """
+        ...
+    @FormatString.setter
+    def FormatString(self, value: str) -> None:
         ...
     @property
     def Locale(self) -> 'Locale_70d308fa':
@@ -50,10 +56,16 @@ class NumberFormatProperties(ABC):
         contains the locale of the number format.
         """
         ...
+    @Locale.setter
+    def Locale(self, value: 'Locale_70d308fa') -> None:
+        ...
     @property
     def Type(self) -> int:
         """
         contains the type of the number format.
         """
+        ...
+    @Type.setter
+    def Type(self, value: int) -> None:
         ...
 

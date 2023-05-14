@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,6 +38,9 @@ class NumberFormatSettings(XPropertySet_bc180bfa):
         is set to indicate that a zero value should be formatted as an empty string.
         """
         ...
+    @NoZero.setter
+    def NoZero(self, value: bool) -> None:
+        ...
     @property
     def NullDate(self) -> 'Date_60040844':
         """
@@ -46,16 +49,25 @@ class NumberFormatSettings(XPropertySet_bc180bfa):
         The most common value for this is 12/30/1899.
         """
         ...
+    @NullDate.setter
+    def NullDate(self, value: 'Date_60040844') -> None:
+        ...
     @property
     def StandardDecimals(self) -> int:
         """
         specifies the maximum number of decimals used for the standard number format (\"General\").
         """
         ...
+    @StandardDecimals.setter
+    def StandardDecimals(self, value: int) -> None:
+        ...
     @property
     def TwoDigitDateStart(self) -> int:
         """
         specifies the first year to be generated from a two-digit year input.
         """
+        ...
+    @TwoDigitDateStart.setter
+    def TwoDigitDateStart(self, value: int) -> None:
         ...
 

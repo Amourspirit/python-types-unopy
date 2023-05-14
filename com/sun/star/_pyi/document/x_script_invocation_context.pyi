@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,5 +49,7 @@ class XScriptInvocationContext(ABC):
         denotes the document which contains the scripts which are to be invoked from the component implementing the XScriptInvocationContext interface.
         """
         ...
-
+    @ScriptContainer.setter
+    def ScriptContainer(self, value: 'XEmbeddedScripts_1ab50eb1') -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,17 +43,26 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
             LibreOffice 7.1
         """
         ...
+    @HScroll.setter
+    def HScroll(self, value: bool) -> None:
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the dialog.
         """
         ...
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the dialog.
         """
+        ...
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
         ...
     @property
     def ScrollHeight(self) -> int:
@@ -65,6 +74,9 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
             LibreOffice 7.1
         """
         ...
+    @ScrollHeight.setter
+    def ScrollHeight(self, value: int) -> None:
+        ...
     @property
     def ScrollLeft(self) -> int:
         """
@@ -74,6 +86,9 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
         
             LibreOffice 7.1
         """
+        ...
+    @ScrollLeft.setter
+    def ScrollLeft(self, value: int) -> None:
         ...
     @property
     def ScrollTop(self) -> int:
@@ -85,6 +100,9 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
             LibreOffice 7.1
         """
         ...
+    @ScrollTop.setter
+    def ScrollTop(self, value: int) -> None:
+        ...
     @property
     def ScrollWidth(self) -> int:
         """
@@ -95,11 +113,17 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
             LibreOffice 7.1
         """
         ...
+    @ScrollWidth.setter
+    def ScrollWidth(self, value: int) -> None:
+        ...
     @property
     def Title(self) -> str:
         """
         specifies the text that is displayed in the caption bar of the dialog.
         """
+        ...
+    @Title.setter
+    def Title(self, value: str) -> None:
         ...
     @property
     def VScroll(self) -> bool:
@@ -110,5 +134,8 @@ class UnoControlTabPageModel(XTabPageModel_dcde0c96):
         
             LibreOffice 7.1
         """
+        ...
+    @VScroll.setter
+    def VScroll(self, value: bool) -> None:
         ...
 

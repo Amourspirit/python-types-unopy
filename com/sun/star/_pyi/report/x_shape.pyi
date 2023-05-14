@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,28 +43,36 @@ class XShape(XReportControlModel_2d800f4a):
         If the CustomShapeEngine property is \"com.sun.star.drawing.EnhancedCustomShapeEngine\", then this property is containing properties as they are specified in the service com.sun.star.drawing.EnhancedCustomShapeGeometry
         """
         ...
-
+    @CustomShapeGeometry.setter
+    def CustomShapeGeometry(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def CustomShapeData(self) -> str:
         """
         This property can be used to store data that the CustomShapeEngine may use for rendering.
         """
         ...
-
+    @CustomShapeData.setter
+    def CustomShapeData(self, value: str) -> None:
+        ...
     @property
     def CustomShapeEngine(self) -> str:
         """
         This property contains the CustomShapeEngine service name that has to be used for rendering.
         """
         ...
-
+    @CustomShapeEngine.setter
+    def CustomShapeEngine(self, value: str) -> None:
+        ...
     @property
     def Opaque(self) -> bool:
         """
         determines if the object is opaque or transparent for text.
         """
         ...
-
+    @Opaque.setter
+    def Opaque(self, value: bool) -> None:
+        ...
     @property
     def Transformation(self) -> 'HomogenMatrix3_f0fb0d69':
         """
@@ -73,12 +81,16 @@ class XShape(XReportControlModel_2d800f4a):
         The transformation is a 3x3 homogeneous matrix and can contain translation, rotation, shearing and scaling.
         """
         ...
-
+    @Transformation.setter
+    def Transformation(self, value: 'HomogenMatrix3_f0fb0d69') -> None:
+        ...
     @property
     def ZOrder(self) -> int:
         """
         is used to query or change the ZOrder of this Shape.
         """
         ...
-
+    @ZOrder.setter
+    def ZOrder(self, value: int) -> None:
+        ...
 

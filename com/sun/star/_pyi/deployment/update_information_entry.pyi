@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,6 +56,9 @@ class UpdateInformationEntry(object):
         """
         ...
 
+    @UpdateDocument.setter
+    def UpdateDocument(self, value: XElement_a33d0ae9) -> None:
+        ...
 
     @property
     def Description(self) -> str:
@@ -64,4 +67,7 @@ class UpdateInformationEntry(object):
         """
         ...
 
+    @Description.setter
+    def Description(self, value: str) -> None:
+        ...
 

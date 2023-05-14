@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -47,9 +47,15 @@ class TextPosition(object):
     def Paragraph(self) -> int:
         ...
 
+    @Paragraph.setter
+    def Paragraph(self, value: int) -> None:
+        ...
 
     @property
     def PositionInParagraph(self) -> int:
         ...
 
+    @PositionInParagraph.setter
+    def PositionInParagraph(self, value: int) -> None:
+        ...
 

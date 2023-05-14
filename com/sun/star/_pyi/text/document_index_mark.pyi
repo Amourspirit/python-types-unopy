@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,6 +37,9 @@ class DocumentIndexMark(BaseIndexMark_bbb30bcb):
         In a document index this entry will be emphasized by assigning a character style to it.
         """
         ...
+    @IsMainEntry.setter
+    def IsMainEntry(self, value: bool) -> None:
+        ...
     @property
     def PrimaryKey(self) -> str:
         """
@@ -45,6 +48,9 @@ class DocumentIndexMark(BaseIndexMark_bbb30bcb):
         It is used to build a hierarchical document index.
         """
         ...
+    @PrimaryKey.setter
+    def PrimaryKey(self, value: str) -> None:
+        ...
     @property
     def SecondaryKey(self) -> str:
         """
@@ -52,5 +58,8 @@ class DocumentIndexMark(BaseIndexMark_bbb30bcb):
         
         It is used to build a hierarchical document index.
         """
+        ...
+    @SecondaryKey.setter
+    def SecondaryKey(self, value: str) -> None:
         ...
 

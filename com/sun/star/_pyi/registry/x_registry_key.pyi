@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -282,5 +282,7 @@ class XRegistryKey(XInterface_8f010a43):
         The access path starts with the root \"/\" and all parent entry names are delimited with slashes \"/\" too, like in a UNIX (R) file system. Slashes which are part of single names are represented as hexadecimals preceded with a \"%\" like in URL syntax.
         """
         ...
-
+    @KeyName.setter
+    def KeyName(self, value: str) -> None:
+        ...
 

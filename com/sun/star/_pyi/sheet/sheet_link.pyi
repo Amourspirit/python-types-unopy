@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,16 +41,25 @@ class SheetLink(XPropertySet_bc180bfa, XNamed_a6520b08, XRefreshable_b0d60b81):
         specifies the name of the filter needed to load the source document.
         """
         ...
+    @Filter.setter
+    def Filter(self, value: str) -> None:
+        ...
     @property
     def FilterOptions(self) -> str:
         """
         specifies the filter options needed to load the source document.
         """
         ...
+    @FilterOptions.setter
+    def FilterOptions(self, value: str) -> None:
+        ...
     @property
     def Url(self) -> str:
         """
         specifies the URL of the source document.
         """
+        ...
+    @Url.setter
+    def Url(self, value: str) -> None:
         ...
 

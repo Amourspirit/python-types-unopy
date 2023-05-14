@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,7 +53,9 @@ class InteractiveWrongMediumException(ClassifiedInteractionRequest_9f72121b):
         identifies the medium that's needed to continue with the pending operation.
         """
         ...
-
+    @Medium.setter
+    def Medium(self, value: object) -> None:
+        ...
 
 __all__ = ['InteractiveWrongMediumException']
 

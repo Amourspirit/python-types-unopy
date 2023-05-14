@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -63,6 +63,9 @@ class PropertyChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @PropertyName.setter
+    def PropertyName(self, value: str) -> None:
+        ...
 
     @property
     def Further(self) -> bool:
@@ -71,6 +74,9 @@ class PropertyChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Further.setter
+    def Further(self, value: bool) -> None:
+        ...
 
     @property
     def PropertyHandle(self) -> int:
@@ -81,6 +87,9 @@ class PropertyChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @PropertyHandle.setter
+    def PropertyHandle(self, value: int) -> None:
+        ...
 
     @property
     def OldValue(self) -> object:
@@ -89,6 +98,9 @@ class PropertyChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @OldValue.setter
+    def OldValue(self, value: object) -> None:
+        ...
 
     @property
     def NewValue(self) -> object:
@@ -97,4 +109,7 @@ class PropertyChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @NewValue.setter
+    def NewValue(self, value: object) -> None:
+        ...
 

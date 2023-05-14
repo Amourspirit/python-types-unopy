@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -61,56 +61,72 @@ class XCertificate(XInterface_8f010a43):
         the DER encoded form of the certificate
         """
         ...
-
+    @Encoded.setter
+    def Encoded(self, value: uno.ByteSequence) -> None:
+        ...
     @property
     def Extensions(self) -> 'typing.Tuple[XCertificateExtension_6ead10f8, ...]':
         """
         all extensions of a certificate.
         """
         ...
-
+    @Extensions.setter
+    def Extensions(self, value: 'typing.Tuple[XCertificateExtension_6ead10f8, ...]') -> None:
+        ...
     @property
     def IssuerUniqueID(self) -> uno.ByteSequence:
         """
         the issuer unique ID attribute of the certificate.
         """
         ...
-
+    @IssuerUniqueID.setter
+    def IssuerUniqueID(self, value: uno.ByteSequence) -> None:
+        ...
     @property
     def MD5Thumbprint(self) -> uno.ByteSequence:
         """
         the MD5 thumbprint
         """
         ...
-
+    @MD5Thumbprint.setter
+    def MD5Thumbprint(self, value: uno.ByteSequence) -> None:
+        ...
     @property
     def SHA1Thumbprint(self) -> uno.ByteSequence:
         """
         the SHA-1 thumbprint
         """
         ...
-
+    @SHA1Thumbprint.setter
+    def SHA1Thumbprint(self, value: uno.ByteSequence) -> None:
+        ...
     @property
     def SerialNumber(self) -> uno.ByteSequence:
         """
         the serial number attribute of the certificate.
         """
         ...
-
+    @SerialNumber.setter
+    def SerialNumber(self, value: uno.ByteSequence) -> None:
+        ...
     @property
     def SubjectPublicKeyValue(self) -> uno.ByteSequence:
         """
         the value of the subject public key
         """
         ...
-
+    @SubjectPublicKeyValue.setter
+    def SubjectPublicKeyValue(self, value: uno.ByteSequence) -> None:
+        ...
     @property
     def SubjectUniqueID(self) -> uno.ByteSequence:
         """
         the subject unique ID attribute of the certificate.
         """
         ...
-
+    @SubjectUniqueID.setter
+    def SubjectUniqueID(self, value: uno.ByteSequence) -> None:
+        ...
     @property
     def CertificateKind(self) -> 'CertificateKind_ffd0e69':
         """
@@ -121,54 +137,70 @@ class XCertificate(XInterface_8f010a43):
             LibreOffice 5.4
         """
         ...
-
+    @CertificateKind.setter
+    def CertificateKind(self, value: 'CertificateKind_ffd0e69') -> None:
+        ...
     @property
     def IssuerName(self) -> str:
         """
         the issuer name attribute of the certificate.
         """
         ...
-
+    @IssuerName.setter
+    def IssuerName(self, value: str) -> None:
+        ...
     @property
     def NotValidAfter(self) -> 'DateTime_84de09d3':
         """
         the validity NotAfter date attribute of the certificate.
         """
         ...
-
+    @NotValidAfter.setter
+    def NotValidAfter(self, value: 'DateTime_84de09d3') -> None:
+        ...
     @property
     def NotValidBefore(self) -> 'DateTime_84de09d3':
         """
         the validity NotBefore date attribute of the certificate.
         """
         ...
-
+    @NotValidBefore.setter
+    def NotValidBefore(self, value: 'DateTime_84de09d3') -> None:
+        ...
     @property
     def SignatureAlgorithm(self) -> str:
         """
         the signature algorithm
         """
         ...
-
+    @SignatureAlgorithm.setter
+    def SignatureAlgorithm(self, value: str) -> None:
+        ...
     @property
     def SubjectName(self) -> str:
         """
         the subject name attribute of the certificate.
         """
         ...
-
+    @SubjectName.setter
+    def SubjectName(self, value: str) -> None:
+        ...
     @property
     def SubjectPublicKeyAlgorithm(self) -> str:
         """
         the algorithm of the subject public key
         """
         ...
-
+    @SubjectPublicKeyAlgorithm.setter
+    def SubjectPublicKeyAlgorithm(self, value: str) -> None:
+        ...
     @property
     def Version(self) -> int:
         """
         the version number attribute of the certificate.
         """
         ...
-
+    @Version.setter
+    def Version(self, value: int) -> None:
+        ...
 

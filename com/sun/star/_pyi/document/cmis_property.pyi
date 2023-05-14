@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class CmisProperty(object):
         """
         ...
 
+    @Id.setter
+    def Id(self, value: str) -> None:
+        ...
 
     @property
     def Name(self) -> str:
@@ -66,6 +69,9 @@ class CmisProperty(object):
         """
         ...
 
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 
     @property
     def Type(self) -> str:
@@ -74,6 +80,9 @@ class CmisProperty(object):
         """
         ...
 
+    @Type.setter
+    def Type(self, value: str) -> None:
+        ...
 
     @property
     def Updatable(self) -> bool:
@@ -82,6 +91,9 @@ class CmisProperty(object):
         """
         ...
 
+    @Updatable.setter
+    def Updatable(self, value: bool) -> None:
+        ...
 
     @property
     def Required(self) -> bool:
@@ -90,6 +102,9 @@ class CmisProperty(object):
         """
         ...
 
+    @Required.setter
+    def Required(self, value: bool) -> None:
+        ...
 
     @property
     def MultiValued(self) -> bool:
@@ -98,6 +113,9 @@ class CmisProperty(object):
         """
         ...
 
+    @MultiValued.setter
+    def MultiValued(self, value: bool) -> None:
+        ...
 
     @property
     def OpenChoice(self) -> bool:
@@ -106,6 +124,9 @@ class CmisProperty(object):
         """
         ...
 
+    @OpenChoice.setter
+    def OpenChoice(self, value: bool) -> None:
+        ...
 
     @property
     def Choices(self) -> object:
@@ -114,6 +135,9 @@ class CmisProperty(object):
         """
         ...
 
+    @Choices.setter
+    def Choices(self, value: object) -> None:
+        ...
 
     @property
     def Value(self) -> object:
@@ -122,4 +146,7 @@ class CmisProperty(object):
         """
         ...
 
+    @Value.setter
+    def Value(self, value: object) -> None:
+        ...
 

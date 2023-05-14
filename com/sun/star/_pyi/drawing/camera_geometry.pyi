@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,6 +54,9 @@ class CameraGeometry(object):
         """
         ...
 
+    @vrp.setter
+    def vrp(self, value: Position3D_bddc0bc0) -> None:
+        ...
 
     @property
     def vpn(self) -> Direction3D_c9370c0c:
@@ -62,6 +65,9 @@ class CameraGeometry(object):
         """
         ...
 
+    @vpn.setter
+    def vpn(self, value: Direction3D_c9370c0c) -> None:
+        ...
 
     @property
     def vup(self) -> Direction3D_c9370c0c:
@@ -70,4 +76,7 @@ class CameraGeometry(object):
         """
         ...
 
+    @vup.setter
+    def vup(self, value: Direction3D_c9370c0c) -> None:
+        ...
 

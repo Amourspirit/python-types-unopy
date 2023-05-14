@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,26 +41,41 @@ class Diagram(X3DDefaultSetter_e9630d25, XCoordinateSystemContainer_995411d4, XD
         Draw connection lines for stacked bar charts.
         """
         ...
+    @ConnectBars.setter
+    def ConnectBars(self, value: bool) -> None:
+        ...
     @property
     def DataTableHBorder(self) -> bool:
         """
         Chart Datatable flags.
         """
         ...
+    @DataTableHBorder.setter
+    def DataTableHBorder(self, value: bool) -> None:
+        ...
     @property
     def DataTableOutline(self) -> bool:
         """
         """
+        ...
+    @DataTableOutline.setter
+    def DataTableOutline(self, value: bool) -> None:
         ...
     @property
     def DataTableVBorder(self) -> bool:
         """
         """
         ...
+    @DataTableVBorder.setter
+    def DataTableVBorder(self, value: bool) -> None:
+        ...
     @property
     def ExternalData(self) -> str:
         """
         """
+        ...
+    @ExternalData.setter
+    def ExternalData(self, value: str) -> None:
         ...
     @property
     def GroupBarsPerAxis(self) -> bool:
@@ -74,11 +89,17 @@ class Diagram(X3DDefaultSetter_e9630d25, XCoordinateSystemContainer_995411d4, XD
         If all data series of a bar or column chart are attached to only one axis, this property has no effect.
         """
         ...
+    @GroupBarsPerAxis.setter
+    def GroupBarsPerAxis(self, value: bool) -> None:
+        ...
     @property
     def MissingValueTreatment(self) -> int:
         """
         specifies how empty or invalid cells in the provided data should be handled when displayed
         """
+        ...
+    @MissingValueTreatment.setter
+    def MissingValueTreatment(self, value: int) -> None:
         ...
     @property
     def Perspective(self) -> int:
@@ -86,11 +107,17 @@ class Diagram(X3DDefaultSetter_e9630d25, XCoordinateSystemContainer_995411d4, XD
         Perspective of 3D charts ( [0,100] ).
         """
         ...
+    @Perspective.setter
+    def Perspective(self, value: int) -> None:
+        ...
     @property
     def PosSizeExcludeLabels(self) -> bool:
         """
         The attributes RelativePosition and RelativeSize should be used for the inner coordinate region without axis labels and without data labels.
         """
+        ...
+    @PosSizeExcludeLabels.setter
+    def PosSizeExcludeLabels(self, value: bool) -> None:
         ...
     @property
     def RelativePosition(self) -> 'RelativePosition_fae10ddd':
@@ -100,16 +127,25 @@ class Diagram(X3DDefaultSetter_e9630d25, XCoordinateSystemContainer_995411d4, XD
         If a relative position is given the diagram is not automatically placed, but instead is placed relative on the page.
         """
         ...
+    @RelativePosition.setter
+    def RelativePosition(self, value: 'RelativePosition_fae10ddd') -> None:
+        ...
     @property
     def RelativeSize(self) -> 'RelativeSize_c6020c23':
         """
         The size of the diagram as relative size of the page size.
         """
         ...
+    @RelativeSize.setter
+    def RelativeSize(self, value: 'RelativeSize_c6020c23') -> None:
+        ...
     @property
     def RightAngledAxes(self) -> bool:
         """
         """
+        ...
+    @RightAngledAxes.setter
+    def RightAngledAxes(self, value: bool) -> None:
         ...
     @property
     def RotationHorizontal(self) -> int:
@@ -117,11 +153,17 @@ class Diagram(X3DDefaultSetter_e9630d25, XCoordinateSystemContainer_995411d4, XD
         Horizontal rotation of 3D charts in degrees ( ]-180,180] ).
         """
         ...
+    @RotationHorizontal.setter
+    def RotationHorizontal(self, value: int) -> None:
+        ...
     @property
     def RotationVertical(self) -> int:
         """
         Vertical rotation of 3D charts in degrees ( ]-180,180] ).
         """
+        ...
+    @RotationVertical.setter
+    def RotationVertical(self, value: int) -> None:
         ...
     @property
     def SortByXValues(self) -> bool:
@@ -129,10 +171,16 @@ class Diagram(X3DDefaultSetter_e9630d25, XCoordinateSystemContainer_995411d4, XD
         Sort data points by x values for rendering.
         """
         ...
+    @SortByXValues.setter
+    def SortByXValues(self, value: bool) -> None:
+        ...
     @property
     def StartingAngle(self) -> int:
         """
         Starting angle in degrees for pie charts and doughnut charts.
         """
+        ...
+    @StartingAngle.setter
+    def StartingAngle(self, value: int) -> None:
         ...
 

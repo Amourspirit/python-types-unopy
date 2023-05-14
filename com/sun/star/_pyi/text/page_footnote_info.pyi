@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,6 +38,9 @@ class PageFootnoteInfo(ABC):
         contains the distance between the separator line and the footnote section.
         """
         ...
+    @FootnoteBottomDistance.setter
+    def FootnoteBottomDistance(self, value: int) -> None:
+        ...
     @property
     def FootnoteHeight(self) -> int:
         """
@@ -46,11 +49,17 @@ class PageFootnoteInfo(ABC):
         If 0, the maximum is the height of the page.
         """
         ...
+    @FootnoteHeight.setter
+    def FootnoteHeight(self, value: int) -> None:
+        ...
     @property
     def FootnoteSeparatorLineAdjust(self) -> 'HorizontalAdjust_e57e0d62':
         """
         contains the adjustment of the footnote separator line.
         """
+        ...
+    @FootnoteSeparatorLineAdjust.setter
+    def FootnoteSeparatorLineAdjust(self, value: 'HorizontalAdjust_e57e0d62') -> None:
         ...
     @property
     def FootnoteSeparatorLinePenWidth(self) -> int:
@@ -58,11 +67,17 @@ class PageFootnoteInfo(ABC):
         contains the width of the pen for the footnote separator line.
         """
         ...
+    @FootnoteSeparatorLinePenWidth.setter
+    def FootnoteSeparatorLinePenWidth(self, value: int) -> None:
+        ...
     @property
     def FootnoteSeparatorLineWidth(self) -> int:
         """
         contains the relative width of the footnote separator line.
         """
+        ...
+    @FootnoteSeparatorLineWidth.setter
+    def FootnoteSeparatorLineWidth(self, value: int) -> None:
         ...
     @property
     def FootnoteSeparatorLineWidthPercent(self) -> int:
@@ -70,10 +85,16 @@ class PageFootnoteInfo(ABC):
         contains the relative width of the footnote separator line.
         """
         ...
+    @FootnoteSeparatorLineWidthPercent.setter
+    def FootnoteSeparatorLineWidthPercent(self, value: int) -> None:
+        ...
     @property
     def FootnoteTopDistance(self) -> int:
         """
         contains the distance between the text and footnote section.
         """
+        ...
+    @FootnoteTopDistance.setter
+    def FootnoteTopDistance(self, value: int) -> None:
         ...
 

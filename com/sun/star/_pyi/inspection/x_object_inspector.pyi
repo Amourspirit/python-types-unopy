@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -65,7 +65,9 @@ class XObjectInspector(XController_b00e0b8f, XDispatchProvider_fc690de6):
         If a new model is set at the inspector, the complete UI will be rebuilt to reflect the change, using the new property handlers provided by the new model.
         """
         ...
-
+    @InspectorModel.setter
+    def InspectorModel(self, value: 'XObjectInspectorModel_9077119b') -> None:
+        ...
     @property
     def InspectorUI(self) -> 'XObjectInspectorUI_5ccd1048':
         """
@@ -78,5 +80,7 @@ class XObjectInspector(XController_b00e0b8f, XDispatchProvider_fc690de6):
             OOo 2.2
         """
         ...
-
+    @InspectorUI.setter
+    def InspectorUI(self, value: 'XObjectInspectorUI_5ccd1048') -> None:
+        ...
 

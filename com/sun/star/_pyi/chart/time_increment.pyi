@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class TimeIncrement(object):
         """
         ...
 
+    @MajorTimeInterval.setter
+    def MajorTimeInterval(self, value: object) -> None:
+        ...
 
     @property
     def MinorTimeInterval(self) -> object:
@@ -68,6 +71,9 @@ class TimeIncrement(object):
         """
         ...
 
+    @MinorTimeInterval.setter
+    def MinorTimeInterval(self, value: object) -> None:
+        ...
 
     @property
     def TimeResolution(self) -> object:
@@ -78,4 +84,7 @@ class TimeIncrement(object):
         """
         ...
 
+    @TimeResolution.setter
+    def TimeResolution(self, value: object) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -55,28 +55,36 @@ class SAXParseException(SAXException_d1a00c6e):
         contains the public identifier of the document where the exception has occurred.
         """
         ...
-
+    @PublicId.setter
+    def PublicId(self, value: str) -> None:
+        ...
     @property
     def SystemId(self) -> str:
         """
         contains the system identifier of the document.
         """
         ...
-
+    @SystemId.setter
+    def SystemId(self, value: str) -> None:
+        ...
     @property
     def LineNumber(self) -> int:
         """
         contains the line number in the document.
         """
         ...
-
+    @LineNumber.setter
+    def LineNumber(self, value: int) -> None:
+        ...
     @property
     def ColumnNumber(self) -> int:
         """
         contains the column number in the document.
         """
         ...
-
+    @ColumnNumber.setter
+    def ColumnNumber(self, value: int) -> None:
+        ...
 
 __all__ = ['SAXParseException']
 

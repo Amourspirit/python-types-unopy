@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,11 +49,17 @@ class GenericDrawingDocument(OfficeDocument_fecd0df2, XPropertySet_bc180bfa, XDr
         contains the identifier of the default locale of the document.
         """
         ...
+    @CharLocale.setter
+    def CharLocale(self, value: 'Locale_70d308fa') -> None:
+        ...
     @property
     def ForbiddenCharacters(self) -> 'XForbiddenCharacters_df60e2d':
         """
         This property gives the XForbiddenCharacters.
         """
+        ...
+    @ForbiddenCharacters.setter
+    def ForbiddenCharacters(self, value: 'XForbiddenCharacters_df60e2d') -> None:
         ...
     @property
     def TabStop(self) -> int:
@@ -61,10 +67,16 @@ class GenericDrawingDocument(OfficeDocument_fecd0df2, XPropertySet_bc180bfa, XDr
         This property specifies the length between the default tab stops inside text in this document in 1/100th mm.
         """
         ...
+    @TabStop.setter
+    def TabStop(self, value: int) -> None:
+        ...
     @property
     def VisibleArea(self) -> 'Rectangle_84b109e9':
         """
         if this document is an OLE client, this is the current visible area in 100th mm
         """
+        ...
+    @VisibleArea.setter
+    def VisibleArea(self, value: 'Rectangle_84b109e9') -> None:
         ...
 

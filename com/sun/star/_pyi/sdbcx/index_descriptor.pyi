@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -36,16 +36,25 @@ class IndexDescriptor(Descriptor_a5200b3b, XColumnsSupplier_f0600da9):
         is the name of the index catalog, may be empty.
         """
         ...
+    @Catalog.setter
+    def Catalog(self, value: str) -> None:
+        ...
     @property
     def IsClustered(self) -> bool:
         """
         indicates that the index is clustered.
         """
         ...
+    @IsClustered.setter
+    def IsClustered(self, value: bool) -> None:
+        ...
     @property
     def IsUnique(self) -> bool:
         """
         indicates that the index allow only unique values.
         """
+        ...
+    @IsUnique.setter
+    def IsUnique(self, value: bool) -> None:
         ...
 

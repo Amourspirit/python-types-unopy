@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -63,14 +63,18 @@ class DocumentSaveRequest(ClassifiedInteractionRequest_9f72121b):
         Somebody handling the request could, e.g., use the content as root content to display the hierarchy of the sub contents.
         """
         ...
-
+    @Content.setter
+    def Content(self, value: XContent_79db0975) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
         The default name of the document, may be empty.
         """
         ...
-
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
 
 __all__ = ['DocumentSaveRequest']
 

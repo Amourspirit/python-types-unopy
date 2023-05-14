@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -42,5 +42,8 @@ class DatabaseEnvironment(XPropertySet_bc180bfa, XDatabaseEnvironment_8280e43):
         """
         provides an object for formatting numbers.
         """
+        ...
+    @NumberFormatsSupplier.setter
+    def NumberFormatsSupplier(self, value: 'XNumberFormatsSupplier_3afb0fb7') -> None:
         ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,14 +49,18 @@ class XDataType(XPropertySet_bc180bfa):
         Basic types are built into the type system, and cannot be changed by the user.
         """
         ...
-
+    @IsBasic.setter
+    def IsBasic(self, value: bool) -> None:
+        ...
     @property
     def Name(self) -> str:
         """
         provides access to the name of the type
         """
         ...
-
+    @Name.setter
+    def Name(self, value: str) -> None:
+        ...
     @property
     def Pattern(self) -> str:
         """
@@ -65,14 +69,18 @@ class XDataType(XPropertySet_bc180bfa):
         See http://www.w3.org/TR/xmlschema-2/#rf-pattern
         """
         ...
-
+    @Pattern.setter
+    def Pattern(self, value: str) -> None:
+        ...
     @property
     def TypeClass(self) -> int:
         """
         class of the type
         """
         ...
-
+    @TypeClass.setter
+    def TypeClass(self, value: int) -> None:
+        ...
     @property
     def WhiteSpaceTreatment(self) -> int:
         """
@@ -81,5 +89,7 @@ class XDataType(XPropertySet_bc180bfa):
         See http://www.w3.org/TR/xmlschema-2/#rf-whiteSpace
         """
         ...
-
+    @WhiteSpaceTreatment.setter
+    def WhiteSpaceTreatment(self, value: int) -> None:
+        ...
 

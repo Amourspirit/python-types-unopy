@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -43,6 +43,9 @@ class Shape(ABC):
         is a generic URL for the property OnClick.
         """
         ...
+    @Bookmark.setter
+    def Bookmark(self, value: str) -> None:
+        ...
     @property
     def DimColor(self) -> 'Color_68e908c5':
         """
@@ -51,11 +54,17 @@ class Shape(ABC):
         This color is used if the property com.sun.star.drawing.Shape.DimPrev is TRUE and com.sun.star.drawing.Shape.DimHide is FALSE.
         """
         ...
+    @DimColor.setter
+    def DimColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def DimHide(self) -> bool:
         """
         If this property and the property com.sun.star.drawing.Shape.DimPrev are both TRUE, the shape is hidden instead of dimmed to a color.
         """
+        ...
+    @DimHide.setter
+    def DimHide(self, value: bool) -> None:
         ...
     @property
     def DimPrevious(self) -> bool:
@@ -63,17 +72,26 @@ class Shape(ABC):
         If this property is TRUE, this shape is dimmed to the color of property com.sun.star.drawing.Shape.DimColor after executing its animation effect.
         """
         ...
+    @DimPrevious.setter
+    def DimPrevious(self, value: bool) -> None:
+        ...
     @property
     def Effect(self) -> 'AnimationEffect_4f571011':
         """
         selects the animation effect of this shape.
         """
         ...
+    @Effect.setter
+    def Effect(self, value: 'AnimationEffect_4f571011') -> None:
+        ...
     @property
     def IsEmptyPresentationObject(self) -> bool:
         """
         If this is a default presentation object and if it is empty, this property is TRUE.
         """
+        ...
+    @IsEmptyPresentationObject.setter
+    def IsEmptyPresentationObject(self, value: bool) -> None:
         ...
     @property
     def IsPresentationObject(self) -> bool:
@@ -83,11 +101,17 @@ class Shape(ABC):
         Presentation objects are objects like TitleTextShape and OutlinerShape.
         """
         ...
+    @IsPresentationObject.setter
+    def IsPresentationObject(self, value: bool) -> None:
+        ...
     @property
     def OnClick(self) -> 'ClickAction_10a30e68':
         """
         selects an action performed after the user clicks on this shape.
         """
+        ...
+    @OnClick.setter
+    def OnClick(self, value: 'ClickAction_10a30e68') -> None:
         ...
     @property
     def PlayFull(self) -> bool:
@@ -97,6 +121,9 @@ class Shape(ABC):
         The default behavior is to stop the sound after completing the animation effect.
         """
         ...
+    @PlayFull.setter
+    def PlayFull(self, value: bool) -> None:
+        ...
     @property
     def PresentationOrder(self) -> int:
         """
@@ -105,11 +132,17 @@ class Shape(ABC):
         The animations are executed in this order, starting at the shape with the PresentationOrder \"one.\" You can change the order by changing this number. Setting it to \"one\" makes this shape the first shape in the execution order for the animation effects.
         """
         ...
+    @PresentationOrder.setter
+    def PresentationOrder(self, value: int) -> None:
+        ...
     @property
     def Sound(self) -> str:
         """
         This is the URL to a sound file that is played while the animation effect of this shape is running.
         """
+        ...
+    @Sound.setter
+    def Sound(self, value: str) -> None:
         ...
     @property
     def SoundOn(self) -> bool:
@@ -117,11 +150,17 @@ class Shape(ABC):
         If this property is set to TRUE, a sound is played while the animation effect is executed.
         """
         ...
+    @SoundOn.setter
+    def SoundOn(self, value: bool) -> None:
+        ...
     @property
     def Speed(self) -> 'AnimationSpeed_3fb20fb5':
         """
         This is the speed of the animation effect.
         """
+        ...
+    @Speed.setter
+    def Speed(self, value: 'AnimationSpeed_3fb20fb5') -> None:
         ...
     @property
     def TextEffect(self) -> 'AnimationEffect_4f571011':
@@ -129,10 +168,16 @@ class Shape(ABC):
         This is the animation effect for the text inside this shape.
         """
         ...
+    @TextEffect.setter
+    def TextEffect(self, value: 'AnimationEffect_4f571011') -> None:
+        ...
     @property
     def Verb(self) -> int:
         """
         specifies an \"OLE2\" verb for the ClickAction VERB in the property com.sun.star.drawing.Shape.OnClick.
         """
+        ...
+    @Verb.setter
+    def Verb(self, value: int) -> None:
         ...
 

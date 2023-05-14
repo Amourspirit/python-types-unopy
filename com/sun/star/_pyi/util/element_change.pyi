@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,6 +54,9 @@ class ElementChange(object):
         """
         ...
 
+    @Accessor.setter
+    def Accessor(self, value: object) -> None:
+        ...
 
     @property
     def Element(self) -> object:
@@ -62,6 +65,9 @@ class ElementChange(object):
         """
         ...
 
+    @Element.setter
+    def Element(self, value: object) -> None:
+        ...
 
     @property
     def ReplacedElement(self) -> object:
@@ -70,4 +76,7 @@ class ElementChange(object):
         """
         ...
 
+    @ReplacedElement.setter
+    def ReplacedElement(self, value: object) -> None:
+        ...
 

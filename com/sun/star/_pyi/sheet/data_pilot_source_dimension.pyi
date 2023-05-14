@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,17 +53,26 @@ class DataPilotSourceDimension(XPropertySet_bc180bfa, XNamed_a6520b08, XHierarch
         specifies which values are used.
         """
         ...
+    @Filter.setter
+    def Filter(self, value: 'typing.Tuple[TableFilterField_ee760d53, ...]') -> None:
+        ...
     @property
     def Flags(self) -> int:
         """
         contains flags that control the usage of the dimension.
         """
         ...
+    @Flags.setter
+    def Flags(self, value: int) -> None:
+        ...
     @property
     def Function(self) -> 'GeneralFunction_e2280d25':
         """
         specifies how data are aggregated.
         """
+        ...
+    @Function.setter
+    def Function(self, value: 'GeneralFunction_e2280d25') -> None:
         ...
     @property
     def Function2(self) -> int:
@@ -75,11 +84,17 @@ class DataPilotSourceDimension(XPropertySet_bc180bfa, XNamed_a6520b08, XHierarch
             LibreOffice 5.3
         """
         ...
+    @Function2.setter
+    def Function2(self, value: int) -> None:
+        ...
     @property
     def IsDataLayoutDimension(self) -> bool:
         """
         contains TRUE if this is the dimension used to layout the different data dimensions.
         """
+        ...
+    @IsDataLayoutDimension.setter
+    def IsDataLayoutDimension(self, value: bool) -> None:
         ...
     @property
     def Orientation(self) -> 'DataPilotFieldOrientation_78701113':
@@ -87,11 +102,17 @@ class DataPilotSourceDimension(XPropertySet_bc180bfa, XNamed_a6520b08, XHierarch
         specifies where the dimension is used.
         """
         ...
+    @Orientation.setter
+    def Orientation(self, value: 'DataPilotFieldOrientation_78701113') -> None:
+        ...
     @property
     def Original(self) -> 'XNamed_a6520b08':
         """
         returns the name of the dimension from which this dimension was cloned, or NULL if it was not cloned.
         """
+        ...
+    @Original.setter
+    def Original(self, value: 'XNamed_a6520b08') -> None:
         ...
     @property
     def Position(self) -> int:
@@ -99,10 +120,16 @@ class DataPilotSourceDimension(XPropertySet_bc180bfa, XNamed_a6520b08, XHierarch
         specifies the position of the dimension within its orientation.
         """
         ...
+    @Position.setter
+    def Position(self, value: int) -> None:
+        ...
     @property
     def UsedHierarchy(self) -> int:
         """
         specifies which hierarchy of the dimension is used.
         """
+        ...
+    @UsedHierarchy.setter
+    def UsedHierarchy(self, value: int) -> None:
         ...
 

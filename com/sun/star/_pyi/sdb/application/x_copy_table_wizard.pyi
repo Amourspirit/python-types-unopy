@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -68,7 +68,9 @@ class XCopyTableWizard(XExecutableDialog_450f0fa1):
         When a primary key is to be created by the wizard, it will be an auto-increment column, if possible.
         """
         ...
-
+    @CreatePrimaryKey.setter
+    def CreatePrimaryKey(self, value: object) -> None:
+        ...
     @property
     def DestinationTableName(self) -> str:
         """
@@ -81,7 +83,9 @@ class XCopyTableWizard(XExecutableDialog_450f0fa1):
         Changing this attribute while the dialog is running is not supported, the result of such an attempt is undefined.
         """
         ...
-
+    @DestinationTableName.setter
+    def DestinationTableName(self, value: str) -> None:
+        ...
     @property
     def Operation(self) -> int:
         """
@@ -96,7 +100,9 @@ class XCopyTableWizard(XExecutableDialog_450f0fa1):
         Changing this attribute while the dialog is running is not supported, the result of such an attempt is undefined.
         """
         ...
-
+    @Operation.setter
+    def Operation(self, value: int) -> None:
+        ...
     @property
     def UseHeaderLineAsColumnNames(self) -> bool:
         """
@@ -105,5 +111,7 @@ class XCopyTableWizard(XExecutableDialog_450f0fa1):
         This attribute is ignored when the source defines the column names which isn't the case when only a part of a table should be copied e.g. in the RTF format or in the HTML format.
         """
         ...
-
+    @UseHeaderLineAsColumnNames.setter
+    def UseHeaderLineAsColumnNames(self, value: bool) -> None:
+        ...
 

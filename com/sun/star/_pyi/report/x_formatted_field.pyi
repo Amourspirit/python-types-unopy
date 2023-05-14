@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,12 +41,16 @@ class XFormattedField(XReportControlModel_2d800f4a):
         This value is meaningful relative to the FormatsSupplier attribute only.
         """
         ...
-
+    @FormatKey.setter
+    def FormatKey(self, value: int) -> None:
+        ...
     @property
     def FormatsSupplier(self) -> 'XNumberFormatsSupplier_3afb0fb7':
         """
         supplies the formats the field should work with.
         """
         ...
-
+    @FormatsSupplier.setter
+    def FormatsSupplier(self, value: 'XNumberFormatsSupplier_3afb0fb7') -> None:
+        ...
 

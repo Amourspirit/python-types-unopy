@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -55,7 +55,9 @@ class Exception(BException):
         The description should be as detailed as possible.
         """
         ...
-
+    @Message.setter
+    def Message(self, value: str) -> None:
+        ...
     @property
     def Context(self) -> XInterface_8f010a43:
         """
@@ -64,7 +66,9 @@ class Exception(BException):
         May be NULL.
         """
         ...
-
+    @Context.setter
+    def Context(self, value: XInterface_8f010a43) -> None:
+        ...
 
 __all__ = ['Exception']
 

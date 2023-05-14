@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -58,6 +58,9 @@ class CellProperties(XPropertySet_bc180bfa):
             LibreOffice 4.3
         """
         ...
+    @CellInteropGrabBag.setter
+    def CellInteropGrabBag(self, value: 'typing.Tuple[PropertyValue_c9610c73, ...]') -> None:
+        ...
     @property
     def AsianVerticalMode(self) -> bool:
         """
@@ -66,11 +69,17 @@ class CellProperties(XPropertySet_bc180bfa):
         If the CellProperties.Orientation property is CellOrientation.STACKED, in Asian mode only Asian characters are printed in horizontal orientation instead of all characters. For other values of CellProperties.Orientation, this value is not used.
         """
         ...
+    @AsianVerticalMode.setter
+    def AsianVerticalMode(self, value: bool) -> None:
+        ...
     @property
     def BottomBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains a description of the bottom border line of each cell.
         """
+        ...
+    @BottomBorder.setter
+    def BottomBorder(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def BottomBorder2(self) -> 'BorderLine2_af200b28':
@@ -84,11 +93,17 @@ class CellProperties(XPropertySet_bc180bfa):
             LibreOffice 3.6
         """
         ...
+    @BottomBorder2.setter
+    def BottomBorder2(self, value: 'BorderLine2_af200b28') -> None:
+        ...
     @property
     def CellBackColor(self) -> 'Color_68e908c5':
         """
         contains the cell background color.
         """
+        ...
+    @CellBackColor.setter
+    def CellBackColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def CellProtection(self) -> 'CellProtection_c9290c6d':
@@ -98,17 +113,26 @@ class CellProperties(XPropertySet_bc180bfa):
         Cell protection is active only if the sheet is protected.
         """
         ...
+    @CellProtection.setter
+    def CellProtection(self, value: 'CellProtection_c9290c6d') -> None:
+        ...
     @property
     def CellStyle(self) -> str:
         """
         contains the name of the style of the cell.
         """
         ...
+    @CellStyle.setter
+    def CellStyle(self, value: str) -> None:
+        ...
     @property
     def DiagonalBLTR(self) -> 'BorderLine_a3f80af6':
         """
         contains a description of the bottom left to top right diagonal line of each cell.
         """
+        ...
+    @DiagonalBLTR.setter
+    def DiagonalBLTR(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def DiagonalBLTR2(self) -> 'BorderLine2_af200b28':
@@ -122,11 +146,17 @@ class CellProperties(XPropertySet_bc180bfa):
             LibreOffice 3.6
         """
         ...
+    @DiagonalBLTR2.setter
+    def DiagonalBLTR2(self, value: 'BorderLine2_af200b28') -> None:
+        ...
     @property
     def DiagonalTLBR(self) -> 'BorderLine_a3f80af6':
         """
         contains a description of the top left to bottom right diagonal line of each cell.
         """
+        ...
+    @DiagonalTLBR.setter
+    def DiagonalTLBR(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def DiagonalTLBR2(self) -> 'BorderLine2_af200b28':
@@ -140,11 +170,17 @@ class CellProperties(XPropertySet_bc180bfa):
             LibreOffice 3.6
         """
         ...
+    @DiagonalTLBR2.setter
+    def DiagonalTLBR2(self, value: 'BorderLine2_af200b28') -> None:
+        ...
     @property
     def HoriJustify(self) -> 'CellHoriJustify_e0470d10':
         """
         contains the horizontal alignment of the cell contents.
         """
+        ...
+    @HoriJustify.setter
+    def HoriJustify(self, value: 'CellHoriJustify_e0470d10') -> None:
         ...
     @property
     def IsCellBackgroundTransparent(self) -> bool:
@@ -154,17 +190,26 @@ class CellProperties(XPropertySet_bc180bfa):
         In this case the CellProperties.CellBackColor value is not used.
         """
         ...
+    @IsCellBackgroundTransparent.setter
+    def IsCellBackgroundTransparent(self, value: bool) -> None:
+        ...
     @property
     def IsTextWrapped(self) -> bool:
         """
         is TRUE, if text in the cells will be wrapped automatically at the right border.
         """
         ...
+    @IsTextWrapped.setter
+    def IsTextWrapped(self, value: bool) -> None:
+        ...
     @property
     def LeftBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains a description of the left border line of each cell.
         """
+        ...
+    @LeftBorder.setter
+    def LeftBorder(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def LeftBorder2(self) -> 'BorderLine2_af200b28':
@@ -178,6 +223,9 @@ class CellProperties(XPropertySet_bc180bfa):
             LibreOffice 3.6
         """
         ...
+    @LeftBorder2.setter
+    def LeftBorder2(self, value: 'BorderLine2_af200b28') -> None:
+        ...
     @property
     def NumberFormat(self) -> int:
         """
@@ -185,6 +233,9 @@ class CellProperties(XPropertySet_bc180bfa):
         
         The proper value can be determined by using the com.sun.star.util.NumberFormatter interface of the document.
         """
+        ...
+    @NumberFormat.setter
+    def NumberFormat(self, value: int) -> None:
         ...
     @property
     def Orientation(self) -> 'CellOrientation_e0e40d1c':
@@ -194,17 +245,26 @@ class CellProperties(XPropertySet_bc180bfa):
         If the CellProperties.RotateAngle property is non-zero, this value is not used.
         """
         ...
+    @Orientation.setter
+    def Orientation(self, value: 'CellOrientation_e0e40d1c') -> None:
+        ...
     @property
     def ParaIndent(self) -> int:
         """
         defines the indentation of the cell contents (in 1/100 mm).
         """
         ...
+    @ParaIndent.setter
+    def ParaIndent(self, value: int) -> None:
+        ...
     @property
     def RightBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains a description of the right border line of each cell.
         """
+        ...
+    @RightBorder.setter
+    def RightBorder(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def RightBorder2(self) -> 'BorderLine2_af200b28':
@@ -218,11 +278,17 @@ class CellProperties(XPropertySet_bc180bfa):
             LibreOffice 3.6
         """
         ...
+    @RightBorder2.setter
+    def RightBorder2(self, value: 'BorderLine2_af200b28') -> None:
+        ...
     @property
     def RotateAngle(self) -> int:
         """
         defines how much the content of cells is rotated (in 1/100 degrees).
         """
+        ...
+    @RotateAngle.setter
+    def RotateAngle(self, value: int) -> None:
         ...
     @property
     def RotateReference(self) -> int:
@@ -232,17 +298,26 @@ class CellProperties(XPropertySet_bc180bfa):
         changed from com.sun.star.table.CellVertJustify to long in LibO 3.5
         """
         ...
+    @RotateReference.setter
+    def RotateReference(self, value: int) -> None:
+        ...
     @property
     def ShadowFormat(self) -> 'ShadowFormat_bb840bdf':
         """
         contains a description of the shadow.
         """
         ...
+    @ShadowFormat.setter
+    def ShadowFormat(self, value: 'ShadowFormat_bb840bdf') -> None:
+        ...
     @property
     def ShrinkToFit(self) -> bool:
         """
         is TRUE, if the cell content will be shrunk to fit in the cell.
         """
+        ...
+    @ShrinkToFit.setter
+    def ShrinkToFit(self, value: bool) -> None:
         ...
     @property
     def TableBorder(self) -> 'TableBorder_aedf0b56':
@@ -251,6 +326,9 @@ class CellProperties(XPropertySet_bc180bfa):
         
         If used with a cell range, the top, left, right, and bottom lines are at the edges of the entire range, not at the edges of the individual cell.
         """
+        ...
+    @TableBorder.setter
+    def TableBorder(self, value: 'TableBorder_aedf0b56') -> None:
         ...
     @property
     def TableBorder2(self) -> 'TableBorder2_ba670b88':
@@ -266,11 +344,17 @@ class CellProperties(XPropertySet_bc180bfa):
             LibreOffice 3.6
         """
         ...
+    @TableBorder2.setter
+    def TableBorder2(self, value: 'TableBorder2_ba670b88') -> None:
+        ...
     @property
     def TopBorder(self) -> 'BorderLine_a3f80af6':
         """
         contains a description of the top border line of each cell.
         """
+        ...
+    @TopBorder.setter
+    def TopBorder(self, value: 'BorderLine_a3f80af6') -> None:
         ...
     @property
     def TopBorder2(self) -> 'BorderLine2_af200b28':
@@ -284,6 +368,9 @@ class CellProperties(XPropertySet_bc180bfa):
             LibreOffice 3.6
         """
         ...
+    @TopBorder2.setter
+    def TopBorder2(self, value: 'BorderLine2_af200b28') -> None:
+        ...
     @property
     def UserDefinedAttributes(self) -> 'XNameContainer_cb90e47':
         """
@@ -292,6 +379,9 @@ class CellProperties(XPropertySet_bc180bfa):
         This property is used i.e. by the XML filters to load and restore unknown attributes.
         """
         ...
+    @UserDefinedAttributes.setter
+    def UserDefinedAttributes(self, value: 'XNameContainer_cb90e47') -> None:
+        ...
     @property
     def VertJustify(self) -> int:
         """
@@ -299,5 +389,8 @@ class CellProperties(XPropertySet_bc180bfa):
         
         changed from com.sun.star.table.CellVertJustify to long in LibO 3.5
         """
+        ...
+    @VertJustify.setter
+    def VertJustify(self, value: int) -> None:
         ...
 

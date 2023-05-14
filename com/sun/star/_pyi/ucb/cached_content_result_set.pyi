@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -45,6 +45,9 @@ class CachedContentResultSet(ContentResultSet_d4ee0cc8):
         If you set the value to com.sun.star.sdbc.FetchDirection.UNKNOWN an implementation specific direction will be used.
         """
         ...
+    @FetchDirection.setter
+    def FetchDirection(self, value: int) -> None:
+        ...
     @property
     def FetchSize(self) -> int:
         """
@@ -54,5 +57,8 @@ class CachedContentResultSet(ContentResultSet_d4ee0cc8):
         
         Every negative value for parameter FetchSize will force an implementation specific value to be set.
         """
+        ...
+    @FetchSize.setter
+    def FetchSize(self, value: int) -> None:
         ...
 

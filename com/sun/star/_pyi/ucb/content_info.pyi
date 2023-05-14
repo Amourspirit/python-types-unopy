@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class ContentInfo(object):
         """
         ...
 
+    @Properties.setter
+    def Properties(self, value: typing.Tuple[Property_8f4e0a76, ...]) -> None:
+        ...
 
     @property
     def Type(self) -> str:
@@ -69,6 +72,9 @@ class ContentInfo(object):
         """
         ...
 
+    @Type.setter
+    def Type(self, value: str) -> None:
+        ...
 
     @property
     def Attributes(self) -> int:
@@ -83,4 +89,7 @@ class ContentInfo(object):
         """
         ...
 
+    @Attributes.setter
+    def Attributes(self, value: int) -> None:
+        ...
 

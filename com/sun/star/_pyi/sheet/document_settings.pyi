@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -40,11 +40,17 @@ class DocumentSettings(Settings_b2bc0bb8):
         specifies the color in which the cell grid is displayed.
         """
         ...
+    @GridColor.setter
+    def GridColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def HasColumnRowHeaders(self) -> bool:
         """
         enables the column and row headers of the view.
         """
+        ...
+    @HasColumnRowHeaders.setter
+    def HasColumnRowHeaders(self, value: bool) -> None:
         ...
     @property
     def HasSheetTabs(self) -> bool:
@@ -52,11 +58,17 @@ class DocumentSettings(Settings_b2bc0bb8):
         enables the sheet tabs of the view.
         """
         ...
+    @HasSheetTabs.setter
+    def HasSheetTabs(self, value: bool) -> None:
+        ...
     @property
     def IsDocumentShared(self) -> bool:
         """
         enables the document sharing feature (Tools->Share Spreadsheet)
         """
+        ...
+    @IsDocumentShared.setter
+    def IsDocumentShared(self, value: bool) -> None:
         ...
     @property
     def IsOutlineSymbolsSet(self) -> bool:
@@ -64,11 +76,17 @@ class DocumentSettings(Settings_b2bc0bb8):
         enables the display of outline symbols.
         """
         ...
+    @IsOutlineSymbolsSet.setter
+    def IsOutlineSymbolsSet(self, value: bool) -> None:
+        ...
     @property
     def IsRasterAxisSynchronized(self) -> bool:
         """
         enables the synchronization of horizontal and vertical grid settings in the user interface.
         """
+        ...
+    @IsRasterAxisSynchronized.setter
+    def IsRasterAxisSynchronized(self, value: bool) -> None:
         ...
     @property
     def IsSnapToRaster(self) -> bool:
@@ -76,11 +94,17 @@ class DocumentSettings(Settings_b2bc0bb8):
         enables the restriction of object movement and resizing of drawing objects to the raster.
         """
         ...
+    @IsSnapToRaster.setter
+    def IsSnapToRaster(self, value: bool) -> None:
+        ...
     @property
     def RasterIsVisible(self) -> bool:
         """
         enables the display of the drawing object raster.
         """
+        ...
+    @RasterIsVisible.setter
+    def RasterIsVisible(self, value: bool) -> None:
         ...
     @property
     def RasterResolutionX(self) -> int:
@@ -88,11 +112,17 @@ class DocumentSettings(Settings_b2bc0bb8):
         specifies the distance between horizontal grid elements in 1/100 mm.
         """
         ...
+    @RasterResolutionX.setter
+    def RasterResolutionX(self, value: int) -> None:
+        ...
     @property
     def RasterResolutionY(self) -> int:
         """
         specifies the distance between vertical grid elements in 1/100 mm.
         """
+        ...
+    @RasterResolutionY.setter
+    def RasterResolutionY(self, value: int) -> None:
         ...
     @property
     def RasterSubdivisionX(self) -> int:
@@ -100,11 +130,17 @@ class DocumentSettings(Settings_b2bc0bb8):
         specifies the number of subdivisions between two horizontal grid elements.
         """
         ...
+    @RasterSubdivisionX.setter
+    def RasterSubdivisionX(self, value: int) -> None:
+        ...
     @property
     def RasterSubdivisionY(self) -> int:
         """
         specifies the number of subdivisions between two vertical grid elements.
         """
+        ...
+    @RasterSubdivisionY.setter
+    def RasterSubdivisionY(self, value: int) -> None:
         ...
     @property
     def ShowGrid(self) -> bool:
@@ -112,11 +148,17 @@ class DocumentSettings(Settings_b2bc0bb8):
         enables the display of the cell grid.
         """
         ...
+    @ShowGrid.setter
+    def ShowGrid(self, value: bool) -> None:
+        ...
     @property
     def ShowNotes(self) -> bool:
         """
         controls whether a marker is shown for notes in cells.
         """
+        ...
+    @ShowNotes.setter
+    def ShowNotes(self, value: bool) -> None:
         ...
     @property
     def ShowPageBreaks(self) -> bool:
@@ -124,10 +166,16 @@ class DocumentSettings(Settings_b2bc0bb8):
         enables display of page breaks.
         """
         ...
+    @ShowPageBreaks.setter
+    def ShowPageBreaks(self, value: bool) -> None:
+        ...
     @property
     def ShowZeroValues(self) -> bool:
         """
         enables display of zero-values.
         """
+        ...
+    @ShowZeroValues.setter
+    def ShowZeroValues(self, value: bool) -> None:
         ...
 

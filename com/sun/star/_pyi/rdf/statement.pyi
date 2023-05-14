@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,6 +60,9 @@ class Statement(object):
         """
         ...
 
+    @Subject.setter
+    def Subject(self, value: XResource_842709e4) -> None:
+        ...
 
     @property
     def Predicate(self) -> XURI_5682078c:
@@ -68,6 +71,9 @@ class Statement(object):
         """
         ...
 
+    @Predicate.setter
+    def Predicate(self, value: XURI_5682078c) -> None:
+        ...
 
     @property
     def Object(self) -> XNode_5ee40822:
@@ -76,6 +82,9 @@ class Statement(object):
         """
         ...
 
+    @Object.setter
+    def Object(self, value: XNode_5ee40822) -> None:
+        ...
 
     @property
     def Graph(self) -> XURI_5682078c:
@@ -84,4 +93,7 @@ class Statement(object):
         """
         ...
 
+    @Graph.setter
+    def Graph(self, value: XURI_5682078c) -> None:
+        ...
 

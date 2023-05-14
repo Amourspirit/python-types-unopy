@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,7 +59,9 @@ class XNSSInitializer(XCipherContextSupplier_9fd31214, XDigestContextSupplier_a0
             LibreOffice 7.1
         """
         ...
-
+    @IsNSSinitialized.setter
+    def IsNSSinitialized(self, value: bool) -> None:
+        ...
     @property
     def NSSPath(self) -> str:
         """
@@ -72,5 +74,7 @@ class XNSSInitializer(XCipherContextSupplier_9fd31214, XDigestContextSupplier_a0
             LibreOffice 7.1
         """
         ...
-
+    @NSSPath.setter
+    def NSSPath(self, value: str) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ class InvocationInfo(object):
         """
         ...
 
+    @aParamTypes.setter
+    def aParamTypes(self, value: typing.Tuple[object, ...]) -> None:
+        ...
 
     @property
     def aParamModes(self) -> typing.Tuple[ParamMode_d7260ca9, ...]:
@@ -65,6 +68,9 @@ class InvocationInfo(object):
         """
         ...
 
+    @aParamModes.setter
+    def aParamModes(self, value: typing.Tuple[ParamMode_d7260ca9, ...]) -> None:
+        ...
 
     @property
     def aName(self) -> str:
@@ -73,6 +79,9 @@ class InvocationInfo(object):
         """
         ...
 
+    @aName.setter
+    def aName(self, value: str) -> None:
+        ...
 
     @property
     def eMemberType(self) -> MemberType_b1e00b97:
@@ -81,6 +90,9 @@ class InvocationInfo(object):
         """
         ...
 
+    @eMemberType.setter
+    def eMemberType(self, value: MemberType_b1e00b97) -> None:
+        ...
 
     @property
     def PropertyAttribute(self) -> int:
@@ -93,6 +105,9 @@ class InvocationInfo(object):
         """
         ...
 
+    @PropertyAttribute.setter
+    def PropertyAttribute(self, value: int) -> None:
+        ...
 
     @property
     def aType(self) -> object:
@@ -101,4 +116,7 @@ class InvocationInfo(object):
         """
         ...
 
+    @aType.setter
+    def aType(self, value: object) -> None:
+        ...
 

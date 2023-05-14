@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -63,6 +63,9 @@ class AccessibleEventObject(EventObject_a3d70b03):
         """
         ...
 
+    @EventId.setter
+    def EventId(self, value: int) -> None:
+        ...
 
     @property
     def NewValue(self) -> object:
@@ -73,6 +76,9 @@ class AccessibleEventObject(EventObject_a3d70b03):
         """
         ...
 
+    @NewValue.setter
+    def NewValue(self, value: object) -> None:
+        ...
 
     @property
     def OldValue(self) -> object:
@@ -83,4 +89,7 @@ class AccessibleEventObject(EventObject_a3d70b03):
         """
         ...
 
+    @OldValue.setter
+    def OldValue(self, value: object) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,6 +41,9 @@ class GetReference(TextField_90260a56):
         This property is especially useful for import/export purposes.
         """
         ...
+    @CurrentPresentation.setter
+    def CurrentPresentation(self, value: str) -> None:
+        ...
     @property
     def ReferenceFieldLanguage(self) -> str:
         """
@@ -55,11 +58,17 @@ class GetReference(TextField_90260a56):
             LibreOffice 6.1
         """
         ...
+    @ReferenceFieldLanguage.setter
+    def ReferenceFieldLanguage(self, value: str) -> None:
+        ...
     @property
     def ReferenceFieldPart(self) -> int:
         """
         contains the type of the reference.
         """
+        ...
+    @ReferenceFieldPart.setter
+    def ReferenceFieldPart(self, value: int) -> None:
         ...
     @property
     def ReferenceFieldSource(self) -> int:
@@ -67,11 +76,17 @@ class GetReference(TextField_90260a56):
         contains the source of the reference.
         """
         ...
+    @ReferenceFieldSource.setter
+    def ReferenceFieldSource(self, value: int) -> None:
+        ...
     @property
     def SequenceNumber(self) -> int:
         """
         contains the sequence number of a set expression field that is used as sequence field or the value of the ReferenceId property of a footnote or endnote.
         """
+        ...
+    @SequenceNumber.setter
+    def SequenceNumber(self, value: int) -> None:
         ...
     @property
     def SourceName(self) -> str:
@@ -80,5 +95,8 @@ class GetReference(TextField_90260a56):
         
         Depending on the property ReferenceFieldSource it may be the name of a bookmark, a reference mark.
         """
+        ...
+    @SourceName.setter
+    def SourceName(self, value: str) -> None:
         ...
 

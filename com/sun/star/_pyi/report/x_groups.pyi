@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,5 +48,7 @@ class XGroups(XChild_a6390b07, XContainer_d6fb0cc6, XIndexContainer_1c040ebe, XC
         """
         """
         ...
-
+    @ReportDefinition.setter
+    def ReportDefinition(self, value: 'XReportDefinition_ec30e81') -> None:
+        ...
 

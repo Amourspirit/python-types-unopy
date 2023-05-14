@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -62,6 +62,9 @@ class TableFilterField2(object):
         """
         ...
 
+    @Connection.setter
+    def Connection(self, value: FilterConnection_f01f0d97) -> None:
+        ...
 
     @property
     def Field(self) -> int:
@@ -70,6 +73,9 @@ class TableFilterField2(object):
         """
         ...
 
+    @Field.setter
+    def Field(self, value: int) -> None:
+        ...
 
     @property
     def Operator(self) -> int:
@@ -78,6 +84,9 @@ class TableFilterField2(object):
         """
         ...
 
+    @Operator.setter
+    def Operator(self, value: int) -> None:
+        ...
 
     @property
     def IsNumeric(self) -> bool:
@@ -86,6 +95,9 @@ class TableFilterField2(object):
         """
         ...
 
+    @IsNumeric.setter
+    def IsNumeric(self, value: bool) -> None:
+        ...
 
     @property
     def NumericValue(self) -> float:
@@ -94,6 +106,9 @@ class TableFilterField2(object):
         """
         ...
 
+    @NumericValue.setter
+    def NumericValue(self, value: float) -> None:
+        ...
 
     @property
     def StringValue(self) -> str:
@@ -102,4 +117,7 @@ class TableFilterField2(object):
         """
         ...
 
+    @StringValue.setter
+    def StringValue(self, value: str) -> None:
+        ...
 

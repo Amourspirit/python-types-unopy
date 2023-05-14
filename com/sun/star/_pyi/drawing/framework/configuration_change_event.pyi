@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -65,6 +65,9 @@ class ConfigurationChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Type.setter
+    def Type(self, value: str) -> None:
+        ...
 
     @property
     def Configuration(self) -> XConfiguration_8f0511a0:
@@ -75,6 +78,9 @@ class ConfigurationChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Configuration.setter
+    def Configuration(self, value: XConfiguration_8f0511a0) -> None:
+        ...
 
     @property
     def ResourceId(self) -> XResourceId_5be3103d:
@@ -83,6 +89,9 @@ class ConfigurationChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @ResourceId.setter
+    def ResourceId(self, value: XResourceId_5be3103d) -> None:
+        ...
 
     @property
     def ResourceObject(self) -> XInterface_8f010a43:
@@ -93,6 +102,9 @@ class ConfigurationChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @ResourceObject.setter
+    def ResourceObject(self, value: XInterface_8f010a43) -> None:
+        ...
 
     @property
     def UserData(self) -> object:
@@ -101,4 +113,7 @@ class ConfigurationChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @UserData.setter
+    def UserData(self, value: object) -> None:
+        ...
 

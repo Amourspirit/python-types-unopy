@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -55,6 +55,9 @@ class RemoteContentProviderChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Identifier.setter
+    def Identifier(self, value: str) -> None:
+        ...
 
     @property
     def Action(self) -> RemoteContentProviderChangeAction_e9701378:
@@ -63,4 +66,7 @@ class RemoteContentProviderChangeEvent(EventObject_a3d70b03):
         """
         ...
 
+    @Action.setter
+    def Action(self, value: RemoteContentProviderChangeAction_e9701378) -> None:
+        ...
 

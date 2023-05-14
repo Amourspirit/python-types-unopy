@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -63,11 +63,17 @@ class DocumentSignatureInformation(object):
     def Signer(self) -> XCertificate_e55b0d3b:
         ...
 
+    @Signer.setter
+    def Signer(self, value: XCertificate_e55b0d3b) -> None:
+        ...
 
     @property
     def SignatureDate(self) -> int:
         ...
 
+    @SignatureDate.setter
+    def SignatureDate(self, value: int) -> None:
+        ...
 
     @property
     def SignatureTime(self) -> int:
@@ -76,11 +82,17 @@ class DocumentSignatureInformation(object):
         """
         ...
 
+    @SignatureTime.setter
+    def SignatureTime(self, value: int) -> None:
+        ...
 
     @property
     def SignatureIsValid(self) -> bool:
         ...
 
+    @SignatureIsValid.setter
+    def SignatureIsValid(self, value: bool) -> None:
+        ...
 
     @property
     def CertificateStatus(self) -> int:
@@ -91,6 +103,9 @@ class DocumentSignatureInformation(object):
         """
         ...
 
+    @CertificateStatus.setter
+    def CertificateStatus(self, value: int) -> None:
+        ...
 
     @property
     def PartialDocumentSignature(self) -> bool:
@@ -103,6 +118,9 @@ class DocumentSignatureInformation(object):
         """
         ...
 
+    @PartialDocumentSignature.setter
+    def PartialDocumentSignature(self, value: bool) -> None:
+        ...
 
     @property
     def SignatureLineId(self) -> str:
@@ -115,6 +133,9 @@ class DocumentSignatureInformation(object):
         """
         ...
 
+    @SignatureLineId.setter
+    def SignatureLineId(self, value: str) -> None:
+        ...
 
     @property
     def ValidSignatureLineImage(self) -> XGraphic_a4da0afc:
@@ -127,6 +148,9 @@ class DocumentSignatureInformation(object):
         """
         ...
 
+    @ValidSignatureLineImage.setter
+    def ValidSignatureLineImage(self, value: XGraphic_a4da0afc) -> None:
+        ...
 
     @property
     def InvalidSignatureLineImage(self) -> XGraphic_a4da0afc:
@@ -139,4 +163,7 @@ class DocumentSignatureInformation(object):
         """
         ...
 
+    @InvalidSignatureLineImage.setter
+    def InvalidSignatureLineImage(self, value: XGraphic_a4da0afc) -> None:
+        ...
 

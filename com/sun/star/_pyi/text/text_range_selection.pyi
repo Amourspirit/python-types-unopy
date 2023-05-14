@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,9 +48,15 @@ class TextRangeSelection(object):
     def Start(self) -> TextPosition_b2ae0bc7:
         ...
 
+    @Start.setter
+    def Start(self, value: TextPosition_b2ae0bc7) -> None:
+        ...
 
     @property
     def End(self) -> TextPosition_b2ae0bc7:
         ...
 
+    @End.setter
+    def End(self, value: TextPosition_b2ae0bc7) -> None:
+        ...
 

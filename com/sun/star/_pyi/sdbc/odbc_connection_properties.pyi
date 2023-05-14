@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -39,6 +39,9 @@ class ODBCConnectionProperties(ConnectionProperties_1a9f0ee1):
         specifies the statement which should be executed when asking an \"INSERT\" statement for the XGeneratedResultSet (future concept) interface.
         """
         ...
+    @AutoRetrievingStatement.setter
+    def AutoRetrievingStatement(self, value: str) -> None:
+        ...
     @property
     def CharSet(self) -> str:
         """
@@ -46,6 +49,9 @@ class ODBCConnectionProperties(ConnectionProperties_1a9f0ee1):
         
         See the IANA character set list for a list of valid values.
         """
+        ...
+    @CharSet.setter
+    def CharSet(self, value: str) -> None:
         ...
     @property
     def IsAutoRetrievingEnabled(self) -> bool:
@@ -55,11 +61,17 @@ class ODBCConnectionProperties(ConnectionProperties_1a9f0ee1):
         If TRUE than the statement will support the XGeneratedResultSet (future concept) interface, otherwise not.
         """
         ...
+    @IsAutoRetrievingEnabled.setter
+    def IsAutoRetrievingEnabled(self, value: bool) -> None:
+        ...
     @property
     def ParameterNameSubstitution(self) -> bool:
         """
         should the parameter \"?\" in prepared statement be substituted with an distinct name
         """
+        ...
+    @ParameterNameSubstitution.setter
+    def ParameterNameSubstitution(self, value: bool) -> None:
         ...
     @property
     def Silent(self) -> bool:
@@ -69,16 +81,25 @@ class ODBCConnectionProperties(ConnectionProperties_1a9f0ee1):
         No user interaction while creating the connection.
         """
         ...
+    @Silent.setter
+    def Silent(self, value: bool) -> None:
+        ...
     @property
     def Timeout(self) -> int:
         """
         the Timeout after which time a timeout should happen
         """
         ...
+    @Timeout.setter
+    def Timeout(self, value: int) -> None:
+        ...
     @property
     def UseCatalog(self) -> bool:
         """
         should the driver should support a catalog.
         """
+        ...
+    @UseCatalog.setter
+    def UseCatalog(self, value: bool) -> None:
         ...
 

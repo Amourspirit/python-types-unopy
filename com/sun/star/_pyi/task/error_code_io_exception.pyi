@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -51,7 +51,9 @@ class ErrorCodeIOException(IOException_8c450a27):
         specifies the error code; see tools/errcode.hxx for details.
         """
         ...
-
+    @ErrCode.setter
+    def ErrCode(self, value: int) -> None:
+        ...
 
 __all__ = ['ErrorCodeIOException']
 

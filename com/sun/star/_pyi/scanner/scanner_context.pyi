@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -51,6 +51,9 @@ class ScannerContext(object):
         """
         ...
 
+    @ScannerName.setter
+    def ScannerName(self, value: str) -> None:
+        ...
 
     @property
     def InternalData(self) -> int:
@@ -59,4 +62,7 @@ class ScannerContext(object):
         """
         ...
 
+    @InternalData.setter
+    def InternalData(self, value: int) -> None:
+        ...
 

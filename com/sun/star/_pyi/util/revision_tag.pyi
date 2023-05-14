@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,6 +54,9 @@ class RevisionTag(object):
         """
         ...
 
+    @TimeStamp.setter
+    def TimeStamp(self, value: DateTime_84de09d3) -> None:
+        ...
 
     @property
     def Author(self) -> str:
@@ -62,6 +65,9 @@ class RevisionTag(object):
         """
         ...
 
+    @Author.setter
+    def Author(self, value: str) -> None:
+        ...
 
     @property
     def Comment(self) -> str:
@@ -70,6 +76,9 @@ class RevisionTag(object):
         """
         ...
 
+    @Comment.setter
+    def Comment(self, value: str) -> None:
+        ...
 
     @property
     def Identifier(self) -> str:
@@ -80,4 +89,7 @@ class RevisionTag(object):
         """
         ...
 
+    @Identifier.setter
+    def Identifier(self, value: str) -> None:
+        ...
 

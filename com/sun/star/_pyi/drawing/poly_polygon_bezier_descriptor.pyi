@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,16 +41,25 @@ class PolyPolygonBezierDescriptor(ABC):
         These are the untransformed Bezier coordinates of this polygon.
         """
         ...
+    @Geometry.setter
+    def Geometry(self, value: 'PolyPolygonBezierCoords_7ec5114b') -> None:
+        ...
     @property
     def PolyPolygonBezier(self) -> 'PolyPolygonBezierCoords_7ec5114b':
         """
         These are the Bezier points of this polygon.
         """
         ...
+    @PolyPolygonBezier.setter
+    def PolyPolygonBezier(self, value: 'PolyPolygonBezierCoords_7ec5114b') -> None:
+        ...
     @property
     def PolygonKind(self) -> 'PolygonKind_ca6f0c62':
         """
         This is the type of this polygon.
         """
+        ...
+    @PolygonKind.setter
+    def PolygonKind(self, value: 'PolygonKind_ca6f0c62') -> None:
         ...
 

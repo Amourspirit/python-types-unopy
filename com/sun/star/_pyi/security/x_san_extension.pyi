@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -41,5 +41,7 @@ class XSanExtension(XCertificateExtension_6ead10f8):
         Contains the alternative names of a certificate.
         """
         ...
-
+    @AlternativeNames.setter
+    def AlternativeNames(self, value: 'typing.Tuple[CertAltNameEntry_1ce50ec2, ...]') -> None:
+        ...
 

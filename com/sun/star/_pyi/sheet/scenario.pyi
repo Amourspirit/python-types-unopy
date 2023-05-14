@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -38,11 +38,17 @@ class Scenario(XPropertySet_bc180bfa, XNamed_a6520b08, XScenario_99ac0aad, XScen
         specifies the color of the border of the scenario.
         """
         ...
+    @BorderColor.setter
+    def BorderColor(self, value: int) -> None:
+        ...
     @property
     def CopyBack(self) -> bool:
         """
         specifies if the data should be copied back into the scenario.
         """
+        ...
+    @CopyBack.setter
+    def CopyBack(self, value: bool) -> None:
         ...
     @property
     def CopyFormulas(self) -> bool:
@@ -50,11 +56,17 @@ class Scenario(XPropertySet_bc180bfa, XNamed_a6520b08, XScenario_99ac0aad, XScen
         specifies if the formulas are copied or only the results.
         """
         ...
+    @CopyFormulas.setter
+    def CopyFormulas(self, value: bool) -> None:
+        ...
     @property
     def CopyStyles(self) -> bool:
         """
         specifies if the styles are copied.
         """
+        ...
+    @CopyStyles.setter
+    def CopyStyles(self, value: bool) -> None:
         ...
     @property
     def IsActive(self) -> bool:
@@ -62,11 +74,17 @@ class Scenario(XPropertySet_bc180bfa, XNamed_a6520b08, XScenario_99ac0aad, XScen
         specifies if the scenario is active.
         """
         ...
+    @IsActive.setter
+    def IsActive(self, value: bool) -> None:
+        ...
     @property
     def PrintBorder(self) -> bool:
         """
         specifies if the scenario prints a border.
         """
+        ...
+    @PrintBorder.setter
+    def PrintBorder(self, value: bool) -> None:
         ...
     @property
     def Protected(self) -> bool:
@@ -74,10 +92,16 @@ class Scenario(XPropertySet_bc180bfa, XNamed_a6520b08, XScenario_99ac0aad, XScen
         specifies if the scenario is protected.
         """
         ...
+    @Protected.setter
+    def Protected(self, value: bool) -> None:
+        ...
     @property
     def ShowBorder(self) -> bool:
         """
         specifies if the scenario shows a border.
         """
+        ...
+    @ShowBorder.setter
+    def ShowBorder(self, value: bool) -> None:
         ...
 

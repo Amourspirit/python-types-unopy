@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,7 +59,9 @@ class JavaVMCreationFailureException(JavaInitializationException_8b6211a3):
         A negative value represents the returned error code of JNI_CreateJavaVM. All other values indicate a different cause.
         """
         ...
-
+    @ErrorCode.setter
+    def ErrorCode(self, value: int) -> None:
+        ...
 
 __all__ = ['JavaVMCreationFailureException']
 

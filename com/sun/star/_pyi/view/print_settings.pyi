@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -37,6 +37,9 @@ class PrintSettings(ABC):
         determines how annotations are printed.
         """
         ...
+    @PrintAnnotationMode.setter
+    def PrintAnnotationMode(self, value: int) -> None:
+        ...
     @property
     def PrintBlackFonts(self) -> bool:
         """
@@ -45,11 +48,17 @@ class PrintSettings(ABC):
         It is useful for printing colored text on a b/w printer.
         """
         ...
+    @PrintBlackFonts.setter
+    def PrintBlackFonts(self, value: bool) -> None:
+        ...
     @property
     def PrintControls(self) -> bool:
         """
         If TRUE, control shapes are included in printing.
         """
+        ...
+    @PrintControls.setter
+    def PrintControls(self, value: bool) -> None:
         ...
     @property
     def PrintDrawings(self) -> bool:
@@ -57,11 +66,17 @@ class PrintSettings(ABC):
         If TRUE, drawing objects (shapes) are included in printing.
         """
         ...
+    @PrintDrawings.setter
+    def PrintDrawings(self, value: bool) -> None:
+        ...
     @property
     def PrintGraphics(self) -> bool:
         """
         If TRUE, graphic objects are included in printing.
         """
+        ...
+    @PrintGraphics.setter
+    def PrintGraphics(self, value: bool) -> None:
         ...
     @property
     def PrintLeftPages(self) -> bool:
@@ -69,17 +84,26 @@ class PrintSettings(ABC):
         If TRUE, left pages are included in printing.
         """
         ...
+    @PrintLeftPages.setter
+    def PrintLeftPages(self, value: bool) -> None:
+        ...
     @property
     def PrintPageBackground(self) -> bool:
         """
         If TRUE, the background of the page is printed.
         """
         ...
+    @PrintPageBackground.setter
+    def PrintPageBackground(self, value: bool) -> None:
+        ...
     @property
     def PrintProspect(self) -> bool:
         """
         If TRUE, the pages are printed in the order of prospects.
         """
+        ...
+    @PrintProspect.setter
+    def PrintProspect(self, value: bool) -> None:
         ...
     @property
     def PrintReversed(self) -> bool:
@@ -89,16 +113,25 @@ class PrintSettings(ABC):
         The last page is printed first.
         """
         ...
+    @PrintReversed.setter
+    def PrintReversed(self, value: bool) -> None:
+        ...
     @property
     def PrintRightPages(self) -> bool:
         """
         If TRUE, right pages are included in printing.
         """
         ...
+    @PrintRightPages.setter
+    def PrintRightPages(self, value: bool) -> None:
+        ...
     @property
     def PrintTables(self) -> bool:
         """
         If TRUE, tables are included in printing.
         """
+        ...
+    @PrintTables.setter
+    def PrintTables(self, value: bool) -> None:
         ...
 

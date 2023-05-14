@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -56,6 +56,9 @@ class VertOrientationFormat(object):
         """
         ...
 
+    @YPos.setter
+    def YPos(self, value: int) -> None:
+        ...
 
     @property
     def VerticalOrientation(self) -> int:
@@ -66,6 +69,9 @@ class VertOrientationFormat(object):
         """
         ...
 
+    @VerticalOrientation.setter
+    def VerticalOrientation(self, value: int) -> None:
+        ...
 
     @property
     def VerticalRelation(self) -> int:
@@ -74,4 +80,7 @@ class VertOrientationFormat(object):
         """
         ...
 
+    @VerticalRelation.setter
+    def VerticalRelation(self, value: int) -> None:
+        ...
 

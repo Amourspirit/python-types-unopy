@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -55,6 +55,9 @@ class ShadowFormat(object):
         """
         ...
 
+    @Location.setter
+    def Location(self, value: ShadowLocation_d4530caf) -> None:
+        ...
 
     @property
     def ShadowWidth(self) -> int:
@@ -63,6 +66,9 @@ class ShadowFormat(object):
         """
         ...
 
+    @ShadowWidth.setter
+    def ShadowWidth(self, value: int) -> None:
+        ...
 
     @property
     def IsTransparent(self) -> bool:
@@ -71,6 +77,9 @@ class ShadowFormat(object):
         """
         ...
 
+    @IsTransparent.setter
+    def IsTransparent(self, value: bool) -> None:
+        ...
 
     @property
     def Color(self) -> Color_68e908c5:
@@ -79,4 +88,7 @@ class ShadowFormat(object):
         """
         ...
 
+    @Color.setter
+    def Color(self, value: Color_68e908c5) -> None:
+        ...
 

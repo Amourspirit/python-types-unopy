@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -52,6 +52,9 @@ class AtomClassRequest(object):
         """
         ...
 
+    @atoms.setter
+    def atoms(self, value: uno.ByteSequence) -> None:
+        ...
 
     @property
     def atomClass(self) -> int:
@@ -60,4 +63,7 @@ class AtomClassRequest(object):
         """
         ...
 
+    @atomClass.setter
+    def atomClass(self, value: int) -> None:
+        ...
 

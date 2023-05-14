@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,6 +59,9 @@ class BarCode(object):
         """
         ...
 
+    @Type.setter
+    def Type(self, value: int) -> None:
+        ...
 
     @property
     def Payload(self) -> str:
@@ -67,6 +70,9 @@ class BarCode(object):
         """
         ...
 
+    @Payload.setter
+    def Payload(self, value: str) -> None:
+        ...
 
     @property
     def ErrorCorrection(self) -> int:
@@ -75,6 +81,9 @@ class BarCode(object):
         """
         ...
 
+    @ErrorCorrection.setter
+    def ErrorCorrection(self, value: int) -> None:
+        ...
 
     @property
     def Border(self) -> int:
@@ -85,4 +94,7 @@ class BarCode(object):
         """
         ...
 
+    @Border.setter
+    def Border(self, value: int) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,11 +35,17 @@ class ObjectIndex(BaseIndex_8f0d0a40):
         Determines if external embedded objects are included in the office.
         """
         ...
+    @CreateFromOtherEmbeddedObjects.setter
+    def CreateFromOtherEmbeddedObjects(self, value: bool) -> None:
+        ...
     @property
     def CreateFromStarCalc(self) -> bool:
         """
         Determines if star office calc objects are included in the office.
         """
+        ...
+    @CreateFromStarCalc.setter
+    def CreateFromStarCalc(self, value: bool) -> None:
         ...
     @property
     def CreateFromStarChart(self) -> bool:
@@ -47,11 +53,17 @@ class ObjectIndex(BaseIndex_8f0d0a40):
         Determines if star office chart objects are included in the office.
         """
         ...
+    @CreateFromStarChart.setter
+    def CreateFromStarChart(self, value: bool) -> None:
+        ...
     @property
     def CreateFromStarDraw(self) -> bool:
         """
         Determines if star office draw objects are included in the office.
         """
+        ...
+    @CreateFromStarDraw.setter
+    def CreateFromStarDraw(self, value: bool) -> None:
         ...
     @property
     def CreateFromStarImage(self) -> bool:
@@ -59,10 +71,16 @@ class ObjectIndex(BaseIndex_8f0d0a40):
         Determines if star office image objects are included in the office.
         """
         ...
+    @CreateFromStarImage.setter
+    def CreateFromStarImage(self, value: bool) -> None:
+        ...
     @property
     def CreateFromStarMath(self) -> bool:
         """
         Determines if star office math objects are included in the office.
         """
+        ...
+    @CreateFromStarMath.setter
+    def CreateFromStarMath(self, value: bool) -> None:
         ...
 

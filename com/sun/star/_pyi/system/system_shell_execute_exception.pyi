@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,7 +53,9 @@ class SystemShellExecuteException(Exception_85530a09):
         A POSIX conforming error code or -1 for unknown errors.
         """
         ...
-
+    @PosixError.setter
+    def PosixError(self, value: int) -> None:
+        ...
 
 __all__ = ['SystemShellExecuteException']
 

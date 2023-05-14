@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -49,19 +49,25 @@ class XUIElement(XInterface_8f010a43):
         The life time of a user interface element does not explicitly depend on the frame itself but on the visible component attached to the frame. It is possible to exchange the visible component of a frame and that will lead to the end of life of all user interface elements.
         """
         ...
-
+    @Frame.setter
+    def Frame(self, value: 'XFrame_7a570956') -> None:
+        ...
     @property
     def ResourceURL(self) -> str:
         """
         a resource URL which is a unique identifier of a user interface element.
         """
         ...
-
+    @ResourceURL.setter
+    def ResourceURL(self, value: str) -> None:
+        ...
     @property
     def Type(self) -> int:
         """
         determines the type of the user interface element.
         """
         ...
-
+    @Type.setter
+    def Type(self, value: int) -> None:
+        ...
 

@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -54,7 +54,9 @@ class CannotConvertException(Exception_85530a09):
         This member contains the class of the type to which the value should be converted.
         """
         ...
-
+    @DestinationTypeClass.setter
+    def DestinationTypeClass(self, value: TypeClass_853109f2) -> None:
+        ...
     @property
     def Reason(self) -> int:
         """
@@ -63,7 +65,9 @@ class CannotConvertException(Exception_85530a09):
         Have a look at FailReason.
         """
         ...
-
+    @Reason.setter
+    def Reason(self, value: int) -> None:
+        ...
     @property
     def ArgumentIndex(self) -> int:
         """
@@ -72,7 +76,9 @@ class CannotConvertException(Exception_85530a09):
         [optional]
         """
         ...
-
+    @ArgumentIndex.setter
+    def ArgumentIndex(self, value: int) -> None:
+        ...
 
 __all__ = ['CannotConvertException']
 

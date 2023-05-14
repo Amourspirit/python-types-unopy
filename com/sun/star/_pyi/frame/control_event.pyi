@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -60,6 +60,9 @@ class ControlEvent(object):
         """
         ...
 
+    @aInformation.setter
+    def aInformation(self, value: typing.Tuple[NamedValue_a37a0af3, ...]) -> None:
+        ...
 
     @property
     def aURL(self) -> URL_57ad07b9:
@@ -68,6 +71,9 @@ class ControlEvent(object):
         """
         ...
 
+    @aURL.setter
+    def aURL(self, value: URL_57ad07b9) -> None:
+        ...
 
     @property
     def Event(self) -> str:
@@ -76,4 +82,7 @@ class ControlEvent(object):
         """
         ...
 
+    @Event.setter
+    def Event(self, value: str) -> None:
+        ...
 

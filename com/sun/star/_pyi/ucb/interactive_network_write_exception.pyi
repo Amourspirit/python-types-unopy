@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -53,7 +53,9 @@ class InteractiveNetworkWriteException(InteractiveNetworkException_7ca31159):
         Any diagnostic message about the failure (which will typically be an English phrase or sentence).
         """
         ...
-
+    @Diagnostic.setter
+    def Diagnostic(self, value: str) -> None:
+        ...
 
 __all__ = ['InteractiveNetworkWriteException']
 

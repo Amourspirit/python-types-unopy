@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,11 +35,17 @@ class ChartAxisZSupplier(XAxisZSupplier_d44c0cb5):
         Determines if the z-axis is shown or hidden.
         """
         ...
+    @HasZAxis.setter
+    def HasZAxis(self, value: bool) -> None:
+        ...
     @property
     def HasZAxisDescription(self) -> bool:
         """
         Determines if the description of the z-axis is shown or hidden.
         """
+        ...
+    @HasZAxisDescription.setter
+    def HasZAxisDescription(self, value: bool) -> None:
         ...
     @property
     def HasZAxisGrid(self) -> bool:
@@ -47,16 +53,25 @@ class ChartAxisZSupplier(XAxisZSupplier_d44c0cb5):
         Determines if the major grid of the z-axis is shown or hidden.
         """
         ...
+    @HasZAxisGrid.setter
+    def HasZAxisGrid(self, value: bool) -> None:
+        ...
     @property
     def HasZAxisHelpGrid(self) -> bool:
         """
         Determines if the minor grid of the z-axis is shown or hidden.
         """
         ...
+    @HasZAxisHelpGrid.setter
+    def HasZAxisHelpGrid(self, value: bool) -> None:
+        ...
     @property
     def HasZAxisTitle(self) -> bool:
         """
         Determines if the title of the z-axis is shown or hidden.
         """
+        ...
+    @HasZAxisTitle.setter
+    def HasZAxisTitle(self, value: bool) -> None:
         ...
 

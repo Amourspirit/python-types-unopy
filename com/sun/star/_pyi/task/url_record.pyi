@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -48,6 +48,9 @@ class UrlRecord(object):
     def UserList(self) -> typing.Tuple[UserRecord_9a2e0ab9, ...]:
         ...
 
+    @UserList.setter
+    def UserList(self, value: typing.Tuple[UserRecord_9a2e0ab9, ...]) -> None:
+        ...
 
     @property
     def Url(self) -> str:
@@ -56,4 +59,7 @@ class UrlRecord(object):
         """
         ...
 
+    @Url.setter
+    def Url(self, value: str) -> None:
+        ...
 

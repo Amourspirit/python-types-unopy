@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -35,11 +35,17 @@ class ViewDescriptor(Descriptor_a5200b3b):
         is the name of the views catalog, may be empty.
         """
         ...
+    @CatalogName.setter
+    def CatalogName(self, value: str) -> None:
+        ...
     @property
     def CheckOption(self) -> int:
         """
         indicates if a check option should be used for the view.
         """
+        ...
+    @CheckOption.setter
+    def CheckOption(self, value: int) -> None:
         ...
     @property
     def Command(self) -> str:
@@ -49,10 +55,16 @@ class ViewDescriptor(Descriptor_a5200b3b):
         After appending a view to its container, the command may be empty. This is typically a SQL Select-Statement.
         """
         ...
+    @Command.setter
+    def Command(self, value: str) -> None:
+        ...
     @property
     def SchemaName(self) -> str:
         """
         is the name of the views schema, may be empty.
         """
+        ...
+    @SchemaName.setter
+    def SchemaName(self, value: str) -> None:
         ...
 

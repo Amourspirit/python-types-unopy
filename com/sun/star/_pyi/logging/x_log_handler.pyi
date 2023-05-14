@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -59,14 +59,18 @@ class XLogHandler(XComponent_98dc0ab5):
         It depends on the concrete handler implementation whether or not this parameter is needed.
         """
         ...
-
+    @Encoding.setter
+    def Encoding(self, value: str) -> None:
+        ...
     @property
     def Formatter(self) -> 'XLogFormatter_e23d0d1d':
         """
         specifies the formatter to be used by this handler.
         """
         ...
-
+    @Formatter.setter
+    def Formatter(self, value: 'XLogFormatter_e23d0d1d') -> None:
+        ...
     @property
     def Level(self) -> int:
         """
@@ -75,5 +79,7 @@ class XLogHandler(XComponent_98dc0ab5):
         Different handlers can have different log levels, which again might be different from the log level of the XLogger for which the handlers are used.
         """
         ...
-
+    @Level.setter
+    def Level(self, value: int) -> None:
+        ...
 

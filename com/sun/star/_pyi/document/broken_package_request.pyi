@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -55,7 +55,9 @@ class BrokenPackageRequest(Exception_85530a09):
         The name of the document that is broken.
         """
         ...
-
+    @aName.setter
+    def aName(self, value: str) -> None:
+        ...
 
 __all__ = ['BrokenPackageRequest']
 

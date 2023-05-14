@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-# Copyright 2022 :Barry-Thomas-Paul: Moss
+# Copyright 2023 :Barry-Thomas-Paul: Moss
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -44,11 +44,17 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
         specifies the background color (RGB) of the control.
         """
         ...
+    @BackgroundColor.setter
+    def BackgroundColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def Border(self) -> int:
         """
         specifies the border style of the control.
         """
+        ...
+    @Border.setter
+    def Border(self, value: int) -> None:
         ...
     @property
     def BorderColor(self) -> int:
@@ -62,11 +68,17 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @BorderColor.setter
+    def BorderColor(self, value: int) -> None:
+        ...
     @property
     def Enabled(self) -> bool:
         """
         determines whether a control is enabled or disabled.
         """
+        ...
+    @Enabled.setter
+    def Enabled(self, value: bool) -> None:
         ...
     @property
     def FontDescriptor(self) -> 'FontDescriptor_bc110c0a':
@@ -74,11 +86,17 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
         specifies the font attributes of the text in the control.
         """
         ...
+    @FontDescriptor.setter
+    def FontDescriptor(self, value: 'FontDescriptor_bc110c0a') -> None:
+        ...
     @property
     def FontEmphasisMark(self) -> int:
         """
         specifies the com.sun.star.text.FontEmphasis value of the text in the control.
         """
+        ...
+    @FontEmphasisMark.setter
+    def FontEmphasisMark(self, value: int) -> None:
         ...
     @property
     def FontRelief(self) -> int:
@@ -86,17 +104,26 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
         specifies the com.sun.star.text.FontRelief value of the text in the control.
         """
         ...
+    @FontRelief.setter
+    def FontRelief(self, value: int) -> None:
+        ...
     @property
     def HelpText(self) -> str:
         """
         specifies the help text of the control.
         """
         ...
+    @HelpText.setter
+    def HelpText(self, value: str) -> None:
+        ...
     @property
     def HelpURL(self) -> str:
         """
         specifies the help URL of the control.
         """
+        ...
+    @HelpURL.setter
+    def HelpURL(self, value: str) -> None:
         ...
     @property
     def HideInactiveSelection(self) -> bool:
@@ -108,11 +135,17 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
             OOo 2.0
         """
         ...
+    @HideInactiveSelection.setter
+    def HideInactiveSelection(self, value: bool) -> None:
+        ...
     @property
     def Printable(self) -> bool:
         """
         specifies that the control will be printed with the document.
         """
+        ...
+    @Printable.setter
+    def Printable(self, value: bool) -> None:
         ...
     @property
     def ReadOnly(self) -> bool:
@@ -124,11 +157,17 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
             OOo 1.1.2
         """
         ...
+    @ReadOnly.setter
+    def ReadOnly(self, value: bool) -> None:
+        ...
     @property
     def Tabstop(self) -> bool:
         """
         specifies that the control can be reached with the TAB key.
         """
+        ...
+    @Tabstop.setter
+    def Tabstop(self, value: bool) -> None:
         ...
     @property
     def Text(self) -> str:
@@ -136,17 +175,26 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
         specifies the text displayed in the control.
         """
         ...
+    @Text.setter
+    def Text(self, value: str) -> None:
+        ...
     @property
     def TextColor(self) -> 'Color_68e908c5':
         """
         specifies the text color (RGB) of the control.
         """
         ...
+    @TextColor.setter
+    def TextColor(self, value: 'Color_68e908c5') -> None:
+        ...
     @property
     def TextLineColor(self) -> 'Color_68e908c5':
         """
         specifies the text line color (RGB) of the control.
         """
+        ...
+    @TextLineColor.setter
+    def TextLineColor(self, value: 'Color_68e908c5') -> None:
         ...
     @property
     def VerticalAlign(self) -> 'VerticalAlignment_8d0e12':
@@ -157,5 +205,8 @@ class UnoControlFileControlModel(UnoControlModel_c8ce0c58):
         
             OOo 3.3
         """
+        ...
+    @VerticalAlign.setter
+    def VerticalAlign(self, value: 'VerticalAlignment_8d0e12') -> None:
         ...
 
