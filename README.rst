@@ -15,7 +15,7 @@ VERSION
 
 This package is for Version ``7.4`` + of `LibreOffice API <https://api.libreoffice.org/>`_.
 
-From one version of LibreOffice to the next, geneally speaking, the API does not changed much.
+From one version of LibreOffice to the next, generally speaking, the API does not changed much.
 Because this is the case it is very likely this current version of ``LibreOffice API Typings``
 will work fine with other versions of LibreOffice. This a typing package so not much can go wrong in other versions.
 
@@ -100,12 +100,12 @@ Enums
 
 There is no enum classes in API only enum members.
 
-To acces the enum members they must be imported directly.
+To access the enum members they must be imported directly.
 
 For example to import ``com.sun.star.beans.PropertyState.DIRECT_VALUE``
 
 
-If you need the behaviour of regular Enum Classes consider using `ooouno <https://github.com/Amourspirit/python-ooouno>`_
+If you need the behavior of regular Enum Classes consider using `ooouno <https://github.com/Amourspirit/python-ooouno>`_
 
 .. code-block:: python
 
@@ -130,11 +130,11 @@ Special Cases
 
 By default an ``ImportError`` is raised when importing form ``com.sun.star`` at runtime.
 This is by design as the import error triggers ``uno`` to search LibreOffice API for actual import;
-Othwewise, ``com.sun.star`` is seen a namesapce import and ``uno`` is ignored.
+Otherwise, ``com.sun.star`` is seen a namespace import and ``uno`` is ignored.
 
 In some cases the ``ImportError`` may need to be suppressed.
 
-Suppressing ``ImportError`` is acomplished by adding ``"ooouno_ignore_import_error"`` to environment and setting it to ``"True"``
+Suppressing ``ImportError`` is accomplished by adding ``"ooouno_ignore_import_error"`` to environment and setting it to ``"True"``
 
 .. code-block:: python
 

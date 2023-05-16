@@ -25,5 +25,10 @@
 "workbench.colorTheme": "Monokai",
 "esbonio.server.enabled": true,
 "esbonio.sphinx.buildDir": "${workspaceFolder}/docs/_build/html",
-"esbonio.sphinx.confDir": ""
+"esbonio.sphinx.confDir": "",
+"cSpell.words": [
+  "autodoc",
+  "ooouno",
+  "unopy"
+]
 }
