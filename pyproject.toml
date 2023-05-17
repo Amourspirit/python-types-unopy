@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "types-unopy"
-version = "1.0.4"
+version = "1.0.5"
 description = "Type annotations for LibreOffice API"
 # name regex
 # https://github.com/python-poetry/poetry-core/commit/01602122f9b2a4cc927d94c543efb5020dfa3817
@@ -44,3 +44,9 @@ secondary = false
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+extended-select=["ANN", "C4", "N", "SIM", "TCH"]
+ignore=["E502"]
+show-fixes=true
+target="py38"
