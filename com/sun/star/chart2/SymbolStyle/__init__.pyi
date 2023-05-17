@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart2.symbol_style import SymbolStyle as PyiSymbolStyle
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart2.SymbolStyle'
 
-AUTO: SymbolStyle = ...
+AUTO: PyiSymbolStyle = ...
 """
 The symbol is taken automatically.
 """
-GRAPHIC: SymbolStyle = ...
+GRAPHIC: PyiSymbolStyle = ...
 """
 uses the graphic given in Symbol.Graphic as symbol.
 """
-NONE: SymbolStyle = ...
+NONE: PyiSymbolStyle = ...
 """
 Default, no pies are exploded.
 
@@ -45,11 +46,11 @@ no transparency attribute is evaluated
 
 The symbol is invisible.
 """
-POLYGON: SymbolStyle = ...
+POLYGON: PyiSymbolStyle = ...
 """
 uses the symbol given in the com.sun.star.drawing.PolyPolygonBezierCoords given in Symbol.PolygonCoords.
 """
-STANDARD: SymbolStyle = ...
+STANDARD: PyiSymbolStyle = ...
 """
 uses one of the standard symbols.
 

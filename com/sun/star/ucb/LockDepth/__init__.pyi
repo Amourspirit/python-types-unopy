@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.lock_depth import LockDepth as PyiLockDepth
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.LockDepth'
 
-INFINITY: LockDepth = ...
+INFINITY: PyiLockDepth = ...
 """
 Infinity (includes children and children's children and ...).
 """
-ONE: LockDepth = ...
+ONE: PyiLockDepth = ...
 """
 One (includes children).
 """
-ZERO: LockDepth = ...
+ZERO: PyiLockDepth = ...
 """
 Zero (includes no children).
 """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.awt.push_button_type import PushButtonType as PyiPushButtonType
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.awt.PushButtonType'
 
-CANCEL: PushButtonType = ...
+CANCEL: PyiPushButtonType = ...
 """
 acts like a cancel button.
 """
-HELP: PushButtonType = ...
+HELP: PyiPushButtonType = ...
 """
 acts like a help button.
 """
-OK: PushButtonType = ...
+OK: PyiPushButtonType = ...
 """
 acts like an OK button.
 """
-STANDARD: PushButtonType = ...
+STANDARD: PyiPushButtonType = ...
 """
 acts like a standard push button.
 """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.table_operation_mode import TableOperationMode as PyiTableOperationMode
 """
 Enum
 
@@ -29,17 +30,17 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.TableOperationMode'
 
-BOTH: TableOperationMode = ...
+BOTH: PyiTableOperationMode = ...
 """
 is applied to rows and columns.
 """
-COLUMN: TableOperationMode = ...
+COLUMN: PyiTableOperationMode = ...
 """
 the field is used as a column field.
 
 is applied to the columns.
 """
-ROW: TableOperationMode = ...
+ROW: PyiTableOperationMode = ...
 """
 the field is used as a row field.
 

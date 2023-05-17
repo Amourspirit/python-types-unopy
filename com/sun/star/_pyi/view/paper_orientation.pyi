@@ -32,11 +32,11 @@ class PaperOrientation(uno.Enum):
     """
     typeName: str = 'com.sun.star.view.PaperOrientation'
 
-    LANDSCAPE: PaperOrientation = ...
+    LANDSCAPE: PyiPaperOrientation = ...
     """
     set the paper orientation to landscape.
     """
-    PORTRAIT: PaperOrientation = ...
+    PORTRAIT: PyiPaperOrientation = ...
     """
     set the paper orientation to portrait.
     """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.alignment import Alignment as PyiAlignment
 """
 Enum
 
@@ -29,7 +30,7 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.Alignment'
 
-BOTTOM: Alignment = ...
+BOTTOM: PyiAlignment = ...
 """
 the connection line leaves the connected object from the bottom,
 
@@ -37,17 +38,17 @@ The text is positioned below the main line.
 
 The bottom edge of the text is adjusted to the bottom edge of the shape.
 """
-BOTTOM_LEFT: Alignment = ...
+BOTTOM_LEFT: PyiAlignment = ...
 """
 """
-BOTTOM_RIGHT: Alignment = ...
+BOTTOM_RIGHT: PyiAlignment = ...
 """
 """
-CENTER: Alignment = ...
+CENTER: PyiAlignment = ...
 """
 The text is centered inside the shape.
 """
-LEFT: Alignment = ...
+LEFT: PyiAlignment = ...
 """
 the connection line leaves the connected object to the left,
 
@@ -55,7 +56,7 @@ The left edge of the text is adjusted to the left edge of the shape.
 
 The text is positioned to the left.
 """
-RIGHT: Alignment = ...
+RIGHT: PyiAlignment = ...
 """
 the connection line leaves the connected object to the right,
 
@@ -63,7 +64,7 @@ The right edge of the text is adjusted to the right edge of the shape.
 
 The text is positioned to the right.
 """
-TOP: Alignment = ...
+TOP: PyiAlignment = ...
 """
 the connection line leaves the connected object from the top,
 
@@ -71,10 +72,10 @@ The text is positioned above the main line.
 
 The top edge of the text is adjusted to the top edge of the shape.
 """
-TOP_LEFT: Alignment = ...
+TOP_LEFT: PyiAlignment = ...
 """
 """
-TOP_RIGHT: Alignment = ...
+TOP_RIGHT: PyiAlignment = ...
 """
 """
 

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.rendering.fill_rule import FillRule as PyiFillRule
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.rendering.FillRule'
 
-EVEN_ODD: FillRule = ...
+EVEN_ODD: PyiFillRule = ...
 """
 Fill every area, where, when traveling along a line, an uneven number of intersections with polygon edges have happened.
 """
-NON_ZERO: FillRule = ...
+NON_ZERO: PyiFillRule = ...
 """
 Fill every area, where, when traveling along a line, the summed winding number (that is, -1 for a counter-clockwise-oriented polygon, and +1 for a clockwise-oriented) is non-zero.
 

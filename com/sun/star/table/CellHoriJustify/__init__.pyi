@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.table.cell_hori_justify import CellHoriJustify as PyiCellHoriJustify
 """
 Enum
 
@@ -29,29 +30,29 @@ See Also:
 """
 typeName: str = 'com.sun.star.table.CellHoriJustify'
 
-BLOCK: CellHoriJustify = ...
+BLOCK: PyiCellHoriJustify = ...
 """
 contents are justified to the cell width.
 """
-CENTER: CellHoriJustify = ...
+CENTER: PyiCellHoriJustify = ...
 """
 contents are horizontally centered.
 
 contents are aligned to the vertical middle of the cell.
 """
-LEFT: CellHoriJustify = ...
+LEFT: PyiCellHoriJustify = ...
 """
 contents are aligned to the left edge of the cell.
 """
-REPEAT: CellHoriJustify = ...
+REPEAT: PyiCellHoriJustify = ...
 """
 contents are repeated to fill the cell.
 """
-RIGHT: CellHoriJustify = ...
+RIGHT: PyiCellHoriJustify = ...
 """
 contents are aligned to the right edge of the cell.
 """
-STANDARD: CellHoriJustify = ...
+STANDARD: PyiCellHoriJustify = ...
 """
 default alignment is used (left for numbers, right for text).
 

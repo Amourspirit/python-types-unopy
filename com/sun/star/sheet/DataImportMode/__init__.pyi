@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.data_import_mode import DataImportMode as PyiDataImportMode
 """
 Enum
 
@@ -29,7 +30,7 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.DataImportMode'
 
-NONE: DataImportMode = ...
+NONE: PyiDataImportMode = ...
 """
 no cells are moved.
 
@@ -43,15 +44,15 @@ nothing is imported.
 
 no condition is specified.
 """
-QUERY: DataImportMode = ...
+QUERY: PyiDataImportMode = ...
 """
 the name of a database query is supplied.
 """
-SQL: DataImportMode = ...
+SQL: PyiDataImportMode = ...
 """
 a SQL query string is supplied.
 """
-TABLE: DataImportMode = ...
+TABLE: PyiDataImportMode = ...
 """
 the name of a database table is supplied.
 """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.table.table_sort_field_type import TableSortFieldType as PyiTableSortFieldType
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.table.TableSortFieldType'
 
-ALPHANUMERIC: TableSortFieldType = ...
+ALPHANUMERIC: PyiTableSortFieldType = ...
 """
 sort field contains text data.
 """
-AUTOMATIC: TableSortFieldType = ...
+AUTOMATIC: PyiTableSortFieldType = ...
 """
 type is determined automatically.
 """
-NUMERIC: TableSortFieldType = ...
+NUMERIC: PyiTableSortFieldType = ...
 """
 sort field contains numerical data.
 """

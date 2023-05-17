@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.polygon_flags import PolygonFlags as PyiPolygonFlags
 """
 Enum
 
@@ -29,23 +30,23 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.PolygonFlags'
 
-CONTROL: PolygonFlags = ...
+CONTROL: PyiPolygonFlags = ...
 """
 the point is a control point, to control the curve from the user interface.
 """
-NORMAL: PolygonFlags = ...
+NORMAL: PyiPolygonFlags = ...
 """
 the text is drawn along the path without scaling.
 
 the point is normal, from the curve discussion view.
 """
-SMOOTH: PolygonFlags = ...
+SMOOTH: PyiPolygonFlags = ...
 """
 the point is smooth, the first derivation from the curve discussion view.
 
 With SMOOTH shading, the colors of the lit vertices is interpolated.
 """
-SYMMETRIC: PolygonFlags = ...
+SYMMETRIC: PyiPolygonFlags = ...
 """
 the point is symmetric, the second derivation from the curve discussion view.
 """

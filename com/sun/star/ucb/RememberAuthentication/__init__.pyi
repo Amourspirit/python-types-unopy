@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.remember_authentication import RememberAuthentication as PyiRememberAuthentication
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.RememberAuthentication'
 
-NO: RememberAuthentication = ...
+NO: PyiRememberAuthentication = ...
 """
 Do not remember the authentication data (use it once and immediately forget about it).
 """
-PERSISTENT: RememberAuthentication = ...
+PERSISTENT: PyiRememberAuthentication = ...
 """
 Remember the authentication data \"forever\".
 """
-SESSION: RememberAuthentication = ...
+SESSION: PyiRememberAuthentication = ...
 """
 Remember the authentication data, but only until the end of the current session.
 """

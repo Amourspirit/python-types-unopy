@@ -32,11 +32,11 @@ class ParagraphAdjust(uno.Enum):
     """
     typeName: str = 'com.sun.star.style.ParagraphAdjust'
 
-    BLOCK: ParagraphAdjust = ...
+    BLOCK: PyiParagraphAdjust = ...
     """
     adjusted to both borders / stretched, except for last line
     """
-    CENTER: ParagraphAdjust = ...
+    CENTER: PyiParagraphAdjust = ...
     """
     set the horizontal alignment to the center between the margins from the container object
     
@@ -44,7 +44,7 @@ class ParagraphAdjust(uno.Enum):
     
     adjusted to the center
     """
-    LEFT: ParagraphAdjust = ...
+    LEFT: PyiParagraphAdjust = ...
     """
     set the horizontal alignment to the left margin from the container object
     
@@ -54,7 +54,7 @@ class ParagraphAdjust(uno.Enum):
     
     The page style is only used for left pages.
     """
-    RIGHT: ParagraphAdjust = ...
+    RIGHT: PyiParagraphAdjust = ...
     """
     set the horizontal alignment to the right margin from the container object
     
@@ -64,7 +64,7 @@ class ParagraphAdjust(uno.Enum):
     
     The page style is only used for right pages.
     """
-    STRETCH: ParagraphAdjust = ...
+    STRETCH: PyiParagraphAdjust = ...
     """
     adjusted to both borders / stretched, including last line
     """

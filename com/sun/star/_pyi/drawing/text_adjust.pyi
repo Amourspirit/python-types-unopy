@@ -32,17 +32,17 @@ class TextAdjust(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.TextAdjust'
 
-    BLOCK: TextAdjust = ...
+    BLOCK: PyiTextAdjust = ...
     """
     The text extends from the left to the right edge of the shape.
     
     The text extends from the top to the bottom edge of the shape.
     """
-    CENTER: TextAdjust = ...
+    CENTER: PyiTextAdjust = ...
     """
     The text is centered inside the shape.
     """
-    LEFT: TextAdjust = ...
+    LEFT: PyiTextAdjust = ...
     """
     the connection line leaves the connected object to the left,
     
@@ -50,7 +50,7 @@ class TextAdjust(uno.Enum):
     
     The text is positioned to the left.
     """
-    RIGHT: TextAdjust = ...
+    RIGHT: PyiTextAdjust = ...
     """
     the connection line leaves the connected object to the right,
     
@@ -58,7 +58,7 @@ class TextAdjust(uno.Enum):
     
     The text is positioned to the right.
     """
-    STRETCH: TextAdjust = ...
+    STRETCH: PyiTextAdjust = ...
     """
     the bitmap is stretched to fill the area.
     

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart2.pie_chart_offset_mode import PieChartOffsetMode as PyiPieChartOffsetMode
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart2.PieChartOffsetMode'
 
-ALL_EXPLODED: PieChartOffsetMode = ...
+ALL_EXPLODED: PyiPieChartOffsetMode = ...
 """
 All pies are exploded by a certain percentage.
 
 The default is 10 percent.
 """
-NONE: PieChartOffsetMode = ...
+NONE: PyiPieChartOffsetMode = ...
 """
 Default, no pies are exploded.
 

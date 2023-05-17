@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.synchronize_policy import SynchronizePolicy as PyiSynchronizePolicy
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.SynchronizePolicy'
 
-CLIENT_IS_MASTER: SynchronizePolicy = ...
+CLIENT_IS_MASTER: PyiSynchronizePolicy = ...
 """
 Client is master.
 """
-NONE_IS_MASTER: SynchronizePolicy = ...
+NONE_IS_MASTER: PyiSynchronizePolicy = ...
 """
 None is master.
 """
-SERVER_IS_MASTER: SynchronizePolicy = ...
+SERVER_IS_MASTER: PyiSynchronizePolicy = ...
 """
 Server is master.
 """

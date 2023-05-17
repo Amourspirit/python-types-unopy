@@ -32,17 +32,17 @@ class CellInsertMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.sheet.CellInsertMode'
 
-    COLUMNS: CellInsertMode = ...
+    COLUMNS: PyiCellInsertMode = ...
     """
     entire columns to the right of the deleted cells are moved left.
     
     entire columns to the right of the inserted cells are moved right.
     """
-    DOWN: CellInsertMode = ...
+    DOWN: PyiCellInsertMode = ...
     """
     the cells below the inserted cells are moved down.
     """
-    NONE: CellInsertMode = ...
+    NONE: PyiCellInsertMode = ...
     """
     no cells are moved.
     
@@ -56,13 +56,13 @@ class CellInsertMode(uno.Enum):
     
     no condition is specified.
     """
-    RIGHT: CellInsertMode = ...
+    RIGHT: PyiCellInsertMode = ...
     """
     selects the right border.
     
     the cells to the right of the inserted cells are moved right.
     """
-    ROWS: CellInsertMode = ...
+    ROWS: PyiCellInsertMode = ...
     """
     entire rows below the deleted cells are moved up.
     

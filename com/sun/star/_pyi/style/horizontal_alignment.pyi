@@ -32,7 +32,7 @@ class HorizontalAlignment(uno.Enum):
     """
     typeName: str = 'com.sun.star.style.HorizontalAlignment'
 
-    CENTER: HorizontalAlignment = ...
+    CENTER: PyiHorizontalAlignment = ...
     """
     set the horizontal alignment to the center between the margins from the container object
     
@@ -40,7 +40,7 @@ class HorizontalAlignment(uno.Enum):
     
     adjusted to the center
     """
-    LEFT: HorizontalAlignment = ...
+    LEFT: PyiHorizontalAlignment = ...
     """
     set the horizontal alignment to the left margin from the container object
     
@@ -50,7 +50,7 @@ class HorizontalAlignment(uno.Enum):
     
     The page style is only used for left pages.
     """
-    RIGHT: HorizontalAlignment = ...
+    RIGHT: PyiHorizontalAlignment = ...
     """
     set the horizontal alignment to the right margin from the container object
     

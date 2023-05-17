@@ -32,13 +32,13 @@ class ConnectionType(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.ConnectionType'
 
-    AUTO: ConnectionType = ...
+    AUTO: PyiConnectionType = ...
     """
     the connection point is chosen automatically,
     
     Set this to have the application select the best horizontal position for the text.
     """
-    BOTTOM: ConnectionType = ...
+    BOTTOM: PyiConnectionType = ...
     """
     the connection line leaves the connected object from the bottom,
     
@@ -46,7 +46,7 @@ class ConnectionType(uno.Enum):
     
     The bottom edge of the text is adjusted to the bottom edge of the shape.
     """
-    LEFT: ConnectionType = ...
+    LEFT: PyiConnectionType = ...
     """
     the connection line leaves the connected object to the left,
     
@@ -54,7 +54,7 @@ class ConnectionType(uno.Enum):
     
     The text is positioned to the left.
     """
-    RIGHT: ConnectionType = ...
+    RIGHT: PyiConnectionType = ...
     """
     the connection line leaves the connected object to the right,
     
@@ -62,13 +62,13 @@ class ConnectionType(uno.Enum):
     
     The text is positioned to the right.
     """
-    SPECIAL: ConnectionType = ...
+    SPECIAL: PyiConnectionType = ...
     """
     not implemented, yet.
     
     deprecated
     """
-    TOP: ConnectionType = ...
+    TOP: PyiConnectionType = ...
     """
     the connection line leaves the connected object from the top,
     

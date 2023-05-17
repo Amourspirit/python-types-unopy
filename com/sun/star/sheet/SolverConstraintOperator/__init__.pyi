@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.solver_constraint_operator import SolverConstraintOperator as PyiSolverConstraintOperator
 """
 Enum
 
@@ -29,17 +30,17 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.SolverConstraintOperator'
 
-BINARY: SolverConstraintOperator = ...
+BINARY: PyiSolverConstraintOperator = ...
 """
 The cell value is a binary value (0 or 1).
 """
-EQUAL: SolverConstraintOperator = ...
+EQUAL: PyiSolverConstraintOperator = ...
 """
 value has to be equal to the specified value.
 
 The cell value is equal to the specified value.
 """
-GREATER_EQUAL: SolverConstraintOperator = ...
+GREATER_EQUAL: PyiSolverConstraintOperator = ...
 """
 the value has to be greater than or equal to the specified value.
 
@@ -47,11 +48,11 @@ The cell value is greater or equal to the specified value.
 
 value has to be greater than or equal to the specified value.
 """
-INTEGER: SolverConstraintOperator = ...
+INTEGER: PyiSolverConstraintOperator = ...
 """
 The cell value is an integer value.
 """
-LESS_EQUAL: SolverConstraintOperator = ...
+LESS_EQUAL: PyiSolverConstraintOperator = ...
 """
 the value has to be less than or equal to the specified value.
 

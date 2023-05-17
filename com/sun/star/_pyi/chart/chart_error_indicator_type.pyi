@@ -32,11 +32,11 @@ class ChartErrorIndicatorType(uno.Enum):
     """
     typeName: str = 'com.sun.star.chart.ChartErrorIndicatorType'
 
-    LOWER: ChartErrorIndicatorType = ...
+    LOWER: PyiChartErrorIndicatorType = ...
     """
     displays only the lower value.
     """
-    NONE: ChartErrorIndicatorType = ...
+    NONE: PyiChartErrorIndicatorType = ...
     """
     error indicators are not displayed.
     
@@ -46,11 +46,11 @@ class ChartErrorIndicatorType(uno.Enum):
     
     displays no error indicators.
     """
-    TOP_AND_BOTTOM: ChartErrorIndicatorType = ...
+    TOP_AND_BOTTOM: PyiChartErrorIndicatorType = ...
     """
     displays both the upper and lower values.
     """
-    UPPER: ChartErrorIndicatorType = ...
+    UPPER: PyiChartErrorIndicatorType = ...
     """
     displays only the upper value.
     """

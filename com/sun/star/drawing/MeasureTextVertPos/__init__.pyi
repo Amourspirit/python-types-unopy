@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.measure_text_vert_pos import MeasureTextVertPos as PyiMeasureTextVertPos
 """
 Enum
 
@@ -29,25 +30,25 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.MeasureTextVertPos'
 
-AUTO: MeasureTextVertPos = ...
+AUTO: PyiMeasureTextVertPos = ...
 """
 the connection point is chosen automatically,
 
 Set this to have the application select the best horizontal position for the text.
 """
-BREAKEDLINE: MeasureTextVertPos = ...
+BREAKEDLINE: PyiMeasureTextVertPos = ...
 """
 """
-CENTERED: MeasureTextVertPos = ...
+CENTERED: PyiMeasureTextVertPos = ...
 """
 The text is positioned at the center.
 
 The text is positioned over the main line.
 """
-EAST: MeasureTextVertPos = ...
+EAST: PyiMeasureTextVertPos = ...
 """
 """
-WEST: MeasureTextVertPos = ...
+WEST: PyiMeasureTextVertPos = ...
 """
 """
 

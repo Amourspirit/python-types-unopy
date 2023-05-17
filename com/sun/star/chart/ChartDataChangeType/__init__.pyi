@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart.chart_data_change_type import ChartDataChangeType as PyiChartDataChangeType
 """
 Enum
 
@@ -29,27 +30,27 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart.ChartDataChangeType'
 
-ALL: ChartDataChangeType = ...
+ALL: PyiChartDataChangeType = ...
 """
 Major changes were applied to the data.
 """
-COLUMN_DELETED: ChartDataChangeType = ...
+COLUMN_DELETED: PyiChartDataChangeType = ...
 """
 The column given in the ChartDataChangeEvent, was deleted.
 """
-COLUMN_INSERTED: ChartDataChangeType = ...
+COLUMN_INSERTED: PyiChartDataChangeType = ...
 """
 The column given in the ChartDataChangeEvent, was inserted.
 """
-DATA_RANGE: ChartDataChangeType = ...
+DATA_RANGE: PyiChartDataChangeType = ...
 """
 The range of columns and rows, given in the ChartDataChangeEvent, has changed.
 """
-ROW_DELETED: ChartDataChangeType = ...
+ROW_DELETED: PyiChartDataChangeType = ...
 """
 The row given in the ChartDataChangeEvent, was deleted.
 """
-ROW_INSERTED: ChartDataChangeType = ...
+ROW_INSERTED: PyiChartDataChangeType = ...
 """
 The row given in the ChartDataChangeEvent, was inserted.
 """

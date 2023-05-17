@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.transfer_command_operation import TransferCommandOperation as PyiTransferCommandOperation
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.TransferCommandOperation'
 
-COPY: TransferCommandOperation = ...
+COPY: PyiTransferCommandOperation = ...
 """
 Copy the source to the target folder.
 
 WebDAV methods as defined in HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)
 """
-LINK: TransferCommandOperation = ...
+LINK: PyiTransferCommandOperation = ...
 """
 Create a link in the target folder.
 
 The link's target is the source object.
 """
-MOVE: TransferCommandOperation = ...
+MOVE: PyiTransferCommandOperation = ...
 """
 Move the source to the target folder.
 

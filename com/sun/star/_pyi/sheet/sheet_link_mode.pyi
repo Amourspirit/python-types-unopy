@@ -32,7 +32,7 @@ class SheetLinkMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.sheet.SheetLinkMode'
 
-    NONE: SheetLinkMode = ...
+    NONE: PyiSheetLinkMode = ...
     """
     no cells are moved.
     
@@ -46,11 +46,11 @@ class SheetLinkMode(uno.Enum):
     
     no condition is specified.
     """
-    NORMAL: SheetLinkMode = ...
+    NORMAL: PyiSheetLinkMode = ...
     """
     all contents (values and formulas) are copied.
     """
-    VALUE: SheetLinkMode = ...
+    VALUE: PyiSheetLinkMode = ...
     """
     instead of using formulas, the result values are copied.
     """

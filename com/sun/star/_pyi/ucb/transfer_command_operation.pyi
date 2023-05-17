@@ -32,19 +32,19 @@ class TransferCommandOperation(uno.Enum):
     """
     typeName: str = 'com.sun.star.ucb.TransferCommandOperation'
 
-    COPY: TransferCommandOperation = ...
+    COPY: PyiTransferCommandOperation = ...
     """
     Copy the source to the target folder.
     
     WebDAV methods as defined in HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)
     """
-    LINK: TransferCommandOperation = ...
+    LINK: PyiTransferCommandOperation = ...
     """
     Create a link in the target folder.
     
     The link's target is the source object.
     """
-    MOVE: TransferCommandOperation = ...
+    MOVE: PyiTransferCommandOperation = ...
     """
     Move the source to the target folder.
     

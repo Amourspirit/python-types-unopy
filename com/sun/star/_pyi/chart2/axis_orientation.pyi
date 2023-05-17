@@ -33,11 +33,11 @@ class AxisOrientation(uno.Enum):
     """
     typeName: str = 'com.sun.star.chart2.AxisOrientation'
 
-    MATHEMATICAL: AxisOrientation = ...
+    MATHEMATICAL: PyiAxisOrientation = ...
     """
     means equal to the primary writing direction
     """
-    REVERSE: AxisOrientation = ...
+    REVERSE: PyiAxisOrientation = ...
     """
     means the opposite of the primary writing direction
     """

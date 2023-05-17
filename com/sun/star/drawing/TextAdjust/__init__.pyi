@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.text_adjust import TextAdjust as PyiTextAdjust
 """
 Enum
 
@@ -29,17 +30,17 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.TextAdjust'
 
-BLOCK: TextAdjust = ...
+BLOCK: PyiTextAdjust = ...
 """
 The text extends from the left to the right edge of the shape.
 
 The text extends from the top to the bottom edge of the shape.
 """
-CENTER: TextAdjust = ...
+CENTER: PyiTextAdjust = ...
 """
 The text is centered inside the shape.
 """
-LEFT: TextAdjust = ...
+LEFT: PyiTextAdjust = ...
 """
 the connection line leaves the connected object to the left,
 
@@ -47,7 +48,7 @@ The left edge of the text is adjusted to the left edge of the shape.
 
 The text is positioned to the left.
 """
-RIGHT: TextAdjust = ...
+RIGHT: PyiTextAdjust = ...
 """
 the connection line leaves the connected object to the right,
 
@@ -55,7 +56,7 @@ The right edge of the text is adjusted to the right edge of the shape.
 
 The text is positioned to the right.
 """
-STRETCH: TextAdjust = ...
+STRETCH: PyiTextAdjust = ...
 """
 the bitmap is stretched to fill the area.
 

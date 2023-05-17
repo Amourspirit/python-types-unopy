@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.style.horizontal_alignment import HorizontalAlignment as PyiHorizontalAlignment
 """
 Enum
 
@@ -29,7 +30,7 @@ See Also:
 """
 typeName: str = 'com.sun.star.style.HorizontalAlignment'
 
-CENTER: HorizontalAlignment = ...
+CENTER: PyiHorizontalAlignment = ...
 """
 set the horizontal alignment to the center between the margins from the container object
 
@@ -37,7 +38,7 @@ The text range is centered between the previous tabulator (or the left border, i
 
 adjusted to the center
 """
-LEFT: HorizontalAlignment = ...
+LEFT: PyiHorizontalAlignment = ...
 """
 set the horizontal alignment to the left margin from the container object
 
@@ -47,7 +48,7 @@ adjusted to the left border
 
 The page style is only used for left pages.
 """
-RIGHT: HorizontalAlignment = ...
+RIGHT: PyiHorizontalAlignment = ...
 """
 set the horizontal alignment to the right margin from the container object
 

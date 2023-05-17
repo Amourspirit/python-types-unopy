@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.text.note_print_mode import NotePrintMode as PyiNotePrintMode
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.text.NotePrintMode'
 
-DOC_END: NotePrintMode = ...
+DOC_END: PyiNotePrintMode = ...
 """
 Notes are collected at the end of the document.
 """
-NOT: NotePrintMode = ...
+NOT: PyiNotePrintMode = ...
 """
 Notes are not printed.
 """
-ONLY: NotePrintMode = ...
+ONLY: PyiNotePrintMode = ...
 """
 Only notes are printed.
 """
-PAGE_END: NotePrintMode = ...
+PAGE_END: PyiNotePrintMode = ...
 """
 Notes are collected at the end of a page and printed on an inserted page.
 """

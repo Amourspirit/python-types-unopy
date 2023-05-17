@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.xml.crypto.sax.element_mark_priority import ElementMarkPriority as PyiElementMarkPriority
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.xml.crypto.sax.ElementMarkPriority'
 
-AFTERMODIFY: ElementMarkPriority = ...
+AFTERMODIFY: PyiElementMarkPriority = ...
 """
 """
-BEFOREMODIFY: ElementMarkPriority = ...
+BEFOREMODIFY: PyiElementMarkPriority = ...
 """
 """
-MINIMUM: ElementMarkPriority = ...
+MINIMUM: PyiElementMarkPriority = ...
 """
 """
 

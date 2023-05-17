@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.property_value_state import PropertyValueState as PyiPropertyValueState
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.PropertyValueState'
 
-INVALID_NAME: PropertyValueState = ...
+INVALID_NAME: PyiPropertyValueState = ...
 """
 The given property name/handle is invalid.
 """
-INVALID_TYPE: PropertyValueState = ...
+INVALID_TYPE: PyiPropertyValueState = ...
 """
 The given property type is invalid.
 """
-PROCESSED: PropertyValueState = ...
+PROCESSED: PyiPropertyValueState = ...
 """
 The value was obtained.
 """
-UNPROCESSED: PropertyValueState = ...
+UNPROCESSED: PyiPropertyValueState = ...
 """
 The property value was not obtained yet.
 """

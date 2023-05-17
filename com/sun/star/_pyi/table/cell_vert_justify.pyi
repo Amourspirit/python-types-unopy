@@ -32,17 +32,17 @@ class CellVertJustify(uno.Enum):
     """
     typeName: str = 'com.sun.star.table.CellVertJustify'
 
-    BOTTOM: CellVertJustify = ...
+    BOTTOM: PyiCellVertJustify = ...
     """
     contents are aligned to the lower edge of the cell.
     """
-    CENTER: CellVertJustify = ...
+    CENTER: PyiCellVertJustify = ...
     """
     contents are horizontally centered.
     
     contents are aligned to the vertical middle of the cell.
     """
-    STANDARD: CellVertJustify = ...
+    STANDARD: PyiCellVertJustify = ...
     """
     default alignment is used (left for numbers, right for text).
     
@@ -50,7 +50,7 @@ class CellVertJustify(uno.Enum):
     
     contents are printed from left to right.
     """
-    TOP: CellVertJustify = ...
+    TOP: PyiCellVertJustify = ...
     """
     contents are aligned with the upper edge of the cell.
     """

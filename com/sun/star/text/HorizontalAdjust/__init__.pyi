@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.text.horizontal_adjust import HorizontalAdjust as PyiHorizontalAdjust
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.text.HorizontalAdjust'
 
-CENTER: HorizontalAdjust = ...
+CENTER: PyiHorizontalAdjust = ...
 """
 the object is adjusted to the center.
 
 centric adjusted.
 """
-LEFT: HorizontalAdjust = ...
+LEFT: PyiHorizontalAdjust = ...
 """
 the object is left adjusted.
 
@@ -43,7 +44,7 @@ text flows to the left side of the object.
 
 adjusted to the left.
 """
-RIGHT: HorizontalAdjust = ...
+RIGHT: PyiHorizontalAdjust = ...
 """
 the object is right adjusted.
 

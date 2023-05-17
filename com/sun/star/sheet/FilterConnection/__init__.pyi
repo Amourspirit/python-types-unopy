@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.filter_connection import FilterConnection as PyiFilterConnection
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.FilterConnection'
 
-AND: FilterConnection = ...
+AND: PyiFilterConnection = ...
 """
 both conditions have to be fulfilled.
 """
-OR: FilterConnection = ...
+OR: PyiFilterConnection = ...
 """
 at least one of the conditions has to be fulfilled.
 """

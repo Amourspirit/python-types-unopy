@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.presentation.animation_speed import AnimationSpeed as PyiAnimationSpeed
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.presentation.AnimationSpeed'
 
-FAST: AnimationSpeed = ...
+FAST: PyiAnimationSpeed = ...
 """
 set the speed from the animation/fade to fast.
 """
-MEDIUM: AnimationSpeed = ...
+MEDIUM: PyiAnimationSpeed = ...
 """
 set the speed from the animation/fade to medium.
 """
-SLOW: AnimationSpeed = ...
+SLOW: PyiAnimationSpeed = ...
 """
 set the speed from the animation/fade to slow.
 """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.draw_view_mode import DrawViewMode as PyiDrawViewMode
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.DrawViewMode'
 
-DRAW: DrawViewMode = ...
+DRAW: PyiDrawViewMode = ...
 """
 The view shows the drawing pages.
 """
-HANDOUT: DrawViewMode = ...
+HANDOUT: PyiDrawViewMode = ...
 """
 The view shows the handout pages,.
 """
-NOTES: DrawViewMode = ...
+NOTES: PyiDrawViewMode = ...
 """
 The view shows the notes pages.
 """

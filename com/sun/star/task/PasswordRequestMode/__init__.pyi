@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.task.password_request_mode import PasswordRequestMode as PyiPasswordRequestMode
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.task.PasswordRequestMode'
 
-PASSWORD_CREATE: PasswordRequestMode = ...
+PASSWORD_CREATE: PyiPasswordRequestMode = ...
 """
 Password creation.
 """
-PASSWORD_ENTER: PasswordRequestMode = ...
+PASSWORD_ENTER: PyiPasswordRequestMode = ...
 """
 Ask for a password.
 """
-PASSWORD_REENTER: PasswordRequestMode = ...
+PASSWORD_REENTER: PyiPasswordRequestMode = ...
 """
 Wrong password was entered, ask again.
 """

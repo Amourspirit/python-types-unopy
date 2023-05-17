@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.border import Border as PyiBorder
 """
 Enum
 
@@ -29,23 +30,23 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.Border'
 
-BOTTOM: Border = ...
+BOTTOM: PyiBorder = ...
 """
 selects the bottom border.
 """
-LEFT: Border = ...
+LEFT: PyiBorder = ...
 """
 selects the left border.
 
 the cells to the right of the deleted cells are moved left.
 """
-RIGHT: Border = ...
+RIGHT: PyiBorder = ...
 """
 selects the right border.
 
 the cells to the right of the inserted cells are moved right.
 """
-TOP: Border = ...
+TOP: PyiBorder = ...
 """
 selects the top border.
 """

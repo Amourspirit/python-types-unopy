@@ -32,21 +32,21 @@ class RubyAdjust(uno.Enum):
     """
     typeName: str = 'com.sun.star.text.RubyAdjust'
 
-    BLOCK: RubyAdjust = ...
+    BLOCK: PyiRubyAdjust = ...
     """
     adjusted to both borders / stretched
     """
-    CENTER: RubyAdjust = ...
+    CENTER: PyiRubyAdjust = ...
     """
     the object is adjusted to the center.
     
     centric adjusted.
     """
-    INDENT_BLOCK: RubyAdjust = ...
+    INDENT_BLOCK: PyiRubyAdjust = ...
     """
     adjusted to both borders except for a small indent on both sides
     """
-    LEFT: RubyAdjust = ...
+    LEFT: PyiRubyAdjust = ...
     """
     the object is left adjusted.
     
@@ -54,7 +54,7 @@ class RubyAdjust(uno.Enum):
     
     adjusted to the left.
     """
-    RIGHT: RubyAdjust = ...
+    RIGHT: PyiRubyAdjust = ...
     """
     the object is right adjusted.
     

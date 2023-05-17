@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.horizontal_dimensioning import HorizontalDimensioning as PyiHorizontalDimensioning
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.HorizontalDimensioning'
 
-AUTO: HorizontalDimensioning = ...
+AUTO: PyiHorizontalDimensioning = ...
 """
 the connection point is chosen automatically,
 
 Set this to have the application select the best horizontal position for the text.
 """
-CENTERED: HorizontalDimensioning = ...
+CENTERED: PyiHorizontalDimensioning = ...
 """
 The text is positioned at the center.
 
 The text is positioned over the main line.
 """
-LEFT: HorizontalDimensioning = ...
+LEFT: PyiHorizontalDimensioning = ...
 """
 the connection line leaves the connected object to the left,
 
@@ -49,7 +50,7 @@ The left edge of the text is adjusted to the left edge of the shape.
 
 The text is positioned to the left.
 """
-RIGHT: HorizontalDimensioning = ...
+RIGHT: PyiHorizontalDimensioning = ...
 """
 the connection line leaves the connected object to the right,
 

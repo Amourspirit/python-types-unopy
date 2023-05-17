@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.color_mode import ColorMode as PyiColorMode
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.ColorMode'
 
-GREYS: ColorMode = ...
+GREYS: PyiColorMode = ...
 """
 the graphic is rendered in grayscale on the output device,
 """
-MONO: ColorMode = ...
+MONO: PyiColorMode = ...
 """
 the graphic is rendered in black and white only,
 """
-STANDARD: ColorMode = ...
+STANDARD: PyiColorMode = ...
 """
 the graphic is rendered in the default color style of the output device,
 
@@ -45,7 +46,7 @@ use the length measurement.
 
 the connector is drawn with three lines, with the middle line perpendicular to the other two
 """
-WATERMARK: ColorMode = ...
+WATERMARK: PyiColorMode = ...
 """
 the graphic is rendered in a watermark like style,
 """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.vertical_dimensioning import VerticalDimensioning as PyiVerticalDimensioning
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.VerticalDimensioning'
 
-AUTO: VerticalDimensioning = ...
+AUTO: PyiVerticalDimensioning = ...
 """
 the connection point is chosen automatically,
 
 Set this to have the application select the best horizontal position for the text.
 """
-BOTTOM: VerticalDimensioning = ...
+BOTTOM: PyiVerticalDimensioning = ...
 """
 the connection line leaves the connected object from the bottom,
 
@@ -43,13 +44,13 @@ The text is positioned below the main line.
 
 The bottom edge of the text is adjusted to the bottom edge of the shape.
 """
-CENTERED: VerticalDimensioning = ...
+CENTERED: PyiVerticalDimensioning = ...
 """
 The text is positioned at the center.
 
 The text is positioned over the main line.
 """
-TOP: VerticalDimensioning = ...
+TOP: PyiVerticalDimensioning = ...
 """
 the connection line leaves the connected object from the top,
 

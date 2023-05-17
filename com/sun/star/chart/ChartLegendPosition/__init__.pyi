@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart.chart_legend_position import ChartLegendPosition as PyiChartLegendPosition
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart.ChartLegendPosition'
 
-BOTTOM: ChartLegendPosition = ...
+BOTTOM: PyiChartLegendPosition = ...
 """
 displays the chart legend beneath the diagram.
 """
-LEFT: ChartLegendPosition = ...
+LEFT: PyiChartLegendPosition = ...
 """
 displays the chart legend on the left side of the diagram.
 """
-NONE: ChartLegendPosition = ...
+NONE: PyiChartLegendPosition = ...
 """
 error indicators are not displayed.
 
@@ -47,11 +48,11 @@ no chart legend is displayed.
 
 displays no error indicators.
 """
-RIGHT: ChartLegendPosition = ...
+RIGHT: PyiChartLegendPosition = ...
 """
 displays the chart legend on the right side of the diagram.
 """
-TOP: ChartLegendPosition = ...
+TOP: PyiChartLegendPosition = ...
 """
 displays the chart legend above the diagram.
 """

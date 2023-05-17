@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.line_end_type import LineEndType as PyiLineEndType
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.LineEndType'
 
-ARROW: LineEndType = ...
+ARROW: PyiLineEndType = ...
 """
 the line uses an arrow for the line end.
 """
-CIRCLE: LineEndType = ...
+CIRCLE: PyiLineEndType = ...
 """
 the line uses a circle for the line end.
 """
-NONE: LineEndType = ...
+NONE: PyiLineEndType = ...
 """
 the area is not filled.
 
@@ -51,13 +52,13 @@ the joint between lines will not be connected
 
 the line has no special end.
 """
-SPECIAL: LineEndType = ...
+SPECIAL: PyiLineEndType = ...
 """
 not implemented, yet.
 
 deprecated
 """
-SQUARE: LineEndType = ...
+SQUARE: PyiLineEndType = ...
 """
 the line will get a half square as additional cap
 

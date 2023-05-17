@@ -32,7 +32,7 @@ class LockType(uno.Enum):
     """
     typeName: str = 'com.sun.star.ucb.LockType'
 
-    WRITE: LockType = ...
+    WRITE: PyiLockType = ...
     """
     specifies a write lock.
     """

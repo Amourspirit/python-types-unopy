@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.form.list_source_type import ListSourceType as PyiListSourceType
 """
 Enum
 
@@ -29,27 +30,27 @@ See Also:
 """
 typeName: str = 'com.sun.star.form.ListSourceType'
 
-QUERY: ListSourceType = ...
+QUERY: PyiListSourceType = ...
 """
 The control should be filled with the results of a database query.
 """
-SQL: ListSourceType = ...
+SQL: PyiListSourceType = ...
 """
 The control should be filled with the results of a database statement.
 """
-SQLPASSTHROUGH: ListSourceType = ...
+SQLPASSTHROUGH: PyiListSourceType = ...
 """
 The control should be filled with the results of a database statement, which is not evaluated by the database engine.
 """
-TABLE: ListSourceType = ...
+TABLE: PyiListSourceType = ...
 """
 The control should be filled with the data of a table.
 """
-TABLEFIELDS: ListSourceType = ...
+TABLEFIELDS: PyiListSourceType = ...
 """
 The control should be filled with the field names of a database table.
 """
-VALUELIST: ListSourceType = ...
+VALUELIST: PyiListSourceType = ...
 """
 The control should be filled with a list of string values.
 """

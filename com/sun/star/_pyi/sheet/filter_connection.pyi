@@ -32,11 +32,11 @@ class FilterConnection(uno.Enum):
     """
     typeName: str = 'com.sun.star.sheet.FilterConnection'
 
-    AND: FilterConnection = ...
+    AND: PyiFilterConnection = ...
     """
     both conditions have to be fulfilled.
     """
-    OR: FilterConnection = ...
+    OR: PyiFilterConnection = ...
     """
     at least one of the conditions has to be fulfilled.
     """

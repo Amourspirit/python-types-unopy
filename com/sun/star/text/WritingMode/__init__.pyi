@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.text.writing_mode import WritingMode as PyiWritingMode
 """
 Enum
 
@@ -29,7 +30,7 @@ See Also:
 """
 typeName: str = 'com.sun.star.text.WritingMode'
 
-LR_TB: WritingMode = ...
+LR_TB: PyiWritingMode = ...
 """
 text within lines is written left-to-right.
 
@@ -37,7 +38,7 @@ lines and blocks are placed top-to-bottom.
 
 Typically, this is the writing mode for normal \"alphabetic\" text.
 """
-RL_TB: WritingMode = ...
+RL_TB: PyiWritingMode = ...
 """
 text within a line are written right-to-left.
 
@@ -45,7 +46,7 @@ Lines and blocks are placed top-to-bottom.
 
 Typically, this writing mode is used in Arabic and Hebrew text.
 """
-TB_RL: WritingMode = ...
+TB_RL: PyiWritingMode = ...
 """
 text within a line is written top-to-bottom.
 

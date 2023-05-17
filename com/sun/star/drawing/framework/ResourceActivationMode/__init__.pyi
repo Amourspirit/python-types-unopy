@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.framework.resource_activation_mode import ResourceActivationMode as PyiResourceActivationMode
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.framework.ResourceActivationMode'
 
-ADD: ResourceActivationMode = ...
+ADD: PyiResourceActivationMode = ...
 """
 A resource is requested in addition to already existing ones.
 
 This is used for example for panes.
 """
-REPLACE: ResourceActivationMode = ...
+REPLACE: PyiResourceActivationMode = ...
 """
 A resource is requested to replace an already existing one of the same class.
 

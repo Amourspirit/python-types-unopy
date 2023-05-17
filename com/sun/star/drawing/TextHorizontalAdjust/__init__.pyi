@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.text_horizontal_adjust import TextHorizontalAdjust as PyiTextHorizontalAdjust
 """
 Enum
 
@@ -29,17 +30,17 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.TextHorizontalAdjust'
 
-BLOCK: TextHorizontalAdjust = ...
+BLOCK: PyiTextHorizontalAdjust = ...
 """
 The text extends from the left to the right edge of the shape.
 
 The text extends from the top to the bottom edge of the shape.
 """
-CENTER: TextHorizontalAdjust = ...
+CENTER: PyiTextHorizontalAdjust = ...
 """
 The text is centered inside the shape.
 """
-LEFT: TextHorizontalAdjust = ...
+LEFT: PyiTextHorizontalAdjust = ...
 """
 the connection line leaves the connected object to the left,
 
@@ -47,7 +48,7 @@ The left edge of the text is adjusted to the left edge of the shape.
 
 The text is positioned to the left.
 """
-RIGHT: TextHorizontalAdjust = ...
+RIGHT: PyiTextHorizontalAdjust = ...
 """
 the connection line leaves the connected object to the right,
 
