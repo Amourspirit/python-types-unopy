@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.cell_insert_mode import CellInsertMode as PyiCellInsertMode
 """
 Enum
 
@@ -29,17 +30,17 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.CellInsertMode'
 
-COLUMNS: CellInsertMode = ...
+COLUMNS: PyiCellInsertMode = ...
 """
 entire columns to the right of the deleted cells are moved left.
 
 entire columns to the right of the inserted cells are moved right.
 """
-DOWN: CellInsertMode = ...
+DOWN: PyiCellInsertMode = ...
 """
 the cells below the inserted cells are moved down.
 """
-NONE: CellInsertMode = ...
+NONE: PyiCellInsertMode = ...
 """
 no cells are moved.
 
@@ -53,13 +54,13 @@ nothing is imported.
 
 no condition is specified.
 """
-RIGHT: CellInsertMode = ...
+RIGHT: PyiCellInsertMode = ...
 """
 selects the right border.
 
 the cells to the right of the inserted cells are moved right.
 """
-ROWS: CellInsertMode = ...
+ROWS: PyiCellInsertMode = ...
 """
 entire rows below the deleted cells are moved up.
 

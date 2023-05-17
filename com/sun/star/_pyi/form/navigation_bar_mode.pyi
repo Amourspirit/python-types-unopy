@@ -32,7 +32,7 @@ class NavigationBarMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.form.NavigationBarMode'
 
-    CURRENT: NavigationBarMode = ...
+    CURRENT: PyiNavigationBarMode = ...
     """
     a navigation bar is provided and navigation will be performed on the current/active form.
     
@@ -40,13 +40,13 @@ class NavigationBarMode(uno.Enum):
     
     This is the default and most often encountered mode.
     """
-    NONE: NavigationBarMode = ...
+    NONE: PyiNavigationBarMode = ...
     """
     no navigation bar is provided and navigation on the current form is only possible with the keyboard (TAB/SHIFT TAB).
     
     Note that when this mode is set, a simultaneous TabulatorCycle value of TabulatorCycle.CURRENT means that you cannot travel between records anymore.
     """
-    PARENT: NavigationBarMode = ...
+    PARENT: PyiNavigationBarMode = ...
     """
     a navigation bar is provided and navigation will be performed on the parent of the current/active form.
     

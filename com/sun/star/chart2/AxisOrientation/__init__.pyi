@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart2.axis_orientation import AxisOrientation as PyiAxisOrientation
 """
 Enum
 
@@ -30,11 +31,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart2.AxisOrientation'
 
-MATHEMATICAL: AxisOrientation = ...
+MATHEMATICAL: PyiAxisOrientation = ...
 """
 means equal to the primary writing direction
 """
-REVERSE: AxisOrientation = ...
+REVERSE: PyiAxisOrientation = ...
 """
 means the opposite of the primary writing direction
 """

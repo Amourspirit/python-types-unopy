@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart.chart_error_indicator_type import ChartErrorIndicatorType as PyiChartErrorIndicatorType
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart.ChartErrorIndicatorType'
 
-LOWER: ChartErrorIndicatorType = ...
+LOWER: PyiChartErrorIndicatorType = ...
 """
 displays only the lower value.
 """
-NONE: ChartErrorIndicatorType = ...
+NONE: PyiChartErrorIndicatorType = ...
 """
 error indicators are not displayed.
 
@@ -43,11 +44,11 @@ no chart legend is displayed.
 
 displays no error indicators.
 """
-TOP_AND_BOTTOM: ChartErrorIndicatorType = ...
+TOP_AND_BOTTOM: PyiChartErrorIndicatorType = ...
 """
 displays both the upper and lower values.
 """
-UPPER: ChartErrorIndicatorType = ...
+UPPER: PyiChartErrorIndicatorType = ...
 """
 displays only the upper value.
 """

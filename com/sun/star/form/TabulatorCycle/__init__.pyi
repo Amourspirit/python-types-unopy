@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.form.tabulator_cycle import TabulatorCycle as PyiTabulatorCycle
 """
 Enum
 
@@ -29,7 +30,7 @@ See Also:
 """
 typeName: str = 'com.sun.star.form.TabulatorCycle'
 
-CURRENT: TabulatorCycle = ...
+CURRENT: PyiTabulatorCycle = ...
 """
 a navigation bar is provided and navigation will be performed on the current/active form.
 
@@ -37,11 +38,11 @@ pressing the TAB key from the last control moves the focus to the first control 
 
 This is the default and most often encountered mode.
 """
-PAGE: TabulatorCycle = ...
+PAGE: PyiTabulatorCycle = ...
 """
 pressing the TAB key from the last control of a form moves the focus to the first control of the next form in the tab order.
 """
-RECORDS: TabulatorCycle = ...
+RECORDS: PyiTabulatorCycle = ...
 """
 pressing the TAB key from the last control moves the focus to the first control in the tab order of the next record.
 """

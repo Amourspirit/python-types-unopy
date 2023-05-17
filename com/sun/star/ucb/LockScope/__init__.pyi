@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.lock_scope import LockScope as PyiLockScope
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.LockScope'
 
-EXCLUSIVE: LockScope = ...
+EXCLUSIVE: PyiLockScope = ...
 """
 the lock is exclusive.
 """
-SHARED: LockScope = ...
+SHARED: PyiLockScope = ...
 """
 the lock is shared.
 """

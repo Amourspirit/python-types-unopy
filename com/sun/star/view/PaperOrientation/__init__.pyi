@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.view.paper_orientation import PaperOrientation as PyiPaperOrientation
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.view.PaperOrientation'
 
-LANDSCAPE: PaperOrientation = ...
+LANDSCAPE: PyiPaperOrientation = ...
 """
 set the paper orientation to landscape.
 """
-PORTRAIT: PaperOrientation = ...
+PORTRAIT: PyiPaperOrientation = ...
 """
 set the paper orientation to portrait.
 """

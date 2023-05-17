@@ -32,11 +32,11 @@ class LineCap(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.LineCap'
 
-    BUTT: LineCap = ...
+    BUTT: PyiLineCap = ...
     """
     the line will end without any additional shape
     """
-    ROUND: LineCap = ...
+    ROUND: PyiLineCap = ...
     """
     the dash is a point
     
@@ -44,7 +44,7 @@ class LineCap(uno.Enum):
     
     the line will get a half circle as additional cap
     """
-    SQUARE: LineCap = ...
+    SQUARE: PyiLineCap = ...
     """
     the line will get a half square as additional cap
     

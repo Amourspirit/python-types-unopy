@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.text_vertical_adjust import TextVerticalAdjust as PyiTextVerticalAdjust
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.TextVerticalAdjust'
 
-BLOCK: TextVerticalAdjust = ...
+BLOCK: PyiTextVerticalAdjust = ...
 """
 The text extends from the left to the right edge of the shape.
 
 The text extends from the top to the bottom edge of the shape.
 """
-BOTTOM: TextVerticalAdjust = ...
+BOTTOM: PyiTextVerticalAdjust = ...
 """
 the connection line leaves the connected object from the bottom,
 
@@ -43,11 +44,11 @@ The text is positioned below the main line.
 
 The bottom edge of the text is adjusted to the bottom edge of the shape.
 """
-CENTER: TextVerticalAdjust = ...
+CENTER: PyiTextVerticalAdjust = ...
 """
 The text is centered inside the shape.
 """
-TOP: TextVerticalAdjust = ...
+TOP: PyiTextVerticalAdjust = ...
 """
 the connection line leaves the connected object from the top,
 

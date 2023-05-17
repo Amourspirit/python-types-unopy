@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.verification_mode import VerificationMode as PyiVerificationMode
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.VerificationMode'
 
-ALWAYS: VerificationMode = ...
+ALWAYS: PyiVerificationMode = ...
 """
 Always.
 """
-NEVER: VerificationMode = ...
+NEVER: PyiVerificationMode = ...
 """
 Never.
 """
-ONCE: VerificationMode = ...
+ONCE: PyiVerificationMode = ...
 """
 Once.
 """

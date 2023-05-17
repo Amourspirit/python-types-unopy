@@ -32,7 +32,7 @@ class Alignment(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.Alignment'
 
-    BOTTOM: Alignment = ...
+    BOTTOM: PyiAlignment = ...
     """
     the connection line leaves the connected object from the bottom,
     
@@ -40,17 +40,17 @@ class Alignment(uno.Enum):
     
     The bottom edge of the text is adjusted to the bottom edge of the shape.
     """
-    BOTTOM_LEFT: Alignment = ...
+    BOTTOM_LEFT: PyiAlignment = ...
     """
     """
-    BOTTOM_RIGHT: Alignment = ...
+    BOTTOM_RIGHT: PyiAlignment = ...
     """
     """
-    CENTER: Alignment = ...
+    CENTER: PyiAlignment = ...
     """
     The text is centered inside the shape.
     """
-    LEFT: Alignment = ...
+    LEFT: PyiAlignment = ...
     """
     the connection line leaves the connected object to the left,
     
@@ -58,7 +58,7 @@ class Alignment(uno.Enum):
     
     The text is positioned to the left.
     """
-    RIGHT: Alignment = ...
+    RIGHT: PyiAlignment = ...
     """
     the connection line leaves the connected object to the right,
     
@@ -66,7 +66,7 @@ class Alignment(uno.Enum):
     
     The text is positioned to the right.
     """
-    TOP: Alignment = ...
+    TOP: PyiAlignment = ...
     """
     the connection line leaves the connected object from the top,
     
@@ -74,10 +74,10 @@ class Alignment(uno.Enum):
     
     The top edge of the text is adjusted to the top edge of the shape.
     """
-    TOP_LEFT: Alignment = ...
+    TOP_LEFT: PyiAlignment = ...
     """
     """
-    TOP_RIGHT: Alignment = ...
+    TOP_RIGHT: PyiAlignment = ...
     """
     """
 

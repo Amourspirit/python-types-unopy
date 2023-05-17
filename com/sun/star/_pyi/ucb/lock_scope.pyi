@@ -32,11 +32,11 @@ class LockScope(uno.Enum):
     """
     typeName: str = 'com.sun.star.ucb.LockScope'
 
-    EXCLUSIVE: LockScope = ...
+    EXCLUSIVE: PyiLockScope = ...
     """
     the lock is exclusive.
     """
-    SHARED: LockScope = ...
+    SHARED: PyiLockScope = ...
     """
     the lock is shared.
     """

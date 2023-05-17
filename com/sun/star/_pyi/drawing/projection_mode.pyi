@@ -32,13 +32,13 @@ class ProjectionMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.ProjectionMode'
 
-    PARALLEL: ProjectionMode = ...
+    PARALLEL: PyiProjectionMode = ...
     """
     the 3D objects are drawn in the parallel projection.
     
     This value specifies a flat parallel projection in the specified degree of freedom (X or Y).
     """
-    PERSPECTIVE: ProjectionMode = ...
+    PERSPECTIVE: PyiProjectionMode = ...
     """
     the 3D objects are drawn in the perspective projection.
     """

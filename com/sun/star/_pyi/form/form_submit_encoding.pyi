@@ -32,19 +32,19 @@ class FormSubmitEncoding(uno.Enum):
     """
     typeName: str = 'com.sun.star.form.FormSubmitEncoding'
 
-    MULTIPART: FormSubmitEncoding = ...
+    MULTIPART: PyiFormSubmitEncoding = ...
     """
     Specifies to use \"multipart/form-data\" as submit encoding.
     
     Usually used when the form contains a file upload element.
     """
-    TEXT: FormSubmitEncoding = ...
+    TEXT: PyiFormSubmitEncoding = ...
     """
     specifies to use \"text/plain\"
     
     Usually used if the FormSubmitMethod attribute has the value POST and the content should be reviewed as full text.
     """
-    URL: FormSubmitEncoding = ...
+    URL: PyiFormSubmitEncoding = ...
     """
     When the button is clicked, a URL set for the button is opened.
     

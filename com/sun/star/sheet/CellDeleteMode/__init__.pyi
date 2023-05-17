@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.cell_delete_mode import CellDeleteMode as PyiCellDeleteMode
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.CellDeleteMode'
 
-COLUMNS: CellDeleteMode = ...
+COLUMNS: PyiCellDeleteMode = ...
 """
 entire columns to the right of the deleted cells are moved left.
 
 entire columns to the right of the inserted cells are moved right.
 """
-LEFT: CellDeleteMode = ...
+LEFT: PyiCellDeleteMode = ...
 """
 selects the left border.
 
 the cells to the right of the deleted cells are moved left.
 """
-NONE: CellDeleteMode = ...
+NONE: PyiCellDeleteMode = ...
 """
 no cells are moved.
 
@@ -55,13 +56,13 @@ nothing is imported.
 
 no condition is specified.
 """
-ROWS: CellDeleteMode = ...
+ROWS: PyiCellDeleteMode = ...
 """
 entire rows below the deleted cells are moved up.
 
 entire rows below the inserted cells are moved down.
 """
-UP: CellDeleteMode = ...
+UP: PyiCellDeleteMode = ...
 """
 the cells below the deleted cells are moved up.
 """

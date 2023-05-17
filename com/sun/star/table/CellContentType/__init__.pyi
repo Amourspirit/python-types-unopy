@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.table.cell_content_type import CellContentType as PyiCellContentType
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.table.CellContentType'
 
-EMPTY: CellContentType = ...
+EMPTY: PyiCellContentType = ...
 """
 cell is empty.
 """
-FORMULA: CellContentType = ...
+FORMULA: PyiCellContentType = ...
 """
 cell contains a formula.
 """
-TEXT: CellContentType = ...
+TEXT: PyiCellContentType = ...
 """
 cell contains text.
 """
-VALUE: CellContentType = ...
+VALUE: PyiCellContentType = ...
 """
 cell contains a constant value.
 """

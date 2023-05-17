@@ -32,17 +32,17 @@ class FolderListCommand(uno.Enum):
     """
     typeName: str = 'com.sun.star.ucb.FolderListCommand'
 
-    GET: FolderListCommand = ...
+    GET: PyiFolderListCommand = ...
     """
     Get a list of all folders.
     
     HTTP request method as defined in RFC 2616: Hypertext Transfer Protocol – HTTP/1.1
     """
-    GET_SUBSCRIBED: FolderListCommand = ...
+    GET_SUBSCRIBED: PyiFolderListCommand = ...
     """
     Get a list of subscribed folders.
     """
-    SET: FolderListCommand = ...
+    SET: PyiFolderListCommand = ...
     """
     Set a list of folders.
     """

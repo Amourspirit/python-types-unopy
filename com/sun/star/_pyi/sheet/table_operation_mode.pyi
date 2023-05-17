@@ -32,17 +32,17 @@ class TableOperationMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.sheet.TableOperationMode'
 
-    BOTH: TableOperationMode = ...
+    BOTH: PyiTableOperationMode = ...
     """
     is applied to rows and columns.
     """
-    COLUMN: TableOperationMode = ...
+    COLUMN: PyiTableOperationMode = ...
     """
     the field is used as a column field.
     
     is applied to the columns.
     """
-    ROW: TableOperationMode = ...
+    ROW: PyiTableOperationMode = ...
     """
     the field is used as a row field.
     

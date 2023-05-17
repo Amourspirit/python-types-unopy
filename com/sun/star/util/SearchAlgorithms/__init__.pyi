@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.util.search_algorithms import SearchAlgorithms as PyiSearchAlgorithms
 """
 Enum
 
@@ -30,15 +31,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.util.SearchAlgorithms'
 
-ABSOLUTE: SearchAlgorithms = ...
+ABSOLUTE: PyiSearchAlgorithms = ...
 """
 Literal.
 """
-APPROXIMATE: SearchAlgorithms = ...
+APPROXIMATE: PyiSearchAlgorithms = ...
 """
 Weighted Levenshtein Distance.
 """
-REGEXP: SearchAlgorithms = ...
+REGEXP: PyiSearchAlgorithms = ...
 """
 Regular expression.
 """

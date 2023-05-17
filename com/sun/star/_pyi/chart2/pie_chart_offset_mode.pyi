@@ -32,13 +32,13 @@ class PieChartOffsetMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.chart2.PieChartOffsetMode'
 
-    ALL_EXPLODED: PieChartOffsetMode = ...
+    ALL_EXPLODED: PyiPieChartOffsetMode = ...
     """
     All pies are exploded by a certain percentage.
     
     The default is 10 percent.
     """
-    NONE: PieChartOffsetMode = ...
+    NONE: PyiPieChartOffsetMode = ...
     """
     Default, no pies are exploded.
     

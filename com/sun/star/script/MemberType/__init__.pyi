@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.script.member_type import MemberType as PyiMemberType
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.script.MemberType'
 
-METHOD: MemberType = ...
+METHOD: PyiMemberType = ...
 """
 """
-PROPERTY: MemberType = ...
+PROPERTY: PyiMemberType = ...
 """
 """
-UNKNOWN: MemberType = ...
+UNKNOWN: PyiMemberType = ...
 """
 """
 

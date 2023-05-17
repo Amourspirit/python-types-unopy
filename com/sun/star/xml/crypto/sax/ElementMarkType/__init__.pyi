@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.xml.crypto.sax.element_mark_type import ElementMarkType as PyiElementMarkType
 """
 Enum
 
@@ -29,10 +30,10 @@ See Also:
 """
 typeName: str = 'com.sun.star.xml.crypto.sax.ElementMarkType'
 
-ELEMENTCOLLECTOR: ElementMarkType = ...
+ELEMENTCOLLECTOR: PyiElementMarkType = ...
 """
 """
-ELEMENTMARK: ElementMarkType = ...
+ELEMENTMARK: PyiElementMarkType = ...
 """
 """
 

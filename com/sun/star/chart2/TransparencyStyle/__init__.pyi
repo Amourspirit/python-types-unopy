@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart2.transparency_style import TransparencyStyle as PyiTransparencyStyle
 """
 Enum
 
@@ -30,15 +31,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart2.TransparencyStyle'
 
-GRADIENT: TransparencyStyle = ...
+GRADIENT: PyiTransparencyStyle = ...
 """
 The property TransparencyGradient is evaluated, Transparency is ignored.
 """
-LINEAR: TransparencyStyle = ...
+LINEAR: PyiTransparencyStyle = ...
 """
 The property Transparency is evaluated, TransparencyGradient is ignored.
 """
-NONE: TransparencyStyle = ...
+NONE: PyiTransparencyStyle = ...
 """
 Default, no pies are exploded.
 

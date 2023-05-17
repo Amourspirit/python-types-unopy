@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.content_creation_error import ContentCreationError as PyiContentCreationError
 """
 Enum
 
@@ -29,25 +30,25 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.ContentCreationError'
 
-CONTENT_CREATION_FAILED: ContentCreationError = ...
+CONTENT_CREATION_FAILED: PyiContentCreationError = ...
 """
 Provider was unable to create the content instance.
 """
-IDENTIFIER_CREATION_FAILED: ContentCreationError = ...
+IDENTIFIER_CREATION_FAILED: PyiContentCreationError = ...
 """
 Creation of content identifier failed.
 """
-NO_CONTENT_BROKER: ContentCreationError = ...
+NO_CONTENT_BROKER: PyiContentCreationError = ...
 """
 """
-NO_CONTENT_PROVIDER: ContentCreationError = ...
+NO_CONTENT_PROVIDER: PyiContentCreationError = ...
 """
 No Content Provider for given content identifier available.
 """
-NO_IDENTIFIER_FACTORY: ContentCreationError = ...
+NO_IDENTIFIER_FACTORY: PyiContentCreationError = ...
 """
 """
-UNKNOWN: ContentCreationError = ...
+UNKNOWN: PyiContentCreationError = ...
 """
 Unknown.
 

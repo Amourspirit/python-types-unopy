@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.form.data_selection_type import DataSelectionType as PyiDataSelectionType
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.form.DataSelectionType'
 
-QUERY: DataSelectionType = ...
+QUERY: PyiDataSelectionType = ...
 """
 The control should be filled with the results of a database query.
 """
-SQL: DataSelectionType = ...
+SQL: PyiDataSelectionType = ...
 """
 The control should be filled with the results of a database statement.
 """
-SQLPASSTHROUGH: DataSelectionType = ...
+SQLPASSTHROUGH: PyiDataSelectionType = ...
 """
 The control should be filled with the results of a database statement, which is not evaluated by the database engine.
 """
-TABLE: DataSelectionType = ...
+TABLE: PyiDataSelectionType = ...
 """
 The control should be filled with the data of a table.
 """

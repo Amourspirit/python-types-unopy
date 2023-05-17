@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.text_animation_kind import TextAnimationKind as PyiTextAnimationKind
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.TextAnimationKind'
 
-ALTERNATE: TextAnimationKind = ...
+ALTERNATE: PyiTextAnimationKind = ...
 """
 Scroll the text from one side to the other and back.
 """
-BLINK: TextAnimationKind = ...
+BLINK: PyiTextAnimationKind = ...
 """
 Let this text switch its state from visible to invisible continuously.
 """
-NONE: TextAnimationKind = ...
+NONE: PyiTextAnimationKind = ...
 """
 the area is not filled.
 
@@ -51,11 +52,11 @@ the joint between lines will not be connected
 
 the line has no special end.
 """
-SCROLL: TextAnimationKind = ...
+SCROLL: PyiTextAnimationKind = ...
 """
 Let this text scroll.
 """
-SLIDE: TextAnimationKind = ...
+SLIDE: PyiTextAnimationKind = ...
 """
 Scroll the text from one side to the final position and stop there.
 """

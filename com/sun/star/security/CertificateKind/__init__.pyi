@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.security.certificate_kind import CertificateKind as PyiCertificateKind
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.security.CertificateKind'
 
-NONE: CertificateKind = ...
+NONE: PyiCertificateKind = ...
 """
 No format specified.
 """
-OPENPGP: CertificateKind = ...
+OPENPGP: PyiCertificateKind = ...
 """
 OpenPGP format of a certificate.
 """
-X509: CertificateKind = ...
+X509: PyiCertificateKind = ...
 """
 X.509 format of a certificate.
 """

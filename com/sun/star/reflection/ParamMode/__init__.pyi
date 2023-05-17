@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.reflection.param_mode import ParamMode as PyiParamMode
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.reflection.ParamMode'
 
-IN: ParamMode = ...
+IN: PyiParamMode = ...
 """
 parameter serves as pure input for a called method
 """
-INOUT: ParamMode = ...
+INOUT: PyiParamMode = ...
 """
 parameter serves as input as well as output; data can transferred in both directions
 """
-OUT: ParamMode = ...
+OUT: PyiParamMode = ...
 """
 parameter serves as pure output for the callee (in addition to the return value)
 """

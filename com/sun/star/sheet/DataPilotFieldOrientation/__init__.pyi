@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.data_pilot_field_orientation import DataPilotFieldOrientation as PyiDataPilotFieldOrientation
 """
 Enum
 
@@ -29,25 +30,25 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.DataPilotFieldOrientation'
 
-COLUMN: DataPilotFieldOrientation = ...
+COLUMN: PyiDataPilotFieldOrientation = ...
 """
 the field is used as a column field.
 
 is applied to the columns.
 """
-DATA: DataPilotFieldOrientation = ...
+DATA: PyiDataPilotFieldOrientation = ...
 """
 the field is used as a data field.
 """
-HIDDEN: DataPilotFieldOrientation = ...
+HIDDEN: PyiDataPilotFieldOrientation = ...
 """
 the field is not used in the table.
 """
-PAGE: DataPilotFieldOrientation = ...
+PAGE: PyiDataPilotFieldOrientation = ...
 """
 the field is used as a page field.
 """
-ROW: DataPilotFieldOrientation = ...
+ROW: PyiDataPilotFieldOrientation = ...
 """
 the field is used as a row field.
 

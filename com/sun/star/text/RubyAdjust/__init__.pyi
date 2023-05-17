@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.text.ruby_adjust import RubyAdjust as PyiRubyAdjust
 """
 Enum
 
@@ -29,21 +30,21 @@ See Also:
 """
 typeName: str = 'com.sun.star.text.RubyAdjust'
 
-BLOCK: RubyAdjust = ...
+BLOCK: PyiRubyAdjust = ...
 """
 adjusted to both borders / stretched
 """
-CENTER: RubyAdjust = ...
+CENTER: PyiRubyAdjust = ...
 """
 the object is adjusted to the center.
 
 centric adjusted.
 """
-INDENT_BLOCK: RubyAdjust = ...
+INDENT_BLOCK: PyiRubyAdjust = ...
 """
 adjusted to both borders except for a small indent on both sides
 """
-LEFT: RubyAdjust = ...
+LEFT: PyiRubyAdjust = ...
 """
 the object is left adjusted.
 
@@ -51,7 +52,7 @@ text flows to the left side of the object.
 
 adjusted to the left.
 """
-RIGHT: RubyAdjust = ...
+RIGHT: PyiRubyAdjust = ...
 """
 the object is right adjusted.
 

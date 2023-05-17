@@ -32,25 +32,25 @@ class WindowClass(uno.Enum):
     """
     typeName: str = 'com.sun.star.awt.WindowClass'
 
-    CONTAINER: WindowClass = ...
+    CONTAINER: PyiWindowClass = ...
     """
     is a container that may contain other components.
     
     It is not a top window.
     """
-    MODALTOP: WindowClass = ...
+    MODALTOP: PyiWindowClass = ...
     """
     is a modal top level window on the desktop.
     
     It is also a container.
     """
-    SIMPLE: WindowClass = ...
+    SIMPLE: PyiWindowClass = ...
     """
     is the simplest window.
     
     It can be a container.
     """
-    TOP: WindowClass = ...
+    TOP: PyiWindowClass = ...
     """
     specifies a top level window on the desktop.
     

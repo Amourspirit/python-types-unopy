@@ -32,11 +32,11 @@ class DataEditorEventType(uno.Enum):
     """
     typeName: str = 'com.sun.star.util.DataEditorEventType'
 
-    CANCELED: DataEditorEventType = ...
+    CANCELED: PyiDataEditorEventType = ...
     """
     specifies that the data editing was canceled by the user (data not stored).
     """
-    DONE: DataEditorEventType = ...
+    DONE: PyiDataEditorEventType = ...
     """
     specifies that the data editing is done (data stored).
     """

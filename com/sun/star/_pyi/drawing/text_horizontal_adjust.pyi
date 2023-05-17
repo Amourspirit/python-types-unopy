@@ -32,17 +32,17 @@ class TextHorizontalAdjust(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.TextHorizontalAdjust'
 
-    BLOCK: TextHorizontalAdjust = ...
+    BLOCK: PyiTextHorizontalAdjust = ...
     """
     The text extends from the left to the right edge of the shape.
     
     The text extends from the top to the bottom edge of the shape.
     """
-    CENTER: TextHorizontalAdjust = ...
+    CENTER: PyiTextHorizontalAdjust = ...
     """
     The text is centered inside the shape.
     """
-    LEFT: TextHorizontalAdjust = ...
+    LEFT: PyiTextHorizontalAdjust = ...
     """
     the connection line leaves the connected object to the left,
     
@@ -50,7 +50,7 @@ class TextHorizontalAdjust(uno.Enum):
     
     The text is positioned to the left.
     """
-    RIGHT: TextHorizontalAdjust = ...
+    RIGHT: PyiTextHorizontalAdjust = ...
     """
     the connection line leaves the connected object to the right,
     

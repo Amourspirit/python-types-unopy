@@ -32,13 +32,13 @@ class MeasureKind(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.MeasureKind'
 
-    RADIUS: MeasureKind = ...
+    RADIUS: PyiMeasureKind = ...
     """
     use the radius measurement.
     
     This option cannot be used from the GUI Interface.
     """
-    STANDARD: MeasureKind = ...
+    STANDARD: PyiMeasureKind = ...
     """
     the graphic is rendered in the default color style of the output device,
     

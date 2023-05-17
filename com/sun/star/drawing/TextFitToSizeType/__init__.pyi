@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.text_fit_to_size_type import TextFitToSizeType as PyiTextFitToSizeType
 """
 Enum
 
@@ -29,17 +30,17 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.TextFitToSizeType'
 
-ALLLINES: TextFitToSizeType = ...
+ALLLINES: PyiTextFitToSizeType = ...
 """
 Nowadays this is the same as PROPORTIONAL.
 """
-AUTOFIT: TextFitToSizeType = ...
+AUTOFIT: PyiTextFitToSizeType = ...
 """
 The font size is scaled down (never up!) isotropically to fit the available space.
 
 Auto line-breaks will keep working.
 """
-NONE: TextFitToSizeType = ...
+NONE: PyiTextFitToSizeType = ...
 """
 the area is not filled.
 
@@ -53,7 +54,7 @@ the joint between lines will not be connected
 
 the line has no special end.
 """
-PROPORTIONAL: TextFitToSizeType = ...
+PROPORTIONAL: PyiTextFitToSizeType = ...
 """
 The bitmap with the rendered glyphs is scaled up or down proportionally to fit the size of the shape.
 

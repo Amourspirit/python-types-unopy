@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.remote_content_provider_change_action import RemoteContentProviderChangeAction as PyiRemoteContentProviderChangeAction
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.RemoteContentProviderChangeAction'
 
-ADDED: RemoteContentProviderChangeAction = ...
+ADDED: PyiRemoteContentProviderChangeAction = ...
 """
 The indicator that a remote content provider has been added.
 """
-REMOVED: RemoteContentProviderChangeAction = ...
+REMOVED: PyiRemoteContentProviderChangeAction = ...
 """
 The indicator that a remote content provider has been removed.
 """

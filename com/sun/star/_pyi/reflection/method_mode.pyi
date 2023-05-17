@@ -32,11 +32,11 @@ class MethodMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.reflection.MethodMode'
 
-    ONEWAY: MethodMode = ...
+    ONEWAY: PyiMethodMode = ...
     """
     method may be run asynchronously
     """
-    TWOWAY: MethodMode = ...
+    TWOWAY: PyiMethodMode = ...
     """
     method is run The
     """

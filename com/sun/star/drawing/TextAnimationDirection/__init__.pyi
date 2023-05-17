@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.text_animation_direction import TextAnimationDirection as PyiTextAnimationDirection
 """
 Enum
 
@@ -29,10 +30,10 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.TextAnimationDirection'
 
-DOWN: TextAnimationDirection = ...
+DOWN: PyiTextAnimationDirection = ...
 """
 """
-LEFT: TextAnimationDirection = ...
+LEFT: PyiTextAnimationDirection = ...
 """
 the connection line leaves the connected object to the left,
 
@@ -40,7 +41,7 @@ The left edge of the text is adjusted to the left edge of the shape.
 
 The text is positioned to the left.
 """
-RIGHT: TextAnimationDirection = ...
+RIGHT: PyiTextAnimationDirection = ...
 """
 the connection line leaves the connected object to the right,
 
@@ -48,7 +49,7 @@ The right edge of the text is adjusted to the right edge of the shape.
 
 The text is positioned to the right.
 """
-UP: TextAnimationDirection = ...
+UP: PyiTextAnimationDirection = ...
 """
 """
 

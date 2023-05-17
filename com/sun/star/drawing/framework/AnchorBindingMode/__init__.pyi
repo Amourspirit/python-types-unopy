@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.framework.anchor_binding_mode import AnchorBindingMode as PyiAnchorBindingMode
 """
 Enum
 
@@ -29,10 +30,10 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.framework.AnchorBindingMode'
 
-DIRECT: AnchorBindingMode = ...
+DIRECT: PyiAnchorBindingMode = ...
 """
 """
-INDIRECT: AnchorBindingMode = ...
+INDIRECT: PyiAnchorBindingMode = ...
 """
 """
 

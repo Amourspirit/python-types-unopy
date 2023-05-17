@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.measure_text_horz_pos import MeasureTextHorzPos as PyiMeasureTextHorzPos
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.MeasureTextHorzPos'
 
-AUTO: MeasureTextHorzPos = ...
+AUTO: PyiMeasureTextHorzPos = ...
 """
 the connection point is chosen automatically,
 
 Set this to have the application select the best horizontal position for the text.
 """
-INSIDE: MeasureTextHorzPos = ...
+INSIDE: PyiMeasureTextHorzPos = ...
 """
 """
-LEFTOUTSIDE: MeasureTextHorzPos = ...
+LEFTOUTSIDE: PyiMeasureTextHorzPos = ...
 """
 """
-RIGHTOUTSIDE: MeasureTextHorzPos = ...
+RIGHTOUTSIDE: PyiMeasureTextHorzPos = ...
 """
 """
 

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.table.cell_vert_justify import CellVertJustify as PyiCellVertJustify
 """
 Enum
 
@@ -29,17 +30,17 @@ See Also:
 """
 typeName: str = 'com.sun.star.table.CellVertJustify'
 
-BOTTOM: CellVertJustify = ...
+BOTTOM: PyiCellVertJustify = ...
 """
 contents are aligned to the lower edge of the cell.
 """
-CENTER: CellVertJustify = ...
+CENTER: PyiCellVertJustify = ...
 """
 contents are horizontally centered.
 
 contents are aligned to the vertical middle of the cell.
 """
-STANDARD: CellVertJustify = ...
+STANDARD: PyiCellVertJustify = ...
 """
 default alignment is used (left for numbers, right for text).
 
@@ -47,7 +48,7 @@ default alignment is used.
 
 contents are printed from left to right.
 """
-TOP: CellVertJustify = ...
+TOP: PyiCellVertJustify = ...
 """
 contents are aligned with the upper edge of the cell.
 """

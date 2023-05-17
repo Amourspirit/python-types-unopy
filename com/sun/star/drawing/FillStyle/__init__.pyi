@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.fill_style import FillStyle as PyiFillStyle
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.FillStyle'
 
-BITMAP: FillStyle = ...
+BITMAP: PyiFillStyle = ...
 """
 use a bitmap to fill the area.
 """
-GRADIENT: FillStyle = ...
+GRADIENT: PyiFillStyle = ...
 """
 use a gradient color to fill the area.
 """
-HATCH: FillStyle = ...
+HATCH: PyiFillStyle = ...
 """
 use a hatch to fill the area.
 """
-NONE: FillStyle = ...
+NONE: PyiFillStyle = ...
 """
 the area is not filled.
 
@@ -55,7 +56,7 @@ the joint between lines will not be connected
 
 the line has no special end.
 """
-SOLID: FillStyle = ...
+SOLID: PyiFillStyle = ...
 """
 use a solid color to fill the area.
 

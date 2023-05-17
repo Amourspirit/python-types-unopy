@@ -32,15 +32,15 @@ class LineEndType(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.LineEndType'
 
-    ARROW: LineEndType = ...
+    ARROW: PyiLineEndType = ...
     """
     the line uses an arrow for the line end.
     """
-    CIRCLE: LineEndType = ...
+    CIRCLE: PyiLineEndType = ...
     """
     the line uses a circle for the line end.
     """
-    NONE: LineEndType = ...
+    NONE: PyiLineEndType = ...
     """
     the area is not filled.
     
@@ -54,13 +54,13 @@ class LineEndType(uno.Enum):
     
     the line has no special end.
     """
-    SPECIAL: LineEndType = ...
+    SPECIAL: PyiLineEndType = ...
     """
     not implemented, yet.
     
     deprecated
     """
-    SQUARE: LineEndType = ...
+    SQUARE: PyiLineEndType = ...
     """
     the line will get a half square as additional cap
     

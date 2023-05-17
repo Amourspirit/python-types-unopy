@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.arrangement import Arrangement as PyiArrangement
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.Arrangement'
 
-BACK: Arrangement = ...
+BACK: PyiArrangement = ...
 """
 Move this object behind all other objects.
 """
-FRONT: Arrangement = ...
+FRONT: PyiArrangement = ...
 """
 Move this object in front of all other objects.
 """
-MORE_BACK: Arrangement = ...
+MORE_BACK: PyiArrangement = ...
 """
 Move this object one object more to the back.
 """
-MORE_FRONT: Arrangement = ...
+MORE_FRONT: PyiArrangement = ...
 """
 Move this object one object more to the front.
 """

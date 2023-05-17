@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.reflection.type_description_search_depth import TypeDescriptionSearchDepth as PyiTypeDescriptionSearchDepth
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.reflection.TypeDescriptionSearchDepth'
 
-INFINITE: TypeDescriptionSearchDepth = ...
+INFINITE: PyiTypeDescriptionSearchDepth = ...
 """
 Infinite search depth.
 
 Search through all children including direct children, grand children, grand children's children, ...
 """
-ONE: TypeDescriptionSearchDepth = ...
+ONE: PyiTypeDescriptionSearchDepth = ...
 """
 Search only through direct children.
 """

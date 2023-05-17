@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.scanner.scan_error import ScanError as PyiScanError
 """
 Enum
 
@@ -29,27 +30,27 @@ See Also:
 """
 typeName: str = 'com.sun.star.scanner.ScanError'
 
-InvalidContext: ScanError = ...
+InvalidContext: PyiScanError = ...
 """
 InvalidContext: a device was requested that does not exist.
 """
-ScanCanceled: ScanError = ...
+ScanCanceled: PyiScanError = ...
 """
 ScanCanceled: the scan was canceled by the user.
 """
-ScanErrorNone: ScanError = ...
+ScanErrorNone: PyiScanError = ...
 """
 ScanErrorNone: no error occurred.
 """
-ScanFailed: ScanError = ...
+ScanFailed: PyiScanError = ...
 """
 ScanFailed: an error occurred during scanning.
 """
-ScanInProgress: ScanError = ...
+ScanInProgress: PyiScanError = ...
 """
 ScanInProgress: a scan is already in progress on this device that has to end before a new one can be started.
 """
-ScannerNotAvailable: ScanError = ...
+ScannerNotAvailable: PyiScanError = ...
 """
 ScannerNotAvailable: the requested device could not be opened.
 """

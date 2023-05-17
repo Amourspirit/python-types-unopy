@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.priority import Priority as PyiPriority
 """
 Enum
 
@@ -29,23 +30,23 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.Priority'
 
-HIGH: Priority = ...
+HIGH: PyiPriority = ...
 """
 High priority.
 """
-HIGHEST: Priority = ...
+HIGHEST: PyiPriority = ...
 """
 Highest priority.
 """
-LOW: Priority = ...
+LOW: PyiPriority = ...
 """
 Low priority.
 """
-LOWEST: Priority = ...
+LOWEST: PyiPriority = ...
 """
 Lowest priority.
 """
-NORMAL: Priority = ...
+NORMAL: PyiPriority = ...
 """
 Normal priority.
 """

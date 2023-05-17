@@ -32,10 +32,10 @@ class TextAnimationDirection(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.TextAnimationDirection'
 
-    DOWN: TextAnimationDirection = ...
+    DOWN: PyiTextAnimationDirection = ...
     """
     """
-    LEFT: TextAnimationDirection = ...
+    LEFT: PyiTextAnimationDirection = ...
     """
     the connection line leaves the connected object to the left,
     
@@ -43,7 +43,7 @@ class TextAnimationDirection(uno.Enum):
     
     The text is positioned to the left.
     """
-    RIGHT: TextAnimationDirection = ...
+    RIGHT: PyiTextAnimationDirection = ...
     """
     the connection line leaves the connected object to the right,
     
@@ -51,7 +51,7 @@ class TextAnimationDirection(uno.Enum):
     
     The text is positioned to the right.
     """
-    UP: TextAnimationDirection = ...
+    UP: PyiTextAnimationDirection = ...
     """
     """
 

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.awt.gradient_style import GradientStyle as PyiGradientStyle
 """
 Enum
 
@@ -29,27 +30,27 @@ See Also:
 """
 typeName: str = 'com.sun.star.awt.GradientStyle'
 
-AXIAL: GradientStyle = ...
+AXIAL: PyiGradientStyle = ...
 """
 specifies an axial gradient.
 """
-ELLIPTICAL: GradientStyle = ...
+ELLIPTICAL: PyiGradientStyle = ...
 """
 specifies an elliptical gradient.
 """
-LINEAR: GradientStyle = ...
+LINEAR: PyiGradientStyle = ...
 """
 specifies a linear gradient.
 """
-RADIAL: GradientStyle = ...
+RADIAL: PyiGradientStyle = ...
 """
 specifies a radial gradient.
 """
-RECT: GradientStyle = ...
+RECT: PyiGradientStyle = ...
 """
 specifies a gradient in the shape of a rectangle.
 """
-SQUARE: GradientStyle = ...
+SQUARE: PyiGradientStyle = ...
 """
 specifies a gradient in the shape of a square.
 """

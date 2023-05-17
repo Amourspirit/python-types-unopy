@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.view.selection_type import SelectionType as PyiSelectionType
 """
 Enum
 
@@ -29,23 +30,23 @@ See Also:
 """
 typeName: str = 'com.sun.star.view.SelectionType'
 
-MULTI: SelectionType = ...
+MULTI: PyiSelectionType = ...
 """
 The selection can contain zero or more objects.
 """
-NONE: SelectionType = ...
+NONE: PyiSelectionType = ...
 """
 No selection is possible.
 
 The selection is always empty.
 """
-RANGE: SelectionType = ...
+RANGE: PyiSelectionType = ...
 """
 The selection can contain zero or more objects.
 
 all selected objects must be part of a continues range
 """
-SINGLE: SelectionType = ...
+SINGLE: PyiSelectionType = ...
 """
 The selection can only contain one or zero objects.
 """

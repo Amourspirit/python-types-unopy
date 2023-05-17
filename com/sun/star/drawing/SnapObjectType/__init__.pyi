@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.snap_object_type import SnapObjectType as PyiSnapObjectType
 """
 Enum
 
@@ -30,14 +31,14 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.SnapObjectType'
 
-HORIZONTAL: SnapObjectType = ...
+HORIZONTAL: PyiSnapObjectType = ...
 """
 mirror to the horizontal axis
 """
-POINT: SnapObjectType = ...
+POINT: PyiSnapObjectType = ...
 """
 """
-VERTICAL: SnapObjectType = ...
+VERTICAL: PyiSnapObjectType = ...
 """
 mirror to the vertical axis
 """

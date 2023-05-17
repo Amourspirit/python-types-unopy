@@ -32,17 +32,17 @@ class NormalsKind(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.NormalsKind'
 
-    FLAT: NormalsKind = ...
+    FLAT: PyiNormalsKind = ...
     """
     forces one normal per flat part.
     
     With FLAT shading, the faces of the object are rendered in a solid color.
     """
-    SPECIFIC: NormalsKind = ...
+    SPECIFIC: PyiNormalsKind = ...
     """
     does not produce standard normals, but leaves the object-specific ones untouched.
     """
-    SPHERE: NormalsKind = ...
+    SPHERE: PyiNormalsKind = ...
     """
     forces normals to think that the object is a sphere.
     

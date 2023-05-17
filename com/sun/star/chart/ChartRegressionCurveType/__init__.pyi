@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart.chart_regression_curve_type import ChartRegressionCurveType as PyiChartRegressionCurveType
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart.ChartRegressionCurveType'
 
-EXPONENTIAL: ChartRegressionCurveType = ...
+EXPONENTIAL: PyiChartRegressionCurveType = ...
 """
 displays an exponential regression curve.
 """
-LINEAR: ChartRegressionCurveType = ...
+LINEAR: PyiChartRegressionCurveType = ...
 """
 displays a linear regression curve.
 """
-LOGARITHM: ChartRegressionCurveType = ...
+LOGARITHM: PyiChartRegressionCurveType = ...
 """
 displays a linear logarithmic regression curve.
 """
-NONE: ChartRegressionCurveType = ...
+NONE: PyiChartRegressionCurveType = ...
 """
 error indicators are not displayed.
 
@@ -51,11 +52,11 @@ no chart legend is displayed.
 
 displays no error indicators.
 """
-POLYNOMIAL: ChartRegressionCurveType = ...
+POLYNOMIAL: PyiChartRegressionCurveType = ...
 """
 displays a polynomial regression curve.
 """
-POWER: ChartRegressionCurveType = ...
+POWER: PyiChartRegressionCurveType = ...
 """
 displays a regression curve using a power function.
 

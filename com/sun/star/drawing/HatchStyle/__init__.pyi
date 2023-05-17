@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.hatch_style import HatchStyle as PyiHatchStyle
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.HatchStyle'
 
-DOUBLE: HatchStyle = ...
+DOUBLE: PyiHatchStyle = ...
 """
 the hatch has a horizontal and a vertical line
 """
-SINGLE: HatchStyle = ...
+SINGLE: PyiHatchStyle = ...
 """
 the hatch consists of a single horizontal line
 """
-TRIPLE: HatchStyle = ...
+TRIPLE: PyiHatchStyle = ...
 """
 the hatch has a horizontal, a vertical and a diagonal line
 """

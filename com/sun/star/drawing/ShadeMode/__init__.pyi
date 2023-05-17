@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.shade_mode import ShadeMode as PyiShadeMode
 """
 Enum
 
@@ -29,21 +30,21 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.ShadeMode'
 
-DRAFT: ShadeMode = ...
+DRAFT: PyiShadeMode = ...
 """
 DRAFT is a special mode which uses a BSP tree and triangle subdivision for displaying.
 """
-FLAT: ShadeMode = ...
+FLAT: PyiShadeMode = ...
 """
 forces one normal per flat part.
 
 With FLAT shading, the faces of the object are rendered in a solid color.
 """
-PHONG: ShadeMode = ...
+PHONG: PyiShadeMode = ...
 """
 With PHONG shading, the normal itself is interpolated to get more realistic colors and light reflections.
 """
-SMOOTH: ShadeMode = ...
+SMOOTH: PyiShadeMode = ...
 """
 the point is smooth, the first derivation from the curve discussion view.
 

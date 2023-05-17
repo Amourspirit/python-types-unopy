@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.fill_direction import FillDirection as PyiFillDirection
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.FillDirection'
 
-TO_BOTTOM: FillDirection = ...
+TO_BOTTOM: PyiFillDirection = ...
 """
 specifies that rows are filled from top to bottom.
 """
-TO_LEFT: FillDirection = ...
+TO_LEFT: PyiFillDirection = ...
 """
 specifies that columns are filled from right to left.
 """
-TO_RIGHT: FillDirection = ...
+TO_RIGHT: PyiFillDirection = ...
 """
 specifies that columns are filled from left to right.
 """
-TO_TOP: FillDirection = ...
+TO_TOP: PyiFillDirection = ...
 """
 specifies that rows are filled from bottom to top.
 """

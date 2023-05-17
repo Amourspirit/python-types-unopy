@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ui.context_menu_interceptor_action import ContextMenuInterceptorAction as PyiContextMenuInterceptorAction
 """
 Enum
 
@@ -29,21 +30,21 @@ See Also:
 """
 typeName: str = 'com.sun.star.ui.ContextMenuInterceptorAction'
 
-CANCELLED: ContextMenuInterceptorAction = ...
+CANCELLED: PyiContextMenuInterceptorAction = ...
 """
 the context menu must not be executed.
 
 The next registered XContextMenuInterceptor should not be notified.
 """
-CONTINUE_MODIFIED: ContextMenuInterceptorAction = ...
+CONTINUE_MODIFIED: PyiContextMenuInterceptorAction = ...
 """
 the menu has been modified and the next registered XContextMenuInterceptor should be notified.
 """
-EXECUTE_MODIFIED: ContextMenuInterceptorAction = ...
+EXECUTE_MODIFIED: PyiContextMenuInterceptorAction = ...
 """
 the menu has been modified and should be executed without notifying the next registered XContextMenuInterceptor.
 """
-IGNORED: ContextMenuInterceptorAction = ...
+IGNORED: PyiContextMenuInterceptorAction = ...
 """
 the XContextMenuInterceptor has ignored the call.
 

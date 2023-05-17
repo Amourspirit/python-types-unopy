@@ -32,11 +32,11 @@ class FillRule(uno.Enum):
     """
     typeName: str = 'com.sun.star.rendering.FillRule'
 
-    EVEN_ODD: FillRule = ...
+    EVEN_ODD: PyiFillRule = ...
     """
     Fill every area, where, when traveling along a line, an uneven number of intersections with polygon edges have happened.
     """
-    NON_ZERO: FillRule = ...
+    NON_ZERO: PyiFillRule = ...
     """
     Fill every area, where, when traveling along a line, the summed winding number (that is, -1 for a counter-clockwise-oriented polygon, and +1 for a clockwise-oriented) is non-zero.
     

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.texture_mode import TextureMode as PyiTextureMode
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.TextureMode'
 
-BLEND: TextureMode = ...
+BLEND: PyiTextureMode = ...
 """
 This mixes both data sources in a fixed ratio.
 """
-MODULATE: TextureMode = ...
+MODULATE: PyiTextureMode = ...
 """
 This mixes up colors in a way defined by the texture bitmap.
 """
-REPLACE: TextureMode = ...
+REPLACE: PyiTextureMode = ...
 """
 This is the standard mode.
 """

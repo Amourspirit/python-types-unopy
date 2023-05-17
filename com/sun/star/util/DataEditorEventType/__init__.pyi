@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.util.data_editor_event_type import DataEditorEventType as PyiDataEditorEventType
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.util.DataEditorEventType'
 
-CANCELED: DataEditorEventType = ...
+CANCELED: PyiDataEditorEventType = ...
 """
 specifies that the data editing was canceled by the user (data not stored).
 """
-DONE: DataEditorEventType = ...
+DONE: PyiDataEditorEventType = ...
 """
 specifies that the data editing is done (data stored).
 """
