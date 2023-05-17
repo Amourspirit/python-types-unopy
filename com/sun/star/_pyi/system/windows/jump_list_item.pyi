@@ -49,7 +49,6 @@ class JumpListItem(object):
         """
         ...
 
-
     @property
     def name(self) -> str:
         """
@@ -58,8 +57,9 @@ class JumpListItem(object):
         Appears in the JumpList. Has to be unique per category. Must not include embedded NULs ('\\0').
         """
         ...
-
-
+    @name.setter
+    def name(self, value: str) -> None:
+        ...
     @property
     def description(self) -> str:
         """
@@ -68,8 +68,9 @@ class JumpListItem(object):
         Must not include embedded NULs ('\\0').
         """
         ...
-
-
+    @description.setter
+    def description(self, value: str) -> None:
+        ...
     @property
     def arguments(self) -> str:
         """
@@ -78,8 +79,9 @@ class JumpListItem(object):
         This can be a file to be loaded, or any command line parameter supported by LibreOffice, and any combination of the two. Add multiple arguments separated by space. Must not include embedded NULs ('\\0').
         """
         ...
-
-
+    @arguments.setter
+    def arguments(self, value: str) -> None:
+        ...
     @property
     def iconPath(self) -> str:
         """
@@ -88,5 +90,7 @@ class JumpListItem(object):
         Must be a local path name like C:\\\\path\\\\to\\\\icon.ico. Icon must be in ICO format.
         """
         ...
-
+    @iconPath.setter
+    def iconPath(self, value: str) -> None:
+        ...
 
