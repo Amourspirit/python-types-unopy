@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.table.table_orientation import TableOrientation as PyiTableOrientation
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.table.TableOrientation'
 
-COLUMNS: TableOrientation = ...
+COLUMNS: PyiTableOrientation = ...
 """
 operations are carried out on columns.
 """
-ROWS: TableOrientation = ...
+ROWS: PyiTableOrientation = ...
 """
 operations are carried out on rows.
 """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.form.navigation_bar_mode import NavigationBarMode as PyiNavigationBarMode
 """
 Enum
 
@@ -29,7 +30,7 @@ See Also:
 """
 typeName: str = 'com.sun.star.form.NavigationBarMode'
 
-CURRENT: NavigationBarMode = ...
+CURRENT: PyiNavigationBarMode = ...
 """
 a navigation bar is provided and navigation will be performed on the current/active form.
 
@@ -37,13 +38,13 @@ pressing the TAB key from the last control moves the focus to the first control 
 
 This is the default and most often encountered mode.
 """
-NONE: NavigationBarMode = ...
+NONE: PyiNavigationBarMode = ...
 """
 no navigation bar is provided and navigation on the current form is only possible with the keyboard (TAB/SHIFT TAB).
 
 Note that when this mode is set, a simultaneous TabulatorCycle value of TabulatorCycle.CURRENT means that you cannot travel between records anymore.
 """
-PARENT: NavigationBarMode = ...
+PARENT: PyiNavigationBarMode = ...
 """
 a navigation bar is provided and navigation will be performed on the parent of the current/active form.
 

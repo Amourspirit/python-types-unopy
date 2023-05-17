@@ -33,11 +33,11 @@ class Timing(uno.Enum):
     """
     typeName: str = 'com.sun.star.animations.Timing'
 
-    INDEFINITE: Timing = ...
+    INDEFINITE: PyiTiming = ...
     """
     specifies that a duration, end or start time is indefinite
     """
-    MEDIA: Timing = ...
+    MEDIA: PyiTiming = ...
     """
     specifies a simple duration as the intrinsic media duration.
     

@@ -32,7 +32,7 @@ class DataImportMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.sheet.DataImportMode'
 
-    NONE: DataImportMode = ...
+    NONE: PyiDataImportMode = ...
     """
     no cells are moved.
     
@@ -46,15 +46,15 @@ class DataImportMode(uno.Enum):
     
     no condition is specified.
     """
-    QUERY: DataImportMode = ...
+    QUERY: PyiDataImportMode = ...
     """
     the name of a database query is supplied.
     """
-    SQL: DataImportMode = ...
+    SQL: PyiDataImportMode = ...
     """
     a SQL query string is supplied.
     """
-    TABLE: DataImportMode = ...
+    TABLE: PyiDataImportMode = ...
     """
     the name of a database table is supplied.
     """

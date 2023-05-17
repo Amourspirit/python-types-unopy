@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.connection_type import ConnectionType as PyiConnectionType
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.ConnectionType'
 
-AUTO: ConnectionType = ...
+AUTO: PyiConnectionType = ...
 """
 the connection point is chosen automatically,
 
 Set this to have the application select the best horizontal position for the text.
 """
-BOTTOM: ConnectionType = ...
+BOTTOM: PyiConnectionType = ...
 """
 the connection line leaves the connected object from the bottom,
 
@@ -43,7 +44,7 @@ The text is positioned below the main line.
 
 The bottom edge of the text is adjusted to the bottom edge of the shape.
 """
-LEFT: ConnectionType = ...
+LEFT: PyiConnectionType = ...
 """
 the connection line leaves the connected object to the left,
 
@@ -51,7 +52,7 @@ The left edge of the text is adjusted to the left edge of the shape.
 
 The text is positioned to the left.
 """
-RIGHT: ConnectionType = ...
+RIGHT: PyiConnectionType = ...
 """
 the connection line leaves the connected object to the right,
 
@@ -59,13 +60,13 @@ The right edge of the text is adjusted to the right edge of the shape.
 
 The text is positioned to the right.
 """
-SPECIAL: ConnectionType = ...
+SPECIAL: PyiConnectionType = ...
 """
 not implemented, yet.
 
 deprecated
 """
-TOP: ConnectionType = ...
+TOP: PyiConnectionType = ...
 """
 the connection line leaves the connected object from the top,
 

@@ -32,11 +32,11 @@ class ChartDataRowSource(uno.Enum):
     """
     typeName: str = 'com.sun.star.chart.ChartDataRowSource'
 
-    COLUMNS: ChartDataRowSource = ...
+    COLUMNS: PyiChartDataRowSource = ...
     """
     values displayed as data rows are taken from the columns of the data source.
     """
-    ROWS: ChartDataRowSource = ...
+    ROWS: PyiChartDataRowSource = ...
     """
     values displayed as data rows are taken from the rows of the data source.
     """

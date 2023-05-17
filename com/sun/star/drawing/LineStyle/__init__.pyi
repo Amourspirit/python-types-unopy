@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.line_style import LineStyle as PyiLineStyle
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.LineStyle'
 
-DASH: LineStyle = ...
+DASH: PyiLineStyle = ...
 """
 the line use dashes.
 """
-NONE: LineStyle = ...
+NONE: PyiLineStyle = ...
 """
 the area is not filled.
 
@@ -47,7 +48,7 @@ the joint between lines will not be connected
 
 the line has no special end.
 """
-SOLID: LineStyle = ...
+SOLID: PyiLineStyle = ...
 """
 use a solid color to fill the area.
 

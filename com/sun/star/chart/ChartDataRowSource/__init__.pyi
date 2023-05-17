@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart.chart_data_row_source import ChartDataRowSource as PyiChartDataRowSource
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart.ChartDataRowSource'
 
-COLUMNS: ChartDataRowSource = ...
+COLUMNS: PyiChartDataRowSource = ...
 """
 values displayed as data rows are taken from the columns of the data source.
 """
-ROWS: ChartDataRowSource = ...
+ROWS: PyiChartDataRowSource = ...
 """
 values displayed as data rows are taken from the rows of the data source.
 """

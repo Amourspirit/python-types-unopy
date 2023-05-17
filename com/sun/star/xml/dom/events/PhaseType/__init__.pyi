@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.xml.dom.events.phase_type import PhaseType as PyiPhaseType
 """
 Enum
 
@@ -30,13 +31,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.xml.dom.events.PhaseType'
 
-AT_TARGET: PhaseType = ...
+AT_TARGET: PyiPhaseType = ...
 """
 """
-BUBBLING_PHASE: PhaseType = ...
+BUBBLING_PHASE: PyiPhaseType = ...
 """
 """
-CAPTURING_PHASE: PhaseType = ...
+CAPTURING_PHASE: PyiPhaseType = ...
 """
 """
 

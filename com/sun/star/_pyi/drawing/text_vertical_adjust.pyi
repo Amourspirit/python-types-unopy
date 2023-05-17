@@ -32,13 +32,13 @@ class TextVerticalAdjust(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.TextVerticalAdjust'
 
-    BLOCK: TextVerticalAdjust = ...
+    BLOCK: PyiTextVerticalAdjust = ...
     """
     The text extends from the left to the right edge of the shape.
     
     The text extends from the top to the bottom edge of the shape.
     """
-    BOTTOM: TextVerticalAdjust = ...
+    BOTTOM: PyiTextVerticalAdjust = ...
     """
     the connection line leaves the connected object from the bottom,
     
@@ -46,11 +46,11 @@ class TextVerticalAdjust(uno.Enum):
     
     The bottom edge of the text is adjusted to the bottom edge of the shape.
     """
-    CENTER: TextVerticalAdjust = ...
+    CENTER: PyiTextVerticalAdjust = ...
     """
     The text is centered inside the shape.
     """
-    TOP: TextVerticalAdjust = ...
+    TOP: PyiTextVerticalAdjust = ...
     """
     the connection line leaves the connected object from the top,
     

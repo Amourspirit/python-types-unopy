@@ -32,15 +32,15 @@ class DashStyle(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.DashStyle'
 
-    RECT: DashStyle = ...
+    RECT: PyiDashStyle = ...
     """
     the dash is a rectangle
     """
-    RECTRELATIVE: DashStyle = ...
+    RECTRELATIVE: PyiDashStyle = ...
     """
     the dash is a rectangle, with the size of the dash given in relation to the length of the line
     """
-    ROUND: DashStyle = ...
+    ROUND: PyiDashStyle = ...
     """
     the dash is a point
     
@@ -48,7 +48,7 @@ class DashStyle(uno.Enum):
     
     the line will get a half circle as additional cap
     """
-    ROUNDRELATIVE: DashStyle = ...
+    ROUNDRELATIVE: PyiDashStyle = ...
     """
     the dash is a point, with the size of the dash given in relation to the length of the line
     """

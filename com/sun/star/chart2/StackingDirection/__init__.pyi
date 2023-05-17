@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart2.stacking_direction import StackingDirection as PyiStackingDirection
 """
 Enum
 
@@ -30,13 +31,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart2.StackingDirection'
 
-NO_STACKING: StackingDirection = ...
+NO_STACKING: PyiStackingDirection = ...
 """
 """
-Y_STACKING: StackingDirection = ...
+Y_STACKING: PyiStackingDirection = ...
 """
 """
-Z_STACKING: StackingDirection = ...
+Z_STACKING: PyiStackingDirection = ...
 """
 """
 

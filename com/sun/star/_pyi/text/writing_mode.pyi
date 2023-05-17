@@ -32,7 +32,7 @@ class WritingMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.text.WritingMode'
 
-    LR_TB: WritingMode = ...
+    LR_TB: PyiWritingMode = ...
     """
     text within lines is written left-to-right.
     
@@ -40,7 +40,7 @@ class WritingMode(uno.Enum):
     
     Typically, this is the writing mode for normal \"alphabetic\" text.
     """
-    RL_TB: WritingMode = ...
+    RL_TB: PyiWritingMode = ...
     """
     text within a line are written right-to-left.
     
@@ -48,7 +48,7 @@ class WritingMode(uno.Enum):
     
     Typically, this writing mode is used in Arabic and Hebrew text.
     """
-    TB_RL: WritingMode = ...
+    TB_RL: PyiWritingMode = ...
     """
     text within a line is written top-to-bottom.
     

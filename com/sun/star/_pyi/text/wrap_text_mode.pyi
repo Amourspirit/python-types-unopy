@@ -32,13 +32,13 @@ class WrapTextMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.text.WrapTextMode'
 
-    DYNAMIC: WrapTextMode = ...
+    DYNAMIC: PyiWrapTextMode = ...
     """
     text flow depends on the situation.
     
     The text formatting decides the best way.
     """
-    LEFT: WrapTextMode = ...
+    LEFT: PyiWrapTextMode = ...
     """
     the object is left adjusted.
     
@@ -46,15 +46,15 @@ class WrapTextMode(uno.Enum):
     
     adjusted to the left.
     """
-    NONE: WrapTextMode = ...
+    NONE: PyiWrapTextMode = ...
     """
     text does not flow around the object.
     """
-    PARALLEL: WrapTextMode = ...
+    PARALLEL: PyiWrapTextMode = ...
     """
     text flows to the left and right of the object.
     """
-    RIGHT: WrapTextMode = ...
+    RIGHT: PyiWrapTextMode = ...
     """
     the object is right adjusted.
     
@@ -62,11 +62,11 @@ class WrapTextMode(uno.Enum):
     
     adjusted to the right.
     """
-    THROUGH: WrapTextMode = ...
+    THROUGH: PyiWrapTextMode = ...
     """
     text flow ignores the object.
     """
-    THROUGHT: WrapTextMode = ...
+    THROUGHT: PyiWrapTextMode = ...
     """
     text flow ignores the object: errant spelling deprecated in version 5.4
     """

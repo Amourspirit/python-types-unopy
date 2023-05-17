@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.registry.registry_key_type import RegistryKeyType as PyiRegistryKeyType
 """
 Enum
 
@@ -29,10 +30,10 @@ See Also:
 """
 typeName: str = 'com.sun.star.registry.RegistryKeyType'
 
-KEY: RegistryKeyType = ...
+KEY: PyiRegistryKeyType = ...
 """
 """
-LINK: RegistryKeyType = ...
+LINK: PyiRegistryKeyType = ...
 """
 """
 

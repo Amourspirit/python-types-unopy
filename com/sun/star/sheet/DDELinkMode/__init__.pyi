@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.dde_link_mode import DDELinkMode as PyiDDELinkMode
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.DDELinkMode'
 
-DEFAULT: DDELinkMode = ...
+DEFAULT: PyiDDELinkMode = ...
 """
 numbers are converted into the default format.
 """
-ENGLISH: DDELinkMode = ...
+ENGLISH: PyiDDELinkMode = ...
 """
 numbers are converted into the English default format.
 """
-TEXT: DDELinkMode = ...
+TEXT: PyiDDELinkMode = ...
 """
 numbers are not converted, but treated as text.
 """

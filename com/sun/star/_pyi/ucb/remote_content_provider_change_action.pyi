@@ -32,11 +32,11 @@ class RemoteContentProviderChangeAction(uno.Enum):
     """
     typeName: str = 'com.sun.star.ucb.RemoteContentProviderChangeAction'
 
-    ADDED: RemoteContentProviderChangeAction = ...
+    ADDED: PyiRemoteContentProviderChangeAction = ...
     """
     The indicator that a remote content provider has been added.
     """
-    REMOVED: RemoteContentProviderChangeAction = ...
+    REMOVED: PyiRemoteContentProviderChangeAction = ...
     """
     The indicator that a remote content provider has been removed.
     """

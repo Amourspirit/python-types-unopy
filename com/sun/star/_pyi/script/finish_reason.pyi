@@ -32,17 +32,17 @@ class FinishReason(uno.Enum):
     """
     typeName: str = 'com.sun.star.script.FinishReason'
 
-    Cancel: FinishReason = ...
+    Cancel: PyiFinishReason = ...
     """
     script in the engine was cancelled.
     
     script execution was cancelled.
     """
-    Error: FinishReason = ...
+    Error: PyiFinishReason = ...
     """
     error occurred during script execution or compiling.
     """
-    OK: FinishReason = ...
+    OK: PyiFinishReason = ...
     """
     script in the engine terminated normally.
     """

@@ -32,47 +32,47 @@ class FrameAction(uno.Enum):
     """
     typeName: str = 'com.sun.star.frame.FrameAction'
 
-    COMPONENT_ATTACHED: FrameAction = ...
+    COMPONENT_ATTACHED: PyiFrameAction = ...
     """
     an event of this kind is broadcast whenever a component is attached to a frame
     
     This is almost the same as the instantiation of the component within that frame. The component is attached to the frame immediately before this event is broadcast.
     """
-    COMPONENT_DETACHING: FrameAction = ...
+    COMPONENT_DETACHING: PyiFrameAction = ...
     """
     an event of this kind is broadcast whenever a component is detaching from a frame
     
     This is quite the same as the destruction of the component which was in that frame. At the moment when the event is broadcast the component is still attached to the frame but in the next moment it won't.
     """
-    COMPONENT_REATTACHED: FrameAction = ...
+    COMPONENT_REATTACHED: PyiFrameAction = ...
     """
     an event of this kind is broadcast whenever a component is attached to a new model.
     
     In this case the component remains the same but operates on a new model component.
     """
-    CONTEXT_CHANGED: FrameAction = ...
+    CONTEXT_CHANGED: PyiFrameAction = ...
     """
     an event of this kind is broadcast whenever a component changes its internal context (i.e., the selection).
     
     If the activation status within a frame changes, this counts as a context change too.
     """
-    FRAME_ACTIVATED: FrameAction = ...
+    FRAME_ACTIVATED: PyiFrameAction = ...
     """
     an event of this kind is broadcast whenever a component gets activated
     
     Activations are broadcast from the top component which was not active before, down to the inner most component.
     """
-    FRAME_DEACTIVATING: FrameAction = ...
+    FRAME_DEACTIVATING: PyiFrameAction = ...
     """
     an event of this kind is broadcasted immediately before the component is deactivated
     
     Deactivations are broadcast from the innermost component which does not stay active up to the outer most component which does not stay active.
     """
-    FRAME_UI_ACTIVATED: FrameAction = ...
+    FRAME_UI_ACTIVATED: PyiFrameAction = ...
     """
     an event of this kind is broadcast by an active frame when it is getting UI control (tool control).
     """
-    FRAME_UI_DEACTIVATING: FrameAction = ...
+    FRAME_UI_DEACTIVATING: PyiFrameAction = ...
     """
     an event of this kind is broadcast by an active frame when it is losing UI control (tool control).
     """

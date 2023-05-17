@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.awt.font_slant import FontSlant as PyiFontSlant
 """
 Enum
 
@@ -29,29 +30,29 @@ See Also:
 """
 typeName: str = 'com.sun.star.awt.FontSlant'
 
-DONTKNOW: FontSlant = ...
+DONTKNOW: PyiFontSlant = ...
 """
 specifies a font with an unknown slant.
 
 specifies that the menu item type is unknown.
 """
-ITALIC: FontSlant = ...
+ITALIC: PyiFontSlant = ...
 """
 specifies an italic font (slant designed into the font).
 """
-NONE: FontSlant = ...
+NONE: PyiFontSlant = ...
 """
 specifies a font without slant.
 """
-OBLIQUE: FontSlant = ...
+OBLIQUE: PyiFontSlant = ...
 """
 specifies an oblique font (slant not designed into the font).
 """
-REVERSE_ITALIC: FontSlant = ...
+REVERSE_ITALIC: PyiFontSlant = ...
 """
 specifies a reverse italic font (slant designed into the font).
 """
-REVERSE_OBLIQUE: FontSlant = ...
+REVERSE_OBLIQUE: PyiFontSlant = ...
 """
 specifies a reverse oblique font (slant not designed into the font).
 """

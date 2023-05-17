@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.mail.mail_service_type import MailServiceType as PyiMailServiceType
 """
 Enum
 
@@ -30,15 +31,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.mail.MailServiceType'
 
-IMAP: MailServiceType = ...
+IMAP: PyiMailServiceType = ...
 """
 A IMAP service.
 """
-POP3: MailServiceType = ...
+POP3: PyiMailServiceType = ...
 """
 A POP3 service.
 """
-SMTP: MailServiceType = ...
+SMTP: PyiMailServiceType = ...
 """
 A SMTP service.
 """

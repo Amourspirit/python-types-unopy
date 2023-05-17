@@ -32,23 +32,23 @@ class ChartAxisLabelPosition(uno.Enum):
     """
     typeName: str = 'com.sun.star.chart.ChartAxisLabelPosition'
 
-    NEAR_AXIS: ChartAxisLabelPosition = ...
+    NEAR_AXIS: PyiChartAxisLabelPosition = ...
     """
     The labels are placed adjacent to the axis.
     
     When the axis itself is placed at the minimum or maximum of the scale ( that is when the property CrossoverPosition equals ChartAxisPosition_MINIMUM or ChartAxisPosition_MAXIMUM) the labels are placed outside the coordinate system. Otherwise the labels are placed adjacent to the axis on that side that belongs to the lower values on the crossing axis. E.g. when the ChartAxisLabelPosition is set to NEAR_AXIS for an y axis the labels are placed adjacent to the y axis on that side that belongs to the lower x values.
     """
-    NEAR_AXIS_OTHER_SIDE: ChartAxisLabelPosition = ...
+    NEAR_AXIS_OTHER_SIDE: PyiChartAxisLabelPosition = ...
     """
     The labels are placed adjacent to the axis on the opposite side as for NEAR_AXIS.
     """
-    OUTSIDE_END: ChartAxisLabelPosition = ...
+    OUTSIDE_END: PyiChartAxisLabelPosition = ...
     """
     The labels are placed outside the coordinate region on that side where the crossing axis has its maximum value.
     
     E.g. when this is set for an y axis the labels are placed outside the diagram on that side where to the x axis has its maximum value.
     """
-    OUTSIDE_START: ChartAxisLabelPosition = ...
+    OUTSIDE_START: PyiChartAxisLabelPosition = ...
     """
     The labels are placed outside the coordinate region on that side where the crossing axis has its minimum value.
     

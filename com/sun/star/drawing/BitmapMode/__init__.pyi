@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.bitmap_mode import BitmapMode as PyiBitmapMode
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.BitmapMode'
 
-NO_REPEAT: BitmapMode = ...
+NO_REPEAT: PyiBitmapMode = ...
 """
 the bitmap is painted in its original or selected size.
 """
-REPEAT: BitmapMode = ...
+REPEAT: PyiBitmapMode = ...
 """
 the bitmap is repeated over the fill area.
 """
-STRETCH: BitmapMode = ...
+STRETCH: PyiBitmapMode = ...
 """
 the bitmap is stretched to fill the area.
 

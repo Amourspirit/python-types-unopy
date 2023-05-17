@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.table.cell_orientation import CellOrientation as PyiCellOrientation
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.table.CellOrientation'
 
-BOTTOMTOP: CellOrientation = ...
+BOTTOMTOP: PyiCellOrientation = ...
 """
 contents are printed from bottom to top.
 """
-STACKED: CellOrientation = ...
+STACKED: PyiCellOrientation = ...
 """
 contents are printed from top to bottom with individual characters in normal (horizontal) orientation.
 """
-STANDARD: CellOrientation = ...
+STANDARD: PyiCellOrientation = ...
 """
 default alignment is used (left for numbers, right for text).
 
@@ -45,7 +46,7 @@ default alignment is used.
 
 contents are printed from left to right.
 """
-TOPBOTTOM: CellOrientation = ...
+TOPBOTTOM: PyiCellOrientation = ...
 """
 contents are printed from top to bottom.
 """

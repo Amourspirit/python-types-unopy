@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.filter_operator import FilterOperator as PyiFilterOperator
 """
 Enum
 
@@ -29,31 +30,31 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.FilterOperator'
 
-BOTTOM_PERCENT: FilterOperator = ...
+BOTTOM_PERCENT: PyiFilterOperator = ...
 """
 selects a specified percentage of entries with the lowest values.
 """
-BOTTOM_VALUES: FilterOperator = ...
+BOTTOM_VALUES: PyiFilterOperator = ...
 """
 selects a specified number of entries with the lowest values.
 """
-EMPTY: FilterOperator = ...
+EMPTY: PyiFilterOperator = ...
 """
 selects empty entries.
 """
-EQUAL: FilterOperator = ...
+EQUAL: PyiFilterOperator = ...
 """
 value has to be equal to the specified value.
 
 The cell value is equal to the specified value.
 """
-GREATER: FilterOperator = ...
+GREATER: PyiFilterOperator = ...
 """
 the value has to be greater than the specified value.
 
 value has to be greater than the specified value.
 """
-GREATER_EQUAL: FilterOperator = ...
+GREATER_EQUAL: PyiFilterOperator = ...
 """
 the value has to be greater than or equal to the specified value.
 
@@ -61,13 +62,13 @@ The cell value is greater or equal to the specified value.
 
 value has to be greater than or equal to the specified value.
 """
-LESS: FilterOperator = ...
+LESS: PyiFilterOperator = ...
 """
 the value has to be less than the specified value.
 
 value has to be less than the specified value.
 """
-LESS_EQUAL: FilterOperator = ...
+LESS_EQUAL: PyiFilterOperator = ...
 """
 the value has to be less than or equal to the specified value.
 
@@ -75,21 +76,21 @@ The cell value is less or equal to the specified value.
 
 value has to be less than or equal to the specified value.
 """
-NOT_EMPTY: FilterOperator = ...
+NOT_EMPTY: PyiFilterOperator = ...
 """
 selects non-empty entries.
 """
-NOT_EQUAL: FilterOperator = ...
+NOT_EQUAL: PyiFilterOperator = ...
 """
 the value must not be equal to the specified value.
 
 value must not be equal to the specified value.
 """
-TOP_PERCENT: FilterOperator = ...
+TOP_PERCENT: PyiFilterOperator = ...
 """
 selects a specified percentage of entries with the greatest values.
 """
-TOP_VALUES: FilterOperator = ...
+TOP_VALUES: PyiFilterOperator = ...
 """
 selects a specified number of entries with the greatest values.
 """

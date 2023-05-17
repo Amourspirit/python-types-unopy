@@ -32,11 +32,11 @@ class FormSubmitMethod(uno.Enum):
     """
     typeName: str = 'com.sun.star.form.FormSubmitMethod'
 
-    GET: FormSubmitMethod = ...
+    GET: PyiFormSubmitMethod = ...
     """
     specifies to append the input information of a form to the target URL as parameters.
     """
-    POST: FormSubmitMethod = ...
+    POST: PyiFormSubmitMethod = ...
     """
     specifies to send the input information in a data body.
     """

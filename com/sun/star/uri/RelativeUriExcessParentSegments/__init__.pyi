@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.uri.relative_uri_excess_parent_segments import RelativeUriExcessParentSegments as PyiRelativeUriExcessParentSegments
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.uri.RelativeUriExcessParentSegments'
 
-ERROR: RelativeUriExcessParentSegments = ...
+ERROR: PyiRelativeUriExcessParentSegments = ...
 """
 causes excess special parent segments to be treated as an error.
 """
-REMOVE: RelativeUriExcessParentSegments = ...
+REMOVE: PyiRelativeUriExcessParentSegments = ...
 """
 causes excess special parent segments to be removed.
 """
-RETAIN: RelativeUriExcessParentSegments = ...
+RETAIN: PyiRelativeUriExcessParentSegments = ...
 """
 causes excess special parent segments to be retained, treating them like ordinary segments.
 """

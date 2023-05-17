@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart2.legend_position import LegendPosition as PyiLegendPosition
 """
 Enum
 
@@ -30,23 +31,23 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart2.LegendPosition'
 
-CUSTOM: LegendPosition = ...
+CUSTOM: PyiLegendPosition = ...
 """
 The position of the legend is given by an offset value.
 """
-LINE_END: LegendPosition = ...
+LINE_END: PyiLegendPosition = ...
 """
 In LTR mode this is the right-hand side.
 """
-LINE_START: LegendPosition = ...
+LINE_START: PyiLegendPosition = ...
 """
 In LTR mode this is the left-hand side.
 """
-PAGE_END: LegendPosition = ...
+PAGE_END: PyiLegendPosition = ...
 """
 In LTR mode this is the bottom side.
 """
-PAGE_START: LegendPosition = ...
+PAGE_START: PyiLegendPosition = ...
 """
 In LTR mode this is the top side.
 """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.text.page_number_type import PageNumberType as PyiPageNumberType
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.text.PageNumberType'
 
-CURRENT: PageNumberType = ...
+CURRENT: PyiPageNumberType = ...
 """
 The number of the current page is displayed.
 """
-NEXT: PageNumberType = ...
+NEXT: PyiPageNumberType = ...
 """
 The number of the next page is displayed if there is any, otherwise the field is empty.
 """
-PREV: PageNumberType = ...
+PREV: PyiPageNumberType = ...
 """
 The number of the previous page is displayed if there is any, otherwise the field is empty.
 """

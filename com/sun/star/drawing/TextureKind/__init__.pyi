@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.texture_kind import TextureKind as PyiTextureKind
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.TextureKind'
 
-COLOR: TextureKind = ...
+COLOR: PyiTextureKind = ...
 """
 With this mode the lighting is ignored and only the texture color information is used.
 
 With this mode, the lighting is ignored and only the texture color information is used.
 """
-LUMINANCE: TextureKind = ...
+LUMINANCE: PyiTextureKind = ...
 """
 With TextureKind LUMINANCE, the texture and the lighting information is mixed to produce the image, so a lit, textured object is achieved.
 """

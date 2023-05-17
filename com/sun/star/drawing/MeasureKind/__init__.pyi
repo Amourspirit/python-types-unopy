@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.measure_kind import MeasureKind as PyiMeasureKind
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.MeasureKind'
 
-RADIUS: MeasureKind = ...
+RADIUS: PyiMeasureKind = ...
 """
 use the radius measurement.
 
 This option cannot be used from the GUI Interface.
 """
-STANDARD: MeasureKind = ...
+STANDARD: PyiMeasureKind = ...
 """
 the graphic is rendered in the default color style of the output device,
 

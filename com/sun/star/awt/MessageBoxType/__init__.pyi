@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.awt.message_box_type import MessageBoxType as PyiMessageBoxType
 """
 Enum
 
@@ -29,23 +30,23 @@ See Also:
 """
 typeName: str = 'com.sun.star.awt.MessageBoxType'
 
-ERRORBOX: MessageBoxType = ...
+ERRORBOX: PyiMessageBoxType = ...
 """
 A message box to provide an error message to the user.
 """
-INFOBOX: MessageBoxType = ...
+INFOBOX: PyiMessageBoxType = ...
 """
 A message box to inform the user about a certain event.
 """
-MESSAGEBOX: MessageBoxType = ...
+MESSAGEBOX: PyiMessageBoxType = ...
 """
 A normal message box.
 """
-QUERYBOX: MessageBoxType = ...
+QUERYBOX: PyiMessageBoxType = ...
 """
 A message box to query information from the user.
 """
-WARNINGBOX: MessageBoxType = ...
+WARNINGBOX: PyiMessageBoxType = ...
 """
 A message to warn the user about a certain problem.
 """

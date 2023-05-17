@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.reflection.method_mode import MethodMode as PyiMethodMode
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.reflection.MethodMode'
 
-ONEWAY: MethodMode = ...
+ONEWAY: PyiMethodMode = ...
 """
 method may be run asynchronously
 """
-TWOWAY: MethodMode = ...
+TWOWAY: PyiMethodMode = ...
 """
 method is run The
 """

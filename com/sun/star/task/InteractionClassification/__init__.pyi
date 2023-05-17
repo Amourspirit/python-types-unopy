@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.task.interaction_classification import InteractionClassification as PyiInteractionClassification
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.task.InteractionClassification'
 
-ERROR: InteractionClassification = ...
+ERROR: PyiInteractionClassification = ...
 """
 An error.
 """
-INFO: InteractionClassification = ...
+INFO: PyiInteractionClassification = ...
 """
 Some information for the client/user (which will typically lead to the selection of an com.sun.star.task.XInteractionApprove continuation).
 """
-QUERY: InteractionClassification = ...
+QUERY: PyiInteractionClassification = ...
 """
 A query for the client/user (which will typically lead to the selection of an com.sun.star.task.XInteractionApprove or com.sun.star.task.XInteractionDisapprove continuation).
 """
-WARNING: InteractionClassification = ...
+WARNING: PyiInteractionClassification = ...
 """
 A warning, less severe than an error.
 """

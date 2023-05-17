@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.folder_list_command import FolderListCommand as PyiFolderListCommand
 """
 Enum
 
@@ -29,17 +30,17 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.FolderListCommand'
 
-GET: FolderListCommand = ...
+GET: PyiFolderListCommand = ...
 """
 Get a list of all folders.
 
 HTTP request method as defined in RFC 2616: Hypertext Transfer Protocol – HTTP/1.1
 """
-GET_SUBSCRIBED: FolderListCommand = ...
+GET_SUBSCRIBED: PyiFolderListCommand = ...
 """
 Get a list of subscribed folders.
 """
-SET: FolderListCommand = ...
+SET: PyiFolderListCommand = ...
 """
 Set a list of folders.
 """

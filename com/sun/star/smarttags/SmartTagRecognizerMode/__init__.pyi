@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.smarttags.smart_tag_recognizer_mode import SmartTagRecognizerMode as PyiSmartTagRecognizerMode
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.smarttags.SmartTagRecognizerMode'
 
-CELL: SmartTagRecognizerMode = ...
+CELL: PyiSmartTagRecognizerMode = ...
 """
 Text passed to the recognizer is a cell.
 """
-CHAR: SmartTagRecognizerMode = ...
+CHAR: PyiSmartTagRecognizerMode = ...
 """
 Text passed to the recognizer is a single character.
 """
-PARAGRAPH: SmartTagRecognizerMode = ...
+PARAGRAPH: PyiSmartTagRecognizerMode = ...
 """
 Text passed to the recognizer is a paragraph.
 """
-SINGLE_WORD: SmartTagRecognizerMode = ...
+SINGLE_WORD: PyiSmartTagRecognizerMode = ...
 """
 Text passed to the recognizer is a single word.
 """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.awt.menu_item_type import MenuItemType as PyiMenuItemType
 """
 Enum
 
@@ -29,25 +30,25 @@ See Also:
 """
 typeName: str = 'com.sun.star.awt.MenuItemType'
 
-DONTKNOW: MenuItemType = ...
+DONTKNOW: PyiMenuItemType = ...
 """
 specifies a font with an unknown slant.
 
 specifies that the menu item type is unknown.
 """
-IMAGE: MenuItemType = ...
+IMAGE: PyiMenuItemType = ...
 """
 specifies that the menu item has an image.
 """
-SEPARATOR: MenuItemType = ...
+SEPARATOR: PyiMenuItemType = ...
 """
 specifies that the menu item is a separator.
 """
-STRING: MenuItemType = ...
+STRING: PyiMenuItemType = ...
 """
 specifies that the menu item has a text.
 """
-STRINGIMAGE: MenuItemType = ...
+STRINGIMAGE: PyiMenuItemType = ...
 """
 specifies that the menu item has a text and an image.
 """

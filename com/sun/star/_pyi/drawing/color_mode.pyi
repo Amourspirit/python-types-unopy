@@ -32,15 +32,15 @@ class ColorMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.ColorMode'
 
-    GREYS: ColorMode = ...
+    GREYS: PyiColorMode = ...
     """
     the graphic is rendered in grayscale on the output device,
     """
-    MONO: ColorMode = ...
+    MONO: PyiColorMode = ...
     """
     the graphic is rendered in black and white only,
     """
-    STANDARD: ColorMode = ...
+    STANDARD: PyiColorMode = ...
     """
     the graphic is rendered in the default color style of the output device,
     
@@ -48,7 +48,7 @@ class ColorMode(uno.Enum):
     
     the connector is drawn with three lines, with the middle line perpendicular to the other two
     """
-    WATERMARK: ColorMode = ...
+    WATERMARK: PyiColorMode = ...
     """
     the graphic is rendered in a watermark like style,
     """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.lock_type import LockType as PyiLockType
 """
 Enum
 
@@ -29,7 +30,7 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.LockType'
 
-WRITE: LockType = ...
+WRITE: PyiLockType = ...
 """
 specifies a write lock.
 """

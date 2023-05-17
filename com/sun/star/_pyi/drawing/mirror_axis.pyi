@@ -32,11 +32,11 @@ class MirrorAxis(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.MirrorAxis'
 
-    HORIZONTAL: MirrorAxis = ...
+    HORIZONTAL: PyiMirrorAxis = ...
     """
     mirror to the horizontal axis
     """
-    VERTICAL: MirrorAxis = ...
+    VERTICAL: PyiMirrorAxis = ...
     """
     mirror to the vertical axis
     """

@@ -32,17 +32,17 @@ class ChartAxisMarkPosition(uno.Enum):
     """
     typeName: str = 'com.sun.star.chart.ChartAxisMarkPosition'
 
-    AT_AXIS: ChartAxisMarkPosition = ...
+    AT_AXIS: PyiChartAxisMarkPosition = ...
     """
     The interval marks are drawn at the axis line.
     
     This makes a difference to \"AT_LABELS\" only when the labels are not placed near the axis (
     """
-    AT_LABELS: ChartAxisMarkPosition = ...
+    AT_LABELS: PyiChartAxisMarkPosition = ...
     """
     The interval marks are drawn besides the axis labels.
     """
-    AT_LABELS_AND_AXIS: ChartAxisMarkPosition = ...
+    AT_LABELS_AND_AXIS: PyiChartAxisMarkPosition = ...
     """
     Interval marks are drawn at the axis line and also besides the axis labels.
     

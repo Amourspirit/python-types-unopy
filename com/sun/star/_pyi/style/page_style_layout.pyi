@@ -32,11 +32,11 @@ class PageStyleLayout(uno.Enum):
     """
     typeName: str = 'com.sun.star.style.PageStyleLayout'
 
-    ALL: PageStyleLayout = ...
+    ALL: PyiPageStyleLayout = ...
     """
     The page style is identically used for left and right pages.
     """
-    LEFT: PageStyleLayout = ...
+    LEFT: PyiPageStyleLayout = ...
     """
     set the horizontal alignment to the left margin from the container object
     
@@ -46,11 +46,11 @@ class PageStyleLayout(uno.Enum):
     
     The page style is only used for left pages.
     """
-    MIRRORED: PageStyleLayout = ...
+    MIRRORED: PyiPageStyleLayout = ...
     """
     The page style is used unchanged for left pages and mirrored for right pages.
     """
-    RIGHT: PageStyleLayout = ...
+    RIGHT: PyiPageStyleLayout = ...
     """
     set the horizontal alignment to the right margin from the container object
     

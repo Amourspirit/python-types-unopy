@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart.chart_axis_arrange_order_type import ChartAxisArrangeOrderType as PyiChartAxisArrangeOrderType
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart.ChartAxisArrangeOrderType'
 
-AUTO: ChartAxisArrangeOrderType = ...
+AUTO: PyiChartAxisArrangeOrderType = ...
 """
 The descriptions are arranged automatically.
 """
-SIDE_BY_SIDE: ChartAxisArrangeOrderType = ...
+SIDE_BY_SIDE: PyiChartAxisArrangeOrderType = ...
 """
 The descriptions are arranged side by side.
 """
-STAGGER_EVEN: ChartAxisArrangeOrderType = ...
+STAGGER_EVEN: PyiChartAxisArrangeOrderType = ...
 """
 The descriptions are alternately put on two lines with the even values out of the normal line.
 """
-STAGGER_ODD: ChartAxisArrangeOrderType = ...
+STAGGER_ODD: PyiChartAxisArrangeOrderType = ...
 """
 The descriptions are alternately put on two lines with the odd values out of the normal line.
 """

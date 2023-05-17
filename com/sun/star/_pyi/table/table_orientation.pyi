@@ -32,11 +32,11 @@ class TableOrientation(uno.Enum):
     """
     typeName: str = 'com.sun.star.table.TableOrientation'
 
-    COLUMNS: TableOrientation = ...
+    COLUMNS: PyiTableOrientation = ...
     """
     operations are carried out on columns.
     """
-    ROWS: TableOrientation = ...
+    ROWS: PyiTableOrientation = ...
     """
     operations are carried out on rows.
     """

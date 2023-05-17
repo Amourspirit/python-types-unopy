@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart.chart_error_category import ChartErrorCategory as PyiChartErrorCategory
 """
 Enum
 
@@ -29,17 +30,17 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart.ChartErrorCategory'
 
-CONSTANT_VALUE: ChartErrorCategory = ...
+CONSTANT_VALUE: PyiChartErrorCategory = ...
 """
 displays the same lower and upper error indicators for all data points.
 
 The values for these are given as absolute numbers in ChartStatistics.ConstantErrorLow and ChartStatistics.ConstantErrorHigh
 """
-ERROR_MARGIN: ChartErrorCategory = ...
+ERROR_MARGIN: PyiChartErrorCategory = ...
 """
 The length of the error indicators for all data points is calculated by taking the percentage given as ChartStatistics.ErrorMargin of the largest data point value.
 """
-NONE: ChartErrorCategory = ...
+NONE: PyiChartErrorCategory = ...
 """
 error indicators are not displayed.
 
@@ -49,15 +50,15 @@ no chart legend is displayed.
 
 displays no error indicators.
 """
-PERCENT: ChartErrorCategory = ...
+PERCENT: PyiChartErrorCategory = ...
 """
 The length of the error indicators is calculated for each data point by taking the percentage given as ChartStatistics.PercentageError of its value.
 """
-STANDARD_DEVIATION: ChartErrorCategory = ...
+STANDARD_DEVIATION: PyiChartErrorCategory = ...
 """
 displays error indicators for the standard deviation (square root of variance) of the data row.
 """
-VARIANCE: ChartErrorCategory = ...
+VARIANCE: PyiChartErrorCategory = ...
 """
 displays error indicators for the variance of the data row.
 """

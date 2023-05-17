@@ -32,13 +32,13 @@ class HorizontalAdjust(uno.Enum):
     """
     typeName: str = 'com.sun.star.text.HorizontalAdjust'
 
-    CENTER: HorizontalAdjust = ...
+    CENTER: PyiHorizontalAdjust = ...
     """
     the object is adjusted to the center.
     
     centric adjusted.
     """
-    LEFT: HorizontalAdjust = ...
+    LEFT: PyiHorizontalAdjust = ...
     """
     the object is left adjusted.
     
@@ -46,7 +46,7 @@ class HorizontalAdjust(uno.Enum):
     
     adjusted to the left.
     """
-    RIGHT: HorizontalAdjust = ...
+    RIGHT: PyiHorizontalAdjust = ...
     """
     the object is right adjusted.
     
