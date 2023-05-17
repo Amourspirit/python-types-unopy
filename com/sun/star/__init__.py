@@ -1,9 +1,8 @@
-# coding: utf-8
 import os
 from typing import TYPE_CHECKING
 
-__version__ = "1.0.4"
-__version_tmpl__ = "0.2.16"
+__version__ = "1.0.5"
+__version_tmpl__ = "0.3.0"
 
 _IGNORE_IMPORT_ERROR = os.environ.get(
     "ooouno_ignore_import_error", None) in ("True", "true", "yes")
