@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.style.vertical_alignment import VerticalAlignment as PyiVerticalAlignment
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.style.VerticalAlignment'
 
-BOTTOM: VerticalAlignment = ...
+BOTTOM: PyiVerticalAlignment = ...
 """
 set the vertical alignment to the bottom margin from the container object.
 """
-MIDDLE: VerticalAlignment = ...
+MIDDLE: PyiVerticalAlignment = ...
 """
 set the vertical alignment to the top margin from the container object.
 """
-TOP: VerticalAlignment = ...
+TOP: PyiVerticalAlignment = ...
 """
 set the vertical alignment to the center between the top and bottom margins from the container object.
 """

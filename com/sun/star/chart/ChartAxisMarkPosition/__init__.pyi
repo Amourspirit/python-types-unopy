@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart.chart_axis_mark_position import ChartAxisMarkPosition as PyiChartAxisMarkPosition
 """
 Enum
 
@@ -29,17 +30,17 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart.ChartAxisMarkPosition'
 
-AT_AXIS: ChartAxisMarkPosition = ...
+AT_AXIS: PyiChartAxisMarkPosition = ...
 """
 The interval marks are drawn at the axis line.
 
 This makes a difference to \"AT_LABELS\" only when the labels are not placed near the axis (
 """
-AT_LABELS: ChartAxisMarkPosition = ...
+AT_LABELS: PyiChartAxisMarkPosition = ...
 """
 The interval marks are drawn besides the axis labels.
 """
-AT_LABELS_AND_AXIS: ChartAxisMarkPosition = ...
+AT_LABELS_AND_AXIS: PyiChartAxisMarkPosition = ...
 """
 Interval marks are drawn at the axis line and also besides the axis labels.
 

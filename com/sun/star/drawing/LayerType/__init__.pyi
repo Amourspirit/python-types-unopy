@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.layer_type import LayerType as PyiLayerType
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.LayerType'
 
-CONTROLSA: LayerType = ...
+CONTROLSA: PyiLayerType = ...
 """
 This is the layer for the controls.
 """
-DIMENSIONIANG_LINES: LayerType = ...
+DIMENSIONIANG_LINES: PyiLayerType = ...
 """
 This is the layer for all measure shapes.
 """
-LAYOUT: LayerType = ...
+LAYOUT: PyiLayerType = ...
 """
 This is the layer for all standard shapes.
 """
-USER_DEFINED: LayerType = ...
+USER_DEFINED: PyiLayerType = ...
 """
 There can be zero or more layers of this type.
 """

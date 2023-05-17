@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.script.finish_reason import FinishReason as PyiFinishReason
 """
 Enum
 
@@ -29,17 +30,17 @@ See Also:
 """
 typeName: str = 'com.sun.star.script.FinishReason'
 
-Cancel: FinishReason = ...
+Cancel: PyiFinishReason = ...
 """
 script in the engine was cancelled.
 
 script execution was cancelled.
 """
-Error: FinishReason = ...
+Error: PyiFinishReason = ...
 """
 error occurred during script execution or compiling.
 """
-OK: FinishReason = ...
+OK: PyiFinishReason = ...
 """
 script in the engine terminated normally.
 """

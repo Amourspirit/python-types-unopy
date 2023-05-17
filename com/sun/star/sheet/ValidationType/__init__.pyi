@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.validation_type import ValidationType as PyiValidationType
 """
 Enum
 
@@ -29,37 +30,37 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.ValidationType'
 
-ANY: ValidationType = ...
+ANY: PyiValidationType = ...
 """
 any cell content is valid; no conditions are used.
 """
-CUSTOM: ValidationType = ...
+CUSTOM: PyiValidationType = ...
 """
 The specified formula determines which contents are valid.
 """
-DATE: ValidationType = ...
+DATE: PyiValidationType = ...
 """
 specifies an arithmetic series for date values.
 
 any date value matching the specified condition is valid.
 """
-DECIMAL: ValidationType = ...
+DECIMAL: PyiValidationType = ...
 """
 any number matching the specified condition is valid.
 """
-LIST: ValidationType = ...
+LIST: PyiValidationType = ...
 """
 Only strings from a specified list are valid.
 """
-TEXT_LEN: ValidationType = ...
+TEXT_LEN: PyiValidationType = ...
 """
 string is valid if its length matches the specified condition.
 """
-TIME: ValidationType = ...
+TIME: PyiValidationType = ...
 """
 any time value matching the specified condition is valid.
 """
-WHOLE: ValidationType = ...
+WHOLE: PyiValidationType = ...
 """
 any whole number matching the specified condition is valid.
 """

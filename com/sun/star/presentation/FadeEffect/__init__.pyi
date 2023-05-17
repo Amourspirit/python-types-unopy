@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.presentation.fade_effect import FadeEffect as PyiFadeEffect
 """
 Enum
 
@@ -29,163 +30,163 @@ See Also:
 """
 typeName: str = 'com.sun.star.presentation.FadeEffect'
 
-CLOCKWISE: FadeEffect = ...
+CLOCKWISE: PyiFadeEffect = ...
 """
 use the animation effect \"Clockwise\".
 
 use the fade effect \"Clockwise\".
 """
-CLOSE_HORIZONTAL: FadeEffect = ...
+CLOSE_HORIZONTAL: PyiFadeEffect = ...
 """
 use the animation effect \"Close Horizontal\".
 
 use the fade effect \"Close Horizontal\".
 """
-CLOSE_VERTICAL: FadeEffect = ...
+CLOSE_VERTICAL: PyiFadeEffect = ...
 """
 use the animation effect \"Close Vertical\".
 
 use the fade effect \"Close Vertical\".
 """
-COUNTERCLOCKWISE: FadeEffect = ...
+COUNTERCLOCKWISE: PyiFadeEffect = ...
 """
 use the animation effect \"Counter Clockwise\".
 
 use the fade effect \"Counter Clockwise\".
 """
-DISSOLVE: FadeEffect = ...
+DISSOLVE: PyiFadeEffect = ...
 """
 use the animation effect \"Spiral Inward Left\".
 
 use the fade effect \"Dissolve\".
 """
-FADE_FROM_BOTTOM: FadeEffect = ...
+FADE_FROM_BOTTOM: PyiFadeEffect = ...
 """
 use the animation effect \"Fade from Bottom\".
 
 use the fade effect \"Fade from Bottom\".
 """
-FADE_FROM_CENTER: FadeEffect = ...
+FADE_FROM_CENTER: PyiFadeEffect = ...
 """
 use the animation effect \"Fade from Center\".
 
 use the fade effect \"Fade from Center\".
 """
-FADE_FROM_LEFT: FadeEffect = ...
+FADE_FROM_LEFT: PyiFadeEffect = ...
 """
 use the animation effect \"Fade from Left\".
 
 use the fade effect \"Fade from Left\".
 """
-FADE_FROM_LOWERLEFT: FadeEffect = ...
+FADE_FROM_LOWERLEFT: PyiFadeEffect = ...
 """
 use the animation effect \"Fade from Lower Left\".
 
 use the fade effect \"Fade from Lower Left\".
 """
-FADE_FROM_LOWERRIGHT: FadeEffect = ...
+FADE_FROM_LOWERRIGHT: PyiFadeEffect = ...
 """
 use the animation effect \"Fade from Lower Right\".
 
 use the fade effect \"Fade from Lower Right\".
 """
-FADE_FROM_RIGHT: FadeEffect = ...
+FADE_FROM_RIGHT: PyiFadeEffect = ...
 """
 use the animation effect \"Fade from Right\".
 
 use the fade effect \"Fade from Right\".
 """
-FADE_FROM_TOP: FadeEffect = ...
+FADE_FROM_TOP: PyiFadeEffect = ...
 """
 use the animation effect \"Fade from Top\".
 
 use the fade effect \"Fade from Top\".
 """
-FADE_FROM_UPPERLEFT: FadeEffect = ...
+FADE_FROM_UPPERLEFT: PyiFadeEffect = ...
 """
 use the animation effect \"Fade from Upper Left\".
 
 use the fade effect \"Fade from Upper Left\".
 """
-FADE_FROM_UPPERRIGHT: FadeEffect = ...
+FADE_FROM_UPPERRIGHT: PyiFadeEffect = ...
 """
 use the animation effect \"Fade from Upper Right\".
 
 use the fade effect \"Fade from Upper Right\".
 """
-FADE_TO_CENTER: FadeEffect = ...
+FADE_TO_CENTER: PyiFadeEffect = ...
 """
 use the animation effect \"Fade to Center\".
 
 use the fade effect \"Fade to Center\".
 """
-HORIZONTAL_CHECKERBOARD: FadeEffect = ...
+HORIZONTAL_CHECKERBOARD: PyiFadeEffect = ...
 """
 use the animation effect \"Horizontal Checkerboard\".
 
 use the fade effect \"Horizontal Checkerboard\".
 """
-HORIZONTAL_LINES: FadeEffect = ...
+HORIZONTAL_LINES: PyiFadeEffect = ...
 """
 use the animation effect \"Horizontal Lines\".
 
 use the fade effect \"Horizontal Lines\".
 """
-HORIZONTAL_STRIPES: FadeEffect = ...
+HORIZONTAL_STRIPES: PyiFadeEffect = ...
 """
 use the animation effect \"Horizontal Stripes\".
 
 use the fade effect \"Horizontal Stripes\".
 """
-MOVE_FROM_BOTTOM: FadeEffect = ...
+MOVE_FROM_BOTTOM: PyiFadeEffect = ...
 """
 use the animation effect \"Move from Bottom\".
 
 use the fade effect \"Move from Bottom\".
 """
-MOVE_FROM_LEFT: FadeEffect = ...
+MOVE_FROM_LEFT: PyiFadeEffect = ...
 """
 use the animation effect \"Move from Left\".
 
 use the fade effect \"Move from Left\".
 """
-MOVE_FROM_LOWERLEFT: FadeEffect = ...
+MOVE_FROM_LOWERLEFT: PyiFadeEffect = ...
 """
 use the animation effect \"Move from Lower Left\".
 
 use the fade effect \"Move from Lower Left\".
 """
-MOVE_FROM_LOWERRIGHT: FadeEffect = ...
+MOVE_FROM_LOWERRIGHT: PyiFadeEffect = ...
 """
 use the animation effect \"Move from Lower Right\".
 
 use the fade effect \"Move from Lower Right\".
 """
-MOVE_FROM_RIGHT: FadeEffect = ...
+MOVE_FROM_RIGHT: PyiFadeEffect = ...
 """
 use the animation effect \"Move from Right\".
 
 use the fade effect \"Move from Right\".
 """
-MOVE_FROM_TOP: FadeEffect = ...
+MOVE_FROM_TOP: PyiFadeEffect = ...
 """
 use the animation effect \"Move from Top\".
 
 use the fade effect \"Move from Top\".
 """
-MOVE_FROM_UPPERLEFT: FadeEffect = ...
+MOVE_FROM_UPPERLEFT: PyiFadeEffect = ...
 """
 use the animation effect \"Move from Upper Left\".
 
 use the fade effect \"Move from Upper Left\".
 """
-MOVE_FROM_UPPERRIGHT: FadeEffect = ...
+MOVE_FROM_UPPERRIGHT: PyiFadeEffect = ...
 """
 use the animation effect \"Move from Upper Right\".
 
 use the fade effect \"Move from Upper Right\".
 """
-NONE: FadeEffect = ...
+NONE: PyiFadeEffect = ...
 """
 use no animation effects.
 
@@ -193,157 +194,157 @@ use no fade effects.
 
 No action is performed on click.
 """
-OPEN_HORIZONTAL: FadeEffect = ...
+OPEN_HORIZONTAL: PyiFadeEffect = ...
 """
 use the animation effect \"Open Horizontal\".
 
 use the fade effect \"Open Horizontal\".
 """
-OPEN_VERTICAL: FadeEffect = ...
+OPEN_VERTICAL: PyiFadeEffect = ...
 """
 use the animation effect \"Open Vertical\".
 
 use the fade effect \"Open Vertical\".
 """
-RANDOM: FadeEffect = ...
+RANDOM: PyiFadeEffect = ...
 """
 use the animation effect \"Random\".
 
 use the fade effect \"Random\".
 """
-ROLL_FROM_BOTTOM: FadeEffect = ...
+ROLL_FROM_BOTTOM: PyiFadeEffect = ...
 """
 use the fade effect \"Roll from Bottom\".
 """
-ROLL_FROM_LEFT: FadeEffect = ...
+ROLL_FROM_LEFT: PyiFadeEffect = ...
 """
 use the fade effect \"Roll from Left\".
 """
-ROLL_FROM_RIGHT: FadeEffect = ...
+ROLL_FROM_RIGHT: PyiFadeEffect = ...
 """
 use the fade effect \"Roll from Right\".
 """
-ROLL_FROM_TOP: FadeEffect = ...
+ROLL_FROM_TOP: PyiFadeEffect = ...
 """
 use the fade effect \"Roll from Top\".
 """
-SPIRALIN_LEFT: FadeEffect = ...
+SPIRALIN_LEFT: PyiFadeEffect = ...
 """
 use the animation effect \"Spiral Inward Left\".
 
 use the fade effect \"Spiral Inward Left\".
 """
-SPIRALIN_RIGHT: FadeEffect = ...
+SPIRALIN_RIGHT: PyiFadeEffect = ...
 """
 use the animation effect \"Spiral Inward Right\".
 
 use the fade effect \"Spiral Inward Right\".
 """
-SPIRALOUT_LEFT: FadeEffect = ...
+SPIRALOUT_LEFT: PyiFadeEffect = ...
 """
 use the animation effect \"Spiral Outward Left\".
 
 use the fade effect \"Spiral Outward Left\".
 """
-SPIRALOUT_RIGHT: FadeEffect = ...
+SPIRALOUT_RIGHT: PyiFadeEffect = ...
 """
 use the animation effect \"Spiral Outward Right\".
 
 use the fade effect \"Spiral Outward Right\".
 """
-STRETCH_FROM_BOTTOM: FadeEffect = ...
+STRETCH_FROM_BOTTOM: PyiFadeEffect = ...
 """
 use the animation effect \"Stretch From Bottom\".
 
 use the fade effect \"Stretch from Bottom\".
 """
-STRETCH_FROM_LEFT: FadeEffect = ...
+STRETCH_FROM_LEFT: PyiFadeEffect = ...
 """
 use the animation effect \"Stretch From Left\".
 
 use the fade effect \"Stretch from Left\".
 """
-STRETCH_FROM_RIGHT: FadeEffect = ...
+STRETCH_FROM_RIGHT: PyiFadeEffect = ...
 """
 use the animation effect \"Stretch From Right\".
 
 use the fade effect \"Stretch from Right\".
 """
-STRETCH_FROM_TOP: FadeEffect = ...
+STRETCH_FROM_TOP: PyiFadeEffect = ...
 """
 use the animation effect \"Stretch From Top\".
 
 use the fade effect \"Stretch from Top\".
 """
-UNCOVER_TO_BOTTOM: FadeEffect = ...
+UNCOVER_TO_BOTTOM: PyiFadeEffect = ...
 """
 use the fade effect \"Uncover to Bottom\".
 """
-UNCOVER_TO_LEFT: FadeEffect = ...
+UNCOVER_TO_LEFT: PyiFadeEffect = ...
 """
 use the fade effect \"Uncover to Left\".
 """
-UNCOVER_TO_LOWERLEFT: FadeEffect = ...
+UNCOVER_TO_LOWERLEFT: PyiFadeEffect = ...
 """
 use the fade effect \"Uncover to Lower Left\".
 """
-UNCOVER_TO_LOWERRIGHT: FadeEffect = ...
+UNCOVER_TO_LOWERRIGHT: PyiFadeEffect = ...
 """
 use the fade effect \"Uncover to Lower Right\".
 """
-UNCOVER_TO_RIGHT: FadeEffect = ...
+UNCOVER_TO_RIGHT: PyiFadeEffect = ...
 """
 use the fade effect \"Uncover to Right\".
 """
-UNCOVER_TO_TOP: FadeEffect = ...
+UNCOVER_TO_TOP: PyiFadeEffect = ...
 """
 use the fade effect \"Uncover to Top\".
 """
-UNCOVER_TO_UPPERLEFT: FadeEffect = ...
+UNCOVER_TO_UPPERLEFT: PyiFadeEffect = ...
 """
 use the fade effect \"Uncover to Upper Left\".
 """
-UNCOVER_TO_UPPERRIGHT: FadeEffect = ...
+UNCOVER_TO_UPPERRIGHT: PyiFadeEffect = ...
 """
 use the fade effect \"Uncover to Upper Right\".
 """
-VERTICAL_CHECKERBOARD: FadeEffect = ...
+VERTICAL_CHECKERBOARD: PyiFadeEffect = ...
 """
 use the animation effect \"Vertical Checkerboard\".
 
 use the fade effect \"Vertical Checkerboard\".
 """
-VERTICAL_LINES: FadeEffect = ...
+VERTICAL_LINES: PyiFadeEffect = ...
 """
 use the animation effect \"Vertical Lines\".
 
 use the fade effect \"Vertical Lines\".
 """
-VERTICAL_STRIPES: FadeEffect = ...
+VERTICAL_STRIPES: PyiFadeEffect = ...
 """
 use the animation effect \"Vertical Stripes\".
 
 use the fade effect \"Vertical Stripes\".
 """
-WAVYLINE_FROM_BOTTOM: FadeEffect = ...
+WAVYLINE_FROM_BOTTOM: PyiFadeEffect = ...
 """
 use the animation effect \"Wavy Line from Button\".
 
 use the fade effect \"Wavy Line from Bottom\".
 """
-WAVYLINE_FROM_LEFT: FadeEffect = ...
+WAVYLINE_FROM_LEFT: PyiFadeEffect = ...
 """
 use the animation effect \"Wavy Line from Left\".
 
 use the fade effect \"Wavy Line from Left\".
 """
-WAVYLINE_FROM_RIGHT: FadeEffect = ...
+WAVYLINE_FROM_RIGHT: PyiFadeEffect = ...
 """
 use the animation effect \"Wavy Line from Right\".
 
 use the fade effect \"Wavy Line from Right\".
 """
-WAVYLINE_FROM_TOP: FadeEffect = ...
+WAVYLINE_FROM_TOP: PyiFadeEffect = ...
 """
 use the animation effect \"Wavy Line from Top\".
 

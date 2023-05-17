@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.mozilla.mozilla_product_type import MozillaProductType as PyiMozillaProductType
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.mozilla.MozillaProductType'
 
-Default: MozillaProductType = ...
+Default: PyiMozillaProductType = ...
 """
 Any product.
 """
-Firefox: MozillaProductType = ...
+Firefox: PyiMozillaProductType = ...
 """
 Mozilla's next generation web browser.
 """
-Mozilla: MozillaProductType = ...
+Mozilla: PyiMozillaProductType = ...
 """
 Mozilla browse and mail suite.
 """
-Thunderbird: MozillaProductType = ...
+Thunderbird: PyiMozillaProductType = ...
 """
 Mozilla's next generation e-mail client.
 """

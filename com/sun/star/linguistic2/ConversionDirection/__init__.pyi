@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.linguistic2.conversion_direction import ConversionDirection as PyiConversionDirection
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.linguistic2.ConversionDirection'
 
-FROM_LEFT: ConversionDirection = ...
+FROM_LEFT: PyiConversionDirection = ...
 """
 the text to be looked for should match the left part of a dictionary entry.
 """
-FROM_RIGHT: ConversionDirection = ...
+FROM_RIGHT: PyiConversionDirection = ...
 """
 the text to be looked for should match the right part of a dictionary entry.
 """

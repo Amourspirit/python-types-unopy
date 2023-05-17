@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.form.form_submit_method import FormSubmitMethod as PyiFormSubmitMethod
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.form.FormSubmitMethod'
 
-GET: FormSubmitMethod = ...
+GET: PyiFormSubmitMethod = ...
 """
 specifies to append the input information of a form to the target URL as parameters.
 """
-POST: FormSubmitMethod = ...
+POST: PyiFormSubmitMethod = ...
 """
 specifies to send the input information in a data body.
 """

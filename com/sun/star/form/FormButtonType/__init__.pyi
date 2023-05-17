@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.form.form_button_type import FormButtonType as PyiFormButtonType
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.form.FormButtonType'
 
-PUSH: FormButtonType = ...
+PUSH: PyiFormButtonType = ...
 """
 requires the button to act like a common push button, means no special action is triggered.
 """
-RESET: FormButtonType = ...
+RESET: PyiFormButtonType = ...
 """
 When the button is clicked, it performs a reset on its containing form.
 """
-SUBMIT: FormButtonType = ...
+SUBMIT: PyiFormButtonType = ...
 """
 When the button is clicked, it performs a submit on its containing form.
 """
-URL: FormButtonType = ...
+URL: PyiFormButtonType = ...
 """
 When the button is clicked, a URL set for the button is opened.
 

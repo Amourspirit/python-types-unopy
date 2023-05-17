@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.search_recursion import SearchRecursion as PyiSearchRecursion
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.SearchRecursion'
 
-DEEP: SearchRecursion = ...
+DEEP: PyiSearchRecursion = ...
 """
 Searches through the complete hierarchy of all sub-objects.
 """
-NONE: SearchRecursion = ...
+NONE: PyiSearchRecursion = ...
 """
 Does not search through any sub-objects.
 """
-ONE_LEVEL: SearchRecursion = ...
+ONE_LEVEL: PyiSearchRecursion = ...
 """
 Only searches through sub-objects of the first hierarchy level.
 """

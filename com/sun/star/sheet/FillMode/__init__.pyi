@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.fill_mode import FillMode as PyiFillMode
 """
 Enum
 
@@ -29,27 +30,27 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.FillMode'
 
-AUTO: FillMode = ...
+AUTO: PyiFillMode = ...
 """
 specifies the use of a user-defined list.
 
 function is determined automatically.
 """
-DATE: FillMode = ...
+DATE: PyiFillMode = ...
 """
 specifies an arithmetic series for date values.
 
 any date value matching the specified condition is valid.
 """
-GROWTH: FillMode = ...
+GROWTH: PyiFillMode = ...
 """
 specifies a geometric series.
 """
-LINEAR: FillMode = ...
+LINEAR: PyiFillMode = ...
 """
 specifies an arithmetic series.
 """
-SIMPLE: FillMode = ...
+SIMPLE: PyiFillMode = ...
 """
 specifies a constant series.
 """

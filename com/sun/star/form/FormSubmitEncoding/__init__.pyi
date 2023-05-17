@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.form.form_submit_encoding import FormSubmitEncoding as PyiFormSubmitEncoding
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.form.FormSubmitEncoding'
 
-MULTIPART: FormSubmitEncoding = ...
+MULTIPART: PyiFormSubmitEncoding = ...
 """
 Specifies to use \"multipart/form-data\" as submit encoding.
 
 Usually used when the form contains a file upload element.
 """
-TEXT: FormSubmitEncoding = ...
+TEXT: PyiFormSubmitEncoding = ...
 """
 specifies to use \"text/plain\"
 
 Usually used if the FormSubmitMethod attribute has the value POST and the content should be reviewed as full text.
 """
-URL: FormSubmitEncoding = ...
+URL: PyiFormSubmitEncoding = ...
 """
 When the button is clicked, a URL set for the button is opened.
 

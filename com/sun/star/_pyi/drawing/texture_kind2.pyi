@@ -32,17 +32,17 @@ class TextureKind2(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.TextureKind2'
 
-    COLOR: TextureKind2 = ...
+    COLOR: PyiTextureKind2 = ...
     """
     With this mode the lighting is ignored and only the texture color information is used.
     
     With this mode, the lighting is ignored and only the texture color information is used.
     """
-    INTENSITY: TextureKind2 = ...
+    INTENSITY: PyiTextureKind2 = ...
     """
     With TextureKind INTENSITY, each texture pixel is used as an intensity value.
     """
-    LUMINANCE: TextureKind2 = ...
+    LUMINANCE: PyiTextureKind2 = ...
     """
     With TextureKind LUMINANCE, the texture and the lighting information is mixed to produce the image, so a lit, textured object is achieved.
     """

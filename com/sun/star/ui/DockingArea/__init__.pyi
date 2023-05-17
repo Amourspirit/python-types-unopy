@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ui.docking_area import DockingArea as PyiDockingArea
 """
 Enum
 
@@ -29,25 +30,25 @@ See Also:
 """
 typeName: str = 'com.sun.star.ui.DockingArea'
 
-DOCKINGAREA_BOTTOM: DockingArea = ...
+DOCKINGAREA_BOTTOM: PyiDockingArea = ...
 """
 the bottom docking area above the status bar.
 """
-DOCKINGAREA_DEFAULT: DockingArea = ...
+DOCKINGAREA_DEFAULT: PyiDockingArea = ...
 """
 a default docking area.
 
 It depends on the implementation how to treat this value.
 """
-DOCKINGAREA_LEFT: DockingArea = ...
+DOCKINGAREA_LEFT: PyiDockingArea = ...
 """
 the left side docking area.
 """
-DOCKINGAREA_RIGHT: DockingArea = ...
+DOCKINGAREA_RIGHT: PyiDockingArea = ...
 """
 the right side docking area.
 """
-DOCKINGAREA_TOP: DockingArea = ...
+DOCKINGAREA_TOP: PyiDockingArea = ...
 """
 the top docking area below the menu bar.
 """

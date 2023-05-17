@@ -32,15 +32,15 @@ class CellOrientation(uno.Enum):
     """
     typeName: str = 'com.sun.star.table.CellOrientation'
 
-    BOTTOMTOP: CellOrientation = ...
+    BOTTOMTOP: PyiCellOrientation = ...
     """
     contents are printed from bottom to top.
     """
-    STACKED: CellOrientation = ...
+    STACKED: PyiCellOrientation = ...
     """
     contents are printed from top to bottom with individual characters in normal (horizontal) orientation.
     """
-    STANDARD: CellOrientation = ...
+    STANDARD: PyiCellOrientation = ...
     """
     default alignment is used (left for numbers, right for text).
     
@@ -48,7 +48,7 @@ class CellOrientation(uno.Enum):
     
     contents are printed from left to right.
     """
-    TOPBOTTOM: CellOrientation = ...
+    TOPBOTTOM: PyiCellOrientation = ...
     """
     contents are printed from top to bottom.
     """

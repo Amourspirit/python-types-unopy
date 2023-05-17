@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.style.tab_align import TabAlign as PyiTabAlign
 """
 Enum
 
@@ -29,7 +30,7 @@ See Also:
 """
 typeName: str = 'com.sun.star.style.TabAlign'
 
-CENTER: TabAlign = ...
+CENTER: PyiTabAlign = ...
 """
 set the horizontal alignment to the center between the margins from the container object
 
@@ -37,15 +38,15 @@ The text range is centered between the previous tabulator (or the left border, i
 
 adjusted to the center
 """
-DECIMAL: TabAlign = ...
+DECIMAL: PyiTabAlign = ...
 """
 The decimal point of the text range to the left of this tabulator is aligned to the position of this tabulator.
 """
-DEFAULT: TabAlign = ...
+DEFAULT: PyiTabAlign = ...
 """
 The default alignment for tabulators is applied.
 """
-LEFT: TabAlign = ...
+LEFT: PyiTabAlign = ...
 """
 set the horizontal alignment to the left margin from the container object
 
@@ -55,7 +56,7 @@ adjusted to the left border
 
 The page style is only used for left pages.
 """
-RIGHT: TabAlign = ...
+RIGHT: PyiTabAlign = ...
 """
 set the horizontal alignment to the right margin from the container object
 

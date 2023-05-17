@@ -32,17 +32,17 @@ class PropertyState(uno.Enum):
     """
     typeName: str = 'com.sun.star.beans.PropertyState'
 
-    AMBIGUOUS_VALUE: PropertyState = ...
+    AMBIGUOUS_VALUE: PyiPropertyState = ...
     """
     The value of the property is only a recommendation because there are multiple values for this property (e.g., from a multi selection).
     
     The PropertyAttribute field in the struct Property must contain the PropertyAttribute.MAYBEAMBIGUOUS flag. The property value must be available and of the specified type. If the Attribute field in the struct Property contains PropertyAttribute.MAYBEVOID, then the value may be void.
     """
-    DEFAULT_VALUE: PropertyState = ...
+    DEFAULT_VALUE: PyiPropertyState = ...
     """
     The value of the property is available from a master (e.g., template).
     """
-    DIRECT_VALUE: PropertyState = ...
+    DIRECT_VALUE: PyiPropertyState = ...
     """
     The value of the property is stored in the PropertySet itself.
     """

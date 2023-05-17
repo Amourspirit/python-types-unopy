@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.circle_kind import CircleKind as PyiCircleKind
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.CircleKind'
 
-ARC: CircleKind = ...
+ARC: PyiCircleKind = ...
 """
 a circle with an open cut
 """
-CUT: CircleKind = ...
+CUT: PyiCircleKind = ...
 """
 a circle with a cut connected by two lines
 """
-FULL: CircleKind = ...
+FULL: PyiCircleKind = ...
 """
 a full circle
 """
-SECTION: CircleKind = ...
+SECTION: PyiCircleKind = ...
 """
 a circle with a cut connected by a line
 """

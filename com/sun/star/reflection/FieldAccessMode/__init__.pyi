@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.reflection.field_access_mode import FieldAccessMode as PyiFieldAccessMode
 """
 Enum
 
@@ -29,21 +30,21 @@ See Also:
 """
 typeName: str = 'com.sun.star.reflection.FieldAccessMode'
 
-CONST: FieldAccessMode = ...
+CONST: PyiFieldAccessMode = ...
 """
 Deprecated.
 
 Not used anymore.
 """
-READONLY: FieldAccessMode = ...
+READONLY: PyiFieldAccessMode = ...
 """
 readable only
 """
-READWRITE: FieldAccessMode = ...
+READWRITE: PyiFieldAccessMode = ...
 """
 readable and writeable
 """
-WRITEONLY: FieldAccessMode = ...
+WRITEONLY: PyiFieldAccessMode = ...
 """
 writeable only
 """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.table.shadow_location import ShadowLocation as PyiShadowLocation
 """
 Enum
 
@@ -29,23 +30,23 @@ See Also:
 """
 typeName: str = 'com.sun.star.table.ShadowLocation'
 
-BOTTOM_LEFT: ShadowLocation = ...
+BOTTOM_LEFT: PyiShadowLocation = ...
 """
 shadow is located along the lower and left sides.
 """
-BOTTOM_RIGHT: ShadowLocation = ...
+BOTTOM_RIGHT: PyiShadowLocation = ...
 """
 shadow is located along the lower and right sides.
 """
-NONE: ShadowLocation = ...
+NONE: PyiShadowLocation = ...
 """
 no shadow.
 """
-TOP_LEFT: ShadowLocation = ...
+TOP_LEFT: PyiShadowLocation = ...
 """
 shadow is located along the upper and left sides.
 """
-TOP_RIGHT: ShadowLocation = ...
+TOP_RIGHT: PyiShadowLocation = ...
 """
 shadow is located along the upper and right sides.
 """

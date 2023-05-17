@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.text.text_content_anchor_type import TextContentAnchorType as PyiTextContentAnchorType
 """
 Enum
 
@@ -29,23 +30,23 @@ See Also:
 """
 typeName: str = 'com.sun.star.text.TextContentAnchorType'
 
-AS_CHARACTER: TextContentAnchorType = ...
+AS_CHARACTER: PyiTextContentAnchorType = ...
 """
 The object is anchored instead of a character.
 """
-AT_CHARACTER: TextContentAnchorType = ...
+AT_CHARACTER: PyiTextContentAnchorType = ...
 """
 The object is anchored to a character.
 """
-AT_FRAME: TextContentAnchorType = ...
+AT_FRAME: PyiTextContentAnchorType = ...
 """
 The object is anchored to a text frame.
 """
-AT_PAGE: TextContentAnchorType = ...
+AT_PAGE: PyiTextContentAnchorType = ...
 """
 The object is anchored to the page.
 """
-AT_PARAGRAPH: TextContentAnchorType = ...
+AT_PARAGRAPH: PyiTextContentAnchorType = ...
 """
 The anchor of the object is set at the top left position of the paragraph.
 """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.fill_date_mode import FillDateMode as PyiFillDateMode
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.FillDateMode'
 
-FILL_DATE_DAY: FillDateMode = ...
+FILL_DATE_DAY: PyiFillDateMode = ...
 """
 for every new value a single day is added.
 """
-FILL_DATE_MONTH: FillDateMode = ...
+FILL_DATE_MONTH: PyiFillDateMode = ...
 """
 for every new value one month is added (day keeps unchanged).
 """
-FILL_DATE_WEEKDAY: FillDateMode = ...
+FILL_DATE_WEEKDAY: PyiFillDateMode = ...
 """
 for every new value a single day is added, but Saturdays and Sundays are skipped.
 """
-FILL_DATE_YEAR: FillDateMode = ...
+FILL_DATE_YEAR: PyiFillDateMode = ...
 """
 for every new value one year is added (day and month keep unchanged).
 """

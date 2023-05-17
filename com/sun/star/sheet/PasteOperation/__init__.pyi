@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.paste_operation import PasteOperation as PyiPasteOperation
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.PasteOperation'
 
-ADD: PasteOperation = ...
+ADD: PyiPasteOperation = ...
 """
 old and new values are added.
 """
-DIVIDE: PasteOperation = ...
+DIVIDE: PyiPasteOperation = ...
 """
 new values are divided by the new values.
 """
-MULTIPLY: PasteOperation = ...
+MULTIPLY: PyiPasteOperation = ...
 """
 old and new values are multiplied.
 """
-NONE: PasteOperation = ...
+NONE: PyiPasteOperation = ...
 """
 no cells are moved.
 
@@ -55,7 +56,7 @@ nothing is imported.
 
 no condition is specified.
 """
-SUBTRACT: PasteOperation = ...
+SUBTRACT: PyiPasteOperation = ...
 """
 new values are subtracted from the old values.
 """

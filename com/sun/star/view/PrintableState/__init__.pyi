@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.view.printable_state import PrintableState as PyiPrintableState
 """
 Enum
 
@@ -29,29 +30,29 @@ See Also:
 """
 typeName: str = 'com.sun.star.view.PrintableState'
 
-JOB_ABORTED: PrintableState = ...
+JOB_ABORTED: PyiPrintableState = ...
 """
 printing was aborted (e.g., by the user) while either printing or spooling.
 """
-JOB_COMPLETED: PrintableState = ...
+JOB_COMPLETED: PyiPrintableState = ...
 """
 printing (rendering the document) has finished, spooling has begun
 """
-JOB_FAILED: PrintableState = ...
+JOB_FAILED: PyiPrintableState = ...
 """
 printing ran into an error.
 """
-JOB_SPOOLED: PrintableState = ...
+JOB_SPOOLED: PyiPrintableState = ...
 """
 spooling has finished successfully.
 
 This is the only state that can be considered as \"success\" for a print job.
 """
-JOB_SPOOLING_FAILED: PrintableState = ...
+JOB_SPOOLING_FAILED: PyiPrintableState = ...
 """
 the document could be printed but not spooled.
 """
-JOB_STARTED: PrintableState = ...
+JOB_STARTED: PyiPrintableState = ...
 """
 printing (rendering the document) has begun
 """

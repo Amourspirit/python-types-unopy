@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart2.data.label_origin import LabelOrigin as PyiLabelOrigin
 """
 Enum
 
@@ -29,7 +30,7 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart2.data.LabelOrigin'
 
-COLUMN: LabelOrigin = ...
+COLUMN: PyiLabelOrigin = ...
 """
 Uses the column name for label generation.
 
@@ -37,13 +38,13 @@ A spreadsheet range A1:A6 could, e.g., result in \"Column A\".
 
 If a range consists of more than one column the result of label generation may be empty. Of course, it could also succeed with a string like \"Columns A to B\".
 """
-LONG_SIDE: LabelOrigin = ...
+LONG_SIDE: PyiLabelOrigin = ...
 """
 This is exactly the opposite of SHORT_SIDE.
 
 I.e., if SHORT_SIDE has the same effect as ROW, LONG_SIDE will have the same effect as COLUMN and the other way round.
 """
-ROW: LabelOrigin = ...
+ROW: PyiLabelOrigin = ...
 """
 Uses the column name for label generation.
 
@@ -51,7 +52,7 @@ A spreadsheet range A2:D2 could, e.g., result in \"Row 2\".
 
 If a range consists of more than one row the result of label generation may be empty. Of course, it could also succeed with a string like \"Rows 1-3\".
 """
-SHORT_SIDE: LabelOrigin = ...
+SHORT_SIDE: PyiLabelOrigin = ...
 """
 If a range spans a single row over more than one column, this parameter has the same effect as ROW.
 

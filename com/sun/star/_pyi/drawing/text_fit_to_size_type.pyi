@@ -32,17 +32,17 @@ class TextFitToSizeType(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.TextFitToSizeType'
 
-    ALLLINES: TextFitToSizeType = ...
+    ALLLINES: PyiTextFitToSizeType = ...
     """
     Nowadays this is the same as PROPORTIONAL.
     """
-    AUTOFIT: TextFitToSizeType = ...
+    AUTOFIT: PyiTextFitToSizeType = ...
     """
     The font size is scaled down (never up!) isotropically to fit the available space.
     
     Auto line-breaks will keep working.
     """
-    NONE: TextFitToSizeType = ...
+    NONE: PyiTextFitToSizeType = ...
     """
     the area is not filled.
     
@@ -56,7 +56,7 @@ class TextFitToSizeType(uno.Enum):
     
     the line has no special end.
     """
-    PROPORTIONAL: TextFitToSizeType = ...
+    PROPORTIONAL: PyiTextFitToSizeType = ...
     """
     The bitmap with the rendered glyphs is scaled up or down proportionally to fit the size of the shape.
     

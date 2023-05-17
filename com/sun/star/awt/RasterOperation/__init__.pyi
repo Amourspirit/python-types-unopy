@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.awt.raster_operation import RasterOperation as PyiRasterOperation
 """
 Enum
 
@@ -29,23 +30,23 @@ See Also:
 """
 typeName: str = 'com.sun.star.awt.RasterOperation'
 
-ALLBITS: RasterOperation = ...
+ALLBITS: PyiRasterOperation = ...
 """
 All bits which are affected by this operation are set to 1.
 """
-INVERT: RasterOperation = ...
+INVERT: PyiRasterOperation = ...
 """
 All bits which are affected by this operation are inverted.
 """
-OVERPAINT: RasterOperation = ...
+OVERPAINT: PyiRasterOperation = ...
 """
 sets all pixel as written in the output operation.
 """
-XOR: RasterOperation = ...
+XOR: PyiRasterOperation = ...
 """
 uses the pixel written as one and the current pixel as the other operator of an exclusive or-operation.
 """
-ZEROBITS: RasterOperation = ...
+ZEROBITS: PyiRasterOperation = ...
 """
 All bits which are affected by this operation are set to 0.
 """

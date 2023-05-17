@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.linguistic2.dictionary_type import DictionaryType as PyiDictionaryType
 """
 Enum
 
@@ -29,14 +30,14 @@ See Also:
 """
 typeName: str = 'com.sun.star.linguistic2.DictionaryType'
 
-MIXED: DictionaryType = ...
+MIXED: PyiDictionaryType = ...
 """
 """
-NEGATIVE: DictionaryType = ...
+NEGATIVE: PyiDictionaryType = ...
 """
 all entries in the dictionary are negative.
 """
-POSITIVE: DictionaryType = ...
+POSITIVE: PyiDictionaryType = ...
 """
 all entries in the dictionary are positive.
 """

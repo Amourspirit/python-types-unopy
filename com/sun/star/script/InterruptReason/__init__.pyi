@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.script.interrupt_reason import InterruptReason as PyiInterruptReason
 """
 Enum
 
@@ -29,37 +30,37 @@ See Also:
 """
 typeName: str = 'com.sun.star.script.InterruptReason'
 
-BreakPoint: InterruptReason = ...
+BreakPoint: PyiInterruptReason = ...
 """
 script stopped at a breakpoint.
 """
-Cancel: InterruptReason = ...
+Cancel: PyiInterruptReason = ...
 """
 script in the engine was cancelled.
 
 script execution was cancelled.
 """
-CompileError: InterruptReason = ...
+CompileError: PyiInterruptReason = ...
 """
 script has invalid syntax.
 """
-RuntimeError: InterruptReason = ...
+RuntimeError: PyiInterruptReason = ...
 """
 runtime error occurred during script execution.
 """
-Step: InterruptReason = ...
+Step: PyiInterruptReason = ...
 """
 script stops because only one scripting engine command was executed.
 """
-StepOut: InterruptReason = ...
+StepOut: PyiInterruptReason = ...
 """
 script stops because it leaves a function.
 """
-StepOver: InterruptReason = ...
+StepOver: PyiInterruptReason = ...
 """
 script stops because one step was executed.
 """
-StepStatement: InterruptReason = ...
+StepStatement: PyiInterruptReason = ...
 """
 script stop because one step was executed.
 """

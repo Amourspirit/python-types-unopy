@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart.chart_axis_position import ChartAxisPosition as PyiChartAxisPosition
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart.ChartAxisPosition'
 
-END: ChartAxisPosition = ...
+END: PyiChartAxisPosition = ...
 """
 Cross the other axes at their maximum scale value.
 """
-START: ChartAxisPosition = ...
+START: PyiChartAxisPosition = ...
 """
 Cross the other axes at their minimum scale value.
 """
-VALUE: ChartAxisPosition = ...
+VALUE: PyiChartAxisPosition = ...
 """
 Cross the other axes at the value specified in the property CrossoverValue.
 """
-ZERO: ChartAxisPosition = ...
+ZERO: PyiChartAxisPosition = ...
 """
 Cross the other axes at zero.
 

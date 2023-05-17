@@ -32,11 +32,11 @@ class LineStyle(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.LineStyle'
 
-    DASH: LineStyle = ...
+    DASH: PyiLineStyle = ...
     """
     the line use dashes.
     """
-    NONE: LineStyle = ...
+    NONE: PyiLineStyle = ...
     """
     the area is not filled.
     
@@ -50,7 +50,7 @@ class LineStyle(uno.Enum):
     
     the line has no special end.
     """
-    SOLID: LineStyle = ...
+    SOLID: PyiLineStyle = ...
     """
     use a solid color to fill the area.
     

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.presentation.presentation_range import PresentationRange as PyiPresentationRange
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.presentation.PresentationRange'
 
-PRESENTATIONRANGE_ALL: PresentationRange = ...
+PRESENTATIONRANGE_ALL: PyiPresentationRange = ...
 """
 use all slides.
 """
-PRESENTATIONRANGE_FROM_PAGE: PresentationRange = ...
+PRESENTATIONRANGE_FROM_PAGE: PyiPresentationRange = ...
 """
 use only the active slide.
 """
-PRESENTATIONRANGE_INDIVIDUAL: PresentationRange = ...
+PRESENTATIONRANGE_INDIVIDUAL: PyiPresentationRange = ...
 """
 use an individual choice of slides.
 """

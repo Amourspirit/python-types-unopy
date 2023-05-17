@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.connector_type import ConnectorType as PyiConnectorType
 """
 Enum
 
@@ -29,21 +30,21 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.ConnectorType'
 
-CURVE: ConnectorType = ...
+CURVE: PyiConnectorType = ...
 """
 the ConnectorShape is drawn as a curve
 """
-LINE: ConnectorType = ...
+LINE: PyiConnectorType = ...
 """
 the ConnectorShape is drawn as a straight line
 
 This is the PolygonKind for a LineShape.
 """
-LINES: ConnectorType = ...
+LINES: PyiConnectorType = ...
 """
 the connector is drawn with three lines
 """
-STANDARD: ConnectorType = ...
+STANDARD: PyiConnectorType = ...
 """
 the graphic is rendered in the default color style of the output device,
 

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.animations.timing import Timing as PyiTiming
 """
 Enum
 
@@ -30,11 +31,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.animations.Timing'
 
-INDEFINITE: Timing = ...
+INDEFINITE: PyiTiming = ...
 """
 specifies that a duration, end or start time is indefinite
 """
-MEDIA: Timing = ...
+MEDIA: PyiTiming = ...
 """
 specifies a simple duration as the intrinsic media duration.
 

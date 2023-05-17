@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.document_store_mode import DocumentStoreMode as PyiDocumentStoreMode
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.DocumentStoreMode'
 
-LOCAL: DocumentStoreMode = ...
+LOCAL: PyiDocumentStoreMode = ...
 """
 Document contents are stored locally.
 """
-REMOTE: DocumentStoreMode = ...
+REMOTE: PyiDocumentStoreMode = ...
 """
 Document contents are not stored locally.
 """

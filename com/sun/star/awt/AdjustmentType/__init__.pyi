@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.awt.adjustment_type import AdjustmentType as PyiAdjustmentType
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.awt.AdjustmentType'
 
-ADJUST_ABS: AdjustmentType = ...
+ADJUST_ABS: PyiAdjustmentType = ...
 """
 adjustment is originated by dragging the thumb.
 """
-ADJUST_LINE: AdjustmentType = ...
+ADJUST_LINE: PyiAdjustmentType = ...
 """
 adjustment is originated by a line jump.
 """
-ADJUST_PAGE: AdjustmentType = ...
+ADJUST_PAGE: PyiAdjustmentType = ...
 """
 adjustment is originated by a page jump.
 """

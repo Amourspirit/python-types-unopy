@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.line_joint import LineJoint as PyiLineJoint
 """
 Enum
 
@@ -29,19 +30,19 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.LineJoint'
 
-BEVEL: LineJoint = ...
+BEVEL: PyiLineJoint = ...
 """
 the edges of the thick lines will be joined by lines
 """
-MIDDLE: LineJoint = ...
+MIDDLE: PyiLineJoint = ...
 """
 the middle value between the joints is used
 """
-MITER: LineJoint = ...
+MITER: PyiLineJoint = ...
 """
 the lines join at intersections
 """
-NONE: LineJoint = ...
+NONE: PyiLineJoint = ...
 """
 the area is not filled.
 
@@ -55,7 +56,7 @@ the joint between lines will not be connected
 
 the line has no special end.
 """
-ROUND: LineJoint = ...
+ROUND: PyiLineJoint = ...
 """
 the dash is a point
 

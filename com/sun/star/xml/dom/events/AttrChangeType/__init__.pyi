@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.xml.dom.events.attr_change_type import AttrChangeType as PyiAttrChangeType
 """
 Enum
 
@@ -30,13 +31,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.xml.dom.events.AttrChangeType'
 
-ADDITION: AttrChangeType = ...
+ADDITION: PyiAttrChangeType = ...
 """
 """
-MODIFICATION: AttrChangeType = ...
+MODIFICATION: PyiAttrChangeType = ...
 """
 """
-REMOVAL: AttrChangeType = ...
+REMOVAL: PyiAttrChangeType = ...
 """
 """
 

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.ucb.outgoing_message_state import OutgoingMessageState as PyiOutgoingMessageState
 """
 Enum
 
@@ -29,41 +30,41 @@ See Also:
 """
 typeName: str = 'com.sun.star.ucb.OutgoingMessageState'
 
-COMPLETELY_LOCALLY_SENT: OutgoingMessageState = ...
+COMPLETELY_LOCALLY_SENT: PyiOutgoingMessageState = ...
 """
 Message has been sent upstream to all recipients.
 """
-CONFIRMED: OutgoingMessageState = ...
+CONFIRMED: PyiOutgoingMessageState = ...
 """
 Recipient confirmed reading.
 """
-EXTERNAL_ERROR: OutgoingMessageState = ...
+EXTERNAL_ERROR: PyiOutgoingMessageState = ...
 """
 Global fatal error (e.g.
 
 last member in SMTP chain could not deliver the message).
 """
-NONRECOVERABLE_LOCAL_ERROR: OutgoingMessageState = ...
+NONRECOVERABLE_LOCAL_ERROR: PyiOutgoingMessageState = ...
 """
 Local fatal error (e.g.
 
 first SMTP server upstream did not accept the message).
 """
-PARTIALLY_LOCALLY_SENT: OutgoingMessageState = ...
+PARTIALLY_LOCALLY_SENT: PyiOutgoingMessageState = ...
 """
 Message has been sent upstream to some recipients.
 """
-RECOVERABLE_LOCAL_ERROR: OutgoingMessageState = ...
+RECOVERABLE_LOCAL_ERROR: PyiOutgoingMessageState = ...
 """
 Local, non-fatal error (e.g.
 
 network temporarily not available).
 """
-WAITING_CONFIRMATION: OutgoingMessageState = ...
+WAITING_CONFIRMATION: PyiOutgoingMessageState = ...
 """
 Message was sent; we are waiting for confirmation.
 """
-WRITTEN: OutgoingMessageState = ...
+WRITTEN: PyiOutgoingMessageState = ...
 """
 Message has just been placed into the out tray.
 """

@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.condition_operator import ConditionOperator as PyiConditionOperator
 """
 Enum
 
@@ -29,27 +30,27 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.ConditionOperator'
 
-BETWEEN: ConditionOperator = ...
+BETWEEN: PyiConditionOperator = ...
 """
 the value has to be between the two specified values.
 """
-EQUAL: ConditionOperator = ...
+EQUAL: PyiConditionOperator = ...
 """
 value has to be equal to the specified value.
 
 The cell value is equal to the specified value.
 """
-FORMULA: ConditionOperator = ...
+FORMULA: PyiConditionOperator = ...
 """
 the specified formula has to give a non-zero result.
 """
-GREATER: ConditionOperator = ...
+GREATER: PyiConditionOperator = ...
 """
 the value has to be greater than the specified value.
 
 value has to be greater than the specified value.
 """
-GREATER_EQUAL: ConditionOperator = ...
+GREATER_EQUAL: PyiConditionOperator = ...
 """
 the value has to be greater than or equal to the specified value.
 
@@ -57,13 +58,13 @@ The cell value is greater or equal to the specified value.
 
 value has to be greater than or equal to the specified value.
 """
-LESS: ConditionOperator = ...
+LESS: PyiConditionOperator = ...
 """
 the value has to be less than the specified value.
 
 value has to be less than the specified value.
 """
-LESS_EQUAL: ConditionOperator = ...
+LESS_EQUAL: PyiConditionOperator = ...
 """
 the value has to be less than or equal to the specified value.
 
@@ -71,7 +72,7 @@ The cell value is less or equal to the specified value.
 
 value has to be less than or equal to the specified value.
 """
-NONE: ConditionOperator = ...
+NONE: PyiConditionOperator = ...
 """
 no cells are moved.
 
@@ -85,11 +86,11 @@ nothing is imported.
 
 no condition is specified.
 """
-NOT_BETWEEN: ConditionOperator = ...
+NOT_BETWEEN: PyiConditionOperator = ...
 """
 the value has to be outside of the two specified values.
 """
-NOT_EQUAL: ConditionOperator = ...
+NOT_EQUAL: PyiConditionOperator = ...
 """
 the value must not be equal to the specified value.
 

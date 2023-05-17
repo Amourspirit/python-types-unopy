@@ -32,11 +32,11 @@ class DocumentStoreMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.ucb.DocumentStoreMode'
 
-    LOCAL: DocumentStoreMode = ...
+    LOCAL: PyiDocumentStoreMode = ...
     """
     Document contents are stored locally.
     """
-    REMOTE: DocumentStoreMode = ...
+    REMOTE: PyiDocumentStoreMode = ...
     """
     Document contents are not stored locally.
     """

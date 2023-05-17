@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.style.break_type import BreakType as PyiBreakType
 """
 Enum
 
@@ -29,33 +30,33 @@ See Also:
 """
 typeName: str = 'com.sun.star.style.BreakType'
 
-COLUMN_AFTER: BreakType = ...
+COLUMN_AFTER: PyiBreakType = ...
 """
 A column break is applied after the object to which it belongs.
 """
-COLUMN_BEFORE: BreakType = ...
+COLUMN_BEFORE: PyiBreakType = ...
 """
 A column break is applied before the object to which it belongs.
 """
-COLUMN_BOTH: BreakType = ...
+COLUMN_BOTH: PyiBreakType = ...
 """
 A column break is applied before and after the object to which it belongs.
 """
-NONE: BreakType = ...
+NONE: PyiBreakType = ...
 """
 No column or page break is applied.
 
 This value specifies that a location is not yet assigned.
 """
-PAGE_AFTER: BreakType = ...
+PAGE_AFTER: PyiBreakType = ...
 """
 A page break is applied after the object to which it belongs.
 """
-PAGE_BEFORE: BreakType = ...
+PAGE_BEFORE: PyiBreakType = ...
 """
 A page break is applied before the object to which it belongs.
 """
-PAGE_BOTH: BreakType = ...
+PAGE_BOTH: PyiBreakType = ...
 """
 A page break is applied before and after the object to which it belongs.
 """

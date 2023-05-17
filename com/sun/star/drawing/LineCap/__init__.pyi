@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.line_cap import LineCap as PyiLineCap
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.LineCap'
 
-BUTT: LineCap = ...
+BUTT: PyiLineCap = ...
 """
 the line will end without any additional shape
 """
-ROUND: LineCap = ...
+ROUND: PyiLineCap = ...
 """
 the dash is a point
 
@@ -41,7 +42,7 @@ the lines join with an arc
 
 the line will get a half circle as additional cap
 """
-SQUARE: LineCap = ...
+SQUARE: PyiLineCap = ...
 """
 the line will get a half square as additional cap
 

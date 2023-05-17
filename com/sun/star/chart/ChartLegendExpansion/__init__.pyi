@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.chart.chart_legend_expansion import ChartLegendExpansion as PyiChartLegendExpansion
 """
 Enum
 
@@ -29,21 +30,21 @@ See Also:
 """
 typeName: str = 'com.sun.star.chart.ChartLegendExpansion'
 
-BALANCED: ChartLegendExpansion = ...
+BALANCED: PyiChartLegendExpansion = ...
 """
 The legend entries are arranged in a way that the aspect ratio of the resulting legend is as near to 1 as possible.
 """
-CUSTOM: ChartLegendExpansion = ...
+CUSTOM: PyiChartLegendExpansion = ...
 """
 The size of the legend is given explicitly.
 """
-HIGH: ChartLegendExpansion = ...
+HIGH: PyiChartLegendExpansion = ...
 """
 The legend entries are stacked in a single column if possible.
 
 If not enough space is available further columns are added.
 """
-WIDE: ChartLegendExpansion = ...
+WIDE: PyiChartLegendExpansion = ...
 """
 The legend entries are arranged in a single row if possible.
 

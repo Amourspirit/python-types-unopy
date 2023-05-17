@@ -32,23 +32,23 @@ class SelectionType(uno.Enum):
     """
     typeName: str = 'com.sun.star.view.SelectionType'
 
-    MULTI: SelectionType = ...
+    MULTI: PyiSelectionType = ...
     """
     The selection can contain zero or more objects.
     """
-    NONE: SelectionType = ...
+    NONE: PyiSelectionType = ...
     """
     No selection is possible.
     
     The selection is always empty.
     """
-    RANGE: SelectionType = ...
+    RANGE: PyiSelectionType = ...
     """
     The selection can contain zero or more objects.
     
     all selected objects must be part of a continues range
     """
-    SINGLE: SelectionType = ...
+    SINGLE: PyiSelectionType = ...
     """
     The selection can only contain one or zero objects.
     """

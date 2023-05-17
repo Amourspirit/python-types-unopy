@@ -32,17 +32,17 @@ class TextureProjectionMode(uno.Enum):
     """
     typeName: str = 'com.sun.star.drawing.TextureProjectionMode'
 
-    OBJECTSPECIFIC: TextureProjectionMode = ...
+    OBJECTSPECIFIC: PyiTextureProjectionMode = ...
     """
     This value specifies that the standard object projection method is used.
     """
-    PARALLEL: TextureProjectionMode = ...
+    PARALLEL: PyiTextureProjectionMode = ...
     """
     the 3D objects are drawn in the parallel projection.
     
     This value specifies a flat parallel projection in the specified degree of freedom (X or Y).
     """
-    SPHERE: TextureProjectionMode = ...
+    SPHERE: PyiTextureProjectionMode = ...
     """
     forces normals to think that the object is a sphere.
     

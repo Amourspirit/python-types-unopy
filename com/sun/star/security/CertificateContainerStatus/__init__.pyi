@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.security.certificate_container_status import CertificateContainerStatus as PyiCertificateContainerStatus
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.security.CertificateContainerStatus'
 
-NOCERT: CertificateContainerStatus = ...
+NOCERT: PyiCertificateContainerStatus = ...
 """
 The certificate was not found.
 """
-TRUSTED: CertificateContainerStatus = ...
+TRUSTED: PyiCertificateContainerStatus = ...
 """
 The certificate was found and is trusted.
 """
-UNTRUSTED: CertificateContainerStatus = ...
+UNTRUSTED: PyiCertificateContainerStatus = ...
 """
 The certificate was found but is untrusted.
 """

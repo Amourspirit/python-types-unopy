@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.style.page_style_layout import PageStyleLayout as PyiPageStyleLayout
 """
 Enum
 
@@ -29,11 +30,11 @@ See Also:
 """
 typeName: str = 'com.sun.star.style.PageStyleLayout'
 
-ALL: PageStyleLayout = ...
+ALL: PyiPageStyleLayout = ...
 """
 The page style is identically used for left and right pages.
 """
-LEFT: PageStyleLayout = ...
+LEFT: PyiPageStyleLayout = ...
 """
 set the horizontal alignment to the left margin from the container object
 
@@ -43,11 +44,11 @@ adjusted to the left border
 
 The page style is only used for left pages.
 """
-MIRRORED: PageStyleLayout = ...
+MIRRORED: PyiPageStyleLayout = ...
 """
 The page style is used unchanged for left pages and mirrored for right pages.
 """
-RIGHT: PageStyleLayout = ...
+RIGHT: PyiPageStyleLayout = ...
 """
 set the horizontal alignment to the right margin from the container object
 

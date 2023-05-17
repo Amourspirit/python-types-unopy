@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.drawing.framework.border_type import BorderType as PyiBorderType
 """
 Enum
 
@@ -29,13 +30,13 @@ See Also:
 """
 typeName: str = 'com.sun.star.drawing.framework.BorderType'
 
-INNER_BORDER: BorderType = ...
+INNER_BORDER: PyiBorderType = ...
 """
 """
-OUTER_BORDER: BorderType = ...
+OUTER_BORDER: PyiBorderType = ...
 """
 """
-TOTAL_BORDER: BorderType = ...
+TOTAL_BORDER: PyiBorderType = ...
 """
 """
 

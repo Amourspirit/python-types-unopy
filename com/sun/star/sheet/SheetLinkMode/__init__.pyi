@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.sheet.sheet_link_mode import SheetLinkMode as PyiSheetLinkMode
 """
 Enum
 
@@ -29,7 +30,7 @@ See Also:
 """
 typeName: str = 'com.sun.star.sheet.SheetLinkMode'
 
-NONE: SheetLinkMode = ...
+NONE: PyiSheetLinkMode = ...
 """
 no cells are moved.
 
@@ -43,11 +44,11 @@ nothing is imported.
 
 no condition is specified.
 """
-NORMAL: SheetLinkMode = ...
+NORMAL: PyiSheetLinkMode = ...
 """
 all contents (values and formulas) are copied.
 """
-VALUE: SheetLinkMode = ...
+VALUE: PyiSheetLinkMode = ...
 """
 instead of using formulas, the result values are copied.
 """

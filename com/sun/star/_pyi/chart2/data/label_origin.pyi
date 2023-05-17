@@ -32,7 +32,7 @@ class LabelOrigin(uno.Enum):
     """
     typeName: str = 'com.sun.star.chart2.data.LabelOrigin'
 
-    COLUMN: LabelOrigin = ...
+    COLUMN: PyiLabelOrigin = ...
     """
     Uses the column name for label generation.
     
@@ -40,13 +40,13 @@ class LabelOrigin(uno.Enum):
     
     If a range consists of more than one column the result of label generation may be empty. Of course, it could also succeed with a string like \"Columns A to B\".
     """
-    LONG_SIDE: LabelOrigin = ...
+    LONG_SIDE: PyiLabelOrigin = ...
     """
     This is exactly the opposite of SHORT_SIDE.
     
     I.e., if SHORT_SIDE has the same effect as ROW, LONG_SIDE will have the same effect as COLUMN and the other way round.
     """
-    ROW: LabelOrigin = ...
+    ROW: PyiLabelOrigin = ...
     """
     Uses the column name for label generation.
     
@@ -54,7 +54,7 @@ class LabelOrigin(uno.Enum):
     
     If a range consists of more than one row the result of label generation may be empty. Of course, it could also succeed with a string like \"Rows 1-3\".
     """
-    SHORT_SIDE: LabelOrigin = ...
+    SHORT_SIDE: PyiLabelOrigin = ...
     """
     If a range spans a single row over more than one column, this parameter has the same effect as ROW.
     

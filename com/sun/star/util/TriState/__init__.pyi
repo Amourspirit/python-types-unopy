@@ -20,6 +20,7 @@
 # Libre Office Version: 7.4
 from __future__ import annotations
 import uno
+from com.sun.star._pyi.util.tri_state import TriState as PyiTriState
 """
 Enum
 
@@ -29,15 +30,15 @@ See Also:
 """
 typeName: str = 'com.sun.star.util.TriState'
 
-INDETERMINATE: TriState = ...
+INDETERMINATE: PyiTriState = ...
 """
 The value is indeterminate.
 """
-NO: TriState = ...
+NO: PyiTriState = ...
 """
 The value is equivalent to FALSE.
 """
-YES: TriState = ...
+YES: PyiTriState = ...
 """
 The value is equivalent to TRUE.
 """
