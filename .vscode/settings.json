@@ -29,8 +29,11 @@
 "cSpell.words": [
   "autodoc",
   "ooouno",
+  "pyunointerface",
   "tmpl",
   "unohelper",
   "unopy"
-]
+],
+"python.linting.enabled": true,
+"python.linting.mypyEnabled": true
 }
