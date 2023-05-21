@@ -1,44 +1,41 @@
-# coding: utf-8
-#
-# Copyright 2023 :Barry-Thomas-Paul: Moss
-#
-# Licensed under the Apache License, Version 2.0 (the "License")
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http: // www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-from .._pyi.animations.animate_color import AnimateColor as AnimateColor
-from .._pyi.animations.animate_motion import AnimateMotion as AnimateMotion
-from .._pyi.animations.animate_physics import AnimatePhysics as AnimatePhysics
-from .._pyi.animations.animate_set import AnimateSet as AnimateSet
-from .._pyi.animations.audio import Audio as Audio
-from .._pyi.animations.command import Command as Command
-from .._pyi.animations.event import Event as Event
-from .._pyi.animations.iterate_container import IterateContainer as IterateContainer
-from .._pyi.animations.parallel_time_container import ParallelTimeContainer as ParallelTimeContainer
-from .._pyi.animations.sequence_time_container import SequenceTimeContainer as SequenceTimeContainer
-from .._pyi.animations.target_properties import TargetProperties as TargetProperties
-from .._pyi.animations.time_filter_pair import TimeFilterPair as TimeFilterPair
-from .._pyi.animations.value_pair import ValuePair as ValuePair
-from .._pyi.animations.x_animate import XAnimate as XAnimate
-from .._pyi.animations.x_animate_color import XAnimateColor as XAnimateColor
-from .._pyi.animations.x_animate_motion import XAnimateMotion as XAnimateMotion
-from .._pyi.animations.x_animate_physics import XAnimatePhysics as XAnimatePhysics
-from .._pyi.animations.x_animate_set import XAnimateSet as XAnimateSet
-from .._pyi.animations.x_animate_transform import XAnimateTransform as XAnimateTransform
-from .._pyi.animations.x_animation_listener import XAnimationListener as XAnimationListener
-from .._pyi.animations.x_animation_node import XAnimationNode as XAnimationNode
-from .._pyi.animations.x_animation_node_supplier import XAnimationNodeSupplier as XAnimationNodeSupplier
-from .._pyi.animations.x_audio import XAudio as XAudio
-from .._pyi.animations.x_command import XCommand as XCommand
-from .._pyi.animations.x_iterate_container import XIterateContainer as XIterateContainer
-from .._pyi.animations.x_parallel_time_container import XParallelTimeContainer as XParallelTimeContainer
-from .._pyi.animations.x_time_container import XTimeContainer as XTimeContainer
-from .._pyi.animations.x_transition_filter import XTransitionFilter as XTransitionFilter
+from .animate_color import AnimateColor as AnimateColor
+from .animate_motion import AnimateMotion as AnimateMotion
+from .animate_physics import AnimatePhysics as AnimatePhysics
+from .animate_set import AnimateSet as AnimateSet
+from .animation_additive_mode import AnimationAdditiveMode as AnimationAdditiveMode
+from .animation_calc_mode import AnimationCalcMode as AnimationCalcMode
+from .animation_color_space import AnimationColorSpace as AnimationColorSpace
+from .animation_end_sync import AnimationEndSync as AnimationEndSync
+from .animation_fill import AnimationFill as AnimationFill
+from .animation_node_type import AnimationNodeType as AnimationNodeType
+from .animation_restart import AnimationRestart as AnimationRestart
+from .animation_transform_type import AnimationTransformType as AnimationTransformType
+from .animation_value_type import AnimationValueType as AnimationValueType
+from .audio import Audio as Audio
+from .command import Command as Command
+from .event import Event as Event
+from .event_trigger import EventTrigger as EventTrigger
+from .iterate_container import IterateContainer as IterateContainer
+from .parallel_time_container import ParallelTimeContainer as ParallelTimeContainer
+from .sequence_time_container import SequenceTimeContainer as SequenceTimeContainer
+from .target_properties import TargetProperties as TargetProperties
+from .time_filter_pair import TimeFilterPair as TimeFilterPair
+from .timing import Timing as Timing
+from .transition_sub_type import TransitionSubType as TransitionSubType
+from .transition_type import TransitionType as TransitionType
+from .value_pair import ValuePair as ValuePair
+from .x_animate import XAnimate as XAnimate
+from .x_animate_color import XAnimateColor as XAnimateColor
+from .x_animate_motion import XAnimateMotion as XAnimateMotion
+from .x_animate_physics import XAnimatePhysics as XAnimatePhysics
+from .x_animate_set import XAnimateSet as XAnimateSet
+from .x_animate_transform import XAnimateTransform as XAnimateTransform
+from .x_animation_listener import XAnimationListener as XAnimationListener
+from .x_animation_node import XAnimationNode as XAnimationNode
+from .x_animation_node_supplier import XAnimationNodeSupplier as XAnimationNodeSupplier
+from .x_audio import XAudio as XAudio
+from .x_command import XCommand as XCommand
+from .x_iterate_container import XIterateContainer as XIterateContainer
+from .x_parallel_time_container import XParallelTimeContainer as XParallelTimeContainer
+from .x_time_container import XTimeContainer as XTimeContainer
+from .x_transition_filter import XTransitionFilter as XTransitionFilter
