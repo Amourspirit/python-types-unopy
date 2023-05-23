@@ -21,7 +21,7 @@
 import typing
 
 
-class FormulaResult(object):
+class FormulaResult:
     """
     Const
 
@@ -30,15 +30,15 @@ class FormulaResult(object):
     See Also:
         `API FormulaResult <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1FormulaResult.html>`_
     """
-    VALUE: int = 1
+    VALUE: int = ...
     """
     selects numeric results.
     """
-    STRING: int = 2
+    STRING: int = ...
     """
     selects non-numeric results.
     """
-    ERROR: int = 4
+    ERROR: int = ...
     """
     selects errors.
     """

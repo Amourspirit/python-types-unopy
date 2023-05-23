@@ -21,7 +21,7 @@
 import typing
 
 
-class ConditionOperator2(object):
+class ConditionOperator2:
     """
     Const
 
@@ -30,51 +30,51 @@ class ConditionOperator2(object):
     See Also:
         `API ConditionOperator2 <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1ConditionOperator2.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     no condition is specified.
     """
-    EQUAL: int = 1
+    EQUAL: int = ...
     """
     value has to be equal to the specified value.
     """
-    NOT_EQUAL: int = 2
+    NOT_EQUAL: int = ...
     """
     the value must not be equal to the specified value.
     """
-    GREATER: int = 3
+    GREATER: int = ...
     """
     the value has to be greater than the specified value.
     """
-    GREATER_EQUAL: int = 4
+    GREATER_EQUAL: int = ...
     """
     the value has to be greater than or equal to the specified value.
     """
-    LESS: int = 5
+    LESS: int = ...
     """
     the value has to be less than the specified value.
     """
-    LESS_EQUAL: int = 6
+    LESS_EQUAL: int = ...
     """
     the value has to be less than or equal to the specified value.
     """
-    BETWEEN: int = 7
+    BETWEEN: int = ...
     """
     the value has to be between the two specified values.
     """
-    NOT_BETWEEN: int = 8
+    NOT_BETWEEN: int = ...
     """
     the value has to be outside of the two specified values.
     """
-    FORMULA: int = 9
+    FORMULA: int = ...
     """
     the specified formula has to give a non-zero result.
     """
-    DUPLICATE: int = 10
+    DUPLICATE: int = ...
     """
     Conditionally format duplicate values.
     """
-    NOT_DUPLICATE: int = 11
+    NOT_DUPLICATE: int = ...
     """
     Conditionally format non-duplicate values.
     """

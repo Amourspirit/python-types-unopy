@@ -21,7 +21,7 @@
 import typing
 
 
-class HoriOrientation(object):
+class HoriOrientation:
     """
     Const
 
@@ -30,35 +30,35 @@ class HoriOrientation(object):
     See Also:
         `API HoriOrientation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1HoriOrientation.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     no hard alignment is applied.
     """
-    RIGHT: int = 1
+    RIGHT: int = ...
     """
     The object is aligned at the right side.
     """
-    CENTER: int = 2
+    CENTER: int = ...
     """
     The object is aligned at the middle.
     """
-    LEFT: int = 3
+    LEFT: int = ...
     """
     The object is aligned at the left side.
     """
-    INSIDE: int = 4
+    INSIDE: int = ...
     """
     TODO.
     """
-    OUTSIDE: int = 5
+    OUTSIDE: int = ...
     """
     TODO.
     """
-    FULL: int = 6
+    FULL: int = ...
     """
     The object uses the full space (for text tables only).
     """
-    LEFT_AND_WIDTH: int = 7
+    LEFT_AND_WIDTH: int = ...
     """
     The left offset and the width of the object are defined.
     

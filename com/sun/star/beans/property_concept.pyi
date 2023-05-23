@@ -21,7 +21,7 @@
 import typing
 
 
-class PropertyConcept(object):
+class PropertyConcept:
     """
     Const
 
@@ -32,25 +32,25 @@ class PropertyConcept(object):
     See Also:
         `API PropertyConcept <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1beans_1_1PropertyConcept.html>`_
     """
-    ALL: int = -1
+    ALL: int = ...
     """
     This value is used to query for all properties.
     
     See XIntrospectionAccess.getProperty() and XIntrospectionAccess.getProperties()
     """
-    DANGEROUS: int = 1
+    DANGEROUS: int = ...
     """
     specifies that the change or retrieval of this property directly by the user can result in an unstable state (deadlock, application crash, security hole, etc.)
     """
-    PROPERTYSET: int = 2
+    PROPERTYSET: int = ...
     """
     specifies all properties which are reachable by XPropertySet, XFastPropertySet or XMultiPropertySet.
     """
-    ATTRIBUTES: int = 4
+    ATTRIBUTES: int = ...
     """
     specifies all properties which are actually attributes of interfaces.
     """
-    METHODS: int = 8
+    METHODS: int = ...
     """
     specifies all properties which are represented by getter or setter methods.
     

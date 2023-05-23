@@ -21,7 +21,7 @@
 import typing
 
 
-class NamedRangeFlag(object):
+class NamedRangeFlag:
     """
     Const
 
@@ -30,19 +30,19 @@ class NamedRangeFlag(object):
     See Also:
         `API NamedRangeFlag <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1NamedRangeFlag.html>`_
     """
-    FILTER_CRITERIA: int = 1
+    FILTER_CRITERIA: int = ...
     """
     The range contains filter criteria.
     """
-    PRINT_AREA: int = 2
+    PRINT_AREA: int = ...
     """
     The range can be used as a print range.
     """
-    COLUMN_HEADER: int = 4
+    COLUMN_HEADER: int = ...
     """
     The range can be used as column headers for printing.
     """
-    ROW_HEADER: int = 8
+    ROW_HEADER: int = ...
     """
     The range can be used as row headers for printing.
     """

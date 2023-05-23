@@ -21,7 +21,7 @@
 import typing
 
 
-class MessageBoxButtons(object):
+class MessageBoxButtons:
     """
     Const
 
@@ -30,51 +30,51 @@ class MessageBoxButtons(object):
     See Also:
         `API MessageBoxButtons <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1MessageBoxButtons.html>`_
     """
-    BUTTONS_OK: int = 1
+    BUTTONS_OK: int = ...
     """
     specifies a message with \"OK\" button.
     """
-    BUTTONS_OK_CANCEL: int = 2
+    BUTTONS_OK_CANCEL: int = ...
     """
     specifies a message box with \"OK\" and \"CANCEL\" button.
     """
-    BUTTONS_YES_NO: int = 3
+    BUTTONS_YES_NO: int = ...
     """
     specifies a message box with \"YES\" and \"NO\" button.
     """
-    BUTTONS_YES_NO_CANCEL: int = 4
+    BUTTONS_YES_NO_CANCEL: int = ...
     """
     specifies a message box with \"YES\", \"NO\" and \"CANCEL\" button.
     """
-    BUTTONS_RETRY_CANCEL: int = 5
+    BUTTONS_RETRY_CANCEL: int = ...
     """
     specifies a message box with \"RETRY\" and \"CANCEL\" button.
     """
-    BUTTONS_ABORT_IGNORE_RETRY: int = 6
+    BUTTONS_ABORT_IGNORE_RETRY: int = ...
     """
     specifies a message box with \"ABORT\", \"IGNORE\" and \"RETRY\" button.
     """
-    DEFAULT_BUTTON_OK: int = 65536
+    DEFAULT_BUTTON_OK: int = ...
     """
     specifies that OK is the default button.
     """
-    DEFAULT_BUTTON_CANCEL: int = 131072
+    DEFAULT_BUTTON_CANCEL: int = ...
     """
     specifies that CANCEL is the default button.
     """
-    DEFAULT_BUTTON_RETRY: int = 196608
+    DEFAULT_BUTTON_RETRY: int = ...
     """
     specifies that RETRY is the default button.
     """
-    DEFAULT_BUTTON_YES: int = 262144
+    DEFAULT_BUTTON_YES: int = ...
     """
     specifies that YES is the default button.
     """
-    DEFAULT_BUTTON_NO: int = 327680
+    DEFAULT_BUTTON_NO: int = ...
     """
     specifies that NO is the default button.
     """
-    DEFAULT_BUTTON_IGNORE: int = 393216
+    DEFAULT_BUTTON_IGNORE: int = ...
     """
     specifies that IGNORE is the default button.
     """

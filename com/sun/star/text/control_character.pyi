@@ -21,7 +21,7 @@
 import typing
 
 
-class ControlCharacter(object):
+class ControlCharacter:
     """
     Const
 
@@ -30,31 +30,31 @@ class ControlCharacter(object):
     See Also:
         `API ControlCharacter <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1ControlCharacter.html>`_
     """
-    PARAGRAPH_BREAK: int = 0
+    PARAGRAPH_BREAK: int = ...
     """
     This control character starts a new paragraph.
     """
-    LINE_BREAK: int = 1
+    LINE_BREAK: int = ...
     """
     This control character starts a new line in a paragraph.
     """
-    HARD_HYPHEN: int = 2
+    HARD_HYPHEN: int = ...
     """
     This control character equals a dash but prevents this position from being hyphenated.
     """
-    SOFT_HYPHEN: int = 3
+    SOFT_HYPHEN: int = ...
     """
     This control character defines a special position as a hyphenation point.
     
     If a word containing a soft hyphen must be split at the end of a line, then this position is preferred.
     """
-    HARD_SPACE: int = 4
+    HARD_SPACE: int = ...
     """
     This control character is used to link two words and prevents this concatenation from being hyphenated.
     
     It is printed as a space.
     """
-    APPEND_PARAGRAPH: int = 5
+    APPEND_PARAGRAPH: int = ...
     """
     This control character appends a new paragraph.
     """

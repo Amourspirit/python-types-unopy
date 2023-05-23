@@ -21,7 +21,7 @@
 import typing
 
 
-class TimeUnit(object):
+class TimeUnit:
     """
     Const
 
@@ -34,7 +34,7 @@ class TimeUnit(object):
     See Also:
         `API TimeUnit <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart_1_1TimeUnit.html>`_
     """
-    DAY: int = 0
-    MONTH: int = 1
-    YEAR: int = 2
+    DAY: int = ...
+    MONTH: int = ...
+    YEAR: int = ...
 

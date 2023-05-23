@@ -21,7 +21,7 @@
 import typing
 
 
-class CheckOption(object):
+class CheckOption:
     """
     Const
 
@@ -30,15 +30,15 @@ class CheckOption(object):
     See Also:
         `API CheckOption <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbcx_1_1CheckOption.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     indicates that no value checking is applied during updates of view data.
     """
-    CASCADE: int = 2
+    CASCADE: int = ...
     """
     indicates that the value checking is applied for the view and all base views.
     """
-    LOCAL: int = 3
+    LOCAL: int = ...
     """
     indicates that the value checking is applied only for the view.
     """

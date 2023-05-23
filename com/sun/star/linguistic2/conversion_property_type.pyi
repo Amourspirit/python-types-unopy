@@ -21,7 +21,7 @@
 import typing
 
 
-class ConversionPropertyType(object):
+class ConversionPropertyType:
     """
     Const
 
@@ -34,67 +34,67 @@ class ConversionPropertyType(object):
     See Also:
         `API ConversionPropertyType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1linguistic2_1_1ConversionPropertyType.html>`_
     """
-    NOT_DEFINED: int = 0
+    NOT_DEFINED: int = ...
     """
     There is no property type defined or available.
     """
-    OTHER: int = 1
+    OTHER: int = ...
     """
     Any word that does not fit into any of the other properties.
     """
-    FOREIGN: int = 2
+    FOREIGN: int = ...
     """
     A word or term that is transliterated or used from a non-Chinese language.
     """
-    FIRST_NAME: int = 3
+    FIRST_NAME: int = ...
     """
     The first name (given name) of a person.
     """
-    LAST_NAME: int = 4
+    LAST_NAME: int = ...
     """
     The last name (family name) of a person.
     """
-    TITLE: int = 5
+    TITLE: int = ...
     """
     The academic or social title of a person.
     """
-    STATUS: int = 6
+    STATUS: int = ...
     """
     The status of a situation.
     """
-    PLACE_NAME: int = 7
+    PLACE_NAME: int = ...
     """
     The name of a location or place.
     """
-    BUSINESS: int = 8
+    BUSINESS: int = ...
     """
     The description of a business.
     """
-    ADJECTIVE: int = 9
+    ADJECTIVE: int = ...
     """
     An adjective.
     """
-    IDIOM: int = 10
+    IDIOM: int = ...
     """
     A term that is used to literally describe a circumstance.
     """
-    ABBREVIATION: int = 11
+    ABBREVIATION: int = ...
     """
     An abbreviation.
     """
-    NUMERICAL: int = 12
+    NUMERICAL: int = ...
     """
     A numeric word.
     """
-    NOUN: int = 13
+    NOUN: int = ...
     """
     A noun.
     """
-    VERB: int = 14
+    VERB: int = ...
     """
     A verb.
     """
-    BRAND_NAME: int = 15
+    BRAND_NAME: int = ...
     """
     The name of a product or a company.
     """

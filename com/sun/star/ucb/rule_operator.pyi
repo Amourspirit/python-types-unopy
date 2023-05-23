@@ -21,7 +21,7 @@
 import typing
 
 
-class RuleOperator(object):
+class RuleOperator:
     """
     Const
 
@@ -30,35 +30,35 @@ class RuleOperator(object):
     See Also:
         `API RuleOperator <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1RuleOperator.html>`_
     """
-    CONTAINS: int = 1
+    CONTAINS: int = ...
     """
     \"Contains\" - Object contains RuleTerm.Operand.
     """
-    CONTAINSNOT: int = 2
+    CONTAINSNOT: int = ...
     """
     \"ContainsNot\" - Object does not contain RuleTerm.Operand.
     """
-    GREATEREQUAL: int = 3
+    GREATEREQUAL: int = ...
     """
     \"GreaterEqual\" - Object is greater than or equal to RuleTerm.Operand.
     """
-    LESSEQUAL: int = 4
+    LESSEQUAL: int = ...
     """
     \"LessEqual\" - Object is less than or equal to RuleTerm.Operand.
     """
-    EQUAL: int = 5
+    EQUAL: int = ...
     """
     \"Equal\" - Object is equal to RuleTerm.Operand.
     """
-    NOTEQUAL: int = 6
+    NOTEQUAL: int = ...
     """
     \"NotEqual\" - Object is not equal to RuleTerm.Operand.
     """
-    VALUE_TRUE: int = 7
+    VALUE_TRUE: int = ...
     """
     \"True\" - Object has the value TRUE.
     """
-    VALUE_FALSE: int = 8
+    VALUE_FALSE: int = ...
     """
     \"False\" - Object has the value FALSE.
     """

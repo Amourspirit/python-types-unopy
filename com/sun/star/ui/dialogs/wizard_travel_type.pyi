@@ -21,7 +21,7 @@
 import typing
 
 
-class WizardTravelType(object):
+class WizardTravelType:
     """
     Const
 
@@ -34,15 +34,15 @@ class WizardTravelType(object):
     See Also:
         `API WizardTravelType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1dialogs_1_1WizardTravelType.html>`_
     """
-    FORWARD: int = 1
+    FORWARD: int = ...
     """
     indicates the wizard page is left due to forward traveling through the wizard
     """
-    BACKWARD: int = 2
+    BACKWARD: int = ...
     """
     indicates the wizard page is left due to backward traveling through the wizard
     """
-    FINISH: int = 3
+    FINISH: int = ...
     """
     indicates the wizard page is left since the wizard is about to be finished
     """

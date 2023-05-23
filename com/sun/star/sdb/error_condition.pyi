@@ -21,7 +21,7 @@
 import typing
 
 
-class ErrorCondition(object):
+class ErrorCondition:
     """
     Const
 
@@ -38,33 +38,33 @@ class ErrorCondition(object):
     See Also:
         `API ErrorCondition <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdb_1_1ErrorCondition.html>`_
     """
-    ROW_SET_OPERATION_VETOED: int = 100
+    ROW_SET_OPERATION_VETOED: int = ...
     """
     is used by and RowSet to indicate that an operation has been vetoed by one of its approval listeners
     
     This error condition results in raising a RowSetVetoException.
     """
-    PARSER_CYCLIC_SUB_QUERIES: int = 200
+    PARSER_CYCLIC_SUB_QUERIES: int = ...
     """
     indicates that while parsing an SQL statement, cyclic sub queries have been detected.
     
     Imagine you have a client-side query SELECT * FROM table, which is saved as \"query1\". Additionally, there is a query \"query2\" defined as SELECT * FROM query1. Now if you try to change the statement of query1 to SELECT * FROM query2, this is prohibited, because it would lead to a cyclic sub query.
     """
-    DB_OBJECT_NAME_WITH_SLASHES: int = 300
+    DB_OBJECT_NAME_WITH_SLASHES: int = ...
     """
     indicates that the name of a client side database object - a query, a form, or a report - contains one or more slashes, which is forbidden.
     """
-    DB_INVALID_SQL_NAME: int = 301
+    DB_INVALID_SQL_NAME: int = ...
     """
     indicates that an identifier is not SQL conform.
     """
-    DB_QUERY_NAME_WITH_QUOTES: int = 302
+    DB_QUERY_NAME_WITH_QUOTES: int = ...
     """
     indicates that the name of a query contains quote characters.
     
     This error condition is met when the user attempts to save a query with a name which contains one of the possible database quote characters. This is an error since query names can potentially be used in SELECT statements, where quote identifiers would render the statement invalid.
     """
-    DB_OBJECT_NAME_IS_USED: int = 303
+    DB_OBJECT_NAME_IS_USED: int = ...
     """
     indicates that an attempt was made to save a database object under a name which is already used in the database.
     
@@ -72,17 +72,17 @@ class ErrorCondition(object):
     
     Otherwise, it means an object was attempted to be saved with the name of an already existing object of the same type.
     """
-    DB_NOT_CONNECTED: int = 304
+    DB_NOT_CONNECTED: int = ...
     """
     indicates an operation was attempted which needs a connection to the database, which did not exist at that time.
     """
-    AB_ADDRESSBOOK_NOT_FOUND: int = 500
+    AB_ADDRESSBOOK_NOT_FOUND: int = ...
     """
     used by the component implementing address book access to indicate that a requested address book could not be accessed.
     
     For instance, this error code is used when you try to access the address book in a Thunderbird profile named MyProfile, but there does not exist a profile with this name.
     """
-    DATA_CANNOT_SELECT_UNFILTERED: int = 550
+    DATA_CANNOT_SELECT_UNFILTERED: int = ...
     """
     used to indicate that a SELECT operation on a table needs a filter.
     

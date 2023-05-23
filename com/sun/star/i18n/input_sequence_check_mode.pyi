@@ -21,7 +21,7 @@
 import typing
 
 
-class InputSequenceCheckMode(object):
+class InputSequenceCheckMode:
     """
     Const
 
@@ -34,15 +34,15 @@ class InputSequenceCheckMode(object):
     See Also:
         `API InputSequenceCheckMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1InputSequenceCheckMode.html>`_
     """
-    PASSTHROUGH: int = 0
+    PASSTHROUGH: int = ...
     """
     Pass through mode (no checking)
     """
-    BASIC: int = 1
+    BASIC: int = ...
     """
     Basic checking mode.
     """
-    STRICT: int = 2
+    STRICT: int = ...
     """
     Strict checking mode.
     """

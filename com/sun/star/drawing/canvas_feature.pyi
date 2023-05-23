@@ -21,7 +21,7 @@
 import typing
 
 
-class CanvasFeature(object):
+class CanvasFeature:
     """
     Const
 
@@ -29,6 +29,6 @@ class CanvasFeature(object):
     See Also:
         `API CanvasFeature <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing_1_1CanvasFeature.html>`_
     """
-    None_: int = 0
-    SpriteCanvas: int = 1
+    None_: int = ...
+    SpriteCanvas: int = ...
 

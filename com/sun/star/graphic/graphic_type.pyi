@@ -21,7 +21,7 @@
 import typing
 
 
-class GraphicType(object):
+class GraphicType:
     """
     Const
 
@@ -30,15 +30,15 @@ class GraphicType(object):
     See Also:
         `API GraphicType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1graphic_1_1GraphicType.html>`_
     """
-    EMPTY: int = 0
+    EMPTY: int = ...
     """
     Graphic is empty.
     """
-    PIXEL: int = 1
+    PIXEL: int = ...
     """
     Graphic is represented through single pixels.
     """
-    VECTOR: int = 2
+    VECTOR: int = ...
     """
     Graphic is represented through vectors.
     """

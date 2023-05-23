@@ -21,7 +21,7 @@
 import typing
 
 
-class PropertyLineElement(object):
+class PropertyLineElement:
     """
     Const
 
@@ -34,19 +34,19 @@ class PropertyLineElement(object):
     See Also:
         `API PropertyLineElement <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1inspection_1_1PropertyLineElement.html>`_
     """
-    InputControl: int = 1
+    InputControl: int = ...
     """
     specifies the input control in a group of controls related to a single property
     """
-    PrimaryButton: int = 2
+    PrimaryButton: int = ...
     """
     specifies the primary button (if present) in a group of controls related to a single property
     """
-    SecondaryButton: int = 4
+    SecondaryButton: int = ...
     """
     specifies the secondary button (if present) in a group of controls related to a single property
     """
-    All: int = 255
+    All: int = ...
     """
     specifies all elements
     """

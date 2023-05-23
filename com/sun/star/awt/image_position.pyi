@@ -21,7 +21,7 @@
 import typing
 
 
-class ImagePosition(object):
+class ImagePosition:
     """
     Const
 
@@ -30,55 +30,55 @@ class ImagePosition(object):
     See Also:
         `API ImagePosition <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1ImagePosition.html>`_
     """
-    LeftTop: int = 0
+    LeftTop: int = ...
     """
     specifies that the image should be positioned at the left of, and top-aligned to, the other object
     """
-    LeftCenter: int = 1
+    LeftCenter: int = ...
     """
     specifies that the image should be positioned at the left of, and vertically centered to, the other object
     """
-    LeftBottom: int = 2
+    LeftBottom: int = ...
     """
     specifies that the image should be positioned at the left of, and bottom-aligned to, the other object
     """
-    RightTop: int = 3
+    RightTop: int = ...
     """
     specifies that the image should be positioned at the right of, and top-aligned to, the other object
     """
-    RightCenter: int = 4
+    RightCenter: int = ...
     """
     specifies that the image should be positioned at the right of, and vertically centered to, the other object
     """
-    RightBottom: int = 5
+    RightBottom: int = ...
     """
     specifies that the image should be positioned at the right of, and bottom-aligned to, the other object
     """
-    AboveLeft: int = 6
+    AboveLeft: int = ...
     """
     specifies that the image should be positioned above and left-aligned to the other object
     """
-    AboveCenter: int = 7
+    AboveCenter: int = ...
     """
     specifies that the image should be positioned above and horizontally centered to the other object
     """
-    AboveRight: int = 8
+    AboveRight: int = ...
     """
     specifies that the image should be positioned above and right-aligned to the other object
     """
-    BelowLeft: int = 9
+    BelowLeft: int = ...
     """
     specifies that the image should be positioned below and left-aligned to the other object
     """
-    BelowCenter: int = 10
+    BelowCenter: int = ...
     """
     specifies that the image should be positioned below and horizontally centered to the other object
     """
-    BelowRight: int = 11
+    BelowRight: int = ...
     """
     specifies that the image should be positioned below and right-aligned centered to the other object
     """
-    Centered: int = 12
+    Centered: int = ...
     """
     specifies that the image should be horizontally and vertically centered to the other object.
     """

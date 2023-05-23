@@ -21,7 +21,7 @@
 import typing
 
 
-class MouseButton(object):
+class MouseButton:
     """
     Const
 
@@ -30,15 +30,15 @@ class MouseButton(object):
     See Also:
         `API MouseButton <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1MouseButton.html>`_
     """
-    LEFT: int = 1
+    LEFT: int = ...
     """
     specifies the left mouse button as being pressed.
     """
-    RIGHT: int = 2
+    RIGHT: int = ...
     """
     specifies the right mouse button as being pressed.
     """
-    MIDDLE: int = 4
+    MIDDLE: int = ...
     """
     specifies the middle mouse button as being pressed.
     """

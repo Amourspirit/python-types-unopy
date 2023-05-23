@@ -21,7 +21,7 @@
 import typing
 
 
-class ChapterFormat(object):
+class ChapterFormat:
     """
     Const
 
@@ -30,23 +30,23 @@ class ChapterFormat(object):
     See Also:
         `API ChapterFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1ChapterFormat.html>`_
     """
-    NAME: int = 0
+    NAME: int = ...
     """
     The title of the chapter is displayed.
     """
-    NUMBER: int = 1
+    NUMBER: int = ...
     """
     The number including prefix and suffix of the chapter is displayed.
     """
-    NAME_NUMBER: int = 2
+    NAME_NUMBER: int = ...
     """
     The title and number including prefix and suffix of the chapter are displayed.
     """
-    NO_PREFIX_SUFFIX: int = 3
+    NO_PREFIX_SUFFIX: int = ...
     """
     The name and number of the chapter are displayed.
     """
-    DIGIT: int = 4
+    DIGIT: int = ...
     """
     The number of the chapter is displayed.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class AnimationCalcMode(object):
+class AnimationCalcMode:
     """
     Const
 
@@ -30,23 +30,23 @@ class AnimationCalcMode(object):
     See Also:
         `API AnimationCalcMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1animations_1_1AnimationCalcMode.html>`_
     """
-    DISCRETE: int = 0
+    DISCRETE: int = ...
     """
     This specifies that the animation function will jump from one value to the next without any interpolation.
     """
-    LINEAR: int = 1
+    LINEAR: int = ...
     """
     Simple linear interpolation between values is used to calculate the animation function.
     
     This is the default.
     """
-    PACED: int = 2
+    PACED: int = ...
     """
     Defines interpolation to produce an even pace of change across the animation.
     
     This is only supported for values that define a linear numeric range, and for which some notion of \"distance\" between points can be calculated (e.g. position, width, height, etc.).
     """
-    SPLINE: int = 3
+    SPLINE: int = ...
     """
     Interpolates from one value in the values list to the next according to a time function defined by a cubic Bezier spline.
     

@@ -21,7 +21,7 @@
 import typing
 
 
-class PopupMenuDirection(object):
+class PopupMenuDirection:
     """
     Const
 
@@ -32,23 +32,23 @@ class PopupMenuDirection(object):
     See Also:
         `API PopupMenuDirection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1PopupMenuDirection.html>`_
     """
-    EXECUTE_DEFAULT: int = 0
+    EXECUTE_DEFAULT: int = ...
     """
     opens on execute in a default direction.
     """
-    EXECUTE_DOWN: int = 1
+    EXECUTE_DOWN: int = ...
     """
     opens on execute downwards.
     """
-    EXECUTE_UP: int = 2
+    EXECUTE_UP: int = ...
     """
     opens on execute upwards.
     """
-    EXECUTE_LEFT: int = 4
+    EXECUTE_LEFT: int = ...
     """
     opens on execute to the left.
     """
-    EXECUTE_RIGHT: int = 8
+    EXECUTE_RIGHT: int = ...
     """
     opens on execute to the right.
     """

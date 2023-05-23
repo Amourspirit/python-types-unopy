@@ -21,7 +21,7 @@
 import typing
 
 
-class DispatchResultState(object):
+class DispatchResultState:
     """
     Const
 
@@ -30,15 +30,15 @@ class DispatchResultState(object):
     See Also:
         `API DispatchResultState <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1frame_1_1DispatchResultState.html>`_
     """
-    FAILURE: int = 0
+    FAILURE: int = ...
     """
     indicates: dispatch failed
     """
-    SUCCESS: int = 1
+    SUCCESS: int = ...
     """
     indicates: dispatch was successful
     """
-    DONTKNOW: int = 2
+    DONTKNOW: int = ...
     """
     indicates: result isn't defined
     """

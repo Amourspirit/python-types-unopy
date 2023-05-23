@@ -21,7 +21,7 @@
 import typing
 
 
-class NumberFormatIndex(object):
+class NumberFormatIndex:
     """
     Const
 
@@ -46,256 +46,256 @@ class NumberFormatIndex(object):
     See Also:
         `API NumberFormatIndex <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1NumberFormatIndex.html>`_
     """
-    NUMBER_START: int = 0
+    NUMBER_START: int = ...
     """
     Start of simple numerical formats (first format)
     """
-    NUMBER_STANDARD: int = 0
+    NUMBER_STANDARD: int = ...
     """
     The \"General\" standard format formatindex=\"0\".
     """
-    NUMBER_INT: int = 1
+    NUMBER_INT: int = ...
     """
     0 Integer number formatindex=\"1\"
     """
-    NUMBER_DEC2: int = 2
+    NUMBER_DEC2: int = ...
     """
     0.00 Decimal number with 2 decimals formatindex=\"2\"
     """
-    NUMBER_1000INT: int = 3
+    NUMBER_1000INT: int = ...
     """
     #,##0 Integer number with group separator formatindex=\"3\"
     """
-    NUMBER_1000DEC2: int = 4
+    NUMBER_1000DEC2: int = ...
     """
     #,##0.00 Decimal number with group separator formatindex=\"4\"
     """
-    NUMBER_SYSTEM: int = 5
+    NUMBER_SYSTEM: int = ...
     """
     #,##0.00 In SO5/Win this format was retrieved from the Regional Settings formatindex=\"5\"
     """
-    NUMBER_END: int = 5
+    NUMBER_END: int = ...
     """
     End of simple numerical formats (last format)
     """
-    SCIENTIFIC_START: int = 6
+    SCIENTIFIC_START: int = ...
     """
     Start of Scientific formats (first format)
     """
-    SCIENTIFIC_000E000: int = 6
+    SCIENTIFIC_000E000: int = ...
     """
     0.00E+000 Number in scientific notation with exponent in 3 digit placeholders formatindex=\"6\"
     """
-    SCIENTIFIC_000E00: int = 7
+    SCIENTIFIC_000E00: int = ...
     """
     0.00E+00 Number in scientific notation with exponent in 2 digit placeholders formatindex=\"7\"
     """
-    SCIENTIFIC_END: int = 7
+    SCIENTIFIC_END: int = ...
     """
     End of Scientific formats (last format)
     """
-    PERCENT_START: int = 8
+    PERCENT_START: int = ...
     """
     Start of Percent formats (first format)
     """
-    PERCENT_INT: int = 8
+    PERCENT_INT: int = ...
     """
     0% Percentage format, rounded to integer formatindex=\"8\"
     """
-    PERCENT_DEC2: int = 9
+    PERCENT_DEC2: int = ...
     """
     0.00% Percentage format, rounded to 2 decimals formatindex=\"9\"
     """
-    PERCENT_END: int = 9
+    PERCENT_END: int = ...
     """
     End of Percent formats (last format)
     """
-    FRACTION_START: int = 10
+    FRACTION_START: int = ...
     """
     Start of Fraction formats (first format)
     """
-    FRACTION_1: int = 10
-    FRACTION_2: int = 11
-    FRACTION_END: int = 11
+    FRACTION_1: int = ...
+    FRACTION_2: int = ...
+    FRACTION_END: int = ...
     """
     End of Fraction formats (last format)
     """
-    CURRENCY_START: int = 12
+    CURRENCY_START: int = ...
     """
     Start of Currency formats (first format)
     """
-    CURRENCY_1000INT: int = 12
+    CURRENCY_1000INT: int = ...
     """
     #,##0 DM Integer currency format with group separator formatindex=\"12\"
     """
-    CURRENCY_1000DEC2: int = 13
+    CURRENCY_1000DEC2: int = ...
     """
     #,##0.00 DM Decimal currency format with group separator formatindex=\"13\"
     """
-    CURRENCY_1000INT_RED: int = 14
+    CURRENCY_1000INT_RED: int = ...
     """
     #,##0 DM Integer currency format with negative in red formatindex=\"14\"
     """
-    CURRENCY_1000DEC2_RED: int = 15
+    CURRENCY_1000DEC2_RED: int = ...
     """
     #,##0.00 DM Decimal currency format with negative in red formatindex=\"15\"
     """
-    CURRENCY_1000DEC2_CCC: int = 16
+    CURRENCY_1000DEC2_CCC: int = ...
     """
     #,##0.00 DEM Currency in ISO-4217 abbreviation format formatindex=\"16\"
     """
-    CURRENCY_1000DEC2_DASHED: int = 17
+    CURRENCY_1000DEC2_DASHED: int = ...
     """
     #,##0.– DM Currency format with dash representing 0 in decimals formatindex=\"17\"
     """
-    CURRENCY_END: int = 17
+    CURRENCY_END: int = ...
     """
     End of Currency formats (last format)
     """
-    DATE_START: int = 18
+    DATE_START: int = ...
     """
     Start of Date formats (first format)
     """
-    DATE_SYSTEM_SHORT: int = 18
+    DATE_SYSTEM_SHORT: int = ...
     """
     08.10.97 see also DATE_SYSTEM_... explanation formatindex=\"18\"
     """
-    DATE_SYSTEM_LONG: int = 19
+    DATE_SYSTEM_LONG: int = ...
     """
     Wednesday, 8.
     
     October 1997 see also DATE_SYSTEM_... explanation formatindex=\"19\"
     """
-    DATE_SYS_DDMMYY: int = 20
+    DATE_SYS_DDMMYY: int = ...
     """
     08.10.97 see also DATE_SYS_... explanation formatindex=\"20\"
     """
-    DATE_SYS_DDMMYYYY: int = 21
+    DATE_SYS_DDMMYYYY: int = ...
     """
     08.10.1997 see also DATE_SYS_...
     
     explanation Note: When editing already existing date data this format is forced in order to always edit the full century. formatindex=\"21\"
     """
-    DATE_SYS_DMMMYY: int = 22
-    DATE_SYS_DMMMYYYY: int = 23
-    DATE_DIN_DMMMYYYY: int = 24
-    DATE_SYS_DMMMMYYYY: int = 25
-    DATE_DIN_DMMMMYYYY: int = 26
-    DATE_SYS_NNDMMMYY: int = 27
+    DATE_SYS_DMMMYY: int = ...
+    DATE_SYS_DMMMYYYY: int = ...
+    DATE_DIN_DMMMYYYY: int = ...
+    DATE_SYS_DMMMMYYYY: int = ...
+    DATE_DIN_DMMMMYYYY: int = ...
+    DATE_SYS_NNDMMMYY: int = ...
     """
     Wed, 8. Oct 97 see also DATE_SYS_... explanation formatindex=\"27\".
     """
-    DATE_DEF_NNDDMMMYY: int = 28
+    DATE_DEF_NNDDMMMYY: int = ...
     """
     Wed 08.Oct 97 see also DATE_DEF_... explanation formatindex=\"28\".
     """
-    DATE_SYS_NNDMMMMYYYY: int = 29
+    DATE_SYS_NNDMMMMYYYY: int = ...
     """
     Wed, 8. October 1997 see also DATE_SYS_... explanation formatindex=\"29\".
     """
-    DATE_SYS_NNNNDMMMMYYYY: int = 30
+    DATE_SYS_NNNNDMMMMYYYY: int = ...
     """
     Wednesday, 8. October 1997 formatindex=\"30\".
     """
-    DATE_DIN_MMDD: int = 31
+    DATE_DIN_MMDD: int = ...
     """
     10-08 DIN/EN formatindex=\"31\"
     """
-    DATE_DIN_YYMMDD: int = 32
+    DATE_DIN_YYMMDD: int = ...
     """
     97-10-08 DIN/EN formatindex=\"32\"
     """
-    DATE_DIN_YYYYMMDD: int = 33
+    DATE_DIN_YYYYMMDD: int = ...
     """
     1997-10-08 DIN/EN/ISO formatindex=\"33\"
     """
-    DATE_SYS_MMYY: int = 34
+    DATE_SYS_MMYY: int = ...
     """
     10.97 see also DATE_SYS_... explanation formatindex=\"34\"
     """
-    DATE_SYS_DDMMM: int = 35
+    DATE_SYS_DDMMM: int = ...
     """
     08.Oct see also DATE_SYS_... explanation formatindex=\"35\"
     """
-    DATE_MMMM: int = 36
+    DATE_MMMM: int = ...
     """
     October formatindex=\"36\".
     """
-    DATE_QQJJ: int = 37
+    DATE_QQJJ: int = ...
     """
     4th quarter 97 formatindex=\"37\"
     """
-    DATE_WW: int = 38
+    DATE_WW: int = ...
     """
     week of year formatindex=\"38\"
     """
-    DATE_END: int = 38
+    DATE_END: int = ...
     """
     End of Date formats (last format)
     """
-    TIME_START: int = 39
+    TIME_START: int = ...
     """
     Start of Time formats (first format)
     """
-    TIME_HHMM: int = 39
+    TIME_HHMM: int = ...
     """
     HH:MM Time format with hour and minute formatindex=\"39\".
     """
-    TIME_HHMMSS: int = 40
+    TIME_HHMMSS: int = ...
     """
     HH:MM:SS Time format with hour, minute and second formatindex=\"40\".
     """
-    TIME_HHMMAMPM: int = 41
+    TIME_HHMMAMPM: int = ...
     """
     HH:MM AM/PM Time format with hour, minute and morning/afternoon notation formatindex=\"41\".
     """
-    TIME_HHMMSSAMPM: int = 42
+    TIME_HHMMSSAMPM: int = ...
     """
     HH:MM:SS AM/PM Time format with hour, minute, second and morning/afternoon notation formatindex=\"42\".
     """
-    TIME_HH_MMSS: int = 43
+    TIME_HH_MMSS: int = ...
     """
     [HH]:MM:SS Time format with amount of hours formatindex=\"43\"
     """
-    TIME_MMSS00: int = 44
+    TIME_MMSS00: int = ...
     """
     MM:SS,00 Time format with second in fraction formatindex=\"44\".
     """
-    TIME_HH_MMSS00: int = 45
+    TIME_HH_MMSS00: int = ...
     """
     [HH]:MM:SS,00 Time format with amount of hours and seconds with fraction formatindex=\"45\"
     """
-    TIME_END: int = 45
+    TIME_END: int = ...
     """
     End of Time formats (last format)
     """
-    DATETIME_START: int = 46
+    DATETIME_START: int = ...
     """
     Start of DateTime formats (first format)
     """
-    DATETIME_SYSTEM_SHORT_HHMM: int = 46
+    DATETIME_SYSTEM_SHORT_HHMM: int = ...
     """
     08.10.97 01:23 Date/time format formatindex=\"46\"
     """
-    DATETIME_SYS_DDMMYYYY_HHMMSS: int = 47
+    DATETIME_SYS_DDMMYYYY_HHMMSS: int = ...
     """
     08.10.1997 01:23:45 Date/time format with second Note: When editing already existing date/time data this format is forced in order to always edit the full century.
     
     formatindex=\"47\"
     """
-    DATETIME_END: int = 47
+    DATETIME_END: int = ...
     """
     End of DateTime formats (last format)
     """
-    BOOLEAN: int = 48
+    BOOLEAN: int = ...
     """
     BOOLEAN format.
     """
-    TEXT: int = 49
+    TEXT: int = ...
     """
     Text format.
     """
-    INDEX_TABLE_ENTRIES: int = 50
+    INDEX_TABLE_ENTRIES: int = ...
     """
     count of built-in format codes.
     """

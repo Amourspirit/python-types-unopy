@@ -21,7 +21,7 @@
 import typing
 
 
-class FocusChangeReason(object):
+class FocusChangeReason:
     """
     Const
 
@@ -30,31 +30,31 @@ class FocusChangeReason(object):
     See Also:
         `API FocusChangeReason <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1FocusChangeReason.html>`_
     """
-    TAB: int = 1
+    TAB: int = ...
     """
     Focus changed because TAB was pressed.
     """
-    CURSOR: int = 2
+    CURSOR: int = ...
     """
     Focus changed because Key Left/Right/Up/Down was pressed.
     """
-    MNEMONIC: int = 4
+    MNEMONIC: int = ...
     """
     Focus changed because mnemonic key was pressed.
     """
-    FORWARD: int = 16
+    FORWARD: int = ...
     """
     Changed Focus to the next control.
     """
-    BACKWARD: int = 32
+    BACKWARD: int = ...
     """
     Changed Focus to the previous control.
     """
-    AROUND: int = 64
+    AROUND: int = ...
     """
     Changed Focus forward from last to first or backward from first to last.
     """
-    UNIQUEMNEMONIC: int = 256
+    UNIQUEMNEMONIC: int = ...
     """
     Focus changed because mnemonic key was pressed and this mnemonic is unique.
     """

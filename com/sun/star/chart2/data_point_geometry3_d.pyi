@@ -21,7 +21,7 @@
 import typing
 
 
-class DataPointGeometry3D(object):
+class DataPointGeometry3D:
     """
     Const
 
@@ -30,19 +30,19 @@ class DataPointGeometry3D(object):
     See Also:
         `API DataPointGeometry3D <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart2_1_1DataPointGeometry3D.html>`_
     """
-    CUBOID: int = 0
+    CUBOID: int = ...
     """
     a cuboid
     """
-    CYLINDER: int = 1
+    CYLINDER: int = ...
     """
     a cylinder with a circle as base
     """
-    CONE: int = 2
+    CONE: int = ...
     """
     a cone with a circle as base
     """
-    PYRAMID: int = 3
+    PYRAMID: int = ...
     """
     a pyramid with a square as base
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class Calculation(object):
+class Calculation:
     """
     Const
 
@@ -30,87 +30,87 @@ class Calculation(object):
     See Also:
         `API Calculation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1report_1_1Calculation.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     returns the average of a field.
     """
-    AVERAGE: int = 1
+    AVERAGE: int = ...
     """
     returns the average of a field.
     """
-    CORRELATION: int = 2
+    CORRELATION: int = ...
     """
     returns the correlation of two fields.
     """
-    COUNT: int = 3
+    COUNT: int = ...
     """
     counts the number of values, from the field.
     """
-    COVARIANCE: int = 4
+    COVARIANCE: int = ...
     """
     returns the measure of the linear relation between paired variables.
     """
-    DISTINCTCOUNT: int = 5
+    DISTINCTCOUNT: int = ...
     """
     returns the number of none repeating values, from the field.
     """
-    MAXIMUM: int = 6
+    MAXIMUM: int = ...
     """
     returns the largest value from the field.
     """
-    MEDIAN: int = 7
+    MEDIAN: int = ...
     """
     returns the middle value in a sequence of numeric values.
     """
-    MINIMUM: int = 8
+    MINIMUM: int = ...
     """
     returns the smallest value from the field.
     """
-    MODE: int = 9
+    MODE: int = ...
     """
     returns the most frequently returning value from the field.
     """
-    NTHLARGEST: int = 10
+    NTHLARGEST: int = ...
     """
     returns the Nth largest value from the field.
     """
-    NTHMOSTFREQUENT: int = 11
+    NTHMOSTFREQUENT: int = ...
     """
     returns the Nth most commonly occurring value from the field.
     """
-    NTHSMALLEST: int = 12
+    NTHSMALLEST: int = ...
     """
     returns the Nth smallest value from the field.
     """
-    PERCENTAGE: int = 13
+    PERCENTAGE: int = ...
     """
     returns as a percentage of the grand total summary.
     """
-    PERCENTILE: int = 14
+    PERCENTILE: int = ...
     """
     returns the value for a specified percentile in a Number or Currency field.
     """
-    POPSTANDARDDEVIATION: int = 15
+    POPSTANDARDDEVIATION: int = ...
     """
     returns how much each value in the field deviate from the mean or average value for that field.
     """
-    POPVARIANCE: int = 16
+    POPVARIANCE: int = ...
     """
     returns the square of the standard deviation.
     """
-    SAMPLESTANDARDDEVIATION: int = 17
+    SAMPLESTANDARDDEVIATION: int = ...
     """
     returns the sample standard deviation for the field.
     """
-    SAMPLEVARIANCE: int = 18
+    SAMPLEVARIANCE: int = ...
     """
     returns the sample variance for the field.
     """
-    SUM: int = 19
+    SUM: int = ...
     """
     returns the total of all the values for the field.
     """
-    WEIGHTEDAVG: int = 20
+    WEIGHTEDAVG: int = ...
     """
     returns the weighted average for the field.
     """

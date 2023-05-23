@@ -21,7 +21,7 @@
 import typing
 
 
-class ImageScaleMode(object):
+class ImageScaleMode:
     """
     Const
 
@@ -30,17 +30,17 @@ class ImageScaleMode(object):
     See Also:
         `API ImageScaleMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1ImageScaleMode.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     specifies that no scaling should happen at all
     """
-    ISOTROPIC: int = 1
+    ISOTROPIC: int = ...
     """
     specifies that the image should be scaled up or down to the size of the surrounding area isotropically, i.e.
     
     by keeping its aspect ratio.
     """
-    ANISOTROPIC: int = 2
+    ANISOTROPIC: int = ...
     """
     specifies that the image should be scaled up or down to the size of the surrounding area anisotropically.
     

@@ -21,7 +21,7 @@
 import typing
 
 
-class ReferenceFieldPart(object):
+class ReferenceFieldPart:
     """
     Const
 
@@ -34,47 +34,47 @@ class ReferenceFieldPart(object):
     See Also:
         `API ReferenceFieldPart <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1ReferenceFieldPart.html>`_
     """
-    PAGE: int = 0
+    PAGE: int = ...
     """
     The page number is displayed using Arabic numbers.
     """
-    CHAPTER: int = 1
+    CHAPTER: int = ...
     """
     The number of the chapter is displayed.
     """
-    TEXT: int = 2
+    TEXT: int = ...
     """
     The reference text is displayed.
     
     If the source of the reference is a sequence field, then the complete text of the paragraph is displayed. This is useful to reference to captions.
     """
-    UP_DOWN: int = 3
+    UP_DOWN: int = ...
     """
     The reference is displayed as one of the (localized) words, \"above\" or \"below\".
     """
-    PAGE_DESC: int = 4
+    PAGE_DESC: int = ...
     """
     The page number is displayed using the numbering type defined in the page style of the reference position.
     """
-    CATEGORY_AND_NUMBER: int = 5
+    CATEGORY_AND_NUMBER: int = ...
     """
     The category and the number of a caption is displayed.
     
     This option is only valid if the source of the reference is a sequence field.
     """
-    ONLY_CAPTION: int = 6
+    ONLY_CAPTION: int = ...
     """
     The caption text of a caption is displayed.
     
     This option is only valid if the source of the reference is a sequence field.
     """
-    ONLY_SEQUENCE_NUMBER: int = 7
+    ONLY_SEQUENCE_NUMBER: int = ...
     """
     The number of a sequence field is displayed.
     
     This option is only valid if the source of the reference is a sequence field.
     """
-    NUMBER: int = 8
+    NUMBER: int = ...
     """
     The numbering label and depending of the reference field context numbering labels of superior list levels of the reference are displayed.
     
@@ -86,7 +86,7 @@ class ReferenceFieldPart(object):
     
         OOo 3.0
     """
-    NUMBER_NO_CONTEXT: int = 9
+    NUMBER_NO_CONTEXT: int = ...
     """
     The numbering label of the reference is displayed.
     
@@ -98,7 +98,7 @@ class ReferenceFieldPart(object):
     
         OOo 3.0
     """
-    NUMBER_FULL_CONTEXT: int = 10
+    NUMBER_FULL_CONTEXT: int = ...
     """
     The numbering label and numbering labels of superior list levels of the reference are displayed.
     

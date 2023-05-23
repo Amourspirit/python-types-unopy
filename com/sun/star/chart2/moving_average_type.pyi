@@ -21,7 +21,7 @@
 import typing
 
 
-class MovingAverageType(object):
+class MovingAverageType:
     """
     Const
 
@@ -29,7 +29,7 @@ class MovingAverageType(object):
     See Also:
         `API MovingAverageType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart2_1_1MovingAverageType.html>`_
     """
-    Prior: int = 1
-    Central: int = 2
-    AveragedAbscissa: int = 3
+    Prior: int = ...
+    Central: int = ...
+    AveragedAbscissa: int = ...
 

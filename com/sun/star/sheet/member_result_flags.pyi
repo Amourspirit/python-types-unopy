@@ -21,7 +21,7 @@
 import typing
 
 
-class MemberResultFlags(object):
+class MemberResultFlags:
     """
     Const
 
@@ -30,23 +30,23 @@ class MemberResultFlags(object):
     See Also:
         `API MemberResultFlags <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1MemberResultFlags.html>`_
     """
-    HASMEMBER: int = 1
+    HASMEMBER: int = ...
     """
     The element contains a member.
     """
-    SUBTOTAL: int = 2
+    SUBTOTAL: int = ...
     """
     The element contains a subtotal.
     """
-    CONTINUE: int = 4
+    CONTINUE: int = ...
     """
     The element is a continuation of the previous one.
     """
-    GRANDTOTAL: int = 8
+    GRANDTOTAL: int = ...
     """
     The element contains a grand total.
     """
-    NUMERIC: int = 16
+    NUMERIC: int = ...
     """
     The element is a numeric value.
     """

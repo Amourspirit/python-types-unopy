@@ -21,7 +21,7 @@
 import typing
 
 
-class FloatingPointBitmapFormat(object):
+class FloatingPointBitmapFormat:
     """
     Const
 
@@ -34,19 +34,19 @@ class FloatingPointBitmapFormat(object):
     See Also:
         `API FloatingPointBitmapFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1FloatingPointBitmapFormat.html>`_
     """
-    HALFFLOAT: int = 0
+    HALFFLOAT: int = ...
     """
     Half-float format.
     
     The color components are stored in the half-float format, i.e. in a 16 bit value, with 5 bit exponent, 10 bit mantissa and a sign bit. See also OpenEXR for a format employing half-floats.
     """
-    FLOAT: int = 1
+    FLOAT: int = ...
     """
     IEEE float format.
     
     The color components are stored in the IEEE single-precision floating point format, i.e. in a 32 bit value, with 8 bit exponent, 23 bit mantissa and a sign bit.
     """
-    DOUBLE: int = 2
+    DOUBLE: int = ...
     """
     IEEE double format.
     

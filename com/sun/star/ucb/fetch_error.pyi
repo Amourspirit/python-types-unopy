@@ -21,7 +21,7 @@
 import typing
 
 
-class FetchError(object):
+class FetchError:
     """
     Const
 
@@ -30,17 +30,17 @@ class FetchError(object):
     See Also:
         `API FetchError <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1FetchError.html>`_
     """
-    SUCCESS: int = 0
+    SUCCESS: int = ...
     """
     indicates that fetching of data was successful.
     """
-    ENDOFDATA: int = 1
+    ENDOFDATA: int = ...
     """
     indicates that during fetching we went beyond the last or first row.
     
     Therefore the FetchResult does not contain the full count of demanded rows, but the maximum possible count must be contained.
     """
-    EXCEPTION: int = 2
+    EXCEPTION: int = ...
     """
     indicates that during fetching we got an exception.
     

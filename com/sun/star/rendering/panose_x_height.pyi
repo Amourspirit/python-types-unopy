@@ -21,7 +21,7 @@
 import typing
 
 
-class PanoseXHeight(object):
+class PanoseXHeight:
     """
     Const
 
@@ -29,12 +29,12 @@ class PanoseXHeight(object):
     See Also:
         `API PanoseXHeight <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1PanoseXHeight.html>`_
     """
-    ANYTHING: int = 0
-    NO_FIT: int = 1
-    CONSTANT_SMALL: int = 2
-    CONSTANT_STANDARD: int = 3
-    CONSTANT_LARGE: int = 4
-    DUCKING_SMALL: int = 5
-    DUCKING_STANDARD: int = 6
-    DUCKING_LARGE: int = 7
+    ANYTHING: int = ...
+    NO_FIT: int = ...
+    CONSTANT_SMALL: int = ...
+    CONSTANT_STANDARD: int = ...
+    CONSTANT_LARGE: int = ...
+    DUCKING_SMALL: int = ...
+    DUCKING_STANDARD: int = ...
+    DUCKING_LARGE: int = ...
 

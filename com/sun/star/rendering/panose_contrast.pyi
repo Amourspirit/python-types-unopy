@@ -21,7 +21,7 @@
 import typing
 
 
-class PanoseContrast(object):
+class PanoseContrast:
     """
     Const
 
@@ -29,14 +29,14 @@ class PanoseContrast(object):
     See Also:
         `API PanoseContrast <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1PanoseContrast.html>`_
     """
-    ANYTHING: int = 0
-    NO_FIT: int = 1
-    NONE: int = 2
-    VERY_LOW: int = 3
-    LOW: int = 4
-    MEDIUM_LOW: int = 5
-    MEDIUM: int = 6
-    MEDIUM_HIGH: int = 7
-    HIGH: int = 8
-    VERY_HIGH: int = 9
+    ANYTHING: int = ...
+    NO_FIT: int = ...
+    NONE: int = ...
+    VERY_LOW: int = ...
+    LOW: int = ...
+    MEDIUM_LOW: int = ...
+    MEDIUM: int = ...
+    MEDIUM_HIGH: int = ...
+    HIGH: int = ...
+    VERY_HIGH: int = ...
 

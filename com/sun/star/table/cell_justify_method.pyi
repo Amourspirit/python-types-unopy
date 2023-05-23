@@ -21,7 +21,7 @@
 import typing
 
 
-class CellJustifyMethod(object):
+class CellJustifyMethod:
     """
     Const
 
@@ -32,11 +32,11 @@ class CellJustifyMethod(object):
     See Also:
         `API CellJustifyMethod <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1table_1_1CellJustifyMethod.html>`_
     """
-    AUTO: int = 0
+    AUTO: int = ...
     """
     Automatic.
     """
-    DISTRIBUTE: int = 1
+    DISTRIBUTE: int = ...
     """
     When applied in the direction of text flow, characters in each line are distributed at equal intervals so that the ends of each line are aligned with the start and end edges of the cell.
     

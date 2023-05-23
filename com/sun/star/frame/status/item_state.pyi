@@ -21,7 +21,7 @@
 import typing
 
 
-class ItemState(object):
+class ItemState:
     """
     Const
 
@@ -34,15 +34,15 @@ class ItemState(object):
     See Also:
         `API ItemState <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1frame_1_1status_1_1ItemState.html>`_
     """
-    UNKNOWN: int = 0
+    UNKNOWN: int = ...
     """
     specifies an unknown state.
     """
-    DISABLED: int = 1
+    DISABLED: int = ...
     """
     specifies that the property is currently disabled.
     """
-    READ_ONLY: int = 2
+    READ_ONLY: int = ...
     """
     specifies that the property is currently read-only.
     
@@ -50,17 +50,17 @@ class ItemState(object):
     
     There are only three usages of com.sun.star.frame.status.ItemState in the code which all set the internal SfxItem to SfxVoidItem when triggered, which is equivalent to state SfxItemState.DISABLED (see e.g. SfxItemSet.GetItemState), so READ_ONLY gets not used in internal handling, even when eventually existing UNO API usages hand it over the office.
     """
-    DONT_CARE: int = 16
+    DONT_CARE: int = ...
     """
     specifies that the property is currently in a don't care state.
     
     This is normally used if a selection provides more than one state for a property at the same time.
     """
-    DEFAULT_VALUE: int = 32
+    DEFAULT_VALUE: int = ...
     """
     specifies that the property is currently in a default state.
     """
-    SET: int = 64
+    SET: int = ...
     """
     specifies that the property is currently in a set state.
     """

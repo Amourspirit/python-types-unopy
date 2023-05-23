@@ -21,7 +21,7 @@
 import typing
 
 
-class BreakType(object):
+class BreakType:
     """
     Const
 
@@ -30,15 +30,15 @@ class BreakType(object):
     See Also:
         `API BreakType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1BreakType.html>`_
     """
-    WORDBOUNDARY: int = 1
+    WORDBOUNDARY: int = ...
     """
     Line break is a word break.
     """
-    HYPHENATION: int = 2
+    HYPHENATION: int = ...
     """
     Line break is a result of hyphenation.
     """
-    HANGINGPUNCTUATION: int = 3
+    HANGINGPUNCTUATION: int = ...
     """
     Line break - hanging punctuation recognized.
     """

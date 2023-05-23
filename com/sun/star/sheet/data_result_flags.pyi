@@ -21,7 +21,7 @@
 import typing
 
 
-class DataResultFlags(object):
+class DataResultFlags:
     """
     Const
 
@@ -30,15 +30,15 @@ class DataResultFlags(object):
     See Also:
         `API DataResultFlags <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DataResultFlags.html>`_
     """
-    HASDATA: int = 1
+    HASDATA: int = ...
     """
     The element contains data.
     """
-    SUBTOTAL: int = 2
+    SUBTOTAL: int = ...
     """
     The element contains a subtotal.
     """
-    ERROR: int = 4
+    ERROR: int = ...
     """
     The element has an error.
     """

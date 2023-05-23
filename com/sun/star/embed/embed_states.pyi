@@ -21,7 +21,7 @@
 import typing
 
 
-class EmbedStates(object):
+class EmbedStates:
     """
     Const
 
@@ -30,29 +30,29 @@ class EmbedStates(object):
     See Also:
         `API EmbedStates <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1embed_1_1EmbedStates.html>`_
     """
-    LOADED: int = 0
+    LOADED: int = ...
     """
     \"Loaded\" - the persistent representation of the object is loaded in memory.
     
     The object is created and assigned with a persistent entry, and a view representation ( metafile and etc. ) can be retrieved ( if there is any ).
     """
-    RUNNING: int = 1
+    RUNNING: int = ...
     """
     \"Running\" - the object is connected and loaded.
     
     The object has a connection to the container client and a component loaded from persistent entry. In case of internal document it also means existing of document model that implements com.sun.star.frame.XModel interface.
     """
-    ACTIVE: int = 2
+    ACTIVE: int = ...
     """
     \"Active\" - the object is activated in separate window ( outplace activation ).
     """
-    INPLACE_ACTIVE: int = 3
+    INPLACE_ACTIVE: int = ...
     """
     \"Inplace active\" - the object has own window in the container's window.
     
     The object is activated and has its own window in the container's window that allows object to process mouse events and control own rendering.
     """
-    UI_ACTIVE: int = 4
+    UI_ACTIVE: int = ...
     """
     \"UI active\" - the inplace active object that has user interface.
     

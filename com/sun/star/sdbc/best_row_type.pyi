@@ -21,7 +21,7 @@
 import typing
 
 
-class BestRowType(object):
+class BestRowType:
     """
     Const
 
@@ -30,19 +30,19 @@ class BestRowType(object):
     See Also:
         `API BestRowType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1BestRowType.html>`_
     """
-    UNKNOWN: int = 0
+    UNKNOWN: int = ...
     """
     indicates that the best row identifier may or may not be a pseudo-column.
     
     A possible value for the column PSEUDO_COLUMN in the com.sun.star.sdbc.XResultSet object returned by the method XDatabaseMetaData.getBestRowIdentifier().
     """
-    NOT_PSEUDO: int = 1
+    NOT_PSEUDO: int = ...
     """
     indicates that the best row identifier is NOT a pseudo-column.
     
     A possible value for the column PSEUDO_COLUMN in the com.sun.star.sdbc.XResultSet object returned by the method XDatabaseMetaData.getBestRowIdentifier().
     """
-    PSEUDO: int = 2
+    PSEUDO: int = ...
     """
     indicates that the best row identifier is a pseudo-column.
     

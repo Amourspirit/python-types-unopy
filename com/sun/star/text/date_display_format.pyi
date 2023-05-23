@@ -21,7 +21,7 @@
 import typing
 
 
-class DateDisplayFormat(object):
+class DateDisplayFormat:
     """
     Const
 
@@ -36,31 +36,31 @@ class DateDisplayFormat(object):
     See Also:
         `API DateDisplayFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1DateDisplayFormat.html>`_
     """
-    STANDARD_SHORT: int = 0
+    STANDARD_SHORT: int = ...
     """
     the shortest system standard
     """
-    STANDARD_LONG: int = 1
+    STANDARD_LONG: int = ...
     """
     the longest system standard
     """
-    MMDDYY: int = 2
+    MMDDYY: int = ...
     """
     22.11.73
     """
-    MMDDYYYY: int = 3
+    MMDDYYYY: int = ...
     """
     22.11.1973
     """
-    DDMMMYYYY: int = 4
-    DDMMMMYYYY: int = 5
-    NNDDMMMMYYYY: int = 6
+    DDMMMYYYY: int = ...
+    DDMMMMYYYY: int = ...
+    NNDDMMMMYYYY: int = ...
     """
     Do, 22.
     
     November 1973
     """
-    NNNNDDMMMMYYYY: int = 7
+    NNNNDDMMMMYYYY: int = ...
     """
     Donnerstag, 22.
     

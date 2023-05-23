@@ -21,7 +21,7 @@
 import typing
 
 
-class RowChangeAction(object):
+class RowChangeAction:
     """
     Const
 
@@ -30,15 +30,15 @@ class RowChangeAction(object):
     See Also:
         `API RowChangeAction <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdb_1_1RowChangeAction.html>`_
     """
-    INSERT: int = 1
+    INSERT: int = ...
     """
     indicates that an insert will be performed.
     """
-    UPDATE: int = 2
+    UPDATE: int = ...
     """
     indicates that an update will be performed.
     """
-    DELETE: int = 3
+    DELETE: int = ...
     """
     indicates that a delete will be performed.
     """

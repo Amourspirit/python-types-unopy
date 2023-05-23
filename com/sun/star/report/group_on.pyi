@@ -21,7 +21,7 @@
 import typing
 
 
-class GroupOn(object):
+class GroupOn:
     """
     Const
 
@@ -30,43 +30,43 @@ class GroupOn(object):
     See Also:
         `API GroupOn <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1report_1_1GroupOn.html>`_
     """
-    DEFAULT: int = 0
+    DEFAULT: int = ...
     """
     The same value in the column value or expression.
     """
-    PREFIX_CHARACTERS: int = 1
+    PREFIX_CHARACTERS: int = ...
     """
     The same first nth of characters in the column value or expression.
     """
-    YEAR: int = 2
+    YEAR: int = ...
     """
     Dates in the same calendar year.
     """
-    QUARTAL: int = 3
+    QUARTAL: int = ...
     """
     Dates in the same calendar quarter.
     """
-    MONTH: int = 4
+    MONTH: int = ...
     """
     Dates in the same month.
     """
-    WEEK: int = 5
+    WEEK: int = ...
     """
     Dates in the same week.
     """
-    DAY: int = 6
+    DAY: int = ...
     """
     Dates on the same date.
     """
-    HOUR: int = 7
+    HOUR: int = ...
     """
     Times in the same hour.
     """
-    MINUTE: int = 8
+    MINUTE: int = ...
     """
     Times in the same minute.
     """
-    INTERVAL: int = 9
+    INTERVAL: int = ...
     """
     Values within an interval you specify.
     """

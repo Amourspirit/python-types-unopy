@@ -21,7 +21,7 @@
 import typing
 
 
-class ColumnSearch(object):
+class ColumnSearch:
     """
     Const
 
@@ -30,25 +30,25 @@ class ColumnSearch(object):
     See Also:
         `API ColumnSearch <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1ColumnSearch.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     A possible value for column SEARCHABLE in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc.XDatabaseMetaData.getTypeInfo().
     
     Indicates that WHERE search clauses are not supported for this type.
     """
-    CHAR: int = 1
+    CHAR: int = ...
     """
     A possible value for column SEARCHABLE in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc.XDatabaseMetaData.getTypeInfo().
     
     Indicates that the only WHERE search clause that can be based on this type is WHERE...LIKE.
     """
-    BASIC: int = 2
+    BASIC: int = ...
     """
     A possible value for column SEARCHABLE in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc\">XDatabaseMetaData.getTypeInfo().
     
     Indicates that one can base all WHERE search clauses except WHERE...LIKE on this data type.
     """
-    FULL: int = 3
+    FULL: int = ...
     """
     A possible value for column SEARCHABLE in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc\">XDatabaseMetaData.getTypeInfo().
     

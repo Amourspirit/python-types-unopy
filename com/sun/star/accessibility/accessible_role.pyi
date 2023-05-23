@@ -21,7 +21,7 @@
 import typing
 
 
-class AccessibleRole(object):
+class AccessibleRole:
     """
     Const
 
@@ -40,27 +40,27 @@ class AccessibleRole(object):
     See Also:
         `API AccessibleRole <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1accessibility_1_1AccessibleRole.html>`_
     """
-    UNKNOWN: int = 0
+    UNKNOWN: int = ...
     """
     Unknown role.
     
     The object contains some Accessible information, but its role is not known.
     """
-    ALERT: int = 1
+    ALERT: int = ...
     """
     Object is used to alert the user about something.
     """
-    COLUMN_HEADER: int = 2
+    COLUMN_HEADER: int = ...
     """
     The header for a column of data.
     """
-    CANVAS: int = 3
+    CANVAS: int = ...
     """
     Object that can be drawn into and is used to trap events.
     
     See also FRAME, GLASS_PANE, and LAYERED_PANE.
     """
-    CHECK_BOX: int = 4
+    CHECK_BOX: int = ...
     """
     Check box role.
     
@@ -68,39 +68,39 @@ class AccessibleRole(object):
     
     See also PUSH_BUTTON, TOGGLE_BUTTON, and RADIO_BUTTON.
     """
-    CHECK_MENU_ITEM: int = 5
+    CHECK_MENU_ITEM: int = ...
     """
     This role is used for check buttons that are menu items.
     """
-    COLOR_CHOOSER: int = 6
+    COLOR_CHOOSER: int = ...
     """
     A specialized dialog that lets the user choose a color.
     """
-    COMBO_BOX: int = 7
+    COMBO_BOX: int = ...
     """
     Combo box role.
     
     A list of choices the user can select from. Also optionally allows the user to enter a choice of their own.
     """
-    DATE_EDITOR: int = 8
+    DATE_EDITOR: int = ...
     """
     Date editor role.
     
     A DATE_EDITOR is a component that allows users to edit date and time.
     """
-    DESKTOP_ICON: int = 9
+    DESKTOP_ICON: int = ...
     """
     An iconified internal frame in a DESKTOP_PANE.
     
     See also DESKTOP_PANE and INTERNAL_FRAME.
     """
-    DESKTOP_PANE: int = 10
+    DESKTOP_PANE: int = ...
     """
     Desktop pane role.
     
     A pane that supports internal frames and iconified versions of those internal frames.
     """
-    DIRECTORY_PANE: int = 11
+    DIRECTORY_PANE: int = ...
     """
     Directory pane role.
     
@@ -108,7 +108,7 @@ class AccessibleRole(object):
     
     See also FILE_CHOOSER.
     """
-    DIALOG: int = 12
+    DIALOG: int = ...
     """
     Dialog box role.
     
@@ -116,21 +116,21 @@ class AccessibleRole(object):
     
     See also FRAME and WINDOW.
     """
-    DOCUMENT: int = 13
+    DOCUMENT: int = ...
     """
     View of a document.
     
     The view of an actual document. Its content depends on the document type.
     """
-    EMBEDDED_OBJECT: int = 14
+    EMBEDDED_OBJECT: int = ...
     """
     Embedded (OLE) object.
     """
-    END_NOTE: int = 15
+    END_NOTE: int = ...
     """
     Text that is used as an endnote (footnote at the end of a chapter or section.
     """
-    FILE_CHOOSER: int = 16
+    FILE_CHOOSER: int = ...
     """
     File chooser role.
     
@@ -138,27 +138,27 @@ class AccessibleRole(object):
     
     See also DIRECTORY_PANE.
     """
-    FILLER: int = 17
+    FILLER: int = ...
     """
     Filler role.
     
     An object that fills up space in a user interface. It is often used in interfaces to tweak the spacing between components, but serves no other purpose.
     """
-    FONT_CHOOSER: int = 18
+    FONT_CHOOSER: int = ...
     """
     Font chooser role.
     
     A FONT_CHOOSER is a component that lets the user pick various attributes for fonts.
     """
-    FOOTER: int = 19
+    FOOTER: int = ...
     """
     Footer of a document page.
     """
-    FOOTNOTE: int = 20
+    FOOTNOTE: int = ...
     """
     Text that is used as a footnote.
     """
-    FRAME: int = 21
+    FRAME: int = ...
     """
     Frame role.
     
@@ -166,7 +166,7 @@ class AccessibleRole(object):
     
     See also DIALOG, CANVAS, and WINDOW.
     """
-    GLASS_PANE: int = 22
+    GLASS_PANE: int = ...
     """
     Glass pane role.
     
@@ -174,33 +174,33 @@ class AccessibleRole(object):
     
     See also ROOT_PANE and CANVAS.
     """
-    GRAPHIC: int = 23
+    GRAPHIC: int = ...
     """
     Graphical object.
     """
-    GROUP_BOX: int = 24
+    GROUP_BOX: int = ...
     """
     Group box role.
     
     A GROUP_BOX is a simple container that contains a border around it and contains components inside it.
     """
-    HEADER: int = 25
+    HEADER: int = ...
     """
     Header of a document page.
     """
-    HEADING: int = 26
+    HEADING: int = ...
     """
     Chapter or section heading.
     """
-    HYPER_LINK: int = 27
+    HYPER_LINK: int = ...
     """
     A hypertext anchor.
     """
-    ICON: int = 28
+    ICON: int = ...
     """
     A small fixed size picture, typically used to decorate components.
     """
-    INTERNAL_FRAME: int = 29
+    INTERNAL_FRAME: int = ...
     """
     Internal frame role.
     
@@ -208,13 +208,13 @@ class AccessibleRole(object):
     
     See also DESKTOP_ICON, DESKTOP_PANE, and FRAME.
     """
-    LABEL: int = 30
+    LABEL: int = ...
     """
     An object used to present an icon or short string in an interface.
     
     See also TEXT and STATIC.
     """
-    LAYERED_PANE: int = 31
+    LAYERED_PANE: int = ...
     """
     layered pane role.
     
@@ -222,7 +222,7 @@ class AccessibleRole(object):
     
     See also GLASS_PANE and ROOT_PANE.
     """
-    LIST: int = 32
+    LIST: int = ...
     """
     List role.
     
@@ -230,7 +230,7 @@ class AccessibleRole(object):
     
     See also SCROLL_PANE and LIST_ITEM.
     """
-    LIST_ITEM: int = 33
+    LIST_ITEM: int = ...
     """
     List item role.
     
@@ -238,7 +238,7 @@ class AccessibleRole(object):
     
     See also SCROLL_PANE and LIST.
     """
-    MENU: int = 34
+    MENU: int = ...
     """
     Menu role.
     
@@ -246,7 +246,7 @@ class AccessibleRole(object):
     
     See also MENU_BAR, MENU_ITEM, SEPARATOR, RADIO_BUTTON, CHECK_BOX, and POPUP_MENU.
     """
-    MENU_BAR: int = 35
+    MENU_BAR: int = ...
     """
     Menu bar role.
     
@@ -254,7 +254,7 @@ class AccessibleRole(object):
     
     See also MENU, POPUP_MENU, and LAYERED_PANE.
     """
-    MENU_ITEM: int = 36
+    MENU_ITEM: int = ...
     """
     Menu item role.
     
@@ -262,13 +262,13 @@ class AccessibleRole(object):
     
     See also MENUBAR, SEPARATOR, and POPUP_MENU.
     """
-    OPTION_PANE: int = 37
+    OPTION_PANE: int = ...
     """
     A specialized pane whose primary use is inside a DIALOG.
     
     See also DIALOG.
     """
-    PAGE_TAB: int = 38
+    PAGE_TAB: int = ...
     """
     Page tab role.
     
@@ -276,7 +276,7 @@ class AccessibleRole(object):
     
     See also PAGE_TAB_LIST.
     """
-    PAGE_TAB_LIST: int = 39
+    PAGE_TAB_LIST: int = ...
     """
     Page tab list role.
     
@@ -284,21 +284,21 @@ class AccessibleRole(object):
     
     See also PAGE_TAB.
     """
-    PANEL: int = 40
+    PANEL: int = ...
     """
     A generic container that is often used to group objects.
     """
-    PARAGRAPH: int = 41
+    PARAGRAPH: int = ...
     """
     Paragraph of text.
     """
-    PASSWORD_TEXT: int = 42
+    PASSWORD_TEXT: int = ...
     """
     Password text role.
     
     A text object used for passwords, or other places where the text contents is not shown visibly to the user.
     """
-    POPUP_MENU: int = 43
+    POPUP_MENU: int = ...
     """
     Pop-up menu role.
     
@@ -306,7 +306,7 @@ class AccessibleRole(object):
     
     See also MENU and MENU_ITEM.
     """
-    PUSH_BUTTON: int = 44
+    PUSH_BUTTON: int = ...
     """
     Push button role.
     
@@ -314,11 +314,11 @@ class AccessibleRole(object):
     
     See also CHECK_BOX, TOGGLE_BUTTON, RADIO_BUTTON, BUTTON_MENU and BUTTON_DROPDOWN.
     """
-    PROGRESS_BAR: int = 45
+    PROGRESS_BAR: int = ...
     """
     An object used to indicate how much of a task has been completed.
     """
-    RADIO_BUTTON: int = 46
+    RADIO_BUTTON: int = ...
     """
     Radio button role.
     
@@ -326,15 +326,15 @@ class AccessibleRole(object):
     
     See also PUSH_BUTTON, TOGGLE_BUTTON, and CHECK_BOX.
     """
-    RADIO_MENU_ITEM: int = 47
+    RADIO_MENU_ITEM: int = ...
     """
     This role is used for radio buttons that are menu items.
     """
-    ROW_HEADER: int = 48
+    ROW_HEADER: int = ...
     """
     The header for a row of data.
     """
-    ROOT_PANE: int = 49
+    ROOT_PANE: int = ...
     """
     Root pane role.
     
@@ -342,7 +342,7 @@ class AccessibleRole(object):
     
     See also GLASS_PANE and LAYERED_PANE.
     """
-    SCROLL_BAR: int = 50
+    SCROLL_BAR: int = ...
     """
     Scroll bar role.
     
@@ -350,7 +350,7 @@ class AccessibleRole(object):
     
     See also SCROLL_PANE.
     """
-    SCROLL_PANE: int = 51
+    SCROLL_PANE: int = ...
     """
     Scroll pane role.
     
@@ -358,11 +358,11 @@ class AccessibleRole(object):
     
     See also SCROLL_BAR and VIEW_PORT.
     """
-    SHAPE: int = 52
+    SHAPE: int = ...
     """
     Object with graphical representation used to represent content on draw pages.
     """
-    SEPARATOR: int = 53
+    SEPARATOR: int = ...
     """
     Separator role.
     
@@ -370,41 +370,41 @@ class AccessibleRole(object):
     
     See also MENU and MENU_ITEM.
     """
-    SLIDER: int = 54
+    SLIDER: int = ...
     """
     Slider role.
     
     An object that allows the user to select from a bounded range. For example, a slider might be used to select a number between 0 and 100.
     """
-    SPIN_BOX: int = 55
+    SPIN_BOX: int = ...
     """
     Spin box role.
     
     A SPIN_BOX is a simple spinner component and its main use is for simple numbers.
     """
-    SPLIT_PANE: int = 56
+    SPLIT_PANE: int = ...
     """
     Split pane role.
     
     A specialized panel that presents two other panels at the same time. Between the two panels is a divider the user can manipulate to make one panel larger and the other panel smaller.
     """
-    STATUS_BAR: int = 57
+    STATUS_BAR: int = ...
     """
     Status bar role.
     
     A STATUS_BAR is an simple component that can contain multiple labels of status information to the user.
     """
-    TABLE: int = 58
+    TABLE: int = ...
     """
     Table component.
     
     An object used to present information in terms of rows and columns. An example might include a spreadsheet application.
     """
-    TABLE_CELL: int = 59
+    TABLE_CELL: int = ...
     """
     Single cell in a table.
     """
-    TEXT: int = 60
+    TEXT: int = ...
     """
     Text role.
     
@@ -412,11 +412,11 @@ class AccessibleRole(object):
     
     See also LABEL and STATIC.
     """
-    TEXT_FRAME: int = 61
+    TEXT_FRAME: int = ...
     """
     Collection of objects that constitute a logical text entity.
     """
-    TOGGLE_BUTTON: int = 62
+    TOGGLE_BUTTON: int = ...
     """
     Toggle button role.
     
@@ -424,25 +424,25 @@ class AccessibleRole(object):
     
     See also PUSH_BUTTON, CHECK_BOX and RADIO_BUTTON.
     """
-    TOOL_BAR: int = 63
+    TOOL_BAR: int = ...
     """
     Tool bar role.
     
     A bar or palette usually composed of push buttons or toggle buttons. It is often used to provide the most frequently used functions for an application.
     """
-    TOOL_TIP: int = 64
+    TOOL_TIP: int = ...
     """
     Tool tip role.
     
     An object that provides information about another object. The accessible Description property of the tool tip is often displayed to the user in a small \"help bubble\" when the user causes the mouse to hover over the object associated with the tool tip.
     """
-    TREE: int = 65
+    TREE: int = ...
     """
     Tree role.
     
     An object used to present hierarchical information to the user. The individual nodes in the tree can be collapsed and expanded to provide selective disclosure of the tree's contents.
     """
-    VIEW_PORT: int = 66
+    VIEW_PORT: int = ...
     """
     Viewport role.
     
@@ -450,13 +450,13 @@ class AccessibleRole(object):
     
     See also SCROLL_PANE.
     """
-    WINDOW: int = 67
+    WINDOW: int = ...
     """
     A top level window with no title or border.
     
     See also FRAME and DIALOG.
     """
-    BUTTON_DROPDOWN: int = 68
+    BUTTON_DROPDOWN: int = ...
     """
     Button dropdown role.
     
@@ -468,7 +468,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    BUTTON_MENU: int = 69
+    BUTTON_MENU: int = ...
     """
     Button menu role.
     
@@ -480,7 +480,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    CAPTION: int = 70
+    CAPTION: int = ...
     """
     Caption role.
     
@@ -492,7 +492,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    CHART: int = 71
+    CHART: int = ...
     """
     Chart role.
     
@@ -502,7 +502,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    EDIT_BAR: int = 72
+    EDIT_BAR: int = ...
     """
     Edit bar role.
     
@@ -512,7 +512,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    FORM: int = 73
+    FORM: int = ...
     """
     Form role.
     
@@ -522,7 +522,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    IMAGE_MAP: int = 74
+    IMAGE_MAP: int = ...
     """
     Image map role.
     
@@ -532,7 +532,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    NOTE: int = 75
+    NOTE: int = ...
     """
     Note role.
     
@@ -542,7 +542,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    PAGE: int = 76
+    PAGE: int = ...
     """
     Page role.
     
@@ -552,7 +552,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    RULER: int = 77
+    RULER: int = ...
     """
     Ruler role.
     
@@ -562,7 +562,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    SECTION: int = 78
+    SECTION: int = ...
     """
     Section role.
     
@@ -572,7 +572,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    TREE_ITEM: int = 79
+    TREE_ITEM: int = ...
     """
     Tree item role.
     
@@ -584,7 +584,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    TREE_TABLE: int = 80
+    TREE_TABLE: int = ...
     """
     Tree table role.
     
@@ -594,7 +594,7 @@ class AccessibleRole(object):
     
         OOo 3.0
     """
-    COMMENT: int = 81
+    COMMENT: int = ...
     """
     Comment role.
     
@@ -608,7 +608,7 @@ class AccessibleRole(object):
     
         OOo 3.2
     """
-    COMMENT_END: int = 82
+    COMMENT_END: int = ...
     """
     Comment end role.
     
@@ -620,7 +620,7 @@ class AccessibleRole(object):
     
         OOo 3.2
     """
-    DOCUMENT_PRESENTATION: int = 83
+    DOCUMENT_PRESENTATION: int = ...
     """
     View of a presentation document.
     
@@ -630,7 +630,7 @@ class AccessibleRole(object):
     
         LibreOffice 4.3
     """
-    DOCUMENT_SPREADSHEET: int = 84
+    DOCUMENT_SPREADSHEET: int = ...
     """
     View of an spreadsheet document.
     
@@ -640,7 +640,7 @@ class AccessibleRole(object):
     
         LibreOffice 4.3
     """
-    DOCUMENT_TEXT: int = 85
+    DOCUMENT_TEXT: int = ...
     """
     View of a text document.
     
@@ -650,7 +650,7 @@ class AccessibleRole(object):
     
         LibreOffice 4.3
     """
-    STATIC: int = 86
+    STATIC: int = ...
     """
     Static text role.
     

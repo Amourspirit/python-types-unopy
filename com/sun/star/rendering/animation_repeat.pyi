@@ -21,7 +21,7 @@
 import typing
 
 
-class AnimationRepeat(object):
+class AnimationRepeat:
     """
     Const
 
@@ -36,25 +36,25 @@ class AnimationRepeat(object):
     See Also:
         `API AnimationRepeat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1AnimationRepeat.html>`_
     """
-    ONE_SHOT: int = 0
+    ONE_SHOT: int = ...
     """
     The [0,1] parameter range is swept through exactly once.
     
     The [0,1] parameter range is swept through exactly once, starting with 0 and ending with 1.
     """
-    ONE_SHOT_PINGPONG: int = 1
+    ONE_SHOT_PINGPONG: int = ...
     """
     The [0,1] parameter range is swept through exactly twice.
     
     The [0,1] parameter range is swept through exactly twice, starting with 0, going to 1, and going back to 0. When plotting the value over time, this yields a triangle curve.
     """
-    PINGPONG: int = 2
+    PINGPONG: int = ...
     """
     The [0,1] parameter range is swept through infinitely.
     
     The [0,1] parameter range is swept through infinitely, starting with 0, going to 1, and going back to 0, and then starting again. When plotting the value over time, this yields a repeated triangle curve.
     """
-    REPEAT: int = 3
+    REPEAT: int = ...
     """
     The [0,1] parameter range is swept through infinitely.
     

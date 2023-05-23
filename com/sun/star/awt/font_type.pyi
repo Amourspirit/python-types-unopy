@@ -21,7 +21,7 @@
 import typing
 
 
-class FontType(object):
+class FontType:
     """
     Const
 
@@ -32,19 +32,19 @@ class FontType(object):
     See Also:
         `API FontType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1FontType.html>`_
     """
-    DONTKNOW: int = 0
+    DONTKNOW: int = ...
     """
     The type of the font is not known.
     """
-    RASTER: int = 1
+    RASTER: int = ...
     """
     specifies a raster font.
     """
-    DEVICE: int = 2
+    DEVICE: int = ...
     """
     specifies a device font.
     """
-    SCALABLE: int = 4
+    SCALABLE: int = ...
     """
     specifies a scalable font.
     """

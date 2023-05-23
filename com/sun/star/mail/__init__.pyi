@@ -2,7 +2,6 @@ from .mail_attachment import MailAttachment as MailAttachment
 from .mail_exception import MailException as MailException
 from .mail_message import MailMessage as MailMessage
 from .mail_service_provider import MailServiceProvider as MailServiceProvider
-from .mail_service_type import MailServiceType as MailServiceType
 from .no_mail_service_provider_exception import NoMailServiceProviderException as NoMailServiceProviderException
 from .no_mail_transport_provider_exception import NoMailTransportProviderException as NoMailTransportProviderException
 from .send_mail_message_failed_exception import SendMailMessageFailedException as SendMailMessageFailedException

@@ -21,7 +21,7 @@
 import typing
 
 
-class ImageAlign(object):
+class ImageAlign:
     """
     Const
 
@@ -30,19 +30,19 @@ class ImageAlign(object):
     See Also:
         `API ImageAlign <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1ImageAlign.html>`_
     """
-    LEFT: int = 0
+    LEFT: int = ...
     """
     specifies to align left.
     """
-    TOP: int = 1
+    TOP: int = ...
     """
     specifies to align top.
     """
-    RIGHT: int = 2
+    RIGHT: int = ...
     """
     specifies to align right.
     """
-    BOTTOM: int = 3
+    BOTTOM: int = ...
     """
     specifies to align bottom.
     """

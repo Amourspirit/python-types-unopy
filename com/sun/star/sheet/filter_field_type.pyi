@@ -21,7 +21,7 @@
 import typing
 
 
-class FilterFieldType(object):
+class FilterFieldType:
     """
     Const
 
@@ -33,23 +33,23 @@ class FilterFieldType(object):
     See Also:
         `API FilterFieldType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1FilterFieldType.html>`_
     """
-    NUMERIC: int = 0
+    NUMERIC: int = ...
     """
     Filter by numeric value.
     """
-    STRING: int = 1
+    STRING: int = ...
     """
     Filter by string value.
     """
-    DATE: int = 2
+    DATE: int = ...
     """
     Filter by date.
     """
-    TEXT_COLOR: int = 3
+    TEXT_COLOR: int = ...
     """
     Filter by text color.
     """
-    BACKGROUND_COLOR: int = 4
+    BACKGROUND_COLOR: int = ...
     """
     Filter by background color.
     """

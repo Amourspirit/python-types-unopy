@@ -21,7 +21,7 @@
 import typing
 
 
-class URIs(object):
+class URIs:
     """
     Const
 
@@ -36,519 +36,519 @@ class URIs(object):
     See Also:
         `API URIs <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rdf_1_1URIs.html>`_
     """
-    XSD_NCNAME: int = 1
+    XSD_NCNAME: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#NCName
     """
-    XSD_STRING: int = 2
+    XSD_STRING: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#string
     """
-    XSD_NORMALIZEDSTRING: int = 3
+    XSD_NORMALIZEDSTRING: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#normalizedString
     """
-    XSD_BOOLEAN: int = 4
+    XSD_BOOLEAN: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#boolean
     """
-    XSD_DECIMAL: int = 5
+    XSD_DECIMAL: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#decimal
     """
-    XSD_FLOAT: int = 6
+    XSD_FLOAT: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#float
     """
-    XSD_DOUBLE: int = 7
+    XSD_DOUBLE: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#double
     """
-    XSD_INTEGER: int = 8
+    XSD_INTEGER: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#integer
     """
-    XSD_NONNEGATIVEINTEGER: int = 9
+    XSD_NONNEGATIVEINTEGER: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#nonNegativeInteger
     """
-    XSD_POSITIVEINTEGER: int = 10
+    XSD_POSITIVEINTEGER: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#positiveInteger
     """
-    XSD_NONPOSITIVEINTEGER: int = 11
+    XSD_NONPOSITIVEINTEGER: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#nonPositiveInteger
     """
-    XSD_NEGATIVEINTEGER: int = 12
+    XSD_NEGATIVEINTEGER: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#negativeInteger
     """
-    XSD_LONG: int = 13
+    XSD_LONG: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#long
     """
-    XSD_INT: int = 14
+    XSD_INT: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#int
     """
-    XSD_SHORT: int = 15
+    XSD_SHORT: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#short
     """
-    XSD_BYTE: int = 16
+    XSD_BYTE: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#byte
     """
-    XSD_UNSIGNEDLONG: int = 17
+    XSD_UNSIGNEDLONG: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#unsignedLong
     """
-    XSD_UNSIGNEDINT: int = 18
+    XSD_UNSIGNEDINT: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#unsignedInt
     """
-    XSD_UNSIGNEDSHORT: int = 19
+    XSD_UNSIGNEDSHORT: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#unsignedShort
     """
-    XSD_UNSIGNEDBYTE: int = 20
+    XSD_UNSIGNEDBYTE: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#unsignedByte
     """
-    XSD_HEXBINARY: int = 21
+    XSD_HEXBINARY: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#hexBinary
     """
-    XSD_BASE64BINARY: int = 22
+    XSD_BASE64BINARY: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#base64Binary
     """
-    XSD_DATETIME: int = 23
+    XSD_DATETIME: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#dateTime
     """
-    XSD_TIME: int = 24
+    XSD_TIME: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#time
     """
-    XSD_DATE: int = 25
+    XSD_DATE: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#date
     """
-    XSD_GYEARMONTH: int = 26
+    XSD_GYEARMONTH: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#gYearMonth
     """
-    XSD_GYEAR: int = 27
+    XSD_GYEAR: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#gYear
     """
-    XSD_GMONTHDAY: int = 28
+    XSD_GMONTHDAY: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#gMonthDay
     """
-    XSD_GDAY: int = 29
+    XSD_GDAY: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#gDay
     """
-    XSD_GMONTH: int = 30
+    XSD_GMONTH: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#gMonth
     """
-    XSD_ANYURI: int = 31
+    XSD_ANYURI: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#anyURI
     """
-    XSD_TOKEN: int = 32
+    XSD_TOKEN: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#token
     """
-    XSD_LANGUAGE: int = 33
+    XSD_LANGUAGE: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#language
     """
-    XSD_NMTOKEN: int = 34
+    XSD_NMTOKEN: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#NMTOKEN
     """
-    XSD_NAME: int = 35
+    XSD_NAME: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#Name
     """
-    XSD_DURATION: int = 36
+    XSD_DURATION: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#duration
     """
-    XSD_QNAME: int = 37
+    XSD_QNAME: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#QName
     """
-    XSD_NOTATION: int = 38
+    XSD_NOTATION: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#NOTATION
     """
-    XSD_NMTOKENS: int = 39
+    XSD_NMTOKENS: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#NMTOKENS
     """
-    XSD_ID: int = 40
+    XSD_ID: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#ID
     """
-    XSD_IDREF: int = 41
+    XSD_IDREF: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#IDREF
     """
-    XSD_IDREFS: int = 42
+    XSD_IDREFS: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#IDREFS
     """
-    XSD_ENTITY: int = 43
+    XSD_ENTITY: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#ENTITY
     """
-    XSD_ENTITIES: int = 44
+    XSD_ENTITIES: int = ...
     """
     http://www.w3.org/2001/XMLSchema-datatypes#ENTITIES
     """
-    RDF_TYPE: int = 1000
+    RDF_TYPE: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#type
     """
-    RDF_SUBJECT: int = 1001
+    RDF_SUBJECT: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
     """
-    RDF_PREDICATE: int = 1002
+    RDF_PREDICATE: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
     """
-    RDF_OBJECT: int = 1003
+    RDF_OBJECT: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#object
     """
-    RDF_PROPERTY: int = 1004
+    RDF_PROPERTY: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
     """
-    RDF_STATEMENT: int = 1005
+    RDF_STATEMENT: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
     """
-    RDF_VALUE: int = 1006
+    RDF_VALUE: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#value
     """
-    RDF_FIRST: int = 1007
+    RDF_FIRST: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#first
     """
-    RDF_REST: int = 1008
+    RDF_REST: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
     """
-    RDF_NIL: int = 1009
+    RDF_NIL: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
     """
-    RDF_XMLLITERAL: int = 1010
+    RDF_XMLLITERAL: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral
     """
-    RDF_ALT: int = 1011
+    RDF_ALT: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt
     """
-    RDF_BAG: int = 1012
+    RDF_BAG: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag
     """
-    RDF_LIST: int = 1013
+    RDF_LIST: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#List
     """
-    RDF_SEQ: int = 1014
+    RDF_SEQ: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq
     """
-    RDF_1: int = 1015
+    RDF_1: int = ...
     """
     http://www.w3.org/1999/02/22-rdf-syntax-ns#_1
     """
-    RDFS_COMMENT: int = 1100
+    RDFS_COMMENT: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#comment
     """
-    RDFS_LABEL: int = 1101
+    RDFS_LABEL: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#label
     """
-    RDFS_DOMAIN: int = 1102
+    RDFS_DOMAIN: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#domain
     """
-    RDFS_RANGE: int = 1103
+    RDFS_RANGE: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#range
     """
-    RDFS_SUBCLASSOF: int = 1104
+    RDFS_SUBCLASSOF: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#subClassOf
     """
-    RDFS_LITERAL: int = 1105
+    RDFS_LITERAL: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#Literal
     """
-    RDFS_MEMBER: int = 1106
+    RDFS_MEMBER: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#member
     """
-    RDFS_SUBPROPERTYOF: int = 1107
+    RDFS_SUBPROPERTYOF: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#subPropertyOf
     """
-    RDFS_ISDEFINEDBY: int = 1108
+    RDFS_ISDEFINEDBY: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#isDefinedBy
     """
-    RDFS_SEEALSO: int = 1109
+    RDFS_SEEALSO: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#seeAlso
     """
-    RDFS_RESOURCE: int = 1110
+    RDFS_RESOURCE: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#Resource
     """
-    RDFS_CLASS: int = 1111
+    RDFS_CLASS: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#Class
     """
-    RDFS_DATATYPE: int = 1112
+    RDFS_DATATYPE: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#Datatype
     """
-    RDFS_CONTAINER: int = 1113
+    RDFS_CONTAINER: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#Container
     """
-    RDFS_CONTAINERMEMBERSHIPPROPERTY: int = 1114
+    RDFS_CONTAINERMEMBERSHIPPROPERTY: int = ...
     """
     http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
     """
-    OWL_CLASS: int = 1200
+    OWL_CLASS: int = ...
     """
     http://www.w3.org/2002/07/owl#Class
     """
-    OWL_OBJECTPROPERTY: int = 1201
+    OWL_OBJECTPROPERTY: int = ...
     """
     http://www.w3.org/2002/07/owl#ObjectProperty
     """
-    OWL_DATATYPEPROPERTY: int = 1202
+    OWL_DATATYPEPROPERTY: int = ...
     """
     http://www.w3.org/2002/07/owl#DatatypeProperty
     """
-    OWL_FUNCTIONALPROPERTY: int = 1203
+    OWL_FUNCTIONALPROPERTY: int = ...
     """
     http://www.w3.org/2002/07/owl#FunctionalProperty
     """
-    OWL_THING: int = 1204
+    OWL_THING: int = ...
     """
     http://www.w3.org/2002/07/owl#Thing
     """
-    OWL_NOTHING: int = 1205
+    OWL_NOTHING: int = ...
     """
     http://www.w3.org/2002/07/owl#Nothing
     """
-    OWL_INDIVIDUAL: int = 1206
+    OWL_INDIVIDUAL: int = ...
     """
     http://www.w3.org/2002/07/owl#Individual
     """
-    OWL_EQUIVALENTCLASS: int = 1207
+    OWL_EQUIVALENTCLASS: int = ...
     """
     http://www.w3.org/2002/07/owl#equivalentClass
     """
-    OWL_EQUIVALENTPROPERTY: int = 1208
+    OWL_EQUIVALENTPROPERTY: int = ...
     """
     http://www.w3.org/2002/07/owl#equivalentProperty
     """
-    OWL_SAMEAS: int = 1209
+    OWL_SAMEAS: int = ...
     """
     http://www.w3.org/2002/07/owl#sameAs
     """
-    OWL_DIFFERENTFROM: int = 1210
+    OWL_DIFFERENTFROM: int = ...
     """
     http://www.w3.org/2002/07/owl#differentFrom
     """
-    OWL_ALLDIFFERENT: int = 1211
+    OWL_ALLDIFFERENT: int = ...
     """
     http://www.w3.org/2002/07/owl#AllDifferent
     """
-    OWL_DISTINCTMEMBERS: int = 1212
+    OWL_DISTINCTMEMBERS: int = ...
     """
     http://www.w3.org/2002/07/owl#distinctMembers
     """
-    OWL_INVERSEOF: int = 1213
+    OWL_INVERSEOF: int = ...
     """
     http://www.w3.org/2002/07/owl#inverseOf
     """
-    OWL_TRANSITIVEPROPERTY: int = 1214
+    OWL_TRANSITIVEPROPERTY: int = ...
     """
     http://www.w3.org/2002/07/owl#TransitiveProperty
     """
-    OWL_SYMMETRICPROPERTY: int = 1215
+    OWL_SYMMETRICPROPERTY: int = ...
     """
     http://www.w3.org/2002/07/owl#SymmetricProperty
     """
-    OWL_INVERSEFUNCTIONALPROPERTY: int = 1216
+    OWL_INVERSEFUNCTIONALPROPERTY: int = ...
     """
     http://www.w3.org/2002/07/owl#InverseFunctionalProperty
     """
-    OWL_RESTRICTION: int = 1217
+    OWL_RESTRICTION: int = ...
     """
     http://www.w3.org/2002/07/owl#Restriction
     """
-    OWL_ONPROPERTY: int = 1218
+    OWL_ONPROPERTY: int = ...
     """
     http://www.w3.org/2002/07/owl#onProperty
     """
-    OWL_ALLVALUESFROM: int = 1219
+    OWL_ALLVALUESFROM: int = ...
     """
     http://www.w3.org/2002/07/owl#allValuesFrom
     """
-    OWL_SOMEVALUESFROM: int = 1220
+    OWL_SOMEVALUESFROM: int = ...
     """
     http://www.w3.org/2002/07/owl#someValuesFrom
     """
-    OWL_MINCARDINALITY: int = 1221
+    OWL_MINCARDINALITY: int = ...
     """
     http://www.w3.org/2002/07/owl#minCardinality
     """
-    OWL_MAXCARDINALITY: int = 1222
+    OWL_MAXCARDINALITY: int = ...
     """
     http://www.w3.org/2002/07/owl#maxCardinality
     """
-    OWL_CARDINALITY: int = 1223
+    OWL_CARDINALITY: int = ...
     """
     http://www.w3.org/2002/07/owl#cardinality
     """
-    OWL_ONTOLOGY: int = 1224
+    OWL_ONTOLOGY: int = ...
     """
     http://www.w3.org/2002/07/owl#Ontology
     """
-    OWL_IMPORTS: int = 1225
+    OWL_IMPORTS: int = ...
     """
     http://www.w3.org/2002/07/owl#imports
     """
-    OWL_VERSIONINFO: int = 1226
+    OWL_VERSIONINFO: int = ...
     """
     http://www.w3.org/2002/07/owl#versionInfo
     """
-    OWL_PRIORVERSION: int = 1227
+    OWL_PRIORVERSION: int = ...
     """
     http://www.w3.org/2002/07/owl#priorVersion
     """
-    OWL_BACKWARDCOMPATIBLEWITH: int = 1228
+    OWL_BACKWARDCOMPATIBLEWITH: int = ...
     """
     http://www.w3.org/2002/07/owl#backwardCompatibleWith
     """
-    OWL_INCOMPATIBLEWITH: int = 1229
+    OWL_INCOMPATIBLEWITH: int = ...
     """
     http://www.w3.org/2002/07/owl#incompatibleWith
     """
-    OWL_DEPRECATEDCLASS: int = 1230
+    OWL_DEPRECATEDCLASS: int = ...
     """
     http://www.w3.org/2002/07/owl#DeprecatedClass
     """
-    OWL_DEPRECATEDPROPERTY: int = 1231
+    OWL_DEPRECATEDPROPERTY: int = ...
     """
     http://www.w3.org/2002/07/owl#DeprecatedProperty
     """
-    OWL_ANNOTATIONPROPERTY: int = 1232
+    OWL_ANNOTATIONPROPERTY: int = ...
     """
     http://www.w3.org/2002/07/owl#AnnotationProperty
     """
-    OWL_ONTOLOGYPROPERTY: int = 1233
+    OWL_ONTOLOGYPROPERTY: int = ...
     """
     http://www.w3.org/2002/07/owl#OntologyProperty
     """
-    OWL_ONEOF: int = 1234
+    OWL_ONEOF: int = ...
     """
     http://www.w3.org/2002/07/owl#oneOf
     """
-    OWL_DATARANGE: int = 1235
+    OWL_DATARANGE: int = ...
     """
     http://www.w3.org/2002/07/owl#dataRange
     """
-    OWL_DISJOINTWITH: int = 1236
+    OWL_DISJOINTWITH: int = ...
     """
     http://www.w3.org/2002/07/owl#disjointWith
     """
-    OWL_UNIONOF: int = 1237
+    OWL_UNIONOF: int = ...
     """
     http://www.w3.org/2002/07/owl#unionOf
     """
-    OWL_COMPLEMENTOF: int = 1238
+    OWL_COMPLEMENTOF: int = ...
     """
     http://www.w3.org/2002/07/owl#complementOf
     """
-    OWL_INTERSECTIONOF: int = 1239
+    OWL_INTERSECTIONOF: int = ...
     """
     http://www.w3.org/2002/07/owl#intersectionOf
     """
-    OWL_HASVALUE: int = 1240
+    OWL_HASVALUE: int = ...
     """
     http://www.w3.org/2002/07/owl#hasValue
     """
-    PKG_HASPART: int = 2000
+    PKG_HASPART: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/pkg#hasPart
     """
-    PKG_MIMETYPE: int = 2003
+    PKG_MIMETYPE: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/pkg#mimeType
     """
-    PKG_PACKAGE: int = 2004
+    PKG_PACKAGE: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/pkg#Package
     """
-    PKG_ELEMENT: int = 2005
+    PKG_ELEMENT: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/pkg#Element
     """
-    PKG_FILE: int = 2006
+    PKG_FILE: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/pkg#File
     """
-    PKG_METADATAFILE: int = 2007
+    PKG_METADATAFILE: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/pkg#MetadataFile
     """
-    PKG_DOCUMENT: int = 2008
+    PKG_DOCUMENT: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/pkg#Document
     """
-    ODF_PREFIX: int = 2100
+    ODF_PREFIX: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/odf#prefix
     """
-    ODF_SUFFIX: int = 2101
+    ODF_SUFFIX: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/odf#suffix
     """
-    ODF_ELEMENT: int = 2102
+    ODF_ELEMENT: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/odf#Element
     """
-    ODF_CONTENTFILE: int = 2103
+    ODF_CONTENTFILE: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/odf#ContentFile
     """
-    ODF_STYLESFILE: int = 2104
+    ODF_STYLESFILE: int = ...
     """
     http://docs.oasis-open.org/ns/office/1.2/meta/odf#StylesFile
     """
-    LO_EXT_SHADING: int = 2106
+    LO_EXT_SHADING: int = ...
     """
     custom shading color of an annotated text range or metadata field (replacement of the default field shading color)
     

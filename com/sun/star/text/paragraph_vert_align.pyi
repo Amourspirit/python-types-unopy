@@ -21,7 +21,7 @@
 import typing
 
 
-class ParagraphVertAlign(object):
+class ParagraphVertAlign:
     """
     Const
 
@@ -30,25 +30,25 @@ class ParagraphVertAlign(object):
     See Also:
         `API ParagraphVertAlign <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1ParagraphVertAlign.html>`_
     """
-    AUTOMATIC: int = 0
+    AUTOMATIC: int = ...
     """
     In automatic mode, horizontal text is aligned to the baseline.
     
     The same applies to text that is rotated 90°. Text that is rotated 270 ° is aligned to the center.
     """
-    BASELINE: int = 1
+    BASELINE: int = ...
     """
     The text is aligned to the baseline.
     """
-    TOP: int = 2
+    TOP: int = ...
     """
     The text is aligned to the top.
     """
-    CENTER: int = 3
+    CENTER: int = ...
     """
     The text is aligned to the center.
     """
-    BOTTOM: int = 4
+    BOTTOM: int = ...
     """
     The text is aligned to bottom.
     """

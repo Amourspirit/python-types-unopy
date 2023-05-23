@@ -21,7 +21,7 @@
 import typing
 
 
-class EmphasisMark(object):
+class EmphasisMark:
     """
     Const
 
@@ -36,39 +36,39 @@ class EmphasisMark(object):
     See Also:
         `API EmphasisMark <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1EmphasisMark.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     No automatic emphasis marks.
     """
-    DOT_ABOVE: int = 1
+    DOT_ABOVE: int = ...
     """
     Automatic emphasis marks as dots above the glyphs.
     """
-    DOT_BELOW: int = 2
+    DOT_BELOW: int = ...
     """
     Automatic emphasis marks as dots below the glyphs.
     """
-    CIRCLE_ABOVE: int = 3
+    CIRCLE_ABOVE: int = ...
     """
     Automatic emphasis marks as circles (unfilled outlines) above the glyphs.
     """
-    CIRCLE_BELOW: int = 4
+    CIRCLE_BELOW: int = ...
     """
     Automatic emphasis marks as circles (unfilled outlines) below the glyphs.
     """
-    DISC_ABOVE: int = 5
+    DISC_ABOVE: int = ...
     """
     Automatic emphasis marks as discs (filled circles) above the glyphs.
     """
-    DISC_BELOW: int = 6
+    DISC_BELOW: int = ...
     """
     Automatic emphasis marks as discs (filled circles) below the glyphs.
     """
-    ACCENT_ABOVE: int = 7
+    ACCENT_ABOVE: int = ...
     """
     Automatic emphasis marks as accent marks above the glyphs.
     """
-    ACCENT_BELOW: int = 8
+    ACCENT_BELOW: int = ...
     """
     Automatic emphasis marks as accent marks below the glyphs.
     """

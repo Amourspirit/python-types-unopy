@@ -21,7 +21,7 @@
 import typing
 
 
-class FontEmphasisMark(object):
+class FontEmphasisMark:
     """
     Const
 
@@ -32,31 +32,31 @@ class FontEmphasisMark(object):
     See Also:
         `API FontEmphasisMark <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1FontEmphasisMark.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     specifies no emphasis mark.
     """
-    DOT: int = 1
+    DOT: int = ...
     """
     specifies emphasis mark dot.
     """
-    CIRCLE: int = 2
+    CIRCLE: int = ...
     """
     specifies emphasis mark circle.
     """
-    DISC: int = 3
+    DISC: int = ...
     """
     specifies emphasis mark disc.
     """
-    ACCENT: int = 4
+    ACCENT: int = ...
     """
     specifies emphasis mark accent.
     """
-    ABOVE: int = 4096
+    ABOVE: int = ...
     """
     specifies that the emphasis mark should be positioned above the characters.
     """
-    BELOW: int = 8192
+    BELOW: int = ...
     """
     specifies that the emphasis mark should be positioned below the characters.
     """

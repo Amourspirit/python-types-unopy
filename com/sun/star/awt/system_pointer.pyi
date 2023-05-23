@@ -21,7 +21,7 @@
 import typing
 
 
-class SystemPointer(object):
+class SystemPointer:
     """
     Const
 
@@ -30,291 +30,291 @@ class SystemPointer(object):
     See Also:
         `API SystemPointer <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1SystemPointer.html>`_
     """
-    ARROW: int = 0
+    ARROW: int = ...
     """
     specifies the normal arrow-like mouse pointer.
     """
-    INVISIBLE: int = 1
+    INVISIBLE: int = ...
     """
     specifies an invisible mouse pointer.
     """
-    WAIT: int = 2
+    WAIT: int = ...
     """
     specifies a waiting symbol as a mouse pointer (for example hourglass).
     """
-    TEXT: int = 3
+    TEXT: int = ...
     """
     specifies a mouse pointer for text (cursor-like).
     """
-    HELP: int = 4
+    HELP: int = ...
     """
     specifies a mouse pointer for on-line help.
     """
-    CROSS: int = 5
+    CROSS: int = ...
     """
     specifies a cross as a mouse pointer.
     """
-    MOVE: int = 6
+    MOVE: int = ...
     """
     specifies a mouse pointer which symbolizes movement.
     """
-    NSIZE: int = 7
+    NSIZE: int = ...
     """
     specifies a mouse pointer which symbolizes resizing for a top border.
     """
-    SSIZE: int = 8
+    SSIZE: int = ...
     """
     specifies a mouse pointer which symbolizes resizing for a bottom border.
     """
-    WSIZE: int = 9
+    WSIZE: int = ...
     """
     specifies a mouse pointer which symbolizes resizing for a left border.
     """
-    ESIZE: int = 10
+    ESIZE: int = ...
     """
     specifies a mouse pointer which symbolizes resizing for a right border.
     """
-    NWSIZE: int = 11
+    NWSIZE: int = ...
     """
     specifies a mouse pointer which symbolizes resizing for the top-left corner.
     """
-    NESIZE: int = 12
+    NESIZE: int = ...
     """
     specifies a mouse pointer which symbolizes resizing for the top-right corner.
     """
-    SWSIZE: int = 13
+    SWSIZE: int = ...
     """
     specifies a mouse pointer which symbolizes resizing for the bottom-left corner.
     """
-    SESIZE: int = 14
+    SESIZE: int = ...
     """
     specifies a mouse pointer which symbolizes resizing for the bottom-right corner.
     """
-    WINDOW_NSIZE: int = 15
+    WINDOW_NSIZE: int = ...
     """
     specifies a mouse pointer which symbolizes window resizing for a top border.
     """
-    WINDOW_SSIZE: int = 16
+    WINDOW_SSIZE: int = ...
     """
     specifies a mouse pointer which symbolizes window resizing for a bottom border.
     """
-    WINDOW_WSIZE: int = 17
+    WINDOW_WSIZE: int = ...
     """
     specifies a mouse pointer which symbolizes window resizing for a left border.
     """
-    WINDOW_ESIZE: int = 18
+    WINDOW_ESIZE: int = ...
     """
     specifies a mouse pointer which symbolizes window resizing for a right border.
     """
-    WINDOW_NWSIZE: int = 19
+    WINDOW_NWSIZE: int = ...
     """
     specifies a mouse pointer which symbolizes window resizing for the top-left corner.
     """
-    WINDOW_NESIZE: int = 20
+    WINDOW_NESIZE: int = ...
     """
     specifies a mouse pointer which symbolizes window resizing for the top-right corner.
     """
-    WINDOW_SWSIZE: int = 21
+    WINDOW_SWSIZE: int = ...
     """
     specifies a mouse pointer which symbolizes window resizing for the bottom-left corner.
     """
-    WINDOW_SESIZE: int = 22
+    WINDOW_SESIZE: int = ...
     """
     specifies a mouse pointer which symbolizes window resizing for the bottom-right corner.
     """
-    HSPLIT: int = 23
+    HSPLIT: int = ...
     """
     specifies a mouse pointer which symbolizes horizontal splitting.
     """
-    VSPLIT: int = 24
+    VSPLIT: int = ...
     """
     specifies a mouse pointer which symbolizes vertical splitting.
     """
-    HSIZEBAR: int = 25
+    HSIZEBAR: int = ...
     """
     specifies a mouse pointer which symbolizes horizontal resizing.
     """
-    VSIZEBAR: int = 26
+    VSIZEBAR: int = ...
     """
     specifies a mouse pointer which symbolizes vertical resizing.
     """
-    HAND: int = 27
+    HAND: int = ...
     """
     specifies a hand symbol as mouse pointer.
     """
-    REFHAND: int = 28
+    REFHAND: int = ...
     """
     specifies a pointing hand symbol as mouse pointer.
     """
-    PEN: int = 29
+    PEN: int = ...
     """
     specifies a pen symbol as mouse pointer.
     """
-    MAGNIFY: int = 30
+    MAGNIFY: int = ...
     """
     specifies a magnify symbol as mouse pointer.
     """
-    FILL: int = 31
+    FILL: int = ...
     """
     specifies a fill symbol as mouse pointer.
     """
-    ROTATE: int = 32
+    ROTATE: int = ...
     """
     specifies a rotate symbol as mouse pointer.
     """
-    HSHEAR: int = 33
+    HSHEAR: int = ...
     """
     specifies a horizontal shear symbol as mouse pointer.
     """
-    VSHEAR: int = 34
+    VSHEAR: int = ...
     """
     specifies a vertical shear symbol as mouse pointer.
     """
-    MIRROR: int = 35
+    MIRROR: int = ...
     """
     specifies a mirror symbol as mouse pointer.
     """
-    CROOK: int = 36
+    CROOK: int = ...
     """
     specifies a crook symbol as mouse pointer.
     """
-    CROP: int = 37
+    CROP: int = ...
     """
     specifies a crop symbol as mouse pointer.
     """
-    MOVEPOINT: int = 38
+    MOVEPOINT: int = ...
     """
     specifies a mouse pointer which symbolizes moving a point.
     """
-    MOVEBEZIERWEIGHT: int = 39
+    MOVEBEZIERWEIGHT: int = ...
     """
     specifies a mouse pointer which symbolizes moving a Bezier weight.
     """
-    MOVEDATA: int = 40
+    MOVEDATA: int = ...
     """
     specifies a mouse pointer which symbolizes moving data.
     """
-    COPYDATA: int = 41
+    COPYDATA: int = ...
     """
     specifies a mouse pointer which symbolizes copying data.
     """
-    LINKDATA: int = 42
+    LINKDATA: int = ...
     """
     specifies a mouse pointer which symbolizes linking data.
     """
-    MOVEDATALINK: int = 43
+    MOVEDATALINK: int = ...
     """
     specifies a mouse pointer which symbolizes moving a data link.
     """
-    COPYDATALINK: int = 44
+    COPYDATALINK: int = ...
     """
     specifies a mouse pointer which symbolizes copying a data link.
     """
-    MOVEFILE: int = 45
+    MOVEFILE: int = ...
     """
     specifies a mouse pointer which symbolizes moving a file.
     """
-    COPYFILE: int = 46
+    COPYFILE: int = ...
     """
     specifies a mouse pointer which symbolizes copying a file.
     """
-    LINKFILE: int = 47
+    LINKFILE: int = ...
     """
     specifies a mouse pointer which symbolizes linking a file.
     """
-    MOVEFILELINK: int = 48
+    MOVEFILELINK: int = ...
     """
     specifies a mouse pointer which symbolizes moving a file link.
     """
-    COPYFILELINK: int = 49
+    COPYFILELINK: int = ...
     """
     specifies a mouse pointer which symbolizes copying a file link.
     """
-    MOVEFILES: int = 50
+    MOVEFILES: int = ...
     """
     specifies a mouse pointer which symbolizes moving multiple files.
     """
-    COPYFILES: int = 51
+    COPYFILES: int = ...
     """
     specifies a mouse pointer which symbolizes copying multiple files.
     """
-    NOTALLOWED: int = 52
+    NOTALLOWED: int = ...
     """
     specifies a mouse pointer which symbolizes \"not allowed\".
     """
-    DRAW_LINE: int = 53
+    DRAW_LINE: int = ...
     """
     specifies a mouse pointer which symbolizes drawing a line.
     """
-    DRAW_RECT: int = 54
+    DRAW_RECT: int = ...
     """
     specifies a mouse pointer which symbolizes drawing a rectangle.
     """
-    DRAW_POLYGON: int = 55
+    DRAW_POLYGON: int = ...
     """
     specifies a mouse pointer which symbolizes drawing a polygon.
     """
-    DRAW_BEZIER: int = 56
+    DRAW_BEZIER: int = ...
     """
     specifies a mouse pointer which symbolizes drawing a Bezier.
     """
-    DRAW_ARC: int = 57
+    DRAW_ARC: int = ...
     """
     specifies a mouse pointer which symbolizes drawing an arc.
     """
-    DRAW_PIE: int = 58
+    DRAW_PIE: int = ...
     """
     specifies a mouse pointer which symbolizes drawing a pie.
     """
-    DRAW_CIRCLECUT: int = 59
+    DRAW_CIRCLECUT: int = ...
     """
     specifies a mouse pointer which symbolizes drawing a circle cut.
     """
-    DRAW_ELLIPSE: int = 60
+    DRAW_ELLIPSE: int = ...
     """
     specifies a mouse pointer which symbolizes drawing an ellipse.
     """
-    DRAW_FREEHAND: int = 61
+    DRAW_FREEHAND: int = ...
     """
     specifies a mouse pointer which symbolizes drawing free handed.
     """
-    DRAW_CONNECT: int = 62
+    DRAW_CONNECT: int = ...
     """
     specifies a mouse pointer which symbolizes drawing a connector.
     """
-    DRAW_TEXT: int = 63
+    DRAW_TEXT: int = ...
     """
     specifies a mouse pointer which symbolizes drawing text.
     """
-    DRAW_CAPTION: int = 64
+    DRAW_CAPTION: int = ...
     """
     specifies a mouse pointer which symbolizes drawing a text caption.
     """
-    CHART: int = 65
+    CHART: int = ...
     """
     specifies a mouse pointer which symbolizes a chart.
     """
-    DETECTIVE: int = 66
+    DETECTIVE: int = ...
     """
     specifies a mouse pointer which symbolizes a detective.
     """
-    PIVOT_COL: int = 67
+    PIVOT_COL: int = ...
     """
     specifies a mouse pointer which symbolizes a pivot column.
     """
-    PIVOT_ROW: int = 68
+    PIVOT_ROW: int = ...
     """
     specifies a mouse pointer which symbolizes a pivot row.
     """
-    PIVOT_FIELD: int = 69
+    PIVOT_FIELD: int = ...
     """
     specifies a mouse pointer which symbolizes a pivot field.
     """
-    CHAIN: int = 70
+    CHAIN: int = ...
     """
     specifies a mouse pointer which symbolizes a chain.
     """
-    CHAIN_NOTALLOWED: int = 71
+    CHAIN_NOTALLOWED: int = ...
     """
     specifies a mouse pointer which symbolizes \"chaining not allowed\".
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class DocumentZoomType(object):
+class DocumentZoomType:
     """
     Const
 
@@ -30,23 +30,23 @@ class DocumentZoomType(object):
     See Also:
         `API DocumentZoomType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1view_1_1DocumentZoomType.html>`_
     """
-    OPTIMAL: int = 0
+    OPTIMAL: int = ...
     """
     The page content width (excluding margins) at the current selection is fit into the view.
     """
-    PAGE_WIDTH: int = 1
+    PAGE_WIDTH: int = ...
     """
     The page width at the current selection is fit into the view.
     """
-    ENTIRE_PAGE: int = 2
+    ENTIRE_PAGE: int = ...
     """
     A complete page of the document is fit into the view.
     """
-    BY_VALUE: int = 3
+    BY_VALUE: int = ...
     """
     The zoom is relative and is to be set via the property ViewSettings.ZoomValue.
     """
-    PAGE_WIDTH_EXACT: int = 4
+    PAGE_WIDTH_EXACT: int = ...
     """
     The page width at the current selection is fit into the view, with the view ends exactly at the end of the page.
     """

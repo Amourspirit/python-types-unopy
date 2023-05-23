@@ -21,7 +21,7 @@
 import typing
 
 
-class ControlActions(object):
+class ControlActions:
     """
     Const
 
@@ -30,53 +30,53 @@ class ControlActions(object):
     See Also:
         `API ControlActions <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1dialogs_1_1ControlActions.html>`_
     """
-    ADD_ITEM: int = 1
+    ADD_ITEM: int = ...
     """
     Adds an item to the content of the listbox.
     
     The given item has to be a string.
     """
-    ADD_ITEMS: int = 2
+    ADD_ITEMS: int = ...
     """
     Adds a sequence of strings to the content of the listbox.
     """
-    DELETE_ITEM: int = 3
+    DELETE_ITEM: int = ...
     """
     Removes an item from a listbox.
     
     The given value has to be a position. If the position is invalid an exception will be thrown. The index of the first position is 0. The value should be a sal_Int32.
     """
-    DELETE_ITEMS: int = 4
+    DELETE_ITEMS: int = ...
     """
     Removes all items from the listbox.
     """
-    SET_SELECT_ITEM: int = 5
+    SET_SELECT_ITEM: int = ...
     """
     Selects an item in a listbox.
     
     The given value has to be a position. The index of the first position is 0. A value of -1 removes the selection. If the given position is invalid an exception will be thrown. The value should be a sal_Int32.
     """
-    GET_ITEMS: int = 6
+    GET_ITEMS: int = ...
     """
     Returns all items of the listbox as a sequence of strings.
     """
-    GET_SELECTED_ITEM: int = 7
+    GET_SELECTED_ITEM: int = ...
     """
     Returns the currently selected item.
     
     The returned item is an empty string if the listbox is empty or no item is selected.
     """
-    GET_SELECTED_ITEM_INDEX: int = 8
+    GET_SELECTED_ITEM_INDEX: int = ...
     """
     Returns the zero based index of the currently selected item.
     
     If the listbox is empty or there is no item selected -1 will be returned. The returned value is a sal_Int32.
     """
-    SET_HELP_URL: int = 100
+    SET_HELP_URL: int = ...
     """
     Sets the help URL of a control.
     """
-    GET_HELP_URL: int = 101
+    GET_HELP_URL: int = ...
     """
     Retrieves the help URL of a control.
     """

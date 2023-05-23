@@ -21,7 +21,7 @@
 import typing
 
 
-class KCharacterType(object):
+class KCharacterType:
     """
     Const
 
@@ -32,39 +32,39 @@ class KCharacterType(object):
     See Also:
         `API KCharacterType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1KCharacterType.html>`_
     """
-    DIGIT: int = 1
+    DIGIT: int = ...
     """
     digit
     """
-    UPPER: int = 2
+    UPPER: int = ...
     """
     upper case alpha letter
     """
-    LOWER: int = 4
+    LOWER: int = ...
     """
     lower case alpha letter
     """
-    TITLE_CASE: int = 8
+    TITLE_CASE: int = ...
     """
     title case alpha letter
     """
-    ALPHA: int = 14
+    ALPHA: int = ...
     """
     any alpha, ALPHA = UPPER | LOWER | TITLE_CASE
     """
-    CONTROL: int = 16
+    CONTROL: int = ...
     """
     control character
     """
-    PRINTABLE: int = 32
+    PRINTABLE: int = ...
     """
     printable character
     """
-    BASE_FORM: int = 64
+    BASE_FORM: int = ...
     """
     base form
     """
-    LETTER: int = 128
+    LETTER: int = ...
     """
     any UnicodeType...._LETTER.
     

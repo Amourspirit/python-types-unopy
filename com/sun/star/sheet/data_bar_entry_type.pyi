@@ -21,7 +21,7 @@
 import typing
 
 
-class DataBarEntryType(object):
+class DataBarEntryType:
     """
     Const
 
@@ -29,11 +29,11 @@ class DataBarEntryType(object):
     See Also:
         `API DataBarEntryType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DataBarEntryType.html>`_
     """
-    DATABAR_AUTO: int = 1
-    DATABAR_MIN: int = 1
-    DATABAR_MAX: int = 2
-    DATABAR_PERCENTILE: int = 3
-    DATABAR_VALUE: int = 4
-    DATABAR_PERCENT: int = 5
-    DATABAR_FORMULA: int = 6
+    DATABAR_AUTO: int = ...
+    DATABAR_MIN: int = ...
+    DATABAR_MAX: int = ...
+    DATABAR_PERCENTILE: int = ...
+    DATABAR_VALUE: int = ...
+    DATABAR_PERCENT: int = ...
+    DATABAR_FORMULA: int = ...
 

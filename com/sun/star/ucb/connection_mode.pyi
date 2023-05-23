@@ -21,7 +21,7 @@
 import typing
 
 
-class ConnectionMode(object):
+class ConnectionMode:
     """
     Const
 
@@ -30,11 +30,11 @@ class ConnectionMode(object):
     See Also:
         `API ConnectionMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1ConnectionMode.html>`_
     """
-    ONLINE: int = 0
+    ONLINE: int = ...
     """
     \"Online\" - Network access is allowed.
     """
-    OFFLINE: int = 1
+    OFFLINE: int = ...
     """
     \"Offline\" - Network access is not allowed.
     """

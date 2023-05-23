@@ -21,7 +21,7 @@
 import typing
 
 
-class CalendarFieldIndex(object):
+class CalendarFieldIndex:
     """
     Const
 
@@ -40,23 +40,23 @@ class CalendarFieldIndex(object):
     See Also:
         `API CalendarFieldIndex <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1CalendarFieldIndex.html>`_
     """
-    AM_PM: int = 0
+    AM_PM: int = ...
     """
     Get AmPmValue.
     """
-    DAY_OF_MONTH: int = 1
+    DAY_OF_MONTH: int = ...
     """
     Get/Set day of month [1-31].
     """
-    DAY_OF_WEEK: int = 2
+    DAY_OF_WEEK: int = ...
     """
     Get day of week [0-6].
     """
-    DAY_OF_YEAR: int = 3
+    DAY_OF_YEAR: int = ...
     """
     Get day of year.
     """
-    DST_OFFSET: int = 4
+    DST_OFFSET: int = ...
     """
     Get daylight saving time offset in minutes, e.g.
     
@@ -66,53 +66,53 @@ class CalendarFieldIndex(object):
     
     Note that there is a bug in OpenOffice.org 1.0 / StarOffice 6.0 that prevents interpreting this value correctly.
     """
-    HOUR: int = 5
+    HOUR: int = ...
     """
     Get/Set hour [0-23].
     """
-    MINUTE: int = 6
+    MINUTE: int = ...
     """
     Get/Set minute [0-59].
     """
-    SECOND: int = 7
+    SECOND: int = ...
     """
     Get/Set second [0-59].
     """
-    MILLISECOND: int = 8
+    MILLISECOND: int = ...
     """
     Get/Set milliseconds [0-999].
     """
-    WEEK_OF_MONTH: int = 9
+    WEEK_OF_MONTH: int = ...
     """
     Get week of month.
     """
-    WEEK_OF_YEAR: int = 10
+    WEEK_OF_YEAR: int = ...
     """
     Get week of year.
     """
-    YEAR: int = 11
+    YEAR: int = ...
     """
     Get/Set year.
     """
-    MONTH: int = 12
+    MONTH: int = ...
     """
     Get/Set month [0-...].
     
     Note that the maximum value is not necessarily 11 for December but depends on the calendar used instead.
     """
-    ERA: int = 13
+    ERA: int = ...
     """
     Get/Set era, for example, 0:= Before Christ, 1:= After Christ.
     """
-    ZONE_OFFSET: int = 14
+    ZONE_OFFSET: int = ...
     """
     Get/Set time zone offset in minutes, e.g. [-14*60..14*60].
     """
-    FIELD_COUNT: int = 15
+    FIELD_COUNT: int = ...
     """
     Total number of fields for < OOo 3.1.
     """
-    ZONE_OFFSET_SECOND_MILLIS: int = 15
+    ZONE_OFFSET_SECOND_MILLIS: int = ...
     """
     Get/Set additional offset in milliseconds that adds to the value of ZONE_OFFSET.
     
@@ -122,7 +122,7 @@ class CalendarFieldIndex(object):
     
         OOo 3.1
     """
-    DST_OFFSET_SECOND_MILLIS: int = 16
+    DST_OFFSET_SECOND_MILLIS: int = ...
     """
     Get additional offset in milliseconds that adds to the value of DST_OFFSET.
     
@@ -132,7 +132,7 @@ class CalendarFieldIndex(object):
     
         OOo 3.1
     """
-    FIELD_COUNT2: int = 17
+    FIELD_COUNT2: int = ...
     """
     Total number of fields as of OOo 3.1.
     

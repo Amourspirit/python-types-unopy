@@ -21,7 +21,7 @@
 import typing
 
 
-class AnimationValueType(object):
+class AnimationValueType:
     """
     Const
 
@@ -29,15 +29,15 @@ class AnimationValueType(object):
     See Also:
         `API AnimationValueType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1animations_1_1AnimationValueType.html>`_
     """
-    STRING: int = 0
+    STRING: int = ...
     """
     The animation value represents a string.
     """
-    NUMBER: int = 1
+    NUMBER: int = ...
     """
     The animation value represents a number.
     """
-    COLOR: int = 2
+    COLOR: int = ...
     """
     The animation value represents a color.
     """

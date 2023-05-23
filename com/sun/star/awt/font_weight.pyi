@@ -21,7 +21,7 @@
 import typing
 
 
-class FontWeight(object):
+class FontWeight:
     """
     Const
 
@@ -32,43 +32,43 @@ class FontWeight(object):
     See Also:
         `API FontWeight <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1FontWeight.html>`_
     """
-    DONTKNOW: float
+    DONTKNOW: float = ...
     """
     The font weight is not specified/known.
     """
-    THIN: float
+    THIN: float = ...
     """
     specifies a 50% font weight.
     """
-    ULTRALIGHT: float
+    ULTRALIGHT: float = ...
     """
     specifies a 60% font weight.
     """
-    LIGHT: float
+    LIGHT: float = ...
     """
     specifies a 75% font weight.
     """
-    SEMILIGHT: float
+    SEMILIGHT: float = ...
     """
     specifies a 90% font weight.
     """
-    NORMAL: float
+    NORMAL: float = ...
     """
     specifies a normal font weight.
     """
-    SEMIBOLD: float
+    SEMIBOLD: float = ...
     """
     specifies a 110% font weight.
     """
-    BOLD: float
+    BOLD: float = ...
     """
     specifies a 150% font weight.
     """
-    ULTRABOLD: float
+    ULTRABOLD: float = ...
     """
     specifies a 175% font weight.
     """
-    BLACK: float
+    BLACK: float = ...
     """
     specifies a 200% font weight.
     """

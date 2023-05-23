@@ -21,7 +21,7 @@
 import typing
 
 
-class WritingMode2(object):
+class WritingMode2:
     """
     Const
 
@@ -36,7 +36,7 @@ class WritingMode2(object):
     See Also:
         `API WritingMode2 <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1WritingMode2.html>`_
     """
-    LR_TB: int = 0
+    LR_TB: int = ...
     """
     text within lines is written left-to-right.
     
@@ -44,7 +44,7 @@ class WritingMode2(object):
     
     Typically, this is the writing mode for normal \"alphabetic\" text.
     """
-    RL_TB: int = 1
+    RL_TB: int = ...
     """
     text within a line are written right-to-left.
     
@@ -52,7 +52,7 @@ class WritingMode2(object):
     
     Typically, this writing mode is used in Arabic and Hebrew text.
     """
-    TB_RL: int = 2
+    TB_RL: int = ...
     """
     text within a line is written top-to-bottom.
     
@@ -60,7 +60,7 @@ class WritingMode2(object):
     
     Typically, this writing mode is used in Chinese and Japanese text.
     """
-    TB_LR: int = 3
+    TB_LR: int = ...
     """
     text within a line is written top-to-bottom.
     
@@ -68,17 +68,17 @@ class WritingMode2(object):
     
     Typically, this writing mode is used in Mongolian text.
     """
-    PAGE: int = 4
+    PAGE: int = ...
     """
     obtain writing mode from the current page.
     
     May not be used in page styles.
     """
-    CONTEXT: int = 4
+    CONTEXT: int = ...
     """
     obtain actual writing mode from the context of the object.
     """
-    BT_LR: int = 5
+    BT_LR: int = ...
     """
     text within a line is written bottom-to-top.
     

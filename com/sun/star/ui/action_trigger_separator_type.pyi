@@ -21,7 +21,7 @@
 import typing
 
 
-class ActionTriggerSeparatorType(object):
+class ActionTriggerSeparatorType:
     """
     Const
 
@@ -30,15 +30,15 @@ class ActionTriggerSeparatorType(object):
     See Also:
         `API ActionTriggerSeparatorType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1ActionTriggerSeparatorType.html>`_
     """
-    LINE: int = 0
+    LINE: int = ...
     """
     a separator is inserted as a line.
     """
-    SPACE: int = 1
+    SPACE: int = ...
     """
     a separator is inserted as a space.
     """
-    LINEBREAK: int = 2
+    LINEBREAK: int = ...
     """
     a line break is inserted.
     """

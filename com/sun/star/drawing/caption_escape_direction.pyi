@@ -21,7 +21,7 @@
 import typing
 
 
-class CaptionEscapeDirection(object):
+class CaptionEscapeDirection:
     """
     Const
 
@@ -30,15 +30,15 @@ class CaptionEscapeDirection(object):
     See Also:
         `API CaptionEscapeDirection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing_1_1CaptionEscapeDirection.html>`_
     """
-    horizontal: int = 0
+    horizontal: int = ...
     """
     the caption line leaves the caption area at the horizontal edge that is nearest to the caption point.
     """
-    vertical: int = 1
+    vertical: int = ...
     """
     the caption line leaves the caption area at the vertical edge that is nearest to the caption point.
     """
-    auto: int = 2
+    auto: int = ...
     """
     the caption line leaves the caption area at the edge that is nearest to the caption point.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class FontRelief(object):
+class FontRelief:
     """
     Const
 
@@ -30,15 +30,15 @@ class FontRelief(object):
     See Also:
         `API FontRelief <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1FontRelief.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     no relief is used.
     """
-    EMBOSSED: int = 1
+    EMBOSSED: int = ...
     """
     the font relief is embossed.
     """
-    ENGRAVED: int = 2
+    ENGRAVED: int = ...
     """
     the font relief is engraved.
     """

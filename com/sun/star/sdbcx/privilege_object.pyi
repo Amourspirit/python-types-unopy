@@ -21,7 +21,7 @@
 import typing
 
 
-class PrivilegeObject(object):
+class PrivilegeObject:
     """
     Const
 
@@ -32,15 +32,15 @@ class PrivilegeObject(object):
     See Also:
         `API PrivilegeObject <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbcx_1_1PrivilegeObject.html>`_
     """
-    TABLE: int = 0
+    TABLE: int = ...
     """
     indicates a table.
     """
-    VIEW: int = 1
+    VIEW: int = ...
     """
     indicates a view.
     """
-    COLUMN: int = 2
+    COLUMN: int = ...
     """
     indicates a column of a table.
     """

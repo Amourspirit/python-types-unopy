@@ -21,7 +21,7 @@
 import typing
 
 
-class TextConversionType(object):
+class TextConversionType:
     """
     Const
 
@@ -34,19 +34,19 @@ class TextConversionType(object):
     See Also:
         `API TextConversionType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1TextConversionType.html>`_
     """
-    TO_HANGUL: int = 1
+    TO_HANGUL: int = ...
     """
     Conversion from Hanja to Hangul.
     """
-    TO_HANJA: int = 2
+    TO_HANJA: int = ...
     """
     Conversion from Hangul to Hanja.
     """
-    TO_SCHINESE: int = 3
+    TO_SCHINESE: int = ...
     """
     Conversion from Traditional to Simplified Chinese.
     """
-    TO_TCHINESE: int = 4
+    TO_TCHINESE: int = ...
     """
     Conversion from Simplified to Traditional Chinese.
     """

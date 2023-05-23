@@ -21,7 +21,7 @@
 import typing
 
 
-class ColumnType(object):
+class ColumnType:
     """
     Const
 
@@ -30,19 +30,19 @@ class ColumnType(object):
     See Also:
         `API ColumnType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1ColumnType.html>`_
     """
-    UNKNOWN: int = 0
+    UNKNOWN: int = ...
     """
     indicates that this column may or may not be a pseudo-column.
     
     A possible value for the column PSEUDO_COLUMN in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc.XDatabaseMetaData.getVersionColumns().
     """
-    NOT_PSEUDO: int = 1
+    NOT_PSEUDO: int = ...
     """
     indicates that this column is NOT a pseudo-column.
     
     A possible value for the column PSEUDO_COLUMN in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc.XDatabaseMetaData.getVersionColumns().
     """
-    PSEUDO: int = 2
+    PSEUDO: int = ...
     """
     indicates that this column is a pseudo-column.
     

@@ -21,7 +21,7 @@
 import typing
 
 
-class PositionAndSpaceMode(object):
+class PositionAndSpaceMode:
     """
     Const
 
@@ -30,11 +30,11 @@ class PositionAndSpaceMode(object):
     See Also:
         `API PositionAndSpaceMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1PositionAndSpaceMode.html>`_
     """
-    LABEL_WIDTH_AND_POSITION: int = 0
+    LABEL_WIDTH_AND_POSITION: int = ...
     """
     positioning and spacing of list label via label width and position
     """
-    LABEL_ALIGNMENT: int = 1
+    LABEL_ALIGNMENT: int = ...
     """
     positioning and spacing of list label via label alignment
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class RepaintResult(object):
+class RepaintResult:
     """
     Const
 
@@ -34,15 +34,15 @@ class RepaintResult(object):
     See Also:
         `API RepaintResult <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1RepaintResult.html>`_
     """
-    REDRAWN: int = 1
+    REDRAWN: int = ...
     """
     Repaint succeeded, primitive has been exactly reproduced.
     """
-    DRAFTED: int = 2
+    DRAFTED: int = ...
     """
     Repaint succeeded, primitive has been reproduced in preview quality.
     """
-    FAILED: int = 3
+    FAILED: int = ...
     """
     Repaint failed altogether.
     """

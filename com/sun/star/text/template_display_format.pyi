@@ -21,7 +21,7 @@
 import typing
 
 
-class TemplateDisplayFormat(object):
+class TemplateDisplayFormat:
     """
     Const
 
@@ -30,21 +30,21 @@ class TemplateDisplayFormat(object):
     See Also:
         `API TemplateDisplayFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1TemplateDisplayFormat.html>`_
     """
-    FULL: int = 0
-    PATH: int = 1
-    NAME: int = 2
+    FULL: int = ...
+    PATH: int = ...
+    NAME: int = ...
     """
     Only the file name, without file extension, of the template file will be displayed.
     """
-    NAME_AND_EXT: int = 3
+    NAME_AND_EXT: int = ...
     """
     The file name and the file extension of the template file will be displayed.
     """
-    AREA: int = 4
+    AREA: int = ...
     """
     The name of the template area is displayed.
     """
-    TITLE: int = 5
+    TITLE: int = ...
     """
     The title of the template file is displayed.
     """

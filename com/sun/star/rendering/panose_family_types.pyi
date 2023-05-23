@@ -21,7 +21,7 @@
 import typing
 
 
-class PanoseFamilyTypes(object):
+class PanoseFamilyTypes:
     """
     Const
 
@@ -29,10 +29,10 @@ class PanoseFamilyTypes(object):
     See Also:
         `API PanoseFamilyTypes <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1PanoseFamilyTypes.html>`_
     """
-    ANYTHING: int = 0
-    NO_FIT: int = 1
-    TEXT_DISPLAY: int = 2
-    SCRIPT: int = 3
-    DECORATIVE: int = 4
-    PICTORIAL: int = 5
+    ANYTHING: int = ...
+    NO_FIT: int = ...
+    TEXT_DISPLAY: int = ...
+    SCRIPT: int = ...
+    DECORATIVE: int = ...
+    PICTORIAL: int = ...
 

@@ -21,7 +21,7 @@
 import typing
 
 
-class MouseWheelBehavior(object):
+class MouseWheelBehavior:
     """
     Const
 
@@ -34,15 +34,15 @@ class MouseWheelBehavior(object):
     See Also:
         `API MouseWheelBehavior <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1MouseWheelBehavior.html>`_
     """
-    SCROLL_DISABLED: int = 0
+    SCROLL_DISABLED: int = ...
     """
     defines that the mouse wheel cannot be used to scroll through the control's content
     """
-    SCROLL_FOCUS_ONLY: int = 1
+    SCROLL_FOCUS_ONLY: int = ...
     """
     defines that the mouse can only be used to scroll through the control's content if it currently has the focus.
     """
-    SCROLL_ALWAYS: int = 2
+    SCROLL_ALWAYS: int = ...
     """
     defines that the mouse can be used to scroll through the control's content, no matter whether or not it has the focus, as long as the mouse pointer is over the control.
     """

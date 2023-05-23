@@ -1,4 +1,3 @@
-from .scan_error import ScanError as ScanError
 from .scanner_context import ScannerContext as ScannerContext
 from .scanner_exception import ScannerException as ScannerException
 from .scanner_manager import ScannerManager as ScannerManager

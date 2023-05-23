@@ -21,7 +21,7 @@
 import typing
 
 
-class CalendarDisplayIndex(object):
+class CalendarDisplayIndex:
     """
     Const
 
@@ -34,27 +34,27 @@ class CalendarDisplayIndex(object):
     See Also:
         `API CalendarDisplayIndex <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1CalendarDisplayIndex.html>`_
     """
-    AM_PM: int = 0
+    AM_PM: int = ...
     """
     name of an AM/PM value
     """
-    DAY: int = 1
+    DAY: int = ...
     """
     name of a day of week
     """
-    MONTH: int = 2
+    MONTH: int = ...
     """
     name of a month
     """
-    YEAR: int = 3
+    YEAR: int = ...
     """
     name of a year (if used for a specific calendar)
     """
-    ERA: int = 4
+    ERA: int = ...
     """
     name of an era, like BC/AD
     """
-    GENITIVE_MONTH: int = 5
+    GENITIVE_MONTH: int = ...
     """
     name of a possessive genitive case month
     
@@ -62,7 +62,7 @@ class CalendarDisplayIndex(object):
     
         LibreOffice 3.5
     """
-    PARTITIVE_MONTH: int = 6
+    PARTITIVE_MONTH: int = ...
     """
     name of a partitive case month
     

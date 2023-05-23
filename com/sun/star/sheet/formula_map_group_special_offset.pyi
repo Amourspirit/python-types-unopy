@@ -21,7 +21,7 @@
 import typing
 
 
-class FormulaMapGroupSpecialOffset(object):
+class FormulaMapGroupSpecialOffset:
     """
     Const
 
@@ -36,20 +36,20 @@ class FormulaMapGroupSpecialOffset(object):
     See Also:
         `API FormulaMapGroupSpecialOffset <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1FormulaMapGroupSpecialOffset.html>`_
     """
-    PUSH: int = 0
+    PUSH: int = ...
     """
     Formula tokens containing the op-code obtained from this offset describe a formula operand token that will be pushed onto the formula stack while the formula is interpreted.
     
     The FormulaToken.Data member shall contain one of the following values:
     """
-    CALL: int = 1
-    STOP: int = 2
+    CALL: int = ...
+    STOP: int = ...
     """
     Formula tokens containing the op-code obtained from this offset instruct the formula interpreter to immediately stop interpreting the formula.
     
     The FormulaToken.Data member is not used and should be empty.
     """
-    EXTERNAL: int = 3
+    EXTERNAL: int = ...
     """
     Formula tokens containing the op-code obtained from this offset describe the reference to an external function (e.g.
     
@@ -57,19 +57,19 @@ class FormulaMapGroupSpecialOffset(object):
     
     The FormulaToken.Data member shall contain a string with the programmatic name of the function, e.g. \"com.sun.star.sheet.addin.Analysis.getEomonth\" for the EOMONTH function from the Analysis add-in.
     """
-    NAME: int = 4
+    NAME: int = ...
     """
     Formula tokens containing the op-code obtained from this offset describe the reference to a defined name (also known as named range) used in formulas.
     
     The FormulaToken.Data member shall contain an integer value of type long specifying the index of the defined name. This index can be obtained from the defined name using its NamedRange.TokenIndex property.
     """
-    NO_NAME: int = 5
+    NO_NAME: int = ...
     """
     Formula tokens containing the op-code obtained from this offset describe an invalid name that resolves to the NAME? error in formulas.
     
     The FormulaToken.Data member is not used and should be empty.
     """
-    MISSING: int = 6
+    MISSING: int = ...
     """
     Formula tokens containing the op-code obtained from this offset describe an empty function parameter.
     
@@ -77,7 +77,7 @@ class FormulaMapGroupSpecialOffset(object):
     
     The FormulaToken.Data member is not used and should be empty.
     """
-    BAD: int = 7
+    BAD: int = ...
     """
     Formula tokens containing the op-code obtained from this offset describe \"bad\" data in a formula, e.g.
     
@@ -85,7 +85,7 @@ class FormulaMapGroupSpecialOffset(object):
     
     The FormulaToken.Data member shall contain a string with the bad data. This string will be displayed literally in the formula.
     """
-    SPACES: int = 8
+    SPACES: int = ...
     """
     Formula tokens containing the op-code obtained from this offset describe whitespace characters within the string representation of a formula.
     
@@ -93,21 +93,21 @@ class FormulaMapGroupSpecialOffset(object):
     
     The FormulaToken.Data member shall contain a positive integer value of type long specifying the number of space characters.
     """
-    MAT_REF: int = 9
-    DB_AREA: int = 10
+    MAT_REF: int = ...
+    DB_AREA: int = ...
     """
     Formula tokens containing the op-code obtained from this offset describe the reference to a database range used in formulas.
     
     The FormulaToken.Data member shall contain an integer value of type long specifying the index of the database range. This index can be obtained from the database range using its DatabaseRange.TokenIndex property.
     """
-    MACRO: int = 11
+    MACRO: int = ...
     """
     Formula tokens containing the op-code obtained from this offset describe the reference to a macro function called in a formula.
     
     The FormulaToken.Data member shall contain a string specifying the name of the macro function.
     """
-    COL_ROW_NAME: int = 12
-    WHITESPACE: int = 13
+    COL_ROW_NAME: int = ...
+    WHITESPACE: int = ...
     """
     Formula tokens containing the op-code obtained from this offset describe whitespace characters within the string representation of a formula.
     

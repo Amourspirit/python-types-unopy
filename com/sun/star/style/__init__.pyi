@@ -1,4 +1,3 @@
-from .break_type import BreakType as BreakType
 from .case_map import CaseMap as CaseMap
 from .cell_style import CellStyle as CellStyle
 from .character_properties import CharacterProperties as CharacterProperties
@@ -7,8 +6,6 @@ from .character_properties_complex import CharacterPropertiesComplex as Characte
 from .character_style import CharacterStyle as CharacterStyle
 from .drop_cap_format import DropCapFormat as DropCapFormat
 from .footnote_line_style import FootnoteLineStyle as FootnoteLineStyle
-from .graphic_location import GraphicLocation as GraphicLocation
-from .horizontal_alignment import HorizontalAlignment as HorizontalAlignment
 from .line_number_position import LineNumberPosition as LineNumberPosition
 from .line_spacing import LineSpacing as LineSpacing
 from .line_spacing_mode import LineSpacingMode as LineSpacingMode
@@ -18,8 +15,6 @@ from .numbering_rule import NumberingRule as NumberingRule
 from .numbering_type import NumberingType as NumberingType
 from .page_properties import PageProperties as PageProperties
 from .page_style import PageStyle as PageStyle
-from .page_style_layout import PageStyleLayout as PageStyleLayout
-from .paragraph_adjust import ParagraphAdjust as ParagraphAdjust
 from .paragraph_properties import ParagraphProperties as ParagraphProperties
 from .paragraph_properties_asian import ParagraphPropertiesAsian as ParagraphPropertiesAsian
 from .paragraph_properties_complex import ParagraphPropertiesComplex as ParagraphPropertiesComplex
@@ -28,9 +23,7 @@ from .paragraph_style_category import ParagraphStyleCategory as ParagraphStyleCa
 from .style import Style as Style
 from .style_families import StyleFamilies as StyleFamilies
 from .style_family import StyleFamily as StyleFamily
-from .tab_align import TabAlign as TabAlign
 from .tab_stop import TabStop as TabStop
-from .vertical_alignment import VerticalAlignment as VerticalAlignment
 from .x_auto_style import XAutoStyle as XAutoStyle
 from .x_auto_style_family import XAutoStyleFamily as XAutoStyleFamily
 from .x_auto_styles import XAutoStyles as XAutoStyles

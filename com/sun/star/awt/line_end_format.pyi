@@ -21,7 +21,7 @@
 import typing
 
 
-class LineEndFormat(object):
+class LineEndFormat:
     """
     Const
 
@@ -30,15 +30,15 @@ class LineEndFormat(object):
     See Also:
         `API LineEndFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1LineEndFormat.html>`_
     """
-    CARRIAGE_RETURN: int = 0
+    CARRIAGE_RETURN: int = ...
     """
     specifies that line ends are to be represented by a carriage return character (\\\\\r)
     """
-    LINE_FEED: int = 1
+    LINE_FEED: int = ...
     """
     specifies that line ends are to be represented by a line feed character (\\\\\n)
     """
-    CARRIAGE_RETURN_LINE_FEED: int = 2
+    CARRIAGE_RETURN_LINE_FEED: int = ...
     """
     specifies that line ends are to be represented by a line feed character (\\\\\n), followed by a carriage return character (\\\\\r).
     """

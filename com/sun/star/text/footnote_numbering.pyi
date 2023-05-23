@@ -21,7 +21,7 @@
 import typing
 
 
-class FootnoteNumbering(object):
+class FootnoteNumbering:
     """
     Const
 
@@ -30,15 +30,15 @@ class FootnoteNumbering(object):
     See Also:
         `API FootnoteNumbering <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1FootnoteNumbering.html>`_
     """
-    PER_PAGE: int = 0
+    PER_PAGE: int = ...
     """
     The counter of the automatic footnote numbering restarts each page.
     """
-    PER_CHAPTER: int = 1
+    PER_CHAPTER: int = ...
     """
     The counter of the automatic footnote numbering restarts each chapter.
     """
-    PER_DOCUMENT: int = 2
+    PER_DOCUMENT: int = ...
     """
     The counter of the automatic footnote numbering does not restart.
     """

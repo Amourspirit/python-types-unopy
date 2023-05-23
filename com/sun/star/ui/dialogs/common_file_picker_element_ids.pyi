@@ -21,7 +21,7 @@
 import typing
 
 
-class CommonFilePickerElementIds(object):
+class CommonFilePickerElementIds:
     """
     Const
 
@@ -34,29 +34,29 @@ class CommonFilePickerElementIds(object):
     See Also:
         `API CommonFilePickerElementIds <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1dialogs_1_1CommonFilePickerElementIds.html>`_
     """
-    PUSHBUTTON_OK: int = 1
+    PUSHBUTTON_OK: int = ...
     """
     The control id of the OK button.
     """
-    PUSHBUTTON_CANCEL: int = 2
+    PUSHBUTTON_CANCEL: int = ...
     """
     The control id of the Cancel button.
     """
-    LISTBOX_FILTER: int = 3
+    LISTBOX_FILTER: int = ...
     """
     The filter listbox of a FilePicker dialog.
     """
-    CONTROL_FILEVIEW: int = 4
+    CONTROL_FILEVIEW: int = ...
     """
     Is used to refer to the file view of the file picker.
     
     This view shows the list of all files/folders in the currently selected folder.
     """
-    EDIT_FILEURL: int = 5
+    EDIT_FILEURL: int = ...
     """
     Is used to refer to the edit line where a file or path can be entered by the user.
     """
-    LISTBOX_FILTER_LABEL: int = 6
+    LISTBOX_FILTER_LABEL: int = ...
     """
     The label of the filter listbox of a FilePicker dialog.
     
@@ -64,7 +64,7 @@ class CommonFilePickerElementIds(object):
     
         OOo 1.1.2
     """
-    EDIT_FILEURL_LABEL: int = 7
+    EDIT_FILEURL_LABEL: int = ...
     """
     The label of the file name listbox of a FilePicker dialog.
     

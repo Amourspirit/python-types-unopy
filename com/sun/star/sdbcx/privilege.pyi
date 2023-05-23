@@ -21,7 +21,7 @@
 import typing
 
 
-class Privilege(object):
+class Privilege:
     """
     Const
 
@@ -32,39 +32,39 @@ class Privilege(object):
     See Also:
         `API Privilege <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbcx_1_1Privilege.html>`_
     """
-    SELECT: int = 1
+    SELECT: int = ...
     """
     indicates that a user is allowed to read the data.
     """
-    INSERT: int = 2
+    INSERT: int = ...
     """
     indicates that a user is allowed to insert new data.
     """
-    UPDATE: int = 4
+    UPDATE: int = ...
     """
     indicates that a user is allowed to update data.
     """
-    DELETE: int = 8
+    DELETE: int = ...
     """
     indicates that a user is allowed to delete data.
     """
-    READ: int = 16
+    READ: int = ...
     """
     indicates that a user is allowed to read the structure of a definition object.
     """
-    CREATE: int = 32
+    CREATE: int = ...
     """
     indicates that a user is allowed to create a definition object.
     """
-    ALTER: int = 64
+    ALTER: int = ...
     """
     indicates that a user is allowed to alter an existing object.
     """
-    REFERENCE: int = 128
+    REFERENCE: int = ...
     """
     indicates that a user is allowed to set foreign keys for a table.
     """
-    DROP: int = 256
+    DROP: int = ...
     """
     indicates that a user is allowed to drop a definition object.
     """

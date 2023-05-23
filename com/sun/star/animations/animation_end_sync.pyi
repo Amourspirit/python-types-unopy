@@ -21,7 +21,7 @@
 import typing
 
 
-class AnimationEndSync(object):
+class AnimationEndSync:
     """
     Const
 
@@ -29,25 +29,25 @@ class AnimationEndSync(object):
     See Also:
         `API AnimationEndSync <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1animations_1_1AnimationEndSync.html>`_
     """
-    FIRST: int = 0
+    FIRST: int = ...
     """
     The par, excl, or media element's implicit duration ends with the earliest active end of all the child elements.
     
     This does not refer to the lexical first child, or to the first child to start, but rather refers to the first child to end its (first) active duration.
     """
-    LAST: int = 1
+    LAST: int = ...
     """
     The par, excl, or media element's implicit duration ends with the last active end of the child elements.
     
     This does not refer to the lexical last child, or to the last child to start, but rather refers to the last active end of all children that have a resolved, definite begin time. If the time container has no children with a resolved begin time, the time container ends immediately. If child elements have multiple begin times, or otherwise restart, the child elements must complete all instances of active durations for resolved begin times. This is the default value for par and excl elements.
     """
-    ALL: int = 2
+    ALL: int = ...
     """
     The par, excl, or media element's implicit duration ends when all of the child elements have ended their respective active durations.
     
     Elements with indefinite or unresolved begin times will keep the simple duration of the time container from ending. When all elements have completed the active duration one or more times, the parent time container can end.
     """
-    MEDIA: int = 3
+    MEDIA: int = ...
     """
     The time container element's implicit duration ends when the intrinsic media duration of the element ends.
     

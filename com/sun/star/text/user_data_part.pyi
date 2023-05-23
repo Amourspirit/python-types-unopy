@@ -21,7 +21,7 @@
 import typing
 
 
-class UserDataPart(object):
+class UserDataPart:
     """
     Const
 
@@ -30,63 +30,63 @@ class UserDataPart(object):
     See Also:
         `API UserDataPart <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1UserDataPart.html>`_
     """
-    COMPANY: int = 0
+    COMPANY: int = ...
     """
     The field shows the company name.
     """
-    FIRSTNAME: int = 1
+    FIRSTNAME: int = ...
     """
     The field shows the first name.
     """
-    NAME: int = 2
+    NAME: int = ...
     """
     The field shows the name.
     """
-    SHORTCUT: int = 3
+    SHORTCUT: int = ...
     """
     The field shows the initials.
     """
-    STREET: int = 4
+    STREET: int = ...
     """
     The field shows the street.
     """
-    COUNTRY: int = 5
+    COUNTRY: int = ...
     """
     The field shows the country.
     """
-    ZIP: int = 6
+    ZIP: int = ...
     """
     The field shows the zip code.
     """
-    CITY: int = 7
+    CITY: int = ...
     """
     The field shows the city.
     """
-    TITLE: int = 8
+    TITLE: int = ...
     """
     The field shows the title.
     """
-    POSITION: int = 9
+    POSITION: int = ...
     """
     The field shows the position.
     """
-    PHONE_PRIVATE: int = 10
+    PHONE_PRIVATE: int = ...
     """
     The field shows the no of the private phone.
     """
-    PHONE_COMPANY: int = 11
+    PHONE_COMPANY: int = ...
     """
     The field shows the number of the business phone.
     """
-    FAX: int = 12
+    FAX: int = ...
     """
     The field shows the fax no.
     """
-    EMAIL: int = 13
+    EMAIL: int = ...
     """
     The field shows the e-Mail.
     """
-    STATE: int = 14
+    STATE: int = ...
     """
     The field shows the state.
     """

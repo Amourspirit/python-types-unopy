@@ -21,7 +21,7 @@
 import typing
 
 
-class EnhancedCustomShapeGluePointType(object):
+class EnhancedCustomShapeGluePointType:
     """
     Const
 
@@ -30,19 +30,19 @@ class EnhancedCustomShapeGluePointType(object):
     See Also:
         `API EnhancedCustomShapeGluePointType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing_1_1EnhancedCustomShapeGluePointType.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     no gluepoints are offered
     """
-    SEGMENTS: int = 1
+    SEGMENTS: int = ...
     """
     gluepoints are offered for each segment
     """
-    CUSTOM: int = 2
+    CUSTOM: int = ...
     """
     only gluepoints of the GluePoints property from the com.sun:star.drawing.EnhancedCustomShapePath are offered
     """
-    RECT: int = 3
+    RECT: int = ...
     """
     standard top, left, right, bottom gluepoints are offered
     """

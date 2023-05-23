@@ -21,7 +21,7 @@
 import typing
 
 
-class TemplateDescription(object):
+class TemplateDescription:
     """
     Const
 
@@ -36,51 +36,51 @@ class TemplateDescription(object):
     See Also:
         `API TemplateDescription <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1dialogs_1_1TemplateDescription.html>`_
     """
-    FILEOPEN_SIMPLE: int = 0
+    FILEOPEN_SIMPLE: int = ...
     """
     A FileOpen dialog without any additional controls.
     """
-    FILESAVE_SIMPLE: int = 1
+    FILESAVE_SIMPLE: int = ...
     """
     A FileSave dialog without any additional controls.
     """
-    FILESAVE_AUTOEXTENSION_PASSWORD: int = 2
+    FILESAVE_AUTOEXTENSION_PASSWORD: int = ...
     """
     A FileSave dialog with additional controls.
     """
-    FILESAVE_AUTOEXTENSION_PASSWORD_FILTEROPTIONS: int = 3
+    FILESAVE_AUTOEXTENSION_PASSWORD_FILTEROPTIONS: int = ...
     """
     A FileSave dialog with additional controls.
     """
-    FILESAVE_AUTOEXTENSION_SELECTION: int = 4
+    FILESAVE_AUTOEXTENSION_SELECTION: int = ...
     """
     A FileSave dialog with additional controls.
     """
-    FILESAVE_AUTOEXTENSION_TEMPLATE: int = 5
+    FILESAVE_AUTOEXTENSION_TEMPLATE: int = ...
     """
     A FileSave dialog with additional controls.
     """
-    FILEOPEN_LINK_PREVIEW_IMAGE_TEMPLATE: int = 6
+    FILEOPEN_LINK_PREVIEW_IMAGE_TEMPLATE: int = ...
     """
     A FileOpen dialog with additional controls.
     """
-    FILEOPEN_PLAY: int = 7
+    FILEOPEN_PLAY: int = ...
     """
     A FileOpen dialog with additional controls.
     """
-    FILEOPEN_READONLY_VERSION: int = 8
+    FILEOPEN_READONLY_VERSION: int = ...
     """
     A FileOpen dialog with additional controls.
     """
-    FILEOPEN_LINK_PREVIEW: int = 9
+    FILEOPEN_LINK_PREVIEW: int = ...
     """
     A FileOpen dialog with additional controls.
     """
-    FILESAVE_AUTOEXTENSION: int = 10
+    FILESAVE_AUTOEXTENSION: int = ...
     """
     A FileSave dialog with additional controls.
     """
-    FILEOPEN_PREVIEW: int = 11
+    FILEOPEN_PREVIEW: int = ...
     """
     A FileOpen dialog with additional controls.
     
@@ -88,7 +88,7 @@ class TemplateDescription(object):
     
         LibreOffice 5.3
     """
-    FILEOPEN_LINK_PLAY: int = 12
+    FILEOPEN_LINK_PLAY: int = ...
     """
     A FileOpen dialog with additional controls.
     
@@ -96,7 +96,7 @@ class TemplateDescription(object):
     
         LibreOffice 5.3
     """
-    FILEOPEN_LINK_PREVIEW_IMAGE_ANCHOR: int = 13
+    FILEOPEN_LINK_PREVIEW_IMAGE_ANCHOR: int = ...
     """
     A FileOpen dialog with additional controls.
     

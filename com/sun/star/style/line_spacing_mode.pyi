@@ -21,7 +21,7 @@
 import typing
 
 
-class LineSpacingMode(object):
+class LineSpacingMode:
     """
     Const
 
@@ -30,19 +30,19 @@ class LineSpacingMode(object):
     See Also:
         `API LineSpacingMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style_1_1LineSpacingMode.html>`_
     """
-    PROP: int = 0
+    PROP: int = ...
     """
     This constant specifies the height value as a proportional value.
     """
-    MINIMUM: int = 1
+    MINIMUM: int = ...
     """
     This constant specifies the height as the minimum line height.
     """
-    LEADING: int = 2
+    LEADING: int = ...
     """
     This constant specifies the height value as the distance to the previous line.
     """
-    FIX: int = 3
+    FIX: int = ...
     """
     This constant specifies the height value as a fixed line height.
     """

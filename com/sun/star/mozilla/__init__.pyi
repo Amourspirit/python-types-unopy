@@ -3,7 +3,6 @@ from .menu_proxy import MenuProxy as MenuProxy
 from .menu_proxy_listener import MenuProxyListener as MenuProxyListener
 from .menu_single_change import MenuSingleChange as MenuSingleChange
 from .mozilla_bootstrap import MozillaBootstrap as MozillaBootstrap
-from .mozilla_product_type import MozillaProductType as MozillaProductType
 from .x_close_session_listener import XCloseSessionListener as XCloseSessionListener
 from .x_code_proxy import XCodeProxy as XCodeProxy
 from .x_menu_proxy import XMenuProxy as XMenuProxy

@@ -21,7 +21,7 @@
 import typing
 
 
-class ConstOfSecurityId(object):
+class ConstOfSecurityId:
     """
     Const
 
@@ -30,5 +30,5 @@ class ConstOfSecurityId(object):
     See Also:
         `API ConstOfSecurityId <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1xml_1_1crypto_1_1sax_1_1ConstOfSecurityId.html>`_
     """
-    UNDEFINEDSECURITYID: int = -1
+    UNDEFINEDSECURITYID: int = ...
 

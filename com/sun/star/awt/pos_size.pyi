@@ -21,7 +21,7 @@
 import typing
 
 
-class PosSize(object):
+class PosSize:
     """
     Const
 
@@ -30,31 +30,31 @@ class PosSize(object):
     See Also:
         `API PosSize <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1PosSize.html>`_
     """
-    X: int = 1
+    X: int = ...
     """
     flags the x-coordinate.
     """
-    Y: int = 2
+    Y: int = ...
     """
     flags the y-coordinate.
     """
-    WIDTH: int = 4
+    WIDTH: int = ...
     """
     flags the width.
     """
-    HEIGHT: int = 8
+    HEIGHT: int = ...
     """
     flags the height.
     """
-    POS: int = 3
+    POS: int = ...
     """
     flags the x- and y-coordinate.
     """
-    SIZE: int = 12
+    SIZE: int = ...
     """
     flags the width and height.
     """
-    POSSIZE: int = 15
+    POSSIZE: int = ...
     """
     flags the x- and y-coordinate, width and height.
     """

@@ -33,7 +33,6 @@ from .accessible_tree_list_box_entry import AccessibleTreeListBoxEntry as Access
 from .accessible_window import AccessibleWindow as AccessibleWindow
 from .action_event import ActionEvent as ActionEvent
 from .adjustment_event import AdjustmentEvent as AdjustmentEvent
-from .adjustment_type import AdjustmentType as AdjustmentType
 from .animated_images_control import AnimatedImagesControl as AnimatedImagesControl
 from .animated_images_control_model import AnimatedImagesControlModel as AnimatedImagesControlModel
 from .async_callback import AsyncCallback as AsyncCallback
@@ -57,14 +56,12 @@ from .font_emphasis_mark import FontEmphasisMark as FontEmphasisMark
 from .font_family import FontFamily as FontFamily
 from .font_pitch import FontPitch as FontPitch
 from .font_relief import FontRelief as FontRelief
-from .font_slant import FontSlant as FontSlant
 from .font_strikeout import FontStrikeout as FontStrikeout
 from .font_type import FontType as FontType
 from .font_underline import FontUnderline as FontUnderline
 from .font_weight import FontWeight as FontWeight
 from .font_width import FontWidth as FontWidth
 from .gradient import Gradient as Gradient
-from .gradient_style import GradientStyle as GradientStyle
 from .image_align import ImageAlign as ImageAlign
 from .image_draw_mode import ImageDrawMode as ImageDrawMode
 from .image_position import ImagePosition as ImagePosition
@@ -84,10 +81,8 @@ from .line_end_format import LineEndFormat as LineEndFormat
 from .menu_bar import MenuBar as MenuBar
 from .menu_event import MenuEvent as MenuEvent
 from .menu_item_style import MenuItemStyle as MenuItemStyle
-from .menu_item_type import MenuItemType as MenuItemType
 from .message_box_buttons import MessageBoxButtons as MessageBoxButtons
 from .message_box_results import MessageBoxResults as MessageBoxResults
-from .message_box_type import MessageBoxType as MessageBoxType
 from .mouse_button import MouseButton as MouseButton
 from .mouse_event import MouseEvent as MouseEvent
 from .mouse_wheel_behavior import MouseWheelBehavior as MouseWheelBehavior
@@ -99,8 +94,6 @@ from .popup_menu_direction import PopupMenuDirection as PopupMenuDirection
 from .pos_size import PosSize as PosSize
 from .printer_exception import PrinterException as PrinterException
 from .printer_server import PrinterServer as PrinterServer
-from .push_button_type import PushButtonType as PushButtonType
-from .raster_operation import RasterOperation as RasterOperation
 from .rectangle import Rectangle as Rectangle
 from .roadmap_item import RoadmapItem as RoadmapItem
 from .scroll_bar_orientation import ScrollBarOrientation as ScrollBarOrientation
@@ -173,7 +166,6 @@ from .vcl_container_event import VclContainerEvent as VclContainerEvent
 from .vcl_window_peer_attribute import VclWindowPeerAttribute as VclWindowPeerAttribute
 from .visual_effect import VisualEffect as VisualEffect
 from .window_attribute import WindowAttribute as WindowAttribute
-from .window_class import WindowClass as WindowClass
 from .window_descriptor import WindowDescriptor as WindowDescriptor
 from .window_event import WindowEvent as WindowEvent
 from .x_action_listener import XActionListener as XActionListener

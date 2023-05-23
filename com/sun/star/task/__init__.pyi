@@ -7,7 +7,6 @@ from .document_password_request import DocumentPasswordRequest as DocumentPasswo
 from .document_password_request2 import DocumentPasswordRequest2 as DocumentPasswordRequest2
 from .error_code_io_exception import ErrorCodeIOException as ErrorCodeIOException
 from .error_code_request import ErrorCodeRequest as ErrorCodeRequest
-from .interaction_classification import InteractionClassification as InteractionClassification
 from .interaction_handler import InteractionHandler as InteractionHandler
 from .interaction_request_string_resolver import InteractionRequestStringResolver as InteractionRequestStringResolver
 from .job import Job as Job
@@ -18,7 +17,6 @@ from .office_restart_manager import OfficeRestartManager as OfficeRestartManager
 from .password_container import PasswordContainer as PasswordContainer
 from .password_container_interaction_handler import PasswordContainerInteractionHandler as PasswordContainerInteractionHandler
 from .password_request import PasswordRequest as PasswordRequest
-from .password_request_mode import PasswordRequestMode as PasswordRequestMode
 from .pdf_export_exception import PDFExportException as PDFExportException
 from .status_indicator_factory import StatusIndicatorFactory as StatusIndicatorFactory
 from .the_job_executor import theJobExecutor as theJobExecutor

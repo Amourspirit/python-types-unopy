@@ -21,7 +21,7 @@
 import typing
 
 
-class BrowseNodeTypes(object):
+class BrowseNodeTypes:
     """
     Const
 
@@ -30,15 +30,15 @@ class BrowseNodeTypes(object):
     See Also:
         `API BrowseNodeTypes <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1script_1_1browse_1_1BrowseNodeTypes.html>`_
     """
-    SCRIPT: int = 0
+    SCRIPT: int = ...
     """
     Indicates node is a script.
     """
-    CONTAINER: int = 1
+    CONTAINER: int = ...
     """
     Indicates node is a container.
     """
-    ROOT: int = 2
+    ROOT: int = ...
     """
     Indicates node is root of the tree.
     """

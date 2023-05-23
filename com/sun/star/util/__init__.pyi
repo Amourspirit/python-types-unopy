@@ -8,7 +8,6 @@ from .changes_set import ChangesSet as ChangesSet
 from .close_veto_exception import CloseVetoException as CloseVetoException
 from .color import Color as Color
 from .data_editor_event import DataEditorEvent as DataEditorEvent
-from .data_editor_event_type import DataEditorEventType as DataEditorEventType
 from .date import Date as Date
 from .date_time import DateTime as DateTime
 from .date_time_range import DateTimeRange as DateTimeRange
@@ -37,7 +36,6 @@ from .path_settings import PathSettings as PathSettings
 from .path_substitution import PathSubstitution as PathSubstitution
 from .replace_descriptor import ReplaceDescriptor as ReplaceDescriptor
 from .revision_tag import RevisionTag as RevisionTag
-from .search_algorithms import SearchAlgorithms as SearchAlgorithms
 from .search_algorithms2 import SearchAlgorithms2 as SearchAlgorithms2
 from .search_descriptor import SearchDescriptor as SearchDescriptor
 from .search_flags import SearchFlags as SearchFlags
@@ -47,7 +45,6 @@ from .search_result import SearchResult as SearchResult
 from .sort_descriptor import SortDescriptor as SortDescriptor
 from .sort_descriptor2 import SortDescriptor2 as SortDescriptor2
 from .sort_field import SortField as SortField
-from .sort_field_type import SortFieldType as SortFieldType
 from .sortable import Sortable as Sortable
 from .text_search import TextSearch as TextSearch
 from .text_search2 import TextSearch2 as TextSearch2
@@ -56,7 +53,6 @@ from .the_office_installation_directories import theOfficeInstallationDirectorie
 from .the_path_settings import thePathSettings as thePathSettings
 from .time import Time as Time
 from .time_with_timezone import TimeWithTimezone as TimeWithTimezone
-from .tri_state import TriState as TriState
 from .uri_abbreviation import UriAbbreviation as UriAbbreviation
 from .url import URL as URL
 from .url_transformer import URLTransformer as URLTransformer

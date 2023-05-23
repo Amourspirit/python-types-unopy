@@ -21,7 +21,7 @@
 import typing
 
 
-class CellVertJustify2(object):
+class CellVertJustify2:
     """
     Const
 
@@ -30,23 +30,23 @@ class CellVertJustify2(object):
     See Also:
         `API CellVertJustify2 <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1table_1_1CellVertJustify2.html>`_
     """
-    STANDARD: int = 0
+    STANDARD: int = ...
     """
     default alignment is used.
     """
-    TOP: int = 1
+    TOP: int = ...
     """
     contents are aligned with the upper edge of the cell.
     """
-    CENTER: int = 2
+    CENTER: int = ...
     """
     contents are aligned to the vertical middle of the cell.
     """
-    BOTTOM: int = 3
+    BOTTOM: int = ...
     """
     contents are aligned to the lower edge of the cell.
     """
-    BLOCK: int = 4
+    BLOCK: int = ...
     """
     contents are justified to the cell height.
     """

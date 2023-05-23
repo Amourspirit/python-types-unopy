@@ -21,7 +21,7 @@
 import typing
 
 
-class CompositionType(object):
+class CompositionType:
     """
     Const
 
@@ -34,27 +34,27 @@ class CompositionType(object):
     See Also:
         `API CompositionType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdb_1_1tools_1_1CompositionType.html>`_
     """
-    ForTableDefinitions: int = 0
+    ForTableDefinitions: int = ...
     """
     specifies composition of a name to be used in table definitions
     """
-    ForIndexDefinitions: int = 1
+    ForIndexDefinitions: int = ...
     """
     specifies composition of a name to be used in index definitions
     """
-    ForDataManipulation: int = 2
+    ForDataManipulation: int = ...
     """
     specifies composition of a name to be used in data manipulation
     """
-    ForProcedureCalls: int = 3
+    ForProcedureCalls: int = ...
     """
     specifies composition of a name to be used in procedure calls
     """
-    ForPrivilegeDefinitions: int = 4
+    ForPrivilegeDefinitions: int = ...
     """
     specifies composition of a name to be used in privilege definitions
     """
-    Complete: int = 5
+    Complete: int = ...
     """
     specifies complete composition of a table name, including catalog and schema (if present), disregarding any database support for catalog and schema in any particular statements
     """

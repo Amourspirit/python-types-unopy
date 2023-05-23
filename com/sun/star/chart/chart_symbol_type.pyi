@@ -21,7 +21,7 @@
 import typing
 
 
-class ChartSymbolType(object):
+class ChartSymbolType:
     """
     Const
 
@@ -34,51 +34,51 @@ class ChartSymbolType(object):
     See Also:
         `API ChartSymbolType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart_1_1ChartSymbolType.html>`_
     """
-    NONE: int = -3
+    NONE: int = ...
     """
     No symbol is used.
     """
-    AUTO: int = -2
+    AUTO: int = ...
     """
     The symbol is selected automatically.
     
     The size of symbol will be dynamic and the type depends on the data row number.
     """
-    BITMAPURL: int = -1
+    BITMAPURL: int = ...
     """
     Take a Bitmap from a URL and use this as symbol.
     
     The bitmap given by the URL set in the property ChartDataPointProperties.SymbolBitmapURL is copied so that the graphic is embedded.
     """
-    SYMBOL0: int = 0
+    SYMBOL0: int = ...
     """
     The default symbol for row 0 is used.
     """
-    SYMBOL1: int = 1
+    SYMBOL1: int = ...
     """
     The default symbol for row 1 is used.
     """
-    SYMBOL2: int = 2
+    SYMBOL2: int = ...
     """
     The default symbol for row 2 is used.
     """
-    SYMBOL3: int = 3
+    SYMBOL3: int = ...
     """
     The default symbol for row 3 is used.
     """
-    SYMBOL4: int = 4
+    SYMBOL4: int = ...
     """
     The default symbol for row 4 is used.
     """
-    SYMBOL5: int = 5
+    SYMBOL5: int = ...
     """
     The default symbol for row 5 is used.
     """
-    SYMBOL6: int = 6
+    SYMBOL6: int = ...
     """
     The default symbol for row 6 is used.
     """
-    SYMBOL7: int = 7
+    SYMBOL7: int = ...
     """
     The default symbol for row 7 is used.
     """

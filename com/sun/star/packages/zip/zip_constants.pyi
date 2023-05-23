@@ -21,7 +21,7 @@
 import typing
 
 
-class ZipConstants(object):
+class ZipConstants:
     """
     Const
 
@@ -30,215 +30,215 @@ class ZipConstants(object):
     See Also:
         `API ZipConstants <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1packages_1_1zip_1_1ZipConstants.html>`_
     """
-    DEFLATED: int = 8
+    DEFLATED: int = ...
     """
     Compression method for the deflate algorithm (the only one currently supported).
     """
-    NO_COMPRESSION: int = 0
+    NO_COMPRESSION: int = ...
     """
     Compression level for no compression.
     """
-    BEST_SPEED: int = 1
+    BEST_SPEED: int = ...
     """
     Compression level for fastest compression.
     """
-    BEST_COMPRESSION: int = 9
+    BEST_COMPRESSION: int = ...
     """
     Compression level for best compression.
     """
-    DEFAULT_COMPRESSION: int = -1
+    DEFAULT_COMPRESSION: int = ...
     """
     Default compression level.
     """
-    FILTERED: int = 1
+    FILTERED: int = ...
     """
     Compression strategy best used for data consisting mostly of small values with a somewhat random distribution.
     
     Forces more Huffman coding and less string matching.
     """
-    HUFFMAN_ONLY: int = 2
+    HUFFMAN_ONLY: int = ...
     """
     Compression strategy for Huffman coding only.
     """
-    DEFAULT_STRATEGY: int = 0
+    DEFAULT_STRATEGY: int = ...
     """
     Default compression strategy.
     """
-    STORED: int = 0
+    STORED: int = ...
     """
     entry is uncompressed
     """
-    DEF_MEM_LEVEL: int = 8
+    DEF_MEM_LEVEL: int = ...
     """
     entry is uncompressed
     """
-    LOCSIG: int = 67324752
+    LOCSIG: int = ...
     """
     Header Signature: \"PK\\003\\004\".
     """
-    EXTSIG: int = 134695760
+    EXTSIG: int = ...
     """
     Header Signature: \"PK\\007\\008\".
     """
-    CENSIG: int = 33639248
+    CENSIG: int = ...
     """
     Header Signature: \"PK\\001\\002\".
     """
-    ENDSIG: int = 101010256
+    ENDSIG: int = ...
     """
     Header Signature: \"PK\\005\\006\".
     """
-    SPANSIG: int = 134695760
+    SPANSIG: int = ...
     """
     Header Signature: \"PK\\007\\008\".
     """
-    LOCHDR: int = 30
+    LOCHDR: int = ...
     """
     LOC header size in bytes (including signatures)
     """
-    EXTHDR: int = 16
+    EXTHDR: int = ...
     """
     EXT header size in bytes (including signatures)
     """
-    CENHDR: int = 46
+    CENHDR: int = ...
     """
     CEN header size in bytes (including signatures)
     """
-    ENDHDR: int = 22
+    ENDHDR: int = ...
     """
     END header size in bytes (including signatures)
     """
-    LOCVER: int = 4
+    LOCVER: int = ...
     """
     LOC LOC LOC.
     
     LOC header field \"version needed to extract\" offset
     """
-    LOCFLG: int = 6
+    LOCFLG: int = ...
     """
     LOC header field \"general purpose bit flags\" offset.
     """
-    LOCHOW: int = 8
+    LOCHOW: int = ...
     """
     LOC header field \"compression method\" offset.
     """
-    LOCTIM: int = 10
+    LOCTIM: int = ...
     """
     LOC header field \"modification time\" offset.
     """
-    LOCCRC: int = 14
+    LOCCRC: int = ...
     """
     LOC header field \"CRC of uncompressed data\" offset.
     """
-    LOCSIZ: int = 18
+    LOCSIZ: int = ...
     """
     LOC header field \"compressed data size\" offset.
     """
-    LOCLEN: int = 22
+    LOCLEN: int = ...
     """
     LOC header field \"uncompressed data size\" offset.
     """
-    LOCNAM: int = 26
+    LOCNAM: int = ...
     """
     LOC header field \"filename length\" offset.
     """
-    LOCEXT: int = 28
+    LOCEXT: int = ...
     """
     LOC header field \"extra field length\" offset.
     """
-    EXTCRC: int = 4
+    EXTCRC: int = ...
     """
     EXT header field \"CRC of uncompressed data\" offsets.
     """
-    EXTSIZ: int = 8
+    EXTSIZ: int = ...
     """
     EXT header field \"compressed size\" offsets.
     """
-    EXTLEN: int = 12
+    EXTLEN: int = ...
     """
     EXT header field \"uncompressed size\" offsets.
     """
-    CENVEM: int = 4
+    CENVEM: int = ...
     """
     CEN header field \"version made by\" offset.
     """
-    CENVER: int = 6
+    CENVER: int = ...
     """
     CEN header field \"version needed to extract\" offset.
     """
-    CENFLG: int = 8
+    CENFLG: int = ...
     """
     CEN header field \"general purpose bit flags\" offset.
     """
-    CENHOW: int = 10
+    CENHOW: int = ...
     """
     CEN header field \"compression method\" offset.
     """
-    CENTIM: int = 12
+    CENTIM: int = ...
     """
     CEN header field \"modification time\" offset.
     """
-    CENDAT: int = 14
+    CENDAT: int = ...
     """
     CEN header field \"modification time\" offset.
     """
-    CENCRC: int = 16
+    CENCRC: int = ...
     """
     CEN header field \"CRC of uncompressed data\" offset.
     """
-    CENSIZ: int = 20
+    CENSIZ: int = ...
     """
     CEN header field \"compressed size\" offset.
     """
-    CENLEN: int = 24
+    CENLEN: int = ...
     """
     CEN header field \"uncompressed size\" offset.
     """
-    CENNAM: int = 28
+    CENNAM: int = ...
     """
     CEN header field \"length of filename\" offset.
     """
-    CENEXT: int = 30
+    CENEXT: int = ...
     """
     CEN header field \"length of extra field\" offset.
     """
-    CENCOM: int = 32
+    CENCOM: int = ...
     """
     CEN header field \"file comment length\" offset.
     """
-    CENDSK: int = 34
+    CENDSK: int = ...
     """
     CEN header field \"disk number start\" offset.
     """
-    CENATT: int = 36
+    CENATT: int = ...
     """
     CEN header field \"internal file attributes\" offset.
     """
-    CENATX: int = 38
+    CENATX: int = ...
     """
     CEN header field \"external file attributes\" offset.
     """
-    CENOFF: int = 42
+    CENOFF: int = ...
     """
     CEN header field \"offset of local header\" offset.
     """
-    ENDSUB: int = 8
+    ENDSUB: int = ...
     """
     END header field \"number of entries on this disk\" offset.
     """
-    ENDTOT: int = 10
+    ENDTOT: int = ...
     """
     END header field \"total number of entries\" offset.
     """
-    ENDSIZ: int = 12
+    ENDSIZ: int = ...
     """
     END header field \"central directory size\" offset.
     """
-    ENDOFF: int = 16
+    ENDOFF: int = ...
     """
     END header field \"central directory offset\" offset.
     """
-    ENDCOM: int = 20
+    ENDCOM: int = ...
     """
     END header field \"size of zip file comment\" offset.
     """

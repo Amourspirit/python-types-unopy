@@ -21,7 +21,7 @@
 import typing
 
 
-class OpenMode(object):
+class OpenMode:
     """
     Const
 
@@ -30,19 +30,19 @@ class OpenMode(object):
     See Also:
         `API OpenMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1OpenMode.html>`_
     """
-    ALL: int = 0
+    ALL: int = ...
     """
     open a folder, include all children in result set (documents and folders).
     """
-    FOLDERS: int = 1
+    FOLDERS: int = ...
     """
     open a folder, include only children, that are folders, in result set.
     """
-    DOCUMENTS: int = 3
+    DOCUMENTS: int = ...
     """
     open a folder, include only children, that are documents, in result set.
     """
-    DOCUMENT: int = 2
+    DOCUMENT: int = ...
     """
     open a document.
     
@@ -50,7 +50,7 @@ class OpenMode(object):
     
     Note: There must be a data sink supplied in the OpenCommandArgument struct, if this value is set. This sink will be used by the content implementation to supply the document data.
     """
-    DOCUMENT_SHARE_DENY_NONE: int = 4
+    DOCUMENT_SHARE_DENY_NONE: int = ...
     """
     open a document.
     
@@ -58,7 +58,7 @@ class OpenMode(object):
     
     Note: There must be a data sink supplied in the OpenCommandArgument struct, if this value is set. This sink will be used by the content implementation to supply the document data.
     """
-    DOCUMENT_SHARE_DENY_WRITE: int = 5
+    DOCUMENT_SHARE_DENY_WRITE: int = ...
     """
     open a document.
     

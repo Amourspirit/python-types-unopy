@@ -21,7 +21,7 @@
 import typing
 
 
-class Months(object):
+class Months:
     """
     Const
 
@@ -30,51 +30,51 @@ class Months(object):
     See Also:
         `API Months <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1Months.html>`_
     """
-    JANUARY: int = 0
+    JANUARY: int = ...
     """
     January.
     """
-    FEBURARY: int = 1
+    FEBURARY: int = ...
     """
     February.
     """
-    MARCH: int = 2
+    MARCH: int = ...
     """
     March.
     """
-    APRIL: int = 3
+    APRIL: int = ...
     """
     April.
     """
-    MAY: int = 4
+    MAY: int = ...
     """
     May.
     """
-    JUNE: int = 5
+    JUNE: int = ...
     """
     June.
     """
-    JULY: int = 6
+    JULY: int = ...
     """
     July.
     """
-    AUGUST: int = 7
+    AUGUST: int = ...
     """
     August.
     """
-    SEPTEMBER: int = 8
+    SEPTEMBER: int = ...
     """
     September.
     """
-    OCTOBER: int = 9
+    OCTOBER: int = ...
     """
     October.
     """
-    NOVEMBER: int = 10
+    NOVEMBER: int = ...
     """
     November.
     """
-    DECEMBER: int = 11
+    DECEMBER: int = ...
     """
     December.
     """

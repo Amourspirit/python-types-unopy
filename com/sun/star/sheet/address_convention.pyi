@@ -21,7 +21,7 @@
 import typing
 
 
-class AddressConvention(object):
+class AddressConvention:
     """
     Const
 
@@ -32,10 +32,10 @@ class AddressConvention(object):
     See Also:
         `API AddressConvention <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1AddressConvention.html>`_
     """
-    UNSPECIFIED: int = -1
-    OOO: int = 0
-    XL_A1: int = 1
-    XL_R1C1: int = 2
-    XL_OOX: int = 3
-    LOTUS_A1: int = 4
+    UNSPECIFIED: int = ...
+    OOO: int = ...
+    XL_A1: int = ...
+    XL_R1C1: int = ...
+    XL_OOX: int = ...
+    LOTUS_A1: int = ...
 

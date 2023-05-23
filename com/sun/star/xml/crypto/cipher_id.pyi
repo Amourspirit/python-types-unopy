@@ -21,7 +21,7 @@
 import typing
 
 
-class CipherID(object):
+class CipherID:
     """
     Const
 
@@ -34,11 +34,11 @@ class CipherID(object):
     See Also:
         `API CipherID <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1xml_1_1crypto_1_1CipherID.html>`_
     """
-    AES_CBC_W3C_PADDING: int = 1
+    AES_CBC_W3C_PADDING: int = ...
     """
     identifier of AES algorithm in CBC mode with W3C padding
     """
-    BLOWFISH_CFB_8: int = 2
+    BLOWFISH_CFB_8: int = ...
     """
     identifier of the Blowfish algorithm in 8-bit CFB mode
     """

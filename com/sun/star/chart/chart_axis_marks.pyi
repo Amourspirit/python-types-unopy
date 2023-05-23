@@ -21,7 +21,7 @@
 import typing
 
 
-class ChartAxisMarks(object):
+class ChartAxisMarks:
     """
     Const
 
@@ -32,15 +32,15 @@ class ChartAxisMarks(object):
     See Also:
         `API ChartAxisMarks <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart_1_1ChartAxisMarks.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     Do not display any marks.
     """
-    INNER: int = 1
+    INNER: int = ...
     """
     Display marks that point into the diagram area.
     """
-    OUTER: int = 2
+    OUTER: int = ...
     """
     Display marks that point out of the diagram area.
     """

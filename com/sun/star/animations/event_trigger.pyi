@@ -21,7 +21,7 @@
 import typing
 
 
-class EventTrigger(object):
+class EventTrigger:
     """
     Const
 
@@ -29,38 +29,38 @@ class EventTrigger(object):
     See Also:
         `API EventTrigger <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1animations_1_1EventTrigger.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     Nothing triggers this event.
     """
-    ON_BEGIN: int = 1
-    ON_END: int = 2
-    BEGIN_EVENT: int = 3
+    ON_BEGIN: int = ...
+    ON_END: int = ...
+    BEGIN_EVENT: int = ...
     """
     This event is raised when the element local timeline begins to play.
     
     It will be raised each time the element begins the active duration (i.e. when it restarts, but not when it repeats).
     """
-    END_EVENT: int = 4
+    END_EVENT: int = ...
     """
     This event is raised at the active end of the element.
     
     Note that this event is not raised at the simple end of each repeat.
     """
-    ON_CLICK: int = 5
-    ON_DBL_CLICK: int = 6
-    ON_MOUSE_ENTER: int = 7
-    ON_MOUSE_LEAVE: int = 8
-    ON_NEXT: int = 9
+    ON_CLICK: int = ...
+    ON_DBL_CLICK: int = ...
+    ON_MOUSE_ENTER: int = ...
+    ON_MOUSE_LEAVE: int = ...
+    ON_NEXT: int = ...
     """
     This event is raised when the user wants the presentation to go one step forward.
     """
-    ON_PREV: int = 10
+    ON_PREV: int = ...
     """
     This event is raised when the user wants the presentation to go one step backward.
     """
-    ON_STOP_AUDIO: int = 11
-    REPEAT: int = 12
+    ON_STOP_AUDIO: int = ...
+    REPEAT: int = ...
     """
     This event is raised when the element local timeline repeats.
     

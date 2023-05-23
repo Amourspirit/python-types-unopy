@@ -21,7 +21,7 @@
 import typing
 
 
-class TextMarkupType(object):
+class TextMarkupType:
     """
     Const
 
@@ -36,11 +36,11 @@ class TextMarkupType(object):
     See Also:
         `API TextMarkupType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1TextMarkupType.html>`_
     """
-    SPELLCHECK: int = 1
+    SPELLCHECK: int = ...
     """
     Markup originates from spell checking.
     """
-    PROOFREADING: int = 2
+    PROOFREADING: int = ...
     """
     Markup originates from proofreading.
     
@@ -48,11 +48,11 @@ class TextMarkupType(object):
     
         OOo 3.0.1
     """
-    SMARTTAG: int = 3
+    SMARTTAG: int = ...
     """
     Markup originates from smart tag checking.
     """
-    SENTENCE: int = 4
+    SENTENCE: int = ...
     """
     Markup originates from proofreading An invisible markup type used in proofreading API calls.
     
@@ -60,7 +60,7 @@ class TextMarkupType(object):
     
         OOo 3.0.1
     """
-    TRACK_CHANGE_INSERTION: int = 5
+    TRACK_CHANGE_INSERTION: int = ...
     """
     Markups originates from change tracking.
     
@@ -68,6 +68,6 @@ class TextMarkupType(object):
     
         OOo 3.3
     """
-    TRACK_CHANGE_DELETION: int = 6
-    TRACK_CHANGE_FORMATCHANGE: int = 7
+    TRACK_CHANGE_DELETION: int = ...
+    TRACK_CHANGE_FORMATCHANGE: int = ...
 

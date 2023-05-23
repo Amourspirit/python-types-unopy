@@ -1,5 +1,4 @@
 from .axis import Axis as Axis
-from .axis_orientation import AxisOrientation as AxisOrientation
 from .axis_type import AxisType as AxisType
 from .candle_stick_chart_type import CandleStickChartType as CandleStickChartType
 from .cartesian_coordinate_system2d import CartesianCoordinateSystem2d as CartesianCoordinateSystem2d
@@ -12,10 +11,8 @@ from .chart_type_template import ChartTypeTemplate as ChartTypeTemplate
 from .coordinate_system import CoordinateSystem as CoordinateSystem
 from .coordinate_system_type import CoordinateSystemType as CoordinateSystemType
 from .coordinate_system_type_id import CoordinateSystemTypeID as CoordinateSystemTypeID
-from .curve_style import CurveStyle as CurveStyle
 from .data_point import DataPoint as DataPoint
 from .data_point_custom_label_field import DataPointCustomLabelField as DataPointCustomLabelField
-from .data_point_custom_label_field_type import DataPointCustomLabelFieldType as DataPointCustomLabelFieldType
 from .data_point_geometry3_d import DataPointGeometry3D as DataPointGeometry3D
 from .data_point_label import DataPointLabel as DataPointLabel
 from .data_point_properties import DataPointProperties as DataPointProperties
@@ -29,7 +26,6 @@ from .formatted_string import FormattedString as FormattedString
 from .grid_properties import GridProperties as GridProperties
 from .increment_data import IncrementData as IncrementData
 from .legend import Legend as Legend
-from .legend_position import LegendPosition as LegendPosition
 from .light_source import LightSource as LightSource
 from .linear_regression_curve import LinearRegressionCurve as LinearRegressionCurve
 from .linear_scaling import LinearScaling as LinearScaling
@@ -38,7 +34,6 @@ from .logarithmic_scaling import LogarithmicScaling as LogarithmicScaling
 from .logic_target_model import LogicTargetModel as LogicTargetModel
 from .moving_average_regression_curve import MovingAverageRegressionCurve as MovingAverageRegressionCurve
 from .moving_average_type import MovingAverageType as MovingAverageType
-from .pie_chart_offset_mode import PieChartOffsetMode as PieChartOffsetMode
 from .polar_coordinate_system2d import PolarCoordinateSystem2d as PolarCoordinateSystem2d
 from .polar_coordinate_system3d import PolarCoordinateSystem3d as PolarCoordinateSystem3d
 from .polynomial_regression_curve import PolynomialRegressionCurve as PolynomialRegressionCurve
@@ -52,14 +47,11 @@ from .relative_position import RelativePosition as RelativePosition
 from .relative_size import RelativeSize as RelativeSize
 from .scale_data import ScaleData as ScaleData
 from .scaling import Scaling as Scaling
-from .stacking_direction import StackingDirection as StackingDirection
 from .standard_diagram_creation_parameters import StandardDiagramCreationParameters as StandardDiagramCreationParameters
 from .sub_increment import SubIncrement as SubIncrement
 from .symbol import Symbol as Symbol
-from .symbol_style import SymbolStyle as SymbolStyle
 from .tickmark_style import TickmarkStyle as TickmarkStyle
 from .title import Title as Title
-from .transparency_style import TransparencyStyle as TransparencyStyle
 from .x_any_description_access import XAnyDescriptionAccess as XAnyDescriptionAccess
 from .x_axis import XAxis as XAxis
 from .x_chart_document import XChartDocument as XChartDocument

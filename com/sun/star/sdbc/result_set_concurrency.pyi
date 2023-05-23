@@ -21,7 +21,7 @@
 import typing
 
 
-class ResultSetConcurrency(object):
+class ResultSetConcurrency:
     """
     Const
 
@@ -30,11 +30,11 @@ class ResultSetConcurrency(object):
     See Also:
         `API ResultSetConcurrency <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1ResultSetConcurrency.html>`_
     """
-    READ_ONLY: int = 1007
+    READ_ONLY: int = ...
     """
     is the concurrency mode for a com.sun.star.sdb.ResultSet object that may NOT be updated.
     """
-    UPDATABLE: int = 1008
+    UPDATABLE: int = ...
     """
     is the concurrency mode for a com.sun.star.sdb.ResultSet object that may be updated.
     """

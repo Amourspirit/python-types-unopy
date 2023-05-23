@@ -21,7 +21,7 @@
 import typing
 
 
-class TableValidationVisibility(object):
+class TableValidationVisibility:
     """
     Const
 
@@ -30,15 +30,15 @@ class TableValidationVisibility(object):
     See Also:
         `API TableValidationVisibility <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1TableValidationVisibility.html>`_
     """
-    INVISIBLE: int = 0
+    INVISIBLE: int = ...
     """
     The List is not shown.
     """
-    UNSORTED: int = 1
+    UNSORTED: int = ...
     """
     The List is shown unsorted.
     """
-    SORTEDASCENDING: int = 2
+    SORTEDASCENDING: int = ...
     """
     The List is shown sorted ascending.
     """

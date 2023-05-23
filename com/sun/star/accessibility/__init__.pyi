@@ -5,7 +5,6 @@ from .accessible_event_object import AccessibleEventObject as AccessibleEventObj
 from .accessible_relation import AccessibleRelation as AccessibleRelation
 from .accessible_relation_type import AccessibleRelationType as AccessibleRelationType
 from .accessible_role import AccessibleRole as AccessibleRole
-from .accessible_scroll_type import AccessibleScrollType as AccessibleScrollType
 from .accessible_state_type import AccessibleStateType as AccessibleStateType
 from .accessible_table_model_change import AccessibleTableModelChange as AccessibleTableModelChange
 from .accessible_table_model_change_type import AccessibleTableModelChangeType as AccessibleTableModelChangeType

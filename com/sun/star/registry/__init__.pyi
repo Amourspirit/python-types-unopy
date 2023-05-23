@@ -5,8 +5,6 @@ from .invalid_registry_exception import InvalidRegistryException as InvalidRegis
 from .invalid_value_exception import InvalidValueException as InvalidValueException
 from .merge_conflict_exception import MergeConflictException as MergeConflictException
 from .nested_registry import NestedRegistry as NestedRegistry
-from .registry_key_type import RegistryKeyType as RegistryKeyType
-from .registry_value_type import RegistryValueType as RegistryValueType
 from .simple_registry import SimpleRegistry as SimpleRegistry
 from .x_implementation_registration import XImplementationRegistration as XImplementationRegistration
 from .x_implementation_registration2 import XImplementationRegistration2 as XImplementationRegistration2

@@ -21,7 +21,7 @@
 import typing
 
 
-class ChartAxisType(object):
+class ChartAxisType:
     """
     Const
 
@@ -33,15 +33,15 @@ class ChartAxisType(object):
     See Also:
         `API ChartAxisType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart_1_1ChartAxisType.html>`_
     """
-    AUTOMATIC: int = 0
+    AUTOMATIC: int = ...
     """
     the type of the axis is chosen automatically dependent on the chart type, the dimension and the underlying data
     """
-    CATEGORY: int = 1
+    CATEGORY: int = ...
     """
     the axis represent discrete category texts if chart type and the dimension allows
     """
-    DATE: int = 2
+    DATE: int = ...
     """
     the axis shows dates if the given data and chart type and the dimension allows
     """

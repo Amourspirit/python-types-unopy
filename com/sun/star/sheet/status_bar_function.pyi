@@ -21,7 +21,7 @@
 import typing
 
 
-class StatusBarFunction(object):
+class StatusBarFunction:
     """
     Const
 
@@ -30,31 +30,31 @@ class StatusBarFunction(object):
     See Also:
         `API StatusBarFunction <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1StatusBarFunction.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     nothing is calculated.
     """
-    AVERAGE: int = 1
+    AVERAGE: int = ...
     """
     average of all numerical values is calculated.
     """
-    COUNTNUMS: int = 2
+    COUNTNUMS: int = ...
     """
     all values, including non-numerical values, are counted.
     """
-    COUNT: int = 3
+    COUNT: int = ...
     """
     numerical values are counted.
     """
-    MAX: int = 4
+    MAX: int = ...
     """
     maximum value of all numerical values is calculated.
     """
-    MIN: int = 5
+    MIN: int = ...
     """
     minimum value of all numerical values is calculated.
     """
-    SUM: int = 9
+    SUM: int = ...
     """
     sum of all numerical values is calculated.
     """

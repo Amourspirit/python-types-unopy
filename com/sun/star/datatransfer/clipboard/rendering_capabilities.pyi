@@ -21,7 +21,7 @@
 import typing
 
 
-class RenderingCapabilities(object):
+class RenderingCapabilities:
     """
     Const
 
@@ -30,15 +30,15 @@ class RenderingCapabilities(object):
     See Also:
         `API RenderingCapabilities <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1datatransfer_1_1clipboard_1_1RenderingCapabilities.html>`_
     """
-    Delayed: int = 1
+    Delayed: int = ...
     """
     The implementation supports delayed rendering.
     """
-    Persistant: int = 2
+    Persistant: int = ...
     """
     The implementation is able to store the data persistent in the system so that it does not get lost when the source application no longer exist.
     """
-    Persistent: int = 2
+    Persistent: int = ...
     """
     The implementation is able to store the data persistent in the system so that it does not get lost when the source application no longer exist.
     """

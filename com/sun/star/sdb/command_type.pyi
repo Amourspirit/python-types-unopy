@@ -21,7 +21,7 @@
 import typing
 
 
-class CommandType(object):
+class CommandType:
     """
     Const
 
@@ -30,15 +30,15 @@ class CommandType(object):
     See Also:
         `API CommandType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdb_1_1CommandType.html>`_
     """
-    TABLE: int = 0
+    TABLE: int = ...
     """
     indicates that a command contains a table name, which can be used to process a command like \"select * from tablename\".
     """
-    QUERY: int = 1
+    QUERY: int = ...
     """
     indicates that a command contains a name of a query component, which contains a certain statement.
     """
-    COMMAND: int = 2
+    COMMAND: int = ...
     """
     indicates that the command is an SQL-Statement.
     """

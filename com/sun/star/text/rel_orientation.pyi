@@ -21,7 +21,7 @@
 import typing
 
 
-class RelOrientation(object):
+class RelOrientation:
     """
     Const
 
@@ -34,43 +34,43 @@ class RelOrientation(object):
     See Also:
         `API RelOrientation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1RelOrientation.html>`_
     """
-    FRAME: int = 0
+    FRAME: int = ...
     """
     paragraph, including margins
     """
-    PRINT_AREA: int = 1
+    PRINT_AREA: int = ...
     """
     paragraph, without margins
     """
-    CHAR: int = 2
+    CHAR: int = ...
     """
     at a character
     """
-    PAGE_LEFT: int = 3
+    PAGE_LEFT: int = ...
     """
     inside the left page margin
     """
-    PAGE_RIGHT: int = 4
+    PAGE_RIGHT: int = ...
     """
     inside the right page margin
     """
-    FRAME_LEFT: int = 5
+    FRAME_LEFT: int = ...
     """
     inside the left paragraph margin
     """
-    FRAME_RIGHT: int = 6
+    FRAME_RIGHT: int = ...
     """
     inside the right paragraph margin
     """
-    PAGE_FRAME: int = 7
+    PAGE_FRAME: int = ...
     """
     page includes margins for page-anchored frames identical with RelOrientation.FRAME
     """
-    PAGE_PRINT_AREA: int = 8
+    PAGE_PRINT_AREA: int = ...
     """
     page without borders (for page anchored frames identical with RelOrientation.PRINT_AREA).
     """
-    TEXT_LINE: int = 9
+    TEXT_LINE: int = ...
     """
     at the top of the text line, only sensible for vertical orientation.
     
@@ -78,7 +78,7 @@ class RelOrientation(object):
     
         OOo 2.0
     """
-    PAGE_PRINT_AREA_BOTTOM: int = 10
+    PAGE_PRINT_AREA_BOTTOM: int = ...
     """
     Bottom page border (page area below PAGE_PRINT_AREA).
     
@@ -86,7 +86,7 @@ class RelOrientation(object):
     
         LibreOffice 7.0
     """
-    PAGE_PRINT_AREA_TOP: int = 11
+    PAGE_PRINT_AREA_TOP: int = ...
     """
     Top page border (page area above PAGE_PRINT_AREA).
     

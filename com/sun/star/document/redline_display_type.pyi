@@ -21,7 +21,7 @@
 import typing
 
 
-class RedlineDisplayType(object):
+class RedlineDisplayType:
     """
     Const
 
@@ -30,19 +30,19 @@ class RedlineDisplayType(object):
     See Also:
         `API RedlineDisplayType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1document_1_1RedlineDisplayType.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     no changes are displayed.
     """
-    INSERTED: int = 1
+    INSERTED: int = ...
     """
     only inserted parts are displayed and attributed.
     """
-    INSERTED_AND_REMOVED: int = 2
+    INSERTED_AND_REMOVED: int = ...
     """
     only inserted parts are displayed and attributed.
     """
-    REMOVED: int = 3
+    REMOVED: int = ...
     """
     only removed parts are displayed and attributed.
     """
