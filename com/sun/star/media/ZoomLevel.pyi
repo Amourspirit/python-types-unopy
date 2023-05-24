@@ -19,7 +19,6 @@
 # Namespace: com.sun.star.media
 # Libre Office Version: 7.4
 from __future__ import annotations
-from typing import cast
 from com.sun.star import UnoEnumProto
 
 class ZoomLevelProto(UnoEnumProto):
