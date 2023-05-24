@@ -21,7 +21,7 @@
 import typing
 
 
-class ElementModes(object):
+class ElementModes:
     """
     Const
 
@@ -32,39 +32,39 @@ class ElementModes(object):
     See Also:
         `API ElementModes <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1embed_1_1ElementModes.html>`_
     """
-    READ: int = 1
+    READ: int = ...
     """
     specifies opening of an element for reading.
     """
-    SEEKABLE: int = 2
+    SEEKABLE: int = ...
     """
     specifies opening of a seekable element.
     
     This mode is ignored for Storage elements. This flag makes sense only in combination with ElementModes.READ and/or ElementModes.WRITE.
     """
-    SEEKABLEREAD: int = 3
+    SEEKABLEREAD: int = ...
     """
     specifies opening of a seekable element for reading.
     
     This is just a combination of the previous two values. For storages it is the same as ElementModes.READ.
     """
-    WRITE: int = 4
+    WRITE: int = ...
     """
     specifies opening of an element for writing.
     """
-    READWRITE: int = 7
+    READWRITE: int = ...
     """
     specifies opening of an element for reading and writing.
     
     For a stream element is also specifies that it must be seekable.
     """
-    TRUNCATE: int = 8
+    TRUNCATE: int = ...
     """
     lets the document be truncated immediately after opening.
     
     This flag makes sense only in combination with ElementModes.WRITE.
     """
-    NOCREATE: int = 16
+    NOCREATE: int = ...
     """
     restricts creation of a new element on opening in case a requested one does not exist.
     

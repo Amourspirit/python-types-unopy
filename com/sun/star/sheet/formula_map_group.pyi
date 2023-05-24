@@ -21,7 +21,7 @@
 import typing
 
 
-class FormulaMapGroup(object):
+class FormulaMapGroup:
     """
     Const
 
@@ -32,31 +32,31 @@ class FormulaMapGroup(object):
     See Also:
         `API FormulaMapGroup <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1FormulaMapGroup.html>`_
     """
-    SPECIAL: int = 0
+    SPECIAL: int = ...
     """
     Group of op-codes without a string symbol.
     """
-    SEPARATORS: int = 1
+    SEPARATORS: int = ...
     """
     Separators and parentheses.
     """
-    ARRAY_SEPARATORS: int = 2
+    ARRAY_SEPARATORS: int = ...
     """
     Separators and parentheses for constant arrays.
     """
-    UNARY_OPERATORS: int = 4
+    UNARY_OPERATORS: int = ...
     """
     Unary operators.
     """
-    BINARY_OPERATORS: int = 8
+    BINARY_OPERATORS: int = ...
     """
     Binary operators.
     """
-    FUNCTIONS: int = 16
+    FUNCTIONS: int = ...
     """
     Functions.
     """
-    ALL_EXCEPT_SPECIAL: int = 2147483647
+    ALL_EXCEPT_SPECIAL: int = ...
     """
     All groups except SPECIAL.
     """

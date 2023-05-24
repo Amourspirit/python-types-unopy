@@ -21,7 +21,7 @@
 import typing
 
 
-class AnimationNodeType(object):
+class AnimationNodeType:
     """
     Const
 
@@ -36,55 +36,55 @@ class AnimationNodeType(object):
     See Also:
         `API AnimationNodeType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1animations_1_1AnimationNodeType.html>`_
     """
-    CUSTOM: int = 0
+    CUSTOM: int = ...
     """
     Defines a custom time node.
     """
-    PAR: int = 1
+    PAR: int = ...
     """
     Defines a parallel time container.
     """
-    SEQ: int = 2
+    SEQ: int = ...
     """
     Defines a sequence time container.
     """
-    ITERATE: int = 3
+    ITERATE: int = ...
     """
     Defines an iterate time container.
     """
-    ANIMATE: int = 4
+    ANIMATE: int = ...
     """
     Defines a generic attribute animation.
     """
-    SET: int = 5
+    SET: int = ...
     """
     Defines a simple mean of just setting the value of an attribute for a specified duration.
     """
-    ANIMATEMOTION: int = 6
+    ANIMATEMOTION: int = ...
     """
     Defines a move animation along a path.
     """
-    ANIMATECOLOR: int = 7
+    ANIMATECOLOR: int = ...
     """
     Defines an animation of a color attribute.
     """
-    ANIMATETRANSFORM: int = 8
+    ANIMATETRANSFORM: int = ...
     """
     Defines an animation of a transformation attribute.
     """
-    TRANSITIONFILTER: int = 9
+    TRANSITIONFILTER: int = ...
     """
     Defines an animation of a filter behavior.
     """
-    AUDIO: int = 10
+    AUDIO: int = ...
     """
     Defines an audio effect.
     """
-    COMMAND: int = 11
+    COMMAND: int = ...
     """
     Defines a command effect.
     """
-    ANIMATEPHYSICS: int = 12
+    ANIMATEPHYSICS: int = ...
     """
     Defines a physics animation.
     

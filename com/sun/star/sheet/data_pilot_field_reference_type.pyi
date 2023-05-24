@@ -21,7 +21,7 @@
 import typing
 
 
-class DataPilotFieldReferenceType(object):
+class DataPilotFieldReferenceType:
     """
     Const
 
@@ -30,11 +30,11 @@ class DataPilotFieldReferenceType(object):
     See Also:
         `API DataPilotFieldReferenceType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DataPilotFieldReferenceType.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     This type means, that the results in the data fields are displayed like they are.
     """
-    ITEM_DIFFERENCE: int = 1
+    ITEM_DIFFERENCE: int = ...
     """
     From each result, its reference value (see below) is subtracted, and the difference is shown.
     
@@ -58,7 +58,7 @@ class DataPilotFieldReferenceType(object):
     
     The difference for the first (for com.sun.star.sheet.DataPilotFieldReferenceItemType.PREVIOUS) or last (for com.sun.star.sheet.DataPilotFieldReferenceItemType.NEXT ) item of the base field is shown as empty result.
     """
-    ITEM_PERCENTAGE: int = 2
+    ITEM_PERCENTAGE: int = ...
     """
     Each result is divided by its reference value.
     
@@ -66,7 +66,7 @@ class DataPilotFieldReferenceType(object):
     
     Division by zero results in an error. Otherwise, empty results are shown as 0. Results for the base item, first (for com.sun.star.sheet.DataPilotFieldReferenceItemType.PREVIOUS) or last (for com.sun.star.sheet.DataPilotFieldReferenceItemType.NEXT) item of the base field are shown as 1 if not empty.
     """
-    ITEM_PERCENTAGE_DIFFERENCE: int = 3
+    ITEM_PERCENTAGE_DIFFERENCE: int = ...
     """
     From each result, its reference value is subtracted, and the difference divided by the reference value.
     
@@ -74,7 +74,7 @@ class DataPilotFieldReferenceType(object):
     
     Division by zero results in an error. Otherwise, the rules for com.sun.star.sheet.DataPilotFieldReferenceType.ITEM_DIFFERENCE apply.
     """
-    RUNNING_TOTAL: int = 4
+    RUNNING_TOTAL: int = ...
     """
     Each result is added to the sum of the results for preceding items in the base field, in the base field's sort order, and the total sum is shown.
     
@@ -84,7 +84,7 @@ class DataPilotFieldReferenceType(object):
     
     Totals outside of the base field are shown as empty results.
     """
-    ROW_PERCENTAGE: int = 5
+    ROW_PERCENTAGE: int = ...
     """
     Each result is divided by the total result for its row in the DataPilot table.
     
@@ -96,15 +96,15 @@ class DataPilotFieldReferenceType(object):
     
     Otherwise, empty results remain empty.
     """
-    COLUMN_PERCENTAGE: int = 6
+    COLUMN_PERCENTAGE: int = ...
     """
     Same as com.sun.star.sheet.DataPilotFieldReferenceType.ROW_PERCENTAGE, but the total for the result's column is used.
     """
-    TOTAL_PERCENTAGE: int = 7
+    TOTAL_PERCENTAGE: int = ...
     """
     Same as com.sun.star.sheet.DataPilotFieldReferenceType.ROW_PERCENTAGE, but the grand total for the result's data field is used.
     """
-    INDEX: int = 8
+    INDEX: int = ...
     """
     The row and column totals and the grand total, following the same rules as above, are used to calculate the following expression.
     

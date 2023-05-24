@@ -21,7 +21,7 @@
 import typing
 
 
-class ContentAction(object):
+class ContentAction:
     """
     Const
 
@@ -38,19 +38,19 @@ class ContentAction(object):
     See Also:
         `API ContentAction <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1ContentAction.html>`_
     """
-    INSERTED: int = 0
+    INSERTED: int = ...
     """
     A content was inserted into a folder content (i.e., while updating the folder).
     
     This action must be notified at the listeners of the folder content.
     """
-    REMOVED: int = 1
+    REMOVED: int = ...
     """
     A content was removed from a folder content, but not physically destroyed (i.e., due to rules just applied to the folder).
     
     This action must be notified at the listeners of the folder content.
     """
-    DELETED: int = 2
+    DELETED: int = ...
     """
     A content was physically destroyed.
     
@@ -58,7 +58,7 @@ class ContentAction(object):
     
     This action must be notified at the listeners of the deleted content.
     """
-    EXCHANGED: int = 4
+    EXCHANGED: int = ...
     """
     This Action indicates that a content has changed its identity (i.e.
     
@@ -66,7 +66,7 @@ class ContentAction(object):
     
     This action must be notified at the listeners of the exchanged content.
     """
-    SEARCH_MATCHED: int = 128
+    SEARCH_MATCHED: int = ...
     """
     This is obsolete and should no longer be used.
     """

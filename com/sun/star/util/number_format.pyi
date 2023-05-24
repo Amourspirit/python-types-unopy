@@ -21,7 +21,7 @@
 import typing
 
 
-class NumberFormat(object):
+class NumberFormat:
     """
     Const
 
@@ -30,58 +30,58 @@ class NumberFormat(object):
     See Also:
         `API NumberFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1util_1_1NumberFormat.html>`_
     """
-    ALL: int = 0
+    ALL: int = ...
     """
     selects all number formats.
     """
-    DEFINED: int = 1
+    DEFINED: int = ...
     """
     selects only user-defined number formats.
     """
-    DATE: int = 2
+    DATE: int = ...
     """
     selects date formats.
     """
-    TIME: int = 4
+    TIME: int = ...
     """
     selects time formats.
     """
-    CURRENCY: int = 8
+    CURRENCY: int = ...
     """
     selects currency formats.
     """
-    NUMBER: int = 16
+    NUMBER: int = ...
     """
     selects decimal number formats.
     """
-    SCIENTIFIC: int = 32
+    SCIENTIFIC: int = ...
     """
     selects scientific number formats.
     """
-    FRACTION: int = 64
+    FRACTION: int = ...
     """
     selects number formats for fractions.
     """
-    PERCENT: int = 128
+    PERCENT: int = ...
     """
     selects percentage number formats.
     """
-    TEXT: int = 256
+    TEXT: int = ...
     """
     selects text number formats.
     """
-    DATETIME: int = 6
+    DATETIME: int = ...
     """
     selects number formats which contain date and time.
     """
-    LOGICAL: int = 1024
+    LOGICAL: int = ...
     """
     selects boolean number formats.
     """
-    UNDEFINED: int = 2048
+    UNDEFINED: int = ...
     """
     is used as a return value if no format exists.
     """
-    EMPTY: int = 4096
-    DURATION: int = 8196
+    EMPTY: int = ...
+    DURATION: int = ...
 

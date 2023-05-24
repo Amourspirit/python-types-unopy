@@ -21,7 +21,7 @@
 import typing
 
 
-class FileSystemNotation(object):
+class FileSystemNotation:
     """
     Const
 
@@ -30,19 +30,19 @@ class FileSystemNotation(object):
     See Also:
         `API FileSystemNotation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1FileSystemNotation.html>`_
     """
-    UNKNOWN_NOTATION: int = 0
+    UNKNOWN_NOTATION: int = ...
     """
     No information regarding any conventions is available.
     """
-    UNIX_NOTATION: int = 1
+    UNIX_NOTATION: int = ...
     """
     The conventions of Unix like file systems (e.g., /dir1/dir2/file).
     """
-    DOS_NOTATION: int = 2
+    DOS_NOTATION: int = ...
     """
     The conventions of DOS like file systems (e.g., a:\\dir1\\dir2\\file or UNC notation like \\\\host\\dir1\\dir2\\file).
     """
-    MAC_NOTATION: int = 3
+    MAC_NOTATION: int = ...
     """
     The conventions of Mac like file systems (e.g., volume:dir1:dir2:file).
     """

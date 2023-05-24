@@ -21,7 +21,7 @@
 import typing
 
 
-class PanoseProportion(object):
+class PanoseProportion:
     """
     Const
 
@@ -29,14 +29,14 @@ class PanoseProportion(object):
     See Also:
         `API PanoseProportion <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1PanoseProportion.html>`_
     """
-    ANYTHING: int = 0
-    NO_FIT: int = 1
-    OLD_SKOOL: int = 2
-    MODERN: int = 3
-    EVEN_WIDTH: int = 4
-    EXPANDED: int = 5
-    CONDENSED: int = 6
-    VERY_EXPANDED: int = 7
-    VERY_CONDENSED: int = 8
-    MONO_SPACED: int = 9
+    ANYTHING: int = ...
+    NO_FIT: int = ...
+    OLD_SKOOL: int = ...
+    MODERN: int = ...
+    EVEN_WIDTH: int = ...
+    EXPANDED: int = ...
+    CONDENSED: int = ...
+    VERY_EXPANDED: int = ...
+    VERY_CONDENSED: int = ...
+    MONO_SPACED: int = ...
 

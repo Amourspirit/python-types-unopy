@@ -21,7 +21,7 @@
 import typing
 
 
-class ListActionType(object):
+class ListActionType:
     """
     Const
 
@@ -34,7 +34,7 @@ class ListActionType(object):
     See Also:
         `API ListActionType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1ListActionType.html>`_
     """
-    WELCOME: int = 20
+    WELCOME: int = ...
     """
     First notification to a single listener for purpose of initialization.
     
@@ -44,7 +44,7 @@ class ListActionType(object):
     
     The members ListAction.Count and ListAction.Position are not used.
     """
-    INSERTED: int = 21
+    INSERTED: int = ...
     """
     One or more rows were inserted into the list.
     
@@ -54,7 +54,7 @@ class ListActionType(object):
     
     ListAction.ActionInfo could contain something but this is not required. For example, it could contain the properties of the new rows (i.e. for remote optimizing), but this is not required nor unrestrictedly recommended.
     """
-    REMOVED: int = 22
+    REMOVED: int = ...
     """
     One or more rows were removed from the list.
     
@@ -64,7 +64,7 @@ class ListActionType(object):
     
     The member ListAction.ListActionType is not used.
     """
-    CLEARED: int = 23
+    CLEARED: int = ...
     """
     The whole list was destroyed and independently rebuild.
     
@@ -72,7 +72,7 @@ class ListActionType(object):
     
     The members ListAction.ListActionType, ListAction.Count and ListAction.Position are ignored.
     """
-    MOVED: int = 24
+    MOVED: int = ...
     """
     One or more rows were moved to another position.
     
@@ -80,7 +80,7 @@ class ListActionType(object):
     
     ListAction.ListActionType is required to contain a \"long\", which gives the shift of position. (i.e. When two rows at position 3 and 4 are moved for a shift \"+1\", they will appear at the positions 4 and 5. In this action is included, that the row on old position 5 now appears on position 3. No other notification is needed, to explain or complete this action).
     """
-    PROPERTIES_CHANGED: int = 25
+    PROPERTIES_CHANGED: int = ...
     """
     The properties of one or more rows have changed.
     
@@ -90,5 +90,5 @@ class ListActionType(object):
     
     ListAction.ActionInfo could contain something but this is not required. For example, it could contain the new properties (i.e. for remote optimizing), but this is not required nor unrestrictedly recommended.
     """
-    COMPLETED: int = 27
+    COMPLETED: int = ...
 

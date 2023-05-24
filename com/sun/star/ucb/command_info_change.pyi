@@ -21,7 +21,7 @@
 import typing
 
 
-class CommandInfoChange(object):
+class CommandInfoChange:
     """
     Const
 
@@ -30,11 +30,11 @@ class CommandInfoChange(object):
     See Also:
         `API CommandInfoChange <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1CommandInfoChange.html>`_
     """
-    COMMAND_INSERTED: int = 0
+    COMMAND_INSERTED: int = ...
     """
     A command was inserted into a XCommandInfo.
     """
-    COMMAND_REMOVED: int = 1
+    COMMAND_REMOVED: int = ...
     """
     A command was removed from a XCommandInfo.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class ChartSolidType(object):
+class ChartSolidType:
     """
     Const
 
@@ -30,19 +30,19 @@ class ChartSolidType(object):
     See Also:
         `API ChartSolidType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart_1_1ChartSolidType.html>`_
     """
-    RECTANGULAR_SOLID: int = 0
+    RECTANGULAR_SOLID: int = ...
     """
     extruded rectangle, i.e., a cuboid
     """
-    CYLINDER: int = 1
+    CYLINDER: int = ...
     """
     cylinder with a circle as base
     """
-    CONE: int = 2
+    CONE: int = ...
     """
     cone with a circle as base
     """
-    PYRAMID: int = 3
+    PYRAMID: int = ...
     """
     pyramidal with a square as base
     """

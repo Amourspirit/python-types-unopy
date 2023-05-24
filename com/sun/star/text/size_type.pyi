@@ -21,7 +21,7 @@
 import typing
 
 
-class SizeType(object):
+class SizeType:
     """
     Const
 
@@ -32,9 +32,9 @@ class SizeType(object):
     See Also:
         `API SizeType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1SizeType.html>`_
     """
-    VARIABLE: int = 0
-    FIX: int = 1
-    MIN: int = 2
+    VARIABLE: int = ...
+    FIX: int = ...
+    MIN: int = ...
     """
     The height property determines the minimum height of the object, but the actual height will be increased if the content demands it.
     """

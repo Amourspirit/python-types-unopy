@@ -21,7 +21,7 @@
 import typing
 
 
-class CharSet(object):
+class CharSet:
     """
     Const
 
@@ -36,47 +36,47 @@ class CharSet(object):
     See Also:
         `API CharSet <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1CharSet.html>`_
     """
-    DONTKNOW: int = 0
+    DONTKNOW: int = ...
     """
     specifies an unknown character set.
     """
-    ANSI: int = 1
+    ANSI: int = ...
     """
     specifies the ANSI character set.
     """
-    MAC: int = 2
+    MAC: int = ...
     """
     specifies the Apple Macintosh character set.
     """
-    IBMPC_437: int = 3
+    IBMPC_437: int = ...
     """
     specifies the IBM PC character set number 437.
     """
-    IBMPC_850: int = 4
+    IBMPC_850: int = ...
     """
     specifies the IBM PC character set number 850.
     """
-    IBMPC_860: int = 5
+    IBMPC_860: int = ...
     """
     specifies the IBM PC character set number 860.
     """
-    IBMPC_861: int = 6
+    IBMPC_861: int = ...
     """
     specifies the IBM PC character set number 861.
     """
-    IBMPC_863: int = 7
+    IBMPC_863: int = ...
     """
     specifies the IBM PC character set number 863.
     """
-    IBMPC_865: int = 8
+    IBMPC_865: int = ...
     """
     specifies the IBM PC character set number 865.
     """
-    SYSTEM: int = 9
+    SYSTEM: int = ...
     """
     specifies the system character set.
     """
-    SYMBOL: int = 10
+    SYMBOL: int = ...
     """
     specifies a set of symbols.
     """

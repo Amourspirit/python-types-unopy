@@ -21,7 +21,7 @@
 import typing
 
 
-class GraphicColorMode(object):
+class GraphicColorMode:
     """
     Const
 
@@ -30,11 +30,11 @@ class GraphicColorMode(object):
     See Also:
         `API GraphicColorMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1graphic_1_1GraphicColorMode.html>`_
     """
-    NORMAL: int = 0
+    NORMAL: int = ...
     """
     describes normal graphic colors, no particular color transformation is applied to the graphics.
     """
-    HIGH_CONTRAST: int = 1
+    HIGH_CONTRAST: int = ...
     """
     used when requesting graphics which are suitable for a high-contrast environment.
     """

@@ -20,7 +20,6 @@ from .parallel_time_container import ParallelTimeContainer as ParallelTimeContai
 from .sequence_time_container import SequenceTimeContainer as SequenceTimeContainer
 from .target_properties import TargetProperties as TargetProperties
 from .time_filter_pair import TimeFilterPair as TimeFilterPair
-from .timing import Timing as Timing
 from .transition_sub_type import TransitionSubType as TransitionSubType
 from .transition_type import TransitionType as TransitionType
 from .value_pair import ValuePair as ValuePair

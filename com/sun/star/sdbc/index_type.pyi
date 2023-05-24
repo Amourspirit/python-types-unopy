@@ -21,7 +21,7 @@
 import typing
 
 
-class IndexType(object):
+class IndexType:
     """
     Const
 
@@ -30,25 +30,25 @@ class IndexType(object):
     See Also:
         `API IndexType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1IndexType.html>`_
     """
-    STATISTIC: int = 0
+    STATISTIC: int = ...
     """
     A possible value for column TYPE in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc.XDatabaseMetaData.getIndexInfo().
     
     Identifies table statistics that are returned in conjunction with a table's index description.
     """
-    CLUSTERED: int = 1
+    CLUSTERED: int = ...
     """
     A possible value for column TYPE in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc.XDatabaseMetaData.getIndexInfo().
     
     Indicates that this table index is a clustered index.
     """
-    HASHED: int = 2
+    HASHED: int = ...
     """
     A possible value for column TYPE in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc.XDatabaseMetaData.getIndexInfo().
     
     Indicates that this table index is a hashed index.
     """
-    OTHER: int = 3
+    OTHER: int = ...
     """
     A possible value for column TYPE in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc.XDatabaseMetaData.getIndexInfo().
     

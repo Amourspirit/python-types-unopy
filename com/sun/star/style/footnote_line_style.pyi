@@ -21,7 +21,7 @@
 import typing
 
 
-class FootnoteLineStyle(object):
+class FootnoteLineStyle:
     """
     Const
 
@@ -29,8 +29,8 @@ class FootnoteLineStyle(object):
     See Also:
         `API FootnoteLineStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style_1_1FootnoteLineStyle.html>`_
     """
-    NONE: int = 0
-    SOLID: int = 1
-    DOTTED: int = 2
-    DASHED: int = 3
+    NONE: int = ...
+    SOLID: int = ...
+    DOTTED: int = ...
+    DASHED: int = ...
 

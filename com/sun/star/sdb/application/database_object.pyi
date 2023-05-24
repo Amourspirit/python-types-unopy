@@ -22,7 +22,7 @@ import typing
 from ..command_type import CommandType
 
 
-class DatabaseObject(object):
+class DatabaseObject:
     """
     Const
 
@@ -35,21 +35,21 @@ class DatabaseObject(object):
     See Also:
         `API DatabaseObject <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdb_1_1application_1_1DatabaseObject.html>`_
     """
-    TABLE: int = 0
+    TABLE: int = ...
     """
     denotes a table in a database
     
     Note that table here is a more general term. In OpenOffice.org Base, views are also represented as tables, since to the user, the behave pretty much as tables do.
     """
-    QUERY: int = 1
+    QUERY: int = ...
     """
     denotes a query in a database document
     """
-    FORM: int = 2
+    FORM: int = ...
     """
     denotes a form in a database document
     """
-    REPORT: int = 3
+    REPORT: int = ...
     """
     denotes a report in a database document
     """

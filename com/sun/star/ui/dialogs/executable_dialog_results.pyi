@@ -21,7 +21,7 @@
 import typing
 
 
-class ExecutableDialogResults(object):
+class ExecutableDialogResults:
     """
     Const
 
@@ -30,11 +30,11 @@ class ExecutableDialogResults(object):
     See Also:
         `API ExecutableDialogResults <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1dialogs_1_1ExecutableDialogResults.html>`_
     """
-    CANCEL: int = 0
+    CANCEL: int = ...
     """
     The user canceled the dialog.
     """
-    OK: int = 1
+    OK: int = ...
     """
     The user acknowledged the dialog.
     """

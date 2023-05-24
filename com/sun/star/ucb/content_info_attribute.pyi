@@ -21,7 +21,7 @@
 import typing
 
 
-class ContentInfoAttribute(object):
+class ContentInfoAttribute:
     """
     Const
 
@@ -30,27 +30,27 @@ class ContentInfoAttribute(object):
     See Also:
         `API ContentInfoAttribute <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1ContentInfoAttribute.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     No extra attributes.
     """
-    INSERT_WITH_INPUTSTREAM: int = 1
+    INSERT_WITH_INPUTSTREAM: int = ...
     """
     Supply an input stream with the InsertCommandArgument, when committing the new content by executing the command \"insert\" at it.
     """
-    KIND_DOCUMENT: int = 2
+    KIND_DOCUMENT: int = ...
     """
     The new content is of kind document.
     
     It's value for the property \"IsDocument\" will be true.
     """
-    KIND_FOLDER: int = 4
+    KIND_FOLDER: int = ...
     """
     The new content is of kind folder.
     
     It's value for the property \"IsFolder\" will be true.
     """
-    KIND_LINK: int = 8
+    KIND_LINK: int = ...
     """
     The new content is of kind link.
     

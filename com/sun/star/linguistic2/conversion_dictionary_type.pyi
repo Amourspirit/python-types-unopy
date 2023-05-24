@@ -21,7 +21,7 @@
 import typing
 
 
-class ConversionDictionaryType(object):
+class ConversionDictionaryType:
     """
     Const
 
@@ -34,11 +34,11 @@ class ConversionDictionaryType(object):
     See Also:
         `API ConversionDictionaryType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1linguistic2_1_1ConversionDictionaryType.html>`_
     """
-    HANGUL_HANJA: int = 1
+    HANGUL_HANJA: int = ...
     """
     Dictionary type for the conversion between Hangul and Hanja.
     """
-    SCHINESE_TCHINESE: int = 2
+    SCHINESE_TCHINESE: int = ...
     """
     Dictionary type for the conversion between Simplified and Traditional Chinese.
     

@@ -21,7 +21,7 @@
 import typing
 
 
-class KeyGroup(object):
+class KeyGroup:
     """
     Const
 
@@ -34,27 +34,27 @@ class KeyGroup(object):
     See Also:
         `API KeyGroup <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1KeyGroup.html>`_
     """
-    NUM: int = 256
+    NUM: int = ...
     """
     specifies a numeric key.
     """
-    ALPHA: int = 512
+    ALPHA: int = ...
     """
     specifies an alphabetic key.
     """
-    FKEYS: int = 768
+    FKEYS: int = ...
     """
     specifies a function key.
     """
-    CURSOR: int = 1024
+    CURSOR: int = ...
     """
     specifies a cursor key.
     """
-    MISC: int = 1280
+    MISC: int = ...
     """
     specifies other keys.
     """
-    TYPE: int = 3840
+    TYPE: int = ...
     """
     specifies the group mask.
     """

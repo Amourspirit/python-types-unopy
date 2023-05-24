@@ -21,7 +21,7 @@
 import typing
 
 
-class ScriptType(object):
+class ScriptType:
     """
     Const
 
@@ -32,19 +32,19 @@ class ScriptType(object):
     See Also:
         `API ScriptType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1ScriptType.html>`_
     """
-    LATIN: int = 1
+    LATIN: int = ...
     """
     Latin characters (English, ...)
     """
-    ASIAN: int = 2
+    ASIAN: int = ...
     """
     Asian characters (Japanese, ...)
     """
-    COMPLEX: int = 3
+    COMPLEX: int = ...
     """
     Complex characters (Arabic, ...)
     """
-    WEAK: int = 4
+    WEAK: int = ...
     """
     undefined characters (punctuation, ...)
     """

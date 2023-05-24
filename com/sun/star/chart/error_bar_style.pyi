@@ -21,7 +21,7 @@
 import typing
 
 
-class ErrorBarStyle(object):
+class ErrorBarStyle:
     """
     Const
 
@@ -30,37 +30,37 @@ class ErrorBarStyle(object):
     See Also:
         `API ErrorBarStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart_1_1ErrorBarStyle.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     error indicators are not displayed.
     """
-    VARIANCE: int = 1
+    VARIANCE: int = ...
     """
     displays error indicators for the variance of the data.
     """
-    STANDARD_DEVIATION: int = 2
+    STANDARD_DEVIATION: int = ...
     """
     displays error indicators for the standard deviation (square root of variance) of the data.
     """
-    ABSOLUTE: int = 3
+    ABSOLUTE: int = ...
     """
     the error indicators for all data points have the same absolute value as length for either direction.
     
     The values for these are given as absolute numbers in ChartStatistics.ConstantErrorLow and ChartStatistics.ConstantErrorHigh
     """
-    RELATIVE: int = 4
+    RELATIVE: int = ...
     """
     The length of the error indicators is calculated for each data point by taking the percentage given as ChartStatistics.PercentageError of its value.
     """
-    ERROR_MARGIN: int = 5
+    ERROR_MARGIN: int = ...
     """
     The length of the error indicators for all data points is calculated by taking the percentage given as ChartStatistics.ErrorMargin of the largest data point value.
     """
-    STANDARD_ERROR: int = 6
+    STANDARD_ERROR: int = ...
     """
     displays error indicators for the standard error, also known as the standard deviation of the mean (SDOM).
     """
-    FROM_DATA: int = 7
+    FROM_DATA: int = ...
     """
     Uses values given by cell ranges of the container document.
     

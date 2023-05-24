@@ -21,7 +21,7 @@
 import typing
 
 
-class DigestID(object):
+class DigestID:
     """
     Const
 
@@ -34,23 +34,23 @@ class DigestID(object):
     See Also:
         `API DigestID <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1xml_1_1crypto_1_1DigestID.html>`_
     """
-    SHA1: int = 1
+    SHA1: int = ...
     """
     identifier of SHA-1 algorithm
     """
-    SHA256: int = 2
+    SHA256: int = ...
     """
     identifier of SHA-256 algorithm
     """
-    SHA1_1K: int = 3
+    SHA1_1K: int = ...
     """
     identifier of SHA-1 algorithm that is applied to the first kilobyte of data.
     """
-    SHA256_1K: int = 4
+    SHA256_1K: int = ...
     """
     identifier of SHA-256 algorithm that is applied to the first kilobyte of data.
     """
-    SHA512: int = 5
+    SHA512: int = ...
     """
     identifier of SHA-512 algorithm
     
@@ -58,7 +58,7 @@ class DigestID(object):
     
         LibreOffice 6.0
     """
-    SHA512_1K: int = 6
+    SHA512_1K: int = ...
     """
     identifier of SHA-512 algorithm that is applied to the first kilobyte of data.
     

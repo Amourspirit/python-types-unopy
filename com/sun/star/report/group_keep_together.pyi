@@ -21,7 +21,7 @@
 import typing
 
 
-class GroupKeepTogether(object):
+class GroupKeepTogether:
     """
     Const
 
@@ -30,11 +30,11 @@ class GroupKeepTogether(object):
     See Also:
         `API GroupKeepTogether <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1report_1_1GroupKeepTogether.html>`_
     """
-    PER_PAGE: int = 0
+    PER_PAGE: int = ...
     """
     Groups are kept together by page.
     """
-    PER_COLUMN: int = 1
+    PER_COLUMN: int = ...
     """
     Groups are kept together by column.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class SearchFlags(object):
+class SearchFlags:
     """
     Const
 
@@ -34,22 +34,22 @@ class SearchFlags(object):
     See Also:
         `API SearchFlags <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1util_1_1SearchFlags.html>`_
     """
-    ALL_IGNORE_CASE: int = 1
-    NORM_WORD_ONLY: int = 16
+    ALL_IGNORE_CASE: int = ...
+    NORM_WORD_ONLY: int = ...
     """
     Flag for normal (Boyer-Moore) search / Search for word only.
     """
-    REG_EXTENDED: int = 256
+    REG_EXTENDED: int = ...
     """
     Flag for \"regular expression\" search / Interpret as extended regular expression.
     """
-    REG_NOSUB: int = 512
+    REG_NOSUB: int = ...
     """
     Flag for \"regular expression\" search / No register information or backreferences, i.e., avoid sub expressions.
     
     Return only true/false if matched or not.
     """
-    REG_NEWLINE: int = 1024
+    REG_NEWLINE: int = ...
     """
     Flag for \"regular expression\" search / Special new line treatment.
     
@@ -59,15 +59,15 @@ class SearchFlags(object):
     
     A dollar-sign ($) in pattern when used to specify expression anchoring, will match zero-length string immediately before a new line in string, regardless of the setting of REG_NOT_ENDOFLINE.
     """
-    REG_NOT_BEGINOFLINE: int = 2048
+    REG_NOT_BEGINOFLINE: int = ...
     """
     The first character in the string is not the beginning of the line therefore ^ will not match with first character of the string.
     """
-    REG_NOT_ENDOFLINE: int = 4096
+    REG_NOT_ENDOFLINE: int = ...
     """
     The last character in the string is not the end of the line therefore $ will not match with last character of the string.
     """
-    LEV_RELAXED: int = 65536
+    LEV_RELAXED: int = ...
     """
     Flag for \"Weighted Levenshtein Distance\" search / Relaxed checking of limit, split weigh pools.
     
@@ -79,7 +79,7 @@ class SearchFlags(object):
     
     From a user's point of view the relaxed WLD is an inclusive-OR of the arguments given, for example if allowed insertions=2 and allowed replacements=2, the search succeeds if 2 characters had been inserted and an additional replacement is needed to match. The relaxed algorithm may return false positives, but meets user expectation better.
     """
-    WILD_MATCH_SELECTION: int = 1048576
+    WILD_MATCH_SELECTION: int = ...
     """
     Flag for wildcards search if entire selection must match the pattern.
     

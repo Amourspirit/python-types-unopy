@@ -21,7 +21,7 @@
 import typing
 
 
-class FilePreviewImageFormats(object):
+class FilePreviewImageFormats:
     """
     Const
 
@@ -30,7 +30,7 @@ class FilePreviewImageFormats(object):
     See Also:
         `API FilePreviewImageFormats <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1dialogs_1_1FilePreviewImageFormats.html>`_
     """
-    BITMAP: int = 1
+    BITMAP: int = ...
     """
     A LibreOffice bitmap which is similar to the device independent bitmap (DIB) format on windows.
     

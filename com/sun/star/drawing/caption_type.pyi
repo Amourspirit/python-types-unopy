@@ -21,7 +21,7 @@
 import typing
 
 
-class CaptionType(object):
+class CaptionType:
     """
     Const
 
@@ -30,15 +30,15 @@ class CaptionType(object):
     See Also:
         `API CaptionType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing_1_1CaptionType.html>`_
     """
-    straight: int = 0
+    straight: int = ...
     """
     the caption line is a straight line from a caption area edge to the caption point.
     """
-    angled: int = 1
+    angled: int = ...
     """
     the caption line is the shortest line from the caption area edge to the caption point.
     """
-    connector: int = 2
+    connector: int = ...
     """
     the caption line is build up with a straight line from the caption area edge, followed by the shortest line to the caption area point.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class ImageStatus(object):
+class ImageStatus:
     """
     Const
 
@@ -30,19 +30,19 @@ class ImageStatus(object):
     See Also:
         `API ImageStatus <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1ImageStatus.html>`_
     """
-    IMAGESTATUS_ERROR: int = 1
+    IMAGESTATUS_ERROR: int = ...
     """
     This conveys that an error was encountered while producing the image.
     """
-    IMAGESTATUS_SINGLEFRAMEDONE: int = 2
+    IMAGESTATUS_SINGLEFRAMEDONE: int = ...
     """
     This conveys that one frame of the image is complete but there are more frames to be delivered.
     """
-    IMAGESTATUS_STATICIMAGEDONE: int = 3
+    IMAGESTATUS_STATICIMAGEDONE: int = ...
     """
     This conveys that the image is complete and there are no more pixels or frames to be delivered.
     """
-    IMAGESTATUS_ABORTED: int = 4
+    IMAGESTATUS_ABORTED: int = ...
     """
     This conveys that the image creation process was deliberately aborted.
     """

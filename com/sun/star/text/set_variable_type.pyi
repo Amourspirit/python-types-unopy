@@ -21,7 +21,7 @@
 import typing
 
 
-class SetVariableType(object):
+class SetVariableType:
     """
     Const
 
@@ -30,19 +30,19 @@ class SetVariableType(object):
     See Also:
         `API SetVariableType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1SetVariableType.html>`_
     """
-    VAR: int = 0
+    VAR: int = ...
     """
     specifies a simple variable.
     """
-    SEQUENCE: int = 1
+    SEQUENCE: int = ...
     """
     specifies a number sequence field.
     """
-    FORMULA: int = 2
+    FORMULA: int = ...
     """
     specifies a formula field.
     """
-    STRING: int = 3
+    STRING: int = ...
     """
     specifies a string field.
     """

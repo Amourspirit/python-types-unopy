@@ -21,7 +21,7 @@
 import typing
 
 
-class ModelDependent(object):
+class ModelDependent:
     """
     Const
 
@@ -32,8 +32,8 @@ class ModelDependent(object):
     See Also:
         `API ModelDependent <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1bridge_1_1ModelDependent.html>`_
     """
-    UNO: int = 1
-    OLE: int = 2
-    JAVA: int = 3
-    CORBA: int = 4
+    UNO: int = ...
+    OLE: int = ...
+    JAVA: int = ...
+    CORBA: int = ...
 

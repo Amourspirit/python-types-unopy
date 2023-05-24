@@ -21,7 +21,7 @@
 import typing
 
 
-class ScrollBarOrientation(object):
+class ScrollBarOrientation:
     """
     Const
 
@@ -30,11 +30,11 @@ class ScrollBarOrientation(object):
     See Also:
         `API ScrollBarOrientation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1ScrollBarOrientation.html>`_
     """
-    HORIZONTAL: int = 0
+    HORIZONTAL: int = ...
     """
     specifies a horizontal scroll bar.
     """
-    VERTICAL: int = 1
+    VERTICAL: int = ...
     """
     specifies a vertical scroll bar.
     """

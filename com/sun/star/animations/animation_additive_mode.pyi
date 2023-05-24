@@ -21,7 +21,7 @@
 import typing
 
 
-class AnimationAdditiveMode(object):
+class AnimationAdditiveMode:
     """
     Const
 
@@ -30,9 +30,9 @@ class AnimationAdditiveMode(object):
     See Also:
         `API AnimationAdditiveMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1animations_1_1AnimationAdditiveMode.html>`_
     """
-    BASE: int = 0
-    SUM: int = 1
-    REPLACE: int = 2
-    MULTIPLY: int = 3
-    NONE: int = 4
+    BASE: int = ...
+    SUM: int = ...
+    REPLACE: int = ...
+    MULTIPLY: int = ...
+    NONE: int = ...
 

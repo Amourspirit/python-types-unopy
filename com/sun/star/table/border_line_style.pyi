@@ -21,7 +21,7 @@
 import typing
 
 
-class BorderLineStyle(object):
+class BorderLineStyle:
     """
     Const
 
@@ -29,85 +29,85 @@ class BorderLineStyle(object):
     See Also:
         `API BorderLineStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1table_1_1BorderLineStyle.html>`_
     """
-    NONE: int = 32767
+    NONE: int = ...
     """
     No border line.
     """
-    SOLID: int = 0
+    SOLID: int = ...
     """
     Solid border line.
     """
-    DOTTED: int = 1
+    DOTTED: int = ...
     """
     Dotted border line.
     """
-    DASHED: int = 2
+    DASHED: int = ...
     """
     Dashed border line.
     """
-    DOUBLE: int = 3
+    DOUBLE: int = ...
     """
     Double border line.
     
     Widths of the lines and the gap are all equal, and vary equally with the total width.
     """
-    THINTHICK_SMALLGAP: int = 4
+    THINTHICK_SMALLGAP: int = ...
     """
     Double border line with a thin line outside and a thick line inside separated by a small gap.
     """
-    THINTHICK_MEDIUMGAP: int = 5
+    THINTHICK_MEDIUMGAP: int = ...
     """
     Double border line with a thin line outside and a thick line inside separated by a medium gap.
     """
-    THINTHICK_LARGEGAP: int = 6
+    THINTHICK_LARGEGAP: int = ...
     """
     Double border line with a thin line outside and a thick line inside separated by a large gap.
     """
-    THICKTHIN_SMALLGAP: int = 7
+    THICKTHIN_SMALLGAP: int = ...
     """
     Double border line with a thick line outside and a thin line inside separated by a small gap.
     """
-    THICKTHIN_MEDIUMGAP: int = 8
+    THICKTHIN_MEDIUMGAP: int = ...
     """
     Double border line with a thick line outside and a thin line inside separated by a medium gap.
     """
-    THICKTHIN_LARGEGAP: int = 9
+    THICKTHIN_LARGEGAP: int = ...
     """
     Double border line with a thick line outside and a thin line inside separated by a large gap.
     """
-    EMBOSSED: int = 10
+    EMBOSSED: int = ...
     """
     3D embossed border line.
     """
-    ENGRAVED: int = 11
+    ENGRAVED: int = ...
     """
     3D engraved border line.
     """
-    OUTSET: int = 12
+    OUTSET: int = ...
     """
     Outset border line.
     """
-    INSET: int = 13
+    INSET: int = ...
     """
     Inset border line.
     """
-    FINE_DASHED: int = 14
+    FINE_DASHED: int = ...
     """
     Finely dashed border line.
     """
-    DOUBLE_THIN: int = 15
+    DOUBLE_THIN: int = ...
     """
     Double border line consisting of two fixed thin lines separated by a variable gap.
     """
-    DASH_DOT: int = 16
+    DASH_DOT: int = ...
     """
     Line consisting of a repetition of one dash and one dot.
     """
-    DASH_DOT_DOT: int = 17
+    DASH_DOT_DOT: int = ...
     """
     Line consisting of a repetition of one dash and 2 dots.
     """
-    BORDER_LINE_STYLE_MAX: int = 17
+    BORDER_LINE_STYLE_MAX: int = ...
     """
     Maximum valid border line style value.
     """

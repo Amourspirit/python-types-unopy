@@ -21,7 +21,7 @@
 import typing
 
 
-class DocumentStatistic(object):
+class DocumentStatistic:
     """
     Const
 
@@ -30,8 +30,8 @@ class DocumentStatistic(object):
     See Also:
         `API DocumentStatistic <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1DocumentStatistic.html>`_
     """
-    PAGES: int = 0
-    PARAS: int = 1
-    WORDS: int = 2
-    CHARS: int = 3
+    PAGES: int = ...
+    PARAS: int = ...
+    WORDS: int = ...
+    CHARS: int = ...
 

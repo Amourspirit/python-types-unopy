@@ -21,7 +21,7 @@
 import typing
 
 
-class KeepTogether(object):
+class KeepTogether:
     """
     Const
 
@@ -30,15 +30,15 @@ class KeepTogether(object):
     See Also:
         `API KeepTogether <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1report_1_1KeepTogether.html>`_
     """
-    NO: int = 0
+    NO: int = ...
     """
     Prints the group without keeping the header, detail, and footer together on the same page.
     """
-    WHOLE_GROUP: int = 1
+    WHOLE_GROUP: int = ...
     """
     Prints the group header, detail, and footer together on the same page.
     """
-    WITH_FIRST_DETAIL: int = 2
+    WITH_FIRST_DETAIL: int = ...
     """
     Prints the group header on a page when the first detail record can fit on the same page.
     """

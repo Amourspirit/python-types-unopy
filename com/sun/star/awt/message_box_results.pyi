@@ -21,7 +21,7 @@
 import typing
 
 
-class MessageBoxResults(object):
+class MessageBoxResults:
     """
     Const
 
@@ -34,27 +34,27 @@ class MessageBoxResults(object):
     See Also:
         `API MessageBoxResults <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1MessageBoxResults.html>`_
     """
-    CANCEL: int = 0
+    CANCEL: int = ...
     """
     The user canceled the XMessageBox, by pressing \"Cancel\" or \"Abort\" button.
     """
-    OK: int = 1
+    OK: int = ...
     """
     The user pressed the \"Ok\" button.
     """
-    YES: int = 2
+    YES: int = ...
     """
     The user pressed the \"Yes\" button.
     """
-    NO: int = 3
+    NO: int = ...
     """
     The user pressed the \"No\" button.
     """
-    RETRY: int = 4
+    RETRY: int = ...
     """
     The user pressed the \"Retry\" button.
     """
-    IGNORE: int = 5
+    IGNORE: int = ...
     """
     The user pressed the \"Ignore\" button.
     """

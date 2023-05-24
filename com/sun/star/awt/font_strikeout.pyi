@@ -21,7 +21,7 @@
 import typing
 
 
-class FontStrikeout(object):
+class FontStrikeout:
     """
     Const
 
@@ -32,31 +32,31 @@ class FontStrikeout(object):
     See Also:
         `API FontStrikeout <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1FontStrikeout.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     specifies not to strike out the characters.
     """
-    SINGLE: int = 1
+    SINGLE: int = ...
     """
     specifies to strike out the characters with a single line.
     """
-    DOUBLE: int = 2
+    DOUBLE: int = ...
     """
     specifies to strike out the characters with a double line.
     """
-    DONTKNOW: int = 3
+    DONTKNOW: int = ...
     """
     The strikeout mode is not specified.
     """
-    BOLD: int = 4
+    BOLD: int = ...
     """
     specifies to strike out the characters with a bold line.
     """
-    SLASH: int = 5
+    SLASH: int = ...
     """
     specifies to strike out the characters with slashes.
     """
-    X: int = 6
+    X: int = ...
     """
     specifies to strike out the characters with X's.
     """

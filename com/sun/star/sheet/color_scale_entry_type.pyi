@@ -21,7 +21,7 @@
 import typing
 
 
-class ColorScaleEntryType(object):
+class ColorScaleEntryType:
     """
     Const
 
@@ -29,10 +29,10 @@ class ColorScaleEntryType(object):
     See Also:
         `API ColorScaleEntryType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1ColorScaleEntryType.html>`_
     """
-    COLORSCALE_MIN: int = 0
-    COLORSCALE_MAX: int = 1
-    COLORSCALE_PERCENTILE: int = 2
-    COLORSCALE_VALUE: int = 3
-    COLORSCALE_PERCENT: int = 4
-    COLORSCALE_FORMULA: int = 5
+    COLORSCALE_MIN: int = ...
+    COLORSCALE_MAX: int = ...
+    COLORSCALE_PERCENTILE: int = ...
+    COLORSCALE_VALUE: int = ...
+    COLORSCALE_PERCENT: int = ...
+    COLORSCALE_FORMULA: int = ...
 

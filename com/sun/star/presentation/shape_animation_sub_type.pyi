@@ -21,7 +21,7 @@
 import typing
 
 
-class ShapeAnimationSubType(object):
+class ShapeAnimationSubType:
     """
     Const
 
@@ -30,17 +30,17 @@ class ShapeAnimationSubType(object):
     See Also:
         `API ShapeAnimationSubType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1presentation_1_1ShapeAnimationSubType.html>`_
     """
-    AS_WHOLE: int = 0
+    AS_WHOLE: int = ...
     """
     the whole shape is a target
     """
-    ONLY_BACKGROUND: int = 1
+    ONLY_BACKGROUND: int = ...
     """
     only the background is a target.
     
     The Background of a shape is the whole shape except all visible elements that are part of the shapes text.
     """
-    ONLY_TEXT: int = 2
+    ONLY_TEXT: int = ...
     """
     only the text is a target.
     

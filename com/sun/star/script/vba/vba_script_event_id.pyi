@@ -21,7 +21,7 @@
 import typing
 
 
-class VBAScriptEventId(object):
+class VBAScriptEventId:
     """
     Const
 
@@ -30,7 +30,7 @@ class VBAScriptEventId(object):
     See Also:
         `API VBAScriptEventId <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1script_1_1vba_1_1VBAScriptEventId.html>`_
     """
-    SCRIPT_STARTED: int = 0
+    SCRIPT_STARTED: int = ...
     """
     This event is fired when a VBA script in the current document has been started.
     
@@ -40,7 +40,7 @@ class VBAScriptEventId(object):
     
     The member VBAScriptEvent.ModuleName of the event object will contain the name of the code module that contains the started script.
     """
-    SCRIPT_STOPPED: int = 1
+    SCRIPT_STOPPED: int = ...
     """
     This event is fired when a VBA script in the current document stops running.
     
@@ -50,7 +50,7 @@ class VBAScriptEventId(object):
     
     The member VBAScriptEvent.ModuleName of the event object will contain the name of the code module that contains the script that has been stopped.
     """
-    INITIALIZE_USERFORM: int = 2
+    INITIALIZE_USERFORM: int = ...
     """
     This event is fired when a VBA script in the current document tries to instantiate a userform.
     

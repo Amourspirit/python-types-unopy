@@ -21,7 +21,7 @@
 import typing
 
 
-class NumberingType(object):
+class NumberingType:
     """
     Const
 
@@ -34,135 +34,135 @@ class NumberingType(object):
     See Also:
         `API NumberingType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style_1_1NumberingType.html>`_
     """
-    CHARS_UPPER_LETTER: int = 0
+    CHARS_UPPER_LETTER: int = ...
     """
     Numbering is put in upper case letters as \"A, B, C, D, ...\".
     """
-    CHARS_LOWER_LETTER: int = 1
+    CHARS_LOWER_LETTER: int = ...
     """
     Numbering is in lower case letters as \"a, b, c, e,...\".
     """
-    ROMAN_UPPER: int = 2
+    ROMAN_UPPER: int = ...
     """
     Numbering is in Roman numbers with upper case letters as \"I, II, III, IV, ...\".
     """
-    ROMAN_LOWER: int = 3
+    ROMAN_LOWER: int = ...
     """
     Numbering is in Roman numbers with lower case letters as \"i, ii, iii, iv, ...\".
     """
-    ARABIC: int = 4
+    ARABIC: int = ...
     """
     Numbering is in Arabic numbers as \"1, 2, 3, 4, ...\".
     """
-    NUMBER_NONE: int = 5
+    NUMBER_NONE: int = ...
     """
     Numbering is invisible.
     """
-    CHAR_SPECIAL: int = 6
+    CHAR_SPECIAL: int = ...
     """
     Use a character from a specified font.
     """
-    PAGE_DESCRIPTOR: int = 7
+    PAGE_DESCRIPTOR: int = ...
     """
     Numbering is specified in the page style.
     """
-    BITMAP: int = 8
+    BITMAP: int = ...
     """
     Numbering is displayed as a bitmap graphic.
     """
-    CHARS_UPPER_LETTER_N: int = 9
+    CHARS_UPPER_LETTER_N: int = ...
     """
     Numbering is put in upper case letters as \"A, B, ..., Y, Z, AA, BB, CC, ...
     
     AAA, ...\".
     """
-    CHARS_LOWER_LETTER_N: int = 10
+    CHARS_LOWER_LETTER_N: int = ...
     """
     Numbering is put in lower case letters as \"a, b, ..., y, z, aa, bb, cc, ...
     
     aaa, ...\".
     """
-    TRANSLITERATION: int = 11
+    TRANSLITERATION: int = ...
     """
     A transliteration module will be used to produce numbers in Chinese, Japanese, etc.
     """
-    NATIVE_NUMBERING: int = 12
+    NATIVE_NUMBERING: int = ...
     """
     The NativeNumberSupplier service will be called to produce numbers in native languages.
     """
-    FULLWIDTH_ARABIC: int = 13
+    FULLWIDTH_ARABIC: int = ...
     """
     Numbering for fullwidth Arabic number.
     """
-    CIRCLE_NUMBER: int = 14
+    CIRCLE_NUMBER: int = ...
     """
     Bullet for Circle Number.
     """
-    NUMBER_LOWER_ZH: int = 15
+    NUMBER_LOWER_ZH: int = ...
     """
     Numbering for Chinese lower case number as \"&#19968;,&#20108;,&#19977;...\".
     """
-    NUMBER_UPPER_ZH: int = 16
+    NUMBER_UPPER_ZH: int = ...
     """
     Numbering for Chinese upper case number.
     """
-    NUMBER_UPPER_ZH_TW: int = 17
+    NUMBER_UPPER_ZH_TW: int = ...
     """
     Numbering for Traditional Chinese upper case number.
     """
-    TIAN_GAN_ZH: int = 18
+    TIAN_GAN_ZH: int = ...
     """
     Bullet for Chinese Tian Gan as \"&#30002;,&#20057;,&#19993;...\".
     """
-    DI_ZI_ZH: int = 19
+    DI_ZI_ZH: int = ...
     """
     Bullet for Chinese Di Zi as \"&#23376;,&#19985;,&#23493;...\".
     """
-    NUMBER_TRADITIONAL_JA: int = 20
+    NUMBER_TRADITIONAL_JA: int = ...
     """
     Numbering for Japanese traditional number.
     """
-    AIU_FULLWIDTH_JA: int = 21
+    AIU_FULLWIDTH_JA: int = ...
     """
     Bullet for Japanese AIU fullwidth.
     """
-    AIU_HALFWIDTH_JA: int = 22
+    AIU_HALFWIDTH_JA: int = ...
     """
     Bullet for Japanese AIU halfwidth.
     """
-    IROHA_FULLWIDTH_JA: int = 23
+    IROHA_FULLWIDTH_JA: int = ...
     """
     Bullet for Japanese IROHA fullwidth.
     """
-    IROHA_HALFWIDTH_JA: int = 24
+    IROHA_HALFWIDTH_JA: int = ...
     """
     Bullet for Japanese IROHA halfwidth.
     """
-    NUMBER_UPPER_KO: int = 25
+    NUMBER_UPPER_KO: int = ...
     """
     Numbering for Korean upper case number as \"&#22777;,&#36019;,&#21443;...\".
     """
-    NUMBER_HANGUL_KO: int = 26
+    NUMBER_HANGUL_KO: int = ...
     """
     Numbering for Korean Hangul number as \"&#51068;,&#51060;,&#49340;...\".
     """
-    HANGUL_JAMO_KO: int = 27
+    HANGUL_JAMO_KO: int = ...
     """
     Bullet for Korean Hangul Jamo as \"&#12593;,&#12596;,&#12599;...\".
     """
-    HANGUL_SYLLABLE_KO: int = 28
+    HANGUL_SYLLABLE_KO: int = ...
     """
     Bullet for Korean Hangul Syllable as \"&#44032;,&#45208;,&#45796;...\".
     """
-    HANGUL_CIRCLED_JAMO_KO: int = 29
+    HANGUL_CIRCLED_JAMO_KO: int = ...
     """
     Bullet for Korean Hangul Circled Jamo as \"&#12896;,&#12897;,&#12898;...\".
     """
-    HANGUL_CIRCLED_SYLLABLE_KO: int = 30
+    HANGUL_CIRCLED_SYLLABLE_KO: int = ...
     """
     Bullet for Korean Hangul Circled Syllable as \"&#12910;,&#12911;,&#12912;...\".
     """
-    CHARS_ARABIC: int = 31
+    CHARS_ARABIC: int = ...
     """
     Numbering in Arabic alphabet letters as \"&#1571;,&#1576;,&#1578;...\".
     
@@ -170,7 +170,7 @@ class NumberingType(object):
     
         OOo 1.1.2
     """
-    CHARS_THAI: int = 32
+    CHARS_THAI: int = ...
     """
     Numbering in Thai alphabet letters.
     
@@ -178,7 +178,7 @@ class NumberingType(object):
     
         OOo 1.1.2
     """
-    CHARS_HEBREW: int = 33
+    CHARS_HEBREW: int = ...
     """
     Numbering in Hebrew alphabet letters.
     
@@ -186,7 +186,7 @@ class NumberingType(object):
     
         OOo 2.0
     """
-    CHARS_NEPALI: int = 34
+    CHARS_NEPALI: int = ...
     """
     Numbering in Nepali alphabet letters.
     
@@ -194,7 +194,7 @@ class NumberingType(object):
     
         OOo 2.0.1
     """
-    CHARS_KHMER: int = 35
+    CHARS_KHMER: int = ...
     """
     Numbering in Khmer alphabet letters.
     
@@ -202,7 +202,7 @@ class NumberingType(object):
     
         OOo 2.0.1
     """
-    CHARS_LAO: int = 36
+    CHARS_LAO: int = ...
     """
     Numbering in Lao alphabet letters.
     
@@ -210,7 +210,7 @@ class NumberingType(object):
     
         OOo 2.0.1
     """
-    CHARS_TIBETAN: int = 37
+    CHARS_TIBETAN: int = ...
     """
     Numbering in Tibetan/Dzongkha alphabet letters.
     
@@ -218,7 +218,7 @@ class NumberingType(object):
     
         OOo 2.0.3
     """
-    CHARS_CYRILLIC_UPPER_LETTER_BG: int = 38
+    CHARS_CYRILLIC_UPPER_LETTER_BG: int = ...
     """
     Numbering in Cyrillic alphabet upper case letters as \"&#1040;, &#1041;,  &#1042;, &#1043;, ..., &#1070;, &#1071;, &#1040;&#1074;, &#1040;&#1072;, &#1040;&#1074;, ... &#1040;&#1072;&#1072;, &#1040;&#1072;&#1073;\".
     
@@ -226,7 +226,7 @@ class NumberingType(object):
     
         OOo 2.0.4
     """
-    CHARS_CYRILLIC_LOWER_LETTER_BG: int = 39
+    CHARS_CYRILLIC_LOWER_LETTER_BG: int = ...
     """
     Numbering in Cyrillic alphabet lower case letters as \"&#1072;, &#1073;, &#1074;, &#1075;, ..., &#1102;, &#1103;, &#1072; &#1072;,  &#1072;&#1073;, &#1072;&#1074;, ...  &#1072; &#1072; &#1072;,  &#1072; &#1072;&#1073;\".
     
@@ -234,7 +234,7 @@ class NumberingType(object):
     
         OOo 2.0.4
     """
-    CHARS_CYRILLIC_UPPER_LETTER_N_BG: int = 40
+    CHARS_CYRILLIC_UPPER_LETTER_N_BG: int = ...
     """
     Numbering in Cyrillic alphabet upper case letters as \"&#1040;, &#1041;, ..., &#1070;, &#1071;, &#1040;&#1072;, &#1041;&#1073;, &#1042;&#1074;, ... &#1040;&#1072;&#1072;, ...\".
     
@@ -242,7 +242,7 @@ class NumberingType(object):
     
         OOo 2.0.4
     """
-    CHARS_CYRILLIC_LOWER_LETTER_N_BG: int = 41
+    CHARS_CYRILLIC_LOWER_LETTER_N_BG: int = ...
     """
     Numbering in Cyrillic alphabet upper case letters as \"&#1072;, &#1073;, ..., &#1102;, &#1103;, &#1072;&#1072;, &#1073;&#1073;, &#1074;&#1074;, ... &#1072;&#1072;&#1072;, ...\".
     
@@ -250,7 +250,7 @@ class NumberingType(object):
     
         OOo 2.0.4
     """
-    CHARS_CYRILLIC_UPPER_LETTER_RU: int = 42
+    CHARS_CYRILLIC_UPPER_LETTER_RU: int = ...
     """
     Numbering in Russian Cyrillic alphabet upper case letters as \"&#1040;, &#1041;, &#1042;, &#1043;, ..., &#1070;, &#1071;, &#1040;&#1072;, &#1040;&#1073;, &#1040;&#1074;, ... &#1040;&#1072;&#1072;, &#1040;&#1072;&#1073;\".
     
@@ -258,7 +258,7 @@ class NumberingType(object):
     
         OOo 2.0.4
     """
-    CHARS_CYRILLIC_LOWER_LETTER_RU: int = 43
+    CHARS_CYRILLIC_LOWER_LETTER_RU: int = ...
     """
     Numbering in Russian Cyrillic alphabet lower case letters as \"&#1072;, &#1073;, &#1074;, &#1075;, ..., &#1102;, &#1103;, &#1072;&#1072;, &#1072;&#1073;, &#1072;&#1074;, ... &#1072;&#1072;&#1072;, &#1072;&#1072;&#1073;\".
     
@@ -266,7 +266,7 @@ class NumberingType(object):
     
         OOo 2.0.4
     """
-    CHARS_CYRILLIC_UPPER_LETTER_N_RU: int = 44
+    CHARS_CYRILLIC_UPPER_LETTER_N_RU: int = ...
     """
     Numbering in Russian Cyrillic alphabet upper case letters as \"&#1040;, &#1041;, ..., &#1070;, &#1071;, &#1040;&#1072;, &#1041;&#1073;, &#1042;&#1074;, ... &#1040;&#1072;&#1072;, ...\".
     
@@ -274,7 +274,7 @@ class NumberingType(object):
     
         OOo 2.0.4
     """
-    CHARS_CYRILLIC_LOWER_LETTER_N_RU: int = 45
+    CHARS_CYRILLIC_LOWER_LETTER_N_RU: int = ...
     """
     Numbering in Russian Cyrillic alphabet upper case letters as \"&#1072;, &#1073;, ..., &#1102;, &#1103;, &#1072;&#1072;, &#1073;&#1073;, &#1074;&#1074;, ... &#1072;&#1072;&#1072;, ...\".
     
@@ -282,7 +282,7 @@ class NumberingType(object):
     
         OOo 2.0.4
     """
-    CHARS_PERSIAN: int = 46
+    CHARS_PERSIAN: int = ...
     """
     Numbering in Persian alphabet letters (aa, be, pe, te, ...)
     
@@ -290,7 +290,7 @@ class NumberingType(object):
     
         OOo 2.4
     """
-    CHARS_MYANMAR: int = 47
+    CHARS_MYANMAR: int = ...
     """
     Numbering in Myanmar alphabet letters.
     
@@ -298,7 +298,7 @@ class NumberingType(object):
     
         OOo 3.1
     """
-    CHARS_CYRILLIC_UPPER_LETTER_SR: int = 48
+    CHARS_CYRILLIC_UPPER_LETTER_SR: int = ...
     """
     Numbering in Serbian Cyrillic alphabet upper case letters.
     
@@ -306,7 +306,7 @@ class NumberingType(object):
     
         OOo 3.1
     """
-    CHARS_CYRILLIC_LOWER_LETTER_SR: int = 49
+    CHARS_CYRILLIC_LOWER_LETTER_SR: int = ...
     """
     Numbering in Russian Serbian alphabet lower case letters.
     
@@ -314,7 +314,7 @@ class NumberingType(object):
     
         OOo 3.1
     """
-    CHARS_CYRILLIC_UPPER_LETTER_N_SR: int = 50
+    CHARS_CYRILLIC_UPPER_LETTER_N_SR: int = ...
     """
     Numbering in Serbian Cyrillic alphabet upper case letters.
     
@@ -322,7 +322,7 @@ class NumberingType(object):
     
         OOo 3.1
     """
-    CHARS_CYRILLIC_LOWER_LETTER_N_SR: int = 51
+    CHARS_CYRILLIC_LOWER_LETTER_N_SR: int = ...
     """
     Numbering in Serbian Cyrillic alphabet upper case letters.
     
@@ -330,7 +330,7 @@ class NumberingType(object):
     
         OOo 3.1
     """
-    CHARS_GREEK_UPPER_LETTER: int = 52
+    CHARS_GREEK_UPPER_LETTER: int = ...
     """
     Numbering in Greek alphabet upper case letters.
     
@@ -338,7 +338,7 @@ class NumberingType(object):
     
         LibreOffice 3.3
     """
-    CHARS_GREEK_LOWER_LETTER: int = 53
+    CHARS_GREEK_LOWER_LETTER: int = ...
     """
     Numbering in Greek alphabet lower case letters.
     
@@ -346,7 +346,7 @@ class NumberingType(object):
     
         LibreOffice 3.3
     """
-    CHARS_ARABIC_ABJAD: int = 54
+    CHARS_ARABIC_ABJAD: int = ...
     """
     Numbering in Arabic alphabet using abjad sequence.
     
@@ -354,7 +354,7 @@ class NumberingType(object):
     
         LibreOffice 3.5
     """
-    CHARS_PERSIAN_WORD: int = 55
+    CHARS_PERSIAN_WORD: int = ...
     """
     Numbering in Persian words.
     
@@ -362,7 +362,7 @@ class NumberingType(object):
     
         LibreOffice 3.5
     """
-    NUMBER_HEBREW: int = 56
+    NUMBER_HEBREW: int = ...
     """
     Numbering in Hebrew numerals.
     
@@ -370,7 +370,7 @@ class NumberingType(object):
     
         LibreOffice 5.4
     """
-    NUMBER_ARABIC_INDIC: int = 57
+    NUMBER_ARABIC_INDIC: int = ...
     """
     Numbering in Arabic-Indic numerals.
     
@@ -378,7 +378,7 @@ class NumberingType(object):
     
         LibreOffice 6.1
     """
-    NUMBER_EAST_ARABIC_INDIC: int = 58
+    NUMBER_EAST_ARABIC_INDIC: int = ...
     """
     Numbering in East Arabic-Indic numerals.
     
@@ -386,7 +386,7 @@ class NumberingType(object):
     
         LibreOffice 6.1
     """
-    NUMBER_INDIC_DEVANAGARI: int = 59
+    NUMBER_INDIC_DEVANAGARI: int = ...
     """
     Numbering in Indic Devanagari numerals.
     
@@ -394,7 +394,7 @@ class NumberingType(object):
     
         LibreOffice 6.1
     """
-    TEXT_NUMBER: int = 60
+    TEXT_NUMBER: int = ...
     """
     Numbering in ordinal numbers of the language of the text node for example, 1st, 2nd, 3rd...
     
@@ -404,7 +404,7 @@ class NumberingType(object):
     
         LibreOffice 6.1
     """
-    TEXT_CARDINAL: int = 61
+    TEXT_CARDINAL: int = ...
     """
     Numbering in cardinal numbers of the language of the text node for example, One, Two, Three...
     
@@ -414,7 +414,7 @@ class NumberingType(object):
     
         LibreOffice 6.1
     """
-    TEXT_ORDINAL: int = 62
+    TEXT_ORDINAL: int = ...
     """
     Numbering in ordinal numbers of the language of the text node for example, First, Second, Third...
     
@@ -424,7 +424,7 @@ class NumberingType(object):
     
         LibreOffice 6.1
     """
-    SYMBOL_CHICAGO: int = 63
+    SYMBOL_CHICAGO: int = ...
     """
     Footnoting symbols according the University of Chicago style: *, &#2020;, &#2021;, &#00a7;, **, &#2020;&#2020; etc.
     
@@ -432,7 +432,7 @@ class NumberingType(object):
     
         LibreOffice 6.4
     """
-    ARABIC_ZERO: int = 64
+    ARABIC_ZERO: int = ...
     """
     Numbering is in Arabic numbers, padded with zero to have a length of at least two, as \"01,02, ..., 10, 11, ...\".
     
@@ -440,7 +440,7 @@ class NumberingType(object):
     
         LibreOffice 7.0
     """
-    ARABIC_ZERO3: int = 65
+    ARABIC_ZERO3: int = ...
     """
     Numbering is in Arabic numbers, padded with zero to have a length of at least three, as \"001, 002, ..., 100, 101, ...\".
     
@@ -448,7 +448,7 @@ class NumberingType(object):
     
         LibreOffice 7.0
     """
-    ARABIC_ZERO4: int = 66
+    ARABIC_ZERO4: int = ...
     """
     Numbering is in Arabic numbers, padded with zero to have a length of at least four, as \"0001, 0002, ..., 1000, 1001, ...\".
     
@@ -456,7 +456,7 @@ class NumberingType(object):
     
         LibreOffice 7.0
     """
-    ARABIC_ZERO5: int = 67
+    ARABIC_ZERO5: int = ...
     """
     Numbering is in Arabic numbers, padded with zero to have a length of at least five, as \"00001, 00002, ..., 10000, 10001, ...\".
     
@@ -464,7 +464,7 @@ class NumberingType(object):
     
         LibreOffice 7.0
     """
-    SZEKELY_ROVAS: int = 68
+    SZEKELY_ROVAS: int = ...
     """
     Numbering is in Szekely rovas (Old Hungarian) numerals.
     
@@ -472,7 +472,7 @@ class NumberingType(object):
     
         LibreOffice 7.1
     """
-    NUMBER_DIGITAL_KO: int = 69
+    NUMBER_DIGITAL_KO: int = ...
     """
     Numbering is in Korean Digital number as \"ì¼,ì´,ì¼,...,ì¼ì,ì¼ìì, ...\".
     
@@ -480,7 +480,7 @@ class NumberingType(object):
     
         LibreOffice 7.3
     """
-    NUMBER_DIGITAL2_KO: int = 70
+    NUMBER_DIGITAL2_KO: int = ...
     """
     Numbering is in Korean Digital Number, reserved \"koreanDigital2\", as \"ä¸,äº,ä¸,...,ä¸ï¦²,ä¸ï¦²ï¦², ...\".
     
@@ -488,7 +488,7 @@ class NumberingType(object):
     
         LibreOffice 7.3
     """
-    NUMBER_LEGAL_KO: int = 71
+    NUMBER_LEGAL_KO: int = ...
     """
     Numbering is in Korean Legal Number, reserved \"koreanLegal\", as \"íë,ë,ì
     ,...\".

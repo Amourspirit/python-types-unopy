@@ -21,7 +21,7 @@
 import typing
 
 
-class TransliterationModulesExtra(object):
+class TransliterationModulesExtra:
     """
     Const
 
@@ -32,21 +32,21 @@ class TransliterationModulesExtra(object):
     See Also:
         `API TransliterationModulesExtra <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1TransliterationModulesExtra.html>`_
     """
-    SENTENCE_CASE: int = 200
+    SENTENCE_CASE: int = ...
     """
     The first character of the sentence is put in upper case.
     """
-    TITLE_CASE: int = 201
+    TITLE_CASE: int = ...
     """
     The first character of the word is put in upper case.
     
     This one is part
     """
-    TOGGLE_CASE: int = 202
+    TOGGLE_CASE: int = ...
     """
     All characters of the word are to change their case from small letters to capital letters and vice versa.
     """
-    IGNORE_DIACRITICS_CTL: int = 1073741824
+    IGNORE_DIACRITICS_CTL: int = ...
     """
     Ignore diacritics.
     
@@ -54,9 +54,9 @@ class TransliterationModulesExtra(object):
     
     Because we cannot extend the TransliterationModules enum we use TransliterationModulesExtra and it will act the same way.
     """
-    IGNORE_KASHIDA_CTL: int = 2048
+    IGNORE_KASHIDA_CTL: int = ...
     """
     Ignore Kashida mark.
     """
-    END_OF_MODULE: int = 0
+    END_OF_MODULE: int = ...
 

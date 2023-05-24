@@ -21,7 +21,7 @@
 import typing
 
 
-class LineNumberPosition(object):
+class LineNumberPosition:
     """
     Const
 
@@ -30,19 +30,19 @@ class LineNumberPosition(object):
     See Also:
         `API LineNumberPosition <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style_1_1LineNumberPosition.html>`_
     """
-    LEFT: int = 0
+    LEFT: int = ...
     """
     the number occurs on the left side of the pages.
     """
-    RIGHT: int = 1
+    RIGHT: int = ...
     """
     the number occurs on the right side of the pages.
     """
-    INSIDE: int = 2
+    INSIDE: int = ...
     """
     the number occurs alternating on the inner side of the pages.
     """
-    OUTSIDE: int = 3
+    OUTSIDE: int = ...
     """
     the number occurs alternating on the outside side of the pages.
     """

@@ -1,9 +1,6 @@
 from .document_builder import DocumentBuilder as DocumentBuilder
 from .dom_exception import DOMException as DOMException
-from .dom_exception_type import DOMExceptionType as DOMExceptionType
-from .node_type import NodeType as NodeType
 from .sax_document_builder import SAXDocumentBuilder as SAXDocumentBuilder
-from .sax_document_builder_state import SAXDocumentBuilderState as SAXDocumentBuilderState
 from .x_attr import XAttr as XAttr
 from .x_character_data import XCharacterData as XCharacterData
 from .x_comment import XComment as XComment

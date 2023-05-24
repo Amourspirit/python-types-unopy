@@ -21,7 +21,7 @@
 import typing
 
 
-class UntitledNumbersConst(object):
+class UntitledNumbersConst:
     """
     Const
 
@@ -29,5 +29,5 @@ class UntitledNumbersConst(object):
     See Also:
         `API UntitledNumbersConst <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1frame_1_1UntitledNumbersConst.html>`_
     """
-    INVALID_NUMBER: int = 0
+    INVALID_NUMBER: int = ...
 

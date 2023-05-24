@@ -21,7 +21,7 @@
 import typing
 
 
-class DataPilotFieldGroupBy(object):
+class DataPilotFieldGroupBy:
     """
     Const
 
@@ -30,25 +30,25 @@ class DataPilotFieldGroupBy(object):
     See Also:
         `API DataPilotFieldGroupBy <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DataPilotFieldGroupBy.html>`_
     """
-    SECONDS: int = 1
+    SECONDS: int = ...
     """
     Groups all members of a DataPilot field containing a date/time value by their current value for seconds.
     
     Example: The group :02 will contain all members that contain a time with a seconds value of 2, regardless of the date, hours and minutes of the member, e.g. 2002-Jan-03 00:00:02 or 1999-May-02 12:45:02.
     """
-    MINUTES: int = 2
+    MINUTES: int = ...
     """
     Groups all members of a DataPilot field containing a date/time value by their current value for minutes.
     
     Example: The group :02 will contain all members that contain a time with a minutes value of 2, regardless of the date, hours and seconds of the member, e.g. 2002-Jan-03 00:02:00 or 1999-May-02 12:02:45.
     """
-    HOURS: int = 4
+    HOURS: int = ...
     """
     Groups all members of a DataPilot field containing a date/time value by their current value for hours.
     
     Example: The group 02 will contain all members that contain a time with a hour value of 2, regardless of the date, minutes and seconds of the member, e.g. 2002-Jan-03 02:00:00 or 1999-May-02 02:12:45.
     """
-    DAYS: int = 8
+    DAYS: int = ...
     """
     Groups all members of a DataPilot field containing a date/time value by their calendar day, or by ranges of days.
     
@@ -56,19 +56,19 @@ class DataPilotFieldGroupBy(object):
     
     See descriptions for XDataPilotFieldGrouping.createDateGroup() for more details about day grouping.
     """
-    MONTHS: int = 16
+    MONTHS: int = ...
     """
     Groups all members of a DataPilot field containing a date/time value by their month.
     
     Example: The group Jan will contain all members with a date in the month January, regardless of the year, day, or time of the member, e.g. 2002-Jan-03 00:00:00 or 1999-Jan-02 02:12:45.
     """
-    QUARTERS: int = 32
+    QUARTERS: int = ...
     """
     Groups all members of a DataPilot field containing a date/time value by their quarter.
     
     Example: The group Q1 will contain all members with a date in the first quarter of a year (i.e. the months January, February, and march), regardless of the year, day, or time of the member, e.g. 2002-Jan-03 00:00:00 or 1999-Mar-02 02:12:45.
     """
-    YEARS: int = 64
+    YEARS: int = ...
     """
     Groups all members of a DataPilot field containing a date/time value by their year.
     

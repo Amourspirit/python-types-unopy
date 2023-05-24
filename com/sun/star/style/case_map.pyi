@@ -21,7 +21,7 @@
 import typing
 
 
-class CaseMap(object):
+class CaseMap:
     """
     Const
 
@@ -30,23 +30,23 @@ class CaseMap(object):
     See Also:
         `API CaseMap <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style_1_1CaseMap.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     The case of the characters is unchanged.
     """
-    UPPERCASE: int = 1
+    UPPERCASE: int = ...
     """
     All characters are put in upper case.
     """
-    LOWERCASE: int = 2
+    LOWERCASE: int = ...
     """
     All characters are put in lower case.
     """
-    TITLE: int = 3
+    TITLE: int = ...
     """
     The first character of each word is put in upper case.
     """
-    SMALLCAPS: int = 4
+    SMALLCAPS: int = ...
     """
     All characters are put in upper case, but with a smaller font height.
     """

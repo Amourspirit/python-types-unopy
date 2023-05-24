@@ -21,7 +21,7 @@
 import typing
 
 
-class RubyPosition(object):
+class RubyPosition:
     """
     Const
 
@@ -34,15 +34,15 @@ class RubyPosition(object):
     See Also:
         `API RubyPosition <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1RubyPosition.html>`_
     """
-    ABOVE: int = 0
+    ABOVE: int = ...
     """
     ruby text should be above or on the right side of base text.
     """
-    BELOW: int = 1
+    BELOW: int = ...
     """
     ruby text should be below or on the left side of base text.
     """
-    INTER_CHARACTER: int = 2
+    INTER_CHARACTER: int = ...
     """
     Vertically aligned on right side of the base text in horizontal mode.
     

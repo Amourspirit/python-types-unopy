@@ -21,7 +21,7 @@
 import typing
 
 
-class DataPilotFieldReferenceItemType(object):
+class DataPilotFieldReferenceItemType:
     """
     Const
 
@@ -30,15 +30,15 @@ class DataPilotFieldReferenceItemType(object):
     See Also:
         `API DataPilotFieldReferenceItemType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DataPilotFieldReferenceItemType.html>`_
     """
-    NAMED: int = 0
+    NAMED: int = ...
     """
     the reference item is given by a name.
     """
-    PREVIOUS: int = 1
+    PREVIOUS: int = ...
     """
     the reference item is the previous one.
     """
-    NEXT: int = 2
+    NEXT: int = ...
     """
     the reference item is the next one.
     """

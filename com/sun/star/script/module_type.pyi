@@ -21,7 +21,7 @@
 import typing
 
 
-class ModuleType(object):
+class ModuleType:
     """
     Const
 
@@ -29,9 +29,9 @@ class ModuleType(object):
     See Also:
         `API ModuleType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1script_1_1ModuleType.html>`_
     """
-    UNKNOWN: int = 0
-    NORMAL: int = 1
-    CLASS: int = 2
-    FORM: int = 3
-    DOCUMENT: int = 4
+    UNKNOWN: int = ...
+    NORMAL: int = ...
+    CLASS: int = ...
+    FORM: int = ...
+    DOCUMENT: int = ...
 

@@ -21,7 +21,7 @@
 import typing
 
 
-class DataBarAxis(object):
+class DataBarAxis:
     """
     Const
 
@@ -29,7 +29,7 @@ class DataBarAxis(object):
     See Also:
         `API DataBarAxis <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DataBarAxis.html>`_
     """
-    AXIS_NONE: int = 0
-    AXIS_MIDDLE: int = 1
-    AXIS_AUTOMATIC: int = 2
+    AXIS_NONE: int = ...
+    AXIS_MIDDLE: int = ...
+    AXIS_AUTOMATIC: int = ...
 

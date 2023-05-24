@@ -21,7 +21,7 @@
 import typing
 
 
-class CertificateValidity(object):
+class CertificateValidity:
     """
     Const
 
@@ -32,68 +32,68 @@ class CertificateValidity(object):
     See Also:
         `API CertificateValidity <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1security_1_1CertificateValidity.html>`_
     """
-    VALID: int = 0
-    INVALID: int = 1
+    VALID: int = ...
+    INVALID: int = ...
     """
     The certificate is invalid.
     """
-    UNTRUSTED: int = 2
+    UNTRUSTED: int = ...
     """
     The certificate itself is untrusted.
     """
-    TIME_INVALID: int = 4
+    TIME_INVALID: int = ...
     """
     The current time is not in the range of time for which the certificate is valid.
     """
-    NOT_TIME_NESTED: int = 8
+    NOT_TIME_NESTED: int = ...
     """
     The time range of a certificate does not fall within the time range of the issuing certificate.
     """
-    REVOKED: int = 16
+    REVOKED: int = ...
     """
     It is a revoked certificate.
     """
-    UNKNOWN_REVOKATION: int = 32
+    UNKNOWN_REVOKATION: int = ...
     """
     The certificate revocation status is unknown.
     """
-    SIGNATURE_INVALID: int = 64
+    SIGNATURE_INVALID: int = ...
     """
     The certificate signature is invalid.
     """
-    EXTENSION_INVALID: int = 128
+    EXTENSION_INVALID: int = ...
     """
     The certificate has invalid extensions.
     """
-    EXTENSION_UNKNOWN: int = 256
+    EXTENSION_UNKNOWN: int = ...
     """
     The certificate has critical unknown extensions.
     """
-    ISSUER_UNKNOWN: int = 512
+    ISSUER_UNKNOWN: int = ...
     """
     The certificate issuer is unknown.
     """
-    ISSUER_UNTRUSTED: int = 1024
+    ISSUER_UNTRUSTED: int = ...
     """
     The certificate issuer is untrusted.
     """
-    ISSUER_INVALID: int = 4096
+    ISSUER_INVALID: int = ...
     """
     The certificate issuer is invalid.
     """
-    ROOT_UNKNOWN: int = 8192
+    ROOT_UNKNOWN: int = ...
     """
     The root certificate is unknown.
     """
-    ROOT_UNTRUSTED: int = 16384
+    ROOT_UNTRUSTED: int = ...
     """
     The root certificate is untrusted.
     """
-    ROOT_INVALID: int = 65536
+    ROOT_INVALID: int = ...
     """
     The root certificate is invalid.
     """
-    CHAIN_INCOMPLETE: int = 131072
+    CHAIN_INCOMPLETE: int = ...
     """
     The certificate chain is incomplete.
     """

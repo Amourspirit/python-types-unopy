@@ -21,7 +21,7 @@
 import typing
 
 
-class Endianness(object):
+class Endianness:
     """
     Const
 
@@ -36,13 +36,13 @@ class Endianness(object):
     See Also:
         `API Endianness <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1util_1_1Endianness.html>`_
     """
-    LITTLE: int = 0
+    LITTLE: int = ...
     """
     Little endian.
     
     The values are stored in little endian format, i.e. the bytes of the long word 0xAABBCCDD are laid out like 0xDD, 0xCC, 0xBB, 0xAA in memory. That is, data of arbitrary machine word lengths always starts with the least significant byte, and ends with the most significant one.
     """
-    BIG: int = 1
+    BIG: int = ...
     """
     Big endian.
     

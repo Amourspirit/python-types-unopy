@@ -21,7 +21,7 @@
 import typing
 
 
-class FormComponentType(object):
+class FormComponentType:
     """
     Const
 
@@ -30,93 +30,93 @@ class FormComponentType(object):
     See Also:
         `API FormComponentType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1form_1_1FormComponentType.html>`_
     """
-    CONTROL: int = 1
+    CONTROL: int = ...
     """
     This generic identifier is for controls which cannot be identified by another specific identifier.
     """
-    COMMANDBUTTON: int = 2
+    COMMANDBUTTON: int = ...
     """
     specifies a control that is used to begin, interrupt, or end a process.
     """
-    RADIOBUTTON: int = 3
+    RADIOBUTTON: int = ...
     """
     specifies a control that acts like a radio button.
     
     Grouped together, such radio buttons present a set of two or more mutually exclusive choices to the user.
     """
-    IMAGEBUTTON: int = 4
+    IMAGEBUTTON: int = ...
     """
     specifies a control that displays an image that responds to mouse clicks.
     """
-    CHECKBOX: int = 5
+    CHECKBOX: int = ...
     """
     specifies a control that is used to check or uncheck to turn an option on or off.
     """
-    LISTBOX: int = 6
+    LISTBOX: int = ...
     """
     specifies a control that displays a list from which the user can select one or more items.
     """
-    COMBOBOX: int = 7
+    COMBOBOX: int = ...
     """
     specifies a control that is used when a list box combined with a static text control or an edit control is needed.
     """
-    GROUPBOX: int = 8
+    GROUPBOX: int = ...
     """
     specifies a control that displays a frame around a group of controls with or without a caption.
     """
-    TEXTFIELD: int = 9
+    TEXTFIELD: int = ...
     """
     specifies a control that is a text component that allows for the editing of a single line of text.
     """
-    FIXEDTEXT: int = 10
+    FIXEDTEXT: int = ...
     """
     specifies a control to display a fixed text, usually used to label other controls.
     """
-    GRIDCONTROL: int = 11
+    GRIDCONTROL: int = ...
     """
     is a table like control to display database data.
     """
-    FILECONTROL: int = 12
+    FILECONTROL: int = ...
     """
     specifies a control which can be used to enter text, extended by an (user-startable) file dialog to browse for files.
     """
-    HIDDENCONTROL: int = 13
+    HIDDENCONTROL: int = ...
     """
     specifies a control that should not be visible.
     """
-    IMAGECONTROL: int = 14
+    IMAGECONTROL: int = ...
     """
     specifies a control to display an image.
     """
-    DATEFIELD: int = 15
+    DATEFIELD: int = ...
     """
     specifies a control to display and edit a date value.
     """
-    TIMEFIELD: int = 16
+    TIMEFIELD: int = ...
     """
     specifies a control to display and edit a time value.
     """
-    NUMERICFIELD: int = 17
+    NUMERICFIELD: int = ...
     """
     specifies a field to display and edit a numeric value.
     """
-    CURRENCYFIELD: int = 18
+    CURRENCYFIELD: int = ...
     """
     specifies a field to display and edit a currency value.
     """
-    PATTERNFIELD: int = 19
+    PATTERNFIELD: int = ...
     """
     specifies a control to display and edit a string according to a pattern.
     """
-    SCROLLBAR: int = 20
+    SCROLLBAR: int = ...
     """
     specifies a control to display and edit, in the form of a scrollbar, a value from a continuous value range
     """
-    SPINBUTTON: int = 21
+    SPINBUTTON: int = ...
     """
     specifies a control to edit, in the form of a spin field, a value from a continuous range of values
     """
-    NAVIGATIONBAR: int = 22
+    NAVIGATIONBAR: int = ...
     """
     specifies a control which provides controller functionality for the com.sun.star.form.component.DataForm it belongs to, such as functionality to navigate or filter this form.
     """

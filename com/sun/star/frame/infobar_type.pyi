@@ -21,7 +21,7 @@
 import typing
 
 
-class InfobarType(object):
+class InfobarType:
     """
     Const
 
@@ -34,19 +34,19 @@ class InfobarType(object):
     See Also:
         `API InfobarType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1frame_1_1InfobarType.html>`_
     """
-    INFO: int = 0
+    INFO: int = ...
     """
     For information messages (color: light blue).
     """
-    SUCCESS: int = 1
+    SUCCESS: int = ...
     """
     For success notifications (color: light green).
     """
-    WARNING: int = 2
+    WARNING: int = ...
     """
     For warning messages (color: orange).
     """
-    DANGER: int = 3
+    DANGER: int = ...
     """
     For critical errors (color: red).
     """

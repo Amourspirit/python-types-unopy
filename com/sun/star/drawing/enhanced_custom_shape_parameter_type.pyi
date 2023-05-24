@@ -21,7 +21,7 @@
 import typing
 
 
-class EnhancedCustomShapeParameterType(object):
+class EnhancedCustomShapeParameterType:
     """
     Const
 
@@ -30,63 +30,63 @@ class EnhancedCustomShapeParameterType(object):
     See Also:
         `API EnhancedCustomShapeParameterType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing_1_1EnhancedCustomShapeParameterType.html>`_
     """
-    NORMAL: int = 0
+    NORMAL: int = ...
     """
     the value of the point component is normal, the Coordinate is taken as it is
     """
-    EQUATION: int = 1
+    EQUATION: int = ...
     """
     the value of the point component has to be interpreted as index to an Equation
     """
-    ADJUSTMENT: int = 2
+    ADJUSTMENT: int = ...
     """
     the value of the point component has to be interpreted as index into the list of AdjustmentValues
     """
-    LEFT: int = 3
+    LEFT: int = ...
     """
     the logical left border of the CustomShape is used
     """
-    TOP: int = 4
+    TOP: int = ...
     """
     the logical top border of the CustomShape is used
     """
-    RIGHT: int = 5
+    RIGHT: int = ...
     """
     the logical right border of the CustomShape is used
     """
-    BOTTOM: int = 6
+    BOTTOM: int = ...
     """
     the logical bottom border of the CustomShape is used
     """
-    XSTRETCH: int = 7
+    XSTRETCH: int = ...
     """
     the x value of the stretch point is used
     """
-    YSTRETCH: int = 8
+    YSTRETCH: int = ...
     """
     the y value of the stretch point is used
     """
-    HASSTROKE: int = 9
+    HASSTROKE: int = ...
     """
     If the shape has a line style, a value of 1 is used.
     """
-    HASFILL: int = 10
+    HASFILL: int = ...
     """
     If the shape has a fill style, a value of 1 is used.
     """
-    WIDTH: int = 11
+    WIDTH: int = ...
     """
     The width of the svg:viewBox is used.
     """
-    HEIGHT: int = 12
+    HEIGHT: int = ...
     """
     The height of the svg:viewBox is used.
     """
-    LOGWIDTH: int = 13
+    LOGWIDTH: int = ...
     """
     The logical width of the shape is used.
     """
-    LOGHEIGHT: int = 14
+    LOGHEIGHT: int = ...
     """
     The logical height of the shape is used.
     """

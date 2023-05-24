@@ -21,7 +21,7 @@
 import typing
 
 
-class ColumnSeparatorStyle(object):
+class ColumnSeparatorStyle:
     """
     Const
 
@@ -29,8 +29,8 @@ class ColumnSeparatorStyle(object):
     See Also:
         `API ColumnSeparatorStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1ColumnSeparatorStyle.html>`_
     """
-    NONE: int = 0
-    SOLID: int = 1
-    DOTTED: int = 2
-    DASHED: int = 3
+    NONE: int = ...
+    SOLID: int = ...
+    DOTTED: int = ...
+    DASHED: int = ...
 

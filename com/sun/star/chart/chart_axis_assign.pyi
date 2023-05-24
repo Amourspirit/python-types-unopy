@@ -21,7 +21,7 @@
 import typing
 
 
-class ChartAxisAssign(object):
+class ChartAxisAssign:
     """
     Const
 
@@ -30,11 +30,11 @@ class ChartAxisAssign(object):
     See Also:
         `API ChartAxisAssign <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart_1_1ChartAxisAssign.html>`_
     """
-    PRIMARY_Y: int = 2
+    PRIMARY_Y: int = ...
     """
     Assign row to primary y-axis.
     """
-    SECONDARY_Y: int = 4
+    SECONDARY_Y: int = ...
     """
     Assign row to secondary y-axis.
     """

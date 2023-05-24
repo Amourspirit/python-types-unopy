@@ -21,7 +21,7 @@
 import typing
 
 
-class Aspects(object):
+class Aspects:
     """
     Const
 
@@ -34,19 +34,19 @@ class Aspects(object):
     See Also:
         `API Aspects <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1embed_1_1Aspects.html>`_
     """
-    MSOLE_CONTENT: int = 1
+    MSOLE_CONTENT: int = ...
     """
     specifies view of the object to be displayed as an embedded object inside a container.
     """
-    MSOLE_THUMBNAIL: int = 2
+    MSOLE_THUMBNAIL: int = ...
     """
     specifies view of the object to be displayed in a browsing tool.
     """
-    MSOLE_ICON: int = 4
+    MSOLE_ICON: int = ...
     """
     specifies view of the object when object is represented by Icon.
     """
-    MSOLE_DOCPRINT: int = 8
+    MSOLE_DOCPRINT: int = ...
     """
     specifies view of the object for print preview.
     """

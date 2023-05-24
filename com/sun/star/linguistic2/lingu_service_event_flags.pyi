@@ -21,7 +21,7 @@
 import typing
 
 
-class LinguServiceEventFlags(object):
+class LinguServiceEventFlags:
     """
     Const
 
@@ -36,19 +36,19 @@ class LinguServiceEventFlags(object):
     See Also:
         `API LinguServiceEventFlags <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1linguistic2_1_1LinguServiceEventFlags.html>`_
     """
-    SPELL_CORRECT_WORDS_AGAIN: int = 1
+    SPELL_CORRECT_WORDS_AGAIN: int = ...
     """
     The spelling of previously correct words should be checked again.
     """
-    SPELL_WRONG_WORDS_AGAIN: int = 2
+    SPELL_WRONG_WORDS_AGAIN: int = ...
     """
     The spelling of previously misspelled words should be checked again.
     """
-    HYPHENATE_AGAIN: int = 4
+    HYPHENATE_AGAIN: int = ...
     """
     The hyphenation of words may have changed.
     """
-    PROOFREAD_AGAIN: int = 8
+    PROOFREAD_AGAIN: int = ...
     """
     Request new proofreading of the document.
     

@@ -21,7 +21,7 @@
 import typing
 
 
-class AccessibleRelationType(object):
+class AccessibleRelationType:
     """
     Const
 
@@ -38,61 +38,61 @@ class AccessibleRelationType(object):
     See Also:
         `API AccessibleRelationType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1accessibility_1_1AccessibleRelationType.html>`_
     """
-    INVALID: int = 0
+    INVALID: int = ...
     """
     Invalid relation type.
     
     Indicates an invalid relation type. This is used to indicate that a retrieval method could not find a requested relation.
     """
-    CONTENT_FLOWS_FROM: int = 1
+    CONTENT_FLOWS_FROM: int = ...
     """
     Content-flows-from relation.
     
     Indicates a content flow between the related objects.
     """
-    CONTENT_FLOWS_TO: int = 2
+    CONTENT_FLOWS_TO: int = ...
     """
     Content-flows-to relation.
     
     Indicates a content flow between the related objects.
     """
-    CONTROLLED_BY: int = 3
+    CONTROLLED_BY: int = ...
     """
     Controlled-by relation type.
     
     Indicates an object is controlled by one or more target objects.
     """
-    CONTROLLER_FOR: int = 4
+    CONTROLLER_FOR: int = ...
     """
     Controller-for relation type.
     
     Indicates an object is a controller for one or more target objects.
     """
-    LABEL_FOR: int = 5
+    LABEL_FOR: int = ...
     """
     Label-for relation type.
     
     Indicates an object is a label for one or more target objects.
     """
-    LABELED_BY: int = 6
+    LABELED_BY: int = ...
     """
     Labeled-by relation type.
     
     Indicates an object is labeled by one or more target objects.
     """
-    MEMBER_OF: int = 7
+    MEMBER_OF: int = ...
     """
     Member-of relation type.
     
     Indicates an object is a member of a group of one or more target objects.
     """
-    SUB_WINDOW_OF: int = 8
+    SUB_WINDOW_OF: int = ...
     """
     Sub-Window-of relation type.
     
     With this relation you can realize an alternative parent-child relationship. The target of the relation contains the parent window. Note that there is no relation that points the other way, from the parent window to the child window.
     """
-    NODE_CHILD_OF: int = 9
+    NODE_CHILD_OF: int = ...
     """
     Node-Child-of relation type.
     
@@ -102,7 +102,7 @@ class AccessibleRelationType(object):
     
         OOo 3.0
     """
-    DESCRIBED_BY: int = 10
+    DESCRIBED_BY: int = ...
     """
     Described-by relation type.
     

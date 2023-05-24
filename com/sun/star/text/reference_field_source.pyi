@@ -21,7 +21,7 @@
 import typing
 
 
-class ReferenceFieldSource(object):
+class ReferenceFieldSource:
     """
     Const
 
@@ -30,23 +30,23 @@ class ReferenceFieldSource(object):
     See Also:
         `API ReferenceFieldSource <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1ReferenceFieldSource.html>`_
     """
-    REFERENCE_MARK: int = 0
+    REFERENCE_MARK: int = ...
     """
     The source is a reference mark.
     """
-    SEQUENCE_FIELD: int = 1
+    SEQUENCE_FIELD: int = ...
     """
     The source is a number sequence field.
     """
-    BOOKMARK: int = 2
+    BOOKMARK: int = ...
     """
     The source is a bookmark.
     """
-    FOOTNOTE: int = 3
+    FOOTNOTE: int = ...
     """
     The source is a footnote.
     """
-    ENDNOTE: int = 4
+    ENDNOTE: int = ...
     """
     The source is an endnote.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class ProcedureResult(object):
+class ProcedureResult:
     """
     Const
 
@@ -30,19 +30,19 @@ class ProcedureResult(object):
     See Also:
         `API ProcedureResult <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1ProcedureResult.html>`_
     """
-    UNKNOWN: int = 0
+    UNKNOWN: int = ...
     """
     A possible value for column PROCEDURE_TYPE in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc.XDatabaseMetaData.getProcedures().
     
     Indicates that it is not known whether the procedure returns a result.
     """
-    NONE: int = 1
+    NONE: int = ...
     """
     A possible value for column PROCEDURE_TYPE in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc.XDatabaseMetaData.getProcedures().
     
     Indicates that the procedure does not return a result.
     """
-    RETURN: int = 2
+    RETURN: int = ...
     """
     A possible value for column PROCEDURE_TYPE in the com.sun.star.sdbc.XResultSet object returned by the method com.sun.star.sdbc.XDatabaseMetaData.getProcedures().
     

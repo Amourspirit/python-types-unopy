@@ -21,7 +21,7 @@
 import typing
 
 
-class PathJoinType(object):
+class PathJoinType:
     """
     Const
 
@@ -36,21 +36,21 @@ class PathJoinType(object):
     See Also:
         `API PathJoinType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1PathJoinType.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     Do not join the path segments at all.
     
     This join type might lead, depending on the angle between the segments, to visible cracks at the meeting points.
     """
-    MITER: int = 1
+    MITER: int = ...
     """
     Join the path segment by extending the outer border until they intersect.
     """
-    ROUND: int = 2
+    ROUND: int = ...
     """
     Join the path segment with a pie-like patch, such that the outer line of the meeting point is round.
     """
-    BEVEL: int = 3
+    BEVEL: int = ...
     """
     Join the path segment by connecting the outer ends of the abutting segments with a straight line.
     """

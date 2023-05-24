@@ -21,7 +21,7 @@
 import typing
 
 
-class WindowArrange(object):
+class WindowArrange:
     """
     Const
 
@@ -30,27 +30,27 @@ class WindowArrange(object):
     See Also:
         `API WindowArrange <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1frame_1_1WindowArrange.html>`_
     """
-    TILE: int = 1
+    TILE: int = ...
     """
     arranges the windows in tiles
     """
-    VERTICAL: int = 2
+    VERTICAL: int = ...
     """
     arranges the windows vertically
     """
-    HORIZONTAL: int = 3
+    HORIZONTAL: int = ...
     """
     arranges the windows horizontally
     """
-    CASCADE: int = 4
+    CASCADE: int = ...
     """
     cascades the windows
     """
-    MAXIMIZE: int = 5
+    MAXIMIZE: int = ...
     """
     maximizes all windows
     """
-    MINIMIZE: int = 6
+    MINIMIZE: int = ...
     """
     minimizes all windows
     """

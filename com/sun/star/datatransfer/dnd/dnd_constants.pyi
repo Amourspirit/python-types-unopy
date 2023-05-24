@@ -21,7 +21,7 @@
 import typing
 
 
-class DNDConstants(object):
+class DNDConstants:
     """
     Const
 
@@ -30,31 +30,31 @@ class DNDConstants(object):
     See Also:
         `API DNDConstants <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1datatransfer_1_1dnd_1_1DNDConstants.html>`_
     """
-    ACTION_NONE: int = 0
+    ACTION_NONE: int = ...
     """
     No action.
     """
-    ACTION_COPY: int = 1
+    ACTION_COPY: int = ...
     """
     Action copy.
     """
-    ACTION_MOVE: int = 2
+    ACTION_MOVE: int = ...
     """
     Action move.
     """
-    ACTION_COPY_OR_MOVE: int = 3
+    ACTION_COPY_OR_MOVE: int = ...
     """
     Action copy or move.
     """
-    ACTION_LINK: int = 4
+    ACTION_LINK: int = ...
     """
     Action link.
     """
-    ACTION_REFERENCE: int = 4
+    ACTION_REFERENCE: int = ...
     """
     Action reference.
     """
-    ACTION_DEFAULT: int = -128
+    ACTION_DEFAULT: int = ...
     """
     Action default.
     """

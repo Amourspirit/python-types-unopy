@@ -21,7 +21,7 @@
 import typing
 
 
-class DataPilotOutputRangeType(object):
+class DataPilotOutputRangeType:
     """
     Const
 
@@ -36,15 +36,15 @@ class DataPilotOutputRangeType(object):
     See Also:
         `API DataPilotOutputRangeType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DataPilotOutputRangeType.html>`_
     """
-    WHOLE: int = 0
+    WHOLE: int = ...
     """
     whole DataPilot output range including the header area above the table where the filter and page field buttons are located.
     """
-    TABLE: int = 1
+    TABLE: int = ...
     """
     whole table but without the header area where the filter and page field buttons are located.
     """
-    RESULT: int = 2
+    RESULT: int = ...
     """
     result area where the result values are displayed.
     

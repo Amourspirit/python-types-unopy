@@ -21,7 +21,7 @@
 import typing
 
 
-class NodeAttribute(object):
+class NodeAttribute:
     """
     Const
 
@@ -36,19 +36,19 @@ class NodeAttribute(object):
     See Also:
         `API NodeAttribute <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1NodeAttribute.html>`_
     """
-    FINALIZED: int = 256
+    FINALIZED: int = ...
     """
     indicates that a node or property may not be changed or overridden in subsequent layers
     """
-    MANDATORY: int = 512
+    MANDATORY: int = ...
     """
     indicates that a set item may not be removed or replaced in subsequent layers.
     """
-    READONLY: int = 1024
+    READONLY: int = ...
     """
     indicates that a node or property may not be changed in this or subsequent layer.
     """
-    FUSE: int = 2048
+    FUSE: int = ...
     """
     indicates that contents shall be fused.
     
@@ -58,7 +58,7 @@ class NodeAttribute(object):
     
         OOo 2.0.3
     """
-    MASK: int = 32512
+    MASK: int = ...
     """
     can be used to mask the node attributes from merged attributes
     """

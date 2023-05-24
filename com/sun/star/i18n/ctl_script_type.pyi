@@ -21,7 +21,7 @@
 import typing
 
 
-class CTLScriptType(object):
+class CTLScriptType:
     """
     Const
 
@@ -34,23 +34,23 @@ class CTLScriptType(object):
     See Also:
         `API CTLScriptType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1CTLScriptType.html>`_
     """
-    CTL_UNKNOWN: int = 0
+    CTL_UNKNOWN: int = ...
     """
     For CTL scripts OOo currently does not support or could not handle.
     """
-    CTL_HEBREW: int = 1
+    CTL_HEBREW: int = ...
     """
     For Hebrew script.
     """
-    CTL_ARABIC: int = 2
+    CTL_ARABIC: int = ...
     """
     For Arabic script.
     """
-    CTL_THAI: int = 3
+    CTL_THAI: int = ...
     """
     For Thai script.
     """
-    CTL_INDIC: int = 4
+    CTL_INDIC: int = ...
     """
     For Indic script (including Devanagari, Tamil, Telugu and Gujarati script)
     """

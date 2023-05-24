@@ -21,7 +21,7 @@
 import typing
 
 
-class SearchAlgorithms2(object):
+class SearchAlgorithms2:
     """
     Const
 
@@ -34,19 +34,19 @@ class SearchAlgorithms2(object):
     See Also:
         `API SearchAlgorithms2 <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1util_1_1SearchAlgorithms2.html>`_
     """
-    ABSOLUTE: int = 1
+    ABSOLUTE: int = ...
     """
     Literal.
     """
-    REGEXP: int = 2
+    REGEXP: int = ...
     """
     Regular expression.
     """
-    APPROXIMATE: int = 3
+    APPROXIMATE: int = ...
     """
     Weighted Levenshtein Distance.
     """
-    WILDCARD: int = 4
+    WILDCARD: int = ...
     """
     Wildcards '*' and '?' An escape character is defined by setting com.sun.star.util.SearchOptions2.WildcardEscapeCharacter.
     """

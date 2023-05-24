@@ -21,7 +21,7 @@
 import typing
 
 
-class VertOrientation(object):
+class VertOrientation:
     """
     Const
 
@@ -30,43 +30,43 @@ class VertOrientation(object):
     See Also:
         `API VertOrientation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1VertOrientation.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     no hard alignment
     """
-    TOP: int = 1
+    TOP: int = ...
     """
     aligned at the top
     """
-    CENTER: int = 2
+    CENTER: int = ...
     """
     aligned at the center
     """
-    BOTTOM: int = 3
+    BOTTOM: int = ...
     """
     aligned at the bottom
     """
-    CHAR_TOP: int = 4
+    CHAR_TOP: int = ...
     """
     aligned at the top of a character (anchored to character)
     """
-    CHAR_CENTER: int = 5
+    CHAR_CENTER: int = ...
     """
     aligned at the center of a character (anchored to character )
     """
-    CHAR_BOTTOM: int = 6
+    CHAR_BOTTOM: int = ...
     """
     aligned at the bottom of a character (anchored to character )
     """
-    LINE_TOP: int = 7
+    LINE_TOP: int = ...
     """
     aligned at the top of the line (anchored to character )
     """
-    LINE_CENTER: int = 8
+    LINE_CENTER: int = ...
     """
     aligned at the center of the line (anchored to character )
     """
-    LINE_BOTTOM: int = 9
+    LINE_BOTTOM: int = ...
     """
     aligned at the bottom of the line (anchored to character )
     """

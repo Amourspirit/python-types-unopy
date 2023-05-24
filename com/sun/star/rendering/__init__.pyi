@@ -13,7 +13,6 @@ from .color_profile import ColorProfile as ColorProfile
 from .color_space_type import ColorSpaceType as ColorSpaceType
 from .composite_operation import CompositeOperation as CompositeOperation
 from .emphasis_mark import EmphasisMark as EmphasisMark
-from .fill_rule import FillRule as FillRule
 from .floating_point_bitmap_format import FloatingPointBitmapFormat as FloatingPointBitmapFormat
 from .floating_point_bitmap_layout import FloatingPointBitmapLayout as FloatingPointBitmapLayout
 from .font_info import FontInfo as FontInfo

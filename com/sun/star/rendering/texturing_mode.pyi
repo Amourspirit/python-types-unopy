@@ -21,7 +21,7 @@
 import typing
 
 
-class TexturingMode(object):
+class TexturingMode:
     """
     Const
 
@@ -34,19 +34,19 @@ class TexturingMode(object):
     See Also:
         `API TexturingMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1TexturingMode.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     Pixel outside the texture area are fully transparent.
     
     This completely switches off pixel generation outside the texture coordinate range [0,1]. This results in only one instance of the texture generated per textured primitive.
     """
-    CLAMP: int = 1
+    CLAMP: int = ...
     """
     Clamp texture coordinate.
     
     This value clamps the texture coordinates to the range [0,1]. This results in only one instance of the texture generated per textured primitive, with the remaining area filled with the color of the outermost texels
     """
-    REPEAT: int = 2
+    REPEAT: int = ...
     """
     Repeat the texture.
     

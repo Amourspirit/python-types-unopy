@@ -6,7 +6,6 @@ from .data_sink import DataSink as DataSink
 from .data_source import DataSource as DataSource
 from .database_data_provider import DatabaseDataProvider as DatabaseDataProvider
 from .highlighted_range import HighlightedRange as HighlightedRange
-from .label_origin import LabelOrigin as LabelOrigin
 from .labeled_data_sequence import LabeledDataSequence as LabeledDataSequence
 from .pivot_table_field_entry import PivotTableFieldEntry as PivotTableFieldEntry
 from .range_highlight_listener import RangeHighlightListener as RangeHighlightListener

@@ -21,7 +21,7 @@
 import typing
 
 
-class ProcedureColumn(object):
+class ProcedureColumn:
     """
     Const
 
@@ -30,37 +30,37 @@ class ProcedureColumn(object):
     See Also:
         `API ProcedureColumn <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1ProcedureColumn.html>`_
     """
-    UNKNOWN: int = 0
+    UNKNOWN: int = ...
     """
     indicates that the type of the column is unknown.
     
     A possible value for the column COLUMN_TYPE in the com.sun.star.sdbc.XResultSet returned by the method com.sun.star.sdbc.XDatabaseMetaData.getProcedureColumns().
     """
-    IN: int = 1
+    IN: int = ...
     """
     indicates that the column stores IN parameters.
     
     A possible value for the column COLUMN_TYPE in the com.sun.star.sdbc.XResultSet returned by the method com.sun.star.sdbc.XDatabaseMetaData.getProcedureColumns().
     """
-    INOUT: int = 2
+    INOUT: int = ...
     """
     indicates that the column stores INOUT parameters.
     
     A possible value for the column COLUMN_TYPE in the com.sun.star.sdbc.XResultSet returned by the method com.sun.star.sdbc.XDatabaseMetaData.getProcedureColumns().
     """
-    RESULT: int = 3
+    RESULT: int = ...
     """
     indicates that the column stores results.
     
     A possible value for the column COLUMN_TYPE in the com.sun.star.sdbc.XResultSet returned by the method com.sun.star.sdbc.XDatabaseMetaData.getProcedureColumns().
     """
-    OUT: int = 4
+    OUT: int = ...
     """
     indicates that the column stores OUT parameters.
     
     A possible value for the column COLUMN_TYPE in the com.sun.star.sdbc.XResultSet returned by the method com.sun.star.sdbc.XDatabaseMetaData.getProcedureColumns().
     """
-    RETURN: int = 5
+    RETURN: int = ...
     """
     Indicates that the column stores return values.
     

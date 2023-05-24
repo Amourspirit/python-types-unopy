@@ -21,7 +21,7 @@
 import typing
 
 
-class CalendarDisplayCode(object):
+class CalendarDisplayCode:
     """
     Const
 
@@ -36,71 +36,71 @@ class CalendarDisplayCode(object):
     See Also:
         `API CalendarDisplayCode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1CalendarDisplayCode.html>`_
     """
-    SHORT_DAY: int = 1
+    SHORT_DAY: int = ...
     """
     Day of month, one or two digits, no leading zero.
     """
-    LONG_DAY: int = 2
+    LONG_DAY: int = ...
     """
     Day of month, two digits, with leading zero.
     """
-    SHORT_DAY_NAME: int = 3
+    SHORT_DAY_NAME: int = ...
     """
     Day of week, abbreviated name.
     """
-    LONG_DAY_NAME: int = 4
+    LONG_DAY_NAME: int = ...
     """
     Day of week, full name.
     """
-    SHORT_MONTH: int = 5
+    SHORT_MONTH: int = ...
     """
     Month of year, one or two digits, no leading zero.
     """
-    LONG_MONTH: int = 6
+    LONG_MONTH: int = ...
     """
     Month of year, with leading zero.
     """
-    SHORT_MONTH_NAME: int = 7
+    SHORT_MONTH_NAME: int = ...
     """
     Abbreviated month name.
     """
-    LONG_MONTH_NAME: int = 8
+    LONG_MONTH_NAME: int = ...
     """
     Full month name.
     """
-    SHORT_YEAR: int = 9
+    SHORT_YEAR: int = ...
     """
     Year, two digits.
     """
-    LONG_YEAR: int = 10
+    LONG_YEAR: int = ...
     """
     Year, four digits.
     """
-    SHORT_ERA: int = 11
+    SHORT_ERA: int = ...
     """
     Abbreviated era name, for example, BC or AD.
     """
-    LONG_ERA: int = 12
+    LONG_ERA: int = ...
     """
     Full era name, for example, \"Before Christ\" or \"Anno Dominus\".
     """
-    SHORT_YEAR_AND_ERA: int = 13
+    SHORT_YEAR_AND_ERA: int = ...
     """
     Combined short year and era, order depends on locale/calendar.
     """
-    LONG_YEAR_AND_ERA: int = 14
+    LONG_YEAR_AND_ERA: int = ...
     """
     Combined full year and era, order depends on locale/calendar.
     """
-    SHORT_QUARTER: int = 15
+    SHORT_QUARTER: int = ...
     """
     Short quarter, for example, \"Q1\".
     """
-    LONG_QUARTER: int = 16
+    LONG_QUARTER: int = ...
     """
     Long quarter, for example, \"1st quarter\".
     """
-    SHORT_GENITIVE_MONTH_NAME: int = 17
+    SHORT_GENITIVE_MONTH_NAME: int = ...
     """
     Abbreviated possessive genitive case month name.
     
@@ -108,7 +108,7 @@ class CalendarDisplayCode(object):
     
         LibreOffice 3.5
     """
-    LONG_GENITIVE_MONTH_NAME: int = 18
+    LONG_GENITIVE_MONTH_NAME: int = ...
     """
     Full possessive genitive case month name.
     
@@ -116,7 +116,7 @@ class CalendarDisplayCode(object):
     
         LibreOffice 3.5
     """
-    NARROW_GENITIVE_MONTH_NAME: int = 19
+    NARROW_GENITIVE_MONTH_NAME: int = ...
     """
     Narrow possessive genitive case month name.
     
@@ -124,7 +124,7 @@ class CalendarDisplayCode(object):
     
         LibreOffice 3.5
     """
-    SHORT_PARTITIVE_MONTH_NAME: int = 20
+    SHORT_PARTITIVE_MONTH_NAME: int = ...
     """
     Abbreviated partitive case month name.
     
@@ -132,7 +132,7 @@ class CalendarDisplayCode(object):
     
         LibreOffice 3.5
     """
-    LONG_PARTITIVE_MONTH_NAME: int = 21
+    LONG_PARTITIVE_MONTH_NAME: int = ...
     """
     Full partitive case month name.
     
@@ -140,7 +140,7 @@ class CalendarDisplayCode(object):
     
         LibreOffice 3.5
     """
-    NARROW_PARTITIVE_MONTH_NAME: int = 22
+    NARROW_PARTITIVE_MONTH_NAME: int = ...
     """
     Narrow partitive case month name.
     
@@ -148,7 +148,7 @@ class CalendarDisplayCode(object):
     
         LibreOffice 3.5
     """
-    NARROW_DAY_NAME: int = 23
+    NARROW_DAY_NAME: int = ...
     """
     Day of week, narrow name.
     
@@ -156,7 +156,7 @@ class CalendarDisplayCode(object):
     
         LibreOffice 3.5
     """
-    NARROW_MONTH_NAME: int = 24
+    NARROW_MONTH_NAME: int = ...
     """
     Narrow month name.
     

@@ -21,7 +21,7 @@
 import typing
 
 
-class CellFlags(object):
+class CellFlags:
     """
     Const
 
@@ -32,43 +32,43 @@ class CellFlags(object):
     See Also:
         `API CellFlags <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1CellFlags.html>`_
     """
-    VALUE: int = 1
+    VALUE: int = ...
     """
     selects constant numeric values that are not formatted as dates or times.
     """
-    DATETIME: int = 2
+    DATETIME: int = ...
     """
     selects constant numeric values that have a date or time number format.
     """
-    STRING: int = 4
+    STRING: int = ...
     """
     selects constant strings.
     """
-    ANNOTATION: int = 8
+    ANNOTATION: int = ...
     """
     selects cell annotations.
     """
-    FORMULA: int = 16
+    FORMULA: int = ...
     """
     selects formulas.
     """
-    HARDATTR: int = 32
+    HARDATTR: int = ...
     """
     selects all explicit formatting, but not the formatting which is applied implicitly through style sheets.
     """
-    STYLES: int = 64
+    STYLES: int = ...
     """
     selects cell styles.
     """
-    OBJECTS: int = 128
+    OBJECTS: int = ...
     """
     selects drawing objects.
     """
-    EDITATTR: int = 256
+    EDITATTR: int = ...
     """
     selects formatting within parts of the cell contents.
     """
-    FORMATTED: int = 512
+    FORMATTED: int = ...
     """
     selects cells with formatting within the cells or cells with more than one paragraph within the cells.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class InterpolationMode(object):
+class InterpolationMode:
     """
     Const
 
@@ -36,31 +36,31 @@ class InterpolationMode(object):
     See Also:
         `API InterpolationMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1InterpolationMode.html>`_
     """
-    NEAREST_NEIGHBOR: int = 1
+    NEAREST_NEIGHBOR: int = ...
     """
     Perform a nearest neighbor interpolation.
     
     That is, when interpolating between two values v0 and v1, positioned at t0 and t1, take the one which has the closest t coordinate.
     """
-    LINEAR: int = 2
+    LINEAR: int = ...
     """
     Perform a linear interpolation.
     
     That is, when interpolating at position t between two values v0 and v1, positioned at t0 and t1, take the sum of v0 weighted with (t-t0) and v1 weighted with (t1-t).
     """
-    CUBIC: int = 3
+    CUBIC: int = ...
     """
     Perform a cubic interpolation.
     
     That is, when interpolating at position t, take the four closest data points v0, v1, v2, and v3, fit a cubic curve through them, and take the interpolated value from this cubic curve.
     """
-    BEZIERSPLINE3: int = 4
+    BEZIERSPLINE3: int = ...
     """
     Perform a cubic Bezier spline interpolation.
     
     That is, when interpolating at position t, take the three closest data points v0, v1, and v2, fit a cubic Bezier spline through them, and take the interpolated value from this cubic curve.
     """
-    BEZIERSPLINE4: int = 5
+    BEZIERSPLINE4: int = ...
     """
     Perform a quadric Bezier spline interpolation.
     

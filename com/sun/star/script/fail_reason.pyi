@@ -21,7 +21,7 @@
 import typing
 
 
-class FailReason(object):
+class FailReason:
     """
     Const
 
@@ -30,45 +30,45 @@ class FailReason(object):
     See Also:
         `API FailReason <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1script_1_1FailReason.html>`_
     """
-    OUT_OF_RANGE: int = 1
+    OUT_OF_RANGE: int = ...
     """
     The given value does not fit in the range of the destination type.
     """
-    IS_NOT_NUMBER: int = 2
+    IS_NOT_NUMBER: int = ...
     """
     The given value cannot be converted to a number.
     """
-    IS_NOT_ENUM: int = 3
+    IS_NOT_ENUM: int = ...
     """
     The given value cannot be converted to an enumeration.
     """
-    IS_NOT_BOOL: int = 4
+    IS_NOT_BOOL: int = ...
     """
     The given value cannot be converted to a boolean.
     """
-    NO_SUCH_INTERFACE: int = 5
+    NO_SUCH_INTERFACE: int = ...
     """
     The given value is not an interface or cannot queried to the right interface.
     """
-    SOURCE_IS_NO_DERIVED_TYPE: int = 6
+    SOURCE_IS_NO_DERIVED_TYPE: int = ...
     """
     The given value cannot be converted to right structure or exception type.
     """
-    TYPE_NOT_SUPPORTED: int = 7
+    TYPE_NOT_SUPPORTED: int = ...
     """
     The type class of the given value is not supported.
     """
-    INVALID: int = 8
+    INVALID: int = ...
     """
     The given value cannot be converted and none of the other reasons match.
     """
-    NO_DEFAULT_AVAILABLE: int = 9
+    NO_DEFAULT_AVAILABLE: int = ...
     """
     This value is deprecated.
     
     Do not use.
     """
-    UNKNOWN: int = 10
+    UNKNOWN: int = ...
     """
     This value is deprecated.
     

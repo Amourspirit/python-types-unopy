@@ -21,7 +21,7 @@
 import typing
 
 
-class ReferenceFlags(object):
+class ReferenceFlags:
     """
     Const
 
@@ -32,35 +32,35 @@ class ReferenceFlags(object):
     See Also:
         `API ReferenceFlags <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1ReferenceFlags.html>`_
     """
-    COLUMN_RELATIVE: int = 1
+    COLUMN_RELATIVE: int = ...
     """
     selects a relative column reference.
     """
-    COLUMN_DELETED: int = 2
+    COLUMN_DELETED: int = ...
     """
     marks a deleted column reference.
     """
-    ROW_RELATIVE: int = 4
+    ROW_RELATIVE: int = ...
     """
     selects a relative row reference.
     """
-    ROW_DELETED: int = 8
+    ROW_DELETED: int = ...
     """
     marks a deleted row reference.
     """
-    SHEET_RELATIVE: int = 16
+    SHEET_RELATIVE: int = ...
     """
     selects a relative sheet reference.
     """
-    SHEET_DELETED: int = 32
+    SHEET_DELETED: int = ...
     """
     marks a deleted sheet reference.
     """
-    SHEET_3D: int = 64
+    SHEET_3D: int = ...
     """
     selects a 3D sheet reference.
     """
-    RELATIVE_NAME: int = 128
+    RELATIVE_NAME: int = ...
     """
     marks a reference from a relative range name.
     """

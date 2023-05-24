@@ -21,7 +21,7 @@
 import typing
 
 
-class BibliographyDataType(object):
+class BibliographyDataType:
     """
     Const
 
@@ -30,93 +30,93 @@ class BibliographyDataType(object):
     See Also:
         `API BibliographyDataType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1BibliographyDataType.html>`_
     """
-    ARTICLE: int = 0
+    ARTICLE: int = ...
     """
     An article from a journal or magazine.
     """
-    BOOK: int = 1
+    BOOK: int = ...
     """
     A book with an explicit publisher.
     """
-    BOOKLET: int = 2
+    BOOKLET: int = ...
     """
     A work that is printed and bound, but without a named publisher or sponsoring institution.
     """
-    CONFERENCE: int = 3
+    CONFERENCE: int = ...
     """
     An article in the proceedings of a conference.
     
     This entry is identical to the \"inproceedings\" entry and is included for compatibility with BiBTex.
     """
-    INBOOK: int = 4
+    INBOOK: int = ...
     """
     A part of a book, which may be a chapter and/or a range of pages.
     """
-    INCOLLECTION: int = 5
+    INCOLLECTION: int = ...
     """
     A part of a book with its own title.
     """
-    INPROCEEDINGS: int = 6
+    INPROCEEDINGS: int = ...
     """
     An article in the proceedings of a conference.
     """
-    JOURNAL: int = 7
+    JOURNAL: int = ...
     """
     A journal or magazine.
     """
-    MANUAL: int = 8
+    MANUAL: int = ...
     """
     Technical documentation.
     """
-    MASTERSTHESIS: int = 9
+    MASTERSTHESIS: int = ...
     """
     A Master's thesis.
     """
-    MISC: int = 10
+    MISC: int = ...
     """
     This type is used when nothing else seems appropriate.
     """
-    PHDTHESIS: int = 11
+    PHDTHESIS: int = ...
     """
     A PhD thesis.
     """
-    PROCEEDINGS: int = 12
+    PROCEEDINGS: int = ...
     """
     The proceedings of a conference.
     """
-    TECHREPORT: int = 13
+    TECHREPORT: int = ...
     """
     A report published by a school or other institution, usually numbered within a series.
     """
-    UNPUBLISHED: int = 14
+    UNPUBLISHED: int = ...
     """
     A document with an author and title, but not formally published.
     """
-    EMAIL: int = 15
+    EMAIL: int = ...
     """
     An eMail document.
     """
-    WWW: int = 16
+    WWW: int = ...
     """
     A Web document.
     """
-    CUSTOM1: int = 17
+    CUSTOM1: int = ...
     """
     A user defined document type.
     """
-    CUSTOM2: int = 18
+    CUSTOM2: int = ...
     """
     A user defined document type.
     """
-    CUSTOM3: int = 19
+    CUSTOM3: int = ...
     """
     A user defined document type.
     """
-    CUSTOM4: int = 20
+    CUSTOM4: int = ...
     """
     A user defined document type.
     """
-    CUSTOM5: int = 21
+    CUSTOM5: int = ...
     """
     A user defined document type.
     """

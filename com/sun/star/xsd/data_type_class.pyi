@@ -21,7 +21,7 @@
 import typing
 
 
-class DataTypeClass(object):
+class DataTypeClass:
     """
     Const
 
@@ -30,79 +30,79 @@ class DataTypeClass(object):
     See Also:
         `API DataTypeClass <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1xsd_1_1DataTypeClass.html>`_
     """
-    STRING: int = 1
+    STRING: int = ...
     """
     specifies an XSD compliant string type
     """
-    BOOLEAN: int = 2
+    BOOLEAN: int = ...
     """
     specifies an XSD compliant boolean type
     """
-    DECIMAL: int = 3
+    DECIMAL: int = ...
     """
     specifies an XSD compliant decimal type
     """
-    FLOAT: int = 4
+    FLOAT: int = ...
     """
     specifies an XSD compliant float type
     """
-    DOUBLE: int = 5
+    DOUBLE: int = ...
     """
     specifies an XSD compliant double type
     """
-    DURATION: int = 6
+    DURATION: int = ...
     """
     specifies an XSD compliant duration type
     """
-    DATETIME: int = 7
+    DATETIME: int = ...
     """
     specifies an XSD compliant datetime type
     """
-    TIME: int = 8
+    TIME: int = ...
     """
     specifies an XSD compliant time type
     """
-    DATE: int = 9
+    DATE: int = ...
     """
     specifies an XSD compliant date type
     """
-    gYearMonth: int = 10
+    gYearMonth: int = ...
     """
     specifies an XSD compliant gYearMonth type
     """
-    gYear: int = 11
+    gYear: int = ...
     """
     specifies an XSD compliant gYear type
     """
-    gMonthDay: int = 12
+    gMonthDay: int = ...
     """
     specifies an XSD compliant gMonthDay type
     """
-    gDay: int = 13
+    gDay: int = ...
     """
     specifies an XSD compliant gDay type
     """
-    gMonth: int = 14
+    gMonth: int = ...
     """
     specifies an XSD compliant gMonth type
     """
-    hexBinary: int = 15
+    hexBinary: int = ...
     """
     specifies an XSD compliant hexBinary type
     """
-    base64Binary: int = 16
+    base64Binary: int = ...
     """
     specifies an XSD compliant base64Binary type
     """
-    anyURI: int = 17
+    anyURI: int = ...
     """
     specifies an XSD compliant anyURI type
     """
-    QName: int = 18
+    QName: int = ...
     """
     specifies an XSD compliant QName type
     """
-    NOTATION: int = 19
+    NOTATION: int = ...
     """
     specifies an XSD compliant NOTATION type
     """

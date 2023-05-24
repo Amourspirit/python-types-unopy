@@ -59,7 +59,6 @@ from .global_settings import GlobalSettings as GlobalSettings
 from .graphic_crop import GraphicCrop as GraphicCrop
 from .hori_orientation import HoriOrientation as HoriOrientation
 from .hori_orientation_format import HoriOrientationFormat as HoriOrientationFormat
-from .horizontal_adjust import HorizontalAdjust as HorizontalAdjust
 from .illustrations_index import IllustrationsIndex as IllustrationsIndex
 from .in_content_metadata import InContentMetadata as InContentMetadata
 from .invalid_text_content_exception import InvalidTextContentException as InvalidTextContentException
@@ -69,13 +68,11 @@ from .mail_merge import MailMerge as MailMerge
 from .mail_merge_event import MailMergeEvent as MailMergeEvent
 from .mail_merge_type import MailMergeType as MailMergeType
 from .module_dispatcher import ModuleDispatcher as ModuleDispatcher
-from .note_print_mode import NotePrintMode as NotePrintMode
 from .numbering_level import NumberingLevel as NumberingLevel
 from .numbering_rules import NumberingRules as NumberingRules
 from .numbering_style import NumberingStyle as NumberingStyle
 from .object_index import ObjectIndex as ObjectIndex
 from .page_footnote_info import PageFootnoteInfo as PageFootnoteInfo
-from .page_number_type import PageNumberType as PageNumberType
 from .page_print_settings import PagePrintSettings as PagePrintSettings
 from .paragraph import Paragraph as Paragraph
 from .paragraph_enumeration import ParagraphEnumeration as ParagraphEnumeration
@@ -90,7 +87,6 @@ from .reference_field_source import ReferenceFieldSource as ReferenceFieldSource
 from .reference_mark import ReferenceMark as ReferenceMark
 from .reference_marks import ReferenceMarks as ReferenceMarks
 from .rel_orientation import RelOrientation as RelOrientation
-from .ruby_adjust import RubyAdjust as RubyAdjust
 from .ruby_position import RubyPosition as RubyPosition
 from .section_file_link import SectionFileLink as SectionFileLink
 from .set_variable_type import SetVariableType as SetVariableType
@@ -106,7 +102,6 @@ from .text_column import TextColumn as TextColumn
 from .text_column_sequence import TextColumnSequence as TextColumnSequence
 from .text_columns import TextColumns as TextColumns
 from .text_content import TextContent as TextContent
-from .text_content_anchor_type import TextContentAnchorType as TextContentAnchorType
 from .text_content_collection import TextContentCollection as TextContentCollection
 from .text_cursor import TextCursor as TextCursor
 from .text_document import TextDocument as TextDocument
@@ -155,8 +150,6 @@ from .vert_orientation_format import VertOrientationFormat as VertOrientationFor
 from .view_settings import ViewSettings as ViewSettings
 from .web_document import WebDocument as WebDocument
 from .wrap_influence_on_position import WrapInfluenceOnPosition as WrapInfluenceOnPosition
-from .wrap_text_mode import WrapTextMode as WrapTextMode
-from .writing_mode import WritingMode as WritingMode
 from .writing_mode2 import WritingMode2 as WritingMode2
 from .x_auto_text_container import XAutoTextContainer as XAutoTextContainer
 from .x_auto_text_container2 import XAutoTextContainer2 as XAutoTextContainer2

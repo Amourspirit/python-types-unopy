@@ -21,7 +21,7 @@
 import typing
 
 
-class FormulaLanguage(object):
+class FormulaLanguage:
     """
     Const
 
@@ -34,29 +34,29 @@ class FormulaLanguage(object):
     See Also:
         `API FormulaLanguage <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1FormulaLanguage.html>`_
     """
-    ODFF: int = 0
+    ODFF: int = ...
     """
     Function names and operators as defined by the OASIS OpenDocument Format (ODF) Formula specification (ODFF aka OpenFormula).
     """
-    ODF_11: int = 1
+    ODF_11: int = ...
     """
     Function names and operators as used in ODF documents prior to the ODFF specification, up to ODF v1.1.
     """
-    ENGLISH: int = 2
+    ENGLISH: int = ...
     """
     Function names and operators as used in the English language user interface.
     """
-    NATIVE: int = 3
+    NATIVE: int = ...
     """
     Function names and operators as used in the current native language user interface.
     """
-    XL_ENGLISH: int = 4
+    XL_ENGLISH: int = ...
     """
     Function names and operators as used in the English version of Excel.
     
     This formula language is also used in VBA formulas.
     """
-    OOXML: int = 5
+    OOXML: int = ...
     """
     Function names and operators as used in OOXML.
     
@@ -64,7 +64,7 @@ class FormulaLanguage(object):
     
         LibreOffice 4.2
     """
-    API: int = 6
+    API: int = ...
     """
     Function names and operators as used with XFunctionAccess and other API context.
     

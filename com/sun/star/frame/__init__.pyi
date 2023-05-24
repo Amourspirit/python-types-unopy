@@ -25,7 +25,6 @@ from .document_templates import DocumentTemplates as DocumentTemplates
 from .double_initialization_exception import DoubleInitializationException as DoubleInitializationException
 from .feature_state_event import FeatureStateEvent as FeatureStateEvent
 from .frame import Frame as Frame
-from .frame_action import FrameAction as FrameAction
 from .frame_action_event import FrameActionEvent as FrameActionEvent
 from .frame_control import FrameControl as FrameControl
 from .frame_loader import FrameLoader as FrameLoader

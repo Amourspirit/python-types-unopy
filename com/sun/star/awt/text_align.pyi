@@ -21,7 +21,7 @@
 import typing
 
 
-class TextAlign(object):
+class TextAlign:
     """
     Const
 
@@ -30,15 +30,15 @@ class TextAlign(object):
     See Also:
         `API TextAlign <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1TextAlign.html>`_
     """
-    LEFT: int = 0
+    LEFT: int = ...
     """
     specifies to left align text.
     """
-    CENTER: int = 1
+    CENTER: int = ...
     """
     specifies to center text.
     """
-    RIGHT: int = 2
+    RIGHT: int = ...
     """
     specifies to right align text.
     """

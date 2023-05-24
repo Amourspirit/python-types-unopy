@@ -21,7 +21,7 @@
 import typing
 
 
-class ExternalLinkType(object):
+class ExternalLinkType:
     """
     Const
 
@@ -34,23 +34,23 @@ class ExternalLinkType(object):
     See Also:
         `API ExternalLinkType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1ExternalLinkType.html>`_
     """
-    UNKNOWN: int = 0
+    UNKNOWN: int = ...
     """
     Unknown element type.
     """
-    DOCUMENT: int = 1
+    DOCUMENT: int = ...
     """
     URL of an external document.
     """
-    DDE: int = 2
+    DDE: int = ...
     """
     DDE link.
     """
-    SELF: int = 3
+    SELF: int = ...
     """
     Reference to the own document.
     """
-    SPECIAL: int = 4
+    SPECIAL: int = ...
     """
     For special use cases.
     

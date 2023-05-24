@@ -21,7 +21,7 @@
 import typing
 
 
-class FontPitch(object):
+class FontPitch:
     """
     Const
 
@@ -32,15 +32,15 @@ class FontPitch(object):
     See Also:
         `API FontPitch <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1FontPitch.html>`_
     """
-    DONTKNOW: int = 0
+    DONTKNOW: int = ...
     """
     specifies that the pitch for this font is unknown.
     """
-    FIXED: int = 1
+    FIXED: int = ...
     """
     specifies a font with a fixed character width.
     """
-    VARIABLE: int = 2
+    VARIABLE: int = ...
     """
     specifies a font with a variable character width.
     """

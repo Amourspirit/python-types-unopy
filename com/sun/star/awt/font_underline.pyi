@@ -21,7 +21,7 @@
 import typing
 
 
-class FontUnderline(object):
+class FontUnderline:
     """
     Const
 
@@ -32,79 +32,79 @@ class FontUnderline(object):
     See Also:
         `API FontUnderline <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1FontUnderline.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     specifies no underlining.
     """
-    SINGLE: int = 1
+    SINGLE: int = ...
     """
     specifies underlining with a single line.
     """
-    DOUBLE: int = 2
+    DOUBLE: int = ...
     """
     specifies underlining with a double line.
     """
-    DOTTED: int = 3
+    DOTTED: int = ...
     """
     specifies underlining with a dotted line.
     """
-    DONTKNOW: int = 4
+    DONTKNOW: int = ...
     """
     The kind of underlining is not known.
     """
-    DASH: int = 5
+    DASH: int = ...
     """
     specifies underlining with a dashed line.
     """
-    LONGDASH: int = 6
+    LONGDASH: int = ...
     """
     specifies underlining with long dashes.
     """
-    DASHDOT: int = 7
+    DASHDOT: int = ...
     """
     specifies underlining with a dash and dot sequence.
     """
-    DASHDOTDOT: int = 8
+    DASHDOTDOT: int = ...
     """
     specifies underlining with a dash, dot, dot sequence.
     """
-    SMALLWAVE: int = 9
+    SMALLWAVE: int = ...
     """
     specifies underlining with a small wave.
     """
-    WAVE: int = 10
+    WAVE: int = ...
     """
     specifies underlining with a wave.
     """
-    DOUBLEWAVE: int = 11
+    DOUBLEWAVE: int = ...
     """
     specifies underlining with a double wave.
     """
-    BOLD: int = 12
+    BOLD: int = ...
     """
     specifies underlining with a bold line.
     """
-    BOLDDOTTED: int = 13
+    BOLDDOTTED: int = ...
     """
     specifies underlining with bold dots.
     """
-    BOLDDASH: int = 14
+    BOLDDASH: int = ...
     """
     specifies underlining with bold dashes.
     """
-    BOLDLONGDASH: int = 15
+    BOLDLONGDASH: int = ...
     """
     specifies underlining with long bold dashes.
     """
-    BOLDDASHDOT: int = 16
+    BOLDDASHDOT: int = ...
     """
     specifies underlining with a dash and dot sequence in bold.
     """
-    BOLDDASHDOTDOT: int = 17
+    BOLDDASHDOTDOT: int = ...
     """
     specifies underlining with a dash, dot, dot sequence in bold.
     """
-    BOLDWAVE: int = 18
+    BOLDWAVE: int = ...
     """
     specifies underlining with a bold wave.
     """

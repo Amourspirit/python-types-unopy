@@ -21,7 +21,7 @@
 import typing
 
 
-class AccessibleStateType(object):
+class AccessibleStateType:
     """
     Const
 
@@ -40,73 +40,73 @@ class AccessibleStateType(object):
     See Also:
         `API AccessibleStateType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1accessibility_1_1AccessibleStateType.html>`_
     """
-    INVALID: int = 0
+    INVALID: int = ...
     """
     Indicates an invalid state.
     """
-    ACTIVE: int = 1
+    ACTIVE: int = ...
     """
     Indicates a window is currently the active window.
     """
-    ARMED: int = 2
+    ARMED: int = ...
     """
     Indicates that the object is armed.
     """
-    BUSY: int = 3
+    BUSY: int = ...
     """
     Indicates the current object is busy.
     """
-    CHECKED: int = 4
+    CHECKED: int = ...
     """
     Indicates this object is currently checked.
     """
-    DEFUNC: int = 5
+    DEFUNC: int = ...
     """
     User interface object corresponding to this object no longer exists.
     
     Indicates the user interface object corresponding to this object no longer exists.
     """
-    EDITABLE: int = 6
+    EDITABLE: int = ...
     """
     Indicates the user can change the contents of this object.
     """
-    ENABLED: int = 7
+    ENABLED: int = ...
     """
     Indicates this object is enabled.
     """
-    EXPANDABLE: int = 8
+    EXPANDABLE: int = ...
     """
     Indicates this object allows progressive disclosure of its children.
     """
-    EXPANDED: int = 9
+    EXPANDED: int = ...
     """
     Indicates this object is expanded.
     """
-    FOCUSABLE: int = 10
+    FOCUSABLE: int = ...
     """
     Object can accept the keyboard focus.
     
     Indicates this object can accept keyboard focus, which means all events resulting from typing on the keyboard will normally be passed to it when it has focus.
     """
-    FOCUSED: int = 11
+    FOCUSED: int = ...
     """
     Indicates this object currently has the keyboard focus.
     """
-    HORIZONTAL: int = 12
+    HORIZONTAL: int = ...
     """
     Indicates the orientation of this object is horizontal.
     """
-    ICONIFIED: int = 13
+    ICONIFIED: int = ...
     """
     Indicates this object is minimized and is represented only by an icon.
     """
-    INDETERMINATE: int = 14
+    INDETERMINATE: int = ...
     """
     Sometimes UI elements can have a state indeterminate.
     
     This can happen e.g. if a check box reflects the bold state of text in a text processor. When the current selection contains text which is bold and also text which is not bold, the state is indeterminate.
     """
-    MANAGES_DESCENDANTS: int = 15
+    MANAGES_DESCENDANTS: int = ...
     """
     Indicates the most (all) children are transient and it is not necessary to add listener to the children.
     
@@ -114,93 +114,93 @@ class AccessibleStateType(object):
     
     The state is added to make a performance improvement. Now it is no longer necessary to iterate over all children to find out whether they are transient or not to decide whether to add listener or not. If there is an object with this state no one should iterate over the children to add listener. Only the active descendant should get listener if it is not transient.
     """
-    MODAL: int = 16
+    MODAL: int = ...
     """
     Object is modal.
     
     Indicates something must be done with this object before the user can interact with an object in a different window.
     """
-    MULTI_LINE: int = 17
+    MULTI_LINE: int = ...
     """
     Indicates this (text) object can contain multiple lines of text.
     """
-    MULTI_SELECTABLE: int = 18
+    MULTI_SELECTABLE: int = ...
     """
     More than one child may be selected at the same time.
     
     Indicates this object allows more than one of its children to be selected at the same time.
     """
-    OPAQUE: int = 19
+    OPAQUE: int = ...
     """
     Indicates this object paints every pixel within its rectangular region.
     """
-    PRESSED: int = 20
+    PRESSED: int = ...
     """
     Indicates this object is currently pressed.
     """
-    RESIZABLE: int = 21
+    RESIZABLE: int = ...
     """
     Indicates the size of this object is not fixed.
     """
-    SELECTABLE: int = 22
+    SELECTABLE: int = ...
     """
     Object is selectable.
     
     Indicates this object is the child of an object that allows its children to be selected, and that this child is one of those children that can be selected.
     """
-    SELECTED: int = 23
+    SELECTED: int = ...
     """
     Object is selected.
     
     Indicates this object is the child of an object that allows its children to be selected, and that this child is one of those children that has been selected.
     """
-    SENSITIVE: int = 24
+    SENSITIVE: int = ...
     """
     Indicates this object is sensitive.
     """
-    SHOWING: int = 25
+    SHOWING: int = ...
     """
     Object is displayed on the screen.
     
     An object has set the SHOWING state if itself and all of its parents have set the VISIBLE state and it lies at least partly inside the visible area of its parent. It is, though, not necessarily visible on the screen because it may be occluded by other objects.
     """
-    SINGLE_LINE: int = 26
+    SINGLE_LINE: int = ...
     """
     Indicates this (text) object can contain only a single line of text.
     """
-    STALE: int = 27
+    STALE: int = ...
     """
     Object information is stale and might not be up to date.
     
     Indicates that the information that is returned from this object might be out of sync with the application.
     """
-    TRANSIENT: int = 28
+    TRANSIENT: int = ...
     """
     Indicates this object is transient.
     """
-    VERTICAL: int = 29
+    VERTICAL: int = ...
     """
     Indicates the orientation of this object is vertical.
     """
-    VISIBLE: int = 30
+    VISIBLE: int = ...
     """
     Object wants to be displayed on the screen.
     
     A set VISIBLE state indicates that an object wants to be displayed on the screen. It is displayed, as indicated by a set SHOWING state, if all of its parents have also set the VISIBLE state and the object lies at least partly in the visible area of its parent.
     """
-    MOVEABLE: int = 31
+    MOVEABLE: int = ...
     """
     Indicates the position of the object is not fixed.
     """
-    DEFAULT: int = 32
+    DEFAULT: int = ...
     """
     Indicates the object is the default button in a window.
     """
-    OFFSCREEN: int = 33
+    OFFSCREEN: int = ...
     """
     Indicates the object is outside of the screen area.
     """
-    COLLAPSE: int = 34
+    COLLAPSE: int = ...
     """
     Indicates that the object is collapsed.
     """

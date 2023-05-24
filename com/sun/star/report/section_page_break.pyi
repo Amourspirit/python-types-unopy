@@ -21,7 +21,7 @@
 import typing
 
 
-class SectionPageBreak(object):
+class SectionPageBreak:
     """
     Const
 
@@ -30,19 +30,19 @@ class SectionPageBreak(object):
     See Also:
         `API SectionPageBreak <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1report_1_1SectionPageBreak.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     Page breaks will never be inserted.
     
     If the section doesn't fit on a page than the content will be cut.
     """
-    SECTION: int = 1
+    SECTION: int = ...
     """
     If the section doesn't fit on page than a page break will be inserted as long as the section fits.
     
     Inner sections will doesn't contain further page breaks.
     """
-    AUTO: int = 2
+    AUTO: int = ...
     """
     If the section doesn't fit on page than a page break will be inserted as long as the section fits.
     """

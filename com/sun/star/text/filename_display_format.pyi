@@ -21,7 +21,7 @@
 import typing
 
 
-class FilenameDisplayFormat(object):
+class FilenameDisplayFormat:
     """
     Const
 
@@ -30,19 +30,19 @@ class FilenameDisplayFormat(object):
     See Also:
         `API FilenameDisplayFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1FilenameDisplayFormat.html>`_
     """
-    FULL: int = 0
+    FULL: int = ...
     """
     The content of the URL is completely displayed.
     """
-    PATH: int = 1
+    PATH: int = ...
     """
     Only the path of the file is displayed.
     """
-    NAME: int = 2
+    NAME: int = ...
     """
     Only the name of the file without the file extension is displayed.
     """
-    NAME_AND_EXT: int = 3
+    NAME_AND_EXT: int = ...
     """
     The file name including the file extension is displayed.
     """

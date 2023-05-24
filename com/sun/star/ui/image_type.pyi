@@ -21,7 +21,7 @@
 import typing
 
 
-class ImageType(object):
+class ImageType:
     """
     Const
 
@@ -36,15 +36,15 @@ class ImageType(object):
     See Also:
         `API ImageType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1ImageType.html>`_
     """
-    SIZE_DEFAULT: int = 0
+    SIZE_DEFAULT: int = ...
     """
     an image with default size.
     """
-    SIZE_LARGE: int = 1
+    SIZE_LARGE: int = ...
     """
     an image with large size.
     """
-    SIZE_32: int = 2
+    SIZE_32: int = ...
     """
     an image with size 32.
     
@@ -52,11 +52,11 @@ class ImageType(object):
     
         LibreOffice 5.3
     """
-    COLOR_NORMAL: int = 0
+    COLOR_NORMAL: int = ...
     """
     an image with normal colors.
     """
-    COLOR_HIGHCONTRAST: int = 4
+    COLOR_HIGHCONTRAST: int = ...
     """
     an image with high contrast colors.
     """

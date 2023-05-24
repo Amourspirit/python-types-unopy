@@ -21,7 +21,7 @@
 import typing
 
 
-class ColorComponentTag(object):
+class ColorComponentTag:
     """
     Const
 
@@ -36,125 +36,125 @@ class ColorComponentTag(object):
     See Also:
         `API ColorComponentTag <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1ColorComponentTag.html>`_
     """
-    DEVICE: int = 0
+    DEVICE: int = ...
     """
     Unspecified device color value.
     """
-    RGB_RED: int = 1
+    RGB_RED: int = ...
     """
     Red colorant from RGB color space.
     """
-    RGB_GREEN: int = 2
+    RGB_GREEN: int = ...
     """
     Green colorant from RGB color space.
     """
-    RGB_BLUE: int = 3
+    RGB_BLUE: int = ...
     """
     Blue colorant from RGB color space.
     """
-    CMYK_CYAN: int = 4
+    CMYK_CYAN: int = ...
     """
     Cyan colorant from CMYK color space.
     """
-    CMYK_MAGENTA: int = 5
+    CMYK_MAGENTA: int = ...
     """
     Magenta colorant from CMYK color space.
     """
-    CMYK_YELLOW: int = 6
+    CMYK_YELLOW: int = ...
     """
     Yellow colorant from CMYK color space.
     """
-    CMYK_BLACK: int = 7
+    CMYK_BLACK: int = ...
     """
     Black colorant from CMYK color space.
     """
-    CMYKOG_ORANGE: int = 8
+    CMYKOG_ORANGE: int = ...
     """
     Orange colorant from hexachrome color space.
     """
-    CMYKOG_GREEN: int = 9
+    CMYKOG_GREEN: int = ...
     """
     Green colorant from hexachrome color space.
     """
-    SPOT: int = 10
+    SPOT: int = ...
     """
     Arbitrary extra spot color, e.g. Pantone.
     """
-    INDEX: int = 11
+    INDEX: int = ...
     """
     Index into palette.
     """
-    ALPHA: int = 12
+    ALPHA: int = ...
     """
     Alpha channel.
     """
-    GREY: int = 13
+    GREY: int = ...
     """
     Grey value. Used for monochrome color spaces.
     """
-    PREMULTIPLIED_ALPHA: int = 14
+    PREMULTIPLIED_ALPHA: int = ...
     """
     Premultiplied alpha channel.
     
     Note that this alpha format actually influences the other color components, in that their values are pre-multiplied with the alpha value.
     """
-    CIEXYZ_X: int = 15
+    CIEXYZ_X: int = ...
     """
     CieXYZ X value.
     """
-    CIEXYZ_Y: int = 16
+    CIEXYZ_Y: int = ...
     """
     CieXYZ Y value.
     """
-    CIEXYZ_Z: int = 17
+    CIEXYZ_Z: int = ...
     """
     CieXYZ Z value.
     """
-    CIELAB_L: int = 18
+    CIELAB_L: int = ...
     """
     CieLab L value.
     """
-    CIELAB_A: int = 19
+    CIELAB_A: int = ...
     """
     CieLab a value.
     """
-    CIELAB_B: int = 20
+    CIELAB_B: int = ...
     """
     CieLab b value.
     """
-    HSV_H: int = 21
+    HSV_H: int = ...
     """
     HSV H value.
     """
-    HSV_S: int = 22
+    HSV_S: int = ...
     """
     HSV S value.
     """
-    HSV_V: int = 23
+    HSV_V: int = ...
     """
     HSV V value.
     """
-    HSL_H: int = 24
+    HSL_H: int = ...
     """
     HSL H value.
     """
-    HSL_S: int = 25
+    HSL_S: int = ...
     """
     HSL S value.
     """
-    HSL_L: int = 26
+    HSL_L: int = ...
     """
     HSL L value.
     """
-    YCBCR_Y: int = 27
+    YCBCR_Y: int = ...
     """
     YCbCr Y value.
     """
-    YCBCR_CB: int = 28
+    YCBCR_CB: int = ...
     """
     YCbCr Cb value.
     """
-    YCBCR_CR: int = 29
+    YCBCR_CR: int = ...
     """
     YCbCr Cr value.
     """

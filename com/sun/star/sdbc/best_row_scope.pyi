@@ -21,7 +21,7 @@
 import typing
 
 
-class BestRowScope(object):
+class BestRowScope:
     """
     Const
 
@@ -30,19 +30,19 @@ class BestRowScope(object):
     See Also:
         `API BestRowScope <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1BestRowScope.html>`_
     """
-    TEMPORARY: int = 0
+    TEMPORARY: int = ...
     """
     indicates that the scope of the best row identifier is very temporary, lasting only while the row is being used.
     
     A possible value for the column SCOPE in the com.sun.star.sdbc.XResultSet object returned by the method XDatabaseMetaData.getBestRowIdentifier().
     """
-    TRANSACTION: int = 1
+    TRANSACTION: int = ...
     """
     indicates that the scope of the best row identifier is the remainder of the current transaction.
     
     A possible value for the column SCOPE in the com.sun.star.sdbc.XResultSet object returned by the method XDatabaseMetaData.getBestRowIdentifier().
     """
-    SESSION: int = 2
+    SESSION: int = ...
     """
     indicates that the scope of the best row identifier is the remainder of the current session.
     

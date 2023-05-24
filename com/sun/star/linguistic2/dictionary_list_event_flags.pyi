@@ -21,7 +21,7 @@
 import typing
 
 
-class DictionaryListEventFlags(object):
+class DictionaryListEventFlags:
     """
     Const
 
@@ -32,35 +32,35 @@ class DictionaryListEventFlags(object):
     See Also:
         `API DictionaryListEventFlags <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1linguistic2_1_1DictionaryListEventFlags.html>`_
     """
-    ADD_POS_ENTRY: int = 1
+    ADD_POS_ENTRY: int = ...
     """
     A positive entry was added to a dictionary from the dictionary list.
     """
-    DEL_POS_ENTRY: int = 2
+    DEL_POS_ENTRY: int = ...
     """
     A positive entry was deleted from a dictionary of the dictionary-list or a dictionary with positive entries was cleared.
     """
-    ADD_NEG_ENTRY: int = 4
+    ADD_NEG_ENTRY: int = ...
     """
     A negative entry was added to a dictionary from the dictionary-list.
     """
-    DEL_NEG_ENTRY: int = 8
+    DEL_NEG_ENTRY: int = ...
     """
     A negative entry was deleted from a dictionary of the dictionary-list or a dictionary with negative entries was cleared.
     """
-    ACTIVATE_POS_DIC: int = 16
+    ACTIVATE_POS_DIC: int = ...
     """
     A dictionary with positive entries was activated or has changed its language.
     """
-    DEACTIVATE_POS_DIC: int = 32
+    DEACTIVATE_POS_DIC: int = ...
     """
     A dictionary with positive entries was deactivated or has changed its language.
     """
-    ACTIVATE_NEG_DIC: int = 64
+    ACTIVATE_NEG_DIC: int = ...
     """
     A dictionary with negative entries was activated or has changed its language.
     """
-    DEACTIVATE_NEG_DIC: int = 128
+    DEACTIVATE_NEG_DIC: int = ...
     """
     A dictionary with negative entries was deactivated or has changed its language.
     """

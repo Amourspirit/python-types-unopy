@@ -21,7 +21,7 @@
 import typing
 
 
-class FrameSearchFlag(object):
+class FrameSearchFlag:
     """
     Const
 
@@ -32,47 +32,47 @@ class FrameSearchFlag(object):
     See Also:
         `API FrameSearchFlag <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1frame_1_1FrameSearchFlag.html>`_
     """
-    AUTO: int = 0
+    AUTO: int = ...
     """
     no longer supported
     
     Using of this flag will do nothing. Use right combination of other flags instead of this one.
     """
-    PARENT: int = 1
+    PARENT: int = ...
     """
     allows search on the parent frames
     """
-    SELF: int = 2
+    SELF: int = ...
     """
     includes the start frame himself
     """
-    CHILDREN: int = 4
+    CHILDREN: int = ...
     """
     includes all child frames of the start frame
     
     Note: That means all direct children and of course her children too. Search doesn't stop at the next level inside the tree!
     """
-    CREATE: int = 8
+    CREATE: int = ...
     """
     frame will be created if not found
     """
-    SIBLINGS: int = 16
+    SIBLINGS: int = ...
     """
     includes the direct siblings of the start frame
     
     Normally it's interpreted as search on the direct children of the parent only. But in combination with e.g. the CHILDREN flag it can include all children of it too.
     """
-    TASKS: int = 32
+    TASKS: int = ...
     """
     allow the search outside the current sub task tree of the whole possible frame tree
     
     If this flag isn't present, any search from bottom to top has to stop, if a top frame will be reached. It doesn't influence a search from top to bottom. But it can be used at the root of the frame tree to search on direct children of it only. Because the direct children of the root node are the root's of the task sub trees, which are top frames too. Instead of using the CHILDREN flag there, it's possible so to suppress a deeper search so.
     """
-    ALL: int = 23
+    ALL: int = ...
     """
     includes all frames except frames in other tasks sub trees but doesn't create any new frame
     """
-    GLOBAL: int = 55
+    GLOBAL: int = ...
     """
     searches in the whole hierarchy of frames but doesn't create any new frame
     """

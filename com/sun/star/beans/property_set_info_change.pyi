@@ -21,7 +21,7 @@
 import typing
 
 
-class PropertySetInfoChange(object):
+class PropertySetInfoChange:
     """
     Const
 
@@ -30,11 +30,11 @@ class PropertySetInfoChange(object):
     See Also:
         `API PropertySetInfoChange <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1beans_1_1PropertySetInfoChange.html>`_
     """
-    PROPERTY_INSERTED: int = 0
+    PROPERTY_INSERTED: int = ...
     """
     A property was inserted into a XPropertySetInfo.
     """
-    PROPERTY_REMOVED: int = 1
+    PROPERTY_REMOVED: int = ...
     """
     A property was removed from a XPropertySetInfo.
     """

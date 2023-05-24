@@ -21,7 +21,7 @@
 import typing
 
 
-class DataPilotTablePositionType(object):
+class DataPilotTablePositionType:
     """
     Const
 
@@ -34,23 +34,23 @@ class DataPilotTablePositionType(object):
     See Also:
         `API DataPilotTablePositionType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DataPilotTablePositionType.html>`_
     """
-    NOT_IN_TABLE: int = 0
+    NOT_IN_TABLE: int = ...
     """
     indicates that the specified cell is not in the DataPilot table.
     """
-    RESULT: int = 1
+    RESULT: int = ...
     """
     indicates that the specified cell is within the result area.
     """
-    ROW_HEADER: int = 2
+    ROW_HEADER: int = ...
     """
     indicates that the specified cell is within the row header area.
     """
-    COLUMN_HEADER: int = 3
+    COLUMN_HEADER: int = ...
     """
     indicates that the specified cell is within the column header area.
     """
-    OTHER: int = 4
+    OTHER: int = ...
     """
     indicates that the specified cell is within the table but in areas other than the result or header areas.
     """

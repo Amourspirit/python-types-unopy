@@ -21,7 +21,7 @@
 import typing
 
 
-class Deferrability(object):
+class Deferrability:
     """
     Const
 
@@ -30,19 +30,19 @@ class Deferrability(object):
     See Also:
         `API Deferrability <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1Deferrability.html>`_
     """
-    INITIALLY_DEFERRED: int = 5
+    INITIALLY_DEFERRED: int = ...
     """
     A possible value for the column DEFERRABILITY in the XResultSet objects returned by the methods getImportedKeys, getExportedKeys, and getCrossReference.
     
     Indicates deferrability. See SQL-92 for a definition.
     """
-    INITIALLY_IMMEDIATE: int = 6
+    INITIALLY_IMMEDIATE: int = ...
     """
     A possible value for the column DEFERRABILITY in the XResultSet objects returned by the methods getImportedKeys, getExportedKeys, and getCrossReference.
     
     Indicates deferrability. See SQL-92 for a definition.
     """
-    NONE: int = 7
+    NONE: int = ...
     """
     A possible value for the column DEFERRABILITY in the XResultSet objects returned by the methods getImportedKeys, getExportedKeys, and getCrossReference.
     

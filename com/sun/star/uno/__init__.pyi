@@ -3,7 +3,6 @@ from .exception import Exception as Exception
 from .naming_service import NamingService as NamingService
 from .runtime_exception import RuntimeException as RuntimeException
 from .security_exception import SecurityException as SecurityException
-from .type_class import TypeClass as TypeClass
 from .uik import Uik as Uik
 from .x_adapter import XAdapter as XAdapter
 from .x_aggregation import XAggregation as XAggregation

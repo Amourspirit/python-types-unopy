@@ -21,7 +21,7 @@
 import typing
 
 
-class SystemShellExecuteFlags(object):
+class SystemShellExecuteFlags:
     """
     Const
 
@@ -34,15 +34,15 @@ class SystemShellExecuteFlags(object):
     See Also:
         `API SystemShellExecuteFlags <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1system_1_1SystemShellExecuteFlags.html>`_
     """
-    DEFAULTS: int = 0
+    DEFAULTS: int = ...
     """
     Uses the default settings for executing commands.
     """
-    NO_SYSTEM_ERROR_MESSAGE: int = 1
+    NO_SYSTEM_ERROR_MESSAGE: int = ...
     """
     Prevents the display of system error message boxes if the method com.sun.star.system.XSystemShellExecute.execute() fails.
     """
-    URIS_ONLY: int = 2
+    URIS_ONLY: int = ...
     """
     Only allows opening of absolute URI references.
     

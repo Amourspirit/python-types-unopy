@@ -21,7 +21,7 @@
 import typing
 
 
-class TolerantPropertySetResultType(object):
+class TolerantPropertySetResultType:
     """
     Const
 
@@ -32,33 +32,33 @@ class TolerantPropertySetResultType(object):
     See Also:
         `API TolerantPropertySetResultType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1beans_1_1TolerantPropertySetResultType.html>`_
     """
-    SUCCESS: int = 0
+    SUCCESS: int = ...
     """
     the property has been successfully set or retrieved.
     """
-    UNKNOWN_PROPERTY: int = 1
+    UNKNOWN_PROPERTY: int = ...
     """
     the property is not available.
     
     For example if a com.sun.star.beans.UnknownPropertyException was caught.
     """
-    ILLEGAL_ARGUMENT: int = 2
+    ILLEGAL_ARGUMENT: int = ...
     """
     the value used with the property is not valid.
     
     For example if a com.sun.star.lang.IllegalArgumentException was caught.
     """
-    PROPERTY_VETO: int = 3
+    PROPERTY_VETO: int = ...
     """
     the property could not be changed at that time.
     
     For example if a com.sun.star.beans.PropertyVetoException was caught.
     """
-    WRAPPED_TARGET: int = 4
+    WRAPPED_TARGET: int = ...
     """
     a com.sun.star.lang.WrappedTargetException did occur.
     """
-    UNKNOWN_FAILURE: int = 5
+    UNKNOWN_FAILURE: int = ...
     """
     the operation failed and the reason is not known.
     """

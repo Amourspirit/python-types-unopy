@@ -21,7 +21,7 @@
 import typing
 
 
-class CopyTableContinuation(object):
+class CopyTableContinuation:
     """
     Const
 
@@ -30,19 +30,19 @@ class CopyTableContinuation(object):
     See Also:
         `API CopyTableContinuation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdb_1_1application_1_1CopyTableContinuation.html>`_
     """
-    Proceed: int = 0
+    Proceed: int = ...
     """
     indicates the error should be ignored, and copying should be continued.
     """
-    CallNextHandler: int = 1
+    CallNextHandler: int = ...
     """
     is used to indicate the next registered XCopyTableListener should be called.
     """
-    Cancel: int = 2
+    Cancel: int = ...
     """
     cancels the whole copying process
     """
-    AskUser: int = 3
+    AskUser: int = ...
     """
     asks the user how the handle the error.
     

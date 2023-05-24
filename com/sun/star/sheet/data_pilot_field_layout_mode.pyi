@@ -21,7 +21,7 @@
 import typing
 
 
-class DataPilotFieldLayoutMode(object):
+class DataPilotFieldLayoutMode:
     """
     Const
 
@@ -30,19 +30,19 @@ class DataPilotFieldLayoutMode(object):
     See Also:
         `API DataPilotFieldLayoutMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DataPilotFieldLayoutMode.html>`_
     """
-    TABULAR_LAYOUT: int = 0
+    TABULAR_LAYOUT: int = ...
     """
     Tabular layout mode is the layout, where each item's name is on the same row as the first item from the following field.
     
     Subtotals are always shown below an item's data in this mode.
     """
-    OUTLINE_SUBTOTALS_TOP: int = 1
+    OUTLINE_SUBTOTALS_TOP: int = ...
     """
     In outline layout mode, the items from the following field start in the row below an item's name, like in traditional database reports.
     
     Subtotals are shown at the top (on the same row as the item's name). When the subtotals take up more than one row (manually selected, or because there are several data fields), they are always shown below the item's data, regardless of the setting.
     """
-    OUTLINE_SUBTOTALS_BOTTOM: int = 2
+    OUTLINE_SUBTOTALS_BOTTOM: int = ...
     """
     In outline layout mode, the items from the following field start in the row below an item's name, like in traditional database reports.
     

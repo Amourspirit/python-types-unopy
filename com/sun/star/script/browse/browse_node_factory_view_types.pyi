@@ -21,7 +21,7 @@
 import typing
 
 
-class BrowseNodeFactoryViewTypes(object):
+class BrowseNodeFactoryViewTypes:
     """
     Const
 
@@ -30,11 +30,11 @@ class BrowseNodeFactoryViewTypes(object):
     See Also:
         `API BrowseNodeFactoryViewTypes <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1script_1_1browse_1_1BrowseNodeFactoryViewTypes.html>`_
     """
-    MACROSELECTOR: int = 0
+    MACROSELECTOR: int = ...
     """
     Indicates view is a script selector.
     """
-    MACROORGANIZER: int = 1
+    MACROORGANIZER: int = ...
     """
     Indicates view is script organizer.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class Style(object):
+class Style:
     """
     Const
 
@@ -30,11 +30,11 @@ class Style(object):
     See Also:
         `API Style <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1Style.html>`_
     """
-    FRAME: int = 0
+    FRAME: int = ...
     """
     specifies a frame.
     """
-    DIALOG: int = 1
+    DIALOG: int = ...
     """
     specifies a dialog.
     """

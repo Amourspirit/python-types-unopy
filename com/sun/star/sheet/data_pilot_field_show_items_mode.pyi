@@ -21,7 +21,7 @@
 import typing
 
 
-class DataPilotFieldShowItemsMode(object):
+class DataPilotFieldShowItemsMode:
     """
     Const
 
@@ -30,11 +30,11 @@ class DataPilotFieldShowItemsMode(object):
     See Also:
         `API DataPilotFieldShowItemsMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DataPilotFieldShowItemsMode.html>`_
     """
-    FROM_TOP: int = 0
+    FROM_TOP: int = ...
     """
     The first items are shown.
     """
-    FROM_BOTTOM: int = 1
+    FROM_BOTTOM: int = ...
     """
     The last items are shown.
     """

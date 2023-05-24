@@ -21,7 +21,7 @@
 import typing
 
 
-class LabelFollow(object):
+class LabelFollow:
     """
     Const
 
@@ -30,19 +30,19 @@ class LabelFollow(object):
     See Also:
         `API LabelFollow <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1LabelFollow.html>`_
     """
-    LISTTAB: int = 0
+    LISTTAB: int = ...
     """
     list tab stop
     """
-    SPACE: int = 1
+    SPACE: int = ...
     """
     space
     """
-    NOTHING: int = 2
+    NOTHING: int = ...
     """
     nothing
     """
-    NEWLINE: int = 3
+    NEWLINE: int = ...
     """
     new line
     """

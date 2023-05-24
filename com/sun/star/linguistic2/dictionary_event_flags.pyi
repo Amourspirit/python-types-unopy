@@ -21,7 +21,7 @@
 import typing
 
 
-class DictionaryEventFlags(object):
+class DictionaryEventFlags:
     """
     Const
 
@@ -32,31 +32,31 @@ class DictionaryEventFlags(object):
     See Also:
         `API DictionaryEventFlags <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1linguistic2_1_1DictionaryEventFlags.html>`_
     """
-    ADD_ENTRY: int = 1
+    ADD_ENTRY: int = ...
     """
     indicates that at least one entry has been added.
     """
-    DEL_ENTRY: int = 2
+    DEL_ENTRY: int = ...
     """
     indicates that at least one entry has been deleted.
     """
-    CHG_NAME: int = 4
+    CHG_NAME: int = ...
     """
     the dictionary's name has changed.
     """
-    CHG_LANGUAGE: int = 8
+    CHG_LANGUAGE: int = ...
     """
     the dictionary's language has changed.
     """
-    ENTRIES_CLEARED: int = 16
+    ENTRIES_CLEARED: int = ...
     """
     all entries have been removed.
     """
-    ACTIVATE_DIC: int = 32
+    ACTIVATE_DIC: int = ...
     """
     used when the dictionary was activated.
     """
-    DEACTIVATE_DIC: int = 64
+    DEACTIVATE_DIC: int = ...
     """
     used when the dictionary was deactivated.
     """

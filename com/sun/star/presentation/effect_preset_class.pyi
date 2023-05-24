@@ -21,7 +21,7 @@
 import typing
 
 
-class EffectPresetClass(object):
+class EffectPresetClass:
     """
     Const
 
@@ -32,11 +32,11 @@ class EffectPresetClass(object):
     See Also:
         `API EffectPresetClass <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1presentation_1_1EffectPresetClass.html>`_
     """
-    CUSTOM: int = 0
-    ENTRANCE: int = 1
-    EXIT: int = 2
-    EMPHASIS: int = 3
-    MOTIONPATH: int = 4
-    OLEACTION: int = 5
-    MEDIACALL: int = 6
+    CUSTOM: int = ...
+    ENTRANCE: int = ...
+    EXIT: int = ...
+    EMPHASIS: int = ...
+    MOTIONPATH: int = ...
+    OLEACTION: int = ...
+    MEDIACALL: int = ...
 

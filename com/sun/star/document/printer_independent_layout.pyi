@@ -21,7 +21,7 @@
 import typing
 
 
-class PrinterIndependentLayout(object):
+class PrinterIndependentLayout:
     """
     Const
 
@@ -34,16 +34,16 @@ class PrinterIndependentLayout(object):
     See Also:
         `API PrinterIndependentLayout <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1document_1_1PrinterIndependentLayout.html>`_
     """
-    DISABLED: int = 1
+    DISABLED: int = ...
     """
     use printer-dependent metrics for layout
     """
-    LOW_RESOLUTION: int = 2
+    LOW_RESOLUTION: int = ...
     """
     use printer-independent metrics for layout, assuming a generic 600dpi printer
     """
-    ENABLED: int = 2
-    HIGH_RESOLUTION: int = 3
+    ENABLED: int = ...
+    HIGH_RESOLUTION: int = ...
     """
     use printer-independent metrics for layout, assuming a generic high-resolution printer (4800dpi)
     """

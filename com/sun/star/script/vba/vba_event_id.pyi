@@ -21,7 +21,7 @@
 import typing
 
 
-class VBAEventId(object):
+class VBAEventId:
     """
     Const
 
@@ -34,173 +34,173 @@ class VBAEventId(object):
     See Also:
         `API VBAEventId <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1script_1_1vba_1_1VBAEventId.html>`_
     """
-    NO_EVENT: int = -1
+    NO_EVENT: int = ...
     """
     An identifier not corresponding to any VBA document event.
     """
-    AUTO_NEW: int = 1
+    AUTO_NEW: int = ...
     """
     New document opened from template.
     
     No arguments.
     """
-    AUTO_OPEN: int = 2
+    AUTO_OPEN: int = ...
     """
     Document opened (loaded).
     
     No arguments.
     """
-    AUTO_CLOSE: int = 3
+    AUTO_CLOSE: int = ...
     """
     Document about to be closed.
     
     No arguments.
     """
-    AUTO_EXEC: int = 4
+    AUTO_EXEC: int = ...
     """
     Application start.
     
     No arguments.
     """
-    AUTO_EXIT: int = 5
+    AUTO_EXIT: int = ...
     """
     Application exit.
     
     No arguments.
     """
-    DOCUMENT_NEW: int = 1001
+    DOCUMENT_NEW: int = ...
     """
     New text document opened from template.
     
     No arguments.
     """
-    DOCUMENT_OPEN: int = 1002
+    DOCUMENT_OPEN: int = ...
     """
     Text document opened (loaded).
     
     No arguments.
     """
-    DOCUMENT_CLOSE: int = 1003
+    DOCUMENT_CLOSE: int = ...
     """
     Document about to be closed.
     
     No arguments.
     """
-    WORKBOOK_ACTIVATE: int = 2001
+    WORKBOOK_ACTIVATE: int = ...
     """
     Document activated.
     
     No arguments.
     """
-    WORKBOOK_DEACTIVATE: int = 2002
+    WORKBOOK_DEACTIVATE: int = ...
     """
     Document deactivated.
     
     No arguments.
     """
-    WORKBOOK_OPEN: int = 2003
+    WORKBOOK_OPEN: int = ...
     """
     Document opened (loaded).
     
     No arguments.
     """
-    WORKBOOK_BEFORECLOSE: int = 2004
+    WORKBOOK_BEFORECLOSE: int = ...
     """
     Document about to be closed.
     
     Arguments: [out] boolean bCancel.
     """
-    WORKBOOK_BEFOREPRINT: int = 2005
+    WORKBOOK_BEFOREPRINT: int = ...
     """
     Document about to be printed.
     
     Arguments: [out] boolean bCancel.
     """
-    WORKBOOK_BEFORESAVE: int = 2006
+    WORKBOOK_BEFORESAVE: int = ...
     """
     Document about to be saved.
     
     Arguments: boolean bSaveAs, [out] boolean bCancel.
     """
-    WORKBOOK_AFTERSAVE: int = 2007
+    WORKBOOK_AFTERSAVE: int = ...
     """
     Document has been saved.
     
     Arguments: boolean bSuccess.
     """
-    WORKBOOK_NEWSHEET: int = 2008
+    WORKBOOK_NEWSHEET: int = ...
     """
     New sheet inserted.
     
     Arguments: short nSheet.
     """
-    WORKBOOK_WINDOWACTIVATE: int = 2009
+    WORKBOOK_WINDOWACTIVATE: int = ...
     """
     Document window has been activated.
     
     Arguments: XController aController.
     """
-    WORKBOOK_WINDOWDEACTIVATE: int = 2010
+    WORKBOOK_WINDOWDEACTIVATE: int = ...
     """
     Document window has been deactivated.
     
     Arguments: XController aController.
     """
-    WORKBOOK_WINDOWRESIZE: int = 2011
+    WORKBOOK_WINDOWRESIZE: int = ...
     """
     Document window has been resized.
     
     Arguments: XController aController.
     """
-    WORKSHEET_ACTIVATE: int = 2101
+    WORKSHEET_ACTIVATE: int = ...
     """
     Worksheet has been activated (made visible).
     
     Arguments: short nSheet.
     """
-    WORKSHEET_DEACTIVATE: int = 2102
+    WORKSHEET_DEACTIVATE: int = ...
     """
     Worksheet has been activated (made visible).
     
     Arguments: short nSheet.
     """
-    WORKSHEET_BEFOREDOUBLECLICK: int = 2103
+    WORKSHEET_BEFOREDOUBLECLICK: int = ...
     """
     Double click in the sheet.
     
     Arguments: XRange/XSheetCellRangeContainer aRange, [out] boolean bCancel.
     """
-    WORKSHEET_BEFORERIGHTCLICK: int = 2104
+    WORKSHEET_BEFORERIGHTCLICK: int = ...
     """
     Right click in the sheet.
     
     Arguments: XRange/XSheetCellRangeContainer aRange, [out] boolean bCancel.
     """
-    WORKSHEET_CALCULATE: int = 2105
+    WORKSHEET_CALCULATE: int = ...
     """
     Cells in sheet have been recalculated.
     
     Arguments: short nSheet.
     """
-    WORKSHEET_CHANGE: int = 2106
+    WORKSHEET_CHANGE: int = ...
     """
     Cells in sheet have been changed.
     
     Arguments: XRange/XSheetCellRangeContainer aRange.
     """
-    WORKSHEET_SELECTIONCHANGE: int = 2107
+    WORKSHEET_SELECTIONCHANGE: int = ...
     """
     Selection in sheet has been changed.
     
     Arguments: XRange/XSheetCellRangeContainer aRange.
     """
-    WORKSHEET_FOLLOWHYPERLINK: int = 2108
+    WORKSHEET_FOLLOWHYPERLINK: int = ...
     """
     Hyperlink has been clicked.
     
     Arguments: XCell aCell.
     """
-    USERDEFINED_START: int = 1000000
+    USERDEFINED_START: int = ...
     """
     Implementations are allowed to use identifiers above this value for any internal purpose.
     """

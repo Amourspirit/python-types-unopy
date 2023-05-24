@@ -1,6 +1,4 @@
 from .const_of_security_id import ConstOfSecurityId as ConstOfSecurityId
-from .element_mark_priority import ElementMarkPriority as ElementMarkPriority
-from .element_mark_type import ElementMarkType as ElementMarkType
 from .element_stack_item import ElementStackItem as ElementStackItem
 from .x_blocker_monitor import XBlockerMonitor as XBlockerMonitor
 from .x_decryption_result_broadcaster import XDecryptionResultBroadcaster as XDecryptionResultBroadcaster

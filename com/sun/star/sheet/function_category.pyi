@@ -21,7 +21,7 @@
 import typing
 
 
-class FunctionCategory(object):
+class FunctionCategory:
     """
     Const
 
@@ -30,47 +30,47 @@ class FunctionCategory(object):
     See Also:
         `API FunctionCategory <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1FunctionCategory.html>`_
     """
-    DATABASE: int = 1
+    DATABASE: int = ...
     """
     specifies a database function.
     """
-    DATETIME: int = 2
+    DATETIME: int = ...
     """
     specifies a function that calculates with dates and/or times.
     """
-    FINANCIAL: int = 3
+    FINANCIAL: int = ...
     """
     specifies a financial function.
     """
-    INFORMATION: int = 4
+    INFORMATION: int = ...
     """
     specifies a function that returns information about the cell, the cell contents or the current formula.
     """
-    LOGICAL: int = 5
+    LOGICAL: int = ...
     """
     specifies a boolean function.
     """
-    MATHEMATICAL: int = 6
+    MATHEMATICAL: int = ...
     """
     specifies a common mathematical function
     """
-    MATRIX: int = 7
+    MATRIX: int = ...
     """
     specifies a matrix function.
     """
-    STATISTICAL: int = 8
+    STATISTICAL: int = ...
     """
     specifies a statistical function
     """
-    SPREADSHEET: int = 9
+    SPREADSHEET: int = ...
     """
     specifies a function that returns information using the spreadsheet contents or specific cell positions.
     """
-    TEXT: int = 10
+    TEXT: int = ...
     """
     specifies a text function.
     """
-    ADDIN: int = 11
+    ADDIN: int = ...
     """
     specifies a common add-in function.
     """

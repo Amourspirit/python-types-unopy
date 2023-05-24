@@ -21,7 +21,7 @@
 import typing
 
 
-class KParseTokens(object):
+class KParseTokens:
     """
     Const
 
@@ -36,83 +36,83 @@ class KParseTokens(object):
     See Also:
         `API KParseTokens <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1KParseTokens.html>`_
     """
-    ASC_UPALPHA: int = 1
+    ASC_UPALPHA: int = ...
     """
     ASCII A-Z upper alpha.
     """
-    ASC_LOALPHA: int = 2
+    ASC_LOALPHA: int = ...
     """
     ASCII a-z lower alpha.
     """
-    ASC_DIGIT: int = 4
+    ASC_DIGIT: int = ...
     """
     ASCII 0-9 digit.
     """
-    ASC_UNDERSCORE: int = 8
+    ASC_UNDERSCORE: int = ...
     """
     ASCII '_' underscore.
     """
-    ASC_DOLLAR: int = 16
+    ASC_DOLLAR: int = ...
     """
     ASCII '$' dollar.
     """
-    ASC_DOT: int = 32
+    ASC_DOT: int = ...
     """
     ASCII '.' dot/point.
     """
-    ASC_COLON: int = 64
+    ASC_COLON: int = ...
     """
     ASCII ':' colon.
     """
-    ASC_CONTROL: int = 512
+    ASC_CONTROL: int = ...
     """
     Special value to allow control characters (0x00 < char < 0x20)
     """
-    ASC_ANY_BUT_CONTROL: int = 1024
+    ASC_ANY_BUT_CONTROL: int = ...
     """
     Special value to allow anything below 128 except control characters.
     
     Not set in ParseResult.
     """
-    ASC_OTHER: int = 2048
+    ASC_OTHER: int = ...
     """
     Additional flag set in ParseResult.StartFlags or ParseResult.ContFlags.
     
     Set if none of the above ASC_... (except ASC_ANY_...) single values match an ASCII character parsed.
     """
-    UNI_UPALPHA: int = 4096
+    UNI_UPALPHA: int = ...
     """
     Unicode (above 127) upper case letter.
     """
-    UNI_LOALPHA: int = 8192
+    UNI_LOALPHA: int = ...
     """
     Unicode (above 127) lower case letter.
     """
-    UNI_DIGIT: int = 16384
+    UNI_DIGIT: int = ...
     """
     Unicode (above 127) decimal digit number.
     """
-    UNI_TITLE_ALPHA: int = 32768
+    UNI_TITLE_ALPHA: int = ...
     """
     Unicode (above 127) title case letter.
     """
-    UNI_MODIFIER_LETTER: int = 65536
+    UNI_MODIFIER_LETTER: int = ...
     """
     Unicode (above 127) modifier letter.
     """
-    UNI_OTHER_LETTER: int = 131072
+    UNI_OTHER_LETTER: int = ...
     """
     Unicode (above 127) other letter.
     """
-    UNI_LETTER_NUMBER: int = 262144
+    UNI_LETTER_NUMBER: int = ...
     """
     Unicode (above 127) letter number.
     """
-    UNI_OTHER_NUMBER: int = 524288
+    UNI_OTHER_NUMBER: int = ...
     """
     Unicode (above 127) other number.
     """
-    GROUP_SEPARATOR_IN_NUMBER: int = 134217728
+    GROUP_SEPARATOR_IN_NUMBER: int = ...
     """
     If this bit is set in nContCharFlags parameters, the locale's group separator characters in numbers are accepted and ignored/skipped.
     
@@ -124,7 +124,7 @@ class KParseTokens(object):
     
         LibreOffice 6.2
     """
-    TWO_DOUBLE_QUOTES_BREAK_STRING: int = 268435456
+    TWO_DOUBLE_QUOTES_BREAK_STRING: int = ...
     """
     If this bit is set in nContCharFlags parameters and a string enclosed in double quotes is parsed and two consecutive double quotes are encountered, the string is ended.
     
@@ -132,63 +132,63 @@ class KParseTokens(object):
     
     Example: \"abc\"\"def\" --> bit not set => abc\"def <br/>\"abc\"\"def\" --> bit set => abc
     """
-    UNI_OTHER: int = 536870912
+    UNI_OTHER: int = ...
     """
     Additional flag set in ParseResult.StartFlags or ParseResult.ContFlags.
     
     Set if none of the above UNI_... single values match a Unicode character parsed.
     """
-    IGNORE_LEADING_WS: int = 1073741824
+    IGNORE_LEADING_WS: int = ...
     """
     Only valid for nStartCharFlags parameter to CharacterClassification.parseAnyToken() and CharacterClassification.parsePredefinedToken(), ignored on nContCharFlags parameter.
     
     Not set in ParseResult.
     """
-    ASC_ALPHA: str
+    ASC_ALPHA: str = ...
     """
     ASCII a-zA-Z lower or upper alpha.
     """
-    ASC_ALNUM: str
+    ASC_ALNUM: str = ...
     """
     ASCII a-zA-Z0-9 alphanumeric.
     """
-    UNI_ALPHA: str
+    UNI_ALPHA: str = ...
     """
     Unicode (above 127) lower or upper or title case alpha.
     """
-    UNI_ALNUM: str
+    UNI_ALNUM: str = ...
     """
     Unicode (above 127) alphanumeric.
     """
-    UNI_LETTER: str
+    UNI_LETTER: str = ...
     """
     Unicode (above 127) alpha or letter.
     """
-    UNI_NUMBER: str
+    UNI_NUMBER: str = ...
     """
     Unicode (above 127) number.
     """
-    ANY_ALPHA: str
+    ANY_ALPHA: str = ...
     """
     any (ASCII or Unicode) alpha
     """
-    ANY_DIGIT: str
+    ANY_DIGIT: str = ...
     """
     any (ASCII or Unicode) digit
     """
-    ANY_ALNUM: str
+    ANY_ALNUM: str = ...
     """
     any (ASCII or Unicode) alphanumeric
     """
-    ANY_LETTER: str
+    ANY_LETTER: str = ...
     """
     any (ASCII or Unicode) letter
     """
-    ANY_NUMBER: str
+    ANY_NUMBER: str = ...
     """
     any (ASCII or Unicode) number
     """
-    ANY_LETTER_OR_NUMBER: str
+    ANY_LETTER_OR_NUMBER: str = ...
     """
     any (ASCII or Unicode) letter or number
     """

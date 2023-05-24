@@ -21,7 +21,7 @@
 import typing
 
 
-class StorageFormats(object):
+class StorageFormats:
     """
     Const
 
@@ -34,15 +34,15 @@ class StorageFormats(object):
     See Also:
         `API StorageFormats <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1embed_1_1StorageFormats.html>`_
     """
-    PACKAGE: int = 1
+    PACKAGE: int = ...
     """
     specifies package format
     """
-    ZIP: int = 2
+    ZIP: int = ...
     """
     specifies zip format
     """
-    OFOPXML: int = 3
+    OFOPXML: int = ...
     """
     specifies Office Open XML format
     """
