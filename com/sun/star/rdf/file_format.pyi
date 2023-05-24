@@ -21,7 +21,7 @@
 import typing
 
 
-class FileFormat(object):
+class FileFormat:
     """
     Const
 
@@ -38,27 +38,27 @@ class FileFormat(object):
     See Also:
         `API FileFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rdf_1_1FileFormat.html>`_
     """
-    RDF_XML: int = 0
+    RDF_XML: int = ...
     """
     RDF/XML
     """
-    N3: int = 1
+    N3: int = ...
     """
     N3 (Notation-3)
     """
-    NTRIPLES: int = 2
+    NTRIPLES: int = ...
     """
     N-Triples
     """
-    TRIG: int = 3
+    TRIG: int = ...
     """
     TriG
     """
-    TRIX: int = 4
+    TRIX: int = ...
     """
     TriX
     """
-    TURTLE: int = 5
+    TURTLE: int = ...
     """
     Turtle
     """

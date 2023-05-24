@@ -21,7 +21,7 @@
 import typing
 
 
-class DataPilotFieldSortMode(object):
+class DataPilotFieldSortMode:
     """
     Const
 
@@ -30,19 +30,19 @@ class DataPilotFieldSortMode(object):
     See Also:
         `API DataPilotFieldSortMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DataPilotFieldSortMode.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     the data are taken as they come from the DataPilotSource.
     """
-    MANUAL: int = 1
+    MANUAL: int = ...
     """
     the user can sort the fields
     """
-    NAME: int = 2
+    NAME: int = ...
     """
     the field is sorted by its names
     """
-    DATA: int = 3
+    DATA: int = ...
     """
     the field is sorted by the data in the given field
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class SQLFilterOperator(object):
+class SQLFilterOperator:
     """
     Const
 
@@ -30,43 +30,43 @@ class SQLFilterOperator(object):
     See Also:
         `API SQLFilterOperator <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdb_1_1SQLFilterOperator.html>`_
     """
-    EQUAL: int = 1
+    EQUAL: int = ...
     """
     equal to
     """
-    NOT_EQUAL: int = 2
+    NOT_EQUAL: int = ...
     """
     not equal to
     """
-    LESS: int = 3
+    LESS: int = ...
     """
     less than
     """
-    GREATER: int = 4
+    GREATER: int = ...
     """
     greater than
     """
-    LESS_EQUAL: int = 5
+    LESS_EQUAL: int = ...
     """
     less or equal than
     """
-    GREATER_EQUAL: int = 6
+    GREATER_EQUAL: int = ...
     """
     greater or equal than
     """
-    LIKE: int = 7
+    LIKE: int = ...
     """
     like
     """
-    NOT_LIKE: int = 8
+    NOT_LIKE: int = ...
     """
     not like
     """
-    SQLNULL: int = 9
+    SQLNULL: int = ...
     """
     is null
     """
-    NOT_SQLNULL: int = 10
+    NOT_SQLNULL: int = ...
     """
     is not null
     """

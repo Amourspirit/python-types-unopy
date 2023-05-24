@@ -21,7 +21,7 @@
 import typing
 
 
-class MissingValueTreatment(object):
+class MissingValueTreatment:
     """
     Const
 
@@ -30,7 +30,7 @@ class MissingValueTreatment(object):
     See Also:
         `API MissingValueTreatment <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart_1_1MissingValueTreatment.html>`_
     """
-    LEAVE_GAP: int = 0
-    USE_ZERO: int = 1
-    CONTINUE: int = 2
+    LEAVE_GAP: int = ...
+    USE_ZERO: int = ...
+    CONTINUE: int = ...
 

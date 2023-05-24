@@ -21,7 +21,7 @@
 import typing
 
 
-class CompareBookmark(object):
+class CompareBookmark:
     """
     Const
 
@@ -30,23 +30,23 @@ class CompareBookmark(object):
     See Also:
         `API CompareBookmark <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbcx_1_1CompareBookmark.html>`_
     """
-    LESS: int = -1
+    LESS: int = ...
     """
     the first bookmark is before the second.
     """
-    EQUAL: int = 0
+    EQUAL: int = ...
     """
     the first bookmark is equal to the second.
     """
-    GREATER: int = 1
+    GREATER: int = ...
     """
     the first bookmark is after the second one.
     """
-    NOT_EQUAL: int = 2
+    NOT_EQUAL: int = ...
     """
     the first bookmark is not the same as the second one.
     """
-    NOT_COMPARABLE: int = 3
+    NOT_COMPARABLE: int = ...
     """
     the two bookmarks are not comparable.
     """

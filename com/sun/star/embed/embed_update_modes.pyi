@@ -21,7 +21,7 @@
 import typing
 
 
-class EmbedUpdateModes(object):
+class EmbedUpdateModes:
     """
     Const
 
@@ -30,13 +30,13 @@ class EmbedUpdateModes(object):
     See Also:
         `API EmbedUpdateModes <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1embed_1_1EmbedUpdateModes.html>`_
     """
-    ALWAYS_UPDATE: int = 0
+    ALWAYS_UPDATE: int = ...
     """
     An object representation should be updated as often as possible.
     
     Any time object detects that it is changed the representation of the object is updated.
     """
-    EXPLICIT_UPDATE: int = 1
+    EXPLICIT_UPDATE: int = ...
     """
     An object representation should be updated only in case of request.
     

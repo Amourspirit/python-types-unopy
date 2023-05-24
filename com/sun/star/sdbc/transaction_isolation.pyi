@@ -21,7 +21,7 @@
 import typing
 
 
-class TransactionIsolation(object):
+class TransactionIsolation:
     """
     Const
 
@@ -30,29 +30,29 @@ class TransactionIsolation(object):
     See Also:
         `API TransactionIsolation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1TransactionIsolation.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     indicates that transactions are not supported.
     """
-    READ_UNCOMMITTED: int = 1
+    READ_UNCOMMITTED: int = ...
     """
     Dirty reads, non-repeatable reads and phantom reads can occur.
     
     This level allows a row changed by one transaction to be read by another transaction before any changes in that row have been committed (a \"dirty read\"). If any of the changes are rolled back, the second transaction will have retrieved an invalid row.
     """
-    READ_COMMITTED: int = 2
+    READ_COMMITTED: int = ...
     """
     Dirty reads are prevented; non-repeatable reads and phantom reads can occur.
     
     This level only prohibits a transaction from reading a row with uncommitted changes in it.
     """
-    REPEATABLE_READ: int = 4
+    REPEATABLE_READ: int = ...
     """
     Dirty reads and non-repeatable reads are prevented; phantom reads can occur.
     
     This level prohibits a transaction from reading a row with uncommitted changes in it, and it also prohibits the situation where one transaction reads a row, a second transaction alters the row, and the first transaction rereads the row, getting different values the second time (a \"non-repeatable read\").
     """
-    SERIALIZABLE: int = 8
+    SERIALIZABLE: int = ...
     """
     Dirty reads, non-repeatable reads and phantom reads are prevented.
     

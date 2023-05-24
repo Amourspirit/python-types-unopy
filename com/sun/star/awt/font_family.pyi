@@ -21,7 +21,7 @@
 import typing
 
 
-class FontFamily(object):
+class FontFamily:
     """
     Const
 
@@ -32,31 +32,31 @@ class FontFamily(object):
     See Also:
         `API FontFamily <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1FontFamily.html>`_
     """
-    DONTKNOW: int = 0
+    DONTKNOW: int = ...
     """
     specifies an unknown font family.
     """
-    DECORATIVE: int = 1
+    DECORATIVE: int = ...
     """
     specifies the family of decorative fonts.
     """
-    MODERN: int = 2
+    MODERN: int = ...
     """
     specifies the family of modern fonts.
     """
-    ROMAN: int = 3
+    ROMAN: int = ...
     """
     specifies the family roman fonts (with serifs).
     """
-    SCRIPT: int = 4
+    SCRIPT: int = ...
     """
     specifies the family of script fonts.
     """
-    SWISS: int = 5
+    SWISS: int = ...
     """
     specifies the family roman fonts (without serifs).
     """
-    SYSTEM: int = 6
+    SYSTEM: int = ...
     """
     specifies the family system fonts.
     """

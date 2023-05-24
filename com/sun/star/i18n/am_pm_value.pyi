@@ -21,7 +21,7 @@
 import typing
 
 
-class AmPmValue(object):
+class AmPmValue:
     """
     Const
 
@@ -30,11 +30,11 @@ class AmPmValue(object):
     See Also:
         `API AmPmValue <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1AmPmValue.html>`_
     """
-    AM: int = 0
+    AM: int = ...
     """
     get display name string for AM
     """
-    PM: int = 1
+    PM: int = ...
     """
     get display name string for PM
     """

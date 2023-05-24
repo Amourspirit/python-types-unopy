@@ -21,7 +21,7 @@
 import typing
 
 
-class PathCapType(object):
+class PathCapType:
     """
     Const
 
@@ -36,15 +36,15 @@ class PathCapType(object):
     See Also:
         `API PathCapType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1PathCapType.html>`_
     """
-    BUTT: int = 0
+    BUTT: int = ...
     """
     End the path at its start or end point, without any cap.
     """
-    ROUND: int = 1
+    ROUND: int = ...
     """
     Extend the path with a half circle cap, diameter is the line width.
     """
-    SQUARE: int = 2
+    SQUARE: int = ...
     """
     Extend the path with a rectangular cap, half the line width long.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class RuleAction(object):
+class RuleAction:
     """
     Const
 
@@ -30,51 +30,51 @@ class RuleAction(object):
     See Also:
         `API RuleAction <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1RuleAction.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     \"None\" - Do nothing.
     """
-    SHOW: int = 1
+    SHOW: int = ...
     """
     \"Show\" - Shows object when term matches.
     """
-    HIDE: int = 2
+    HIDE: int = ...
     """
     \"Hide\" - Hides object when term matches.
     """
-    MARK: int = 3
+    MARK: int = ...
     """
     \"Mark\" - Marks object when term matches.
     """
-    UNMARK: int = 4
+    UNMARK: int = ...
     """
     \"UnMark\" - Removes mark from object when term matches.
     """
-    MARKREAD: int = 5
+    MARKREAD: int = ...
     """
     \"MarkRead\" - Marks object as read when term matches.
     """
-    MARKUNREAD: int = 6
+    MARKUNREAD: int = ...
     """
     \"MarkUnRead\" - Marks object as not read when term matches.
     """
-    MOVE: int = 7
+    MOVE: int = ...
     """
     \"Move\" - Moves object to Rule.Parameter when term matches.
     """
-    COPY: int = 8
+    COPY: int = ...
     """
     \"Copy\" - Copies object to Rule.Parameter when term matches.
     """
-    DELETE: int = 9
+    DELETE: int = ...
     """
     \"Delete\" - Deletes object when term matches.
     """
-    LINK: int = 10
+    LINK: int = ...
     """
     \"Link\" - Creates a link to Rule.Parameter when term matches.
     """
-    FORWARD: int = 11
+    FORWARD: int = ...
     """
     \"Forward\" - Forwards object to Rule.Parameter when term matches.
     """

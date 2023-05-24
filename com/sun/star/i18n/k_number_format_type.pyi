@@ -21,7 +21,7 @@
 import typing
 
 
-class KNumberFormatType(object):
+class KNumberFormatType:
     """
     Const
 
@@ -30,15 +30,15 @@ class KNumberFormatType(object):
     See Also:
         `API KNumberFormatType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1KNumberFormatType.html>`_
     """
-    SHORT: int = 1
+    SHORT: int = ...
     """
     Short display string.
     """
-    MEDIUM: int = 2
+    MEDIUM: int = ...
     """
     Medium length display string.
     """
-    LONG: int = 3
+    LONG: int = ...
     """
     Long display string.
     """

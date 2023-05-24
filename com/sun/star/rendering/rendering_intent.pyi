@@ -21,7 +21,7 @@
 import typing
 
 
-class RenderingIntent(object):
+class RenderingIntent:
     """
     Const
 
@@ -36,23 +36,23 @@ class RenderingIntent(object):
     See Also:
         `API RenderingIntent <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1RenderingIntent.html>`_
     """
-    PERCEPTUAL: int = 0
+    PERCEPTUAL: int = ...
     """
     Also known as the image intent, this rendering intent aims to preserve the visual relationship between colors in a way that is perceived as natural to the human eye, although the color values themselves may change.
     
     This intent is most suitable for photographic images.
     """
-    SATURATION: int = 1
+    SATURATION: int = ...
     """
     The rendering intent for business graphics that maintains vivid color at the expense of accurate color.
     
     It scales the source gamut to the destination gamut but preserves relative saturation instead of hue, so when scaling to a smaller gamut, hues may shift. This rendering intent is primarily designed for business graphics, where bright saturated colors are more important than the exact relationship between colors (such as in a photographic image).
     """
-    RELATIVE_COLORIMETRIC: int = 2
+    RELATIVE_COLORIMETRIC: int = ...
     """
     The rendering intent almost identical to Absolute Colorimetric except for the following difference: Relative Colorimetric compares the white point (extreme highlight) of the source color space to that of the destination color space and shifts all colors accordingly.
     """
-    ABSOLUTE_COLORIMETRIC: int = 3
+    ABSOLUTE_COLORIMETRIC: int = ...
     """
     The rendering intent that leaves colors that fall inside the destination gamut unchanged.
     

@@ -21,7 +21,7 @@
 import typing
 
 
-class KeyType(object):
+class KeyType:
     """
     Const
 
@@ -30,15 +30,15 @@ class KeyType(object):
     See Also:
         `API KeyType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbcx_1_1KeyType.html>`_
     """
-    PRIMARY: int = 1
+    PRIMARY: int = ...
     """
     indicates that the key is the primary key of a table.
     """
-    UNIQUE: int = 2
+    UNIQUE: int = ...
     """
     indicates that the key is unique, NULL values are allowed.
     """
-    FOREIGN: int = 3
+    FOREIGN: int = ...
     """
     indicates that the key is a foreign key of a table.
     """

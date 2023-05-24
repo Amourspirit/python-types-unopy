@@ -21,7 +21,7 @@
 import typing
 
 
-class TextGridMode(object):
+class TextGridMode:
     """
     Const
 
@@ -30,15 +30,15 @@ class TextGridMode(object):
     See Also:
         `API TextGridMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1TextGridMode.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     no text grid
     """
-    LINES: int = 1
+    LINES: int = ...
     """
     line positions will be determined by the grid
     """
-    LINES_AND_CHARS: int = 2
+    LINES_AND_CHARS: int = ...
     """
     character and line positions will be determined by the grid
     """

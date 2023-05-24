@@ -21,7 +21,7 @@
 import typing
 
 
-class AnimationTransformType(object):
+class AnimationTransformType:
     """
     Const
 
@@ -30,23 +30,23 @@ class AnimationTransformType(object):
     See Also:
         `API AnimationTransformType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1animations_1_1AnimationTransformType.html>`_
     """
-    TRANSLATE: int = 0
+    TRANSLATE: int = ...
     """
     defines a translation
     """
-    SCALE: int = 1
+    SCALE: int = ...
     """
     defines a scale
     """
-    ROTATE: int = 2
+    ROTATE: int = ...
     """
     defines a rotation
     """
-    SKEWX: int = 3
+    SKEWX: int = ...
     """
     defines a skew transformation for x-axis
     """
-    SKEWY: int = 4
+    SKEWY: int = ...
     """
     defines a skew transformation for y-axis
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class IconSetFormatEntry(object):
+class IconSetFormatEntry:
     """
     Const
 
@@ -29,12 +29,12 @@ class IconSetFormatEntry(object):
     See Also:
         `API IconSetFormatEntry <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1IconSetFormatEntry.html>`_
     """
-    ICONSET_MIN: int = 0
+    ICONSET_MIN: int = ...
     """
     Can not be set! Will always be the type of the first entry.
     """
-    ICONSET_PERCENTILE: int = 1
-    ICONSET_VALUE: int = 2
-    ICONSET_PERCENT: int = 3
-    ICONSET_FORMULA: int = 4
+    ICONSET_PERCENTILE: int = ...
+    ICONSET_VALUE: int = ...
+    ICONSET_PERCENT: int = ...
+    ICONSET_FORMULA: int = ...
 

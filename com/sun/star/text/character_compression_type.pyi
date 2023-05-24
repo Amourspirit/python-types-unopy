@@ -21,7 +21,7 @@
 import typing
 
 
-class CharacterCompressionType(object):
+class CharacterCompressionType:
     """
     Const
 
@@ -30,15 +30,15 @@ class CharacterCompressionType(object):
     See Also:
         `API CharacterCompressionType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1CharacterCompressionType.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     the characters are uncompressed.
     """
-    PUNCTUATION_ONLY: int = 1
+    PUNCTUATION_ONLY: int = ...
     """
     only punctuation is compressed.
     """
-    PUNCTUATION_AND_KANA: int = 2
+    PUNCTUATION_AND_KANA: int = ...
     """
     punctuation and Japanese Kana are compressed.
     """

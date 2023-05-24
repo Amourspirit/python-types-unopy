@@ -1,7 +1,4 @@
-from .attr_change_type import AttrChangeType as AttrChangeType
 from .event_exception import EventException as EventException
-from .event_type import EventType as EventType
-from .phase_type import PhaseType as PhaseType
 from .x_document_event import XDocumentEvent as XDocumentEvent
 from .x_event import XEvent as XEvent
 from .x_event_listener import XEventListener as XEventListener

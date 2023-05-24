@@ -21,7 +21,7 @@
 import typing
 
 
-class AccessibleTextType(object):
+class AccessibleTextType:
     """
     Const
 
@@ -36,43 +36,43 @@ class AccessibleTextType(object):
     See Also:
         `API AccessibleTextType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1accessibility_1_1AccessibleTextType.html>`_
     """
-    CHARACTER: int = 1
+    CHARACTER: int = ...
     """
     Single character.
     
     Indicates that single (multibyte) characters are used.
     """
-    WORD: int = 2
+    WORD: int = ...
     """
     Single word.
     
     Indicates that single words are used. The definition of what a word is, is implementation and language/locale dependent. While in English a word is ended by a space or a special character like a comma or a period, this is not necessarily true in other languages.
     """
-    SENTENCE: int = 3
+    SENTENCE: int = ...
     """
     Single sentence.
     
     Indicates that single sentences are used. The definition of what a sentence is, is implementation and language/locale dependent. While in English a sentence is ended by a period, this is not necessarily true in other languages.
     """
-    PARAGRAPH: int = 4
+    PARAGRAPH: int = ...
     """
     Single paragraph.
     
     Indicates that single paragraphs are used. The definition of what a paragraph is, is implementation and language/locale dependent.
     """
-    LINE: int = 5
+    LINE: int = ...
     """
     Single line.
     
     Indicates that single lines, as displayed on the screen, are used. In contrast to the constants CHARACTER, WORD, SENTENCE, and PARAGRAPH which are content oriented this constant is view oriented. It can be used to retrieve hyphenation information.
     """
-    GLYPH: int = 6
+    GLYPH: int = ...
     """
     Single glyph.
     
     Glyphs are runs of one or more (multibyte) characters which are displayed as one symbol.
     """
-    ATTRIBUTE_RUN: int = 7
+    ATTRIBUTE_RUN: int = ...
     """
     Attribute run.
     

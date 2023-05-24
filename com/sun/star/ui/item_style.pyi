@@ -21,7 +21,7 @@
 import typing
 
 
-class ItemStyle(object):
+class ItemStyle:
     """
     Const
 
@@ -38,61 +38,61 @@ class ItemStyle(object):
     See Also:
         `API ItemStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1ItemStyle.html>`_
     """
-    ALIGN_LEFT: int = 1
+    ALIGN_LEFT: int = ...
     """
     specifies how the output of the item is aligned in the bounding box of the user interface element.
     
     This style is only valid for an item which describes a statusbar item. Draw item with a left aligned output.
     """
-    ALIGN_CENTER: int = 2
+    ALIGN_CENTER: int = ...
     """
     specifies how the output of the item is aligned in the bounding box of the user interface element.
     
     This style is only valid for an item which describes a statusbar item. Draw item with a centered aligned output.
     """
-    ALIGN_RIGHT: int = 3
+    ALIGN_RIGHT: int = ...
     """
     specifies how the output of the item is aligned in the bounding box of the user interface element.
     
     This style is only valid for an item which describes a statusbar item. Draw item with a right aligned output.
     """
-    DRAW_OUT3D: int = 4
+    DRAW_OUT3D: int = ...
     """
     specifies how the implementation should draw the item.
     
     This style is only valid for an item which describes a statusbar item. Draw item with an embossed 3D effect.
     """
-    DRAW_IN3D: int = 8
+    DRAW_IN3D: int = ...
     """
     specifies how the implementation should draw the item.
     
     This style is only valid for an item which describes a statusbar item. Draw item with an impressed 3D effect.
     """
-    DRAW_FLAT: int = 12
+    DRAW_FLAT: int = ...
     """
     specifies how the implementation should draw the item.
     
     This style is only valid for an item which describes a statusbar item. Draw item without an 3D effect.
     """
-    OWNER_DRAW: int = 16
+    OWNER_DRAW: int = ...
     """
     specifies whether or not an item is displayed using an external function.
     
     This style is only valid if the item describes a statusbar item.
     """
-    AUTO_SIZE: int = 32
+    AUTO_SIZE: int = ...
     """
     specifies whether or not the size of the item is set automatically by the parent user interface element.
     
     This style is only valid if the item describes a toolbar or statusbar item.
     """
-    RADIO_CHECK: int = 64
+    RADIO_CHECK: int = ...
     """
     determines whether the item unchecks neighbor entries which have also this style set.
     
     This style is only valid if the item describes a toolbar item.
     """
-    ICON: int = 128
+    ICON: int = ...
     """
     specifies if an icon is placed on left side of the text, like an entry in a taskbar.
     
@@ -100,19 +100,19 @@ class ItemStyle(object):
     
     This style can also be used for custom toolbars and menus, in a custom toolbar an item's Style setting can used to override the toolbar container setting, the style can be bitwise OR-ed with com.sun.star.ui.ItemStyle.TEXT to define text, text+icon or icon only is to be displayed. Similarly for menu items, an items Style can override the application setting to display either text or icon (note: for menu an icon only setting interpreted as icon+text)
     """
-    DROP_DOWN: int = 256
+    DROP_DOWN: int = ...
     """
     specifies that the item supports a dropdown menu or toolbar for additional functions.
     
     This style is only valid if the item describes a toolbar item.
     """
-    REPEAT: int = 512
+    REPEAT: int = ...
     """
     indicates that the item continues to execute the command while you click and hold the mouse button.
     
     This style is only valid if the item describes a toolbar item.
     """
-    DROPDOWN_ONLY: int = 1024
+    DROPDOWN_ONLY: int = ...
     """
     indicates that the item only supports a dropdown menu or toolbar for additional functions.
     
@@ -120,13 +120,13 @@ class ItemStyle(object):
     
     This style is only valid if the item describes a toolbar item.
     """
-    TEXT: int = 2048
+    TEXT: int = ...
     """
     indicates if icon, text or text+icon is displayed for the item.
     
     This style can be used for custom toolbars and menus, in a custom toolbar an item's Style setting can used to override the toolbar container setting, the style can be bitwise OR-ed with com.sun.star.ui.ItemStyle.ICON to define text, text+icon or icon only is to be displayed. Similarly for menu items, an items Style can override the application setting to display either text or icon (note: for menu an icon only setting interpreted as icon+text)
     """
-    MANDATORY: int = 4096
+    MANDATORY: int = ...
     """
     marks always visible element which can not be removed when statusbar width is not sufficient.
     

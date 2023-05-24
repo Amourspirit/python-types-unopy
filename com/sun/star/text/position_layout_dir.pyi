@@ -21,7 +21,7 @@
 import typing
 
 
-class PositionLayoutDir(object):
+class PositionLayoutDir:
     """
     Const
 
@@ -34,11 +34,11 @@ class PositionLayoutDir(object):
     See Also:
         `API PositionLayoutDir <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1PositionLayoutDir.html>`_
     """
-    PositionInHoriL2R: int = 1
+    PositionInHoriL2R: int = ...
     """
     position attributes are given in horizontal left-to-right direction
     """
-    PositionInLayoutDirOfAnchor: int = 2
+    PositionInLayoutDirOfAnchor: int = ...
     """
     position attributes are given in layout direction of the drawing objects anchor
     """

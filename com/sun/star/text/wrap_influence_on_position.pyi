@@ -21,7 +21,7 @@
 import typing
 
 
-class WrapInfluenceOnPosition(object):
+class WrapInfluenceOnPosition:
     """
     Const
 
@@ -30,15 +30,15 @@ class WrapInfluenceOnPosition(object):
     See Also:
         `API WrapInfluenceOnPosition <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1WrapInfluenceOnPosition.html>`_
     """
-    ONCE_SUCCESSIVE: int = 1
+    ONCE_SUCCESSIVE: int = ...
     """
     wrapping style has no influence on the position and the floating screen object is successive positioned.
     """
-    ONCE_CONCURRENT: int = 2
+    ONCE_CONCURRENT: int = ...
     """
     wrapping style has no influence on the position and the floating screen object is concurrent positioned.
     """
-    ITERATIVE: int = 3
+    ITERATIVE: int = ...
     """
     wrapping style has influence on the position and the floating screen object is iterative positioned.
     """

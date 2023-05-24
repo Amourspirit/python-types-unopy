@@ -21,7 +21,7 @@
 import typing
 
 
-class MacroExecMode(object):
+class MacroExecMode:
     """
     Const
 
@@ -34,51 +34,51 @@ class MacroExecMode(object):
     See Also:
         `API MacroExecMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1document_1_1MacroExecMode.html>`_
     """
-    NEVER_EXECUTE: int = 0
+    NEVER_EXECUTE: int = ...
     """
     A macro should not be executed at all.
     """
-    FROM_LIST: int = 1
+    FROM_LIST: int = ...
     """
     Execute macros from secure list quietly.
     
     If a macro is not in the list a confirmation for it executing will appear.
     """
-    ALWAYS_EXECUTE: int = 2
+    ALWAYS_EXECUTE: int = ...
     """
     Execute any macro, macros signed with trusted certificates and macros from secure list are executed quietly.
     
     If the macro is neither in secure list nor signed a conformation will be requested.
     """
-    USE_CONFIG: int = 3
+    USE_CONFIG: int = ...
     """
     Use configuration to retrieve macro settings.
     
     In case a user confirmation is required a dialog is output.
     """
-    ALWAYS_EXECUTE_NO_WARN: int = 4
+    ALWAYS_EXECUTE_NO_WARN: int = ...
     """
     A macro should be executed always no conformation should be provided.
     """
-    USE_CONFIG_REJECT_CONFIRMATION: int = 5
+    USE_CONFIG_REJECT_CONFIRMATION: int = ...
     """
     Use configuration to retrieve macro settings.
     
     Treat cases when user confirmation required as rejected.
     """
-    USE_CONFIG_APPROVE_CONFIRMATION: int = 6
+    USE_CONFIG_APPROVE_CONFIRMATION: int = ...
     """
     Use configuration to retrieve macro settings.
     
     Treat cases when user confirmation required as approved.
     """
-    FROM_LIST_NO_WARN: int = 7
+    FROM_LIST_NO_WARN: int = ...
     """
     Execute only macros from secure list.
     
     Macros that are not from the list are not executed.
     """
-    FROM_LIST_AND_SIGNED_WARN: int = 8
+    FROM_LIST_AND_SIGNED_WARN: int = ...
     """
     Execute only macros from secure list or macros that are signed by trusted certificates.
     
@@ -86,7 +86,7 @@ class MacroExecMode(object):
     
     If the macro is signed with unknown certificate a warning will appear. The macro either will not be executed or if the warning allows conformation, it will be executed after user agrees.
     """
-    FROM_LIST_AND_SIGNED_NO_WARN: int = 9
+    FROM_LIST_AND_SIGNED_NO_WARN: int = ...
     """
     Execute only macros from secure list or macros that are signed by trusted certificates.
     

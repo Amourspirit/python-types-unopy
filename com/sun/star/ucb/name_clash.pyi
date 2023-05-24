@@ -21,7 +21,7 @@
 import typing
 
 
-class NameClash(object):
+class NameClash:
     """
     Const
 
@@ -30,27 +30,27 @@ class NameClash(object):
     See Also:
         `API NameClash <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1NameClash.html>`_
     """
-    ERROR: int = 0
+    ERROR: int = ...
     """
     Means to set an error and cancel the operation.
     """
-    OVERWRITE: int = 1
+    OVERWRITE: int = ...
     """
     Means to overwrite the object in the target folder with the object to transfer.
     """
-    RENAME: int = 2
+    RENAME: int = ...
     """
     Means to rename the object to transfer to solve the clash.
     
     The implementation needs to supply and set a suitable new name.
     """
-    KEEP: int = 3
+    KEEP: int = ...
     """
     Deprecated.
     
     Do not use!
     """
-    ASK: int = 4
+    ASK: int = ...
     """
     Means to use a NameClashResolveRequest in order to solve the name clash.
     """

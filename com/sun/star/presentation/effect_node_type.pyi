@@ -21,7 +21,7 @@
 import typing
 
 
-class EffectNodeType(object):
+class EffectNodeType:
     """
     Const
 
@@ -32,31 +32,31 @@ class EffectNodeType(object):
     See Also:
         `API EffectNodeType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1presentation_1_1EffectNodeType.html>`_
     """
-    DEFAULT: int = 0
+    DEFAULT: int = ...
     """
     This node has no special meaning.
     """
-    ON_CLICK: int = 1
+    ON_CLICK: int = ...
     """
     This node contains an effect that starts on click.
     """
-    WITH_PREVIOUS: int = 2
+    WITH_PREVIOUS: int = ...
     """
     This node contains an effect that starts with a previous effect.
     """
-    AFTER_PREVIOUS: int = 3
+    AFTER_PREVIOUS: int = ...
     """
     This node contains an effect that starts after a previous effect has finished.
     """
-    MAIN_SEQUENCE: int = 4
+    MAIN_SEQUENCE: int = ...
     """
     This is the main sequence for effects that is automatically started.
     """
-    TIMING_ROOT: int = 5
+    TIMING_ROOT: int = ...
     """
     This is the root sequence.
     """
-    INTERACTIVE_SEQUENCE: int = 6
+    INTERACTIVE_SEQUENCE: int = ...
     """
     This is a sequence with effects that starts due to user interaction.
     """

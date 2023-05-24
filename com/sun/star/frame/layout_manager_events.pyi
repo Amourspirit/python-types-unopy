@@ -21,7 +21,7 @@
 import typing
 
 
-class LayoutManagerEvents(object):
+class LayoutManagerEvents:
     """
     Const
 
@@ -36,49 +36,49 @@ class LayoutManagerEvents(object):
     See Also:
         `API LayoutManagerEvents <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1frame_1_1LayoutManagerEvents.html>`_
     """
-    LOCK: int = 0
+    LOCK: int = ...
     """
     specifies that the layout manager processed a lock call, which prevents it from doing layouts.
     
     This event sends the current lock count as additional information.
     """
-    UNLOCK: int = 1
+    UNLOCK: int = ...
     """
     specifies that the layout manager processed an unlock call, which admit layouts when the lock count is zero.
     
     This event sends the current lock count as additional information.
     """
-    LAYOUT: int = 2
+    LAYOUT: int = ...
     """
     specifies that the layout manager refreshed the layout of the frame.
     
     This event sends no additional information.
     """
-    VISIBLE: int = 3
+    VISIBLE: int = ...
     """
     specifies that the layout manager container frame window becomes visible.
     
     This event sends no additional information.
     """
-    INVISIBLE: int = 4
+    INVISIBLE: int = ...
     """
     specifies that the layout manager container frame window becomes invisible.
     
     This event sends no additional information.
     """
-    MERGEDMENUBAR: int = 5
+    MERGEDMENUBAR: int = ...
     """
     A merged menu bar has been set at the layout manager.
     
     This event sends no additional information.
     """
-    UIELEMENT_VISIBLE: int = 6
+    UIELEMENT_VISIBLE: int = ...
     """
     specifies that a certain user interface element has been made visible
     
     This event sends the resource url of the newly visible user interface element.
     """
-    UIELEMENT_INVISIBLE: int = 7
+    UIELEMENT_INVISIBLE: int = ...
     """
     specifies that a certain user interface element has been made invisible
     

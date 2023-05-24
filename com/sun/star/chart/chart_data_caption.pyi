@@ -21,7 +21,7 @@
 import typing
 
 
-class ChartDataCaption(object):
+class ChartDataCaption:
     """
     Const
 
@@ -34,35 +34,35 @@ class ChartDataCaption(object):
     See Also:
         `API ChartDataCaption <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart_1_1ChartDataCaption.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     No captions are displayed.
     """
-    VALUE: int = 1
+    VALUE: int = ...
     """
     The caption contains the value of the data point in the number format of the axis that is attached to the respective data series.
     """
-    PERCENT: int = 2
+    PERCENT: int = ...
     """
     The caption contains the value of the data point in percent of all data points of one category.
     
     That means, if a data point is the first one of a series, the percentage is calculated by using the first data points of all available series.
     """
-    TEXT: int = 4
+    TEXT: int = ...
     """
     The caption contains the category name of the category to which a data point belongs.
     """
-    FORMAT: int = 8
+    FORMAT: int = ...
     """
     The number formatter is always used for displaying the value as value.
     
     So this setting is deprecated.
     """
-    SYMBOL: int = 16
+    SYMBOL: int = ...
     """
     The symbol of data column/row is additionally displayed in the caption.
     """
-    CUSTOM: int = 32
+    CUSTOM: int = ...
     """
     The caption contains a custom text, which belongs to a data point label.
     
@@ -70,7 +70,7 @@ class ChartDataCaption(object):
     
         LibreOffice 7.1
     """
-    DATA_SERIES: int = 64
+    DATA_SERIES: int = ...
     """
     The name of the data series is additionally displayed in the caption.
     

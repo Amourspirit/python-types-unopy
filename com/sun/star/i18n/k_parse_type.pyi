@@ -21,7 +21,7 @@
 import typing
 
 
-class KParseType(object):
+class KParseType:
     """
     Const
 
@@ -32,45 +32,45 @@ class KParseType(object):
     See Also:
         `API KParseType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1KParseType.html>`_
     """
-    ONE_SINGLE_CHAR: int = 1
+    ONE_SINGLE_CHAR: int = ...
     """
     One single character like ! # ; : $ et al.
     """
-    BOOLEAN: int = 2
+    BOOLEAN: int = ...
     """
     A Boolean operator like <, >, <>, =, <=, >=.
     """
-    IDENTNAME: int = 4
+    IDENTNAME: int = ...
     """
     A name matching the conditions passed.
     """
-    SINGLE_QUOTE_NAME: int = 8
+    SINGLE_QUOTE_NAME: int = ...
     """
     \"A single-quoted name matching the conditions passed ( 'na\\'me' ).\" \"Dequoted name in ParseResult.DequotedNameOrString ( na'me ).\"
     """
-    DOUBLE_QUOTE_STRING: int = 16
+    DOUBLE_QUOTE_STRING: int = ...
     """
     A double-quoted string ( \"str\\\"i\"\"ng\" ).
     
     Dequoted string in ParseResult.DequotedNameOrString ( str\"i\"ng ).
     """
-    ASC_NUMBER: int = 32
+    ASC_NUMBER: int = ...
     """
     A number where all digits are ASCII characters.
     
     Numerical value in ParseResult.Value.
     """
-    UNI_NUMBER: int = 64
+    UNI_NUMBER: int = ...
     """
     A number where at least some digits are Unicode (and maybe ASCII) characters.
     
     Numerical value inKParseType ParseResult.Value.
     """
-    MISSING_QUOTE: int = 1073741824
+    MISSING_QUOTE: int = ...
     """
     Set (ored) if SINGLE_QUOTE_NAME or DOUBLE_QUOTE_STRING has no closing quote.
     """
-    ANY_NUMBER: str
+    ANY_NUMBER: str = ...
     """
     Any ASCII or Unicode number.
     """

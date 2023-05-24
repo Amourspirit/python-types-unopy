@@ -21,7 +21,7 @@
 import typing
 
 
-class LogLevel(object):
+class LogLevel:
     """
     Const
 
@@ -34,41 +34,41 @@ class LogLevel(object):
     See Also:
         `API LogLevel <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1logging_1_1LogLevel.html>`_
     """
-    OFF: int = 2147483647
+    OFF: int = ...
     """
     specifies that no messages are to be logged at all
     
     This level can be set at an XLogger to completely prevent logging. You will usually not use it with a concrete log event.
     """
-    SEVERE: int = 1000
+    SEVERE: int = ...
     """
     denotes a serious failure to be logged
     """
-    WARNING: int = 900
+    WARNING: int = ...
     """
     denotes a potential problem to be logged
     """
-    INFO: int = 800
+    INFO: int = ...
     """
     denotes an informational message to be logged
     """
-    CONFIG: int = 700
+    CONFIG: int = ...
     """
     denotes a static configuration message to be logged
     """
-    FINE: int = 500
+    FINE: int = ...
     """
     denotes basic tracing information to be logged
     """
-    FINER: int = 400
+    FINER: int = ...
     """
     denotes more fine-grained tracing information to be logged
     """
-    FINEST: int = 300
+    FINEST: int = ...
     """
     denotes highly detailed tracing information to be logged
     """
-    ALL: int = -2147483648
+    ALL: int = ...
     """
     specifies that all messages should be logged
     

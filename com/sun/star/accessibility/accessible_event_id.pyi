@@ -21,7 +21,7 @@
 import typing
 
 
-class AccessibleEventId(object):
+class AccessibleEventId:
     """
     Const
 
@@ -36,37 +36,37 @@ class AccessibleEventId(object):
     See Also:
         `API AccessibleEventId <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1accessibility_1_1AccessibleEventId.html>`_
     """
-    NAME_CHANGED: int = 1
+    NAME_CHANGED: int = ...
     """
     Use this event type to indicate a change of the name string of an accessible object.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the name before and after the change.
     """
-    DESCRIPTION_CHANGED: int = 2
+    DESCRIPTION_CHANGED: int = ...
     """
     Use this event type to indicate a change of the description string of an accessible object.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the description before and after the change.
     """
-    ACTION_CHANGED: int = 3
+    ACTION_CHANGED: int = ...
     """
     The change of the number or attributes of actions of an accessible object is signaled by events of this type.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the old and new number of actions.
     """
-    STATE_CHANGED: int = 4
+    STATE_CHANGED: int = ...
     """
     State changes are signaled with this event type.
     
     Use one event for every state that is set or reset. The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the old and new value respectively. To set a state put the state id into the AccessibleEventObject.NewValue field and leave AccessibleEventObject.OldValue empty. To reset a state put the state id into the AccessibleEventObject.OldValue field and leave AccessibleEventObject.NewValue empty.
     """
-    ACTIVE_DESCENDANT_CHANGED: int = 5
+    ACTIVE_DESCENDANT_CHANGED: int = ...
     """
     Constant used to determine when the active descendant of a component has changed.
     
     The active descendant is used in objects with transient children. The AccessibleEventObject.NewValue contains the now active object. The AccessibleEventObject.OldValue contains the previously active child. Empty references indicate that no child has been respectively is currently active.
     """
-    BOUNDRECT_CHANGED: int = 6
+    BOUNDRECT_CHANGED: int = ...
     """
     This event indicates a change of the bounding rectangle of an accessible object with respect only to its size or relative position.
     
@@ -76,7 +76,7 @@ class AccessibleEventId(object):
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue remain empty. Use a call to the XAccessibleComponent.getBounds() method to determine the new bounding box.
     """
-    CHILD: int = 7
+    CHILD: int = ...
     """
     A child event indicates the addition of a new or the removal of an existing child.
     
@@ -90,7 +90,7 @@ class AccessibleEventId(object):
     
     Note that a child event is sent after a child has been added or removed. Especially in the case of a removal this means that the removed object does not have a parent anymore.
     """
-    INVALIDATE_ALL_CHILDREN: int = 8
+    INVALIDATE_ALL_CHILDREN: int = ...
     """
     Use this event to tell the listeners to re-retrieve the whole set of children.
     
@@ -98,85 +98,85 @@ class AccessibleEventId(object):
     
     When this API is used by Java or Gnome AT-Tools then a bridge can generate the events described above automatically.
     """
-    SELECTION_CHANGED: int = 9
+    SELECTION_CHANGED: int = ...
     """
     Events of this type indicate changes of the selection.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields remain empty.
     """
-    VISIBLE_DATA_CHANGED: int = 10
+    VISIBLE_DATA_CHANGED: int = ...
     """
     A visible data event indicates the change of the visual appearance of an accessible object.
     
     This includes for example most of the attributes available over the XAccessibleComponent and XAccessibleExtendedComponent interfaces. The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields are left empty.
     """
-    VALUE_CHANGED: int = 11
+    VALUE_CHANGED: int = ...
     """
     This constant indicates changes of the value of an XAccessibleValue interface.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue field contain the old and new value as a number. Its exact type is implementation dependent but has to be the same as is returned by the XAccessibleValue.getCurrentValue() function.
     """
-    CONTENT_FLOWS_FROM_RELATION_CHANGED: int = 12
+    CONTENT_FLOWS_FROM_RELATION_CHANGED: int = ...
     """
     Identifies the change of a relation set: The content flow has changed.
     
     Not used: The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain references to the old and new predecessor. Note that both references my be NULL to indicate that a flow to the sending object has not existed or does not exist anymore.
     """
-    CONTENT_FLOWS_TO_RELATION_CHANGED: int = 13
+    CONTENT_FLOWS_TO_RELATION_CHANGED: int = ...
     """
     Identifies the change of a relation set: The content flow has changed.
     
     Not used: The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain references to the old and new successor. Note that both references my be NULL to indicate that a flow from the sending object has not existed or does not exist anymore.
     """
-    CONTROLLED_BY_RELATION_CHANGED: int = 14
+    CONTROLLED_BY_RELATION_CHANGED: int = ...
     """
     Identifies the change of a relation set: The target object that is doing the controlling has changed.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the old and new controlling objects.
     """
-    CONTROLLER_FOR_RELATION_CHANGED: int = 15
+    CONTROLLER_FOR_RELATION_CHANGED: int = ...
     """
     Identifies the change of a relation set: The controller for the target object has changed.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the old and new number of controlled objects.
     """
-    LABEL_FOR_RELATION_CHANGED: int = 16
+    LABEL_FOR_RELATION_CHANGED: int = ...
     """
     Identifies the change of a relation set: The target group for a label has changed.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the old and new number labeled objects.
     """
-    LABELED_BY_RELATION_CHANGED: int = 17
+    LABELED_BY_RELATION_CHANGED: int = ...
     """
     Identifies the change of a relation set: The objects that are doing the labeling have changed.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the old and new accessible label.
     """
-    MEMBER_OF_RELATION_CHANGED: int = 18
+    MEMBER_OF_RELATION_CHANGED: int = ...
     """
     Identifies the change of a relation set: The group membership has changed.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the old and new number of members.
     """
-    SUB_WINDOW_OF_RELATION_CHANGED: int = 19
+    SUB_WINDOW_OF_RELATION_CHANGED: int = ...
     """
     Identifies the change of a relation set: The sub-window-of relation has changed.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the old and new accessible parent window objects.
     """
-    CARET_CHANGED: int = 20
+    CARET_CHANGED: int = ...
     """
     Events of this type are sent when the caret has moved to a new position.
     
     The old and new position can be found in the AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields.
     """
-    TEXT_SELECTION_CHANGED: int = 21
+    TEXT_SELECTION_CHANGED: int = ...
     """
     Events of this type signal changes of the selection.
     
     The old or new selection is not available through the event object. You have to query the XAccessibleText interface of the event source for this information. The type of content of the AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields is not specified at the moment. This may change in the future.
     """
-    TEXT_CHANGED: int = 22
+    TEXT_CHANGED: int = ...
     """
     Use this id to indicate general text changes, i.e.
     
@@ -190,61 +190,61 @@ class AccessibleEventId(object):
     
     Text ranges should be as small as possible but, of course, include all the text that is involved in a modification. That means that when two or more discontinuous text ranges are inserted, deleted, or otherwise modified the two fields of the event have to cover all the affected text ranges as well as the text in between.
     """
-    TEXT_ATTRIBUTE_CHANGED: int = 23
+    TEXT_ATTRIBUTE_CHANGED: int = ...
     """
     This entry is reserved for future extension.
     
     Don't use it right now.
     """
-    HYPERTEXT_CHANGED: int = 24
+    HYPERTEXT_CHANGED: int = ...
     """
     Constant used to indicate that a hypertext element has received focus.
     
     The AccessibleEventObject.OldValue field contains the start index of previously focused element. The AccessibleEventObject.NewValue field holds the start index in the document of the current element that has focus. A value of -1 indicates that an element does not or did not have focus.
     """
-    TABLE_CAPTION_CHANGED: int = 25
+    TABLE_CAPTION_CHANGED: int = ...
     """
     Constant used to indicate that the table caption has changed.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the old and new accessible objects representing the table caption.
     """
-    TABLE_COLUMN_DESCRIPTION_CHANGED: int = 26
+    TABLE_COLUMN_DESCRIPTION_CHANGED: int = ...
     """
     Constant used to indicate that the column description has changed.
     
     The AccessibleEventObject.NewValue field contains the column index. The AccessibleEventObject.OldValue is left empty.
     """
-    TABLE_COLUMN_HEADER_CHANGED: int = 27
+    TABLE_COLUMN_HEADER_CHANGED: int = ...
     """
     Constant used to indicate that the column header has changed.
     
     The AccessibleEventObject.OldValue is empty, the AccessibleEventObject.NewValue field contains an AccessibleTableModelChange representing the header change.
     """
-    TABLE_MODEL_CHANGED: int = 28
+    TABLE_MODEL_CHANGED: int = ...
     """
     Constant used to indicate that the table data has changed.
     
     The AccessibleEventObject.OldValue is empty, the AccessibleEventObject.NewValue field contains an AccessibleTableModelChange representing the data change.
     """
-    TABLE_ROW_DESCRIPTION_CHANGED: int = 29
+    TABLE_ROW_DESCRIPTION_CHANGED: int = ...
     """
     Constant used to indicate that the row description has changed.
     
     The AccessibleEventObject.NewValue field contains the row index. The AccessibleEventObject.OldValue is left empty.
     """
-    TABLE_ROW_HEADER_CHANGED: int = 30
+    TABLE_ROW_HEADER_CHANGED: int = ...
     """
     Constant used to indicate that the row header has changed.
     
     The AccessibleEventObject.OldValue is empty, the AccessibleEventObject.NewValue field contains an AccessibleTableModelChange representing the header change.
     """
-    TABLE_SUMMARY_CHANGED: int = 31
+    TABLE_SUMMARY_CHANGED: int = ...
     """
     Constant used to indicate that the table summary has changed.
     
     The AccessibleEventObject.OldValue and AccessibleEventObject.NewValue fields contain the old and new accessible objects representing the table summary.
     """
-    LISTBOX_ENTRY_EXPANDED: int = 32
+    LISTBOX_ENTRY_EXPANDED: int = ...
     """
     Constant used to indicate that a list box entry has been expanded.
     
@@ -254,7 +254,7 @@ class AccessibleEventId(object):
     
         OOo 3.2
     """
-    LISTBOX_ENTRY_COLLAPSED: int = 33
+    LISTBOX_ENTRY_COLLAPSED: int = ...
     """
     Constant used to indicate that a list box entry has been collapsed.
     
@@ -264,7 +264,7 @@ class AccessibleEventId(object):
     
         OOo 3.2
     """
-    ACTIVE_DESCENDANT_CHANGED_NOFOCUS: int = 34
+    ACTIVE_DESCENDANT_CHANGED_NOFOCUS: int = ...
     """
     Constant used to determine when the active descendant of a component has been removed but unlike ACTIVE_DESCENDANT_CHANGED the descendant that is to be removed does not have focus.
     
@@ -278,7 +278,7 @@ class AccessibleEventId(object):
     
         LibreOffice 4.3
     """
-    SELECTION_CHANGED_ADD: int = 35
+    SELECTION_CHANGED_ADD: int = ...
     """
     An item in a container has been added to an already present selection.
     
@@ -292,7 +292,7 @@ class AccessibleEventId(object):
     
         LibreOffice 4.3
     """
-    SELECTION_CHANGED_REMOVE: int = 36
+    SELECTION_CHANGED_REMOVE: int = ...
     """
     An item in a container has been removed from the selection.
     
@@ -304,7 +304,7 @@ class AccessibleEventId(object):
     
         LibreOffice 4.3
     """
-    SELECTION_CHANGED_WITHIN: int = 37
+    SELECTION_CHANGED_WITHIN: int = ...
     """
     Multiple items in a container object have been added or removed from the selection.
     
@@ -314,7 +314,7 @@ class AccessibleEventId(object):
     
         LibreOffice 4.3
     """
-    PAGE_CHANGED: int = 38
+    PAGE_CHANGED: int = ...
     """
     A change of page or slide.
     
@@ -322,7 +322,7 @@ class AccessibleEventId(object):
     
         LibreOffice 4.3
     """
-    SECTION_CHANGED: int = 39
+    SECTION_CHANGED: int = ...
     """
     The cursor has moved to/from a section.
     
@@ -330,7 +330,7 @@ class AccessibleEventId(object):
     
         LibreOffice 4.3
     """
-    COLUMN_CHANGED: int = 40
+    COLUMN_CHANGED: int = ...
     """
     The cursor has moved to/from a section.
     
@@ -338,7 +338,7 @@ class AccessibleEventId(object):
     
         LibreOffice 4.3
     """
-    ROLE_CHANGED: int = 41
+    ROLE_CHANGED: int = ...
     """
     Constant used to indicate that the role of an accessible object has changed.
     

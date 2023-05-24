@@ -1,7 +1,4 @@
-from .animation_effect import AnimationEffect as AnimationEffect
-from .animation_speed import AnimationSpeed as AnimationSpeed
 from .chart_shape import ChartShape as ChartShape
-from .click_action import ClickAction as ClickAction
 from .custom_presentation import CustomPresentation as CustomPresentation
 from .custom_presentation_access import CustomPresentationAccess as CustomPresentationAccess
 from .date_time_shape import DateTimeShape as DateTimeShape
@@ -10,7 +7,6 @@ from .draw_page import DrawPage as DrawPage
 from .effect_commands import EffectCommands as EffectCommands
 from .effect_node_type import EffectNodeType as EffectNodeType
 from .effect_preset_class import EffectPresetClass as EffectPresetClass
-from .fade_effect import FadeEffect as FadeEffect
 from .footer_shape import FooterShape as FooterShape
 from .graphic_object_shape import GraphicObjectShape as GraphicObjectShape
 from .handout_shape import HandoutShape as HandoutShape
@@ -26,7 +22,6 @@ from .paragraph_target import ParagraphTarget as ParagraphTarget
 from .presentation import Presentation as Presentation
 from .presentation2 import Presentation2 as Presentation2
 from .presentation_document import PresentationDocument as PresentationDocument
-from .presentation_range import PresentationRange as PresentationRange
 from .presentation_view import PresentationView as PresentationView
 from .preview_view import PreviewView as PreviewView
 from .shape import Shape as Shape

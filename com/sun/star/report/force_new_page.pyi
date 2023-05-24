@@ -21,7 +21,7 @@
 import typing
 
 
-class ForceNewPage(object):
+class ForceNewPage:
     """
     Const
 
@@ -32,19 +32,19 @@ class ForceNewPage(object):
     See Also:
         `API ForceNewPage <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1report_1_1ForceNewPage.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     The current section is printed on the current page.
     """
-    BEFORE_SECTION: int = 1
+    BEFORE_SECTION: int = ...
     """
     The current section is printed at the top of a new page.
     """
-    AFTER_SECTION: int = 2
+    AFTER_SECTION: int = ...
     """
     The next section following the current section is printed at the top of a new page.
     """
-    BEFORE_AFTER_SECTION: int = 3
+    BEFORE_AFTER_SECTION: int = ...
     """
     The current section is printed at the top of a new page as well as the next section.
     """

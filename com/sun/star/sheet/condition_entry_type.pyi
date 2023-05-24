@@ -21,7 +21,7 @@
 import typing
 
 
-class ConditionEntryType(object):
+class ConditionEntryType:
     """
     Const
 
@@ -29,9 +29,9 @@ class ConditionEntryType(object):
     See Also:
         `API ConditionEntryType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1ConditionEntryType.html>`_
     """
-    CONDITION: int = 0
-    COLORSCALE: int = 1
-    DATABAR: int = 2
-    ICONSET: int = 3
-    DATE: int = 4
+    CONDITION: int = ...
+    COLORSCALE: int = ...
+    DATABAR: int = ...
+    ICONSET: int = ...
+    DATE: int = ...
 

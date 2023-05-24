@@ -21,7 +21,7 @@
 import typing
 
 
-class GeneralFunction2(object):
+class GeneralFunction2:
     """
     Const
 
@@ -34,61 +34,61 @@ class GeneralFunction2(object):
     See Also:
         `API GeneralFunction2 <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1GeneralFunction2.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     nothing is calculated.
     """
-    AUTO: int = 1
+    AUTO: int = ...
     """
     function is determined automatically.
     
     If the values are all numerical, SUM is used, otherwise COUNT.
     """
-    SUM: int = 2
+    SUM: int = ...
     """
     sum of all numerical values is calculated.
     """
-    COUNT: int = 3
+    COUNT: int = ...
     """
     all values, including non-numerical values, are counted.
     """
-    AVERAGE: int = 4
+    AVERAGE: int = ...
     """
     average of all numerical values is calculated.
     """
-    MAX: int = 5
+    MAX: int = ...
     """
     maximum value of all numerical values is calculated.
     """
-    MIN: int = 6
+    MIN: int = ...
     """
     minimum value of all numerical values is calculated.
     """
-    PRODUCT: int = 7
+    PRODUCT: int = ...
     """
     product of all numerical values is calculated.
     """
-    COUNTNUMS: int = 8
+    COUNTNUMS: int = ...
     """
     numerical values are counted.
     """
-    STDEV: int = 9
+    STDEV: int = ...
     """
     standard deviation is calculated based on a sample.
     """
-    STDEVP: int = 10
+    STDEVP: int = ...
     """
     standard deviation is calculated based on the entire population.
     """
-    VAR: int = 11
+    VAR: int = ...
     """
     variance is calculated based on a sample.
     """
-    VARP: int = 12
+    VARP: int = ...
     """
     variance is calculated based on the entire population.
     """
-    MEDIAN: int = 13
+    MEDIAN: int = ...
     """
     median of all numerical values is calculated.
     

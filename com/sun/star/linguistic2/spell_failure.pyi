@@ -21,7 +21,7 @@
 import typing
 
 
-class SpellFailure(object):
+class SpellFailure:
     """
     Const
 
@@ -32,15 +32,15 @@ class SpellFailure(object):
     See Also:
         `API SpellFailure <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1linguistic2_1_1SpellFailure.html>`_
     """
-    IS_NEGATIVE_WORD: int = 2
+    IS_NEGATIVE_WORD: int = ...
     """
     The word is a negative one, that is, it should not be used.
     """
-    CAPTION_ERROR: int = 3
+    CAPTION_ERROR: int = ...
     """
     The capitalization of the word is wrong.
     """
-    SPELLING_ERROR: int = 4
+    SPELLING_ERROR: int = ...
     """
     The spelling of the word is wrong (or at least not known to be correct).
     """

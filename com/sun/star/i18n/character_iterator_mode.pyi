@@ -21,7 +21,7 @@
 import typing
 
 
-class CharacterIteratorMode(object):
+class CharacterIteratorMode:
     """
     Const
 
@@ -32,15 +32,15 @@ class CharacterIteratorMode(object):
     See Also:
         `API CharacterIteratorMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1CharacterIteratorMode.html>`_
     """
-    SKIPCHARACTER: int = 0
+    SKIPCHARACTER: int = ...
     """
     skip characters
     """
-    SKIPCELL: int = 1
+    SKIPCELL: int = ...
     """
     skip cells
     """
-    SKIPCONTROLCHARACTER: int = 2
+    SKIPCONTROLCHARACTER: int = ...
     """
     skip control characters
     """

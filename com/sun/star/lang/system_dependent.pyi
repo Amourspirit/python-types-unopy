@@ -21,7 +21,7 @@
 import typing
 
 
-class SystemDependent(object):
+class SystemDependent:
     """
     Const
 
@@ -38,19 +38,19 @@ class SystemDependent(object):
     See Also:
         `API SystemDependent <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1lang_1_1SystemDependent.html>`_
     """
-    SYSTEM_WIN32: int = 1
+    SYSTEM_WIN32: int = ...
     """
     The called interface method returns a value specified for Windows.
     
     These are Windows XP or higher.
     """
-    SYSTEM_WIN16: int = 2
+    SYSTEM_WIN16: int = ...
     """
     The called interface method returns a value specified for 16-bit Windows.
     
     This is Windows 3.11.
     """
-    SYSTEM_JAVA: int = 3
+    SYSTEM_JAVA: int = ...
     """
     The called interface method returns a value specified for Java.
     
@@ -58,23 +58,23 @@ class SystemDependent(object):
     
     The return should be a handle to a Java object locked with the call JavaEnvironment->NewGlobalRef( ... ) by the callee.
     """
-    SYSTEM_OS2: int = 4
+    SYSTEM_OS2: int = ...
     """
     The called interface method returns a value specified for OS/2.
     """
-    SYSTEM_MAC: int = 5
+    SYSTEM_MAC: int = ...
     """
     The called interface method returns a value specified for macOS.
     """
-    SYSTEM_XWINDOW: int = 6
+    SYSTEM_XWINDOW: int = ...
     """
     The called interface method returns a value specified for the X Window System.
     """
-    SYSTEM_IOS: int = 7
+    SYSTEM_IOS: int = ...
     """
     The called interface method returns a value specified for iOS.
     """
-    SYSTEM_ANDROID: int = 8
+    SYSTEM_ANDROID: int = ...
     """
     The called interface method returns a value specified for Android.
     """

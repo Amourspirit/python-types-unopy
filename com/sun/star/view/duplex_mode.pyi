@@ -21,7 +21,7 @@
 import typing
 
 
-class DuplexMode(object):
+class DuplexMode:
     """
     Const
 
@@ -30,19 +30,19 @@ class DuplexMode(object):
     See Also:
         `API DuplexMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1view_1_1DuplexMode.html>`_
     """
-    UNKNOWN: int = 0
+    UNKNOWN: int = ...
     """
     specifies an unknown duplex mode.
     """
-    OFF: int = 1
+    OFF: int = ...
     """
     specifies that there is no duplex mode enabled
     """
-    LONGEDGE: int = 2
+    LONGEDGE: int = ...
     """
     specifies a long edge duplex mode
     """
-    SHORTEDGE: int = 3
+    SHORTEDGE: int = ...
     """
     specifies a short edge duplex mode
     """

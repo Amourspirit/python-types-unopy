@@ -21,7 +21,7 @@
 import typing
 
 
-class EmbedMapUnits(object):
+class EmbedMapUnits:
     """
     Const
 
@@ -30,47 +30,47 @@ class EmbedMapUnits(object):
     See Also:
         `API EmbedMapUnits <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1embed_1_1EmbedMapUnits.html>`_
     """
-    ONE_100TH_MM: int = 0
+    ONE_100TH_MM: int = ...
     """
     In this type of map mode one logical point is equal to one-hundredth of millimeter.
     """
-    ONE_10TH_MM: int = 1
+    ONE_10TH_MM: int = ...
     """
     In this type of map mode one logical point is equal to one-tenth of millimeter.
     """
-    ONE_MM: int = 2
+    ONE_MM: int = ...
     """
     In this type of map mode one logical point is equal to one millimeter.
     """
-    ONE_CM: int = 3
+    ONE_CM: int = ...
     """
     In this type of map mode one logical point is equal to one centimeter.
     """
-    ONE_1000TH_INCH: int = 4
+    ONE_1000TH_INCH: int = ...
     """
     In this type of map mode one logical point is equal to one-thousandth of inch.
     """
-    ONE_100TH_INCH: int = 5
+    ONE_100TH_INCH: int = ...
     """
     In this type of map mode one logical point is equal to one-hundredth of inch.
     """
-    ONE_10TH_INCH: int = 6
+    ONE_10TH_INCH: int = ...
     """
     In this type of map mode one logical point is equal to one-tenth of inch.
     """
-    ONE_INCH: int = 7
+    ONE_INCH: int = ...
     """
     In this type of map mode one logical point is equal to one inch.
     """
-    POINT: int = 8
+    POINT: int = ...
     """
     In this type of map mode one logical point is equal to one typographical point.
     """
-    TWIP: int = 9
+    TWIP: int = ...
     """
     In this type of map mode one logical point is equal to one twentieth of typographical point.
     """
-    PIXEL: int = 10
+    PIXEL: int = ...
     """
     In this type of map mode one logical point is equal to one pixel.
     """

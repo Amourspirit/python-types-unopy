@@ -9,7 +9,6 @@ from .accessible_spreadsheet_page_view import AccessibleSpreadsheetPageView as A
 from .activation_event import ActivationEvent as ActivationEvent
 from .add_in import AddIn as AddIn
 from .address_convention import AddressConvention as AddressConvention
-from .border import Border as Border
 from .cell_annotation import CellAnnotation as CellAnnotation
 from .cell_annotation_shape import CellAnnotationShape as CellAnnotationShape
 from .cell_annotations import CellAnnotations as CellAnnotations
@@ -17,11 +16,9 @@ from .cell_annotations_enumeration import CellAnnotationsEnumeration as CellAnno
 from .cell_area_link import CellAreaLink as CellAreaLink
 from .cell_area_links import CellAreaLinks as CellAreaLinks
 from .cell_area_links_enumeration import CellAreaLinksEnumeration as CellAreaLinksEnumeration
-from .cell_delete_mode import CellDeleteMode as CellDeleteMode
 from .cell_flags import CellFlags as CellFlags
 from .cell_format_ranges import CellFormatRanges as CellFormatRanges
 from .cell_format_ranges_enumeration import CellFormatRangesEnumeration as CellFormatRangesEnumeration
-from .cell_insert_mode import CellInsertMode as CellInsertMode
 from .cells import Cells as Cells
 from .cells_enumeration import CellsEnumeration as CellsEnumeration
 from .color_scale import ColorScale as ColorScale
@@ -30,14 +27,12 @@ from .complex_reference import ComplexReference as ComplexReference
 from .condition_entry_type import ConditionEntryType as ConditionEntryType
 from .condition_format_entry import ConditionFormatEntry as ConditionFormatEntry
 from .condition_format_operator import ConditionFormatOperator as ConditionFormatOperator
-from .condition_operator import ConditionOperator as ConditionOperator
 from .condition_operator2 import ConditionOperator2 as ConditionOperator2
 from .conditional_format import ConditionalFormat as ConditionalFormat
 from .consolidation_descriptor import ConsolidationDescriptor as ConsolidationDescriptor
 from .data_bar import DataBar as DataBar
 from .data_bar_axis import DataBarAxis as DataBarAxis
 from .data_bar_entry_type import DataBarEntryType as DataBarEntryType
-from .data_import_mode import DataImportMode as DataImportMode
 from .data_pilot_descriptor import DataPilotDescriptor as DataPilotDescriptor
 from .data_pilot_field import DataPilotField as DataPilotField
 from .data_pilot_field_auto_show_info import DataPilotFieldAutoShowInfo as DataPilotFieldAutoShowInfo
@@ -51,7 +46,6 @@ from .data_pilot_field_groups import DataPilotFieldGroups as DataPilotFieldGroup
 from .data_pilot_field_groups_enumeration import DataPilotFieldGroupsEnumeration as DataPilotFieldGroupsEnumeration
 from .data_pilot_field_layout_info import DataPilotFieldLayoutInfo as DataPilotFieldLayoutInfo
 from .data_pilot_field_layout_mode import DataPilotFieldLayoutMode as DataPilotFieldLayoutMode
-from .data_pilot_field_orientation import DataPilotFieldOrientation as DataPilotFieldOrientation
 from .data_pilot_field_reference import DataPilotFieldReference as DataPilotFieldReference
 from .data_pilot_field_reference_item_type import DataPilotFieldReferenceItemType as DataPilotFieldReferenceItemType
 from .data_pilot_field_reference_type import DataPilotFieldReferenceType as DataPilotFieldReferenceType
@@ -91,7 +85,6 @@ from .date_type import DateType as DateType
 from .dde_item_info import DDEItemInfo as DDEItemInfo
 from .dde_link import DDELink as DDELink
 from .dde_link_info import DDELinkInfo as DDELinkInfo
-from .dde_link_mode import DDELinkMode as DDELinkMode
 from .dde_links import DDELinks as DDELinks
 from .dde_links_enumeration import DDELinksEnumeration as DDELinksEnumeration
 from .dimension_flags import DimensionFlags as DimensionFlags
@@ -102,14 +95,9 @@ from .external_link_info import ExternalLinkInfo as ExternalLinkInfo
 from .external_link_type import ExternalLinkType as ExternalLinkType
 from .external_reference import ExternalReference as ExternalReference
 from .external_sheet_cache import ExternalSheetCache as ExternalSheetCache
-from .fill_date_mode import FillDateMode as FillDateMode
-from .fill_direction import FillDirection as FillDirection
-from .fill_mode import FillMode as FillMode
-from .filter_connection import FilterConnection as FilterConnection
 from .filter_field_type import FilterFieldType as FilterFieldType
 from .filter_field_value import FilterFieldValue as FilterFieldValue
 from .filter_formula_parser import FilterFormulaParser as FilterFormulaParser
-from .filter_operator import FilterOperator as FilterOperator
 from .filter_operator2 import FilterOperator2 as FilterOperator2
 from .formula_language import FormulaLanguage as FormulaLanguage
 from .formula_map_group import FormulaMapGroup as FormulaMapGroup
@@ -125,7 +113,6 @@ from .function_category import FunctionCategory as FunctionCategory
 from .function_description import FunctionDescription as FunctionDescription
 from .function_description_enumeration import FunctionDescriptionEnumeration as FunctionDescriptionEnumeration
 from .function_descriptions import FunctionDescriptions as FunctionDescriptions
-from .general_function import GeneralFunction as GeneralFunction
 from .general_function2 import GeneralFunction2 as GeneralFunction2
 from .global_sheet_settings import GlobalSheetSettings as GlobalSheetSettings
 from .goal_result import GoalResult as GoalResult
@@ -146,7 +133,6 @@ from .named_range_flag import NamedRangeFlag as NamedRangeFlag
 from .named_ranges import NamedRanges as NamedRanges
 from .named_ranges_enumeration import NamedRangesEnumeration as NamedRangesEnumeration
 from .no_convergence_exception import NoConvergenceException as NoConvergenceException
-from .paste_operation import PasteOperation as PasteOperation
 from .range_selection_arguments import RangeSelectionArguments as RangeSelectionArguments
 from .range_selection_event import RangeSelectionEvent as RangeSelectionEvent
 from .recent_functions import RecentFunctions as RecentFunctions
@@ -163,7 +149,6 @@ from .sheet_cell_ranges import SheetCellRanges as SheetCellRanges
 from .sheet_cell_ranges_enumeration import SheetCellRangesEnumeration as SheetCellRangesEnumeration
 from .sheet_filter_descriptor import SheetFilterDescriptor as SheetFilterDescriptor
 from .sheet_link import SheetLink as SheetLink
-from .sheet_link_mode import SheetLinkMode as SheetLinkMode
 from .sheet_links import SheetLinks as SheetLinks
 from .sheet_links_enumeration import SheetLinksEnumeration as SheetLinksEnumeration
 from .sheet_ranges_query import SheetRangesQuery as SheetRangesQuery
@@ -172,7 +157,6 @@ from .sheet_sort_descriptor2 import SheetSortDescriptor2 as SheetSortDescriptor2
 from .single_reference import SingleReference as SingleReference
 from .solver import Solver as Solver
 from .solver_constraint import SolverConstraint as SolverConstraint
-from .solver_constraint_operator import SolverConstraintOperator as SolverConstraintOperator
 from .spreadsheet import Spreadsheet as Spreadsheet
 from .spreadsheet_document import SpreadsheetDocument as SpreadsheetDocument
 from .spreadsheet_document_settings import SpreadsheetDocumentSettings as SpreadsheetDocumentSettings
@@ -201,15 +185,12 @@ from .table_conditional_format import TableConditionalFormat as TableConditional
 from .table_filter_field import TableFilterField as TableFilterField
 from .table_filter_field2 import TableFilterField2 as TableFilterField2
 from .table_filter_field3 import TableFilterField3 as TableFilterField3
-from .table_operation_mode import TableOperationMode as TableOperationMode
 from .table_page_break_data import TablePageBreakData as TablePageBreakData
 from .table_page_style import TablePageStyle as TablePageStyle
 from .table_validation import TableValidation as TableValidation
 from .table_validation_visibility import TableValidationVisibility as TableValidationVisibility
 from .unique_cell_format_ranges import UniqueCellFormatRanges as UniqueCellFormatRanges
 from .unique_cell_format_ranges_enumeration import UniqueCellFormatRangesEnumeration as UniqueCellFormatRangesEnumeration
-from .validation_alert_style import ValidationAlertStyle as ValidationAlertStyle
-from .validation_type import ValidationType as ValidationType
 from .volatile_result import VolatileResult as VolatileResult
 from .x_activation_broadcaster import XActivationBroadcaster as XActivationBroadcaster
 from .x_activation_event_listener import XActivationEventListener as XActivationEventListener

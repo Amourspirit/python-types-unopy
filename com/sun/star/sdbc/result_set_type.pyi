@@ -21,7 +21,7 @@
 import typing
 
 
-class ResultSetType(object):
+class ResultSetType:
     """
     Const
 
@@ -30,15 +30,15 @@ class ResultSetType(object):
     See Also:
         `API ResultSetType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1ResultSetType.html>`_
     """
-    FORWARD_ONLY: int = 1003
+    FORWARD_ONLY: int = ...
     """
     is the type for a com.sun.star.sdb.ResultSet object whose cursor may move only forward.
     """
-    SCROLL_INSENSITIVE: int = 1004
+    SCROLL_INSENSITIVE: int = ...
     """
     is the type for a com.sun.star.sdb.ResultSet object that is scrollable but generally not sensitive to changes made by others.
     """
-    SCROLL_SENSITIVE: int = 1005
+    SCROLL_SENSITIVE: int = ...
     """
     is the type for a com.sun.star.sdb.ResultSet object that is scrollable and generally sensitive to changes made by others.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class WizardButton(object):
+class WizardButton:
     """
     Const
 
@@ -34,27 +34,27 @@ class WizardButton(object):
     See Also:
         `API WizardButton <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1dialogs_1_1WizardButton.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     denotes none of the buttons in the wizard
     """
-    NEXT: int = 1
+    NEXT: int = ...
     """
     denotes the button used to travel forward through the wizard
     """
-    PREVIOUS: int = 2
+    PREVIOUS: int = ...
     """
     denotes the button used to travel backward through the wizard
     """
-    FINISH: int = 3
+    FINISH: int = ...
     """
     denotes the button used to finish the wizard
     """
-    CANCEL: int = 4
+    CANCEL: int = ...
     """
     denotes the button used to cancel the wizard
     """
-    HELP: int = 5
+    HELP: int = ...
     """
     denotes the button used to request help
     """

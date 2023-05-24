@@ -21,7 +21,7 @@
 import typing
 
 
-class CompositeOperation(object):
+class CompositeOperation:
     """
     Const
 
@@ -40,85 +40,85 @@ class CompositeOperation(object):
     See Also:
         `API CompositeOperation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1CompositeOperation.html>`_
     """
-    CLEAR: int = 0
+    CLEAR: int = ...
     """
     Clear the destination.
     
     Clear the destination area. The function values are: Fa = Fb = 0.
     """
-    SOURCE: int = 1
+    SOURCE: int = ...
     """
     Copy source as-is to the destination.
     
     Copy source as-is to the destination. The function values are: Fa = 1, Fb = 0.
     """
-    DESTINATION: int = 2
+    DESTINATION: int = ...
     """
     Leave the destination as-is.
     
     Leave the destination as-is. The function values are: Fa = 0, Fb = 1.
     """
-    OVER: int = 3
+    OVER: int = ...
     """
     Copy the source over the destination.
     
     Copy the source over the destination. The function values are: Fa = 1, Fb = 1-Aa.
     """
-    UNDER: int = 4
+    UNDER: int = ...
     """
     Copy the source under the destination.
     
     Copy the source under the destination. The function values are: Fa = 1-Ab, Fb = 1.
     """
-    INSIDE: int = 5
+    INSIDE: int = ...
     """
     Copy the source to the destination.
     
     Copy the source to the destination, but limited to where the destination is. The function values are: Fa = Ab, Fb = 0.
     """
-    INSIDE_REVERSE: int = 6
+    INSIDE_REVERSE: int = ...
     """
     Leave the destination as is.
     
     Leave the destination as is, but only where the source was. The function values are: Fa = 0, Fb = Aa.
     """
-    OUTSIDE: int = 7
+    OUTSIDE: int = ...
     """
     Copy the source to the destination.
     
     Copy the source to the destination, but limited to where the destination is not. The function values are: Fa = 1-Ab, Fb = 0.
     """
-    OUTSIDE_REVERSE: int = 8
+    OUTSIDE_REVERSE: int = ...
     """
     Leave the destination as is.
     
     Leave the destination as is, but only where the source has not been. The function values are: Fa = 0, Fb = 1-Aa.
     """
-    ATOP: int = 9
+    ATOP: int = ...
     """
     Copy the source over the destination.
     
     Copy the source over the destination, but only where the destination is. Keep the destination. The function values are: Fa = Ab, Fb = 1-Aa.
     """
-    ATOP_REVERSE: int = 10
+    ATOP_REVERSE: int = ...
     """
     Copy the destination over the source.
     
     Copy the destination over the source, but only where the source is. Keep the source. The function values are: Fa = 1-Ab, Fb = Aa.
     """
-    XOR: int = 11
+    XOR: int = ...
     """
     Combine source and destination by exclusive or.
     
     Take only the parts where either source or destination, but not both visible. The function values are: Fa = 1-Ab, Fb = 1-Aa.
     """
-    ADD: int = 12
+    ADD: int = ...
     """
     Add source and destination values.
     
     Simply add contributions of both source and destination. The resulting color values are limited to the permissible color range, and clipped to the maximal value, if exceeded. The function values are: Fa = 1, Fb = 1.
     """
-    SATURATE: int = 13
+    SATURATE: int = ...
     """
     Saturate source and destination.
     

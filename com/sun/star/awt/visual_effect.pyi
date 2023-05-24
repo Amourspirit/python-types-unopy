@@ -21,7 +21,7 @@
 import typing
 
 
-class VisualEffect(object):
+class VisualEffect:
     """
     Const
 
@@ -32,15 +32,15 @@ class VisualEffect(object):
     See Also:
         `API VisualEffect <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1VisualEffect.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     specifies that no visual effect is to be applied
     """
-    LOOK3D: int = 1
+    LOOK3D: int = ...
     """
     specifies a 3D-like look
     """
-    FLAT: int = 2
+    FLAT: int = ...
     """
     specifies a \"flat\" look
     """

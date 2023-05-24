@@ -21,7 +21,7 @@
 import typing
 
 
-class WhiteSpaceTreatment(object):
+class WhiteSpaceTreatment:
     """
     Const
 
@@ -30,15 +30,15 @@ class WhiteSpaceTreatment(object):
     See Also:
         `API WhiteSpaceTreatment <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1xsd_1_1WhiteSpaceTreatment.html>`_
     """
-    Preserve: int = 0
+    Preserve: int = ...
     """
     White spaces should be preserved when processing the string.
     """
-    Replace: int = 1
+    Replace: int = ...
     """
     White spaces should be replaced with TODO when processing the string.
     """
-    Collapse: int = 2
+    Collapse: int = ...
     """
     Multiple successive white spaces should be collapsed to a single white space when processing the string.
     """

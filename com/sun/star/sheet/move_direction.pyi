@@ -21,7 +21,7 @@
 import typing
 
 
-class MoveDirection(object):
+class MoveDirection:
     """
     Const
 
@@ -32,19 +32,19 @@ class MoveDirection(object):
     See Also:
         `API MoveDirection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1MoveDirection.html>`_
     """
-    DOWN: int = 0
+    DOWN: int = ...
     """
     specifies that the selection moves one cell down.
     """
-    RIGHT: int = 1
+    RIGHT: int = ...
     """
     specifies that the selection moves one cell right.
     """
-    UP: int = 2
+    UP: int = ...
     """
     specifies that the selection moves one cell up.
     """
-    LEFT: int = 3
+    LEFT: int = ...
     """
     specifies that the selection moves one cell left.
     """

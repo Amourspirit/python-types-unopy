@@ -21,7 +21,7 @@
 import typing
 
 
-class DataType(object):
+class DataType:
     """
     Const
 
@@ -40,63 +40,63 @@ class DataType(object):
     See Also:
         `API DataType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1DataType.html>`_
     """
-    BIT: int = -7
-    TINYINT: int = -6
-    SMALLINT: int = 5
-    INTEGER: int = 4
-    BIGINT: int = -5
-    FLOAT: int = 6
-    REAL: int = 7
-    DOUBLE: int = 8
-    NUMERIC: int = 2
-    DECIMAL: int = 3
-    CHAR: int = 1
-    VARCHAR: int = 12
-    LONGVARCHAR: int = -1
-    DATE: int = 91
-    TIME: int = 92
-    TIMESTAMP: int = 93
-    BINARY: int = -2
-    VARBINARY: int = -3
-    LONGVARBINARY: int = -4
-    SQLNULL: int = 0
-    OTHER: int = 1111
+    BIT: int = ...
+    TINYINT: int = ...
+    SMALLINT: int = ...
+    INTEGER: int = ...
+    BIGINT: int = ...
+    FLOAT: int = ...
+    REAL: int = ...
+    DOUBLE: int = ...
+    NUMERIC: int = ...
+    DECIMAL: int = ...
+    CHAR: int = ...
+    VARCHAR: int = ...
+    LONGVARCHAR: int = ...
+    DATE: int = ...
+    TIME: int = ...
+    TIMESTAMP: int = ...
+    BINARY: int = ...
+    VARBINARY: int = ...
+    LONGVARBINARY: int = ...
+    SQLNULL: int = ...
+    OTHER: int = ...
     """
     indicates that the SQL type is database-specific and gets mapped to an object that can be accessed via the method com.sun.star.sdbc.XRow.getObject().
     """
-    OBJECT: int = 2000
+    OBJECT: int = ...
     """
     indicates a type which is represented by an object which implements this type.
     """
-    DISTINCT: int = 2001
+    DISTINCT: int = ...
     """
     describes a type based on a built-in type.
     
     It is a user-defined data type (UDT).
     """
-    STRUCT: int = 2002
+    STRUCT: int = ...
     """
     indicates a type consisting of attributes that may be any type.
     
     It is a user-defined data type (UDT).
     """
-    ARRAY: int = 2003
+    ARRAY: int = ...
     """
     indicates a type representing an SQL ARRAY.
     """
-    BLOB: int = 2004
+    BLOB: int = ...
     """
     indicates a type representing an SQL Binary Large Object.
     """
-    CLOB: int = 2005
+    CLOB: int = ...
     """
     indicates a type representing an SQL Character Large Object.
     """
-    REF: int = 2006
+    REF: int = ...
     """
     indicates a type representing an SQL REF, a referencing type.
     """
-    BOOLEAN: int = 16
+    BOOLEAN: int = ...
     """
     identifies the generic SQL type BOOLEAN.
     

@@ -21,7 +21,7 @@
 import typing
 
 
-class ParagraphStyleCategory(object):
+class ParagraphStyleCategory:
     """
     Const
 
@@ -30,27 +30,27 @@ class ParagraphStyleCategory(object):
     See Also:
         `API ParagraphStyleCategory <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style_1_1ParagraphStyleCategory.html>`_
     """
-    TEXT: int = 0
+    TEXT: int = ...
     """
     is applied to styles that are used for common text.
     """
-    CHAPTER: int = 1
+    CHAPTER: int = ...
     """
     is applied to styles that are used as headings.
     """
-    LIST: int = 2
+    LIST: int = ...
     """
     is applied to styles that used in numberings and lists.
     """
-    INDEX: int = 3
+    INDEX: int = ...
     """
     is applied to styles that are used in indexes.
     """
-    EXTRA: int = 4
+    EXTRA: int = ...
     """
     is applied to styles that are used in special regions like headers, footers, and footnote text.
     """
-    HTML: int = 5
+    HTML: int = ...
     """
     is applied to styles that are used to support HTML.
     """

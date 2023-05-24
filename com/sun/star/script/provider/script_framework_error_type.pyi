@@ -21,7 +21,7 @@
 import typing
 
 
-class ScriptFrameworkErrorType(object):
+class ScriptFrameworkErrorType:
     """
     Const
 
@@ -30,19 +30,19 @@ class ScriptFrameworkErrorType(object):
     See Also:
         `API ScriptFrameworkErrorType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1script_1_1provider_1_1ScriptFrameworkErrorType.html>`_
     """
-    UNKNOWN: int = 0
+    UNKNOWN: int = ...
     """
     Unknown.
     """
-    NOTSUPPORTED: int = 1
+    NOTSUPPORTED: int = ...
     """
     ProviderNotSupported.
     """
-    NO_SUCH_SCRIPT: int = 2
+    NO_SUCH_SCRIPT: int = ...
     """
     the requested method, and/or with the requested signature, does not exist
     """
-    MALFORMED_URL: int = 3
+    MALFORMED_URL: int = ...
     """
     the requested method, with the requested signature, does not exist
     """

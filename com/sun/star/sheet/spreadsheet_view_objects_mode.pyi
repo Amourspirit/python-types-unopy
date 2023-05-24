@@ -21,7 +21,7 @@
 import typing
 
 
-class SpreadsheetViewObjectsMode(object):
+class SpreadsheetViewObjectsMode:
     """
     Const
 
@@ -30,11 +30,11 @@ class SpreadsheetViewObjectsMode(object):
     See Also:
         `API SpreadsheetViewObjectsMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1SpreadsheetViewObjectsMode.html>`_
     """
-    SHOW: int = 0
+    SHOW: int = ...
     """
     Specifies to display a specific set of objects in the spreadsheet view.
     """
-    HIDE: int = 1
+    HIDE: int = ...
     """
     Specifies to hide a specific set of objects from the spreadsheet view.
     """

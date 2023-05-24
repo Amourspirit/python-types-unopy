@@ -21,7 +21,7 @@
 import typing
 
 
-class FilterOperator2(object):
+class FilterOperator2:
     """
     Const
 
@@ -36,75 +36,75 @@ class FilterOperator2(object):
     See Also:
         `API FilterOperator2 <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1FilterOperator2.html>`_
     """
-    EMPTY: int = 0
+    EMPTY: int = ...
     """
     selects empty entries.
     """
-    NOT_EMPTY: int = 1
+    NOT_EMPTY: int = ...
     """
     selects non-empty entries.
     """
-    EQUAL: int = 2
+    EQUAL: int = ...
     """
     value has to be equal to the specified value.
     """
-    NOT_EQUAL: int = 3
+    NOT_EQUAL: int = ...
     """
     value must not be equal to the specified value.
     """
-    GREATER: int = 4
+    GREATER: int = ...
     """
     value has to be greater than the specified value.
     """
-    GREATER_EQUAL: int = 5
+    GREATER_EQUAL: int = ...
     """
     value has to be greater than or equal to the specified value.
     """
-    LESS: int = 6
+    LESS: int = ...
     """
     value has to be less than the specified value.
     """
-    LESS_EQUAL: int = 7
+    LESS_EQUAL: int = ...
     """
     value has to be less than or equal to the specified value.
     """
-    TOP_VALUES: int = 8
+    TOP_VALUES: int = ...
     """
     selects a specified number of entries with the greatest values.
     """
-    TOP_PERCENT: int = 9
+    TOP_PERCENT: int = ...
     """
     selects a specified percentage of entries with the greatest values.
     """
-    BOTTOM_VALUES: int = 10
+    BOTTOM_VALUES: int = ...
     """
     selects a specified number of entries with the lowest values.
     """
-    BOTTOM_PERCENT: int = 11
+    BOTTOM_PERCENT: int = ...
     """
     selects a specified percentage of entries with the lowest values.
     """
-    CONTAINS: int = 12
+    CONTAINS: int = ...
     """
     selects contains entries.
     """
-    DOES_NOT_CONTAIN: int = 13
+    DOES_NOT_CONTAIN: int = ...
     """
     selects does-not-contain entries.
     """
-    BEGINS_WITH: int = 14
+    BEGINS_WITH: int = ...
     """
     selects begins-with entries.
     """
-    DOES_NOT_BEGIN_WITH: int = 15
+    DOES_NOT_BEGIN_WITH: int = ...
     """
     selects does-not-begin-with entries.
     """
-    ENDS_WITH: int = 16
+    ENDS_WITH: int = ...
     """
     selects ends-with entries.
     """
-    DOES_NOT_END_WITH: int = 17
+    DOES_NOT_END_WITH: int = ...
     """
     selects does-not-end-with entries.
     """

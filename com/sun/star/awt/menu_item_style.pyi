@@ -21,7 +21,7 @@
 import typing
 
 
-class MenuItemStyle(object):
+class MenuItemStyle:
     """
     Const
 
@@ -30,15 +30,15 @@ class MenuItemStyle(object):
     See Also:
         `API MenuItemStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1MenuItemStyle.html>`_
     """
-    CHECKABLE: int = 1
+    CHECKABLE: int = ...
     """
     specifies an item which can be checked independently.
     """
-    RADIOCHECK: int = 2
+    RADIOCHECK: int = ...
     """
     specifies an item which can be checked dependent on the neighbouring items.
     """
-    AUTOCHECK: int = 4
+    AUTOCHECK: int = ...
     """
     specifies to check this item automatically on select.
     """

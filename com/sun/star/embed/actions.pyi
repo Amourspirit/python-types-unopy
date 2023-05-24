@@ -21,7 +21,7 @@
 import typing
 
 
-class Actions(object):
+class Actions:
     """
     Const
 
@@ -30,13 +30,13 @@ class Actions(object):
     See Also:
         `API Actions <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1embed_1_1Actions.html>`_
     """
-    PREVENT_CLOSE: int = 1
+    PREVENT_CLOSE: int = ...
     """
     \"Prevent Close\" - throws veto exception if target object is going to close.
     
     Usually a com.sun.star.util.XCloseListener implementation could use this constant to request approval to throw veto exception.
     """
-    PREVENT_TERMINATION: int = 2
+    PREVENT_TERMINATION: int = ...
     """
     \"Prevent Termination\" - throws veto exception if target object is going to terminate.
     

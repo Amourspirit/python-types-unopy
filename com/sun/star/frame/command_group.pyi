@@ -21,7 +21,7 @@
 import typing
 
 
-class CommandGroup(object):
+class CommandGroup:
     """
     Const
 
@@ -34,107 +34,107 @@ class CommandGroup(object):
     See Also:
         `API CommandGroup <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1frame_1_1CommandGroup.html>`_
     """
-    INTERNAL: int = 0
+    INTERNAL: int = ...
     """
     specifies internal commands.
     """
-    APPLICATION: int = 1
+    APPLICATION: int = ...
     """
     specifies application based commands.
     """
-    VIEW: int = 2
+    VIEW: int = ...
     """
     specifies view specific commands.
     """
-    DOCUMENT: int = 3
+    DOCUMENT: int = ...
     """
     specifies document specific commands.
     """
-    EDIT: int = 4
+    EDIT: int = ...
     """
     specifies edit specific commands.
     """
-    MACRO: int = 5
+    MACRO: int = ...
     """
     specifies commands used by the built-in Basic.
     """
-    OPTIONS: int = 6
+    OPTIONS: int = ...
     """
     specifies commands to change options.
     """
-    MATH: int = 7
+    MATH: int = ...
     """
     specifies math specific commands.
     """
-    NAVIGATOR: int = 8
+    NAVIGATOR: int = ...
     """
     specifies navigate commands.
     """
-    INSERT: int = 9
+    INSERT: int = ...
     """
     specifies insert commands.
     """
-    FORMAT: int = 10
+    FORMAT: int = ...
     """
     specifies commands that are related to formats.
     """
-    TEMPLATE: int = 11
+    TEMPLATE: int = ...
     """
     specifies commands that are related to templates.
     """
-    TEXT: int = 12
+    TEXT: int = ...
     """
     specifies text specific commands.
     """
-    FRAME: int = 13
+    FRAME: int = ...
     """
     specifies frame specific commands.
     """
-    GRAPHIC: int = 14
+    GRAPHIC: int = ...
     """
     specifies commands that are related to graphical data.
     """
-    TABLE: int = 15
+    TABLE: int = ...
     """
     specifies commands that are related to tables.
     """
-    ENUMERATION: int = 16
+    ENUMERATION: int = ...
     """
     specifies commands that are related to bullets and numbering.
     """
-    DATA: int = 17
+    DATA: int = ...
     """
     specifies commands that are related to data.
     """
-    SPECIAL: int = 18
+    SPECIAL: int = ...
     """
     specifies special commands.
     """
-    IMAGE: int = 19
+    IMAGE: int = ...
     """
     specifies commands that are related to images.
     """
-    CHART: int = 20
+    CHART: int = ...
     """
     specifies chart specific commands.
     """
-    EXPLORER: int = 21
+    EXPLORER: int = ...
     """
     specifies explorer specific commands.
     """
-    CONNECTOR: int = 22
+    CONNECTOR: int = ...
     """
     specifies commands that are related to connectors.
     """
-    MODIFY: int = 23
+    MODIFY: int = ...
     """
     specifies commands that are related to modifications.
     """
-    DRAWING: int = 24
+    DRAWING: int = ...
     """
     specifies commands that are related to drawing.
     """
-    CONTROLS: int = 25
+    CONTROLS: int = ...
     """
     specifies commands that are related to controls.
     """

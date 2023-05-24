@@ -21,7 +21,7 @@
 import typing
 
 
-class ColorSpaceType(object):
+class ColorSpaceType:
     """
     Const
 
@@ -30,69 +30,69 @@ class ColorSpaceType(object):
     See Also:
         `API ColorSpaceType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1ColorSpaceType.html>`_
     """
-    DEVICE_COLOR: int = 0
+    DEVICE_COLOR: int = ...
     """
     Unspecified device color space - use conversion functions to convert to standard color spaces.
     """
-    GREY: int = 1
+    GREY: int = ...
     """
     Grey-value color space.
     
     Use this for monochrome images.
     """
-    RGB: int = 2
+    RGB: int = ...
     """
     RGB color space.
     """
-    CMYK: int = 3
+    CMYK: int = ...
     """
     CMYK color space.
     
     See Wikipedia for a thorough explanation.
     """
-    CMYKOG: int = 4
+    CMYKOG: int = ...
     """
     CMYKOG color space.
     
     See Wikipedia for a thorough explanation.
     """
-    CIEXYZ: int = 5
+    CIEXYZ: int = ...
     """
     Standard CieXYZ color space.
     
     See Wikipedia for a thorough explanation.
     """
-    CIELAB: int = 6
+    CIELAB: int = ...
     """
     Standard CieLab color space.
     
     See Wikipedia for a thorough explanation. Preferable over CIEXYZ if perceptual uniformity is an issue.
     """
-    SRGB: int = 7
+    SRGB: int = ...
     """
     Standard sRGB color space.
     
     See Wikipedia for a thorough explanation.
     """
-    HSV: int = 8
+    HSV: int = ...
     """
     HSV color space.
     
     Hue saturation value. See Wikipedia for a thorough explanation.
     """
-    HSL: int = 9
+    HSL: int = ...
     """
     HSL color space.
     
     Hue saturation lightness. See Wikipedia for a thorough explanation
     """
-    YCBCR: int = 10
+    YCBCR: int = ...
     """
     YCbCr color space.
     
     See Wikipedia for a thorough explanation. This color space is common for digital video.
     """
-    INDEXED: int = 11
+    INDEXED: int = ...
     """
     Indexed color space.
     

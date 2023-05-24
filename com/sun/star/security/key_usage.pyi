@@ -21,7 +21,7 @@
 import typing
 
 
-class KeyUsage(object):
+class KeyUsage:
     """
     Const
 
@@ -29,11 +29,11 @@ class KeyUsage(object):
     See Also:
         `API KeyUsage <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1security_1_1KeyUsage.html>`_
     """
-    DIGITAL_SIGNATURE: int = 128
-    NON_REPUDIATION: int = 64
-    KEY_ENCIPHERMENT: int = 32
-    DATA_ENCIPHERMENT: int = 16
-    KEY_AGREEMENT: int = 8
-    KEY_CERT_SIGN: int = 4
-    CRL_SIGN: int = 2
+    DIGITAL_SIGNATURE: int = ...
+    NON_REPUDIATION: int = ...
+    KEY_ENCIPHERMENT: int = ...
+    DATA_ENCIPHERMENT: int = ...
+    KEY_AGREEMENT: int = ...
+    KEY_CERT_SIGN: int = ...
+    CRL_SIGN: int = ...
 

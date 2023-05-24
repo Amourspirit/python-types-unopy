@@ -21,7 +21,7 @@
 import typing
 
 
-class WindowAttribute(object):
+class WindowAttribute:
     """
     Const
 
@@ -32,59 +32,59 @@ class WindowAttribute(object):
     See Also:
         `API WindowAttribute <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1WindowAttribute.html>`_
     """
-    SHOW: int = 1
+    SHOW: int = ...
     """
     specifies that the window is initially visible.
     """
-    FULLSIZE: int = 2
+    FULLSIZE: int = ...
     """
     specifies that the window fills the complete desktop area.
     
     This applies only to top windows.
     """
-    OPTIMUMSIZE: int = 4
+    OPTIMUMSIZE: int = ...
     """
     specifies that the window is optimum size.
     
     This applies only to top windows.
     """
-    MINSIZE: int = 8
+    MINSIZE: int = ...
     """
     specifies that the window is minimum size.
     
     This applies only to top windows.
     """
-    BORDER: int = 16
+    BORDER: int = ...
     """
     specifies that the window has visible borders.
     
     This applies only to top windows.
     """
-    SIZEABLE: int = 32
+    SIZEABLE: int = ...
     """
     specifies that the size of the window can be changed by the user.
     
     This applies only to top windows.
     """
-    MOVEABLE: int = 64
+    MOVEABLE: int = ...
     """
     specifies that the window can be moved by the user.
     
     This applies only to top windows.
     """
-    CLOSEABLE: int = 128
+    CLOSEABLE: int = ...
     """
     specifies that the window can be closed by the user.
     
     This applies only to top windows.
     """
-    SYSTEMDEPENDENT: int = 256
+    SYSTEMDEPENDENT: int = ...
     """
     specifies that the window should support the com.sun.star.awt.XSystemDependentWindowPeer interface.
     
     This flag may be ignored, but in this case no system-dependent extension works.
     """
-    NODECORATION: int = 512
+    NODECORATION: int = ...
     """
     specifies that the window should have no decoration.
     """

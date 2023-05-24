@@ -21,7 +21,7 @@
 import typing
 
 
-class KNumberFormatUsage(object):
+class KNumberFormatUsage:
     """
     Const
 
@@ -30,35 +30,35 @@ class KNumberFormatUsage(object):
     See Also:
         `API KNumberFormatUsage <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1KNumberFormatUsage.html>`_
     """
-    DATE: int = 1
+    DATE: int = ...
     """
     Date format, for example, \"YYYY-MM-DD\".
     """
-    TIME: int = 2
+    TIME: int = ...
     """
     Time format, for example, \"HH:MM:SS\".
     """
-    DATE_TIME: int = 3
+    DATE_TIME: int = ...
     """
     Mixed date/time format, for example, \"YYYY-MM-DD HH:MM:SS\".
     """
-    FIXED_NUMBER: int = 4
+    FIXED_NUMBER: int = ...
     """
     Numeric format, for example, \"#,##0.00\".
     """
-    FRACTION_NUMBER: int = 5
+    FRACTION_NUMBER: int = ...
     """
     Fractional format, for example, \"# ??/??\".
     """
-    PERCENT_NUMBER: int = 6
+    PERCENT_NUMBER: int = ...
     """
     Percent format, for example, \"0.00%\".
     """
-    SCIENTIFIC_NUMBER: int = 7
+    SCIENTIFIC_NUMBER: int = ...
     """
     Scientific format, for example, \"0.00E+00\".
     """
-    CURRENCY: int = 8
+    CURRENCY: int = ...
     """
     Currency format, for example, \"#,##0.00 [$EUR]\".
     """

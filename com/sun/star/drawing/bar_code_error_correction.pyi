@@ -21,7 +21,7 @@
 import typing
 
 
-class BarCodeErrorCorrection(object):
+class BarCodeErrorCorrection:
     """
     Const
 
@@ -40,8 +40,8 @@ class BarCodeErrorCorrection(object):
     See Also:
         `API BarCodeErrorCorrection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing_1_1BarCodeErrorCorrection.html>`_
     """
-    LOW: int = 1
-    MEDIUM: int = 2
-    QUARTILE: int = 3
-    HIGH: int = 4
+    LOW: int = ...
+    MEDIUM: int = ...
+    QUARTILE: int = ...
+    HIGH: int = ...
 

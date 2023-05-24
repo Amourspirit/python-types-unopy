@@ -21,7 +21,7 @@
 import typing
 
 
-class ImageDrawMode(object):
+class ImageDrawMode:
     """
     Const
 
@@ -34,27 +34,27 @@ class ImageDrawMode(object):
     See Also:
         `API ImageDrawMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1ImageDrawMode.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     the image is drawn as is, without any color transformation.
     """
-    DISABLE: int = 1
+    DISABLE: int = ...
     """
     the image is drawn as if it represented a feature whose state is disabled.
     """
-    HIGHLIGHT: int = 2
+    HIGHLIGHT: int = ...
     """
     the image is drawn as being highlighted.
     
     See com.sun.star.awt.XStyleSettings.HighlightColor.
     """
-    DEACTIVE: int = 4
+    DEACTIVE: int = ...
     """
     the image is drawn as being deactivated.
     
     See com.sun.star.awt.XStyleSettings.DeactiveColor.
     """
-    SEMITRANSPARENT: int = 16
+    SEMITRANSPARENT: int = ...
     """
     the image is drawn semi-transparent.
     """

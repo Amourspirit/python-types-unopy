@@ -21,7 +21,7 @@
 import typing
 
 
-class PlaceholderType(object):
+class PlaceholderType:
     """
     Const
 
@@ -30,23 +30,23 @@ class PlaceholderType(object):
     See Also:
         `API PlaceholderType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1PlaceholderType.html>`_
     """
-    TEXT: int = 0
+    TEXT: int = ...
     """
     The field represents a piece of text.
     """
-    TABLE: int = 1
+    TABLE: int = ...
     """
     The field initiates the insertion of a text table.
     """
-    TEXTFRAME: int = 2
+    TEXTFRAME: int = ...
     """
     The field initiates the insertion of a text frame.
     """
-    GRAPHIC: int = 3
+    GRAPHIC: int = ...
     """
     The field initiates the insertion of a graphic object.
     """
-    OBJECT: int = 4
+    OBJECT: int = ...
     """
     The field initiates the insertion of an embedded object.
     """

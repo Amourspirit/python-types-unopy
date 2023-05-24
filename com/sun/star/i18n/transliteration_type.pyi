@@ -21,7 +21,7 @@
 import typing
 
 
-class TransliterationType(object):
+class TransliterationType:
     """
     Const
 
@@ -32,28 +32,28 @@ class TransliterationType(object):
     See Also:
         `API TransliterationType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1TransliterationType.html>`_
     """
-    NONE: int = 0
-    ONE_TO_ONE: int = 1
+    NONE: int = ...
+    ONE_TO_ONE: int = ...
     """
     A transliteration module is ONE_TO_ONE if and only if it's mapping between characters is one to one like a-z to A-Z.
     
     Transliteration modules of this type can be used as choice in regular expressions based search/replace.
     """
-    NUMERIC: int = 2
+    NUMERIC: int = ...
     """
     A transliteration module can have attribute NUMERIC if it transliterates numbers in different languages like Chinese numbers to Arabic numbers and vice versa.
     
     This mapping need not be one to one, it should be primarily used by number formatting and parsing methods.
     """
-    ONE_TO_ONE_NUMERIC: int = 3
+    ONE_TO_ONE_NUMERIC: int = ...
     """
     A transliteration module is ONE_TO_ONE_NUMERIC if it offers both one to one mapping and handles number also.
     """
-    IGNORE: int = 4
+    IGNORE: int = ...
     """
     With a transliteration IGNORE case, the regular expression A-Z can be transformed to a-z, for example.
     """
-    CASCADE: int = 8
+    CASCADE: int = ...
     """
     If the transliteration is cascaded (uses more than one algorithm).
     """

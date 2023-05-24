@@ -5,7 +5,6 @@ from .nss_initializer import NSSInitializer as NSSInitializer
 from .nss_profile import NSSProfile as NSSProfile
 from .se_initializer import SEInitializer as SEInitializer
 from .security_environment import SecurityEnvironment as SecurityEnvironment
-from .security_operation_status import SecurityOperationStatus as SecurityOperationStatus
 from .x_certificate_creator import XCertificateCreator as XCertificateCreator
 from .x_cipher_context import XCipherContext as XCipherContext
 from .x_cipher_context_supplier import XCipherContextSupplier as XCipherContextSupplier

@@ -21,7 +21,7 @@
 import typing
 
 
-class BooleanComparisonMode(object):
+class BooleanComparisonMode:
     """
     Const
 
@@ -30,25 +30,25 @@ class BooleanComparisonMode(object):
     See Also:
         `API BooleanComparisonMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdb_1_1BooleanComparisonMode.html>`_
     """
-    EQUAL_INTEGER: int = 0
+    EQUAL_INTEGER: int = ...
     """
     denotes the default comparison
     
     Most databases support comparing boolean expressions or column values directly with integer values: column = 0 respectively column = 1.
     """
-    IS_LITERAL: int = 1
+    IS_LITERAL: int = ...
     """
     requires to use IS boolean_literal for boolean comparison.
     
     That is, the generated comparison predicates will be column IS TRUE resp. column IS FALSE.
     """
-    EQUAL_LITERAL: int = 2
+    EQUAL_LITERAL: int = ...
     """
     requires to use = boolean_literal for boolean comparison.
     
     That is, the generated comparison predicates will be column = TRUE resp. column = FALSE.
     """
-    ACCESS_COMPAT: int = 3
+    ACCESS_COMPAT: int = ...
     """
     requires to use an Microsoft Access compatible syntax for boolean comparison.
     """

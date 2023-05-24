@@ -21,7 +21,7 @@
 import typing
 
 
-class UIElementType(object):
+class UIElementType:
     """
     Const
 
@@ -34,43 +34,43 @@ class UIElementType(object):
     See Also:
         `API UIElementType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1UIElementType.html>`_
     """
-    UNKNOWN: int = 0
+    UNKNOWN: int = ...
     """
     unknown user interface element type, which can be used as a wildcard to specify all types.
     """
-    MENUBAR: int = 1
+    MENUBAR: int = ...
     """
     specifies a menu bar.
     """
-    POPUPMENU: int = 2
+    POPUPMENU: int = ...
     """
     specifies a pop-up menu.
     """
-    TOOLBAR: int = 3
+    TOOLBAR: int = ...
     """
     specifies a toolbar.
     """
-    STATUSBAR: int = 4
+    STATUSBAR: int = ...
     """
     specifies a statusbar.
     """
-    FLOATINGWINDOW: int = 5
+    FLOATINGWINDOW: int = ...
     """
     specifies a floating window, which can also be docked.
     """
-    PROGRESSBAR: int = 6
+    PROGRESSBAR: int = ...
     """
     specifies a floating window, which can also be docked.
     """
-    TOOLPANEL: int = 7
+    TOOLPANEL: int = ...
     """
     specifies a tool panel
     """
-    DOCKINGWINDOW: int = 7
+    DOCKINGWINDOW: int = ...
     """
     specifies a window that can be docked.
     """
-    COUNT: int = 8
+    COUNT: int = ...
     """
     specifies the number of constants.
     """

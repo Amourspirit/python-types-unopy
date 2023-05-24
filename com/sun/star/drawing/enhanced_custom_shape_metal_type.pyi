@@ -21,7 +21,7 @@
 import typing
 
 
-class EnhancedCustomShapeMetalType(object):
+class EnhancedCustomShapeMetalType:
     """
     Const
 
@@ -34,11 +34,11 @@ class EnhancedCustomShapeMetalType(object):
     See Also:
         `API EnhancedCustomShapeMetalType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1drawing_1_1EnhancedCustomShapeMetalType.html>`_
     """
-    MetalODF: int = 0
+    MetalODF: int = ...
     """
     The rendering of the shape is modified as specified in the ODF standard.
     """
-    MetalMSCompatible: int = 1
+    MetalMSCompatible: int = ...
     """
     The rendering of the shape is modified to get a similar rendering as in Microsoft Office for objects, which have the fc3DMetallic flag in Rich Text Format or binary MS Office format set.
     """

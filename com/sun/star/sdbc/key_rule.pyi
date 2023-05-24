@@ -21,7 +21,7 @@
 import typing
 
 
-class KeyRule(object):
+class KeyRule:
     """
     Const
 
@@ -30,7 +30,7 @@ class KeyRule(object):
     See Also:
         `API KeyRule <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1KeyRule.html>`_
     """
-    CASCADE: int = 0
+    CASCADE: int = ...
     """
     a possible value for the column's UPDATE_RULE and DELETE_RULE in the com.sun.star.sdbc.XResultSet objects returned by the methods com.sun.star.sdbc.XDatabaseMetaData.getImportedKeys(), com.sun.star.sdbc.XDatabaseMetaData.getExportedKeys(), and com.sun.star.sdbc.XDatabaseMetaData.getCrossReference().
     
@@ -38,7 +38,7 @@ class KeyRule(object):
     
     For the column DELETE_RULE , it indicates that when the primary key is deleted, rows that imported that key are deleted.
     """
-    RESTRICT: int = 1
+    RESTRICT: int = ...
     """
     a possible value for the column's UPDATE_RULE and DELETE_RULE in the com.sun.star.sdbc.XResultSet objects returned by the methods com.sun.star.sdbc.XDatabaseMetaData.getImportedKeys(), com.sun.star.sdbc.XDatabaseMetaData.getExportedKeys(), and com.sun.star.sdbc.XDatabaseMetaData.getCrossReference().
     
@@ -46,19 +46,19 @@ class KeyRule(object):
     
     For the column DELETE_RULE , it indicates that a primary key may not be deleted if it has been imported by another table as a foreign key.
     """
-    SET_NULL: int = 2
+    SET_NULL: int = ...
     """
     a possible value for the column's UPDATE_RULE and DELETE_RULE in the com.sun.star.sdbc.XResultSet objects returned by the methods com.sun.star.sdbc.XDatabaseMetaData.getImportedKeys(), com.sun.star.sdbc.XDatabaseMetaData.getExportedKeys(), and com.sun.star.sdbc.XDatabaseMetaData.getCrossReference().
     
     For the columns UPDATE_RULE and DELETE_RULE , it indicates that when the primary key is updated or deleted, the foreign key (imported key) is changed to NULL.
     """
-    NO_ACTION: int = 3
+    NO_ACTION: int = ...
     """
     a possible value for the column's UPDATE_RULE and DELETE_RULE in the com.sun.star.sdbc.XResultSet objects returned by the methods com.sun.star.sdbc.XDatabaseMetaData.getImportedKeys(), com.sun.star.sdbc.XDatabaseMetaData.getExportedKeys(), and com.sun.star.sdbc.XDatabaseMetaData.getCrossReference().
     
     For the columns UPDATE_RULE and DELETE_RULE , it indicates that if the primary key has been imported, it cannot be updated or deleted.
     """
-    SET_DEFAULT: int = 4
+    SET_DEFAULT: int = ...
     """
     a possible value for the column's UPDATE_RULE and DELETE_RULE in the com.sun.star.sdbc.XResultSet objects returned by the methods com.sun.star.sdbc.XDatabaseMetaData.getImportedKeys(), com.sun.star.sdbc.XDatabaseMetaData.getExportedKeys(), and com.sun.star.sdbc.XDatabaseMetaData.getCrossReference().
     

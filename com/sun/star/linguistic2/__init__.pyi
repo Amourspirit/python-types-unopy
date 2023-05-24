@@ -1,7 +1,6 @@
 from .conversion_dictionary import ConversionDictionary as ConversionDictionary
 from .conversion_dictionary_list import ConversionDictionaryList as ConversionDictionaryList
 from .conversion_dictionary_type import ConversionDictionaryType as ConversionDictionaryType
-from .conversion_direction import ConversionDirection as ConversionDirection
 from .conversion_property_type import ConversionPropertyType as ConversionPropertyType
 from .dictionary import Dictionary as Dictionary
 from .dictionary_event import DictionaryEvent as DictionaryEvent
@@ -9,7 +8,6 @@ from .dictionary_event_flags import DictionaryEventFlags as DictionaryEventFlags
 from .dictionary_list import DictionaryList as DictionaryList
 from .dictionary_list_event import DictionaryListEvent as DictionaryListEvent
 from .dictionary_list_event_flags import DictionaryListEventFlags as DictionaryListEventFlags
-from .dictionary_type import DictionaryType as DictionaryType
 from .hangul_hanja_conversion_dictionary import HangulHanjaConversionDictionary as HangulHanjaConversionDictionary
 from .hyphenator import Hyphenator as Hyphenator
 from .language_guessing import LanguageGuessing as LanguageGuessing

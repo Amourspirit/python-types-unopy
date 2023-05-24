@@ -21,7 +21,7 @@
 import typing
 
 
-class AuthorDisplayFormat(object):
+class AuthorDisplayFormat:
     """
     Const
 
@@ -30,19 +30,19 @@ class AuthorDisplayFormat(object):
     See Also:
         `API AuthorDisplayFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1AuthorDisplayFormat.html>`_
     """
-    FULL: int = 0
+    FULL: int = ...
     """
     The full name of the author is displayed.
     """
-    LAST_NAME: int = 1
+    LAST_NAME: int = ...
     """
     Only the last name of the author is displayed.
     """
-    FIRST_NAME: int = 2
+    FIRST_NAME: int = ...
     """
     Only the first name of the author is displayed.
     """
-    INITIALS: int = 3
+    INITIALS: int = ...
     """
     The initials of the author are displayed.
     """

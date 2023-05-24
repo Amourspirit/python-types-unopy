@@ -21,7 +21,7 @@
 import typing
 
 
-class ScriptDirection(object):
+class ScriptDirection:
     """
     Const
 
@@ -34,15 +34,15 @@ class ScriptDirection(object):
     See Also:
         `API ScriptDirection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1ScriptDirection.html>`_
     """
-    NEUTRAL: int = 0
+    NEUTRAL: int = ...
     """
     Script direction is neutral.
     """
-    LEFT_TO_RIGHT: int = 1
+    LEFT_TO_RIGHT: int = ...
     """
     Script direction is left to right.
     """
-    RIGHT_TO_LEFT: int = 2
+    RIGHT_TO_LEFT: int = ...
     """
     Script direction is right to left.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class FontWidth(object):
+class FontWidth:
     """
     Const
 
@@ -32,43 +32,43 @@ class FontWidth(object):
     See Also:
         `API FontWidth <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1FontWidth.html>`_
     """
-    DONTKNOW: float
+    DONTKNOW: float = ...
     """
     The width of the font is not specified/known.
     """
-    ULTRACONDENSED: float
+    ULTRACONDENSED: float = ...
     """
     The width of the font is condensed to 50%.
     """
-    EXTRACONDENSED: float
+    EXTRACONDENSED: float = ...
     """
     The width of the font is condensed to 60%.
     """
-    CONDENSED: float
+    CONDENSED: float = ...
     """
     The width of the font is condensed to 75%.
     """
-    SEMICONDENSED: float
+    SEMICONDENSED: float = ...
     """
     The width of the font is condensed to 90%.
     """
-    NORMAL: float
+    NORMAL: float = ...
     """
     The width of the font is normal.
     """
-    SEMIEXPANDED: float
+    SEMIEXPANDED: float = ...
     """
     The width of the font is expanded to 110%.
     """
-    EXPANDED: float
+    EXPANDED: float = ...
     """
     The width of the font is expanded to 150%.
     """
-    EXTRAEXPANDED: float
+    EXTRAEXPANDED: float = ...
     """
     The width of the font is expanded to 175%.
     """
-    ULTRAEXPANDED: float
+    ULTRAEXPANDED: float = ...
     """
     The width of the font is expanded to 200%.
     """

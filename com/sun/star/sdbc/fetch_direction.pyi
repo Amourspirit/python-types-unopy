@@ -21,7 +21,7 @@
 import typing
 
 
-class FetchDirection(object):
+class FetchDirection:
     """
     Const
 
@@ -30,15 +30,15 @@ class FetchDirection(object):
     See Also:
         `API FetchDirection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1FetchDirection.html>`_
     """
-    FORWARD: int = 1000
+    FORWARD: int = ...
     """
     The rows in a result set will be processed in a forward direction; first-to-last.
     """
-    REVERSE: int = 1001
+    REVERSE: int = ...
     """
     The rows in a result set will be processed in a reverse direction; last-to-first.
     """
-    UNKNOWN: int = 1002
+    UNKNOWN: int = ...
     """
     The order in which rows in a result set will be processed is unknown:
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class TextDirection(object):
+class TextDirection:
     """
     Const
 
@@ -36,19 +36,19 @@ class TextDirection(object):
     See Also:
         `API TextDirection <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1TextDirection.html>`_
     """
-    WEAK_LEFT_TO_RIGHT: int = 0
+    WEAK_LEFT_TO_RIGHT: int = ...
     """
     Reference point is left, main direction is from left to right.
     """
-    STRONG_LEFT_TO_RIGHT: int = 2
+    STRONG_LEFT_TO_RIGHT: int = ...
     """
     Reference point is left, main direction is from left to right.
     """
-    WEAK_RIGHT_TO_LEFT: int = 1
+    WEAK_RIGHT_TO_LEFT: int = ...
     """
     Reference point is right, main direction is from right to left.
     """
-    STRONG_RIGHT_TO_LEFT: int = 3
+    STRONG_RIGHT_TO_LEFT: int = ...
     """
     Reference point is right, main direction is from right to left.
     """

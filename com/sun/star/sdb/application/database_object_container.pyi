@@ -21,7 +21,7 @@
 import typing
 
 
-class DatabaseObjectContainer(object):
+class DatabaseObjectContainer:
     """
     Const
 
@@ -40,39 +40,39 @@ class DatabaseObjectContainer(object):
     See Also:
         `API DatabaseObjectContainer <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdb_1_1application_1_1DatabaseObjectContainer.html>`_
     """
-    TABLES: int = 1000
+    TABLES: int = ...
     """
     denotes the virtual folder containing all tables of a database, in a context where such a folder is displayed to the user.
     """
-    QUERIES: int = 1001
+    QUERIES: int = ...
     """
     denotes the virtual folder containing all queries of a database, in a context where such a folder is displayed to the user.
     """
-    FORMS: int = 1002
+    FORMS: int = ...
     """
     denotes the virtual folder containing all forms of a database document, in a context where such a folder is displayed to the user.
     """
-    REPORTS: int = 1003
+    REPORTS: int = ...
     """
     denotes the virtual folder containing all reports of a database, in a context where such a folder is displayed to the user.
     """
-    DATA_SOURCE: int = 1004
+    DATA_SOURCE: int = ...
     """
     denotes the data source itself, which effectively is the root container for all other kind of database objects, including other container types.
     """
-    CATALOG: int = 1005
+    CATALOG: int = ...
     """
     denotes a catalog in a database which supports catalogs
     """
-    SCHEMA: int = 1006
+    SCHEMA: int = ...
     """
     denotes a schema in a database which supports schemas
     """
-    FORMS_FOLDER: int = 1007
+    FORMS_FOLDER: int = ...
     """
     denotes a folder which is used to organize forms in a database document
     """
-    REPORTS_FOLDER: int = 1008
+    REPORTS_FOLDER: int = ...
     """
     denotes a folder which is used to organize reports in a database document
     """

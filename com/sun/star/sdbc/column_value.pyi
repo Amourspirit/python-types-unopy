@@ -21,7 +21,7 @@
 import typing
 
 
-class ColumnValue(object):
+class ColumnValue:
     """
     Const
 
@@ -30,15 +30,15 @@ class ColumnValue(object):
     See Also:
         `API ColumnValue <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1ColumnValue.html>`_
     """
-    NO_NULLS: int = 0
+    NO_NULLS: int = ...
     """
     indicates that a column does not allow NULL values.
     """
-    NULLABLE: int = 1
+    NULLABLE: int = ...
     """
     indicates that a column does allow NULL values.
     """
-    NULLABLE_UNKNOWN: int = 2
+    NULLABLE_UNKNOWN: int = ...
     """
     indicates that the nullability of the column is unknown.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class BibliographyDataField(object):
+class BibliographyDataField:
     """
     Const
 
@@ -38,133 +38,133 @@ class BibliographyDataField(object):
     See Also:
         `API BibliographyDataField <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1BibliographyDataField.html>`_
     """
-    IDENTIFIER: int = 0
+    IDENTIFIER: int = ...
     """
     This field contains a unique identifier for the bibliographic data.
     """
-    BIBILIOGRAPHIC_TYPE: int = 1
+    BIBILIOGRAPHIC_TYPE: int = ...
     """
     This field contains the type of the bibliographic reference.
     
     It is of the type BibliographyDataType.
     """
-    ADDRESS: int = 2
+    ADDRESS: int = ...
     """
     This field contains the address of the publisher.
     """
-    ANNOTE: int = 3
+    ANNOTE: int = ...
     """
     This field contains an annotation.
     """
-    AUTHOR: int = 4
+    AUTHOR: int = ...
     """
     This field contains the name(s) of the author(s)
     """
-    BOOKTITLE: int = 5
+    BOOKTITLE: int = ...
     """
     This field contains the title of the book.
     """
-    CHAPTER: int = 6
+    CHAPTER: int = ...
     """
     This field contains the name or number of the chapter.
     """
-    EDITION: int = 7
+    EDITION: int = ...
     """
     This field contains the number or name of the edition.
     """
-    EDITOR: int = 8
+    EDITOR: int = ...
     """
     This field contains the name(s) of the editor(s)
     """
-    HOWPUBLISHED: int = 9
+    HOWPUBLISHED: int = ...
     """
     This field contains a description of the type of the publishing.
     """
-    INSTITUTION: int = 10
+    INSTITUTION: int = ...
     """
     This field contains the name of the institution where the publishing was created.
     """
-    JOURNAL: int = 11
+    JOURNAL: int = ...
     """
     This field contains the name of the journal.
     """
-    MONTH: int = 12
+    MONTH: int = ...
     """
     This field contains number or name of the month of the publishing.
     """
-    NOTE: int = 13
+    NOTE: int = ...
     """
     This field contains a note.
     """
-    NUMBER: int = 14
+    NUMBER: int = ...
     """
     This field contains the number of the publishing.
     """
-    ORGANIZATIONS: int = 15
+    ORGANIZATIONS: int = ...
     """
     This field contains the name of the organizations where the publishing was created.
     """
-    PAGES: int = 16
+    PAGES: int = ...
     """
     This field contains the number(s) of the page(s) of the reference into a publishing.
     """
-    PUBLISHER: int = 17
+    PUBLISHER: int = ...
     """
     This field contains the name of the publisher.
     """
-    SCHOOL: int = 18
+    SCHOOL: int = ...
     """
     This field contains the name of the university or school where the publishing was created.
     """
-    SERIES: int = 19
+    SERIES: int = ...
     """
     This field contains the series of the publishing.
     """
-    TITLE: int = 20
+    TITLE: int = ...
     """
     This field contains the title of the publishing.
     """
-    REPORT_TYPE: int = 21
+    REPORT_TYPE: int = ...
     """
     This field contains a description of the type of the report.
     """
-    VOLUME: int = 22
+    VOLUME: int = ...
     """
     This field contains the volume of the publishing.
     """
-    YEAR: int = 23
+    YEAR: int = ...
     """
     This field contains the year when the publishing was created.
     """
-    URL: int = 24
+    URL: int = ...
     """
     This field contains URL of the publishing.
     """
-    CUSTOM1: int = 25
+    CUSTOM1: int = ...
     """
     This field contains user defined data.
     """
-    CUSTOM2: int = 26
+    CUSTOM2: int = ...
     """
     This field contains user defined data.
     """
-    CUSTOM3: int = 27
+    CUSTOM3: int = ...
     """
     This field contains user defined data.
     """
-    CUSTOM4: int = 28
+    CUSTOM4: int = ...
     """
     This field contains user defined data.
     """
-    CUSTOM5: int = 29
+    CUSTOM5: int = ...
     """
     This field contains user defined data.
     """
-    ISBN: int = 30
+    ISBN: int = ...
     """
     This field contains the ISBN data of the publishing.
     """
-    LOCAL_URL: int = 31
+    LOCAL_URL: int = ...
     """
     This field contains a local copy of the publishing.
     

@@ -21,7 +21,7 @@
 import typing
 
 
-class DeviceCapability(object):
+class DeviceCapability:
     """
     Const
 
@@ -30,11 +30,11 @@ class DeviceCapability(object):
     See Also:
         `API DeviceCapability <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1DeviceCapability.html>`_
     """
-    RASTEROPERATIONS: int = 1
+    RASTEROPERATIONS: int = ...
     """
     supports the device raster operations.
     """
-    GETBITS: int = 2
+    GETBITS: int = ...
     """
     supports the XDevice.createBitmap(), the XDevice.createDevice() and the XGraphics.copy() methods.
     """

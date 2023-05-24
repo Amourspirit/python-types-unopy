@@ -21,7 +21,7 @@
 import typing
 
 
-class AnimationFill(object):
+class AnimationFill:
     """
     Const
 
@@ -30,41 +30,41 @@ class AnimationFill(object):
     See Also:
         `API AnimationFill <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1animations_1_1AnimationFill.html>`_
     """
-    DEFAULT: int = 0
+    DEFAULT: int = ...
     """
     The fill behavior for the element is determined by the value of the XTiming.FillDefault attribute.
     
     This is the default value for the XTiming.Fill... If the application of fillDefault to an element would result in the element having a value of fill that is not allowed on that element, the element will instead have a fill value of AnimationFill.AUTO.
     """
-    INHERIT: int = 0
+    INHERIT: int = ...
     """
     Specifies that the value of this attribute (and of the fill behavior) are inherited from the XTiming.FillDefault value of the parent element.
     
     If there is no parent element, the value is AnimationFill.AUTO. This is the default value for the XTiming.FillDefault.
     """
-    REMOVE: int = 1
+    REMOVE: int = ...
     """
     Specifies that the element will not extend past the end of the last instance of the simple duration.
     """
-    FREEZE: int = 2
+    FREEZE: int = ...
     """
     Specifies that the element will extend past the end of the last instance of the simple duration by \"freezing\" the element state at that point.
     
     The parent time container of the element determines how long the element is frozen (as described immediately below).
     """
-    HOLD: int = 3
+    HOLD: int = ...
     """
     Setting this to \"hold\" has the same effect as setting to \"freeze\", except that the element is always frozen to extend to the end of the simple duration of the parent time container of the element (independent of the type of time container).
     
     For profiles that support a layered layout model (e.g., SMIL 2.0 Language Profile), held elements (elements with fill=\"hold\") will refresh their display area when a layer is added on top then later removed.
     """
-    TRANSITION: int = 4
+    TRANSITION: int = ...
     """
     Setting this to \"transition\" has the same effect as setting to \"freeze\", except that the element is removed at the end of the transition.
     
     This value is only allowed on elements with media directly associated with them. If specified on any other element (e.g. a time container element in the SMIL language profile), the attribute is ignored. See the SMIL Transitions module.
     """
-    AUTO: int = 5
+    AUTO: int = ...
     """
     The fill behavior for this element depends on whether the element specifies any of the attributes that define the simple or active duration:
     """

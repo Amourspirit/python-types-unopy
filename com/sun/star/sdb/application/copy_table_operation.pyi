@@ -21,7 +21,7 @@
 import typing
 
 
-class CopyTableOperation(object):
+class CopyTableOperation:
     """
     Const
 
@@ -34,21 +34,21 @@ class CopyTableOperation(object):
     See Also:
         `API CopyTableOperation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdb_1_1application_1_1CopyTableOperation.html>`_
     """
-    CopyDefinitionAndData: int = 0
+    CopyDefinitionAndData: int = ...
     """
     specifies that the wizard should copy the source table to the target database, by creating a new table and copying all data.
     """
-    CopyDefinitionOnly: int = 1
+    CopyDefinitionOnly: int = ...
     """
     specifies that the wizard should copy the source table to the target database, by only creating a new table with the same structure as the source table.
     """
-    CreateAsView: int = 2
+    CreateAsView: int = ...
     """
     specifies the wizard should create the source table as view
     
     This option is not available if the target database does not support views.
     """
-    AppendData: int = 3
+    AppendData: int = ...
     """
     specifies the wizard should append the source table's data to an existing table in the target database.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class NativeNumberMode(object):
+class NativeNumberMode:
     """
     Const
 
@@ -40,57 +40,57 @@ class NativeNumberMode(object):
     See Also:
         `API NativeNumberMode <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1NativeNumberMode.html>`_
     """
-    NATNUM0: int = 0
+    NATNUM0: int = ...
     """
     Transliteration to ASCII Arabic digits.
     
     Try to convert any native number string to ASCII. If already ASCII it remains ASCII.
     """
-    NATNUM1: int = 1
+    NATNUM1: int = ...
     """
     Transliteration in Chinese: Chinese lower case characters; CAL: 1/7/7 [DBNum1] Japanese: short Kanji characters [DBNum1]; CAL: 1/4/4 [DBNum1] Korean: Korean lower case characters [DBNum1]; CAL: 1/7/7 [DBNum1] Hebrew: Hebrew characters Arabic: Arabic-Indic characters Thai: Thai characters Hindi: Indic-Devanagari characters Odia: Odia (Oriya) charactersMarathi: Indic-Devanagari charactersBengali: Bengali charactersPunjabi: Punjabi (Gurmukhi) charactersGujarati: Gujarati charactersTamil: Tamil charactersTelugu: Telugu charactersKannada: Kannada charactersMalayalam: Malayalam charactersLao: Lao charactersTibetan: Tibetan charactersBurmese: Burmese (Myanmar) charactersKhmer: Khmer (Cambodian) charactersMongolian: Mongolian charactersNepali: Indic-Devanagari charactersDzongkha: Tibetan charactersFarsi: East Arabic-Indic charactersChurch Slavic: Cyrillic characters.
     """
-    NATNUM2: int = 2
+    NATNUM2: int = ...
     """
     Transliteration in Chinese: Chinese upper case characters; CAL: 2/8/8 [DBNum2] Japanese: traditional Kanji characters; CAL: 2/5/5 [DBNum2] Korean: Korean upper case characters [DBNum2]; CAL: 2/8/8 [DBNum2] Hebrew: Hebrew numbering.
     """
-    NATNUM3: int = 3
+    NATNUM3: int = ...
     """
     Transliteration in Chinese: fullwidth Arabic digits; CAL: 3/3/3 [DBNum3] Japanese: fullwidth Arabic digits; CAL: 3/3/3 [DBNum3] Korean: fullwidth Arabic digits [DBNum3]; CAL: 3/3/3 [DBNum3].
     """
-    NATNUM4: int = 4
+    NATNUM4: int = ...
     """
     Transliteration in Chinese: lower case text [DBNum1] Japanese: modern long Kanji text [DBNum2] Korean: formal lower case text.
     """
-    NATNUM5: int = 5
+    NATNUM5: int = ...
     """
     Transliteration in Chinese: Chinese upper case text [DBNum2] Japanese: traditional long Kanji text [DBNum3] Korean: formal upper case text.
     """
-    NATNUM6: int = 6
+    NATNUM6: int = ...
     """
     Transliteration in Chinese: fullwidth text [DBNum3] Japanese: fullwidth text Korean: fullwidth text.
     """
-    NATNUM7: int = 7
+    NATNUM7: int = ...
     """
     Transliteration in Chinese: short lower case text Japanese: modern short Kanji text Korean: informal lower case text.
     """
-    NATNUM8: int = 8
+    NATNUM8: int = ...
     """
     Transliteration in Chinese: short upper case text Japanese: traditional short Kanji text [DBNum4] Korean: informal upper case text.
     """
-    NATNUM9: int = 9
+    NATNUM9: int = ...
     """
     Transliteration in Korean: Hangul characters.
     """
-    NATNUM10: int = 10
+    NATNUM10: int = ...
     """
     Transliteration in Korean: formal Hangul text [DBNum4]; CAL: 9/11/11 [DBNum4].
     """
-    NATNUM11: int = 11
+    NATNUM11: int = ...
     """
     Transliteration in Korean: informal Hangul text.
     """
-    NATNUM12: int = 12
+    NATNUM12: int = ...
     """
     Transliteration to cardinal number names (one, two, three, ...), ordinal number names (first, second, third, ...), ordinal indicators (1st, 2nd, 3rd, ...), etc.
     

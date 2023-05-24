@@ -21,7 +21,7 @@
 import typing
 
 
-class SchemaAttribute(object):
+class SchemaAttribute:
     """
     Const
 
@@ -34,19 +34,19 @@ class SchemaAttribute(object):
     See Also:
         `API SchemaAttribute <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1configuration_1_1backend_1_1SchemaAttribute.html>`_
     """
-    REQUIRED: int = 1
+    REQUIRED: int = ...
     """
     indicates that a property value can't be null.
     """
-    LOCALIZED: int = 2
+    LOCALIZED: int = ...
     """
     indicates that the content of the node or the value of the property may depend on the locale.
     """
-    EXTENSIBLE: int = 4
+    EXTENSIBLE: int = ...
     """
     indicates that properties can be added to the node at runtime
     """
-    MASK: int = 255
+    MASK: int = ...
     """
     can be used to mask the schema attributes from merged attributes
     """

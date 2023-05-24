@@ -21,7 +21,7 @@
 import typing
 
 
-class EmbedVerbs(object):
+class EmbedVerbs:
     """
     Const
 
@@ -30,31 +30,31 @@ class EmbedVerbs(object):
     See Also:
         `API EmbedVerbs <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1embed_1_1EmbedVerbs.html>`_
     """
-    MS_OLEVERB_PRIMARY: int = 0
+    MS_OLEVERB_PRIMARY: int = ...
     """
     lets the object do default activation, as by double-click.
     """
-    MS_OLEVERB_SHOW: int = -1
+    MS_OLEVERB_SHOW: int = ...
     """
     lets the object open itself for editing or viewing.
     """
-    MS_OLEVERB_OPEN: int = -2
+    MS_OLEVERB_OPEN: int = ...
     """
     lets the object activate itself outplace.
     """
-    MS_OLEVERB_HIDE: int = -3
+    MS_OLEVERB_HIDE: int = ...
     """
     lets the inplace object remove its UI from container.
     """
-    MS_OLEVERB_UIACTIVATE: int = -4
+    MS_OLEVERB_UIACTIVATE: int = ...
     """
     lets the object proceed with UI activation.
     """
-    MS_OLEVERB_IPACTIVATE: int = -5
+    MS_OLEVERB_IPACTIVATE: int = ...
     """
     lets the object activate itself inplace.
     """
-    MS_OLEVERB_DISCARDUNDOSTATE: int = -6
+    MS_OLEVERB_DISCARDUNDOSTATE: int = ...
     """
     lets the object forget any undo state.
     """

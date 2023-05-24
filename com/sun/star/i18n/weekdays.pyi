@@ -21,7 +21,7 @@
 import typing
 
 
-class Weekdays(object):
+class Weekdays:
     """
     Const
 
@@ -32,31 +32,31 @@ class Weekdays(object):
     See Also:
         `API Weekdays <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1Weekdays.html>`_
     """
-    SUNDAY: int = 0
+    SUNDAY: int = ...
     """
     Sunday.
     """
-    MONDAY: int = 1
+    MONDAY: int = ...
     """
     Monday.
     """
-    TUESDAY: int = 2
+    TUESDAY: int = ...
     """
     Tuesday.
     """
-    WEDNESDAY: int = 3
+    WEDNESDAY: int = ...
     """
     Wednesday.
     """
-    THURSDAY: int = 4
+    THURSDAY: int = ...
     """
     Thursday.
     """
-    FRIDAY: int = 5
+    FRIDAY: int = ...
     """
     Friday.
     """
-    SATURDAY: int = 6
+    SATURDAY: int = ...
     """
     Saturday.
     """

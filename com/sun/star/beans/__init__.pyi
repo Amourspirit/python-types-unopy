@@ -19,7 +19,6 @@ from .property_exist_exception import PropertyExistException as PropertyExistExc
 from .property_set import PropertySet as PropertySet
 from .property_set_info_change import PropertySetInfoChange as PropertySetInfoChange
 from .property_set_info_change_event import PropertySetInfoChangeEvent as PropertySetInfoChangeEvent
-from .property_state import PropertyState as PropertyState
 from .property_state_change_event import PropertyStateChangeEvent as PropertyStateChangeEvent
 from .property_value import PropertyValue as PropertyValue
 from .property_values import PropertyValues as PropertyValues

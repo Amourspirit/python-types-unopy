@@ -21,7 +21,7 @@
 import typing
 
 
-class ItemType(object):
+class ItemType:
     """
     Const
 
@@ -34,19 +34,19 @@ class ItemType(object):
     See Also:
         `API ItemType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ui_1_1ItemType.html>`_
     """
-    DEFAULT: int = 0
+    DEFAULT: int = ...
     """
     a normal item
     """
-    SEPARATOR_LINE: int = 1
+    SEPARATOR_LINE: int = ...
     """
     a separator is inserted as a line.
     """
-    SEPARATOR_SPACE: int = 2
+    SEPARATOR_SPACE: int = ...
     """
     a separator is inserted as a space.
     """
-    SEPARATOR_LINEBREAK: int = 3
+    SEPARATOR_LINEBREAK: int = ...
     """
     a line break is inserted.
     """

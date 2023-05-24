@@ -21,7 +21,7 @@
 import typing
 
 
-class TextConversionOption(object):
+class TextConversionOption:
     """
     Const
 
@@ -36,19 +36,19 @@ class TextConversionOption(object):
     See Also:
         `API TextConversionOption <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1TextConversionOption.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     No option.
     """
-    CHARACTER_BY_CHARACTER: int = 1
+    CHARACTER_BY_CHARACTER: int = ...
     """
     Character by character conversion.
     """
-    IGNORE_POST_POSITIONAL_WORD: int = 2
+    IGNORE_POST_POSITIONAL_WORD: int = ...
     """
     Ignore post-positional word for Hangul to Hanja conversion.
     """
-    USE_CHARACTER_VARIANTS: int = 2
+    USE_CHARACTER_VARIANTS: int = ...
     """
     Use Taiwan, HongKong SAR, and Macao SAR character variants for Simplified to Traditional Chinese conversion.
     

@@ -21,7 +21,7 @@
 import typing
 
 
-class MethodConcept(object):
+class MethodConcept:
     """
     Const
 
@@ -32,41 +32,41 @@ class MethodConcept(object):
     See Also:
         `API MethodConcept <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1beans_1_1MethodConcept.html>`_
     """
-    ALL: int = -1
+    ALL: int = ...
     """
     This value is used to query for all methods, see XIntrospectionAccess.getMethod() and XIntrospectionAccess.getMethods()
     """
-    DANGEROUS: int = 1
+    DANGEROUS: int = ...
     """
     specifies methods which can result in an unstable state (i.e.
     
     deadlock, application crash, security hole, etc.) when called directly by the user.
     """
-    PROPERTY: int = 2
+    PROPERTY: int = ...
     """
     specifies methods which are used to set and get the value of properties/attributes.
     
     These methods have the signature type get...() , void set...() or boolean is...() .
     """
-    LISTENER: int = 4
+    LISTENER: int = ...
     """
     specifies methods of the listener concept.
     
     These methods have the signature add...Listener()  or remove...Listener().
     """
-    ENUMERATION: int = 8
+    ENUMERATION: int = ...
     """
     specifies methods of the enumeration concept.
     
     These methods have the signature create...Enumeration and return an interface that is derived from com.sun.star.container.XEnumeration. Additionally, the method com.sun.star.container.XEnumerationAccess.getElementType() belongs to this concept.
     """
-    NAMECONTAINER: int = 16
+    NAMECONTAINER: int = ...
     """
     specifies methods of the name container concept.
     
     These methods have the signature get...ByName(), set...ByName(), replace...ByName(), remove...ByName(), has...ByName(), or get...Names. In addition, the method com.sun.star.container.XEnumerationAccess.getElementType() belongs to this concept.
     """
-    INDEXCONTAINER: int = 32
+    INDEXCONTAINER: int = ...
     """
     specifies methods of the index container concept.
     

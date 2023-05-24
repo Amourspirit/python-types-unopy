@@ -1,13 +1,10 @@
-from .anchor_binding_mode import AnchorBindingMode as AnchorBindingMode
 from .basic_pane_factory import BasicPaneFactory as BasicPaneFactory
 from .basic_tool_bar_factory import BasicToolBarFactory as BasicToolBarFactory
 from .basic_view_factory import BasicViewFactory as BasicViewFactory
-from .border_type import BorderType as BorderType
 from .configuration import Configuration as Configuration
 from .configuration_change_event import ConfigurationChangeEvent as ConfigurationChangeEvent
 from .configuration_controller import ConfigurationController as ConfigurationController
 from .module_controller import ModuleController as ModuleController
-from .resource_activation_mode import ResourceActivationMode as ResourceActivationMode
 from .resource_id import ResourceId as ResourceId
 from .tab_bar_button import TabBarButton as TabBarButton
 from .x_configuration import XConfiguration as XConfiguration

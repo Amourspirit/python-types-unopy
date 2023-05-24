@@ -21,7 +21,7 @@
 import typing
 
 
-class ChangeAction(object):
+class ChangeAction:
     """
     Const
 
@@ -33,19 +33,19 @@ class ChangeAction(object):
     See Also:
         `API ChangeAction <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1ChangeAction.html>`_
     """
-    INSERT: int = 1
+    INSERT: int = ...
     """
     indicates that an insert will be performed.
     """
-    UPDATE: int = 2
+    UPDATE: int = ...
     """
     indicates that an update will be performed.
     """
-    DELETE: int = 3
+    DELETE: int = ...
     """
     indicates that a delete will be performed.
     """
-    UNDO: int = 4
+    UNDO: int = ...
     """
     indicates that an undo will be performed.
     """

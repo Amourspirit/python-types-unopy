@@ -21,7 +21,7 @@
 import typing
 
 
-class InvalidateStyle(object):
+class InvalidateStyle:
     """
     Const
 
@@ -30,31 +30,31 @@ class InvalidateStyle(object):
     See Also:
         `API InvalidateStyle <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1InvalidateStyle.html>`_
     """
-    CHILDREN: int = 1
+    CHILDREN: int = ...
     """
     The child windows are invalidated, too.
     """
-    NOCHILDREN: int = 2
+    NOCHILDREN: int = ...
     """
     The child windows are not invalidated.
     """
-    NOERASE: int = 4
+    NOERASE: int = ...
     """
     The invalidated area is painted with the background color/pattern.
     """
-    UPDATE: int = 8
+    UPDATE: int = ...
     """
     The invalidated area is updated immediately.
     """
-    TRANSPARENT: int = 16
+    TRANSPARENT: int = ...
     """
     The parent window is invalidated, too.
     """
-    NOTRANSPARENT: int = 32
+    NOTRANSPARENT: int = ...
     """
     The parent window is not invalidated.
     """
-    NOCLIPCHILDREN: int = 16384
+    NOCLIPCHILDREN: int = ...
     """
     The area is invalidated regardless of overlapping child windows.
     """

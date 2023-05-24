@@ -21,7 +21,7 @@
 import typing
 
 
-class KeyModifier(object):
+class KeyModifier:
     """
     Const
 
@@ -30,19 +30,19 @@ class KeyModifier(object):
     See Also:
         `API KeyModifier <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1KeyModifier.html>`_
     """
-    SHIFT: int = 1
+    SHIFT: int = ...
     """
     refers to both shift keys.
     """
-    MOD1: int = 2
+    MOD1: int = ...
     """
     refers in the most cases to the \"Ctrl\" key (Cmd on macOS).
     """
-    MOD2: int = 4
+    MOD2: int = ...
     """
     refers in the most cases to the \"Alt\" key.
     """
-    MOD3: int = 8
+    MOD3: int = ...
     """
     refers in the most cases to the \"Ctrl\" key (macOS)
     """

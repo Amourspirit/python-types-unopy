@@ -21,7 +21,7 @@
 import typing
 
 
-class reservedWords(object):
+class reservedWords:
     """
     Const
 
@@ -30,55 +30,55 @@ class reservedWords(object):
     See Also:
         `API reservedWords <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1reservedWords.html>`_
     """
-    TRUE_WORD: int = 0
+    TRUE_WORD: int = ...
     """
     \"true\"
     """
-    FALSE_WORD: int = 1
+    FALSE_WORD: int = ...
     """
     \"false\"
     """
-    QUARTER1_WORD: int = 2
+    QUARTER1_WORD: int = ...
     """
     \"1st quarter\"
     """
-    QUARTER2_WORD: int = 3
+    QUARTER2_WORD: int = ...
     """
     \"2nd quarter\"
     """
-    QUARTER3_WORD: int = 4
+    QUARTER3_WORD: int = ...
     """
     \"3rd quarter\"
     """
-    QUARTER4_WORD: int = 5
+    QUARTER4_WORD: int = ...
     """
     \"4th quarter\"
     """
-    ABOVE_WORD: int = 6
+    ABOVE_WORD: int = ...
     """
     \"above\"
     """
-    BELOW_WORD: int = 7
+    BELOW_WORD: int = ...
     """
     \"below\"
     """
-    QUARTER1_ABBREVIATION: int = 8
+    QUARTER1_ABBREVIATION: int = ...
     """
     \"Q1\"
     """
-    QUARTER2_ABBREVIATION: int = 9
+    QUARTER2_ABBREVIATION: int = ...
     """
     \"Q2\"
     """
-    QUARTER3_ABBREVIATION: int = 10
+    QUARTER3_ABBREVIATION: int = ...
     """
     \"Q3\"
     """
-    QUARTER4_ABBREVIATION: int = 11
+    QUARTER4_ABBREVIATION: int = ...
     """
     \"Q4\"
     """
-    COUNT: int = 12
+    COUNT: int = ...
     """
     Yes, this must be the count of known reserved words and one more than the maximum number used above! Count of known reserved words.
     """

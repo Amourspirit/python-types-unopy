@@ -21,7 +21,7 @@
 import typing
 
 
-class EffectCommands(object):
+class EffectCommands:
     """
     Const
 
@@ -29,31 +29,31 @@ class EffectCommands(object):
     See Also:
         `API EffectCommands <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1presentation_1_1EffectCommands.html>`_
     """
-    CUSTOM: int = 0
+    CUSTOM: int = ...
     """
     the command is user defined
     """
-    VERB: int = 1
+    VERB: int = ...
     """
     the command is an OLE verb.
     
     Required parameters are \"Verb\" of type long that specifies the verb to execute.
     """
-    PLAY: int = 2
+    PLAY: int = ...
     """
     the command starts playing on a media object.
     
     Optional parameters are \"MediaTime\" of type double that specifies the start time in milliseconds. If not given, play continues at last position known.
     """
-    TOGGLEPAUSE: int = 3
+    TOGGLEPAUSE: int = ...
     """
     the command toggles the pause status on a media object.
     """
-    STOP: int = 4
+    STOP: int = ...
     """
     the command stops the animation on a media object
     """
-    STOPAUDIO: int = 5
+    STOPAUDIO: int = ...
     """
     the command stops all currently running sound effects.
     """

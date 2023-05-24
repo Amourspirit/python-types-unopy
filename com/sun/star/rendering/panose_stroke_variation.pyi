@@ -21,7 +21,7 @@
 import typing
 
 
-class PanoseStrokeVariation(object):
+class PanoseStrokeVariation:
     """
     Const
 
@@ -29,13 +29,13 @@ class PanoseStrokeVariation(object):
     See Also:
         `API PanoseStrokeVariation <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1rendering_1_1PanoseStrokeVariation.html>`_
     """
-    ANYTHING: int = 0
-    NO_FIT: int = 1
-    GRADUAL_DIAGONAL: int = 2
-    GRADUAL_TRANSITIONAL: int = 3
-    GRADUAL_VERTICAL: int = 4
-    GRADUAL_HORIZONTAL: int = 5
-    RAPID_VERTICAL: int = 6
-    RAPID_HORIZONTAL: int = 7
-    INSTANT_VERTICAL: int = 8
+    ANYTHING: int = ...
+    NO_FIT: int = ...
+    GRADUAL_DIAGONAL: int = ...
+    GRADUAL_TRANSITIONAL: int = ...
+    GRADUAL_VERTICAL: int = ...
+    GRADUAL_HORIZONTAL: int = ...
+    RAPID_VERTICAL: int = ...
+    RAPID_HORIZONTAL: int = ...
+    INSTANT_VERTICAL: int = ...
 

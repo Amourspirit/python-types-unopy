@@ -21,7 +21,7 @@
 import typing
 
 
-class UserFieldFormat(object):
+class UserFieldFormat:
     """
     Const
 
@@ -30,15 +30,15 @@ class UserFieldFormat(object):
     See Also:
         `API UserFieldFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1UserFieldFormat.html>`_
     """
-    SYSTEM: int = 0
+    SYSTEM: int = ...
     """
     The number format of the operating system is used.
     """
-    TEXT: int = 1
+    TEXT: int = ...
     """
     The content is formatted as text.
     """
-    NUM: int = 2
+    NUM: int = ...
     """
     The number format of the property \"NumberFormat\" is used.
     """

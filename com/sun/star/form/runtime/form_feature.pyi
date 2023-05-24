@@ -21,7 +21,7 @@
 import typing
 
 
-class FormFeature(object):
+class FormFeature:
     """
     Const
 
@@ -34,13 +34,13 @@ class FormFeature(object):
     See Also:
         `API FormFeature <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1form_1_1runtime_1_1FormFeature.html>`_
     """
-    MoveAbsolute: int = 1
+    MoveAbsolute: int = ...
     """
     moves the form to a record given by absolute position.
     
     This operation cannot be executed without arguments. When executing it (i.e. when calling com.sun.star.form.runtime.XFormOperations.executeWithArguments()), you need to specify a parameter named Position of type long, which denotes the position to move the form to.
     """
-    TotalRecords: int = 2
+    TotalRecords: int = ...
     """
     determines the number of total records in the form, including the potentially active insertion row.
     
@@ -48,69 +48,69 @@ class FormFeature(object):
     
     The state obtained here is a string, not a number. This is because in an UI form, the fact that the current record count is not yet known (since not all records have been visited, yet) is indicated by an asterisk (*) besides the record count.
     """
-    MoveToFirst: int = 3
+    MoveToFirst: int = ...
     """
     moves the form to the first record
     """
-    MoveToPrevious: int = 4
+    MoveToPrevious: int = ...
     """
     moves the form to the record before the current record, if there is any
     """
-    MoveToNext: int = 5
+    MoveToNext: int = ...
     """
     moves the form to the record after the current record, if there is any
     """
-    MoveToLast: int = 6
+    MoveToLast: int = ...
     """
     moves the form to the last record
     """
-    MoveToInsertRow: int = 7
+    MoveToInsertRow: int = ...
     """
     moves the form to the insertion row, if privileges allow
     """
-    SaveRecordChanges: int = 8
+    SaveRecordChanges: int = ...
     """
     saves all changes in the form's current record, including changes in the current control which had not yet been committed to the form
     """
-    UndoRecordChanges: int = 9
+    UndoRecordChanges: int = ...
     """
     reverts all changes in the form's current record, including changes in the current control which had not yet been committed to the form
     """
-    DeleteRecord: int = 10
+    DeleteRecord: int = ...
     """
     deletes the current record, while honoring any registered com.sun.star.form.XConfirmDeleteListeners
     """
-    ReloadForm: int = 11
+    ReloadForm: int = ...
     """
     reloads the form content
     """
-    SortAscending: int = 12
+    SortAscending: int = ...
     """
     sorts the form ascending by the field which the active form control is bound to.
     """
-    SortDescending: int = 13
+    SortDescending: int = ...
     """
     sorts the form descending by the field which the active form control is bound to.
     """
-    InteractiveSort: int = 14
+    InteractiveSort: int = ...
     """
     opens a dialog which allows the user to interactively specify a form sorting order
     """
-    AutoFilter: int = 15
+    AutoFilter: int = ...
     """
     adds a filter to the form, which is defined by the active form control and its current value
     
     For instance, if the currently active form control is bound to a table field named Price, and currently has a value of 100, then invoking the AutoFilter operation will put an additional filter Price = 100 on the form.
     """
-    InteractiveFilter: int = 16
+    InteractiveFilter: int = ...
     """
     opens a dialog which allows the user to interactively specify a form filter
     """
-    ToggleApplyFilter: int = 17
+    ToggleApplyFilter: int = ...
     """
     toggles the com.sun.star.sdb.RowSet.ApplyFilter property of the form.
     """
-    RemoveFilterAndSort: int = 18
+    RemoveFilterAndSort: int = ...
     """
     removes all filter and sort criteria put on the form.
     
@@ -118,7 +118,7 @@ class FormFeature(object):
     
     Effectively, this operation resets the com.sun.star.sdb.RowSet.Filter and com.sun.star.sdb.RowSet.Order properties of the form.
     """
-    RefreshCurrentControl: int = 19
+    RefreshCurrentControl: int = ...
     """
     refreshes the current control
     

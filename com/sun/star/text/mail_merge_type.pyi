@@ -21,7 +21,7 @@
 import typing
 
 
-class MailMergeType(object):
+class MailMergeType:
     """
     Const
 
@@ -34,19 +34,19 @@ class MailMergeType(object):
     See Also:
         `API MailMergeType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1MailMergeType.html>`_
     """
-    PRINTER: int = 1
+    PRINTER: int = ...
     """
     The output device is a printer.
     """
-    FILE: int = 2
+    FILE: int = ...
     """
     The output device is a file.
     """
-    MAIL: int = 3
+    MAIL: int = ...
     """
     The output is sent as e-Mail.
     """
-    SHELL: int = 4
+    SHELL: int = ...
     """
     The output is a document shell.
     

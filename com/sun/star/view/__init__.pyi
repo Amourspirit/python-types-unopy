@@ -1,17 +1,13 @@
 from .document_zoom_type import DocumentZoomType as DocumentZoomType
 from .duplex_mode import DuplexMode as DuplexMode
 from .office_document_view import OfficeDocumentView as OfficeDocumentView
-from .paper_format import PaperFormat as PaperFormat
-from .paper_orientation import PaperOrientation as PaperOrientation
 from .print_job_event import PrintJobEvent as PrintJobEvent
 from .print_options import PrintOptions as PrintOptions
 from .print_settings import PrintSettings as PrintSettings
-from .printable_state import PrintableState as PrintableState
 from .printable_state_event import PrintableStateEvent as PrintableStateEvent
 from .printer_descriptor import PrinterDescriptor as PrinterDescriptor
 from .render_descriptor import RenderDescriptor as RenderDescriptor
 from .render_options import RenderOptions as RenderOptions
-from .selection_type import SelectionType as SelectionType
 from .view_settings import ViewSettings as ViewSettings
 from .x_control_access import XControlAccess as XControlAccess
 from .x_form_layer_access import XFormLayerAccess as XFormLayerAccess

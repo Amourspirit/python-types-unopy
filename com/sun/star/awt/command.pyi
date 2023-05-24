@@ -21,7 +21,7 @@
 import typing
 
 
-class Command(object):
+class Command:
     """
     Const
 
@@ -30,63 +30,63 @@ class Command(object):
     See Also:
         `API Command <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1awt_1_1Command.html>`_
     """
-    CONTEXTMENU: int = 1
+    CONTEXTMENU: int = ...
     """
     specifies a requests for a context menu.
     """
-    STARTDRAG: int = 2
+    STARTDRAG: int = ...
     """
     specifies the beginning of a drag operation.
     """
-    WHEEL: int = 3
+    WHEEL: int = ...
     """
     specifies a mouse wheel operation.
     """
-    STARTAUTOSCROLL: int = 4
+    STARTAUTOSCROLL: int = ...
     """
     specifies the beginning of an auto scroll operation.
     """
-    AUTOSCROLL: int = 5
+    AUTOSCROLL: int = ...
     """
     specifies an auto scroll operation.
     """
-    VOICE: int = 6
+    VOICE: int = ...
     """
     specifies a request for a voice operation.
     """
-    STARTEXTTEXTINPUT: int = 7
+    STARTEXTTEXTINPUT: int = ...
     """
     specifies the beginning of an extended text input operation.
     """
-    EXTTEXTINPUT: int = 8
+    EXTTEXTINPUT: int = ...
     """
     specifies an extended text input operation.
     """
-    ENDEXTTEXTINPUT: int = 9
+    ENDEXTTEXTINPUT: int = ...
     """
     specifies the end of an extended text input operation.
     """
-    INPUTCONTEXTCHANGE: int = 10
+    INPUTCONTEXTCHANGE: int = ...
     """
     specifies that the input context has been changed.
     """
-    CURSORPOS: int = 11
+    CURSORPOS: int = ...
     """
     specifies the cursor position.
     """
-    PASTESELECTION: int = 12
+    PASTESELECTION: int = ...
     """
     specifies a paste selection command.
     """
-    MODKEYCHANGE: int = 13
+    MODKEYCHANGE: int = ...
     """
     specifies that the state of a key modifier has changed.
     """
-    HANGUL_HANJA_CONVERSION: int = 14
+    HANGUL_HANJA_CONVERSION: int = ...
     """
     specifies a Hangul hanja conversion command.
     """
-    USER: int = 4096
+    USER: int = ...
     """
     specifies a user-defined command.
     """

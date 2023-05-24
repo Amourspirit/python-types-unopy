@@ -21,7 +21,7 @@
 import typing
 
 
-class GalleryItemType(object):
+class GalleryItemType:
     """
     Const
 
@@ -30,19 +30,19 @@ class GalleryItemType(object):
     See Also:
         `API GalleryItemType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1gallery_1_1GalleryItemType.html>`_
     """
-    EMPTY: int = 0
+    EMPTY: int = ...
     """
     Item is empty.
     """
-    GRAPHIC: int = 1
+    GRAPHIC: int = ...
     """
     Item represents a graphic.
     """
-    MEDIA: int = 2
+    MEDIA: int = ...
     """
     Item represents a media file.
     """
-    DRAWING: int = 3
+    DRAWING: int = ...
     """
     Item represents a drawing.
     """

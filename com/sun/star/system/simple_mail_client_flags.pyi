@@ -21,7 +21,7 @@
 import typing
 
 
-class SimpleMailClientFlags(object):
+class SimpleMailClientFlags:
     """
     Const
 
@@ -30,19 +30,19 @@ class SimpleMailClientFlags(object):
     See Also:
         `API SimpleMailClientFlags <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1system_1_1SimpleMailClientFlags.html>`_
     """
-    DEFAULTS: int = 0
+    DEFAULTS: int = ...
     """
     Uses the default settings when sending a mail, e.g.
     
     launches the current configured system mail client.
     """
-    NO_USER_INTERFACE: int = 1
+    NO_USER_INTERFACE: int = ...
     """
     Does not show the current configured system mail client, but sends the mail without any further user interaction.
     
     If this flag is specified, a recipient address must have been specified for the given XSimpleMailMessage object given to the method com.sun.star.system.XSimpleMailClient.sendSimpleMailMessage().
     """
-    NO_LOGON_DIALOG: int = 2
+    NO_LOGON_DIALOG: int = ...
     """
     No logon dialog should be displayed to prompt the user for logon information if necessary.
     

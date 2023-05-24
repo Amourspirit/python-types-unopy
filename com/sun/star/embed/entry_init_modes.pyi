@@ -21,7 +21,7 @@
 import typing
 
 
-class EntryInitModes(object):
+class EntryInitModes:
     """
     Const
 
@@ -30,27 +30,27 @@ class EntryInitModes(object):
     See Also:
         `API EntryInitModes <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1embed_1_1EntryInitModes.html>`_
     """
-    DEFAULT_INIT: int = 0
+    DEFAULT_INIT: int = ...
     """
     In case object persistence is created based on existing entry, the object should be initialized from this entry.
     
     Otherwise the object should be initialized as a new one.
     """
-    TRUNCATE_INIT: int = 1
+    TRUNCATE_INIT: int = ...
     """
     The object should be initialized as a new empty one.
     """
-    NO_INIT: int = 2
+    NO_INIT: int = ...
     """
     The object should be initialized as a new one only in case it still was not initialized.
     
     If the object initialized already do not reinitialize it.
     """
-    MEDIA_DESCRIPTOR_INIT: int = 3
+    MEDIA_DESCRIPTOR_INIT: int = ...
     """
     The object should be initialized using additional arguments from provided com.sun.star.document.MediaDescriptor.
     """
-    URL_LINK_INIT: int = 4
+    URL_LINK_INIT: int = ...
     """
     The object should be initialized as a link using URL provided in additional arguments.
     """

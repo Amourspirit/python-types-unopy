@@ -21,7 +21,7 @@
 import typing
 
 
-class ContentResultSetCapability(object):
+class ContentResultSetCapability:
     """
     Const
 
@@ -30,7 +30,7 @@ class ContentResultSetCapability(object):
     See Also:
         `API ContentResultSetCapability <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1ucb_1_1ContentResultSetCapability.html>`_
     """
-    SORTED: int = 1
+    SORTED: int = ...
     """
     indicates that a ContentResultSet is properly sorted, exactly following the rules given during the ContentResultSet was created.
     """

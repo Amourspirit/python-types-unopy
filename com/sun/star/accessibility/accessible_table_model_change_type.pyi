@@ -21,7 +21,7 @@
 import typing
 
 
-class AccessibleTableModelChangeType(object):
+class AccessibleTableModelChangeType:
     """
     Const
 
@@ -34,13 +34,13 @@ class AccessibleTableModelChangeType(object):
     See Also:
         `API AccessibleTableModelChangeType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1accessibility_1_1AccessibleTableModelChangeType.html>`_
     """
-    UPDATE: int = 3
+    UPDATE: int = ...
     """
     Some of the table data has changed.
     
     The number of rows and columns remains unchanged. Only (some of) the content of the cells in the range that is specified by the fields of the AccessibleTableModelChange structure have been changed.
     """
-    ROWS_INSERTED: int = 4
+    ROWS_INSERTED: int = ...
     """
     One or more rows have been inserted.
     
@@ -50,7 +50,7 @@ class AccessibleTableModelChangeType(object):
     
         LibreOffice 7.4
     """
-    COLUMNS_INSERTED: int = 5
+    COLUMNS_INSERTED: int = ...
     """
     One or more columns have been inserted.
     
@@ -60,7 +60,7 @@ class AccessibleTableModelChangeType(object):
     
         LibreOffice 7.4
     """
-    ROWS_REMOVED: int = 6
+    ROWS_REMOVED: int = ...
     """
     One or more rows have been removed.
     
@@ -70,7 +70,7 @@ class AccessibleTableModelChangeType(object):
     
         LibreOffice 7.4
     """
-    COLUMNS_REMOVED: int = 7
+    COLUMNS_REMOVED: int = ...
     """
     One or more columns have been removed.
     

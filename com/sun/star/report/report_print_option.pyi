@@ -21,7 +21,7 @@
 import typing
 
 
-class ReportPrintOption(object):
+class ReportPrintOption:
     """
     Const
 
@@ -30,19 +30,19 @@ class ReportPrintOption(object):
     See Also:
         `API ReportPrintOption <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1report_1_1ReportPrintOption.html>`_
     """
-    ALL_PAGES: int = 0
+    ALL_PAGES: int = ...
     """
     The page header/footer is printed on all pages.
     """
-    NOT_WITH_REPORT_HEADER: int = 1
+    NOT_WITH_REPORT_HEADER: int = ...
     """
     The page header/footer is not printed on the same page as the report header.
     """
-    NOT_WITH_REPORT_FOOTER: int = 2
+    NOT_WITH_REPORT_FOOTER: int = ...
     """
     The page header/footer is not printed on the same page as the report footer.
     """
-    NOT_WITH_REPORT_HEADER_FOOTER: int = 3
+    NOT_WITH_REPORT_HEADER_FOOTER: int = ...
     """
     The page header/footer is not printed on the same page as the report header or footer.
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class AnimationColorSpace(object):
+class AnimationColorSpace:
     """
     Const
 
@@ -32,11 +32,11 @@ class AnimationColorSpace(object):
     See Also:
         `API AnimationColorSpace <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1animations_1_1AnimationColorSpace.html>`_
     """
-    RGB: int = 0
+    RGB: int = ...
     """
     defines that the RGB color space is used for interpolation.
     """
-    HSL: int = 1
+    HSL: int = ...
     """
     defines that the HSL color space is used for interpolation.
     """

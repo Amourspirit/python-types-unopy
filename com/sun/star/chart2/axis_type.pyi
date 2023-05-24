@@ -21,7 +21,7 @@
 import typing
 
 
-class AxisType(object):
+class AxisType:
     """
     Const
 
@@ -29,23 +29,23 @@ class AxisType(object):
     See Also:
         `API AxisType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1chart2_1_1AxisType.html>`_
     """
-    REALNUMBER: int = 0
+    REALNUMBER: int = ...
     """
     the axis represent real numbers
     """
-    PERCENT: int = 1
+    PERCENT: int = ...
     """
     the axis represent real numbers in percent
     """
-    CATEGORY: int = 2
+    CATEGORY: int = ...
     """
     the axis represent discrete categories
     """
-    SERIES: int = 3
+    SERIES: int = ...
     """
     the axis shows the series names (z axis)
     """
-    DATE: int = 4
+    DATE: int = ...
     """
     the axis shows dates
     """

@@ -21,7 +21,7 @@
 import typing
 
 
-class VerbAttributes(object):
+class VerbAttributes:
     """
     Const
 
@@ -30,11 +30,11 @@ class VerbAttributes(object):
     See Also:
         `API VerbAttributes <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1embed_1_1VerbAttributes.html>`_
     """
-    MS_VERBATTR_NEVERDIRTIES: int = 1
+    MS_VERBATTR_NEVERDIRTIES: int = ...
     """
     Execution of the verb with this attribute must not modify the object.
     """
-    MS_VERBATTR_ONCONTAINERMENU: int = 2
+    MS_VERBATTR_ONCONTAINERMENU: int = ...
     """
     indicates that the verb should appear in the object's menu.
     """

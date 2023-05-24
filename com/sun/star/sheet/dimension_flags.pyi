@@ -21,7 +21,7 @@
 import typing
 
 
-class DimensionFlags(object):
+class DimensionFlags:
     """
     Const
 
@@ -30,19 +30,19 @@ class DimensionFlags(object):
     See Also:
         `API DimensionFlags <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sheet_1_1DimensionFlags.html>`_
     """
-    NO_COLUMN_ORIENTATION: int = 1
+    NO_COLUMN_ORIENTATION: int = ...
     """
     The dimension cannot be used in column orientation.
     """
-    NO_ROW_ORIENTATION: int = 2
+    NO_ROW_ORIENTATION: int = ...
     """
     The dimension cannot be used in row orientation.
     """
-    NO_PAGE_ORIENTATION: int = 4
+    NO_PAGE_ORIENTATION: int = ...
     """
     The dimension cannot be used in page orientation.
     """
-    NO_DATA_ORIENTATION: int = 8
+    NO_DATA_ORIENTATION: int = ...
     """
     The dimension cannot be used in data orientation.
     """

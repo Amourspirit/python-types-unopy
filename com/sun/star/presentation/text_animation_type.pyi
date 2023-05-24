@@ -21,7 +21,7 @@
 import typing
 
 
-class TextAnimationType(object):
+class TextAnimationType:
     """
     Const
 
@@ -32,15 +32,15 @@ class TextAnimationType(object):
     See Also:
         `API TextAnimationType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1presentation_1_1TextAnimationType.html>`_
     """
-    BY_PARAGRAPH: int = 0
+    BY_PARAGRAPH: int = ...
     """
     the text is animated paragraph by paragraph
     """
-    BY_WORD: int = 1
+    BY_WORD: int = ...
     """
     the text is animated word by word
     """
-    BY_LETTER: int = 2
+    BY_LETTER: int = ...
     """
     the text is animated letter by letter.
     """

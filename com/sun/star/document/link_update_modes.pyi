@@ -21,7 +21,7 @@
 import typing
 
 
-class LinkUpdateModes(object):
+class LinkUpdateModes:
     """
     Const
 
@@ -29,19 +29,19 @@ class LinkUpdateModes(object):
     See Also:
         `API LinkUpdateModes <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1document_1_1LinkUpdateModes.html>`_
     """
-    NEVER: int = 0
+    NEVER: int = ...
     """
     never update links
     """
-    MANUAL: int = 1
+    MANUAL: int = ...
     """
     update links when confirmed on request during loading the document
     """
-    AUTO: int = 2
+    AUTO: int = ...
     """
     automatic update on load
     """
-    GLOBAL_SETTING: int = 3
+    GLOBAL_SETTING: int = ...
     """
     use the setting that is configured in your installed application.
     

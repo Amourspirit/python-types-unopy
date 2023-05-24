@@ -21,7 +21,7 @@
 import typing
 
 
-class CertificateCharacters(object):
+class CertificateCharacters:
     """
     Const
 
@@ -32,11 +32,11 @@ class CertificateCharacters(object):
     See Also:
         `API CertificateCharacters <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1security_1_1CertificateCharacters.html>`_
     """
-    SELF_SIGNED: int = 1
+    SELF_SIGNED: int = ...
     """
     It is a self-signed certificate.
     """
-    HAS_PRIVATE_KEY: int = 4
+    HAS_PRIVATE_KEY: int = ...
     """
     A private key binding with the certificate is in user's profile.
     """

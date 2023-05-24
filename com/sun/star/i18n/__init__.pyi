@@ -18,7 +18,6 @@ from .collator_options import CollatorOptions as CollatorOptions
 from .ctl_script_type import CTLScriptType as CTLScriptType
 from .currency import Currency as Currency
 from .currency2 import Currency2 as Currency2
-from .direction_property import DirectionProperty as DirectionProperty
 from .forbidden_characters import ForbiddenCharacters as ForbiddenCharacters
 from .format_element import FormatElement as FormatElement
 from .implementation import Implementation as Implementation
@@ -61,11 +60,8 @@ from .text_conversion_option import TextConversionOption as TextConversionOption
 from .text_conversion_result import TextConversionResult as TextConversionResult
 from .text_conversion_type import TextConversionType as TextConversionType
 from .transliteration import Transliteration as Transliteration
-from .transliteration_modules import TransliterationModules as TransliterationModules
 from .transliteration_modules_extra import TransliterationModulesExtra as TransliterationModulesExtra
-from .transliteration_modules_new import TransliterationModulesNew as TransliterationModulesNew
 from .transliteration_type import TransliterationType as TransliterationType
-from .unicode_script import UnicodeScript as UnicodeScript
 from .unicode_type import UnicodeType as UnicodeType
 from .weekdays import Weekdays as Weekdays
 from .word_type import WordType as WordType

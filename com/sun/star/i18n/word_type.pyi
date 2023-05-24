@@ -21,7 +21,7 @@
 import typing
 
 
-class WordType(object):
+class WordType:
     """
     Const
 
@@ -32,19 +32,19 @@ class WordType(object):
     See Also:
         `API WordType <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1WordType.html>`_
     """
-    ANY_WORD: int = 0
+    ANY_WORD: int = ...
     """
     Any \"words\" - words in the meaning of same character types, collection of alphanumeric characters, or collection of non-alphanumeric characters.
     """
-    ANYWORD_IGNOREWHITESPACES: int = 1
+    ANYWORD_IGNOREWHITESPACES: int = ...
     """
     Any \"words\" - words in the meaning of same character types, collection of alphanumeric characters, or collection of non-alphanumeric characters except blanks.
     """
-    DICTIONARY_WORD: int = 2
+    DICTIONARY_WORD: int = ...
     """
     \"words\" - in the meaning of a collection of alphanumeric characters and some punctuations, like dot for abbreviation.
     """
-    WORD_COUNT: int = 3
+    WORD_COUNT: int = ...
     """
     The mode for counting words, it will combine punctuations and spaces as word trail.
     """

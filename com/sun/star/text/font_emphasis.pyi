@@ -21,7 +21,7 @@
 import typing
 
 
-class FontEmphasis(object):
+class FontEmphasis:
     """
     Const
 
@@ -30,39 +30,39 @@ class FontEmphasis(object):
     See Also:
         `API FontEmphasis <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1FontEmphasis.html>`_
     """
-    NONE: int = 0
+    NONE: int = ...
     """
     no emphasis mark is used.
     """
-    DOT_ABOVE: int = 1
+    DOT_ABOVE: int = ...
     """
     a dot is set above (or right from vertical text) the text.
     """
-    CIRCLE_ABOVE: int = 2
+    CIRCLE_ABOVE: int = ...
     """
     a circle is set above (or right from vertical text) the text.
     """
-    DISK_ABOVE: int = 3
+    DISK_ABOVE: int = ...
     """
     a disc is set above (or right from vertical text) the text.
     """
-    ACCENT_ABOVE: int = 4
+    ACCENT_ABOVE: int = ...
     """
     an accent is set above (or right from vertical text) the text.
     """
-    DOT_BELOW: int = 11
+    DOT_BELOW: int = ...
     """
     a dot is set below (or left from vertical text) the text.
     """
-    CIRCLE_BELOW: int = 12
+    CIRCLE_BELOW: int = ...
     """
     a circle is set below (or left from vertical text) the text.
     """
-    DISK_BELOW: int = 13
+    DISK_BELOW: int = ...
     """
     a disk is set below (or left from vertical text) the text.
     """
-    ACCENT_BELOW: int = 14
+    ACCENT_BELOW: int = ...
     """
     an accent is set below (or left from vertical text) the text.
     """

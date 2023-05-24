@@ -21,7 +21,7 @@
 import typing
 
 
-class CollatorOptions(object):
+class CollatorOptions:
     """
     Const
 
@@ -30,19 +30,19 @@ class CollatorOptions(object):
     See Also:
         `API CollatorOptions <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1i18n_1_1CollatorOptions.html>`_
     """
-    CollatorOptions_IGNORE_CASE: int = 1
+    CollatorOptions_IGNORE_CASE: int = ...
     """
     Ignore case.
     """
-    CollatorOptions_IGNORE_KANA: int = 2
+    CollatorOptions_IGNORE_KANA: int = ...
     """
     Ignore Kana.
     """
-    CollatorOptions_IGNORE_WIDTH: int = 4
+    CollatorOptions_IGNORE_WIDTH: int = ...
     """
     Ignore width.
     """
-    CollatorOptions_IGNORE_CASE_ACCENT: int = 8
+    CollatorOptions_IGNORE_CASE_ACCENT: int = ...
     """
     Ignore case and accent.
     """

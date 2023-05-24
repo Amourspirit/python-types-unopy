@@ -21,7 +21,7 @@
 import typing
 
 
-class FastToken(object):
+class FastToken:
     """
     Const
 
@@ -29,11 +29,11 @@ class FastToken(object):
     See Also:
         `API FastToken <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1xml_1_1sax_1_1FastToken.html>`_
     """
-    DONTKNOW: int = -1
+    DONTKNOW: int = ...
     """
     specifies an unknown token.
     """
-    NAMESPACE: int = 65536
+    NAMESPACE: int = ...
     """
     specifies the first namespace token
     """

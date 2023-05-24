@@ -21,7 +21,7 @@
 import typing
 
 
-class MeasureUnit(object):
+class MeasureUnit:
     """
     Const
 
@@ -32,79 +32,79 @@ class MeasureUnit(object):
     See Also:
         `API MeasureUnit <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1util_1_1MeasureUnit.html>`_
     """
-    MM_100TH: int = 0
+    MM_100TH: int = ...
     """
     all measures for this component are in 100th millimeter
     """
-    MM_10TH: int = 1
+    MM_10TH: int = ...
     """
     all measures for this component are in 10th millimeter
     """
-    MM: int = 2
+    MM: int = ...
     """
     all measures for this component are in millimeter
     """
-    CM: int = 3
+    CM: int = ...
     """
     all measures for this component are in centimeters
     """
-    INCH_1000TH: int = 4
+    INCH_1000TH: int = ...
     """
     all measures for this component are in 1000th inch
     """
-    INCH_100TH: int = 5
+    INCH_100TH: int = ...
     """
     all measures for this component are in 100th inch
     """
-    INCH_10TH: int = 6
+    INCH_10TH: int = ...
     """
     all measures for this component are in 10th inch
     """
-    INCH: int = 7
+    INCH: int = ...
     """
     all measures for this component are in inch
     """
-    POINT: int = 8
+    POINT: int = ...
     """
     all measures for this component are in points
     """
-    TWIP: int = 9
+    TWIP: int = ...
     """
     all measures for this component are in twips
     """
-    M: int = 10
+    M: int = ...
     """
     all measures for this component are in meters
     """
-    KM: int = 11
+    KM: int = ...
     """
     all measures for this component are in kilometers
     """
-    PICA: int = 12
+    PICA: int = ...
     """
     all measures for this component are in pica
     """
-    FOOT: int = 13
+    FOOT: int = ...
     """
     all measures for this component are in foot
     """
-    MILE: int = 14
+    MILE: int = ...
     """
     all measures for this component are in miles
     """
-    PERCENT: int = 15
+    PERCENT: int = ...
     """
     all measures for this component are in percentage
     """
-    PIXEL: int = 16
+    PIXEL: int = ...
     """
     all measures for this component are in pixel
     """
-    APPFONT: int = 17
+    APPFONT: int = ...
     """
     all measures for this component are in APPFONT
     """
-    SYSFONT: int = 18
+    SYSFONT: int = ...
     """
     all measures for this component are in SYSFONT
     """

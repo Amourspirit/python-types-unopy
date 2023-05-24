@@ -21,7 +21,7 @@
 import typing
 
 
-class PropertyAttribute(object):
+class PropertyAttribute:
     """
     Const
 
@@ -34,42 +34,42 @@ class PropertyAttribute(object):
     See Also:
         `API PropertyAttribute <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1beans_1_1PropertyAttribute.html>`_
     """
-    MAYBEVOID: int = 1
+    MAYBEVOID: int = ...
     """
     indicates that a property value can be void.
     
     It does not mean that the type of the property is void!
     """
-    BOUND: int = 2
+    BOUND: int = ...
     """
     indicates that a PropertyChangeEvent will be fired to all registered XPropertyChangeListeners whenever the value of this property changes.
     """
-    CONSTRAINED: int = 4
+    CONSTRAINED: int = ...
     """
     indicates that a PropertyChangeEvent will be fired to all registered XVetoableChangeListeners whenever the value of this property is about to change.
     """
-    TRANSIENT: int = 8
+    TRANSIENT: int = ...
     """
     indicates that the value of the property is not persistent.
     """
-    READONLY: int = 16
+    READONLY: int = ...
     """
     indicates that the value of the property is read-only.
     """
-    MAYBEAMBIGUOUS: int = 32
+    MAYBEAMBIGUOUS: int = ...
     """
     indicates that the value of the property can be ambiguous.
     """
-    MAYBEDEFAULT: int = 64
+    MAYBEDEFAULT: int = ...
     """
     indicates that the property can be set to default.
     """
-    REMOVABLE: int = 128
+    REMOVABLE: int = ...
     """
     indicates that the property can be removed (i.e., by calling XPropertyContainer.removeProperty()).
     """
-    REMOVEABLE: int = 128
-    OPTIONAL: int = 256
+    REMOVEABLE: int = ...
+    OPTIONAL: int = ...
     """
     indicates that a property is optional.
     

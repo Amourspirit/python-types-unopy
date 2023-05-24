@@ -1,6 +1,5 @@
 from .default_help_provider import DefaultHelpProvider as DefaultHelpProvider
 from .generic_property_handler import GenericPropertyHandler as GenericPropertyHandler
-from .interactive_selection_result import InteractiveSelectionResult as InteractiveSelectionResult
 from .line_descriptor import LineDescriptor as LineDescriptor
 from .object_inspector import ObjectInspector as ObjectInspector
 from .object_inspector_model import ObjectInspectorModel as ObjectInspectorModel

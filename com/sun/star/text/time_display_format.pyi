@@ -21,7 +21,7 @@
 import typing
 
 
-class TimeDisplayFormat(object):
+class TimeDisplayFormat:
     """
     Const
 
@@ -36,31 +36,31 @@ class TimeDisplayFormat(object):
     See Also:
         `API TimeDisplayFormat <https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1text_1_1TimeDisplayFormat.html>`_
     """
-    STANDARD: int = 0
+    STANDARD: int = ...
     """
     the system standard
     """
-    HHMM: int = 1
+    HHMM: int = ...
     """
     13:49
     """
-    HHMMSS: int = 2
+    HHMMSS: int = ...
     """
     13:49:20
     """
-    HHMMSS00: int = 3
+    HHMMSS00: int = ...
     """
     13:49:20.30
     """
-    HHMMAMPM: int = 4
+    HHMMAMPM: int = ...
     """
     01:49
     """
-    HHMMSSAMPM: int = 5
+    HHMMSSAMPM: int = ...
     """
     01:49:20
     """
-    HHMMSS00AMPM: int = 6
+    HHMMSS00AMPM: int = ...
     """
     01:49:20.30
     """
