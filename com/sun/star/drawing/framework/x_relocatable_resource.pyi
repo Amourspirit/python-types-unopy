@@ -42,3 +42,4 @@ class XRelocatableResource(ABC):
         ...
 
 
+

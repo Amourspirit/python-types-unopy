@@ -26,7 +26,7 @@ if typing.TYPE_CHECKING:
     from ...awt.point import Point as Point_5fb2085e
     from ...awt.rectangle import Rectangle as Rectangle_84b109e9
     from ...rendering.x_canvas import XCanvas as XCanvas_b19b0b7a
-    from com.sun.star.drawing.framework.BorderType import BorderTypeProto
+    from com.sun.star.drawing.framework.BorderType import BorderTypeProto  # type: ignore
 
 
 class XPaneBorderPainter(ABC):
@@ -73,5 +73,4 @@ class XPaneBorderPainter(ABC):
         This method can be used to convert an outer bounding box into the center box or the inner bounding box.
         """
         ...
-
 

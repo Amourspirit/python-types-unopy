@@ -19,18 +19,26 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class RectanglePointProto(UnoEnumProto):
-    LEFT_BOTTOM: UnoEnumProto
-    LEFT_MIDDLE: UnoEnumProto
-    LEFT_TOP: UnoEnumProto
-    MIDDLE_BOTTOM: UnoEnumProto
-    MIDDLE_MIDDLE: UnoEnumProto
-    MIDDLE_TOP: UnoEnumProto
-    RIGHT_BOTTOM: UnoEnumProto
-    RIGHT_MIDDLE: UnoEnumProto
-    RIGHT_TOP: UnoEnumProto
+
+class RectanglePointProto(Protocol):
+    """Protocol for RectanglePoint"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.RectanglePoint"]:
+        ...
+    value: Any
+    LEFT_BOTTOM: RectanglePointProto
+    LEFT_MIDDLE: RectanglePointProto
+    LEFT_TOP: RectanglePointProto
+    MIDDLE_BOTTOM: RectanglePointProto
+    MIDDLE_MIDDLE: RectanglePointProto
+    MIDDLE_TOP: RectanglePointProto
+    RIGHT_BOTTOM: RectanglePointProto
+    RIGHT_MIDDLE: RectanglePointProto
+    RIGHT_TOP: RectanglePointProto
 
 LEFT_BOTTOM: RectanglePointProto
 """

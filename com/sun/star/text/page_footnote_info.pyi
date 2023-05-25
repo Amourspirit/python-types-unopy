@@ -22,7 +22,7 @@ from __future__ import annotations
 import typing
 from abc import ABC
 if typing.TYPE_CHECKING:
-    from com.sun.star.text.HorizontalAdjust import HorizontalAdjustProto
+    from com.sun.star.text.HorizontalAdjust import HorizontalAdjustProto  # type: ignore
 
 class PageFootnoteInfo(ABC):
     """
@@ -98,4 +98,3 @@ class PageFootnoteInfo(ABC):
     @FootnoteTopDistance.setter
     def FootnoteTopDistance(self, value: int) -> None:
         ...
-

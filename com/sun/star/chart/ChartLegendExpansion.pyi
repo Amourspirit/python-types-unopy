@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.chart
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ChartLegendExpansionProto(UnoEnumProto):
-    BALANCED: UnoEnumProto
-    CUSTOM: UnoEnumProto
-    HIGH: UnoEnumProto
-    WIDE: UnoEnumProto
+
+class ChartLegendExpansionProto(Protocol):
+    """Protocol for ChartLegendExpansion"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart.ChartLegendExpansion"]:
+        ...
+    value: Any
+    BALANCED: ChartLegendExpansionProto
+    CUSTOM: ChartLegendExpansionProto
+    HIGH: ChartLegendExpansionProto
+    WIDE: ChartLegendExpansionProto
 
 BALANCED: ChartLegendExpansionProto
 """

@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TextHorizontalAdjustProto(UnoEnumProto):
-    BLOCK: UnoEnumProto
-    CENTER: UnoEnumProto
-    LEFT: UnoEnumProto
-    RIGHT: UnoEnumProto
+
+class TextHorizontalAdjustProto(Protocol):
+    """Protocol for TextHorizontalAdjust"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.TextHorizontalAdjust"]:
+        ...
+    value: Any
+    BLOCK: TextHorizontalAdjustProto
+    CENTER: TextHorizontalAdjustProto
+    LEFT: TextHorizontalAdjustProto
+    RIGHT: TextHorizontalAdjustProto
 
 BLOCK: TextHorizontalAdjustProto
 """

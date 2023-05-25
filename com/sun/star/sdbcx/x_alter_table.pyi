@@ -59,3 +59,4 @@ class XAlterTable(XInterface_8f010a43):
         ...
 
 
+

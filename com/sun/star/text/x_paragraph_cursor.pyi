@@ -65,3 +65,4 @@ class XParagraphCursor(XTextCursor_a60c0b48):
         ...
 
 
+

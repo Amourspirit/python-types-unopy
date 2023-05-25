@@ -42,3 +42,4 @@ class XPropertySetRegistryFactory(XInterface_8f010a43):
         ...
 
 
+

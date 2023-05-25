@@ -23,8 +23,8 @@ import typing
 from abc import ABC
 if typing.TYPE_CHECKING:
     from ..awt.size import Size as Size_576707ef
-    from com.sun.star.view.PaperFormat import PaperFormatProto
-    from com.sun.star.view.PaperOrientation import PaperOrientationProto
+    from com.sun.star.view.PaperFormat import PaperFormatProto  # type: ignore
+    from com.sun.star.view.PaperOrientation import PaperOrientationProto  # type: ignore
 
 class PrinterDescriptor(ABC):
     """
@@ -115,4 +115,3 @@ class PrinterDescriptor(ABC):
     @PaperSize.setter
     def PaperSize(self, value: Size_576707ef) -> None:
         ...
-

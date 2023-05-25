@@ -24,7 +24,7 @@ import typing
 from ...util.x_cloneable import XCloneable as XCloneable_99d00aa3
 if typing.TYPE_CHECKING:
     from .x_resource_id import XResourceId as XResourceId_5be3103d
-    from com.sun.star.drawing.framework.AnchorBindingMode import AnchorBindingModeProto
+    from com.sun.star.drawing.framework.AnchorBindingMode import AnchorBindingModeProto  # type: ignore
 
 
 class XConfiguration(XCloneable_99d00aa3):
@@ -70,5 +70,4 @@ class XConfiguration(XCloneable_99d00aa3):
         This method should be used only by objects that implement the XConfigurationRequest interface or by the configuration controller.
         """
         ...
-
 

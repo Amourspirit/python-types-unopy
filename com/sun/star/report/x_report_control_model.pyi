@@ -80,3 +80,4 @@ class XReportControlModel(XContainer_d6fb0cc6, XIndexContainer_1c040ebe, XReport
     def PrintWhenGroupChange(self, value: bool) -> None:
         ...
 
+

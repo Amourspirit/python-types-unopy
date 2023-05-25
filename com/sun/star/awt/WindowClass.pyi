@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.awt
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class WindowClassProto(UnoEnumProto):
-    CONTAINER: UnoEnumProto
-    MODALTOP: UnoEnumProto
-    SIMPLE: UnoEnumProto
-    TOP: UnoEnumProto
+
+class WindowClassProto(Protocol):
+    """Protocol for WindowClass"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.awt.WindowClass"]:
+        ...
+    value: Any
+    CONTAINER: WindowClassProto
+    MODALTOP: WindowClassProto
+    SIMPLE: WindowClassProto
+    TOP: WindowClassProto
 
 CONTAINER: WindowClassProto
 """

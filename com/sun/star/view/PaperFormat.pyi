@@ -19,18 +19,26 @@
 # Namespace: com.sun.star.view
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PaperFormatProto(UnoEnumProto):
-    A3: UnoEnumProto
-    A4: UnoEnumProto
-    A5: UnoEnumProto
-    B4: UnoEnumProto
-    B5: UnoEnumProto
-    LEGAL: UnoEnumProto
-    LETTER: UnoEnumProto
-    TABLOID: UnoEnumProto
-    USER: UnoEnumProto
+
+class PaperFormatProto(Protocol):
+    """Protocol for PaperFormat"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.view.PaperFormat"]:
+        ...
+    value: Any
+    A3: PaperFormatProto
+    A4: PaperFormatProto
+    A5: PaperFormatProto
+    B4: PaperFormatProto
+    B5: PaperFormatProto
+    LEGAL: PaperFormatProto
+    LETTER: PaperFormatProto
+    TABLOID: PaperFormatProto
+    USER: PaperFormatProto
 
 A3: PaperFormatProto
 """

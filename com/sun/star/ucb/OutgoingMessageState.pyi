@@ -19,17 +19,25 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class OutgoingMessageStateProto(UnoEnumProto):
-    COMPLETELY_LOCALLY_SENT: UnoEnumProto
-    CONFIRMED: UnoEnumProto
-    EXTERNAL_ERROR: UnoEnumProto
-    NONRECOVERABLE_LOCAL_ERROR: UnoEnumProto
-    PARTIALLY_LOCALLY_SENT: UnoEnumProto
-    RECOVERABLE_LOCAL_ERROR: UnoEnumProto
-    WAITING_CONFIRMATION: UnoEnumProto
-    WRITTEN: UnoEnumProto
+
+class OutgoingMessageStateProto(Protocol):
+    """Protocol for OutgoingMessageState"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.OutgoingMessageState"]:
+        ...
+    value: Any
+    COMPLETELY_LOCALLY_SENT: OutgoingMessageStateProto
+    CONFIRMED: OutgoingMessageStateProto
+    EXTERNAL_ERROR: OutgoingMessageStateProto
+    NONRECOVERABLE_LOCAL_ERROR: OutgoingMessageStateProto
+    PARTIALLY_LOCALLY_SENT: OutgoingMessageStateProto
+    RECOVERABLE_LOCAL_ERROR: OutgoingMessageStateProto
+    WAITING_CONFIRMATION: OutgoingMessageStateProto
+    WRITTEN: OutgoingMessageStateProto
 
 COMPLETELY_LOCALLY_SENT: OutgoingMessageStateProto
 """

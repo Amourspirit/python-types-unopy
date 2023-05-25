@@ -19,41 +19,49 @@
 # Namespace: com.sun.star.uno
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TypeClassProto(UnoEnumProto):
-    ANY: UnoEnumProto
-    ARRAY: UnoEnumProto
-    BOOLEAN: UnoEnumProto
-    BYTE: UnoEnumProto
-    CHAR: UnoEnumProto
-    CONSTANT: UnoEnumProto
-    CONSTANTS: UnoEnumProto
-    DOUBLE: UnoEnumProto
-    ENUM: UnoEnumProto
-    EXCEPTION: UnoEnumProto
-    FLOAT: UnoEnumProto
-    HYPER: UnoEnumProto
-    INTERFACE: UnoEnumProto
-    INTERFACE_ATTRIBUTE: UnoEnumProto
-    INTERFACE_METHOD: UnoEnumProto
-    LONG: UnoEnumProto
-    MODULE: UnoEnumProto
-    PROPERTY: UnoEnumProto
-    SEQUENCE: UnoEnumProto
-    SERVICE: UnoEnumProto
-    SHORT: UnoEnumProto
-    SINGLETON: UnoEnumProto
-    STRING: UnoEnumProto
-    STRUCT: UnoEnumProto
-    TYPE: UnoEnumProto
-    TYPEDEF: UnoEnumProto
-    UNION: UnoEnumProto
-    UNKNOWN: UnoEnumProto
-    UNSIGNED_HYPER: UnoEnumProto
-    UNSIGNED_LONG: UnoEnumProto
-    UNSIGNED_SHORT: UnoEnumProto
-    VOID: UnoEnumProto
+
+class TypeClassProto(Protocol):
+    """Protocol for TypeClass"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.uno.TypeClass"]:
+        ...
+    value: Any
+    ANY: TypeClassProto
+    ARRAY: TypeClassProto
+    BOOLEAN: TypeClassProto
+    BYTE: TypeClassProto
+    CHAR: TypeClassProto
+    CONSTANT: TypeClassProto
+    CONSTANTS: TypeClassProto
+    DOUBLE: TypeClassProto
+    ENUM: TypeClassProto
+    EXCEPTION: TypeClassProto
+    FLOAT: TypeClassProto
+    HYPER: TypeClassProto
+    INTERFACE: TypeClassProto
+    INTERFACE_ATTRIBUTE: TypeClassProto
+    INTERFACE_METHOD: TypeClassProto
+    LONG: TypeClassProto
+    MODULE: TypeClassProto
+    PROPERTY: TypeClassProto
+    SEQUENCE: TypeClassProto
+    SERVICE: TypeClassProto
+    SHORT: TypeClassProto
+    SINGLETON: TypeClassProto
+    STRING: TypeClassProto
+    STRUCT: TypeClassProto
+    TYPE: TypeClassProto
+    TYPEDEF: TypeClassProto
+    UNION: TypeClassProto
+    UNKNOWN: TypeClassProto
+    UNSIGNED_HYPER: TypeClassProto
+    UNSIGNED_LONG: TypeClassProto
+    UNSIGNED_SHORT: TypeClassProto
+    VOID: TypeClassProto
 
 ANY: TypeClassProto
 """

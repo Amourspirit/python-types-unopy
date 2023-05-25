@@ -52,3 +52,4 @@ class XTextOutputStream(XOutputStream_a4e00b35):
         ...
 
 
+

@@ -26,8 +26,8 @@ if typing.TYPE_CHECKING:
     from .x_grid_column_model import XGridColumnModel as XGridColumnModel_16290e65
     from .x_grid_data_model import XGridDataModel as XGridDataModel_f8b20d71
     from ...util.color import Color as Color_68e908c5
-    from com.sun.star.view.SelectionType import SelectionTypeProto
-    from com.sun.star.style.VerticalAlignment import VerticalAlignmentProto
+    from com.sun.star.view.SelectionType import SelectionTypeProto  # type: ignore
+    from com.sun.star.style.VerticalAlignment import VerticalAlignmentProto  # type: ignore
 
 class UnoControlGridModel(UnoControlModel_c8ce0c58):
     """
@@ -352,4 +352,3 @@ class UnoControlGridModel(UnoControlModel_c8ce0c58):
     @VerticalAlign.setter
     def VerticalAlign(self, value: VerticalAlignmentProto) -> None:
         ...
-

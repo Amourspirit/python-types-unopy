@@ -23,7 +23,7 @@ import typing
 
 from abc import ABC
 if typing.TYPE_CHECKING:
-    from com.sun.star.security.CertificateContainerStatus import CertificateContainerStatusProto
+    from com.sun.star.security.CertificateContainerStatus import CertificateContainerStatusProto  # type: ignore
 
 
 class XCertificateContainer(ABC):
@@ -49,5 +49,4 @@ class XCertificateContainer(ABC):
         Check if a certificate was stored earlier before.
         """
         ...
-
 

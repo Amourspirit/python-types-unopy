@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class BorderProto(UnoEnumProto):
-    BOTTOM: UnoEnumProto
-    LEFT: UnoEnumProto
-    RIGHT: UnoEnumProto
-    TOP: UnoEnumProto
+
+class BorderProto(Protocol):
+    """Protocol for Border"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.Border"]:
+        ...
+    value: Any
+    BOTTOM: BorderProto
+    LEFT: BorderProto
+    RIGHT: BorderProto
+    TOP: BorderProto
 
 BOTTOM: BorderProto
 """

@@ -82,3 +82,4 @@ class XWizardPage(XComponent_98dc0ab5):
     def Window(self, value: XWindow_713b0924) -> None:
         ...
 
+

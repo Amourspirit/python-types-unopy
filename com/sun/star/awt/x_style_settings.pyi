@@ -522,3 +522,4 @@ class XStyleSettings(ABC):
     def WorkspaceColor(self, value: Color_68e908c5) -> None:
         ...
 
+

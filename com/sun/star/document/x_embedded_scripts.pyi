@@ -69,3 +69,4 @@ class XEmbeddedScripts(ABC):
     def DialogLibraries(self, value: XStorageBasedLibraryContainer_d72a1321) -> None:
         ...
 
+

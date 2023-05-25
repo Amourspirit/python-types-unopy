@@ -49,3 +49,4 @@ class XTableRename(XConnectionSupplier_57f3105c):
         ...
 
 
+

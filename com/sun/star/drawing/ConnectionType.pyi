@@ -19,15 +19,23 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ConnectionTypeProto(UnoEnumProto):
-    AUTO: UnoEnumProto
-    BOTTOM: UnoEnumProto
-    LEFT: UnoEnumProto
-    RIGHT: UnoEnumProto
-    SPECIAL: UnoEnumProto
-    TOP: UnoEnumProto
+
+class ConnectionTypeProto(Protocol):
+    """Protocol for ConnectionType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.ConnectionType"]:
+        ...
+    value: Any
+    AUTO: ConnectionTypeProto
+    BOTTOM: ConnectionTypeProto
+    LEFT: ConnectionTypeProto
+    RIGHT: ConnectionTypeProto
+    SPECIAL: ConnectionTypeProto
+    TOP: ConnectionTypeProto
 
 AUTO: ConnectionTypeProto
 """

@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class DDELinkModeProto(UnoEnumProto):
-    DEFAULT: UnoEnumProto
-    ENGLISH: UnoEnumProto
-    TEXT: UnoEnumProto
+
+class DDELinkModeProto(Protocol):
+    """Protocol for DDELinkMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.DDELinkMode"]:
+        ...
+    value: Any
+    DEFAULT: DDELinkModeProto
+    ENGLISH: DDELinkModeProto
+    TEXT: DDELinkModeProto
 
 DEFAULT: DDELinkModeProto
 """

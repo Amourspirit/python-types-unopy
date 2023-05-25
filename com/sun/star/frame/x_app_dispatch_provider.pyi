@@ -38,3 +38,4 @@ class XAppDispatchProvider(XDispatchInformationProvider_afb6126c, XDispatchProvi
     __pyunointerface__: str = 'com.sun.star.frame.XAppDispatchProvider'
 
 
+

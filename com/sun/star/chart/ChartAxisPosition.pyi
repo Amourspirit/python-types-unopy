@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.chart
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ChartAxisPositionProto(UnoEnumProto):
-    END: UnoEnumProto
-    START: UnoEnumProto
-    VALUE: UnoEnumProto
-    ZERO: UnoEnumProto
+
+class ChartAxisPositionProto(Protocol):
+    """Protocol for ChartAxisPosition"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart.ChartAxisPosition"]:
+        ...
+    value: Any
+    END: ChartAxisPositionProto
+    START: ChartAxisPositionProto
+    VALUE: ChartAxisPositionProto
+    ZERO: ChartAxisPositionProto
 
 END: ChartAxisPositionProto
 """

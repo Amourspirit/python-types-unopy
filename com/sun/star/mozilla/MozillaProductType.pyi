@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.mozilla
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class MozillaProductTypeProto(UnoEnumProto):
-    Default: UnoEnumProto
-    Firefox: UnoEnumProto
-    Mozilla: UnoEnumProto
-    Thunderbird: UnoEnumProto
+
+class MozillaProductTypeProto(Protocol):
+    """Protocol for MozillaProductType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.mozilla.MozillaProductType"]:
+        ...
+    value: Any
+    Default: MozillaProductTypeProto
+    Firefox: MozillaProductTypeProto
+    Mozilla: MozillaProductTypeProto
+    Thunderbird: MozillaProductTypeProto
 
 Default: MozillaProductTypeProto
 """

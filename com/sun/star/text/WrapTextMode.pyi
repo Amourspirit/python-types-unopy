@@ -19,16 +19,24 @@
 # Namespace: com.sun.star.text
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class WrapTextModeProto(UnoEnumProto):
-    DYNAMIC: UnoEnumProto
-    LEFT: UnoEnumProto
-    NONE: UnoEnumProto
-    PARALLEL: UnoEnumProto
-    RIGHT: UnoEnumProto
-    THROUGH: UnoEnumProto
-    THROUGHT: UnoEnumProto
+
+class WrapTextModeProto(Protocol):
+    """Protocol for WrapTextMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.text.WrapTextMode"]:
+        ...
+    value: Any
+    DYNAMIC: WrapTextModeProto
+    LEFT: WrapTextModeProto
+    NONE: WrapTextModeProto
+    PARALLEL: WrapTextModeProto
+    RIGHT: WrapTextModeProto
+    THROUGH: WrapTextModeProto
+    THROUGHT: WrapTextModeProto
 
 DYNAMIC: WrapTextModeProto
 """

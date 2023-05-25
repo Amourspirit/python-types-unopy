@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.script
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FinishReasonProto(UnoEnumProto):
-    Cancel: UnoEnumProto
-    Error: UnoEnumProto
-    OK: UnoEnumProto
+
+class FinishReasonProto(Protocol):
+    """Protocol for FinishReason"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.script.FinishReason"]:
+        ...
+    value: Any
+    Cancel: FinishReasonProto
+    Error: FinishReasonProto
+    OK: FinishReasonProto
 
 Cancel: FinishReasonProto
 """

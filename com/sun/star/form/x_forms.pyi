@@ -44,3 +44,4 @@ class XForms(XChild_a6390b07, XContainer_d6fb0cc6, XEnumerationAccess_4bac0ffc, 
     __pyunointerface__: str = 'com.sun.star.form.XForms'
 
 
+

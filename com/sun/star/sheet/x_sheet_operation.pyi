@@ -23,7 +23,7 @@ import typing
 
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
-    from com.sun.star.sheet.GeneralFunction import GeneralFunctionProto
+    from com.sun.star.sheet.GeneralFunction import GeneralFunctionProto  # type: ignore
 
 
 class XSheetOperation(XInterface_8f010a43):
@@ -50,5 +50,4 @@ class XSheetOperation(XInterface_8f010a43):
             com.sun.star.uno.Exception: ``Exception``
         """
         ...
-
 

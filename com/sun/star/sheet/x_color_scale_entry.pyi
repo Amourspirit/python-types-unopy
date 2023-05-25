@@ -62,3 +62,4 @@ class XColorScaleEntry(ABC):
         ...
 
 
+

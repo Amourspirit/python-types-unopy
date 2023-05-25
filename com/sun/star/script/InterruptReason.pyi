@@ -19,17 +19,25 @@
 # Namespace: com.sun.star.script
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class InterruptReasonProto(UnoEnumProto):
-    BreakPoint: UnoEnumProto
-    Cancel: UnoEnumProto
-    CompileError: UnoEnumProto
-    RuntimeError: UnoEnumProto
-    Step: UnoEnumProto
-    StepOut: UnoEnumProto
-    StepOver: UnoEnumProto
-    StepStatement: UnoEnumProto
+
+class InterruptReasonProto(Protocol):
+    """Protocol for InterruptReason"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.script.InterruptReason"]:
+        ...
+    value: Any
+    BreakPoint: InterruptReasonProto
+    Cancel: InterruptReasonProto
+    CompileError: InterruptReasonProto
+    RuntimeError: InterruptReasonProto
+    Step: InterruptReasonProto
+    StepOut: InterruptReasonProto
+    StepOver: InterruptReasonProto
+    StepStatement: InterruptReasonProto
 
 BreakPoint: InterruptReasonProto
 """

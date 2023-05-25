@@ -289,3 +289,4 @@ class XPathSettings(XPropertySet_bc180bfa):
     def Work(self, value: str) -> None:
         ...
 
+

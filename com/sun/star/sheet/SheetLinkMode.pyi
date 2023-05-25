@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class SheetLinkModeProto(UnoEnumProto):
-    NONE: UnoEnumProto
-    NORMAL: UnoEnumProto
-    VALUE: UnoEnumProto
+
+class SheetLinkModeProto(Protocol):
+    """Protocol for SheetLinkMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.SheetLinkMode"]:
+        ...
+    value: Any
+    NONE: SheetLinkModeProto
+    NORMAL: SheetLinkModeProto
+    VALUE: SheetLinkModeProto
 
 NONE: SheetLinkModeProto
 """

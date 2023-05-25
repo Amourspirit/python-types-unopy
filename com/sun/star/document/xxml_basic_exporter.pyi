@@ -39,3 +39,4 @@ class XXMLBasicExporter(XExporter_be500c18, XFilter_a6300b25):
     __pyunointerface__: str = 'com.sun.star.document.XXMLBasicExporter'
 
 
+

@@ -170,3 +170,4 @@ class XFormOperations(XComponent_98dc0ab5):
     def UpdateCursor(self, value: XResultSetUpdate_e0fb0d0a) -> None:
         ...
 
+

@@ -19,24 +19,32 @@
 # Namespace: com.sun.star.xml.dom
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class DOMExceptionTypeProto(UnoEnumProto):
-    DOMSTRING_SIZE_ERR: UnoEnumProto
-    HIERARCHY_REQUEST_ERR: UnoEnumProto
-    INDEX_SIZE_ERR: UnoEnumProto
-    INUSE_ATTRIBUTE_ERR: UnoEnumProto
-    INVALID_ACCESS_ERR: UnoEnumProto
-    INVALID_CHARACTER_ERR: UnoEnumProto
-    INVALID_MODIFICATION_ERR: UnoEnumProto
-    INVALID_STATE_ERR: UnoEnumProto
-    NAMESPACE_ERR: UnoEnumProto
-    NOT_FOUND_ERR: UnoEnumProto
-    NOT_SUPPORTED_ERR: UnoEnumProto
-    NO_DATA_ALLOWED_ERR: UnoEnumProto
-    NO_MODIFICATION_ALLOWED_ERR: UnoEnumProto
-    SYNTAX_ERR: UnoEnumProto
-    WRONG_DOCUMENT_ERR: UnoEnumProto
+
+class DOMExceptionTypeProto(Protocol):
+    """Protocol for DOMExceptionType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.xml.dom.DOMExceptionType"]:
+        ...
+    value: Any
+    DOMSTRING_SIZE_ERR: DOMExceptionTypeProto
+    HIERARCHY_REQUEST_ERR: DOMExceptionTypeProto
+    INDEX_SIZE_ERR: DOMExceptionTypeProto
+    INUSE_ATTRIBUTE_ERR: DOMExceptionTypeProto
+    INVALID_ACCESS_ERR: DOMExceptionTypeProto
+    INVALID_CHARACTER_ERR: DOMExceptionTypeProto
+    INVALID_MODIFICATION_ERR: DOMExceptionTypeProto
+    INVALID_STATE_ERR: DOMExceptionTypeProto
+    NAMESPACE_ERR: DOMExceptionTypeProto
+    NOT_FOUND_ERR: DOMExceptionTypeProto
+    NOT_SUPPORTED_ERR: DOMExceptionTypeProto
+    NO_DATA_ALLOWED_ERR: DOMExceptionTypeProto
+    NO_MODIFICATION_ALLOWED_ERR: DOMExceptionTypeProto
+    SYNTAX_ERR: DOMExceptionTypeProto
+    WRONG_DOCUMENT_ERR: DOMExceptionTypeProto
 
 DOMSTRING_SIZE_ERR: DOMExceptionTypeProto
 """

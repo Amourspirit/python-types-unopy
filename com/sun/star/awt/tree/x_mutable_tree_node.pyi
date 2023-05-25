@@ -102,3 +102,4 @@ class XMutableTreeNode(XTreeNode_baaf0ba0):
     def DataValue(self, value: object) -> None:
         ...
 
+

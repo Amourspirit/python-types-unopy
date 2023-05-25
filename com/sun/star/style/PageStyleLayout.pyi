@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.style
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PageStyleLayoutProto(UnoEnumProto):
-    ALL: UnoEnumProto
-    LEFT: UnoEnumProto
-    MIRRORED: UnoEnumProto
-    RIGHT: UnoEnumProto
+
+class PageStyleLayoutProto(Protocol):
+    """Protocol for PageStyleLayout"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.style.PageStyleLayout"]:
+        ...
+    value: Any
+    ALL: PageStyleLayoutProto
+    LEFT: PageStyleLayoutProto
+    MIRRORED: PageStyleLayoutProto
+    RIGHT: PageStyleLayoutProto
 
 ALL: PageStyleLayoutProto
 """

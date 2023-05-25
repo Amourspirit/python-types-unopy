@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class MeasureKindProto(UnoEnumProto):
-    RADIUS: UnoEnumProto
-    STANDARD: UnoEnumProto
+
+class MeasureKindProto(Protocol):
+    """Protocol for MeasureKind"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.MeasureKind"]:
+        ...
+    value: Any
+    RADIUS: MeasureKindProto
+    STANDARD: MeasureKindProto
 
 RADIUS: MeasureKindProto
 """

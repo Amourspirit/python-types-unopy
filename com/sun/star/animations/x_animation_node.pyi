@@ -195,3 +195,4 @@ class XAnimationNode(XChild_a6390b07):
     def Type(self, value: int) -> None:
         ...
 
+

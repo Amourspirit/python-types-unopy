@@ -105,3 +105,4 @@ class XAnnotation(XPropertySet_bc180bfa, XComponent_98dc0ab5):
     def TextRange(self, value: XText_690408ca) -> None:
         ...
 
+

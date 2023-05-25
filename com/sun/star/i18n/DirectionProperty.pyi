@@ -19,28 +19,36 @@
 # Namespace: com.sun.star.i18n
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class DirectionPropertyProto(UnoEnumProto):
-    ARABIC_NUMBER: UnoEnumProto
-    BLOCK_SEPARATOR: UnoEnumProto
-    BOUNDARY_NEUTRAL: UnoEnumProto
-    COMMON_NUMBER_SEPARATOR: UnoEnumProto
-    DIR_NON_SPACING_MARK: UnoEnumProto
-    EUROPEAN_NUMBER: UnoEnumProto
-    EUROPEAN_NUMBER_SEPARATOR: UnoEnumProto
-    EUROPEAN_NUMBER_TERMINATOR: UnoEnumProto
-    LEFT_TO_RIGHT: UnoEnumProto
-    LEFT_TO_RIGHT_EMBEDDING: UnoEnumProto
-    LEFT_TO_RIGHT_OVERRIDE: UnoEnumProto
-    OTHER_NEUTRAL: UnoEnumProto
-    POP_DIRECTIONAL_FORMAT: UnoEnumProto
-    RIGHT_TO_LEFT: UnoEnumProto
-    RIGHT_TO_LEFT_ARABIC: UnoEnumProto
-    RIGHT_TO_LEFT_EMBEDDING: UnoEnumProto
-    RIGHT_TO_LEFT_OVERRIDE: UnoEnumProto
-    SEGMENT_SEPARATOR: UnoEnumProto
-    WHITE_SPACE_NEUTRAL: UnoEnumProto
+
+class DirectionPropertyProto(Protocol):
+    """Protocol for DirectionProperty"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.i18n.DirectionProperty"]:
+        ...
+    value: Any
+    ARABIC_NUMBER: DirectionPropertyProto
+    BLOCK_SEPARATOR: DirectionPropertyProto
+    BOUNDARY_NEUTRAL: DirectionPropertyProto
+    COMMON_NUMBER_SEPARATOR: DirectionPropertyProto
+    DIR_NON_SPACING_MARK: DirectionPropertyProto
+    EUROPEAN_NUMBER: DirectionPropertyProto
+    EUROPEAN_NUMBER_SEPARATOR: DirectionPropertyProto
+    EUROPEAN_NUMBER_TERMINATOR: DirectionPropertyProto
+    LEFT_TO_RIGHT: DirectionPropertyProto
+    LEFT_TO_RIGHT_EMBEDDING: DirectionPropertyProto
+    LEFT_TO_RIGHT_OVERRIDE: DirectionPropertyProto
+    OTHER_NEUTRAL: DirectionPropertyProto
+    POP_DIRECTIONAL_FORMAT: DirectionPropertyProto
+    RIGHT_TO_LEFT: DirectionPropertyProto
+    RIGHT_TO_LEFT_ARABIC: DirectionPropertyProto
+    RIGHT_TO_LEFT_EMBEDDING: DirectionPropertyProto
+    RIGHT_TO_LEFT_OVERRIDE: DirectionPropertyProto
+    SEGMENT_SEPARATOR: DirectionPropertyProto
+    WHITE_SPACE_NEUTRAL: DirectionPropertyProto
 
 ARABIC_NUMBER: DirectionPropertyProto
 """

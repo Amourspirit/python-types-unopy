@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class NormalsKindProto(UnoEnumProto):
-    FLAT: UnoEnumProto
-    SPECIFIC: UnoEnumProto
-    SPHERE: UnoEnumProto
+
+class NormalsKindProto(Protocol):
+    """Protocol for NormalsKind"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.NormalsKind"]:
+        ...
+    value: Any
+    FLAT: NormalsKindProto
+    SPECIFIC: NormalsKindProto
+    SPHERE: NormalsKindProto
 
 FLAT: NormalsKindProto
 """

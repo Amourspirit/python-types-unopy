@@ -19,16 +19,24 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class EscapeDirectionProto(UnoEnumProto):
-    DOWN: UnoEnumProto
-    HORIZONTAL: UnoEnumProto
-    LEFT: UnoEnumProto
-    RIGHT: UnoEnumProto
-    SMART: UnoEnumProto
-    UP: UnoEnumProto
-    VERTICAL: UnoEnumProto
+
+class EscapeDirectionProto(Protocol):
+    """Protocol for EscapeDirection"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.EscapeDirection"]:
+        ...
+    value: Any
+    DOWN: EscapeDirectionProto
+    HORIZONTAL: EscapeDirectionProto
+    LEFT: EscapeDirectionProto
+    RIGHT: EscapeDirectionProto
+    SMART: EscapeDirectionProto
+    UP: EscapeDirectionProto
+    VERTICAL: EscapeDirectionProto
 
 DOWN: EscapeDirectionProto
 """

@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.table
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TableSortFieldTypeProto(UnoEnumProto):
-    ALPHANUMERIC: UnoEnumProto
-    AUTOMATIC: UnoEnumProto
-    NUMERIC: UnoEnumProto
+
+class TableSortFieldTypeProto(Protocol):
+    """Protocol for TableSortFieldType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.table.TableSortFieldType"]:
+        ...
+    value: Any
+    ALPHANUMERIC: TableSortFieldTypeProto
+    AUTOMATIC: TableSortFieldTypeProto
+    NUMERIC: TableSortFieldTypeProto
 
 ALPHANUMERIC: TableSortFieldTypeProto
 """

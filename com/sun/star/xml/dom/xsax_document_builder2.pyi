@@ -39,3 +39,4 @@ class XSAXDocumentBuilder2(XSAXDocumentBuilder_31120f11, XFastDocumentHandler_45
     __pyunointerface__: str = 'com.sun.star.xml.dom.XSAXDocumentBuilder2'
 
 
+

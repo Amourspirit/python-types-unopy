@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FolderListCommandProto(UnoEnumProto):
-    GET: UnoEnumProto
-    GET_SUBSCRIBED: UnoEnumProto
-    SET: UnoEnumProto
+
+class FolderListCommandProto(Protocol):
+    """Protocol for FolderListCommand"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.FolderListCommand"]:
+        ...
+    value: Any
+    GET: FolderListCommandProto
+    GET_SUBSCRIBED: FolderListCommandProto
+    SET: FolderListCommandProto
 
 GET: FolderListCommandProto
 """

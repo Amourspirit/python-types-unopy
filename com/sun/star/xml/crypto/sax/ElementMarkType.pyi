@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.xml.crypto.sax
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ElementMarkTypeProto(UnoEnumProto):
-    ELEMENTCOLLECTOR: UnoEnumProto
-    ELEMENTMARK: UnoEnumProto
+
+class ElementMarkTypeProto(Protocol):
+    """Protocol for ElementMarkType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.xml.crypto.sax.ElementMarkType"]:
+        ...
+    value: Any
+    ELEMENTCOLLECTOR: ElementMarkTypeProto
+    ELEMENTMARK: ElementMarkTypeProto
 
 ELEMENTCOLLECTOR: ElementMarkTypeProto
 """

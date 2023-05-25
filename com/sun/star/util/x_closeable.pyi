@@ -57,3 +57,4 @@ class XCloseable(XCloseBroadcaster_ef230d7e):
         ...
 
 
+

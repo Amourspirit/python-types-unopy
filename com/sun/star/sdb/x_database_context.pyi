@@ -43,3 +43,4 @@ class XDatabaseContext(XContainer_d6fb0cc6, XEnumerationAccess_4bac0ffc, XNameAc
     __pyunointerface__: str = 'com.sun.star.sdb.XDatabaseContext'
 
 
+

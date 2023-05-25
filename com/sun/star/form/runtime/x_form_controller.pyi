@@ -142,3 +142,4 @@ class XFormController(XTabController_bacd0be7, XChild_a6390b07, XEnumerationAcce
     def InteractionHandler(self, value: XInteractionHandler_bf80e51) -> None:
         ...
 
+

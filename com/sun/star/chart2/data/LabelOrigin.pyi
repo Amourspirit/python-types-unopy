@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.chart2.data
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class LabelOriginProto(UnoEnumProto):
-    COLUMN: UnoEnumProto
-    LONG_SIDE: UnoEnumProto
-    ROW: UnoEnumProto
-    SHORT_SIDE: UnoEnumProto
+
+class LabelOriginProto(Protocol):
+    """Protocol for LabelOrigin"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart2.data.LabelOrigin"]:
+        ...
+    value: Any
+    COLUMN: LabelOriginProto
+    LONG_SIDE: LabelOriginProto
+    ROW: LabelOriginProto
+    SHORT_SIDE: LabelOriginProto
 
 COLUMN: LabelOriginProto
 """

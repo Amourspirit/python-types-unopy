@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.task
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class InteractionClassificationProto(UnoEnumProto):
-    ERROR: UnoEnumProto
-    INFO: UnoEnumProto
-    QUERY: UnoEnumProto
-    WARNING: UnoEnumProto
+
+class InteractionClassificationProto(Protocol):
+    """Protocol for InteractionClassification"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.task.InteractionClassification"]:
+        ...
+    value: Any
+    ERROR: InteractionClassificationProto
+    INFO: InteractionClassificationProto
+    QUERY: InteractionClassificationProto
+    WARNING: InteractionClassificationProto
 
 ERROR: InteractionClassificationProto
 """

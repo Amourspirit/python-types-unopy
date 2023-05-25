@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class BitmapModeProto(UnoEnumProto):
-    NO_REPEAT: UnoEnumProto
-    REPEAT: UnoEnumProto
-    STRETCH: UnoEnumProto
+
+class BitmapModeProto(Protocol):
+    """Protocol for BitmapMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.BitmapMode"]:
+        ...
+    value: Any
+    NO_REPEAT: BitmapModeProto
+    REPEAT: BitmapModeProto
+    STRETCH: BitmapModeProto
 
 NO_REPEAT: BitmapModeProto
 """

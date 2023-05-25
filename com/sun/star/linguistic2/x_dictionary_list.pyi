@@ -26,7 +26,7 @@ if typing.TYPE_CHECKING:
     from ..lang.locale import Locale as Locale_70d308fa
     from .x_dictionary import XDictionary as XDictionary_fea70de3
     from .x_dictionary_list_event_listener import XDictionaryListEventListener as XDictionaryListEventListener_279814c7
-    from com.sun.star.linguistic2.DictionaryType import DictionaryTypeProto
+    from com.sun.star.linguistic2.DictionaryType import DictionaryTypeProto  # type: ignore
 
 
 class XDictionaryList(XInterface_8f010a43):
@@ -103,5 +103,4 @@ class XDictionaryList(XInterface_8f010a43):
         removes an entry from the list of dictionary-list event listeners.
         """
         ...
-
 

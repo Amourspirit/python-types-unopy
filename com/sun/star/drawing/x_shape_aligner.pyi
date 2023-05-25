@@ -23,7 +23,7 @@ import typing
 
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
-    from com.sun.star.drawing.Alignment import AlignmentProto
+    from com.sun.star.drawing.Alignment import AlignmentProto  # type: ignore
 
 
 class XShapeAligner(XInterface_8f010a43):
@@ -44,5 +44,4 @@ class XShapeAligner(XInterface_8f010a43):
         aligns the specified Shapes.
         """
         ...
-
 

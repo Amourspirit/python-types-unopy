@@ -23,7 +23,7 @@ import typing
 
 from ....uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
-    from com.sun.star.xml.crypto.SecurityOperationStatus import SecurityOperationStatusProto
+    from com.sun.star.xml.crypto.SecurityOperationStatus import SecurityOperationStatusProto  # type: ignore
 
 
 class XDecryptionResultListener(XInterface_8f010a43):
@@ -42,5 +42,4 @@ class XDecryptionResultListener(XInterface_8f010a43):
         Notifies the decryption result.
         """
         ...
-
 

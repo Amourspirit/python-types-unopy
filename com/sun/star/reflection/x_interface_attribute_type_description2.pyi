@@ -58,3 +58,4 @@ class XInterfaceAttributeTypeDescription2(XInterfaceAttributeTypeDescription_98c
         ...
 
 
+

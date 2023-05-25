@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.script
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class MemberTypeProto(UnoEnumProto):
-    METHOD: UnoEnumProto
-    PROPERTY: UnoEnumProto
-    UNKNOWN: UnoEnumProto
+
+class MemberTypeProto(Protocol):
+    """Protocol for MemberType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.script.MemberType"]:
+        ...
+    value: Any
+    METHOD: MemberTypeProto
+    PROPERTY: MemberTypeProto
+    UNKNOWN: MemberTypeProto
 
 METHOD: MemberTypeProto
 """

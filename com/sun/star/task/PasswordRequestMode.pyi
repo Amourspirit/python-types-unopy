@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.task
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PasswordRequestModeProto(UnoEnumProto):
-    PASSWORD_CREATE: UnoEnumProto
-    PASSWORD_ENTER: UnoEnumProto
-    PASSWORD_REENTER: UnoEnumProto
+
+class PasswordRequestModeProto(Protocol):
+    """Protocol for PasswordRequestMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.task.PasswordRequestMode"]:
+        ...
+    value: Any
+    PASSWORD_CREATE: PasswordRequestModeProto
+    PASSWORD_ENTER: PasswordRequestModeProto
+    PASSWORD_REENTER: PasswordRequestModeProto
 
 PASSWORD_CREATE: PasswordRequestModeProto
 """

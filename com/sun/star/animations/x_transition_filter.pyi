@@ -91,3 +91,4 @@ class XTransitionFilter(XAnimate_ca680c52):
     def Transition(self, value: int) -> None:
         ...
 
+

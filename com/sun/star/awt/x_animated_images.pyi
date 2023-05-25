@@ -111,3 +111,4 @@ class XAnimatedImages(XContainer_d6fb0cc6):
     def StepTime(self, value: int) -> None:
         ...
 
+

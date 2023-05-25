@@ -47,3 +47,4 @@ class XOfficeDatabaseDocument(XDocumentSubStorageSupplier_da021351, XFormDocumen
     def DataSource(self, value: XDataSource_a2990ae7) -> None:
         ...
 
+

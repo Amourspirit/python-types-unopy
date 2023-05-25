@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.text
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PageNumberTypeProto(UnoEnumProto):
-    CURRENT: UnoEnumProto
-    NEXT: UnoEnumProto
-    PREV: UnoEnumProto
+
+class PageNumberTypeProto(Protocol):
+    """Protocol for PageNumberType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.text.PageNumberType"]:
+        ...
+    value: Any
+    CURRENT: PageNumberTypeProto
+    NEXT: PageNumberTypeProto
+    PREV: PageNumberTypeProto
 
 CURRENT: PageNumberTypeProto
 """

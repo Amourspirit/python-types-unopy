@@ -19,21 +19,29 @@
 # Namespace: com.sun.star.xml.dom
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class NodeTypeProto(UnoEnumProto):
-    ATTRIBUTE_NODE: UnoEnumProto
-    CDATA_SECTION_NODE: UnoEnumProto
-    COMMENT_NODE: UnoEnumProto
-    DOCUMENT_FRAGMENT_NODE: UnoEnumProto
-    DOCUMENT_NODE: UnoEnumProto
-    DOCUMENT_TYPE_NODE: UnoEnumProto
-    ELEMENT_NODE: UnoEnumProto
-    ENTITY_NODE: UnoEnumProto
-    ENTITY_REFERENCE_NODE: UnoEnumProto
-    NOTATION_NODE: UnoEnumProto
-    PROCESSING_INSTRUCTION_NODE: UnoEnumProto
-    TEXT_NODE: UnoEnumProto
+
+class NodeTypeProto(Protocol):
+    """Protocol for NodeType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.xml.dom.NodeType"]:
+        ...
+    value: Any
+    ATTRIBUTE_NODE: NodeTypeProto
+    CDATA_SECTION_NODE: NodeTypeProto
+    COMMENT_NODE: NodeTypeProto
+    DOCUMENT_FRAGMENT_NODE: NodeTypeProto
+    DOCUMENT_NODE: NodeTypeProto
+    DOCUMENT_TYPE_NODE: NodeTypeProto
+    ELEMENT_NODE: NodeTypeProto
+    ENTITY_NODE: NodeTypeProto
+    ENTITY_REFERENCE_NODE: NodeTypeProto
+    NOTATION_NODE: NodeTypeProto
+    PROCESSING_INSTRUCTION_NODE: NodeTypeProto
+    TEXT_NODE: NodeTypeProto
 
 ATTRIBUTE_NODE: NodeTypeProto
 """

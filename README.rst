@@ -128,6 +128,9 @@ Demo
 Special Cases
 =============
 
+ImportError
+-----------
+
 By default an ``ImportError`` is raised when importing form ``com.sun.star`` at runtime.
 This is by design as the import error triggers ``uno`` to search LibreOffice API for actual import;
 Otherwise, ``com.sun.star`` is seen a namespace import and ``uno`` is ignored.
@@ -148,6 +151,87 @@ This can be accomplished using the `autodoc_mock_imports <https://www.sphinx-doc
 
     # docs conf.py
     autodoc_mock_imports = ['uno', 'unohelper', 'com']
+
+For a reference see ``ooo-dev-tools`` `conf.py <https://github.com/Amourspirit/python_ooo_dev_tools/blob/main/docs/conf.py>`__.
+
+Enum Protocols
+--------------
+
+As mentioned above there are no enum classes in API only enum members.
+
+For this reason this package implements protocols for enums.
+
+.. code-block:: python
+
+    from com.sun.star.beans.PropertyState import DIRECT_VALUE
+    # DIRECT_VALUE is a type of PropertyStateProto
+
+The implemented protocol for ``PropertyState`` is as follows:
+
+.. code-block:: python
+
+    class PropertyStateProto(Protocol):
+        """Protocol for PropertyState"""
+
+        @property
+        def typeName(self) -> Literal["com.sun.star.beans.PropertyState"]:
+            ...
+        value: Any
+        AMBIGUOUS_VALUE: PropertyStateProto
+        DEFAULT_VALUE: PropertyStateProto
+        DIRECT_VALUE: PropertyStateProto
+
+Implemented methods such as ``com.sun.star.beans.PropertyState.XPropertyState.getPropertyState()`` return a protocol, in this case ``PropertyStateProto``.
+
+If you need to import a protocol for type hinting in your project then it will need to be guarded.
+
+Type Guarding Protocol
+^^^^^^^^^^^^^^^^^^^^^^
+
+Since ``typing.TYPE_CHECKING`` is always ``False`` at runtime we can use it.
+
+There are two way to handle importing a protocol class.
+The first way is by importing ``annotations``
+
+.. code-block:: python
+
+    from __future__ import annotations
+    import uno
+    from com.sun.star.sheet.SolverConstraintOperator import SolverConstraintOperatorProto
+    # ...
+
+    def solve_operation(value: int, x: SolverConstraintOperatorProto) -> int:
+        ...
+
+Note when using ``annotations`` the ``cast`` to protocol must be wrapped in a string.
+
+.. code-block:: python
+
+    from typing import cast
+    from com.sun.star.sheet.SolverConstraintOperator import SolverConstraintOperatorProto
+    from ooo.dyn.sheet.solver_constraint_operator import SolverConstraintOperator
+    # ...
+
+    # SolverConstraintOperatorProto must be wrapped in a string
+    # if it has not been assigned to object at runtime.
+    solve_operation(
+        11, cast("SolverConstraintOperatorProto", SolverConstraintOperator.BINARY)
+    )
+
+The other way is to assign the protocol class as an object at runtime.
+
+.. code-block:: python
+
+    from typing import TYPE_CHECKING
+    import uno
+    from com.sun.star.sheet.SolverConstraintOperator import SolverConstraintOperatorProto
+
+    if TYPE_CHECKING:
+        # While writing code we have the advantages of protocol
+        from com.sun.star.sheet.SolverConstraintOperator import SolverConstraintOperatorProto
+    else:
+        # code is executing. Now protocol is an object and basically ignored
+        SolverConstraintOperatorProto = object
 
 Related Projects
 ================

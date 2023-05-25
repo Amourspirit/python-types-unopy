@@ -105,3 +105,4 @@ class XSpinValue(XInterface_8f010a43):
         ...
 
 
+

@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.animations
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TimingProto(UnoEnumProto):
-    INDEFINITE: UnoEnumProto
-    MEDIA: UnoEnumProto
+
+class TimingProto(Protocol):
+    """Protocol for Timing"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.animations.Timing"]:
+        ...
+    value: Any
+    INDEFINITE: TimingProto
+    MEDIA: TimingProto
 
 INDEFINITE: TimingProto
 """

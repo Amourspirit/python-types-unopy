@@ -19,15 +19,23 @@
 # Namespace: com.sun.star.table
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class CellHoriJustifyProto(UnoEnumProto):
-    BLOCK: UnoEnumProto
-    CENTER: UnoEnumProto
-    LEFT: UnoEnumProto
-    REPEAT: UnoEnumProto
-    RIGHT: UnoEnumProto
-    STANDARD: UnoEnumProto
+
+class CellHoriJustifyProto(Protocol):
+    """Protocol for CellHoriJustify"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.table.CellHoriJustify"]:
+        ...
+    value: Any
+    BLOCK: CellHoriJustifyProto
+    CENTER: CellHoriJustifyProto
+    LEFT: CellHoriJustifyProto
+    REPEAT: CellHoriJustifyProto
+    RIGHT: CellHoriJustifyProto
+    STANDARD: CellHoriJustifyProto
 
 BLOCK: CellHoriJustifyProto
 """

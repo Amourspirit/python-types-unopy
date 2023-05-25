@@ -92,3 +92,4 @@ class XLogger(ABC):
     def Name(self, value: str) -> None:
         ...
 
+

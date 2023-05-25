@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TextAnimationDirectionProto(UnoEnumProto):
-    DOWN: UnoEnumProto
-    LEFT: UnoEnumProto
-    RIGHT: UnoEnumProto
-    UP: UnoEnumProto
+
+class TextAnimationDirectionProto(Protocol):
+    """Protocol for TextAnimationDirection"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.TextAnimationDirection"]:
+        ...
+    value: Any
+    DOWN: TextAnimationDirectionProto
+    LEFT: TextAnimationDirectionProto
+    RIGHT: TextAnimationDirectionProto
+    UP: TextAnimationDirectionProto
 
 DOWN: TextAnimationDirectionProto
 """

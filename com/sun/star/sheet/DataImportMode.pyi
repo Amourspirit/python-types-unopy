@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class DataImportModeProto(UnoEnumProto):
-    NONE: UnoEnumProto
-    QUERY: UnoEnumProto
-    SQL: UnoEnumProto
-    TABLE: UnoEnumProto
+
+class DataImportModeProto(Protocol):
+    """Protocol for DataImportMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.DataImportMode"]:
+        ...
+    value: Any
+    NONE: DataImportModeProto
+    QUERY: DataImportModeProto
+    SQL: DataImportModeProto
+    TABLE: DataImportModeProto
 
 NONE: DataImportModeProto
 """

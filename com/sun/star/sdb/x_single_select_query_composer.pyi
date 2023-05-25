@@ -152,3 +152,4 @@ class XSingleSelectQueryComposer(XSingleSelectQueryAnalyzer_66ad10b7):
     def ElementaryQuery(self, value: str) -> None:
         ...
 
+

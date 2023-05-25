@@ -45,3 +45,4 @@ class XGraphicObject(XInterface_8f010a43):
     def Graphic(self, value: XGraphic_a4da0afc) -> None:
         ...
 
+

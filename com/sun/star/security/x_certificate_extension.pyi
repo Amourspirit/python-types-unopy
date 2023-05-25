@@ -61,3 +61,4 @@ class XCertificateExtension(XInterface_8f010a43):
     def ExtensionValue(self, value: uno.ByteSequence) -> None:
         ...
 
+

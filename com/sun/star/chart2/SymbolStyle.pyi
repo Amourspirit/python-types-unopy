@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.chart2
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class SymbolStyleProto(UnoEnumProto):
-    AUTO: UnoEnumProto
-    GRAPHIC: UnoEnumProto
-    NONE: UnoEnumProto
-    POLYGON: UnoEnumProto
-    STANDARD: UnoEnumProto
+
+class SymbolStyleProto(Protocol):
+    """Protocol for SymbolStyle"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart2.SymbolStyle"]:
+        ...
+    value: Any
+    AUTO: SymbolStyleProto
+    GRAPHIC: SymbolStyleProto
+    NONE: SymbolStyleProto
+    POLYGON: SymbolStyleProto
+    STANDARD: SymbolStyleProto
 
 AUTO: SymbolStyleProto
 """

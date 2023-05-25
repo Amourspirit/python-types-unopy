@@ -109,3 +109,4 @@ class XTableName(ABC):
     def TableName(self, value: str) -> None:
         ...
 
+

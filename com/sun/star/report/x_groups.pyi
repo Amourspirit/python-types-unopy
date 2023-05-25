@@ -54,3 +54,4 @@ class XGroups(XChild_a6390b07, XContainer_d6fb0cc6, XIndexContainer_1c040ebe, XC
     def ReportDefinition(self, value: XReportDefinition_ec30e81) -> None:
         ...
 
+

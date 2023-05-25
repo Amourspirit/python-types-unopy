@@ -323,3 +323,4 @@ class XDocumentProperties(ABC):
     def Title(self, value: str) -> None:
         ...
 
+

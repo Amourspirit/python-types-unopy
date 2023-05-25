@@ -24,8 +24,8 @@ import typing
 import uno
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
-    from com.sun.star.registry.RegistryKeyType import RegistryKeyTypeProto
-    from com.sun.star.registry.RegistryValueType import RegistryValueTypeProto
+    from com.sun.star.registry.RegistryKeyType import RegistryKeyTypeProto  # type: ignore
+    from com.sun.star.registry.RegistryValueType import RegistryValueTypeProto  # type: ignore
 
 
 class XRegistryKey(XInterface_8f010a43):
@@ -287,4 +287,3 @@ class XRegistryKey(XInterface_8f010a43):
     @KeyName.setter
     def KeyName(self, value: str) -> None:
         ...
-

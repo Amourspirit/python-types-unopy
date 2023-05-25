@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ArrangementProto(UnoEnumProto):
-    BACK: UnoEnumProto
-    FRONT: UnoEnumProto
-    MORE_BACK: UnoEnumProto
-    MORE_FRONT: UnoEnumProto
+
+class ArrangementProto(Protocol):
+    """Protocol for Arrangement"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.Arrangement"]:
+        ...
+    value: Any
+    BACK: ArrangementProto
+    FRONT: ArrangementProto
+    MORE_BACK: ArrangementProto
+    MORE_FRONT: ArrangementProto
 
 BACK: ArrangementProto
 """

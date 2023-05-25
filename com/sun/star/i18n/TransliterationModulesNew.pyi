@@ -19,73 +19,81 @@
 # Namespace: com.sun.star.i18n
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TransliterationModulesNewProto(UnoEnumProto):
-    CharToNumHangul_ko: UnoEnumProto
-    CharToNumLower_ko: UnoEnumProto
-    CharToNumLower_zh_CN: UnoEnumProto
-    CharToNumLower_zh_TW: UnoEnumProto
-    CharToNumUpper_ko: UnoEnumProto
-    CharToNumUpper_zh_CN: UnoEnumProto
-    CharToNumUpper_zh_TW: UnoEnumProto
-    END_OF_MODULE: UnoEnumProto
-    FULLWIDTH_HALFWIDTH: UnoEnumProto
-    HALFWIDTH_FULLWIDTH: UnoEnumProto
-    HIRAGANA_KATAKANA: UnoEnumProto
-    IGNORE_CASE: UnoEnumProto
-    IGNORE_KANA: UnoEnumProto
-    IGNORE_WIDTH: UnoEnumProto
-    IgnoreBaFa_ja_JP: UnoEnumProto
-    IgnoreHyuByu_ja_JP: UnoEnumProto
-    IgnoreIandEfollowedByYa_ja_JP: UnoEnumProto
-    IgnoreIterationMark_ja_JP: UnoEnumProto
-    IgnoreKiKuFollowedBySa_ja_JP: UnoEnumProto
-    IgnoreMiddleDot_ja_JP: UnoEnumProto
-    IgnoreMinusSign_ja_JP: UnoEnumProto
-    IgnoreProlongedSoundMark_ja_JP: UnoEnumProto
-    IgnoreSeZe_ja_JP: UnoEnumProto
-    IgnoreSeparator_ja_JP: UnoEnumProto
-    IgnoreSize_ja_JP: UnoEnumProto
-    IgnoreSpace_ja_JP: UnoEnumProto
-    IgnoreTiJi_ja_JP: UnoEnumProto
-    IgnoreTraditionalKana_ja_JP: UnoEnumProto
-    IgnoreTraditionalKanji_ja_JP: UnoEnumProto
-    IgnoreZiZu_ja_JP: UnoEnumProto
-    KATAKANA_HIRAGANA: UnoEnumProto
-    LOWERCASE_UPPERCASE: UnoEnumProto
-    LargeToSmall_ja_JP: UnoEnumProto
-    NumToCharFullwidth: UnoEnumProto
-    NumToCharHangul_ko: UnoEnumProto
-    NumToCharKanjiShort_ja_JP: UnoEnumProto
-    NumToCharLower_ko: UnoEnumProto
-    NumToCharLower_zh_CN: UnoEnumProto
-    NumToCharLower_zh_TW: UnoEnumProto
-    NumToCharUpper_ko: UnoEnumProto
-    NumToCharUpper_zh_CN: UnoEnumProto
-    NumToCharUpper_zh_TW: UnoEnumProto
-    NumToTextFormalHangul_ko: UnoEnumProto
-    NumToTextFormalLower_ko: UnoEnumProto
-    NumToTextFormalUpper_ko: UnoEnumProto
-    NumToTextInformalHangul_ko: UnoEnumProto
-    NumToTextInformalLower_ko: UnoEnumProto
-    NumToTextInformalUpper_ko: UnoEnumProto
-    NumToTextLower_zh_CN: UnoEnumProto
-    NumToTextLower_zh_TW: UnoEnumProto
-    NumToTextUpper_zh_CN: UnoEnumProto
-    NumToTextUpper_zh_TW: UnoEnumProto
-    SmallToLarge_ja_JP: UnoEnumProto
-    TextToNumFormalHangul_ko: UnoEnumProto
-    TextToNumFormalLower_ko: UnoEnumProto
-    TextToNumFormalUpper_ko: UnoEnumProto
-    TextToNumInformalHangul_ko: UnoEnumProto
-    TextToNumInformalLower_ko: UnoEnumProto
-    TextToNumInformalUpper_ko: UnoEnumProto
-    TextToNumLower_zh_CN: UnoEnumProto
-    TextToNumLower_zh_TW: UnoEnumProto
-    TextToNumUpper_zh_CN: UnoEnumProto
-    TextToNumUpper_zh_TW: UnoEnumProto
-    UPPERCASE_LOWERCASE: UnoEnumProto
+
+class TransliterationModulesNewProto(Protocol):
+    """Protocol for TransliterationModulesNew"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.i18n.TransliterationModulesNew"]:
+        ...
+    value: Any
+    CharToNumHangul_ko: TransliterationModulesNewProto
+    CharToNumLower_ko: TransliterationModulesNewProto
+    CharToNumLower_zh_CN: TransliterationModulesNewProto
+    CharToNumLower_zh_TW: TransliterationModulesNewProto
+    CharToNumUpper_ko: TransliterationModulesNewProto
+    CharToNumUpper_zh_CN: TransliterationModulesNewProto
+    CharToNumUpper_zh_TW: TransliterationModulesNewProto
+    END_OF_MODULE: TransliterationModulesNewProto
+    FULLWIDTH_HALFWIDTH: TransliterationModulesNewProto
+    HALFWIDTH_FULLWIDTH: TransliterationModulesNewProto
+    HIRAGANA_KATAKANA: TransliterationModulesNewProto
+    IGNORE_CASE: TransliterationModulesNewProto
+    IGNORE_KANA: TransliterationModulesNewProto
+    IGNORE_WIDTH: TransliterationModulesNewProto
+    IgnoreBaFa_ja_JP: TransliterationModulesNewProto
+    IgnoreHyuByu_ja_JP: TransliterationModulesNewProto
+    IgnoreIandEfollowedByYa_ja_JP: TransliterationModulesNewProto
+    IgnoreIterationMark_ja_JP: TransliterationModulesNewProto
+    IgnoreKiKuFollowedBySa_ja_JP: TransliterationModulesNewProto
+    IgnoreMiddleDot_ja_JP: TransliterationModulesNewProto
+    IgnoreMinusSign_ja_JP: TransliterationModulesNewProto
+    IgnoreProlongedSoundMark_ja_JP: TransliterationModulesNewProto
+    IgnoreSeZe_ja_JP: TransliterationModulesNewProto
+    IgnoreSeparator_ja_JP: TransliterationModulesNewProto
+    IgnoreSize_ja_JP: TransliterationModulesNewProto
+    IgnoreSpace_ja_JP: TransliterationModulesNewProto
+    IgnoreTiJi_ja_JP: TransliterationModulesNewProto
+    IgnoreTraditionalKana_ja_JP: TransliterationModulesNewProto
+    IgnoreTraditionalKanji_ja_JP: TransliterationModulesNewProto
+    IgnoreZiZu_ja_JP: TransliterationModulesNewProto
+    KATAKANA_HIRAGANA: TransliterationModulesNewProto
+    LOWERCASE_UPPERCASE: TransliterationModulesNewProto
+    LargeToSmall_ja_JP: TransliterationModulesNewProto
+    NumToCharFullwidth: TransliterationModulesNewProto
+    NumToCharHangul_ko: TransliterationModulesNewProto
+    NumToCharKanjiShort_ja_JP: TransliterationModulesNewProto
+    NumToCharLower_ko: TransliterationModulesNewProto
+    NumToCharLower_zh_CN: TransliterationModulesNewProto
+    NumToCharLower_zh_TW: TransliterationModulesNewProto
+    NumToCharUpper_ko: TransliterationModulesNewProto
+    NumToCharUpper_zh_CN: TransliterationModulesNewProto
+    NumToCharUpper_zh_TW: TransliterationModulesNewProto
+    NumToTextFormalHangul_ko: TransliterationModulesNewProto
+    NumToTextFormalLower_ko: TransliterationModulesNewProto
+    NumToTextFormalUpper_ko: TransliterationModulesNewProto
+    NumToTextInformalHangul_ko: TransliterationModulesNewProto
+    NumToTextInformalLower_ko: TransliterationModulesNewProto
+    NumToTextInformalUpper_ko: TransliterationModulesNewProto
+    NumToTextLower_zh_CN: TransliterationModulesNewProto
+    NumToTextLower_zh_TW: TransliterationModulesNewProto
+    NumToTextUpper_zh_CN: TransliterationModulesNewProto
+    NumToTextUpper_zh_TW: TransliterationModulesNewProto
+    SmallToLarge_ja_JP: TransliterationModulesNewProto
+    TextToNumFormalHangul_ko: TransliterationModulesNewProto
+    TextToNumFormalLower_ko: TransliterationModulesNewProto
+    TextToNumFormalUpper_ko: TransliterationModulesNewProto
+    TextToNumInformalHangul_ko: TransliterationModulesNewProto
+    TextToNumInformalLower_ko: TransliterationModulesNewProto
+    TextToNumInformalUpper_ko: TransliterationModulesNewProto
+    TextToNumLower_zh_CN: TransliterationModulesNewProto
+    TextToNumLower_zh_TW: TransliterationModulesNewProto
+    TextToNumUpper_zh_CN: TransliterationModulesNewProto
+    TextToNumUpper_zh_TW: TransliterationModulesNewProto
+    UPPERCASE_LOWERCASE: TransliterationModulesNewProto
 
 CharToNumHangul_ko: TransliterationModulesNewProto
 """

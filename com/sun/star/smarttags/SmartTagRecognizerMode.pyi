@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.smarttags
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class SmartTagRecognizerModeProto(UnoEnumProto):
-    CELL: UnoEnumProto
-    CHAR: UnoEnumProto
-    PARAGRAPH: UnoEnumProto
-    SINGLE_WORD: UnoEnumProto
+
+class SmartTagRecognizerModeProto(Protocol):
+    """Protocol for SmartTagRecognizerMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.smarttags.SmartTagRecognizerMode"]:
+        ...
+    value: Any
+    CELL: SmartTagRecognizerModeProto
+    CHAR: SmartTagRecognizerModeProto
+    PARAGRAPH: SmartTagRecognizerModeProto
+    SINGLE_WORD: SmartTagRecognizerModeProto
 
 CELL: SmartTagRecognizerModeProto
 """

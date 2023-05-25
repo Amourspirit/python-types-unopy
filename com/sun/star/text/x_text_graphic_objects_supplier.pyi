@@ -43,3 +43,4 @@ class XTextGraphicObjectsSupplier(XInterface_8f010a43):
         ...
 
 
+

@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.drawing.framework
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class AnchorBindingModeProto(UnoEnumProto):
-    DIRECT: UnoEnumProto
-    INDIRECT: UnoEnumProto
+
+class AnchorBindingModeProto(Protocol):
+    """Protocol for AnchorBindingMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.framework.AnchorBindingMode"]:
+        ...
+    value: Any
+    DIRECT: AnchorBindingModeProto
+    INDIRECT: AnchorBindingModeProto
 
 DIRECT: AnchorBindingModeProto
 """

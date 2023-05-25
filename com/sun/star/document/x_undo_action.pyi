@@ -64,3 +64,4 @@ class XUndoAction(ABC):
     def Title(self, value: str) -> None:
         ...
 
+

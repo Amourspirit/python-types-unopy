@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class LayerTypeProto(UnoEnumProto):
-    CONTROLSA: UnoEnumProto
-    DIMENSIONIANG_LINES: UnoEnumProto
-    LAYOUT: UnoEnumProto
-    USER_DEFINED: UnoEnumProto
+
+class LayerTypeProto(Protocol):
+    """Protocol for LayerType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.LayerType"]:
+        ...
+    value: Any
+    CONTROLSA: LayerTypeProto
+    DIMENSIONIANG_LINES: LayerTypeProto
+    LAYOUT: LayerTypeProto
+    USER_DEFINED: LayerTypeProto
 
 CONTROLSA: LayerTypeProto
 """

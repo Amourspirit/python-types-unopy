@@ -23,8 +23,8 @@ import typing
 from ..beans.x_property_set import XPropertySet as XPropertySet_bc180bfa
 from .x_sheet_condition import XSheetCondition as XSheetCondition_e1940d19
 if typing.TYPE_CHECKING:
-    from com.sun.star.sheet.ValidationAlertStyle import ValidationAlertStyleProto
-    from com.sun.star.sheet.ValidationType import ValidationTypeProto
+    from com.sun.star.sheet.ValidationAlertStyle import ValidationAlertStyleProto  # type: ignore
+    from com.sun.star.sheet.ValidationType import ValidationTypeProto  # type: ignore
 
 class TableValidation(XPropertySet_bc180bfa, XSheetCondition_e1940d19):
     """
@@ -137,4 +137,3 @@ class TableValidation(XPropertySet_bc180bfa, XSheetCondition_e1940d19):
     @Type.setter
     def Type(self, value: ValidationTypeProto) -> None:
         ...
-

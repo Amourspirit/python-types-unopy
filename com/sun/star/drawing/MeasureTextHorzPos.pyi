@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class MeasureTextHorzPosProto(UnoEnumProto):
-    AUTO: UnoEnumProto
-    INSIDE: UnoEnumProto
-    LEFTOUTSIDE: UnoEnumProto
-    RIGHTOUTSIDE: UnoEnumProto
+
+class MeasureTextHorzPosProto(Protocol):
+    """Protocol for MeasureTextHorzPos"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.MeasureTextHorzPos"]:
+        ...
+    value: Any
+    AUTO: MeasureTextHorzPosProto
+    INSIDE: MeasureTextHorzPosProto
+    LEFTOUTSIDE: MeasureTextHorzPosProto
+    RIGHTOUTSIDE: MeasureTextHorzPosProto
 
 AUTO: MeasureTextHorzPosProto
 """

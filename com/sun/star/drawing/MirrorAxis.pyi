@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class MirrorAxisProto(UnoEnumProto):
-    HORIZONTAL: UnoEnumProto
-    VERTICAL: UnoEnumProto
+
+class MirrorAxisProto(Protocol):
+    """Protocol for MirrorAxis"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.MirrorAxis"]:
+        ...
+    value: Any
+    HORIZONTAL: MirrorAxisProto
+    VERTICAL: MirrorAxisProto
 
 HORIZONTAL: MirrorAxisProto
 """

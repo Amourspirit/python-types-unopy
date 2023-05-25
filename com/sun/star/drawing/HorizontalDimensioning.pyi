@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class HorizontalDimensioningProto(UnoEnumProto):
-    AUTO: UnoEnumProto
-    CENTERED: UnoEnumProto
-    LEFT: UnoEnumProto
-    RIGHT: UnoEnumProto
+
+class HorizontalDimensioningProto(Protocol):
+    """Protocol for HorizontalDimensioning"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.HorizontalDimensioning"]:
+        ...
+    value: Any
+    AUTO: HorizontalDimensioningProto
+    CENTERED: HorizontalDimensioningProto
+    LEFT: HorizontalDimensioningProto
+    RIGHT: HorizontalDimensioningProto
 
 AUTO: HorizontalDimensioningProto
 """

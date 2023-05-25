@@ -63,3 +63,4 @@ class XTopWindow2(XTopWindow_8ebb0a57):
     def IsMinimized(self, value: bool) -> None:
         ...
 
+

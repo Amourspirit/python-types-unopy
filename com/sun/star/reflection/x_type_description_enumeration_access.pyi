@@ -25,7 +25,7 @@ from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from .x_type_description_enumeration import XTypeDescriptionEnumeration as XTypeDescriptionEnumeration_33e1438
     from ..uno.type_class import TypeClass as TypeClass_853109f2
-    from com.sun.star.reflection.TypeDescriptionSearchDepth import TypeDescriptionSearchDepthProto
+    from com.sun.star.reflection.TypeDescriptionSearchDepth import TypeDescriptionSearchDepthProto  # type: ignore
 
 
 class XTypeDescriptionEnumerationAccess(XInterface_8f010a43):
@@ -56,5 +56,4 @@ class XTypeDescriptionEnumerationAccess(XInterface_8f010a43):
             InvalidTypeNameException: ``InvalidTypeNameException``
         """
         ...
-
 

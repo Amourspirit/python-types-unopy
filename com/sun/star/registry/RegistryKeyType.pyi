@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.registry
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class RegistryKeyTypeProto(UnoEnumProto):
-    KEY: UnoEnumProto
-    LINK: UnoEnumProto
+
+class RegistryKeyTypeProto(Protocol):
+    """Protocol for RegistryKeyType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.registry.RegistryKeyType"]:
+        ...
+    value: Any
+    KEY: RegistryKeyTypeProto
+    LINK: RegistryKeyTypeProto
 
 KEY: RegistryKeyTypeProto
 """

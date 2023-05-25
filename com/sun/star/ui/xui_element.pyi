@@ -73,3 +73,4 @@ class XUIElement(XInterface_8f010a43):
     def Type(self, value: int) -> None:
         ...
 
+

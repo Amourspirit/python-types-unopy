@@ -65,3 +65,4 @@ class XSentenceCursor(XTextCursor_a60c0b48):
         ...
 
 
+

@@ -19,21 +19,29 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FilterOperatorProto(UnoEnumProto):
-    BOTTOM_PERCENT: UnoEnumProto
-    BOTTOM_VALUES: UnoEnumProto
-    EMPTY: UnoEnumProto
-    EQUAL: UnoEnumProto
-    GREATER: UnoEnumProto
-    GREATER_EQUAL: UnoEnumProto
-    LESS: UnoEnumProto
-    LESS_EQUAL: UnoEnumProto
-    NOT_EMPTY: UnoEnumProto
-    NOT_EQUAL: UnoEnumProto
-    TOP_PERCENT: UnoEnumProto
-    TOP_VALUES: UnoEnumProto
+
+class FilterOperatorProto(Protocol):
+    """Protocol for FilterOperator"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.FilterOperator"]:
+        ...
+    value: Any
+    BOTTOM_PERCENT: FilterOperatorProto
+    BOTTOM_VALUES: FilterOperatorProto
+    EMPTY: FilterOperatorProto
+    EQUAL: FilterOperatorProto
+    GREATER: FilterOperatorProto
+    GREATER_EQUAL: FilterOperatorProto
+    LESS: FilterOperatorProto
+    LESS_EQUAL: FilterOperatorProto
+    NOT_EMPTY: FilterOperatorProto
+    NOT_EQUAL: FilterOperatorProto
+    TOP_PERCENT: FilterOperatorProto
+    TOP_VALUES: FilterOperatorProto
 
 BOTTOM_PERCENT: FilterOperatorProto
 """

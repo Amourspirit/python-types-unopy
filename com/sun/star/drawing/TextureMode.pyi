@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TextureModeProto(UnoEnumProto):
-    BLEND: UnoEnumProto
-    MODULATE: UnoEnumProto
-    REPLACE: UnoEnumProto
+
+class TextureModeProto(Protocol):
+    """Protocol for TextureMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.TextureMode"]:
+        ...
+    value: Any
+    BLEND: TextureModeProto
+    MODULATE: TextureModeProto
+    REPLACE: TextureModeProto
 
 BLEND: TextureModeProto
 """
