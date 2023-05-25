@@ -23,7 +23,7 @@ import typing
 
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
-    from com.sun.star.mozilla.MozillaProductType import MozillaProductTypeProto
+    from com.sun.star.mozilla.MozillaProductType import MozillaProductTypeProto  # type: ignore
 
 
 class XCodeProxy(XInterface_8f010a43):
@@ -50,5 +50,4 @@ class XCodeProxy(XInterface_8f010a43):
         all Mozilla XPCOM code must be called in run() or functions called by run()
         """
         ...
-
 

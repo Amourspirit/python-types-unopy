@@ -83,3 +83,4 @@ class XTabPageModel(ABC):
     def ToolTip(self, value: str) -> None:
         ...
 
+

@@ -102,3 +102,4 @@ class XGridDataModel(XComponent_98dc0ab5, XCloneable_99d00aa3):
     def RowCount(self, value: int) -> None:
         ...
 
+

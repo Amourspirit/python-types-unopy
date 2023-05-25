@@ -53,3 +53,4 @@ class XDocumentDataSource(ABC):
     def DatabaseDocument(self, value: XOfficeDatabaseDocument_327f0f39) -> None:
         ...
 
+

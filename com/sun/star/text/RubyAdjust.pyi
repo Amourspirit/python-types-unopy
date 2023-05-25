@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.text
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class RubyAdjustProto(UnoEnumProto):
-    BLOCK: UnoEnumProto
-    CENTER: UnoEnumProto
-    INDENT_BLOCK: UnoEnumProto
-    LEFT: UnoEnumProto
-    RIGHT: UnoEnumProto
+
+class RubyAdjustProto(Protocol):
+    """Protocol for RubyAdjust"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.text.RubyAdjust"]:
+        ...
+    value: Any
+    BLOCK: RubyAdjustProto
+    CENTER: RubyAdjustProto
+    INDENT_BLOCK: RubyAdjustProto
+    LEFT: RubyAdjustProto
+    RIGHT: RubyAdjustProto
 
 BLOCK: RubyAdjustProto
 """

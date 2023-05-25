@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class VerificationModeProto(UnoEnumProto):
-    ALWAYS: UnoEnumProto
-    NEVER: UnoEnumProto
-    ONCE: UnoEnumProto
+
+class VerificationModeProto(Protocol):
+    """Protocol for VerificationMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.VerificationMode"]:
+        ...
+    value: Any
+    ALWAYS: VerificationModeProto
+    NEVER: VerificationModeProto
+    ONCE: VerificationModeProto
 
 ALWAYS: VerificationModeProto
 """

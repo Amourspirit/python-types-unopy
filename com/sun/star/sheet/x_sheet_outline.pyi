@@ -24,7 +24,7 @@ import typing
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..table.cell_range_address import CellRangeAddress as CellRangeAddress_ec450d43
-    from com.sun.star.table.TableOrientation import TableOrientationProto
+    from com.sun.star.table.TableOrientation import TableOrientationProto  # type: ignore
 
 
 class XSheetOutline(XInterface_8f010a43):
@@ -73,5 +73,4 @@ class XSheetOutline(XInterface_8f010a43):
         In the specified range, all outline groups on the innermost level are removed.
         """
         ...
-
 

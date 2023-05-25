@@ -123,3 +123,4 @@ class XStringResourcePersistence(XStringResourceManager_80421142):
         ...
 
 
+

@@ -48,3 +48,4 @@ class XQuerySelectResult(XEnumeration_f2180daa):
         ...
 
 
+

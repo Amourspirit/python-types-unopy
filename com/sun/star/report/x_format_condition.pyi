@@ -55,3 +55,4 @@ class XFormatCondition(XPropertySet_bc180bfa, XReportControlFormat_3d4e0fc2):
     def Formula(self, value: str) -> None:
         ...
 
+

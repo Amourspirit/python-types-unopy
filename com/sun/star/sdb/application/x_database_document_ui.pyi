@@ -194,3 +194,4 @@ class XDatabaseDocumentUI(ABC):
     def DataSource(self, value: XDataSource_a2990ae7) -> None:
         ...
 
+

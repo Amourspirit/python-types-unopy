@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class DataPilotFieldOrientationProto(UnoEnumProto):
-    COLUMN: UnoEnumProto
-    DATA: UnoEnumProto
-    HIDDEN: UnoEnumProto
-    PAGE: UnoEnumProto
-    ROW: UnoEnumProto
+
+class DataPilotFieldOrientationProto(Protocol):
+    """Protocol for DataPilotFieldOrientation"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.DataPilotFieldOrientation"]:
+        ...
+    value: Any
+    COLUMN: DataPilotFieldOrientationProto
+    DATA: DataPilotFieldOrientationProto
+    HIDDEN: DataPilotFieldOrientationProto
+    PAGE: DataPilotFieldOrientationProto
+    ROW: DataPilotFieldOrientationProto
 
 COLUMN: DataPilotFieldOrientationProto
 """

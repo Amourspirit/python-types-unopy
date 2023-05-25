@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.awt
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class MenuItemTypeProto(UnoEnumProto):
-    DONTKNOW: UnoEnumProto
-    IMAGE: UnoEnumProto
-    SEPARATOR: UnoEnumProto
-    STRING: UnoEnumProto
-    STRINGIMAGE: UnoEnumProto
+
+class MenuItemTypeProto(Protocol):
+    """Protocol for MenuItemType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.awt.MenuItemType"]:
+        ...
+    value: Any
+    DONTKNOW: MenuItemTypeProto
+    IMAGE: MenuItemTypeProto
+    SEPARATOR: MenuItemTypeProto
+    STRING: MenuItemTypeProto
+    STRINGIMAGE: MenuItemTypeProto
 
 DONTKNOW: MenuItemTypeProto
 """

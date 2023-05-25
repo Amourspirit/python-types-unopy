@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.awt
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class MessageBoxTypeProto(UnoEnumProto):
-    ERRORBOX: UnoEnumProto
-    INFOBOX: UnoEnumProto
-    MESSAGEBOX: UnoEnumProto
-    QUERYBOX: UnoEnumProto
-    WARNINGBOX: UnoEnumProto
+
+class MessageBoxTypeProto(Protocol):
+    """Protocol for MessageBoxType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.awt.MessageBoxType"]:
+        ...
+    value: Any
+    ERRORBOX: MessageBoxTypeProto
+    INFOBOX: MessageBoxTypeProto
+    MESSAGEBOX: MessageBoxTypeProto
+    QUERYBOX: MessageBoxTypeProto
+    WARNINGBOX: MessageBoxTypeProto
 
 ERRORBOX: MessageBoxTypeProto
 """

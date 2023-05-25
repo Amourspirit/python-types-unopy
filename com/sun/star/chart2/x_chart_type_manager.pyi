@@ -33,3 +33,4 @@ class XChartTypeManager(XInterface_8f010a43):
     __pyunointerface__: str = 'com.sun.star.chart2.XChartTypeManager'
 
 
+

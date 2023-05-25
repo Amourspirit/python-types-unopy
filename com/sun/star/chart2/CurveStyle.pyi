@@ -19,17 +19,25 @@
 # Namespace: com.sun.star.chart2
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class CurveStyleProto(UnoEnumProto):
-    B_SPLINES: UnoEnumProto
-    CUBIC_SPLINES: UnoEnumProto
-    LINES: UnoEnumProto
-    NURBS: UnoEnumProto
-    STEP_CENTER_X: UnoEnumProto
-    STEP_CENTER_Y: UnoEnumProto
-    STEP_END: UnoEnumProto
-    STEP_START: UnoEnumProto
+
+class CurveStyleProto(Protocol):
+    """Protocol for CurveStyle"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart2.CurveStyle"]:
+        ...
+    value: Any
+    B_SPLINES: CurveStyleProto
+    CUBIC_SPLINES: CurveStyleProto
+    LINES: CurveStyleProto
+    NURBS: CurveStyleProto
+    STEP_CENTER_X: CurveStyleProto
+    STEP_CENTER_Y: CurveStyleProto
+    STEP_END: CurveStyleProto
+    STEP_START: CurveStyleProto
 
 B_SPLINES: CurveStyleProto
 """

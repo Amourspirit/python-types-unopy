@@ -124,3 +124,4 @@ class XReportEngine(XPropertySet_bc180bfa, XComponent_98dc0ab5):
     def StatusIndicator(self, value: XStatusIndicator_e2d00d34) -> None:
         ...
 
+

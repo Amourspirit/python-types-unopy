@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.chart
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ChartDataRowSourceProto(UnoEnumProto):
-    COLUMNS: UnoEnumProto
-    ROWS: UnoEnumProto
+
+class ChartDataRowSourceProto(Protocol):
+    """Protocol for ChartDataRowSource"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart.ChartDataRowSource"]:
+        ...
+    value: Any
+    COLUMNS: ChartDataRowSourceProto
+    ROWS: ChartDataRowSourceProto
 
 COLUMNS: ChartDataRowSourceProto
 """

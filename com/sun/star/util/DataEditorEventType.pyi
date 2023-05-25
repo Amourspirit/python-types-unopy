@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.util
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class DataEditorEventTypeProto(UnoEnumProto):
-    CANCELED: UnoEnumProto
-    DONE: UnoEnumProto
+
+class DataEditorEventTypeProto(Protocol):
+    """Protocol for DataEditorEventType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.util.DataEditorEventType"]:
+        ...
+    value: Any
+    CANCELED: DataEditorEventTypeProto
+    DONE: DataEditorEventTypeProto
 
 CANCELED: DataEditorEventTypeProto
 """

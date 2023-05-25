@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.chart
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ChartErrorIndicatorTypeProto(UnoEnumProto):
-    LOWER: UnoEnumProto
-    NONE: UnoEnumProto
-    TOP_AND_BOTTOM: UnoEnumProto
-    UPPER: UnoEnumProto
+
+class ChartErrorIndicatorTypeProto(Protocol):
+    """Protocol for ChartErrorIndicatorType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart.ChartErrorIndicatorType"]:
+        ...
+    value: Any
+    LOWER: ChartErrorIndicatorTypeProto
+    NONE: ChartErrorIndicatorTypeProto
+    TOP_AND_BOTTOM: ChartErrorIndicatorTypeProto
+    UPPER: ChartErrorIndicatorTypeProto
 
 LOWER: ChartErrorIndicatorTypeProto
 """

@@ -39,3 +39,4 @@ class XTextOutputStream2(XActiveDataSource_d1900c7f, XTextOutputStream_d55f0cda)
     __pyunointerface__: str = 'com.sun.star.io.XTextOutputStream2'
 
 
+

@@ -87,3 +87,4 @@ class XCmisDocument(XInterface_8f010a43):
     def CmisProperties(self, value: typing.Tuple[CmisProperty_e47d0d58, ...]) -> None:
         ...
 
+

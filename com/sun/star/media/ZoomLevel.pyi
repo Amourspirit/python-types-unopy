@@ -19,18 +19,26 @@
 # Namespace: com.sun.star.media
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ZoomLevelProto(UnoEnumProto):
-    FIT_TO_WINDOW: UnoEnumProto
-    FIT_TO_WINDOW_FIXED_ASPECT: UnoEnumProto
-    FULLSCREEN: UnoEnumProto
-    NOT_AVAILABLE: UnoEnumProto
-    ORIGINAL: UnoEnumProto
-    ZOOM_1_TO_2: UnoEnumProto
-    ZOOM_1_TO_4: UnoEnumProto
-    ZOOM_2_TO_1: UnoEnumProto
-    ZOOM_4_TO_1: UnoEnumProto
+
+class ZoomLevelProto(Protocol):
+    """Protocol for ZoomLevel"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.media.ZoomLevel"]:
+        ...
+    value: Any
+    FIT_TO_WINDOW: ZoomLevelProto
+    FIT_TO_WINDOW_FIXED_ASPECT: ZoomLevelProto
+    FULLSCREEN: ZoomLevelProto
+    NOT_AVAILABLE: ZoomLevelProto
+    ORIGINAL: ZoomLevelProto
+    ZOOM_1_TO_2: ZoomLevelProto
+    ZOOM_1_TO_4: ZoomLevelProto
+    ZOOM_2_TO_1: ZoomLevelProto
+    ZOOM_4_TO_1: ZoomLevelProto
 
 FIT_TO_WINDOW: ZoomLevelProto
 """

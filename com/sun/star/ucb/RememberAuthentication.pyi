@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class RememberAuthenticationProto(UnoEnumProto):
-    NO: UnoEnumProto
-    PERSISTENT: UnoEnumProto
-    SESSION: UnoEnumProto
+
+class RememberAuthenticationProto(Protocol):
+    """Protocol for RememberAuthentication"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.RememberAuthentication"]:
+        ...
+    value: Any
+    NO: RememberAuthenticationProto
+    PERSISTENT: RememberAuthenticationProto
+    SESSION: RememberAuthenticationProto
 
 NO: RememberAuthenticationProto
 """

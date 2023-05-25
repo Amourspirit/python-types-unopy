@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FillModeProto(UnoEnumProto):
-    AUTO: UnoEnumProto
-    DATE: UnoEnumProto
-    GROWTH: UnoEnumProto
-    LINEAR: UnoEnumProto
-    SIMPLE: UnoEnumProto
+
+class FillModeProto(Protocol):
+    """Protocol for FillMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.FillMode"]:
+        ...
+    value: Any
+    AUTO: FillModeProto
+    DATE: FillModeProto
+    GROWTH: FillModeProto
+    LINEAR: FillModeProto
+    SIMPLE: FillModeProto
 
 AUTO: FillModeProto
 """

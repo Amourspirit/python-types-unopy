@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.linguistic2
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ConversionDirectionProto(UnoEnumProto):
-    FROM_LEFT: UnoEnumProto
-    FROM_RIGHT: UnoEnumProto
+
+class ConversionDirectionProto(Protocol):
+    """Protocol for ConversionDirection"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.linguistic2.ConversionDirection"]:
+        ...
+    value: Any
+    FROM_LEFT: ConversionDirectionProto
+    FROM_RIGHT: ConversionDirectionProto
 
 FROM_LEFT: ConversionDirectionProto
 """

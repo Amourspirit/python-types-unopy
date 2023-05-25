@@ -36,3 +36,4 @@ class XXMLElementWrapper(XInterface_8f010a43):
     __pyunointerface__: str = 'com.sun.star.xml.wrapper.XXMLElementWrapper'
 
 
+

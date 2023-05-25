@@ -67,3 +67,4 @@ class XCommand(XAnimationNode_1cf10eb9):
     def Target(self, value: object) -> None:
         ...
 
+

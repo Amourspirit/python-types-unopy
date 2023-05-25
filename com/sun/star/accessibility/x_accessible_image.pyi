@@ -62,3 +62,4 @@ class XAccessibleImage(XInterface_8f010a43):
         ...
 
 
+

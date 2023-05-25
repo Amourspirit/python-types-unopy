@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.ui
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class DockingAreaProto(UnoEnumProto):
-    DOCKINGAREA_BOTTOM: UnoEnumProto
-    DOCKINGAREA_DEFAULT: UnoEnumProto
-    DOCKINGAREA_LEFT: UnoEnumProto
-    DOCKINGAREA_RIGHT: UnoEnumProto
-    DOCKINGAREA_TOP: UnoEnumProto
+
+class DockingAreaProto(Protocol):
+    """Protocol for DockingArea"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ui.DockingArea"]:
+        ...
+    value: Any
+    DOCKINGAREA_BOTTOM: DockingAreaProto
+    DOCKINGAREA_DEFAULT: DockingAreaProto
+    DOCKINGAREA_LEFT: DockingAreaProto
+    DOCKINGAREA_RIGHT: DockingAreaProto
+    DOCKINGAREA_TOP: DockingAreaProto
 
 DOCKINGAREA_BOTTOM: DockingAreaProto
 """

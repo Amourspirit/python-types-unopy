@@ -24,7 +24,7 @@ import typing
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..geometry.real_point2_d import RealPoint2D as RealPoint2D_d6e70c78
-    from com.sun.star.rendering.FillRule import FillRuleProto
+    from com.sun.star.rendering.FillRule import FillRuleProto  # type: ignore
 
 
 class XPolyPolygon2D(XInterface_8f010a43):
@@ -91,5 +91,4 @@ class XPolyPolygon2D(XInterface_8f010a43):
         Set the rule used to determine inside and outside of the poly-polygon.
         """
         ...
-
 

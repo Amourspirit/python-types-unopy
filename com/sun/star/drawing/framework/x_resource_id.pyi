@@ -24,7 +24,7 @@ import typing
 from abc import ABC
 if typing.TYPE_CHECKING:
     from ...util.url import URL as URL_57ad07b9
-    from com.sun.star.drawing.framework.AnchorBindingMode import AnchorBindingModeProto
+    from com.sun.star.drawing.framework.AnchorBindingMode import AnchorBindingModeProto  # type: ignore
 
 
 class XResourceId(ABC):
@@ -112,5 +112,4 @@ class XResourceId(ABC):
         This is a convenience variant of the isBoundTo() function that can also be seen as an optimization for the case that the anchor consists of exactly one URL.
         """
         ...
-
 

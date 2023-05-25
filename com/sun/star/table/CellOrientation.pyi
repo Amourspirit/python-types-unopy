@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.table
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class CellOrientationProto(UnoEnumProto):
-    BOTTOMTOP: UnoEnumProto
-    STACKED: UnoEnumProto
-    STANDARD: UnoEnumProto
-    TOPBOTTOM: UnoEnumProto
+
+class CellOrientationProto(Protocol):
+    """Protocol for CellOrientation"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.table.CellOrientation"]:
+        ...
+    value: Any
+    BOTTOMTOP: CellOrientationProto
+    STACKED: CellOrientationProto
+    STANDARD: CellOrientationProto
+    TOPBOTTOM: CellOrientationProto
 
 BOTTOMTOP: CellOrientationProto
 """

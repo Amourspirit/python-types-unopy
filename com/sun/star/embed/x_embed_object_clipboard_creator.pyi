@@ -55,3 +55,4 @@ class XEmbedObjectClipboardCreator(XInterface_8f010a43):
         ...
 
 
+

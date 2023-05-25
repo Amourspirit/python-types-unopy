@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ProjectionModeProto(UnoEnumProto):
-    PARALLEL: UnoEnumProto
-    PERSPECTIVE: UnoEnumProto
+
+class ProjectionModeProto(Protocol):
+    """Protocol for ProjectionMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.ProjectionMode"]:
+        ...
+    value: Any
+    PARALLEL: ProjectionModeProto
+    PERSPECTIVE: ProjectionModeProto
 
 PARALLEL: ProjectionModeProto
 """

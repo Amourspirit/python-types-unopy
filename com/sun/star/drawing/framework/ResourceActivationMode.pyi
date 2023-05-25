@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.drawing.framework
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ResourceActivationModeProto(UnoEnumProto):
-    ADD: UnoEnumProto
-    REPLACE: UnoEnumProto
+
+class ResourceActivationModeProto(Protocol):
+    """Protocol for ResourceActivationMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.framework.ResourceActivationMode"]:
+        ...
+    value: Any
+    ADD: ResourceActivationModeProto
+    REPLACE: ResourceActivationModeProto
 
 ADD: ResourceActivationModeProto
 """

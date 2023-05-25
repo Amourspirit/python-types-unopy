@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.chart2
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PieChartOffsetModeProto(UnoEnumProto):
-    ALL_EXPLODED: UnoEnumProto
-    NONE: UnoEnumProto
+
+class PieChartOffsetModeProto(Protocol):
+    """Protocol for PieChartOffsetMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart2.PieChartOffsetMode"]:
+        ...
+    value: Any
+    ALL_EXPLODED: PieChartOffsetModeProto
+    NONE: PieChartOffsetModeProto
 
 ALL_EXPLODED: PieChartOffsetModeProto
 """

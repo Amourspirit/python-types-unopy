@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PriorityProto(UnoEnumProto):
-    HIGH: UnoEnumProto
-    HIGHEST: UnoEnumProto
-    LOW: UnoEnumProto
-    LOWEST: UnoEnumProto
-    NORMAL: UnoEnumProto
+
+class PriorityProto(Protocol):
+    """Protocol for Priority"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.Priority"]:
+        ...
+    value: Any
+    HIGH: PriorityProto
+    HIGHEST: PriorityProto
+    LOW: PriorityProto
+    LOWEST: PriorityProto
+    NORMAL: PriorityProto
 
 HIGH: PriorityProto
 """

@@ -92,3 +92,4 @@ class XFunctionDescription(XPropertySet_bc180bfa):
     def Signature(self, value: str) -> None:
         ...
 
+

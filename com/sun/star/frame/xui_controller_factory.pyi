@@ -41,3 +41,4 @@ class XUIControllerFactory(XUIControllerRegistration_77c01128, XMultiComponentFa
     __pyunointerface__: str = 'com.sun.star.frame.XUIControllerFactory'
 
 
+

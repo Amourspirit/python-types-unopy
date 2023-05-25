@@ -56,3 +56,4 @@ class XStringResourceWithLocation(XStringResourcePersistence_cabc130c):
         ...
 
 
+

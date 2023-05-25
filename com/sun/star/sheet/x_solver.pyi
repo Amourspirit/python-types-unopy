@@ -116,3 +116,4 @@ class XSolver(XInterface_8f010a43):
     def Success(self, value: bool) -> None:
         ...
 
+

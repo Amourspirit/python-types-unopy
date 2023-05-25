@@ -58,3 +58,4 @@ class XMessageBox(ABC):
     def MessageText(self, value: str) -> None:
         ...
 
+

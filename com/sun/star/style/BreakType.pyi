@@ -19,16 +19,24 @@
 # Namespace: com.sun.star.style
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class BreakTypeProto(UnoEnumProto):
-    COLUMN_AFTER: UnoEnumProto
-    COLUMN_BEFORE: UnoEnumProto
-    COLUMN_BOTH: UnoEnumProto
-    NONE: UnoEnumProto
-    PAGE_AFTER: UnoEnumProto
-    PAGE_BEFORE: UnoEnumProto
-    PAGE_BOTH: UnoEnumProto
+
+class BreakTypeProto(Protocol):
+    """Protocol for BreakType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.style.BreakType"]:
+        ...
+    value: Any
+    COLUMN_AFTER: BreakTypeProto
+    COLUMN_BEFORE: BreakTypeProto
+    COLUMN_BOTH: BreakTypeProto
+    NONE: BreakTypeProto
+    PAGE_AFTER: BreakTypeProto
+    PAGE_BEFORE: BreakTypeProto
+    PAGE_BOTH: BreakTypeProto
 
 COLUMN_AFTER: BreakTypeProto
 """

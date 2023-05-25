@@ -23,7 +23,7 @@ import typing
 
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
-    from com.sun.star.uno.TypeClass import TypeClassProto
+    from com.sun.star.uno.TypeClass import TypeClassProto  # type: ignore
 
 
 class XTypeDescription(XInterface_8f010a43):
@@ -45,5 +45,4 @@ class XTypeDescription(XInterface_8f010a43):
         Returns the type class of the reflected UNOIDL entity.
         """
         ...
-
 

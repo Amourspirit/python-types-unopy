@@ -19,21 +19,29 @@
 # Namespace: com.sun.star.style
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class GraphicLocationProto(UnoEnumProto):
-    AREA: UnoEnumProto
-    LEFT_BOTTOM: UnoEnumProto
-    LEFT_MIDDLE: UnoEnumProto
-    LEFT_TOP: UnoEnumProto
-    MIDDLE_BOTTOM: UnoEnumProto
-    MIDDLE_MIDDLE: UnoEnumProto
-    MIDDLE_TOP: UnoEnumProto
-    NONE: UnoEnumProto
-    RIGHT_BOTTOM: UnoEnumProto
-    RIGHT_MIDDLE: UnoEnumProto
-    RIGHT_TOP: UnoEnumProto
-    TILED: UnoEnumProto
+
+class GraphicLocationProto(Protocol):
+    """Protocol for GraphicLocation"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.style.GraphicLocation"]:
+        ...
+    value: Any
+    AREA: GraphicLocationProto
+    LEFT_BOTTOM: GraphicLocationProto
+    LEFT_MIDDLE: GraphicLocationProto
+    LEFT_TOP: GraphicLocationProto
+    MIDDLE_BOTTOM: GraphicLocationProto
+    MIDDLE_MIDDLE: GraphicLocationProto
+    MIDDLE_TOP: GraphicLocationProto
+    NONE: GraphicLocationProto
+    RIGHT_BOTTOM: GraphicLocationProto
+    RIGHT_MIDDLE: GraphicLocationProto
+    RIGHT_TOP: GraphicLocationProto
+    TILED: GraphicLocationProto
 
 AREA: GraphicLocationProto
 """

@@ -23,7 +23,7 @@ import typing
 
 from ..task.x_interaction_continuation import XInteractionContinuation as XInteractionContinuation_5af0108e
 if typing.TYPE_CHECKING:
-    from com.sun.star.ucb.RememberAuthentication import RememberAuthenticationProto
+    from com.sun.star.ucb.RememberAuthentication import RememberAuthenticationProto  # type: ignore
 
 
 class XInteractionSupplyAuthentication(XInteractionContinuation_5af0108e):
@@ -57,14 +57,14 @@ class XInteractionSupplyAuthentication(XInteractionContinuation_5af0108e):
         Specifies if a \"user name\" value can be handed back.
         """
         ...
-    def getRememberAccountModes(self, Default: RememberAuthenticationProto) -> typing.Tuple[RememberAuthentication_28a80f31, ...]:
+    def getRememberAccountModes(self, Default: RememberAuthenticationProto) -> typing.Tuple[RememberAuthenticationProto, ...]:
         """
         Specifies the available modes of how long to remember the account.
 
         * ``Default`` is an out direction argument.
         """
         ...
-    def getRememberPasswordModes(self, Default: RememberAuthenticationProto) -> typing.Tuple[RememberAuthentication_28a80f31, ...]:
+    def getRememberPasswordModes(self, Default: RememberAuthenticationProto) -> typing.Tuple[RememberAuthenticationProto, ...]:
         """
         Specifies the available modes of how long to remember the password.
 
@@ -113,5 +113,4 @@ class XInteractionSupplyAuthentication(XInteractionContinuation_5af0108e):
         This method should be called before com.sun.star.task.XInteractionContinuation.select(), and should only be called if XInteractionSupplyAuthentication.canSetUserName() returned TRUE.
         """
         ...
-
 

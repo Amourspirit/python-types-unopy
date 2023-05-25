@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.awt
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class RasterOperationProto(UnoEnumProto):
-    ALLBITS: UnoEnumProto
-    INVERT: UnoEnumProto
-    OVERPAINT: UnoEnumProto
-    XOR: UnoEnumProto
-    ZEROBITS: UnoEnumProto
+
+class RasterOperationProto(Protocol):
+    """Protocol for RasterOperation"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.awt.RasterOperation"]:
+        ...
+    value: Any
+    ALLBITS: RasterOperationProto
+    INVERT: RasterOperationProto
+    OVERPAINT: RasterOperationProto
+    XOR: RasterOperationProto
+    ZEROBITS: RasterOperationProto
 
 ALLBITS: RasterOperationProto
 """

@@ -45,3 +45,4 @@ class XSubmissionSupplier(XInterface_8f010a43):
     def Submission(self, value: XSubmission_3cfd0fba) -> None:
         ...
 
+

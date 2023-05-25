@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class DocumentStoreModeProto(UnoEnumProto):
-    LOCAL: UnoEnumProto
-    REMOTE: UnoEnumProto
+
+class DocumentStoreModeProto(Protocol):
+    """Protocol for DocumentStoreMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.DocumentStoreMode"]:
+        ...
+    value: Any
+    LOCAL: DocumentStoreModeProto
+    REMOTE: DocumentStoreModeProto
 
 LOCAL: DocumentStoreModeProto
 """

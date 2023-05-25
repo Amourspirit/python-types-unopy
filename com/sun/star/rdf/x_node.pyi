@@ -49,3 +49,4 @@ class XNode(ABC):
     def StringValue(self, value: str) -> None:
         ...
 
+

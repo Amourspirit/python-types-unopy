@@ -19,22 +19,30 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class GeneralFunctionProto(UnoEnumProto):
-    AUTO: UnoEnumProto
-    AVERAGE: UnoEnumProto
-    COUNT: UnoEnumProto
-    COUNTNUMS: UnoEnumProto
-    MAX: UnoEnumProto
-    MIN: UnoEnumProto
-    NONE: UnoEnumProto
-    PRODUCT: UnoEnumProto
-    STDEV: UnoEnumProto
-    STDEVP: UnoEnumProto
-    SUM: UnoEnumProto
-    VAR: UnoEnumProto
-    VARP: UnoEnumProto
+
+class GeneralFunctionProto(Protocol):
+    """Protocol for GeneralFunction"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.GeneralFunction"]:
+        ...
+    value: Any
+    AUTO: GeneralFunctionProto
+    AVERAGE: GeneralFunctionProto
+    COUNT: GeneralFunctionProto
+    COUNTNUMS: GeneralFunctionProto
+    MAX: GeneralFunctionProto
+    MIN: GeneralFunctionProto
+    NONE: GeneralFunctionProto
+    PRODUCT: GeneralFunctionProto
+    STDEV: GeneralFunctionProto
+    STDEVP: GeneralFunctionProto
+    SUM: GeneralFunctionProto
+    VAR: GeneralFunctionProto
+    VARP: GeneralFunctionProto
 
 AUTO: GeneralFunctionProto
 """

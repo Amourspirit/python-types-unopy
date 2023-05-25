@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class LineCapProto(UnoEnumProto):
-    BUTT: UnoEnumProto
-    ROUND: UnoEnumProto
-    SQUARE: UnoEnumProto
+
+class LineCapProto(Protocol):
+    """Protocol for LineCap"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.LineCap"]:
+        ...
+    value: Any
+    BUTT: LineCapProto
+    ROUND: LineCapProto
+    SQUARE: LineCapProto
 
 BUTT: LineCapProto
 """

@@ -47,3 +47,4 @@ class XSanExtension(XCertificateExtension_6ead10f8):
     def AlternativeNames(self, value: typing.Tuple[CertAltNameEntry_1ce50ec2, ...]) -> None:
         ...
 
+

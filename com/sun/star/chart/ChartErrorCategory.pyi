@@ -19,15 +19,23 @@
 # Namespace: com.sun.star.chart
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ChartErrorCategoryProto(UnoEnumProto):
-    CONSTANT_VALUE: UnoEnumProto
-    ERROR_MARGIN: UnoEnumProto
-    NONE: UnoEnumProto
-    PERCENT: UnoEnumProto
-    STANDARD_DEVIATION: UnoEnumProto
-    VARIANCE: UnoEnumProto
+
+class ChartErrorCategoryProto(Protocol):
+    """Protocol for ChartErrorCategory"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart.ChartErrorCategory"]:
+        ...
+    value: Any
+    CONSTANT_VALUE: ChartErrorCategoryProto
+    ERROR_MARGIN: ChartErrorCategoryProto
+    NONE: ChartErrorCategoryProto
+    PERCENT: ChartErrorCategoryProto
+    STANDARD_DEVIATION: ChartErrorCategoryProto
+    VARIANCE: ChartErrorCategoryProto
 
 CONSTANT_VALUE: ChartErrorCategoryProto
 """

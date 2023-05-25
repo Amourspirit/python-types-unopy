@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.form
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TabulatorCycleProto(UnoEnumProto):
-    CURRENT: UnoEnumProto
-    PAGE: UnoEnumProto
-    RECORDS: UnoEnumProto
+
+class TabulatorCycleProto(Protocol):
+    """Protocol for TabulatorCycle"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.form.TabulatorCycle"]:
+        ...
+    value: Any
+    CURRENT: TabulatorCycleProto
+    PAGE: TabulatorCycleProto
+    RECORDS: TabulatorCycleProto
 
 CURRENT: TabulatorCycleProto
 """

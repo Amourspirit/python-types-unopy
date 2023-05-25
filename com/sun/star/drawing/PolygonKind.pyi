@@ -19,18 +19,26 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PolygonKindProto(UnoEnumProto):
-    FREEFILL: UnoEnumProto
-    FREELINE: UnoEnumProto
-    LINE: UnoEnumProto
-    PATHFILL: UnoEnumProto
-    PATHLINE: UnoEnumProto
-    PATHPLIN: UnoEnumProto
-    PATHPOLY: UnoEnumProto
-    PLIN: UnoEnumProto
-    POLY: UnoEnumProto
+
+class PolygonKindProto(Protocol):
+    """Protocol for PolygonKind"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.PolygonKind"]:
+        ...
+    value: Any
+    FREEFILL: PolygonKindProto
+    FREELINE: PolygonKindProto
+    LINE: PolygonKindProto
+    PATHFILL: PolygonKindProto
+    PATHLINE: PolygonKindProto
+    PATHPLIN: PolygonKindProto
+    PATHPOLY: PolygonKindProto
+    PLIN: PolygonKindProto
+    POLY: PolygonKindProto
 
 FREEFILL: PolygonKindProto
 """

@@ -53,3 +53,4 @@ class XConsoleHandler(XLogHandler_c7f80c27):
     def Threshold(self, value: int) -> None:
         ...
 
+

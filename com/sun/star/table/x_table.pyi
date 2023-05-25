@@ -72,3 +72,4 @@ class XTable(XFastPropertySet_ee6b0d88, XPropertySet_bc180bfa, XComponent_98dc0a
     def RowCount(self, value: int) -> None:
         ...
 
+

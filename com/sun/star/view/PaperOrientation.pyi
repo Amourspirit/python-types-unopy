@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.view
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PaperOrientationProto(UnoEnumProto):
-    LANDSCAPE: UnoEnumProto
-    PORTRAIT: UnoEnumProto
+
+class PaperOrientationProto(Protocol):
+    """Protocol for PaperOrientation"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.view.PaperOrientation"]:
+        ...
+    value: Any
+    LANDSCAPE: PaperOrientationProto
+    PORTRAIT: PaperOrientationProto
 
 LANDSCAPE: PaperOrientationProto
 """

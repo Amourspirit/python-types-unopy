@@ -62,3 +62,4 @@ class XURI(XResource_842709e4):
     def Namespace(self, value: str) -> None:
         ...
 
+

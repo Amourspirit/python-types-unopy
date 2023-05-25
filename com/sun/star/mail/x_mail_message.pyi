@@ -141,3 +141,4 @@ class XMailMessage(XInterface_8f010a43):
     def Subject(self, value: str) -> None:
         ...
 
+

@@ -63,3 +63,4 @@ class XEmbeddedObjectSupplier2(XEmbeddedObjectSupplier_8b631174):
     def ReplacementGraphic(self, value: XGraphic_a4da0afc) -> None:
         ...
 
+

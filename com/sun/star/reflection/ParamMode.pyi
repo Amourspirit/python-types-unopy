@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.reflection
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ParamModeProto(UnoEnumProto):
-    IN: UnoEnumProto
-    INOUT: UnoEnumProto
-    OUT: UnoEnumProto
+
+class ParamModeProto(Protocol):
+    """Protocol for ParamMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.reflection.ParamMode"]:
+        ...
+    value: Any
+    IN: ParamModeProto
+    INOUT: ParamModeProto
+    OUT: ParamModeProto
 
 IN: ParamModeProto
 """

@@ -23,7 +23,7 @@ import typing
 
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
-    from com.sun.star.table.CellContentType import CellContentTypeProto
+    from com.sun.star.table.CellContentType import CellContentTypeProto  # type: ignore
 
 
 class XCell(XInterface_8f010a43):
@@ -75,5 +75,4 @@ class XCell(XInterface_8f010a43):
         After a call to this method the type of the cell is CellContentType.VALUE.
         """
         ...
-
 

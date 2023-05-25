@@ -19,45 +19,53 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class IOErrorCodeProto(UnoEnumProto):
-    ABORT: UnoEnumProto
-    ACCESS_DENIED: UnoEnumProto
-    ALREADY_EXISTING: UnoEnumProto
-    BAD_CRC: UnoEnumProto
-    CANT_CREATE: UnoEnumProto
-    CANT_READ: UnoEnumProto
-    CANT_SEEK: UnoEnumProto
-    CANT_TELL: UnoEnumProto
-    CANT_WRITE: UnoEnumProto
-    CURRENT_DIRECTORY: UnoEnumProto
-    DEVICE_NOT_READY: UnoEnumProto
-    DIFFERENT_DEVICES: UnoEnumProto
-    GENERAL: UnoEnumProto
-    INVALID_ACCESS: UnoEnumProto
-    INVALID_CHARACTER: UnoEnumProto
-    INVALID_DEVICE: UnoEnumProto
-    INVALID_LENGTH: UnoEnumProto
-    INVALID_PARAMETER: UnoEnumProto
-    IS_WILDCARD: UnoEnumProto
-    LOCKING_VIOLATION: UnoEnumProto
-    MISPLACED_CHARACTER: UnoEnumProto
-    NAME_TOO_LONG: UnoEnumProto
-    NOT_EXISTING: UnoEnumProto
-    NOT_EXISTING_PATH: UnoEnumProto
-    NOT_SUPPORTED: UnoEnumProto
-    NO_DIRECTORY: UnoEnumProto
-    NO_FILE: UnoEnumProto
-    OUT_OF_DISK_SPACE: UnoEnumProto
-    OUT_OF_FILE_HANDLES: UnoEnumProto
-    OUT_OF_MEMORY: UnoEnumProto
-    PENDING: UnoEnumProto
-    RECURSIVE: UnoEnumProto
-    UNKNOWN: UnoEnumProto
-    WRITE_PROTECTED: UnoEnumProto
-    WRONG_FORMAT: UnoEnumProto
-    WRONG_VERSION: UnoEnumProto
+
+class IOErrorCodeProto(Protocol):
+    """Protocol for IOErrorCode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.IOErrorCode"]:
+        ...
+    value: Any
+    ABORT: IOErrorCodeProto
+    ACCESS_DENIED: IOErrorCodeProto
+    ALREADY_EXISTING: IOErrorCodeProto
+    BAD_CRC: IOErrorCodeProto
+    CANT_CREATE: IOErrorCodeProto
+    CANT_READ: IOErrorCodeProto
+    CANT_SEEK: IOErrorCodeProto
+    CANT_TELL: IOErrorCodeProto
+    CANT_WRITE: IOErrorCodeProto
+    CURRENT_DIRECTORY: IOErrorCodeProto
+    DEVICE_NOT_READY: IOErrorCodeProto
+    DIFFERENT_DEVICES: IOErrorCodeProto
+    GENERAL: IOErrorCodeProto
+    INVALID_ACCESS: IOErrorCodeProto
+    INVALID_CHARACTER: IOErrorCodeProto
+    INVALID_DEVICE: IOErrorCodeProto
+    INVALID_LENGTH: IOErrorCodeProto
+    INVALID_PARAMETER: IOErrorCodeProto
+    IS_WILDCARD: IOErrorCodeProto
+    LOCKING_VIOLATION: IOErrorCodeProto
+    MISPLACED_CHARACTER: IOErrorCodeProto
+    NAME_TOO_LONG: IOErrorCodeProto
+    NOT_EXISTING: IOErrorCodeProto
+    NOT_EXISTING_PATH: IOErrorCodeProto
+    NOT_SUPPORTED: IOErrorCodeProto
+    NO_DIRECTORY: IOErrorCodeProto
+    NO_FILE: IOErrorCodeProto
+    OUT_OF_DISK_SPACE: IOErrorCodeProto
+    OUT_OF_FILE_HANDLES: IOErrorCodeProto
+    OUT_OF_MEMORY: IOErrorCodeProto
+    PENDING: IOErrorCodeProto
+    RECURSIVE: IOErrorCodeProto
+    UNKNOWN: IOErrorCodeProto
+    WRITE_PROTECTED: IOErrorCodeProto
+    WRONG_FORMAT: IOErrorCodeProto
+    WRONG_VERSION: IOErrorCodeProto
 
 ABORT: IOErrorCodeProto
 """

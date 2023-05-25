@@ -41,3 +41,4 @@ class XModuleUIConfigurationManager2(XModuleUIConfigurationManager_873f1155, XUI
     __pyunointerface__: str = 'com.sun.star.ui.XModuleUIConfigurationManager2'
 
 
+

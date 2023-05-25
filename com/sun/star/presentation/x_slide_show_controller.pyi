@@ -274,3 +274,4 @@ class XSlideShowController(ABC):
     def UsePen(self, value: bool) -> None:
         ...
 
+

@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class MeasureTextVertPosProto(UnoEnumProto):
-    AUTO: UnoEnumProto
-    BREAKEDLINE: UnoEnumProto
-    CENTERED: UnoEnumProto
-    EAST: UnoEnumProto
-    WEST: UnoEnumProto
+
+class MeasureTextVertPosProto(Protocol):
+    """Protocol for MeasureTextVertPos"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.MeasureTextVertPos"]:
+        ...
+    value: Any
+    AUTO: MeasureTextVertPosProto
+    BREAKEDLINE: MeasureTextVertPosProto
+    CENTERED: MeasureTextVertPosProto
+    EAST: MeasureTextVertPosProto
+    WEST: MeasureTextVertPosProto
 
 AUTO: MeasureTextVertPosProto
 """

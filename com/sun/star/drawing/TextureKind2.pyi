@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TextureKind2Proto(UnoEnumProto):
-    COLOR: UnoEnumProto
-    INTENSITY: UnoEnumProto
-    LUMINANCE: UnoEnumProto
+
+class TextureKind2Proto(Protocol):
+    """Protocol for TextureKind2"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.TextureKind2"]:
+        ...
+    value: Any
+    COLOR: TextureKind2Proto
+    INTENSITY: TextureKind2Proto
+    LUMINANCE: TextureKind2Proto
 
 COLOR: TextureKind2Proto
 """

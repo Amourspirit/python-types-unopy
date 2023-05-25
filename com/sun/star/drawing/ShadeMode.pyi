@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ShadeModeProto(UnoEnumProto):
-    DRAFT: UnoEnumProto
-    FLAT: UnoEnumProto
-    PHONG: UnoEnumProto
-    SMOOTH: UnoEnumProto
+
+class ShadeModeProto(Protocol):
+    """Protocol for ShadeMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.ShadeMode"]:
+        ...
+    value: Any
+    DRAFT: ShadeModeProto
+    FLAT: ShadeModeProto
+    PHONG: ShadeModeProto
+    SMOOTH: ShadeModeProto
 
 DRAFT: ShadeModeProto
 """

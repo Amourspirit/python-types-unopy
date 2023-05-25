@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TextAdjustProto(UnoEnumProto):
-    BLOCK: UnoEnumProto
-    CENTER: UnoEnumProto
-    LEFT: UnoEnumProto
-    RIGHT: UnoEnumProto
-    STRETCH: UnoEnumProto
+
+class TextAdjustProto(Protocol):
+    """Protocol for TextAdjust"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.TextAdjust"]:
+        ...
+    value: Any
+    BLOCK: TextAdjustProto
+    CENTER: TextAdjustProto
+    LEFT: TextAdjustProto
+    RIGHT: TextAdjustProto
+    STRETCH: TextAdjustProto
 
 BLOCK: TextAdjustProto
 """

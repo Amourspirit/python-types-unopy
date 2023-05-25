@@ -35,3 +35,4 @@ class XAutoStyles(XIndexAccess_f0910d6d, XNameAccess_e2ab0cf6):
     __pyunointerface__: str = 'com.sun.star.style.XAutoStyles'
 
 
+

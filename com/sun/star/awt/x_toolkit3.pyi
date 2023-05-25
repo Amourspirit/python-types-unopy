@@ -39,3 +39,4 @@ class XToolkit3(XFontMappingUse_c7630c3c, XToolkit2_84a309c4):
     __pyunointerface__: str = 'com.sun.star.awt.XToolkit3'
 
 
+

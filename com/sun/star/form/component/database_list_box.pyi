@@ -23,7 +23,7 @@ import typing
 from ..data_aware_control_model import DataAwareControlModel as DataAwareControlModel_27110ef8
 from .list_box import ListBox as ListBox_f1530d82
 if typing.TYPE_CHECKING:
-    from com.sun.star.form.ListSourceType import ListSourceTypeProto
+    from com.sun.star.form.ListSourceType import ListSourceTypeProto  # type: ignore
 
 class DatabaseListBox(DataAwareControlModel_27110ef8, ListBox_f1530d82):
     """
@@ -84,4 +84,3 @@ class DatabaseListBox(DataAwareControlModel_27110ef8, ListBox_f1530d82):
     @SelectedValue.setter
     def SelectedValue(self, value: object) -> None:
         ...
-

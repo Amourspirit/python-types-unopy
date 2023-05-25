@@ -67,3 +67,4 @@ class XTableAlteration(XConnectionSupplier_57f3105c):
         ...
 
 
+

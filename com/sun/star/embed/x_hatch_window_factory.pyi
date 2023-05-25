@@ -48,3 +48,4 @@ class XHatchWindowFactory(XInterface_8f010a43):
         ...
 
 
+

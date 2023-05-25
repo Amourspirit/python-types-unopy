@@ -86,3 +86,4 @@ class XFormulaOpCodeMapper(ABC):
     def OpCodeUnknown(self, value: int) -> None:
         ...
 
+

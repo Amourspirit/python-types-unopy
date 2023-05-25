@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class SynchronizePolicyProto(UnoEnumProto):
-    CLIENT_IS_MASTER: UnoEnumProto
-    NONE_IS_MASTER: UnoEnumProto
-    SERVER_IS_MASTER: UnoEnumProto
+
+class SynchronizePolicyProto(Protocol):
+    """Protocol for SynchronizePolicy"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.SynchronizePolicy"]:
+        ...
+    value: Any
+    CLIENT_IS_MASTER: SynchronizePolicyProto
+    NONE_IS_MASTER: SynchronizePolicyProto
+    SERVER_IS_MASTER: SynchronizePolicyProto
 
 CLIENT_IS_MASTER: SynchronizePolicyProto
 """

@@ -50,3 +50,4 @@ class XSingletonTypeDescription(XTypeDescription_3c210fb1):
         ...
 
 
+

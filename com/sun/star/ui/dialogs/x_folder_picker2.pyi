@@ -39,3 +39,4 @@ class XFolderPicker2(XFolderPicker_86a0e09, XCancellable_afc30b64):
     __pyunointerface__: str = 'com.sun.star.ui.dialogs.XFolderPicker2'
 
 
+
