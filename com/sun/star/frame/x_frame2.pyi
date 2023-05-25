@@ -93,3 +93,4 @@ class XFrame2(XDispatchInformationProvider_afb6126c, XDispatchProvider_fc690de6,
     def UserDefinedAttributes(self, value: XNameContainer_cb90e47) -> None:
         ...
 
+

@@ -174,3 +174,4 @@ class XAnimate(XAnimationNode_1cf10eb9):
     def ValueType(self, value: int) -> None:
         ...
 
+

@@ -72,3 +72,4 @@ class XVBACompatibility(ABC):
     def VBACompatibilityMode(self, value: bool) -> None:
         ...
 
+

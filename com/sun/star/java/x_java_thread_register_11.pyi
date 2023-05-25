@@ -58,3 +58,4 @@ class XJavaThreadRegister_11(XInterface_8f010a43):
         ...
 
 
+

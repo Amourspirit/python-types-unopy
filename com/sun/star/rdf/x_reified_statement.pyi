@@ -49,3 +49,4 @@ class XReifiedStatement(XResource_842709e4):
     def Statement(self, value: Statement_84a009f9) -> None:
         ...
 
+

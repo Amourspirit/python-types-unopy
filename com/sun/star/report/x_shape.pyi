@@ -96,3 +96,4 @@ class XShape(XReportControlModel_2d800f4a):
     def ZOrder(self, value: int) -> None:
         ...
 
+

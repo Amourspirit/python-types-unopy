@@ -23,8 +23,8 @@ import typing
 from ..document.link_target import LinkTarget as LinkTarget_ca220c5c
 from ..drawing.draw_page import DrawPage as DrawPage_a56e0aff
 if typing.TYPE_CHECKING:
-    from com.sun.star.presentation.FadeEffect import FadeEffectProto
-    from com.sun.star.presentation.AnimationSpeed import AnimationSpeedProto
+    from com.sun.star.presentation.FadeEffect import FadeEffectProto  # type: ignore
+    from com.sun.star.presentation.AnimationSpeed import AnimationSpeedProto  # type: ignore
 
 class DrawPage(LinkTarget_ca220c5c, DrawPage_a56e0aff):
     """
@@ -193,4 +193,3 @@ class DrawPage(LinkTarget_ca220c5c, DrawPage_a56e0aff):
     @TransitionDuration.setter
     def TransitionDuration(self, value: float) -> None:
         ...
-

@@ -23,7 +23,7 @@ import typing
 
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
-    from com.sun.star.beans.PropertyState import PropertyStateProto
+    from com.sun.star.beans.PropertyState import PropertyStateProto  # type: ignore
 
 
 class XPropertyState(XInterface_8f010a43):
@@ -53,7 +53,7 @@ class XPropertyState(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
         ...
-    def getPropertyStates(self, aPropertyName: typing.Tuple[str, ...]) -> typing.Tuple[PropertyState_c97b0c77, ...]:
+    def getPropertyStates(self, aPropertyName: typing.Tuple[str, ...]) -> typing.Tuple[PropertyStateProto, ...]:
         """
         The order of the states is correlating to the order of the given property names.
 
@@ -71,5 +71,4 @@ class XPropertyState(XInterface_8f010a43):
             com.sun.star.beans.UnknownPropertyException: ``UnknownPropertyException``
         """
         ...
-
 

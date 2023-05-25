@@ -81,3 +81,4 @@ class XTabPageContainer(ABC):
     def ActiveTabPageID(self, value: int) -> None:
         ...
 
+

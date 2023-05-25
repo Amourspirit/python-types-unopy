@@ -41,3 +41,4 @@ class XDesktop2(XComponentLoader_eede0d75, XDesktop_8e740a45, XDispatchProvider_
     __pyunointerface__: str = 'com.sun.star.frame.XDesktop2'
 
 
+

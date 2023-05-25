@@ -28,7 +28,7 @@ if typing.TYPE_CHECKING:
     from .x_text_columns import XTextColumns as XTextColumns_b17f0bab
     from .x_text_section import XTextSection as XTextSection_b1730b9f
     from ..util.color import Color as Color_68e908c5
-    from com.sun.star.style.GraphicLocation import GraphicLocationProto
+    from com.sun.star.style.GraphicLocation import GraphicLocationProto  # type: ignore
 
 class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
     """
@@ -278,4 +278,3 @@ class BaseIndex(XDocumentIndex_c9330c5c, XRefreshable_b0d60b81):
     @Title.setter
     def Title(self, value: str) -> None:
         ...
-

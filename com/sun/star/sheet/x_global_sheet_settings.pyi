@@ -217,3 +217,4 @@ class XGlobalSheetSettings(ABC):
     def UseTabCol(self, value: bool) -> None:
         ...
 
+

@@ -132,3 +132,4 @@ class XSmartTagAction(XInitialization_d46c0cca):
     def SmartTagCount(self, value: int) -> None:
         ...
 
+

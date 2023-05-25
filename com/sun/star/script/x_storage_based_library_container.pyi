@@ -67,3 +67,4 @@ class XStorageBasedLibraryContainer(XPersistentLibraryContainer_b6b2129e):
     def RootStorage(self, value: XStorage_8e460a32) -> None:
         ...
 
+

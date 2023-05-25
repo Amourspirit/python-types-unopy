@@ -171,3 +171,4 @@ class XSlideSorterBase(XDrawView_b0b80b75, XView_ffed0de3):
     def TextColor(self, value: Color_68e908c5) -> None:
         ...
 
+

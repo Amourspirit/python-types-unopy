@@ -54,3 +54,4 @@ class XVeto(ABC):
     def Reason(self, value: str) -> None:
         ...
 
+

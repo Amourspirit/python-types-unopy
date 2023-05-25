@@ -56,3 +56,4 @@ class XFormattedField(XReportControlModel_2d800f4a):
     def FormatsSupplier(self, value: XNumberFormatsSupplier_3afb0fb7) -> None:
         ...
 
+

@@ -41,3 +41,4 @@ class XUniversalContentBroker(XComponent_98dc0ab5, XCommandProcessor2_ed330d4b, 
     __pyunointerface__: str = 'com.sun.star.ucb.XUniversalContentBroker'
 
 
+

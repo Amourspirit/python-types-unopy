@@ -96,3 +96,4 @@ class XDataType(XPropertySet_bc180bfa):
     def WhiteSpaceTreatment(self, value: int) -> None:
         ...
 
+

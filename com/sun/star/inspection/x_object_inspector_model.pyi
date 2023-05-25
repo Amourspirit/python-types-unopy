@@ -136,3 +136,4 @@ class XObjectInspectorModel(ABC):
     def MinHelpTextLines(self, value: int) -> None:
         ...
 
+

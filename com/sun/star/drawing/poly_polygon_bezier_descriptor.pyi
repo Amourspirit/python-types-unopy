@@ -23,7 +23,7 @@ import typing
 from abc import ABC
 if typing.TYPE_CHECKING:
     from .poly_polygon_bezier_coords import PolyPolygonBezierCoords as PolyPolygonBezierCoords_7ec5114b
-    from com.sun.star.drawing.PolygonKind import PolygonKindProto
+    from com.sun.star.drawing.PolygonKind import PolygonKindProto  # type: ignore
 
 class PolyPolygonBezierDescriptor(ABC):
     """
@@ -63,4 +63,3 @@ class PolyPolygonBezierDescriptor(ABC):
     @PolygonKind.setter
     def PolygonKind(self, value: PolygonKindProto) -> None:
         ...
-

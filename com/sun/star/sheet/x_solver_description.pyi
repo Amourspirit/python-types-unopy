@@ -58,3 +58,4 @@ class XSolverDescription(XInterface_8f010a43):
     def StatusDescription(self, value: str) -> None:
         ...
 
+

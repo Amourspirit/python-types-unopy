@@ -115,3 +115,4 @@ class XCurrencyField(XInterface_8f010a43):
         ...
 
 
+

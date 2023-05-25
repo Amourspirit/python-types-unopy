@@ -38,3 +38,4 @@ class XAnimateSet(XAnimate_ca680c52):
     __pyunointerface__: str = 'com.sun.star.animations.XAnimateSet'
 
 
+

@@ -71,3 +71,4 @@ class XLiteral(XNode_5ee40822):
     def Value(self, value: str) -> None:
         ...
 
+

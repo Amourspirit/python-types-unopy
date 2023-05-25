@@ -22,7 +22,7 @@ from __future__ import annotations
 import typing
 from ..text_field import TextField as TextField_90260a56
 if typing.TYPE_CHECKING:
-    from com.sun.star.text.PageNumberType import PageNumberTypeProto
+    from com.sun.star.text.PageNumberType import PageNumberTypeProto  # type: ignore
 
 class PageNumber(TextField_90260a56):
     """
@@ -69,4 +69,3 @@ class PageNumber(TextField_90260a56):
     @UserText.setter
     def UserText(self, value: str) -> None:
         ...
-

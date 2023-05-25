@@ -27,7 +27,7 @@ if typing.TYPE_CHECKING:
     from .x_idl_field import XIdlField as XIdlField_d62c0c88
     from .x_idl_method import XIdlMethod as XIdlMethod_e3740d05
     from ..uno.uik import Uik as Uik_4fac0783
-    from com.sun.star.uno.TypeClass import TypeClassProto
+    from com.sun.star.uno.TypeClass import TypeClassProto  # type: ignore
 
 
 class XIdlClass(XInterface_8f010a43):
@@ -141,5 +141,4 @@ class XIdlClass(XInterface_8f010a43):
         Tests whether values of this reflected type are assignable from values of a second one (xType).
         """
         ...
-
 

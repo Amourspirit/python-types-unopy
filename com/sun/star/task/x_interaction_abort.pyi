@@ -34,3 +34,4 @@ class XInteractionAbort(XInteractionContinuation_5af0108e):
     __pyunointerface__: str = 'com.sun.star.task.XInteractionAbort'
 
 
+

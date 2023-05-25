@@ -49,3 +49,4 @@ class XScannerManager2(XScannerManager_fd640dcf):
         ...
 
 
+

@@ -22,7 +22,7 @@ from __future__ import annotations
 import typing
 from abc import ABC
 if typing.TYPE_CHECKING:
-    from com.sun.star.sheet.DataImportMode import DataImportModeProto
+    from com.sun.star.sheet.DataImportMode import DataImportModeProto  # type: ignore
 
 class DatabaseImportDescriptor(ABC):
     """
@@ -92,4 +92,3 @@ class DatabaseImportDescriptor(ABC):
     @SourceType.setter
     def SourceType(self, value: DataImportModeProto) -> None:
         ...
-

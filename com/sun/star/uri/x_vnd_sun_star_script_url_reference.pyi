@@ -35,3 +35,4 @@ class XVndSunStarScriptUrlReference(XUriReference_afc30b6f, XVndSunStarScriptUrl
     __pyunointerface__: str = 'com.sun.star.uri.XVndSunStarScriptUrlReference'
 
 
+
