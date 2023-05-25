@@ -183,6 +183,56 @@ The implemented protocol for ``PropertyState`` is as follows:
 
 Implemented methods such as ``com.sun.star.beans.PropertyState.XPropertyState.getPropertyState()`` return a protocol, in this case ``PropertyStateProto``.
 
+If you need to import a protocol for type hinting in your project then it will need to be guarded.
+
+Type Guarding Protocol
+^^^^^^^^^^^^^^^^^^^^^^
+
+Since ``typing.TYPE_CHECKING`` is always ``False`` at runtime we can use it.
+
+There are two way to handle importing a protocol class.
+The first way is by importing ``annotations``
+
+.. code-block:: python
+
+    from __future__ import annotations
+    import uno
+    from com.sun.star.sheet.SolverConstraintOperator import SolverConstraintOperatorProto
+    # ...
+
+    def solve_operation(value: int, x: SolverConstraintOperatorProto) -> int:
+        ...
+
+Note when using ``annotations`` the ``cast`` to protocol must be wrapped in a string.
+
+.. code-block:: python
+
+    from typing import cast
+    from com.sun.star.sheet.SolverConstraintOperator import SolverConstraintOperatorProto
+    from ooo.dyn.sheet.solver_constraint_operator import SolverConstraintOperator
+    # ...
+
+    # SolverConstraintOperatorProto must be wrapped in a string
+    # if it has not been assigned to object at runtime.
+    solve_operation(
+        11, cast("SolverConstraintOperatorProto", SolverConstraintOperator.BINARY)
+    )
+
+The other way is to assign the protocol class as an object at runtime.
+
+.. code-block:: python
+
+    from typing import TYPE_CHECKING
+    import uno
+    from com.sun.star.sheet.SolverConstraintOperator import SolverConstraintOperatorProto
+
+    if TYPE_CHECKING:
+        # While writing code we have the advantages of protocol
+        from com.sun.star.sheet.SolverConstraintOperator import SolverConstraintOperatorProto
+    else:
+        # code is executing. Now protocol is an object and basically ignored
+        SolverConstraintOperatorProto = object
+
 Related Projects
 ================
 
