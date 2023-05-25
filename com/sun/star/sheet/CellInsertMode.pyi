@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class CellInsertModeProto(UnoEnumProto):
-    COLUMNS: UnoEnumProto
-    DOWN: UnoEnumProto
-    NONE: UnoEnumProto
-    RIGHT: UnoEnumProto
-    ROWS: UnoEnumProto
+
+class CellInsertModeProto(Protocol):
+    """Protocol for CellInsertMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.CellInsertMode"]:
+        ...
+    value: Any
+    COLUMNS: CellInsertModeProto
+    DOWN: CellInsertModeProto
+    NONE: CellInsertModeProto
+    RIGHT: CellInsertModeProto
+    ROWS: CellInsertModeProto
 
 COLUMNS: CellInsertModeProto
 """

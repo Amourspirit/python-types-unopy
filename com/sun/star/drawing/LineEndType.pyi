@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class LineEndTypeProto(UnoEnumProto):
-    ARROW: UnoEnumProto
-    CIRCLE: UnoEnumProto
-    NONE: UnoEnumProto
-    SPECIAL: UnoEnumProto
-    SQUARE: UnoEnumProto
+
+class LineEndTypeProto(Protocol):
+    """Protocol for LineEndType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.LineEndType"]:
+        ...
+    value: Any
+    ARROW: LineEndTypeProto
+    CIRCLE: LineEndTypeProto
+    NONE: LineEndTypeProto
+    SPECIAL: LineEndTypeProto
+    SQUARE: LineEndTypeProto
 
 ARROW: LineEndTypeProto
 """

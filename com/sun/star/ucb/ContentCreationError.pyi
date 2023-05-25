@@ -19,15 +19,23 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ContentCreationErrorProto(UnoEnumProto):
-    CONTENT_CREATION_FAILED: UnoEnumProto
-    IDENTIFIER_CREATION_FAILED: UnoEnumProto
-    NO_CONTENT_BROKER: UnoEnumProto
-    NO_CONTENT_PROVIDER: UnoEnumProto
-    NO_IDENTIFIER_FACTORY: UnoEnumProto
-    UNKNOWN: UnoEnumProto
+
+class ContentCreationErrorProto(Protocol):
+    """Protocol for ContentCreationError"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.ContentCreationError"]:
+        ...
+    value: Any
+    CONTENT_CREATION_FAILED: ContentCreationErrorProto
+    IDENTIFIER_CREATION_FAILED: ContentCreationErrorProto
+    NO_CONTENT_BROKER: ContentCreationErrorProto
+    NO_CONTENT_PROVIDER: ContentCreationErrorProto
+    NO_IDENTIFIER_FACTORY: ContentCreationErrorProto
+    UNKNOWN: ContentCreationErrorProto
 
 CONTENT_CREATION_FAILED: ContentCreationErrorProto
 """

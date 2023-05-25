@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class DashStyleProto(UnoEnumProto):
-    RECT: UnoEnumProto
-    RECTRELATIVE: UnoEnumProto
-    ROUND: UnoEnumProto
-    ROUNDRELATIVE: UnoEnumProto
+
+class DashStyleProto(Protocol):
+    """Protocol for DashStyle"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.DashStyle"]:
+        ...
+    value: Any
+    RECT: DashStyleProto
+    RECTRELATIVE: DashStyleProto
+    ROUND: DashStyleProto
+    ROUNDRELATIVE: DashStyleProto
 
 RECT: DashStyleProto
 """

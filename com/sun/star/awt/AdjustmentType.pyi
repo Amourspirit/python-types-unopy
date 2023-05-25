@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.awt
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class AdjustmentTypeProto(UnoEnumProto):
-    ADJUST_ABS: UnoEnumProto
-    ADJUST_LINE: UnoEnumProto
-    ADJUST_PAGE: UnoEnumProto
+
+class AdjustmentTypeProto(Protocol):
+    """Protocol for AdjustmentType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.awt.AdjustmentType"]:
+        ...
+    value: Any
+    ADJUST_ABS: AdjustmentTypeProto
+    ADJUST_LINE: AdjustmentTypeProto
+    ADJUST_PAGE: AdjustmentTypeProto
 
 ADJUST_ABS: AdjustmentTypeProto
 """

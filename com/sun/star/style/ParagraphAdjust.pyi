@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.style
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ParagraphAdjustProto(UnoEnumProto):
-    BLOCK: UnoEnumProto
-    CENTER: UnoEnumProto
-    LEFT: UnoEnumProto
-    RIGHT: UnoEnumProto
-    STRETCH: UnoEnumProto
+
+class ParagraphAdjustProto(Protocol):
+    """Protocol for ParagraphAdjust"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.style.ParagraphAdjust"]:
+        ...
+    value: Any
+    BLOCK: ParagraphAdjustProto
+    CENTER: ParagraphAdjustProto
+    LEFT: ParagraphAdjustProto
+    RIGHT: ParagraphAdjustProto
+    STRETCH: ParagraphAdjustProto
 
 BLOCK: ParagraphAdjustProto
 """

@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.uri
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class RelativeUriExcessParentSegmentsProto(UnoEnumProto):
-    ERROR: UnoEnumProto
-    REMOVE: UnoEnumProto
-    RETAIN: UnoEnumProto
+
+class RelativeUriExcessParentSegmentsProto(Protocol):
+    """Protocol for RelativeUriExcessParentSegments"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.uri.RelativeUriExcessParentSegments"]:
+        ...
+    value: Any
+    ERROR: RelativeUriExcessParentSegmentsProto
+    REMOVE: RelativeUriExcessParentSegmentsProto
+    RETAIN: RelativeUriExcessParentSegmentsProto
 
 ERROR: RelativeUriExcessParentSegmentsProto
 """

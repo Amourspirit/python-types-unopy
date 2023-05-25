@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.xml.dom.events
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class AttrChangeTypeProto(UnoEnumProto):
-    ADDITION: UnoEnumProto
-    MODIFICATION: UnoEnumProto
-    REMOVAL: UnoEnumProto
+
+class AttrChangeTypeProto(Protocol):
+    """Protocol for AttrChangeType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.xml.dom.events.AttrChangeType"]:
+        ...
+    value: Any
+    ADDITION: AttrChangeTypeProto
+    MODIFICATION: AttrChangeTypeProto
+    REMOVAL: AttrChangeTypeProto
 
 ADDITION: AttrChangeTypeProto
 """

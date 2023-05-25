@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.beans
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PropertyStateProto(UnoEnumProto):
-    AMBIGUOUS_VALUE: UnoEnumProto
-    DEFAULT_VALUE: UnoEnumProto
-    DIRECT_VALUE: UnoEnumProto
+
+class PropertyStateProto(Protocol):
+    """Protocol for PropertyState"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.beans.PropertyState"]:
+        ...
+    value: Any
+    AMBIGUOUS_VALUE: PropertyStateProto
+    DEFAULT_VALUE: PropertyStateProto
+    DIRECT_VALUE: PropertyStateProto
 
 AMBIGUOUS_VALUE: PropertyStateProto
 """

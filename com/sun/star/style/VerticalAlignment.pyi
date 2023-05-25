@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.style
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class VerticalAlignmentProto(UnoEnumProto):
-    BOTTOM: UnoEnumProto
-    MIDDLE: UnoEnumProto
-    TOP: UnoEnumProto
+
+class VerticalAlignmentProto(Protocol):
+    """Protocol for VerticalAlignment"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.style.VerticalAlignment"]:
+        ...
+    value: Any
+    BOTTOM: VerticalAlignmentProto
+    MIDDLE: VerticalAlignmentProto
+    TOP: VerticalAlignmentProto
 
 BOTTOM: VerticalAlignmentProto
 """

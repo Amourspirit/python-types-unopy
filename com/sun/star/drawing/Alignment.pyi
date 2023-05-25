@@ -19,18 +19,26 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class AlignmentProto(UnoEnumProto):
-    BOTTOM: UnoEnumProto
-    BOTTOM_LEFT: UnoEnumProto
-    BOTTOM_RIGHT: UnoEnumProto
-    CENTER: UnoEnumProto
-    LEFT: UnoEnumProto
-    RIGHT: UnoEnumProto
-    TOP: UnoEnumProto
-    TOP_LEFT: UnoEnumProto
-    TOP_RIGHT: UnoEnumProto
+
+class AlignmentProto(Protocol):
+    """Protocol for Alignment"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.Alignment"]:
+        ...
+    value: Any
+    BOTTOM: AlignmentProto
+    BOTTOM_LEFT: AlignmentProto
+    BOTTOM_RIGHT: AlignmentProto
+    CENTER: AlignmentProto
+    LEFT: AlignmentProto
+    RIGHT: AlignmentProto
+    TOP: AlignmentProto
+    TOP_LEFT: AlignmentProto
+    TOP_RIGHT: AlignmentProto
 
 BOTTOM: AlignmentProto
 """

@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.style
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TabAlignProto(UnoEnumProto):
-    CENTER: UnoEnumProto
-    DECIMAL: UnoEnumProto
-    DEFAULT: UnoEnumProto
-    LEFT: UnoEnumProto
-    RIGHT: UnoEnumProto
+
+class TabAlignProto(Protocol):
+    """Protocol for TabAlign"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.style.TabAlign"]:
+        ...
+    value: Any
+    CENTER: TabAlignProto
+    DECIMAL: TabAlignProto
+    DEFAULT: TabAlignProto
+    LEFT: TabAlignProto
+    RIGHT: TabAlignProto
 
 CENTER: TabAlignProto
 """

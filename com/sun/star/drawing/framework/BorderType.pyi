@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.drawing.framework
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class BorderTypeProto(UnoEnumProto):
-    INNER_BORDER: UnoEnumProto
-    OUTER_BORDER: UnoEnumProto
-    TOTAL_BORDER: UnoEnumProto
+
+class BorderTypeProto(Protocol):
+    """Protocol for BorderType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.framework.BorderType"]:
+        ...
+    value: Any
+    INNER_BORDER: BorderTypeProto
+    OUTER_BORDER: BorderTypeProto
+    TOTAL_BORDER: BorderTypeProto
 
 INNER_BORDER: BorderTypeProto
 """

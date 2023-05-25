@@ -19,19 +19,27 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ConditionOperatorProto(UnoEnumProto):
-    BETWEEN: UnoEnumProto
-    EQUAL: UnoEnumProto
-    FORMULA: UnoEnumProto
-    GREATER: UnoEnumProto
-    GREATER_EQUAL: UnoEnumProto
-    LESS: UnoEnumProto
-    LESS_EQUAL: UnoEnumProto
-    NONE: UnoEnumProto
-    NOT_BETWEEN: UnoEnumProto
-    NOT_EQUAL: UnoEnumProto
+
+class ConditionOperatorProto(Protocol):
+    """Protocol for ConditionOperator"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.ConditionOperator"]:
+        ...
+    value: Any
+    BETWEEN: ConditionOperatorProto
+    EQUAL: ConditionOperatorProto
+    FORMULA: ConditionOperatorProto
+    GREATER: ConditionOperatorProto
+    GREATER_EQUAL: ConditionOperatorProto
+    LESS: ConditionOperatorProto
+    LESS_EQUAL: ConditionOperatorProto
+    NONE: ConditionOperatorProto
+    NOT_BETWEEN: ConditionOperatorProto
+    NOT_EQUAL: ConditionOperatorProto
 
 BETWEEN: ConditionOperatorProto
 """

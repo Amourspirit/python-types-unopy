@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.xml.dom.events
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PhaseTypeProto(UnoEnumProto):
-    AT_TARGET: UnoEnumProto
-    BUBBLING_PHASE: UnoEnumProto
-    CAPTURING_PHASE: UnoEnumProto
+
+class PhaseTypeProto(Protocol):
+    """Protocol for PhaseType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.xml.dom.events.PhaseType"]:
+        ...
+    value: Any
+    AT_TARGET: PhaseTypeProto
+    BUBBLING_PHASE: PhaseTypeProto
+    CAPTURING_PHASE: PhaseTypeProto
 
 AT_TARGET: PhaseTypeProto
 """

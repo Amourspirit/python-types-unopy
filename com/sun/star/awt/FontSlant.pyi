@@ -19,15 +19,23 @@
 # Namespace: com.sun.star.awt
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FontSlantProto(UnoEnumProto):
-    DONTKNOW: UnoEnumProto
-    ITALIC: UnoEnumProto
-    NONE: UnoEnumProto
-    OBLIQUE: UnoEnumProto
-    REVERSE_ITALIC: UnoEnumProto
-    REVERSE_OBLIQUE: UnoEnumProto
+
+class FontSlantProto(Protocol):
+    """Protocol for FontSlant"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.awt.FontSlant"]:
+        ...
+    value: Any
+    DONTKNOW: FontSlantProto
+    ITALIC: FontSlantProto
+    NONE: FontSlantProto
+    OBLIQUE: FontSlantProto
+    REVERSE_ITALIC: FontSlantProto
+    REVERSE_OBLIQUE: FontSlantProto
 
 DONTKNOW: FontSlantProto
 """

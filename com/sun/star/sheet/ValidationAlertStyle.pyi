@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ValidationAlertStyleProto(UnoEnumProto):
-    INFO: UnoEnumProto
-    MACRO: UnoEnumProto
-    STOP: UnoEnumProto
-    WARNING: UnoEnumProto
+
+class ValidationAlertStyleProto(Protocol):
+    """Protocol for ValidationAlertStyle"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.ValidationAlertStyle"]:
+        ...
+    value: Any
+    INFO: ValidationAlertStyleProto
+    MACRO: ValidationAlertStyleProto
+    STOP: ValidationAlertStyleProto
+    WARNING: ValidationAlertStyleProto
 
 INFO: ValidationAlertStyleProto
 """

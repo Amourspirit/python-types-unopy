@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.xml.dom
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class SAXDocumentBuilderStateProto(UnoEnumProto):
-    BUILDING_DOCUMENT: UnoEnumProto
-    BUILDING_FRAGMENT: UnoEnumProto
-    DOCUMENT_FINISHED: UnoEnumProto
-    FRAGMENT_FINISHED: UnoEnumProto
-    READY: UnoEnumProto
+
+class SAXDocumentBuilderStateProto(Protocol):
+    """Protocol for SAXDocumentBuilderState"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.xml.dom.SAXDocumentBuilderState"]:
+        ...
+    value: Any
+    BUILDING_DOCUMENT: SAXDocumentBuilderStateProto
+    BUILDING_FRAGMENT: SAXDocumentBuilderStateProto
+    DOCUMENT_FINISHED: SAXDocumentBuilderStateProto
+    FRAGMENT_FINISHED: SAXDocumentBuilderStateProto
+    READY: SAXDocumentBuilderStateProto
 
 BUILDING_DOCUMENT: SAXDocumentBuilderStateProto
 """

@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.chart
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ChartAxisArrangeOrderTypeProto(UnoEnumProto):
-    AUTO: UnoEnumProto
-    SIDE_BY_SIDE: UnoEnumProto
-    STAGGER_EVEN: UnoEnumProto
-    STAGGER_ODD: UnoEnumProto
+
+class ChartAxisArrangeOrderTypeProto(Protocol):
+    """Protocol for ChartAxisArrangeOrderType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart.ChartAxisArrangeOrderType"]:
+        ...
+    value: Any
+    AUTO: ChartAxisArrangeOrderTypeProto
+    SIDE_BY_SIDE: ChartAxisArrangeOrderTypeProto
+    STAGGER_EVEN: ChartAxisArrangeOrderTypeProto
+    STAGGER_ODD: ChartAxisArrangeOrderTypeProto
 
 AUTO: ChartAxisArrangeOrderTypeProto
 """

@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.chart2
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TransparencyStyleProto(UnoEnumProto):
-    GRADIENT: UnoEnumProto
-    LINEAR: UnoEnumProto
-    NONE: UnoEnumProto
+
+class TransparencyStyleProto(Protocol):
+    """Protocol for TransparencyStyle"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart2.TransparencyStyle"]:
+        ...
+    value: Any
+    GRADIENT: TransparencyStyleProto
+    LINEAR: TransparencyStyleProto
+    NONE: TransparencyStyleProto
 
 GRADIENT: TransparencyStyleProto
 """

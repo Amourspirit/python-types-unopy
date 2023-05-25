@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FillDateModeProto(UnoEnumProto):
-    FILL_DATE_DAY: UnoEnumProto
-    FILL_DATE_MONTH: UnoEnumProto
-    FILL_DATE_WEEKDAY: UnoEnumProto
-    FILL_DATE_YEAR: UnoEnumProto
+
+class FillDateModeProto(Protocol):
+    """Protocol for FillDateMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.FillDateMode"]:
+        ...
+    value: Any
+    FILL_DATE_DAY: FillDateModeProto
+    FILL_DATE_MONTH: FillDateModeProto
+    FILL_DATE_WEEKDAY: FillDateModeProto
+    FILL_DATE_YEAR: FillDateModeProto
 
 FILL_DATE_DAY: FillDateModeProto
 """

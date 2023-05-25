@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.util
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TriStateProto(UnoEnumProto):
-    INDETERMINATE: UnoEnumProto
-    NO: UnoEnumProto
-    YES: UnoEnumProto
+
+class TriStateProto(Protocol):
+    """Protocol for TriState"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.util.TriState"]:
+        ...
+    value: Any
+    INDETERMINATE: TriStateProto
+    NO: TriStateProto
+    YES: TriStateProto
 
 INDETERMINATE: TriStateProto
 """

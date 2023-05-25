@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TextFitToSizeTypeProto(UnoEnumProto):
-    ALLLINES: UnoEnumProto
-    AUTOFIT: UnoEnumProto
-    NONE: UnoEnumProto
-    PROPORTIONAL: UnoEnumProto
+
+class TextFitToSizeTypeProto(Protocol):
+    """Protocol for TextFitToSizeType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.TextFitToSizeType"]:
+        ...
+    value: Any
+    ALLLINES: TextFitToSizeTypeProto
+    AUTOFIT: TextFitToSizeTypeProto
+    NONE: TextFitToSizeTypeProto
+    PROPORTIONAL: TextFitToSizeTypeProto
 
 ALLLINES: TextFitToSizeTypeProto
 """

@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FillStyleProto(UnoEnumProto):
-    BITMAP: UnoEnumProto
-    GRADIENT: UnoEnumProto
-    HATCH: UnoEnumProto
-    NONE: UnoEnumProto
-    SOLID: UnoEnumProto
+
+class FillStyleProto(Protocol):
+    """Protocol for FillStyle"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.FillStyle"]:
+        ...
+    value: Any
+    BITMAP: FillStyleProto
+    GRADIENT: FillStyleProto
+    HATCH: FillStyleProto
+    NONE: FillStyleProto
+    SOLID: FillStyleProto
 
 BITMAP: FillStyleProto
 """

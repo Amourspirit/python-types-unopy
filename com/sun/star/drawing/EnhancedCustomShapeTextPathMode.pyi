@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class EnhancedCustomShapeTextPathModeProto(UnoEnumProto):
-    NORMAL: UnoEnumProto
-    PATH: UnoEnumProto
-    SHAPE: UnoEnumProto
+
+class EnhancedCustomShapeTextPathModeProto(Protocol):
+    """Protocol for EnhancedCustomShapeTextPathMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.EnhancedCustomShapeTextPathMode"]:
+        ...
+    value: Any
+    NORMAL: EnhancedCustomShapeTextPathModeProto
+    PATH: EnhancedCustomShapeTextPathModeProto
+    SHAPE: EnhancedCustomShapeTextPathModeProto
 
 NORMAL: EnhancedCustomShapeTextPathModeProto
 """
