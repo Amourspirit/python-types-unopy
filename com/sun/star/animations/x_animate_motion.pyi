@@ -56,3 +56,4 @@ class XAnimateMotion(XAnimate_ca680c52):
     def Path(self, value: object) -> None:
         ...
 
+

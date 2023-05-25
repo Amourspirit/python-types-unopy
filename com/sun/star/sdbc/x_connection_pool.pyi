@@ -34,3 +34,4 @@ class XConnectionPool(XDriverAccess_b9ec0bba, XDriverManager_c6470c23):
     __pyunointerface__: str = 'com.sun.star.sdbc.XConnectionPool'
 
 
+

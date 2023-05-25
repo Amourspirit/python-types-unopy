@@ -23,7 +23,7 @@ import typing
 
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
-    from com.sun.star.beans.PropertyState import PropertyStateProto
+    from com.sun.star.beans.PropertyState import PropertyStateProto  # type: ignore
 
 
 class XPropertyWithState(XInterface_8f010a43):
@@ -63,5 +63,4 @@ class XPropertyWithState(XInterface_8f010a43):
             com.sun.star.lang.WrappedTargetException: ``WrappedTargetException``
         """
         ...
-
 

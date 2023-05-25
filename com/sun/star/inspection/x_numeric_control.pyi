@@ -87,3 +87,4 @@ class XNumericControl(XPropertyControl_3f260fe2):
     def ValueUnit(self, value: int) -> None:
         ...
 
+

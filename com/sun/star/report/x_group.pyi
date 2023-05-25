@@ -152,3 +152,4 @@ class XGroup(XPropertySet_bc180bfa, XChild_a6390b07, XComponent_98dc0ab5, XFunct
     def StartNewColumn(self, value: bool) -> None:
         ...
 
+

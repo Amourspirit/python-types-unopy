@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TextureProjectionModeProto(UnoEnumProto):
-    OBJECTSPECIFIC: UnoEnumProto
-    PARALLEL: UnoEnumProto
-    SPHERE: UnoEnumProto
+
+class TextureProjectionModeProto(Protocol):
+    """Protocol for TextureProjectionMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.TextureProjectionMode"]:
+        ...
+    value: Any
+    OBJECTSPECIFIC: TextureProjectionModeProto
+    PARALLEL: TextureProjectionModeProto
+    SPHERE: TextureProjectionModeProto
 
 OBJECTSPECIFIC: TextureProjectionModeProto
 """

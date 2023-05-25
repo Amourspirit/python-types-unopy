@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.reflection
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class MethodModeProto(UnoEnumProto):
-    ONEWAY: UnoEnumProto
-    TWOWAY: UnoEnumProto
+
+class MethodModeProto(Protocol):
+    """Protocol for MethodMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.reflection.MethodMode"]:
+        ...
+    value: Any
+    ONEWAY: MethodModeProto
+    TWOWAY: MethodModeProto
 
 ONEWAY: MethodModeProto
 """

@@ -48,3 +48,4 @@ class XConnectableShape(XInterface_8f010a43):
         ...
 
 
+

@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.chart2
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class AxisOrientationProto(UnoEnumProto):
-    MATHEMATICAL: UnoEnumProto
-    REVERSE: UnoEnumProto
+
+class AxisOrientationProto(Protocol):
+    """Protocol for AxisOrientation"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart2.AxisOrientation"]:
+        ...
+    value: Any
+    MATHEMATICAL: AxisOrientationProto
+    REVERSE: AxisOrientationProto
 
 MATHEMATICAL: AxisOrientationProto
 """

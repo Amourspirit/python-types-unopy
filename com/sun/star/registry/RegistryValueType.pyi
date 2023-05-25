@@ -19,17 +19,25 @@
 # Namespace: com.sun.star.registry
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class RegistryValueTypeProto(UnoEnumProto):
-    ASCII: UnoEnumProto
-    ASCIILIST: UnoEnumProto
-    BINARY: UnoEnumProto
-    LONG: UnoEnumProto
-    LONGLIST: UnoEnumProto
-    NOT_DEFINED: UnoEnumProto
-    STRING: UnoEnumProto
-    STRINGLIST: UnoEnumProto
+
+class RegistryValueTypeProto(Protocol):
+    """Protocol for RegistryValueType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.registry.RegistryValueType"]:
+        ...
+    value: Any
+    ASCII: RegistryValueTypeProto
+    ASCIILIST: RegistryValueTypeProto
+    BINARY: RegistryValueTypeProto
+    LONG: RegistryValueTypeProto
+    LONGLIST: RegistryValueTypeProto
+    NOT_DEFINED: RegistryValueTypeProto
+    STRING: RegistryValueTypeProto
+    STRINGLIST: RegistryValueTypeProto
 
 ASCII: RegistryValueTypeProto
 """

@@ -19,16 +19,24 @@
 # Namespace: com.sun.star.accessibility
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class AccessibleScrollTypeProto(UnoEnumProto):
-    SCROLL_ANYWHERE: UnoEnumProto
-    SCROLL_BOTTOM_EDGE: UnoEnumProto
-    SCROLL_BOTTOM_RIGHT: UnoEnumProto
-    SCROLL_LEFT_EDGE: UnoEnumProto
-    SCROLL_RIGHT_EDGE: UnoEnumProto
-    SCROLL_TOP_EDGE: UnoEnumProto
-    SCROLL_TOP_LEFT: UnoEnumProto
+
+class AccessibleScrollTypeProto(Protocol):
+    """Protocol for AccessibleScrollType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.accessibility.AccessibleScrollType"]:
+        ...
+    value: Any
+    SCROLL_ANYWHERE: AccessibleScrollTypeProto
+    SCROLL_BOTTOM_EDGE: AccessibleScrollTypeProto
+    SCROLL_BOTTOM_RIGHT: AccessibleScrollTypeProto
+    SCROLL_LEFT_EDGE: AccessibleScrollTypeProto
+    SCROLL_RIGHT_EDGE: AccessibleScrollTypeProto
+    SCROLL_TOP_EDGE: AccessibleScrollTypeProto
+    SCROLL_TOP_LEFT: AccessibleScrollTypeProto
 
 SCROLL_ANYWHERE: AccessibleScrollTypeProto
 """

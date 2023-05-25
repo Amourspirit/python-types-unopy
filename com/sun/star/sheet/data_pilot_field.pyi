@@ -31,8 +31,8 @@ if typing.TYPE_CHECKING:
     from .data_pilot_field_layout_info import DataPilotFieldLayoutInfo as DataPilotFieldLayoutInfo_671e1091
     from .data_pilot_field_reference import DataPilotFieldReference as DataPilotFieldReference_562f1016
     from .data_pilot_field_sort_info import DataPilotFieldSortInfo as DataPilotFieldSortInfo_466d0fbb
-    from com.sun.star.sheet.GeneralFunction import GeneralFunctionProto
-    from com.sun.star.sheet.DataPilotFieldOrientation import DataPilotFieldOrientationProto
+    from com.sun.star.sheet.GeneralFunction import GeneralFunctionProto  # type: ignore
+    from com.sun.star.sheet.DataPilotFieldOrientation import DataPilotFieldOrientationProto  # type: ignore
 
 class DataPilotField(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotField_e0350cdf, XDataPilotFieldGrouping_55b3102a):
     """
@@ -50,7 +50,7 @@ class DataPilotField(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotField_e03
         `API DataPilotField <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1DataPilotField.html>`_
     """
     @property
-    def Subtotals(self) -> typing.Tuple[GeneralFunction_e2280d25, ...]:
+    def Subtotals(self) -> typing.Tuple[GeneralFunctionProto, ...]:
         """
         specifies the functions used to calculate subtotals for this field.
         
@@ -62,7 +62,7 @@ class DataPilotField(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotField_e03
         """
         ...
     @Subtotals.setter
-    def Subtotals(self, value: typing.Tuple[GeneralFunction_e2280d25, ...]) -> None:
+    def Subtotals(self, value: typing.Tuple[GeneralFunctionProto, ...]) -> None:
         ...
     @property
     def Subtotals2(self) -> uno.ByteSequence:
@@ -248,4 +248,3 @@ class DataPilotField(XPropertySet_bc180bfa, XNamed_a6520b08, XDataPilotField_e03
     @UsedHierarchy.setter
     def UsedHierarchy(self, value: str) -> None:
         ...
-

@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.chart2
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class StackingDirectionProto(UnoEnumProto):
-    NO_STACKING: UnoEnumProto
-    Y_STACKING: UnoEnumProto
-    Z_STACKING: UnoEnumProto
+
+class StackingDirectionProto(Protocol):
+    """Protocol for StackingDirection"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart2.StackingDirection"]:
+        ...
+    value: Any
+    NO_STACKING: StackingDirectionProto
+    Y_STACKING: StackingDirectionProto
+    Z_STACKING: StackingDirectionProto
 
 NO_STACKING: StackingDirectionProto
 """

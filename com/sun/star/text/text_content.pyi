@@ -22,8 +22,8 @@ from __future__ import annotations
 import typing
 from .x_text_content import XTextContent as XTextContent_b16e0ba5
 if typing.TYPE_CHECKING:
-    from com.sun.star.text.TextContentAnchorType import TextContentAnchorTypeProto
-    from com.sun.star.text.WrapTextMode import WrapTextModeProto
+    from com.sun.star.text.TextContentAnchorType import TextContentAnchorTypeProto  # type: ignore
+    from com.sun.star.text.WrapTextMode import WrapTextModeProto  # type: ignore
 
 class TextContent(XTextContent_b16e0ba5):
     """
@@ -39,13 +39,13 @@ class TextContent(XTextContent_b16e0ba5):
         `API TextContent <https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1TextContent.html>`_
     """
     @property
-    def AnchorTypes(self) -> typing.Tuple[TextContentAnchorType_2cbe0f4a, ...]:
+    def AnchorTypes(self) -> typing.Tuple[TextContentAnchorTypeProto, ...]:
         """
         contains the anchor type of the text content.
         """
         ...
     @AnchorTypes.setter
-    def AnchorTypes(self, value: typing.Tuple[TextContentAnchorType_2cbe0f4a, ...]) -> None:
+    def AnchorTypes(self, value: typing.Tuple[TextContentAnchorTypeProto, ...]) -> None:
         ...
     @property
     def AnchorType(self) -> TextContentAnchorTypeProto:
@@ -65,4 +65,3 @@ class TextContent(XTextContent_b16e0ba5):
     @TextWrap.setter
     def TextWrap(self, value: WrapTextModeProto) -> None:
         ...
-

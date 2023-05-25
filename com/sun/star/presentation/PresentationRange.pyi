@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.presentation
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PresentationRangeProto(UnoEnumProto):
-    PRESENTATIONRANGE_ALL: UnoEnumProto
-    PRESENTATIONRANGE_FROM_PAGE: UnoEnumProto
-    PRESENTATIONRANGE_INDIVIDUAL: UnoEnumProto
+
+class PresentationRangeProto(Protocol):
+    """Protocol for PresentationRange"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.presentation.PresentationRange"]:
+        ...
+    value: Any
+    PRESENTATIONRANGE_ALL: PresentationRangeProto
+    PRESENTATIONRANGE_FROM_PAGE: PresentationRangeProto
+    PRESENTATIONRANGE_INDIVIDUAL: PresentationRangeProto
 
 PRESENTATIONRANGE_ALL: PresentationRangeProto
 """

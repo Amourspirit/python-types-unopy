@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class DrawViewModeProto(UnoEnumProto):
-    DRAW: UnoEnumProto
-    HANDOUT: UnoEnumProto
-    NOTES: UnoEnumProto
+
+class DrawViewModeProto(Protocol):
+    """Protocol for DrawViewMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.DrawViewMode"]:
+        ...
+    value: Any
+    DRAW: DrawViewModeProto
+    HANDOUT: DrawViewModeProto
+    NOTES: DrawViewModeProto
 
 DRAW: DrawViewModeProto
 """

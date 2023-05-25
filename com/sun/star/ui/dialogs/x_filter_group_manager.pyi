@@ -47,3 +47,4 @@ class XFilterGroupManager(XInterface_8f010a43):
         ...
 
 
+

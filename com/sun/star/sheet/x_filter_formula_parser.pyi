@@ -43,3 +43,4 @@ class XFilterFormulaParser(XFormulaParser_d54d0cbc):
     def SupportedNamespace(self, value: str) -> None:
         ...
 
+

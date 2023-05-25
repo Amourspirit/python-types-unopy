@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class CircleKindProto(UnoEnumProto):
-    ARC: UnoEnumProto
-    CUT: UnoEnumProto
-    FULL: UnoEnumProto
-    SECTION: UnoEnumProto
+
+class CircleKindProto(Protocol):
+    """Protocol for CircleKind"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.CircleKind"]:
+        ...
+    value: Any
+    ARC: CircleKindProto
+    CUT: CircleKindProto
+    FULL: CircleKindProto
+    SECTION: CircleKindProto
 
 ARC: CircleKindProto
 """

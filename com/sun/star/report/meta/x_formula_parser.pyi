@@ -59,3 +59,4 @@ class XFormulaParser(XPropertySet_bc180bfa, XComponent_98dc0ab5, XFormulaParser_
     def FormulaOpCodeMapper(self, value: XFormulaOpCodeMapper_27ff0eee) -> None:
         ...
 
+

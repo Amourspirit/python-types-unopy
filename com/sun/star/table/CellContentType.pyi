@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.table
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class CellContentTypeProto(UnoEnumProto):
-    EMPTY: UnoEnumProto
-    FORMULA: UnoEnumProto
-    TEXT: UnoEnumProto
-    VALUE: UnoEnumProto
+
+class CellContentTypeProto(Protocol):
+    """Protocol for CellContentType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.table.CellContentType"]:
+        ...
+    value: Any
+    EMPTY: CellContentTypeProto
+    FORMULA: CellContentTypeProto
+    TEXT: CellContentTypeProto
+    VALUE: CellContentTypeProto
 
 EMPTY: CellContentTypeProto
 """

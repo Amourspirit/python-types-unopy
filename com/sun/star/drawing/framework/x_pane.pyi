@@ -54,3 +54,4 @@ class XPane(XResource_3bcd0f90):
         ...
 
 
+

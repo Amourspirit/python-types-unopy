@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.reflection
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FieldAccessModeProto(UnoEnumProto):
-    CONST: UnoEnumProto
-    READONLY: UnoEnumProto
-    READWRITE: UnoEnumProto
-    WRITEONLY: UnoEnumProto
+
+class FieldAccessModeProto(Protocol):
+    """Protocol for FieldAccessMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.reflection.FieldAccessMode"]:
+        ...
+    value: Any
+    CONST: FieldAccessModeProto
+    READONLY: FieldAccessModeProto
+    READWRITE: FieldAccessModeProto
+    WRITEONLY: FieldAccessModeProto
 
 CONST: FieldAccessModeProto
 """

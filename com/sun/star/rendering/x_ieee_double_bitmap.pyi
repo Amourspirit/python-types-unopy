@@ -63,3 +63,4 @@ class XIeeeDoubleBitmap(XIeeeDoubleReadOnlyBitmap_bfd0126c):
         ...
 
 
+

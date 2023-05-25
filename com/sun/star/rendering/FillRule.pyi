@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.rendering
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FillRuleProto(UnoEnumProto):
-    EVEN_ODD: UnoEnumProto
-    NON_ZERO: UnoEnumProto
+
+class FillRuleProto(Protocol):
+    """Protocol for FillRule"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.rendering.FillRule"]:
+        ...
+    value: Any
+    EVEN_ODD: FillRuleProto
+    NON_ZERO: FillRuleProto
 
 EVEN_ODD: FillRuleProto
 """

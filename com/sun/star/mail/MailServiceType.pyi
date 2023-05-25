@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.mail
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class MailServiceTypeProto(UnoEnumProto):
-    IMAP: UnoEnumProto
-    POP3: UnoEnumProto
-    SMTP: UnoEnumProto
+
+class MailServiceTypeProto(Protocol):
+    """Protocol for MailServiceType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.mail.MailServiceType"]:
+        ...
+    value: Any
+    IMAP: MailServiceTypeProto
+    POP3: MailServiceTypeProto
+    SMTP: MailServiceTypeProto
 
 IMAP: MailServiceTypeProto
 """

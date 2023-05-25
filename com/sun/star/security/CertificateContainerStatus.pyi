@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.security
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class CertificateContainerStatusProto(UnoEnumProto):
-    NOCERT: UnoEnumProto
-    TRUSTED: UnoEnumProto
-    UNTRUSTED: UnoEnumProto
+
+class CertificateContainerStatusProto(Protocol):
+    """Protocol for CertificateContainerStatus"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.security.CertificateContainerStatus"]:
+        ...
+    value: Any
+    NOCERT: CertificateContainerStatusProto
+    TRUSTED: CertificateContainerStatusProto
+    UNTRUSTED: CertificateContainerStatusProto
 
 NOCERT: CertificateContainerStatusProto
 """

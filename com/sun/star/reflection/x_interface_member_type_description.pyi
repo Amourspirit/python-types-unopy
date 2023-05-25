@@ -45,3 +45,4 @@ class XInterfaceMemberTypeDescription(XTypeDescription_3c210fb1):
         ...
 
 
+

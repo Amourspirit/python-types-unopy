@@ -19,59 +19,67 @@
 # Namespace: com.sun.star.xml.crypto
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class SecurityOperationStatusProto(UnoEnumProto):
-    ASSERTION: UnoEnumProto
-    CERT_HAS_EXPIRED: UnoEnumProto
-    CERT_ISSUER_FAILED: UnoEnumProto
-    CERT_NOT_FOUND: UnoEnumProto
-    CERT_NOT_YET_VALID: UnoEnumProto
-    CERT_REVOKED: UnoEnumProto
-    CERT_VERIFY_FAILED: UnoEnumProto
-    CRYPTO_FAILED: UnoEnumProto
-    DATA_NOT_MATCH: UnoEnumProto
-    DISABLED: UnoEnumProto
-    DSIG_INVALID_REFERENCE: UnoEnumProto
-    DSIG_NO_REFERENCES: UnoEnumProto
-    ENGINE_FAILED: UnoEnumProto
-    INVALID_DATA: UnoEnumProto
-    INVALID_FORMAT: UnoEnumProto
-    INVALID_KEY_DATA: UnoEnumProto
-    INVALID_KEY_DATA_SIZE: UnoEnumProto
-    INVALID_NODE: UnoEnumProto
-    INVALID_NODE_ATTRIBUTE: UnoEnumProto
-    INVALID_NODE_CONTENT: UnoEnumProto
-    INVALID_OPERATION: UnoEnumProto
-    INVALID_RESULT: UnoEnumProto
-    INVALID_SIZE: UnoEnumProto
-    INVALID_STATUS: UnoEnumProto
-    INVALID_TRANSFORM: UnoEnumProto
-    INVALID_TRANSFORM_KEY: UnoEnumProto
-    INVALID_TYPE: UnoEnumProto
-    INVALID_URI_TYPE: UnoEnumProto
-    IO_FAILED: UnoEnumProto
-    KEYDATA_DISABLED: UnoEnumProto
-    KEY_DATA_ALREADY_EXIST: UnoEnumProto
-    KEY_DATA_NOT_FOUND: UnoEnumProto
-    KEY_NOT_FOUND: UnoEnumProto
-    MALLOC_FAILED: UnoEnumProto
-    MAX_ENCKEY_LEVEL: UnoEnumProto
-    MAX_RETRIEVALS_LEVEL: UnoEnumProto
-    MAX_RETRIEVAL_TYPE_MISMATCH: UnoEnumProto
-    MISSING_NODE_ATTRIBUTE: UnoEnumProto
-    NODE_ALREADY_PRESENT: UnoEnumProto
-    NODE_NOT_FOUND: UnoEnumProto
-    NOT_IMPLEMENTED: UnoEnumProto
-    OPERATION_SUCCEEDED: UnoEnumProto
-    RUNTIMEERROR_FAILED: UnoEnumProto
-    STRDUP_FAILED: UnoEnumProto
-    TRANSFORM_DISABLED: UnoEnumProto
-    TRANSFORM_SAME_DOCUMENT_REQUIRED: UnoEnumProto
-    UNEXPECTED_NODE: UnoEnumProto
-    UNKNOWN: UnoEnumProto
-    XML_FAILED: UnoEnumProto
-    XSLT_FAILED: UnoEnumProto
+
+class SecurityOperationStatusProto(Protocol):
+    """Protocol for SecurityOperationStatus"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.xml.crypto.SecurityOperationStatus"]:
+        ...
+    value: Any
+    ASSERTION: SecurityOperationStatusProto
+    CERT_HAS_EXPIRED: SecurityOperationStatusProto
+    CERT_ISSUER_FAILED: SecurityOperationStatusProto
+    CERT_NOT_FOUND: SecurityOperationStatusProto
+    CERT_NOT_YET_VALID: SecurityOperationStatusProto
+    CERT_REVOKED: SecurityOperationStatusProto
+    CERT_VERIFY_FAILED: SecurityOperationStatusProto
+    CRYPTO_FAILED: SecurityOperationStatusProto
+    DATA_NOT_MATCH: SecurityOperationStatusProto
+    DISABLED: SecurityOperationStatusProto
+    DSIG_INVALID_REFERENCE: SecurityOperationStatusProto
+    DSIG_NO_REFERENCES: SecurityOperationStatusProto
+    ENGINE_FAILED: SecurityOperationStatusProto
+    INVALID_DATA: SecurityOperationStatusProto
+    INVALID_FORMAT: SecurityOperationStatusProto
+    INVALID_KEY_DATA: SecurityOperationStatusProto
+    INVALID_KEY_DATA_SIZE: SecurityOperationStatusProto
+    INVALID_NODE: SecurityOperationStatusProto
+    INVALID_NODE_ATTRIBUTE: SecurityOperationStatusProto
+    INVALID_NODE_CONTENT: SecurityOperationStatusProto
+    INVALID_OPERATION: SecurityOperationStatusProto
+    INVALID_RESULT: SecurityOperationStatusProto
+    INVALID_SIZE: SecurityOperationStatusProto
+    INVALID_STATUS: SecurityOperationStatusProto
+    INVALID_TRANSFORM: SecurityOperationStatusProto
+    INVALID_TRANSFORM_KEY: SecurityOperationStatusProto
+    INVALID_TYPE: SecurityOperationStatusProto
+    INVALID_URI_TYPE: SecurityOperationStatusProto
+    IO_FAILED: SecurityOperationStatusProto
+    KEYDATA_DISABLED: SecurityOperationStatusProto
+    KEY_DATA_ALREADY_EXIST: SecurityOperationStatusProto
+    KEY_DATA_NOT_FOUND: SecurityOperationStatusProto
+    KEY_NOT_FOUND: SecurityOperationStatusProto
+    MALLOC_FAILED: SecurityOperationStatusProto
+    MAX_ENCKEY_LEVEL: SecurityOperationStatusProto
+    MAX_RETRIEVALS_LEVEL: SecurityOperationStatusProto
+    MAX_RETRIEVAL_TYPE_MISMATCH: SecurityOperationStatusProto
+    MISSING_NODE_ATTRIBUTE: SecurityOperationStatusProto
+    NODE_ALREADY_PRESENT: SecurityOperationStatusProto
+    NODE_NOT_FOUND: SecurityOperationStatusProto
+    NOT_IMPLEMENTED: SecurityOperationStatusProto
+    OPERATION_SUCCEEDED: SecurityOperationStatusProto
+    RUNTIMEERROR_FAILED: SecurityOperationStatusProto
+    STRDUP_FAILED: SecurityOperationStatusProto
+    TRANSFORM_DISABLED: SecurityOperationStatusProto
+    TRANSFORM_SAME_DOCUMENT_REQUIRED: SecurityOperationStatusProto
+    UNEXPECTED_NODE: SecurityOperationStatusProto
+    UNKNOWN: SecurityOperationStatusProto
+    XML_FAILED: SecurityOperationStatusProto
+    XSLT_FAILED: SecurityOperationStatusProto
 
 ASSERTION: SecurityOperationStatusProto
 """

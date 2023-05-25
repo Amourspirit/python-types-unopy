@@ -53,3 +53,4 @@ class XSingletonTypeDescription2(XSingletonTypeDescription_db781364):
         ...
 
 
+

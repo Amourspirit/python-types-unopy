@@ -19,11 +19,19 @@
 # Namespace: com.sun.star.form
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FormSubmitMethodProto(UnoEnumProto):
-    GET: UnoEnumProto
-    POST: UnoEnumProto
+
+class FormSubmitMethodProto(Protocol):
+    """Protocol for FormSubmitMethod"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.form.FormSubmitMethod"]:
+        ...
+    value: Any
+    GET: FormSubmitMethodProto
+    POST: FormSubmitMethodProto
 
 GET: FormSubmitMethodProto
 """

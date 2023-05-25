@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.table
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ShadowLocationProto(UnoEnumProto):
-    BOTTOM_LEFT: UnoEnumProto
-    BOTTOM_RIGHT: UnoEnumProto
-    NONE: UnoEnumProto
-    TOP_LEFT: UnoEnumProto
-    TOP_RIGHT: UnoEnumProto
+
+class ShadowLocationProto(Protocol):
+    """Protocol for ShadowLocation"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.table.ShadowLocation"]:
+        ...
+    value: Any
+    BOTTOM_LEFT: ShadowLocationProto
+    BOTTOM_RIGHT: ShadowLocationProto
+    NONE: ShadowLocationProto
+    TOP_LEFT: ShadowLocationProto
+    TOP_RIGHT: ShadowLocationProto
 
 BOTTOM_LEFT: ShadowLocationProto
 """

@@ -117,3 +117,4 @@ class XCopyTableWizard(XExecutableDialog_450f0fa1):
     def UseHeaderLineAsColumnNames(self, value: bool) -> None:
         ...
 
+

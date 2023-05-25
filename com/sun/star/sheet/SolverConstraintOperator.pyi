@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class SolverConstraintOperatorProto(UnoEnumProto):
-    BINARY: UnoEnumProto
-    EQUAL: UnoEnumProto
-    GREATER_EQUAL: UnoEnumProto
-    INTEGER: UnoEnumProto
-    LESS_EQUAL: UnoEnumProto
+
+class SolverConstraintOperatorProto(Protocol):
+    """Protocol for SolverConstraintOperator"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.SolverConstraintOperator"]:
+        ...
+    value: Any
+    BINARY: SolverConstraintOperatorProto
+    EQUAL: SolverConstraintOperatorProto
+    GREATER_EQUAL: SolverConstraintOperatorProto
+    INTEGER: SolverConstraintOperatorProto
+    LESS_EQUAL: SolverConstraintOperatorProto
 
 BINARY: SolverConstraintOperatorProto
 """

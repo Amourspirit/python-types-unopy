@@ -288,3 +288,4 @@ class XReportDefinition(XDocumentSubStorageSupplier_da021351, XStorageBasedDocum
     def ReportHeaderOn(self, value: bool) -> None:
         ...
 
+

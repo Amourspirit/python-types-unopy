@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class LineStyleProto(UnoEnumProto):
-    DASH: UnoEnumProto
-    NONE: UnoEnumProto
-    SOLID: UnoEnumProto
+
+class LineStyleProto(Protocol):
+    """Protocol for LineStyle"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.LineStyle"]:
+        ...
+    value: Any
+    DASH: LineStyleProto
+    NONE: LineStyleProto
+    SOLID: LineStyleProto
 
 DASH: LineStyleProto
 """

@@ -19,19 +19,27 @@
 # Namespace: com.sun.star.xml.xpath
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class XPathObjectTypeProto(UnoEnumProto):
-    XPATH_BOOLEAN: UnoEnumProto
-    XPATH_LOCATIONSET: UnoEnumProto
-    XPATH_NODESET: UnoEnumProto
-    XPATH_NUMBER: UnoEnumProto
-    XPATH_POINT: UnoEnumProto
-    XPATH_RANGE: UnoEnumProto
-    XPATH_STRING: UnoEnumProto
-    XPATH_UNDEFINED: UnoEnumProto
-    XPATH_USERS: UnoEnumProto
-    XPATH_XSLT_TREE: UnoEnumProto
+
+class XPathObjectTypeProto(Protocol):
+    """Protocol for XPathObjectType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.xml.xpath.XPathObjectType"]:
+        ...
+    value: Any
+    XPATH_BOOLEAN: XPathObjectTypeProto
+    XPATH_LOCATIONSET: XPathObjectTypeProto
+    XPATH_NODESET: XPathObjectTypeProto
+    XPATH_NUMBER: XPathObjectTypeProto
+    XPATH_POINT: XPathObjectTypeProto
+    XPATH_RANGE: XPathObjectTypeProto
+    XPATH_STRING: XPathObjectTypeProto
+    XPATH_UNDEFINED: XPathObjectTypeProto
+    XPATH_USERS: XPathObjectTypeProto
+    XPATH_XSLT_TREE: XPathObjectTypeProto
 
 XPATH_BOOLEAN: XPathObjectTypeProto
 """

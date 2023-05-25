@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.form
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FormButtonTypeProto(UnoEnumProto):
-    PUSH: UnoEnumProto
-    RESET: UnoEnumProto
-    SUBMIT: UnoEnumProto
-    URL: UnoEnumProto
+
+class FormButtonTypeProto(Protocol):
+    """Protocol for FormButtonType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.form.FormButtonType"]:
+        ...
+    value: Any
+    PUSH: FormButtonTypeProto
+    RESET: FormButtonTypeProto
+    SUBMIT: FormButtonTypeProto
+    URL: FormButtonTypeProto
 
 PUSH: FormButtonTypeProto
 """

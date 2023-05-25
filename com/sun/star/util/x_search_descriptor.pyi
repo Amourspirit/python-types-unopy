@@ -44,3 +44,4 @@ class XSearchDescriptor(XPropertySet_bc180bfa):
         ...
 
 
+

@@ -19,23 +19,31 @@
 # Namespace: com.sun.star.presentation
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ClickActionProto(UnoEnumProto):
-    BOOKMARK: UnoEnumProto
-    DOCUMENT: UnoEnumProto
-    FIRSTPAGE: UnoEnumProto
-    INVISIBLE: UnoEnumProto
-    LASTPAGE: UnoEnumProto
-    MACRO: UnoEnumProto
-    NEXTPAGE: UnoEnumProto
-    NONE: UnoEnumProto
-    PREVPAGE: UnoEnumProto
-    PROGRAM: UnoEnumProto
-    SOUND: UnoEnumProto
-    STOPPRESENTATION: UnoEnumProto
-    VANISH: UnoEnumProto
-    VERB: UnoEnumProto
+
+class ClickActionProto(Protocol):
+    """Protocol for ClickAction"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.presentation.ClickAction"]:
+        ...
+    value: Any
+    BOOKMARK: ClickActionProto
+    DOCUMENT: ClickActionProto
+    FIRSTPAGE: ClickActionProto
+    INVISIBLE: ClickActionProto
+    LASTPAGE: ClickActionProto
+    MACRO: ClickActionProto
+    NEXTPAGE: ClickActionProto
+    NONE: ClickActionProto
+    PREVPAGE: ClickActionProto
+    PROGRAM: ClickActionProto
+    SOUND: ClickActionProto
+    STOPPRESENTATION: ClickActionProto
+    VANISH: ClickActionProto
+    VERB: ClickActionProto
 
 BOOKMARK: ClickActionProto
 """

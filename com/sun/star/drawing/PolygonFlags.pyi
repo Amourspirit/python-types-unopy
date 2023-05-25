@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.drawing
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PolygonFlagsProto(UnoEnumProto):
-    CONTROL: UnoEnumProto
-    NORMAL: UnoEnumProto
-    SMOOTH: UnoEnumProto
-    SYMMETRIC: UnoEnumProto
+
+class PolygonFlagsProto(Protocol):
+    """Protocol for PolygonFlags"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.drawing.PolygonFlags"]:
+        ...
+    value: Any
+    CONTROL: PolygonFlagsProto
+    NORMAL: PolygonFlagsProto
+    SMOOTH: PolygonFlagsProto
+    SYMMETRIC: PolygonFlagsProto
 
 CONTROL: PolygonFlagsProto
 """

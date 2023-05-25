@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class TableOperationModeProto(UnoEnumProto):
-    BOTH: UnoEnumProto
-    COLUMN: UnoEnumProto
-    ROW: UnoEnumProto
+
+class TableOperationModeProto(Protocol):
+    """Protocol for TableOperationMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.TableOperationMode"]:
+        ...
+    value: Any
+    BOTH: TableOperationModeProto
+    COLUMN: TableOperationModeProto
+    ROW: TableOperationModeProto
 
 BOTH: TableOperationModeProto
 """

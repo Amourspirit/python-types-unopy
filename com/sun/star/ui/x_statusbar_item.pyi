@@ -151,3 +151,4 @@ class XStatusbarItem(ABC):
     def Width(self, value: int) -> None:
         ...
 
+

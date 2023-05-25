@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FillDirectionProto(UnoEnumProto):
-    TO_BOTTOM: UnoEnumProto
-    TO_LEFT: UnoEnumProto
-    TO_RIGHT: UnoEnumProto
-    TO_TOP: UnoEnumProto
+
+class FillDirectionProto(Protocol):
+    """Protocol for FillDirection"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.FillDirection"]:
+        ...
+    value: Any
+    TO_BOTTOM: FillDirectionProto
+    TO_LEFT: FillDirectionProto
+    TO_RIGHT: FillDirectionProto
+    TO_TOP: FillDirectionProto
 
 TO_BOTTOM: FillDirectionProto
 """

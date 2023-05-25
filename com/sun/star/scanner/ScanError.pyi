@@ -19,15 +19,23 @@
 # Namespace: com.sun.star.scanner
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ScanErrorProto(UnoEnumProto):
-    InvalidContext: UnoEnumProto
-    ScanCanceled: UnoEnumProto
-    ScanErrorNone: UnoEnumProto
-    ScanFailed: UnoEnumProto
-    ScanInProgress: UnoEnumProto
-    ScannerNotAvailable: UnoEnumProto
+
+class ScanErrorProto(Protocol):
+    """Protocol for ScanError"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.scanner.ScanError"]:
+        ...
+    value: Any
+    InvalidContext: ScanErrorProto
+    ScanCanceled: ScanErrorProto
+    ScanErrorNone: ScanErrorProto
+    ScanFailed: ScanErrorProto
+    ScanInProgress: ScanErrorProto
+    ScannerNotAvailable: ScanErrorProto
 
 InvalidContext: ScanErrorProto
 """

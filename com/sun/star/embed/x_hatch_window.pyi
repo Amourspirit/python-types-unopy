@@ -53,3 +53,4 @@ class XHatchWindow(XComponent_98dc0ab5):
     def HatchBorderSize(self, value: Size_576707ef) -> None:
         ...
 
+

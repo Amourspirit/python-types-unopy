@@ -19,18 +19,26 @@
 # Namespace: com.sun.star.security
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ExtAltNameTypeProto(UnoEnumProto):
-    DIRECTORY_NAME: UnoEnumProto
-    DNS_NAME: UnoEnumProto
-    EDI_PARTY_NAME: UnoEnumProto
-    IP_ADDRESS: UnoEnumProto
-    OTHER_NAME: UnoEnumProto
-    REGISTERED_ID: UnoEnumProto
-    RFC822_NAME: UnoEnumProto
-    URL: UnoEnumProto
-    X400_ADDRESS: UnoEnumProto
+
+class ExtAltNameTypeProto(Protocol):
+    """Protocol for ExtAltNameType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.security.ExtAltNameType"]:
+        ...
+    value: Any
+    DIRECTORY_NAME: ExtAltNameTypeProto
+    DNS_NAME: ExtAltNameTypeProto
+    EDI_PARTY_NAME: ExtAltNameTypeProto
+    IP_ADDRESS: ExtAltNameTypeProto
+    OTHER_NAME: ExtAltNameTypeProto
+    REGISTERED_ID: ExtAltNameTypeProto
+    RFC822_NAME: ExtAltNameTypeProto
+    URL: ExtAltNameTypeProto
+    X400_ADDRESS: ExtAltNameTypeProto
 
 DIRECTORY_NAME: ExtAltNameTypeProto
 """

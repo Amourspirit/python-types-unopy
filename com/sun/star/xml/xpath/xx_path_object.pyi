@@ -24,7 +24,7 @@ import typing
 from ...uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..dom.x_node_list import XNodeList as XNodeList_ae540b41
-    from com.sun.star.xml.xpath.XPathObjectType import XPathObjectTypeProto
+    from com.sun.star.xml.xpath.XPathObjectType import XPathObjectTypeProto  # type: ignore
 
 
 class XXPathObject(XInterface_8f010a43):
@@ -85,5 +85,4 @@ class XXPathObject(XInterface_8f010a43):
         get string value
         """
         ...
-
 

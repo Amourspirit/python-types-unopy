@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.util
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class SearchAlgorithmsProto(UnoEnumProto):
-    ABSOLUTE: UnoEnumProto
-    APPROXIMATE: UnoEnumProto
-    REGEXP: UnoEnumProto
+
+class SearchAlgorithmsProto(Protocol):
+    """Protocol for SearchAlgorithms"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.util.SearchAlgorithms"]:
+        ...
+    value: Any
+    ABSOLUTE: SearchAlgorithmsProto
+    APPROXIMATE: SearchAlgorithmsProto
+    REGEXP: SearchAlgorithmsProto
 
 ABSOLUTE: SearchAlgorithmsProto
 """

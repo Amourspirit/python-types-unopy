@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.chart2
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class LegendPositionProto(UnoEnumProto):
-    CUSTOM: UnoEnumProto
-    LINE_END: UnoEnumProto
-    LINE_START: UnoEnumProto
-    PAGE_END: UnoEnumProto
-    PAGE_START: UnoEnumProto
+
+class LegendPositionProto(Protocol):
+    """Protocol for LegendPosition"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart2.LegendPosition"]:
+        ...
+    value: Any
+    CUSTOM: LegendPositionProto
+    LINE_END: LegendPositionProto
+    LINE_START: LegendPositionProto
+    PAGE_END: LegendPositionProto
+    PAGE_START: LegendPositionProto
 
 CUSTOM: LegendPositionProto
 """

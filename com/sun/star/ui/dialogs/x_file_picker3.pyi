@@ -44,3 +44,4 @@ class XFilePicker3(XComponent_98dc0ab5, XFilePicker2_f99d0d5f, XFilePickerNotifi
     __pyunointerface__: str = 'com.sun.star.ui.dialogs.XFilePicker3'
 
 
+

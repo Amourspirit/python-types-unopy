@@ -82,3 +82,4 @@ class XAnimatePhysics(XAnimate_ca680c52):
     def StartVelocityY(self, value: object) -> None:
         ...
 
+

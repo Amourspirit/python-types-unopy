@@ -57,3 +57,4 @@ class XCompatWriterDocProperties(ABC):
     def Manager(self, value: str) -> None:
         ...
 
+

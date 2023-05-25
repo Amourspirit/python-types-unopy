@@ -24,7 +24,7 @@ from .uno_control_model import UnoControlModel as UnoControlModel_c8ce0c58
 if typing.TYPE_CHECKING:
     from .font_descriptor import FontDescriptor as FontDescriptor_bc110c0a
     from ..util.color import Color as Color_68e908c5
-    from com.sun.star.style.VerticalAlignment import VerticalAlignmentProto
+    from com.sun.star.style.VerticalAlignment import VerticalAlignmentProto  # type: ignore
 
 class UnoControlCurrencyFieldModel(UnoControlModel_c8ce0c58):
     """
@@ -343,4 +343,3 @@ class UnoControlCurrencyFieldModel(UnoControlModel_c8ce0c58):
     @WritingMode.setter
     def WritingMode(self, value: int) -> None:
         ...
-

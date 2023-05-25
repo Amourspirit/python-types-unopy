@@ -19,25 +19,33 @@
 # Namespace: com.sun.star.xml.dom.events
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class EventTypeProto(UnoEnumProto):
-    DOMActivate: UnoEnumProto
-    DOMAttrModified: UnoEnumProto
-    DOMCharacterDataModified: UnoEnumProto
-    DOMFocusIn: UnoEnumProto
-    DOMFocusOut: UnoEnumProto
-    DOMNodeInserted: UnoEnumProto
-    DOMNodeInsertedIntoDocument: UnoEnumProto
-    DOMNodeRemoved: UnoEnumProto
-    DOMNodeRemovedFromDocument: UnoEnumProto
-    DOMSubtreeModified: UnoEnumProto
-    click: UnoEnumProto
-    mousedown: UnoEnumProto
-    mousemove: UnoEnumProto
-    mouseout: UnoEnumProto
-    mouseover: UnoEnumProto
-    mouseup: UnoEnumProto
+
+class EventTypeProto(Protocol):
+    """Protocol for EventType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.xml.dom.events.EventType"]:
+        ...
+    value: Any
+    DOMActivate: EventTypeProto
+    DOMAttrModified: EventTypeProto
+    DOMCharacterDataModified: EventTypeProto
+    DOMFocusIn: EventTypeProto
+    DOMFocusOut: EventTypeProto
+    DOMNodeInserted: EventTypeProto
+    DOMNodeInsertedIntoDocument: EventTypeProto
+    DOMNodeRemoved: EventTypeProto
+    DOMNodeRemovedFromDocument: EventTypeProto
+    DOMSubtreeModified: EventTypeProto
+    click: EventTypeProto
+    mousedown: EventTypeProto
+    mousemove: EventTypeProto
+    mouseout: EventTypeProto
+    mouseover: EventTypeProto
+    mouseup: EventTypeProto
 
 DOMActivate: EventTypeProto
 """

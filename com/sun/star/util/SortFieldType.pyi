@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.util
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class SortFieldTypeProto(UnoEnumProto):
-    ALPHANUMERIC: UnoEnumProto
-    AUTOMATIC: UnoEnumProto
-    NUMERIC: UnoEnumProto
+
+class SortFieldTypeProto(Protocol):
+    """Protocol for SortFieldType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.util.SortFieldType"]:
+        ...
+    value: Any
+    ALPHANUMERIC: SortFieldTypeProto
+    AUTOMATIC: SortFieldTypeProto
+    NUMERIC: SortFieldTypeProto
 
 ALPHANUMERIC: SortFieldTypeProto
 """

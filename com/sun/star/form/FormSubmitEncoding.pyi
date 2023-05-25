@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.form
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FormSubmitEncodingProto(UnoEnumProto):
-    MULTIPART: UnoEnumProto
-    TEXT: UnoEnumProto
-    URL: UnoEnumProto
+
+class FormSubmitEncodingProto(Protocol):
+    """Protocol for FormSubmitEncoding"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.form.FormSubmitEncoding"]:
+        ...
+    value: Any
+    MULTIPART: FormSubmitEncodingProto
+    TEXT: FormSubmitEncodingProto
+    URL: FormSubmitEncodingProto
 
 MULTIPART: FormSubmitEncodingProto
 """

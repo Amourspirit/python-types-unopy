@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class SearchRecursionProto(UnoEnumProto):
-    DEEP: UnoEnumProto
-    NONE: UnoEnumProto
-    ONE_LEVEL: UnoEnumProto
+
+class SearchRecursionProto(Protocol):
+    """Protocol for SearchRecursion"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.SearchRecursion"]:
+        ...
+    value: Any
+    DEEP: SearchRecursionProto
+    NONE: SearchRecursionProto
+    ONE_LEVEL: SearchRecursionProto
 
 DEEP: SearchRecursionProto
 """

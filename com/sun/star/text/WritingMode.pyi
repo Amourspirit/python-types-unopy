@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.text
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class WritingModeProto(UnoEnumProto):
-    LR_TB: UnoEnumProto
-    RL_TB: UnoEnumProto
-    TB_RL: UnoEnumProto
+
+class WritingModeProto(Protocol):
+    """Protocol for WritingMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.text.WritingMode"]:
+        ...
+    value: Any
+    LR_TB: WritingModeProto
+    RL_TB: WritingModeProto
+    TB_RL: WritingModeProto
 
 LR_TB: WritingModeProto
 """

@@ -24,7 +24,7 @@ import typing
 from .x_idl_member import XIdlMember as XIdlMember_e3400cfc
 if typing.TYPE_CHECKING:
     from .x_idl_class import XIdlClass as XIdlClass_d63a0c9a
-    from com.sun.star.reflection.FieldAccessMode import FieldAccessModeProto
+    from com.sun.star.reflection.FieldAccessMode import FieldAccessModeProto  # type: ignore
 
 
 class XIdlField2(XIdlMember_e3400cfc):
@@ -75,5 +75,4 @@ class XIdlField2(XIdlMember_e3400cfc):
             com.sun.star.lang.IllegalAccessException: ``IllegalAccessException``
         """
         ...
-
 

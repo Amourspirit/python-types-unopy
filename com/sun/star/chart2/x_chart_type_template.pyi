@@ -106,3 +106,4 @@ class XChartTypeTemplate(XInterface_8f010a43):
         ...
 
 
+

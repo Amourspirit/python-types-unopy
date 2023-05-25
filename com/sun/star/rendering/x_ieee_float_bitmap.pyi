@@ -63,3 +63,4 @@ class XIeeeFloatBitmap(XIeeeFloatReadOnlyBitmap_ad4b1207):
         ...
 
 
+

@@ -95,3 +95,4 @@ class XCsvLogFormatter(XLogFormatter_e23d0d1d):
     def LogTimestamp(self, value: bool) -> None:
         ...
 
+

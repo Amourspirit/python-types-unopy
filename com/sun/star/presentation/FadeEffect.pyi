@@ -19,66 +19,74 @@
 # Namespace: com.sun.star.presentation
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FadeEffectProto(UnoEnumProto):
-    CLOCKWISE: UnoEnumProto
-    CLOSE_HORIZONTAL: UnoEnumProto
-    CLOSE_VERTICAL: UnoEnumProto
-    COUNTERCLOCKWISE: UnoEnumProto
-    DISSOLVE: UnoEnumProto
-    FADE_FROM_BOTTOM: UnoEnumProto
-    FADE_FROM_CENTER: UnoEnumProto
-    FADE_FROM_LEFT: UnoEnumProto
-    FADE_FROM_LOWERLEFT: UnoEnumProto
-    FADE_FROM_LOWERRIGHT: UnoEnumProto
-    FADE_FROM_RIGHT: UnoEnumProto
-    FADE_FROM_TOP: UnoEnumProto
-    FADE_FROM_UPPERLEFT: UnoEnumProto
-    FADE_FROM_UPPERRIGHT: UnoEnumProto
-    FADE_TO_CENTER: UnoEnumProto
-    HORIZONTAL_CHECKERBOARD: UnoEnumProto
-    HORIZONTAL_LINES: UnoEnumProto
-    HORIZONTAL_STRIPES: UnoEnumProto
-    MOVE_FROM_BOTTOM: UnoEnumProto
-    MOVE_FROM_LEFT: UnoEnumProto
-    MOVE_FROM_LOWERLEFT: UnoEnumProto
-    MOVE_FROM_LOWERRIGHT: UnoEnumProto
-    MOVE_FROM_RIGHT: UnoEnumProto
-    MOVE_FROM_TOP: UnoEnumProto
-    MOVE_FROM_UPPERLEFT: UnoEnumProto
-    MOVE_FROM_UPPERRIGHT: UnoEnumProto
-    NONE: UnoEnumProto
-    OPEN_HORIZONTAL: UnoEnumProto
-    OPEN_VERTICAL: UnoEnumProto
-    RANDOM: UnoEnumProto
-    ROLL_FROM_BOTTOM: UnoEnumProto
-    ROLL_FROM_LEFT: UnoEnumProto
-    ROLL_FROM_RIGHT: UnoEnumProto
-    ROLL_FROM_TOP: UnoEnumProto
-    SPIRALIN_LEFT: UnoEnumProto
-    SPIRALIN_RIGHT: UnoEnumProto
-    SPIRALOUT_LEFT: UnoEnumProto
-    SPIRALOUT_RIGHT: UnoEnumProto
-    STRETCH_FROM_BOTTOM: UnoEnumProto
-    STRETCH_FROM_LEFT: UnoEnumProto
-    STRETCH_FROM_RIGHT: UnoEnumProto
-    STRETCH_FROM_TOP: UnoEnumProto
-    UNCOVER_TO_BOTTOM: UnoEnumProto
-    UNCOVER_TO_LEFT: UnoEnumProto
-    UNCOVER_TO_LOWERLEFT: UnoEnumProto
-    UNCOVER_TO_LOWERRIGHT: UnoEnumProto
-    UNCOVER_TO_RIGHT: UnoEnumProto
-    UNCOVER_TO_TOP: UnoEnumProto
-    UNCOVER_TO_UPPERLEFT: UnoEnumProto
-    UNCOVER_TO_UPPERRIGHT: UnoEnumProto
-    VERTICAL_CHECKERBOARD: UnoEnumProto
-    VERTICAL_LINES: UnoEnumProto
-    VERTICAL_STRIPES: UnoEnumProto
-    WAVYLINE_FROM_BOTTOM: UnoEnumProto
-    WAVYLINE_FROM_LEFT: UnoEnumProto
-    WAVYLINE_FROM_RIGHT: UnoEnumProto
-    WAVYLINE_FROM_TOP: UnoEnumProto
+
+class FadeEffectProto(Protocol):
+    """Protocol for FadeEffect"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.presentation.FadeEffect"]:
+        ...
+    value: Any
+    CLOCKWISE: FadeEffectProto
+    CLOSE_HORIZONTAL: FadeEffectProto
+    CLOSE_VERTICAL: FadeEffectProto
+    COUNTERCLOCKWISE: FadeEffectProto
+    DISSOLVE: FadeEffectProto
+    FADE_FROM_BOTTOM: FadeEffectProto
+    FADE_FROM_CENTER: FadeEffectProto
+    FADE_FROM_LEFT: FadeEffectProto
+    FADE_FROM_LOWERLEFT: FadeEffectProto
+    FADE_FROM_LOWERRIGHT: FadeEffectProto
+    FADE_FROM_RIGHT: FadeEffectProto
+    FADE_FROM_TOP: FadeEffectProto
+    FADE_FROM_UPPERLEFT: FadeEffectProto
+    FADE_FROM_UPPERRIGHT: FadeEffectProto
+    FADE_TO_CENTER: FadeEffectProto
+    HORIZONTAL_CHECKERBOARD: FadeEffectProto
+    HORIZONTAL_LINES: FadeEffectProto
+    HORIZONTAL_STRIPES: FadeEffectProto
+    MOVE_FROM_BOTTOM: FadeEffectProto
+    MOVE_FROM_LEFT: FadeEffectProto
+    MOVE_FROM_LOWERLEFT: FadeEffectProto
+    MOVE_FROM_LOWERRIGHT: FadeEffectProto
+    MOVE_FROM_RIGHT: FadeEffectProto
+    MOVE_FROM_TOP: FadeEffectProto
+    MOVE_FROM_UPPERLEFT: FadeEffectProto
+    MOVE_FROM_UPPERRIGHT: FadeEffectProto
+    NONE: FadeEffectProto
+    OPEN_HORIZONTAL: FadeEffectProto
+    OPEN_VERTICAL: FadeEffectProto
+    RANDOM: FadeEffectProto
+    ROLL_FROM_BOTTOM: FadeEffectProto
+    ROLL_FROM_LEFT: FadeEffectProto
+    ROLL_FROM_RIGHT: FadeEffectProto
+    ROLL_FROM_TOP: FadeEffectProto
+    SPIRALIN_LEFT: FadeEffectProto
+    SPIRALIN_RIGHT: FadeEffectProto
+    SPIRALOUT_LEFT: FadeEffectProto
+    SPIRALOUT_RIGHT: FadeEffectProto
+    STRETCH_FROM_BOTTOM: FadeEffectProto
+    STRETCH_FROM_LEFT: FadeEffectProto
+    STRETCH_FROM_RIGHT: FadeEffectProto
+    STRETCH_FROM_TOP: FadeEffectProto
+    UNCOVER_TO_BOTTOM: FadeEffectProto
+    UNCOVER_TO_LEFT: FadeEffectProto
+    UNCOVER_TO_LOWERLEFT: FadeEffectProto
+    UNCOVER_TO_LOWERRIGHT: FadeEffectProto
+    UNCOVER_TO_RIGHT: FadeEffectProto
+    UNCOVER_TO_TOP: FadeEffectProto
+    UNCOVER_TO_UPPERLEFT: FadeEffectProto
+    UNCOVER_TO_UPPERRIGHT: FadeEffectProto
+    VERTICAL_CHECKERBOARD: FadeEffectProto
+    VERTICAL_LINES: FadeEffectProto
+    VERTICAL_STRIPES: FadeEffectProto
+    WAVYLINE_FROM_BOTTOM: FadeEffectProto
+    WAVYLINE_FROM_LEFT: FadeEffectProto
+    WAVYLINE_FROM_RIGHT: FadeEffectProto
+    WAVYLINE_FROM_TOP: FadeEffectProto
 
 CLOCKWISE: FadeEffectProto
 """

@@ -19,15 +19,23 @@
 # Namespace: com.sun.star.chart
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ChartRegressionCurveTypeProto(UnoEnumProto):
-    EXPONENTIAL: UnoEnumProto
-    LINEAR: UnoEnumProto
-    LOGARITHM: UnoEnumProto
-    NONE: UnoEnumProto
-    POLYNOMIAL: UnoEnumProto
-    POWER: UnoEnumProto
+
+class ChartRegressionCurveTypeProto(Protocol):
+    """Protocol for ChartRegressionCurveType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart.ChartRegressionCurveType"]:
+        ...
+    value: Any
+    EXPONENTIAL: ChartRegressionCurveTypeProto
+    LINEAR: ChartRegressionCurveTypeProto
+    LOGARITHM: ChartRegressionCurveTypeProto
+    NONE: ChartRegressionCurveTypeProto
+    POLYNOMIAL: ChartRegressionCurveTypeProto
+    POWER: ChartRegressionCurveTypeProto
 
 EXPONENTIAL: ChartRegressionCurveTypeProto
 """

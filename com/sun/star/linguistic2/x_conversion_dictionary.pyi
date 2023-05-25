@@ -24,7 +24,7 @@ import typing
 from ..uno.x_interface import XInterface as XInterface_8f010a43
 if typing.TYPE_CHECKING:
     from ..lang.locale import Locale as Locale_70d308fa
-    from com.sun.star.linguistic2.ConversionDirection import ConversionDirectionProto
+    from com.sun.star.linguistic2.ConversionDirection import ConversionDirectionProto  # type: ignore
 
 
 class XConversionDictionary(XInterface_8f010a43):
@@ -106,5 +106,4 @@ class XConversionDictionary(XInterface_8f010a43):
         specifies whether the dictionary should be used or not .
         """
         ...
-
 

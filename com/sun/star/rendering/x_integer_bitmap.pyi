@@ -70,3 +70,4 @@ class XIntegerBitmap(XIntegerReadOnlyBitmap_8cc01167):
         ...
 
 
+

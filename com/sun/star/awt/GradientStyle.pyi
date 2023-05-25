@@ -19,15 +19,23 @@
 # Namespace: com.sun.star.awt
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class GradientStyleProto(UnoEnumProto):
-    AXIAL: UnoEnumProto
-    ELLIPTICAL: UnoEnumProto
-    LINEAR: UnoEnumProto
-    RADIAL: UnoEnumProto
-    RECT: UnoEnumProto
-    SQUARE: UnoEnumProto
+
+class GradientStyleProto(Protocol):
+    """Protocol for GradientStyle"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.awt.GradientStyle"]:
+        ...
+    value: Any
+    AXIAL: GradientStyleProto
+    ELLIPTICAL: GradientStyleProto
+    LINEAR: GradientStyleProto
+    RADIAL: GradientStyleProto
+    RECT: GradientStyleProto
+    SQUARE: GradientStyleProto
 
 AXIAL: GradientStyleProto
 """

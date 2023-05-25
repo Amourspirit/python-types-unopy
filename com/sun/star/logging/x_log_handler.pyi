@@ -85,3 +85,4 @@ class XLogHandler(XComponent_98dc0ab5):
     def Level(self, value: int) -> None:
         ...
 
+

@@ -36,3 +36,4 @@ class XDisplayBitmap(XInterface_8f010a43):
     __pyunointerface__: str = 'com.sun.star.awt.XDisplayBitmap'
 
 
+

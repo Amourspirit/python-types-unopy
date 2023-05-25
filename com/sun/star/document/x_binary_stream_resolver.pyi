@@ -59,3 +59,4 @@ class XBinaryStreamResolver(XInterface_8f010a43):
         ...
 
 
+

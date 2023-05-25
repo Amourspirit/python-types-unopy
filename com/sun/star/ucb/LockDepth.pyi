@@ -19,12 +19,20 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class LockDepthProto(UnoEnumProto):
-    INFINITY: UnoEnumProto
-    ONE: UnoEnumProto
-    ZERO: UnoEnumProto
+
+class LockDepthProto(Protocol):
+    """Protocol for LockDepth"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.LockDepth"]:
+        ...
+    value: Any
+    INFINITY: LockDepthProto
+    ONE: LockDepthProto
+    ZERO: LockDepthProto
 
 INFINITY: LockDepthProto
 """

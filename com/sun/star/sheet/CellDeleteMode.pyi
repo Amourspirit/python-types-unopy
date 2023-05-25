@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class CellDeleteModeProto(UnoEnumProto):
-    COLUMNS: UnoEnumProto
-    LEFT: UnoEnumProto
-    NONE: UnoEnumProto
-    ROWS: UnoEnumProto
-    UP: UnoEnumProto
+
+class CellDeleteModeProto(Protocol):
+    """Protocol for CellDeleteMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.CellDeleteMode"]:
+        ...
+    value: Any
+    COLUMNS: CellDeleteModeProto
+    LEFT: CellDeleteModeProto
+    NONE: CellDeleteModeProto
+    ROWS: CellDeleteModeProto
+    UP: CellDeleteModeProto
 
 COLUMNS: CellDeleteModeProto
 """

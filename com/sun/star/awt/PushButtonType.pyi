@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.awt
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PushButtonTypeProto(UnoEnumProto):
-    CANCEL: UnoEnumProto
-    HELP: UnoEnumProto
-    OK: UnoEnumProto
-    STANDARD: UnoEnumProto
+
+class PushButtonTypeProto(Protocol):
+    """Protocol for PushButtonType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.awt.PushButtonType"]:
+        ...
+    value: Any
+    CANCEL: PushButtonTypeProto
+    HELP: PushButtonTypeProto
+    OK: PushButtonTypeProto
+    STANDARD: PushButtonTypeProto
 
 CANCEL: PushButtonTypeProto
 """

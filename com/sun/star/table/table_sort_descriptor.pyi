@@ -23,7 +23,7 @@ import typing
 from ..util.sort_descriptor import SortDescriptor as SortDescriptor_ca680c8d
 if typing.TYPE_CHECKING:
     from ..util.sort_field import SortField as SortField_90080a52
-    from com.sun.star.table.TableOrientation import TableOrientationProto
+    from com.sun.star.table.TableOrientation import TableOrientationProto  # type: ignore
 
 class TableSortDescriptor(SortDescriptor_ca680c8d):
     """
@@ -78,4 +78,3 @@ class TableSortDescriptor(SortDescriptor_ca680c8d):
     @Orientation.setter
     def Orientation(self, value: TableOrientationProto) -> None:
         ...
-

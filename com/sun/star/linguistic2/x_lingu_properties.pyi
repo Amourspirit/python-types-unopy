@@ -184,3 +184,4 @@ class XLinguProperties(XPropertySet_bc180bfa):
     def IsWrapReverse(self, value: bool) -> None:
         ...
 
+

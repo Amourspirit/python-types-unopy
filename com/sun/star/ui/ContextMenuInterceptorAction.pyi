@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.ui
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ContextMenuInterceptorActionProto(UnoEnumProto):
-    CANCELLED: UnoEnumProto
-    CONTINUE_MODIFIED: UnoEnumProto
-    EXECUTE_MODIFIED: UnoEnumProto
-    IGNORED: UnoEnumProto
+
+class ContextMenuInterceptorActionProto(Protocol):
+    """Protocol for ContextMenuInterceptorAction"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ui.ContextMenuInterceptorAction"]:
+        ...
+    value: Any
+    CANCELLED: ContextMenuInterceptorActionProto
+    CONTINUE_MODIFIED: ContextMenuInterceptorActionProto
+    EXECUTE_MODIFIED: ContextMenuInterceptorActionProto
+    IGNORED: ContextMenuInterceptorActionProto
 
 CANCELLED: ContextMenuInterceptorActionProto
 """

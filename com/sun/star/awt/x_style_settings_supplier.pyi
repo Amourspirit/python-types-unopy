@@ -44,3 +44,4 @@ class XStyleSettingsSupplier(ABC):
     def StyleSettings(self, value: XStyleSettings_bcc40c0e) -> None:
         ...
 
+

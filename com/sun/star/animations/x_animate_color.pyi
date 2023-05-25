@@ -58,3 +58,4 @@ class XAnimateColor(XAnimate_ca680c52):
     def Direction(self, value: bool) -> None:
         ...
 
+

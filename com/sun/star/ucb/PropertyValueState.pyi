@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PropertyValueStateProto(UnoEnumProto):
-    INVALID_NAME: UnoEnumProto
-    INVALID_TYPE: UnoEnumProto
-    PROCESSED: UnoEnumProto
-    UNPROCESSED: UnoEnumProto
+
+class PropertyValueStateProto(Protocol):
+    """Protocol for PropertyValueState"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.PropertyValueState"]:
+        ...
+    value: Any
+    INVALID_NAME: PropertyValueStateProto
+    INVALID_TYPE: PropertyValueStateProto
+    PROCESSED: PropertyValueStateProto
+    UNPROCESSED: PropertyValueStateProto
 
 INVALID_NAME: PropertyValueStateProto
 """

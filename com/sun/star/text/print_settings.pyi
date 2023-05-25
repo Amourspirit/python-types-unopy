@@ -22,7 +22,7 @@ from __future__ import annotations
 import typing
 from abc import ABC
 if typing.TYPE_CHECKING:
-    from com.sun.star.text.NotePrintMode import NotePrintModeProto
+    from com.sun.star.text.NotePrintMode import NotePrintModeProto  # type: ignore
 
 class PrintSettings(ABC):
     """
@@ -161,4 +161,3 @@ class PrintSettings(ABC):
     @PrintTables.setter
     def PrintTables(self, value: bool) -> None:
         ...
-

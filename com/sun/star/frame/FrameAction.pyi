@@ -19,17 +19,25 @@
 # Namespace: com.sun.star.frame
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class FrameActionProto(UnoEnumProto):
-    COMPONENT_ATTACHED: UnoEnumProto
-    COMPONENT_DETACHING: UnoEnumProto
-    COMPONENT_REATTACHED: UnoEnumProto
-    CONTEXT_CHANGED: UnoEnumProto
-    FRAME_ACTIVATED: UnoEnumProto
-    FRAME_DEACTIVATING: UnoEnumProto
-    FRAME_UI_ACTIVATED: UnoEnumProto
-    FRAME_UI_DEACTIVATING: UnoEnumProto
+
+class FrameActionProto(Protocol):
+    """Protocol for FrameAction"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.frame.FrameAction"]:
+        ...
+    value: Any
+    COMPONENT_ATTACHED: FrameActionProto
+    COMPONENT_DETACHING: FrameActionProto
+    COMPONENT_REATTACHED: FrameActionProto
+    CONTEXT_CHANGED: FrameActionProto
+    FRAME_ACTIVATED: FrameActionProto
+    FRAME_DEACTIVATING: FrameActionProto
+    FRAME_UI_ACTIVATED: FrameActionProto
+    FRAME_UI_DEACTIVATING: FrameActionProto
 
 COMPONENT_ATTACHED: FrameActionProto
 """

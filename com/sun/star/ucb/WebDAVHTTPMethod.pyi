@@ -19,25 +19,33 @@
 # Namespace: com.sun.star.ucb
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class WebDAVHTTPMethodProto(UnoEnumProto):
-    CONNECT: UnoEnumProto
-    COPY: UnoEnumProto
-    DELETE: UnoEnumProto
-    GET: UnoEnumProto
-    HEAD: UnoEnumProto
-    LOCK: UnoEnumProto
-    MKCOL: UnoEnumProto
-    MOVE: UnoEnumProto
-    OPTIONS: UnoEnumProto
-    PATCH: UnoEnumProto
-    POST: UnoEnumProto
-    PROPFIND: UnoEnumProto
-    PROPPATCH: UnoEnumProto
-    PUT: UnoEnumProto
-    TRACE: UnoEnumProto
-    UNLOCK: UnoEnumProto
+
+class WebDAVHTTPMethodProto(Protocol):
+    """Protocol for WebDAVHTTPMethod"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.ucb.WebDAVHTTPMethod"]:
+        ...
+    value: Any
+    CONNECT: WebDAVHTTPMethodProto
+    COPY: WebDAVHTTPMethodProto
+    DELETE: WebDAVHTTPMethodProto
+    GET: WebDAVHTTPMethodProto
+    HEAD: WebDAVHTTPMethodProto
+    LOCK: WebDAVHTTPMethodProto
+    MKCOL: WebDAVHTTPMethodProto
+    MOVE: WebDAVHTTPMethodProto
+    OPTIONS: WebDAVHTTPMethodProto
+    PATCH: WebDAVHTTPMethodProto
+    POST: WebDAVHTTPMethodProto
+    PROPFIND: WebDAVHTTPMethodProto
+    PROPPATCH: WebDAVHTTPMethodProto
+    PUT: WebDAVHTTPMethodProto
+    TRACE: WebDAVHTTPMethodProto
+    UNLOCK: WebDAVHTTPMethodProto
 
 CONNECT: WebDAVHTTPMethodProto
 """

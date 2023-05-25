@@ -62,3 +62,4 @@ class XTempFile(XSeekable_79540954, XStream_678908a4):
     def Uri(self, value: str) -> None:
         ...
 
+

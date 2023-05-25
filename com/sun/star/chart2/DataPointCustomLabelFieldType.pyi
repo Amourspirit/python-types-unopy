@@ -19,17 +19,25 @@
 # Namespace: com.sun.star.chart2
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class DataPointCustomLabelFieldTypeProto(UnoEnumProto):
-    CATEGORYNAME: UnoEnumProto
-    CELLRANGE: UnoEnumProto
-    CELLREF: UnoEnumProto
-    NEWLINE: UnoEnumProto
-    PERCENTAGE: UnoEnumProto
-    SERIESNAME: UnoEnumProto
-    TEXT: UnoEnumProto
-    VALUE: UnoEnumProto
+
+class DataPointCustomLabelFieldTypeProto(Protocol):
+    """Protocol for DataPointCustomLabelFieldType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.chart2.DataPointCustomLabelFieldType"]:
+        ...
+    value: Any
+    CATEGORYNAME: DataPointCustomLabelFieldTypeProto
+    CELLRANGE: DataPointCustomLabelFieldTypeProto
+    CELLREF: DataPointCustomLabelFieldTypeProto
+    NEWLINE: DataPointCustomLabelFieldTypeProto
+    PERCENTAGE: DataPointCustomLabelFieldTypeProto
+    SERIESNAME: DataPointCustomLabelFieldTypeProto
+    TEXT: DataPointCustomLabelFieldTypeProto
+    VALUE: DataPointCustomLabelFieldTypeProto
 
 CATEGORYNAME: DataPointCustomLabelFieldTypeProto
 """

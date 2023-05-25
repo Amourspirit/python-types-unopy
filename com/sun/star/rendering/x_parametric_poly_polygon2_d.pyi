@@ -73,3 +73,4 @@ class XParametricPolyPolygon2D(XInterface_8f010a43):
         ...
 
 
+

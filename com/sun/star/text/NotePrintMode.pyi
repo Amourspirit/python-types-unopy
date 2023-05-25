@@ -19,13 +19,21 @@
 # Namespace: com.sun.star.text
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class NotePrintModeProto(UnoEnumProto):
-    DOC_END: UnoEnumProto
-    NOT: UnoEnumProto
-    ONLY: UnoEnumProto
-    PAGE_END: UnoEnumProto
+
+class NotePrintModeProto(Protocol):
+    """Protocol for NotePrintMode"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.text.NotePrintMode"]:
+        ...
+    value: Any
+    DOC_END: NotePrintModeProto
+    NOT: NotePrintModeProto
+    ONLY: NotePrintModeProto
+    PAGE_END: NotePrintModeProto
 
 DOC_END: NotePrintModeProto
 """

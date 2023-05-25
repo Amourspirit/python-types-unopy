@@ -29,7 +29,7 @@ if typing.TYPE_CHECKING:
     from .x_frame import XFrame as XFrame_7a570956
     from ..ui.x_docking_area_acceptor import XDockingAreaAcceptor as XDockingAreaAcceptor_f8d90da7
     from ..ui.xui_element import XUIElement as XUIElement_820509a6
-    from com.sun.star.ui.DockingArea import DockingAreaProto
+    from com.sun.star.ui.DockingArea import DockingAreaProto  # type: ignore
 
 
 class XLayoutManager(XInterface_8f010a43):
@@ -234,5 +234,4 @@ class XLayoutManager(XInterface_8f010a43):
         unlocks a window based user interface element if it's in a docked state.
         """
         ...
-
 

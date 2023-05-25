@@ -19,15 +19,23 @@
 # Namespace: com.sun.star.view
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PrintableStateProto(UnoEnumProto):
-    JOB_ABORTED: UnoEnumProto
-    JOB_COMPLETED: UnoEnumProto
-    JOB_FAILED: UnoEnumProto
-    JOB_SPOOLED: UnoEnumProto
-    JOB_SPOOLING_FAILED: UnoEnumProto
-    JOB_STARTED: UnoEnumProto
+
+class PrintableStateProto(Protocol):
+    """Protocol for PrintableState"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.view.PrintableState"]:
+        ...
+    value: Any
+    JOB_ABORTED: PrintableStateProto
+    JOB_COMPLETED: PrintableStateProto
+    JOB_FAILED: PrintableStateProto
+    JOB_SPOOLED: PrintableStateProto
+    JOB_SPOOLING_FAILED: PrintableStateProto
+    JOB_STARTED: PrintableStateProto
 
 JOB_ABORTED: PrintableStateProto
 """

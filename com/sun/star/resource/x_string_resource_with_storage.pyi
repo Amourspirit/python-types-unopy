@@ -59,3 +59,4 @@ class XStringResourceWithStorage(XStringResourcePersistence_cabc130c):
         ...
 
 
+

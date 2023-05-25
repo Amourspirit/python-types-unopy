@@ -42,3 +42,4 @@ class XVolatileBitmap(XBitmap_b1b70b7b):
         ...
 
 
+

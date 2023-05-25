@@ -46,3 +46,4 @@ class XAnimateTransform(XAnimate_ca680c52):
     def TransformType(self, value: int) -> None:
         ...
 
+

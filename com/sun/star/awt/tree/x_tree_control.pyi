@@ -194,3 +194,4 @@ class XTreeControl(XMultiSelectionSupplier_4b0d1020):
     def DefaultExpandedGraphicURL(self, value: str) -> None:
         ...
 
+

@@ -19,17 +19,25 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class ValidationTypeProto(UnoEnumProto):
-    ANY: UnoEnumProto
-    CUSTOM: UnoEnumProto
-    DATE: UnoEnumProto
-    DECIMAL: UnoEnumProto
-    LIST: UnoEnumProto
-    TEXT_LEN: UnoEnumProto
-    TIME: UnoEnumProto
-    WHOLE: UnoEnumProto
+
+class ValidationTypeProto(Protocol):
+    """Protocol for ValidationType"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.ValidationType"]:
+        ...
+    value: Any
+    ANY: ValidationTypeProto
+    CUSTOM: ValidationTypeProto
+    DATE: ValidationTypeProto
+    DECIMAL: ValidationTypeProto
+    LIST: ValidationTypeProto
+    TEXT_LEN: ValidationTypeProto
+    TIME: ValidationTypeProto
+    WHOLE: ValidationTypeProto
 
 ANY: ValidationTypeProto
 """

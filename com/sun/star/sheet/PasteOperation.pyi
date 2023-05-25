@@ -19,14 +19,22 @@
 # Namespace: com.sun.star.sheet
 # Libre Office Version: 7.4
 from __future__ import annotations
-from com.sun.star import UnoEnumProto
+from typing import Protocol, Any
+from typing_extensions import Literal
 
-class PasteOperationProto(UnoEnumProto):
-    ADD: UnoEnumProto
-    DIVIDE: UnoEnumProto
-    MULTIPLY: UnoEnumProto
-    NONE: UnoEnumProto
-    SUBTRACT: UnoEnumProto
+
+class PasteOperationProto(Protocol):
+    """Protocol for PasteOperation"""
+
+    @property
+    def typeName(self) -> Literal["com.sun.star.sheet.PasteOperation"]:
+        ...
+    value: Any
+    ADD: PasteOperationProto
+    DIVIDE: PasteOperationProto
+    MULTIPLY: PasteOperationProto
+    NONE: PasteOperationProto
+    SUBTRACT: PasteOperationProto
 
 ADD: PasteOperationProto
 """

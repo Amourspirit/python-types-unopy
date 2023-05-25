@@ -23,7 +23,7 @@ import typing
 from abc import ABC
 if typing.TYPE_CHECKING:
     from ..lang.locale import Locale as Locale_70d308fa
-    from com.sun.star.awt.FontSlant import FontSlantProto
+    from com.sun.star.awt.FontSlant import FontSlantProto  # type: ignore
 
 class CharacterPropertiesComplex(ABC):
     """
@@ -119,4 +119,3 @@ class CharacterPropertiesComplex(ABC):
     @CharWeightComplex.setter
     def CharWeightComplex(self, value: float) -> None:
         ...
-
