@@ -17,6 +17,7 @@ from .data_point_geometry3_d import DataPointGeometry3D as DataPointGeometry3D
 from .data_point_label import DataPointLabel as DataPointLabel
 from .data_point_properties import DataPointProperties as DataPointProperties
 from .data_series import DataSeries as DataSeries
+from .data_table import DataTable as DataTable
 from .diagram import Diagram as Diagram
 from .error_bar import ErrorBar as ErrorBar
 from .exponential_regression_curve import ExponentialRegressionCurve as ExponentialRegressionCurve
@@ -68,6 +69,7 @@ from .x_data_point_custom_label_field import XDataPointCustomLabelField as XData
 from .x_data_provider_access import XDataProviderAccess as XDataProviderAccess
 from .x_data_series import XDataSeries as XDataSeries
 from .x_data_series_container import XDataSeriesContainer as XDataSeriesContainer
+from .x_data_table import XDataTable as XDataTable
 from .x_default_size_transmitter import XDefaultSizeTransmitter as XDefaultSizeTransmitter
 from .x_diagram import XDiagram as XDiagram
 from .x_diagram_provider import XDiagramProvider as XDiagramProvider

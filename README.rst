@@ -13,7 +13,7 @@ there is not type support for `LibreOffice API <https://api.libreoffice.org/>`_ 
 VERSION
 =======
 
-This package is for Version ``7.4`` + of `LibreOffice API <https://api.libreoffice.org/>`_.
+This package is for Version ``2024.2`` + of `LibreOffice API <https://api.libreoffice.org/>`_.
 
 From one version of LibreOffice to the next, generally speaking, the API does not changed much.
 Because this is the case it is very likely this current version of ``LibreOffice API Typings``
@@ -31,11 +31,6 @@ PIP
 
     $ pip install types-unopy
 
-For version ``7.3`` (or less) of LibreOffice.
-
-.. code-block:: bash
-
-    $ pip install "types-unopy<1.0"
 
 CONDA
 -----
@@ -46,11 +41,6 @@ CONDA
 
     $ conda install -c conda-forge types-unopy
 
-For version ``7.3`` (or less) of LibreOffice.
-
-.. code-block:: bash
-
-    $ conda install -c conda-forge "types-unopy<1.0"
 
 Related
 =======

@@ -1,6 +1,7 @@
 from .cipher_id import CipherID as CipherID
 from .digest_id import DigestID as DigestID
 from .gpgse_initializer import GPGSEInitializer as GPGSEInitializer
+from .kdfid import KDFID as KDFID
 from .nss_initializer import NSSInitializer as NSSInitializer
 from .nss_profile import NSSProfile as NSSProfile
 from .se_initializer import SEInitializer as SEInitializer

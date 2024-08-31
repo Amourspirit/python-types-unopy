@@ -29,6 +29,7 @@ from .chapter_format import ChapterFormat as ChapterFormat
 from .chapter_numbering_rule import ChapterNumberingRule as ChapterNumberingRule
 from .character_compression_type import CharacterCompressionType as CharacterCompressionType
 from .column_separator_style import ColumnSeparatorStyle as ColumnSeparatorStyle
+from .content_control import ContentControl as ContentControl
 from .content_index import ContentIndex as ContentIndex
 from .content_index_mark import ContentIndexMark as ContentIndexMark
 from .control_character import ControlCharacter as ControlCharacter
@@ -63,6 +64,7 @@ from .illustrations_index import IllustrationsIndex as IllustrationsIndex
 from .in_content_metadata import InContentMetadata as InContentMetadata
 from .invalid_text_content_exception import InvalidTextContentException as InvalidTextContentException
 from .label_follow import LabelFollow as LabelFollow
+from .line_break import LineBreak as LineBreak
 from .line_numbering_properties import LineNumberingProperties as LineNumberingProperties
 from .mail_merge import MailMerge as MailMerge
 from .mail_merge_event import MailMergeEvent as MailMergeEvent
@@ -158,6 +160,7 @@ from .x_auto_text_group import XAutoTextGroup as XAutoTextGroup
 from .x_bookmark_insert_tool import XBookmarkInsertTool as XBookmarkInsertTool
 from .x_bookmarks_supplier import XBookmarksSupplier as XBookmarksSupplier
 from .x_chapter_numbering_supplier import XChapterNumberingSupplier as XChapterNumberingSupplier
+from .x_content_controls_supplier import XContentControlsSupplier as XContentControlsSupplier
 from .x_default_numbering_provider import XDefaultNumberingProvider as XDefaultNumberingProvider
 from .x_dependent_text_field import XDependentTextField as XDependentTextField
 from .x_document_index import XDocumentIndex as XDocumentIndex

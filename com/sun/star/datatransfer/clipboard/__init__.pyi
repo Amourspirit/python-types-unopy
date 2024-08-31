@@ -1,6 +1,7 @@
 from .clipboard_event import ClipboardEvent as ClipboardEvent
 from .clipboard_manager import ClipboardManager as ClipboardManager
 from .generic_clipboard import GenericClipboard as GenericClipboard
+from .lok_clipboard import LokClipboard as LokClipboard
 from .rendering_capabilities import RenderingCapabilities as RenderingCapabilities
 from .system_clipboard import SystemClipboard as SystemClipboard
 from .x_clipboard import XClipboard as XClipboard

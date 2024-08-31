@@ -37,6 +37,8 @@ from .animated_images_control import AnimatedImagesControl as AnimatedImagesCont
 from .animated_images_control_model import AnimatedImagesControlModel as AnimatedImagesControlModel
 from .async_callback import AsyncCallback as AsyncCallback
 from .char_set import CharSet as CharSet
+from .color_stop import ColorStop as ColorStop
+from .color_stop_sequence import ColorStopSequence as ColorStopSequence
 from .command import Command as Command
 from .container_window_provider import ContainerWindowProvider as ContainerWindowProvider
 from .device_capability import DeviceCapability as DeviceCapability
@@ -62,6 +64,7 @@ from .font_underline import FontUnderline as FontUnderline
 from .font_weight import FontWeight as FontWeight
 from .font_width import FontWidth as FontWidth
 from .gradient import Gradient as Gradient
+from .gradient2 import Gradient2 as Gradient2
 from .image_align import ImageAlign as ImageAlign
 from .image_draw_mode import ImageDrawMode as ImageDrawMode
 from .image_position import ImagePosition as ImagePosition

@@ -31,7 +31,6 @@ from .x_accessible_key_binding import XAccessibleKeyBinding as XAccessibleKeyBin
 from .x_accessible_multi_line_text import XAccessibleMultiLineText as XAccessibleMultiLineText
 from .x_accessible_relation_set import XAccessibleRelationSet as XAccessibleRelationSet
 from .x_accessible_selection import XAccessibleSelection as XAccessibleSelection
-from .x_accessible_state_set import XAccessibleStateSet as XAccessibleStateSet
 from .x_accessible_table import XAccessibleTable as XAccessibleTable
 from .x_accessible_table_selection import XAccessibleTableSelection as XAccessibleTableSelection
 from .x_accessible_text import XAccessibleText as XAccessibleText

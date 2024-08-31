@@ -1,4 +1,5 @@
 from .core_reflection import CoreReflection as CoreReflection
+from .dump import Dump as Dump
 from .invalid_type_name_exception import InvalidTypeNameException as InvalidTypeNameException
 from .invocation_target_exception import InvocationTargetException as InvocationTargetException
 from .no_such_type_name_exception import NoSuchTypeNameException as NoSuchTypeNameException
@@ -11,6 +12,7 @@ from .x_array_type_description import XArrayTypeDescription as XArrayTypeDescrip
 from .x_compound_type_description import XCompoundTypeDescription as XCompoundTypeDescription
 from .x_constant_type_description import XConstantTypeDescription as XConstantTypeDescription
 from .x_constants_type_description import XConstantsTypeDescription as XConstantsTypeDescription
+from .x_dump import XDump as XDump
 from .x_enum_type_description import XEnumTypeDescription as XEnumTypeDescription
 from .x_idl_array import XIdlArray as XIdlArray
 from .x_idl_class import XIdlClass as XIdlClass
