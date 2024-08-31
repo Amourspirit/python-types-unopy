@@ -7,6 +7,7 @@ from .document_password_request import DocumentPasswordRequest as DocumentPasswo
 from .document_password_request2 import DocumentPasswordRequest2 as DocumentPasswordRequest2
 from .error_code_io_exception import ErrorCodeIOException as ErrorCodeIOException
 from .error_code_request import ErrorCodeRequest as ErrorCodeRequest
+from .error_code_request2 import ErrorCodeRequest2 as ErrorCodeRequest2
 from .interaction_handler import InteractionHandler as InteractionHandler
 from .interaction_request_string_resolver import InteractionRequestStringResolver as InteractionRequestStringResolver
 from .job import Job as Job

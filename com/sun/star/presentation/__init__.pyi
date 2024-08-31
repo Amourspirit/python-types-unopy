@@ -43,6 +43,7 @@ from .x_shape_event_listener import XShapeEventListener as XShapeEventListener
 from .x_slide_show import XSlideShow as XSlideShow
 from .x_slide_show_controller import XSlideShowController as XSlideShowController
 from .x_slide_show_listener import XSlideShowListener as XSlideShowListener
+from .x_slide_show_navigation_listener import XSlideShowNavigationListener as XSlideShowNavigationListener
 from .x_slide_show_view import XSlideShowView as XSlideShowView
 from .x_transition import XTransition as XTransition
 from .x_transition_factory import XTransitionFactory as XTransitionFactory

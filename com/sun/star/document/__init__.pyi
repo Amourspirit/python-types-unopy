@@ -58,8 +58,10 @@ from .x_document_event_listener import XDocumentEventListener as XDocumentEventL
 from .x_document_insertable import XDocumentInsertable as XDocumentInsertable
 from .x_document_languages import XDocumentLanguages as XDocumentLanguages
 from .x_document_properties import XDocumentProperties as XDocumentProperties
+from .x_document_properties2 import XDocumentProperties2 as XDocumentProperties2
 from .x_document_properties_supplier import XDocumentPropertiesSupplier as XDocumentPropertiesSupplier
 from .x_document_recovery import XDocumentRecovery as XDocumentRecovery
+from .x_document_recovery2 import XDocumentRecovery2 as XDocumentRecovery2
 from .x_document_revision_list_persistence import XDocumentRevisionListPersistence as XDocumentRevisionListPersistence
 from .x_document_sub_storage_supplier import XDocumentSubStorageSupplier as XDocumentSubStorageSupplier
 from .x_embedded_object_resolver import XEmbeddedObjectResolver as XEmbeddedObjectResolver

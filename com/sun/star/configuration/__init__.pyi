@@ -27,6 +27,7 @@ from .simple_set_update import SimpleSetUpdate as SimpleSetUpdate
 from .the_default_provider import theDefaultProvider as theDefaultProvider
 from .update import Update as Update
 from .update_root_element import UpdateRootElement as UpdateRootElement
+from .x_documentation import XDocumentation as XDocumentation
 from .x_read_write_access import XReadWriteAccess as XReadWriteAccess
 from .x_template_container import XTemplateContainer as XTemplateContainer
 from .x_template_instance import XTemplateInstance as XTemplateInstance

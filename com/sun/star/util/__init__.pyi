@@ -72,6 +72,7 @@ from .x_cloneable import XCloneable as XCloneable
 from .x_close_broadcaster import XCloseBroadcaster as XCloseBroadcaster
 from .x_close_listener import XCloseListener as XCloseListener
 from .x_closeable import XCloseable as XCloseable
+from .x_complex_color import XComplexColor as XComplexColor
 from .x_data_editor import XDataEditor as XDataEditor
 from .x_data_editor_listener import XDataEditorListener as XDataEditorListener
 from .x_flush_listener import XFlushListener as XFlushListener
@@ -116,6 +117,7 @@ from .x_string_substitution import XStringSubstitution as XStringSubstitution
 from .x_string_width import XStringWidth as XStringWidth
 from .x_text_search import XTextSearch as XTextSearch
 from .x_text_search2 import XTextSearch2 as XTextSearch2
+from .x_theme import XTheme as XTheme
 from .x_time_stamped import XTimeStamped as XTimeStamped
 from .x_unique_id_factory import XUniqueIDFactory as XUniqueIDFactory
 from .x_updatable import XUpdatable as XUpdatable

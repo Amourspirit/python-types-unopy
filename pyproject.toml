@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "types-unopy"
-version = "1.2.3"
+version = "1.3.0"
 description = "Type annotations for LibreOffice API"
 # name regex
 # https://github.com/python-poetry/poetry-core/commit/01602122f9b2a4cc927d94c543efb5020dfa3817
@@ -20,21 +20,21 @@ classifiers=[
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
     ]
 packages = [
     { include = "com" }
 ]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 types-uno-script = ">=0.1.1"
 typing_extensions = { version = ">= 3.7.4.3", markers = "python_version < '3.7'" }
 
 [[tool.poetry.source]]
 name = "pypi-test"
 url = "https://test.pypi.org/legacy/"
-default = false
-secondary = false
+priority = "supplemental"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.3.0"
